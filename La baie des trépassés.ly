@@ -50,7 +50,7 @@ setLyricSize = { \override LyricText #'font-size = #-1.5 }
 
 \score {
   \relative c' {
-    \key aes \major
+    \key f \minor
     \time 3/4
     \partial 4
       c8    e              f4   f   g   aes aes bes aes g   f   g2
