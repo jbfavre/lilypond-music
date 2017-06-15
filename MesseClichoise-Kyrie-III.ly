@@ -43,13 +43,13 @@ soloLyrics = \lyricmode {
   }
 womenMusic = \relative c' {
     f4 ees f2 f4 g8 f8 g2\fermata
-    aes4 (bes) aes4. g8 f8 (aes4) g8 f4 (ees)\fermata
-    aes8 bes aes g aes f d g c, e d e c2\fermata
+    aes2 aes4. g8 f4. g8 f4 (ees)\fermata
+    c'8 (bes) aes8 (bes16 g16) aes8 (f) d (g) c, (e) d (e) c2\fermata
   }
 womenLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
     Chri -- ste E -- le -- i -- son
-    Ky -- ri -- e Ky -- ri -- e E -- le -- i -- son
+    Ky -- ri -- e E -- le -- i -- son
   }
 menMusic = \relative c {
     c2 (des) d4 (f) e2\fermata
@@ -81,7 +81,7 @@ menLyrics = \lyricmode {
       }
     >>
     \new ChoirStaff \with {
-      instrumentName = \markup {\right-align "Chœur"}
+      instrumentName = \markup {\left-align "Chœur"}
     } <<
       \new Staff \with {
         instrumentName = \markup {\right-align "voix 1"}
@@ -110,5 +110,5 @@ menLyrics = \lyricmode {
     >>
   >>
   \layout { }
-  \midi { \tempo 4 = 72 }
+  \midi { \tempo 4 = 75 }
 }
