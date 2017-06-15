@@ -1,4 +1,5 @@
 \version "2.18.2"
+\include "gregorian.ly"
 
 % Beginning layout directives
 \paper {
@@ -32,38 +33,40 @@ global = {
   \time 3/8
 }
 
+"|" = \bar "||"
+"`" = \divisioMinima
 soloMusic = \relative c' {
     \mark "Prêtre (ou chantre)"
     % Glória in excélsis Deo
     g'8 b d
-      \time 3/4 d8 c d e c4
-      \time 3/8 d4. | \break
+      \time 3/4 c8 b a g a4
+      \time 3/8 b4. |
     \mark "Soliste"
     % et in terra pax homínibus bonae voluntátis.
-    % Laudámus te,
-    d8 c b c b a g a4 b4. | \break
-      b8 (c) d d (b) g c (b a) g4. | \break
+    d8 c b c b a g a4 a4. ` \break
+      b8 (c) d d (b) g c (b a) g4. |
     \mark "Tous"
     % Laudámus te,
     g8 (b d) c b (a) b4. | \break
     \mark "Chantre"
     % benedícimus te,
-    b8 (a) b c b a b4. | \break
+    b8 (a) b c b a b4. |
     \mark "Tous"
     % adoramus te.
     b8 (c) d c (b) a g4. | \break
     \mark "Chantre"
     % Glorificámus te. Gratias agimus tibi
-    d'8 (b) g e' (c g) d' (b) g a4. | \break
+    d'8 (b) g e' (c g) d' (b) g a4. `
       d,8 (e) fis g a b g a4 b4. | \break
     \mark "Tous"
     % propter magnam glóriam tuam,
-    % g4. a4. b4. c4. b8 a g a (g fis) g4.
-     | \break
+    b8 (a) b c4 c8 b c b a4 a8 |
     \mark "Chantre"
     % Dómine Deus, Rex cæléstis,
+    g8 fis g a4 a8 b8 c b a4. | \break
     \mark "Tous"
     % Deus Pater omnípotens.
+    d4. c b8 a g g a4 b4. |
     \mark "Chantre"
     % Dómine Fili Unigénite, Jesu Christe.
     \mark "Tous"
@@ -109,11 +112,17 @@ Amen.
 }
 
 womenMusic = \relative c' {
+  r4. r2. r4.
+  fis4. e4. e4. fis4.
   }
 womenLyrics = \lyricmode {
   }
 
 menMusic = \relative c {
+  r4. r2. r4.
+  b'4. a g8 e c8 d4.
+  g4. fis4. e4. b4.
+  c4. d e
   }
 menLyrics = \lyricmode {
   }
@@ -170,7 +179,16 @@ menLyrics = \lyricmode {
         }
       >>
     >>
-    \layout { }
+    \layout {
+      \context {
+        \Staff
+          \omit TimeSignature
+      }
+      \context {
+        \Score
+          defaultBarType = "" 
+      }
+    }
     \midi { \tempo 4 = 75 }
   }
 }
