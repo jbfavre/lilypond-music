@@ -10,6 +10,7 @@
   top-margin = 2\cm
   bottom-margin = 2\cm
   print-all-headers = true
+  max-systems-per-page = 4
 }
 
 setStaffElements = {
@@ -35,58 +36,92 @@ global = {
 
 "|" = \bar "||"
 "`" = \divisioMinima
+
+% Réserve
+    % Soliste d,8 (e) fis g a b g a4 b4. | \break
+    % Chœur 1 
+    % Chœur 2 d8 cis c b a g c d4 g,4.
+
+
+
 soloMusic = \relative c' {
-    \mark "Prêtre (ou chantre)"
+  \tempo 4. = 60
+  \mark "Prêtre (ou chantre)"
     % Glória in excélsis Deo
-    g'8 b d
-      \time 3/4 c8 b a g a4
-      \time 3/8 b4. |
-    \mark "Soliste"
+    % Gloire à Dieu, au plus haut des cieux
+    g'8 b\noBeam d c8 b\noBeam a g a4 b4. |
+  \mark "Chantre"
     % et in terra pax homínibus bonae voluntátis.
+    % et paix sur la terre aux hommes qu'il aime.
     d8 c b c b a g a4 a4. ` \break
       b8 (c) d d (b) g c (b a) g4. |
-    \mark "Tous"
+  \mark "Tous"
     % Laudámus te,
+    % Nous te louons,
     g8 (b d) c b (a) b4. | \break
-    \mark "Chantre"
+  \mark "Chantre"
     % benedícimus te,
+    % Nous te bénissons,
     b8 (a) b c b a b4. |
-    \mark "Tous"
+  \mark "Tous"
     % adoramus te.
-    b8 (c) d c (b) a g4. | \break
-    \mark "Chantre"
-    % Glorificámus te. Gratias agimus tibi
-    d'8 (b) g e' (c g) d' (b) g a4. `
-      d,8 (e) fis g a b g a4 b4. | \break
-    \mark "Tous"
-    % propter magnam glóriam tuam,
-    b8 (a) b c4 c8 b c b a4 a8 |
-    \mark "Chantre"
+    % nous t'adorons.
+    b8 (a) g fis (e) fis g4. | \break
+  \mark "Chantre"
+    % Glorificámus te.
+    % Nous te glorifions
+    d'8 (b g) e'4 e8 e8 (cis) a fis'4. | \break
+  \mark "Tous"
+    % Gratias agimus tibi propter magnam glóriam tuam,
+    % nous te rendons grâce pour ton immense gloire,
+    dis8 (cis) dis e c b a d4 b4. `
+      b8 (a) b c4 c8 b c b a4 a8 |
+  \mark "Chantre"
     % Dómine Deus, Rex cæléstis,
-    g8 fis g a4 a8 b8 c b a4. | \break
-    \mark "Tous"
+    % Seigneur Dieur, Roi du ciel,
+    g8 fis g a4 a8 b8 c b a4. |
     % Deus Pater omnípotens.
-    d4. c b8 a g g a4 b4. |
-    \mark "Chantre"
-    % Dómine Fili Unigénite, Jesu Christe.
-    \mark "Tous"
-    % Dómine Deus, Agnus Dei, Fílius Patris,
-    \mark "Chantre"
-    % qui tollis peccáta mundi, miserére nobis;
-    \mark "Tous"
-    % qui tollis peccáta mundi, suscipe deprecationem nostram;
-    \mark "Chantre"
-    % Qui sedes ad déxteram Patris, miserére nobis.
-    \mark "Tous"
-    % Quóniam tu solus Sanctus,
-    \mark "Chantre"
-    % tu solus Dóminus,
-    \mark "Tous"
-    % tu solus Altíssimus, Iesu Christe,
-    \mark "Chantre"
-    % cum Sancto Spíritu, in glória Dei Patris.
-    \mark "Tous"
-    % Amen.
+    % Dieu le Père tout puissant.
+    d4. c b8 a g g a4 b4. | \break
+  \mark "Tous"
+  % Dómine Fili Unigénite, Jesu Christe.
+  % Seigneur Fils unique Jésus Christ.
+  \mark "Chantre"
+  % Dómine Deus, Agnus Dei, Fílius Patris,
+  % Seigneur Dieu, Agenau de Dieu, le Fils du Père,
+  \mark "Tous"
+  % qui tollis peccáta mundi, miserére nobis;
+  % toi qui enlèves le pêché du monde, prends pitié de nous;
+  \mark "Chantre"
+  % Qui tollis peccáta mundi, suscipe deprecationem nostram;
+  % toi qui enlèves le pêché du monde, reçois notre prière;
+  \mark "Tous"
+  % Qui sedes ad déxteram Patris, miserére nobis.
+  % Toi qui es assis à la droite du Père, prends pitié de nous
+  \mark "Chantre"
+  % Quóniam tu solus Sanctus,
+  % Car toi seul est Saint,
+  \mark "Tous"
+  % tu solus Dóminus,
+  % Toi seul es Seigneur,
+  \mark "Chantre"
+  % tu solus Altíssimus, Iesu Christe,
+  % toi seul est le très haut, Jésus Christ
+  \mark "Tous"
+  % cum Sancto Spíritu, in glória Dei Patris.
+  % avec le Saint Esprit, dans la gloire de Dieu le Père.
+  \mark "Tous"
+    % Amen, Amen
+    g8 (a) b c (d) e `
+    % Amen, Amen
+    a, (b) cis d (e) fis `
+    % Amen, Amen
+    b,8 (a) b c (b) g
+    % Amen
+    \set Score.tempoHideNote = ##t
+    \tempo 4. = 50
+      \override TextSpanner.bound-details.left.text = \markup { \upright \bold "rit." }
+      a4\startTextSpan (d8) d2.\stopTextSpan \fermata | \break
 }
 soloLyrics = \lyricmode {
   Gló -- ri -- a in ex -- cél -- sis De -- o
@@ -96,42 +131,63 @@ soloLyrics = \lyricmode {
   a -- do -- ra -- mus te.
   Glo -- ri -- fi -- cá -- mus te. Gra -- ti -- as a -- gi -- mus ti -- bi
   pro -- pter ma -- gnam gló -- ri -- am tu -- am,
+  Dó -- mi -- ne De -- us, Rex cæ -- lés -- tis,
+  De -- us Pa -- ter om -- ní -- po -- tens.
 
-Dó -- mi -- ne De -- us, Rex cæ -- lés -- tis,
-De -- us Pa -- ter om -- ní -- po -- tens.
-Dó -- mi -- ne Fi -- li U -- ni -- gé -- ni -- te, Je -- su Chri -- ste.
-Dó -- mi -- ne De -- us, A -- gnus De -- i, Fí -- li -- us Pa -- tris,
-qui tol -- lis pec -- cáta mundi, mi -- se -- ré -- re no -- bis;
-qui tol -- lis pec -- cáta mundi, sus -- ci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram;
-Qui se -- des ad déx -- te -- ram Pa -- tris, mi -- se -- ré -- re no -- bis.
-Quó -- ni -- am tu so -- lus Sanc -- tus,
-tu so -- lus Dó -- mi -- nus,
-tu so -- lus Al -- tís -- si -- mus, Ie -- su Chri -- ste,
-cum Sanc -- to Spí -- ri -- tu, in gló -- ria De -- i Pa -- tris.
-Amen.
+%  Dó -- mi -- ne Fi -- li U -- ni -- gé -- ni -- te, Je -- su Chri -- ste.
+% Dó -- mi -- ne De -- us, A -- gnus De -- i, Fí -- li -- us Pa -- tris,
+% qui tol -- lis pec -- cáta mundi, mi -- se -- ré -- re no -- bis;
+% qui tol -- lis pec -- cáta mundi, sus -- ci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram;
+% Qui se -- des ad déx -- te -- ram Pa -- tris, mi -- se -- ré -- re no -- bis.
+% Quó -- ni -- am tu so -- lus Sanc -- tus,
+% tu so -- lus Dó -- mi -- nus,
+% tu so -- lus Al -- tís -- si -- mus, Ie -- su Chri -- ste,
+% cum Sanc -- to Spí -- ri -- tu, in gló -- ria De -- i Pa -- tris.
+A -- men, A -- men, A -- men, A -- men, A -- men, A -- men, A -- men
 }
 
 womenMusic = \relative c' {
   r4. r2. r4.
-  fis4. e4. e4. fis4.
-  g4. fis4. e4. g4.
+  fis4. (e4.) e4. fis4.
+  g4. b e, g4.
   g4. fis4. g4.
   d'4. a4. g4.
+  r4. r4. r4.
+  b4 d8 e c g cis4 e8 fis d a
+  b8 a fis g e g g4 fis8 g4.
+  r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
+  b4 d8 e (c) g cis4 e8 fis (d) a | \break
+  dis4 (fis8) e c (g)
+  \override TextSpanner.bound-details.left.text =
+  \markup { \upright \bold "rit." }
+  c8\startTextSpan  a16 g16 a8 b2.\stopTextSpan \fermata
   }
 womenLyrics = \lyricmode {
+  ter -- ra pax
+  vo -- lun -- tá -- tis
+  Lau -- da -- mus
   }
 
 menMusic = \relative c {
   r4. r2. r4.
   b'4. a g8 e c8 d4.
-  d4. b4. a4. e'4.
+  d4. fis a e
   c4. d e
   fis4. e4. e4.
-  r4. r4. r4.
-  r4. r4. r4. r4.
-  d8 cis c b a g c d4 g,4.
+  e8 fis g c, d4 g,4.
+  g8 a b c d e a, b cis d e fis
+  fis8 dis b g' e b c a4 g4.
+  r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
+  d'8 (b) g c4 d8 e (cis) a d4 e8 `
+  fis8 (dis) b g' (e) b
+  \override TextSpanner.bound-details.left.text =
+  \markup { \upright \bold "rit." }
+  c8^\startTextSpan (a d) <g, g'>2.\stopTextSpan\fermata
   }
 menLyrics = \lyricmode {
+  ter -- ra ho -- mi -- ni -- bus
+  vo -- lun -- tá -- tis
+  Lau -- da -- mus
   }
 
 \book {
@@ -187,6 +243,7 @@ menLyrics = \lyricmode {
       >>
     >>
     \layout {
+      ragged-last = ##f
       \context {
         \Staff
           \omit TimeSignature
@@ -196,6 +253,6 @@ menLyrics = \lyricmode {
           defaultBarType = "" 
       }
     }
-    \midi { \tempo 4 = 75 }
+    \midi { }
   }
 }
