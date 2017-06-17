@@ -114,6 +114,9 @@ Amen.
 womenMusic = \relative c' {
   r4. r2. r4.
   fis4. e4. e4. fis4.
+  g4. fis4. e4. g4.
+  g4. fis4. g4.
+  d'4. a4. g4.
   }
 womenLyrics = \lyricmode {
   }
@@ -121,8 +124,12 @@ womenLyrics = \lyricmode {
 menMusic = \relative c {
   r4. r2. r4.
   b'4. a g8 e c8 d4.
-  g4. fis4. e4. b4.
+  d4. b4. a4. e'4.
   c4. d e
+  fis4. e4. e4.
+  r4. r4. r4.
+  r4. r4. r4. r4.
+  d8 cis c b a g c d4 g,4.
   }
 menLyrics = \lyricmode {
   }
