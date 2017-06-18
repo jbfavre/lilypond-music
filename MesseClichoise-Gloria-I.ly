@@ -79,7 +79,7 @@ soloMusic = \relative c' {
   \mark "Chantre"
     % Dómine Deus, Rex cæléstis,
     % Seigneur Dieur, Roi du ciel,
-    g8 fis g a4 a8 b8 c b a4. |
+    g8 fis g a4 a8 b8 c b a4. `
     % Deus Pater omnípotens.
     % Dieu le Père tout puissant.
     d4. c b8 a g g a4 b4. | \break
@@ -196,7 +196,7 @@ menMusic = \relative c {
   fis8 (dis) b g' (e) b
   \override TextSpanner.bound-details.left.text =
   \markup { \upright \bold "rit." }
-  c8^\startTextSpan (a d) <g, g'>2.\stopTextSpan\fermata
+  e8^\startTextSpan (a, <fis' \parenthesize fis,>) <\parenthesize g, g'>2.\stopTextSpan\fermata
   }
 menLyrics = \lyricmode {
   ter -- ra ho -- mi -- ni -- bus
