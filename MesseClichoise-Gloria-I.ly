@@ -86,30 +86,39 @@ soloMusic = \relative c' {
   \mark "Tous"
   % Dómine Fili Unigénite, Jesu Christe.
   % Seigneur Fils unique Jésus Christ.
+  r4.
   \mark "Chantre"
   % Dómine Deus, Agnus Dei, Fílius Patris,
   % Seigneur Dieu, Agenau de Dieu, le Fils du Père,
+  r4.
   \mark "Tous"
   % qui tollis peccáta mundi, miserére nobis;
   % toi qui enlèves le pêché du monde, prends pitié de nous;
+  r4.
   \mark "Chantre"
   % Qui tollis peccáta mundi, suscipe deprecationem nostram;
   % toi qui enlèves le pêché du monde, reçois notre prière;
+  r4.
   \mark "Tous"
   % Qui sedes ad déxteram Patris, miserére nobis.
   % Toi qui es assis à la droite du Père, prends pitié de nous
+  r4.
   \mark "Chantre"
   % Quóniam tu solus Sanctus,
   % Car toi seul est Saint,
+  r4.
   \mark "Tous"
   % tu solus Dóminus,
   % Toi seul es Seigneur,
+  r4.
   \mark "Chantre"
   % tu solus Altíssimus, Iesu Christe,
   % toi seul est le très haut, Jésus Christ
+  r4.
   \mark "Tous"
   % cum Sancto Spíritu, in glória Dei Patris.
   % avec le Saint Esprit, dans la gloire de Dieu le Père.
+  r4.
   \mark "Tous"
     % Amen, Amen
     g8 (a) b c (d) e `
@@ -133,7 +142,6 @@ soloLyrics = \lyricmode {
   pro -- pter ma -- gnam gló -- ri -- am tu -- am,
   Dó -- mi -- ne De -- us, Rex cæ -- lés -- tis,
   De -- us Pa -- ter om -- ní -- po -- tens.
-
 %  Dó -- mi -- ne Fi -- li U -- ni -- gé -- ni -- te, Je -- su Chri -- ste.
 % Dó -- mi -- ne De -- us, A -- gnus De -- i, Fí -- li -- us Pa -- tris,
 % qui tol -- lis pec -- cáta mundi, mi -- se -- ré -- re no -- bis;
@@ -143,11 +151,11 @@ soloLyrics = \lyricmode {
 % tu so -- lus Dó -- mi -- nus,
 % tu so -- lus Al -- tís -- si -- mus, Ie -- su Chri -- ste,
 % cum Sanc -- to Spí -- ri -- tu, in gló -- ria De -- i Pa -- tris.
-A -- men, A -- men, A -- men, A -- men, A -- men, A -- men, A -- men
+  A -- men, A -- men, A -- men, A -- men, A -- men, A -- men, A -- men
 }
 
 womenMusic = \relative c' {
-  r4. r2. r4.
+  r4. r4 r4 r4 r4.
   fis4. (e4.) e4. fis4.
   g4. b e, g4.
   g4. fis4. g4.
@@ -155,7 +163,10 @@ womenMusic = \relative c' {
   r4. r4. r4.
   b4 d8 e c g cis4 e8 fis d a
   b8 a fis g e g g4 fis8 g4.
+
   r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
+  r4. r4. r4. r4. r4. r4. r4. r4. r4.
+
   b4 d8 e (c) g cis4 e8 fis (d) a | \break
   dis4 (fis8) e c (g)
   \override TextSpanner.bound-details.left.text =
@@ -169,7 +180,7 @@ womenLyrics = \lyricmode {
   }
 
 menMusic = \relative c {
-  r4. r2. r4.
+  r4. r4 r4 r4 r4.
   b'4. a g8 e c8 d4.
   d4. fis a e
   c4. d e
@@ -177,7 +188,10 @@ menMusic = \relative c {
   e8 fis g c, d4 g,4.
   g8 a b c d e a, b cis d e fis
   fis8 dis b g' e b c a4 g4.
+
   r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
+  r4. r4. r4. r4. r4. r4. r4. r4. r4.
+
   d'8 (b) g c4 d8 e (cis) a d4 e8 `
   fis8 (dis) b g' (e) b
   \override TextSpanner.bound-details.left.text =
