@@ -51,27 +51,29 @@ setLyricSize = { \override LyricText #'font-size = #-1.5 }
 melodie =   \relative c' {
     \time 3/8
     \key g \minor
-      d8 g a bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
-      d8 g a bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
-      a4. c8 bes a bes4. a4. g4 a8 bes a g a4.~ a \break
-      g4 g8 a bes c d4. ees4. d4 c8 bes4 c8 d4.~ d \break
-      g,4  g8 a bes c d4. c4. bes8 c d bes4 a8 g4.~ g \break
+      \partial 8
+      d8
+      g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ \break
+      g4 d8 g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
+      a4. c8 bes a bes4. a4. g4 a8 bes a g a4.~ \break
+      a4 g8 g4 a8 bes4 c8 d4. ees4. d4 c8 bes4 c8 d4.~ d \break
+      g,4  g8 a bes c d4. c4. bes8 c d bes4 a8 g4.~ \break
 
-      d8 g a bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
-      d8 g a bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
+      g4 d8 g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ \break
+      g4 d8 g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
       a4 a8 c8 bes a bes4. a4. g4 a8 bes a g a4.~ a \break
       g4  g8 a bes c d4. c4. bes8 c d bes4 a8 g4.~ g
   }
 
 hommesMusique = \relative c' {
-    g4. g4 a8 bes4. g c,4. d4. g,4.~ g
+    r8 g4. g4 a8 bes4. g c,4. d4. g,4.~ g
     g'4. fis4. f e <es g> d4 c8 bes4.~ bes
   }
 hommesParoles = \lyricmode {
 }
 
 femmesMusique = \relative c' {
-    <bes' d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
+    r8 <bes' d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
     d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
   }
 femmesParoles = \lyricmode {
