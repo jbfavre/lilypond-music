@@ -55,7 +55,7 @@ melodie =   \relative c' {
       d8
       g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ \break
       g4 d8 g4 a8 bes4 c8 d4. bes4. c8 d8 c bes4 a8 g4.~ g \break
-      a4. c8 bes a bes4. a4. g4 a8 bes a g a4.~ \break
+      a4. c8 d c bes4. a4. g4 a8 bes8 a g a4.~ \break
       a4 g8 g4 a8 bes4 c8 d4. ees4. d4 c8 bes4 c8 d4.~ d \break
       g,4  g8 a bes c d4. c4. bes8 c d bes4 a8 g4.~ \break
 
@@ -66,15 +66,35 @@ melodie =   \relative c' {
   }
 
 hommesMusique = \relative c' {
-    r8 g4. g4 a8 bes4. g c,4. d4. g,4.~ g
-    g'4. fis4. f e <es g> d4 c8 bes4.~ bes
+    \key g \minor
+      r8 g4. g4 a8 bes4. g c,4. d4. g,4.~ g
+      g'4. fis4. f e <es g> d4 c8 bes4.~ bes
+      ees4.~ ees d4. c4. bes4 c8~ c8 cis4 d4.~ d4
+  
+      r8 r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4
+  
+      r8 g4. g4 a8 bes4. g c,4. d4. g,4.~ g
+      g'4. fis4. f e <es g> d4 c8 bes4.~ bes
+      ees4.~ ees d4. c4. bes4 c8~ c8 cis4 d4.~ d4.
+  
+      r4. r4. r4. r4. r4. r4. r4. r4.
   }
 hommesParoles = \lyricmode {
 }
 
 femmesMusique = \relative c' {
-    r8 <bes' d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
-    d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
+    \key g \minor
+      r8 <bes' d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
+      d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
+      c'4. c8 bes a g4. fis4. ees4 ees8~ ees8 e4 fis4.~ fis4
+  
+      r8 r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4
+  
+      r8 <bes d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
+      d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
+      c'4. c8 bes a g4. fis4. ees4. ees4 e8 fis4.~ fis4.
+  
+      r4. r4. r4. r4. r4. r4. r4. r4.
   }
 femmesParoles = \lyricmode {
 }
