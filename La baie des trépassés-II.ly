@@ -67,7 +67,7 @@ melodie =   \relative c' {
 
 hommesMusique = \relative c' {
     \key g \minor
-      r8 g4. g4 a8 bes4. g c,4. d4. g,4.~ g
+      r8 g4. g4 a8 bes4. g ees4. d4. g,4.~ g
       g'4. fis4. f e <es g> d4 c8 bes4.~ bes
       ees4.~ ees d4. c4. bes4 c8~ c8 cis4 d4.~ d4
   
@@ -84,7 +84,7 @@ hommesParoles = \lyricmode {
 
 femmesMusique = \relative c' {
     \key g \minor
-      r8 <bes' d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
+      r8 <bes' d>4. d4 ees8 bes4. d4. ees4. d4 c8 bes4.~ bes
       d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
       c'4. c8 bes a g4. fis4. ees4 ees8~ ees8 e4 fis4.~ fis4
   
@@ -92,7 +92,7 @@ femmesMusique = \relative c' {
   
       r8 <bes d>4. d4 ees8 d4. d4. ees4. d4 c8 bes4.~ bes
       d4 ees8 d4 c8 d4. g,4. bes fis4. d4.~ d
-      c'4. c8 bes a g4. fis4. ees4. ees4 e8 fis4.~ fis4.
+      c'4. c8 bes a g4. fis4. ees4 ees8~ ees8 e4 fis4.~ fis4.
   
       r4. r4. r4. r4. r4. r4. r4. r4.
   }
