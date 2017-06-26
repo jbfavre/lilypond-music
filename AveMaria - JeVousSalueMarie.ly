@@ -67,7 +67,7 @@ latinLyrics = \lyricmode {
 
 sopranoMusic =   \relative c' {
       fis4 (eis) fis fis (gis) ais b2 (b4)
-      gis (a) fis fis2. (fis4) gis2 a2. \fermata \break
+      gis (b) gis a2. (fis4) gis2 a2. \fermata \break
       gis2 (ais4) b2 b4 b4 (d b) cis2 cis4 cis b cis a gis ais b a fis a2 (gis4) \break
       fis2 (gis4) a2 (cis4) b (gis b) a2 gis4 fis gis ais b cis d \break
       cis (a cis) cis2 (b4) ais (gis) ais b (gis) b a gis fis fis2. eis2. \break
@@ -93,14 +93,19 @@ bassMusic = \relative c {
 
 pianoone = \relative c' {
   <fis cis a>4 <eis cis gis>4 <fis cis a>4 <fis cis a>4 <b, e gis>4 <cis e fis ais> <d fis b>2~ <d gis b>4
-  <b d gis>4~ <b d a'>4~ <b d fis>4  <a cis fis>2. <a cis fis>4 ~ <gis cis eis>8~ <gis cis dis>8~ <gis cis eis>4  <a cis fis>2. \fermata
+  <b d gis>4~ <b d b'>4~ <b d fis>4  <a cis fis>2. <a cis fis>4 ~ <gis cis eis>8~ <gis cis dis>8~ <gis cis eis>4  <a cis fis>2. \fermata
   <b e gis>2 <cis e fis ais>4 <d fis b>2 <d fis b>4 <d gis b>4 <gis b d>4 <d fis b>4 < eis gis cis>2
   <eis gis cis>4 <d fis a cis>2. <cis fis a>2 <cis e fis ais>4 <d fis b>2 <a d fis>4 <cis eis a>2~ <cis eis gis>4
   <a d fis>2  <cis eis gis>4 <cis fis a>2 <cis e fis ais>4 <d fis b>4 <b d gis>4 <d fis b>4 <cis eis a>2 <cis eis gis>4
+  r2. r2. r2. r2. r2. r2. r2. r2. r2. 
+  <fis ais cis>2. <e fis ais cis>2. <d fis b>2 <d gis b>4 <eis gis cis>2.
 }
 pianotwo = \relative c {
       fis4 cis fis fis e cis d2 gis4
       b,4 d b a2 b4 cis~ cis2 <fis fis,>2. \fermata
+      r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. 
+      r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. r2.
+      ais2. fis2 e4 d4 gis fis eis2.
 }
 \score {
   \new GrandStaff <<
