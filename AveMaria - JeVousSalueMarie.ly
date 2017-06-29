@@ -43,14 +43,12 @@ setLyricSize = { \override LyricText #'font-size = #-1.5 }
   right-margin = 0.725\in
   top-margin = 0.625\in
   bottom-margin = 0.625\in
-
   max-systems-per-page = #9
-
 }
 
 global = {
-    \time 3/4
-    \key fis \minor
+  \time 3/4
+  \key fis \minor
 }
 
 latinLyrics = \lyricmode {
@@ -60,35 +58,35 @@ latinLyrics = \lyricmode {
   Et be -- ne -- di -- ctus fru -- ctus ven -- tris tu -- i, Je -- sus!
   San -- cta Ma -- ri -- a, Ma -- ter De -- i,
   O -- ra pro no -- bis, pec -- ca -- to -- ri -- bus,
-
+  
   Nunc, et in o -- ra mo -- rtis no -- stræ.
   A -- men
 }
 
 sopranoMusic =   \relative c' {
-      fis4 (eis) fis fis (gis) ais b2 (b4)
-      gis (b) gis a2. (fis4) gis2 a2. \fermata \break
-      gis2 (ais4) b2 b4 b4 (d b) cis2 cis4 cis b cis a gis ais b a fis a2 (gis4) \break
-      fis2 (gis4) a2 (cis4) b (gis b) a2 gis4 fis gis ais b cis d \break
-      cis (a cis) cis2 (b4) ais (gis) ais b (gis) b a gis fis fis2. eis2. \break
-      cis'2. cis2 cis4 d2. cis2 (b4) ais2. b2. a2 a4 gis2. \break
-      fis2. e d cis b2. a2 gis4 cis2. cis2.
-      fis2.~ fis2. eis2.~ eis2.
+  fis4 (eis) fis fis (gis) ais b2 (b4)
+  gis (b) gis a2. (fis4) gis2 a2. \fermata \break
+  gis2 (ais4) b2 b4 b4 (d b) cis2 cis4 cis b cis a gis ais b a fis a2 (gis4) \break
+  fis2 (gis4) a2 (cis4) b (gis b) a2 gis4 fis gis ais b cis d \break
+  cis (a cis) cis2 (b4) ais (gis) ais b (gis) b a gis fis fis2. eis2. \break
+  cis'2. cis2 cis4 d2. cis2 (b4) ais2. b2. a2 a4 gis2. \break
+  fis2. e d cis b2. a2 gis4 cis2. cis2.
+  fis2.~ fis2. eis2.~ eis2.
 }
 
 altoMusic = \relative c' {
-      cis'4 gis a a (gis) fis fis2~ fis4
-      b a gis fis2. (fis4) eis8 (dis8 eis4) fis2. \fermata
+  cis'4 gis a a (gis) fis fis2~ fis4
+  b a gis fis2. (fis4) eis8 (dis8 eis4) fis2. \fermata
 }
 
 tenorMusic = \relative c {
-      a'4 b cis cis (b) cis d2~ d4
-      fis4 gis d cis (d a gis) cis (b) cis2. \fermata
+  a'4 b cis cis (b) cis d2~ d4
+  fis4 gis d cis (d a gis) cis (b) cis2. \fermata
 }
 
 bassMusic = \relative c {
-      fis4 cis fis fis (e) cis d2~ d4
-      b4 d b a2. (b4) cis2 <fis fis,>2. \fermata
+  fis4 cis fis fis (e) cis d2~ d4
+  b4 d b a2. (b4) cis2 <fis fis,>2. \fermata
 }
 
 pianoone = \relative c' {
@@ -102,58 +100,47 @@ pianoone = \relative c' {
   <cis e fis ais>2. <d fis b>2 <d gis b>4 <d fis a>2 <cis fis a>4 <cis eis gis>2.
 }
 pianotwo = \relative c {
-      fis4 cis fis fis e cis d2 gis4
-      b,4 d b a2 b4 cis~ cis2 <fis fis,>2. \fermata
-      r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. 
-      r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. r2.
-      cis2. fis2 e4 d4 cis b eis2.
-      fis2 e4 d e fis b, d fis gis2.
+  fis4 cis fis fis e cis d2 gis4
+  b,4 d b a2 b4 cis~ cis2 <fis fis,>2. \fermata
+  r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. 
+  r2. r2. r2. r2. r2. r2. r2. r2. r2. r2. r2.
+  cis2. fis2 e4 d4 cis b eis2.
+  fis2 e4 d e fis b, d fis gis2.
 }
 \score {
   \new GrandStaff <<
     \new ChoirStaff <<
-        \new Staff \with { instrumentName = \markup {\right-align "Soprano"} }
-            <<
-              \setStaffElements \global \clef treble
-              \new Voice = "soprano" { \sopranoMusic }
-              \new Lyrics \lyricsto "soprano" { \latinLyrics }
-            >>
-        \new Staff \with { instrumentName = \markup {\right-align "Alto"} }
-        <<
-              \setStaffElements \global \clef treble
-              \new Voice = "alto" { \altoMusic }
-              \new Lyrics \lyricsto "soprano" { \latinLyrics }
-        >>
-        \new Staff \with { instrumentName = \markup {\right-align "Tenor"} }
-        <<
-              \setStaffElements \global \clef "treble_8"
-              \new Voice = "tenor" { \tenorMusic }
-            \new Lyrics \lyricsto "soprano" { \latinLyrics }
-        >>
-        \new Staff \with { instrumentName = \markup {\right-align "Basse"} }
-        <<
-              \setStaffElements \global \clef bass
-              \new Voice = "bassi" { \bassMusic }
-            \new Lyrics \lyricsto "soprano" { \latinLyrics }
-        >>
+      \new Staff \with { instrumentName = \markup {\right-align "Soprano"} } <<
+        \setStaffElements \global \clef treble
+        \new Voice = "soprano" { \sopranoMusic }
+        \new Lyrics \lyricsto "soprano" { \latinLyrics }
+      >>
+      \new Staff \with { instrumentName = \markup {\right-align "Alto"} } <<
+        \setStaffElements \global \clef treble
+        \new Voice = "alto" { \altoMusic }
+        \new Lyrics \lyricsto "soprano" { \latinLyrics }
+      >>
+      \new Staff \with { instrumentName = \markup {\right-align "Tenor"} } <<
+        \setStaffElements \global \clef "treble_8"
+        \new Voice = "tenor" { \tenorMusic }
+        \new Lyrics \lyricsto "soprano" { \latinLyrics }
+      >>
+      \new Staff \with { instrumentName = \markup {\right-align "Basse"} } <<
+        \setStaffElements \global \clef bass
+        \new Voice = "bassi" { \bassMusic }
+        \new Lyrics \lyricsto "soprano" { \latinLyrics }
+      >>
     >>
-    \new PianoStaff
-    <<
-      \new Staff
-      {
+    \new PianoStaff <<
+      \new Staff {
         \setStaffElements
         \global \clef treble
-        \new Voice {
-          \pianoone
-        }
+        \new Voice { \pianoone }
       }
-      \new Staff
-      {
+      \new Staff {
         \setStaffElements
         \global \clef bass
-        \new Voice {
-          \pianotwo
-        }
+        \new Voice { \pianotwo }
       }
     >>
   >>
