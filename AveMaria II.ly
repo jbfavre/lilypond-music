@@ -56,23 +56,23 @@ sopranoMusic =   \relative c' {
   % mesure 9: 0'12
   r2. e2.->^\mf e2. e2.->^\f ees2.~ ees2. ees2.^\mp \fermata r2. \break
   % mesure 17: 0'24
-  ees2. ees2 ees4 e2. ees2. r2. aes,2. (aes2.) bes2 r4 \break
+  ees2.^\mf ees2 ees4 e2. ees2. r2. aes,2.^\mp (aes2.) bes2 r4 \break
   % mesure 25: 0'36
-  ees2. ees2 ees4 f2. ees2. r2. ges,2. aes2. g2 r4 \break
+  ees2.^\mf ees2 ees4 f2. ees2. r2. ges,2.^\mp aes2. g2 r4 \break
   % mesure 33: 0'48
-  r4 ees4 ees4 e2 e4 ees4 des ees e e e ees r2 \break
+  r4 ees4^\mp ees4 e2 e4 ees4 des ees e e e ees r2 \break
   % mesure 38: 0'55
-  aes4 (bes4) ges4 aes2 aes4 r2. r2 ees4 \break
+  aes4^\mf (bes4) ges4 aes2 aes4 r2. r2 ees4^\mf \break
   % mesure 42: 1'01
   des'4 des4 des4 des2 c4 bes4 bes4 bes4 bes2 aes4 \break
   % mesure 46: 1'07
-  ges2 ges4 f2 f'4 des4 c4 bes4 ees2 aes,4 des4 (bes2) c2. \fermata \break
+  ges2 ges4 f2^\f f'4 des4 c4 bes4 ees2 aes,4 des4 (bes2) c2. \fermata \break
   % mesure 52: 1'16
-  c2. c2 c4 des2. bes2. r2. r2. r2. r2. \break
+  c2.^\pp c2 c4 des2. bes2. r2. r2. r2. r2. \break
   % mesure 60: 1'28
-  b2 b4 bes2 bes4 aes2. e2. (b2.) des2. ees2. ees2. \fermata \break
+  b2^\mp b4 bes2 bes4 aes2. e2.->^\p (b2.) des2. ees2.^\ppp ees2. \fermata \break
   % mesure 68: 1'40
-  aes2.^\f ges e aes g^\ff (aes bes g) aes
+  aes2.^\mf ges e aes g^\f (aes bes g) aes
 }
 
 altoMusic = \relative c' {
@@ -80,23 +80,23 @@ altoMusic = \relative c' {
   % mesure 9: 0'12
   aes2.->^\mf  aes2. a2.->^\f~ a2. aes2.~ aes2. g2.^\mp \fermata r2.
   % mesure 17: 0'24
-  r2. c2. des2. bes2 r4 ees,2. ees2 ees4 e2. ees2.
+  r2. c2.^\mp des2. bes2 r4 ees,2.^\mf ees2 ees4 e2. ees2.
   % mesure 25: 0'36
-  r2. ges2. aes2. g2 r4 ees2. ees2 ees4 f2. ees2.
+  r2. ges2.^\mp aes2. g2 r4 ees2.^\mf ees2 ees4 f2. ees2.
   % mesure 33: 0'48
-  r2. aes4 (a) g aes2 aes4 r2. ees2.
+  r2. aes4^\mf (a) g aes2 aes4 r2. ees2.->^\p
   % mesure 38: 0'55
-  e2. ees2. e2. r2.
+  e2.-> ees2.-> e2.-> r2.
   % mesure 42: 1'01
-  bes2. c2. des2. c2.
+  bes2.->^\mf c2.-> des2.-> c2.->
   % mesure 46: 1'07
-  aes2. aes2. bes2. des2. des2. c2.
+  aes2.^\f aes bes des des c
   % mesure 52: 1'16
-  r2. r2. r2. r2. ees2. ees2. des2 des4 ees2.
+  r2. r2. r2. r2. ees2.^\pp ees2. des2 des4 ees2.
   % mesure 60: 1'28
-  r4 aes4\staccato aes4\staccato aes2 aes4\staccato r2. r4 aes4\staccato aes4\staccato aes2 aes4\staccato r2. aes2. bes2.
+  r4 aes4^\mp\staccato aes4\staccato aes2 aes4\staccato r2. r4 aes4^\p\staccato aes4\staccato aes2 aes4\staccato r2. aes2.^\ppp bes2.
   % mesure 68: 1'40
-  b,2.^\f c2. des2. b2. bes2.^\ff (des2. g2. des2.) ees2.
+  b,2.^\mf c2. des2. b2. bes2.^\f (des2. g2. des2.) ees2.
 }
 
 tenorMusic = \relative c {
@@ -104,23 +104,23 @@ tenorMusic = \relative c {
   % mesure 9: 0'12
   r2. r2. des2.->^\mf g2. b,2.->^\f b4 (bes4 aes4) bes2.^\mp \fermata r2.
   % mesure 17: 0'24
-  aes'2. ges2 ges4 aes2. g2. r2. c,2. des2. (bes2) r4
+  aes'2.^\mf ges2 ges4 aes2. g2. r2. c,2.^\mp des2. (bes2) r4
   % mesure 25: 0'36
-  aes'2. ges2 ges4 des2. bes2. r2. ges2. aes2. g2 r4
+  aes'2.^\mf ges2 ges4 des2. bes2. r2. ges2.^\mp aes2. g2 r4
   % mesure 33: 0'48
-  c2. des2. c2. des2. aes2.
+  c2.->^\p des2.-> c2.-> des2.-> r4 aes2->^\p
   % mesure 38: 0'55
-  aes2. aes2. aes2. r2.
+  r4 aes2-> r4 aes2-> r4 aes2-> r2.
   % mesure 42: 1'01
-  r4 ees'4 ees ees ees e g g g g g f4
+  r4 ees'4^\mf ees ees ees e g g g g g f4
   % mesure 46: 1'07
-  ees2. ees4 des2 f2. g2. ees2. ees2.
+  ees2. ees4 des2^\f f2. g2. ees2. ees2.
   % mesure 52: 1'16
-  ees2. ees2 ees4 e2. ees2. r2. r2. r2. r2.
+  ees2.^\pp ees2 ees4 e2. ees2. r2. r2. r2. r2.
   % mesure 60: 1'28
-  ees2. r2. r4 e4\staccato e4\staccato des2 des4\staccato r2. r4 aes4\staccato aes4\staccato aes2. g2.
+  ees2.^\mp r2. r4 e4^\p\staccato e4\staccato des2 des4\staccato r2. r4 aes4^\pp\staccato aes4\staccato aes2.^\ppp g2.
   % mesure 68: 1'40
-  ees'2.^\f ees e e ees^\ff (e ees des) c
+  ees'2.^\mf ees e e ees^\f (e ees des) c
 }
 
 bassMusic = \relative c {
@@ -128,23 +128,23 @@ bassMusic = \relative c {
   % mesure 9: 0'12
   <e e'>2.~ (<e e'>2. <des des'>2.^\f~ <des des'>2.) <ees ees'>2.~ <ees ees'>2.^\f~ <ees ees'>2.^\mf \fermata r2.
   % mesure 17: 0'24
-  r2. aes2. aes2. bes2 r4 aes2. ges2 ges4 aes2. g2.
+  r2. aes2.^\mp aes2. bes2 r4 aes2.^\mf ges2 ges4 aes2. g2.
   % mesure 25: 0'36
-  r2. ges'2. aes2. g2 r4 aes,2. ges2 ges4 <des' des,>2. <ees ees,>2.
+  r2. ges'2.^\mp aes2. g2 r4 aes,2.^\mf ges2 ges4 <des' des,>2. <ees ees,>2.
   % mesure 33: 0'48
-  aes,2. aes2. aes2. aes2. r4 c4 c4
+  r4^\p aes,2-> r4 aes2-> r4 aes2-> r4 aes2-> r4 c4^\mp c4
   % mesure 38: 0'55
   des2 des4 c4 bes4 c4 des4 des4 des4 c4 r2
   % mesure 42: 1'01
-  g'2. aes2. e2. f2.
+  g'2.->^\mf aes2.-> e2.-> f2.->
   % mesure 46: 1'07
-  c2. des2. bes2. (ees2) aes,4 ees2. aes2.
+  c2.^\f des2. bes2. (ees2) aes,4 ees2. aes2.
   % mesure 52: 1'16
-  r2. r2. r2. r2. aes2. ges2. f2 f4 g2.
+  r2. r2. r2. r2. aes2.^\pp ges2. f2 f4 g2.
   % mesure 60: 1'28
-  aes2. r4 aes4\staccato aes4\staccato aes2 aes4\staccato r2. r4 aes4\staccato aes4\staccato aes2 aes4\staccato ees2. ees2. \fermata
+  aes2.^\mp r4 aes4^\p\staccato aes4\staccato aes2 aes4\staccato r2. r4 aes4^\pp\staccato aes4\staccato aes2 aes4\staccato ees2.\mp ees2. \fermata
   % mesure 68: 1'40
-  aes'2.^\f c2. des2. des,2. des'2.^\ff (b2. bes2. ees,2.) <aes aes,>2.
+  aes'2.^\mf c2. des2. des,2. des'2.^\f (b2. bes2. ees,2.) <aes aes,>2.
 }
 
 \score {
@@ -212,5 +212,15 @@ bassMusic = \relative c {
     >>
   >>
   \layout { ragged-last = ##f }
-  \midi { \tempo 4. = 80 }
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+    \tempo 4. = 80
+  }
 }
