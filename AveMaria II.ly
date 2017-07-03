@@ -114,6 +114,7 @@ tenorMusic = \relative c {
   % mesure 42: 1'01
   r4 ees'4^\mf ees ees ees e g g g g g f4
   % mesure 46: 1'07
+  % FIXME
   ees2. ees4 des2^\f f2. g2. ees2. ees2.
   % mesure 52: 1'16
   ees2.^\pp ees2 ees4 e2. ees2. r2. r2. r2. r2.
