@@ -30,7 +30,7 @@ setNoteSize = {
 setLyricSize = { \override LyricText #'font-size = #-1.5 }
 
 \header {
-  title = "Ave Maria II"
+  title = "Ave Maria"
   composer = "Jean Baptiste Favre"
   arranger = "Clichy - 2017"
   tagline = ##f
