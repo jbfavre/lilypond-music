@@ -15,15 +15,16 @@ soprano = \relative c'' {
   g4 a bes2 bes4 g a bes c2~ c \break
   c4 d ees ees d c d2~ d \break
   d4 d c bes c2 c  \break
-  c4 d ees ees d c d2 d  \break
+  c4 d ees ees d c d d  \break
   c4 bes a a g f g2~ g \break
-
-  bes4 bes ees2 ees4 ees d2 d4 d d2 c4 bes c2  \break
+  bes4 bes ees2 ees4 ees d2 d4 d d2 c4 bes c2~ c  \break
   c2 bes4 c d2 ees4 d c2 bes2 \break
-  bes2 a4 g fis g a c bes2~ bes4 a bes c d ees c ees d2 \break
+  bes2 a4 g f g a c bes2~ \break 
+  bes4 a bes c d ees c ees d2 \break
   d2 c4 bes a g f2 g4 a bes2 a bes \break
-  g4 a bes c d ees d2~ d \break
-  bes (a bes c) d2 \break
+  %g4 a bes c d ees d2~ d \break
+  bes4 bes c bes a g f2~ f \break
+  g (a bes c) d2 \break
   c4 (d ees2 d4 c) d2~ d \break
   c2~ c4 (bes a2 c2) d
 }
@@ -40,6 +41,7 @@ tenor = \relative c' {
 
 bass = \relative c {
   \global
+  g'4 d g2 (g4) g f d c2~ c
 }
 
 verseOne = \lyricmode {
