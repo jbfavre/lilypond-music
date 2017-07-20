@@ -12,6 +12,7 @@ global = {
 
 soprano = \relative c'' {
   \global
+  g4 a bes2 bes2 r2 r2 \break
   g4 a bes2 bes4 g a bes c2~ c \break
   c4 d ees ees d c d2~ d \break
   d4 d c bes c2 c  \break
@@ -19,9 +20,9 @@ soprano = \relative c'' {
   c4 bes a a g f g2~ g \break
   bes4 bes ees2 ees4 ees d2 d4 d d2 c4 bes c2~ c  \break
   c2 bes4 c d2 ees4 d c2 bes2 \break
-  bes2 a4 g f g a c bes2~ \break 
+  bes2 a4 g fis g a c bes2~ \break 
   bes4 a bes c d ees c ees d2 \break
-  d2 c4 bes a g f2 g4 a bes2 a bes \break
+  d2 c4 bes a g fis2 g4 a bes2 a bes \break
   %g4 a bes c d ees d2~ d \break
   bes4 bes c bes a g f2~ f \break
   g (a bes c) d2 \break
@@ -41,11 +42,14 @@ tenor = \relative c' {
 
 bass = \relative c {
   \global
-  g'4 d g2 (g4) g f d c2~ c
+  g'4 g g2 g4 g,~ g2~ g
+  g'4 g g2 (g4) g f d ees2~ ees
+  c4 c a a fis fis g2 g
 }
 
 verseOne = \lyricmode {
   \set stanza = "1."
+  No -- tre Pè -- re,
   No -- tre Pè -- re, qui êtes aux cieux,
   Que ton nom soit sanc -- ti -- fié,
   Que ton rè -- gne vien -- ne,

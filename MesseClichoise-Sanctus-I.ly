@@ -48,8 +48,9 @@ soloLyrics = \lyricmode {
 }
 
 womenMusic = \relative c' {
-  gis'4 fis8 (e) dis e fis8 (gis4) e (dis8)
-  b'8 a b cis a cis b (a16 gis16) a8 b4.
+  gis'8 (fis) gis e4 e8 dis8 (cis4) dis4.
+  a8 
+  %b'8 a b cis a cis b (a16 gis16) a8 b4.
   }
 womenLyrics = \lyricmode {
   San -- ctus, San -- ctus, San -- ctus,
@@ -57,8 +58,8 @@ womenLyrics = \lyricmode {
   }
 
 menMusic = \relative c {
-  e8 (dis) e a,4 cis8 dis (e4) b4.
-  cis8 cis b a (gis) a fis b4 <\parenthesize e, e'>
+  e4 e8 a4 gis8 fis (e ais) b4.
+  cis,8 b8 a gis dis' e a, b4 <e \parenthesize e,>4.
   }
 menLyrics = \lyricmode {
   San -- ctus, San -- ctus, San -- ctus,

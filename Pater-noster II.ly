@@ -31,7 +31,7 @@ soprano = \relative c'' {
   % mesure 67: 0'52
   f,4 g a2 bes4 cis d bes a2 a4 g a2~ a4 bes4 g cis d2 \break
   % mesure 78: 
-  f4 g a2~ a4 a bes4 (g) a2 g4 a bes cis d2 cis\break
+  f,4 g a2~ a4 a bes4 (g) a2 g4 a bes cis d2 cis\break
   % mesure 87: 
   a2 a4 a f'2~ f4 e d2 cis d2~ d \break
   % mesure 95: 
@@ -52,8 +52,8 @@ alto = \relative c' {
   d'2 a4 bes d2 d4 d d2 (d4 e f g) f d
   d2 bes4 a g2 a g~ g
   a'2 g4 f e2 f4 g a2 f a4 g f e f2
-  a,4 bes d2 d4 e f d d2 bes4 a bes d d2~ d4 bes g2~ g
-  a4 bes d2~ d4 d d bes d2 bes4 d d e f2 e
+  a,4 bes d2 d4 e f d d2 d4 bes d d2~ d4 bes e4 f2
+  a,4 bes d2~ d4 d d bes d2 bes4 d d e f2 e
   d2 d4 d a'2~ a4 g f2 e d~ d
   a'2~ a4 g f2 (e4) f g2 (a4 e) f2~ f
 }
@@ -71,7 +71,7 @@ tenor = \relative c' {
 
 bass = \relative c {
   \global
-  d2 d2 d2~ d \fermata 
+  d4 d d2 d2~ d \fermata 
   d4 d d2 d4 d d d g2~ g d~ d
   d4 d d d a2 a4 a d2 d~ d
   % mesure 20: 0'15

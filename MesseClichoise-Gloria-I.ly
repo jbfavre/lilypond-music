@@ -207,7 +207,7 @@ menLyrics = \lyricmode {
 \book {
   \markup { \vspace #1 }
   \markup { "L'introduction est entonnée par le prêtre (à défaut par le chantre)" }
-  \markup { "Le chantre prned la suite en alternance avec l'assemblée" }
+  \markup { "Le chantre prend la suite en alternance avec l'assemblée" }
   \markup { "La première intervention de l'assemblée est le " \bold "Laudámus te" }
   \markup { \vspace #1 }
   \score {
