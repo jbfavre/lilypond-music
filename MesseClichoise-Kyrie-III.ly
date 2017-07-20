@@ -38,7 +38,7 @@ soloMusic = \relative c' {
     \mark \default
     \repeat volta 2 { c4 (des) c4. bes8 aes (g) aes (bes) g2\fermata } | \break
     \mark \default
-    \repeat volta 2 { f8 (g) aes (bes) c4 c c8 (bes16 aes) g8 (aes) f2\fermata }
+    \repeat volta 2 { f8 (g) aes (bes) c4 c c8 (bes16 aes) g4 aes2\fermata }
   }
 soloLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
@@ -47,9 +47,9 @@ soloLyrics = \lyricmode {
   }
 
 womenMusic = \relative c' {
-    f4 ees f2 f4 g8 f8 g2\fermata
-    aes2 aes4. g8 f4. g8 f4 (ees)\fermata
-    c'8 (bes) aes8 (bes16 g16) aes8 (f) d (g) c, (e) d (e) c2\fermata
+    aes'4 g f2 f4 g8 f8 e2\fermata
+    aes2 aes4. g8 f4. g8 f4 (e)\fermata
+    c'8 (bes) aes8 (bes16 g16) aes8 (g) f (ees) des (ees) e (f) c2\fermata
   }
 womenLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
@@ -58,13 +58,13 @@ womenLyrics = \lyricmode {
   }
 
 menMusic = \relative c {
-    c2 (des) d4 (f) e2\fermata
-    f2 (ees d) des2\fermata
-    aes4. aes8 des4 f bes,8 c16 des16 c8 bes8 aes2\fermata
+    f,2 (des') bes8 (c des4) c2\fermata
+    f4. f8 ees4 ees des8 des4 des8 c2\fermata
+    aes4. aes8 des4. c8 bes8 (c16 des16) c4 f,2\fermata
   }
 menLyrics = \lyricmode {
     Ky -- ri -- e
-    Chri -- ste
+    Chri -- ste, Chris -- te, e -- le -- i -- son
     Ky -- ri -- e E -- le -- i -- son
   }
 
