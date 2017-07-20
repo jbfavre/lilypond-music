@@ -54,9 +54,9 @@ global = {
 sopranoMusic =   \relative c' {
   r2. ees'2.->^\ppp ees2. r2. r2. ees2.->^\pp ees2. r2.  \break
   % mesure 9: 0'12
-  r2. e2.->^\mf e2. e2.->^\f ees2.~ ees2. ees2.^\mp \fermata r2. \break
+  r2. fes2.->^\mf fes2. fes2.->^\f ees2.~ ees2. ees2.^\mp \fermata r2. \break
   % mesure 17: 0'24
-  ees2.^\mf ees2 ees4 e2. ees2. r2. aes,2.^\mp (aes2.) bes2 r4 \break
+  ees2.^\mf ees2 ees4 fes2. ees2. r2. aes,2.^\mp (aes2.) bes2 r4 \break
   % mesure 25: 0'36
   ees2.^\mf ees2 ees4 f2. ees2. r2. ges,2.^\mp aes2. g2 r4 \break
   % mesure 33: 0'48
@@ -78,9 +78,9 @@ sopranoMusic =   \relative c' {
 altoMusic = \relative c' {
   aes'2.->~^\ppp aes2. aes2. r2. aes2.->^\pp~ aes2. aes2. r2.
   % mesure 9: 0'12
-  aes2.->^\mf  aes2. a2.->^\f~ a2. aes2.~ aes2. g2.^\mp \fermata r2.
+  aes2.->^\mf  aes2. beses2.->^\f (aeses2.) aes2.~ aes2. g2.^\mp \fermata r2.
   % mesure 17: 0'24
-  r2. c2.^\mp des2. bes2 r4 ees,2.^\mf ees2 ees4 e2. ees2.
+  r2. c2.^\mp des2. bes2 r4 ees,2.^\mf ees2 ees4 fes2 (ges4) g2.
   % mesure 25: 0'36
   r2. ges2.^\mp aes2. g2 r4 ees2.^\mf ees2 ees4 f2. ees2.
   % mesure 33: 0'48
@@ -100,13 +100,13 @@ altoMusic = \relative c' {
 }
 
 tenorMusic = \relative c {
-  r2. r2. c'2->^\ppp c4 r2. r2. r2. b2->^\pp b4 r2.
+  r2. r2. c'2->^\ppp c4 r2. r2. r2. ces2->^\pp b4 r2.
   % mesure 9: 0'12
-  r2. r2. des2.->^\mf g2. b,2.->^\f b4 (bes4 aes4) bes2.^\mp \fermata r2.
+  r2. r2. des2.->^\mf bes2. ces2.->^\f ces4 (bes4 aes4) bes2.^\mp \fermata r2.
   % mesure 17: 0'24
-  aes'2.^\mf ges2 ges4 aes2. g2. r2. c,2.^\mp des2. (bes2) r4
+  aes'2.^\mf ges2 ges4 aes2. g2. r2. c,2.^\mp des2. (ees2) r4
   % mesure 25: 0'36
-  aes'2.^\mf ges2 ges4 des2. bes2. r2. ges2.^\mp aes2. g2 r4
+  aes2.^\mf ges2 ges4 des2. bes2. r2. ges2.^\mp aes2. g2 r4
   % mesure 33: 0'48
   c2.->^\p des2.-> c2.-> des2.-> r4 aes2->^\p
   % mesure 38: 0'55
@@ -124,11 +124,11 @@ tenorMusic = \relative c {
 }
 
 bassMusic = \relative c {
-  r2. r2. r2. aes4^\p (a g) aes2.~ aes2.~ aes2. aes4^\mf (bes ges)
+  r2. r2. r2. aes4^\p (beses g) aes2.~ aes2.~ aes2. aes4^\mf (bes ges)
   % mesure 9: 0'12
-  <e e'>2.~ (<e e'>2. <des des'>2.^\f~ <des des'>2.) <ees ees'>2.~ <ees ees'>2.^\f~ <ees ees'>2.^\mf \fermata r2.
+  <fes fes'>2.~ (<fes fes'>2. <des des'>2.^\f~ <des des'>2.) <ees ees'>2.~ <ees ees'>2.^\f~ <ees ees'>2.^\mf \fermata r2.
   % mesure 17: 0'24
-  r2. aes2.^\mp aes2. bes2 r4 aes2.^\mf ges2 ges4 aes2. g2.
+  r2. aes2.^\mp aes2. bes2 r4 aes2.^\mf ges2 ges4 fes2. ees2.
   % mesure 25: 0'36
   r2. ges'2.^\mp aes2. g2 r4 aes,2.^\mf ges2 ges4 <des' des,>2. <ees ees,>2.
   % mesure 33: 0'48
