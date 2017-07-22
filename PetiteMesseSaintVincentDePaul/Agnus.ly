@@ -73,7 +73,7 @@
         \clef treble
         \new Voice {
           \relative c' {
-            <c f>4  <des g> <c aes'>2 <bes ees>4 <f' aes> <e bes'>2 <c aes'>4 <g' bes> <aes c> <g bes> <aes c,> <e g> <e f> <c e> \break
+            <c f>4  <des g> <c aes'>2 <bes g'>4 <f' aes> <e bes'>2 <c aes'>4 <g' bes> <aes c> <g bes> <aes c,> <e g> <e f> <c e> \break
             g' f g aes f2 f bes4 aes g f g2 g2 \break
             g2 (c4) bes bes (g) aes2 bes4 (aes g f) g1 \break
             g2 (c4) bes bes (g) aes2 bes4 (aes g e) f1
