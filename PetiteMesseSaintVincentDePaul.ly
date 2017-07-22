@@ -8,9 +8,11 @@
   top-margin = 2\cm
   bottom-margin = 2\cm
   max-systems-per-page = #4
-  ragged-last = ##t
 }
-
+\layout {
+  ragged-last = ##f
+}
+\midi { }
 % Needed for unmeasured "gregorian like" pieces
 \include "gregorian.ly"
 "|" = \bar "||"
@@ -54,63 +56,69 @@
       piece = "Kyrie"
       tagline = ##f
     }
+    \bookOutputSuffix "Kyrie"
+
     \markup { \vspace #2 }
     \markup { "Chaque phrase est chantée une première fois par le chantre" }
     \markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
     \markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
 
-    \new GrandStaff
-    <<
-      \new Staff \with { instrumentName = "Soliste" }
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
       <<
-        \kyrieGlobal \clef treble
-        \new Voice = "kyrieSolistVoice" { \kyrieSolistMusic }
-        \new Lyrics \lyricsto "kyrieSolistVoice" { \kyrieSolistLyrics }
-      >>
-      \new ChoirStaff
-      <<
-        \new Staff \with { instrumentName = "Soprano" }
+        \new Staff \with { instrumentName = "Soliste" }
         <<
           \kyrieGlobal \clef treble
-          \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
-          \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
+          \new Voice = "kyrieSolistVoice" { \kyrieSolistMusic }
+          \new Lyrics \lyricsto "kyrieSolistVoice" { \kyrieSolistLyrics }
         >>
-        \new Staff \with { instrumentName = "Alto" }
+        \new ChoirStaff
         <<
-          \kyrieGlobal \clef treble
-          \new Voice = "kyrieAlto" { \kyrieAltoMusic }
-          \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
+          \new Staff \with { instrumentName = "Soprano" }
+          <<
+            \kyrieGlobal \clef treble
+            \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
+            \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \kyrieGlobal \clef treble
+            \new Voice = "kyrieAlto" { \kyrieAltoMusic }
+            \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \kyrieGlobal \clef "treble_8"
+            \new Voice = "kyrieTenor" { \kyrieTenorMusic }
+            \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \kyrieGlobal \clef bass
+            \new Voice = "kyrieBasse" { \kyrieBasseMusic }
+            \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
+          >>
         >>
-        \new Staff \with { instrumentName = "Ténor" }
-        <<
-          \kyrieGlobal \clef "treble_8"
-          \new Voice = "kyrieTenor" { \kyrieTenorMusic }
-          \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
-        >>
-        \new Staff \with { instrumentName = "Basse" }
-        <<
-          \kyrieGlobal \clef bass
-          \new Voice = "kyrieBasse" { \kyrieBasseMusic }
-          \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \kyrieGlobal \kyrieSopranoMusic >>
+            << \kyrieGlobal \kyrieAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \kyrieGlobal \kyrieTenorMusic >>
+            << \kyrieGlobal \kyrieBasseMusic >>
+          >>
         >>
       >>
-      \new PianoStaff <<
-        \new Staff <<
-          \clef treble
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \kyrieGlobal \kyrieSopranoMusic >>
-          << \kyrieGlobal \kyrieAltoMusic >>
-        >>
-        \new Staff <<
-          \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \kyrieGlobal \kyrieTenorMusic >>
-          << \kyrieGlobal \kyrieBasseMusic >>
-        >>
-      >>
-    >>
+    }
   }
   %\bookpart {
   %  \paper {
@@ -132,5 +140,5 @@
   %}
 
 }
-\layout { }
-\midi { }
+\layout{}
+\midi{}
