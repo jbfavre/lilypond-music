@@ -1,99 +1,93 @@
 \version "2.18.2"
+\language "english"
 
-\header {
-  piece = "Agnus Dei"
-  tagline = ##f
+agnusGlobal = {
+  \key f \minor
+  \time 4/4
+  \tempo 4 = 80
 }
-\score {
-  \new GrandStaff <<
-    \new Staff \with {
-      instrumentName = \markup \column { "Soliste" }
-    } <<
-      \key f \minor
-      \time 4/4
-      \clef treble
-      \new Voice = "soliste" {
-        \relative c' {
-          \tempo 4. = 80
-          f4 (g) aes2 g4 (aes) bes2 aes4 bes c bes aes g f e \break
-          g f g aes f2 f bes4 aes g f g2 g2 \break
-          g2 (c4) bes bes (g) aes2 bes4 (aes g f) g1 \break
-          g2 (c4) bes bes (g) aes2 bes4 (aes g e) f1
-        }
-      }
-      \new Lyrics \lyricsto "soliste" {
-        \lyricmode {
-          A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
-          Mi -- se -- re -- re no -- bis, mi -- se -- re -- re no -- bis
-          Do -- na no -- bis pa -- cem
-          Do -- na no -- bis pa -- cem
-        }
-      }
-    >>
-    \new ChoirStaff \with {
-      instrumentName = \markup {\left-align "Chœur"}
-    } <<
-      \new Staff \with {
-        instrumentName = \markup {\right-align "voix 1"}
-      } {
-        \key f \minor
-        \time 4/4
-        \clef treble
-        \new Voice = "femmes" {
-          \relative c' {
-            c'4 des c2 bes4 f'4 e2 c4 ees ees g c, e e g
-            }
-        }
-      }
-      \new Lyrics \lyricsto "femmes" {
-        \lyricmode {
-        }
-      }
-      \new Staff \with {
-        instrumentName = \markup {\right-align "voix 2"}
-      } {
-        \key f \minor
-        \time 4/4
-        \clef bass
-        \new Voice = "hommes" {
-          \relative c {
-            aes'4 fes f2 ees4 des c2 f4 g aes e f des c c
-            }
-        }
-      }
-      \new Lyrics \lyricsto "hommes" {
-        \lyricmode {
-        }
-      }
-    >>
-    \new PianoStaff <<
-      \new Staff {
-        \key f \minor
-        \time 4/4
-        \clef treble
-        \new Voice {
-          \relative c' {
-            <c f>4  <des g> <c aes'>2 <bes g'>4 <f' aes> <e bes'>2 <c aes'>4 <g' bes> <aes c> <g bes> <aes c,> <e g> <e f> <c e> \break
-            g' f g aes f2 f bes4 aes g f g2 g2 \break
-            g2 (c4) bes bes (g) aes2 bes4 (aes g f) g1 \break
-            g2 (c4) bes bes (g) aes2 bes4 (aes g e) f1
-          }
-        }
-      }
-      \new Staff {
-        \key f \minor
-        \time 4/4
-        \clef bass
-        \new Voice {
-          \relative c {
-            <f aes>4 <fes bes> <f aes>2 <ees g>4 <des aes'> <c g'>2 <f aes>4 <ees g> <ees aes> <c e> <aes f'> <des bes> <c g> <c g>
-          }
-        }
-      }
-    >>
-  >>
-  \layout {
-    ragged-last = ##f
+
+agnusSolistMusic = \relative c' {
+    \mark \default
+    f4 (g) af2 g4 (af) bf2 af4 bf c bf af g f e \break
+    \mark \default
+    % mesure 5: 0'10
+    g f g af f2 f bf4 af g f g2 g2 \break
+    \mark \default
+    \repeat volta 2 { g2 (c4) bf bf (g) af2 }
+    \alternative {
+      { bf4 (af g f4) | g1 }
+      { bf4 (af g e4) | f1 }
+    }
   }
-  \midi { }
-}
+agnusSolistLyrics = \lyricmode {
+    A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
+    Mi -- se -- re -- re no -- bis, mi -- se -- re -- re no -- bis
+    \repeat volta 2 { Do -- na no -- bis }
+    \alternative {
+      { pa -- cem }
+      { pa -- cem }
+    }
+  }
+
+agnusSopranoMusic = \agnusSolistMusic
+agnusSopranoLyrics = \agnusSolistLyrics
+
+agnusAltoMusic = \relative c' {
+    c2. c4 ef4 (f2) g4 ef g af g af bf g g
+    bf2 c af af f (d) e1
+    
+  }
+agnusAltoLyrics = \lyricmode {
+    A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
+    Mi -- se -- re -- re no -- bis,
+    \repeat volta 2 { Do -- na no -- bis }
+    \alternative {
+      { pa -- cem }
+      { pa -- cem }
+    }
+  }
+
+agnusTenorMusic = \relative c {
+    af'4 (bf) c2 bf2. df4 c ef c c c df c c
+    e2 c af2. bf4  bf2 (b2) c1
+  }
+agnusTenorLyrics = \lyricmode {
+    A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
+    Mi -- se -- re -- re no -- bis
+    \repeat volta 2 { Do -- na no -- bis }
+    \alternative {
+      { pa -- cem }
+      { pa -- cem }
+    }
+  }
+
+agnusBasseMusic = \relative c {
+    f2. f4 ef2. ef4 af, ef' af e f df c c
+    c2. c4 df2. df4 d1 e1
+    \repeat volta 2 { c4 df e c df2. c4 }
+    \alternative {
+      { bf2 b2 c1 }
+      { bf4 b c2 f,1 }
+    }
+    
+  }
+agnusBasseLyrics = \lyricmode {
+    A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
+    Mi -- se -- re -- re no -- bis,
+    \repeat volta 2 { Do -- na no -- bis }
+    \alternative {
+      { pa -- cem }
+      { pa -- cem }
+    }
+  }
+%    \new PianoStaff <<
+%          \relative c' {
+%            <c f>4  <df g> <c af'>2 <bf g'>4 <f' af> <e bf'>2 <c af'>4 <g' bf> <af c> <g bf> <af c,> <e g> <e f> <c e> \break
+%            g' f g af f2 f bf4 af g f g2 g2 \break
+%            g2 (c4) bf bf (g) af2 bf4 (af g f) g1 \break
+%            g2 (c4) bf bf (g) af2 bf4 (af g e) f1
+%          }
+%          \relative c {
+%            <f af>4 <fes bf> <f af>2 <ef g>4 <df af'> <c g'>2 <f af>4 <ef g> <ef af> <c e> <af f'> <df bf> <c g> <c g>
+%          }
