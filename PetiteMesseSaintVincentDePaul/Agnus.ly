@@ -35,7 +35,7 @@ agnusSopranoMusic = \agnusSolistMusic
 agnusSopranoLyrics = \agnusSolistLyrics
 
 agnusAltoMusic = \relative c' {
-    c2. c4 ef4 (f2) g4 ef g af g af bf g g
+    c2. f4 g4 (f2) ef4 ef g af g af bf g g
     bf af g af af2 bf f (d) e1
   }
 agnusAltoLyrics = \lyricmode {
@@ -44,7 +44,7 @@ agnusAltoLyrics = \lyricmode {
   }
 
 agnusTenorMusic = \relative c {
-    af'4 (bf) c2 bf2. df4 c ef c c c df c c
+    af'4 (bf) c2 ef2. df4 c ef c c c df c c
     e4 f df c af2 bf  bf2 (b2) c1
   }
 agnusTenorLyrics = \lyricmode {
