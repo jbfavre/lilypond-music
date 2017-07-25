@@ -33,6 +33,7 @@ blankPage = {
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
+s\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
@@ -134,18 +135,74 @@ blankPage = {
       >>
     }
   }
-  %\bookpart {
-  %  \paper {
-  %    bookTitleMarkup = \markup { \fill-line { \fontsize #10 \fromproperty #'header:piece } }
-  %  }
-  %  \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
-  %}
-  %\bookpart {
-  %  \paper {
-  %    bookTitleMarkup = \markup { \fill-line { \fontsize #10 \fromproperty #'header:piece } }
-  %  }
-  %  \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
-  %}
+  \bookpart {
+    \paper {
+      bookTitleMarkup = \markup {
+        \fill-line { \fontsize #10 \fromproperty #'header:piece }
+      }
+    }
+    \header {
+      piece = "Gloria"
+      tagline = ##f
+    }
+
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
+      <<
+        \new Staff \with { instrumentName = "Soliste" }
+        <<
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
+          \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
+        >>
+        \new ChoirStaff
+        <<
+          \new Staff \with { instrumentName = "Soprano" }
+          <<
+            \gloriaGlobal \clef treble
+            \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
+            \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \gloriaGlobal \clef treble
+            \new Voice = "gloriaAlto" { \gloriaAltoMusic }
+            \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \gloriaGlobal \clef "treble_8"
+            \new Voice = "gloriaTenor" { \gloriaTenorMusic }
+            \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \gloriaGlobal \clef bass
+            \new Voice = "gloriaBasse" { \gloriaBasseMusic }
+            \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
+          >>
+        >>
+        %\new PianoStaff <<
+        %  \new Staff <<
+        %    \clef treble
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \kyrieGlobal \kyrieSopranoMusic >>
+        %    << \kyrieGlobal \kyrieAltoMusic >>
+        %  >>
+        %  \new Staff <<
+        %    \clef bass
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \kyrieGlobal \kyrieTenorMusic >>
+        %    << \kyrieGlobal \kyrieBasseMusic >>
+        %  >>
+        %>>
+      >>
+    }
+  }
   \bookpart {
     \paper {
       bookTitleMarkup = \markup {
