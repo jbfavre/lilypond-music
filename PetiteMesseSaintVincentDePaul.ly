@@ -31,6 +31,7 @@ blankPage = {
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
+\include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
 \book {
@@ -150,6 +151,79 @@ blankPage = {
       }
     }
     \header {
+      piece = "Sanctus"
+      tagline = ##f
+    }
+
+    %\markup { \vspace #2 }
+    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
+    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
+    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
+
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
+      <<
+        \new Staff \with { instrumentName = "Soliste" }
+        <<
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusSolistVoice" { \sanctusSolistMusic }
+          \new Lyrics \lyricsto "sanctusSolistVoice" { \sanctusSolistLyrics }
+        >>
+        \new ChoirStaff
+        <<
+          \new Staff \with { instrumentName = "Soprano" }
+          <<
+            \sanctusGlobal \clef treble
+            \new Voice = "sanctusSoprano" { \sanctusSopranoMusic }
+            \new Lyrics \lyricsto "sanctusSoprano" { \sanctusSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \sanctusGlobal \clef treble
+            \new Voice = "sanctusAlto" { \sanctusAltoMusic }
+            \new Lyrics \lyricsto "sanctusAlto" { \sanctusAltoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \sanctusGlobal \clef "treble_8"
+            \new Voice = "sanctusTenor" { \sanctusTenorMusic }
+            \new Lyrics \lyricsto "sanctusTenor" { \sanctusTenorLyrics }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \sanctusGlobal \clef bass
+            \new Voice = "sanctusBasse" { \sanctusBasseMusic }
+            \new Lyrics \lyricsto "sanctusBasse" { \sanctusBasseLyrics }
+          >>
+        >>
+        %\new PianoStaff <<
+        %  \new Staff <<
+        %    \clef treble
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \agnusGlobal \agnusSopranoMusic >>
+        %    << \agnusGlobal \agnusAltoMusic >>
+        %  >>
+        %  \new Staff <<
+        %    \clef bass
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \agnusGlobal \agnusTenorMusic >>
+        %    << \agnusGlobal \agnusBasseMusic >>
+        %  >>
+        %>>
+      >>
+    }
+  }
+  \bookpart {
+    \paper {
+      bookTitleMarkup = \markup {
+        \fill-line { \fontsize #10 \fromproperty #'header:piece }
+      }
+    }
+    \header {
       piece = "Agnus"
       tagline = ##f
     }
@@ -216,7 +290,6 @@ blankPage = {
       >>
     }
   }
-
 }
 \layout{}
 \midi{}

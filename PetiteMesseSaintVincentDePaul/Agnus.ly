@@ -4,7 +4,7 @@
 agnusGlobal = {
   \key f \minor
   \time 4/4
-  \tempo 4 = 80
+  \tempo 4 = 90
 }
 
 agnusSolistMusic = \relative c' {
@@ -14,6 +14,7 @@ agnusSolistMusic = \relative c' {
     % mesure 5: 0'10
     g f g af f2 f bf4 af g f g2 g2 \break
     \mark \default
+    % mesure 9: 0'24
     \repeat volta 2 { g2 (c4) bf bf (g) af2 }
     \alternative {
       { bf4 (af g f4) | g1 }
@@ -35,42 +36,30 @@ agnusSopranoLyrics = \agnusSolistLyrics
 
 agnusAltoMusic = \relative c' {
     c2. c4 ef4 (f2) g4 ef g af g af bf g g
-    bf2 c af af f (d) e1
-    
+    bf af g af af2 bf f (d) e1
   }
 agnusAltoLyrics = \lyricmode {
     A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
-    Mi -- se -- re -- re no -- bis,
-    \repeat volta 2 { Do -- na no -- bis }
-    \alternative {
-      { pa -- cem }
-      { pa -- cem }
-    }
+    Mi -- se -- re -- re no -- bis, no -- bis
   }
 
 agnusTenorMusic = \relative c {
     af'4 (bf) c2 bf2. df4 c ef c c c df c c
-    e2 c af2. bf4  bf2 (b2) c1
+    e4 f df c af2 bf  bf2 (b2) c1
   }
 agnusTenorLyrics = \lyricmode {
     A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
-    Mi -- se -- re -- re no -- bis
-    \repeat volta 2 { Do -- na no -- bis }
-    \alternative {
-      { pa -- cem }
-      { pa -- cem }
-    }
+    Mi -- se -- re -- re no -- bis, no -- bis
   }
 
 agnusBasseMusic = \relative c {
     f2. f4 ef2. ef4 af, ef' af e f df c c
-    c2. c4 df2. df4 d1 e1
-    \repeat volta 2 { c4 df e c df2. c4 }
+    c2. c4 df2 df d1 e1
+    \repeat volta 2 { c4 (d e) c df2. c4 }
     \alternative {
-      { bf2 b2 c1 }
-      { bf4 b c2 f,1 }
+      { bf2 (b2) c1 }
+      { bf2 (c2) f,1 }
     }
-    
   }
 agnusBasseLyrics = \lyricmode {
     A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,

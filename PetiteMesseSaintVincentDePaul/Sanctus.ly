@@ -1,78 +1,42 @@
 \version "2.18.2"
+\language "english"
 
-\header {
-  piece = "Sanctus"
-  date = "Juillet 2017"
+sanctusGlobal = {
+  \key e \major
+  \time 3/8
+  \tempo 4. = 50
 }
 
-\score {
-  \new GrandStaff <<
-    \new Staff \with {
-      instrumentName = \markup \column { "Soliste" }
-    } <<
-      \key e \major
-      \time 3/8
-      \clef treble
-      \new Voice = "soliste" {
-        \relative c' {
-          \tempo 4. = 50
-          b'4 b8 cis4 b8 b (a gis) fis4.
-          e8 fis gis a (gis) e e4 fis8 gis4.
-        }
-      }
-      \new Lyrics \lyricsto "soliste" {
-        \lyricmode {
-          San -- ctus, San -- ctus, San -- ctus,
-          Do -- mi -- nus De -- us Sab -- ba -- oth
-        }
-      }
-    >>
-    \new ChoirStaff \with {
-      instrumentName = \markup {\left-align "Chœur"}
-    } <<
-      \new Staff \with {
-        instrumentName = \markup {\right-align "voix 1"}
-      } {
-        \key e \major
-        \time 3/8
-        \clef treble
-        \new Voice = "femmes" {
-          \relative c' {
-            gis'8 (fis) gis e4 e8 dis8 (cis4) dis4.
-            a8 
-            %b'8 a b cis a cis b (a16 gis16) a8 b4.
-            }
-        }
-      }
-      \new Lyrics \lyricsto "femmes" {
-        \lyricmode {
-          San -- ctus, San -- ctus, San -- ctus,
-          Do %-- mi -- nus De -- us Sab -- ba -- oth
-          }
-      }
-      \new Staff \with {
-        instrumentName = \markup {\right-align "voix 2"}
-      } {
-        \key e \major
-        \time 3/8
-        \clef bass
-        \new Voice = "hommes" {
-          \relative c {
-            e4 e8 a4 gis8 fis (e ais) b4.
-            cis,8 b8 a gis dis' e a, b4 <e \parenthesize e,>4.
-            }
-        }
-      }
-      \new Lyrics \lyricsto "hommes" {
-        \lyricmode {
-          San -- ctus, San -- ctus, San -- ctus,
-          Do -- mi -- nus De -- us Sab -- ba -- oth
-          }
-      }
-    >>
-  >>
-  \layout {
-    ragged-last = ##f
+sanctusSolistMusic = \relative c' {
+    b'4 b8 cs4 b8 b (a gs) fs4.
+    e8 fs gs a (gs) e e4 fs8 gs4.
   }
-  \midi {}
-}
+sanctusSolistLyrics = \lyricmode {
+    San -- ctus, San -- ctus, San -- ctus,
+    Do -- mi -- nus De -- us Sab -- ba -- oth
+  }
+
+sanctusSopranoMusic = \sanctusSolistMusic
+sanctusSopranoLyrics = \sanctusSolistLyrics
+
+sanctusAltoMusic = \relative c' {
+    gs'8 (fs) gs e4 e8 ds8 (cs4) ds4.
+    a8 
+    %b'8 a b cs a cs b (a16 gs16) a8 b4.
+  }
+sanctusAltoLyrics = \lyricmode {
+  }
+
+sanctusTenorMusic = \relative c {
+  }
+sanctusTenorLyrics = \lyricmode {
+  }
+
+sanctusBasseMusic = \relative c {
+    e4 e8 a4 gs8 fs (e as) b4.
+    cs,8 b8 a gs ds' e a, b4 <e \parenthesize e,>4.
+  }
+sanctusBasseLyrics = \lyricmode {
+    San -- ctus, San -- ctus, San -- ctus,
+    Do -- mi -- nus De -- us Sab -- ba -- oth
+  }
