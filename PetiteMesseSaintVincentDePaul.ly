@@ -5,8 +5,10 @@
   paper-height = 29.7\cm
   left-margin = 2.5\cm
   right-margin = 2.5\cm
-  top-margin = 2\cm
-  bottom-margin = 2\cm
+  top-margin = 3\cm
+  bottom-margin = 3\cm
+  top-passding = 3\cm
+  bottom-padding = 3\cm
   max-systems-per-page = #4
 }
 % Needed for unmeasured "gregorian like" pieces
@@ -291,5 +293,5 @@ blankPage = {
     }
   }
 }
-\layout{}
-\midi{}
+\layout { }
+\midi { }
