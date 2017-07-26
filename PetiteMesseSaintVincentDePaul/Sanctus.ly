@@ -18,10 +18,8 @@ sanctusMainSolistMusic =  \relative c' {
       { e4 fs8 gs4. }
       { e8 (ds16 cs16) ds8 e4. \break }
     }
-}
-sanctusVerseSolistMusic =  \relative c' {
     \repeat volta 2 {
-        \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
+        \cadenzaOn \stemOff gs\breve \cadenzaOff \stemOn
         a8 a a
         gs4. fs \break
         e8 fs (gs) a8 gs e 
@@ -39,11 +37,13 @@ sanctusMainSolistLyrics = \lyricmode {
     }
   }
 sanctusVerseOneSolistLyrics = \lyricmode {
+    \repeat unfold 17 { \skip 1 }
     \once \override LyricText.self-alignment-X = #-1
     "Pleni sunt cæli et terra" gló -- ri -- a tu -- a.
     Ho -- sán -- na in ex -- cél -- sis.
   }
 sanctusVerseTwoSolistLyrics = \lyricmode {
+    \repeat unfold 17 { \skip 1 }
     \once \override LyricText.self-alignment-X = #-1
     "Benedíctus qui venit in nómine" Dó _  _ -- mi -- ni.
     Ho -- sán -- na in ex --
@@ -52,66 +52,38 @@ sanctusVerseTwoSolistLyrics = \lyricmode {
   }
 
 sanctusMainSopranoMusic = \sanctusMainSolistMusic
-sanctusVerseSopranoMusic =  \sanctusVerseSolistMusic
+%sanctusVerseSopranoMusic =  \sanctusVerseSolistMusic
 sanctusMainSopranoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneSopranoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoSopranoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusMainAltoMusic = \relative c' {
-    gs'
+    gs'4 gs8 a4 gs8 gs (fs e) ds4.
     % gs'8 (fs) gs e4 e8 ds8 (cs4) ds4.
     % a8 
     % b'8 a b cs a cs b (a16 gs16) a8 b4.
   }
 sanctusMainAltoLyrics = \sanctusMainSolistLyrics
-sanctusVerseAltoMusic =  \relative c' {
-    \repeat volta 2 {
-        \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
-        a8 a a
-        gs4. fs \break
-        e8 fs (gs) a8 gs e 
-    }
-    \alternative {
-      { e4 (fs8) gs4. }
-      { e8 (ds16 cs16 ds8) e4. }
-    }
-  }
 sanctusVerseOneAltoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoAltoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusTenorMusic = \relative c {
-  b'
+  b'4 ds8 e4 e8 ds (cs as) b4.
   }
 sanctusMainTenorLyrics = \sanctusMainSolistLyrics
-sanctusVerseTenorMusic =  \relative c' {
-    \repeat volta 2 {
-        \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
-        a8 a a
-        gs4. fs \break
-        e8 fs (gs) a8 gs e 
-    }
-    \alternative {
-      { e4 (fs8) gs4. }
-      { e8 (ds16 cs16 ds8) e4. }
-    }
-  }
 sanctusVerseOneTenorLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoTenorLyrics = \sanctusVerseTwoSolistLyrics
 
-sanctusBasseMusic = \relative c {
-    \repeat volta 2 { e4 e8 a4 e8 gs (fs cs) b4. cs4. fs,4. }
+sanctusMainBasseMusic = \relative c {
+    \repeat volta 2 { e4 e8 a4 e8 gs (fs cs) b4. cs8 a gs fs4 fs8 }
     \alternative {
-      { cs'8 b4 <\parenthesize e, e'>4. }
-      { cs'8 b4 <\parenthesize e, e'>4. }
+      { b4. <\parenthesize e, e'>4. }
+      { b'4 b8 <\parenthesize e, e'>4. }
     }
-    
-  }
-sanctusMainBasseLyrics = \sanctusMainSolistLyrics
-sanctusVerseBasseMusic =  \relative c' {
     \repeat volta 2 {
-        \cadenzaOn \stemOff gs\breve \cadenzaOff \stemOn
-        a8 a a
-        gs4. fs \break
+        \cadenzaOn \stemOff e\breve \cadenzaOff \stemOn
+        fs8 fs fs
+        cs4. b \break
         e8 fs (gs) a8 gs e 
     }
     \alternative {
@@ -119,5 +91,6 @@ sanctusVerseBasseMusic =  \relative c' {
       { e8 (ds16 cs16 ds8) e4. }
     }
   }
+sanctusMainBasseLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneBasseLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoBasseLyrics = \sanctusVerseTwoSolistLyrics
