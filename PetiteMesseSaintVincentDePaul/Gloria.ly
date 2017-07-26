@@ -120,7 +120,7 @@ gloriaSopranoMusic = \gloriaSolistMusic
 gloriaSopranoLyrics = \gloriaSolistLyrics
 
 gloriaAltoMusic =  \relative c' {
-    r4. r4 r4 r4 r4.
+    r4. r r r
     fs4. (e4.) e4. fs4.
     g4. b e, g4.
     g4. fs4. g4.
@@ -145,7 +145,7 @@ gloriaAltoLyrics = \lyricmode {
   }
 
 gloriaTenorMusic = \relative c {
-    r4. r4 r4 r4 r4.
+    r4. r r r
     b'4. a g8 e c8 d4.
     d4. fs a e
     c4. d e

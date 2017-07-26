@@ -33,7 +33,7 @@ blankPage = {
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
-s\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
+\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
@@ -61,6 +61,7 @@ s\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 
 
   \pageBreak
+  \blankPage
   \blankPage
   \bookpart {
     \paper {
@@ -224,39 +225,78 @@ s\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
       \midi{}
       \new GrandStaff
       <<
-        \new Staff \with { instrumentName = "Soliste" }
+        \new Staff \with { instrumentName = "Refrain" }
         <<
           \sanctusGlobal \clef treble
-          \new Voice = "sanctusSolistVoice" { \sanctusSolistMusic }
-          \new Lyrics \lyricsto "sanctusSolistVoice" { \sanctusSolistLyrics }
+          \new Voice = "sanctusSolistMusic" { \sanctusSolistMusic }
+          \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusSolistLyrics }
         >>
-        \new ChoirStaff
+        %\new ChoirStaff
+        %<<
+        %  \new Staff \with { instrumentName = "Soprano" }
+        %  <<
+        %    \sanctusGlobal \clef treble
+        %    \new Voice = "sanctusSoprano" { \sanctusSopranoMusic }
+        %    \new Lyrics \lyricsto "sanctusSoprano" { \sanctusSopranoLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Alto" }
+        %  <<
+        %    \sanctusGlobal \clef treble
+        %    \new Voice = "sanctusAlto" { \sanctusAltoMusic }
+        %    \new Lyrics \lyricsto "sanctusAlto" { \sanctusAltoLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Ténor" }
+        %  <<
+        %    \sanctusGlobal \clef "treble_8"
+        %    \new Voice = "sanctusTenor" { \sanctusTenorMusic }
+        %    \new Lyrics \lyricsto "sanctusTenor" { \sanctusTenorLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Basse" }
+        %  <<
+        %    \sanctusGlobal \clef bass
+        %    \new Voice = "sanctusBasse" { \sanctusBasseMusic }
+        %    \new Lyrics \lyricsto "sanctusBasse" { \sanctusBasseLyrics }
+        %  >>
+        %>>
+      >>
+    }
+    \score {
+      \new GrandStaff
+      <<
+        \new Staff \with { instrumentName = "Verset" }
         <<
-          \new Staff \with { instrumentName = "Soprano" }
-          <<
-            \sanctusGlobal \clef treble
-            \new Voice = "sanctusSoprano" { \sanctusSopranoMusic }
-            \new Lyrics \lyricsto "sanctusSoprano" { \sanctusSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto" }
-          <<
-            \sanctusGlobal \clef treble
-            \new Voice = "sanctusAlto" { \sanctusAltoMusic }
-            \new Lyrics \lyricsto "sanctusAlto" { \sanctusAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" }
-          <<
-            \sanctusGlobal \clef "treble_8"
-            \new Voice = "sanctusTenor" { \sanctusTenorMusic }
-            \new Lyrics \lyricsto "sanctusTenor" { \sanctusTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" }
-          <<
-            \sanctusGlobal \clef bass
-            \new Voice = "sanctusBasse" { \sanctusBasseMusic }
-            \new Lyrics \lyricsto "sanctusBasse" { \sanctusBasseLyrics }
-          >>
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusVerseMusic" { \sanctusVerseMusic }
+          \new Lyrics \lyricsto "sanctusVerseMusic" { \sanctusVerseOneLyrics }
+          \new Lyrics \lyricsto "sanctusVerseMusic" { \sanctusVerseTwoLyrics }
         >>
+        %\new ChoirStaff
+        %<<
+        %  \new Staff \with { instrumentName = "Soprano" }
+        %  <<
+        %    \sanctusGlobal \clef treble
+        %    \new Voice = "sanctusSoprano" { \sanctusSopranoMusic }
+        %    \new Lyrics \lyricsto "sanctusSoprano" { \sanctusSopranoLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Alto" }
+        %  <<
+        %    \sanctusGlobal \clef treble
+        %    \new Voice = "sanctusAlto" { \sanctusAltoMusic }
+        %    \new Lyrics \lyricsto "sanctusAlto" { \sanctusAltoLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Ténor" }
+        %  <<
+        %    \sanctusGlobal \clef "treble_8"
+        %    \new Voice = "sanctusTenor" { \sanctusTenorMusic }
+        %    \new Lyrics \lyricsto "sanctusTenor" { \sanctusTenorLyrics }
+        %  >>
+        %  \new Staff \with { instrumentName = "Basse" }
+        %  <<
+        %    \sanctusGlobal \clef bass
+        %    \new Voice = "sanctusBasse" { \sanctusBasseMusic }
+        %    \new Lyrics \lyricsto "sanctusBasse" { \sanctusBasseLyrics }
+        %  >>
+        %>>
         %\new PianoStaff <<
         %  \new Staff <<
         %    \clef treble
