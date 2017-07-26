@@ -36,7 +36,7 @@ sanctusVerseMusic =  \relative c' {
         e8 fs (gs) a8 gs e 
     }
     \alternative {
-      { e4 (fs8) gs4. \break }
+      { e4 (fs8) gs4. }
       { e8 (ds16 cs16 ds8) e4. }
     }
   }
