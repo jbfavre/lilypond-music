@@ -77,7 +77,7 @@ sanctusVerseTwoTenorLyrics = \sanctusVerseTwoSolistLyrics
 sanctusMainBasseMusic = \relative c {
     \repeat volta 2 { e4 e8 a4 e8 gs (fs cs) b4. cs8 a gs fs4 fs8 }
     \alternative {
-      { b4. <\parenthesize e, e'>4. }
+      { b4 b8 <\parenthesize e, e'>4. }
       { b'4 b8 <\parenthesize e, e'>4. }
     }
     \repeat volta 2 {
