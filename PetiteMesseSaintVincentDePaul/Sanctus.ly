@@ -81,8 +81,8 @@ sanctusMainBasseMusic = \relative c {
         cs4. b \break
         cs8 cs b a (a) a }
     \alternative {
-      { b4 a8 <e' \parenthesize e,>4. }
-      { b4 a8 <e' \parenthesize e,>4. }
+      { b4 (a8) <e' \parenthesize e,>4. }
+      { b4 (a8) <e' \parenthesize e,>4. }
     }
   }
 sanctusMainBasseLyrics = \sanctusMainSolistLyrics
