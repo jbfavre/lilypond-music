@@ -78,11 +78,11 @@ sanctusMainBasseMusic = \relative c {
     \repeat volta 2 {
         \cadenzaOn \stemOff e\breve \cadenzaOff \stemOn
         fs8 fs fs
-        cs'4. b \break
-        cs8 a gs fs4 fs8 }
+        cs4. b \break
+        cs8 cs b a (a) a }
     \alternative {
-      { b4 b8 <\parenthesize e, e'>4. }
-      { b'4 b8 <\parenthesize e, e'>4. }
+      { b4 a8 <e' \parenthesize e,>4. }
+      { b4 a8 <e' \parenthesize e,>4. }
     }
   }
 sanctusMainBasseLyrics = \sanctusMainSolistLyrics
