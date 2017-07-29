@@ -11,18 +11,22 @@ sanctusGlobal = {
 }
 
 sanctusMainSolistMusic =  \relative c' {
+    \mark \default
     \repeat volta 2 {
       b'4 b8 cs4 b8 b (a gs) fs4. \break
+      \mark \default
       e8 fs gs a8 (gs) e
     }
     \alternative {
       { e8 fs4 gs4. }
       { e8 (ds16 cs16) ds8 e4. \break }
     }
+    \mark \default
     \repeat volta 2 {
         \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
         a8 a a
         b4. b \break
+      \mark \default
         e,8 fs (gs) a8 gs e 
     }
     \alternative {
