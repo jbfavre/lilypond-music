@@ -7,23 +7,26 @@ stemOn  = \undo \stemOff
 sanctusGlobal = {
   \key e \major
   \time 3/8
-  \tempo 4. = 50
+  \tempo 4. = 40
 }
 
 sanctusMainSolistMusic =  \relative c' {
-    \repeat volta 2 { b'4 b8 cs4 b8 b (a gs) fs4. e8 fs gs \break a8 (gs) e }
+    \repeat volta 2 {
+      b'4 b8 cs4 b8 b (a gs) fs4. \break
+      e8 fs gs a8 (gs) e
+    }
     \alternative {
       { e8 fs4 gs4. }
       { e8 (ds16 cs16) ds8 e4. \break }
     }
     \repeat volta 2 {
-        \cadenzaOn \stemOff gs\breve \cadenzaOff \stemOn
+        \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
         a8 a a
-        gs4. fs \break
-        e8 fs (gs) a8 gs e 
+        b4. b \break
+        e,8 fs (gs) a8 gs e 
     }
     \alternative {
-      { e4 (fs8) gs4. }
+      { e8 (fs4) gs4. }
       { e8 (ds16 cs16 ds8) e4. }
     }
   }
@@ -56,33 +59,62 @@ sanctusVerseOneSopranoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoSopranoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusMainAltoMusic = \relative c' {
-    gs'4 gs8 fs4 fs8 gs (fs e) ds4.
+    \repeat volta 2 { gs'4 gs8 fs4 fs8 gs (fs e) fs4. cs8 ds ds cs (e) cs
+    }
+    \alternative {
+      { cs8 b4 b4. }
+      { cs8 b4 b4. }
+    }
+    \repeat volta 2 {
+        \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
+        e8 e e
+        ds4. fs \break
+        cs8 ds (ds) cs e cs
+    }
+    \alternative {
+      { cs8 (b4) b4. }
+      { cs8 b4 b4. }
+    }
   }
 sanctusMainAltoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneAltoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoAltoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusTenorMusic = \relative c {
-  b'4 ds8 e4 ds8 ds (cs a) b4.
+  \repeat volta 2 { e'8 (b) gs fs (gs) a b (cs e) ds4. gs,8 a gs fs (gs) a }
+    \alternative {
+      { fs4 a8 gs4. }
+      { fs4 a8 gs4. }
+    }
+    \repeat volta 2 {
+        \cadenzaOn \stemOff d'\breve \cadenzaOff \stemOn
+        cs8 cs cs
+        b8 (a gs) b4. \break
+        gs8 a (gs) fs gs a 
+    }
+    \alternative {
+      { fs4 (a8) gs4. }
+      { fs4 (a8) gs4. }
+    }
   }
 sanctusMainTenorLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneTenorLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoTenorLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusMainBasseMusic = \relative c {
-    \repeat volta 2 { e4 gs8 a4 a8 gs (fs e) fs4. cs8 cs b a (a) a }
+    \repeat volta 2 { e4 e8 a,4 a8 gs4. b4. cs8 cs b a (a) cs }
     \alternative {
-      { b4 a8 <e' \parenthesize e,>4. }
-      { b4 a8 <e' \parenthesize e,>4. }
+      { a4 b8 <e \parenthesize e,>4. }
+      { a,4 b8 <e \parenthesize e,>4. }
     }
     \repeat volta 2 {
-        \cadenzaOn \stemOff e\breve \cadenzaOff \stemOn
-        ds8 ds ds
-        e4. b \break
-        cs8 cs b a (a) a }
+        \cadenzaOn \stemOff <e \parenthesize e,>\breve \cadenzaOff \stemOn
+        <a \parenthesize a,>8 <gs \parenthesize gs,> <fs \parenthesize fs,>
+        <gs \parenthesize gs,>8 (<fs \parenthesize fs,> <e \parenthesize e,>) ds4. \break
+        cs8 cs (b) a a cs }
     \alternative {
-      { b4 (a8) <e' \parenthesize e,>4. }
-      { b4 (a8) <e' \parenthesize e,>4. }
+      { b4. <e \parenthesize e,>4. }
+      { b4. <e \parenthesize e,>4. }
     }
   }
 sanctusMainBasseLyrics = \sanctusMainSolistLyrics

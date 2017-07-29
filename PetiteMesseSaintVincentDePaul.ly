@@ -227,17 +227,17 @@ blankPage = {
       \midi{}
       \new GrandStaff
       <<
-        \new Staff \with { instrumentName = "Soliste" }
-        <<
-          \sanctusGlobal \clef treble
-          \new Voice = "sanctusSolistMusic" { \sanctusMainSolistMusic }
-          \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusMainSolistLyrics }
-          \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseOneSolistLyrics }
-          \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseTwoSolistLyrics }
-        >>
+        %\new Staff \with { instrumentName = "Soliste" }
+        %<<
+        %  \sanctusGlobal \clef treble
+        %  \new Voice = "sanctusSolistMusic" { \sanctusMainSolistMusic }
+        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusMainSolistLyrics }
+        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseOneSolistLyrics }
+        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseTwoSolistLyrics }
+        %>>
         \new ChoirStaff
         <<
-          \new Staff \with { instrumentName = "Soprano" }
+          \new Staff \with {instrumentName = "Soprano" }
           <<
             \sanctusGlobal \clef treble
             \new Voice = "sanctusSoprano" { \sanctusMainSopranoMusic }
