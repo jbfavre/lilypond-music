@@ -284,10 +284,11 @@ blankPage = {
       tagline = ##f
     }
 
-    %\markup { \vspace #2 }
-    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
-    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
-    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
+    \markup { \vspace #2 }
+    \markup { "Le soliste peut chanter seul la lettre " \bold { "A" } "," }
+    \markup { "   éventuellement avec le chœur " \bold { "à l'unisson" } "." }
+    \markup { "Dans ce cas, l'assemblée ne chante que les lettres "\bold { "B" } "&" \bold { "C" } "," }
+    \markup { "   avec le chœur en polyphonie" }
 
     \score {
       \layout{ ragged-last = ##f }
