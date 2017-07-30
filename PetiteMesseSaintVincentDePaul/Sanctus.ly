@@ -24,8 +24,8 @@ sanctusMainSolistMusic =  \relative c' {
     \mark \default
     \repeat volta 2 {
         \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
-        a8 a a
-        b4. b \break
+        cs8 cs cs
+        b4 (gs8) b4. \break
       \mark \default
         e,8 fs (gs) a8 gs e 
     }
@@ -63,7 +63,7 @@ sanctusVerseOneSopranoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoSopranoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusMainAltoMusic = \relative c' {
-    \repeat volta 2 { gs'4 gs8 fs4 fs8 gs (fs e) fs4. cs8 ds ds cs (e) cs
+    \repeat volta 2 { gs'4 gs8 e4 e8 gs (fs e) fs4. cs8 ds ds cs (e) cs
     }
     \alternative {
       { cs8 b4 b4. }
@@ -71,8 +71,8 @@ sanctusMainAltoMusic = \relative c' {
     }
     \repeat volta 2 {
         \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
-        e8 e e
-        ds4. fs \break
+        a8 a a
+        gs4 (e8) fs4. \break
         cs8 ds (ds) cs e cs
     }
     \alternative {
@@ -85,7 +85,7 @@ sanctusVerseOneAltoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoAltoLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusTenorMusic = \relative c {
-  \repeat volta 2 { e'8 (b) gs fs (gs) a b (cs e) ds4. gs,8 a gs fs (gs) a }
+  \repeat volta 2 { e'8 (b) gs a (b) cs e (cs b) ds4. gs,8 a gs fs (gs) a }
     \alternative {
       { fs4 a8 gs4. }
       { fs4 a8 gs4. }
@@ -93,8 +93,8 @@ sanctusTenorMusic = \relative c {
     \repeat volta 2 {
         \cadenzaOn \stemOff d'\breve \cadenzaOff \stemOn
         cs8 cs cs
-        b8 (a gs) b4. \break
-        gs8 a (gs) fs gs a 
+        ds4 (cs8) ds4. \break
+        gs,8 a (gs) fs gs a
     }
     \alternative {
       { fs4 (a8) gs4. }
@@ -113,8 +113,8 @@ sanctusMainBasseMusic = \relative c {
     }
     \repeat volta 2 {
         \cadenzaOn \stemOff <e \parenthesize e,>\breve \cadenzaOff \stemOn
-        <a \parenthesize a,>8 <gs \parenthesize gs,> <fs \parenthesize fs,>
-        <gs \parenthesize gs,>8 (<fs \parenthesize fs,> <e \parenthesize e,>) ds4. \break
+        e8 e e
+        gs8 (fs e) b4. \break
         cs8 cs (b) a a cs }
     \alternative {
       { a4 (b8) <e \parenthesize e,>4. }

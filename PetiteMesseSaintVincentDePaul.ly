@@ -33,7 +33,7 @@ blankPage = {
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
-\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
+%\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
@@ -42,6 +42,7 @@ blankPage = {
     title = \markup {
       \center-column {
         "Petite messe"
+        "de"
         "Saint Vincent de Paul"
       }
     }
@@ -53,7 +54,12 @@ blankPage = {
       }
     }
     composer = "Jean Baptiste Favre"
-    date = "2017"
+    date = \markup {
+      \center-column {
+        "Clichy-la-Garenne"
+        "2017"
+      }
+    }
     copyright = "Reproduction interdite sans l'accord explicite de l'auteur"
   }
   \bookTitle "Petite messe Saint Vincent de Paul"
@@ -61,17 +67,11 @@ blankPage = {
 
 
   \pageBreak
-  \blankPage
-  \blankPage
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup {
-        \fill-line { \fontsize #10 \fromproperty #'header:piece }
-      }
-    }
+    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Kyrie"
-      tagline = ##f
+      copyright = \markup \null
     }
 
     \markup { \vspace #2 }
@@ -136,74 +136,73 @@ blankPage = {
       >>
     }
   }
-  \bookpart {
-    \paper {
-      bookTitleMarkup = \markup {
-        \fill-line { \fontsize #10 \fromproperty #'header:piece }
-      }
-    }
-    \header {
-      piece = "Gloria"
-      tagline = ##f
-    }
-
-    \score {
-      \layout{ ragged-last = ##f }
-      \midi{}
-      \new GrandStaff
-      <<
-        \new Staff \with { instrumentName = "Soliste" }
-        <<
-          \gloriaGlobal \clef treble
-          \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
-          \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
-        >>
-        \new ChoirStaff
-        <<
-          \new Staff \with { instrumentName = "Soprano" }
-          <<
-            \gloriaGlobal \clef treble
-            \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
-            \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto" }
-          <<
-            \gloriaGlobal \clef treble
-            \new Voice = "gloriaAlto" { \gloriaAltoMusic }
-            \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" }
-          <<
-            \gloriaGlobal \clef "treble_8"
-            \new Voice = "gloriaTenor" { \gloriaTenorMusic }
-            \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" }
-          <<
-            \gloriaGlobal \clef bass
-            \new Voice = "gloriaBasse" { \gloriaBasseMusic }
-            \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
-          >>
-        >>
-        %\new PianoStaff <<
-        %  \new Staff <<
-        %    \clef treble
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \kyrieGlobal \kyrieSopranoMusic >>
-        %    << \kyrieGlobal \kyrieAltoMusic >>
-        %  >>
-        %  \new Staff <<
-        %    \clef bass
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \kyrieGlobal \kyrieTenorMusic >>
-        %    << \kyrieGlobal \kyrieBasseMusic >>
-        %  >>
-        %>>
-      >>
-    }
-  }
+  %\bookpart {
+  %  \paper {
+  %    bookTitleMarkup = \markup {
+  %      \fill-line { \fontsize #10 \fromproperty #'header:piece }
+  %    }
+  %  }
+  %  \header {
+  %    piece = "Gloria"
+  %    tagline = ##f
+  %  }
+  %  \score {
+  %    \layout{ ragged-last = ##f }
+  %    \midi{}
+  %    \new GrandStaff
+  %    <<
+  %      \new Staff \with { instrumentName = "Soliste" }
+  %      <<
+  %        \gloriaGlobal \clef treble
+  %        \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
+  %        \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
+  %      >>
+  %      \new ChoirStaff
+  %      <<
+  %        \new Staff \with { instrumentName = "Soprano" }
+  %        <<
+  %          \gloriaGlobal \clef treble
+  %          \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
+  %          \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
+  %        >>
+  %        \new Staff \with { instrumentName = "Alto" }
+  %        <<
+  %          \gloriaGlobal \clef treble
+  %          \new Voice = "gloriaAlto" { \gloriaAltoMusic }
+  %          \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
+  %        >>
+  %        \new Staff \with { instrumentName = "Ténor" }
+  %        <<
+  %          \gloriaGlobal \clef "treble_8"
+  %          \new Voice = "gloriaTenor" { \gloriaTenorMusic }
+  %          \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
+  %        >>
+  %        \new Staff \with { instrumentName = "Basse" }
+  %        <<
+  %          \gloriaGlobal \clef bass
+  %          \new Voice = "gloriaBasse" { \gloriaBasseMusic }
+  %          \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
+  %        >>
+  %      >>
+  %      %\new PianoStaff <<
+  %      %  \new Staff <<
+  %      %    \clef treble
+  %      %    \set Staff.printPartCombineTexts = ##f
+  %      %    \partcombine
+  %      %    << \kyrieGlobal \kyrieSopranoMusic >>
+  %      %    << \kyrieGlobal \kyrieAltoMusic >>
+  %      %  >>
+  %      %  \new Staff <<
+  %      %    \clef bass
+  %      %    \set Staff.printPartCombineTexts = ##f
+  %      %    \partcombine
+  %      %    << \kyrieGlobal \kyrieTenorMusic >>
+  %      %    << \kyrieGlobal \kyrieBasseMusic >>
+  %      %  >>
+  %      %>>
+  %    >>
+  %  }
+  %}
   \bookpart {
     \paper {
       bookTitleMarkup = \markup {
@@ -348,5 +347,6 @@ blankPage = {
     }
   }
 }
-\layout { }
+\layout {
+}
 \midi { }
