@@ -5,10 +5,10 @@
   paper-height = 29.7\cm
   left-margin = 2.5\cm
   right-margin = 2.5\cm
-  top-margin = 3\cm
-  bottom-margin = 3\cm
-  top-passding = 3\cm
-  bottom-padding = 3\cm
+  top-margin = 2\cm
+  bottom-margin = 2\cm
+  top-passding = 2\cm
+  bottom-padding = 2\cm
   max-systems-per-page = #4
 }
 % Needed for unmeasured "gregorian like" pieces
@@ -65,13 +65,15 @@ blankPage = {
   \bookTitle "Petite messe Saint Vincent de Paul"
   \useRehearsalNumbers ##f
 
-
+  % Cover page
   \pageBreak
+
   \bookpart {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Kyrie"
       copyright = \markup \null
+      tagline = \markup \null
     }
 
     \markup { \vspace #2 }
@@ -204,14 +206,11 @@ blankPage = {
   %  }
   %}
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup {
-        \fill-line { \fontsize #10 \fromproperty #'header:piece }
-      }
-    }
+    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Sanctus"
-      tagline = ##f
+      copyright = \markup \null
+      tagline = \markup \null
     }
 
     %\markup { \vspace #2 }
@@ -220,9 +219,7 @@ blankPage = {
     %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
 
     \score {
-      \layout{
-        ragged-last = ##f
-      }
+      \layout{ ragged-last = ##f }
       \midi{}
       \new GrandStaff
       <<
@@ -273,14 +270,11 @@ blankPage = {
     }
   }
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup {
-        \fill-line { \fontsize #10 \fromproperty #'header:piece }
-      }
-    }
+    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Agnus"
-      tagline = ##f
+      copyright = \markup \null
+      tagline = \markup \null
     }
 
     \markup { \vspace #2 }
@@ -347,6 +341,5 @@ blankPage = {
     }
   }
 }
-\layout {
-}
+\layout { ragged-last = ##f }
 \midi { }

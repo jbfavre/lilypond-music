@@ -9,7 +9,7 @@ sanctusGlobal = {
   \time 3/8
   \tempo 4. = 40
 }
-sanctusSolist_BD_Repeat = \relative c' { \mark \default e8 fs gs a8 (gs) e }
+sanctusSolist_BD_Repeat = \relative c' { \mark \default e8 fs (gs) a8 gs e }
 sanctusSolist_BD_AlternativeOne = \relative c' {
     \set melismaBusyProperties = #'()
     \slurDown
@@ -31,11 +31,11 @@ sanctusMainSolistMusic =  \relative c' {
     }
     \mark \default
     \repeat volta 2 {
-        \relative c' {
-          \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
-          cs8 cs cs
-          b4 (gs8) b4. \break
-        }
+      \relative c' {
+        \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
+        cs8 cs cs
+        b4 (gs8) b4. \break
+      }
       \sanctusSolist_BD_Repeat
     }
     \alternative {
@@ -71,63 +71,98 @@ sanctusMainSopranoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneSopranoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoSopranoLyrics = \sanctusVerseTwoSolistLyrics
 
+sanctusAlto_BD_Repeat = \relative c' { cs8 ds (ds) cs e cs }
+sanctusAlto_BD_Alternative = \relative c' {
+    \set melismaBusyProperties = #'()
+    \slurDown
+    \slurDashed
+    cs8 (b4) b4.
+    \unset melismaBusyProperties
+  }
 sanctusMainAltoMusic = \relative c' {
-    \repeat volta 2 { gs'4 gs8 e4 e8 gs (fs e) fs4. cs8 ds ds cs (e) cs
+    \repeat volta 2 {
+      gs'4 gs8 e4 e8 gs (fs e) fs4.
+      \sanctusAlto_BD_Repeat
     }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed cs8 (b4) b4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed cs8 (b4) b4. \unset melismaBusyProperties }
+      { \sanctusAlto_BD_Alternative }
+      { \sanctusAlto_BD_Alternative }
     }
     \repeat volta 2 {
-        \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
-        a8 a a
-        gs4 (e8) fs4. \break
-        cs8 ds (ds) cs e cs
+      \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
+      a8 a a
+      gs4 (e8) fs4. \break
+      \sanctusAlto_BD_Repeat
     }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed cs8 (b4) b4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed cs8 (b4) b4. \unset melismaBusyProperties }
+      { \sanctusAlto_BD_Alternative }
+      { \sanctusAlto_BD_Alternative }
     }
   }
 sanctusMainAltoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneAltoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoAltoLyrics = \sanctusVerseTwoSolistLyrics
 
+sanctusTenor_BD_Repeat = \relative c' { gs8 a (gs) fs gs a }
+sanctusTenor_BD_Alternative = \relative c {
+    \set melismaBusyProperties = #'()
+    \slurDown
+    \slurDashed
+    fs4 a8 gs4.
+    \unset melismaBusyProperties
+  }
 sanctusTenorMusic = \relative c {
-  \repeat volta 2 { e'8 (b) gs a (b) cs e (cs b) ds4. gs,8 a gs fs (gs) a }
+    \repeat volta 2 {
+      e'8 (b) gs a (b) cs e (cs b) ds4. 
+      gs,8 a gs fs (gs) a
+    }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed fs4 a8 gs4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed fs4 a8 gs4. \unset melismaBusyProperties }
+      { \sanctusTenor_BD_Alternative }
+      { \sanctusTenor_BD_Alternative }
     }
     \repeat volta 2 {
-        \cadenzaOn \stemOff d'\breve \cadenzaOff \stemOn
+      \relative c' {
+        \cadenzaOn \stemOff d\breve \cadenzaOff \stemOn
         cs8 cs cs
         ds4 (cs8) ds4. \break
-        gs,8 a (gs) fs gs a
+      }
+      \sanctusTenor_BD_Repeat
     }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed fs4 (a8) gs4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed fs4 (a8) gs4. \unset melismaBusyProperties }
+      { \sanctusTenor_BD_Alternative }
+      { \sanctusTenor_BD_Alternative }
     }
   }
 sanctusMainTenorLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneTenorLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoTenorLyrics = \sanctusVerseTwoSolistLyrics
 
+sanctusBasse_BD_Repeat = \relative c { cs8 cs b a (a) cs }
+sanctusBasse_BD_Alternative = \relative c {
+    \set melismaBusyProperties = #'()
+    \slurDown
+    \slurDashed
+    a4 b8 <e \parenthesize e,>4.
+    \unset melismaBusyProperties
+  }
 sanctusMainBasseMusic = \relative c {
-    \repeat volta 2 { e4 e8 a,4 a8 gs4. b4. cs8 cs b a (a) cs }
+    \repeat volta 2 {
+      e4 e8 a,4 a8 gs4. b4.
+      \sanctusBasse_BD_Repeat
+    }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed a4 b8 <e \parenthesize e,>4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed a,4 b8 <e \parenthesize e,>4. \unset melismaBusyProperties }
+      { \sanctusBasse_BD_Alternative }
+      { \sanctusBasse_BD_Alternative }
     }
     \repeat volta 2 {
-        \cadenzaOn \stemOff <e \parenthesize e,>\breve \cadenzaOff \stemOn
-        e8 e e
-        gs8 (fs e) b4. \break
-        cs8 cs (b) a a cs }
+      \cadenzaOn \stemOff <e \parenthesize e,>\breve \cadenzaOff \stemOn
+      e8 e e
+      gs8 (fs e) b4. \break
+      \sanctusBasse_BD_Repeat
+    }
     \alternative {
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed a4 (b8) <e \parenthesize e,>4. \unset melismaBusyProperties }
-      { \set melismaBusyProperties = #'() \slurDown \slurDashed a,4 (b8) <e \parenthesize e,>4. \unset melismaBusyProperties }
+      { \sanctusBasse_BD_Alternative }
+      { \sanctusBasse_BD_Alternative }
     }
   }
 sanctusMainBasseLyrics = \sanctusMainSolistLyrics
