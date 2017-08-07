@@ -2,7 +2,7 @@
 \language "english"
 
 gloriaGlobal = {
-  \key g \major
+  \key e \major
   \time 3/8
   \tempo 4. = 60
 }
@@ -10,89 +10,89 @@ gloriaGlobal = {
 gloriaSolistMusic = \relative c' {
     \mark "Prêtre (ou chantre)"
       % Glória in excélsis Deo
-      % Gloire à Dieu, au plus haut des cieux
-      g'8 b\noBeam d c8 b\noBeam a g a4 b4. \break
+      e4 e8 fs e fs gs4 e8 a (fs4) gs4. \break
     \mark "Chantre"
-      % et in terra pax homínibus bonae voluntátis.
-      % et paix sur la terre aux hommes qu'il aime.
-      d8 c b c b a g a4 a4.
-        b8 (c) d d (b) g c (b a) g4. \break
+      % et in terra pax homínibus
+      b4 b8 cs (b) a gs4 b8 a gs4 fs4. \break
+      % bonae voluntátis.
+      e8 (fs) gs gs (fs) e cs (ds4) e4. \break
     \mark "Tous"
       % Laudámus te,
-      % Nous te louons,
-      g8 (b d) c b (a) b4.
+      b'4. cs8 (b) a b4.
     \mark "Chantre"
       % benedícimus te,
-      % Nous te bénissons,
-      b8 (a) b c b a b4. \break
+      gs4 gs8 a gs fs gs4. \break
     \mark "Tous"
       % adoramus te.
-      % nous t'adorons.
-      b8 (a) g fs (e) fs g4.
+      e8 (fs) gs gs (fs e cs) ds4 e4.
     \mark "Chantre"
       % Glorificámus te.
-      % Nous te glorifions
-      d'8 (b g) e'4 e8 e8 (cs) a fs'4. \break
+      b'4. cs4 b8 b (a) gs fs4. \break
     \mark "Tous"
-      % Gratias agimus tibi propter magnam glóriam tuam,
-      % nous te rendons grâce pour ton immense gloire,
-      ds8 (cs) ds e c b a d4 b4. 
-        b8 (a) b c4 c8 b c b a4 a8 \break
+      % Gratias agimus tibi
+      e8 fs gs a gs e e (ds16 cs16 ds8) e4. \break
+      % propter magnam glóriam tuam,
+      cs4 cs8 b (e) gs a4 fs8 gs8 fs4 e4. \break
     \mark "Chantre"
       % Dómine Deus, Rex cæléstis,
-      % Seigneur Dieur, Roi du ciel,
-      g8 fs g a4 a8 b8 c b a4. 
+      b'8 b b cs4 cs8 b (a) gs b (a gs) fs4. \break
       % Deus Pater omnípotens.
-      % Dieu le Père tout puissant.
-      d4. c b8 a g g a4 b4. \break
+      e4. a gs8 fs e e fs4 gs4. \break
     \mark "Tous"
-    % Dómine Fili Unigénite, Jesu Christe.
-    % Seigneur Fils unique Jésus Christ.
-    r4.
+      % Dómine Fili Unigénite,
+      b8 b b cs4 cs8 b (a) gs b (a) gs fs4. 
+      % Jesu Christe.
+      e4. a fs gs \break
     \mark "Chantre"
-    % Dómine Deus, Agnus Dei, Fílius Patris,
-    % Seigneur Dieu, Agenau de Dieu, le Fils du Père,
-    r4.
+      % Dómine Deus, Agnus Dei,
+      b8 b b cs4 cs8 b (a) gs b4 b8 \break
+      % Fílius Patris,
+      e,8 ds e a4. (fs) e \break
     \mark "Tous"
-    % qui tollis peccáta mundi, miserére nobis;
-    % toi qui enlèves le pêché du monde, prends pitié de nous;
-    r4.
+      % qui tollis peccáta mundi,
+      r4 b8 e ds e fs4 fs8 gs4 gs8~ \break gs8
+      % miserére nobis;
+      gs8 fs e4 e8 fs4. gs \break
     \mark "Chantre"
-    % Qui tollis peccáta mundi, suscipe deprecationem nostram;
-    % toi qui enlèves le pêché du monde, reçois notre prière;
-    r4.
+      % Qui tollis peccáta mundi,
+      r4 e8 gs fs gs a4 a8 b4. b4. \break
+      % suscipe deprecationem nostram;
+      b8 \break a gs a gs fs gs fs e fs4. fs \break
     \mark "Tous"
-    % Qui sedes ad déxteram Patris, miserére nobis.
-    % Toi qui es assis à la droite du Père, prends pitié de nous
-    r4.
+      % Qui sedes ad déxteram Patris,
+      e4 e8 a4 a8 gs fs e fs4 fs8 \break
+      % miserére nobis.
+      b8 a gs e fs4 gs4. \break
     \mark "Chantre"
-    % Quóniam tu solus Sanctus,
-    % Car toi seul est Saint,
-    r4.
+      % Quóniam tu solus Sanctus,
+      es4 es8 es4 es8 es4 es8 es4. es4
     \mark "Tous"
-    % tu solus Dóminus,
-    % Toi seul es Seigneur,
-    r4.
+      es8 \break
+      % tu solus Dóminus,
+      es4 es8 es8 es8 es8 \break
     \mark "Chantre"
-    % tu solus Altíssimus, Iesu Christe,
-    % toi seul est le très haut, Jésus Christ
-    r4.
+      % tu solus Altíssimus,
+      r4 es8 es8 es8 es8 es8 es8 es8 \break
+      % Iesu Christe,
+      es4. es4. es4. es4. \break
     \mark "Tous"
-    % cum Sancto Spíritu, in glória Dei Patris.
-    % avec le Saint Esprit, dans la gloire de Dieu le Père.
-    r4.
+      % cum Sancto Spíritu,
+      es8 es8 es8 es4 e8 es4
+      % in glória Dei Patris.
+      es8 es8 es8 es8 es4 es8 e4. e4. \break
+    \break
     \mark "Tous"
-      % Amen, Amen
-      g8 (a) b c (d) e
-      % Amen, Amen
-      a, (b) cs d (e) fs
-      % Amen, Amen
-      b,8 (a) b c (b) g
+      % Amen,
+      e8 (fs gs a b) cs
+      % Amen
+      fs, (gs as b cs) ds
+      % Amen
+      bs (as bs cs a) e
       % Amen
       \set Score.tempoHideNote = ##t
       \tempo 4. = 50
         \override TextSpanner.bound-details.left.text = \markup { \upright \bold "rit." }
-        a4\startTextSpan (d8) d2.\stopTextSpan \fermata
+        fs8 \startTextSpan (b4) b2.\stopTextSpan \fermata
   }
 gloriaSolistLyrics = \lyricmode {
       Gló -- ri -- a in ex -- cél -- sis De -- o
@@ -104,16 +104,16 @@ gloriaSolistLyrics = \lyricmode {
       pro -- pter ma -- gnam gló -- ri -- am tu -- am,
       Dó -- mi -- ne De -- us, Rex cæ -- lés -- tis,
       De -- us Pa -- ter om -- ní -- po -- tens.
-    %  Dó -- mi -- ne Fi -- li U -- ni -- gé -- ni -- te, Je -- su Chri -- ste.
-    % Dó -- mi -- ne De -- us, A -- gnus De -- i, Fí -- li -- us Pa -- tris,
-    % qui tol -- lis pec -- cáta mundi, mi -- se -- ré -- re no -- bis;
-    % qui tol -- lis pec -- cáta mundi, sus -- ci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram;
-    % Qui se -- des ad déx -- te -- ram Pa -- tris, mi -- se -- ré -- re no -- bis.
-    % Quó -- ni -- am tu so -- lus Sanc -- tus,
-    % tu so -- lus Dó -- mi -- nus,
-    % tu so -- lus Al -- tís -- si -- mus, Ie -- su Chri -- ste,
-    % cum Sanc -- to Spí -- ri -- tu, in gló -- ria De -- i Pa -- tris.
-      A -- men, A -- men, A -- men, A -- men, A -- men, A -- men, A -- men
+      Dó -- mi -- ne Fi -- li U -- ni -- gé -- ni -- te, Je -- su Chri -- ste.
+      Dó -- mi -- ne De -- us, A -- gnus De -- i, Fí -- li -- us Pa -- tris,
+      qui tol -- lis pec -- cá -- ta mun -- di, mi -- se -- ré -- re no -- bis;
+      qui tol -- lis pec -- cá -- ta mun -- di, sus -- ci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram;
+      Qui se -- des ad déx -- te -- ram Pa -- tris, mi -- se -- ré -- re no -- bis.
+      Quó -- ni -- am tu so -- lus Sanc -- tus,
+      tu so -- lus Dó -- mi -- nus,
+      tu so -- lus Al -- tís -- si -- mus, Ie -- su Chri -- ste,
+      cum Sanc -- to Spí -- ri -- tu, in gló -- ri -- a De -- i Pa -- tris.
+      A -- men, A -- men, A -- men, A -- men
   }
 
 gloriaSopranoMusic = \gloriaSolistMusic

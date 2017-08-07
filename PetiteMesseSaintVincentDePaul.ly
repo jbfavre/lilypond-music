@@ -33,7 +33,7 @@ blankPage = {
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
-%\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
+\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
@@ -138,27 +138,27 @@ blankPage = {
       >>
     }
   }
-  %\bookpart {
-  %  \paper {
-  %    bookTitleMarkup = \markup {
-  %      \fill-line { \fontsize #10 \fromproperty #'header:piece }
-  %    }
-  %  }
-  %  \header {
-  %    piece = "Gloria"
-  %    tagline = ##f
-  %  }
-  %  \score {
-  %    \layout{ ragged-last = ##f }
-  %    \midi{}
-  %    \new GrandStaff
-  %    <<
-  %      \new Staff \with { instrumentName = "Soliste" }
-  %      <<
-  %        \gloriaGlobal \clef treble
-  %        \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
-  %        \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
-  %      >>
+  \bookpart {
+    \paper {
+      bookTitleMarkup = \markup {
+        \fill-line { \fontsize #10 \fromproperty #'header:piece }
+      }
+    }
+    \header {
+      piece = "Gloria"
+      tagline = ##f
+    }
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
+      <<
+        \new Staff \with { instrumentName = "Soliste" }
+        <<
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
+          \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
+        >>
   %      \new ChoirStaff
   %      <<
   %        \new Staff \with { instrumentName = "Soprano" }
@@ -202,9 +202,9 @@ blankPage = {
   %      %    << \kyrieGlobal \kyrieBasseMusic >>
   %      %  >>
   %      %>>
-  %    >>
-  %  }
-  %}
+      >>
+    }
+  }
   \bookpart {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
