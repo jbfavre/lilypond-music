@@ -10,7 +10,7 @@ psaumeGlobal = {
 psaumeSopranoMusic =  \relative c' {
   \partial 4
   f8 g a4 g8 a c4 bf8 a g2 \breathe
-  a8 a g a f f g g a2 \fermata
+  a8 a g a f d f g a2 \fermata
   \bar "|."
   \cadenzaOn \stemOff
   a\breve c4 \bar "||"
@@ -21,18 +21,24 @@ psaumeSopranoMusic =  \relative c' {
 }
 psaumeAltoMusic =  \relative c' {
   \partial 4
-  c8 e d4 bf8 c8 d4 d8 c e2
-  e8 e e e d d f e c2
+  c8 c d4 bf8 c8 d4 d8 c e2 \breathe
+  e8 e cs e a f d e c2 \fermata
+  \bar "|."
+  c\breve e4 \bar "||"
+  d\breve d4 f \bar "||"
+  e\breve cs1 e4 d \bar "||"
+  d\breve e1 e4 c \bar "|."
 }
 psaumeTenorMusic =  \relative c' {
   \partial 4
-  a8 g f4 f8 e8 f4 g8 a8 g2
-  g8 g a a f bf bf g a2
+  a8 g f4 f8 e8 f4 g8 a8 g2 \breathe
+  g8 g a g f a bf bf a2 \fermata
+  \bar "|."
 }
 psaumeBasseMusic =  \relative c {
   \partial 4
   f8 e d4 d8 c bf4 d8 f c2 \breathe
-  cs8 cs a cs d bf c e f2 \fermata
+  cs8 cs a cs d c bf c f2 \fermata
   \bar "|."
   f,\breve a4 \bar "||"
   g\breve b4 c \bar "||"
@@ -49,7 +55,10 @@ psaumeVerseLyrics = \lyricmode {
 }
 
 \header {
-  piece = "Psaume 102"
+  title = "Psaume 102"
+  subtitle = "24e dimanche ordinaire (année A)"
+  composer = "Musique: Jean Baptiste Favre"
+  poet = "Texte: AELF"
   copyright = \markup \null
   tagline = \markup \null
 }
