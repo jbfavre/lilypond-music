@@ -36,6 +36,8 @@ blankPage = {
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
+\include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
+\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 
 \book {
   \header {
@@ -72,8 +74,6 @@ blankPage = {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Kyrie"
-      copyright = \markup \null
-      tagline = \markup \null
     }
 
     \markup { \vspace #2 }
@@ -86,12 +86,6 @@ blankPage = {
       \midi{}
       \new GrandStaff
       <<
-        \new Staff \with { instrumentName = "Soliste" }
-        <<
-          \kyrieGlobal \clef treble
-          \new Voice = "kyrieSolistVoice" { \kyrieSolistMusic }
-          \new Lyrics \lyricsto "kyrieSolistVoice" { \kyrieSolistLyrics }
-        >>
         \new ChoirStaff
         <<
           \new Staff \with { instrumentName = "Soprano" }
@@ -119,22 +113,22 @@ blankPage = {
             \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
           >>
         >>
-        %\new PianoStaff <<
-        %  \new Staff <<
-        %    \clef treble
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \kyrieGlobal \kyrieSopranoMusic >>
-        %    << \kyrieGlobal \kyrieAltoMusic >>
-        %  >>
-        %  \new Staff <<
-        %    \clef bass
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \kyrieGlobal \kyrieTenorMusic >>
-        %    << \kyrieGlobal \kyrieBasseMusic >>
-        %  >>
-        %>>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \kyrieGlobal \kyrieSopranoMusic >>
+            << \kyrieGlobal \kyrieAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \kyrieGlobal \kyrieTenorMusic >>
+            << \kyrieGlobal \kyrieBasseMusic >>
+          >>
+        >>
       >>
     }
   }
@@ -146,7 +140,6 @@ blankPage = {
     }
     \header {
       piece = "Gloria"
-      tagline = ##f
     }
     \score {
       \layout{ ragged-last = ##f }
@@ -159,58 +152,56 @@ blankPage = {
           \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
           \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
         >>
-  %      \new ChoirStaff
-  %      <<
-  %        \new Staff \with { instrumentName = "Soprano" }
-  %        <<
-  %          \gloriaGlobal \clef treble
-  %          \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
-  %          \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
-  %        >>
-  %        \new Staff \with { instrumentName = "Alto" }
-  %        <<
-  %          \gloriaGlobal \clef treble
-  %          \new Voice = "gloriaAlto" { \gloriaAltoMusic }
-  %          \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
-  %        >>
-  %        \new Staff \with { instrumentName = "Ténor" }
-  %        <<
-  %          \gloriaGlobal \clef "treble_8"
-  %          \new Voice = "gloriaTenor" { \gloriaTenorMusic }
-  %          \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
-  %        >>
-  %        \new Staff \with { instrumentName = "Basse" }
-  %        <<
-  %          \gloriaGlobal \clef bass
-  %          \new Voice = "gloriaBasse" { \gloriaBasseMusic }
-  %          \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
-  %        >>
-  %      >>
-  %      %\new PianoStaff <<
-  %      %  \new Staff <<
-  %      %    \clef treble
-  %      %    \set Staff.printPartCombineTexts = ##f
-  %      %    \partcombine
-  %      %    << \kyrieGlobal \kyrieSopranoMusic >>
-  %      %    << \kyrieGlobal \kyrieAltoMusic >>
-  %      %  >>
-  %      %  \new Staff <<
-  %      %    \clef bass
-  %      %    \set Staff.printPartCombineTexts = ##f
-  %      %    \partcombine
-  %      %    << \kyrieGlobal \kyrieTenorMusic >>
-  %      %    << \kyrieGlobal \kyrieBasseMusic >>
-  %      %  >>
-  %      %>>
+        \new ChoirStaff
+        <<
+          \new Staff \with { instrumentName = "Soprano" }
+          <<
+            \gloriaGlobal \clef treble
+            \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
+            \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \gloriaGlobal \clef treble
+            \new Voice = "gloriaAlto" { \gloriaAltoMusic }
+            \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \gloriaGlobal \clef "treble_8"
+            \new Voice = "gloriaTenor" { \gloriaTenorMusic }
+            \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \gloriaGlobal \clef bass
+            \new Voice = "gloriaBasse" { \gloriaBasseMusic }
+            \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
+          >>
+        >>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \gloriaGlobal \gloriaSopranoMusic >>
+            << \gloriaGlobal \gloriaAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \gloriaGlobal \gloriaTenorMusic >>
+            << \gloriaGlobal \gloriaBasseMusic >>
+          >>
+        >>
       >>
     }
   }
   \bookpart {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
-      piece = "Sanctus"
-      copyright = \markup \null
-      tagline = \markup \null
+      piece = "Prière universelle"
     }
 
     %\markup { \vspace #2 }
@@ -223,14 +214,65 @@ blankPage = {
       \midi{}
       \new GrandStaff
       <<
-        %\new Staff \with { instrumentName = "Soliste" }
-        %<<
-        %  \sanctusGlobal \clef treble
-        %  \new Voice = "sanctusSolistMusic" { \sanctusMainSolistMusic }
-        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusMainSolistLyrics }
-        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseOneSolistLyrics }
-        %  \new Lyrics \lyricsto "sanctusSolistMusic" { \sanctusVerseTwoSolistLyrics }
-        %>>
+        \new ChoirStaff
+        <<
+          \new Staff \with {instrumentName = "Soprano" }
+          <<
+            \puGlobal \clef treble
+            \new Voice = "puSoprano" { \puMainSopranoMusic }
+            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \puGlobal \clef treble
+            \new Voice = "puAlto" { \puMainAltoMusic }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \puGlobal \clef "treble_8"
+            \new Voice = "puTenor" { \puMainTenorMusic }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \puGlobal \clef bass
+            \new Voice = "puBasse" { \puMainBasseMusic }
+          >>
+        >>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \puGlobal \puMainSopranoMusic >>
+            << \puGlobal \puMainAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \puGlobal \puMainTenorMusic >>
+            << \puGlobal \puMainBasseMusic >>
+          >>
+        >>
+      >>
+    }
+  }
+  \bookpart {
+    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \header {
+      piece = "Sanctus"
+    }
+
+    %\markup { \vspace #2 }
+    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
+    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
+    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
+
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
+      <<
         \new ChoirStaff
         <<
           \new Staff \with {instrumentName = "Soprano" }
@@ -266,6 +308,81 @@ blankPage = {
             \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
           >>
         >>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \sanctusGlobal \sanctusMainSopranoMusic >>
+            << \sanctusGlobal \sanctusMainAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \sanctusGlobal \sanctusTenorMusic >>
+            << \sanctusGlobal \sanctusMainBasseMusic >>
+          >>
+        >>
+      >>
+    }
+  }
+  \bookpart {
+    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \header {
+      piece = "Anamnèse"
+    }
+
+    %\markup { \vspace #2 }
+    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
+    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
+    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
+
+    \score {
+      \layout{ ragged-last = ##f }
+      \midi{}
+      \new GrandStaff
+      <<
+        \new ChoirStaff
+        <<
+          \new Staff \with {instrumentName = "Soprano" }
+          <<
+            \anamneseGlobal \clef treble
+            \new Voice = "anamneseSoprano" { \anamneseMainSopranoMusic }
+            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" }
+          <<
+            \anamneseGlobal \clef treble
+            \new Voice = "anamneseAlto" { \anamneseMainAltoMusic }
+          >>
+          \new Staff \with { instrumentName = "Ténor" }
+          <<
+            \anamneseGlobal \clef "treble_8"
+            \new Voice = "anamneseTenor" { \anamneseMainTenorMusic }
+          >>
+          \new Staff \with { instrumentName = "Basse" }
+          <<
+            \anamneseGlobal \clef bass
+            \new Voice = "anamneseBasse" { \anamneseMainBasseMusic }
+          >>
+        >>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \anamneseGlobal \anamneseMainSopranoMusic >>
+            << \anamneseGlobal \anamneseMainAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \anamneseGlobal \anamneseMainTenorMusic >>
+            << \anamneseGlobal \anamneseMainBasseMusic >>
+          >>
+        >>
       >>
     }
   }
@@ -273,8 +390,6 @@ blankPage = {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Agnus"
-      copyright = \markup \null
-      tagline = \markup \null
     }
 
     \markup { \vspace #2 }
@@ -288,12 +403,6 @@ blankPage = {
       \midi{}
       \new GrandStaff
       <<
-        \new Staff \with { instrumentName = "Soliste" }
-        <<
-          \agnusGlobal \clef treble
-          \new Voice = "agnusSolistVoice" { \agnusSolistMusic }
-          \new Lyrics \lyricsto "agnusSolistVoice" { \agnusSolistLyrics }
-        >>
         \new ChoirStaff
         <<
           \new Staff \with { instrumentName = "Soprano" }
@@ -321,22 +430,22 @@ blankPage = {
             \new Lyrics \lyricsto "agnusBasse" { \agnusBasseLyrics }
           >>
         >>
-        %\new PianoStaff <<
-        %  \new Staff <<
-        %    \clef treble
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \agnusGlobal \agnusSopranoMusic >>
-        %    << \agnusGlobal \agnusAltoMusic >>
-        %  >>
-        %  \new Staff <<
-        %    \clef bass
-        %    \set Staff.printPartCombineTexts = ##f
-        %    \partcombine
-        %    << \agnusGlobal \agnusTenorMusic >>
-        %    << \agnusGlobal \agnusBasseMusic >>
-        %  >>
-        %>>
+        \new PianoStaff <<
+          \new Staff <<
+            \clef treble
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \agnusGlobal \agnusSopranoMusic >>
+            << \agnusGlobal \agnusAltoMusic >>
+          >>
+          \new Staff <<
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \agnusGlobal \agnusTenorMusic >>
+            << \agnusGlobal \agnusBasseMusic >>
+          >>
+        >>
       >>
     }
   }
