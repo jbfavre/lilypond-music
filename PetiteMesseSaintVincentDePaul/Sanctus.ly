@@ -89,7 +89,7 @@ sanctusMainAltoMusic = \relative c' {
       { \sanctusAlto_BD_Alternative }
     }
     \repeat volta 2 {
-      \cadenzaOn \stemOff gs'\breve \cadenzaOff \stemOn
+      \cadenzaOn \stemOff gs\breve \cadenzaOff \stemOn
       a8 a a
       gs4 (e8) fs4. \break
       \sanctusAlto_BD_Repeat
