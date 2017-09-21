@@ -1,35 +1,9 @@
-% modèle 2.07 - 17/11/2016
-% dernière modif : l'indice de difficulté ("1" = facile, "3" = difficile, ne pas oublier les guillemets)
-% lorsque le psaume sera prêt à être publié avec Mada, il faudra :
-% 	- enlever les espaces dans "+ ++"
-%	- entrer la date du dimanche où le psaume doit être chanté, au format AAAA-MM-JJ.
-%	- lancer Mada en tapant dans un terminal : 
-%		~/psaume-du-dimanche-git/chanterprier/mada.py
-
-%{
-+++
-date="2017-08-27"
-difficulte="2"
-auteurs="Jean Baptiste"
-+++
-%}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%      RÉGLAGES PRÉLIMINAIRES       %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\version "2.18.2"
+\version "2.18.2" 
+\language "english"
 
 \include "common.ly"
-%\pointAndClickOff
 
 \paper {
-  % les deux variables suivantes permettent parfois de serrer le contenu
-  % sur une seule page :
-    %system-count = #2
-    %page-count=#1
   paper-width = 21.0\cm
   paper-height = 29.7\cm
   left-margin = 1\cm
@@ -37,31 +11,21 @@ auteurs="Jean Baptiste"
   top-margin = 1.5\cm
   bottom-margin = 0\cm
   system-system-spacing = 
-      #'((padding . 4)
+      #'((padding . 5)
        (basic-distance . 10)
-       (minimum-distance . 4)
+       (minimum-distance . 5)
        (stretchability . 10))
 }
 
 
-title = "Psaume 44"
-subtitle = "Solennité de l'Assomption"
-composer = "Magnificat, août 2017"
-
-% inutile en général de toucher aux variables ci-dessous,
-% déjà définies par défaut dans reglagesGraphiques2.ly
-% poet = "AELF"
-% poetPrefix = "Texte : "
-% composerPrefix = "Musique : "
-
-
+title = "Psaume 22"
+subtitle = "4e dimanche de Carême - Lætare (année A)"
+composer = "Jean Baptiste Favre"
 
 \layout {
   ragged-right = ##f
 }
 
-% il faudra retirer les décalages (extra-offset) le jour où on compile avec 2.18.2
-% le bug de positionnement des marques a été résolu dans 2.18.2
 tRall = {
   \set Score.tempoHideNote = ##t
   \tempo 4=70
@@ -75,8 +39,7 @@ cesure = {
   \tag #'audio s4
 }
 
-% mettre à 0 si l'on veut gagner de l'espace vertical
-#(define vspaceSousAntienne 0.5)
+#(define vspaceSousAntienne 0)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%         MUSIQUE À ÀDAPTER         %%%%%%%%%%%%%%%%%%%%
@@ -85,51 +48,43 @@ cesure = {
 
 
 tDebut = {
-  % supprimer le % suivant si l'on ne veut pas d'indication métronomique
-  \set Score.tempoHideNote = ##t
-  \tempo "Allegro" 4=70
+  %\set Score.tempoHideNote = ##t
+  \tempo "Tranquillement" 4.=50
 }
 
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
-  \key g \major
+  \time 2/4
+  \key d \minor
+  %\autoBeamOff
 }
 
 
-commonLyrics = \lyricmode {
-  De -- bout, à la droi -- te du Sei -- gneur,
-  se tient la rei -- ne, tou -- te pa -- rée d’or.
+commonLyrics = \lyricmode { 
+  Le Sei -- gneur est mon ber -- ger_:
+  rien ne sau -- rait me man -- quer.
 }
 
 
 SopranoMusic = \relative c' {
-  d4 g g8 fis e e fis g a4. \breathe
-  a8 b c d4 b c8 b a a b2 \fermata
-  \bar "|."
+   d8 e f4 (f8) f8 g g a2 c4 d8 c b4 a8 g a2 \fermata
+   \bar "|."
 }
-
 SopranoLyrics = \commonLyrics
-%si paroles particulières : \lyricmode { je suis spé -- cial }
-
 
 AltoMusic = \relative c' {
+  bf8 cs d4 (d8) d d e f2 a4 f8 f8 g4 d8 e e2
 }
-
 AltoLyrics = \commonLyrics
-%si paroles particulières : \lyricmode { je suis spé -- cial }
 
 TenorMusic =  \relative c' {
+  f,8 a a4 bf4 bf8 c c4 d4 d4 c8 c d4 b4 cs2
 }
-
 TenorLyrics = \commonLyrics
-%si paroles particulières : \lyricmode { je suis spé -- cial }
 
 BassMusic =  \relative c {
+  bf8 a d (c) bf (a) g c f (e d c) bf (g) a c g (a) b e a2
 }
-
 BassLyrics = \commonLyrics
-%si paroles particulières : \lyricmode { je suis spé -- cial }
 
 
 %%% Musique de la psalmodie
@@ -138,21 +93,9 @@ BassLyrics = \commonLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 SopranoMusicB = \relative c'' {
-  \tempo 2=100
-  b\breve d1
-  \tempo 2=30
-  g,4 \bar "||"
-  \tempo 2=100
-  g\breve c
-  \tempo 2=30
-  a4 \bar "||"
-  \tempo 2=100
-  b\breve g1
-  \tempo 2=30
-  e4 d \bar "||"
 }
 
-AltoMusicB = \relative c' {
+AltoMusicB = \relative c'' {
 }
 
 TenorMusicB = 	\relative c' {
@@ -176,33 +119,53 @@ pianoTenorMusicB = \TenorMusicB
 pianoBassMusic = \BassMusic
 pianoBassMusicB = \BassMusicB
 
-#define texteAntienne="Debout, à la droite du Seigneur, se tient la reine, toute parée d’or."
+#define texteAntienne=" "
 
-%{DEBUT-DU-TEXTE-DE-LA-PSALMODIE
-
-Écoute, ma fille, reg_a_rde et tends l’oreille ;
-oublie ton peuple et la mais_o_n de ton père :
-le roi sera sédu_i_t par ta beauté.
-
-Il est ton Seigneur : prosterne-t_o_i devant lui.
-Alors, les plus r_i_ches du peuple,
-chargés de présents, quêter_o_nt ton sourire.
-
-Fille de roi, elle est l_à_, dans sa gloire,
-vêtue d’ét_o_ffes d’or ;
-on la conduit, toute par_é_e, vers le roi.
-
-Des jeunes filles, ses compagnes, lui f_o_nt cortège ;
-on les conduit parmi les ch_a_nts de fête :
-elles entrent au pal_a_is du roi.
-
-FIN-DU-TEXTE-DE-LA-PSALMODIE%}
-
+VerseOneLyrics =  \lyricmode {
+    \override LyricText.self-alignment-X = #-1
+    \set stanza = #"1. "
+    "Le Seigneur est" \markup {\concat { m \underline o n " " ber }} -- ger, "je ne" \markup {\concat { m \underline a nque " " de}} \markup {\concat { r \underline i en,}}
+    \set stanza = #"1. "
+    "Sur des" \markup {\concat { pr \underline é s }} d’her -- be \markup {\concat { fr \underline a îche, }} "il me" \markup {\concat { f \underline a it, }} re -- po -- ser.
+  }
+VerseTwoLyrics =  \lyricmode {
+    \override LyricText.self-alignment-X = #-1
+    \set stanza = #"2. "
+    "Il me mène vers les" \markup {\concat { e \underline a ux " " tran }} -- \markup {\concat { qu \underline i lles }} "et me" \markup {\concat { f \underline a it " " re }} -- vivre;
+    \set stanza = #"2. "
+    "il me conduit par le" \markup {\concat { j \underline u s}} -- te che -- \markup {\concat { m \underline i n}} "pour l’hon" -- \markup {\concat { n \underline e ur}} de son nom.
+  }
+VerseThreeLyrics =  \lyricmode {
+    \override LyricText.self-alignment-X = #-1
+    \set stanza = #"3. "
+    "Si je traverse les ra" -- \markup {\concat { v \underline i ns " " de " " la }} \markup {\concat { m \underline o rt,}} "je ne" \markup {\concat { cr \underline a ins " " aucun}} \markup {\concat { m \underline a l,}}
+    \set stanza = #"3. "
+    "car tu" \markup {\concat { \underline e s}} a -- vec \markup {\concat { m \underline o i:}} "ton bâton me" \markup {\concat { gu \underline i de " " et }} me ras -- sure.
+  }
+VerseFourLyrics =  \lyricmode {
+    \override LyricText.self-alignment-X = #-1
+    \set stanza = #"4. "
+    "Tu prépares la" \markup {\concat { t \underline a ble " " pour}} \markup {\concat { m \underline o i}} devant \markup {\concat { m \underline e s " " enne}} -- mis;
+    \set stanza = #"4. "
+    "tu répands le par" -- \markup {\concat { f \underline u m}} sur ma \markup {\concat { t\underline ê te,}} ma \markup {\concat { c \underline o upe " " est}}  dé -- bor -- dante.
+  }
+VerseFiveLyrics =  \lyricmode {
+    \override LyricText.self-alignment-X = #-1
+    \set stanza = #"5. "
+    "Grâce et bon" -- \markup {\concat { h \underline e ur " " m’accom}} -- \markup {\concat { p \underline a gnent}} "tous les" \markup {\concat { j \underline o urs " " de " "ma }} \markup {\concat { v \underline i e;}}
+    \set stanza = #"5. "
+    "j’habiterai la mai" -- \markup {\concat { m \underline o n}} du Sei -- \markup {\concat { gn \underline e ur}} "pour la du" -- \markup {\concat { r \underline é e}} de mes jours.
+  }
 %%%%%%%% Remarques d'exécution %%%%%%%%
 % pas incluses dans la partition, seulement dans le post de blog.
 
 % au-dessus de la partition
 %{DEBUT-DU-MARKDOWN-SUPERIEUR
+
+<br>
+
+Ce psaume a été mis en musique par [Olivier Bardot](http://www.stellamaris.fr/direction_musicale.php), 
+que toute l'équipe de Psaume du dimanche remercie vivement pour cette création et pour son amitié.
 
 FIN-DU-MARKDOWN-SUPERIEUR%}
 
@@ -210,14 +173,6 @@ FIN-DU-MARKDOWN-SUPERIEUR%}
 
 % sous la partition
 %{DEBUT-DU-MARKDOWN-INFERIEUR
-## Remarques d'exécution 
-
-- Veiller à ne pas ralentir au milieu de l'antienne. 
-On peut chanter comme s'il s'agissait d'une danse.
-
-- Pour la basse à la psalmodie, le *do* bécarre est plus
-facile à trouver précisément si on le pense d'abord comme
-anticipation du *si* qui le suit.
 
 FIN-DU-MARKDOWN-INFERIEUR%}
 
@@ -277,12 +232,39 @@ partition = {
     % antienne
     \new ChoirStaff <<
       \new Staff = "Soprano" <<
+        \set Staff.instrumentName = #"Soprano"
         \new Voice = "Sop" {
           \dynamicUp
           \global \tDebut \marqueAntienne
           \SopranoMusic 
         }
         \new Lyrics \lyricsto "Sop" { \SopranoLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = #"Alto"
+        \new Voice = "Alto" {
+          \global \tDebut \marqueAntienne
+          \AltoMusic
+        }
+        \new Lyrics \lyricsto "Alto" { \AltoLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = #"Ténor"
+        \new Voice = "Ten" {
+          \clef "G_8"
+          \global \tDebut \marqueAntienne
+          \TenorMusic 
+        }
+        \new Lyrics \lyricsto "Ten" { \TenorLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = #"Basse"
+        \new Voice = "Bass" {
+          \clef "bass" \dynamicDown
+          \global \tDebut \marqueAntienne
+          \BassMusic \debutPsalmodie
+        }
+        \new Lyrics \lyricsto "Bass" { \BassLyrics }
       >>
       
       % psalmodie = ChoirStaff à deux portées 
@@ -294,10 +276,12 @@ partition = {
         \remove Time_signature_engraver
       }
       { 
+        \set Staff.shortInstrumentName = \markup { \right-column { "S." "A." } }
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
         << 
           \new Voice = "Soprano_psalmodie" { 
+            \set Voice.shortVocalName = #"S."
             \voiceOne
             { 
               \silence \SopranoMusic 
@@ -310,9 +294,91 @@ partition = {
             %version midi
             \tag #'audio <<\SopranoMusicB \\ \pisteTempoPsalmodie>>
           }
+          \new Voice = "Alto_psalmodie" { 
+            { 
+              \silence \SopranoMusic 
+            }
+            \voiceTwo
+            \cadenzaOn
+            %\debutPsalmodie
+            %version visuelle
+            \tag #'visuel \AltoMusicB
+            %version midi
+            \tag #'audio <<\AltoMusicB \\ \pisteTempoPsalmodie>>
+          }
+        >>
+      }
+      \new Lyrics \lyricsto "Soprano_psalmodie" { \VerseOneLyrics }
+      \new Lyrics \lyricsto "Soprano_psalmodie" { \VerseTwoLyrics }
+      \new Lyrics \lyricsto "Soprano_psalmodie" { \VerseThreeLyrics }
+      \new Lyrics \lyricsto "Soprano_psalmodie" { \VerseFourLyrics }
+      \new Lyrics \lyricsto "Soprano_psalmodie" { \VerseFiveLyrics }
+      \new Staff = "TB" 
+      \with {
+        \remove Time_signature_engraver
+      }
+      { 
+        \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.shortInstrumentName = \markup { \right-column { "T." "B." } }
+        \global
+        \clef bass
+        << 
+          \new Voice = "Ténor_psalmodie" { 
+            \silence \SopranoMusic
+            \voiceOne
+            \cadenzaOn
+            \debutPsalmodie
+            %version visuelle
+            \tag #'visuel \TenorMusicB
+            %version midi
+            \tag #'audio <<\TenorMusicB \\ \pisteTempoPsalmodie>>
+          }
+          \new Voice = "Basse_psalmodie" { 
+            \silence \SopranoMusic
+            \voiceTwo
+            \cadenzaOn
+            \debutPsalmodie
+            %version visuelle
+            \tag #'visuel \BassMusicB
+            %version midi
+            \tag #'audio <<\BassMusicB \\ \pisteTempoPsalmodie>>
+          }
         >>
       }
     >>
+    \tag #'visuel { 
+      \new PianoStaff \with { \pianoProperties } 
+      <<
+        \set PianoStaff.instrumentName = #"Orgue"
+        \new Staff <<
+          \set Staff.printPartCombineTexts = ##f
+          
+          \partcombine
+          << \global 
+             \keepWithTag #'visuel {\pianoSopranoMusic }
+          >>
+          << 
+            \global 
+            \keepWithTag #'visuel {\pianoAltoMusic }
+          >>
+        >>
+        
+        \new Staff <<
+          \clef bass
+          \set Staff.printPartCombineTexts = ##f
+          
+          \partcombine
+          <<
+            \global 
+            \keepWithTag #'visuel {\pianoTenorMusic }
+          >>
+          << 
+            \global 
+            \keepWithTag #'visuel {\pianoBassMusic }
+          >>
+        >>
+      >>
+    }
   >>
 }
 
@@ -420,7 +486,7 @@ partition = {
 
 % midi ténors
 
-%{\score {  \unfoldRepeats
+\score {  \unfoldRepeats
      <<
         \new ChoirStaff <<
           \new Staff <<
@@ -435,7 +501,7 @@ partition = {
         >>
       >>
 	\midi {}
-} %}
+}
 
 % midi basses
 
@@ -463,11 +529,11 @@ partition = {
 \noPageBreak
 \markup { \combine \null \vspace #1.5 }
 \noPageBreak
-
 % header du bookpart
 \header {    
   tagline = \tagline 
   copyright = \copyright
 }
 }
+
 
