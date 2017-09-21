@@ -49,7 +49,7 @@ kyrieTenorLyrics = \lyricmode {
 kyrieBasseMusic = \relative c {
       f4 ef df c bf4 df8 (bf) c2\fermata
       f8 (ef df f) af4 g f8 (ef) df (bf) c2\fermata
-      df4 bf af f'8 ef8 bf4 c f,2\fermata
+      df4 bf af f'8 (ef8) bf4 c f,2\fermata
   }
 kyrieBasseLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
