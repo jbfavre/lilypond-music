@@ -361,39 +361,47 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             }
             \new Lyrics \lyricsto "anamneseIntonation" { \anamneseIntonationLyrics }
           >>
-          \new Staff \with {instrumentName = "Soprano" }
+          \new Staff
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef treble
             \new Voice = "anamneseSoprano" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainSopranoMusic
             }
             \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
-          \new Staff \with { instrumentName = "Alto" }
+          \new Staff
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef treble
             \new Voice = "anamneseAlto" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainAltoMusic
             }
           >>
-          \new Staff \with { instrumentName = "Ténor" }
+          \new Staff
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef "treble_8"
             \new Voice = "anamneseTenor" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainTenorMusic
             }
           >>
-          \new Staff \with { instrumentName = "Basse" }
+          \new Staff
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef bass
             \new Voice = "anamneseBasse" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainBasseMusic
             }
@@ -402,24 +410,28 @@ silence = #(define-music-function (parser location arg) (ly:music?)
         \new PianoStaff <<
           \new Staff <<
             \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              \silence \anamneseIntonationMusic 
-              \partcombine
-              <<  \silence \anamneseIntonationMusic \anamneseMainSopranoMusic >>
-              <<  \silence \anamneseIntonationMusic \anamneseMainAltoMusic >>
+              { \silence \anamneseIntonationMusic 
+                \partcombine
+                <<  \anamneseMainSopranoMusic >>
+                <<  \anamneseMainAltoMusic >>
+              }
             >>
           >>
           \new Staff <<
             \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              \silence \anamneseIntonationMusic 
-              \partcombine
-              <<  \silence \anamneseIntonationMusic \anamneseMainTenorMusic >>
-              <<  \silence \anamneseIntonationMusic \anamneseMainBasseMusic >>
+              { \silence \anamneseIntonationMusic 
+                \partcombine
+                <<  \anamneseMainTenorMusic >>
+                <<  \anamneseMainBasseMusic >>
+              }
             >>
           >>
         >>
