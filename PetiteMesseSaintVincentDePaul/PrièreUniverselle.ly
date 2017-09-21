@@ -32,7 +32,7 @@ puMainTenorMusic = \relative c' {
 puMainBasseMusic = \relative c {
   f4 e f8 (ef) df4 bf c f2
   f4 ef af8 g f ef df4 d e2
-  df8 c bf4 af4 f'8 ef bf4 b c2 f2
+  df8 c bf4 af4 f'8 ef bf4 (b) c2 f2
 }
 
 puMainSopranoLyrics = \lyricmode {
