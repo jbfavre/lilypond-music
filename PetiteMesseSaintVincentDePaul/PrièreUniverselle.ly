@@ -18,9 +18,15 @@ puMainSopranoMusic = \relative c' {
 }
 
 puMainAltoMusic = \relative c' {
+  c4 e f f df c c2
+  f4 g af af f f e2
+  df4 df f f df2 c c
 }
 
 puMainTenorMusic = \relative c' {
+  af4 c c df bf g af2
+  c4 ef ef f df d c2
+  af4 bf c df bf2 g af
 }
 
 puMainBasseMusic = \relative c {

@@ -39,6 +39,13 @@ blankPage = {
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 
+silence = #(define-music-function (parser location arg) (ly:music?)
+             (map-some-music
+               (lambda (m)
+                  (and (music-is-of-type? m 'note-event)
+                       (make-music 'SkipEvent m)))
+               arg))
+
 \book {
   \header {
     title = \markup {
@@ -345,42 +352,75 @@ blankPage = {
       <<
         \new ChoirStaff
         <<
+          \new Staff \with {instrumentName = "Intonation" }
+          <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \anamneseGlobal \clef treble
+            \new Voice = "anamneseIntonation" {
+              \anamneseIntonationMusic
+            }
+            \new Lyrics \lyricsto "anamneseIntonation" { \anamneseIntonationLyrics }
+          >>
           \new Staff \with {instrumentName = "Soprano" }
           <<
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef treble
-            \new Voice = "anamneseSoprano" { \anamneseMainSopranoMusic }
+            \new Voice = "anamneseSoprano" {
+              \silence \anamneseIntonationMusic
+              \tag #'visuel \anamneseMainSopranoMusic
+            }
             \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
           \new Staff \with { instrumentName = "Alto" }
           <<
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef treble
-            \new Voice = "anamneseAlto" { \anamneseMainAltoMusic }
+            \new Voice = "anamneseAlto" {
+              \silence \anamneseIntonationMusic
+              \tag #'visuel \anamneseMainAltoMusic
+            }
           >>
           \new Staff \with { instrumentName = "Ténor" }
           <<
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef "treble_8"
-            \new Voice = "anamneseTenor" { \anamneseMainTenorMusic }
+            \new Voice = "anamneseTenor" {
+              \silence \anamneseIntonationMusic
+              \tag #'visuel \anamneseMainTenorMusic
+            }
           >>
           \new Staff \with { instrumentName = "Basse" }
           <<
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \anamneseGlobal \clef bass
-            \new Voice = "anamneseBasse" { \anamneseMainBasseMusic }
+            \new Voice = "anamneseBasse" {
+              \silence \anamneseIntonationMusic
+              \tag #'visuel \anamneseMainBasseMusic
+            }
           >>
         >>
         \new PianoStaff <<
           \new Staff <<
-            \clef treble
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \anamneseGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \anamneseGlobal \anamneseMainSopranoMusic >>
-            << \anamneseGlobal \anamneseMainAltoMusic >>
+            \new Voice <<
+              \silence \anamneseIntonationMusic 
+              \partcombine
+              <<  \silence \anamneseIntonationMusic \anamneseMainSopranoMusic >>
+              <<  \silence \anamneseIntonationMusic \anamneseMainAltoMusic >>
+            >>
           >>
           \new Staff <<
-            \clef bass
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \anamneseGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \anamneseGlobal \anamneseMainTenorMusic >>
-            << \anamneseGlobal \anamneseMainBasseMusic >>
+            \new Voice <<
+              \silence \anamneseIntonationMusic 
+              \partcombine
+              <<  \silence \anamneseIntonationMusic \anamneseMainTenorMusic >>
+              <<  \silence \anamneseIntonationMusic \anamneseMainBasseMusic >>
+            >>
           >>
         >>
       >>
