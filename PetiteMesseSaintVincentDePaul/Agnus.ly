@@ -47,7 +47,7 @@ agnusAltoMusic = \relative c' {
       { bf af g af af2 bf f (d) e1 }
     }
     \agnusAltoCommonMusic
-    \repeat volta 2 { bf'2 (g4) g f4 (g4) af2 }
+    \repeat volta 2 { bf2 (g4) g f4 (g4) af2 }
     \alternative {
       { g4 (f g b) c1 }
       { g4 (af g2) af1 }
