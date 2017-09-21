@@ -3,18 +3,9 @@
 \paper {
   paper-width = 21.0\cm
   paper-height = 29.7\cm
-  left-margin = 2.5\cm
-  right-margin = 2.5\cm
-  top-margin = 2\cm
-  bottom-margin = 2\cm
-  top-passding = 2\cm
-  bottom-padding = 2\cm
   max-systems-per-page = #4
 }
-% Needed for unmeasured "gregorian like" pieces
-
 \include "book-titling.ily"
-
 
 blankPage = {
     \pageBreak
@@ -75,6 +66,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
   \useRehearsalNumbers ##f
 
   % Cover page
+  \blankPage
   \pageBreak
 
   \bookpart {
@@ -82,12 +74,10 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \header {
       piece = "Kyrie"
     }
-
     \markup { \vspace #2 }
     \markup { "Chaque phrase est chantée une première fois par le soliste," }
     \markup { "    éventuellement accompagné du chœur " \bold "à l'unisson." }
     \markup { "Elle est ensuite reprise en polyphonie, l'assemblée chantant la voix de soliste" }
-
     \score {
       \layout{ ragged-last = ##f }
       \midi{}
@@ -95,45 +85,42 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       <<
         \new ChoirStaff
         <<
-          \new Staff \with { instrumentName = "Soprano" }
-          <<
+          \new Staff \with { instrumentName = "Soprano" } <<
             \kyrieGlobal \clef treble
             \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
             \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
           >>
-          \new Staff \with { instrumentName = "Alto" }
-          <<
+          \new Staff \with { instrumentName = "Alto" } <<
             \kyrieGlobal \clef treble
             \new Voice = "kyrieAlto" { \kyrieAltoMusic }
             \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
           >>
-          \new Staff \with { instrumentName = "Ténor" }
-          <<
+          \new Staff \with { instrumentName = "Ténor" } <<
             \kyrieGlobal \clef "treble_8"
             \new Voice = "kyrieTenor" { \kyrieTenorMusic }
             \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
           >>
-          \new Staff \with { instrumentName = "Basse" }
-          <<
+          \new Staff \with { instrumentName = "Basse" } <<
             \kyrieGlobal \clef bass
             \new Voice = "kyrieBasse" { \kyrieBasseMusic }
             \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
           >>
         >>
-        \new PianoStaff <<
+        \new PianoStaff
+        <<
           \new Staff <<
-            \clef treble
+            \kyrieGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \partcombine
-            << \kyrieGlobal \kyrieSopranoMusic >>
-            << \kyrieGlobal \kyrieAltoMusic >>
+            << \kyrieSopranoMusic >>
+            << \kyrieAltoMusic >>
           >>
           \new Staff <<
-            \clef bass
+            \kyrieGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \partcombine
-            << \kyrieGlobal \kyrieTenorMusic >>
-            << \kyrieGlobal \kyrieBasseMusic >>
+            << \kyrieTenorMusic >>
+            << \kyrieBasseMusic >>
           >>
         >>
       >>
@@ -153,53 +140,90 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       \midi{}
       \new GrandStaff
       <<
-        \new Staff \with { instrumentName = "Soliste" }
-        <<
-          \gloriaGlobal \clef treble
-          \new Voice = "gloriaSolistVoice" { \gloriaSolistMusic }
-          \new Lyrics \lyricsto "gloriaSolistVoice" { \gloriaSolistLyrics }
-        >>
         \new ChoirStaff
         <<
+          \new Staff \with { instrumentName = "Intonation" }
+          <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \gloriaGlobal \clef treble
+            \new Voice = "gloriaIntonationVoice" { \gloriaIntonationMusic }
+            \new Lyrics \lyricsto "gloriaIntonationVoice" { \gloriaIntonationLyrics }
+          >>
           \new Staff \with { instrumentName = "Soprano" }
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \gloriaGlobal \clef treble
-            \new Voice = "gloriaSoprano" { \gloriaSopranoMusic }
+            \new Voice = "gloriaSoprano" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
+              \silence \gloriaIntonationMusic
+              \tag #'visuel \gloriaSopranoMusic
+            }
             \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
           >>
           \new Staff \with { instrumentName = "Alto" }
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \gloriaGlobal \clef treble
-            \new Voice = "gloriaAlto" { \gloriaAltoMusic }
+            \new Voice = "gloriaAlto" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
+              \silence \gloriaIntonationMusic
+              \tag #'visuel \gloriaAltoMusic
+            }
             \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
           >>
           \new Staff \with { instrumentName = "Ténor" }
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \gloriaGlobal \clef "treble_8"
-            \new Voice = "gloriaTenor" { \gloriaTenorMusic }
+            \new Voice = "gloriaTenor" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
+              \silence \gloriaIntonationMusic
+              \tag #'visuel \gloriaTenorMusic
+            }
             \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
           >>
           \new Staff \with { instrumentName = "Basse" }
           <<
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
             \gloriaGlobal \clef bass
-            \new Voice = "gloriaBasse" { \gloriaBasseMusic }
+            \new Voice = "gloriaBasse" {
+              \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
+              \silence \gloriaIntonationMusic
+              \tag #'visuel \gloriaBasseMusic
+            }
             \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
           >>
         >>
         \new PianoStaff <<
           \new Staff <<
-            \clef treble
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
+            \gloriaGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \gloriaGlobal \gloriaSopranoMusic >>
-            << \gloriaGlobal \gloriaAltoMusic >>
+            \new Voice <<
+              { \silence \gloriaIntonationMusic 
+                \partcombine
+                <<  \gloriaSopranoMusic >>
+                <<  \gloriaAltoMusic >>
+              }
+            >>
           >>
           \new Staff <<
-            \clef bass
+            \override Staff.VerticalAxisGroup.remove-empty = ##t
+            \override Staff.VerticalAxisGroup.remove-first = ##t
+            \gloriaGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \gloriaGlobal \gloriaTenorMusic >>
-            << \gloriaGlobal \gloriaBasseMusic >>
+            \new Voice <<
+              { \silence \gloriaIntonationMusic 
+                \partcombine
+                <<  \gloriaTenorMusic >>
+                <<  \gloriaBasseMusic >>
+              }
+            >>
           >>
         >>
       >>
@@ -210,12 +234,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \header {
       piece = "Prière universelle"
     }
-
-    %\markup { \vspace #2 }
-    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
-    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
-    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
-
     \score {
       \layout{ ragged-last = ##f }
       \midi{}
@@ -233,16 +251,19 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           <<
             \puGlobal \clef treble
             \new Voice = "puAlto" { \puMainAltoMusic }
+            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
           >>
           \new Staff \with { instrumentName = "Ténor" }
           <<
             \puGlobal \clef "treble_8"
             \new Voice = "puTenor" { \puMainTenorMusic }
+            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
           >>
           \new Staff \with { instrumentName = "Basse" }
           <<
             \puGlobal \clef bass
             \new Voice = "puBasse" { \puMainBasseMusic }
+            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
           >>
         >>
         \new PianoStaff <<
@@ -269,20 +290,18 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \header {
       piece = "Sanctus"
     }
-
-    %\markup { \vspace #2 }
-    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
-    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
-    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
-
     \score {
       \layout{ ragged-last = ##f }
       \midi{}
       \new GrandStaff
       <<
-        \new ChoirStaff
+        \new ChoirStaff \with {
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }
         <<
-          \new Staff \with {instrumentName = "Soprano" }
+          \new Staff \with {instrumentName = "Soprano"
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }
           <<
             \sanctusGlobal \clef treble
             \new Voice = "sanctusSoprano" { \sanctusMainSopranoMusic }
@@ -290,7 +309,9 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseOneSopranoLyrics }
             \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseTwoSopranoLyrics }
           >>
-          \new Staff \with { instrumentName = "Alto" }
+          \new Staff \with { instrumentName = "Alto"
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }
           <<
             \sanctusGlobal \clef treble
             \new Voice = "sanctusAlto" { \sanctusMainAltoMusic }
@@ -298,7 +319,9 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseOneAltoLyrics }
             \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseTwoAltoLyrics }
           >>
-          \new Staff \with { instrumentName = "Ténor" }
+          \new Staff \with { instrumentName = "Ténor"
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }
           <<
             \sanctusGlobal \clef "treble_8"
             \new Voice = "sanctusTenor" { \sanctusTenorMusic }
@@ -306,7 +329,9 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseOneTenorLyrics }
             \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseTwoTenorLyrics }
           >>
-          \new Staff \with { instrumentName = "Basse" }
+          \new Staff \with { instrumentName = "Basse"
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }
           <<
             \sanctusGlobal \clef bass
             \new Voice = "sanctusBasse" { \sanctusMainBasseMusic }
@@ -315,20 +340,26 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
           >>
         >>
-        \new PianoStaff <<
-          \new Staff <<
-            \clef treble
+        \new PianoStaff  \with {
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }<<
+          \new Staff  \with {
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }<<
+            \sanctusGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \partcombine
-            << \sanctusGlobal \sanctusMainSopranoMusic >>
-            << \sanctusGlobal \sanctusMainAltoMusic >>
+            << \sanctusMainSopranoMusic >>
+            << \sanctusMainAltoMusic >>
           >>
-          \new Staff <<
-            \clef bass
+          \new Staff  \with {
+            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
+          }<<
+            \sanctusGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \partcombine
-            << \sanctusGlobal \sanctusTenorMusic >>
-            << \sanctusGlobal \sanctusMainBasseMusic >>
+            << \sanctusTenorMusic >>
+            << \sanctusMainBasseMusic >>
           >>
         >>
       >>
@@ -339,12 +370,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \header {
       piece = "Anamnèse"
     }
-
-    %\markup { \vspace #2 }
-    %\markup { "Chaque phrase est chantée une première fois par le chantre" }
-    %\markup { "éventuellement accompagné du chœur " \bold "à l'unisson" }
-    %\markup { "puis répétée à 3 voix, l'assemblée chantant avec le chantre" }
-
     \score {
       \layout{ ragged-last = ##f }
       \midi{}
@@ -383,6 +408,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainAltoMusic
             }
+            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
           \new Staff
           <<
@@ -394,6 +420,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainTenorMusic
             }
+            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
           \new Staff
           <<
@@ -405,6 +432,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
               \silence \anamneseIntonationMusic
               \tag #'visuel \anamneseMainBasseMusic
             }
+            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
         >>
         \new PianoStaff <<
