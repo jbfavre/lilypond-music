@@ -7,13 +7,15 @@ gloriaGlobal = {
   \tempo 4. = 60
 }
 
-gloriaSolistMusic = \relative c' {
+gloriaIntonationMusic = \relative c' {
     \mark "Prêtre (ou chantre)"
       % Glória in excélsis Deo
       e4 e8 fs e fs gs4 e8 a (fs4) gs4. \break
+  }
+gloriaSolistMusic = \relative c' {
     \mark "Chantre"
       % et in terra pax homínibus
-      b4 b8 cs (b) a gs4 b8 a gs4 fs4. \break
+      b'4 b8 cs (b) a gs4 b8 a gs4 fs4. \break
       % bonae voluntátis.
       e8 (fs) gs gs (fs) e cs (ds4) e4. \break
     \mark "Tous"
@@ -94,8 +96,10 @@ gloriaSolistMusic = \relative c' {
         \override TextSpanner.bound-details.left.text = \markup { \upright \bold "rit." }
         fs8 \startTextSpan (b4) b2.\stopTextSpan \fermata
   }
-gloriaSolistLyrics = \lyricmode {
+gloriaIntonationLyrics = \lyricmode {
       Gló -- ri -- a in ex -- cél -- sis De -- o
+}
+gloriaSolistLyrics = \lyricmode {
       et in ter -- ra pax ho -- mí -- ni -- bus bo -- nae vo -- lun -- tá -- tis.
       Lau -- dá -- mus te,
       be -- ne -- dí -- ci -- mus te,
@@ -120,7 +124,6 @@ gloriaSopranoMusic = \gloriaSolistMusic
 gloriaSopranoLyrics = \gloriaSolistLyrics
 
 gloriaAltoMusic =  \relative c' {
-    r4. r r r
     fs4. (e4.) e4. fs4.
     g4. b e, g4.
     g4. fs4. g4.
@@ -145,7 +148,6 @@ gloriaAltoLyrics = \lyricmode {
   }
 
 gloriaTenorMusic = \relative c {
-    r4. r r r
     b'4. a g8 e c8 d4.
     d4. fs a e
     c4. d e
