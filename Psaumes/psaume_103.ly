@@ -132,33 +132,15 @@ BassLyrics = \commonLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 SopranoMusicB = \relative c'' {
-  \tempo 2=100
-  g\breve bes1
-  \tempo 2=30
-  ees,4 \bar "||"
-  \tempo 2=100
-  ees\breve aes
-  \tempo 2=30
-  f4 \bar "||"
-  \tempo 2=100
-  g\breve bes1
-  \tempo 2=30
-  c4 \bar "||"
-  \tempo 2=100
-  bes\breve a1
-  \tempo 2=30
-  g4 \bar "||"
+  g\breve bes1 ees,4 \bar "||"
+  ees\breve aes f4 \bar "||"
+  g\breve bes1 c4 \bar "||"
+  bes\breve a1 g4 \bar "|."
 }
 
 SopranoMusicC = \relative c'' {
-  \tempo 2=100
-  g\breve bes1
-  \tempo 2=30
-  f4 \bar "||"
-  \tempo 2=100
-  ees\breve aes
-  \tempo 2=30
-  f4 \bar "||"
+  g\breve bes1 f4 \bar "||"
+  ees\breve aes f4 \bar "|."
 }
 
 AltoMusicB = \relative c' {
