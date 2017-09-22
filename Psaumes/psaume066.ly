@@ -63,32 +63,32 @@ BassLyrics = \antienneLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
-  a\breve c1 b4 \bar "||"
-  b\breve c1 a4 a \bar "||"
-  b\breve g1 c4 \bar "||"
-  bf\breve g1 f4 a \bar "|."
+  a\breve c1 b2 \bar "||"
+  b\breve c1 a4 a2 \bar "||"
+  b\breve g1 c2 \bar "||"
+  bf\breve g1 f4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c' {
-  f\breve e1 d4
-  g\breve e1 d4 e4
-  g\breve e1 g4
-  d\breve e1 f4 f4
+  f\breve e1 d2
+  g\breve e1 d4 e2
+  g\breve e1 g2
+  d\breve e1 f4 f2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
-  a\breve g1 d'4
-  b\breve g1 a4 a4
-  g\breve b1 g4
-  bf\breve c1 a4 a4
+  a\breve g1 d'2
+  b\breve g1 a4 a2
+  g\breve b1 g2
+  bf\breve c1 a4 a2
 }
 
 
 bassPsalmodieMusic = \relative c {
-  d\breve e1 g4
-  e\breve c1 f4 cs4
-  d\breve b1 c4
-  g'\breve c,1 c4 f4
+  d\breve e1 g2
+  e\breve c1 f4 cs2
+  d\breve b1 c2
+  g'\breve c,1 c4 f2
 }
 
 
