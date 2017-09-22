@@ -69,7 +69,7 @@ BassLyrics = \antienneLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
-  a\breve c4 \bar "||"
+  a\breve c2 \bar "||"
   b\breve g1 a2 \bar "||"
   a\breve g1 a4 f2 \bar "||"
   c'\breve bf1 g4 a2 \bar "|."
@@ -83,7 +83,7 @@ tenorPsalmodieMusic = 	\relative c' {
 
 
 bassPsalmodieMusic = \relative c {
-  f,\breve a4
+  f,\breve a2
   g\breve b1 c2
   cs\breve a1 cs4 d2
   bf\breve c1 e4 f2
