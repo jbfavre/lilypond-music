@@ -33,23 +33,27 @@ antienneLyrics = \lyricmode {
 }
 
 sopranoAntienneMusic = \relative c' {
-   d8 e f4 (f8) f8 g g a2 c4 d8 c b4 a8 g a2 \fermata
+   d8 e f4 (f8) f8 g g a2
+   c4 d8 c b4 a8 g a2 \fermata
    \bar "|."
 }
 SopranoLyrics = \antienneLyrics
 
 altoAntienneMusic = \relative c' {
-  d8 cs d4 (d8) d d e f2 a4 f8 f8 g4 d8 e e2
+  d8 cs d4 (d8) d d e f2
+  g4 f8 f8 d4 e8 d e2
 }
 AltoLyrics = \antienneLyrics
 
 tenorAntienneMusic =  \relative c' {
-  g8 a a4 bf4 bf8 c c4 d4 d4 c8 c d4 b4 cs2
+  g8 a a4 bf4 bf8 c c2
+  c4 bf8 a g4 g8 b cs2
 }
 TenorLyrics = \antienneLyrics
 
 bassAntienneMusic =  \relative c {
-  bf8 a d (c) bf (a) g c f (e d c) bf (g) a c g (a) b e a2
+  bf8 a d (c) bf (a) g c f2
+  e4 d8 c b4 b8 e8 a2
 }
 BassLyrics = \antienneLyrics
 
@@ -61,29 +65,29 @@ sopranoPsalmodieMusic = \relative c' {
   g'\breve a1 f2 \bar "||"
   f\breve g1 a2 \bar "||"
   a\breve c1 d2 \bar "||"
-  c\breve b4 a4 g4 a2 \bar "|."
+  c\breve b1 a4 g4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c'' {
   d,\breve cs1 d2
   d\breve e1 f2
-  a\breve f1 f2
-  f\breve g4 d4 e4 e2
+  f\breve g1 f2
+  f\breve g1 e4 e4 e2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
-  g\breve a1 a2
+  g\breve e1 a2
   bf\breve c1 c2
   d\breve c1 bf2
-  c\breve d4 b4 b4 cs2
+  a\breve b1 g4 b4 cs2
 }
 
 
 bassPsalmodieMusic = \relative c {
   bf\breve a1 d2
   bf\breve g1 f'2
-  d\breve bf1 d2
-  a\breve g4 b4 e4 a2
+  d\breve e1 d2
+  a\breve g1 b4 e4 a2
 }
 
 
