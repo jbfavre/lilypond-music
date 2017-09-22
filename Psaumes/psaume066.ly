@@ -23,9 +23,8 @@ tDebut = {
 
 global = {
   \omit Staff.TimeSignature
-  \cadenzaOn
   \key d \minor
-  %\autoBeamOff
+  \autoBeamOff
 }
 
 antienneLyrics = \lyricmode {
