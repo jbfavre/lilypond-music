@@ -1,3 +1,34 @@
+cesure = {
+  \tag #'audio s4
+}
+
+silence = #(
+  define-music-function (parser location arg) (ly:music?) (
+    map-some-music (
+      lambda (m) (
+        and (music-is-of-type? m 'note-event)
+        (make-music 'SkipEvent m)
+      )
+    ) arg
+  )
+)
+
+pianoProperties = { %options pour Lilypond 2.18.2 et suivantes
+                    \hide PhrasingSlur
+                    \hide Slur
+                    \hide Hairpin
+                    \omit DynamicText
+                    \omit TextScript
+                    \set fontSize = #-1
+                    \override StaffSymbol #'staff-space = #(magstep -1)
+                    \override Hairpin #'style = #'none
+                    \autoBeamOn
+}
+
+debutPsalmodie={
+  \break \cadenzaOn
+  \accidentalStyle "forget"
+}
 
 % Cette fonction hyper utile sert à SUPERPOSER le logo avec la barre de titre.
 % Sinon, LilyPond chercherait naïvement à éviter la collision
@@ -28,6 +59,13 @@ Takes a list of markups combining them.
   #(set-global-staff-size 19)
 }
 
+\paper {
+  system-system-spacing =
+      #'((padding . 5)
+       (basic-distance . 10)
+       (minimum-distance . 5)
+       (stretchability . 10))
+}
 
 \paper {
   #(include-special-characters) % prise en charge des charactères spéciaux http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
@@ -49,26 +87,29 @@ Takes a list of markups combining them.
        (basic-distance . 5)
        (minimum-distance . 0)
        (stretchability . 10))
-  top-margin = 3
-  bottom-margin = 5
   ragged-bottom = ##t
   last-bottom-spacing = 0
   top-markup-spacing = 0
   top-system-spacing = 0
   page-breaking = #ly:minimal-breaking
+
+  paper-width = 21.0\cm
+  paper-height = 29.7\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
+  top-margin = 1.5\cm
+  bottom-margin = 0\cm
   
   scoreTitleMarkup = \markup {
-    % \override #'(baseline-skip . 1.17)
+    \override #'(baseline-skip . 1.17)
     \line {
-      \override #'(baseline-skip . 1.30)
+      \override #'(baseline-skip . 1.17)
       \right-column {
         
-        " " 
-        \huge \larger \larger \larger \larger \bold \fromproperty #'header:title
+        \huge \larger \larger \bold \fromproperty #'header:title
         " "
         " "
-        " "
-        %\large \bold \fromproperty #'header:subtitle
+        \large \bold \fromproperty #'header:subtitle
         { \transparent \filled-box #'(0 . 52) #'(0 . 0) #0 }
       }
       \center-column { \vcenter \hcenter-in #10 { " " } }
@@ -118,11 +159,6 @@ copyright = "©"
 poet = "AELF"
 poetPrefix = "Texte : "
 composerPrefix = "Musique : "
-
-% sera appelé par accrocheParoles.ly pour l'espace vertical sous l'antienne
-% on peut overrider cette valeur dans le script au cas par cas
-#(define vspaceSousAntienne 0.1)
-#( define vspaceSousCouplet 0.35 )
 
     %\fill-line { \column { \epsfile #1 #15 #"../scripts/psd2_vector.eps"} \column {\hspace #1 } \column {\hspace #1 } } 
   %meter = \markup { \translate #'(0 . 30) \epsfile #1 #15 #"../scripts/psd2_vector.eps"} 
