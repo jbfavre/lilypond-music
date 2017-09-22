@@ -17,8 +17,8 @@ tAcce = {
 }
 
 tDebut = {
-  %\set Score.tempoHideNote = ##t
-  \tempo "Tranquillement" 4.=50
+  \set Score.tempoHideNote = ##t
+  \tempo 4.=50
 }
 
 global = {
