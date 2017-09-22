@@ -129,9 +129,9 @@ verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"3. "
     "La terre a don" -- \markup {\concat { n \underline é " " son}} fruit;
-    "Dieu, notre" \markup {\concat { Die \underline u , " " nous}} bé -- nit.
+    "Dieu, notre" \markup {\concat { Di \underline e u , " " nous}} bé -- nit.
     \set stanza = #"3. "
-    Que \markup {\concat { Die \underline u " " nous " " bé}} -- nisse,
+    Que \markup {\concat { Di \underline e u " " nous " " bé}} -- nisse,
     "et que la terre tout en" -- \markup {\concat { ti \underline è re}} l’a -- dore!
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
