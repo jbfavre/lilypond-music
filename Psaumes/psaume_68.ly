@@ -22,7 +22,7 @@ auteurs="Jean Baptiste"
 
 \version "2.18.2"
 
-\include "../scripts/reglagesGraphiques2.ly"
+\include "common.ly"
 %\pointAndClickOff
 
 \paper {
@@ -475,7 +475,7 @@ partition = {
 \noPageBreak
 \markup { \combine \null \vspace #1.5 }
 \noPageBreak
-\include "../scripts/accrocheParoles.ly"
+%\include "../scripts/accrocheParoles.ly"
 
 % header du bookpart
 \header {    
