@@ -65,13 +65,25 @@ sopranoPsalmodieMusic = \relative c' {
 }
 
 altoPsalmodieMusic = \relative c'' {
+  d,\breve cs1 d2
+  d\breve e1 f2
+  a\breve f1 f2
+  f\breve g4 d4 e4 e2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
+  g\breve a1 a2
+  bf\breve c1 c2
+  d\breve c1 bf2
+  c\breve d4 b4 b4 cs2
 }
 
 
 bassPsalmodieMusic = \relative c {
+  bf\breve a1 d2
+  bf\breve g1 f'2
+  d\breve bf1 d2
+  a\breve g4 b4 e4 a2
 }
 
 
