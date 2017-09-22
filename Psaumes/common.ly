@@ -81,8 +81,8 @@ Takes a list of markups combining them.
           "Avant Garde"
           "Courier"
           (/ myStaffSize 20))
-      
-  score-markup-spacing = 
+
+  score-markup-spacing =
       #'((padding . 0)
        (basic-distance . 5)
        (minimum-distance . 0)
@@ -99,31 +99,26 @@ Takes a list of markups combining them.
   right-margin = 1\cm
   top-margin = 1.5\cm
   bottom-margin = 0\cm
-  
+
   scoreTitleMarkup = \markup {
     \override #'(baseline-skip . 1.17)
     \line {
-      \override #'(baseline-skip . 1.17)
       \right-column {
-        
         \huge \larger \larger \bold \fromproperty #'header:title
         " "
         " "
         \large \bold \fromproperty #'header:subtitle
         { \transparent \filled-box #'(0 . 52) #'(0 . 0) #0 }
       }
-      \center-column { \vcenter \hcenter-in #10 { " " } }
-      \override #'(baseline-skip . 1.30)
-      \sans \small \left-column { 
-        " " 
+      \center-column { \vcenter \vspace #5 \hcenter-in #32 { " " } }
+      \sans \small \left-column {
+        " "
         \line { \concat { \fromproperty #'header:poetPrefix \fromproperty #'header:poet \bold " " } }
         " "
         \line { \concat { \fromproperty #'header:composerPrefix \fromproperty #'header:composer \bold " " } }
-        { \transparent \filled-box #'(0 . 52) #'(0 . 0) #0 }
       }
     }
   }
-  %\translate #'(34 . 0)   \epsfile #1 #12 #"../scripts/psd2_vector.eps" 
   oddFooterMarkup = \markup {
     \fill-line {
       \center-column {
@@ -142,13 +137,13 @@ Takes a list of markups combining them.
 
 % il faudra retirer les décalages (extra-offset) le jour où on compile avec 2.18.2
 % le bug de positionnement des marques a été résolu dans 2.18.2
-marqueAntienne = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0 )  
+marqueAntienne = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0 )
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Antienne }}}
-marquePsalmodie = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)  
+marquePsalmodie = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie }} }
-marquePsalmodieA = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)  
+marquePsalmodieA = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie A }} }
-marquePsalmodieB = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)  
+marquePsalmodieB = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie B }} }
 
 tagline = \markup {
@@ -160,29 +155,17 @@ poet = "AELF"
 poetPrefix = "Texte : "
 composerPrefix = "Musique : "
 
-    %\fill-line { \column { \epsfile #1 #15 #"../scripts/psd2_vector.eps"} \column {\hspace #1 } \column {\hspace #1 } } 
-  %meter = \markup { \translate #'(0 . 30) \epsfile #1 #15 #"../scripts/psd2_vector.eps"} 
-
-
-
 % on est obligés de déplacer les définitions ici, car plus tard c'est trop tard, le
 % script accrocheParoles.ly se retrouve dans le bloc \bookpart { \score { . } }
 % où plus aucune définition n'est possible :'(
 
 #(define comml    (object->string (command-line)))
 #(define fichierMarkup "markup-paroles.ly")
-#(define loc      (+ (string-rindex comml #\/ ) 1)) 
+#(define loc      (+ (string-rindex comml #\/ ) 1))
 #(define commllen (- (string-length comml) 2))
 #(define filen    (substring comml loc commllen))
 #(define shortfilenlen (- (string-length filen) 3))
 #(define shortfilen    (substring filen 0 shortfilenlen))
-%#(define fichierMarkup (string-concatenate (list shortfilen "_" "markup-paroles.ly")))
-%#(define pythoncall (string-concatenate ( list "../scripts/verse-marker.py" " " "\"" filen "\" " fichierMarkup )))
-%pyMx=#(define-music-function (parser location)()(system pythoncall);; or: (system* "python" "hello-world.py")
-%   #{  #})
 pyMx=#(define-music-function (parser location)()
            (system (string-concatenate (list "../scripts/verse-marker.sh \"" filen "\"") ) )
    #{  #})
-
-
-
