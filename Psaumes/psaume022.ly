@@ -61,7 +61,7 @@ sopranoPsalmodieMusic = \relative c' {
   g'\breve a1 f2 \bar "||"
   f\breve g1 a2 \bar "||"
   a\breve c1 d2 \bar "||"
-  c\breve b4 a4 g4 a2 \bar "||"
+  c\breve b4 a4 g4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c'' {
