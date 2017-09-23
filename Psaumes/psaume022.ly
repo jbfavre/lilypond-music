@@ -40,19 +40,19 @@ sopranoAntienneMusic = \relative c' {
 SopranoLyrics = \antienneLyrics
 
 altoAntienneMusic = \relative c' {
-  d8 cs d4 (d8) d d e f2
-  g4 f8 f8 d4 e8 d e2
+  d8 cs d4 (d8) d e e f2
+  a4 f8 f8 d4 e8 d-7 e2
 }
 AltoLyrics = \antienneLyrics
 
 tenorAntienneMusic =  \relative c' {
-  g8 a a4 bf4 bf8 c c2
-  c4 bf8 a g4 g8 b cs2
+  g8 g-7 a4 (a8) a8-7 bf8 c c2
+  c4 a8 f g4 g8 b cs2
 }
 TenorLyrics = \antienneLyrics
 
 bassAntienneMusic =  \relative c {
-  bf8 a d (c) bf (a) g c f2
+  bf8 a d4 (d8) bf8 c e f2
   e4 d8 c b4 b8 e8 a2
 }
 BassLyrics = \antienneLyrics
@@ -71,23 +71,23 @@ sopranoPsalmodieMusic = \relative c' {
 altoPsalmodieMusic = \relative c'' {
   d,\breve cs1 d2
   d\breve e1 f2
-  f\breve g1 f2
-  f\breve g1 e4 e4 e2
+  f\breve a1 f2
+  f\breve g1 e4 d4-7 e2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
-  g\breve e1 a2
-  bf\breve c1 c2
-  d\breve c1 bf2
+  bf\breve g1-7 a2
+  a\breve-7 g1 f2
+  a\breve c1 bf2
   a\breve b1 g4 b4 cs2
 }
 
 
 bassPsalmodieMusic = \relative c {
-  bf\breve a1 d2
-  bf\breve g1 f'2
-  d\breve e1 d2
-  a\breve g1 b4 e4 a2
+  g'\breve e1 d2
+  bf\breve c1 c2
+  d\breve e1 f2
+  c\breve d1 b4 e4 a,2
 }
 
 
@@ -136,7 +136,7 @@ verseFourLyrics =  \lyricmode {
     "devant mes" \markup {\concat { \underline e nne}} -- mis;
     \set stanza = #"4. "
     "tu répands le par" -- \markup {\concat { f \underline u m " " sur " " ma}} \markup {\concat { t\underline ê te,}}
-    "ma cou" -- \markup {\concat { pe"_" \underline e st}}  dé -- bor -- dante.
+    "ma cou" -- \markup { \concat { pe " " \underline e st}}  dé -- bor -- dante.
   }
 verseFiveLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
