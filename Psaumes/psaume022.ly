@@ -41,19 +41,19 @@ SopranoLyrics = \antienneLyrics
 
 altoAntienneMusic = \relative c' {
   d8 cs a4 (a8) d e e f2
-  a4 f8 f8 d4 d8 d cs2
+  a4 a8 f8 d4 d8 d cs2
 }
 AltoLyrics = \antienneLyrics
 
 tenorAntienneMusic =  \relative c' {
   g8 g f4 (f8) f8 g8 c c2
-  c4 a8 a g4 g8 b cs2
+  c4 c8 a g4 g8 b cs2
 }
 TenorLyrics = \antienneLyrics
 
 bassAntienneMusic =  \relative c {
   bf8 a d4 (d8) bf8 c e f2
-  e4 d8 c b4 b8 e8 e2
+  e4 f8 c e4 b8 e8 e2
 }
 BassLyrics = \antienneLyrics
 
