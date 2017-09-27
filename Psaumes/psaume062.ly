@@ -3,6 +3,18 @@
 
 \include "common.ly"
 
+#(define-public (bracket-stencils grob)
+  (let ((lp (grob-interpret-markup grob (markup #:fontsize 10 #:translate (cons -0.9 -0.5) "( ")))
+        (rp (grob-interpret-markup grob (markup #:fontsize 10 #:translate (cons -0.9 -0.5) " )"))))
+    (list lp rp)))
+
+bracketify = #(define-music-function (parser loc arg) (ly:music?)
+   (_i "Tag @var{arg} to be parenthesized.")
+#{
+  \once \override ParenthesesItem.stencils = #bracket-stencils
+  \parenthesize $arg
+#})
+
 title = "Psaume 62"
 subtitle = "32ème dimanche du Temps Ordinaire — Année A"
 composer = "Jean Baptiste Favre"
@@ -57,10 +69,10 @@ BassLyrics = \antienneLyrics
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
   %a\breve f1 g4 b a2 \bar "||"
-  b\breve c1 a2 \bar "||"
+  b\breve \bracketify a2 b1 c1 a2 \bar "||"
   a\breve g1 b2 \bar "||"
   b\breve d1 c2 \bar "||"
-  c\breve b1 a4 a2 \bar "|."
+  c\breve b1 g4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c' {
@@ -87,7 +99,7 @@ pianobassPsalmodieMusic = \bassPsalmodieMusic
 verseOneLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"1. "
-    \markup { \concat { Dieu," "tu" "es" "mon" "Dieu,\super +" "je" "te}} \markup { \concat { ch \underline e rche" "dès}} l’aube:
+    \markup { \concat { Dieu," "tu" "es" "mon}} \markup { \concat { D \underline i eu,\super +}} "je te" \markup { \concat { ch \underline e rche" "dès}} l’aube:
     "mon âme a" "soif de" toi;
     "après toi lan" -- \markup { \concat { gu \underline i t" "ma}} chair,
     "terre a" -- \markup { \concat { r \underline i de, altérée,}} sans eau.
@@ -95,7 +107,7 @@ verseOneLyrics =  \lyricmode {
 verseTwoLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"2. "
-    "Je t’ai contem" -- \markup { \concat { pl \underline é" "au" "sanctu}} -- aire,
+    "Je t’ai contem" -- _ _ \markup { \concat { pl \underline é" "au" "sanctu}} -- aire,
     "j’ai vu ta" \markup { \concat { f \underline o rce" "et" "ta}} gloire.
     "Ton amour vaut" \markup { \concat { m \underline i eux" "que" "la}} vie:
     "tu seras la lou" -- \markup { \concat { \underline a nge" "de}} mes lèvres!
@@ -103,7 +115,7 @@ verseTwoLyrics =  \lyricmode {
 verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"3. "
-    "Toute ma" \markup { \concat { v \underline i e" "je" "vais" "te" "bé}} -- nir,
+    "Toute ma" -- _ _ \markup { \concat { v \underline i e" "je" "vais" "te" "bé}} -- nir,
     "lever les mains en invo" -- \markup { \concat { qu \underline a nt" "ton}} nom.
     "Comme par un fes" -- \markup { \concat { t \underline i n" "je" "serai" "rassa}} -- sié;
     "la joie sur les lèvres, je di" -- \markup { \concat { r \underline a i" "ta}} lou -- ange.
@@ -111,7 +123,7 @@ verseThreeLyrics =  \lyricmode {
 verseFourLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"4. "
-    "Dans la nuit, je me sou" -- \markup { \concat { v \underline i ens" "de}} toi
+    "Dans la nuit, je me sou" -- _ _ \markup { \concat { v \underline i ens" "de}} toi
     "et je reste des" \markup { \concat { h \underline e ures à" "te" "par}} -- ler.
     "Oui, tu es ve" -- \markup { \concat { n \underline u" "à" "mon" "se}} -- cours:
     "je crie de joie à" \markup { \concat { l’ \underline ombre" "de}} tes ailes.
@@ -183,6 +195,7 @@ partition = {
       \new Lyrics \lyricsto "sopranoPsalmodieVoice" { \verseOneLyrics }
       \new Lyrics \lyricsto "sopranoPsalmodieVoice" { \verseTwoLyrics }
       \new Lyrics \lyricsto "sopranoPsalmodieVoice" { \verseThreeLyrics }
+      \new Lyrics \lyricsto "sopranoPsalmodieVoice" { \verseFourLyrics }
       \new Staff = "TenorBass" \with { \remove Time_signature_engraver }
       {
         \set Staff.shortInstrumentName = \markup { \right-column { "T." "B." } }
