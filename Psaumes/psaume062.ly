@@ -45,21 +45,27 @@ antienneLyrics = \lyricmode {
 }
 
 sopranoAntienneMusic = \relative c' {
-  \partial 8 e8 g4 a b c b4. \breathe
-  b8 d4 c4 b2 \fermata
+  \partial 4 e4 g a b c b2 (b4) \breathe
+  b4 d2 c2 b2 \fermata
   \bar "|."
 }
 SopranoLyrics = \antienneLyrics
 
 altoAntienneMusic = \relative c' {
+  \partial 4 b4 d c a' g g2 \breathe
+  g4 (f) a2 e2 a4 (g)
 }
 AltoLyrics = \antienneLyrics
 
 tenorAntienneMusic =  \relative c' {
+  \partial 4 g4 b e f e e2 \breathe
+  d4 (d) c2 c2 b2
 }
 TenorLyrics = \antienneLyrics
 
 bassAntienneMusic =  \relative c {
+  \partial 4 e4 e f d c e2 \breathe
+  g4 (b) f2 a2 e2
 }
 BassLyrics = \antienneLyrics
 
