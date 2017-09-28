@@ -44,27 +44,27 @@ antienneLyrics = \lyricmode {
   Sei -- gneur, mon Dieu!
 }
 
-sopranoAntienneMusic = \relative c' {
-  \partial 4 e4 g a b c b2 (b4) \breathe
+sopranoAntienneMusic = \relative c'' {
+  \partial 4 g4 b a b c b2 (b4) \breathe
   b4 d2 c2 b2 \fermata
   \bar "|."
 }
 SopranoLyrics = \antienneLyrics
 
 altoAntienneMusic = \relative c' {
-  \partial 4 b4 d c a' g g2 \breathe
+  \partial 4 e4 c c f g g2 \breathe
   g4 (f) a2 e2 a4 (g)
 }
 AltoLyrics = \antienneLyrics
 
 tenorAntienneMusic =  \relative c' {
-  \partial 4 g4 b e f e e2 \breathe
-  d4 (d) c2 c2 b2
+  \partial 4 b4 a c b c g2 \breathe
+  d'4 (d) c2 c2 b2
 }
 TenorLyrics = \antienneLyrics
 
 bassAntienneMusic =  \relative c {
-  \partial 4 e4 e f d c e2 \breathe
+  \partial 4 e4 f f d c e2 \breathe
   g4 (b) f2 a2 e2
 }
 BassLyrics = \antienneLyrics
@@ -75,7 +75,7 @@ BassLyrics = \antienneLyrics
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
   %a\breve f1 g4 b a2 \bar "||"
-  b\breve \bracketify a2 b1 c1 a2 \bar "||"
+  b\breve \bracketify a2 \bracketify b1 c1 a2 \bar "||"
   a\breve g1 b2 \bar "||"
   b\breve d1 c2 \bar "||"
   c\breve b1 g4 a2 \bar "|."
