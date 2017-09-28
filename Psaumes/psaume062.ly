@@ -125,33 +125,41 @@ pianobassPsalmodieMusic = \bassPsalmodieMusic
 verseOneLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"1. "
-    \markup { \concat { Dieu," "tu" "es" "mon}} \markup { \concat { D \underline i eu,\super &plus;}} "je te" \markup { \concat { ch \underline e rche" "dès}} l’aube:
+    "Dieu, tu es mon" \markup { \concat { D \underline i eu,\super &plus;}} "je te" \markup { \concat { ch \underline e rche" "dès}} l’aube:
+    \set stanza = #"1. "
     "mon âme a" "soif de" toi;
     "après toi lan" -- \markup { \concat { gu \underline i t" "ma}} chair,
+    \set stanza = #"1. "
     "terre a" -- \markup { \concat { r \underline i de, altérée,}} sans eau.
 }
 verseTwoLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"2. "
     "Je t’ai contem" -- _ _ \markup { \concat { pl \underline é" "au" "sanctu}} -- aire,
+    \set stanza = #"2. "
     "j’ai vu ta" \markup { \concat { f \underline o rce" "et" "ta}} gloire.
     "Ton amour vaut" \markup { \concat { m \underline i eux" "que" "la}} vie:
+    \set stanza = #"2. "
     "tu seras la lou" -- \markup { \concat { \underline a nge" "de}} mes lèvres!
   }
 verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"3. "
     "Toute ma" -- _ _ \markup { \concat { v \underline i e" "je" "vais" "te" "bé}} -- nir,
+    \set stanza = #"3. "
     "lever les mains en invo" -- \markup { \concat { qu \underline a nt" "ton}} nom.
     "Comme par un fes" -- \markup { \concat { t \underline i n" "je" "serai" "rassa}} -- sié;
+    \set stanza = #"3. "
     "la joie sur les lèvres, je di" -- \markup { \concat { r \underline a i" "ta}} lou -- ange.
   }
 verseFourLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"4. "
     "Dans la nuit, je me sou" -- _ _ \markup { \concat { v \underline i ens" "de}} toi
+    \set stanza = #"4. "
     "et je reste des" \markup { \concat { h \underline e ures à" "te" "par}} -- ler.
     "Oui, tu es ve" -- \markup { \concat { n \underline u" "à" "mon" "se}} -- cours:
+    \set stanza = #"4. "
     "je crie de joie à" \markup { \concat { l’ \underline ombre" "de}} tes ailes.
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
