@@ -75,36 +75,28 @@ BassLyrics = \antienneLyrics
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
   %a\breve f1 g4 b a2 \bar "||"
-  b\breve
-      a2 b1
-  c1 a2 \bar "||"
+  b\breve a2 b1 c1 a2 \bar "||"
   a\breve g1 b2 \bar "||"
   b\breve d1 c2 \bar "||"
   c\breve b1 g4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c' {
-  g'\breve
-      \bracketify f2 \bracketify f1
-  a1 f2 \bar "||"
+  g'\breve \bracketify f2 \bracketify f1 a1 f2 \bar "||"
   f\breve d1 g2 \bar "||"
   g\breve a1 a2 \bar "||"
   a\breve f1 d4 c2 \bar "|."
 }
 
 tenorPsalmodieMusic = 	\relative c' {
-  b\breve
-      \bracketify c2 \bracketify d1
-  c1 c2 \bar "||"
+  b\breve \bracketify c2 \bracketify d1 c1 c2 \bar "||"
   a\breve b1 g2 \bar "||"
   b\breve c1 e2 \bar "||"
   c\breve b1 b4 c2 \bar "|."
 }
 
 bassPsalmodieMusic = \relative c {
-  e\breve
-      \bracketify a,2 \bracketify d1
-  e1 f2 \bar "||"
+  e\breve \bracketify a,2 \bracketify d1 e1 f2 \bar "||"
   d\breve f1 e2 \bar "||"
   d\breve f1 a2 \bar "||"
   f\breve d1 e4 a2 \bar "|."
