@@ -74,32 +74,31 @@ BassLyrics = \antienneLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 sopranoPsalmodieMusic = \relative c'' {
-  %a\breve f1 g4 b a2 \bar "||"
   b\breve a2 b1 c1 a2 \bar "||"
   a\breve g1 b2 \bar "||"
   b\breve d1 c2 \bar "||"
-  c\breve b1 g4 a2 \bar "|."
+  c\breve b1 g4 f4 a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c' {
-  g'\breve \bracketify f2 \bracketify f1 a1 f2 \bar "||"
+  g'\breve e2 a1 e1 f2 \bar "||"
   f\breve d1 g2 \bar "||"
-  g\breve a1 a2 \bar "||"
-  a\breve f1 d4 c2 \bar "|."
+  f\breve f1 e2 \bar "||"
+  a\breve f1 d4 c4 e2 \bar "|."
 }
 
 tenorPsalmodieMusic = 	\relative c' {
-  b\breve \bracketify c2 \bracketify d1 c1 c2 \bar "||"
-  a\breve b1 g2 \bar "||"
-  b\breve c1 e2 \bar "||"
-  c\breve b1 b4 c2 \bar "|."
+  b\breve c2 c1 c1 c2 \bar "||"
+  d\breve b1 d2 \bar "||"
+  d\breve c1 c2 \bar "||"
+  c\breve d1 b4 a4 c2 \bar "|."
 }
 
 bassPsalmodieMusic = \relative c {
-  e\breve \bracketify a,2 \bracketify d1 e1 f2 \bar "||"
-  d\breve f1 e2 \bar "||"
-  d\breve f1 a2 \bar "||"
-  f\breve d1 e4 a2 \bar "|."
+  e\breve a,2 f1 a1 d2 \bar "||"
+  d\breve e1 g2 \bar "||"
+  f\breve a1 a2 \bar "||"
+  f\breve g1 e4 d4 a2 \bar "|."
 }
 
 pianosopranoAntienneMusic = \sopranoAntienneMusic
@@ -122,7 +121,7 @@ verseOneLyrics =  \lyricmode {
     "mon âme a" "soif de" toi;
     "après toi lan" -- \markup { \concat { gu \underline i t" "ma}} chair,
     \set stanza = #"1. "
-    "terre a" -- \markup { \concat { r \underline i de, altérée,}} sans eau.
+    "terre a" -- \markup { \concat { r \underline i de, alté}} -- rée, sans eau.
 }
 verseTwoLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
@@ -132,7 +131,7 @@ verseTwoLyrics =  \lyricmode {
     "j’ai vu ta" \markup { \concat { f \underline o rce" "et" "ta}} gloire.
     "Ton amour vaut" \markup { \concat { m \underline i eux" "que" "la}} vie:
     \set stanza = #"2. "
-    "tu seras la lou" -- \markup { \concat { \underline a nge" "de}} mes lèvres!
+    "tu seras la lou" -- \markup { \concat { \underline a nge}} de mes lèvres!
   }
 verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
@@ -142,7 +141,7 @@ verseThreeLyrics =  \lyricmode {
     "lever les mains en invo" -- \markup { \concat { qu \underline a nt" "ton}} nom.
     "Comme par un fes" -- \markup { \concat { t \underline i n" "je" "serai" "rassa}} -- sié;
     \set stanza = #"3. "
-    "la joie sur les lèvres, je di" -- \markup { \concat { r \underline a i" "ta}} lou -- ange.
+    "la joie sur les lèvres, je di" -- \markup { \concat { r \underline a i}} ta lou -- ange.
   }
 verseFourLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
@@ -152,7 +151,7 @@ verseFourLyrics =  \lyricmode {
     "et je reste des" \markup { \concat { h \underline e ures à" "te" "par}} -- ler.
     "Oui, tu es ve" -- \markup { \concat { n \underline u" "à" "mon" "se}} -- cours:
     \set stanza = #"4. "
-    "je crie de joie à" \markup { \concat { l’ \underline ombre" "de}} tes ailes.
+    "je crie de joie à" \markup { \concat { l’ \underline o mbre}} de tes ailes.
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          AUTRES RÉGLAGES          %%%%%%%%%%%%%%%%%%%%
