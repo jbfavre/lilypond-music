@@ -43,7 +43,7 @@ SopranoLyrics = \antienneLyrics
 altoAntienneMusic = \relative c' {
   \partial 4
   c8 c d4 bf8 c8 d4 d8 c e2 \breathe
-  e8 e cs e a f d e c2 \fermata
+  e8 e cs e d a d e c2 \fermata
   \bar "|."
 }
 AltoLyrics = \antienneLyrics
@@ -51,7 +51,7 @@ AltoLyrics = \antienneLyrics
 tenorAntienneMusic =  \relative c' {
   \partial 4
   a8 g f4 f8 e8 f4 g8 a8 g2 \breathe
-  g8 g a g f a bf bf a2 \fermata
+  g8 g a g a f bf bf a2 \fermata
   \bar "|."
 }
 TenorLyrics = \antienneLyrics
@@ -76,9 +76,17 @@ sopranoPsalmodieMusic = \relative c'' {
 }
 
 altoPsalmodieMusic = \relative c' {
+  f\breve e2
+  g\breve e1 e2
+  e\breve e1 e4 d2
+  f\breve g1 d4 e2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
+  d\breve c2
+  d\breve b1 c2
+  cs\breve cs1 cs4 a2
+  d\breve e1 bf4 cs2
 }
 
 
@@ -86,7 +94,7 @@ bassPsalmodieMusic = \relative c {
   f,\breve a2
   g\breve b1 c2
   cs\breve a1 cs4 d2
-  bf\breve c1 e4 f2
+  bf\breve c1 e4 a,2
 }
 
 
