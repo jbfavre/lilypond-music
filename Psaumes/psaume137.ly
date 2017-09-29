@@ -64,31 +64,50 @@ BassLyrics = \antienneLyrics
 sopranoPsalmodieMusic = \relative c'' {
   a\breve f1 g4 b a2 \bar "||"
   a\breve c1 b4 g a2 \bar "||"
-  a\breve a1 g4 f g2 \bar "||"
+  a\breve a1 a4 g4 f g2 \bar "||"
   f\breve d1 f4 g a2 \bar "|."
 }
 
 altoPsalmodieMusic = \relative c' {
+  c\breve d1 e4 d4 e2
+  f\breve e1 g4 e4 f2
+  e\breve f1 f4 e4 f4 e2
+  d\breve bf1 d4 d4 e2
 }
 
 tenorPsalmodieMusic = 	\relative c' {
+  a\breve a1 g4 b4 cs2
+  a\breve c1 d4 d4 c2
+  cs\breve d1 c4 c4 d4 d4 (c4)
+  bf\breve g1 a4 bf4 cs2
 }
 
 bassPsalmodieMusic = \relative c {
+  f,\breve d'1 c4 g4 a2
+  d\breve a1 b4 b4 f2
+  a\breve d1 f4 c d c2
+  bf\breve g1 d'4 e4 a,2
 }
 
 sopranoPsalmodieBMusic = \relative c'' {
-  a\breve f1 g4 b a2 \bar "||"
+  \set Staff.autoBeaming = ##f
+  a\breve f1 \slurSolid g4[( g]) b a2 \bar "||"
   f\breve d1 f4 g a2 \bar "|."
 }
 
-altoPsalmodieBMusic = \relative c'' {
+altoPsalmodieBMusic = \relative c' {
+  e\breve d1 \slurDown \slurSolid e4[( e]) g e2
+  d\breve bf1 d4 e e2
 }
 
 tenorPsalmodieBMusic = 	\relative c' {
+  cs\breve a1 \slurSolid c4[( c]) d cs2
+  bf\breve g1 a4 c4 cs2
 }
 
 bassPsalmodieBMusic = \relative c {
+  a\breve d1 \slurDown \slurSolid c4[( c]) g a2
+  bf\breve g1 d'4 c4 a2
 }
 
 pianosopranoAntienneMusic = \sopranoAntienneMusic
@@ -105,11 +124,11 @@ pianobassPsalmodieMusic = \bassPsalmodieMusic
 verseOneLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     "De tout mon cœur, Sei" -- \markup { \concat { gn \underline e ur, " " je}} te rends grâce:
-    "tu as enten" -- \markup { \concat { d \underline u " " les " " paroles}} de ma bouche.
+    "tu as entendu les pa" -- \markup { \concat { r \underline o les}} de ma bouche.
 }
 verseOneLyricsPartTwo =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
-    "Je te" \markup { \concat {ch \underline a nte " " en " " présenc }} -- e des anges,
+    "Je te" \markup { \concat {ch \underline a nte " " en " " pré}} -- \set ignoreMelismata = ##t senc -- e \unset ignoreMelismata des anges,
     "vers ton temple sacr" -- \markup { \concat { \underline é , " " je}} me pros -- terne.
   }
 verseTwoLyrics =  \lyricmode {
@@ -119,7 +138,7 @@ verseTwoLyrics =  \lyricmode {
   }
 verseTwoLyricsPartTwo =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
-    Le \markup { \concat { j \underline o ur " " où " " tu " " répondis " " à}} mon ap -- pel,
+    Le \markup { \concat { j \underline o ur " " où " " tu " " répondis}} à mon ap -- pel,
     "tu fis grandir en mon" \markup { \concat { \underline â}} -- me la force.
   }
 verseThreeLyrics =  \lyricmode {
@@ -129,7 +148,7 @@ verseThreeLyrics =  \lyricmode {
   }
 verseThreeLyricsPartTwo =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
-    Seigneur, \markup { \concat { \underline é ternel " " est}} ton a -- mour:
+    Seigneur, \markup { \concat { \underline é ternel}} est ton a -- mour:
     n’arrête \markup { \concat { p \underline a s " " l’œuvre}} de tes mains.
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -234,21 +253,29 @@ partition = {
           }
         >>
       }
-      \new Staff = "SopranoB" 
+      \new Staff = "SopranoAltoB"
       \with {
         \remove Time_signature_engraver
       }
-      { 
+      {
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
-        << 
-          \new Voice = "Soprano_psalmodie_B" { 
+        <<
+          \new Voice = "Soprano_psalmodie_B" {
             \voiceOne { \silence \sopranoAntienneMusic \silence \sopranoPsalmodieMusic }
             \cadenzaOn
             \debutPsalmodie
             \marquePsalmodieB
             \tag #'visuel \sopranoPsalmodieBMusic
             \tag #'audio <<\sopranoPsalmodieBMusic \\ \pisteTempoPsalmodie>>
+          }
+          \new Voice = "Alto_psalmodie_B" {
+            \voiceOne { \silence \sopranoAntienneMusic \silence \sopranoPsalmodieMusic }
+            \cadenzaOn
+            \debutPsalmodie
+            \marquePsalmodieB
+            \tag #'visuel \altoPsalmodieBMusic
+            \tag #'audio <<\altoPsalmodieBMusic \\ \pisteTempoPsalmodie>>
           }
         >>
       }
@@ -258,6 +285,33 @@ partition = {
       \new Lyrics \lyricsto "Soprano_psalmodie_B" { \verseTwoLyricsPartTwo }
       \new Lyrics \lyricsto "Soprano_psalmodie_B" { \set stanza = #"3. " \verseThreeLyrics }
       \new Lyrics \lyricsto "Soprano_psalmodie_B" { \verseThreeLyricsPartTwo }
+      \new Staff = "TenorBassB"
+      \with {
+        \remove Time_signature_engraver
+      }
+      {
+        \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        <<
+          \new Voice = "Tenor_psalmodie_B" {
+            \voiceOne { \silence \sopranoAntienneMusic \silence \sopranoPsalmodieMusic }
+            \cadenzaOn
+            \debutPsalmodie
+            \marquePsalmodieB
+            \tag #'visuel \tenorPsalmodieBMusic
+            \tag #'audio <<\tenorPsalmodieBMusic \\ \pisteTempoPsalmodie>>
+          }
+          \new Voice = "Basses_psalmodie_B" {
+            \voiceOne { \silence \sopranoAntienneMusic \silence \sopranoPsalmodieMusic }
+            \cadenzaOn
+            \debutPsalmodie
+            \marquePsalmodieB
+            \tag #'visuel \bassPsalmodieBMusic
+            \tag #'audio <<\bassPsalmodieBMusic \\ \pisteTempoPsalmodie>>
+          }
+        >>
+      }
     >>
     \new PianoStaff \with { \pianoProperties }
     <<
