@@ -1,3 +1,19 @@
+\version "2.18.2"
+
+tRall = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=70
+}
+tAcce = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=100
+}
+
+tDebut = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4.=50
+}
+
 cesure = {
   \tag #'audio s4
 }
@@ -13,6 +29,16 @@ silence = #(
   )
 )
 
+pianosopranoAntiphonMusic = \sopranoAntiphonMusic
+pianosopranoVerseMusic = \sopranoVerseMusic
+pianoaltoAntiphonMusic = \altoAntiphonMusic
+pianoaltoVerseMusic = \altoVerseMusic
+pianotenorAntiphonMusic = \tenorAntiphonMusic
+pianotenorVerseMusic = \tenorVerseMusic
+pianobassAntiphonMusic = \bassAntiphonMusic
+pianobassVerseMusic = \bassVerseMusic
+pisteTempoVerse = \silence \sopranoVerseMusic
+
 pianoProperties = { %options pour Lilypond 2.18.2 et suivantes
                     \hide PhrasingSlur
                     \hide Slur
@@ -25,7 +51,7 @@ pianoProperties = { %options pour Lilypond 2.18.2 et suivantes
                     \autoBeamOn
 }
 
-debutPsalmodie={
+startPsalmody={
   \break \cadenzaOn
   \accidentalStyle "forget"
 }
@@ -137,14 +163,14 @@ Takes a list of markups combining them.
 
 % il faudra retirer les décalages (extra-offset) le jour où on compile avec 2.18.2
 % le bug de positionnement des marques a été résolu dans 2.18.2
-marqueAntienne = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0 )
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Antienne }}}
-marquePsalmodie = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie }} }
-marquePsalmodieA = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie A }} }
-marquePsalmodieB = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps Psalmodie B }} }
+marqueAntiphon = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0 )
+                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \antiphonText }}}
+markPsalmody = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
+                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseText }} }
+markPsalmodyA = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
+                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseTextA }} }
+markPsalmodyB = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
+                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseTextB }} }
 
 tagline = \markup {
       \teeny\sans \concat{"gravé avec LilyPond pour " \with-url #"https://www.psaumedudimanche.fr" {\underline{www.psaumedudimanche.fr}}}
@@ -152,8 +178,6 @@ tagline = \markup {
 
 copyright = "©"
 poet = "AELF"
-poetPrefix = "Texte : "
-composerPrefix = "Musique : "
 
 % on est obligés de déplacer les définitions ici, car plus tard c'est trop tard, le
 % script accrocheParoles.ly se retrouve dans le bloc \bookpart { \score { . } }
