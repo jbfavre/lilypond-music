@@ -124,7 +124,7 @@ Takes a list of markups combining them.
   left-margin = 1\cm
   right-margin = 1\cm
   top-margin = 1.5\cm
-  bottom-margin = 0\cm
+  bottom-margin = 1.5\cm
 
   scoreTitleMarkup = \markup {
     \override #'(baseline-skip . 1.17)
