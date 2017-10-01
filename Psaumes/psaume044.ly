@@ -18,7 +18,7 @@ staffSize = 18
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  d4 g g8 fis e e fis g a4. \breathe
+  d4 g g8 fs e e fs g a4. \breathe
   a8 b c d4 b c8 b a a b2 \fermata
   \bar "|."
   }
