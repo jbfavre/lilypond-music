@@ -13,7 +13,7 @@ global = {
   }
 
 % Ajust this setting to get a single page psalm
-staffSize = 17
+staffSize = 16
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
