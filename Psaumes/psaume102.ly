@@ -76,7 +76,7 @@ altoVerseMusic = \relative c' {
   f\breve g1 d4 e2
   }
 
-tenorVerseMusic = 	\relative c' {
+tenorVerseMusic = \relative c' {
   d\breve c2
   d\breve b1 c2
   cs\breve cs1 cs4 a2
