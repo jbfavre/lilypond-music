@@ -71,6 +71,15 @@ sopranoVerseMusicB = \relative c'' {
   ef\breve af f4 \bar "|."
 }
 
+altoVerseMusicB = \relative c' {
+  }
+
+tenorVerseMusicB = \relative c' {
+  }
+
+bassVerseMusicB = \relative c {
+  }
+
 %{DEBUT-DU-TEXTE-DE-LA-PSALMODIE
 
 Bénis le Seigne_u_r, ô mon âme ;
@@ -129,6 +138,8 @@ verseFourLyrics =  \lyricmode {
 
 groupedVersesLyrics = <<
 >>
+
+groupedVersesLyricsB = \groupedVersesLyrics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
