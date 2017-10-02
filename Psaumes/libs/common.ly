@@ -1,23 +1,5 @@
 \version "2.18.2"
 
-tRall = {
-  \set Score.tempoHideNote = ##t
-  \tempo 4=70
-}
-tAcce = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=100
-}
-
-tDebut = {
-  \set Score.tempoHideNote = ##t
-  \tempo 4.=50
-}
-
-cesure = {
-  \tag #'audio s4
-}
-
 silence = #(
   define-music-function (parser location arg) (ly:music?) (
     map-some-music (
