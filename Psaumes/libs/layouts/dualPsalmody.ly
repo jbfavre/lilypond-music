@@ -4,26 +4,26 @@ partition = {
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
         \new Voice = "Sop" {
-          \dynamicUp \global \tDebut \marqueAntiphon \sopranoAntiphonMusic
+          \dynamicUp \global \tempoAntiphon \marqueAntiphon \sopranoAntiphonMusic
         }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \altoVoiceTitle
-        \new Voice = "Alto" { \global \tDebut \altoAntiphonMusic
+        \new Voice = "Alto" { \global \tempoAntiphon \altoAntiphonMusic
         }
         \new Lyrics \lyricsto "Alto" { \altoAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \tenorVoiceTitle
-        \new Voice = "Ten" { \clef "G_8" \global \tDebut \tenorAntiphonMusic
+        \new Voice = "Ten" { \clef "G_8" \global \tempoAntiphon \tenorAntiphonMusic
         }
         \new Lyrics \lyricsto "Ten" { \tenorAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \bassVoiceTitle
         \new Voice = "Bass" {
-          \clef "bass" \global \tDebut \bassAntiphonMusic
+          \clef "bass" \global \tempoAntiphon \bassAntiphonMusic
         }
         \new Lyrics \lyricsto "Bass" { \bassAntiphonLyrics }
       >>
@@ -96,26 +96,26 @@ partitionB = {
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
         \new Voice = "Sop" {
-          \dynamicUp \global \tDebut \marqueAntiphon \sopranoAntiphonMusic
+          \dynamicUp \global \tempoAntiphon \marqueAntiphon \sopranoAntiphonMusic
         }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \altoVoiceTitle
-        \new Voice = "Alto" { \global \tDebut \altoAntiphonMusic
+        \new Voice = "Alto" { \global \tempoAntiphon \altoAntiphonMusic
         }
         \new Lyrics \lyricsto "Alto" { \altoAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \tenorVoiceTitle
-        \new Voice = "Ten" { \clef "G_8" \global \tDebut \tenorAntiphonMusic
+        \new Voice = "Ten" { \clef "G_8" \global \tempoAntiphon \tenorAntiphonMusic
         }
         \new Lyrics \lyricsto "Ten" { \tenorAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \bassVoiceTitle
         \new Voice = "Bass" {
-          \clef "bass" \global \tDebut \bassAntiphonMusic
+          \clef "bass" \global \tempoAntiphon \bassAntiphonMusic
         }
         \new Lyrics \lyricsto "Bass" { \bassAntiphonLyrics }
       >>
@@ -253,7 +253,7 @@ partitionB = {
           \global \clef "treble"
           \new Voice = "Soprano"
           <<
-            \voiceOne { \tDebut \sopranoAntiphonMusic \startPsalmody << \sopranoVerseMusic \\ \pisteTempoVerse >> }
+            \voiceOne { \tempoAntiphon \sopranoAntiphonMusic \startPsalmody << \sopranoVerseMusic \\ \pisteTempoVerse >> }
           >>
         >>
       >>
@@ -270,7 +270,7 @@ partitionB = {
           \global \clef "treble"
           \new Voice = "Alti"
           <<
-            \voiceOne { \tDebut \altoAntiphonMusic \startPsalmody << \altoVerseMusic \\ \pisteTempoVerse >> }
+            \voiceOne { \tempoAntiphon \altoAntiphonMusic \startPsalmody << \altoVerseMusic \\ \pisteTempoVerse >> }
           >>
         >>
       >>
@@ -287,7 +287,7 @@ partitionB = {
           \global \clef "treble"
           \new Voice = "Ténor"
           <<
-            \voiceOne { \tDebut \tenorAntiphonMusic \startPsalmody << \tenorVerseMusic \\ \pisteTempoVerse >> }
+            \voiceOne { \tempoAntiphon \tenorAntiphonMusic \startPsalmody << \tenorVerseMusic \\ \pisteTempoVerse >> }
           >>
         >>
       >>
@@ -304,7 +304,7 @@ partitionB = {
           \global \clef "treble"
           \new Voice = "Basse"
           <<
-            \voiceOne { \tDebut \bassAntiphonMusic \startPsalmody << \bassVerseMusic \\ \pisteTempoVerse >> }
+            \voiceOne { \tempoAntiphon \bassAntiphonMusic \startPsalmody << \bassVerseMusic \\ \pisteTempoVerse >> }
           >>
         >>
       >>
