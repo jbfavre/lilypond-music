@@ -1,5 +1,13 @@
 \version "2.18.2"
 \language "english"
+%{
+  Default settings are needed at the beginning
+  because they are used in antiphon & verse music definition
+  You can override default values simply by declaring variables again.
+%}
+\include "libs/settings.ly"
+% Ajust this setting to get a single page psalm
+staffCustomSize = 18
 
 title = "Psaume 44"
 subtitle = "Solennité de l'Assomption"
@@ -10,8 +18,7 @@ global = {
   \cadenzaOn
   \key g \major
 }
-% Ajust this setting to get a single page psalm
-staffSize = 18
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -91,4 +98,6 @@ groupedVersesLyrics = <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "libs/layouts/fr.ly"
 \include "libs/common.ly"
+%\include "libs/layouts/dualPsalmody.ly"
 \include "libs/layouts/singlePsalmody.ly"
+\include "libs/layouts/outputMidi.ly"

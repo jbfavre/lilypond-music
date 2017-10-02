@@ -1,5 +1,25 @@
 \version "2.18.2"
 \language "english"
+%{
+  Default settings are needed at the beginning
+  because they are used in antiphon & verse music definition
+  You can override default values simply by declaring variables again.
+%}
+\include "libs/settings.ly"
+% Ajust this setting to get a single page psalm
+staffCustomSize = 18
+tempoAntiphon = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=80
+}
+tempoVerseRallentando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=80
+}
+tempoVerseAcelerando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=80
+}
 
 title = "Psaume 102"
 subtitle = "24e dimanche ordinaire (année A)"
@@ -63,31 +83,35 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-  a\breve c2 \bar "||"
-  b\breve g1 a2 \bar "||"
-  a\breve g1 a4 f2 \bar "||"
-  c'\breve bf1 g4 a2 \bar "|."
+    \caesura
+    \tempoVerseAcelerando a\breve \tempoVerseRallentando c2 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando a2 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 f2 \bar "||" \caesura
+    \tempoVerseAcelerando c'\breve bf1 \tempoVerseRallentando g4 a2 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
-  f\breve e2
-  g\breve e1 e2
-  e\breve e1 e4 d2
-  f\breve g1 d4 e2
+    \caesura
+    f\breve e2 \caesura
+    g\breve e1 e2 \caesura
+    e\breve e1 e4 d2 \caesura
+    f\breve g1 d4 e2
   }
 
 tenorVerseMusic = \relative c' {
-  d\breve c2
-  d\breve b1 c2
-  cs\breve cs1 cs4 a2
-  d\breve e1 bf4 cs2
+    \caesura
+    d\breve c2 \caesura
+    d\breve b1 c2 \caesura
+    cs\breve cs1 cs4 a2 \caesura
+    d\breve e1 bf4 cs2
   }
 
 bassVerseMusic = \relative c {
-  f,\breve a2
-  g\breve b1 c2
-  cs\breve a1 cs4 d2
-  bf\breve c1 e4 a,2
+    \caesura
+    f,\breve a2 \caesura
+    g\breve b1 c2 \caesura
+    cs\breve a1 cs4 d2 \caesura
+    bf\breve c1 e4 a,2
   }
 
 
@@ -140,4 +164,6 @@ groupedVersesLyrics = <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "libs/layouts/fr.ly"
 \include "libs/common.ly"
+%\include "libs/layouts/dualPsalmody.ly"
 \include "libs/layouts/singlePsalmody.ly"
+\include "libs/layouts/outputMidi.ly"

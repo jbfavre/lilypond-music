@@ -1,5 +1,13 @@
 \version "2.18.2"
 \language "english"
+%{
+  Default settings are needed at the beginning
+  because they are used in antiphon & verse music definition
+  You can override default values simply by declaring variables again.
+%}
+\include "libs/settings.ly"
+% Ajust this setting to get a single page psalm
+staffCustomSize = 18
 
 title = "Psaume 103"
 subtitle = "Pentecôte"
@@ -11,7 +19,7 @@ global = {
   \key ef \major
 }
 % Ajust this setting to get a single page psalm
-staffSize = 16
+staffSize = 19
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -20,7 +28,7 @@ staffSize = 16
 sopranoAntiphonMusic = \relative c' {
   ef8 ef d4. d8 f4 f8 f ef4.  \breathe
   ef8 f g af4 af8 af c c bf af bf4 bf \fermata
-  \bar "|."
+  \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
@@ -33,8 +41,8 @@ bassAntiphonMusic =  \relative c {
   }
 
 antiphonLyrics = \lyricmode {
-  Ô Sei -- gneur, en -- voie ton Es -- prit
-  qui re -- nou -- vel -- le la fa -- ce de la ter -- re!
+    Ô Sei -- gneur, en -- voie ton Es -- prit
+    qui re -- nou -- vel -- le la fa -- ce de la ter -- re!
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -51,10 +59,11 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-  g\breve bf1 ef,4 \bar "||"
-  ef\breve af f4 \bar "||"
-  g\breve bf1 c4 \bar "||"
-  bf\breve a1 g4 \bar "|."
+    \caesura
+    \tempoVerseAcelerando g\breve bf1 \tempoVerseRallentando ef,4 \bar "||" \caesura
+    \tempoVerseAcelerando ef\breve af1 \tempoVerseRallentando f4 \bar "||" \caesura
+    \tempoVerseAcelerando g\breve bf1 \tempoVerseRallentando c4 \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve a1 \tempoVerseRallentando g4 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
@@ -67,9 +76,9 @@ bassVerseMusic = \relative c {
   }
 
 sopranoVerseMusicB = \relative c'' {
-  g\breve bf1 f4 \bar "||"
-  ef\breve af f4 \bar "|."
-}
+    g\breve bf1 f4 \bar "||"
+    ef\breve af f4 \bar "|."
+  }
 
 altoVerseMusicB = \relative c' {
   }
@@ -137,7 +146,7 @@ verseFourLyrics =  \lyricmode {
   }
 
 groupedVersesLyrics = <<
->>
+  >>
 
 groupedVersesLyricsB = \groupedVersesLyrics
 
@@ -147,3 +156,5 @@ groupedVersesLyricsB = \groupedVersesLyrics
 \include "libs/layouts/fr.ly"
 \include "libs/common.ly"
 \include "libs/layouts/dualPsalmody.ly"
+%\include "libs/layouts/singlePsalmody.ly"
+\include "libs/layouts/outputMidi.ly"

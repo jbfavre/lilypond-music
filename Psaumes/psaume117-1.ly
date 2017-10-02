@@ -1,5 +1,25 @@
 \version "2.18.2"
 \language "english"
+%{
+  Default settings are needed at the beginning
+  because they are used in antiphon & verse music definition
+  You can override default values simply by declaring variables again.
+%}
+\include "libs/settings.ly"
+% Ajust this setting to get a single page psalm
+staffCustomSize = 18
+tempoAntiphon = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=120
+}
+tempoVerseRallentando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=120
+}
+tempoVerseAcelerando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=120
+}
 
 title = "Psaume 117 (1)"
 subtitle = ""
@@ -51,14 +71,15 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-  a\breve c1 b2 \bar "||"
-  g\breve f1 a2 \bar "||"  
+    \caesura
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b2 \bar "||" \caesura
+    \tempoVerseAcelerando g\breve f1 \tempoVerseRallentando a2 \bar "||"  
   }
 
 altoVerseMusic = \relative c' {
   }
 
-tenorVerseMusic = 	\relative c' {
+tenorVerseMusic = \relative c' {
   }
 
 bassVerseMusic = \relative c {
@@ -162,4 +183,6 @@ groupedVersesLyrics = <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "libs/layouts/fr.ly"
 \include "libs/common.ly"
+%\include "libs/layouts/dualPsalmody.ly"
 \include "libs/layouts/singlePsalmody.ly"
+\include "libs/layouts/outputMidi.ly"
