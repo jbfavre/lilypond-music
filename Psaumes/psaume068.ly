@@ -7,7 +7,7 @@
 %}
 \include "libs/settings.ly"
 % Ajust this setting to get a single page psalm
-staffCustomSize = 18
+staffCustomSize = 15
 
 title = "Psaume 68"
 subtitle = "12e dimanche ordinaire (année A)"
@@ -18,8 +18,6 @@ global = {
   \cadenzaOn
   \key d \minor
 }
-% Ajust this setting to get a single page psalm
-staffSize = 17
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -38,7 +36,7 @@ tenorAntiphonMusic =  \relative c' {
   }
 
 bassAntiphonMusic =  \relative c {
-  d8 a d c f,2 \breathe
+  d8 c f e a,2 \breathe
   a4 d8 b a2 \fermata
   }
 
@@ -80,12 +78,12 @@ tenorVerseMusic = 	\relative c' {
 
 bassVerseMusic = \relative c {
     \caesura
-    d\breve b1 g4 a2 \caesura
+    d\breve c1 b4 a2 \caesura
     f\breve g1 e4 a2 \caesura
-    d\breve b1 c4 a g2 \caesura
+    d\breve b1 e4 a g2 \caesura
     e\breve f1 a2 \caesura
-    f\breve a1 d4 d g2 \caesura
-    g\breve e1 d4 a2 \caesura
+    f\breve a1 d,4 f g2 \caesura
+    e,\breve f1 g4 a2 \caesura
   }
 
 verseOneLyrics =  \lyricmode {
@@ -115,7 +113,7 @@ verseTwoLyrics =  \lyricmode {
 verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"3. "
-    "Les pauvres l’ont" \markup { \concat { v \underline u," "ils" "sont" "en}} fête&nbsp;:
+    "Les pauvres l’ont" \markup { \concat { v \underline u," "ils" "sont}} en fête&nbsp;:
     "« Vie et joie, à" \markup { \concat { v \underline o us" "qui" "cher}} chez Dieu&nbsp;!&nbsp;»
     \set stanza = #"3. "
     "Car le Seigneur é" -- \markup { \concat { c \underline o u}} -- te les humbles,
