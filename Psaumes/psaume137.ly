@@ -8,6 +8,7 @@
 \include "libs/settings.ly"
 % Ajust this setting to get a single page psalm
 staffCustomSize = 18
+
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
   \tempo 4=70
@@ -73,10 +74,10 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 sopranoVerseMusic = \relative c'' {
     \caesura
-    a\breve f1 g4 b a2 \bar "||" \caesura
-    a\breve c1 b4 g a2 \bar "||" \caesura
-    a\breve a1 a4 g4 f g2 \bar "||" \caesura
-    f\breve d1 f4 g a2 \bar "|."
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 b a2 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 g a2 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando a4 g4 f g2 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a2 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
@@ -115,7 +116,7 @@ altoVerseMusicB = \relative c' {
     d\breve bf1 d4 e e2
   }
 
-tenorVerseMusicB = 	\relative c' {
+tenorVerseMusicB = \relative c' {
     \caesura
     cs\breve a1 \slurSolid c4[( c]) d cs2 \caesura
     bf\breve g1 a4 c4 cs2
@@ -183,6 +184,6 @@ groupedVersesLyricsB = <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "libs/layouts/fr.ly"
 \include "libs/common.ly"
-\include "libs/layouts/dualPsalmody.ly"
-%\include "libs/layouts/singlePsalmody.ly"
+%\include "libs/layouts/dualPsalmody.ly"
+\include "libs/layouts/singlePsalmody.ly"
 \include "libs/layouts/outputMidi.ly"
