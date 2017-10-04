@@ -26,7 +26,7 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   e8 fs gs4 a fs2 \breathe
-  gs8 a b4 c4 c4 gs2 \fermata
+  gs8 bs cs4 b8 a4 gs2 \fermata
   \bar "|." \break
   }
 
@@ -37,6 +37,8 @@ tenorAntiphonMusic =  \relative c' {
   }
 
 bassAntiphonMusic =  \relative c {
+    e8 ds cs (b) a (fs) b2 \breathe
+    cs8 gs a4 b8 ds8 e2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
