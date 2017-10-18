@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2017-10-15T18:41:55.372609951</meta:creation-date><dc:date>2017-10-16T07:52:30.407053604</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT9H31M32S</meta:editing-duration><meta:editing-cycles>5</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2.0$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:character-count="20966" meta:image-count="0" meta:non-whitespace-character-count="17649" meta:object-count="0" meta:page-count="10" meta:paragraph-count="64" meta:table-count="0" meta:word-count="3374"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22271</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22698</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2635</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">8601</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22269</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">22696</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">180</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">240832</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">880628</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="120%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Numbering_20_Symbols" style:display-name="Numbering Symbols" style:family="text"/>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+   </text:sequence-decls>
+   <text:p text:style-name="Title">Les mélodies des psaumes</text:p>
+   <text:p text:style-name="Subtitle">Publié dans « La Maison-Dieu », 33, Éditions du CERF, 1953</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">LE RÉCITATIF PSALMODIQUE</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">La « psalmodie » ou chant des psaumes peut appartenir, musicalement, à deux genres très différents : l&apos;air ou le récitatif. Dans le premier genre, c&apos;est la mélodie qui impose au chant son propre rythme : c&apos;est le cas habituel de la chanson, du cantique, du choral, des hymnes, etc., dont tous les couplets s&apos;adaptent à un air invariable. Cet air peut se suffire à lui-même et se passer, à la rigueur, de paroles. Dans le second genre, au contraire, c&apos;est la récitation du texte qui vient fournir à la mélodie son rythme, au point que, sans texte, celle-ci serait musicalement informe. Le rythme oral devient rythme musical. Tel est le cas de la psalmodie occidentale de l&apos;office dont les formules mélodiques ne prennent corps et vie qu&apos;en s&apos;adaptant aux versets de psaumes.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">La première solution, qui exige poui l&apos;air un texte français rigoureusement versifié dans une strophique et un mètre absolument réguliers, a dû être écartée pour la psalmodie en français.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Malgré la facilité qu&apos;elle offre à l&apos;exécution chorale, puisque le texte s&apos;adapte mécaniquement syllabe par syllabe à la succession invariable des notes, cette forme lyrique interdisait au traducteur la parfaite fidélité au texte original qui devait être respectée absolument1. Sans doute, la paraphrase des psaumes et le chant en couplets de ces traductions en vers restent parfaitement légitimes et fort pratiques. Mais cela ne correspond pas au but traditionnel de la psalmodie chrétienne qui est de chanter la lettre même de la Parole de Dieu.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">C&apos;est donc la seconde solution qui devait être adoptée. Les principes du rythme oral de la langue française une fois reconnus et admis, en possession d&apos;autre part d&apos;une traduction « rythmée » des psaumes, restait à trouver les mélodies de récitatif qui permettraient leur exécution correcte en langue française.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/>1. Les raisons théologiques, liturgiques et pastorales de cette fidélité au texte de l&apos;Écriture ont été exposées dans les études précédentes.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">LE CHOIX DES FORMULES MÉLODIQUES</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Nous ne savons à peu près rien de la musique originale des psaumes, si ce n&apos;est le peu que nous suggère la convergence des traditions synagogales très anciennes : cette musique était mesurée, diatonique et modale. Ce qui est confirmé par le témoignage de Clément d&apos;Alexandrie : les chants des Hébreux, dit-il, sont réguliers et harmonieusement cadencés, les mélodies souples et graves.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Pour regrettable que soit cette perte, on s&apos;en consolera en pensant que la tradition vivante de l&apos;Église l&apos;a vraisemblablement assimilée et que, d&apos;une certaine manière, nous en vivons encore aujourd&apos;hui. En effet, l&apos;historien de la musique liturgique voit s&apos;imposer à lui un fait remarquable : certaines formules mélodiques des cantillantions de l&apos;Écriture dans la synagogue, des récitatifs des liturgies syriaques, grecques, latines, voire des chants sacrés nègres, hindous, chinois, indiens, etc., présentent des parentés étonnantes. Tout se passe comme si certains groupements d&apos;intervalles musicaux s&apos;accordaient si spontanément à l&apos;oreille humaine qu&apos;ils puissent traverser les siècles sans être le propre d&apos;une civilisation ou d&apos;une époque 2. Il s&apos;agit en général de modes défectifs comme le récitatif de la préface romaine ou le Gloria XV de l&apos;édition vaticane. La gamme à cinq sons anhémitonique (sans demi-tons), commune à la musique chinoise et aux negro-spirituals, à des mélodies syriennes, africaines, écossaises, bretonnes, grégoriennes, etc., et affectionnée de Debussy, est un bon type de cette musique qui semble ne connaître ni âge ni frontière.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Plutôt que de chercher des mélodies nouvelles ou actuelles, susceptibles de vieillir (à l&apos;exemple de notre bimodalisme tonal occidental classique dont les compositeurs modernes usent de moins en moins, malgré ses trois ou quatre siècles d&apos;existence et de fécondité), n&apos;était-il pas tout indiqué de puiser dans cette tradition musicale universelle, que l&apos;expérience prouve également adaptée aux oreilles les plus ordinaires et les plus diverses?</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">On ne peut songer toutefois, sauf de rares exceptions3, à prendre ces récitatifs dans la forme exacte, plus ou moins exotique,</text:p>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Text_20_body">2. Le fait est d&apos;autant plus remarquable pour l&apos;historien de la musique qui n&apos;ignore pas la relativité singulière des systèmes musicaux élaborés par les civilisations diverses et leur peu de consistance objective en dehors de l&apos;usage et de l&apos;accoutumance de l&apos;oreille.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">3. Tel est le cas d&apos;un mode arménien repris tel que dans la formule n° 2. Ce qui a été rendu possible parce que la langue arménienne est, comme la langue française, accentuée sur la finale.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">sous laquelle ils nous parviennent, pour les plaquer matériellement sur la version rythmée des psaumes. Ce serait faire œuvre d&apos;archéologisme superstitieux et mauvaise besogne chorale. Chaque langue a son génie rythmique qui informe également le récitatif musical. Il est, par exemple, tout à fait impossible d&apos;appliquer têts quels les huit tons grégoriens avec leurs intonation, teneur, médiante et cadence, aux vers français dont les appuis finaux contredisent les accents pénultièmes ou antépénultièmes des versets latins. On a protesté à juste titre lorsque de telles adaptations ont été faites. La succession matérielle des notes peut bien être la même dans les deux cas, en réalité la mélodie est devenue autre puisque le rythme qui lui donne sa vie, en privilégiant certains degrés du mode, a changé. La mélodie n&apos;est plus pour un musicien (à supposer que la langue française elle-même n&apos;ait pas à en souffrir) que défigurée et trahie. En réalité, une refonte de la formule mélodique, adaptée aux appuis périodiques du français et à la structure des strophes hébraïques, s&apos;impose.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Ce travail de recréation et d&apos;imitation originale des formules traditionnelles a été fait d&apos;après une longue expérience du récitatif français, aussi bien que suivant les lois du chant choral et de la composition musicale. Il sera aisé, à quiconque en a saisi les principes, d&apos;augmenter le répertoire de ces formules psalmodiques.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Aucun des modes que nous proposons n&apos;est original. On pourrait, pour la plupart d&apos;entre eux, indiquer une infinité de « sources » les plus variées. Dans le mode de fa, par exemple (nOS 9 et 16), on peut reconnaître aussi bien le cinquième ton grégorien qu&apos;une cantilène juive ou qu&apos;un récitatif musulman; dans le mode de si (nos 2 et 5), un ton psalmodique ambrosien aussi bien qu&apos;arménien, etc., sans parler de quantité de mélodies, chansons, compositions <text:soft-page-break/>diverses qui présentent ces formules en tout ou en partie. L&apos;inventaire en serait inutile et fastidieux.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Bien que tous ces modes (sauf un) soient défectifs, — c&apos;est-àdire qu&apos;ils n&apos;utilisent qu&apos;une gamme à trois ou quatre ou cinq ou six degrés, mais non les sept, — nous les avons classés selon le principe modal diatonique heptaphonique qui est à la base de notre musique occidentale depuis plus de deux millénaires. Outre son caractère traditionnel et permanent, il a l&apos;avantage d&apos;être clair et d&apos;éviter toute équivoque. Nous disons donc : mode de ré, mode de mi, mode de fa, etc. 4 Nous avons présenté une seule</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">4. Il fallait d&apos;abord éviter d&apos;employer les noms grecs : phrygien, dorien, lydien, etc., dont l&apos;acception a changé de sens dans l&apos;histoire et sur lesquels les auteurs ne sont pas unanimes. Non moins que les tons grégoriens qui sont souvent défectifs ou qui peuvent relever do</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">formule pour chacun des sept modes diatoniques, ce qui offre déjà possibilité de chanter la plupart des psaumes de sept manières différentes. En effet, malgré la différence des formes strophiques des psaumes, chaque formule a été adaptée aux principaux systèmes de trois, quatre et six vers, respectivement à trois ou quatre appuis. Tel est l&apos;ensemble des vingt-quatre formules psalmodiques dont les mélodies ont été reproduites dans ce cahier5.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">LEUR DÉPOUILLEMENT</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Le chant des versets de psaume n&apos;a pas pour premier but l&apos;art musical, même lorsque celui-ci se fait le serviteur de l&apos;action liturgique comme dans le jubilus de l&apos;alleluia; il permet seulement la prière commune à l&apos;aide d&apos;une récitation chorale, rythmée et belle, du texte inspiré.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Aussi, le dépouillement des formules psalmodiques n&apos;est-il point ici pauvreté, mais richesse. C&apos;est une loi bien connue de l&apos;esthétique que la sobriété de moyens est, à qui sait ne point en être rebuté, le secret même de la plus grande expression. L&apos;artiste classique ne a choisit » que pour suggérer « davantage ».</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/>Dans la psalmodie, la litanie, le récitatif, etc., la « formule » mélodique, apparemment pauvre et monotone, va se charger d&apos;un tel potentiel lyrique qu&apos;elle deviendra capable d&apos;exalter égale-</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">plusieurs modes diatoniques à la fois (par exemple le premier - ton (protus) qui peut avoir un si bémol ou un si bécarre, est susceptible d&apos;appartenir soit au mode de la transposé, soit au mode de ré).</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Nous désignons ici par « mode de ré », « mode de mi », etc., l&apos;échelle musicale construite sur la gamme naturelle (sans accident) à partir de cette note prise comme premier degré, échelle dans laquelle l&apos;ordre des sept tons et demi-tons (c&apos;est-à-dire les caractéristiques du mode) est ainsi déterminé sans équivoque possible. Chaque mode peut évidemment être transposé. C&apos;est pourquoi nous avons toujours indiqué, après le mode, la tonique, c&apos;est-à-dire la note de notre gamme tempérée à partir de laquelle est construite l&apos;échelle modale en question.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Par exemple l&apos;indication : « mode de mi; tonique : sol » donne la gamme : sol, la b, si b, do, ré, mi b, fa. Cette double référence au mode et à la tonique permet en particulier, même à ceux qui ne sont pas musiciens et ignorent tout ce que cela signifie, de savoir quelles antiennes peuvent être exécutées avec tel mode psalmodique : il suffit que les indications de mode et de tonique soient les mêmes dans les deux cas. Par exemple toutes les antiennes portant l&apos;indication : « mode de fa; tonique mi b » seront susceptibles d&apos;être chantées avec le « mode de fa; tonique mi b ».</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">5. Toutefois, dans l&apos;édition musicale et pour la commodité pratique nous avons adopté pour chaque psaume un mode déterminé, intégralement noté avec les antiennes convenables de même mode et de même tonique. -</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">ment la joie et la souffrance, la supplication ou l&apos;action de grâces qu&apos;un même texte chanté suggère parfois à la suite. L&apos;expérience prouve d&apos;ailleurs qu&apos;on ne peut supporter la répétition indéfinie d&apos;une même formule, bien plus, qu&apos;on ne peut y découvrir une saveur sans cesse renouvelée que si sa simplicité même est un constant appel au dépassement. Au contraire, une mélodie trop riche et dès l&apos;abord séduisante apporte rapidement fatigue et dégoût. On peut entendre tous les jours de l&apos;année le Pater Noster de la messe, mais non l&apos;alleluia de l&apos;Assomption, et l&apos;on se lasse moins vite du Kyrie férial que du Kyrie fons bonitatis.</text:p>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Text_20_body">LES ANTIENNES ET LA VARIÉTÉ DES FORMES PSALMODIQUES</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Ce n&apos;est pas d&apos;ailleurs au récitatif des strophes qu&apos;il faut surtout demander d&apos;apporter à la psalmodie le renouvellement et la variété, souhaitables selon les temps liturgiques, les sentiments divers, le degré festif, la fonction du psaume, etc. Tel est plutôt le rôle des formes que peut revêtir la psalmodie et notamment des antiennes. S&apos;intercalant entre les strophes du psaume ou encadrant celui-ci, chantées par des voix égales ou diverses, à l&apos;unisson ou en polyphonie, tantôt joyeuses et alertes, tantôt graves et recueillies, les antiennes, le plus souvent extraites du psaume pour orienter la prière et fixer l&apos;idée essentielle, sont la couleur changeante d&apos;un dessin immuable. Quant aux différentes dispositions chorales que peuvent revêtir les strophes ellesmêmes, elles en sont comme le relief.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">L&apos;édition musicale présente, pour chaque psaume, avec le récitatif psalmodique noté, un certain nombre d&apos;antiennes qui sont toutes originales. Il convient en effet que la mélodie en soit parfaitement accordée au texte, et que l&apos;ensemble ait l&apos;allure d&apos;un vrai refrain populaire, suivant l&apos;exemple des plus anciennes antiennes du répertoire grégorien, telles qu&apos;on peut les voir encore dans la psalmodie de l&apos;office. Sans nier l&apos;utilité d&apos;antiennes aux mélodies richement ornées, mais recherchant avant tout la possibilité d&apos;une psalmodie communautaire et particulièrement de la psalmodie responsoriale et antiphonée, nous devions nous en tenir au style syllabique, aux phrases courtes et nettement dessinées. L&apos;influence grégorienne a d&apos;ailleurs largement prévalu dans ces compositions 6.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Si l&apos;on veut bien se souvenir des différentes formes tradition-</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">6. On trouvera dans l&apos;édition musicale complète les noms des musiciens contemporains qui ont déjà collaboré à cette œuvre et les références à leurs compositions respectives.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">nelles de la psalmodie chrétienne telles qu&apos;elles ont été étudiées ailleurs, on comprendra que, même à l&apos;aide de ces simples éléments que sont la strophe et l&apos;antienne, on puisse obtenir une psalmodie riche et variée à souhait. Pour nous en tenir aux usages les plus praticables en paroisse ou en communauté, on peut choisir entre les dispositions suivantes qui correspondent à la fois aux <text:soft-page-break/>diverses formations chorales (unisson-polyphonie, solichœurs, voix mixtes et égales) et aux différentes fonctions du chant des psaumes (chant processionnal, chant de méditation, etc.) 7.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Forme directe :,</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes par un soliste ou un chœur à l&apos;unisson ou par un chœur polyphonique à voix mixtes ou égales.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Forme responsoriale :</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes par un soliste — antiennes par tous à l&apos;unisson.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes par une schola à — antiennes par tous à l&apos;ul&apos;unisson nisson.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes par un soliste, ac- — antiennes par tous à l&apos;ucomp. par chorale nisson.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">à bouche fermée Strophes en faux bourdons — antiennes par tous à l&apos;upolyphoniques (à nisson.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">voix mixtes ou égales) Strophes dans l&apos;une des for- - antiennes polyphoniques mes ci-dessus (à voix mixtes ou égales).</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Forme antiphonée : Strophes alternativement par - antiennes alternativement soli enfants et soli par voix aiguës et voix hommes graves.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Même disposition avec accompagnement polyphonique des strophes à bouche fermée.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes dans l&apos;une des for- — antiennes polyphoniques mes ci-dessus (à voix mixtes ou égales).</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/>7. L&apos;enregistrement d&apos;étude de dix psaumes présente un exemple de chacune de ces formes.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">On trouvera en outre dans l&apos;édition avec accompagnement des faux-bourdons polyphoniques pour les strophes et une harmonisation à quatre voix mixtes des antiennes.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Forme alternée : Strophes alternées à l&apos;unisson entre deux chœurs égaux.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes alternées à l&apos;unisson entre deux chœurs, l&apos;un à voix aiguës, l&apos;autre à voix graves.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Strophes alternées entre unisson et faux bourdpn polyphonique (à voix mixtes ou égales).</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Forme ci-dessus, mais avec antiphonie des unissons (alternance de voix aiguës et graves).</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Bien que nous ayons insisté sur le caractère traditionnel des formes d&apos;exécution ou des modes mélodiques employés dans la psalmodie en français, celle-ci n&apos;est en aucune manière archaïque ou primitive; elle apparaît au contraire actuelle et vivante, tant par les formes chorales qui répondent aux besoins permanents de l&apos;assemblée liturgique, que par la beauté toujours jeune des mélodies retenues, que par son accompagnement d&apos;orgue ou polyphonique enfin, où les richesses de l&apos;harmonie moderne trouvent leur place 8. Ainsi les psaumes pourront vraiment apporter avec eux, dans la prière de la communauté chrétienne, l&apos;élément de beauté et de charme essentiel à la vie liturgique et dont le chant grégorien nous conserve le modèle impérissable J. G.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">8. Il n&apos;est pas sans intérêt de constater que la musique dite « moderne » se caractérise, et surtout en France, par un retour au morialisme qui a renouvelé le langage harmonique. Depuis Debussy et Ravel surtout, nos oreilles sont devenues familières des tournures et cadences modales, issues pour une grande part du diatonisme heptaphonique.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/>9. Quelques objections particulièrement répandues méritent examen : 1re Objection : Les mélodies modales ne sont pas « chantantes ».</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">Cette réaction spontanée de l&apos;oreille française moyenne dont la culture musicale s&apos;est bornée à la gamme de do majeur et de la mineur et à la musique occidentale classique est un fait. Mais il faut faire à son sujet deux remarques : 1. Ce jugement esthétique est absolument (l subjectif » et projette dans une mélodie parfois admirable, qualifiée de « peu chantante », une impuissance à sortir de schèmes auditifs très étroits. Il est sans valeur musicale. 2. D&apos;autre part, cette impression subjective est facile à vaincre et à dépasser : dès que la mémoire est en possession d&apos;une bonne mélodie, même modale, l&apos;esprit la juge « chantante ». Il faut donc répondre à un état de fait par un autre état de fait : faites chanter de bonnes mélodies modales et lorsqu&apos;elles seront sues par cœur, on les aimera. L&apos;expérience vérifie largement cette affirmation. On trouvera même ces mélodies plus « sacrées » que les airs dits dès l&apos;abord « chantants », parce qu&apos;ils rappelaient la chanson profane ou l&apos;opéra, mais qui s&apos;usent et se profanent.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">2e Objection : Tous ces petits airs (tons psalmodiques, antiennes, etc.) fabriqués pour le chant religieux en français sont pauvres et peu intéressants.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">De quelle pauvreté s&apos;agit-il ? Si c&apos;est de pauvreté en a art », alors il</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">faut les condamner et les abandonner comme indignes du culte. Mais il s&apos;agit d&apos;une pauvreté de moyen volontaire et d&apos;une sobriété de style, alors il faudrait aussi condamner la psalmodie grégorienne, l&apos;admirable préface romaine, etc. En vérité quelle norme prend-on pour juger de l&apos;art de ces pièces? Si c&apos;est le jubilus grégorien, ou la polyphonie classique, ou l&apos;orchestre moderne, il faut refuser purement et simplement la comparaison. Chaque genre a sa vérité et sa beauté.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">A-t-on réfléchi aux conditions qui feront qu&apos;un Amen ou un Deo gratias ou une antienne chantés par une foule soient beaux et vrais ? Il faut dénoncer ici la paresse et le dédain de musiciens authentiques (et a fortiori de pseudo-musiciens) qui, voyant quelques notes sur une portée les écartent avec mépris comme « petite musique » sans se donner la peine d&apos;examiner si ces quelques notes atteignent leur but : le chant de l&apos;assemblée liturgique; ni si cette musique est « bien faite ». Un chef-d&apos;œuvre artistique n&apos;est pas tel à cause de sa complexité, mais par sa perfection et sa pureté.</text:p>
+   <text:p text:style-name="Text_20_body"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Text_20_body">3e Objection : Le genre responsorial ou litanique est un mode de chant bon pour des primitifs, fastidieux et insupportable à des civilisés occidentaux du XXe siècle.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">On peut d&apos;abord conjecturer que cette objection est faite ou par des gens qui « ne chantent pas » et qui répugnent à l&apos;expression collective, ou par des musiciens qui prétendent n&apos;exécuter que de la « grande musique » (entendez de la musique « complexe »). Sans doute la liturgie intègre et la musique destinée à être entendue et la musique complexe, artistiquement plus riche que ne peut l&apos;être le chant de la foule. Mais le fidèle qui veut s&apos;en tenir à cela se met en dehors de la célébration du culte qui lui demande, à des moments très précis, de s&apos;unir à l&apos;expression de la communauté. Or, la psalmodie antiphonée ou responsoriale a une « fonction » liturgique qui seule peut en donner le sens. Le plus souvent elle accompagne une cérémonie : procession d&apos;entrée, d&apos;offrande, de communion, que l&apos;on solennise par le chant. On n&apos;est donc pas « pressé » et la répétition n&apos;a rien de fastidieux, sachant qu&apos;on n&apos;a pas à « aller au bout du psaume », mais à « enchanter » le geste liturgique qui s&apos;accomplit. La fonction terminée, on arrête le chant. Une fois admis ce loisir intérieur au chant, la répétition pourra retrouver sa valeur affective et communautaire, en même temps que sa saveur spirituelle, si toutefois elle est un vrai moyen d&apos;expression pour l&apos;assemblée et non une obligation dont on s&apos;acquitte avec ennui. Cette psalmodie est donc destinée à une assemblée qui aime et veut chanter; en cas contraire, mieux vaut s&apos;en tenir au chant qu&apos;on écoute, dans lequel on recherchera de préférence la richesse et l&apos;absence de répétition.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="Text_20_body">4&quot; Objection : On veut remplacer le chant grégorien. Comment un catholique romain du XXe siècle et a fortiori un musicien pourrait-il même songer à une pareille chose? Est-il permis de s&apos;étonner qu&apos;une accusation aussi grave soit parfois portée avec tant de légèreté ? On voudra bien considérer que ces psaumes n&apos;ont pas pour but de « remplacer » la psalmodie ou l&apos;antiphonie grégorienne là où elle est ou doit être chantée, mais d&apos;introduire la prière traditionnelle de l&apos;Église, sous une forme accessible, là où elle n&apos;est pas ou ne peut encore être chantée en grégorien. Tel est le cas des messes paroissiales où le propre grégorien ne peut être dignement exécuté; ou encore de ces offices du soir pour lesquels les vêpres ou les complies ne sauraient répondre à l&apos;attente actuelle des fidèles. L&apos;Église est assez « catholique » pour accueillir pacifiquement toutes les formes authentiques de prière utiles à la vie de ses enfants.</text:p>
+   <text:p text:style-name="Text_20_body"/>
+  </office:text>
+ </office:body>
+</office:document>
