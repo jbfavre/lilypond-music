@@ -108,7 +108,7 @@ verseOneLyrics =  \lyricmode {
 verseTwoLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"2. "
-    "Il est grand, le Seigneur, haute" -- \markup { \concat { m \underline e nt}} loué,
+    "Il est grand, le Sei" -- \markup { \concat { gn \underline e ur," "hautement" "lou}} -- é,
     "redoutable au-des" -- \markup { \concat { s \underline us" "de}} tous les dieux&nbsp;:
     \set stanza = #"2. "
     "néant, tous les" \markup { \concat { di \underline e ux}} des na -- tions&nbsp;!
@@ -117,20 +117,20 @@ verseTwoLyrics =  \lyricmode {
 verseThreeLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"3. "
-    "Rendez au Seigneur, fa" -- \markup { \concat { m \underline i lles" "des}} peuples,
+    "Rendez au Sei" -- \markup { \concat { gn \underline e ur," "fam illes" "des}} peuples,
     "rendez au Seigneur la" \markup { \concat { gl \underline oire" "et}} la puis -- sance,
     \set stanza = #"3. "
     "rendez au Seigneur la" \markup { \concat { gl \underline o ire}} de son nom.
-    "Apportez votre offrande, en" -- \markup { \concat { tr \underline e z" "dans}} ses par -- vis.
+    "Apportez votre of" -- \markup { \concat { fr \underline a nde," "entrez" "dans}} ses par -- vis.
   }
 
 verseFourLyrics =  \lyricmode {
     \override LyricText.self-alignment-X = #-1
     \set stanza = #"4. "
-    "Adorez le Seigneur, éblouis" -- \markup { \concat { s \underline a nt" "de" "sainte}} -- té&nbsp;:
+    "Adorez le Sei" -- \markup { \concat { gn \underline e ur," "éblouissant" "de" "sainte}} -- té&nbsp;:
     "tremblez devant" \markup { \concat { lu \underline i,}} terre en -- tière.
     \set stanza = #"4. "
-    "Allez dire aux na" -- \markup { \concat { ti \underline o ns&nbsp;:" "«" "Le" "Sei}} -- gneur est roi&nbsp;!&nbsp;»
+    "Allez dire aux nations&nbsp;: «&nbsp;Le" \markup { \concat { S \underline e i}} -- gneur est roi&nbsp;!&nbsp;»
     "Il gouverne les" \markup { \concat { pe \underline u ples" "a}} -- vec droi -- ture.
   }
 
