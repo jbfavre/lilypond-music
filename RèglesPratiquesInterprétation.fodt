@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2017-10-15T18:41:55.372609951</meta:creation-date><dc:date>2017-10-30T12:13:19.594566988</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT9H57M13S</meta:editing-duration><meta:editing-cycles>13</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2.0$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:printed-by>Jean Favre</meta:printed-by><meta:print-date>2017-10-19T17:15:06.209172489</meta:print-date><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="6" meta:paragraph-count="61" meta:word-count="954" meta:character-count="5559" meta:non-whitespace-character-count="4657"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2017-10-15T18:41:55.372609951</meta:creation-date><dc:date>2017-10-30T12:17:03.231817776</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT10H56S</meta:editing-duration><meta:editing-cycles>14</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2.0$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:printed-by>Jean Favre</meta:printed-by><meta:print-date>2017-10-19T17:15:06.209172489</meta:print-date><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="6" meta:paragraph-count="61" meta:word-count="954" meta:character-count="5559" meta:non-whitespace-character-count="4657"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">83264</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">120761</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">22271</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">22698</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">16431</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">94592</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">9269</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">132184</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">83264</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">120761</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">22269</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">105960</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">143457</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -641,16 +641,16 @@
    <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \override Staff.Clef.color = #white&#x0a;  \override Staff.Clef.layer = #-1&#x0a;  \override Staff.TimeSignature #&apos;stencil = ##f&#x0a;  \key c \major \cadenzaOn&#x0a;  a8.[ a16] \bar &quot;|&quot; a4&#x0a;}&#x0a;\addlyrics {&#x0a;  &quot;avec des chants&quot; de joie&#x0a;}&#x0a;" OOoLilyPondTemplate="Default" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
   </style:style>
   <style:style style:name="gr12" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \override Staff.Clef.color = #white&#x0a;  \override Staff.Clef.layer = #-1&#x0a;  \override Staff.TimeSignature #&apos;stencil = ##f&#x0a;  \key c \major \cadenzaOn&#x0a;  a8 r a16[ a] \bar &quot;|&quot; a8[ a16 a] \bar &quot;|&quot; a4&#x0a;}&#x0a;\addlyrics {&#x0a;  Vois, dans le mal je suis né&#x0a;}&#x0a;" OOoLilyPondTemplate="Default" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
-  </style:style>
-  <style:style style:name="gr13" style:family="graphic">
    <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \key c \major \time 1/4&#x0a;  r16 a16 a a f8. f16 g g g g e4 \break&#x0a;  r16 d16 d d \tuplet 3/2 { f4 f8 } g16 g g g a4 \break&#x0a;  r8 d16 d \tuplet 3/2 { c4 c8 } d8 d16 d a8 a \break&#x0a;  r4 c16 r c c \tuplet 6/4 { b8 b16 b b b } a4&#x0a;}&#x0a;\addlyrics {&#x0a;  Pi -- tié pour moi, Sei -- gneur, en ta bon -- té,&#x0a;  en ta tendres -- se~ ef -- fa -- ce mon pé -- ché;&#x0a;  la -- ve moi de tou -- te ma -- li -- ce&#x0a;  et de ma fau -- te pu -- ri -- fie- moi&#x0a;}&#x0a;" OOoLilyPondTemplate="Voice Exercise" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
   </style:style>
-  <style:style style:name="gr14" style:family="graphic">
+  <style:style style:name="gr13" style:family="graphic">
    <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \once \override Staff.TimeSignature #&apos;stencil = ##f&#x0a;  \hide Staff.Stem&#x0a;  \key c \major \time 1/1&#x0a;  a1 \bar &quot;|&quot; a1 \bar &quot;|&quot; a1 \bar &quot;|&quot; a1 \bar &quot;||&quot;&#x0a;}&#x0a;\addlyrics {&#x0a;  \override LyricText.self-alignment-X = #-1&#x0a;  &quot;Pi - tié pour&quot; \markup { \concat { \bold moi,&quot; &quot;Sei}} -- \markup { \concat { \bold gneur,&quot; &quot;en&quot; &quot;ta&quot; &quot;bon}} -- té &#x0a;}&#x0a;\addlyrics {&#x0a;  \override LyricText.self-alignment-X = #-1&#x0a;  Lave \markup { \concat { \bold moi,&quot; &quot;de}} \markup { \concat { \bold tou&quot; &quot;-&quot; &quot;te&quot; &quot;ma}} -- \markup { \concat { \bold li &quot; &quot;-&quot; &quot;ce}}&#x0a;}" OOoLilyPondTemplate="Default" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
   </style:style>
-  <style:style style:name="gr15" style:family="graphic">
+  <style:style style:name="gr14" style:family="graphic">
    <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \once \override Staff.TimeSignature #&apos;stencil = ##f&#x0a;  \hide Staff.Stem&#x0a;  \key c \major \time 1/1&#x0a;  r2. a4 \bar &quot;|&quot; a1 \bar &quot;|&quot; a1 \bar &quot;|&quot; a1 \bar &quot;||&quot;&#x0a;}&#x0a;\addlyrics {&#x0a;  \override LyricText.self-alignment-X = #-1&#x0a;  &quot;Pi - tié pour&quot; \markup { \concat { \bold moi,&quot; &quot;Sei}} -- \markup { \concat { \bold gneur,&quot; &quot;en&quot; &quot;ta&quot; &quot;bon}} -- té &#x0a;}&#x0a;\addlyrics {&#x0a;  \override LyricText.self-alignment-X = #-1&#x0a;  Lave \markup { \concat { \bold moi,&quot; &quot;de}} \markup { \concat { \bold tou&quot; &quot;-&quot; &quot;te&quot; &quot;ma}} -- \markup { \concat { \bold li &quot; &quot;-&quot; &quot;ce}}&#x0a;}" OOoLilyPondTemplate="Default" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
+  </style:style>
+  <style:style style:name="gr15" style:family="graphic">
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% English:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation&#x0a;% Deutsch:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.de.html&#x0a;% Français:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.fr.html&#x0a;% Español:&#x0a;% http://lilypond.org/doc/v2.12/Documentation/user/lilypond-learning/Simple-notation.es.html&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\relative c&apos; {&#x0a;  \override Staff.Clef.color = #white&#x0a;  \override Staff.Clef.layer = #-1&#x0a;  \override Staff.TimeSignature #&apos;stencil = ##f&#x0a;  \key c \major \cadenzaOn&#x0a;  \tuplet 3/2 { a8 r a16[ a] } \bar &quot;|&quot; a8[ a16 a] \bar &quot;|&quot; a4&#x0a;}&#x0a;\addlyrics {&#x0a;  Vois, dans le mal je suis né&#x0a;}&#x0a;" OOoLilyPondTemplate="Default" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="20" OOoLilyPondCustom1="c c&apos;" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:horizontal-pos="from-left" style:horizontal-rel="paragraph"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
@@ -702,7 +702,7 @@
    <text:p text:style-name="Text_20_body">Ce temps est toujours noté par une <text:span text:style-name="T5">ronde</text:span> qui équivaut en même temps à la durée <text:span text:style-name="T2">d’</text:span>une mesure.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Les syllabes de repos.</text:h>
    <text:p text:style-name="P7">Chaque <text:span text:style-name="T5">syllabe</text:span> imprimée <text:span text:style-name="T5">en gras</text:span> coïncide avec le posé du temps (thésis élémentaire) et marque un repos de la voix plus ou moins important selon le sens du texte. Cf. Ps. 50, 1.</text:p>
-   <text:p text:style-name="P8"><draw:frame text:anchor-type="as-char" svg:y="-1.129cm" draw:z-index="14" draw:name="Forme1" draw:style-name="gr14" draw:text-style-name="P31" svg:width="9.845cm" svg:height="2.259cm">
+   <text:p text:style-name="P8"><draw:frame text:anchor-type="as-char" svg:y="-1.129cm" draw:z-index="13" draw:name="Forme1" draw:style-name="gr13" draw:text-style-name="P31" svg:width="9.845cm" svg:height="2.259cm">
      <draw:image xlink:href="">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABIsAAAELCAIAAADWZZFGAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -1102,7 +1102,7 @@
    <text:p text:style-name="Text_20_body">Elles donnent à l’ensemble <text:span text:style-name="T5">cohésion</text:span> et <text:span text:style-name="T5">stabilité</text:span>.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Les syllabes d’élan.</text:h>
    <text:p text:style-name="Text_20_body">Chaque vers est normalement précédé d’un frappé silencieux du temps et <text:span text:style-name="T5">commence au levé</text:span>, c’est-à-dire par des syllabes d’élan imprimées en caractères maigres. Le fragment de temps musical qui leur correspond dans la mélodie est noté par une <text:span text:style-name="T5">noire non caudée</text:span> précédée d’une demi-pause, qui n’ont pas de valeur déterminée.</text:p>
-   <text:p text:style-name="P15"><draw:frame text:anchor-type="as-char" svg:y="-1.129cm" draw:z-index="15" draw:name="Forme2" draw:style-name="gr15" draw:text-style-name="P31" svg:width="10.725cm" svg:height="2.259cm">
+   <text:p text:style-name="P15"><draw:frame text:anchor-type="as-char" svg:y="-1.129cm" draw:z-index="14" draw:name="Forme2" draw:style-name="gr14" draw:text-style-name="P31" svg:width="10.725cm" svg:height="2.259cm">
      <draw:image xlink:href="">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABPMAAAELCAIAAAAz+1QqAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -2157,7 +2157,7 @@
     </text:list-item>
    </text:list>
    <text:p text:style-name="P19"><text:soft-page-break/>Pi - tié pour <text:span text:style-name="T3">moi</text:span>, Sei – <text:span text:style-name="T3">gneur</text:span>, en ta bon - <text:span text:style-name="T3">té</text:span></text:p>
-   <text:list xml:id="list121321196737179" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list121704843767453" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P24">Un rythme <text:span text:style-name="T5">incise</text:span> ascendant dans lequel le dernier appui du vers constitue la thésis et tous les appuis précédents, des arsis.</text:p>
      <text:p text:style-name="P20">Pi - tié pour <text:span text:style-name="T3">moi</text:span>, Sei – <text:span text:style-name="T3">gneur</text:span>, en ta bon - <text:span text:style-name="T3">té</text:span></text:p>
@@ -3965,9 +3965,9 @@
          </draw:frame></text:span></text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Soit pour introduire de légères coupes (marquées par une barre oblique dans l’édition notée). Cf. Ps. 50, 3c.<text:line-break/><draw:frame text:anchor-type="as-char" svg:y="-0.88cm" draw:z-index="12" draw:name="Forme14" draw:style-name="gr12" draw:text-style-name="P31" svg:width="5.591cm" svg:height="1.5cm">
+       <text:p text:style-name="P28">Soit pour introduire de légères coupes (marquées par une barre oblique dans l’édition notée). Cf. Ps. 50, 3c.<text:line-break/><draw:frame text:anchor-type="as-char" svg:y="-0.953cm" draw:z-index="15" draw:name="Forme14" draw:style-name="gr15" draw:text-style-name="P31" svg:width="6.882cm" svg:height="1.904cm">
          <draw:image xlink:href="">
-          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAwcAAADQCAIAAADd6YoSAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
+          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAy0AAADhCAIAAABKsM0DAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
            Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
            XJUia0UUC4uCAhZ0gywCyrpxFVFBWXDfGZ33HT+8/5l7z2/+c+bec8/5cAEgiINlwct7YlK6
            wNvJjhkYFMwE3yiMn5bC8fR0A9/VuxEArcR7ut/P+a4IEZFp/OW4uLxy+SmCdACg7GXWzEpP
@@ -4012,169 +4012,183 @@
            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
-           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
+           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
           </office:binary-data>
           <text:p/>
          </draw:image>
@@ -4184,7 +4198,7 @@
     </text:list-item>
    </text:list>
    <text:p text:style-name="P10">Voici un exemple de transcription proportionnelle de la première strophe du psaume 5<text:span text:style-name="T14">0</text:span> : « Pitié pour moi. »</text:p>
-   <text:p text:style-name="P17"><draw:frame text:anchor-type="as-char" svg:y="-4.288cm" draw:z-index="13" draw:name="Forme15" draw:style-name="gr13" draw:text-style-name="P31" svg:width="9.845cm" svg:height="8.575cm">
+   <text:p text:style-name="P17"><draw:frame text:anchor-type="as-char" svg:y="-4.288cm" draw:z-index="12" draw:name="Forme15" draw:style-name="gr12" draw:text-style-name="P31" svg:width="9.845cm" svg:height="8.575cm">
      <draw:image xlink:href="">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABIsAAAP1CAIAAABuYvgGAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -5347,9 +5361,9 @@
    <text:h text:style-name="P13" text:outline-level="2">Conclusion</text:h>
    <text:p text:style-name="Text_20_body">Le débit du récitatif psalmodique doit, malgré la périodicité exacte des syllabes de repos, rester aussi proche que possible d’une récitation grave et intelligente du texte, et demeurer aussi naturelle qu’une lecture vivante et vraie.</text:p>
    <text:p text:style-name="Text_20_body">Il convient d’éviter tout autant une succession mécanique de syllabes égales en durée et en intensité : <text:span text:style-name="T5">ta-ta-ta-ta ta</text:span>, qu’un allongement régulier et indu des syllabes de repos qui énerve tout le rythme ou une précipitation des syllabes d’élan qui rend les paroles inintelligibles.</text:p>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Règles pour la récitation</text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:soft-page-break/>Règles pour la récitation</text:h>
    <text:p text:style-name="P7">Prendre un <text:span text:style-name="T5">ton grave et uni</text:span>.</text:p>
-   <text:p text:style-name="Text_20_body"><text:soft-page-break/>Il suffit, pour faire apparaître le rythme, d’insister discrètement sur les <text:span text:style-name="T5">syllabes d’appui</text:span> qui doivent revenir comme à intervalles <text:span text:style-name="T5">réguliers</text:span>.</text:p>
+   <text:p text:style-name="Text_20_body">Il suffit, pour faire apparaître le rythme, d’insister discrètement sur les <text:span text:style-name="T5">syllabes d’appui</text:span> qui doivent revenir comme à intervalles <text:span text:style-name="T5">réguliers</text:span>.</text:p>
    <text:p text:style-name="Text_20_body">Dans les strophes de quatre et six vers, on marque un très léger <text:span text:style-name="T5">arrêt</text:span> à la fin des vers impairs et une bonne <text:span text:style-name="T5">coupe</text:span> à la fin des vers pairs (suivant le parallélisme).</text:p>
    <text:p text:style-name="P10">On peut <text:span text:style-name="T5">alterner</text:span> à deux chœurs, soit par strophes, soit par deux vers.</text:p>
   </office:text>
