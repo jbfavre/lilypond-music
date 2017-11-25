@@ -1,5 +1,15 @@
 \version "2.18.2"
 pisteTempoPsalmodie = \silence \sopranoVerseMusic
+pianosopranoAntiphonMusic = \sopranoAntiphonMusic
+pianosopranoVerseMusic = \sopranoVerseMusic
+pianoaltoAntiphonMusic = \altoAntiphonMusic
+pianoaltoVerseMusic = \altoVerseMusic
+pianotenorAntiphonMusic = \tenorAntiphonMusic
+pianotenorVerseMusic = \tenorVerseMusic
+pianobassAntiphonMusic = \bassAntiphonMusic
+pianobassVerseMusic = \bassVerseMusic
+pisteTempoVerse = \silence \sopranoVerseMusic
+
 partition = {
   <<
     \new ChoirStaff <<
@@ -95,7 +105,12 @@ partition = {
         ragged-last = ##f
         % retrait pour les noms courts de voix
         short-indent = 0.8\cm
-        \context { \Staff \RemoveEmptyStaves \override NoteHead #'style = #'altdefault }
+        \context {
+            \Staff \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
     }
     \header {
       title = \title

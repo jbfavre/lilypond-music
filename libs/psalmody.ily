@@ -23,16 +23,6 @@ caesura = {
   \tag #'audio s4
 }
 
-pianosopranoAntiphonMusic = \sopranoAntiphonMusic
-pianosopranoVerseMusic = \sopranoVerseMusic
-pianoaltoAntiphonMusic = \altoAntiphonMusic
-pianoaltoVerseMusic = \altoVerseMusic
-pianotenorAntiphonMusic = \tenorAntiphonMusic
-pianotenorVerseMusic = \tenorVerseMusic
-pianobassAntiphonMusic = \bassAntiphonMusic
-pianobassVerseMusic = \bassVerseMusic
-pisteTempoVerse = \silence \sopranoVerseMusic
-
 startPsalmody={
   \break \cadenzaOn
   \accidentalStyle "forget"

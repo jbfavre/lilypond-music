@@ -5,7 +5,10 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
-\include "libs/settings.ly"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
+\include "../libs/psalmody.ily"
 % Ajust this setting to get a single page psalm
 staffCustomSize = 18
 
@@ -54,10 +57,6 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% quand on a fini de rentrer la musique partout, on peut préciser
-% (chez les Soprano uniquement!) les paramètres de tempo MIDI
-% en utilisant \tAcce et \tRall
-
 sopranoVerseMusic = \relative c'' {
     \caesura
     \tempoVerseAcelerando g\breve bf1 \tempoVerseRallentando ef,4 \bar "||" \caesura
@@ -73,20 +72,6 @@ tenorVerseMusic = \relative c' {
   }
 
 bassVerseMusic = \relative c {
-  }
-
-sopranoVerseMusicB = \relative c'' {
-    g\breve bf1 f4 \bar "||"
-    ef\breve af f4 \bar "|."
-  }
-
-altoVerseMusicB = \relative c' {
-  }
-
-tenorVerseMusicB = \relative c' {
-  }
-
-bassVerseMusicB = \relative c {
   }
 
 %{DEBUT-DU-TEXTE-DE-LA-PSALMODIE
@@ -148,13 +133,33 @@ verseFourLyrics =  \lyricmode {
 groupedVersesLyrics = <<
   >>
 
-groupedVersesLyricsB = \groupedVersesLyrics
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "libs/layouts/fr.ly"
-\include "libs/common.ly"
-\include "libs/layouts/dualPsalmody.ly"
-%\include "libs/layouts/singlePsalmody.ly"
-\include "libs/layouts/outputMidi.ly"
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/outputMidi.ily"
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%      Alternate Psalmody      %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+sopranoVerseMusic = \relative c'' {
+    g\breve bf1 f4 \bar "||"
+    ef\breve af f4 \bar "|."
+  }
+
+altoVerseMusic = \relative c' {
+  }
+
+tenorVerseMusic = \relative c' {
+  }
+
+bassVerseMusic = \relative c {
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/outputMidi.ily"

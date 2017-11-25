@@ -5,9 +5,18 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
-\include "libs/settings.ly"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
+\include "../libs/psalmody.ily"
 % Ajust this setting to get a single page psalm
-staffCustomSize = 18
+staffCustomSize = 16
+
+systemToSystemSpacing = 
+  #'((basic-distance . 10)
+     (minimum-distance . 10)
+     (padding . 4)
+     (stretchability . 10))
 
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
@@ -182,8 +191,7 @@ groupedVersesLyricsB = <<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          AUTRES RÉGLAGES          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "libs/layouts/fr.ly"
-\include "libs/common.ly"
-%\include "libs/layouts/dualPsalmody.ly"
-\include "libs/layouts/singlePsalmody.ly"
-\include "libs/layouts/outputMidi.ly"
+\include "../libs/layouts/commonLayout.ily"
+%\include "../libs/layouts/dualPsalmody.ily"
+\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/outputMidi.ily"
