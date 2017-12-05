@@ -11,9 +11,9 @@ title = "Composition title"
 subtitle = "Composition subtitle"
 real_poet = "Poet name"
 composer = "Composer name"
-dedicace = "Dedication"
-signature = "Signature text"
-signatureDate = "signature date"
+dedicace = ""
+signature = ""
+signatureDate = ""
 
 % Global staff size.
 % Other sizes will be relative.

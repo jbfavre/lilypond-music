@@ -55,3 +55,22 @@ splitStaffBarLine = {
         0))
   \break
 }
+
+displayFiguredBass = #(define-music-function (parser location figuredBass)
+   (ly:music?)
+   #{
+     \new FiguredBass { #figuredBass }
+   #}
+ )
+
+parenthesizeAll = #(define-music-function (parser location note) (ly:music?)
+#{
+  \once \override ParenthesesItem.font-size = #-1
+  \once \override ParenthesesItem.stencil = #(lambda (grob)
+       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
+              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
+         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
+         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
+         (parentheses-item::print grob)))
+  \parenthesize $note
+#})

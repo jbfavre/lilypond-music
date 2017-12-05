@@ -2,8 +2,6 @@
 
 antiphonText = "Antienne"
 verseText = "Psalmodie"
-verseTextA = "Psalmodie A"
-verseTextB = "Psalmodie B"
 sopranoVoiceTitle = "Soprano"
 altoVoiceTitle = "Alto"
 tenorVoiceTitle = "Ténor"

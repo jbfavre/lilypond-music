@@ -30,14 +30,10 @@ startPsalmody={
 
 % il faudra retirer les décalages (extra-offset) le jour où on compile avec 2.18.2
 % le bug de positionnement des marques a été résolu dans 2.18.2
-marqueAntiphon = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0 )
+marqueAntiphon = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \antiphonText }}}
 markPsalmody = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
                    \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseText }} }
-markPsalmodyA = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseTextA }} }
-markPsalmodyB = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseTextB }} }
 
 \paper {
   #(include-special-characters) % prise en charge des charactères spéciaux http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
