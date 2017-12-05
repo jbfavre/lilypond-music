@@ -13,6 +13,7 @@
 title = "Psaume 62"
 subtitle = "32ème dimanche du Temps Ordinaire — Année A"
 composer = "Jean Baptiste Favre"
+%dedicace = "special tribute to Pink Floyd"
 
 global = {
     \time 2/4
@@ -26,22 +27,22 @@ global = {
 sopranoAntiphonMusic = \relative c'' {
     \partial 4 g4 b a b c b2 (b4) \breathe
     b4 d2 c2 b2 \fermata
-    \bar "|."
+    \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-    \partial 4 e4 d c f e g2 \breathe
-    g4 (e) a2 e2 a4 (g) \fermata
+    \partial 4 g'4 g c, f g g4 \breathe
+    g4 (g2) a2 e2 a4 (g) \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-    \partial 4 b4 b c b g g2 \breathe
-    g4 (g) c2 c2 b2 \fermata
+    \partial 4 g4 b f a e b'4 \breathe
+    c4 (b2) c2 c2 b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-    \partial 4 e4 g f d c e2 \breathe
-    d4 (e) f2 a,2 e'2 \fermata
+    \partial 4 g'4 e c d c e4 \breathe
+    e4 (e2) f2 a,2 <e e'>2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -63,8 +64,11 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tempoVerseAcelerando et \tempoVerseRallentando
 
 sopranoVerseMusic = \relative c'' {
-    \caesura
-    \tempoVerseAcelerando b\breve \tempoVerseRallentando a2 \tempoVerseAcelerando b1 c1 \tempoVerseRallentando a2 \bar "||" \caesura
+    \cadenzaOn \caesura
+    \override HorizontalBracket.direction = #UP
+    \tempoVerseAcelerando b\breve \tempoVerseRallentando a2
+        \startGroup^\markup { \typewriter "flexe" } \tempoVerseAcelerando b1\stopGroup
+        c1 \tempoVerseRallentando a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando b2 \bar "||" \caesura
     \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando c2 \bar "||" \caesura
     \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 f4 a2 \bar "|."
@@ -88,60 +92,95 @@ tenorVerseMusic = \relative c' {
 
 bassVerseMusic = \relative c {
     \caesura
-    e\breve a,2 f1 a1 d2 \caesura
+    e\breve a,2\startGroup-\markup { \typewriter "flexe" } f1\stopGroup a1 d2 \caesura
     d\breve e1 g2 \caesura
     f\breve a1 a2 \caesura
     a\breve g1 e4 f4 a,2
-  }
-
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Dieu, tu es mon" \markup { \concat { D \underline i eu,\super &plus;}} "je te" \markup { \concat { ch \underline e rche" "dès}} l’aube:
-    "mon âme a" "soif de" toi;
-    \set stanza = #"1. "
-    "après toi lan" -- \markup { \concat { gu \underline i t" "ma}} chair,
-    "terre~a" -- \markup { \concat { r \underline i de, alté}} -- rée, sans eau.
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Je t’ai contem" -- _ _ \markup { \concat { pl \underline é" "au" "sanctu}} -- aire,
-    "j’ai vu ta" \markup { \concat { f \underline o rce" "et" "ta}} gloire.
-    \set stanza = #"2. "
-    "Ton amour vaut" \markup { \concat { m \underline i eux" "que" "la}} vie:
-    "tu seras la lou" -- \markup { \concat { \underline a nge}} de mes lèvres!
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Toute ma" -- _ _ \markup { \concat { v \underline i e" "je" "vais" "te" "bé}} -- nir,
-    "lever les mains en invo" -- \markup { \concat { qu \underline a nt" "ton}} nom.
-    \set stanza = #"3. "
-    "Comme par un fes" -- \markup { \concat { t \underline i n" "je" "serai" "rassa}} -- sié;
-    "la joie sur les lèvres, je di" -- \markup { \concat { r \underline a i}} ta lou -- ange.
-  }
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Dans la nuit, je me sou" -- _ _ \markup { \concat { v \underline i ens" "de}} toi
-    "et je reste des" \markup { \concat { h \underline e ures" "à" "te" "par}} -- ler.
-    \set stanza = #"4. "
-    "Oui, tu es ve" -- \markup { \concat { n \underline u" "à" "mon" "se}} -- cours:
-    "je crie de joie à" \markup { \concat { l’ \underline o mbre}} de tes ailes.
+    \once \override Score.RehearsalMark.extra-offset = #'(-60 . -22.5)
+    \mark \markup { \typewriter \small
+      \column {
+        \line { "(n'est psalmodiée que pour le premier verset de la première strophe)"}
+      }
+    }
   }
 
 groupedVersesLyrics = <<
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyrics }
   >>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Chantez au Seigne_u_r un chant nouveau,
+  chantez au Seigne_u_r, terre entière,
+  racontez à tous les pe_u_ples sa gloire,
+  à toutes les nati_o_ns ses merveilles !
+
+  Il est grand, le Seigne_u_r, hautement loué,
+  redoutable au-dess_u_s de tous les dieux :
+  néant, tous les die_u_x des nations !
+  Lui, le Seigne_u_r, a fait les cieux.
+
+  Rendez au Seigne_u_r, familles des peuples,
+  rendez au Seigneur la glo_i_re et la puissance,
+  rendez au Seigneur la glo_i_re de son nom.
+  Apportez votre offr_a_nde, entrez dans ses parvis.
+
+  Adorez le Seigne_u_r, éblouissant de sainteté :
+  tremblez devant lu_i_, terre entière.
+  Allez dire aux nations : « Le Seigne_u_r est roi ! »
+  Il gouverne les pe_u_ples avec droiture.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "Dieu, tu es mon " Di \underline e u, \super "+"}
+      \concat { "     je te " ch \underline e rche " dès l’aube :"}
+      \concat { "mon âme a " so \underline i f " de toi ;"}
+      \concat { "après toi " langu \underline i t " ma chair,"}
+      \concat { "terre " ar \underline i de, " altérée, sans eau."}
+      " "
+      \concat { "Je t’ai " contempl \underline é " au sanctuaire,"}
+      \concat { "j’ai vu ta " f \underline o rce " et ta gloire."}
+      \concat { "Ton amour vaut " m \underline i eux " que la vie :"}
+      \concat { "tu seras la " lou \underline a nge " de mes lèvres !"}
+      " "
+      \concat { "Toute ma " v \underline i e " je vais te bénir,"}
+      \concat { "lever les mains en " invoqu \underline a nt " ton nom."}
+      \concat { "Comme par un " fest \underline i n " je serai rassasié ;"}
+      \concat { "la joie sur les lèvres, je " dir \underline a i " ta louange."}
+      " "
+      \concat { "Dans la nuit, je me " souv \underline i ens " de toi"}
+      \concat { "et je reste des " h \underline e ures " à te parler."}
+      \concat { "Oui, tu es " ven \underline u " à mon secours :"}
+      \concat { "je crie de joie à l’" \underline o mbre " de tes ailes."}
+    }
+  }
+}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
 %\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

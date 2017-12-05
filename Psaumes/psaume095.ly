@@ -9,8 +9,6 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 15
 
 title = "Psaume 95"
 subtitle = "29e dimanche ordinaire (année A)"
@@ -27,7 +25,7 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  e4 b' b8 a8 gs4. \breathe
+  gs'4 b b8 a8 gs4. \breathe
   e8 fs gs a gs fs2 gs2 \fermata
   \bar "|." \break
   }
@@ -38,13 +36,13 @@ altoAntiphonMusic = \relative c' {
   }
 
 tenorAntiphonMusic =  \relative c' {
-  gs4 fs fs8 ds8 gs4 \breathe
-  gs4 a8 b cs cs a2 b2
+  e,4 fs fs8 ds8 gs4 \breathe
+  gs4 a8 b cs cs a4 <a cs> <gs b>2
   }
 
 bassAntiphonMusic =  \relative c {
   e4 b b8 bs8 cs4 \breathe
-  b4 a8 gs fs16 a cs8 a4 (b) e2 \fermata
+  b4 a8 gs fs16 a cs8 a4 (b) e,2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -66,7 +64,7 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando b\breve cs1 \tempoVerseRallentando b2 \bar "||" \caesura
     \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando gs4 gs fs2 \bar "||" \caesura
     \tempoVerseAcelerando gs\breve a1 \tempoVerseRallentando gs4 fs e2 \bar "||" \caesura
@@ -76,15 +74,15 @@ sopranoVerseMusic = \relative c'' {
 altoVerseMusic = \relative c'' {
     \caesura
     gs\breve e1 es2 \bar "||" \caesura
-    es\breve cs1 e4 e ds2 \bar "||" \caesura
+    es!\breve cs1 e4 e ds2 \bar "||" \caesura
     ds\breve ds1 ds4 ds cs2 \bar "||" \caesura
     cs\breve e1 e4 cs4 ds2 \bar "||" \caesura
   }
 
-tenorVerseMusic = 	\relative c' {
+tenorVerseMusic = \relative c' {
     \caesura
-    b\breve cs1 cs2 \bar "||" \caesura
-    gs\breve a1 b4 b4 b2 \bar "||" \caesura
+    b\breve a1 cs2 \bar "||" \caesura
+    gs\breve a1 b4 cs4 b2 \bar "||" \caesura
     gs\breve bs1 bs4 gs gs2 \bar "||" \caesura
     a\breve cs1 b4 gs4 b2 \bar "||" \caesura
   }
@@ -92,57 +90,80 @@ tenorVerseMusic = 	\relative c' {
 bassVerseMusic = \relative c {
     \caesura
     e\breve a1 gs2 \bar "||" \caesura
-    cs,\breve fs1 e4 cs4 b2 \bar "||" \caesura
-    bs\breve gs1 gs4 bs cs2 \bar "||" \caesura
+    cs,\breve fs1 e!4 e4 b2 \bar "||" \caesura
+    bs\breve gs1 gs4 bs cs b \bar "||" \caesura
     a\breve fs'1 e4 cs b2 \bar "||" \caesura
-  }
-%{
-
-%}
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Chantez au Sei" -- \markup { \concat { gn \underline e ur" "un" "chant" "nou}} -- veau,
-    "chantez au Sei" -- \markup { \concat { gn \underline e ur,}} terre en -- tière,
-    \set stanza = #"1. "
-    "racontez à tous les" \markup { \concat { p \underline e u}} -- ples sa gloire,
-    "à toutes les na" -- \markup { \concat { ti \underline o ns}} ses mer -- veilles&nbsp;!
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Il est grand, le Sei" -- \markup { \concat { gn \underline e ur," "hautement" "lou}} -- é,
-    "redoutable au-des" -- \markup { \concat { s \underline us" "de}} tous les dieux&nbsp;:
-    \set stanza = #"2. "
-    "néant, tous les" \markup { \concat { di \underline e ux}} des na -- tions&nbsp;!
-    "Lui, le Sei" -- \markup { \concat { gn \underline e ur," "a}} fait les cieux.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Rendez au Sei" -- \markup { \concat { gn \underline e ur," "fam illes" "des}} peuples,
-    "rendez au Seigneur la" \markup { \concat { gl \underline oire" "et}} la puis -- sance,
-    \set stanza = #"3. "
-    "rendez au Seigneur la" \markup { \concat { gl \underline o ire}} de son nom.
-    "Apportez votre of" -- \markup { \concat { fr \underline a nde," "entrez" "dans}} ses par -- vis.
-  }
-
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Adorez le Sei" -- \markup { \concat { gn \underline e ur," "éblouissant" "de" "sainte}} -- té&nbsp;:
-    "tremblez devant" \markup { \concat { lu \underline i,}} terre en -- tière.
-    \set stanza = #"4. "
-    "Allez dire aux nations&nbsp;: «&nbsp;Le" \markup { \concat { S \underline e i}} -- gneur est roi&nbsp;!&nbsp;»
-    "Il gouverne les" \markup { \concat { pe \underline u ples" "a}} -- vec droi -- ture.
   }
 
 groupedVersesLyrics = <<
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyrics }
 >>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Chantez au Seigne_u_r un chant nouveau,
+  chantez au Seigne_u_r, terre entière,
+  racontez à tous les pe_u_ples sa gloire,
+  à toutes les nati_o_ns ses merveilles !
+
+  Il est grand, le Seigne_u_r, hautement loué,
+  redoutable au-dess_u_s de tous les dieux :
+  néant, tous les die_u_x des nations !
+  Lui, le Seigne_u_r, a fait les cieux.
+
+  Rendez au Seigne_u_r, familles des peuples,
+  rendez au Seigneur la glo_i_re et la puissance,
+  rendez au Seigneur la glo_i_re de son nom.
+  Apportez votre offr_a_nde, entrez dans ses parvis.
+
+  Adorez le Seigne_u_r, éblouissant de sainteté :
+  tremblez devant lu_i_, terre entière.
+  Allez dire aux nations : « Le Seigne_u_r est roi ! »
+  Il gouverne les pe_u_ples avec droiture.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "Chantez au " Seigne \underline u r " un chant nouveau,"}
+      \concat { "chantez au " Seigne \underline u r, " terre entière,"}
+      \concat { "racontez à tous les " pe \underline u ples " sa gloire,"}
+      \concat { "à toutes les " nati \underline o ns " ses merveilles&nbsp;!"}
+      " "
+      \concat { "Il est grand, le " Seigne \underline u r, " hautement loué,"}
+      \concat { "redoutable " au-dess \underline u s " de tous les dieux&nbsp;:"}
+      \concat { "néant, tous les " die \underline u x " des nations&nbsp;!"}
+      \concat { "Lui, le " Seigne \underline u r, " a fait les cieux."}
+      " "
+      \concat { "Rendez au " Seigne \underline u r, " familles des peuples,"}
+      \concat { "rendez au Seigneur la " glo \underline i re " et la puissance,"}
+      \concat { "rendez au Seigneur la "glo \underline i re " de son nom."}
+      \concat { "Apportez votre " offr \underline a nde, " entrez dans ses parvis."}
+      " "
+      \concat { "Adorez le " Seigne \underline ur, " éblouissant de sainteté&nbsp;:"}
+      \concat { "tremblez devant " lu \underline i, " terre entière."}
+      \concat { "Allez dire aux nations&nbsp;: «&nbsp;Le " Seigne \underline u r " est roi&nbsp;!&nbsp;»"}
+      \concat { "Il gouverne les " pe \underline u ples " avec droiture."}
+    }
+  }
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%

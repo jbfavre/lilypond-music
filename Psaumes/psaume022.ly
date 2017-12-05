@@ -9,6 +9,11 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
+
+title = "Psaume 22"
+subtitle = "4e dimanche de Carême - Lætare (année A)"
+composer = "Jean Baptiste Favre"
+
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
   \tempo 4=70
@@ -22,10 +27,6 @@ tempoVerseAcelerando = {
   \set Score.tempoHideNote = ##t
   \tempo 2=70
 }
-
-title = "Psaume 22"
-subtitle = "4e dimanche de Carême - Lætare (année A)"
-composer = "Jean Baptiste Favre"
 
 global = {
   \time 2/4
@@ -76,7 +77,7 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando g'\breve a1 \tempoVerseRallentando f2 \bar "||" \caesura
     \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando d2 \bar "||" \caesura
@@ -107,65 +108,84 @@ bassVerseMusic = \relative c {
     c\breve d1 b4 e4 e2
   }
 
-
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Le Seigneur est" \markup {\concat { m \underline o n " " ber }} -- \markup {\concat { g \underline e r, }}
-    "je ne" -- \markup {\concat { m \underline a nque " " de}} \markup {\concat { r \underline i en,}}
-    \set stanza = #"1. "
-    "Sur des" \markup {\concat { pr \underline é s " " d’herbe }} \markup {\concat { fr \underline a îche, }}
-    "il me" \markup { \concat { f \underline a it }} re -- po -- ser.
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Il me mène vers les" \markup { \concat { e \underline a ux " " tran }} -- \markup {\concat { qu \underline i lles }}
-    "et me" \markup {\concat { f \underline a it " " re }} -- vivre;
-    \set stanza = #"2. "
-    "il me conduit par le" "juste che" -- \markup {\concat { m \underline i n}}
-    "pour l’hon" -- \markup {\concat { n \underline e ur}} de son nom.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Si je traverse les ra" -- \markup { \concat { v \underline i ns " " de " " la}} \markup {\concat { m \underline o rt,}}
-    "je ne" \markup {\concat { cr \underline a ins " " aucun}} \markup {\concat { m \underline a l,}}
-    \set stanza = #"3. "
-    "car tu" \markup {\concat { \underline e s " " avec}} \markup {\concat { m \underline o i:}}
-    "ton bâton me" \markup {\concat { gu \underline i de " " et }} me ras -- sure.
-  }
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Tu prépares la" \markup { \concat { t \underline a ble " " pour}} \markup {\concat { m \underline o i}}
-    "devant mes" \markup {\concat { \underline e nne}} -- mis;
-    \set stanza = #"4. "
-    "tu répands le par" -- \markup {\concat { f \underline u m " " sur " " ma}} \markup {\concat { t\underline ê te,}}
-    "ma cou" -- \markup { \concat { pe " " \underline e st}}  dé -- bor -- dante.
-  }
-verseFiveLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"5. "
-    "Grâce et bon" -- \markup { \concat { h \underline e ur " " m’accom}} -- \markup {\concat { p \underline a gnent}}
-    "tous les" \markup {\concat { j \underline o urs " " de " "ma }} \markup {\concat { v \underline i e;}}
-    \set stanza = #"5. "
-    "j’habiterai la mai" -- \markup {\concat { s \underline o n " " du " " Sei}} -- \markup {\concat { gn \underline e ur}}
-    "pour la du" -- \markup {\concat { r \underline é e}} de mes jours.
-  }
-
 groupedVersesLyrics = <<
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFiveLyrics }
   >>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Chantez au Seigne_u_r un chant nouveau,
+  chantez au Seigne_u_r, terre entière,
+  racontez à tous les pe_u_ples sa gloire,
+  à toutes les nati_o_ns ses merveilles !
+
+  Il est grand, le Seigne_u_r, hautement loué,
+  redoutable au-dess_u_s de tous les dieux :
+  néant, tous les die_u_x des nations !
+  Lui, le Seigne_u_r, a fait les cieux.
+
+  Rendez au Seigne_u_r, familles des peuples,
+  rendez au Seigneur la glo_i_re et la puissance,
+  rendez au Seigneur la glo_i_re de son nom.
+  Apportez votre offr_a_nde, entrez dans ses parvis.
+
+  Adorez le Seigne_u_r, éblouissant de sainteté :
+  tremblez devant lu_i_, terre entière.
+  Allez dire aux nations : « Le Seigne_u_r est roi ! »
+  Il gouverne les pe_u_ples avec droiture.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      \concat { "Le Seigneur est " m \underline o n" "berg \underline e r,}
+      \concat { "je ne " m \underline a nque" "de" "r \underline i en,}
+      \concat { "Sur des " pr \underline é s" "d’herbe" "fr \underline a îche, }
+      \concat { "il me " f \underline a it" "reposer.}
+      " "
+      \concat { "Il me mène vers les "  e \underline a ux" "tranqu \underline i lles }
+      \concat { "et me " f \underline a it" "revivre;}
+      \concat { "il me conduit par le juste " chem \underline i n}
+      \concat { "pour " l’honn \underline e ur" "de" "son" "nom.}
+      " "
+      \concat { "Si je traverse les " rav \underline i ns" "de" "la" "m \underline o rt,}
+      \concat { "je ne " cr \underline a ins" "aucun" "m \underline a l,}
+      \concat { "car tu " \underline e s" "avec" "m \underline o i&nbsp;:}
+      \concat { "ton bâton me " gu \underline i de" "et" "me" "rassure.}
+      " "
+      \concat { "Tu prépares la " t \underline a ble" "pour" "m \underline o i}
+      \concat { "devant mes " \underline e nnemis;}
+      \concat { "tu répands le " parf \underline u m" "sur" "ma" "t \underline ê te,}
+      \concat { "ma " coupe" "\underline e st" "débordante.}
+      " "
+      \concat { "Grâce et " bonh \underline e ur" "m’accomp \underline a gnent}
+      \concat { "tous les " j \underline o urs" "de" "ma" "v \underline i e;}
+      \concat { "j’habiterai la " mais \underline o n" "du" "Seign \underline e ur}
+      \concat { "pour la " dur \underline é e" "de" "mes" "jours.}
+    }
+  }
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
 %\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
