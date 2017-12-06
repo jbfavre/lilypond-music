@@ -87,104 +87,103 @@ tenorVerseMusic = \relative c' {
 
 bassVerseMusic = \relative c {
   }
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
 
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Oui, que le" \markup { \concat { d \underline i se" "Isra}} -- ël&nbsp;:
-    \set stanza = #"1. "
-    Éter -- \markup { \concat { n \underline e l" "est" "son" "a}} -- \markup { \concat { mour" "!" "\bold &plus;}}
+verseFiguredBass = \figuremode {
   }
-verseOneLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Que le dise la mai" -- \markup { \concat { s \underline on" "d’Aa}} -- ron&nbsp;:
-    Éter -- \markup { \concat { n \underline e l" "est" "son" "a}} -- \markup { \concat { mour" "!" "\bold *}}
+verseHarmony = \figuremode {
   }
-verseOneLyricsPartThree =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Qu’ils le disent, ceux qui" \markup { \concat { cr \underline a ignent" "le" "Sei}} -- gneur&nbsp;:
-    Éter -- \markup { \concat { n \underline e l" "est" "son" "a}} -- mour&nbsp;!
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Oui, que le d_i_se Israël:
+  Étern_e_l est son amour! +
+  Que le dise la mais_o_n d’Aaron:
+  Étern_e_l est son amour! *
+  Qu’ils le disent, ceux qui cr_a_ignent le Seigneur:
+  Étern_e_l est son amour!
+
+  Dans mon angoisse j'ai cri_é_ vers le Seigneur,
+  et lui m'a exauc_é_, mis au large.
+  Le Seigneur est pour m_o_i, je ne crains pas;
+  que pourrait un h_o_mme contre moi?
+  Le Seigneur est avec m_o_i pour me défendre,
+  et moi, je braver_a_i mes ennemis.
+
+  Mieux vaut s'appuy_e_r sur le Seigneur
+  que de compt_e_r sur les hommes; *
+  mieux vaut s'appuy_e_r sur le Seigneur
+  que de compt_e_r sur les puissants!
+
+  Toutes les nat_i_ons m'ont encerclé:
+  au nom du Seign_e_ur, je les détruis!
+  Elles m'ont cern_é_, encerclé:
+  au nom du Seign_e_ur, je les détruis!
+  Elles m'ont cerné, comme des guèpes: +
+  ce n'ét_a_it qu'un feu de ronces *
+  au nom du Seign_e_ur, je les détruis!
+
+  On m’a poussé, bouscul_é_ pour m’abattre;
+  mais le Seign_e_ur m’a défendu.
+  Ma force et mon ch_a_nt, c’est le Seigneur;
+  il est pour m_o_i le salut.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "Oui, que le " d \underline i se" "Israël&nbsp;: }
+      \concat { Étern \underline e l" "est" "son" "amour&nbsp;!" " \super &plus; }
+      \concat { "Que le dise la " mais \underline on" "d’Aaron&nbsp;: }
+      \concat { Étern \underline e l" "est" "son" "amour&nbsp;!" " \super * }
+      \concat { "Qu’ils le disent, ceux qui " cr \underline a ignent" "le" "Seigneur&nbsp;: }
+      \concat { Étern \underline e l" "est" "son" "amour&nbsp;! }
+      " "
+      \concat { "Dans mon angoisse j'ai " cri \underline é" "vers" "le" "Seigneur, }
+      \concat { "et lui m'a " exauc \underline é," "mis" "au" "large. }
+      \concat { "Le Seigneur est pour " m \underline o i," "je" "ne" "crains" "pas&nbsp;; }
+      \concat { "que pourrait un " h \underline o mme" "contre" "moi&nbsp;? }
+      \concat { "Le Seigneur est avec " m \underline oi" "pour" "me" "défendre, }
+      \concat { "et moi, je " braver \underline a i" "mes" "ennemis. }
+      " "
+      \concat { "Mieux vaut " s'appuy \underline e r" "sur" "le" "Seigneur }
+      \concat { "que de " compt \underline e r" "sur" "les hommes&nbsp;; \super * }
+      \concat { "mieux vaut " s'appuy \underline e r" "sur" "le" "Seigneur }
+      \concat { "que de " compt \underline e r" "sur" "les" "puissants&nbsp;! }
+      " "
+      \concat { "Toutes les " nat \underline i ons" "m'ont" "encerclé&nbsp;: }
+      \concat { "au nom du " Seign \underline e ur," "je" "les" "détruis&nbsp;! }
+      \concat { "Elles m'ont " cern \underline é," "encerclé&nbsp;: }
+      \concat { "au nom du " Seign \underline e ur," "je" "les" "détruis! }
+      \concat { "Elles m'ont cerné, comme des guèpes&nbsp;: " \super &plus; }
+      \concat { "ce " n'ét \underline a it" "qu'un" "feu" "de ronces" " \super * }
+      \concat { "au nom du " Seign \underline e ur," "je" "les" "détruis! }
+      " "
+      \concat { "On m’a poussé, " bouscul \underline é " "pour" "m’abattre; }
+      \concat { "mais le " Seign \underline e ur" "m’a" "défendu. }
+      \concat { "Ma force et mon " ch \underline a nt," "c’est" "le" "Seigneur; }
+      \concat { "il est pour " m \underline o i" "le" "salut. }
+    }
   }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Dans mon angoisse j'ai cri" -- \markup { \concat { \underline é" "vers" "le" "Sei}} -- gneur,
-    \set stanza = #"2. "
-    "et lui m'a exau" -- \markup { \concat { c \underline é," "mis" "au}} large.
-  }
-verseTwoLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Le Seigneur est pour" \markup { \concat { m \underline o i," "je" "ne" "crains}} pas&nbsp;;
-    "que pourrait un" \markup { \concat { h \underline o mme" "contre}} moi&nbsp;?
-  }
-verseTwoLyricsPartThree =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Le Seigneur est avec" \markup { \concat { m \underline oi" "pour" "me" "dé}} -- fendre,
-    "et moi, je brave" -- \markup { \concat { r \underline a i" "mes" "enne}} -- mis.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Mieux vaut s'appuy" -- \markup { \concat { \underline e r" "sur" "le" "Sei}} -- gneur
-    \set stanza = #"3. "
-    "que de comp" -- \markup { \concat { t \underline e r" "sur" "les}} hommes;*
-  }
-verseThreeLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "mieux vaut s'appuy" -- \markup { \concat { \underline e r" "sur" "le" "Sei}} -- gneur
-    "que de comp" -- \markup { \concat { t \underline e r" "sur" "les}} puissants&nbsp;!
-  }
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Toutes les na" -- \markup { \concat { t \underline i ons" "m'ont" "encer}} -- clé:
-    \set stanza = #"4. "
-    "au nom du Sei" -- \markup { \concat { gn \underline e ur," "je" "les" "dé}} -- truis!
-  }
-verseFourLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Elles m'ont cer" -- \markup { \concat { n \underline é," "encer}} -- clé:
-    "au nom du Sei" -- \markup { \concat { gn \underline e ur," "je" "les" "dé}} -- truis!
-  }
-verseFourLyricsPartThree =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \markup { \concat { Elles" "m'ont" "cerné," "comme" "des" "guèpes: \bold &plus;" "ce" "n'é}}
-        -- \markup { \concat { t \underline a it" "qu'un" "feu" "de}} \markup { \concat { ronces" "\bold *}}
-    "au nom du Sei" -- \markup { \concat { gn \underline e ur," "je" "les" "dé}} -- truis!
-  }
-verseFiveLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"5. "
-    "On m’a poussé, bouscul" -- \markup { \concat { \underline é" "pour" "m’abat}} -- tre;
-    \set stanza = #"5. "
-    "mais le Sei" -- \markup { \concat { gn \underline eur" "m’a" "défen}} -- du.
-  }
-verseFiveLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Ma force et mon" \markup { \concat { ch \underline a nt, ""c’est" "le" "Sei}} -- gneur;
-    "il est pour" \markup { \concat { m \underline oi" "le" "sa}} -- lut.
-  }
+}
 
 groupedVersesLyrics = <<
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyricsPartTwo }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyricsPartThree }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyricsPartTwo }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyricsPartThree }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyricsPartTwo }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyricsPartTwo }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyricsPartThree }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFiveLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFiveLyricsPartTwo }
 >>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

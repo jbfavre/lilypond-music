@@ -127,25 +127,20 @@ verseHarmony = \figuremode {
 
 %{
 
-  Chantez au Seigne_u_r un chant nouveau,
-  chantez au Seigne_u_r, terre entière,
-  racontez à tous les pe_u_ples sa gloire,
-  à toutes les nati_o_ns ses merveilles !
+  De tout mon cœur, Seign_e_ur, je te rends grâce:
+  tu as entendu les par_o_les de ma bouche.
+  Je te ch_a_nte en présence des anges,
+  vers ton temple sacr_é_, je me prosterne.
 
-  Il est grand, le Seigne_u_r, hautement loué,
-  redoutable au-dess_u_s de tous les dieux :
-  néant, tous les die_u_x des nations !
-  Lui, le Seigne_u_r, a fait les cieux.
+  Je rends grâce à ton nom pour ton am_o_ur et ta vérité,
+  car tu élèves, au-dessus de t_o_ut, ton nom et ta parole.
+  Le j_o_ur où tu répondis à mon appel,
+  tu fis grandir en mon _â_me la force.
 
-  Rendez au Seigne_u_r, familles des peuples,
-  rendez au Seigneur la glo_i_re et la puissance,
-  rendez au Seigneur la glo_i_re de son nom.
-  Apportez votre offr_a_nde, entrez dans ses parvis.
-
-  Adorez le Seigne_u_r, éblouissant de sainteté :
-  tremblez devant lu_i_, terre entière.
-  Allez dire aux nations : « Le Seigne_u_r est roi ! »
-  Il gouverne les pe_u_ples avec droiture.
+  Si haut que soit le Seign_e_ur, il voit le plus humble.
+  de l_o_in, il reconnaît l’orgueilleux.
+  Seigneur, _é_ternel est ton amour:
+  n’arrête p_a_s l’œuvre de tes mains.
 
 %}
 
