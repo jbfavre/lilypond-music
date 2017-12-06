@@ -9,8 +9,10 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 16
+
+title = "Psaume 137"
+subtitle = "21e dimanche ordinaire (année A)"
+composer = "Jean Baptiste Favre"
 
 systemToSystemSpacing = 
   #'((basic-distance . 10)
@@ -31,17 +33,10 @@ tempoVerseAcelerando = {
   \tempo 2=70
 }
 
-title = "Psaume 137"
-subtitle = "21e dimanche ordinaire (année A)"
-composer = "Jean Baptiste Favre"
-
 global = {
     \time 2/4
     \key d \minor
   }
-
-% Ajust this setting to get a single page psalm
-staffSize = 16
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -78,11 +73,15 @@ altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \antiphonLyrics
 bassAntiphonLyrics = \antiphonLyrics
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%          Verses          %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % quand on a fini de rentrer la musique partout, on peut préciser
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 sopranoVerseMusic = \relative c'' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 b a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 g a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando a4 g4 f g2 \bar "||" \caesura
@@ -113,85 +112,108 @@ bassVerseMusic = \relative c {
     bf\breve g1 d'4 e4 a,2
   }
 
-sopranoVerseMusicB = \relative c'' {
-    \caesura
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando \slurSolid g4[( g]) b a2 \bar "||" \caesura
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Chantez au Seigne_u_r un chant nouveau,
+  chantez au Seigne_u_r, terre entière,
+  racontez à tous les pe_u_ples sa gloire,
+  à toutes les nati_o_ns ses merveilles !
+
+  Il est grand, le Seigne_u_r, hautement loué,
+  redoutable au-dess_u_s de tous les dieux :
+  néant, tous les die_u_x des nations !
+  Lui, le Seigne_u_r, a fait les cieux.
+
+  Rendez au Seigne_u_r, familles des peuples,
+  rendez au Seigneur la glo_i_re et la puissance,
+  rendez au Seigneur la glo_i_re de son nom.
+  Apportez votre offr_a_nde, entrez dans ses parvis.
+
+  Adorez le Seigne_u_r, éblouissant de sainteté :
+  tremblez devant lu_i_, terre entière.
+  Allez dire aux nations : « Le Seigne_u_r est roi ! »
+  Il gouverne les pe_u_ples avec droiture.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "De tout mon cœur, " Seign \underline e ur," "je" "te" "rends" "grâce:}
+      \concat { "tu as entendu les " par \underline o les" "de" "ma" "bouche.}
+      \concat { "Je te " ch \underline a nte" "en" "présence" "des" "anges,}
+      \concat { "vers ton temple " sacr \underline é ," "je" "me" "prosterne.}
+      " "
+      \concat { "Je rends grâce à ton nom pour ton " am \underline o ur" "et" "ta" "vérité,}
+      \concat { "car tu élèves, au-dessus de " t \underline o ut," "ton" "nom" "et" "ta" "parole.}
+      \concat { "Le " j \underline o ur" "où" "tu" "répondis" "à" "mon" "appel,}
+      \concat { "tu fis grandir en mon " \underline â me" "la" "force.}
+      " "
+      \concat { "Si haut que soit le " Seign \underline e ur," "il" "voit" "le" "plus" "humble.}
+      \concat { "de " l \underline o in," "il" "reconnaît" "l’orgueilleux.}
+      \concat { "Seigneur, " \underline é ternel" "est" "ton" "amour:}
+      \concat { "n’arrête " p \underline a s" "l’œuvre" "de" "tes" "mains.}
+    }
+  }
+}
+
+groupedVersesLyrics = <<
+>>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody.ily"
+\include "../libs/layouts/outputMidi.ily"
+
+sopranoVerseMusic = \relative c'' {
+    \cadenzaOn \caesura
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando \slurSolid g4 b a2 \bar "||" \caesura
     \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a2 \bar "|."
   }
 
-altoVerseMusicB = \relative c' {
+altoVerseMusic = \relative c' {
     \caesura
-    e\breve d1 \slurDown \slurSolid e4[( e]) g e2 \caesura
+    e\breve d1 \slurDown \slurSolid e4 g e2 \caesura
     d\breve bf1 d4 e e2
   }
 
-tenorVerseMusicB = \relative c' {
+tenorVerseMusic = \relative c' {
     \caesura
-    cs\breve a1 \slurSolid c4[( c]) d cs2 \caesura
+    cs\breve a1 \slurSolid c4 d cs2 \caesura
     bf\breve g1 a4 c4 cs2
   }
 
-bassVerseMusicB = \relative c {
+bassVerseMusic = \relative c {
     \caesura
-    a\breve d1 \slurDown \slurSolid c4[( c]) g a2 \caesura
+    a\breve d1 \slurDown \slurSolid c4 g a2 \caesura
     bf\breve g1 d'4 c4 a2
   }
 
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. " 
-    "De tout mon cœur, Sei" -- \markup { \concat { gn \underline e ur, " " je}} te rends grâce:
-    \set stanza = #"1. " 
-    "tu as entendu les pa" -- \markup { \concat { r \underline o les}} de ma bouche.
-}
-verseOneLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    "Je te" \markup { \concat {ch \underline a nte " " en " " pré}} -- \set ignoreMelismata = ##t senc -- e \unset ignoreMelismata des anges,
-    "vers ton temple sacr" -- \markup { \concat { \underline é , " " je}} me pros -- terne.
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. " 
-    "Je rends grâce à ton nom pour ton a" -- \markup { \concat { m \underline o ur " " et " " ta}} vé -- ri -- té,
-    \set stanza = #"2. " 
-    "car tu élèves, au-dessus de" \markup { \concat { t \underline o ut, " " ton " " nom " " et}} ta pa -- role.
-  }
-verseTwoLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    Le \markup { \concat { j \underline o ur " " où " " tu " " répondis}} à mon ap -- pel,
-    "tu fis grandir en mon" \markup { \concat { \underline â}} -- me la force.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Si haut que soit le Sei" -- \markup { \concat { gn \underline e ur, " " il " " voit}} le plus humble.
-    \set stanza = #"3. "
-    de \markup { \concat { l\underline o in, " " il " " reconnaît}} l’or -- gueil -- leux.
-  }
-verseThreeLyricsPartTwo =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    Seigneur, \markup { \concat { \underline é ternel}} est ton a -- mour:
-    n’arrête \markup { \concat { p \underline a s " " l’œuvre}} de tes mains.
-  }
-
 groupedVersesLyrics = <<
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics \set stanza = #"1. " \verseOneLyricsPartTwo }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics \set stanza = #"2. " \verseTwoLyricsPartTwo }
-    \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics \set stanza = #"3. " \verseThreeLyricsPartTwo }
->>
-groupedVersesLyricsB = <<
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseOneLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseOneLyricsPartTwo }
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseTwoLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseTwoLyricsPartTwo }
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseThreeLyrics }
-    \new Lyrics \lyricsto "sopranoVerseVoiceB" { \verseThreeLyricsPartTwo }
 >>
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%          AUTRES RÉGLAGES          %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

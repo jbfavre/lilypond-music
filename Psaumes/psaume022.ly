@@ -126,25 +126,30 @@ verseHarmony = \figuremode {
 
 %{
 
-  Chantez au Seigne_u_r un chant nouveau,
-  chantez au Seigne_u_r, terre entière,
-  racontez à tous les pe_u_ples sa gloire,
-  à toutes les nati_o_ns ses merveilles !
+  Le Seigneur est m_o_n berg_e_r,
+  je ne m_a_nque de r_i_en,
+  Sur des pr_é_s d’herbe fr_a_îche, 
+  il me f_a_it reposer.
 
-  Il est grand, le Seigne_u_r, hautement loué,
-  redoutable au-dess_u_s de tous les dieux :
-  néant, tous les die_u_x des nations !
-  Lui, le Seigne_u_r, a fait les cieux.
+  Il me mène vers les  e_a_ux tranqu_i_lles
+  et me f_a_it revivre;
+  il me conduit par le juste chem_i_n
+  pour l’honn_e_ur de son nom.
 
-  Rendez au Seigne_u_r, familles des peuples,
-  rendez au Seigneur la glo_i_re et la puissance,
-  rendez au Seigneur la glo_i_re de son nom.
-  Apportez votre offr_a_nde, entrez dans ses parvis.
+  Si je traverse les rav_i_ns de la m_o_rt,
+  je ne cr_a_ins aucun m_a_l,
+  car tu _e_s avec m_o_i :
+  ton bâton me gu_i_de et me rassure.
 
-  Adorez le Seigne_u_r, éblouissant de sainteté :
-  tremblez devant lu_i_, terre entière.
-  Allez dire aux nations : « Le Seigne_u_r est roi ! »
-  Il gouverne les pe_u_ples avec droiture.
+  Tu prépares la t_a_ble pour m_o_i
+  devant mes _e_nnemis;
+  tu répands le parf_u_m sur ma t_ê_te,
+  ma coupe _e_st débordante.
+
+  Grâce et bonh_e_ur m’accomp_a_gnent
+  tous les j_o_urs de ma v_i_e;
+  j’habiterai la mais_o_n du Seign_e_ur
+  pour la dur_é_e de mes jours.
 
 %}
 
@@ -186,6 +191,5 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
 \include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

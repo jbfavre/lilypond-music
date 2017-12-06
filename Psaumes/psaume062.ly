@@ -181,6 +181,5 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
 \include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
