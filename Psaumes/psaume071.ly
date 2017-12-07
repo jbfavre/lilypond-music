@@ -44,17 +44,17 @@ sopranoAntiphonMusic = \relative c' {
 
 altoAntiphonMusic = \relative c' {
   a8 d f f f4 f4 e2
-  d8 c d a c2 a4 g a2
+  d8 c d a c2 a4 bf a2
   }
 
 tenorAntiphonMusic =  \relative c' {
-  f,8 a c a d4 d cs2
+  f,8 a c a d4 d d4 (cs)
   g8[ f] f f g2 e4 d f2
   }
 
 bassAntiphonMusic =  \relative c {
   d8 d c c b4 bf a2
-  g8[ a] bf d c2 c4 bf <d d,>2
+  g8[ a] bf d c2 c4 g <d d'>2
   }
 
 antiphonLyrics = \lyricmode {
