@@ -9,8 +9,6 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 18
 
 title = "Psaume 103"
 subtitle = "Pentecôte"
@@ -21,8 +19,6 @@ global = {
   \cadenzaOn
   \key ef \major
 }
-% Ajust this setting to get a single page psalm
-staffSize = 19
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -58,7 +54,7 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando g\breve bf1 \tempoVerseRallentando ef,4 \bar "||" \caesura
     \tempoVerseAcelerando ef\breve af1 \tempoVerseRallentando f4 \bar "||" \caesura
     \tempoVerseAcelerando g\breve bf1 \tempoVerseRallentando c4 \bar "||" \caesura
@@ -74,72 +70,72 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c {
   }
 
-%{DEBUT-DU-TEXTE-DE-LA-PSALMODIE
-
-Bénis le Seigne_u_r, ô mon âme ;
-Seigneur mon Die_u_, tu es si grand !
-Quelle profusion dans tes œ_u_vres, Seigneur !
-la terre s’empl_i_t de tes biens.
-
-Tu reprends leur so_u_ffle, ils expirent
-et reto_u_rnent à leur poussière.
-Tu envoies ton so_u_ffle : ils sont créés ;
-tu renouvelles la f_a_ce de la terre.
-
-Gloire au Seigne_u_r à tout jamais !
-Que Dieu se réjou_i_sse en ses œuvres !
-Que mon poème lui s_o_it agréable ;
-moi, je me réjou_i_s dans le Seigneur.
-
-FIN-DU-TEXTE-DE-LA-PSALMODIE%}
-
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Bénis le Seigneur, ô mon" âme,
-    "bénis son nom très" \markup { \concat { s \underline a int, " " tout " " mon}} être!
-    \set stanza = #"1. "
-    "Bénis le Sei" -- \markup { \concat {gn \underline e ur, " " ô}} mon âme,
-    "n’oublie au" -- \markup { \concat { c \underline u n " " de " " ses}} bien -- faits!
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Car il pardonne toutes tes of" -- fenses
-    "et te guérit de" \markup { \concat{ t \underline o ute " " mala}} -- die;
-    \set stanza = #"2. "
-    "il réclame ta" \markup { \concat { v \underline i e " " à " " la}} -- tom -- be
-    "et te couronne" \markup { \concat {d’am \underline o ur " " et " " de}} tend -- resse.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Il n’est pas pour toujours en pro" -- cès,
-    "ne maintient pas sans" \markup { \concat { f \underline i n " " ses " " re}} -- proches;
-    \set stanza = #"3. "
-    "il n’agit pas envers" \markup { \concat { n \underline o us " " selon}} nos fautes,
-    "ne nous rend pas se" -- \markup { \concat { l \underline o n " " nos}} of -- fenses.
-  }
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Comme le ciel domine la" terre,
-    "fort est son a" -- \markup { \concat { m \underline o ur " " pour " " qui " " le}} craint;
-    \set stanza = #"4. "
-    "aussi loin qu’est l'o" -- \markup { \concat { r \underline i ent " " de " " l’oc}} -- ci -- dent,
-    "il met loin de" \markup { \concat { n \underline o us " " nos}} pé -- chés.
-  }
-
 groupedVersesLyrics = <<
-  >>
+>>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Bénis le Seigne_u_r, ô mon âme ;
+  Seigneur mon Die_u_, tu es si grand !
+  Quelle profusion dans tes œ_u_vres, Seigneur !
+  la terre s’empl_i_t de tes biens.
+
+  Tu reprends leur so_u_ffle, ils expirent
+  et reto_u_rnent à leur poussière.
+  Tu envoies ton so_u_ffle : ils sont créés ;
+  tu renouvelles la f_a_ce de la terre.
+
+  Gloire au Seigne_u_r à tout jamais !
+  Que Dieu se réjou_i_sse en ses œuvres !
+  Que mon poème lui s_o_it agréable ;
+  moi, je me réjou_i_s dans le Seigneur.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "Bénis le " Seigne \underline u r, " ô mon âme," }
+      \concat { "Seigneur mon " Die \underline u, " tu es si grand&nbsp;!" }
+      \concat { "Quelle profusion dans tes " œ \underline u vres, " Seigneur&nbsp;!" }
+      \concat { "la terre " s’empl \underline i t " de tes biens." }
+      " "
+      \concat { "Tu reprends leur " so \underline u ffle, " ils expirent" }
+      \concat { "et " reto \underline u rnent " à leur poussière." }
+      \concat { "Tu envoies ton " so \underline u ffle&nbsp;: " ils sont créés&nbsp;;" }
+      \concat { "tu renouvelles la " f \underline a ce " de la terre." }
+      " "
+      \concat { "Gloire au " Seigne \underline u r " à tout jamais&nbsp;!" }
+      \concat { "Que Dieu se " réjou \underline i sse " en ses œuvres&nbsp;!" }
+      \concat { "Que mon poème lui " s \underline o it " agréable&nbsp;;" }
+      \concat { "moi, je me " réjou \underline i s " dans le Seigneur." }
+    }
+  }
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%      Alternate Psalmody      %%%%%%%%%%%%%%%%%%%%
@@ -161,5 +157,5 @@ bassVerseMusic = \relative c {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

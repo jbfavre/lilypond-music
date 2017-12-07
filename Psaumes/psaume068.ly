@@ -9,8 +9,6 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 15
 
 title = "Psaume 68"
 subtitle = "12e dimanche ordinaire (année A)"
@@ -62,7 +60,7 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando b4 a2 \bar "||" \caesura
     \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 a b2 \bar "||" \caesura
@@ -89,53 +87,82 @@ bassVerseMusic = \relative c {
     e,\breve f1 g4 a2 \caesura
   }
 
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "C’est pour toi que j’en" -- \markup { \concat { d \underline u re}} l’in -- sulte,
-    "que la honte me" \markup { \concat { co \underline u vre" "le}} vi -- sage&nbsp;:
-    \set stanza = #"1. "
-    "je suis un étran" -- \markup { \concat { g \underline e r}} pour mes frères,
-    "un inconnu pour les" \markup { \concat { f \underline i ls" "de" "ma}} mère.
-    \set stanza = #"1. "
-    "L’amour de ta mai" -- \markup { \concat { s \underline o n}} m’a per -- du&nbsp;;
-    "on t’insulte, et l’insulte re" -- \markup { \concat { t \underline o mbe}} sur moi.
+groupedVersesLyrics = <<
+>>
+
+figuredBass = \figuremode {
   }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Et moi, je te" \markup { \concat { pr \underline i e,}} Sei -- gneur&nbsp;:
-    c’est \markup { \concat { l’he \underline u re" "de}} ta grâce&nbsp;;
-    \set stanza = #"2. "
-    "dans ton grand amour," \markup { \concat { Di \underline e u,}} ré -- ponds- -- moi,
-    "par ta vérité" \markup { \concat { s \underline a uve}}-moi.
-    \set stanza = #"2. "
-    "Réponds-moi, Sei" -- \markup { \concat { gn \underline e ur," "car" "il" "est" "bon,}} ton a -- mour&nbsp;;
-    "dans ta grande ten" -- \markup { \concat { dr \underline e sse," "regar }} de-moi.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Les pauvres l’ont" \markup { \concat { v \underline u," "ils" "sont}} en fête&nbsp;:
-    "« Vie et joie, à" \markup { \concat { v \underline o us" "qui" "cher}} chez Dieu&nbsp;!&nbsp;»
-    \set stanza = #"3. "
-    "Car le Seigneur é" -- \markup { \concat { c \underline o u}} -- te les humbles,
-    "il n’oublie pas les" \markup { \concat { s \underline i ens" "emprison}} -- nés.
-    \set stanza = #"3. "
-    "Que le ciel et la" \markup { \concat { t \underline e rre}} le cé -- lè -- brent,
-    "les mers et" \markup { \concat { t \underline o ut leur peu}} -- plement&nbsp;!
+harmony = \figuremode {
   }
 
-groupedVersesLyrics = <<
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
->>
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  C’est pour toi que j’end_u_re l’insulte,
+  que la honte me co_u_vre le visage :
+  je suis un étrang_e_r pour mes frères,
+  un inconnu pour les f_i_ls de ma mère.
+  L’amour de ta mais_o_n m’a perdu ;
+  on t’insulte, et l’insulte ret_o_mbe sur moi.
+  
+  Et moi, je te pr_i_e, Seigneur :
+  c’est l’he_u_re de ta grâce ;
+  dans ton grand amour, Di_e_u, réponds-moi,
+  par ta vérité s_a_uve-moi.
+  Réponds-moi, Seign_e_ur, car il est bon, ton amour ;
+  dans ta grande tendr_e_sse, regarde-moi.
+  
+  Les pauvres l’ont v_u_, ils sont en fête :
+  « Vie et joie, à v_o_us qui cher chez Dieu ! »
+  Car le Seigneur éc_o_ute les humbles,
+  il n’oublie pas les s_i_ens emprisonnés.
+  Que le ciel et la t_e_rre le célèbrent,
+  les mers et t_o_ut leur peuplement !
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "C’est pour toi que " j’end \underline u re " l’insulte," }
+      \concat { "que la honte me " co \underline u vre " le visage&nbsp;:" }
+      \concat { "je suis un " étrang \underline e r " pour mes frères," }
+      \concat { "un inconnu pour les " f \underline i ls " de ma mère." }
+      \concat { "L’amour de ta " mais \underline o n " m’a perdu&nbsp;;" }
+      \concat { "on t’insulte, et l’insulte " ret \underline o mbe " sur moi." }
+      " "
+      \concat { "Et moi, je te " pr \underline i e, " Seigneur&nbsp;:" }
+      \concat { "c’est " l’he \underline u re " de ta grâce&nbsp;;" }
+      \concat { "dans ton grand amour, " Di \underline e u, " réponds-moi," }
+      \concat { "par ta vérité " s \underline a uve-moi. }
+      \concat { "Réponds-moi, " Seign \underline e ur, " car il est bon, ton amour&nbsp;;" }
+      \concat { "dans ta grande " tendr \underline e sse, " regarde-moi."}
+      " "
+      \concat { "Les pauvres l’ont " v \underline u, " ils sont en fête&nbsp;:" }
+      \concat { "« Vie et joie, à " v \underline o us " qui cher chez Dieu&nbsp;!&nbsp;»" }
+      \concat { "Car le Seigneur " éc \underline o ute " les humbles," }
+      \concat { "il n’oublie pas les " s \underline i ens " emprisonnés." }
+      \concat { "Que le ciel et la " t \underline e rre " le célèbrent," }
+      \concat { "les mers et " t \underline o ut " leur peuplement&nbsp;!" }
+    }
+  }
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"

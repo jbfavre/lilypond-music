@@ -9,8 +9,16 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 18
+
+title = "Psaume 102"
+subtitle = "24e dimanche ordinaire (année A)"
+composer = "Jean Baptiste Favre"
+
+global = {
+  \key f \major
+  \time 2/4
+}
+
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
   \tempo 4=80
@@ -23,17 +31,6 @@ tempoVerseAcelerando = {
   \set Score.tempoHideNote = ##t
   \tempo 2=80
 }
-
-title = "Psaume 102"
-subtitle = "24e dimanche ordinaire (année A)"
-composer = "Jean Baptiste Favre"
-
-global = {
-  \key f \major
-  \time 2/4
-}
-% Ajust this setting to get a single page psalm
-staffSize = 16
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
@@ -86,7 +83,7 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-    \caesura
+    \cadenzaOn \caesura
     \tempoVerseAcelerando a\breve \tempoVerseRallentando c2 \bar "||" \caesura
     \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando a2 \bar "||" \caesura
     \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 f2 \bar "||" \caesura
@@ -117,55 +114,80 @@ bassVerseMusic = \relative c {
     bf\breve c1 e4 a,2
   }
 
-
-verseOneLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"1. "
-    "Bénis le Seigneur, ô mon" âme,
-    "bénis son nom très" \markup { \concat { s \underline a int, " " tout " " mon}} être!
-    \set stanza = #"1. "
-    "Bénis le Sei" -- \markup { \concat {gn \underline e ur, " " ô}} mon âme,
-    "n’oublie au" -- \markup { \concat { c \underline u n " " de " " ses}} bien -- faits!
-  }
-verseTwoLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"2. "
-    "Car il pardonne toutes tes of" -- fenses
-    "et te guérit de" \markup { \concat{ t \underline o ute " " mala}} -- die;
-    \set stanza = #"2. "
-    "il réclame ta" \markup { \concat { v \underline i e " " à " " la}} -- tom -- be
-    "et te couronne" \markup { \concat {d’am \underline o ur " " et " " de}} tend -- resse.
-  }
-verseThreeLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"3. "
-    "Il n’est pas pour toujours en pro" -- cès,
-    "ne maintient pas sans" \markup { \concat { f \underline i n " " ses " " re}} -- proches;
-    \set stanza = #"3. "
-    "il n’agit pas envers" \markup { \concat { n \underline o us " " selon}} nos fautes,
-    "ne nous rend pas se" -- \markup { \concat { l \underline o n " " nos}} of -- fenses.
-  }
-verseFourLyrics =  \lyricmode {
-    \override LyricText.self-alignment-X = #-1
-    \set stanza = #"4. "
-    "Comme le ciel domine la" terre,
-    "fort est son a" -- \markup { \concat { m \underline o ur " " pour " " qui " " le}} craint;
-    \set stanza = #"4. "
-    "aussi loin qu’est l'o" -- \markup { \concat { r \underline i ent " " de " " l’oc}} -- ci -- dent,
-    "il met loin de" \markup { \concat { n \underline o us " " nos}} pé -- chés.
-  }
-
 groupedVersesLyrics = <<
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseOneLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseTwoLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseThreeLyrics }
-      \new Lyrics \lyricsto "sopranoVerseVoice" { \verseFourLyrics }
 >>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Bénis le Seigneur, ô mon _â_me,
+  bénis son nom très s_a_int, tout mon être !
+  Bénis le Seign_e_ur, ô mon âme,
+  n’oublie auc_u_n de ses bienfaits !
+
+  Car il pardonne toutes tes off_e_nses
+  et te guérit de t_o_ute maladie ;
+  il réclame ta v_i_e à la tombe
+  et te couronne d’am_o_ur et de tendresse.
+
+  Il n’est pas pour toujours en pr_o_cès,
+  ne maintient pas sans f_i_n ses reproches;
+  il n’agit pas envers n_o_us selon nos fautes,
+  ne nous rend pas sel_o_n nos offenses.
+
+  Comme le ciel domine la t_e_rre,
+  fort est son am_o_ur pour qui le craint ;
+  aussi loin qu’est l'or_i_ent de l’occident,
+  il met loin de n_o_us nos péchés.
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 3)
+  \fill-line {
+    \left-column{
+      " "
+      " "
+      \concat { "Bénis le " Seigne \underline u r, " ô mon âme," }
+      \concat { "bénis son nom très " s \underline a int, " tout mon être&nbsp;!" }
+      \concat { "Bénis le " Seign \underline e ur, " ô mon âme," }
+      \concat { "n’oublie " auc \underline u n " de ses bienfaits&nbsp;!" }
+      " "
+      \concat { "Car il pardonne " to \underline u tes " tes offenses" }
+      \concat { "et te guérit de " t \underline o ute " maladie;" }
+      \concat { "il réclame ta " v \underline i e " à la tombe" }
+      \concat { "et te couronne " d’am \underline o ur " et de tendresse." }
+      " "
+      \concat { "Il n’est pas pour " toujo \underline u rs " en procès," }
+      \concat { "ne maintient pas sans " f \underline i n " ses reproches;" }
+      \concat { "il n’agit pas envers " n \underline o us " selon nos fautes," }
+      \concat { "ne nous rend pas " sel \underline o n " nos offenses." }
+      " "
+      \concat { "Comme le ciel " dom \underline i ne " la terre," }
+      \concat { "fort est son " am \underline o ur " pour qui le craint;" }
+      \concat { "aussi loin qu’est " l'or \underline i ent " de l’occident," }
+      \concat { "il met loin de " n \underline o us " nos péchés." }
+    }
+  }
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
-%\include "../libs/layouts/dualPsalmody.ily"
-\include "../libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
