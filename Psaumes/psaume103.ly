@@ -13,6 +13,7 @@
 title = "Psaume 103"
 subtitle = "Pentecôte"
 composer = "Magnificat, juin 2017"
+dedicace = "Psalmodie par strophe"
 
 global = {
   \omit Staff.TimeSignature
@@ -140,6 +141,7 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%      Alternate Psalmody      %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+dedicace = "Psalmodie par verset"
 sopranoVerseMusic = \relative c'' {
     g\breve bf1 f4 \bar "||"
     ef\breve af f4 \bar "|."

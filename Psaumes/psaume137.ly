@@ -13,6 +13,7 @@
 title = "Psaume 137"
 subtitle = "21e dimanche ordinaire (année A)"
 composer = "Jean Baptiste Favre"
+dedicace="Psalmodie par strophe"
 
 systemToSystemSpacing = 
   #'((basic-distance . 10)
@@ -178,6 +179,8 @@ groupedVersesLyrics = <<
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
+
+dedicace="Psalmodie par verset"
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
