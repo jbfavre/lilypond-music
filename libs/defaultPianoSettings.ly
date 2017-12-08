@@ -8,6 +8,7 @@ pianoProperties = {
   \set fontSize = #-1
   \override StaffSymbol #'staff-space = #(magstep -1)
   \override Hairpin #'style = #'none
+  \override InstrumentName #'font-name = #"Monospace Regular"
   \autoBeamOn
 }
 pianoSopranoMusic = \sopranoAntiphonMusic
