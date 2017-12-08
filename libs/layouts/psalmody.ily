@@ -92,8 +92,8 @@ partition = {
             \override InstrumentName #'font-name = #"Monospace Regular"
         }
         \context {
-    \Voice
-    \consists "Horizontal_bracket_engraver"
+            \Voice
+            \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
     }
