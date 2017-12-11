@@ -10,6 +10,12 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
+topToMarkupSpacing =
+  #'((basic-distance . 0)
+    (minimum-distance . 0)
+     (padding . 0)
+     (stretchability . 0))
+
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
   \tempo 4=70
@@ -76,29 +82,29 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c' {
-    \cadenzaOn \hideNotes
-    d1 \bar "||" \caesura
-    d1 \bar "||" \caesura
-    d1 \bar "||" \caesura
-    d1
-    %\tempoVerseAcelerando d\breve a'!1 \tempoVerseRallentando g4 af4 a2 \bar "||" \caesura
+    \cadenzaOn
+    \tempoVerseAcelerando fs\breve a1 \tempoVerseRallentando e2 \bar "||" \caesura
+    \tempoVerseAcelerando e\breve g1 \tempoVerseRallentando fs4 e d2 \bar "||" \caesura
+    \tempoVerseAcelerando b'\breve a1 \tempoVerseRallentando g2 \bar "||" \caesura
+    \tempoVerseAcelerando g\breve fs1 e4 \tempoVerseRallentando d2
     \bar "|."
   }
 
 altoVerseMusic = \relative c' {
+    %a\breve a1 g2
+    %a\breve g1
   }
 
 tenorVerseMusic = \relative c' {
+    %d\breve cs1 d2
+    %e\breve cs1 as4 fs fs2
   }
 
 bassVerseMusic = \relative c {
-    \hideNotes
-    d1 \bar "||" \caesura
-    d1 \bar "||" \caesura
-    d1 \bar "||" \caesura
-    d1
-    %\tempoVerseAcelerando d\breve a'!1 \tempoVerseRallentando g4 af4 a2 \bar "||" \caesura
-    \bar "|."
+    d\breve cs1 b2
+    cs\breve <as e'>1 fs4 as! b2
+    d\breve ds1 e2
+    g,\breve a1 a4 <d! d,!>2
   }
 
 groupedVersesLyrics = <<
