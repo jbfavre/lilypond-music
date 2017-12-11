@@ -58,7 +58,7 @@ scoreMarkupSpacing =
 leftMargin = 15
 rightMargin = 15
 topMargin = 10
-bottomMargin = 15
+bottomMargin = 10
 
 %{
   Margin for two-sided printed scores
