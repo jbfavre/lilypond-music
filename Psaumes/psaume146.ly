@@ -86,25 +86,29 @@ sopranoVerseMusic = \relative c' {
     \tempoVerseAcelerando fs\breve a1 \tempoVerseRallentando e2 \bar "||" \caesura
     \tempoVerseAcelerando e\breve g1 \tempoVerseRallentando fs4 e d2 \bar "||" \caesura
     \tempoVerseAcelerando b'\breve a1 \tempoVerseRallentando g2 \bar "||" \caesura
-    \tempoVerseAcelerando g\breve fs1 e4 \tempoVerseRallentando d2
+    \tempoVerseAcelerando fs\breve e1 e4 \tempoVerseRallentando d2
     \bar "|."
   }
 
 altoVerseMusic = \relative c' {
-    %a\breve a1 g2
-    %a\breve g1
+    d\breve fs1 d2
+    cs\breve <cs e>1 d4 cs b2
+    b\breve b1 e2
+    d\breve d1 cs4 a2
   }
 
 tenorVerseMusic = \relative c' {
-    %d\breve cs1 d2
-    %e\breve cs1 as4 fs fs2
+    a\breve a1 g2
+    a\breve fs1 fs4 g fs2
+    g\breve fs1 b2
+    g\breve a!1 a4 fs2
   }
 
 bassVerseMusic = \relative c {
     d\breve cs1 b2
-    cs\breve <as e'>1 fs4 as! b2
+    cs\breve as1 b4 g b2
     d\breve ds1 e2
-    g,\breve a1 a4 <d! d,!>2
+    b\breve a1 a4 <d! d,!>2
   }
 
 groupedVersesLyrics = <<
