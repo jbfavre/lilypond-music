@@ -60,11 +60,11 @@ altoAntiphonMusic = \relative c' {
   }
 
 tenorAntiphonMusic =  \relative c' {
-  fs,8 g8 a4 g d' cs4 e e d d4 d8 (cs8) d2.
+  fs,8 a8 a4 g d' cs4 e e d d4 d8 (cs8) d2.
   }
 
 bassAntiphonMusic =  \relative c {
-  d8 e d4 b d e4 cs <cs fs> <b fs'>4 g'8 (fs) e4 d2.
+  fs8 e d4 b d e4 cs <cs fs> <b fs'>4 g'8 (fs) e4 d2.
   }
 
 antiphonLyrics = \lyricmode {
@@ -101,7 +101,7 @@ tenorVerseMusic = \relative c' {
     a\breve a1 g2
     a\breve fs1 fs4 g fs2
     g\breve fs1 b2
-    g\breve a!1 a4 fs2
+    g\breve g!1 g4 fs2
   }
 
 bassVerseMusic = \relative c {
