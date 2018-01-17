@@ -105,7 +105,7 @@ bassVerseMusic = \relative c {
     %    \line { "  des indications pour l'accompagnement"}
     %    \line {"  et ne sont pas psalmodiées"}
     %  }
-    }
+    %}
   }
 
 groupedVersesLyrics = <<
