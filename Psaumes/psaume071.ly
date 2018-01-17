@@ -43,18 +43,18 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
-  a8 d f f f4 f4 e2
-  d8 c d a c2 a4 bf a2
+  a8 d f e f4 f4 e2
+  g8 f d a c2 c4 c a2
   }
 
 tenorAntiphonMusic =  \relative c' {
-  f,8 a c a d4 d d4 (cs)
-  g8[ f] f f g2 e4 d f2
+  f,8 a c c d4 d d4 (cs)
+  d8[ c] bf f g2 a4. g8 f2
   }
 
 bassAntiphonMusic =  \relative c {
   d8 d c c b4 bf a2
-  g8[ a] bf d c2 c4 g <d d'>2
+  g8[ a] bf d c2 a4 a <d d,>2
   }
 
 antiphonLyrics = \lyricmode {
@@ -82,29 +82,29 @@ sopranoVerseMusic = \relative c' {
 altoVerseMusic = \relative c' {
   a\breve f'1 f4 f e2
   f\breve g1 g4 e e2
-  f\breve c1 d4 d bf2
-  cs\breve a1 d4 cs! a2
+  f\breve d1 d4 d d2
+  cs\breve d1 d4 d8[ cs!] a2
   }
 
 tenorVerseMusic = \relative c' {
   f,\breve c'!1 d4 d cs2
   d\breve e1 d4 d cs!2
-  a\breve a1 f4 f d2
-  a'\breve a1 bf4 a f2
+  a\breve a1 g4 g bf2
+  a\breve a1 bf4 a f2
   }
 
 bassVerseMusic = \relative c {
     d\breve c1 b4 bf a2
     d\breve c1 g4 b a2
-    d\breve c1 b4 bf g4 \parenthesizeAll gs
-    a\breve d1 g,4 a8[ \parenthesizeAll cs] <d d,>2
+    d\breve c1 b!4 bf g2
+    a\breve d1 g,4 a4 <d d,>2
     \once \override Score.RehearsalMark.extra-offset = #'(-25 . -27)
-    \mark \markup { \typewriter \small
-      \column {
-        \line { "* Les notes entre parenthèses constituent"}
-        \line { "  des indications pour l'accompagnement"}
-        \line {"  et ne sont pas psalmodiées"}
-      }
+    %\mark \markup { \typewriter \small
+    %  \column {
+    %    \line { "* Les notes entre parenthèses constituent"}
+    %    \line { "  des indications pour l'accompagnement"}
+    %    \line {"  et ne sont pas psalmodiées"}
+    %  }
     }
   }
 
