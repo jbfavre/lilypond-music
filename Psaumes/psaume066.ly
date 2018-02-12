@@ -78,34 +78,34 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve c1 \tempoVerseRallentando a4 a2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando c2 \bar "||" \caesura
-    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando f4 a2 \bar "|."
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve c1 \tempoVerseRallentando a4 a4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando c4 \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando f4 a4 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    f\breve e1 d2 \caesura
-    g\breve e1 d4 e2 \caesura
-    g\breve e1 g2 \caesura
-    d\breve e1 f4 f2
+    f\breve e1 d4 \caesura
+    g\breve e1 d4 e4 \caesura
+    g\breve e1 g4 \caesura
+    d\breve e1 f4 f4
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    a\breve g1 d'2 \caesura
-    b\breve g1 a4 a2 \caesura
-    g\breve b1 g2 \caesura
-    bf\breve c1 a4 a2
+    a\breve g1 d'4 \caesura
+    b\breve g1 a4 a4 \caesura
+    g\breve b1 g4 \caesura
+    bf\breve c1 a4 a4
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    d\breve e1 g2 \caesura
-    e\breve c1 f4 cs2 \caesura
-    d\breve b1 c2 \caesura
-    g'\breve c,1 c4 f2
+    d\breve e1 g4 \caesura
+    e\breve c1 f4 cs4 \caesura
+    d\breve b1 c4 \caesura
+    g'\breve c,1 c4 f4
   }
 groupedVersesLyrics = <<
 >>

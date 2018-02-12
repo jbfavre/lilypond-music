@@ -83,34 +83,34 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 b a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 g a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando a4 g4 f g2 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a2 \bar "|."
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 b a4 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 g a4 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando a4 g4 f g4 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a4 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    c\breve d1 e4 d4 e2 \caesura
-    f\breve e1 g4 e4 f2 \caesura
-    e\breve f1 f4 e4 f4 e2 \caesura
-    d\breve bf1 d4 d4 e2
+    c\breve d1 e4 d4 e4 \caesura
+    f\breve e1 g4 e4 f4 \caesura
+    e\breve f1 f4 e4 f4 e4 \caesura
+    d\breve bf1 d4 d4 e4
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    a\breve a1 g4 b4 cs2 \caesura
-    a\breve c1 d4 d4 c2 \caesura
-    cs\breve d1 c4 c4 d4 d4 (c4) \caesura
-    bf\breve g1 a4 bf4 cs2
+    a\breve a1 g4 b4 cs4 \caesura
+    a\breve c1 d4 d4 c4 \caesura
+    cs\breve d1 c4 c4 d4 d8[ \parenthesizeAll c8] \caesura
+    bf\breve g1 a4 bf4 cs4
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    f,\breve d'1 c4 g4 a2 \caesura
-    d\breve a1 b4 b4 f2 \caesura
-    a\breve d1 f4 c d c2 \caesura
-    bf\breve g1 d'4 e4 a,2
+    f,\breve d'1 c4 g4 a4 \caesura
+    d\breve a1 b4 b4 f4 \caesura
+    a\breve d1 f4 c d c4 \caesura
+    bf\breve g1 d'4 e4 a,4
   }
 
 figuredBass = \figuremode {
@@ -184,26 +184,26 @@ dedicace="Psalmodie par verset"
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando \slurSolid g4 b a2 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a2 \bar "|."
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando \slurSolid g4 b a4 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve d1 \tempoVerseRallentando f4 g a4 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    e\breve d1 \slurDown \slurSolid e4 g e2 \caesura
-    d\breve bf1 d4 e e2
+    e\breve d1 \slurDown \slurSolid e4 g e4 \caesura
+    d\breve bf1 d4 e e4
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    cs\breve a1 \slurSolid c4 d cs2 \caesura
-    bf\breve g1 a4 c4 cs2
+    cs\breve a1 \slurSolid c4 d cs4 \caesura
+    bf\breve g1 a4 c4 cs4
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    a\breve d1 \slurDown \slurSolid c4 g a2 \caesura
-    bf\breve g1 d'4 c4 a2
+    a\breve d1 \slurDown \slurSolid c4 g a4 \caesura
+    bf\breve g1 d'4 c4 a4
   }
 
 groupedVersesLyrics = <<

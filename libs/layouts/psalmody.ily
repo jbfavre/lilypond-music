@@ -41,6 +41,7 @@ partition = {
             \tag #'visuel \sopranoVerseMusic
             \tag #'audio <<\sopranoVerseMusic \\ \pisteTempoVerse>>
           }
+          \new Lyrics \lyricsto "sopranoVerseVoice" { \sopranoVerseRepons \sopranoVerseRepons }
           \new Voice = "altoVerseVoice" {
             \voiceTwo { \silence \sopranoAntiphonMusic }
             \tag #'visuel \altoVerseMusic
