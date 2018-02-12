@@ -1,0 +1,188 @@
+\version "2.18.2"
+\language "english"
+%{
+  Default settings are needed at the beginning
+  because they are used in antiphon & verse music definition
+  You can override default values simply by declaring variables again.
+%}
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
+\include "../libs/psalmody.ily"
+
+title = "Psaume 103"
+subtitle = "Vigile Pascale, année B"
+composer = "Jean Baptiste Favre"
+
+staffCustomSize = 15
+
+global = {
+  \omit Staff.TimeSignature
+  \cadenzaOn
+  \key gs \minor
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Antiphon %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoAntiphonMusic = \relative c' {
+  e8 ds gs4 gs8[ (as)] b4 cs8[ b] as2 (as8) fss[ gs as] b4 as8[ b gs] gs[ as gs] gs4 (fss!) gs2
+  \bar "|." \break
+  }
+
+altoAntiphonMusic = \relative c' {
+  cs8 as ds4 ds4 e gs8 gs fs2 fss4 gs8 gs fs4 cs8[ ds e] e[ e cs] ds4. e8 ds2
+  }
+
+tenorAntiphonMusic =  \relative c' {
+  gs8 fss gs4 b8[ (as)] b4 cs8 cs cs2 ds4 e8 e ds4 gs,8[ gs b] cs[ cs as] as2 b2
+  }
+
+bassAntiphonMusic =  \relative c {
+  cs8 cs b4 gs'8[ (fs)] e4 cs8 e fs4 (e)
+  ds cs8[ cs] ds4 e8[ ds cs] as[ cs e] ds4. (cs8) gs2
+  }
+
+antiphonLyrics = \lyricmode {
+    Ô Sei -- gneur, en -- voie ton Es -- prit
+    qui re -- nou -- vel -- le la fa -- ce de la ter -- re!
+  }
+
+sopranoAntiphonLyrics = \antiphonLyrics
+altoAntiphonLyrics = \antiphonLyrics
+tenorAntiphonLyrics = \antiphonLyrics
+bassAntiphonLyrics = \antiphonLyrics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%          Verses          %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoVerseMusic = \relative c'' {
+    \caesura \cadenzaOn 
+    \tempoVerseAcelerando b\breve^\markup{ \sans "Psalmiste"} gs1 \tempoVerseRallentando as4 \bar "||" \caesura
+    \tempoVerseAcelerando as\breve as1 \tempoVerseRallentando gs4 \bar "||" \caesura
+    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" \break % Répon de l'assemblée
+    \caesura \cadenzaOn
+    \tempoVerseAcelerando gs\breve^\markup{ \sans "Psalmiste"} e1 \tempoVerseRallentando gs4 \bar "||" \caesura
+    \tempoVerseAcelerando gs\breve fss!1 \tempoVerseRallentando gs4 \bar "||" \caesura
+    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" % Répon de l'assemblée
+  }
+sopranoVerseRepons = \lyricmode {
+    _ _ _ _ _ _
+    En -- voie ton Es -- prit&nbsp;!
+  }
+altoVerseMusic = \relative c' {
+    ds\breve e1 e4
+    e\breve ds1 e4
+    e8 e fs4 fs e  % Répon de l'assemblée
+    b\breve as1 ds4
+    e\breve ds1 ds4
+    ds8 e fs4 fs8 e ds4 % Répon de l'assemblée
+  }
+
+tenorVerseMusic = \relative c' {
+    b\breve b1 cs4
+    cs\breve cs1 b4
+    b8 cs ds4 ds4 b4 % Répon de l'assemblée
+    gs\breve gs1 b4
+    b\breve as1 b4
+    b8 cs ds4 ds8 cs b4 % Répon de l'assemblée
+  }
+
+bassVerseMusic = \relative c' {
+    gs\breve e1 gs4
+    fs\breve fss1 gs4
+    e8[ cs] b[ cs] ds4 e % Répon de l'assemblée
+    e\breve cs1 gs4
+    cs\breve ds1 gs,4
+    gs'8[ fs] b,[ cs] ds4 gs, % Répon de l'assemblée
+   }
+
+groupedVersesLyrics = <<
+>>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
+%{
+
+  Bénis le Seigne_u_r, ô mon âme ;
+  Seigneur mon Die_u_, tu es si grand !
+  Revêt_u_ de magnificence,
+  tu as pour mantea_u_ la lumière !
+
+  Tu as donné son ass_i_se à la terre :
+  qu’elle reste inébranl_a_ble au cours des temps.
+  Tu l’as vêtue de l’ab_î_me des mers :
+  les eaux couvraient m_ê_me les montagnes.
+
+  Dans les ravins tu fais jaill_i_r des sources
+  et l’eau chemine aux cre_u_x des montagnes.
+  les oiseaux séjo_u_rnent près d’elle :
+  dans le feuillage on ent_e_nd leurs cris.
+
+  De tes demeures tu abre_u_ves les montagnes,
+  et la terre se rassasie du fr_u_it de tes œuvres ;
+  tu fais pousser les prair_i_es pour les troupeaux,
+  et les champs pour l’h_o_mme qui travaille.
+
+  Quelle profusion dans tes œ_u_vres, Seigneur !
+  Tout cela, ta sag_e_sse l’a fait ;
+  la terre s’empl_i_t de tes biens.
+  Bénis le Seigne_u_r, ô mon âme !
+
+%}
+
+verseLyrics = \markup {
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 2)
+  \fill-line {
+    \hspace #0.1
+    \column{
+      \concat { "Bénis le Seigne" \underline u "r, ô mon âme&nbsp;;"}
+      \concat { "Seigneur mon Die" \underline u ", tu es si grand&nbsp;!"}
+      \concat { "Revêt" \underline u " de magnificence,"}
+      \concat { "tu as pour mantea" \underline u " la lumière&nbsp;!"}
+      " "
+      \concat { "Tu as donné son ass" \underline i "se à la terre&nbsp;:"}
+      \concat { "qu’elle reste inébranl" \underline a "ble au cours des temps."}
+      \concat { "Tu l’as vêtue de l’ab" \underline î "me des mers&nbsp;:"}
+      \concat { "les eaux couvraient m" \underline ê "me les montagnes."}
+      " "
+      \concat { "Dans les ravins tu fais jaill" \underline i "r des sources"}
+      \concat { "et l’eau chemine aux cre" \underline u "x des montagnes."}
+      \concat { "les oiseaux séjo" \underline u "rnent près d’elle&nbsp;:"}
+      \concat { "dans le feuillage on ent" \underline e "nd leurs cris."}
+    }
+    \hspace #0.1
+    \column {
+      \concat { "De tes demeures tu abre" \underline u "ves les montagnes,"}
+      \concat { "et la terre se rassasie du fr" \underline u "it de tes œuvres&nbsp;;"}
+      \concat { "tu fais pousser les prair" \underline i "es pour les troupeaux,"}
+      \concat { "et les champs pour l’h" \underline o "mme qui travaille."}
+      " "
+      \concat { "Quelle profusion dans tes œ" \underline u "vres, Seigneur&nbsp;!"}
+      \concat { "Tout cela, ta sag" \underline e "sse l’a fait&nbsp;;"}
+      \concat { "la terre s’empl" \underline i "t de tes biens."}
+      \concat { "Bénis le Seigne" \underline u "r, ô mon âme&nbsp;!"}
+    }
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody.ily"
+\include "../libs/layouts/outputMidi.ily"
