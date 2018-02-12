@@ -65,34 +65,34 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando b\breve cs1 \tempoVerseRallentando b2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando gs4 gs fs2 \bar "||" \caesura
-    \tempoVerseAcelerando gs\breve a1 \tempoVerseRallentando gs4 fs e2 \bar "||" \caesura
-    \tempoVerseAcelerando e\breve a1 \tempoVerseRallentando gs4 e fs2 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve cs1 \tempoVerseRallentando b4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando gs4 gs fs \bar "||" \caesura
+    \tempoVerseAcelerando gs\breve a1 \tempoVerseRallentando gs4 fs e \bar "||" \caesura
+    \tempoVerseAcelerando e\breve a1 \tempoVerseRallentando gs4 e fs \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c'' {
     \caesura
-    gs\breve e1 es2 \bar "||" \caesura
-    es!\breve cs1 e4 e ds2 \bar "||" \caesura
-    ds\breve ds1 ds4 ds cs2 \bar "||" \caesura
-    cs\breve e1 e4 cs4 ds2 \bar "||" \caesura
+    gs\breve e1 es4 \bar "||" \caesura
+    es!\breve cs1 e4 e ds \bar "||" \caesura
+    ds\breve ds1 ds4 ds cs \bar "||" \caesura
+    cs\breve e1 e4 cs4 ds \bar "||" \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    b\breve a1 cs2 \bar "||" \caesura
-    gs\breve a1 b4 cs4 b2 \bar "||" \caesura
-    gs\breve bs1 bs4 gs gs2 \bar "||" \caesura
-    a\breve cs1 b4 gs4 b2 \bar "||" \caesura
+    b\breve a1 cs4 \bar "||" \caesura
+    gs\breve a1 b4 cs b \bar "||" \caesura
+    gs\breve bs1 bs4 gs gs \bar "||" \caesura
+    a\breve cs1 b4 gs b \bar "||" \caesura
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    e\breve a1 gs2 \bar "||" \caesura
-    cs,\breve fs1 e!4 e4 b2 \bar "||" \caesura
-    bs\breve gs1 gs4 bs cs b \bar "||" \caesura
-    a\breve fs'1 e4 cs b2 \bar "||" \caesura
+    e\breve a1 gs4 \bar "||" \caesura
+    cs,\breve fs1 e!4 e b \bar "||" \caesura
+    bs\breve gs1 gs4 bs cs8[ \parenthesizeAll b8] \bar "||" \caesura
+    a\breve fs'1 e4 cs b \bar "||" \caesura
   }
 
 groupedVersesLyrics = <<

@@ -73,31 +73,31 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando d\breve a'!1 \tempoVerseRallentando g4 af4 a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b!4 g4 a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 f4 e2 \bar "||" \caesura
-    \tempoVerseAcelerando e\breve f1 \tempoVerseRallentando g8[ \parenthesizeAll f] e4 d2 \bar "|."
+    \tempoVerseAcelerando d\breve a'!1 \tempoVerseRallentando g4 af a \bar "||" \caesura
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b!4 g a \bar "||" \caesura
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 f e \bar "||" \caesura
+    \tempoVerseAcelerando e\breve f1 \tempoVerseRallentando g8[ \parenthesizeAll f] e4 d \bar "|."
   }
 
 altoVerseMusic = \relative c' {
-  a\breve f'1 f4 f e2
-  f\breve g1 g4 e e2
-  f\breve d1 d4 d d2
-  cs\breve d1 d4 d8[ cs!] a2
+  a\breve f'1 f4 f e
+  f\breve g1 g4 e e
+  f\breve d1 d4 d d
+  cs\breve d1 d4 d8[ \parenthesizeAll cs!] a4
   }
 
 tenorVerseMusic = \relative c' {
-  f,\breve c'!1 d4 d cs2
-  d\breve e1 d4 d cs!2
-  a\breve a1 g4 g bf2
-  a\breve a1 bf4 a f2
+  f,\breve c'!1 d4 d cs
+  d\breve e1 d4 d cs!
+  a\breve a1 g4 g bf
+  a\breve a1 bf4 a f
   }
 
 bassVerseMusic = \relative c {
-    d\breve c1 b4 bf a2
-    d\breve c1 g4 b a2
-    d\breve c1 b!4 bf g2
-    a\breve d1 g,4 a4 <d d,>2
+    d\breve c1 b4 bf a
+    d\breve c1 g4 b a
+    d\breve c1 b!4 bf g
+    a\breve d1 g,4 a <d d,>
     \once \override Score.RehearsalMark.extra-offset = #'(-25 . -27)
     %\mark \markup { \typewriter \small
     %  \column {
@@ -105,7 +105,7 @@ bassVerseMusic = \relative c {
     %    \line { "  des indications pour l'accompagnement"}
     %    \line {"  et ne sont pas psalmodiées"}
     %  }
-    }
+    %}
   }
 
 groupedVersesLyrics = <<
