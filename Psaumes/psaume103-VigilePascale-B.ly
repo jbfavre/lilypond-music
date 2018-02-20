@@ -14,8 +14,19 @@ title = "Psaume 103"
 subtitle = "Vigile Pascale, année B"
 composer = "Jean Baptiste Favre"
 
-staffCustomSize = 15
+executionNotes = "Il importe d'enchaîner sans traîner entre versets et répons"
 
+staffCustomSize = 15
+systemToSystemSpacing = 
+  #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
+scoreMarkupSpacing =
+  #'((padding . 3)
+   (basic-distance . 3)
+   (minimum-distance . 3)
+   (stretchability . 3))
 global = {
   \omit Staff.TimeSignature
   \cadenzaOn
@@ -61,42 +72,48 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
     \caesura \cadenzaOn 
     \tempoVerseAcelerando b\breve^\markup{ \sans "Psalmiste"} gs1 \tempoVerseRallentando as4 \bar "||" \caesura
-    \tempoVerseAcelerando as\breve as1 \tempoVerseRallentando gs4 \bar "||" \caesura
-    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" \break % Répon de l'assemblée
-    \caesura \cadenzaOn
+    \tempoVerseAcelerando as\breve as1 \tempoVerseRallentando gs4 \bar "||"
+    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" \break % Répons de l'assemblée
+    \cadenzaOn
     \tempoVerseAcelerando gs\breve^\markup{ \sans "Psalmiste"} e1 \tempoVerseRallentando gs4 \bar "||" \caesura
-    \tempoVerseAcelerando gs\breve fss!1 \tempoVerseRallentando gs4 \bar "||" \caesura
-    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" % Répon de l'assemblée
+    \tempoVerseAcelerando gs\breve fss!1 \tempoVerseRallentando gs4 \bar "||"
+    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" % Répons de l'assemblée
   }
 sopranoVerseRepons = \lyricmode {
     _ _ _ _ _ _
     En -- voie ton Es -- prit&nbsp;!
   }
 altoVerseMusic = \relative c' {
-    ds\breve e1 e4
-    e\breve ds1 e4
-    e8 e fs4 fs e  % Répon de l'assemblée
-    b\breve as1 ds4
-    e\breve ds1 ds4
-    ds8 e fs4 fs8 e ds4 % Répon de l'assemblée
+    \caesura \cadenzaOn 
+    \tempoVerseAcelerando ds\breve e1 \tempoVerseRallentando e4\caesura
+    \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando e4
+    \cadenzaOff e8 e fs4 fs e  % Répons de l'assemblée
+    \cadenzaOn
+    \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando ds4\caesura
+    \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando ds4
+    \cadenzaOff ds8 e fs4 fs8 e ds4 % Répons de l'assemblée
   }
 
 tenorVerseMusic = \relative c' {
-    b\breve b1 cs4
-    cs\breve cs1 b4
-    b8 cs ds4 ds4 b4 % Répon de l'assemblée
-    gs\breve gs1 b4
-    b\breve as1 b4
-    b8 cs ds4 ds8 cs b4 % Répon de l'assemblée
+    \caesura \cadenzaOn 
+    \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando cs4\caesura
+    \tempoVerseAcelerando cs\breve cs1 \tempoVerseRallentando b4
+    \cadenzaOff b8 cs ds4 ds4 b4 % Répons de l'assemblée
+    \cadenzaOn
+    \tempoVerseAcelerando gs\breve gs1 \tempoVerseRallentando b4\caesura
+    \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando b4
+    \cadenzaOff b8 cs ds4 ds8 cs b4 % Répons de l'assemblée
   }
 
 bassVerseMusic = \relative c' {
-    gs\breve e1 gs4
-    fs\breve fss1 gs4
-    e8[ cs] b[ cs] ds4 e % Répon de l'assemblée
-    e\breve cs1 gs4
-    cs\breve ds1 gs,4
-    gs'8[ fs] b,[ cs] ds4 gs, % Répon de l'assemblée
+    \caesura \cadenzaOn 
+    \tempoVerseAcelerando gs\breve e1 \tempoVerseRallentando gs4\caesura
+    \tempoVerseAcelerando fs\breve fss1 \tempoVerseRallentando gs4
+    \cadenzaOff e8[ cs] b[ cs] ds4 e % Répons de l'assemblée
+    \cadenzaOn
+    \tempoVerseAcelerando e\breve cs1 \tempoVerseRallentando gs4\caesura
+    \tempoVerseAcelerando cs\breve ds1 \tempoVerseRallentando gs,4
+    \cadenzaOff gs'8[ fs] b,[ cs] ds4 gs, % Répons de l'assemblée
    }
 
 groupedVersesLyrics = <<
@@ -144,12 +161,13 @@ verseHarmony = \figuremode {
 
 %}
 
-verseLyrics = \markup {
+verseLyrics = \markuplist {
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 2)
   \fill-line {
-    \hspace #0.1
+    \hspace #0.0001
     \column{
+      \vspace #1
       \concat { "Bénis le Seigne" \underline u "r, ô mon âme&nbsp;;"}
       \concat { "Seigneur mon Die" \underline u ", tu es si grand&nbsp;!"}
       \concat { "Revêt" \underline u " de magnificence,"}
@@ -165,8 +183,9 @@ verseLyrics = \markup {
       \concat { "les oiseaux séjo" \underline u "rnent près d’elle&nbsp;:"}
       \concat { "dans le feuillage on ent" \underline e "nd leurs cris."}
     }
-    \hspace #0.1
+    \hspace #0.0001
     \column {
+      \vspace #1
       \concat { "De tes demeures tu abre" \underline u "ves les montagnes,"}
       \concat { "et la terre se rassasie du fr" \underline u "it de tes œuvres&nbsp;;"}
       \concat { "tu fais pousser les prair" \underline i "es pour les troupeaux,"}
@@ -177,6 +196,29 @@ verseLyrics = \markup {
       \concat { "la terre s’empl" \underline i "t de tes biens."}
       \concat { "Bénis le Seigne" \underline u "r, ô mon âme&nbsp;!"}
     }
+  }
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 2)
+  \fill-line {
+    \vspace #2.2
+    \concat {
+      \underline "Consignes d'exécution:"
+      "L'antienne n'est chantée qu'en début et en fin du psaume."
+    }
+  }
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 2)
+  \fill-line {
+    \concat {
+      "À chaque fin de verset, l'assemblée répond au psalmiste avec: "
+      \bold "\"Envoie ton Esprit !\", "
+      "en lieu et place de l'antienne"
+    }
+  }
+  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-size . 2)
+  \fill-line {
+    \left-align "On veillera à éviter toute interruption entre versets et répons, sans précipiter le mouvement pour autant"
   }
 }
 
