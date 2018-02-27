@@ -5,12 +5,8 @@
   composer = "Serguei Rachmaninov"
 }
 
-global = {
-  \key c \major
-}
-
 intonationMusic = \relative c {
-  \global
+  \key c \major
   \clef bass
   \cadenzaOn
   c,2^"Basse" c2. c4 c1 \fermata
@@ -68,7 +64,7 @@ intonationLyricsFrench = \lyricmode {
 
 
 intonationMusic = \relative c {
-  \global
+  \key f \major
   \clef bass
   \cadenzaOn
   f4 f8 f f f4 f8 f g4 f f8 f4 \bar "|" \break
@@ -112,7 +108,7 @@ Car à Toi sont dus toute la gloire, l’honneur et l’adoration : au Père, au
 \pageBreak
 
 intonationMusic = \relative c {
-  \global
+  \key f \major
   \clef bass
   \cadenzaOn
   f8 f f f4 g a g f8 f f f4 f \bar "|" \break
@@ -153,7 +149,7 @@ intonationLyricsFrench = \lyricmode {
 
 
 intonationMusic = \relative c' {
-  \global
+  \key d \minor
   \clef "treble_8"
   \cadenzaOn
   d8 d d d d c4 d8 d4 d8 d d4 \bar "|" \break
