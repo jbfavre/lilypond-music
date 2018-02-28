@@ -1,5 +1,6 @@
 \version "2.18.2"
 
+#(set-global-staff-size 14)
 \header {
   title = "All Night Vigils, Intonations"
   composer = "Serguei Rachmaninov"
@@ -15,15 +16,23 @@ intonationMusic = \relative c {
   c'4^"Ténor" c8 c c4 c\breve \bar"|" \break
   d8 c b c4 c8 d4 \bar"|" \break
   e8 d c c c4 b8 a c4 c c c \fermata
+  \bar "|"
 }
-
+amenWomen = \relative c' {
+  s\breve s\breve s4 s8 s\breve s1 s\breve
+  <e g c e>2 <e g c e>1 \fermata
+}
+amenMen = \relative c {
+  \clef bass
+  <c g' c>2 <c g' c>1 \fermata
+}
 intonationLyricsSlavon = \lyricmode {
-  Вос -- тан -- и -- те.
+  Во -- ста -- ни -- те.
   Го -- спо -- ди, бла -- го -- сло -- ви.
   Сла -- ва Свя -- тей,
   \once \override LyricText.self-alignment-X = #LEFT
-  "и Единосущной, и Животворящей, и Нера" -- здел -- ьней Тро -- ице
-  все -- гда, ны -- не, и пр -- исно и во ве -- ки ве -- ков.
+  "и Единосущной, и Животворящей, и Нераз" -- дель -- ней Трои -- це
+  все -- гда, ны -- не, и при -- сно и во ве -- ки ве -- ков.
 }
 intonationLyricsLatin = \lyricmode {
   Vo -- \markup { \bold sta} -- ni -- tié.
@@ -47,17 +56,26 @@ intonationLyricsFrench = \lyricmode {
   \header {
     piece = "Numéro 1"
   }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
   \new ChoirStaff <<
+    \new Staff <<
+     \override Staff.VerticalAxisGroup.remove-first = ##t
+       \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+    >>
     \new Staff \with {
       instrumentName = \markup \center-column { Soliste }
     } <<
-      \new Voice = "solisteUn" { \voiceOne \intonationMusic }
+      \new Voice = "solisteUn" { \voiceOne \intonationMusic \amenMen }
       \new Lyrics { \lyricsto "solisteUn" \intonationLyricsSlavon }
       \new Lyrics { \lyricsto "solisteUn" \intonationLyricsLatin }
     >>
   >>
-  \layout { }
-  \midi { }
 }
 
 
@@ -71,12 +89,21 @@ intonationMusic = \relative c {
   g8 g a g f f f4 \bar "|" \break
   g4 g8 g a a a a a g4 f4 f \bar "|" \break
   a8 g g g4 g4 f8 d f8 f f f4 \fermata
-  \cadenzaOff
+  \bar "|"
+}
+amenWomen = \relative c' {
+  s\breve s2 s1 s1 s2. s8 s1 s4
+  <e g c e>2 <e g c e>1 \fermata
+}
+amenMen = \relative c {
+  \clef bass
+  <f, a' c>2 <f a' c>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
   Я -- ко по -- до -- бает Те -- бе вся -- кая сла -- ва,
-  честь и по -- кло -- не -- н -- ие: О -- тцу, и Сы -- ну, и Свя -- то -- му Ду -- ху,
-  ны -- не, и пр -- исно, и во ве -- ки ве -- ков.
+  честь и по -- кло -- не -- ни -- е:
+  О -- тцу, и Сы -- ну, и Свя -- то -- му Ду -- ху,
+  ны -- не, и при -- сно, и во ве -- ки ве -- ков.
 }
 intonationLyricsLatin = \lyricmode {
   \markup { \bold Ya} -- ko po -- do -- \markup { \concat {\bold ba yet}} tié -- \markup { \bold bié} \markup { \bold fsya} -- kaya \markup { \bold sla} -- va,
@@ -91,17 +118,26 @@ Car à Toi sont dus toute la gloire, l’honneur et l’adoration : au Père, au
   \header {
     piece = "Numéro 3"
   }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
   \new ChoirStaff <<
+    \new Staff <<
+     \override Staff.VerticalAxisGroup.remove-first = ##t
+       \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+    >>
     \new Staff \with {
       instrumentName = \markup \center-column { Soliste }
     } <<
-      \new Voice = "solisteTrois" { \voiceOne \intonationMusic }
+      \new Voice = "solisteTrois" { \voiceOne \intonationMusic \amenMen }
       \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsSlavon }
       \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsLatin }
     >>
   >>
-  \layout { }
-  \midi { }
 }
 
 
@@ -114,11 +150,20 @@ intonationMusic = \relative c {
   f8 f f f4 g a g f8 f f f4 f \bar "|" \break
   g8 g a a a g a b4 b \bar "|" \break
   a8 a a a4 a g8 e f4 f8 f f4 \fermata
+  \bar "|"
+}
+amenWomen = \relative c' {
+  s\breve s1 s1 s4. s1 s8
+  <e g c e>2 <e g c e>1 \fermata
+}
+amenMen = \relative c {
+  \clef bass
+  <f, a' c>2 <f a' c>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
-  Я -- ко Тв -- ое есть Цар -- ство,~и си -- ла, и сла -- ва,
+  Я -- ко Тво -- е есть Цар -- ство,~и си -- ла, и сла -- ва,
   О -- тца~и Сы -- на~и Свя -- та -- го Ду -- ха,
-  ны -- не и пр -- исно и во ве -- ки ве -- ков.
+  ны -- не и при -- сно и во ве -- ки ве -- ков.
 }
 intonationLyricsLatin = \lyricmode {
   \markup { \bold Ya} -- ko tvo -- \markup { \bold yé} yest’ \markup { \bold tsar} -- stvo~i \markup { \bold si} -- la i \markup { \bold sla} -- va,
@@ -132,17 +177,26 @@ intonationLyricsFrench = \lyricmode {
   \header {
     piece = "Numéro 6"
   }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
   \new ChoirStaff <<
+    \new Staff <<
+      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+    >>
     \new Staff \with {
       instrumentName = \markup \center-column { Soliste }
     } <<
-      \new Voice = "solisteSix" { \voiceOne \intonationMusic }
+      \new Voice = "solisteSix" { \voiceOne \intonationMusic \amenMen }
       \new Lyrics { \lyricsto "solisteSix" \intonationLyricsSlavon }
       \new Lyrics { \lyricsto "solisteSix" \intonationLyricsLatin }
     >>
   >>
-  \layout { }
-  \midi { }
 }
 
 
@@ -156,12 +210,21 @@ intonationMusic = \relative c' {
   d8 d e4 d8 d c4 d8 d d4 \bar "|" \break
   e8 e4 f8 e d d d c d4 d4 \bar "|" \break
   e8 d d d4 d8 d8 c d4 d d d4 \fermata
+  \bar "|"
+}
+amenWomen = \relative c' {
+  s\breve s1 s1 s4. s1 s2 s1
+  <e g c e>2 <e g c e>1 \fermata
+}
+amenMen = \relative c {
+  \clef bass
+  <f, a' c>2 <f a' c>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
-  Я -- ко бла -- го -- сло -- ви -- ся И -- мя Тв -- ое
-  и про -- сла -- ви -- ся цар -- ство Тв -- ое,
+  Я -- ко бла -- го -- сло -- ви -- ся И -- мя Тво -- е
+  и про -- сла -- ви -- ся цар -- ство Тво -- е,
   О -- тца~и Сы -- на и Свя -- та -- го Ду -- ха,
-  ны -- не и пр -- исно, и во ве -- ки ве -- ков.
+  ны -- не и при -- сно, и во ве -- ки ве -- ков.
 }
 intonationLyricsLatin = \lyricmode {
   \markup { \bold Ya} -- ko bla -- go -- slo -- \markup { \bold vi} -- sya \markup { \bold i} -- mya tvo -- \markup { \concat{\bold yé ,}}
@@ -175,15 +238,24 @@ intonationLyricsFrench = \lyricmode {
   \header {
     piece = "Numéro 10"
   }
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
   \new ChoirStaff <<
+    \new Staff <<
+      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
+    >>
     \new Staff \with {
       instrumentName = \markup \center-column { Soliste }
     } <<
-      \new Voice = "solisteDix" { \voiceOne \intonationMusic }
+      \new Voice = "solisteDix" { \voiceOne \intonationMusic \amenMen}
       \new Lyrics { \lyricsto "solisteDix" \intonationLyricsSlavon }
       \new Lyrics { \lyricsto "solisteDix" \intonationLyricsLatin }
     >>
   >>
-  \layout { }
-  \midi { }
 }
