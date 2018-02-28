@@ -20,11 +20,11 @@ intonationMusic = \relative c {
 }
 amenWomen = \relative c' {
   s\breve s\breve s4 s8 s\breve s1 s\breve
-  <e g c e>2 <e g c e>1 \fermata
+  <e g c e>2^\p <e g c e>1 \fermata
 }
 amenMen = \relative c {
   \clef bass
-  <c g' c>2 <c g' c>1 \fermata
+  <c g' c>2^\p <c g' c>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
   Во -- ста -- ни -- те.
@@ -93,11 +93,11 @@ intonationMusic = \relative c {
 }
 amenWomen = \relative c' {
   s\breve s2 s1 s1 s2. s8 s1 s4
-  <e g c e>2 <e g c e>1 \fermata
+  <f a>2^\pp <f a>1 \fermata
 }
 amenMen = \relative c {
   \clef bass
-  <f, a' c>2 <f a' c>1 \fermata
+  <f, f' c'>2^\pp <f f' c'>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
   Я -- ко по -- до -- бает Те -- бе вся -- кая сла -- ва,
@@ -154,11 +154,11 @@ intonationMusic = \relative c {
 }
 amenWomen = \relative c' {
   s\breve s1 s1 s4. s1 s8
-  <e g c e>2 <e g c e>1 \fermata
+  <c f a>2^\pp <c f a>1 \fermata
 }
 amenMen = \relative c {
   \clef bass
-  <f, a' c>2 <f a' c>1 \fermata
+  <f, c' f>2^\pp <f c' f>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
   Я -- ко Тво -- е есть Цар -- ство,~и си -- ла, и сла -- ва,
@@ -214,11 +214,11 @@ intonationMusic = \relative c' {
 }
 amenWomen = \relative c' {
   s\breve s1 s1 s4. s1 s2 s1
-  <e g c e>2 <e g c e>1 \fermata
+  <d f a d>2^\f <d f a d>1 \fermata
 }
 amenMen = \relative c {
   \clef bass
-  <f, a' c>2 <f a' c>1 \fermata
+  <d f a d>2^\f <d f a d>1 \fermata
 }
 intonationLyricsSlavon = \lyricmode {
   Я -- ко бла -- го -- сло -- ви -- ся И -- мя Тво -- е
