@@ -39,7 +39,7 @@ intonationLyricsLatin = \lyricmode {
   \markup { \bold Go} -- spo -- di, bla -- go -- slo -- \markup { \concat { \bold vi .}}
   \markup { \bold Sla} -- va svya -- \markup { \concat { \bold tiéy ,}}
   \once \override LyricText.self-alignment-X = #LEFT
-  \markup { \concat { "i yédino" \bold susch "niey, i
+  \markup { \concat { "i yédino" \bold sousch "niéy, i
   jivotvo" \bold rya "schiey, i niéraz"}} -- \markup { \concat {\bold diel ’}} -- niey troï -- \markup { \concat{\bold tsè ,}}
   vsié -- \markup { \concat {\bold gda ,}} \markup { \bold ny} -- nié i \markup { \bold pri} -- sno i vo \markup { \bold vié} -- ki
   vié -- \markup { \concat {\bold kov .}}
