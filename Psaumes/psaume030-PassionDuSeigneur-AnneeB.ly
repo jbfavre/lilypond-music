@@ -81,11 +81,13 @@ sopranoVerseMusic = \relative c' {
   }
 
 altoVerseMusic = \relative c' {
+    \cadenzaOn \caesura
     \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando e4 \bar "||" \caesura
     \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando d4 c a \bar "||" \caesura
   }
 
 tenorVerseMusic = \relative c' {
+    \cadenzaOn \caesura
     \tempoVerseAcelerando a\breve bf1 \tempoVerseRallentando c4 \bar "||" \caesura
     \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando a4 a f \bar "||" \caesura
   }
