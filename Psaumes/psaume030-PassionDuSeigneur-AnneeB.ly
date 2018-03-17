@@ -21,17 +21,6 @@ composer = "Jean Baptiste Favre"
 %     (padding . 3)
 %     (stretchability . 3))
 
-staffCustomSize = 15
-systemToSystemSpacing = 
-  #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 5))
-scoreMarkupSpacing =
-  #'((padding . 5)
-   (basic-distance . 5)
-  4(minimum-distance . 5)
-   (stretchability . 5))
 global = {
   \omit Staff.TimeSignature
   
@@ -147,7 +136,9 @@ verseLyrics = \markuplist {
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 3)
   \fill-line {
+    \hspace #0.0001
     \column{
+      \vspace #1
       \concat { "En toi, Seigne" \underline u "r, j’ai mon refuge&nbsp;;"}
       \concat { "garde-moi d’être humili" \underline é " pour toujours."}
       \concat { "En tes mains je rem" \underline e "ts mon esprit&nbsp;;"}
@@ -162,7 +153,10 @@ verseLyrics = \markuplist {
       \concat { "comme une ch" \underline o "se qu’on jette."}
       \concat { "J’entends les calomn" \underline i "es de la foule&nbsp;:"}
       \concat { "ils s’accordent pour m’ôt" \underline e "r la vie."}
-      " "
+    }
+    \hspace #0.0001
+    \column {
+      \vspace #1
       \concat { "Moi, je suis sûr de t" \underline o "i, Seigneur,"}
       \concat { "je dis : «&nbsp;Tu " \underline e "s mon Dieu&nbsp;!&nbsp;»"}
       \concat { "Mes jours sont dans ta m" \underline a "in&nbsp;: délivre-moi"}
@@ -177,7 +171,7 @@ verseLyrics = \markuplist {
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 2)
   \fill-line {
-    \vspace #2.2
+    \vspace #5
     \concat {
       \underline "Consignes d'exécution:"
       " L'antienne n'est chantée qu'en début et en fin du psaume."
