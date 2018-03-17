@@ -77,22 +77,30 @@ sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando c4 a b \bar "||" \caesura
     \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando a4 g a \bar "||" \caesura
+    \tempoVerseAcelerando a\breve b1 \tempoVerseRallentando a4 g \bar "||" \caesura
+    \tempoVerseAcelerando g\breve s8 c1 \tempoVerseRallentando b4 g a g \bar "||" \caesura
   }
 sopranoVerseRepons = \lyricmode {}
 altoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
+    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando e4 d g \caesura
+    \tempoVerseAcelerando g\breve g1 \tempoVerseRallentando f4 e f \caesura
+    \tempoVerseAcelerando f\breve ds1 \tempoVerseRallentando ds4 b4 \bar "||" \caesura
+    \tempoVerseAcelerando e\breve s8 e1 \tempoVerseRallentando g4 e e8 (fs) d4 \bar "||" \caesura
   }
 
 tenorVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s s \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s s \caesura
+    \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando g4 fs g \caesura
+    \tempoVerseAcelerando d'\breve e1 \tempoVerseRallentando c4 b a \caesura
+    \tempoVerseAcelerando b\breve fs1 \tempoVerseRallentando b4 b \bar "||" \caesura
+    \tempoVerseAcelerando c\breve s8 c1 \tempoVerseRallentando b4 a a b4 \bar "||" \caesura
   }
 
 bassVerseMusic = \relative c' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando g\breve g1 \tempoVerseRallentando c,4 d g \caesura
     \tempoVerseAcelerando g\breve e1 \tempoVerseRallentando d4 b d \caesura
+    \tempoVerseAcelerando ds\breve b1 \tempoVerseRallentando ds4 e8[ (d)] \bar "||" \caesura
+    \tempoVerseAcelerando c\breve b8 a1 \tempoVerseRallentando e'4 c cs8 (d) g,4 \bar "||" \caesura
    }
 
 groupedVersesLyrics = <<
