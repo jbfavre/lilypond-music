@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 95"
-subtitle = "29e dimanche ordinaire (année A)"
+subtitle = "29e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 
 global = {

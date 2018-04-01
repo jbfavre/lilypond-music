@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 102"
-subtitle = "24e dimanche ordinaire (année A)"
+subtitle = "24e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 
 global = {

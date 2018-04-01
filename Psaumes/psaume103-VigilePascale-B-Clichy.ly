@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 103"
-subtitle = "Vigile Pascale, année B, Clichy la Garenne"
+subtitle = "Vigile Pascale, Clichy la Garenne, 2018"
 composer = "Jean Baptiste Favre"
 
 staffCustomSize = 15

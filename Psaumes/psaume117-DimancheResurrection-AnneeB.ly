@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 117"
-subtitle = "Résurrection du Seigneur, année B"
+subtitle = "Résurrection du Seigneur"
 composer = "Jean Baptiste Favre"
 
 %staffCustomSize = 15

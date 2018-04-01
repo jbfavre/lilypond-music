@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 68"
-subtitle = "12e dimanche ordinaire (année A)"
+subtitle = "12e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 
 global = {

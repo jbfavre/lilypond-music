@@ -31,7 +31,7 @@ tempoVerseAcelerando = {
 }
 
 title = "Psaume 146"
-subtitle = "5e dimanche du Temps Ordinaire (année B)"
+subtitle = "5e dimanche du Temps Ordinaire - Année B"
 composer = "Jean Baptiste Favre"
 
 global = {

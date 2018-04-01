@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 22"
-subtitle = "4e dimanche de Carême - Lætare (année A)"
+subtitle = "4e dimanche de Carême - Lætare - Année A"
 composer = "Jean Baptiste Favre"
 
 tempoAntiphon = {

@@ -24,7 +24,7 @@ tempoVerseAcelerando = {
 }
 
 title = "Psaume 71"
-subtitle = "L'Épiphanie du Seigneur (année B)"
+subtitle = "Épiphanie du Seigneur"
 composer = "Jean Baptiste Favre"
 
 global = {

@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 115"
-subtitle = "Deuxième dimanche de Carême, année B"
+subtitle = "Deuxième dimanche de Carême - Année B"
 composer = "Jean Baptiste Favre"
 
 %staffCustomSize = 15

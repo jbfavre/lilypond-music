@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 103"
-subtitle = "Vigile Pascale, année B"
+subtitle = "Vigile Pascale"
 composer = "Jean Baptiste Favre"
 
 executionNotes = "Il importe d'enchaîner sans traîner entre versets et répons"

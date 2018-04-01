@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 137"
-subtitle = "21e dimanche ordinaire (année A)"
+subtitle = "21e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 dedicace="Psalmodie par strophe"
 

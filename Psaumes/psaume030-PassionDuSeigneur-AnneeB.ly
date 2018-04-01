@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 30"
-subtitle = "Passion du Seigneur, année B"
+subtitle = "Passion du Seigneur"
 composer = "Jean Baptiste Favre"
 
 %staffCustomSize = 15
