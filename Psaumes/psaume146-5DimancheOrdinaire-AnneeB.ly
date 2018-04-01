@@ -30,7 +30,7 @@ tempoVerseAcelerando = {
   \tempo 2=70
 }
 
-title = "Psaume 146"
+title = "Psaume 146-1"
 subtitle = "5e dimanche du Temps Ordinaire - Année B"
 composer = "Jean Baptiste Favre"
 

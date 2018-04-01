@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 22"
+title = "Psaume 22-11"
 subtitle = "4e dimanche de Carême - Lætare - Année A"
 composer = "Jean Baptiste Favre"
 

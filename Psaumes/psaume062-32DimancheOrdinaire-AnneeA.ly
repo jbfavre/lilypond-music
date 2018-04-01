@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
  
-title = "Psaume 62"
+title = "Psaume 62-3"
 subtitle = "32ème dimanche du Temps Ordinaire — Année A"
 composer = "Jean Baptiste Favre"
 %dedicace = "special tribute to Pink Floyd"

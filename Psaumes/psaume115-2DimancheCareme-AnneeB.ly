@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 115"
+title = "Psaume 115-3"
 subtitle = "Deuxième dimanche de Carême - Année B"
 composer = "Jean Baptiste Favre"
 

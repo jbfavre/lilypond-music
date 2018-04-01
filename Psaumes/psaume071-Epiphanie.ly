@@ -23,7 +23,7 @@ tempoVerseAcelerando = {
   \tempo 2=70
 }
 
-title = "Psaume 71"
+title = "Psaume 71-2"
 subtitle = "Épiphanie du Seigneur"
 composer = "Jean Baptiste Favre"
 

@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 102"
+title = "Psaume 102-5"
 subtitle = "24e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 

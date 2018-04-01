@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 95"
+title = "Psaume 95-2"
 subtitle = "29e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 

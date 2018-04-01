@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 66"
+title = "Psaume 66-2"
 subtitle = "20e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
 
