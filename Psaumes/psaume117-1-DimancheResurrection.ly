@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 117"
+title = "Psaume 117-1"
 subtitle = "Résurrection du Seigneur"
 composer = "Jean Baptiste Favre"
 
