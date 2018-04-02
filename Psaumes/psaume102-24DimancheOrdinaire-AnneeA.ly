@@ -13,6 +13,7 @@
 title = "Psaume 102-5"
 subtitle = "24e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Île d'Hoêdic, août 2017"
 
 global = {
   \key f \major

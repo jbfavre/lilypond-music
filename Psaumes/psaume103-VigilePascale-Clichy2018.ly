@@ -13,6 +13,7 @@
 title = "Psaume 103"
 subtitle = "Vigile Pascale, Clichy la Garenne, 2018"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, mars 2018"
 
 staffCustomSize = 15
 systemToSystemSpacing = 

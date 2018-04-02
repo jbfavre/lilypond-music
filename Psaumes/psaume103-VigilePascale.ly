@@ -13,6 +13,7 @@
 title = "Psaume 103"
 subtitle = "Vigile Pascale"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, janvier 2018"
 
 executionNotes = "Il importe d'enchaîner sans traîner entre versets et répons"
 

@@ -13,6 +13,7 @@
 title = "Psaume 22-11"
 subtitle = "4e dimanche de Carême - Lætare - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 25 septembre 2017"
 
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t

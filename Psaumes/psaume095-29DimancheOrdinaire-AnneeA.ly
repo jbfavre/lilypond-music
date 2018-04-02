@@ -13,6 +13,7 @@
 title = "Psaume 95-2"
 subtitle = "29e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 25 novembre 2017"
 
 global = {
   \omit Staff.TimeSignature

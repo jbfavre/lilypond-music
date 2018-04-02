@@ -13,6 +13,7 @@
 title = "Psaume 115-3"
 subtitle = "Deuxième dimanche de Carême - Année B"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 20 février 2018"
 
 %staffCustomSize = 15
 %systemToSystemSpacing = 

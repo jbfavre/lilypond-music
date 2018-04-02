@@ -13,6 +13,7 @@
 title = "Psaume 30"
 subtitle = "Passion du Seigneur"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 17 Mars 2018"
 
 %staffCustomSize = 15
 %systemToSystemSpacing = 

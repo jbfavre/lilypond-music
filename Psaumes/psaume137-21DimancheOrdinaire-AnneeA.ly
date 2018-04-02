@@ -13,7 +13,7 @@
 title = "Psaume 137"
 subtitle = "21e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
-dedicace="Psalmodie par strophe"
+dedicace="Clichy la garenne, 27 septembre 2017"
 
 systemToSystemSpacing = 
   #'((basic-distance . 10)
@@ -179,8 +179,6 @@ groupedVersesLyrics = <<
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
-
-dedicace="Psalmodie par verset"
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura

@@ -33,6 +33,7 @@ tempoVerseAcelerando = {
 title = "Psaume 146-1"
 subtitle = "5e dimanche du Temps Ordinaire - Année B"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 2 décembre 2017"
 
 global = {
   \key d \major

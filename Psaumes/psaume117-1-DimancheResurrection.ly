@@ -13,6 +13,7 @@
 title = "Psaume 117-1"
 subtitle = "Résurrection du Seigneur"
 composer = "Jean Baptiste Favre"
+dedicace = "Abbaye de Solesmes, mars 2018"
 
 %staffCustomSize = 15
 %systemToSystemSpacing = 

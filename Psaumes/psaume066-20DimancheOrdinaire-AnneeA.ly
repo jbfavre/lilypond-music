@@ -13,6 +13,7 @@
 title = "Psaume 66-2"
 subtitle = "20e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 22 septembre 2017"
 
 global = {
   \omit Staff.TimeSignature

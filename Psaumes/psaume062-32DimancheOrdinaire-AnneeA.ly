@@ -13,7 +13,7 @@
 title = "Psaume 62-3"
 subtitle = "32ème dimanche du Temps Ordinaire — Année A"
 composer = "Jean Baptiste Favre"
-%dedicace = "special tribute to Pink Floyd"
+dedicace = "Clichy la Garenne, 29 septembre 2017"
 
 global = {
     \time 2/4

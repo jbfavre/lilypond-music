@@ -13,6 +13,7 @@
 title = "Psaume 42"
 subtitle = ""
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 2 avril 2018"
 
 global = {
   \omit Staff.TimeSignature
@@ -25,30 +26,37 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  e8 fs gs4 a fs2 \breathe
-  gs8 bs cs4 b8 a4 gs2 \fermata
+  e8[ fs] gs4 a fs2 \breathe
+  gs8[ bs] cs4 b8[ a] gs2 \fermata
   \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
+  r4 e4 fs4 ds2
+  e8[ (ds)] e4 ds8[ (fs)] (e2) 
   }
 
 tenorAntiphonMusic =  \relative c' {
+  r4 cs4 cs4 b2
+  cs8[ (ds)] cs4 b2.
   }
 
 bassAntiphonMusic =  \relative c {
-    e8 ds cs (b) a (fs) b2 \breathe
-    cs8 gs a4 b8 ds8 e2 \fermata
+    e8[ ds] cs[ (b)] a[ (fs)] b2 \breathe
+    cs8[ gs] a4 b8[ ds8] e2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
   Il est mon Sau -- veur,
   mon sau -- veur et mon Dieu!
   }
+antiphonShortLyrics = \lyricmode {
+  Mon sau -- veur et mon Dieu!
+  }
 
 sopranoAntiphonLyrics = \antiphonLyrics
-altoAntiphonLyrics = \antiphonLyrics
-tenorAntiphonLyrics = \antiphonLyrics
+altoAntiphonLyrics = \antiphonShortLyrics
+tenorAntiphonLyrics = \antiphonShortLyrics
 bassAntiphonLyrics = \antiphonLyrics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,18 +69,23 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    gs\breve gs1 fs4 e2 \bar "||"
-    a\breve gs1 e4 fs2 \bar "||"
-    gs\breve b1 c4 c gs2 \bar "||"
+    gs\breve gs1 fs4 e \bar "||"
+    a\breve gs1 e4 fs fs e \bar "||"
   }
 
 altoVerseMusic = \relative c' {
+  e\breve ds1 ds4 cs
+  fs\breve e1 cs4 cs b b
   }
 
 tenorVerseMusic = \relative c' {
+  b\breve gs1 fs4 gs
+  cs\breve b1  gs4 fs fs gs
   }
 
 bassVerseMusic = \relative c {
+  e\breve b1 bs4 cs
+  a\breve b1 cs4 as b e
   }
 
 groupedVersesLyrics = <<
@@ -93,58 +106,48 @@ verseHarmony = \figuremode {
 
 %{
 
-  Chantez au Seigne_u_r un chant nouveau,
-  chantez au Seigne_u_r, terre entière,
-  racontez à tous les pe_u_ples sa gloire,
-  à toutes les nati_o_ns ses merveilles !
+  Rends-moi justice, ô mon Dieu, défends ma c_a_use contre un peuple sans foi&nbsp;;
+  de l'homme qui r_u_se et trahit, libère-moi.
 
-  Il est grand, le Seigne_u_r, hautement loué,
-  redoutable au-dess_u_s de tous les dieux :
-  néant, tous les die_u_x des nations !
-  Lui, le Seigne_u_r, a fait les cieux.
+  C'est toi, Dieu, ma f_o_rteresse&nbsp;: pourquoi me rejeter&nbsp;?
+  Pourquoi vais-je assombri, pressé par l'ennemi&nbsp;?
 
-  Rendez au Seigne_u_r, familles des peuples,
-  rendez au Seigneur la glo_i_re et la puissance,
-  rendez au Seigneur la glo_i_re de son nom.
-  Apportez votre offr_a_nde, entrez dans ses parvis.
+  Envoie ta lumière et ta vérité&nbsp;: qu'elles guident mes pas
+  et me conduisent à ta montagne sainte, jusqu'en ta demeure.
 
-  Adorez le Seigne_u_r, éblouissant de sainteté :
-  tremblez devant lu_i_, terre entière.
-  Allez dire aux nations : « Le Seigne_u_r est roi ! »
-  Il gouverne les pe_u_ples avec droiture.
+  J'avancerai jusqu'à l'autel de Dieu, vers Dieu qui est toute ma joie&nbsp;;
+  je te rendrai grâce avec ma harpe, Dieu, mon Dieu&nbsp;!
+
+  ℟&nbsp;Pourquoi te désoler, ô mon âme, et gémir sur moi&nbsp;?
+  Espère en Dieu ! De nouveau je rendrai grâce&nbsp;: il est mon sauveur et mon Dieu&nbsp;!
 
 %}
 
 verseLyrics = \markup {
-%{
+{
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 3)
   \fill-line {
     \left-column{
       " "
+      \concat { "Rends-moi justice, ô mon Dieu, défends ma cause contre un pe" \underline u "ple sans foi&nbsp;;" }
+      \concat { "de l'homme qui r" \underline u "se et trahit, libère-moi." }
       " "
-      \concat { "Chantez au " Seigne \underline u r " un chant nouveau,"}
-      \concat { "chantez au " Seigne \underline u r, " terre entière,"}
-      \concat { "racontez à tous les " pe \underline u ples " sa gloire,"}
-      \concat { "à toutes les " nati \underline o ns " ses merveilles&nbsp;!"}
+      \concat { "C'est toi, Dieu, ma forteresse&nbsp;: pourqu" \underline o "i me rejeter&nbsp;?" }
+      \concat { "Pourquoi vais-je assombri, press" \underline é " par l'ennemi&nbsp;?" }
       " "
-      \concat { "Il est grand, le " Seigne \underline u r, " hautement loué,"}
-      \concat { "redoutable " au-dess \underline u s " de tous les dieux&nbsp;:"}
-      \concat { "néant, tous les " die \underline u x " des nations&nbsp;!"}
-      \concat { "Lui, le " Seigne \underline u r, " a fait les cieux."}
+      \concat { "Envoie ta lumière et ta vérité&nbsp;: qu'elles gu" \underline i "dent mes pas" }
+      \concat { "et me conduisent à ta montagne sainte, j" \underline u "squ'en ta demeure." }
       " "
-      \concat { "Rendez au " Seigne \underline u r, " familles des peuples,"}
-      \concat { "rendez au Seigneur la " glo \underline i re " et la puissance,"}
-      \concat { "rendez au Seigneur la "glo \underline i re " de son nom."}
-      \concat { "Apportez votre " offr \underline a nde, " entrez dans ses parvis."}
+      \concat { "J'avancerai jusqu'à l'autel de Dieu, vers Dieu qui est to" \underline u "te ma joie&nbsp;;" }
+      \concat { "je te rendrai grâce avec ma harpe, Die" \underline u ", mon Dieu&nbsp;!" }
       " "
-      \concat { "Adorez le " Seigne \underline ur, " éblouissant de sainteté&nbsp;:"}
-      \concat { "tremblez devant " lu \underline i, " terre entière."}
-      \concat { "Allez dire aux nations&nbsp;: «&nbsp;Le " Seigne \underline u r " est roi&nbsp;!&nbsp;»"}
-      \concat { "Il gouverne les " pe \underline u ples " avec droiture."}
+      \concat { \bold ℟ "&nbsp;Pourquoi te désoler, ô mon âme, et gém" \underline i "r sur moi&nbsp;?" }
+      \concat { "Espère en Dieu ! De nouveau je rendrai grâce&nbsp;: il est mon sauve" \underline u "r et mon Dieu&nbsp;!" }
+
     }
   }
-%}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

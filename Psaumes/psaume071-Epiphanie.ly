@@ -26,6 +26,7 @@ tempoVerseAcelerando = {
 title = "Psaume 71-2"
 subtitle = "Épiphanie du Seigneur"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, 7 décembre 2017"
 
 global = {
   \time 2/4
