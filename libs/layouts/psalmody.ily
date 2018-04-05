@@ -26,7 +26,7 @@ partition = {
         \new Voice = "Bass" { \clef "bass" \global \tempoAntiphon \bassAntiphonMusic }
         \new Lyrics \lyricsto "Bass" { \bassAntiphonLyrics }
       >>
-      \new ChoirStaff = "SopranoAlto" \with { \remove Time_signature_engraver }
+      \new ChoirStaff = "SopranoAlto"
       {
         \set ChoirStaff.connectArpeggios = ##t
         \override ChoirStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
@@ -50,7 +50,7 @@ partition = {
         >>
       }
       \groupedVersesLyrics
-      \new Staff = "TenorBass" \with { \remove Time_signature_engraver }
+      \new Staff = "TenorBass"
       {
         \set ChoirStaff.connectArpeggios = ##t
         \override ChoirStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
@@ -88,9 +88,14 @@ partition = {
         % retrait pour les noms courts de voix
         short-indent = 0.8\cm
         \context {
-            \Staff \RemoveEmptyStaves
+            \Staff
+            \RemoveEmptyStaves
             \override NoteHead #'style = #'altdefault
             \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
         }
         \context {
             \Voice
