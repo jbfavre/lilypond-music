@@ -66,9 +66,14 @@ partition = {
         % retrait pour les noms courts de voix
         short-indent = 0.8\cm
         \context {
-            \Staff \RemoveEmptyStaves
+            \Staff
+            \RemoveEmptyStaves
             \override NoteHead #'style = #'altdefault
             \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
         }
         \context {
             \Voice
