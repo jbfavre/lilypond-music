@@ -18,7 +18,7 @@ dedicace = "Clichy la Garenne, 22 septembre 2017"
 global = {
   \omit Staff.TimeSignature
   \key d \minor
-  \autoBeamOff
+  %\autoBeamOff
 }
 
 tempoAntiphon = {
@@ -151,19 +151,19 @@ verseLyrics = \markup {
       " "
       " "
       \concat { "Que Dieu nous prenne en " gr \underline â ce " et nous bénisse," }
-      \concat { "que ton visage " s’illum \underline i ne " pour nous ;" }
+      \concat { "que ton visage " s’illum \underline i ne " pour nous&nbsp;;" }
       \concat { "et ton chemin sera " conn \underline u " sur la terre," }
       \concat { "ton salut, parmi " to \underline u tes " les nations." }
       " "
       \concat { "Que les nations " ch \underline a ntent " leur joie," }
-      \concat { "car tu gouvernes le " m \underline o nde " avec justice ;" }
+      \concat { "car tu gouvernes le " m \underline o nde " avec justice&nbsp;;" }
       \concat { "tu gouvernes les " pe \underline u ples " avec droiture" }
       \concat { "sur la terre, tu " condu \underline i s " les nations." }
       " "
-      \concat { "La terre a " donn \underline é " son fruit;" }
-      \concat { "Dieu, notre " Di \underline e u, " nous bé -- nit." }
+      \concat { "La terre a " donn \underline é " son fruit&nbsp;;" }
+      \concat { "Dieu, notre " Di \underline e u, " nous bénit." }
       \concat { "Que " Di \underline e u " nous bénisse," }
-      \concat { "et que la terre tout " enti \underline è re " l’adore !" }
+      \concat { "et que la terre tout " enti \underline è re " l’adore&nbsp;!" }
     }
   }
 }

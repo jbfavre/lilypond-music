@@ -47,8 +47,8 @@ tenorAntiphonMusic =  \relative c' {
   }
 
 bassAntiphonMusic =  \relative c {
-  \partial 2 e2 d2. c4 bf2 a bf4 a
-  g4 e f (g) a2 d1 \fermata
+  \partial 2 e2 d2. c4 bf2 a bf'4 a
+  g4 e f (g) a2 d,1 \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -134,54 +134,53 @@ vous tous qui espérez le Seigneur !
 %}
 
 verseLyrics = \markuplist {
+  \vspace #1
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 3)
   \fill-line {
-    \hspace #0.0001
+    \hspace #1
     \column{
+      \concat { \fontsize #-3 \typewriter "1. " "En toi, Seigne" \underline u "r, j’ai mon refuge&nbsp;;"}
+      \concat { "   garde-moi d’être humili" \underline é " pour toujours."}
+      \concat { "   En tes mains je rem" \underline e "ts mon esprit&nbsp;;"}
+      \concat { "   tu me rachètes, Seigneur, Die" \underline u " de vérité."}
       \vspace #1
-      \concat { "En toi, Seigne" \underline u "r, j’ai mon refuge&nbsp;;"}
-      \concat { "garde-moi d’être humili" \underline é " pour toujours."}
-      \concat { "En tes mains je rem" \underline e "ts mon esprit&nbsp;;"}
-      \concat { "tu me rachètes, Seigneur, Die" \underline u " de vérité."}
-      " "
-      \concat { "Je suis la ris" \underline é "e de mes adversaires"}
-      \concat { "et m" \underline ê "me de mes voisins&nbsp;;"}
-      \concat { "je fais pe" \underline u "r à mes amis,"}
-      \concat { "s’ils me voient dans la r" \underline u "e, ils me fuient."}
-      " "
-      \concat { "On m’ignore comme un m" \underline o "rt oublié,"}
-      \concat { "comme une ch" \underline o "se qu’on jette."}
-      \concat { "J’entends les calomn" \underline i "es de la foule&nbsp;:"}
-      \concat { "ils s’accordent pour m’ôt" \underline e "r la vie."}
+      \concat { \fontsize #-3 \typewriter "2. " "Je suis la ris" \underline é "e de mes adversaires"}
+      \concat { "   et m" \underline ê "me de mes voisins&nbsp;;"}
+      \concat { "   je fais pe" \underline u "r à mes amis,"}
+      \concat { "   s’ils me voient dans la r" \underline u "e, ils me fuient."}
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "3. " "On m’ignore comme un m" \underline o "rt oublié,"}
+      \concat { "   comme une ch" \underline o "se qu’on jette."}
+      \concat { "   J’entends les calomn" \underline i "es de la foule&nbsp;:"}
+      \concat { "   ils s’accordent pour m’ôt" \underline e "r la vie."}
     }
-    \hspace #0.0001
+    \hspace #1
     \column {
+      \concat { \fontsize #-3 \typewriter "4. " "Moi, je suis sûr de t" \underline o "i, Seigneur,"}
+      \concat { "   je dis : «&nbsp;Tu " \underline e "s mon Dieu&nbsp;!&nbsp;»"}
+      \concat { "   Mes jours sont dans ta m" \underline a "in&nbsp;: délivre-moi"}
+      \concat { "   des mains host" \underline i "les qui s’acharnent."}
       \vspace #1
-      \concat { "Moi, je suis sûr de t" \underline o "i, Seigneur,"}
-      \concat { "je dis : «&nbsp;Tu " \underline e "s mon Dieu&nbsp;!&nbsp;»"}
-      \concat { "Mes jours sont dans ta m" \underline a "in&nbsp;: délivre-moi"}
-      \concat { "des mains host" \underline i "les qui s’acharnent."}
-      " "
-      \concat { "Sur ton serviteur, que s’illum" \underline i "ne ta face&nbsp;;"}
-      \concat { "sauve-m" \underline o "i par ton amour."}
-      \concat { "Soyez f" \underline o "rts, prenez courage,"}
-      \concat { "vous tous qui espér" \underline e "z le Seigneur&nbsp;!"}
+      \concat { \fontsize #-3 \typewriter "5. " "Sur ton serviteur, que s’illum" \underline i "ne ta face&nbsp;;"}
+      \concat { "   sauve-m" \underline o "i par ton amour."}
+      \concat { "   Soyez f" \underline o "rts, prenez courage,"}
+      \concat { "   vous tous qui espér" \underline e "z le Seigneur&nbsp;!"}
     }
+    \hspace #1
   }
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 2)
+  \vspace #5
   \fill-line {
-    \vspace #5
-    \concat {
-      \underline "Consignes d'exécution:"
-      " L'antienne n'est chantée qu'en début et en fin du psaume."
+    \override #'(font-name . "Latin Modern Sans")
+    \override #'(font-size . 2)
+    \column { \concat { \underline "Consignes d'exécution" "&nbsp;:" } }
+    \hspace #1
+    \override #'(font-name . "Latin Modern Sans")
+    \override #'(font-size . 2)
+    \column {
+      \line { "L'antienne n'est chantée qu'en début et en fin du psaume." }
+      \line { "Les versets sont alternés entre le psalmiste (ou le chœur) et l'assemblée."}
     }
-  }
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 2)
-  \fill-line {
-    "Les versets sont alternés entre le psalmiste (ou le chœur) et l'assemblée."
   }
 }
 

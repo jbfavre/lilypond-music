@@ -66,40 +66,40 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
     \override HorizontalBracket.direction = #UP
-    \tempoVerseAcelerando b\breve \tempoVerseRallentando a2
+    \tempoVerseAcelerando b\breve \tempoVerseRallentando a4
         \startGroup^\markup { \typewriter "flexe" } \tempoVerseAcelerando b1\stopGroup
-        c1 \tempoVerseRallentando a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando b2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando c2 \bar "||" \caesura
-    \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 f4 a2 \bar "|."
+        c1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando b4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando c4 \bar "||" \caesura
+    \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 f a \bar "|."
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    g'\breve e2 c1 e1 f2 \caesura
-    f\breve d1 g2 \caesura
-    d\breve f1 e2 \caesura
-    f\breve f1 d4 d4 e2
+    g'\breve e4 c1 e1 f4 \caesura
+    f\breve d1 g4 \caesura
+    d\breve f1 e4 \caesura
+    f\breve f1 d4 d e
  }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    b\breve c2 a1 c1 c2 \caesura
-    d\breve b1 d2 \caesura
-    a\breve c1 c2 \caesura
-    c\breve d1 b4 a4 c2
+    b\breve c4 a1 c1 c4 \caesura
+    d\breve b1 d4 \caesura
+    a\breve c1 c4 \caesura
+    c\breve d1 b4 a c
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    e\breve a,2\startGroup-\markup { \typewriter "flexe" } f1\stopGroup a1 d2 \caesura
-    d\breve e1 g2 \caesura
-    f\breve a1 a2 \caesura
-    a\breve g1 e4 f4 a,2
+    e\breve a,4\startGroup-\markup { \typewriter "flexe" } f1\stopGroup a1 d4 \caesura
+    d\breve e1 g4 \caesura
+    f\breve a1 a4 \caesura
+    a\breve g1 e4 f a,
     \once \override Score.RehearsalMark.extra-offset = #'(-60 . -22.5)
     \mark \markup { \typewriter \small
       \column {
-        \line { "(n'est psalmodiée que pour le premier verset de la première strophe)"}
+        \line { "  (n'est psalmodiée que pour le premier verset de la première strophe)"}
       }
     }
   }
@@ -151,7 +151,7 @@ verseLyrics = \markup {
     \left-column{
       " "
       " "
-      \concat { "Dieu, tu es mon " Di \underline e u, \super "+"}
+      \concat { "Dieu, tu es mon " Di \underline e u, \super "&dagger;"}
       \concat { "     je te " ch \underline e rche " dès l’aube :"}
       \concat { "mon âme a " so \underline i f " de toi ;"}
       \concat { "après toi " langu \underline i t " ma chair,"}

@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 22-11"
-subtitle = "4e dimanche de Carême - Lætare - Année A"
+subtitle = "4e dimanche de Carême (Lætare) - Année A"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 25 septembre 2017"
 
@@ -46,17 +46,20 @@ sopranoAntiphonMusic = \relative c' {
 
 altoAntiphonMusic = \relative c' {
     d8 cs a4 (a8) d e e f2
-    a4 a8 f8 d4 d8 d cs2
+    a4 a8 f8 d4 d8 d cs2 \fermata
+   \bar "|." \break
   }
 
 tenorAntiphonMusic =  \relative c' {
     g8 g f4 (f8) f8 g8 c c2
-    c4 c8 a g4 g8 b cs2
+    c4 c8 a g4 g8 b cs2 \fermata
+   \bar "|." \break
   }
 
 bassAntiphonMusic =  \relative c {
     bf8 a d4 (d8) bf8 c e f2
-    e4 f8 c e4 b8 e8 e2
+    e4 f8 c e4 b8 e8 e2 \fermata
+   \bar "|." \break
   }
 
 antiphonLyrics = \lyricmode {
@@ -126,7 +129,6 @@ verseHarmony = \figuremode {
 \include "../libs/layouts/commonPiano.ily"
 
 %{
-
   Le Seigneur est m_o_n berg_e_r,
   je ne m_a_nque de r_i_en,
   Sur des pr_é_s d’herbe fr_a_îche, 
@@ -151,40 +153,44 @@ verseHarmony = \figuremode {
   tous les j_o_urs de ma v_i_e;
   j’habiterai la mais_o_n du Seign_e_ur
   pour la dur_é_e de mes jours.
-
 %}
 
-verseLyrics = \markup {
+verseLyrics = \markuplist {
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 3)
   \fill-line {
-    \left-column{
-      " "
-      \concat { "Le Seigneur est " m \underline o n" "berg \underline e r,}
-      \concat { "je ne " m \underline a nque" "de" "r \underline i en,}
-      \concat { "Sur des " pr \underline é s" "d’herbe" "fr \underline a îche, }
-      \concat { "il me " f \underline a it" "reposer.}
-      " "
-      \concat { "Il me mène vers les "  e \underline a ux" "tranqu \underline i lles }
-      \concat { "et me " f \underline a it" "revivre;}
-      \concat { "il me conduit par le juste " chem \underline i n}
-      \concat { "pour " l’honn \underline e ur" "de" "son" "nom.}
-      " "
-      \concat { "Si je traverse les " rav \underline i ns" "de" "la" "m \underline o rt,}
-      \concat { "je ne " cr \underline a ins" "aucun" "m \underline a l,}
-      \concat { "car tu " \underline e s" "avec" "m \underline o i&nbsp;:}
-      \concat { "ton bâton me " gu \underline i de" "et" "me" "rassure.}
-      " "
-      \concat { "Tu prépares la " t \underline a ble" "pour" "m \underline o i}
-      \concat { "devant mes " \underline e nnemis;}
-      \concat { "tu répands le " parf \underline u m" "sur" "ma" "t \underline ê te,}
-      \concat { "ma " coupe" "\underline e st" "débordante.}
-      " "
-      \concat { "Grâce et " bonh \underline e ur" "m’accomp \underline a gnent}
-      \concat { "tous les " j \underline o urs" "de" "ma" "v \underline i e;}
-      \concat { "j’habiterai la " mais \underline o n" "du" "Seign \underline e ur}
-      \concat { "pour la " dur \underline é e" "de" "mes" "jours.}
+    \hspace #.1
+    \column{
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "1. " "Le Seigneur est " m \underline o n" "berg \underline e r,}
+      \concat { "   je ne " m \underline a nque" "de" "r \underline i en,}
+      \concat { "   Sur des " pr \underline é s" "d’herbe" "fr \underline a îche, }
+      \concat { "   il me " f \underline a it" "reposer.}
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "2. " "Il me mène vers les "  e \underline a ux" "tranqu \underline i lles }
+      \concat { "   et me " f \underline a it" "revivre;}
+      \concat { "   il me conduit par le juste " chem \underline i n}
+      \concat { "   pour " l’honn \underline e ur" "de" "son" "nom.}
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "3. " "Si je traverse les " rav \underline i ns" "de" "la" "m \underline o rt,}
+      \concat { "   je ne " cr \underline a ins" "aucun" "m \underline a l,}
+      \concat { "   car tu " \underline e s" "avec" "m \underline o i&nbsp;:}
+      \concat { "   ton bâton me " gu \underline i de" "et" "me" "rassure.}
     }
+    \hspace #1
+    \column{
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "4. " "Tu prépares la " t \underline a ble" "pour" "m \underline o i}
+      \concat { "   devant mes " \underline e nnemis;}
+      \concat { "   tu répands le " parf \underline u m" "sur" "ma" "t \underline ê te,}
+      \concat { "   ma " coupe" "\underline e st" "débordante.}
+      \vspace #1
+      \concat { \fontsize #-3 \typewriter "5. " "Grâce et " bonh \underline e ur" "m’accomp \underline a gnent}
+      \concat { "   tous les " j \underline o urs" "de" "ma" "v \underline i e;}
+      \concat { "   j’habiterai la " mais \underline o n" "du" "Seign \underline e ur}
+      \concat { "   pour la " dur \underline é e" "de" "mes" "jours.}
+    }
+    \hspace #1
   }
 }
 
@@ -193,4 +199,4 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
-\include "../libs/layouts/outputMidi.ily"
+%\include "../libs/layouts/outputMidi.ily"

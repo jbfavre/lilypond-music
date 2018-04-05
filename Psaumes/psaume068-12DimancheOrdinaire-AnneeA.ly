@@ -10,14 +10,27 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
+staffCustomSize = 14
+systemToSystemSpacing = 
+  #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
+scoreMarkupSpacing =
+  #'((padding . 3)
+   (basic-distance . 3)
+   (minimum-distance . 3)
+   (stretchability . 3))
+
 title = "Psaume 68"
 subtitle = "12e dimanche du Temps Ordinaire - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, avril 2018"
 
 global = {
   \omit Staff.TimeSignature
-  \cadenzaOn
   \key d \minor
+  \time 2/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,14 +44,18 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
+  d8 c c d cs2 \breathe
+  f4 g8 e e2 \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
+  a8 g a e e2 \breathe
+  a4 b8 d cs2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-  d8 c f e a,2 \breathe
-  a4 d8 b a2 \fermata
+  f8 e d bf a2 \breathe
+  f4 d'8 b a2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -61,30 +78,22 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando b4 a2 \bar "||" \caesura
-    \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 a2 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 a b2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando c2 \bar "||" \caesura
-    \tempoVerseAcelerando c\breve c1 \tempoVerseRallentando b4 a b2 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando f4 a2 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando s32 b4 a \bar "||" \caesura
+    % Strange hack needed to ensure staves alignment --------^
+    \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 a \bar "||" \caesura \break
+    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 a b \bar "||" \caesura
+    \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando s4 c4 \bar "||" \caesura \break
+    \tempoVerseAcelerando c\breve c1 \tempoVerseRallentando b4 a b \bar "||" \caesura
+    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando f4 a \bar "|." \caesura
   }
 
 altoVerseMusic = \relative c' {
-    \caesura
   }
 
-tenorVerseMusic = 	\relative c' {
-    \caesura
+tenorVerseMusic = \relative c' {
   }
 
 bassVerseMusic = \relative c {
-    \caesura
-    d\breve c1 b4 a2 \caesura
-    f\breve g1 e4 a2 \caesura
-    d\breve b1 e4 a g2 \caesura
-    e\breve f1 a2 \caesura
-    f\breve a1 d,4 f g2 \caesura
-    e,\breve f1 g4 a2 \caesura
   }
 
 groupedVersesLyrics = <<
