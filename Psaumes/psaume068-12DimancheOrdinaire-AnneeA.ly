@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-staffCustomSize = 14
+staffCustomSize = 13
 systemToSystemSpacing = 
   #'((basic-distance . 3)
      (minimum-distance . 3)
@@ -39,23 +39,23 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   d8 e f g a2 \breathe
-  c4 b8 g a2 \fermata
+  c4 b8 g a2 (a2) \fermata
   \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
   d8 c c d cs2 \breathe
-  f4 g8 e e2 \fermata
+  f4 g8 e e2 (e2) \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  a8 g a e e2 \breathe
-  a4 b8 d cs2 \fermata
+  a8 a a e e2 \breathe
+  a4 b8 (d) d4 (cs8 b) cs2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
   f8 e d bf a2 \breathe
-  f4 d'8 b a2 \fermata
+  f4 d'8 b a2 (a2) \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -76,24 +76,42 @@ bassAntiphonLyrics = \antiphonLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 
-sopranoVerseMusic = \relative c' {
+sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando s32 b4 a \bar "||" \caesura
-    % Strange hack needed to ensure staves alignment --------^
-    \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando g4 a \bar "||" \caesura \break
-    \tempoVerseAcelerando a\breve f1 \tempoVerseRallentando g4 a b \bar "||" \caesura
-    \tempoVerseAcelerando b\breve d1 \tempoVerseRallentando s4 c4 \bar "||" \caesura \break
-    \tempoVerseAcelerando c\breve c1 \tempoVerseRallentando b4 a b \bar "||" \caesura
-    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando f4 a \bar "|." \caesura
+    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando g4 f \bar "||" \caesura
+    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando g4 g a \bar "||" \caesura \break
+    \tempoVerseAcelerando d\breve c1 \tempoVerseRallentando b4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve c1 \tempoVerseRallentando a4 \bar "||" \caesura \break
+    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando s4 g4 \bar "||" \caesura
+    \tempoVerseAcelerando g\breve g1 \tempoVerseRallentando g4 a d, \bar "|." \caesura
   }
 
 altoVerseMusic = \relative c' {
+    \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando e4 d \bar "||" \caesura
+    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando e4 e e \bar "||" \caesura \break
+    \tempoVerseAcelerando a,\breve c1 \tempoVerseRallentando d4 \bar "||" \caesura
+    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando e4 \bar "||" \caesura \break
+    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando s4 d4 \bar "||" \caesura
+    \tempoVerseAcelerando e\breve e1 \tempoVerseRallentando e4 cs a \bar "|." \caesura
   }
 
 tenorVerseMusic = \relative c' {
+    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando cs4 a \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando <bf c>4 <bf d> <a cs> \bar "||" \caesura \break
+    \tempoVerseAcelerando f\breve a1 \tempoVerseRallentando bf4 \bar "||" \caesura
+    \tempoVerseAcelerando d\breve c1 \tempoVerseRallentando c4 \bar "||" \caesura \break
+    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando s4 bf4 \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve a1 \tempoVerseRallentando cs4 g f \bar "|." \caesura
   }
 
 bassVerseMusic = \relative c {
+    \cadenzaOn \caesura
+    \tempoVerseAcelerando d\breve cs1 \tempoVerseRallentando a4 d \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando bf4 c a \bar "||" \caesura \break
+    \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando g4 \bar "||" \caesura
+    \tempoVerseAcelerando e\breve f1 \tempoVerseRallentando c4 \bar "||" \caesura \break
+    \tempoVerseAcelerando a\breve bf1 \tempoVerseRallentando s4 g4 \bar "||" \caesura
+    \tempoVerseAcelerando c\breve cs1 \tempoVerseRallentando a4 e' d \bar "|." \caesura
   }
 
 groupedVersesLyrics = <<
@@ -159,7 +177,7 @@ verseLyrics = \markup {
       \concat { "dans ta grande " tendr \underline e sse, " regarde-moi."}
       " "
       \concat { "Les pauvres l’ont " v \underline u, " ils sont en fête&nbsp;:" }
-      \concat { "« Vie et joie, à " v \underline o us " qui cher chez Dieu&nbsp;!&nbsp;»" }
+      \concat { "« Vie et joie, à " v \underline o us " qui cherchez Dieu&nbsp;!&nbsp;»" }
       \concat { "Car le Seigneur " éc \underline o ute " les humbles," }
       \concat { "il n’oublie pas les " s \underline i ens " emprisonnés." }
       \concat { "Que le ciel et la " t \underline e rre " le célèbrent," }
