@@ -12,12 +12,12 @@
 
 title = "Psaume 44"
 subtitle = "Solennité de l'Assomption"
-composer = "Magnificat, août 2017"
+composer = "Jean Baptiste Favre"
+dedicace = "Île d'Hœdic, août 2018"
 
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
-  \key g \major
+  \key a \major
+  \time 3/8
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,8 +25,8 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  d4 g g8 fs e e fs g a4. \breathe
-  a8 b c d4 b c8 b a a b2 \fermata
+  \partial 8 e8 e c d e e f! a (gs! f!) e4. \breathe
+  d8 e e fs! fs e d cs! d e4. \fermata
   \bar "|." \break
   }
 
@@ -57,11 +57,11 @@ bassAntiphonLyrics = \antiphonLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c' {
   \cadenzaOn \caesura
-  b\breve d1 g,4 \bar "||"
-  g\breve c a4 \bar "||"
-  b\breve g1 e4 d \bar "||"
+  e\breve f!4 d e \bar "||"
+  e\breve a1 gs!4 f e \bar "||"
+  d\breve fs1 e4 d e \bar "||"
   }
 
 altoVerseMusic = \relative c' {
@@ -92,58 +92,50 @@ verseHarmony = \figuremode {
 
 %{
 
-  Chantez au Seigne_u_r un chant nouveau,
-  chantez au Seigne_u_r, terre entière,
-  racontez à tous les pe_u_ples sa gloire,
-  à toutes les nati_o_ns ses merveilles !
+Écoute, ma fille, regarde et tends l’oreille ;
+oublie ton peuple et la maison de ton père :
+le roi sera séduit par ta beauté.
 
-  Il est grand, le Seigne_u_r, hautement loué,
-  redoutable au-dess_u_s de tous les dieux :
-  néant, tous les die_u_x des nations !
-  Lui, le Seigne_u_r, a fait les cieux.
+Il est ton Seigneur : prosterne-toi devant lui.
+Alors, les plus riches du peuple,
+chargés de présents, quêteront ton sourire.
 
-  Rendez au Seigne_u_r, familles des peuples,
-  rendez au Seigneur la glo_i_re et la puissance,
-  rendez au Seigneur la glo_i_re de son nom.
-  Apportez votre offr_a_nde, entrez dans ses parvis.
+Fille de roi, elle est là, dans sa gloire,
+vêtue d’étoffes d’or ;
+on la conduit, toute parée, vers le roi.
 
-  Adorez le Seigne_u_r, éblouissant de sainteté :
-  tremblez devant lu_i_, terre entière.
-  Allez dire aux nations : « Le Seigne_u_r est roi ! »
-  Il gouverne les pe_u_ples avec droiture.
+Des jeunes filles, ses compagnes, lui font cortège ;
+on les conduit parmi les chants de fête :
+elles entrent au palais du roi.
 
 %}
 
 verseLyrics = \markup {
-%{
+{
   \override #'(font-name . "Latin Modern Sans")
   \override #'(font-size . 3)
   \fill-line {
     \left-column{
       " "
       " "
-      \concat { "Chantez au " Seigne \underline u r " un chant nouveau,"}
-      \concat { "chantez au " Seigne \underline u r, " terre entière,"}
-      \concat { "racontez à tous les " pe \underline u ples " sa gloire,"}
-      \concat { "à toutes les " nati \underline o ns " ses merveilles&nbsp;!"}
+      \concat { "Écoute, ma fille, reg" \underline a "rde et tends l’oreille ;"}
+      \concat { "oublie ton peuple et la mais" \underline o "n de ton père :"}
+      \concat { "le roi sera sédu" \underline i "t par ta beauté."}
       " "
-      \concat { "Il est grand, le " Seigne \underline u r, " hautement loué,"}
-      \concat { "redoutable " au-dess \underline u s " de tous les dieux&nbsp;:"}
-      \concat { "néant, tous les " die \underline u x " des nations&nbsp;!"}
-      \concat { "Lui, le " Seigne \underline u r, " a fait les cieux."}
+      \concat { "Il est ton Seigneur : prosterne-t" \underline o "i devant lui."}
+      \concat { "Alors, les plus r" \underline i "ches du peuple,"}
+      \concat { "chargés de présents, quêter" \underline o "nt ton sourire."}
       " "
-      \concat { "Rendez au " Seigne \underline u r, " familles des peuples,"}
-      \concat { "rendez au Seigneur la " glo \underline i re " et la puissance,"}
-      \concat { "rendez au Seigneur la "glo \underline i re " de son nom."}
-      \concat { "Apportez votre " offr \underline a nde, " entrez dans ses parvis."}
+      \concat { "Fille de roi, elle est l" \underline à ", dans sa gloire,"}
+      \concat { "vêt" \underline u "e d’étoffes d’or ;"}
+      \concat { "on la conduit, toute par" \underline é "e, vers le roi."}
       " "
-      \concat { "Adorez le " Seigne \underline ur, " éblouissant de sainteté&nbsp;:"}
-      \concat { "tremblez devant " lu \underline i, " terre entière."}
-      \concat { "Allez dire aux nations&nbsp;: «&nbsp;Le " Seigne \underline u r " est roi&nbsp;!&nbsp;»"}
-      \concat { "Il gouverne les " pe \underline u ples " avec droiture."}
+      \concat { "Des jeunes filles, ses compagnes, lui f" \underline o "nt cortège ;"}
+      \concat { "on les conduit parmi les ch" \underline a "nts de fête :"}
+      \concat { "elles " \underline e "ntrent au palais du roi."}
     }
   }
-%}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
