@@ -73,6 +73,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Kyrie"
+      copyright=""
     }
     \markup { \vspace #2 }
     \markup { "Chaque phrase est chantée une première fois par le soliste," }
@@ -126,7 +127,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
-  \bookpart {
+%{  \bookpart {
     \paper {
       bookTitleMarkup = \markup {
         \fill-line { \fontsize #10 \fromproperty #'header:piece }
@@ -134,6 +135,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     }
     \header {
       piece = "Gloria"
+      copyright=""
     }
     \score {
       \layout{ ragged-last = ##f }
@@ -229,11 +231,15 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
+%}
   \bookpart {
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Prière universelle"
+      copyright=""
     }
+    \markup { \vspace #2 }
+    \markup { " Lent et suppliant." }
     \score {
       \layout{ ragged-last = ##f }
       \midi{}
@@ -289,6 +295,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Sanctus"
+      copyright=""
     }
     \score {
       \layout{ ragged-last = ##f }
@@ -369,6 +376,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Anamnèse"
+      copyright=""
     }
     \score {
       \layout{ ragged-last = ##f }
@@ -470,6 +478,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
     \header {
       piece = "Agnus"
+      copyright=""
     }
 
     \markup { \vspace #2 }
