@@ -31,12 +31,18 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
+  \partial 8 s8 s4. s4. s4. s4.
+  s4. s4. s4. s4.
   }
 
 tenorAntiphonMusic =  \relative c' {
+  \partial 8 s8 s4. s4. s4. s4.
+  s4. s4. s4. s4.
   }
 
 bassAntiphonMusic =  \relative c {
+  \partial 8 s8 s4. s4. s4. s4.
+  s4. s4. s4. s4.
   }
 
 antiphonLyrics = \lyricmode {
@@ -65,12 +71,24 @@ sopranoVerseMusic = \relative c' {
   }
 
 altoVerseMusic = \relative c' {
+  \cadenzaOn \caesura
+  s\breve s4 s s \bar "||"
+  s\breve s1 s4 s s \bar "||"
+  s\breve s1 s4 s s \bar "||"
   }
 
 tenorVerseMusic = \relative c' {
+  \cadenzaOn \caesura
+  s\breve s4 s s \bar "||"
+  s\breve s1 s4 s s \bar "||"
+  s\breve s1 s4 s s \bar "||"
   }
 
 bassVerseMusic = \relative c {
+  \cadenzaOn \caesura
+  a\breve f4 g c \bar "||"
+  a\breve d1 e4 gs! a \bar "||"
+  g,\breve d'1 b4 b a \bar "||"
   }
 
 
