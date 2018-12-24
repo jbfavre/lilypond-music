@@ -24,7 +24,7 @@ verseText = "Couplets"
 %}
 title = "Impropères"
 real_poet = ""
-subtitle = "Chant des reproches"
+subtitle = "Vendredi saint - Chant des reproches"
 composer = "Jean Baptiste Favre"
 
 
@@ -36,44 +36,50 @@ global = {
 
 SoloBass = \relative c {
   \cadenzaOn
-  a'1 a1 bf4 bf a4 \bar "|"
-  a1 g4 f g4 \bar "|"
-  a4 (g) f2 (e) f4 \bar "|"
+  a'4. a8 a4 a8 a bf4 bf a2 \bar "|"
+  a4 a a8[ a] g[ f] g1 \bar "|"
+  a8[ (g)] f4 f2 \bar "|"
   }
 sopranoAntiphonMusic = \relative c' {
   \silence \SoloBass
-  f4 g a2 f4 g a2 f8 f g g a4 bf8 a g4 g f2 \bar "||" \break
+  f4 g a2 f4 g a2 f8[ f g g] a4 bf8[ a] g4 g f2 \bar "||" \break
 }
 altoAntiphonMusic = \relative c' {
   \silence \SoloBass
+  c4 e c2 d4 e f2 d8[ d e e] e4 f8[ f] f4 f8[ (e)] c2 \bar "||" \break
   }
 tenorAntiphonMusic =  \relative c' {
   \silence \SoloBass
+  a4 g a2 a4 c c2 a8[ a c c] cs4 df8[ df!] d4 bf a2 \bar "||" \break
   }
 bassAntiphonMusic =  \relative c {
   \SoloBass
-  f4 c f2 d4 c f2 f8 d c bf a4 g8 d' bf (g) c4 f,2 \bar "||" \break
+  f4 c f2 d4 c f2 f8[ d c bf] a4 g8[ bf] b[ (d)] c4 <f f,>2 \bar "||" \break
 }
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c' {
   \cadenzaOn
-  a\breve bf4 g a \bar "|"
-  a\breve f1 g4 a g \bar "|" \break
-  g\breve a1 g4 f \bar "|"
-  f\breve bf1 a4 f g f
+  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "|"
+  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando g4 g a \bar "|" \break
+  \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando a4 g g \bar "|"
   }
 altoVerseMusic= \relative c' {
-  \silence \sopranoVerseMusic
+  \cadenzaOn
+  c\breve e1 d4
+  d\breve e1 e4 e e
+  g\breve f1 f4 f f8[ e]
   }
 tenorVerseMusic= \relative c' {
-  \silence \sopranoVerseMusic
+  \cadenzaOn
+  a\breve g1 f4
+  a\breve c1 c4 c cs
+  df\breve df!1 df!4 d bf
   }
 bassVerseMusic = \relative c {
   \cadenzaOn
-  f\breve bf,4 c f \bar "|"
-  d\breve bf1 g4 d'4 c4 \bar "|"
-  cs\breve a1 e'4 d \bar "|"
-  bf\breve g1 d'4 bf b8[ (c)] f,4
+  f\breve c1 d4
+  d\breve c1 c4 bf a
+  bf\breve g1 bf4 b8[ d] c4
   }
 
 sopranoAntiphonLyrics = \lyricmode {
@@ -84,8 +90,8 @@ altoAntiphonLyrics = \lyricmode {
 tenorAntiphonLyrics = \lyricmode {
   }
 bassAntiphonLyrics = \lyricmode {
-  "Ô mon" "peuple, Que" t'ai -- je fais&nbsp;?
-  "En quoi t'ai-je" con -- tris -- té&nbsp;?
+  Ô mon peu ple, Que t'ai -- je fais&nbsp;?
+  En quoi t'ai- -- je con -- tris -- té&nbsp;?
   Ré -- ponds moi.
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
@@ -112,13 +118,13 @@ verseLyrics = \markuplist {
   \override #'(font-size . 3)
   \fill-line {
     \column{
-      \concat { "Moi je t’ai fait sortir d’Égypte, j’ai englouti le Pharaon&nbsp;:" }
+      \concat { "Moi je t’ai fait sort" \underline i "r d’Égypte, j’ai englout" \underline i " le Pharaon&nbsp;:" }
       \concat { "Toi, tu m’as livr" \underline é " aux grands prêtres&nbsp;!" }
       " "
-      \concat { "Pour toi je m’avançai dans la col" \underline o "nne de nuée&nbsp;:" }
+      \concat { "Pour t" \underline oi " je m’avanç" \underline ai " dans la col" \underline o "nne de nuée&nbsp;:" }
       \concat { "Toi tu m’as condu" \underline i "t à Pilate&nbsp;!" }
       " "
-      \concat { "Moi, dans ta main j’ai mis un sceptre, je t’ai promu peuple royal&nbsp;:" }
+      \concat { "Moi, dans ta main j’ai m" \underline i "s un sceptre, je t’ai prom" \underline u " peuple royal&nbsp;:" }
       \concat { "Toi, tu as placé sur ma tête la cour" \underline o "nne d’épines&nbsp;!" }
       " "
       \concat { "Moi, je t’ai par ma toute puiss" \underline a "nce exalté&nbsp;:" }
@@ -132,4 +138,4 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "libs/layouts/commonLayout.ily"
 \include "libs/layouts/psalmody-2VoicesNoPiano.ily"
-%\include "libs/layouts/outputMidi.ily"
+\include "libs/layouts/outputMidi.ily"
