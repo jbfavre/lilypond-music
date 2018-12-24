@@ -9,14 +9,16 @@ partition = {
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
         \set Staff.shortInstrumentName = \markup { \right-column { \sopranoVoiceTitle } }
-        \new Voice = "Sop" { \marqueAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
+        \new Voice = "Sop" { \override Stem.direction = #UP   \marqueAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
+        \new Voice = "Alt" { \override Stem.direction = #DOWN                                \global \tempoAntiphon \altoAntiphonMusic }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
       \new Staff <<
         \set Staff.instrumentName = \bassVoiceTitle
         \set Staff.shortInstrumentName = \markup { \right-column { \bassVoiceTitle } }
-        \new Voice = "Bass" { \clef "bass" \global \tempoAntiphon \bassAntiphonMusic }
-        \new Lyrics \lyricsto "Bass" { \bassAntiphonLyrics }
+        \new Voice = "Ten" { \override Stem.direction = #UP                \global \tempoAntiphon \tenorAntiphonMusic }
+        \new Voice = "Bas" { \override Stem.direction = #DOWN \clef "bass" \global \tempoAntiphon \bassAntiphonMusic }
+        \new Lyrics \lyricsto "Bas" { \bassAntiphonLyrics }
       >>
       \new ChoirStaff = "SopranoAlto" \with { \remove Time_signature_engraver }
       {
@@ -33,6 +35,13 @@ partition = {
             \tag #'visuel \sopranoVerseMusic
             \tag #'audio <<\sopranoVerseMusic \\ \pisteTempoVerse>>
           }
+          \new Voice = "altoVerseVoice" {
+            \voiceOne { \silence \sopranoAntiphonMusic }
+            \override Stem.direction = #DOWN
+            \markPsalmody
+            \tag #'visuel \altoVerseMusic
+            \tag #'audio <<\altoVerseMusic \\ \pisteTempoVerse>>
+          }
           \new Lyrics \lyricsto "sopranoVerseVoice" { \sopranoVerseRepons \sopranoVerseRepons }
         >>
       }
@@ -43,10 +52,17 @@ partition = {
         \set Staff.shortInstrumentName = \markup { \right-column { \bassVoiceTitle } }
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
-        \clef bass
+        \clef "bass"
         <<
+          \new Voice = "tenorVerseVoice" {
+            \voiceFour { \silence \sopranoAntiphonMusic }
+            \override Stem.direction = #UP
+            \tag #'visuel \tenorVerseMusic
+            \tag #'audio <<\tenorVerseMusic \\ \pisteTempoVerse>>
+          }
           \new Voice = "bassVerseVoice" {
             \voiceFour { \silence \sopranoAntiphonMusic }
+            \override Stem.direction = #DOWN
             \tag #'visuel \bassVerseMusic
             \tag #'audio <<\bassVerseMusic \\ \pisteTempoVerse>>
           }
