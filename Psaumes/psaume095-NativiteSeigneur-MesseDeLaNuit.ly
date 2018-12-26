@@ -21,6 +21,8 @@ global = {
   \time 6/8
 }
 
+staffCustomSize = 14
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,17 +34,17 @@ sopranoAntiphonMusic = \relative c'' {
   }
 
 altoAntiphonMusic = \relative c' {
-  r4. e4 e8 e d e fs e d e2.
+  r4. e4 e8 e d e fs e d e2. \breathe
   r4. r8 g8 g g e e e4.
   }
 
 tenorAntiphonMusic =  \relative c' {
-  c4. c4. c8 b c d c b c2.
+  c4. c4. c8 b c d c b c2. \breathe
   e4 e8 d4. (d8) a b cs4.
   }
 
 bassAntiphonMusic =  \relative c {
-  r4. a4. a a a8 (b) c a4.
+  r4. a4. a a a8 (b) c a4. \breathe
   r4. e'4. g4 e8 a,4.
   }
 
@@ -68,31 +70,32 @@ bassAntiphonLyrics =  \lyricmode {
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
+    \set Score.markFormatter = #format-mark-box-alphabet
     \cadenzaOn \caesura
-    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando a4 b \bar "||" \caesura
-    \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando b4 a \bar "||" \caesura
+    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando g4 \bar "||" \caesura
+    \mark #2 \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando a4 b \bar "||" \caesura
+    \mark \default \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando b4 a \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    c\breve c1 c4 \bar "||" \caesura
-    c\breve e1 c4 d \bar "||" \caesura
-    d\breve b1 d4 cs4 \bar "||" \caesura
+    e\breve e1 e4 \bar "||" \caesura
+    e\breve e1 e4 fs \bar "||" \caesura
+    g\breve d1 g4 e4 \bar "||" \caesura
   }
 
-tenorVerseMusic = \relative c {
+tenorVerseMusic = \relative c' {
     \caesura
-    e\breve e1 e4 \bar "||" \caesura
-    e\breve g1 e4 fs \bar "||" \caesura
-    fs\breve d1 fs4 e \bar "||" \caesura
+    c\breve c1 b4 \bar "||" \caesura
+    c\breve a1 a4 b \bar "||" \caesura
+    d\breve b1 d4 cs \bar "||" \caesura
   }
 
 bassVerseMusic = \relative c {
     \caesura
-    %a\breve a1 a4 \bar "||" \caesura
-    %a\breve c1 a4 b4 \bar "||" \caesura
-    %b\breve g1 b4 a \bar "||" \caesura
+    a\breve a1 e'4 \bar "||" \caesura
+    a,\breve c1 c4 d4 \bar "||" \caesura
+    g,\breve g1 g4 a \bar "||" \caesura
   }
 
 groupedVersesLyrics = <<
@@ -139,6 +142,7 @@ verseLyrics = \markup {
   \override #'(font-size . 3)
   \fill-line {
     \left-column{
+      \underline "Pour le dernier verset, on prend seulement les psalmodies B et C"
       " "
       " "
       \concat { "Chantez au " Seigne \underline u r " un chant nouveau," }
@@ -256,23 +260,23 @@ sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando a\breve \tempoVerseRallentando g4 \bar "||" \caesura
     \mark #2 \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando a4 b \bar "||" \caesura
-    \mark \default \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando b4 a \bar "||" \caesura
+    \mark \default \tempoVerseAcelerando b\breve g1 \tempoVerseRallentando b4 cs \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c' {
     \caesura
     e\breve d4 \bar "||" \caesura
     e\breve g1 e4 fs \bar "||" \caesura
-    fs\breve d1 fs4 e \bar "||" \caesura
+    fs\breve d1 d4 e \bar "||" \caesura
   }
 
 tenorVerseMusic = {}
 
-bassVerseMusic = \relative c' {
+bassVerseMusic = \relative c {
     \caesura
     a\breve b4 \bar "||" \caesura
-    a\breve c1 c4 b4 \bar "||" \caesura
-    d\breve b1 d4 cs \bar "||" \caesura
+    a\breve c1 c4 d4 \bar "||" \caesura
+    d\breve b1 g4 a \bar "||" \caesura
   }
 
 groupedVersesLyrics = <<
