@@ -41,7 +41,7 @@ sopranoAntiphonMusic = \relative c' {
   \partial 4
   f8 g a4 g8 a c4 bf8 a g2 \breathe
   a8 a g a f d f g a2 \fermata
-  \bar "|."
+  \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
