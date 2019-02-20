@@ -90,14 +90,14 @@ altoVerseMusic = \relative c' {
     \caesura
     c\breve e1 f4 \caesura
     d\breve d1 cs4 \caesura
-    f\breve e1 f4 \caesura
+    f\breve g1 f4 \caesura
     d\breve e1 e4 \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
     a\breve d1 d4  \caesura
-    bf\breve a1 a4 \caesura
+    bf\breve bf1 a4 \caesura
     a\breve d1 d4  \caesura
     d\breve d1 cs4 \caesura
   }
@@ -106,7 +106,7 @@ bassVerseMusic = \relative c {
     \caesura
     f\breve g1 d4 \caesura
     d\breve e1 a,4 \caesura
-    f'\breve g1 d4 \caesura
+    f'\breve e1 d4 \caesura
     bf\breve g1 a4 \caesura
   }
 
