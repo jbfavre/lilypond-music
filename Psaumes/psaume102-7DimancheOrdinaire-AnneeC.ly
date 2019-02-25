@@ -81,7 +81,7 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando a\breve bf1 \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando g4 \bar "||" \caesura
     \tempoVerseAcelerando c\breve bf1 \tempoVerseRallentando a4 \bar "||" \caesura
     \tempoVerseAcelerando f\breve bf1 \tempoVerseRallentando a4 \bar "||" \caesura
   }
@@ -89,24 +89,24 @@ sopranoVerseMusic = \relative c'' {
 altoVerseMusic = \relative c' {
     \caesura
     c\breve e1 f4 \caesura
-    d\breve d1 cs4 \caesura
-    f\breve g1 f4 \caesura
+    d\breve d1 e4 \caesura
+    a\breve g1 f4 \caesura
     d\breve e1 e4 \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
     a\breve d1 d4  \caesura
-    bf\breve bf1 a4 \caesura
-    a\breve d1 d4  \caesura
+    bf\breve bf1 bf4 \caesura
+    c\breve e1 d4  \caesura
     d\breve d1 cs4 \caesura
   }
 
 bassVerseMusic = \relative c {
     \caesura
     f\breve g1 d4 \caesura
-    d\breve e1 a,4 \caesura
-    s\breve e'1 d4 \caesura
+    bf\breve g1 c4 \caesura
+    f\breve g1 d4 \caesura
     bf\breve g1 a4 \caesura
   }
 
