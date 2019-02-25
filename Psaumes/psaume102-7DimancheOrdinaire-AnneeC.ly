@@ -106,7 +106,7 @@ bassVerseMusic = \relative c {
     \caesura
     f\breve g1 d4 \caesura
     d\breve e1 a,4 \caesura
-    f'\breve e1 d4 \caesura
+    s\breve e'1 d4 \caesura
     bf\breve g1 a4 \caesura
   }
 
