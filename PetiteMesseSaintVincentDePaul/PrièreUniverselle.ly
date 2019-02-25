@@ -12,9 +12,9 @@ puGlobal = {
 }
 
 puMainSopranoMusic = \relative c' {
-  f4 g af af g g f2
-  af4 bf c c bf af g2
-  f4 g af2 g4 f f2
+  f4 g af af g g f2 \break
+  af4 bf c c bf af g2 \break
+  f4 g af2 g4 f f2 \break
 }
 
 puMainAltoMusic = \relative c' {
