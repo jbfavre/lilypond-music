@@ -24,10 +24,10 @@ kyrieSolistLyrics = \lyricmode {
 kyrieSopranoMusic = \kyrieSolistMusic
 kyrieSopranoLyrics = \kyrieSolistLyrics
 
-kyrieAltoMusic = \relative c' {
-      af'8 (bf) c (bf) af4 af f8 (af) bf (af) g2\fermata
-      af4 f af2 af4 f f (e)\fermata
-      f8 (g f) df ef (df) c (ef) f4 g4 af2\fermata
+kyrieAltoMusic = \relative c {
+      c'4 ef4 f ef df8 (f) g (f) e2\fermata
+      c4. (df8) ef2 c8 df4 bf8 g2\fermata
+      af4 df c af df ef c2\fermata
   }
 kyrieAltoLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
@@ -36,9 +36,9 @@ kyrieAltoLyrics = \lyricmode {
   }
 
 kyrieTenorMusic = \relative c {
-      c'4 ef4 f ef df8 (f) g (f) e2\fermata
-      c4. (df8) ef2 c8 df4 bf8 g2\fermata
-      af4 df c af df ef c2\fermata
+      af'8 (bf) c (bf) af4 af f8 (af) bf (af) g2\fermata
+      af4 f af2 af4 f f (e)\fermata
+      f8 (g f) df ef (df) c (ef) f4 g4 af2\fermata
   }
 kyrieTenorLyrics = \lyricmode {
     Ky -- ri -- e E -- le -- i -- son
