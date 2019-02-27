@@ -69,6 +69,4 @@ oddFooterMarkupSetting = \markup {
   % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
   #(include-special-characters)
 
-  scoreTitleMarkup = \scoreTitleMarkupSetting
-  oddFooterMarkup = \oddFooterMarkupSetting
 }

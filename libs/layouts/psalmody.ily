@@ -2,7 +2,10 @@
 
 pisteTempoPsalmodie = \silence \sopranoVerseMusic
 pisteTempoVerse = \silence \sopranoVerseMusic
-
+\paper {
+  scoreTitleMarkup = \scoreTitleMarkupSetting
+  oddFooterMarkup = \oddFooterMarkupSetting
+}
 partition = {
   <<
     \new ChoirStaff <<
