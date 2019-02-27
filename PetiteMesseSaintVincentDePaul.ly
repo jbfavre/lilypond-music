@@ -1,11 +1,23 @@
 \version "2.18.2"
 
-\paper {
-  paper-width = 21.0\cm
-  paper-height = 29.7\cm
-  max-systems-per-page = #4
-}
+\include "libs/commonFunctions.ily"
+\include "libs/settings.ily"
+\include "libs/translations/fr.ily"
 \include "book-titling.ily"
+
+pianoProperties = {
+    %options pour Lilypond 2.18.2 et suivantes
+    \hide PhrasingSlur
+    \hide Slur
+    \hide Hairpin
+    \omit DynamicText
+    \omit TextScript
+    \set fontSize = #-1
+    \override StaffSymbol #'staff-space = #(magstep -1)
+    \override Hairpin #'style = #'none
+    \override InstrumentName #'font-name = #"Monospace Regular"
+    \autoBeamOn
+  }
 
 blankPage = {
     \pageBreak
@@ -23,6 +35,9 @@ blankPage = {
     \pageBreak
   }
 
+tagline = ""
+staffCustomSize = 12
+
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
@@ -37,9 +52,44 @@ silence = #(define-music-function (parser location arg) (ly:music?)
                        (make-music 'SkipEvent m)))
                arg))
 
+\paper {
+  left-margin = \leftMargin
+  right-margin = \rightMargin
+  top-margin = \topMargin
+  bottom-margin = \bottomMargin
+
+  top-markup-spacing = \topToMarkupSpacing
+  top-system-spacing = \topToSystemSpacing
+  markup-system-spacing = \markupToSystemSpacing
+  system-system-spacing = \systemToSystemSpacing
+  score-markup-spacing = \scoreMarkupSpacing
+
+  two-sided = \twoSided
+  inner-margin = \innerMargin
+  outer-margin = \outerMargin
+
+
+  #(define fonts
+    (set-global-fonts
+     #:music fontMusic
+     #:brace fontBrace
+     #:roman fontRoman
+     #:sans fontSans
+     #:typewriter fontTypewriter
+     #:factor (/ staff-height pt fontFactor)
+    ))
+
+  % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
+  #(include-special-characters)
+
+  ragged-last-bottom = ##f
+  ragged-bottom = ##f
+}
+
 \book {
   \header {
     title = \markup {
+      \override #'(font-name . "Latin Modern Sans")
       \center-column {
         "Petite messe"
         "de"
@@ -47,67 +97,118 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       }
     }
     subtitle = \markup {
+      \override #'(font-name . "Latin Modern Sans")
       \center-column {
-        "Pour soliste et chœur"
-        ou
-        "chœur seul"
+        "Pour soliste et chœur à 3 voix"
+        "ou"
+        "chœur à 4 voix"
       }
     }
     composer = "Jean Baptiste Favre"
     date = \markup {
-      \center-column {
-        "Clichy-la-Garenne"
-        "2017"
-      }
+      \typewriter "Clichy-la-Garenne, 2017"
     }
-    copyright = "Reproduction interdite sans l'accord explicite de l'auteur"
+    copyright = \markup {
+      \override #'(font-name . "Courier")
+      "Reproduction interdite sans l'accord explicite de l'auteur"
+    }
   }
-  \bookTitle "Petite messe Saint Vincent de Paul"
   \useRehearsalNumbers ##f
-
   % Cover page
   \blankPage
   \pageBreak
 
   \bookpart {
-    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \paper {
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Kyrie"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
     \markup { \vspace #2 }
     \markup { "Chaque phrase est chantée une première fois par le soliste," }
     \markup { "    éventuellement accompagné du chœur " \bold "à l'unisson." }
     \markup { "Elle est ensuite reprise en polyphonie, l'assemblée chantant la voix de soliste" }
     \score {
-      \layout{ ragged-last = ##f }
-      \midi{}
-      \new GrandStaff
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
+      \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
+                                                      (basic-distance . 1)
+                                                      (padding . 0))
+                              \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #'(
+                                                      (basic-distance . 1)
+                                                      (padding . 0))
+                            }
       <<
-        \new ChoirStaff
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
-          \new Staff \with { instrumentName = "Soprano" } <<
-            \kyrieGlobal \clef treble
-            \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
-            \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto" } <<
-            \kyrieGlobal \clef treble
-            \new Voice = "kyrieAlto" { \kyrieAltoMusic }
-            \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" } <<
-            \kyrieGlobal \clef "treble_8"
-            \new Voice = "kyrieTenor" { \kyrieTenorMusic }
-            \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" } <<
-            \kyrieGlobal \clef bass
-            \new Voice = "kyrieBasse" { \kyrieBasseMusic }
-            \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
-          >>
+          \kyrieGlobal \clef treble
+          \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
+          \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
         >>
-        \new PianoStaff
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \kyrieGlobal \clef treble
+          \new Voice = "kyrieAlto" { \kyrieAltoMusic }
+          \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \kyrieGlobal \clef "treble_8"
+          \new Voice = "kyrieTenor" { \kyrieTenorMusic }
+          \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \kyrieGlobal \clef bass
+          \new Voice = "kyrieBasse" { \kyrieBasseMusic }
+          \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
+        >>
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
         <<
           \new Staff <<
             \kyrieGlobal \clef treble
@@ -127,80 +228,121 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
-%{  \bookpart {
+  \bookpart {
     \paper {
-      bookTitleMarkup = \markup {
-        \fill-line { \fontsize #10 \fromproperty #'header:piece }
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \fontsize #-2 \left-column {
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
       }
     }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Gloria"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
     \score {
-      \layout{ ragged-last = ##f }
-      \midi{}
-      \new GrandStaff
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
+      \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
+                                                      (basic-distance . 1)
+                                                      (padding . 0))
+                              \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
+                            }
       <<
-        \new ChoirStaff
+        \new Staff \with { instrumentName = "Intonation" }
         <<
-          \new Staff \with { instrumentName = "Intonation" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \gloriaGlobal \clef treble
-            \new Voice = "gloriaIntonationVoice" { \gloriaIntonationMusic }
-            \new Lyrics \lyricsto "gloriaIntonationVoice" { \gloriaIntonationLyrics }
-          >>
-          \new Staff \with { instrumentName = "Soprano" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \gloriaGlobal \clef treble
-            \new Voice = "gloriaSoprano" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
-              \silence \gloriaIntonationMusic
-              \tag #'visuel \gloriaSopranoMusic
-            }
-            \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \gloriaGlobal \clef treble
-            \new Voice = "gloriaAlto" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
-              \silence \gloriaIntonationMusic
-              \tag #'visuel \gloriaAltoMusic
-            }
-            \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \gloriaGlobal \clef "treble_8"
-            \new Voice = "gloriaTenor" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
-              \silence \gloriaIntonationMusic
-              \tag #'visuel \gloriaTenorMusic
-            }
-            \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \gloriaGlobal \clef bass
-            \new Voice = "gloriaBasse" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
-              \silence \gloriaIntonationMusic
-              \tag #'visuel \gloriaBasseMusic
-            }
-            \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
-          >>
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaIntonationVoice" { \gloriaIntonationMusic }
+          \new Lyrics \lyricsto "gloriaIntonationVoice" { \gloriaIntonationLyrics }
         >>
-        \new PianoStaff <<
+        \new Staff <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \set Staff.instrumentName = "Soprano"
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaSoprano" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaSopranoMusic
+          }
+          \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaAlto" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaAltoMusic
+          }
+          \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef "treble_8"
+          \new Voice = "gloriaTenor" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaTenorMusic
+          }
+          \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef bass
+          \new Voice = "gloriaBasse" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaBasseMusic
+          }
+          \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
+        >>
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        <<
           \new Staff <<
             \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
@@ -209,8 +351,8 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Voice <<
               { \silence \gloriaIntonationMusic 
                 \partcombine
-                <<  \gloriaSopranoMusic >>
-                <<  \gloriaAltoMusic >>
+                <<  \gloriaTenorMusic >>
+                <<  \gloriaBasseMusic >>
               }
             >>
           >>
@@ -231,137 +373,219 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
-%}
   \bookpart {
-    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \paper {
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \fontsize #-2 \left-column {
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Prière universelle"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
-    \markup { \vspace #2 }
-    \markup { " Lent et suppliant." }
+    #(set-global-staff-size staffCustomSize)
     \score {
-      \layout{ ragged-last = ##f }
-      \midi{}
-      \new GrandStaff
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
+      \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
+                                                      (basic-distance . 1)
+                                                      (padding . 0))
+                              \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
+                            }
       <<
-        \new ChoirStaff
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
-          \new Staff \with {instrumentName = "Soprano" }
+          \puGlobal \clef treble
+          \new Voice = "puSoprano" { \puMainSopranoMusic }
+          \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \puGlobal \clef treble
+          \new Voice = "puAlto" { \puMainAltoMusic }
+          \new Lyrics \lyricsto "puAlto" { \puMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \puGlobal \clef "treble_8"
+          \new Voice = "puTenor" { \puMainTenorMusic }
+          \new Lyrics \lyricsto "puTenor" { \puMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \puGlobal \clef bass
+          \new Voice = "puBasse" { \puMainBasseMusic }
+          \new Lyrics \lyricsto "puBasse" { \puMainBasseLyrics }
+        >>
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        <<
+          \new Staff
           <<
             \puGlobal \clef treble
-            \new Voice = "puSoprano" { \puMainSopranoMusic }
-            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine
+            << \puMainSopranoMusic >>
+            << \puMainAltoMusic >>
           >>
-          \new Staff \with { instrumentName = "Alto" }
-          <<
-            \puGlobal \clef treble
-            \new Voice = "puAlto" { \puMainAltoMusic }
-            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" }
-          <<
-            \puGlobal \clef "treble_8"
-            \new Voice = "puTenor" { \puMainTenorMusic }
-            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" }
+          \new Staff
           <<
             \puGlobal \clef bass
-            \new Voice = "puBasse" { \puMainBasseMusic }
-            \new Lyrics \lyricsto "puSoprano" { \puMainSopranoLyrics }
-          >>
-        >>
-        \new PianoStaff <<
-          \new Staff <<
-            \clef treble
             \set Staff.printPartCombineTexts = ##f
             \partcombine
-            << \puGlobal \puMainSopranoMusic >>
-            << \puGlobal \puMainAltoMusic >>
-          >>
-          \new Staff <<
-            \clef bass
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \puGlobal \puMainTenorMusic >>
-            << \puGlobal \puMainBasseMusic >>
+            << \puMainTenorMusic >>
+            << \puMainBasseMusic >>
           >>
         >>
       >>
     }
   }
   \bookpart {
-    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \paper {
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \fontsize #-2 \left-column {
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Sanctus"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
     \score {
-      \layout{ ragged-last = ##f }
-      \midi{}
-      \new GrandStaff
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
+      \new ChoirStaff  \with {
+        \override StaffGrouper.staff-staff-spacing = #'(
+                                (basic-distance . 0)
+                                (padding . 0))
+        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
+      }
       <<
-        \new ChoirStaff \with {
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
-          \new Staff \with {instrumentName = "Soprano"
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }
-          <<
-            \sanctusGlobal \clef treble
-            \new Voice = "sanctusSoprano" { \sanctusMainSopranoMusic }
-            \new Lyrics \lyricsto "sanctusSoprano" { \sanctusMainSopranoLyrics }
-            \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseOneSopranoLyrics }
-            \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseTwoSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto"
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }
-          <<
-            \sanctusGlobal \clef treble
-            \new Voice = "sanctusAlto" { \sanctusMainAltoMusic }
-            \new Lyrics \lyricsto "sanctusAlto" { \sanctusMainAltoLyrics }
-            \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseOneAltoLyrics }
-            \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseTwoAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor"
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }
-          <<
-            \sanctusGlobal \clef "treble_8"
-            \new Voice = "sanctusTenor" { \sanctusTenorMusic }
-            \new Lyrics \lyricsto "sanctusTenor" { \sanctusMainTenorLyrics }
-            \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseOneTenorLyrics }
-            \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseTwoTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse"
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }
-          <<
-            \sanctusGlobal \clef bass
-            \new Voice = "sanctusBasse" { \sanctusMainBasseMusic }
-            \new Lyrics \lyricsto "sanctusBasse" { \sanctusMainBasseLyrics }
-            \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseOneBasseLyrics }
-            \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
-          >>
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusSoprano" { \sanctusMainSopranoMusic }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusMainSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseOneSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseTwoSopranoLyrics }
         >>
-        \new PianoStaff  \with {
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }<<
-          \new Staff  \with {
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }<<
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusAlto" { \sanctusMainAltoMusic }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusMainAltoLyrics }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseOneAltoLyrics }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseTwoAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \sanctusGlobal \clef "treble_8"
+          \new Voice = "sanctusTenor" { \sanctusTenorMusic }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusMainTenorLyrics }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseOneTenorLyrics }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseTwoTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \sanctusGlobal \clef bass
+          \new Voice = "sanctusBasse" { \sanctusMainBasseMusic }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusMainBasseLyrics }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseOneBasseLyrics }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
+        >>
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        <<
+          \set PianoStaff.instrumentName = #"Orgue"
+          \new Staff <<
             \sanctusGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \partcombine
             << \sanctusMainSopranoMusic >>
             << \sanctusMainAltoMusic >>
           >>
-          \new Staff  \with {
-            \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #5
-          }<<
+          \new Staff <<
             \sanctusGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \partcombine
@@ -373,17 +597,69 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     }
   }
   \bookpart {
-    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \paper {
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \fontsize #-2 \left-column {
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Anamnèse"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
     \score {
-      \layout{ ragged-last = ##f }
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
       \midi{}
       \new GrandStaff
       <<
-        \new ChoirStaff
+        \new ChoirStaff \with {
+        \override StaffGrouper.staff-staff-spacing = #'(
+                                (basic-distance . 0)
+                                (padding . 0))
+        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
+      }
         <<
           \new Staff \with {instrumentName = "Intonation" }
           <<
@@ -443,7 +719,8 @@ silence = #(define-music-function (parser location arg) (ly:music?)
             \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
           >>
         >>
-        \new PianoStaff <<
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        <<
           \new Staff <<
             \override Staff.VerticalAxisGroup.remove-empty = ##t
             \override Staff.VerticalAxisGroup.remove-first = ##t
@@ -475,10 +752,39 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     }
   }
   \bookpart {
-    \paper { bookTitleMarkup = \markup { \fill-line { \fontsize #8 \fromproperty #'header:piece } } }
+    \paper {
+      bookTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \right-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:piece
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \fontsize #-2 \left-column {
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    }
+    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Agnus"
-      copyright=""
+      subtitle = "Petite messe de Saint Vincent de Paul"
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
     }
 
     \markup { \vspace #2 }
@@ -488,38 +794,62 @@ silence = #(define-music-function (parser location arg) (ly:music?)
     \markup { "   avec le chœur en polyphonie" }
 
     \score {
-      \layout{ ragged-last = ##f }
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+      }
       \midi{}
       \new GrandStaff
       <<
-        \new ChoirStaff
+        \new ChoirStaff \with {
+        \override StaffGrouper.staff-staff-spacing = #'(
+                                (basic-distance . 0)
+                                (padding . 0))
+        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
+      }
         <<
-          \new Staff \with { instrumentName = "Soprano" }
+          \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
           <<
             \agnusGlobal \clef treble
             \new Voice = "agnusSoprano" { \agnusSopranoMusic }
             \new Lyrics \lyricsto "agnusSoprano" { \agnusSopranoLyrics }
           >>
-          \new Staff \with { instrumentName = "Alto" }
+          \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
           <<
             \agnusGlobal \clef treble
             \new Voice = "agnusAlto" { \agnusAltoMusic }
             \new Lyrics \lyricsto "agnusAlto" { \agnusAltoLyrics }
           >>
-          \new Staff \with { instrumentName = "Ténor" }
+          \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
           <<
             \agnusGlobal \clef "treble_8"
             \new Voice = "agnusTenor" { \agnusTenorMusic }
             \new Lyrics \lyricsto "agnusTenor" { \agnusTenorLyrics }
           >>
-          \new Staff \with { instrumentName = "Basse" }
+          \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
           <<
             \agnusGlobal \clef bass
             \new Voice = "agnusBasse" { \agnusBasseMusic }
             \new Lyrics \lyricsto "agnusBasse" { \agnusBasseLyrics }
           >>
         >>
-        \new PianoStaff <<
+        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        <<
           \new Staff <<
             \clef treble
             \set Staff.printPartCombineTexts = ##f
