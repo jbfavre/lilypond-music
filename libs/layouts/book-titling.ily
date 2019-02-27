@@ -124,15 +124,16 @@
     \fill-line { \fontsize #8 \italic \fromproperty #'header:composer }
     \combine \null \vspace #1
     \fill-line { \fontsize #8 \italic \fromproperty #'header:poet }
+    \combine \null \vspace #1
+    \fill-line { \fontsize #0.3 \fromproperty #'header:date }
+    \combine \null \vspace #4
+    \fill-line { \postscript #"-30 0 moveto 60 0 rlineto stroke" }
     \combine \null \vspace #4
     \fill-line { \fontsize #10 \fromproperty #'header:title }
-    \combine \null \vspace #1
+    \combine \null \vspace #4
+    \fill-line { \postscript #"-30 0 moveto 60 0 rlineto stroke" }
+    \combine \null \vspace #4
     \fill-line { \fontsize #4 \fromproperty #'header:subtitle }
-    \combine \null \vspace #4
-    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
-    \combine \null \vspace #4
-    \fill-line { \fontsize #5 \fromproperty #'header:date }
-    \combine \null \vspace #1 
     \fill-line {
       \when-property #'header:arrangement \column {
         \combine \null \vspace #5
