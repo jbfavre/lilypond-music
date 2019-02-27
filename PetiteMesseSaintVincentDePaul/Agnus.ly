@@ -17,7 +17,7 @@ agnusSolistMusic = \relative c' {
     \agnusSolistCommonMusic
     \mark \default
     % mesure 9: 0'24
-    \repeat volta 2 { g2 (c4) bf bf (g) af2 }
+    \repeat volta 2 { g2 (c4) bf bf (g) af2 \break }
     \alternative {
       { bf4 (af g f4) | g1 }
       { bf4 (af g e4) | f1 }

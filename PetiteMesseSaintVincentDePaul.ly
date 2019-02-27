@@ -3,8 +3,6 @@
 \include "libs/commonFunctions.ily"
 \include "libs/settings.ily"
 \include "libs/translations/fr.ily"
-\include "book-titling.ily"
-
 pianoProperties = {
     %options pour Lilypond 2.18.2 et suivantes
     \hide PhrasingSlur
@@ -18,7 +16,10 @@ pianoProperties = {
     \override InstrumentName #'font-name = #"Monospace Regular"
     \autoBeamOn
   }
+tagline = ""
+staffCustomSize = 12
 
+\include "libs/layouts/book-titling.ily"
 blankPage = {
     \pageBreak
     \stopStaff
@@ -35,74 +36,22 @@ blankPage = {
     \pageBreak
   }
 
-tagline = ""
-staffCustomSize = 12
-
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
-
-silence = #(define-music-function (parser location arg) (ly:music?)
-             (map-some-music
-               (lambda (m)
-                  (and (music-is-of-type? m 'note-event)
-                       (make-music 'SkipEvent m)))
-               arg))
-
-\paper {
-  left-margin = \leftMargin
-  right-margin = \rightMargin
-  top-margin = \topMargin
-  bottom-margin = \bottomMargin
-
-  top-markup-spacing = \topToMarkupSpacing
-  top-system-spacing = \topToSystemSpacing
-  markup-system-spacing = \markupToSystemSpacing
-  system-system-spacing = \systemToSystemSpacing
-  score-markup-spacing = \scoreMarkupSpacing
-
-  two-sided = \twoSided
-  inner-margin = \innerMargin
-  outer-margin = \outerMargin
-
-
-  #(define fonts
-    (set-global-fonts
-     #:music fontMusic
-     #:brace fontBrace
-     #:roman fontRoman
-     #:sans fontSans
-     #:typewriter fontTypewriter
-     #:factor (/ staff-height pt fontFactor)
-    ))
-
-  % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
-  #(include-special-characters)
-
-  ragged-last-bottom = ##f
-  ragged-bottom = ##f
-}
-
+\include "libs/layouts/commonLayout.ily"
 \book {
   \header {
     title = \markup {
       \override #'(font-name . "Latin Modern Sans")
-      \center-column {
-        "Petite messe"
-        "de"
-        "Saint Vincent de Paul"
-      }
+      \center-column { "Petite messe" "de" "Saint Vincent de Paul" }
     }
     subtitle = \markup {
       \override #'(font-name . "Latin Modern Sans")
-      \center-column {
-        "Pour soliste et chœur à 3 voix"
-        "ou"
-        "chœur à 4 voix"
-      }
+      \center-column { "Pour soliste et chœur à 3 voix" "ou" "chœur à 4 voix" }
     }
     composer = "Jean Baptiste Favre"
     date = \markup {
@@ -113,10 +62,8 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       "Reproduction interdite sans l'accord explicite de l'auteur"
     }
   }
-  \useRehearsalNumbers ##f
-  % Cover page
+  % Add BlankPage to mimic Cover page
   \blankPage
-  \pageBreak
 
   \bookpart {
     \paper {
@@ -143,7 +90,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Kyrie"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -152,10 +98,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       poet = "AELF"
       copyright = ""
     }
-    \markup { \vspace #2 }
-    \markup { "Chaque phrase est chantée une première fois par le soliste," }
-    \markup { "    éventuellement accompagné du chœur " \bold "à l'unisson." }
-    \markup { "Elle est ensuite reprise en polyphonie, l'assemblée chantant la voix de soliste" }
     \score {
       \layout {
         ragged-last = ##f
@@ -228,6 +170,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
+%{
   \bookpart {
     \paper {
       bookTitleMarkup = \markup \columns {
@@ -254,7 +197,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Gloria"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -373,6 +315,7 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       >>
     }
   }
+%}
   \bookpart {
     \paper {
       bookTitleMarkup = \markup \columns {
@@ -399,7 +342,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Prière universelle"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -408,7 +350,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       poet = "AELF"
       copyright = ""
     }
-    #(set-global-staff-size staffCustomSize)
     \score {
       \layout {
         ragged-last = ##f
@@ -507,7 +448,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Sanctus"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -622,7 +562,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Anamnèse"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -777,7 +716,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
           }
       }
     }
-    #(set-global-staff-size staffCustomSize)
     \header {
       piece = "Agnus"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -786,13 +724,6 @@ silence = #(define-music-function (parser location arg) (ly:music?)
       poet = "AELF"
       copyright = ""
     }
-
-    \markup { \vspace #2 }
-    \markup { "Le soliste peut chanter seul la lettre " \bold { "A" } "," }
-    \markup { "   éventuellement avec le chœur " \bold { "à l'unisson" } "." }
-    \markup { "Dans ce cas, l'assemblée ne chante que les lettres "\bold { "B" } "&" \bold { "C" } "," }
-    \markup { "   avec le chœur en polyphonie" }
-
     \score {
       \layout {
         ragged-last = ##f
