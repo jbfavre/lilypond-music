@@ -19,7 +19,7 @@ pianoProperties = {
 tagline = ""
 staffCustomSize = 15
 \include "libs/layouts/book-titling.ily"
-coverPage = {
+blankPage = {
     % Hide Staff, Key & Time signature symbols to get a blank page
     \once \override Staff.StaffSymbol #'stencil = ##f
     \once \override Staff.Clef #'transparent = ##t
@@ -53,10 +53,11 @@ coverPage = {
       "Reproduction interdite sans l'accord explicite de l'auteur"
     }
   }
+  \bookTitle "Petite messe de Saint Vincent de Paul"
   % Add BlankPage to mimic Cover page
-  \coverPage
+  \blankPage
+  % Ensure bookpart starts on page 2
   \pageBreak
-
   \bookpart {
     \paper {
       bookTitleMarkup = \markup \columns {
