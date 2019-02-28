@@ -109,6 +109,7 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
       \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
                                                       (basic-distance . 1)
@@ -215,6 +216,7 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
       \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
                                                       (basic-distance . 1)
@@ -359,6 +361,7 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
       \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
                                                       (basic-distance . 1)
@@ -464,6 +467,7 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
       \new ChoirStaff  \with {
         \override StaffGrouper.staff-staff-spacing = #'(
@@ -577,8 +581,8 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \midi{}
       \new GrandStaff
       <<
         \new ChoirStaff \with {
@@ -730,8 +734,8 @@ coverPage = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \midi{}
       \new GrandStaff
       <<
         \new ChoirStaff \with {
@@ -787,5 +791,3 @@ coverPage = {
     }
   }
 }
-\layout { ragged-last = ##f }
-\midi { }
