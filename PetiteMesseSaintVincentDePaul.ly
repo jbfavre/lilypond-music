@@ -178,17 +178,16 @@ blankPage = {
             \column {
               \line {
                 \right-column {
-                  \vspace #1.1
                   \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
                 }
               }
             }
             \column {
               \line {
-                \fontsize #-2 \left-column {
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
                   " "
                   \typewriter \italic \fromproperty #'header:dedication
                 }
@@ -323,17 +322,16 @@ blankPage = {
             \column {
               \line {
                 \right-column {
-                  \vspace #1.1
                   \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
                 }
               }
             }
             \column {
               \line {
-                \fontsize #-2 \left-column {
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
                   " "
                   \typewriter \italic \fromproperty #'header:dedication
                 }
@@ -429,17 +427,16 @@ blankPage = {
             \column {
               \line {
                 \right-column {
-                  \vspace #1.1
                   \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
                 }
               }
             }
             \column {
               \line {
-                \fontsize #-2 \left-column {
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
                   " "
                   \typewriter \italic \fromproperty #'header:dedication
                 }
@@ -543,17 +540,16 @@ blankPage = {
             \column {
               \line {
                 \right-column {
-                  \vspace #1.1
                   \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
                 }
               }
             }
             \column {
               \line {
-                \fontsize #-2 \left-column {
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
                   " "
                   \typewriter \italic \fromproperty #'header:dedication
                 }
@@ -697,17 +693,16 @@ blankPage = {
             \column {
               \line {
                 \right-column {
-                  \vspace #1.1
                   \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
                 }
               }
             }
             \column {
               \line {
-                \fontsize #-2 \left-column {
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                \left-column {
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
                   " "
                   \typewriter \italic \fromproperty #'header:dedication
                 }
