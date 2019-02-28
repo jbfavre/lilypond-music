@@ -17,23 +17,13 @@ pianoProperties = {
     \autoBeamOn
   }
 tagline = ""
-staffCustomSize = 12
-
+staffCustomSize = 15
 \include "libs/layouts/book-titling.ily"
-blankPage = {
-    \pageBreak
-    \stopStaff
-    \cadenzaOn
-    \once \override Score.BarNumber #'break-visibility = #all-invisible
+coverPage = {
+    % Hide Staff, Key & Time signature symbols to get a blank page
     \once \override Staff.StaffSymbol #'stencil = ##f
     \once \override Staff.Clef #'transparent = ##t
-    \bar ""
-    \once \override Staff.BarLine #'stencil = ##f
     \once \override Staff.TimeSignature #'stencil = ##f
-    \once \override Staff.KeySignature #'stencil = ##f
-    \cadenzaOff
-    \startStaff
-    \pageBreak
   }
 
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
@@ -43,6 +33,7 @@ blankPage = {
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 \include "libs/layouts/commonLayout.ily"
+#(set-global-staff-size staffCustomSize)
 \book {
   \header {
     title = \markup {
@@ -63,7 +54,8 @@ blankPage = {
     }
   }
   % Add BlankPage to mimic Cover page
-  \blankPage
+  \coverPage
+  \pageBreak
 
   \bookpart {
     \paper {
