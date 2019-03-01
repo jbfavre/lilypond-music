@@ -11,7 +11,7 @@ partition = {
     \new ChoirStaff <<
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
-        \new Voice = "Sop" { \marqueAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
+        \new Voice = "Sop" { \markAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
       \new Staff <<
@@ -33,7 +33,7 @@ partition = {
       {
         \set ChoirStaff.connectArpeggios = ##t
         \override ChoirStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
-        \set Staff.shortInstrumentName = \markup { \right-column { "S." "A." } }
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
         \clef treble
@@ -44,7 +44,7 @@ partition = {
             \tag #'visuel \sopranoVerseMusic
             \tag #'audio <<\sopranoVerseMusic \\ \pisteTempoVerse>>
           }
-          \new Lyrics \lyricsto "sopranoVerseVoice" { \sopranoVerseRepons \sopranoVerseRepons }
+          \new Lyrics \lyricsto "sopranoVerseVoice" { \sopranoVerseRepons }
           \new Voice = "altoVerseVoice" {
             \voiceTwo { \silence \sopranoAntiphonMusic }
             \tag #'visuel \altoVerseMusic
@@ -57,7 +57,7 @@ partition = {
       {
         \set ChoirStaff.connectArpeggios = ##t
         \override ChoirStaff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
-        \set Staff.shortInstrumentName = \markup { \right-column { "T." "B." } }
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
         \clef bass
@@ -82,13 +82,12 @@ partition = {
 }
 
 %%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
+#(set-global-staff-size staffCustomSize)
 \bookpart {
-  #(set-global-staff-size staffCustomSize)
   \score {
     \keepWithTag #'visuel \partition
     \layout {
         ragged-last = ##f
-        % retrait pour les noms courts de voix
         short-indent = 0.8\cm
         \context {
             \Staff
@@ -105,6 +104,7 @@ partition = {
             \consists "Horizontal_bracket_engraver"
         }
         \override LyricText #'font-name = #"Latin Modern Sans"
+        \override Score.RehearsalMark.font-family = #'typewriter
     }
     \header {
       title = \title

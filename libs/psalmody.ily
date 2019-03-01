@@ -1,4 +1,5 @@
 \version "2.18.2"
+verseLyricsFontSize = 3
 % Set antiphon tempo
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
@@ -28,12 +29,8 @@ startPsalmody={
   \accidentalStyle "forget"
 }
 
-% il faudra retirer les décalages (extra-offset) le jour où on compile avec 2.18.2
-% le bug de positionnement des marques a été résolu dans 2.18.2
-marqueAntiphon = { \once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \antiphonText }}}
-markPsalmody = {\once \override Score.RehearsalMark #'extra-offset = #'( 0 . 0)
-                   \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseText }} }
+markAntiphon = { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \antiphonText }}}
+markPsalmody = { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseText }} }
 
 % on est obligés de déplacer les définitions ici, car plus tard c'est trop tard, le
 % script accrocheParoles.ly se retrouve dans le bloc \bookpart { \score { . } }

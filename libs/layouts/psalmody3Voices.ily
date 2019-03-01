@@ -8,7 +8,7 @@ partition = {
     \new ChoirStaff <<
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
-        \new Voice = "Sop" { \marqueAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
+        \new Voice = "Sop" { \markAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
       \new Staff <<

@@ -9,7 +9,7 @@ partition = {
       \new Staff = "Soprano" <<
         \set Staff.instrumentName = \sopranoVoiceTitle
         \set Staff.shortInstrumentName = \markup { \right-column { \sopranoVoiceTitle } }
-        \new Voice = "Sop" { \override Stem.direction = #UP   \marqueAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
+        \new Voice = "Sop" { \override Stem.direction = #UP   \markAntiphon \clef "treble" \global \tempoAntiphon \sopranoAntiphonMusic }
         \new Voice = "Alt" { \override Stem.direction = #DOWN                                \global \tempoAntiphon \altoAntiphonMusic }
         \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
       >>
