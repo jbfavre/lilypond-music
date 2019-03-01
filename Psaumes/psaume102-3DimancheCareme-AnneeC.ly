@@ -14,7 +14,6 @@ title = "Psaume 102-3"
 subtitle = "3e dimanche de Carême - Année C"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, février 2019"
-staffCustomSize = 17
 
 global = {
   \key f \major
@@ -138,6 +137,16 @@ verseHarmony = \figuremode {
   et te guérit de to_u_te maladie ;
   il réclame ta v_i_e à la tombe
   et te couronne d’amo_u_r et de tendresse.
+
+  Le Seigneur fait œ_u_vre de justice,
+  il défend le dr_o_it des opprimés.
+  Il révèle ses desse_i_ns à Moïse,
+  aux enfants d’Isra_ë_l ses hauts faits.
+
+  Le Seigneur est tendr_e_sse et pitié,
+  lent à la col_è_re et plein d’amour ;
+  Comme le ci_e_l domine la terre,
+  fort est son am_o_ur pour qui le craint.
 
 %}
 
