@@ -1,8 +1,27 @@
 \version "2.18.2"
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Include each part of the Petite Messe de Saint Vincent de Paul
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
+\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
+\include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
+\include "PetiteMesseSaintVincentDePaul/Agnus.ly"
+\include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
+\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Book definition
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Include common files
 \include "libs/commonFunctions.ily"
 \include "libs/settings.ily"
 \include "libs/translations/fr.ily"
+\include "libs/layouts/book-titling.ily"
+\include "libs/layouts/commonLayout.ily"
+
+%%%%% Override custom variables
 pianoProperties = {
     %options pour Lilypond 2.18.2 et suivantes
     \hide PhrasingSlur
@@ -18,7 +37,6 @@ pianoProperties = {
   }
 tagline = ""
 staffCustomSize = 15
-\include "libs/layouts/book-titling.ily"
 blankPage = {
     % Hide Staff, Key & Time signature symbols to get a blank page
     \once \override Staff.StaffSymbol #'stencil = ##f
@@ -26,15 +44,8 @@ blankPage = {
     \once \override Staff.TimeSignature #'stencil = ##f
   }
 
-\include "libs/layouts/commonLayout.ily"
+%%%%% Define book
 #(set-global-staff-size staffCustomSize)
-
-\include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
-\include "PetiteMesseSaintVincentDePaul/Gloria.ly"
-\include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
-\include "PetiteMesseSaintVincentDePaul/Agnus.ly"
-\include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
-\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 \book {
   \header {
     title = \markup {
@@ -59,30 +70,7 @@ blankPage = {
   % Ensure bookpart starts on page 2
   \pageBreak
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Kyrie"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -166,30 +154,7 @@ blankPage = {
   }
 %{
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Gloria"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -311,30 +276,7 @@ blankPage = {
   }
 %}
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Prière universelle"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -417,30 +359,7 @@ blankPage = {
     }
   }
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Sanctus"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -531,30 +450,7 @@ blankPage = {
     }
   }
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Anamnèse"
       subtitle = "Petite messe de Saint Vincent de Paul"
@@ -684,30 +580,7 @@ blankPage = {
     }
   }
   \bookpart {
-    \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    }
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
       piece = "Agnus"
       subtitle = "Petite messe de Saint Vincent de Paul"
