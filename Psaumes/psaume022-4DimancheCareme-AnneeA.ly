@@ -140,8 +140,8 @@ bassVerseMusic = \relative c {
 %}
 
 verseLyrics = \markuplist {
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 3)
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
   \fill-line {
     \hspace #.1
     \column{

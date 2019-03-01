@@ -40,7 +40,8 @@ sopranoAntiphonMusic = \relative c' {
              d,8  d8. f16 g8 a bf c d8. c16 bf8 c4 f,8 bf a g f4 d8 f8 e4 d4.
   \bar "|." \break
   }
-
+altoAntiphonMusic =  \relative c {}
+tenorAntiphonMusic =  \relative c {}
 bassAntiphonMusic =  \relative c {
   \partial 8 d8 | d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 d d4 a
              d8 | d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 a8 a4 d4.
@@ -67,6 +68,8 @@ sopranoVerseMusic = \relative c'' {
     \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando g4 a \bar "||" \caesura
     \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando g4 f e d \bar "||"
   }
+altoVerseMusic = \relative c {}
+tenorVerseMusic = \relative c {}
 bassVerseMusic = \relative c {
     \caesura \cadenzaOn 
     \tempoVerseAcelerando d\breve f1 \tempoVerseRallentando g4 a \caesura
@@ -105,7 +108,7 @@ bassVerseMusic = \relative c {
 %}
 
 verseLyrics = \markuplist {
-  \override #'(font-name . "Latin Modern Sans")
+  \override #'(font-family . sans)
   \override #'(font-size . 2)
   \fill-line {
     \hspace #0.0001

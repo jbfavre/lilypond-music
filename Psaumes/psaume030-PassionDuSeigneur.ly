@@ -155,8 +155,8 @@ verseLyrics = \markuplist {
   }
   \vspace #5
   \fill-line {
-    \override #'(font-name . "Latin Modern Sans")
-    \override #'(font-size . 2)
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
     \column { \concat { \underline "Consignes d'exécution" "&nbsp;:" } }
     \hspace #1
     \override #'(font-name . "Latin Modern Sans")

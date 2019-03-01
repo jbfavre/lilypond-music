@@ -111,8 +111,8 @@ rendez grâce en rappelant son n_o_m très saint.
 %}
 
 verseLyrics = \markup {
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 3)
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
   \fill-line {
     \left-column{
       " "
