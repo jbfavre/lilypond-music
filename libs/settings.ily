@@ -78,4 +78,5 @@ fontRoman = "Latin Modern Roman"
 fontSans = "Latin Modern Sans"
 fontTypewriter = "Monospace Regular"
 fontFactor = 20 % unnecessary if the staff size is default
+
 sopranoVerseRepons=\lyricmode {}

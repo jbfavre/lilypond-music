@@ -1,5 +1,4 @@
 \version "2.18.2"
-verseLyricsFontSize = 3
 % Set antiphon tempo
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
