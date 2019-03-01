@@ -118,19 +118,6 @@ bassVerseMusic = \relative c' {
     \cadenzaOff gs'8[ fs] b,[ cs] ds4 gs, % Répons de l'assemblée
    }
 
-groupedVersesLyrics = <<
->>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
 \include "../libs/defaultPianoSettings.ly"
 \include "../libs/layouts/commonPiano.ily"
 

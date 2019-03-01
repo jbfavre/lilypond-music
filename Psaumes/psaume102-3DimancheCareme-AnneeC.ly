@@ -110,22 +110,6 @@ bassVerseMusic = \relative c {
     bf\breve g1 a4 \caesura
   }
 
-groupedVersesLyrics = <<
->>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-
 %{
 
   Bénis le Seigne_u_r, ô mon âme,
@@ -180,10 +164,14 @@ verseLyrics = \markup {
   }
 }
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"

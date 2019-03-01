@@ -87,18 +87,6 @@ tenorVerseMusic = \relative c' {
 
 bassVerseMusic = \relative c {
   }
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
 
 %{
 
@@ -157,12 +145,14 @@ verseLyrics = \markup {
   }
 }
 
-groupedVersesLyrics = <<
->>
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"

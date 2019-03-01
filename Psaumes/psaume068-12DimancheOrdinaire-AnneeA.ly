@@ -114,22 +114,6 @@ bassVerseMusic = \relative c {
     \tempoVerseAcelerando c\breve cs1 \tempoVerseRallentando a4 e' d \bar "|." \caesura
   }
 
-groupedVersesLyrics = <<
->>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-
 %{
 
   C’est pour toi que j’end_u_re l’insulte,
@@ -186,10 +170,14 @@ verseLyrics = \markup {
   }
 }
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"

@@ -88,22 +88,6 @@ bassVerseMusic = \relative c {
     \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando a4 a d \caesura
    }
 
-groupedVersesLyrics = <<
->>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-
 %{
 
 En toi, Seigneur, j’ai mon refuge ;
@@ -135,8 +119,8 @@ vous tous qui espérez le Seigneur !
 
 verseLyrics = \markuplist {
   \vspace #1
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 3)
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
   \fill-line {
     \hspace #1
     \column{
@@ -187,6 +171,11 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"

@@ -112,22 +112,6 @@ bassVerseMusic = \relative c {
     c\breve d1 b4 e4 e4
   }
 
-groupedVersesLyrics = <<
-  >>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-
 %{
   Le Seigneur est m_o_n berg_e_r,
   je ne m_a_nque de r_i_en,
@@ -197,6 +181,11 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
-%\include "../libs/layouts/outputMidi.ily"
+% Load midi output
+\include "../libs/layouts/outputMidi.ily"

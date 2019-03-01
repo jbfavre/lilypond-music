@@ -112,13 +112,6 @@ bassVerseMusic = \relative c {
     b\breve a1 a4 <d! d,!>4
   }
 
-groupedVersesLyrics = <<
-  >>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
 %{
 figuredBass = \figuremode {
     <5>4 <6 4> <5 7> <5 6> <5 _+>2
@@ -128,12 +121,7 @@ harmony = \figuremode {
     <I>4 <III> <I> <VI> <V>2
     <IV>4 <VI> <VII>2 <V>4 <IV> <I>2
   }
-%}
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-%{
+
 verseFiguredBass = \figuremode {
     <5>\breve <6 4>1 <6 5>4 <7> <5 _+>2
     <5>\breve <5>1 <5>4 <7> <5 _+>2
@@ -147,8 +135,6 @@ verseHarmony = \figuremode {
     <V>\breve <I>1 <IV>4 <V> <I>2
   }
 %}
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
 
 %{
 
@@ -197,8 +183,11 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"
-
-

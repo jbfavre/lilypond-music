@@ -106,38 +106,22 @@ bassVerseMusic = \relative c' {
     \tempoVerseAcelerando c\breve b8 a1 \tempoVerseRallentando e'4 c cs8 (d) g,4 \bar "||"
    }
 
-groupedVersesLyrics = <<
->>
-
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
-
-\include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-
 %{
 
-Rendez grâce au Seigne_u_r : Il est bon !
-Étern_e_l est son amour !
-Oui, que le d_i_se Israël :
-Étern_e_l est son amour !
-
-Le bras du Seigne_u_r se lève,
-le bras du Seigne_u_r est fort !
-Non, je ne mourrai p_a_s, je vivrai
-pour annoncer les acti_o_ns du Seigneur.
-
-La pierre qu’ont rejet_é_e les bâtisseurs
-est deven_u_e la pierre d’angle :
-c’est là l’œ_u_vre du Seigneur,
-la merv_e_ille devant nos yeux.
+  Rendez grâce au Seigne_u_r : Il est bon !
+  Étern_e_l est son amour !
+  Oui, que le d_i_se Israël :
+  Étern_e_l est son amour !
+  
+  Le bras du Seigne_u_r se lève,
+  le bras du Seigne_u_r est fort !
+  Non, je ne mourrai p_a_s, je vivrai
+  pour annoncer les acti_o_ns du Seigneur.
+  
+  La pierre qu’ont rejet_é_e les bâtisseurs
+  est deven_u_e la pierre d’angle :
+  c’est là l’œ_u_vre du Seigneur,
+  la merv_e_ille devant nos yeux.
 
 %}
 
@@ -167,6 +151,11 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
+% Load midi output
 \include "../libs/layouts/outputMidi.ily"

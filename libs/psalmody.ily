@@ -31,6 +31,20 @@ startPsalmody={
 markAntiphon = { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \antiphonText }}}
 markPsalmody = { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps \verseText }} }
 
+
+groupedVersesLyrics = <<
+>>
+
+figuredBass = \figuremode {
+  }
+harmony = \figuremode {
+  }
+
+verseFiguredBass = \figuremode {
+  }
+verseHarmony = \figuremode {
+  }
+
 % on est obligés de déplacer les définitions ici, car plus tard c'est trop tard, le
 % script accrocheParoles.ly se retrouve dans le bloc \bookpart { \score { . } }
 % où plus aucune définition n'est possible :'(
