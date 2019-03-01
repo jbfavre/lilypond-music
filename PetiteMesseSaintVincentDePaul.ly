@@ -26,14 +26,15 @@ blankPage = {
     \once \override Staff.TimeSignature #'stencil = ##f
   }
 
+\include "libs/layouts/commonLayout.ily"
+#(set-global-staff-size staffCustomSize)
+
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
-\include "libs/layouts/commonLayout.ily"
-#(set-global-staff-size staffCustomSize)
 \book {
   \header {
     title = \markup {
@@ -53,7 +54,6 @@ blankPage = {
       "Reproduction interdite sans l'accord explicite de l'auteur"
     }
   }
-  \bookTitle "Petite messe de Saint Vincent de Paul"
   % Add BlankPage to mimic Cover page
   \blankPage
   % Ensure bookpart starts on page 2
