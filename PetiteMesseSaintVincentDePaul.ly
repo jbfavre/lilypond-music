@@ -5,10 +5,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ly"
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
+\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
-\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Book definition
@@ -33,6 +33,9 @@ pianoProperties = {
     \override StaffSymbol #'staff-space = #(magstep -1)
     \override Hairpin #'style = #'none
     \override InstrumentName #'font-name = #"Monospace Regular"
+    \override StaffGrouper.staff-staff-spacing = #'(
+                            (basic-distance . 1)
+                            (padding . 1))
     \autoBeamOn
   }
 tagline = ""
@@ -97,42 +100,43 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
-                                                      (basic-distance . 1)
-                                                      (padding . 0))
-                              \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #'(
-                                                      (basic-distance . 1)
-                                                      (padding . 0))
-                            }
+      \new ChoirStaff \with {
+        \override StaffGrouper.staff-staff-spacing = #'(
+                                (basic-distance . 1)
+                                (padding . 1))
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+                                (basic-distance . 5)
+                                (padding . 5))
+      }
       <<
-        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
+        \new Staff \with { instrumentName = \sopranoVoiceTitle shortInstrumentName = \sopranoVoiceShortTitle }
         <<
           \kyrieGlobal \clef treble
           \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
           \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
         >>
-        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        \new Staff \with { instrumentName = \altoVoiceTitle shortInstrumentName = \altoVoiceShortTitle }
         <<
           \kyrieGlobal \clef treble
           \new Voice = "kyrieAlto" { \kyrieAltoMusic }
           \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
         >>
-        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        \new Staff \with { instrumentName = \tenorVoiceTitle shortInstrumentName = \tenorVoiceShortTitle }
         <<
           \kyrieGlobal \clef "treble_8"
           \new Voice = "kyrieTenor" { \kyrieTenorMusic }
           \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
         >>
-        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        \new Staff \with { instrumentName = \bassVoiceTitle shortInstrumentName = \bassVoiceShortTitle }
         <<
           \kyrieGlobal \clef bass
           \new Voice = "kyrieBasse" { \kyrieBasseMusic }
           \new Lyrics \lyricsto "kyrieBasse" { \kyrieBasseLyrics }
         >>
-        \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        \new PianoStaff \with { \pianoProperties instrumentName = \organVoiceTitle shortInstrumentName = \organVoiceShortTitle }
         <<
           \new Staff <<
             \kyrieGlobal \clef treble
@@ -181,7 +185,7 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
       \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
@@ -303,14 +307,10 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \new ChoirStaff \with { \override StaffGrouper.staff-staff-spacing = #'(
-                                                      (basic-distance . 1)
-                                                      (padding . 0))
-                              \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
-                            }
+      \new ChoirStaff
       <<
         \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
@@ -386,15 +386,10 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \new ChoirStaff  \with {
-        \override StaffGrouper.staff-staff-spacing = #'(
-                                (basic-distance . 0)
-                                (padding . 0))
-        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
-      }
+      \new ChoirStaff
       <<
         \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
@@ -477,75 +472,51 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \new GrandStaff
+      \new ChoirStaff
       <<
-        \new ChoirStaff \with {
-        \override StaffGrouper.staff-staff-spacing = #'(
-                                (basic-distance . 0)
-                                (padding . 0))
-        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
-      }
+        \new Staff \with {instrumentName = "Intonation" }
         <<
-          \new Staff \with {instrumentName = "Intonation" }
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \anamneseGlobal \clef treble
-            \new Voice = "anamneseIntonation" {
-              \anamneseIntonationMusic
-            }
-            \new Lyrics \lyricsto "anamneseIntonation" { \anamneseIntonationLyrics }
-          >>
-          \new Staff
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \anamneseGlobal \clef treble
-            \new Voice = "anamneseSoprano" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
-              \silence \anamneseIntonationMusic
-              \tag #'visuel \anamneseMainSopranoMusic
-            }
-            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
-          >>
-          \new Staff
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \anamneseGlobal \clef treble
-            \new Voice = "anamneseAlto" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
-              \silence \anamneseIntonationMusic
-              \tag #'visuel \anamneseMainAltoMusic
-            }
-            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
-          >>
-          \new Staff
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \anamneseGlobal \clef "treble_8"
-            \new Voice = "anamneseTenor" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
-              \silence \anamneseIntonationMusic
-              \tag #'visuel \anamneseMainTenorMusic
-            }
-            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
-          >>
-          \new Staff
-          <<
-            \override Staff.VerticalAxisGroup.remove-empty = ##t
-            \override Staff.VerticalAxisGroup.remove-first = ##t
-            \anamneseGlobal \clef bass
-            \new Voice = "anamneseBasse" {
-              \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
-              \silence \anamneseIntonationMusic
-              \tag #'visuel \anamneseMainBasseMusic
-            }
-            \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
-          >>
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \anamneseGlobal \clef treble
+          \new Voice = "anamneseIntonation" {
+            \anamneseIntonationMusic
+          }
+          \new Lyrics \lyricsto "anamneseIntonation" { \anamneseIntonationLyrics }
+        >>
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
+        <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \anamneseGlobal \clef treble
+          \new Voice = "anamneseSoprano" { \silence \anamneseIntonationMusic \anamneseMainSopranoMusic }
+          \new Lyrics \lyricsto "anamneseSoprano" { \anamneseMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \anamneseGlobal \clef treble
+          \new Voice = "anamneseAlto" { \silence \anamneseIntonationMusic \anamneseMainAltoMusic }
+          \new Lyrics \lyricsto "anamneseAlto" { \anamneseMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \anamneseGlobal \clef "treble_8"
+          \new Voice = "anamneseTenor" { \silence \anamneseIntonationMusic \anamneseMainTenorMusic }
+          \new Lyrics \lyricsto "anamneseTenor" { \anamneseMainSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \anamneseGlobal \clef bass
+          \new Voice = "anamneseBasse" { \silence \anamneseIntonationMusic \anamneseMainBasseMusic }
+          \new Lyrics \lyricsto "anamneseBasse" { \anamneseMainSopranoLyrics }
         >>
         \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
         <<
@@ -577,6 +548,7 @@ blankPage = {
           >>
         >>
       >>
+
     }
   }
   \bookpart {
@@ -607,42 +579,34 @@ blankPage = {
             \Voice
             \consists "Horizontal_bracket_engraver"
         }
-        \override LyricText #'font-name = #"Latin Modern Sans"
+        \override LyricText #'font-family = #'sans
         \override Score.RehearsalMark.font-family = #'typewriter
       }
-      \new GrandStaff
+      \new ChoirStaff
       <<
-        \new ChoirStaff \with {
-        \override StaffGrouper.staff-staff-spacing = #'(
-                                (basic-distance . 0)
-                                (padding . 0))
-        \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #1
-      }
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
-          \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
-          <<
-            \agnusGlobal \clef treble
-            \new Voice = "agnusSoprano" { \agnusSopranoMusic }
-            \new Lyrics \lyricsto "agnusSoprano" { \agnusSopranoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
-          <<
-            \agnusGlobal \clef treble
-            \new Voice = "agnusAlto" { \agnusAltoMusic }
-            \new Lyrics \lyricsto "agnusAlto" { \agnusAltoLyrics }
-          >>
-          \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
-          <<
-            \agnusGlobal \clef "treble_8"
-            \new Voice = "agnusTenor" { \agnusTenorMusic }
-            \new Lyrics \lyricsto "agnusTenor" { \agnusTenorLyrics }
-          >>
-          \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
-          <<
-            \agnusGlobal \clef bass
-            \new Voice = "agnusBasse" { \agnusBasseMusic }
-            \new Lyrics \lyricsto "agnusBasse" { \agnusBasseLyrics }
-          >>
+          \agnusGlobal \clef treble
+          \new Voice = "agnusSoprano" { \agnusSopranoMusic }
+          \new Lyrics \lyricsto "agnusSoprano" { \agnusSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \agnusGlobal \clef treble
+          \new Voice = "agnusAlto" { \agnusAltoMusic }
+          \new Lyrics \lyricsto "agnusAlto" { \agnusAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \agnusGlobal \clef "treble_8"
+          \new Voice = "agnusTenor" { \agnusTenorMusic }
+          \new Lyrics \lyricsto "agnusTenor" { \agnusTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \agnusGlobal \clef bass
+          \new Voice = "agnusBasse" { \agnusBasseMusic }
+          \new Lyrics \lyricsto "agnusBasse" { \agnusBasseLyrics }
         >>
         \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
         <<

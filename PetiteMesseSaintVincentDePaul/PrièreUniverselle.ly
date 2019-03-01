@@ -8,8 +8,11 @@ puGlobal = {
 }
 
 puMainSopranoMusic = \relative c' {
+  \mark \default
   f4 g af af g g f2 \break
+  \mark \default
   af4 bf c c bf af g2 \break
+  \mark \default
   f4 g af2 g4 f f2 \break
 }
 
