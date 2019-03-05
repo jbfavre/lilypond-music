@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 21"
-subtitle = "Dimanche des Rameaux et de la Passion du Seigneur - Année C"
+subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur - Année C" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, mars 2019"
 
@@ -51,14 +51,23 @@ altoAntiphonMusic = \relative c'' {
 
 tenorAntiphonMusic =  \relative c' {
   \partial 4
-  r4 r4 d4 e4 bf4 d4 r4 c2 df c4 (ef) d4. c8 bf2 \fermata
+  d4 e4 r2 bf4 d4 r4 c2 df c4 (ef) d4. c8 bf2 \fermata
   \bar "|."
   }
 
 bassAntiphonMusic =  \relative c' {
   \partial 4
-  r4 r4 g4 g e fs r4 fs2 ef c4 (a) d4 d <g g,>2 \fermata
+  g4 g r2 e4 fs r4 fs2 ef c4 (a) d4 d <g g,>2 \fermata
   \bar "|."
+  }
+
+figuredBass = \figuremode {
+    <5>4 <"?">2. <"?">4 <6 5>2
+    <6 5>2 <7 "+">2 <7>4 <5/>4 <5 4>4 <7 _+>4 <5>2
+  }
+harmony = \figuremode {
+    <I>4 <I>2. <I>4 <V>2
+    <V>2 <V>2 <IV>4 <IV>4 <V>4 <V>4 <I>2
   }
 
 antiphonLyrics = \lyricmode {
@@ -82,34 +91,34 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||" \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||" \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||" \caesura
-    \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||" \caesura
+    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando bf4 \bar "||" \caesura
+    \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando cs4 \bar "||" \caesura
+    \tempoVerseAcelerando c\breve bf1 \tempoVerseRallentando a4 \bar "||" \caesura
   }
 
-altoVerseMusic = \relative c' {
+altoVerseMusic = \relative c'' {
     \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
+    g\breve ef1 ef4 \caesura
+    fs\breve fs1 g4 \caesura
+    g\breve g1 a4 \caesura
+    fs\breve d1 fs4 \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
+    d\breve bf1 c4 \caesura
+    c\breve d1 d4 \caesura
+    bf\breve d1 a4 \caesura
+    a\breve g1 a4 \caesura
   }
 
-bassVerseMusic = \relative c {
+bassVerseMusic = \relative c' {
     \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
-    s\breve s1 s4 \caesura
+    g\breve g1 g4 \caesura
+    fs\breve d1 g4 \caesura
+    g\breve ef1 e4 \caesura
+    d\breve ef1 d4 \caesura
   }
 
 %{
