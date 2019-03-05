@@ -4,7 +4,7 @@ scoreTitleMarkupSetting = \markup \columns {
   \fill-line {
       \column {
         \line {
-          \right-column {
+          \left-column {
             \vspace #1.1
             \fontsize #7 \sans \fromproperty #'header:title
             \fontsize #1 \typewriter \fromproperty #'header:subtitle
@@ -13,7 +13,8 @@ scoreTitleMarkupSetting = \markup \columns {
       }
       \column {
         \line {
-          \fontsize #-2 \left-column {
+          \fontsize #-2
+          \left-column {
             \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
             \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
             " "
