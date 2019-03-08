@@ -77,7 +77,7 @@ antiphonLyrics = \lyricmode {
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \lyricmode {
-  E -- loï, E -- loï, lam -- ma sa -- bach -- ta -- ni&nbsp;?
+  E -- loï, E -- loï, la -- ma sa -- bach -- tha -- ni&nbsp;?
 }
 bassAntiphonLyrics = \tenorAntiphonLyrics
 
@@ -100,7 +100,7 @@ sopranoVerseMusic = \relative c'' {
 altoVerseMusic = \relative c'' {
     \caesura
     g\breve ef1 ef4 \caesura
-    fs\breve fs1 g4 \caesura
+    fs\breve fs1 d4 \caesura
     g\breve g1 a4 \caesura
     fs\breve d1 fs4 \caesura
   }
@@ -108,7 +108,7 @@ altoVerseMusic = \relative c'' {
 tenorVerseMusic = \relative c' {
     \caesura
     d\breve bf1 c4 \caesura
-    c\breve d1 d4 \caesura
+    c\breve a1 bf4 \caesura
     bf\breve d1 a4 \caesura
     a\breve g1 a4 \caesura
   }
@@ -116,7 +116,7 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c' {
     \caesura
     g\breve g1 g4 \caesura
-    fs\breve d1 g4 \caesura
+    d\breve d1 g4 \caesura
     g\breve ef1 e4 \caesura
     d\breve ef1 d4 \caesura
   }
