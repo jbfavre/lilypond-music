@@ -235,6 +235,9 @@ altoVerseMusic = \transpose gs g { \altoVerseMusicOriginal}
 tenorVerseMusic = \transpose gs g { \tenorVerseMusicOriginal}
 bassVerseMusic = \transpose gs g { \bassVerseMusicOriginal}
 
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
