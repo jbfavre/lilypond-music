@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 103"
-subtitle = "Vigile Pascale"
+subtitle =  \markup { \column { "Vigile Pascale" "(forme directe)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, janvier 2018"
 
@@ -224,7 +224,7 @@ verseLyrics = \markuplist {
 \include "../libs/layouts/psalmody.ily"
 \include "../libs/layouts/outputMidi.ily"
 
-subtitle = "Vigile Pascale (version en sol mineur)"
+subtitle =  \markup { \column { "Vigile Pascale" "(forme directe, en sol mineur)" }}
 
 sopranoAntiphonMusic =  \transpose gs g { \sopranoAntiphonMusicOriginal }
 altoAntiphonMusic =  \transpose gs g { \altoAntiphonMusicOriginal}
