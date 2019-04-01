@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 21"
-subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur - Année C" }}
+subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur (forme responsoriale)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, mars 2019"
 
@@ -39,35 +39,35 @@ tempoVerseAcelerando = {
 
 sopranoAntiphonMusic = \relative c'' {
   \partial 4
-  d4 d r2 df4 c r2 a4 bf g ef a g fs g2 \fermata
+  d4 d2 r4 df4 c2 r4 c4 bf a g a g fs g2 \fermata
   \bar "|." \break
   }
 
-altoAntiphonMusic = \relative c'' {
+altoAntiphonMusic = \relative c' {
   \partial 4
-  bf4 bf r2 g4 a r2 d,4 g ef bf c a a d2 \fermata
+  d4 e2 r4 g4 a2 r4 a4 g ef ef c a a d2 \fermata
   \bar "|."
   }
 
 tenorAntiphonMusic =  \relative c' {
   \partial 4
-  d4 e4 r2 bf4 d4 r4 c2 df c4 (ef) d4. c8 bf2 \fermata
+  d4 bf2 r4 bf4 d2 \breathe d4 (d) df2 c4 (ef) d4. c8 bf2 \fermata
   \bar "|."
   }
 
-bassAntiphonMusic =  \relative c' {
+bassAntiphonMusic =  \relative c {
   \partial 4
-  g4 g r2 e4 fs r4 fs2 ef c4 (a) d4 d <g g,>2 \fermata
+  d4 g2 r4 e4 fs2 \breathe d4 (fs?) ef?2 c4 a d4 fs <g g,>2 \fermata
   \bar "|."
   }
 
 figuredBass = \figuremode {
-    <5>4 <"?">2. <"?">4 <6 5>2
-    <6 5>2 <7 "+">2 <7>4 <5/>4 <5 4>4 <7 _+>4 <5>2
+    <_>4 <6 5>2. <"?">4 <6 5>2
+    <6 5>2 <6 5>2 <7>4 <5/>4 <5 4>4 <7 _+>4 <5>2
   }
 harmony = \figuremode {
-    <I>4 <I>2. <I>4 <V>2
-    <V>2 <V>2 <IV>4 <IV>4 <V>4 <V>4 <I>2
+    <_>4 <I>2. <I>4 <V>2
+    <V>2 <VI>2 <IV>4 <IV>4 <V>4 <V>4 <I>2
   }
 
 antiphonLyrics = \lyricmode {
@@ -93,31 +93,31 @@ sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
     \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando bf4 \bar "||" \caesura
-    \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando cs4 \bar "||" \caesura
-    \tempoVerseAcelerando c\breve bf1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando c4 \bar "||" \caesura
+    \tempoVerseAcelerando c\breve bf1 \tempoVerseRallentando d4 \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c'' {
     \caesura
-    g\breve ef1 ef4 \caesura
+    g\breve e1 ef4 \caesura
     fs\breve fs1 d4 \caesura
     g\breve g1 a4 \caesura
-    fs\breve d1 fs4 \caesura
+    fs\breve g1 fs4 \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
     d\breve bf1 c4 \caesura
     c\breve a1 bf4 \caesura
-    bf\breve d1 a4 \caesura
-    a\breve g1 a4 \caesura
+    bf\breve d1 ef4 \caesura
+    a,\breve df1 a4 \caesura
   }
 
 bassVerseMusic = \relative c' {
     \caesura
     g\breve g1 g4 \caesura
     d\breve d1 g4 \caesura
-    g\breve ef1 e4 \caesura
+    g\breve ef1 g4 \caesura
     d\breve ef1 d4 \caesura
   }
 
@@ -187,3 +187,42 @@ verseLyrics = \markup {
 \include "../libs/layouts/psalmody.ily"
 % Load midi output
 \include "../libs/layouts/outputMidi.ily"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%         Forme directe        %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur (forme directe)" }}
+
+sopranoVerseMusic = \relative c'' {
+    \cadenzaOn \caesura
+    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando bf4 g4 \bar "||" \caesura
+  }
+
+altoVerseMusic = \relative c' {
+    \caesura
+    d\breve d1 c4 \caesura
+    ef\breve fs1 fs4 d4 \caesura
+  }
+
+tenorVerseMusic = \relative c' {
+    \caesura
+    bf\breve bf1 g4 \caesura
+    c\breve c1 c4 bf4 \caesura
+  }
+
+bassVerseMusic = \relative c' {
+    \caesura
+    g\breve e1 ef4 \caesura
+    fs\breve d1 d4 g4 \caesura
+  }
+
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
+% Load Psalmody layout
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody.ily"
+% Load midi output
+\include "../libs/layouts/outputMidi.ily"
+
