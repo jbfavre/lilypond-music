@@ -29,31 +29,77 @@ scoreMarkupSpacing =
    (minimum-distance . 3)
    (stretchability . 3))
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
-  \key gs \minor
+  \time 2/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c' {
-  e8[ ds] gs4 gs8[ (as)] b4 cs8[ b] as2 (as8) fss gs[ as] b4 as8[ b] gs[ gs] as[ gs] gs4 (fss!) gs2
+sopranoAntiphonMusicOriginal = \relative c' {  \key gs \minor
+  \partial 4 e8[ ds] gs4 gs8[ (as)] b4 cs8[ b] as2 (as8) fss gs[ as] b4 as8[ b] gs[ gs] as[ gs] gs4 (fss!) gs2
   \bar "|." \break
   }
 
-altoAntiphonMusic = \relative c' {
-  cs8[ as] ds4 ds4 e gs8[ gs] fs2 fss4 gs8[ gs] fs4 cs8[ ds] e[ e] e[ cs] ds4. (e8) ds2
+altoAntiphonMusicOriginal = \relative c' {  \key gs \minor
+  \partial 4 cs8[ as] ds4 ds4 e gs8[ gs] fs2 fss4 gs8[ gs] fs4 cs8[ ds] e[ e] e[ cs] ds4. (e8) ds2
   }
 
-tenorAntiphonMusic =  \relative c' {
-  gs8[ fss] gs4 b8[ (as)] b4 cs8[ cs] cs2 ds4 e8[ e] ds4 gs,8[ gs] b[ cs] cs[ as] as2 b2
+tenorAntiphonMusicOriginal = \relative c' {  \key gs \minor
+  \partial 4 gs8[ fss] gs4 b8[ (as)] b4 cs8[ cs] cs2 ds4 e8[ e] ds4 gs,8[ gs] b[ cs] cs[ as] as2 b2
   }
 
-bassAntiphonMusic =  \relative c {
-  cs8[ cs] b4 gs'8[ (fs)] e4 cs8[ e] fs4 (e)
+bassAntiphonMusicOriginal = \relative c {  \key gs \minor
+  \partial 4 cs8[ cs] b4 gs'8[ (fs)] e4 cs8[ e] fs4 (e)
   ds cs8[ cs] ds4 e8[ ds] cs[ as] cs[ e] ds4. (cs8) gs2
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%          Verses          %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoVerseMusicOriginal = \relative c'' {  \key gs \minor
+  \caesura \cadenzaOn 
+  \tempoVerseAcelerando b\breve^\markup{ \sans "Psalmiste"} gs1 \tempoVerseRallentando as4 \bar "||" \caesura
+  \tempoVerseAcelerando as\breve as1 \tempoVerseRallentando gs4 \bar "||"
+  \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" \break % Répons de l'assemblée
+  \cadenzaOn
+  \tempoVerseAcelerando gs\breve^\markup{ \sans "Psalmiste"} e1 \tempoVerseRallentando gs4 \bar "||" \caesura
+  \tempoVerseAcelerando gs\breve fss!1 \tempoVerseRallentando gs4 \bar "||"
+  \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "|." % Répons de l'assemblée
+  }
+
+altoVerseMusicOriginal = \relative c' {  \key gs \minor
+  \caesura \cadenzaOn 
+  \tempoVerseAcelerando ds\breve e1 \tempoVerseRallentando e4\caesura
+  \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando e4
+  \cadenzaOff e8 e fs4 fs e  % Répons de l'assemblée
+  \cadenzaOn
+  \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando ds4\caesura
+  \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando ds4
+  \cadenzaOff ds8 e fs4 fs8 e ds4 % Répons de l'assemblée
+  }
+
+tenorVerseMusicOriginal = \relative c' { \key gs \minor
+  \caesura \cadenzaOn 
+  \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando cs4\caesura
+  \tempoVerseAcelerando cs\breve cs1 \tempoVerseRallentando b4
+  \cadenzaOff b8 cs ds4 ds4 b4 % Répons de l'assemblée
+  \cadenzaOn
+  \tempoVerseAcelerando gs\breve gs1 \tempoVerseRallentando b4\caesura
+  \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando b4
+  \cadenzaOff b8 cs ds4 ds8 cs b4 % Répons de l'assemblée
+  }
+
+bassVerseMusicOriginal = \relative c' {  \key gs \minor
+  \caesura \cadenzaOn 
+  \tempoVerseAcelerando gs\breve e1 \tempoVerseRallentando gs4\caesura
+  \tempoVerseAcelerando fs\breve fss1 \tempoVerseRallentando gs4
+  \cadenzaOff e8[ cs] b[ cs] ds4 e % Répons de l'assemblée
+  \cadenzaOn
+  \tempoVerseAcelerando e\breve cs1 \tempoVerseRallentando gs4\caesura
+  \tempoVerseAcelerando cs\breve ds1 \tempoVerseRallentando gs,4
+  \cadenzaOff gs'8[ fs] b,[ cs] ds4 gs, % Répons de l'assemblée
   }
 
 antiphonLyrics = \lyricmode {
@@ -66,57 +112,23 @@ altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \antiphonLyrics
 bassAntiphonLyrics = \antiphonLyrics
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%          Verses          %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-sopranoVerseMusic = \relative c'' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando b\breve^\markup{ \sans "Psalmiste"} gs1 \tempoVerseRallentando as4 \bar "||" \caesura
-    \tempoVerseAcelerando as\breve as1 \tempoVerseRallentando gs4 \bar "||"
-    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "||" \break % Répons de l'assemblée
-    \cadenzaOn
-    \tempoVerseAcelerando gs\breve^\markup{ \sans "Psalmiste"} e1 \tempoVerseRallentando gs4 \bar "||" \caesura
-    \tempoVerseAcelerando gs\breve fss!1 \tempoVerseRallentando gs4 \bar "||"
-    \cadenzaOff gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "|." % Répons de l'assemblée
-  }
 sopranoVerseRepons = \lyricmode {
     _ _ _ _ _ _
     \once \override LyricText.self-alignment-X = #RIGHT
     \markup {\concat { \bold ℟ &nbsp;:&nbsp;En }} -- voie ton Es -- prit&nbsp;!
-  }
-altoVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando ds\breve e1 \tempoVerseRallentando e4\caesura
-    \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando e4
-    \cadenzaOff e8 e fs4 fs e  % Répons de l'assemblée
-    \cadenzaOn
-    \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando ds4\caesura
-    \tempoVerseAcelerando e\breve ds1 \tempoVerseRallentando ds4
-    \cadenzaOff ds8 e fs4 fs8 e ds4 % Répons de l'assemblée
+    _ _ _ _ _ _
+    \once \override LyricText.self-alignment-X = #RIGHT
+    \markup {\concat { \bold ℟ &nbsp;:&nbsp;En }} -- voie ton Es -- prit&nbsp;!
   }
 
-tenorVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando cs4\caesura
-    \tempoVerseAcelerando cs\breve cs1 \tempoVerseRallentando b4
-    \cadenzaOff b8 cs ds4 ds4 b4 % Répons de l'assemblée
-    \cadenzaOn
-    \tempoVerseAcelerando gs\breve gs1 \tempoVerseRallentando b4\caesura
-    \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando b4
-    \cadenzaOff b8 cs ds4 ds8 cs b4 % Répons de l'assemblée
-  }
-
-bassVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando gs\breve e1 \tempoVerseRallentando gs4\caesura
-    \tempoVerseAcelerando fs\breve fss1 \tempoVerseRallentando gs4
-    \cadenzaOff e8[ cs] b[ cs] ds4 e % Répons de l'assemblée
-    \cadenzaOn
-    \tempoVerseAcelerando e\breve cs1 \tempoVerseRallentando gs4\caesura
-    \tempoVerseAcelerando cs\breve ds1 \tempoVerseRallentando gs,4
-    \cadenzaOff gs'8[ fs] b,[ cs] ds4 gs, % Répons de l'assemblée
-   }
+sopranoAntiphonMusic = \sopranoAntiphonMusicOriginal
+altoAntiphonMusic = \altoAntiphonMusicOriginal
+tenorAntiphonMusic = \tenorAntiphonMusicOriginal
+bassAntiphonMusic = \bassAntiphonMusicOriginal
+sopranoVerseMusic = \sopranoVerseMusicOriginal
+altoVerseMusic = \altoVerseMusicOriginal
+tenorVerseMusic = \tenorVerseMusicOriginal
+bassVerseMusic = \bassVerseMusicOriginal
 
 \include "../libs/defaultPianoSettings.ly"
 \include "../libs/layouts/commonPiano.ily"
@@ -204,6 +216,24 @@ verseLyrics = \markuplist {
     }
   }
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody.ily"
+\include "../libs/layouts/outputMidi.ily"
+
+subtitle = "Vigile Pascale (version en sol mineur)"
+
+sopranoAntiphonMusic =  \transpose gs g { \sopranoAntiphonMusicOriginal }
+altoAntiphonMusic =  \transpose gs g { \altoAntiphonMusicOriginal}
+tenorAntiphonMusic = \transpose gs g { \tenorAntiphonMusicOriginal}
+bassAntiphonMusic = \transpose gs g { \bassAntiphonMusicOriginal}
+sopranoVerseMusic = \transpose gs g { \sopranoVerseMusicOriginal}
+altoVerseMusic = \transpose gs g { \altoVerseMusicOriginal}
+tenorVerseMusic = \transpose gs g { \tenorVerseMusicOriginal}
+bassVerseMusic = \transpose gs g { \bassVerseMusicOriginal}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
