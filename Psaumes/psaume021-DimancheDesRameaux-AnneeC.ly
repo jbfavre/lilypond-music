@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 21"
-subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur (forme responsoriale)" }}
+subtitle = \markup { \column { "Dimanche des Rameaux, Passion du Seigneur" "(forme responsoriale)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, mars 2019"
 
@@ -191,7 +191,7 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%         Forme directe        %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-subtitle = \markup { \column { "Dimanche des Rameaux" "Passion du Seigneur (forme directe)" }}
+subtitle = \markup { \column { "Dimanche des Rameaux Passion du Seigneur" "(forme directe)" }}
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
