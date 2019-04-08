@@ -61,6 +61,7 @@ bassAntiphonMusic =  \relative c {
   \bar "|."
   }
 
+%{
 figuredBass = \figuremode {
     <_>4 <6 5>2. <"?">4 <6 5>2
     <6 5>2 <6 5>2 <7>4 <5/>4 <5 4>4 <7 _+>4 <5>2
@@ -69,7 +70,7 @@ harmony = \figuremode {
     <_>4 <I>2. <I>4 <V>2
     <V>2 <VI>2 <IV>4 <IV>4 <V>4 <V>4 <I>2
   }
-
+%}
 antiphonLyrics = \lyricmode {
   Mon Dieu, mon Dieu, pour -- quoi m'as -- tu a -- ban -- don -- né&nbsp;?
   }
