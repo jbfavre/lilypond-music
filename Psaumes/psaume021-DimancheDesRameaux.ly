@@ -51,13 +51,13 @@ altoAntiphonMusic = \relative c' {
 
 tenorAntiphonMusic =  \relative c' {
   \partial 4
-  d4 bf2 r4 bf4 d2 \breathe d4 (d) df2 c4 (ef) d4. c8 bf2 \fermata
+  d4 bf2 r4 bf4 d2 \breathe d4 (d) df4 (c) bf (ef) d4. c8 bf2 \fermata
   \bar "|."
   }
 
 bassAntiphonMusic =  \relative c {
   \partial 4
-  d4 g2 r4 e4 fs2 \breathe d4 (fs?) ef?2 c4 a d4 fs <g g,>2 \fermata
+  d4 g2 r4 e4 fs2 \breathe d4 (fs?) ef?4 (c) d (a) d d <g g,>2 \fermata
   \bar "|."
   }
 
