@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-04-27T00:18:59.826463298</meta:creation-date><dc:date>2019-04-27T00:26:58.389308022</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT7M59S</meta:editing-duration><meta:editing-cycles>2</meta:editing-cycles><meta:generator>LibreOffice/6.1.5.2$Linux_X86_64 LibreOffice_project/10$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="21" meta:paragraph-count="524" meta:word-count="7989" meta:character-count="40925"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">70591</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">20560</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">21288</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">6459</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">74704</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">70591</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">20558</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">91877</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">200</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">142664</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">238286</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-size="130%" fo:font-weight="bold" style:font-size-asian="130%" style:font-weight-asian="bold" style:font-size-complex="130%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00022d48"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="00022d48" officeooo:paragraph-rsid="00022d48"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:rsid="00022d48" officeooo:paragraph-rsid="00022d48"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:paragraph-rsid="00022d48"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page" loext:rel-height-rel="paragraph"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P2"><draw:frame draw:style-name="fr1" draw:name="Cadre1" text:anchor-type="paragraph" svg:height="0.258cm" draw:z-index="0">
+     <draw:text-box fo:min-height="1%" fo:min-width="16.03cm">
+      <text:p text:style-name="P5">24 psaumes et le Magnificat</text:p>
+      <text:p text:style-name="P4">Joseph Gelineau</text:p>
+      <text:p text:style-name="P3">Publié dans « La Maison-Dieu », 33, Éditions du CERF, 1953</text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:h text:style-name="P6" text:outline-level="1"/>
+   <text:p text:style-name="P1">Les vingt-quatre psaumes dont nous offrons ici la première édition sont extraits du Psautier de la Bible de Jérusalem dans une version nouvelle, spécialement rythmée pour le chant ou la récitation.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ils ont été choisis parmi les plus usités dans la prière liturgique et dans le culte chrétien, comme on pourra s&apos;en rendre compte en consultant la table analytique qui suit le texte, en même temps que parmi les plus intéressants du psautier.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ces psaumes sont principalement destinés à la prière des communautés chrétiennes assemblées pour le culte, soit en famille, soit en groupe d&apos;Action catholique ou d&apos;amitié, soit en paroisse aux offices du dimanche soir ou des fêtes. En outre, dans les messes avec chants, ils pourront, souvent avec avantage, remplacer les cantiques, en permettant de redonner son plein sens au chant du psaume d&apos;introït, du psaume graduel, du psaume d&apos;offertoire, du psaume de communion. Ils rendront aussi plus savoureuse la prière privée. Enfin ils sont, pour la formation à la prière vocale et liturgique en même temps que pour la catéchèse, un instrument pédagogique d&apos;une grande efficacité.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ils se prêtent soit à une récitation commune, grave et cadencée (forme plus adaptée à un groupe peu nombreux ou à de jeunes enfants), soit au chant suivant les formes traditionnelles de la psalmodie chrétienne.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">La typographie met en évidence le rythme oral du texte qui guide la récitation et permet le chant. Outre la disposition strophique qui parle d&apos;elle-même, les appuis périodiques du rythme apparaissent à l&apos;intérieur de chaque vers par l&apos;impression en lettres plus grasses des syllabes privilégiées.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les vers mis entre parenthèses (hors strophes) peuvent être utilisés dans la récitation, mais sont omis dans le chant.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chaque strophe est suivie de quatre séries de notes. Les deux premières concernent la psalmodie et indiquent quel mode strophique et mélodique (et quelles antiennes) peuvent être utilisées pour le chant de ce psaume.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les notes critiques rendent compte de l&apos;exactitude de la traduction. Pour la plupart, elles reproduisent celles qui accompagneront la nouvelle version des Psaumes de la Bible , de Jérusalem1. Elles contiennent en outre quelques-unes des variantes de textes peu nombreuses qui. subsistent entre la présente traduction dite Psautier de la Bible de Jérusalem et la version ci-dessus nommée.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les notes d&apos;usage liturgique qui suivent immédiatement (reproduites dans l&apos;édition musicale en fiches2) s&apos;efforcent de présenter pour chaque psaume, en même temps que ses principales fonctions liturgiques traditionnelles, le schéma de sa catéchèse. Celle-ci est conçue, non comme un commentaire exégétique littéral, mais comme une homélie de caractère sacramentaire et théologique à la manière des Pères, qui permette aux fidèles, sans initiation spéciale à la Bible d&apos;ordre littéraire et historique, d&apos;assimiler le contenu « chrétien » et « actuel » de ces prières d&apos; Église.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les références des notes critiques et liturgiques comprennent un chiffre et une lettre minuscule. Le premier renvoie à la strophe et la seconde au vers. La référence 2 c, par exemple, indique le troisième vers de la deuxième strophe.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Qu&apos;on veuille bien se souvenir enfin que la poésie des psaumes est destinée de soi, non à être lue des yeux, mais à être dite ou chantée dans une prière jaillie de l&apos; homme tout entier.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">JOSEPH GELINEAU.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">La traduction des vingt-quatre psaumes et du cantique présentés ici a été assurée par les PP. TOURNAY et CmFFLOT, O. P., le P. GELINEAU, S. J., et M. RAYMOND SCHWAB.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">i En préparation aux Editions du Cerf, 26 édition, revue et corrigée.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>2. Des spécimens de ces fiches publiées par les Editions au L-en pour chacune des pièces traduites ici seront envoyés gracieusement dès parution à tous les abonnés de La Maison-Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 2. POURQUOI CES NATIONS EN TUMULTE (Quare fremuerunt)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Pourquoi ces nations en tumulte, ce vain grondement de peuples ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les rois de la terre se lèvent, les princes conspirent contre Dieu et contre son Christ : « Allons, brisons leurs entraves,.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a llons, faisons sauter leur joug. »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Celui qui siège dans les cieux s&apos;en amuse, le Seigneur les tourne en dérision, puis, dans sa colère, il leur parle, dans sa fureur, il les frappe d&apos;épouvante : « C&apos;est moi qui ai sacré mon roi sur Sion, ma sainte montagne. »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 2. STROPHES de six vers; 3 + 3, 3 + 3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : ré (n° 21); tonique : mi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES. 1 j « allons » addition; « joug « grec et syr.; « liens » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 a « Le Seigneur »; « il » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 cd littér. « demande et je te donne les nations pour héritage, pour domaine, les extrémités de la terre ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 d « rendez-lui votre hommage », littér. « baisez ses pieds ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Mission, lutte et victoire du Roi-Messie dans : a) sa nativité (filiation divine) 3ab, ant. 2 (Act., 13, 33; Hébr., 1, 5; 5, 5); bj sa passion (mat. vendredi saint) 1 cd, ant. 1 (Act., 4, 25);</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">c) sa résurrection (mat. Pâques) 3 ed; d) son jugement final 3 et (Apoc., 2, 26; 19, 15).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(J&apos;énoncerai le décret du Seigneur :)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Le Seigneur m&apos;a dit : « Tu es mon Fils, Moi, aujourd&apos;hui, je t&apos;ai engendré.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Demande et je te lègue les nations, je te soumets les confins de la terre; Tu les briseras avec un sceptre de fer et comme vase de potier, les fracasseras, »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Maintenant, rois, comprenez, instruisez-vous, juges de la terre : servez le Seigneur avec crainte, rendez-lui votre hommage en tremblant; gardez qu&apos;il ne s&apos;irrite et ne vous perde, car d&apos;un seul coup sa colère prend feu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Heureux qui met en lui sa confiance!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 8. 0 SEIGNEUR NOTRE DIEU (Domine, Dominus noster)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">0 Seigneur notre Dieu, qu&apos;il est grand, ton nom par tout l&apos;univers !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Ta majesté suprême est chantée par des lèvres d&apos;enfants, de tout-petits ; tu opposes ton lieu fort à l&apos;agresseur pour réduire ennemis et rebelles.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. A voir ton ciel, ouvrage de tes doigts, la lune et les étoiles que tu fixas, qu&apos;est-ce que l&apos;homme que tu en gardes mémoire, le Fils d&apos;Adam que tu en prennes souci ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 8. STROPHES de quatre vers; a 3+3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALIODIE. Mode proposé : fa (n° 16); tonique : mi bémol.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">NOTES CRITIQUES, a « notre Dieu »; « notre Seigneur » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1a « est chantée » (tunnah) correction; « veuille donner » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 d « eaux » Hie; « mers » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Psaume de louange de Dieu (ant. i) pour l&apos;œuvre de : a) la création dont l&apos;homme est roi 3 et 4, ant. 3; commémorée chaque dimanche et chantée par des enfants, 1 ab, ant. a (Rameaux, Mt., 21, 16, fête des saints Innocents); b) la recréation en son Verbe incarné 3 ab et glorifié 3 cd (Héb., 2, 6; 1 Cor., 15, 26), de tous les baptisés 3 (baptême des adultes)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. A peine le fis-tu moindre qu&apos;un dieu, le couronnant de gloire et de splendeur ; tu l&apos;établis sur l&apos;œuvre de tes mains, tout fut mis par toi sous ses pieds.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Brebis et bœufs tous ensemble, les bêtes même sauvages, oiseaux du ciel et poissons de la mer parcourant les sentiers des eaux.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">0 Seigneur notre Dieu qu&apos;il est grand, ton nom par tout l&apos;univers !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 22. LE SEIGNEUR EST MON BERGER (Dominus regit me)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Le Seigneur est mon berger, je ne manque de rien.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Sur des prés d&apos;herbe fraîche il me fait reposer ; vers les eaux du repos il me mène pour y refaire mon âme.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Il me guide par le juste chemin pour l&apos;amour de son nom.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Passerais-je un ravin de ténèbres, je ne crains aucun mal ; près de moi ton bâton, ta houlette sont là qui me consolent.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Devant moi tu apprêtes une table face à mes adversaires ; d&apos;une onction tu me parfumes la tête et ma coupe déborde.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Grâce et bonheur m&apos;accompagnent tous les jours de ma vie ; ma demeure est la maison du Seigneur en la longueur des jours.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">l</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 22. STROPHES de six ou quatre vers; à 3 (2) + 2, 3 + 2 (3 + 2) appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : ut (spécial); tonique : mi bémol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 e Avant « près de moi » l&apos;hébr. ajoute « tu es ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3c littér. « tu oignis ma tête avec l&apos;huile ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4c « ma demeure », littér. « j&apos;habiterai » versions; « je reviendrai » (au temple) hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a) Psaume de l&apos;initiation chrétienne. Baptême : 1 ef.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Confirmation : 3 c. Eucharistie : 1 ab, ant. 1; 3 abd (FêteDieu) ; b) Psaume de la Providence et de l&apos;amitié divine : 2 et 4; c) de la vie bienheureuse des élus (défunts) : 1 cd, ant. 2; 4cd.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 23. AU SEIGNEUR, LA TERRE (Domini est terra)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>1. Au Seigneur la terre et sa plénitude, le monde et tout son peuplement, c&apos;est lui qui l&apos;a fondée sur les mers, lui qui sur les fleuves l&apos;a posée.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Qui montera sur la montagne du Seigneur, et qui se tiendra dans son lieu saint ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">L&apos;homme aux mains innocentes, au cœur pur qui n&apos;a point l&apos;âme encline aux vanités.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. A lui la bénédiction du Seigneur, la justice du Dieu son Sauveur ; c&apos;est la race de ceux qui le cherchent, qui poursuivent ta face, Seigneur.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 23. STROPHES de quatre vers; à 3 + 3, 3 + 3 appuis; et de trois vers; à 3+3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : sol (n° 17 et 4); tonique : sol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d L&apos;hébr. ajoute « ni 11e jure pour tromper ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 d « ta face, Seigneur »; « ta face, Jacob » hébr.; « ta face, Dieu » 2 mss. el syr.; « la face du Dieu de Jacob » grec.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a) Psaume d&apos;entrée du Christ-Roi : 4, ant. 1; en ce monde (i&apos;&apos;V&apos;ativilé); dans la vie nouvelle (Pdques); au ciel (Ascension) : 2 ab, ant. 3; b) Psaume de la sainteté chrétienne : 2 et 3, ant. 2; au baptême, à la première tonsure, aux relevailles, aux funérailles des enfants, qui participent au triomphe du Christ; c) Psaume du lieu saint : 4 (Dédicace), 2 b.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Portes, levez vos frontons, élevez-vous, portes éternelles, qu&apos;il entre, le roi de gloire.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Qui est ce roi de gloire? &gt;* C&apos;est le Seigneur, le fort, le vaillant, le Seigneur, le vaillant des combats.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. Portes, levez vos frontons, élevez-vous, portes éternelles, qu&apos;il entre, le roi de gloire.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7. Qui est ce roi de gloire?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">C&apos;est Lui, le Seigneur Sabaoth, lui, le roi de gloire.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 28. RAPPORTEZ AU SEIGNEUR (Afferte Dornino)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Rapportez au Seigneur, fils de Dieu, rapportez au Seigneur gloire et puissance, rapportez-lui la gloire de son nom, adorez-le dans son parvis de sainteté.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Clameur du Seigneur sur les eaux, le Seigneur sur les eaux innombrables; clameur du Seigneur dans la force, clameur du Seigneur dans la gloire.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 28. STROPHES de quatre vers; à 3 + 3, 3 + 3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : fa (n° 16); tonique : mi bémol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1d « parvis » versions; « ornements » hébr. (2 Chron., 21).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 α L&apos;hébr. a ici « le Dieu de gloire tonne » reporté en 5 a.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 a, 4 a, 4 c « Clameur de Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 b, 4 b « qui »; « Yahvé » hébr.; 4 d « le Seigneur »; « elle » hébr.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">4 c « térébinthes » correction; « (fait enfanter) les biches » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 ef « Dieu »; « Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE (Afferte Domino).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Hymne à la Toute-Puissance de Dieu créateur et Sauveur : a) manifestant sa gloire et requérant notre hommage : Êpiphanie : 1, ant. 2; transfiguration : 5 b et 3 ef; Pentecôte (voix) : 2, 3, 4, etc.; b) communiquant cette gloire aux baptisés : baptême des adultes : 1 et 2, ant. 3; et à son Église : 5 ef, ant. 1; c) auquel nous rendons par le Fils ses propres dons : 1 (offertoire), ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Clameur qui fracasse les cèdres, qui fracasse les cèdres du Liban ; il fait bondir comme un veau le Liban, le Siryon comme un petit de buffle.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Clameur du Seigneur, elle taille des éclairs de feu.)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Clameur qui secoue le désert, qui secoue le désert de Cadès.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Clameur qui tord les térébinthes, le Seigneur dépouille les futaies.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Le Dieu de gloire tonne; dans son palais tout crie : gloire!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Le Seigneur a siégé pour le déluge, il siège en roi éternel.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Dieu donne la puissance à son peuple, Dieu bénit son peuple dans la paix.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 41. COMME GÉMIT UNE BICHE (Sicut cervus desiderat)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Comme gémit une biche après l&apos;eau vive, ainsi gémit mon âme</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">, ver$tqi, mon Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Mon âme a soif de Dieu, du Dieu de vie ; quand pourrai-je aller voir la face de Dieu?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">k</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Je n&apos;ai de pain que mes larmes, la nuit, le jour, moi qui tout le jour entends dire : où est-il ton Dieu ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Je me souviens,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">f et mon âme en moi s&apos;épanche :) 4. J&apos;irai vers la tente admirable, vers la maison de Dieu parmi les cris de liesse et de louange et la foule jubilante,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 41. STROPHES de quatre vers; à 3+2, 9-+a appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE., Mode proposé : sol (n° 10 finale ut); tonique : si bémol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I d « raoïij Dieu »,, hébr, « Dieu ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 c « voir » mss. et versions; « paraître devant » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 a « admirable » grec et syr. ; mot hébr. incertain.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 d et 11 d « mon Sauveur »; « le salut de ma facI&apos; » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">11 d et versions; « sa face » hébr. 5 d.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>Psaume de la Pâque sacramentelle : a) baptismale : 1, 2, 7, 8, ant. 1; b) eucharistique : 2, 4, fi, ant. 2; et de la Pâque réelle (défunts) ; 2, 3, 6, 11, ant. 4 et 3; dans l&apos;espérance chrétienne du salut : 5, 11, ant. 3.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Qu&apos;as-tu, mon âme, à défaillir, à gémir sur moi ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Espère en Dieu : je le louerai encore, mon Sauveur et mon Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. Mon âme vient-elle à défaillir, je songe à toi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">des pays du Jourdain et de l&apos;Hermon, à toi, humble montagne.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7. L&apos;abîme appelant l&apos;abîme au fracas de tes écluses, la masse de tes flots et de tes vagues a passé sur moi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8. Plaise au Seigneur d&apos;accorder le jour, sa grâce, et la nuit, que son chant avec moi prie le Dieu de ma vie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9. Je veux dire à Dieu, mon rocher : pourquoi m&apos;oublier?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">poûrquoi m&apos;en irais-je en deuil, accablé par l&apos;ennemi?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">10. Jusqu&apos;à me rompre les os mes oppresseurs m&apos;insultent, à longueur de jour ils me disent : où est-il, ton Dieu ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">11. Qu&apos;as-tu, mon âme, à défaillir, à gémir sur moi?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Espère en Dieu : je le louerai encore, mon Sauveur et mon Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 42. JUSTIFIE-MOI, MON DIEU (Judica me Deus)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Justifie-moi, mon Dieu, défends ma cause contre des gens sans pitié, de l&apos;homme perfide et pervers, Seigneur, délivre-moi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. C&apos;est toi le Dieu de mon refuge : pourquoi me rejeter?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">pourquoi m&apos;en irais-je en deuil, accablé par l&apos;ennemi?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Envoie ta lumière et ta vérité : qu&apos;elles soient mon guide et me ramènent vers ta sainte montagne, au lieu de ta demeure.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Et j&apos;irai vers l&apos;autel du Seigneur, près du Dieu de ma joie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">J&apos;exulterai, je louerai sur la harpe le Seigneur mon Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Qu&apos;as-tu, mon âme, à défaillir,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">à gémir sur moi ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Espère en Dieu : je le louerai encore, mon Sauveur et mon Dieu !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 42. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : mi (n° 8); tonique : fa dièze.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 d « Seigneur » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 bc « ma joie » un ms.; « la joie de mon exultation et je louerai » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 d Cf. Ps. 41, 5 d.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>Psaume pascal et eucharistique (dim. de la Passion) : a) En pleine épreuve de la Passion : 1 et ,3 ant. 1 et 3; b) dans l&apos;espoir de la Résurrection: 3 cd et 5; c) jaillit l&apos;action de grâces eucharistique : 3 et 4, ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 50. PITIÉ POUR MOI (Miserere)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Pitié pour moi, Seigneur, en ta bonté, en ta tendresse efface mon péché, lave-moi de toute malice et de ma faute, Seigneur, purifie-moi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Car mon péché, moi, je le connais, ma faute est devant moi sans relâche; contre toi, toi seul, j&apos;ai péché, ce qui est mal à tes yeux, je l&apos;ai fait.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Ainsi tu es juste quand tu prononces, sans reproche lorsque tu juges.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Vois : dans le mal je suis né, pécheur, ma mère m&apos;a conçu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 50. STROPHES de quatre vers; à 3+3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : ré (n° 14); tonique : ré.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 a « Seigneur »; « Dieu » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I b « en ta grande tendresse » hébr.; « malice »; « péché » grec; « péchés » hébr.; idem 2 a.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8 a littér. « affranchis-moi des sangs, ô Dieu, Dieu de mon salut ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9 c « Mon sacrifice » correction; « les sacrifices de (à, pour) Dieu » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9 d « d&apos;un cœur brisé et broyé, ô Dieu » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">10c et e commencent par une particule « alors ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Psaume de la pénitence qui exprime : a) l&apos;aveu du pécheur : 1, 2, 3, et son repentir intérieur : 9, ant. 1 et 4; b) le pardon et la miséricorde de Dieu : 1ab, 4 et sq.; c) la purification et la réconciliation : 4 et 5; d) la conversion et le renouvellement de l&apos;homme intérieur : 6, 7, 8, ant. 3.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">e) enfin l&apos;espoir de la résurrection (défunts) : 5, ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Mais tu aimes la vérité au fond du cœur, instruis-moi des profondeurs de la sagesse, purifie-moi avec l&apos;hysope : je serai net ; lave-moi : je serai blanc plus que neige.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Rends-moi le son de la joie et de la fête, et qu&apos;ils dansent, les os que tu broyas !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Détourne ta face de mes fautes, efface de moi toute malice.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. 0 Dieu, crée pour moi un cœur pur, restaure en ma poitrine un esprit ferme; ne me repousse pas loin de ta face, ne retire pas de moi ton esprit saint.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7. Rends-moi la joie de ton salut, assure en moi un esprit magnanime; aux pécheurs j&apos;enseignerai tes voies, et vers toi reviendront les égarés.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8. Affranchis-moi du sang, Dieu mon Sauveur, et ma langue acclamera ta justice; Seigneur, ouvre mes lèvres et ma bouche publiera ta louange.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9. Tu ne prendrais aucun plaisir au sacrifice.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">si j&apos;offre un holocauste, tu n&apos;en veux pas.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>Mon sacrifice, c&apos;est un esprit brisé,.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">d&apos;un cœur broyé tu n&apos;as point de mépris.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">10. Veuille accorder à Sion le bonheur, et rebâtir Jérusalem en ses murailles.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Tu agréeras les sacrifices légitimes, (holocauste et totale oblation), on offrira des taureaux sur ton autel.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 90. QUI DEMEURE A L&apos;ABRI DU TRÈS-HAUT (Qui habitat in adjutorio)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Qui demeure à l&apos;abri du Très-Haut et loge à l&apos;ombre du Puissantdit au Seigneur : mon rempart, mon refuge, mon Dieu en qui je me fie !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Et lui te dérobera au filet de l&apos;oiseleur qui cherche à détruire;</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">lui te couvrira de ses ailes, tu trouveras sous son pennage un refuge.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 90. STROPHES de quatre vers; à 3 + 3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : si (ie 19), tonique ■; la.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 c « dit » versions; « je dis » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 b « qui cherche » (medabbr) correction; « de la peste » héPF.&apos;; « de la parole » versions.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d L&apos;hébr. ajoute ici 4 d décalé par attirance des suffixes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 b « qu&apos;il en tombe » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 d « armure », hapax rapproché de l&apos;akkadien sihirtu « enceinte »; vers décalé.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 c « toi qui dis » conjecture (cf. Ps. 124, 6); « toi » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(cf. Ps. 71, 7); « asile » grec; « demeure » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7 c « lion » héb. ; « aspic » verrions, 8 c « je suis là »; littér. « moi aye.c lui ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Psaume de la protection divine accordée : a) au Christ en sa tentation; en sa Passion; en sa résurrection : 6cd et 7«b (Matth., 4, 6); b) au fidèle pour le combat chrétien (ier dim. de Carême) : ant. 1, et spécialement aux malades : 3 cd (rituel); voyageurs : 7 ab (itinerarium) ; possédés : 2 et 3 (exorcismes); c) par l&apos;intermédiaire des anges : 6 et 7; 3 (complies); d) dans les églises : 1 .(Dédicace); images de la demeure éternelle : 8 et 9.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Tu ne craindras ni les terreurs de la nuit, ni la flèche qui vole de jour, ni la peste qui marche en la ténèbre, ni le fléau qui sévit à midi.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Qu&apos;il en tombe mille à tes côtés, qu&apos;il en tombe dix mille à ta droite, toi, tu restes hors d&apos;atteinte; sa fidélité est une armure, un bouclier.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Il suffit que tes yeux regardent, tu verras le salaire des impies, toi qui dis : Seigneur, mon refuge!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">et qui fais du Très-Haut ton asile.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. Le malheur ne peut fondre sur toi, ni la plaie approcher de ta tente : il a pour toi donné ordre à ses anges de te garder en toutes tes voies.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">7. Eux sur leurs mains te porteront pour qu&apos;à la pierre ton pied ne heurte; sur le lion et la vipère tu marcheras, tu fouleras le lionceau et le dragon.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8. Qui s&apos;attache à moi, je le délivre, je l&apos;exalte s&apos;il connaît mon nom ; s&apos;il m&apos;invoque je réponds : je suis là !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">dans la détresse je le libère et glorifie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9. Je veux le rassasier de longs jours et je ferai qu&apos;il voie mon salut.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Pb. 92. DIEU RÈGNE, VÊTU DE MAJESTÉ (Dominus regnavit)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">o 1. Dieu règne, vêtu de majesté, le Seigneur s&apos;est vêtu de puissance, il a noué la puissance à ses reins.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Tu fixas l&apos;univers, inébranlable; ton trône est fixé dès l&apos;origine, de tout temps, c&apos;est toi le Seigneur.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Les fleuves déchaînent, Seigneur, les fleuves déchaînent leur voix, les fleuves déchaînent leur fracas.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Plus que la voix des eaux innombrables, plus superbe que le ressac de la mer, le Seigneur est superbe dans les hauteurs.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Tes volontés sont vraiment infaillibles; la sainteté s&apos;attache à ta maison, Seigneur, pour la suite des jours.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 92. STROPHES de trois vers; à 3+3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : sol (n° 4); tonique : sol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 a « Dieu »; « le Seigneur » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 c « la puissance » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 a « Tu fixas » correction (Ps. 89, 3); « est fixé » hébr.; « il fonda » versions.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 c « Le Seigneur » mss. latins; « Dieu » targum, omis dans l&apos;hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Hymne de louange (laudes des dim. et fêtes) : ant. 2 : a) à Dieu Tout-Puissant j 1, 4; éternel : 2 c; créateur : 2 a, et législateur : 5 a, ant. 1 ; b) au Christ ressuscité : 1; vainqueur de toute puissance adverse : 3 et 4; c) pour sa présence parmi les hommes : 5 cd (Dédicace); temps de Noël : 1 et 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 94. VENEZ, CRIONS DE JOIE (Venite exsultemus)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">f</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Venez, crions de joie pour le Seigneur, acclamons le Rocher qui nous sauve; allons devant lui en action de grâces, au son des musiques acclamons-le.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Oui, c&apos;est un Dieu grand que le Seigneur, un roi grand par-dessus tous les dieux ; en sa main sont les creux de la terre et les hauts des montagnes sont à lui ; à lui la mer, c&apos;est lui qui l&apos;a faite, la terre ferme, ses mains l&apos;ont façonnée.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 94. STROPHES de quatre, cinq ou dx vers; à 3+3+3+3 (+3+3) appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : fa (n° 22); tonique : fa.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">I b « qui nous sauve »; littér. « de notre salut ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 de littér. « le&apos; peuple de son bercail, le troupeau de sa main ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 a. « l&apos;écouter »; « écouter sa voix » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 a « cette » (versions) manque dans l&apos;hébr.; « race »; littér.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">« génération ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chant d&apos;invitation (invitatoire) : a) à l&apos;action de grâces : 1 et 2; b) à l&apos;adoration : 3, ant. 1 et 3 (Épiphanie, Dédicace); c) à la docilité, à la voix de Dieu : 4; et à la reconnaissance de ses jugements : 5.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Entrez, courbons-nous, prosternons-nous ; à genoux devant le Dieu qui nous a faits, c&apos;est lui notre Dieu, et nous le peuple dont il est le berger, le troupeau que mène sa main.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Aujourd&apos;hui puissiez-vous l&apos;écouter : « Ne fermez pas votre cœur comme à Discorde, comme au jour de Tentation dans le désert, quand vos pères m&apos;ont éprouvé et tenté, et pourtant ils voyaient mes actions.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Quarante ans cette race m&apos;a dégoûté et je dis : Peuple égaré de cœur, ces gens-là n&apos;ont pas connu mes voies ; alors j&apos;ai juré dans ma colère ; jamais ils n&apos;entreront dans mon repos. »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">« LES PSAUMES CHANTENT LA PLUS BELLE DES REALITES : LES MYSTERES DU CHRIST » (NICÉTAS DE RÉMÉSIANA).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 99. ACCLAMEZ LE SEIGNEUR (Jubilate Deo universa terra)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Acclamez le Seigneur, terre entière, servez le Seigneur dans l&apos;allégresse, allez à lui avec des chants de joie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Sachez que lui, le Seigneur, est Dieu, il nous a faits et nous sommes à lui, son peuple et le troupeau de son bercail.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Allez à ses portiques en rendant grâces, entrez dans ses parvis avec des hymnes, rendez-lui grâces et bénissez son nom.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Oui, le Seigneur est bon, oui, éternel est son amour, sa fidélité demeure d&apos;âge en âge.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">✓</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 99. STROPHES de trois vers; à 3 + 3 + 3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : sol (n° 4); tonique : sol.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES..</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 b « et nous sommes à lui » qerê; « et non pas nous » ketib.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3b « entrez » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 bc « oui » et « demeure » additions.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">F USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a) Processionnal d&apos;entrée au sanctuaire : 1 et 3, ant. 1; b) Appel à la louange de Dieu : 1 (laudes des dim. et fêtes), ant. 3; pour sa souveraineté : 2 (Epiphanie); et pour la fidélité de son amour : 4.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">Ps. 114. J&apos;AIME ! CAR DIEU ÉCOUTE (Dilexi, quoniam exaudiet Dominus)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. J&apos;aime! car Dieu écoute le cri de ma prière; il penche vers moi son oreille, le jour où j&apos;appelle.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Les lacets de la mort m&apos;enserraient, les filets de l&apos;enfer; l&apos;angoisse et l&apos;ennui me tenaient, j&apos;appelai le nom de Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Seigneur, délivre mon âme!) 3. Le Seigneur est justice et pitié, notre Dieu est tendresse; le Seigneur défend les petits, j&apos;étais faible, il m&apos;a sauvé.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Retourne, mon âme, à ton repos, car le Seigneur t&apos;a fait du bien.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il préserve mes yeux des larmes et mes pieds du faux pas.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Je marcherai en présence du Seigneur, sur la terre des vivants.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 114. STROPHES de quatre vers; à 3 + 3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : ré (n° 7); tonique : ré.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 a et 2 d « Dieu »; « Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 d « le jour où » syr.; « et en mes jours » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 b « filets » Hie; « angoisse » hébr. qui ajoute après 2 c : « je tiens M.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 c « il préserve » versions; « tu préserves » hébr. qui ajoute immédiatement « mon âme de la mort ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Action de grâces pour la délivrance : 1 et 5, due : a) à la puissance de la prière : 1 ab, ant. 2; b) à la tendresse de Dieu : 3; spécialement appliquée aux défunts : 2 et 4, ant. 1.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 115. J&apos;AI FOI (Credidi)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. J&apos;ai foi ! lors même que je dis : je suis trop malheureux.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">J&apos;en étais à dire en mon trouble : l&apos;homme n&apos;est que mensonge.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Comment rendrai-je au Seigneur tout le bien qu&apos;il m&apos;a fait?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">J&apos;élèverai la coupe du salut en invoquant le nom de Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(J&apos;accomplirai mes vœux envers Dieu ; 1 que tout son peuple soit présent !)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. II5. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE, Mode proposé : ré (n° 7); tonique : ré.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 ef est omis par deux mss. et le grec; pseudo-refrain, cf.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 ab.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3c L&apos;hébr. ajoute au début « Ah, Seigneur, car (omis par les versions) moi ton serviteur (dittogr. omise par des mss. grecs) ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d, 2 e, 4 b, 5 a « Dieu »; « Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">4 cd absent du texte reçu et semble anticipé dans II4, 5ab.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE (Credidi).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chant d&apos;action de grâces repris pour : a) la messe : 4 ab, dans l&apos;assemblée eucharistique : 5, à la communion : 2 cd, ant. I (Fête-Dieu) ; b) le culte des saints et les défunts : 3, Il cd, 5, ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Elle coûte aux yeux du Seigneur, la mort de ses amis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Mais moi, ton serviteur, fils de ta servante, tu défais mes liens.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">k. Je t&apos;offrirai le sacrifice d&apos;action de grâces en invoquant le nom de Dieu ; je marcherai en présence du Seigneur sur la terre des vivants.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. J&apos;accomplirai mes vœux envers Dieu ; que tout son peuple soit présent ; dans les parvis de la maison du Seigneur, dans tes murs, Jérusalem !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">« Le chant des psaumes c&apos;est la voix de l&apos;Église. C&apos;est le chant des psaumes qui donne aux fêtes leur joyeux éclat; c&apos;est encore lui qui procure la tristesse selon Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">En lui est le résumé et le sommet de la « théologie » : l&apos;annonce de la venue du Christ en chair, la menace du jugement; l&apos;espoir de la résurrection; la crainte du châtiment; les promesses de la gloire; la révélation des mystères. Toutes choses sont renfermées dans le livre des psaumes, comme dans un grand trésor ouvert à tous. »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(SAINT BASILE).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 119. VERS MON DIEU (Ad Dominum cum tribularer)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Vers mon Dieu, quand l&apos;angoisse me prend, je crie, il me répond.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Seigneur, sauve-moi des lèvres fausses, de la langue perfide.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Par quoi va-t-il payer ton faux serment, ô langue perfide ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Par les flèches aiguës du batailleur, et la braise vive.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Malheur à moi de vivre chez les Mosques, de camper en Qédar 1)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Mon âme a trop vécu parmi des gens qui haïssent la paix.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">La paix, je la veux ; mais quand je parle, pour eux, c&apos;est la guerre.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 119. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : la, cadence féminine (n° 11); tonique : la.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 a « mon Dieu »; « Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 a Littér. « que va-t-il te donner et que t&apos;ajoutera-t-il ? »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d « vive »; littér. « des genêts ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3c « La paix, je la veux », littér. « moi-paix ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">U$AGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a) Prière dans la persécution et la tentation du démon ou des hommes : 1 et 2 (Carême), ant. 2; b) devant la mort et les peines éternelles : 2 cd (défunts, âmes du purgatoire), ant. I.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">Ps. 120. JE LÈVE LES YEUX VERS LES MONTS (Levavi oculos meos ad montes)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Je lève les yeux vers les monts : d&apos;où viendra mon secours?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Le secours me vient du Seigneur qui a fait terre et ciel.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Qu&apos;il ne laisse broncher ton pied, qu&apos;il ne dorme, ton gardien.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Non, il ne dort ni ne sommeille, le gardien d&apos;Israël.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Le Seigneur est ton gardien, ton ombrage, le Seigneur à ta droite; de jour le soleil ne te frappe, ni la lune en la nuit.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Le Seigneur te garde de tout mal, il garde ton âme.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il te garde au départ, au retour, dès lors et à jamais.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 120. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : si (n° 12); tonique : la.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 c « il », cf. mss. grecs; « Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Psaume de la protection divine accordée au voyageur : a) durant notre vie chrétienne, pèlerinage vers la Jérusalem céleste : ant. I; b) au moment de la mort (défunts) : ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 121. 0 MA JOIE !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Laetatùs sum)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. 0 ma joie quand on m&apos;a dit : Allons à la maison du Seigneur !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Et maintenant s&apos;arrêtent nos pas dans tes portes, Jérusalem !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Jérusalem, bâtie comme une ville où tout ensemble fait corps ; c&apos;est là que montent les tribus, les tribus du Seigneur.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 121. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : mi (n° 8); tonique : fa. dièze.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 cd Littér. « Car là furent mis les sièges de justice, les sièges de la maison de David ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 b «. tes tentes » un ms. (cf Job, 12, 6); « ceux qui t&apos;aiment » hébr., lettres confondues.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chant processionnel exprimant la joie d&apos;aller : a) vers la maison de Dieu y célébrer le culte : 1 et 3, ant. 1 ; b) dans l&apos;assemblée chrétienne, prier pour l&apos;Eglise : 4 et 5, ant. 2; c) vers la Vierge Marie, figure de l&apos;Église : 2 (vêpres B.V.M.).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">d) vers la Jérusalem céleste, cité éternelle, rassscmblement des peuples.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Pour célébrer, selon la règle en Israël, le nom du Seigneur, en ce lieu où siège la justice, et la maison de David.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">4 Appelez de beaux jours sur Jérusalem : paix à tes tentes!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Adviennent de beaux jours dans tes murs : paix à tes châteaux !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Pour l&apos;amour de mes frères, de mes amis, laisse-moi dire : paix sur toi !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Pour l&apos;amour de la maison du Seigneur, je prie pour ton bonheur.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">« IL FALLAIT QUE S&apos;ACCOMPLIT TOUT CE QUI EST ÉCRIT DE MOI DANS. LES PSAUMES » (Luc, 24, 44). LES PSAUMES » ( L ue,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 122. VERS TOI, J&apos;AI LES YEUX LEVÉS (Ad te levavi oculos meos)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Vers toi j&apos;ai les yeux levés, qui te tiens au ciel ; les voici comme des yeux d&apos;esclaves vers la main de leur Seigneur.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Comme les yeux d&apos;une servante vers la main de sa maîtresse, ainsi nos yeux vers le Seigneur notre Dieu tant qu&apos;il nous prenne en pitié.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Pitié pour nous, Seigneur, pitié pour nous, trop de mépris nous rassasie ; notre âme est par trop rassasiée des sarcasmes des satisfaits.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 122. STROPHES de quatre vers; 3+2, 3+2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : si (n° 12); tonique : la.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 d L&apos;hébr. ajoute à la fin « le mépris pour les orgueilleux ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Cri d&apos;appel dans la souffrance, humble et persévérant : a : a) du Christ en sa Passion : 3; b) du chrétien haï du monde; c) des âmes du purgatoire.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 125. QUAND LE SEIGNEUR RAMENA NOS CAPTIFS (In convertendo)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Quand le Seigneur ramena nos captifs nous étions comme en rêve; notre bouche s&apos;emplit de rire et nos lèvres de chansons.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Et l&apos;on disait chez les païens : « Merveilles!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">que fit pour eux le Seigneur. »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Merveilles que fit pour nous le Seigneur !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">nous étions dans la joie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Ramène, Seigneur, nos captifs comme torrents au désert.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Les semeurs qui sèment dans les larmes moissonnent en chantant.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">k. On s&apos;en va, on s&apos;en va en pleurant : on porte la semence; on s&apos;en vient, on s&apos;en vient en chantant, on rapporte les gerbes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 125. STROPHES de quatre vers; à 3 + 2, 3+2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé : mi (n° 8); tonique : la dièze.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I a « nos captifs »; « les captifs de Sion » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3b « désert »; littér. « Néguéb ».</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">4 b « la semence »; littér. « le sachet (ou : le jet) de semence ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chant de délivrance et de résurrection qui exprime le , mystère pascal de la vie par la mort : i, et de la joie par la croix : 4, ant. I. Il s&apos;applique : a) au Christ mort et ressuscité; b) au chrétien passant de l&apos;esclavage du péché à la vie nouvelle, à chaque messe (chant de communion) : ant. I; par la Toute-Puissance de Dieu : 2, ant. 2; c) aux élus échappés à l&apos;exil de ce monde (vêpres apôtres)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 126. SI LE SEIGNEUR NE BATIT * LA MAISON (Nisi Dominus ædificavcrit) I. Si le Seigneur ne bâtit la maison en vain travaillent les maçons; si le Seigneur ne garde la ville, en vain la garde veille.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. En vain tu avances ton lever, en vain tu retardes ton repos, mangeant le pain des douleurs quand lui, en leur sommeil, comble ses bien-aimés.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. C&apos;est largesse du Seigneur que des fils, récompense que le fruit des entrailles; comme flèches en la main du guerrier, ainsi les fils de la jeunesse.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Heureux l&apos;homme qui, de ces traits, a pu remplir son carquois ; sur la place quand il vient en conteste, il tient tête à ceux qui l&apos;attaquent.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 126. STROPHES de quatre vers; à 3 + 3, 3 + 3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode proposé (cadence féminine) (n° 17); tonique : fa.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 b « en vain » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d « ses bien-aimés » versions, qui ont compris : c quand il donne le sommeil à ses bien-aimés »; « son bienaimé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 cd « il vient. il tient » grec; verbes au pluriel dans l&apos;hébr., lire : « ittô » au lieu de « et ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Le Seigneur est le véritable ouvrier de toute oeuvre humaine féconde.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">a) dans le travail : i et 2; b) dans la famille : 3 et 4 (mariage); c) dans la cité : 1 et 4; d) dans l&apos;Eglise : 1; 6) dont la Vierge Marie, mère des hommes, est la figure (vêpres de B. V. M.).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 127. HEUREUX QUI CRAINT LE SEIGNEUR (Beati omnes qui timent Dominum)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Heureux qui craint le Seigneur et marche en ses voies.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Du labeur de tes mains tu profiteras pour ton aise et bien-être.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ton épouse : une vigne fructueuse, au cœur de ta maison.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Tes fils : des plants d&apos;olivier alentour de la table.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Voilà de quels biens sera béni celui qui craint Dieu.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Que le Seigneur te bénisse de Sion tous les jours de ta vie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Puisses-tu voir Jérusalem dans le bonheur et voir les fils de tes fils.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 127. STROPHES de six vers; à 3 + 2, 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode : ut (n° 24); tonique : fa..</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 b « l&apos;homme qui craint Yahvé » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 de stiques intervertis dans l&apos;hébr. qui ajoute à la fin : « Paix sur Israël ? »</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">La foi et l&apos;obéissance à Dieu (ant. 1) fondent l&apos;existence chrétienne : a) de la famille humaine (messe de mariage); b) de l&apos;assemblée eucharistique : 1 cf (vêpres du T.S.S.); c) figures de la communion céleste : 2 ef, ant. 2.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 129. DES PROFONDEURS JE CRIE VERS TOI</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(De profundis)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Des profondeurs, je crie vers toi, Seigneur : écoute mon appel !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Que ton oreille se fasse attentive au cri de ma prière.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Si tu retiens les fautes, Seigneur, qui donc subsistera?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Mais près de toi se trouve le pardon : je te crains et j&apos;espère.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 129. STROPHES de quatre vers; à 3 + 2, 3 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode : la (cadence féminine) (n° 11 orné); tonique : la.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I a et 2 a « Seigneur », l&apos;hébr. a « Yahvé, Seigneur ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 d « je te crains »; littér. « pour que tu sois craint »; « à cause de ta loi » grec; omis par le syr. « et j&apos;espère »; « j&apos;espère » hébr.; « j&apos;espère en toi » grec.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3c « attend » grec; omis dans l&apos;hébr. (haplogr.).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 ef omis dans le cod. Sinaït.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 b L&apos;hébr. ajoute « auprès de lui ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Psaume de l&apos;espérance chrétienne : a) dans la venue du Verbe : 3 b; rédempteur : 4 (Avent), ant. 1; (Noël vêpres), ant. 3; b) dans le pardon des péchés : 1 et 2 (pénitence), ant. 2 et 4; c) pour les défunts : 2, et les âmes du purgatoire : 1, ant. 2 et 4.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Mon âme attend le Seigneur, je suis sûr de sa parole; mon âme attend plus sûrement le Seigneur qu&apos;un veilleur n&apos;attend l&apos;aurore.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Plus qu&apos;un veilleur n&apos;attend l&apos;aurore, attends-Le, Israël !)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">II. Puisque auprès du Seigneur est la grâce,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">l&apos;abondance du rachat, c&apos;est lui qui rachètera Israël de toutes ses fautes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 135. RENDEZ GRACES AU SEIGNEUR</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Confitemini Domino quoniam bonus)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. - Rendez grâce au Seigneur car il est bon, Car éternel est son amour !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Rendez grâce au Seigneur le Dieu des dieux,</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">Car éternel est son amour 1 Rendez grâce au Seigneur (les-seigneurs, Car éternel est son amour!</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Lui seul a fait des merveilles, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il fit les cieux avec sagesse, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il affermit la terre sur les eaux, - Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 135. STROPHES de six vfefsj à 3 + 3, 3 + 3, 3+3 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Forme litanique; mode spécial de sol; tonique : fa.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1 c « Seigneur » addition. v 2 a Après « merveilles » l&apos;hébr. ajoute « grandes », mot omis dans des mss. grecs et coptes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 a Littér. « il frappa l&apos;Egypte en ses premiers-nés ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 b « d&apos;Egypte » littér. « du milieu d&apos;eux ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 c L&apos;hébr. ajoute « dans la mer Rouge ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6 d On peut compléter cette strophe tronquée par : « et tous les royaumes de Chanaan » (Ps. I34, 11).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8 c « Amen » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Grand Hallêl ou hymne d&apos;action de grâces pascale : a) pour la résurrection du Christ; le baptême chrétien,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">nouvel exode qui accomplit toutes les figures de : 4, 5, 6, 7 8&apos;</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">, b) pour le culte eucharistique (nouvelle Pâque, nouvelle manne : 8b); chant de communion.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Il a fait les grands luminaires, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Le soleil pour gouverner sur le jour, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">La lune et les étoiles sur la nuit, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Il frappa les premiers-nés des Égyptiens, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Et d&apos;Egypte fit sortir Israël, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">A main forte et à bras étendu, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Il fendit la mer Rouge en deux parts, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Et fit passer Israël en son milieu, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Y culbutant Pharaon et son armée, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. Il mena son peuple au désert, - Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il frappa des princes puissants, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Fit périr des rois redoutables, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Sihon, le roi des Amorites, Car.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">Et Og, le roi de Basan,) Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">i</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7. Il donna leur terre en héritage, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">En héritage à Israël son serviteur, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Il se souvint de son peuple humilié, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8. Il nous sauva de la main des oppresseurs, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">A toute chair il donne le pain, Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Rendez grâce au Dieu du ciel. Amen ! Car.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 136. AU BORD DES FLEUVES DE BABYLONE</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">(Super flumina Bubylonis)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">I. Au bord des fleuves de Babylone , nous étions assis et nous pleurions nous souvenant de Sion; aux peupliers d&apos;alentour nous avions pendu nos harpes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Et c&apos;est là qu&apos;ils nous demandèrent, nos geôliers, des cantiques, nos ravisseurs, de la joie : chantez-nous, disaient-ils, un cantique de Sion.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ps. 136. STROPHES de cinq vers; à 2 + 5 + 2, 2 + 2 appuis.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">PSALMODIE. Mode spécial.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">NOTES CRITIQUES.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2 eu ravisseurs », cl. le targum; l&apos;hébr a ici un hapax.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3 e « se dessèche » correction; « oublie » bébr. (anagramme euphémistique).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4 a « je veux » addition.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 de « à bas ! Rasez », littér. « rasez, rasez ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5 a « Babylonc », litiér. « Fille de Babylone »; « dévastatrice » versions; « dévastée » hébr.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6 de Littér. « qui saisira et brisera tes petits ».</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">USAGE LITURGIQUE.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">s Évocation de. la condition de l&apos;Église (et de tout chrétien) : a) qui est exilée dans un monde hostile : I et a (Apoc., T 12, 6); b) qui a foi en sa vocation éternelle : 3 de et 4, ant. I; c) dont le triomphe final est assuré : 5 et 6 (Apoc., 18 et 19).</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Comment chanterions-nous un cantique du Seigneur sur une terre étrangère ?</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Si je t&apos;oublie, Jérusalem, que ma droite se dessèche 1</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">k. Je veux que ma langue s&apos;attache à mon palais si je perds ton souvenir ; si je ne mets Jérusalem au plus haut de ma joie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Souviens-toi, Seigneur, contre les fils d&apos;Edom du Jour de Jérusalem, quand ils disaient : A bas !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Rasez jusqu&apos;aux assises !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard"><text:soft-page-break/>6. 0 Babylone dévastatrice, heureux qui te revaudra les maux que tu nous valus, qui saisira tes petits, les brisera contre le roc !</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">LE CANTIQUE DE LA VIERGE MARIE (Magnificat)</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">1. Mon âme exalte le Seigneur, exulte mon esprit en Dieu mon Sauveur :</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">2. Il s&apos;est penché sur son humble servante; désormais tous les âges me diront bienheureuse.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">3. Le Puissant fit pour moi des merveilles : Saint est son nom.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">4. Son amour s&apos;étend d&apos;âge en âge sur ceux qui le craignent.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">5. Déployant la force de son bras, il disperse les superbes.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">6. Il renverse les puissants de leur trône, il élève les humbles.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">7. Il comble de biens les affamés, renvoie les riches les mains vides.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">8. Il relève Israël son serviteur : il se souvient de son amour,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">9. de la promesse faite à nos pères en faveur d&apos;Abraham et de sa race à jamais,</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">10. Gloire au Père, au Fils, au Saint-Esprit, maintenant et à jamais dans les siècles des siècles.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Table analytique pour l&apos;usage liturgique des psaumes et du Magnificat</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Sacrements et vie chrétienne.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Baptême : 8, 22, 23, 28, 4I, 135.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Confirmation : 22.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Pénitence : 50, 119, 122, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Eucharistie : 8, 22, 41, 42, 115, 127, 135.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Mariage : 126, 127.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Malades : 90, 119, 120, 122, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Défunts : 23, 41, 50, 114, 115, 119, 120, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Funérailles des enfants: 23.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Prière de supplications : 114, 119, 120, 122, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Prière d&apos;action de grâces : 8, 92, 99, 115, 125, 135, Cantique de la Vierge Marie. Saint Sacrifice de la Messe.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Procession d&apos;entrée : 8, 23, 42, 92, 94, 99, 120, 121.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Offertoire : 28, 92, 94.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Chant de communion : 22, 41, 115, 125, 135, Cantique de la Vierge Marie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Année liturgique.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Avent : 121, 122, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Noël : 2, 23, 92, 129.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Epiphanie : 2, 23, 28, 94, 99.</text:p>
+   <text:p text:style-name="Standard"><text:soft-page-break/></text:p>
+   <text:p text:style-name="Standard">Septuagésime : 5o, 119, 122, 136.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Carême : 50, 90, 119, 122, 136.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Passion : 2, 42.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Pâques : 2, 23, 41, 42, 125, 135.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Ascension : 23.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Pentecôte : 28.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Culte des Saints..</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Sainte Vierge : 121, 126, Cantique de la Vierge Marie.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Saints : 23, 115, 125, 127.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Anges : 90.</text:p>
+   <text:p text:style-name="Standard"/>
+   <text:p text:style-name="Standard">Dédicace : 23, -go, 94. </text:p>
+  </office:text>
+ </office:body>
+</office:document>

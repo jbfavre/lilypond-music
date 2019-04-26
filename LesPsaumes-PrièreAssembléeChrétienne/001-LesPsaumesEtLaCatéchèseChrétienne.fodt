@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-04-26T18:20:30.946351842</meta:creation-date><dc:date>2019-04-27T00:17:16.117551714</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT23M14S</meta:editing-duration><meta:editing-cycles>6</meta:editing-cycles><meta:generator>LibreOffice/6.1.5.2$Linux_X86_64 LibreOffice_project/10$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="9" meta:paragraph-count="56" meta:word-count="4550" meta:character-count="27264" meta:non-whitespace-character-count="22769"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">58</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">20560</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">21288</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2501</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">3200</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">58</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">20558</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">21345</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">200</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">1195756</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1339967</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Footnote" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-left="0.598cm" fo:margin-right="0cm" fo:text-indent="-0.598cm" style:auto-text-indent="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
+  <style:style style:name="Footnote_20_Symbol" style:display-name="Footnote Symbol" style:family="text"/>
+  <style:style style:name="Footnote_20_anchor" style:display-name="Footnote anchor" style:family="text">
+   <style:text-properties style:text-position="super 58%"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" text:citation-style-name="Footnote_20_Symbol" text:citation-body-style-name="Footnote_20_anchor" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="0017f4e4" officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false" fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="0014723f"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties officeooo:rsid="00148251"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties officeooo:rsid="001365fa"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties officeooo:rsid="00123eec"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="0014723f"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P8"><draw:frame draw:style-name="fr1" draw:name="Cadre1" text:anchor-type="paragraph" draw:z-index="0">
+     <draw:text-box fo:min-height="0.34cm" fo:min-width="10.8cm">
+      <text:p text:style-name="P1">Les psaumes et<text:line-break/>la catéchèse chrétienne</text:p>
+      <text:p text:style-name="P4">Louis Bouyer.</text:p>
+      <text:p text:style-name="P3">Publié dans « La Maison-Dieu », 33, Éditions du CERF, 1953</text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P7"/>
+   <text:p text:style-name="P9">Si <text:span text:style-name="T3">l’</text:span>on veut que la redécouverte de la Bible, si frappante dans la piété contemporaine, porte tous ses fruits, on ne doit pas se contenter de voir dans la Bible une merveilleuse illustration de la vérité chrétienne catholique. En rester là, réduire la Bible à une espèce d’édition illustrée du catéchisme, serait s’en tenir à un point de vue non seulement superficiel, mais de plus artificiel. Car, dans une initiation chrétienne cohérente, la Bible ne doit pas surgir comme une espèce de placage décoratif superposé après coup à un enseignement doctrinal qui ne lui devrait rien, ou pas <text:span text:style-name="T2">grand-chose</text:span> d’essentiel. La Bible ne peut redevenir pour les chrétiens ce qu’elle est en fait que si elle redevient la source.</text:p>
+   <text:p text:style-name="P6">Cela signifie d’abord que c’est à elle qu’on ira demander les grands thèmes fondamentaux, les grandes idées vivantes qui domineront et, peut-on dire, construiront l’exposition même de la vérité. La Rédemption, par exemple, ce ne sera plus premièrement un concept traduit par des formules abstraites, mais bien la délivrance de l’Israël de Dieu, arraché par la main forte et le bras étendu de Yahvé aux puissances ennemies qui le retenaient en esclavage. Puis, sur la base de cet Exode primitif, se construira l’image de l’ « Exode » de Jésus<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Luc, 9, 31.</text:p></text:note-body></text:note> allant à Jérusalem, selon ses propres paroles, pour y accomplir les Écritures. Et cette parole mystérieuse du Maître s’éclairera quand on aura compris avec le Baptiste qu’il est lui-même le vrai Agneau de Dieu qui à la fois porte et ôte les péchés du monde<text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Jean, 1, 29.</text:p></text:note-body></text:note>. Alors, avec saint Paul, on comprendra sans peine comment le passage du Christ par la mort de la Croix à la vie glorieuse de la Résurrection a entraîné, dans notre propre baptême, notre propre passage du royaume des ténèbres à l’héritage des saints dans la lumière<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Colossiens, 1, 12-14.</text:p></text:note-body></text:note>. Allégories que tout cela ! nous dira-t-on peut-être, au nom d’une exégèse figée qui veut se réserver le monopole de la science.</text:p>
+   <text:p text:style-name="P6">Non, répondrons-nous, si par allégorie on entend ces placages artificiels, que précisément nous repoussons, soit d’un texte sur une idée, soit d’une idée sur un texte qu’aucun lien organique n’unit l’un à l’autre. Ce que nous voulons au contraire, c’est la fidélité totale non seulement au sens de la Bible arrivée à la plénitude de son achèvement, mais au mouvement même par lequel elle l’a rejoint. Car, il ne faut pas se lasser de le redire, ce n’est pas par juxtaposition ou déduction logique d’idées abstraites que la Bible a progressé, mais par le renouvellement et l’approfondissement d’une expérience capitale, peu à peu amenée par l’intervention divine à se transposer d’elle-même d’un plan inférieur au plan supérieur. Cependant, si, au lieu d’agiter un mot comme un épouvantail, sans se soucier d’approfondir sa signification historique, on examine d’un peu plus près ce que, « l’allégorie » signifiait pour les Pères de l’Église <text:span text:style-name="T2">eux-mêmes</text:span> qui l’employaient, on s’aperçoit facilement que c’est précisément ce que nous venons de dire. Le tout, pour nous, est donc de s’inspirer de l’Esprit qui les animait en utilisant les connaissances historiques plus précises et plus critiques dont bénéficie notre propre culture. Ceux qui copient du dehors les procédés des Pères ne sont pas plus leurs disciples authentiques que ceux qui, ne comprenant pas davantage l’intuition qui guidait ces procédés archaïques, croient n’avoir plus aucune leçon à tirer de l’exégèse d’un Origène ou d’un saint Augustin, sous prétexte qu’elle était « allégorique ».</text:p>
+   <text:p text:style-name="P6">Mais, une fois qu’on a dit tout ceci, on n’a pas encore dit l’essentiel sur le problème d’une catéchèse biblique. Car on n’y aura pas atteint vraiment aussi longtemps qu’on croira possible d’y arriver en restant au plan de l’intelligence. Il ne suffit pas, autrement dit, de retrouver par la seule pensée la filière à travers laquelle ont passé et se sont élaborées tout au long de l’Écriture les grandes notions bibliques. En effet, cette filière elle-même, si on veut bien la considérer attentivement, apparaît comme tout autre chose qu’une simple filière de pensées. Elle est, nous l’avons dit déjà, une ample et multiple expérience vivante, dont <text:soft-page-break/>l’unité profonde ne se découvre que peu à peu, à travers des renouvellements qui ne sont pas des recommencements stériles, mais des développements créateurs. En d’autres termes, il faut d’une certaine manière revivre la Bible, et la revivre non pas une fois, mais bien des fois, avant de la comprendre, d’une compréhension qui ne pourra pas être parfaite, à vrai dire, avant que l’histoire qu’elle relate n’ait trouvé son achèvement dans l’achèvement de notre propre histoire.</text:p>
+   <text:p text:style-name="P6">Mais qu’est donc en son fond cette vie de la Bible, cette vie qui doit devenir effectivement la nôtre, pour que le sens de la Bible s’ouvre enfin à nous, tout autrement qu’une sèche pseudo-explication étroitement philologique, ou qu’un déchiffrement laborieux et puéril ? Cette vie, c’est la vie commune entre Dieu et l’homme, créée par Dieu lui-même dans le dialogue dont il prend l’initiative par sa Parole. Et dans ce dialogue, s’il est celui que Dieu veut, c’est la Parole divine elle-même qui suscite, qui nourrit, qui anime la réponse humaine.</text:p>
+   <text:p text:style-name="P6">On peut exprimer cela aussi en disant tout simplement que la vie de la Bible, c’est la vie de prière chrétienne. <text:span text:style-name="T3">C’est-à-dire</text:span> que c’est une prière où l’homme n’a pas l’initiative, mais Dieu ; une prière où ce n’est pas l’homme qui cherche peu à peu, en tâtonnant dans les ténèbres, à démasquer un Dieu muet, mais où c’est Dieu qui cherche l’homme et où celui-ci n’a qu’à se livrer à l’appel entendu en l’écoutant de mieux en mieux. C’est une prière surtout où la réponse est d’une certaine manière toute contenue dans l’appel divin.</text:p>
+   <text:p text:style-name="P6">Non seulement, dans la prière chrétienne authentique, la Parole doit, comme nous le disions, susciter notre réponse, au sens où une parole humaine peut susciter une réponse humaine : mais elle doit vraiment la créer. Car la Parole divine est toujours la Parole créatrice, et la suprême création, dirions-nous, qu’elle ambitionne d’accomplir, c’est la recréation du cœur de l’homme selon le cœur de Dieu.</text:p>
+   <text:p text:style-name="P6">On voit donc que nous ne nous serons pas mis vraiment et effectivement à l’école de la Bible tant que nous n’en serons pas venus à la considérer foncièrement comme une école de prière. Le premier enseignement que doive procurer une catéchèse chrétienne n’est pas simplement une catéchèse notionnelle, mais une catéchèse vitale ; elle le procurera en enseignant non seulement les notions correctes sur Dieu, mais encore les relations personnelles qu’il veut entre lui et nous, les échanges qu’il souhaite d’établir entre son Cœur et notre cœur.</text:p>
+   <text:p text:style-name="P6">C’est seulement quand on en est là que l’on peut comprendre ces deux faits complémentaires : l’abondance des prières contenues dans le texte biblique lui-même, la place centrale que ces prières occupent dans la liturgie catholique.</text:p>
+   <text:p text:style-name="P6">Un livre entier de la Bible, livre que toute la tradition s’accorde à y reconnaître comme central, en ce sens qu’il reflète et condense tout le reste, n’y est fait que de prières : c’est le livre des Psaumes. Et ce même Psautier demeure comme le noyau de l’office divin, c’est-à-dire de cette partie de la liturgie qui est proprement la prière de l’Église. Ni l’un ni l’autre de ces faits n’est fortuit. On ne peut imaginer de résumé de la Bible fidèle à sa réalité la plus intime et qui se présenterait autrement qu’une vaste prière aux multiples formes ; et l’on peut encore moins imaginer une prière chrétienne authentique dont le fond serait fait d’autre chose que la prière inspirée : la prière où c’est Dieu lui-même, dans la bouche des hommes, qui répond à Dieu.</text:p>
+   <text:p text:style-name="P6">Tout ce bel exposé des principes peut séduire par sa cohérence interne et sa rigueur. Mais alors naissent les objections. Les psaumes, en fait, peuvent-ils exprimer, et d’abord provoquer, la prière des chrétiens ? Ne sommes-nous pas, d’une part, comme hommes du XXe siècle, séparés des psaumes, de leurs préoccupations, de leurs formules, par tout un passé irréversible ? Et, d’autre part, comme chrétiens, n’avons-nous pas transcendé le plan où ils se meuvent, étroitement circonscrit par les limites qui sont celles de l’Ancien Testament ?</text:p>
+   <text:p text:style-name="P6"><text:soft-page-break/>Dans l’une comme l’autre objection, il est à craindre que l’historicisme étroit et sans âme d’une certaine exégèse dite moderne soit l’unique responsable d’une double méprise. Il est très bon, certes, de se replacer dans les conditions historiques où les psaumes ont pu être composés, de manière que nous en ressaisissions l’intention et la portée fondamentales. Mais c’est une exagération étouffante d’un procédé excellent que celle qui aboutit à noyer l’humanité permanente des poèmes les plus humains de tous les temps sous les détails accumulés d’un pittoresque daté et localisé. Il peut être fort intéressant, par exemple, de noter que le psaume 103 (hébreu 104), avec son magnifique symbolisme solaire, a dû profiter de la révolution religieuse du pharaon Akenaton. Mais s’hypnotiser sur ce rapprochement au point de devenir incapable de sentir que le psaume a exprimé d’une façon perpétuellement valable la réaction du croyant devant le spectacle de l’univers éclairé et vivifié par le soleil, c’est, il faut bien le dire, une sorte de myopie bien typique du demi-savant. Pour le vrai savant, de telles références datées servent à illuminer la valeur de création durable d’une œuvre. C’est pour le cuistre qu’elles n’aboutissent qu’à la faire méconnaître. Et le simple « honnête homme », dans ce cas-là, en cédant à son impression spontanée, sera peut-être plus près du vrai savant que le pédant qui prétend lui démontrer qu’il comprend tout de travers.</text:p>
+   <text:p text:style-name="P6">Faut-il avouer que nous tenons ici sans doute l’explication de ce fait déconcertant : que tant de laïcs découvrent aujourd’hui avec éblouissement la beauté de textes que tant de prêtres remâchent depuis des années comme un pensum assommant ? Une formation biblique toute technique, apologétique, critique ou <text:span text:style-name="T3">anti critique</text:span>, n’aurait-elle pas chez ces derniers simplement étranglé la réaction naturelle de l’homme normal devant une chose de beauté ? On sait par cœur la fiche qui concerne le spécimen ; mais on en est simplement devenu incapable peut-être de le regarder avec des yeux neufs !.</text:p>
+   <text:p text:style-name="P6">Pour la seconde objection, qui nous dit que « les psaumes ne sont pas chrétiens », il suffit de la laisser se préciser et se définir pour voir qu’elle aussi et plus encore ressortit tout entière de cette culture morcelée et fractionnée qui est tout le contraire de la vraie culture. Pourquoi donc les psaumes ne seraient-ils « pas chrétiens » ? Parce que, nous dit-on, ils enseignent la lutte et la vengeance, alors que l’Évangile enseigne la charité ; parce qu’ils ignorent pratiquement la vie éternelle, alors que l’évangile est dominé par sa perspective ; parce qu’ils ignorent la Croix de Jésus et ne prêchent que le bonheur d’une réussite terrestre, etc.</text:p>
+   <text:p text:style-name="P6">Remarquons au passage que les implications de tels raisonnements sont celles qui amenaient déjà Marcion et les gnostiques hérétiques à rejeter l’Ancien Testament sous prétexte de mieux exalter le Nouveau. Nous pourrions nous contenter de ce rapprochement pour établir que la prétendue « modernité » de ceux qui voudraient voir l’Église se libérer enfin du Psautier est davantage une puérilité attardée de gens qui n’ont pas mieux compris sans doute l’Évangile dont ils se réclament que la Bible qu’ils dédaignent.</text:p>
+   <text:p text:style-name="P6">Mais ce qui est plus fructueux, c’est de souligner en effet combien l’erreur qui nous rend inintéressant le Psautier, comme s’il n’était qu’un débris de l’Ancien Testament, suppose une non moins grande méconnaissance du Nouveau, de la part de ceux qui revendiquent celui-ci avec un tel exclusivisme.</text:p>
+   <text:p text:style-name="P6">La charité chrétienne authentique, en effet, n’est pas une simple bégninité sans ressort et sans nerf, qui ignore ou fuit la protestation et la lutte. La vie éternelle n’est pas davantage une pure et simple vie d’outre-tombe. Et la croix de Jésus n’est pas n’importe quel dolorisme pieux, mais une douleur essentiellement créatrice. Tout ceci, pour se comprendre, exige qu’au lieu d’isoler le Nouveau Testament de l’Ancien pour l’y opposer, on l’en rapproche pour qu’ils s’éclairent mutuellement. Alors, en effet, on comprend que le règne de la charité est lui-même l’enjeu de la lutte suprême, où tous les pouvoirs de ce monde doivent être virilement affrontés, <text:soft-page-break/>coalisés comme ils sont « contre Dieu et contre son oint » ; alors on comprend qu’aimer comme Dieu aime, ce n’est pas tout admettre, tout bénir indifféremment, et surtout pas renoncer à s’opposer et à dire un « non » sans compromission aucune au mal et à tout ce qui le représente.</text:p>
+   <text:p text:style-name="P6">On comprend également que l’espoir de la résurrection, ce n’est pas une fuite apeurée et dégoûtée du corps et de ce monde, mais l’attente joyeuse de leur délivrance et de leur transfiguration. Et on comprend par-dessus tout que la Croix de Jésus, c’est l’aboutissement et comme la floraison de tout ce courant de souffrance humaine, douloureuse mais sanctifiante, déchirée mais confiante, que les psaumes drainent vers la foi d’une âme qui voit, qui sent, qui éprouve toute la misère de l’homme, mais qui se jette sans hésiter, avec toute cette misère, dans toute la miséricorde de Dieu.</text:p>
+   <text:p text:style-name="P10">Jamais celui qui n’a pas « prié » les psaumes, comme Jésus les pria jusqu’à la minute dernière de son agonie, ne découvrira donc le vrai sens et le plein sens de ces vérités chrétiennes qu’il a fallu l’effort millénaire de la Parole divine pour faire éclater au terme seulement de sa révélation. Mais jamais non plus celui qui prie les psaumes à la lumière de l’Évangile ne se lassera de le faire, n’aura l’impression de les avoir épuisés. Car son expérience la plus personnelle lui enseignera de mieux en mieux qu’ils créent précisément dans l’âme le climat d’attente impatiente, de foi totale sans lequel les promesses divines ne peuvent même pas être accueillies vraiment. Et que cette attente elle-même ne soit pas, comme on nous le dit, « dépassée par l’Évangile », seuls peuvent le méconnaître ceux pour qui l’Évangile est un don tout fait, désormais entièrement remis au pouvoir de l’homme et qu’il ne tiendrait plus qu’à lui de monnayer pour atteindre le royaume de Dieu sur la terre. Mais cette erreur, l’erreur matérialiste de notre temps et de ceux qui s’y croient le plus spiritualistes, c’est celle aussi, précisément, que la prière des psaumes rend radicalement impensable, en faisant de ceux qui prient en ces mots des impatients radicaux et des croyants inébranlables : de ceux qui ne seront pas satisfaits tant que la figure de ce monde ne sera pas passée avec ses convoitises, et de ceux qu’aucune déception humaine ne peut décourager, parce que leur foi justement n’est plus dans « la chair et le sang », mais en Dieu seul.</text:p>
+   <text:p text:style-name="P6">Au surplus, il serait bien vain d’argumenter pour ou contre le Psautier dans l’abstrait, alors qu’il s’agit de le prendre et de le lire, avec les yeux de cette foi que lui-même exerce si puissamment. Mais encore faut-il le lire en le respectant, c’est-à-dire en lui demandant ce qu’il prétend donner et pas autre chose. <text:span text:style-name="T3">À</text:span> cet égard, le grand service que nous rend la science exégétique la plus récente, c’est de nous apprendre à accepter les formes littéraires de la Bible pour ce qu’elles sont. Cette forme, pour les psaumes en particulier, c’est la forme de poèmes. Rien de plus naturel, car partout l’humanité qui prie s’exprime spontanément dans une forme poétique. On a même pu supposer que tout poème n’est qu’une application étendue à de multiples sujets des formes littéraires créées d’abord par et pour la prière. Rien de plus naturel, donc, mais rien de plus éloigné aussi de certaines de nos habitudes, de nos routines des derniers siècles chrétiens.</text:p>
+   <text:p text:style-name="P6">Il faut bien voir ici la difficulté préjudicielle et l’attaquer de front. Quand nous parlons d’une prière qui soit un acte de foi, nous avons tendance à nous la représenter sur le modèle de la formule passe-partout qui porte effectivement ce titre dans nos manuels de prière. Mais les psaumes ne sont pas du tout des actes de foi en ce sens qu’ils résumeraient dans une espèce de comprimé théologique la définition technique abstraite de l’acte de foi. Ils sont des actes de foi en ce sens qu’ils touchent en nous toutes les puissances concrètes de l’esprit et du cœur pour les amener à s’épanouir elles-mêmes dans la foi. Et c’est par ce pouvoir de suggestion spontanée propre à la vraie poésie qu’ils le font, et non pas du tout par l’expression précise mais desséchée d’une vérité réduite à l’état de notion dialectique. C’est donc humainement qu’il faut aborder ces prières dont la poésie <text:soft-page-break/>est faite justement de la plénitude de leur humanité spontanée. Ceci revient à dire qu’il faut les lire et les redire non comme des formules qui séparent et opposent pour distinguer et classifier, mais comme des chants qui font éclater les limites des réalités distinctes pour les ramener à la synthèse vivante où toutes choses concourent dans l’unité d’un grand dessein d’amour.</text:p>
+   <text:p text:style-name="P6">Quand un poème humain rien qu’humain dit de la femme aimée que ses yeux sont plus grands que le monde, le critique du type que Rabelais eût appelé « sorbonagre » croit couper l’effet de cette phrase en exhibant les mesures exactes qu’il a prises et qui lui permettent d’affirmer, dit-il, avec la modestie sûre d’elle-même propre à la pseudoscience, que « le poème est faux ». Quand ce poème humain, mais divin aussi, qu’est l’épithalame du psaume 44 (hébreu 45), nous dit que sa parole est pour le roi, cependant qu’il nous décrit ce roi sous les traits d’un Dieu fait chair, le même genre de critique nous expliquera de même que le roi en question étant probablement Achab, tout ceci n’est qu’une exagération courtisanesque. Mais c’est aussi bien le simple bon sens et la vraie science qui lui répondront que ce qu’il nomme « exagération de cour » est d’abord projection sur la réalité limitée de l’existence terrestre d’une vision poétique. Et ce caractère poétique, de lui-même, se prête au sens prophétique, précisément en élargissant aux dimensions d’une histoire transcendante l’anecdote banale. Ainsi en est-il de tout dans l’œuvre des psalmistes. Les réalités limitées de l’histoire d’Israël sur lesquelles ils prennent appui s’ouvrent à leur contact ; la vision inspirée se greffant alors sur l’intuition simplement poétique où elle se prépare providentiellement, une expérience humaine déjà saisie par la main de Dieu devient transparente au contact divin et, d’elle-même, nous achemine vers l’expérience divine qu’elle esquissait. Et pour nous qui restons charnels bien que nous ayons déjà pu accéder à l’Esprit par la foi, n’en doutons pas, cette voie d’accès au spirituel reste la seule qui soit vraie. C’est, en effet, la seule qui nous prenne tels que nous sommes pour nous élever, par la voie choisie par Dieu et où lui-même s’est engagé, vers ce qu’il veut nous faire devenir.</text:p>
+   <text:p text:style-name="P6">Un psaume comme le huitième (<text:span text:style-name="T4">Domine, Dominus noster</text:span>) replace l’homme dans l’univers, au milieu de la terre, des astres et de leur éclatante grandeur, d’où devrait jaillir, par l’écrasement même de l’homme sous cette immensité, le sentiment religieux dans toute sa fruste pureté. Cependant, la Parole qui en même temps résonne en son cœur l’assure que le Dieu sublime qui a fait ce tout a aussi fait ce semblant de néant qu’est le cœur humain éperdu et que l’amour implicite en cette Parole exaltera le néant de l’homme jusque <text:span text:style-name="T5">au-delà</text:span> du cosmos. Sans effort, pour nous chrétiens, les perspectives s’ouvrent et, dans « le fils d’Adam » ainsi exalté, nous reconnaissons Celui qui a voulu lui-même s’appeler pour nous « le Fils de l’Homme ».</text:p>
+   <text:p text:style-name="P7">Quelle clef plus constante à travers tous ces chants que la sécurité parfaite de la foi, en qui l’abandon total de l’homme se jette au-devant d’un don de Dieu qu’il ne peut sonder, qu’il ne pourra jamais sonder, mais qu’il pressent aussitôt effectivement insondable ? C’est bien là ce qu’affirme un psaume comme le vingt-deuxième (hébreu 23) en des termes qui ne pourront plus être surpassés :</text:p>
+   <text:p text:style-name="P2">Le Seigneur est mon berger, Je ne manque de rien.<text:line-break/>Sur des prés d’herbe fraîche, il me fait demeurer.<text:line-break/>Vers les eaux du repos il me mène.</text:p>
+   <text:p text:style-name="P6">Ses expressions ont en effet cette plénitude immédiate propre au jaillissement poétique, à ce point que le Christ Jésus, quand il a voulu nous révéler ses plus hautes et ses plus neuves révélations : qu’il était Dieu, et qu’en lui Dieu se faisait le Sauveur de l’homme, n’a pu mieux faire qu’en évoquer les termes :</text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T4">Je suis</text:span> le bon berger.</text:p>
+   <text:p text:style-name="P6"><text:soft-page-break/>Et maintenant seulement nous savons ce qu’est cette table préparée, où la coupe déborde pour nous, cette onction qui parfume notre tête. Nous le savons, et pourtant, comme le psalmiste déjà, nous attendons encore de le mieux savoir, c’est-à-dire de parvenir à ce banquet éternel où l’onction encore invisible qui déjà marque nos fronts luira enfin dans le jour sans crépuscule.</text:p>
+   <text:p text:style-name="P6">C’est bien à quoi nous prépare un psaume comme le vingt-troisième (hébreu 24) où l’intronisation de l’arche au sanctuaire de Sion sans doute est chantée. Le sens prégnant de la splendide liturgie qu’il évoque :</text:p>
+   <text:p text:style-name="P2">Portes, levez vos frontons ;<text:line-break/>Élevez-vous, portes éternelles,<text:line-break/>Qu’il entre, le Roi de gloire !</text:p>
+   <text:p text:style-name="P6">qui donc mieux que nous, chrétiens, pourrait le lui donner ? Ne savons-nous pas, mieux que ne le savait son premier auteur, qui cependant pressentait dans les révélations passées le germe d’imprévisibles révélations futures, la réponse à sa question :</text:p>
+   <text:p text:style-name="P2">Qui donc est ce Roi de gloire ?</text:p>
+   <text:p text:style-name="P6">Car nous pouvons donner un nom, le Nom de Jésus, à celui qu’il appelle :</text:p>
+   <text:p text:style-name="P2">Le Seigneur, le fort, le vaillant,<text:line-break/>Le Seigneur, le vaillant des combats ?</text:p>
+   <text:p text:style-name="P6">Mais, du même coup, l’autre question et l’autre réponse de ce psaume sont non pas rendues désuètes, mais gonflées d’un sens d’une richesse inattendue, comme celle de la sève qui fait éclater le bourgeon qu’elle-même avait formé :</text:p>
+   <text:p text:style-name="P2">Qui montera sur la montagne du Seigneur<text:line-break/>et qui se tiendra dans son lieu saint ?</text:p>
+   <text:p text:style-name="P2">L’homme aux mains innocentes, au oœur pur,<text:line-break/>qui n’a point l’âme encline aux vanités,<text:line-break/>ni ne jure pour tromper.</text:p>
+   <text:p text:style-name="P2">A lui la bénédiction du Seigneur,<text:line-break/>la justice du Dieu son Sauveur ;</text:p>
+   <text:p text:style-name="P2">C’est la race de ceux qui le cherchent,<text:line-break/>qui poursuivent ta face, Seigneur.</text:p>
+   <text:p text:style-name="P6">L’ampleur lyrique de cette définition donnée à l’ancien peuple de Dieu ne le préparait-elle pas en effet à se dépasser dans l’Église ?</text:p>
+   <text:p text:style-name="P6">Même chose doit être dite à bien plus forte raison du suivant, où la protestation d’innocence d’une pureté encore principalement rituelle, mais déjà ouverte sur autre chose, se transpose comme spontanément dans la prière permanente du chrétien qui monte à l’autel du Christ, une fois lavé dans l’eau jaillie avec le sang de son côté ouvert :</text:p>
+   <text:p text:style-name="P2">Je lave mes mains d’innocent<text:line-break/>et tourne autour de ton autel<text:line-break/>en faisant retentir l’action de grâces,<text:line-break/>en racontant chacun de tes prodiges.</text:p>
+   <text:p text:style-name="P6">Il faut lire le psaume ligne à ligne pour se rendre compte de la vérité permanente de chacune de ces réactions d’une piété d’Ancien Testament, où tout était ensemencé du Nouveau et où tout le Nouveau se replonge dans le réalisme, à la fois évocateur et précis, de l’Ancien. La simple action de grâces, rite central de <text:soft-page-break/>toute la piété juive, s’est prolongée et magnifiée dans l’Eucharistie chrétienne, mais toujours suivant la ligne indiquée d’emblée du retour à Dieu de ce qui est son don. Faut-il pesamment expliquer tout ce que peuvent pareillement signifier pour un chrétien, sans effort ni artifice, « la beauté de ta maison », « le séjour de ta gloire » ? Et quelle définition scolastique fera jamais mieux comprendre pourquoi l’erreur ou le péché sont des infidélités, et comment l’infidèle s’excommunie lui-même, que ces deux simples lignes :</text:p>
+   <text:p text:style-name="P2">Mon pied se tient en droit chemin,<text:line-break/>Je te bénis, Seigneur, dans l’assemblée.</text:p>
+   <text:p text:style-name="P6">Voici maintenant la grande théophanie, la grande manifestation du Dieu de gloire et d’amour, de grandeur écrasante et de miséricordieuse générosité, saluée dans le poème de l’orage. Ce psaume vingt-huitième (hébreu 29), où le Dieu qui fut d’abord le Dieu du Sinaï se révèle en roi par la foudre, mais finalement entr’ouvre dans sa royauté des abîmes de bonté communicative au peuple qui est le sien, pourra-t-il jamais dater ? Ne s’agit-il pas toujours, à travers toutes les catastrophes de l’histoire humaine et cosmique, de reconnaître l’approche de la main qui bénit à travers le sillon de feu qu’elle s’ouvre en un monde figé dans sa mort ?</text:p>
+   <text:p text:style-name="P6">L’appel nostalgique du <text:span text:style-name="T4">Quemadmodum cervus desiderat ad fontes aquarum</text:span> (psaume 41-42, hébreu 42-43) jette un cri douloureux et serein, s’élançant dans la nuit vers la lumière future, appuyé sur le souvenir des révélations passées, cri qui restera toujours, lui aussi, l’appel de l’espérance surnaturelle. L’exaucement premier que le Christ lui a déjà apporté fait seulement rejaillir plus’haut encore l’espérance. Mais, si haut qu’elle s’élève, tant qu’elle n’aura pas atteint dans l’éternité sa seule réalisation vraiment parfaite, pourrait-elle trouver formules plus belles et plus transparentes que celles de ce cantique ?</text:p>
+   <text:p text:style-name="P6">De même il y a, pour le sens du péché et du pardon, dans le psaume 5o (hébreu 51), pour le sens de la protection et de la proximité divines dans le 90 (hébreu 91), des formulations auxquelles le christianisme seul a pu donner toutes les résonances dont elles étaient susceptibles. Mais, de ce fait, loin d’avoir été abolies par le Christ, elles trouvent en lui un accomplissement qui les immortalise. Il faut avoir longuement médité de tels textes auprès des textes les plus riches du Nouveau Testament pour mesurer combien cette méditation des psaumes est à jamais impliquée dans les développements que le Christ et les apôtres ont apportés à la révélation de l’Ancien. Alors on comprend que l’Évangile lui-même reste à jamais indéchiffrable pour qui ne le lit pas comme la révélation accordée à ceux qui ont médité ces prières avec une telle pureté que leurs formules se sont fondues pour eux dans la lumière totale.</text:p>
+   <text:p text:style-name="P6">Totale, d’ailleurs, encore une fois, pour nous-mêmes chrétiens, la lumière ne peut pas ici-bas l’être à ce point qu’elle dissipe toutes les ombres. Aussi, comme il nous est nécessaire encore de redire sans cesse les psaumes théophaniques par excellence, les psaumes du Règne de Yahvé, comme le 92 (93), le gli (95), ou bien le 99 (100), où l’adoration de la foi salue déjà, mais aussi invoque avec une instante exultation, sa manifestation royale ! Car c’est finalement un immense désir de délivrance, de délivrance à travers la mort pour la liberté de la vie sans limite (cf. le 114-115 — hébreu 116), qui soulève le Psautier et qui doit emporter le chrétien ; ce désir s’exprimait déjà dans l’Ancienne Alliance comme réalisé, tant la foi déjà était sûre, mais il doit d’autant moins se détendre dans son attente, avec la Nouvelle Alliance, que l’exaucement est plus proche.</text:p>
+   <text:p text:style-name="P6">Car nous sommes, le peuple de Dieu est toujours, dans ce long et apparemment monotone pèlerinage des psaumes graduels (119, hébreu 120, etc.) où les sommets embrumés des collines éternelles apparaissent à peine et où plus la foi progresse et plus elle a besoin de se rajeunir dans l’unique assurance : que Dieu est bon et qu’éternel est son amour (135, hébreu 136).</text:p>
+   <text:p text:style-name="P5"><text:soft-page-break/>Louis B<text:span text:style-name="T1">ouyer</text:span>.</text:p>
+  </office:text>
+ </office:body>
+</office:document>

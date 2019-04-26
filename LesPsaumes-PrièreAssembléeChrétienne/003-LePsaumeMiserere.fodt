@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-04-26T18:33:01.725480300</meta:creation-date><dc:date>2019-04-27T00:28:28.969164533</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT22M42S</meta:editing-duration><meta:editing-cycles>3</meta:editing-cycles><meta:generator>LibreOffice/6.1.5.2$Linux_X86_64 LibreOffice_project/10$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="13" meta:paragraph-count="95" meta:word-count="5712" meta:character-count="33273" meta:non-whitespace-character-count="27653"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22844</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23285</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">6641</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">14349</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22842</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">23283</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">180</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">612351</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">918672</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-size="130%" fo:font-weight="bold" style:font-size-asian="130%" style:font-weight-asian="bold" style:font-size-complex="130%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra"/>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="000957ff" officeooo:paragraph-rsid="000957ff"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="000957ff"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="000957ff"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:rsid="000957ff" officeooo:paragraph-rsid="000957ff"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P4"><draw:frame draw:style-name="fr1" draw:name="Cadre1" text:anchor-type="paragraph" draw:z-index="0">
+     <draw:text-box fo:min-height="0.34cm" fo:min-width="10.8cm">
+      <text:p text:style-name="P5">Le psaume Miserere</text:p>
+      <text:p text:style-name="P1">Jacques Guillet, S.J.</text:p>
+      <text:p text:style-name="P2">Publié dans « La Maison-Dieu », 33, Éditions du CERF, 1953</text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P4">Le Psaume Miserere</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le Miserere nous offre un bon exemple de la façon dont, spontanément, nous lisons un texte de l&apos;Ancien Testament en lui donnant son sens spirituel, une portée que ne lui donnait pas le poète hébreu qui l&apos;a composé, mais que lui donnait certainement l&apos;Esprit-Saint qui l&apos;inspirait, pour qu&apos;il demeure, jusqu&apos;à la fin des siècles, l&apos;un des chants les plus expressifs du repentir et de la contrition chrétienne.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il nous est impossible, en effet, de prononcer ce psaume sans le charger de toutes les richesses de la révélation de Jésus-Christ. Le Dieu auquel nous l&apos;adressons ne peut plus être pour nous simplement le Dieu de l&apos;Ancien Testament.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il est forcément celui que Jésus nous a appris à nommer notre Père, celui qui nous a aimés jusqu&apos;à nous donner son Fils unique. Sans doute n&apos;est-il pas différent de Yahvé, le Dieu d&apos;Abraham, de Moïse et des prophètes. S&apos;il n&apos;était pas le même, il nous serait impossible de lui adresser cette prière. Elle eût été composée pour un autre. A moins d&apos;être une formule passe-partout, simple geste de convention, elle n&apos;eût jamais souffert d&apos;être détournée de son destinataire.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">L&apos;aisance avec laquelle un chrétien répète ces mots inventés par un Juif est une des preuves décisives qui montrent que le Dieu de l&apos;Ancien Testament est déjà celui du Nouveau.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Néanmoins, il est clair que, pour qui a connu Dieu en voyant agir Jésus dans l&apos;Évangile, pour celui au cœur de qui l&apos;Esprit-Saint murmure le cri ineffable : Père, les mots du Miserere prennent une valeur nouvelle. Ce psaume est ainsi un exemple excellent de la transposition que fait subir à l&apos;Ancien Testament la découverte de Jésus-Christ.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il est en même temps un exemple tout à fait significatif de l&apos;aspect du sens spirituel si fortement souligné par</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">l&apos;Église dans les années dernières : sa liaison intime avec le sens littéral. Le Miserere, en effet, n&apos;est pas seulement une merveille d&apos;expression religieuse. Il est en même temps chargé de réminiscences de l&apos;histoire et de la littérature du peuple hébreu. Il est l&apos;expression d&apos;une situation très concrète. Sans doute le texte se suffit-il à lui-même. Il est assez pur et assez plein. Mais la connaissance de tout ce qu&apos;il suppose et de tout ce qu&apos;il suggère n&apos;est pourtant pas inutile pour en éprouver toute la profondeur.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">* * *</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il n&apos;est pas indifférent que la tradition juive ait attribué le Miserere à David. Les exégètes modernes estiment généralement que c&apos;est une erreur. Il est, en effet, écrit dans un style qui ne semble pas remonter plus haut que les prophètes, et si rien n&apos;interdit de penser que David ait pu chanter son repentir, et que son chant ait été conservé, repris et enrichi, il est visible, à de nombreux versets, que l&apos;auteur du <text:soft-page-break/>texte définitif, celui que nous possédons, connaît les prophètes et les utilise. Néanmoins, il nous est bon de savoir que le peuple juif, si fier du fondateur de sa dynastie, de celui qui avait reçu les promesses messianiques et qui demeurait dans la mémoire des générations le type idéal du monarque selon le cœur de Yahvé, n&apos;avait pas hésité à conserver le souvenir des péchés de David. La tradition biblique se plaît à voir l&apos;un des personnages de son histoire les plus proches de Dieu mettre à nu sa misère et son péché.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Miserere. misericordiam. miserationum tuarum.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le texte latin, à la suite de la traduction grecque des Septante, met l&apos;accent, avec une insistance émouvante, sur la miséricorde. C&apos;est bien, en effet, à la miséricorde de Dieu que fait appel le pécheur, à ce mouvement de pitié qui le jette à la rencontre de notre misère. Telle est certainement l&apos;intention du psalmiste, et la triple répétition du mot ne la trahit pas. Toutefois, le recours au texte hébreu n&apos;est pas inutile. Il nous permet de préciser ce que le poète mettait</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">sous cette idée générale de miséricorde. Il a, en effet, utilisé, là où nos traductions ne connaissent qu&apos;un seul mot, trois mots différents. Même s&apos;il ne l&apos;a fait que pour varier son expression, il faut cependant noter que ces trois mots ne sont pas des mots quelconques. Ils sont, chacun pris à part, et ils sont bien davantage, lorsqu&apos;ils sont, comme ici, associés, chargés de souvenirs précis et de résonances religieuses très étendues.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le premier mot, traduit par miserere, est, des trois, le plus général. La racine à laquelle il appartient (HNN) désigne le geste par lequel on s&apos;incline sur quelqu&apos;un. C&apos;est normalement le geste d&apos;un personnage puissant faisant descendre sa faveur et sa protection sur un plus faible. L&apos;équivalent le plus exact serait notre mot « grâce » en son sens le plus vaste, avec ce qu&apos;il implique de distance entre les deux parties, de besoin chez le plus faible, de bienveillance et de gratuité chez le plus fort. Mais la grâce est une réalité chrétienne trop caractérisée pour que le mot, utilisé dans l&apos;Ancien Testament, ne prête pas à équivoque. Mieux vaut dire simplement « bonté ».</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le second mot, celui qui répond à misericordiam, issu de la racine hébraïque HSD, suppose au contraire, sinon proprement l&apos;égalité, du moins une certaine réciprocité entre deux partenaires, l&apos;existence d&apos;un lien, la parenté, l&apos;amitié, la camaraderie, la conclusion d&apos;une alliance. Le mot est généralement rendu, dans les traductions faites sur l&apos;hébreu, par le français « bonté ». Il implique, en effet, toujours des gestes traduisant de manière effective les sentiments du cœur. Mais il suppose aussi presque toujours une altitude intérieure de fidélité loyale et généreuse à celui envers lequel on se trouve engagé.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le troisième mot, traduit par miserationum (racine RHM), est d&apos;un ordre bien plus intime. Il n&apos;évoque plus les relations sociales, l&apos;attitude de l&apos;homme en face de ses compa-</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:soft-page-break/>gnons. Il évoque la mère, le ventre maternel, le frémissement de tout son être, incapable de jamais « oublier le fruit de son ventre » (Is., 49, 15), vulnérable à tout ce qui peut blesser son enfant.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Ce n&apos;est pas un hasard, ni même un simple souci de style, qui fait invoquer à l&apos;auteur du Miserere ces trois aspects de la miséricorde. Il se réfère à une tradition, il exprime</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">une foi. Le récit de l&apos;apostasie d&apos;Israël au désert et de l&apos;adoration du veau d&apos;or s&apos;achève sur une scène grandiose.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A force de supplication, Moïse obtient que Yahvé pardonne à son peuple. Ce pardon n&apos;est pas un geste quelconque. Il consiste en une révélation solennelle dans laquelle Dieu découvre le fond de son être. Naguère, lorsqu&apos;il avait envoyé Moïse en Égypte libérer les Hébreux de l&apos;esclavage, Dieu lui avait révélé son nom. Il est « celui qui est » (Ex., 3, 14), c&apos;est-à-dire celui qui toujours est présent, sur lequel on peut toujours compter, qui ne bouge pas et ne change pas. A ce Dieu solide, Israël a failli. Il a renié sa foi. A cette infidélité, si son alliance n&apos;était qu&apos;un contrat humain, Yahvé ne répondrait que par l&apos;oubli. Il reprendrait sa liberté. Il le pourrait, il en fait mesurer le risque à Moïse.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Mais il obtient en même temps de Moïse la prière qui l&apos;amène à révéler de lui-même un trait nouveau. Le Dieu qui est est aussi « le Dieu de tendresse et de bonté, le Dieu à l&apos;inépuisable fidélité » (Ex., 34, 6). Yahvé s&apos;était révélé une première fois en prenant en main la cause de son peuple, en dressant sa force auprès de lui. Il se révèle maintenant en pardonnant le péché. La gravité du moment et l&apos;importance de son contenu ne passèrent pas inaperçus. A plusieurs reprises, les auteurs bibliques invoquent cette formule, où Dieu lui-même a exprimé son être (Néh., 9, 17; Joël, 2, 13; Jonas, 4, 2; Ps. 103, 8; 145, 8). Le Miserere s&apos;y réfère-t-il expressément, il est difficile de l&apos;affirmer. Mais il est certain que les trois mots de miséricorde qui introduisent sa supplication, et qui sont précisément les trois mots par lesquels se définit Yahvé, ne peuvent manquer de plonger le Juif qui les récite dans l&apos;atmosphère de cette révélation.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Bonté, fidélité, tendresse, ces trois prises auxquelles le pécheur du Miserere, instruit de la révélation faite à son peuple, accroche sa prière, sont, de fait, parmi les traits essentiels du Dieu de l&apos;Ancien Testament, parmi ceux qu&apos;il tient le plus à mettre en lumière, ceux qu&apos;on retrouve à chaque page de la Bible. Bonté d&apos;un Dieu penché sur son œuvre. Les vieux récits de la création et du déluge avaient de bonne heure déposé dans la mémoire d&apos;Israël des images d&apos;un anthropomorphisme bien plus profond encore que naïf : Dieu penché sur l&apos;argile qu&apos;il modèle, Dieu s&apos;inclinant</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">jusqu&apos;à terre, pour insuffler aux lèvres du corps inerte le souffle de vie, Dieu baissant sa main pour verrouiller dans l&apos;arche le fragile espoir de la vie, échappé au déluge. Fidélité du Dieu qui, dans l&apos;humanité, distingue une race dont il fait son peuple. Désormais, un lien l&apos;unit à ce peuple, indissoluble. Lien de fidélité, lien de tendresse aussi. Yahvé est le Dieu de l&apos;alliance, d&apos;une alliance cent fois violée, à laquelle il demeurera inviolablement fidèle. Parce qu&apos;il est trop noble, trop généreux pour se reprendre. C&apos;est sa fidélité proprement dite. Mais aussi parce que son cœur, ce qu&apos;il nomme lui-même ses entrailles, viscera misericordiae, est pris, et que, le voulût-<text:soft-page-break/>il, il est incapable de se détacher de l&apos;enfant auquel il a donné naissance (Osée, II, 8; Is., 49, 15; 54, 8). Telle est la foi de l&apos;Ancien Testament. Elle a inspiré le premier verset du Miserere. Tant qu&apos;on ne l&apos;a pas replacé dans ce contexte, on n&apos;a pas encore épuisé les richesses de son sens littéral.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Un chrétien peut cependant aller plus loin encore. Il peut donner à cette miséricorde qu&apos;il implore une valeur nouvelle, celle qui lui est révélée dans le pardon du Père à la prière de son Fils en croix. Aux images de l&apos;Eden, du déluge, du Sinaï, il peut substituer des images plus vivantes encore, plus familières, celles de l&apos;Évangile, d&apos;un Dieu fait homme, et révélant dans des réflexes d&apos;homme le mystère de son être. Récité par un chrétien, le Miserere prend une portée définitive, son sens spirituel total. Il ne perd rien pour autant de son sens littéral premier. Davantage, plus le chrétien a pénétré les profondeurs du sens original, et plus le sens spirituel lui découvre de richesses. Car les images et les souvenirs de l&apos;Évangile ne sont pas destinés à abolir ceux de l&apos;Ancien Testament, mais à en révéler toutes les profondeurs. C&apos;est pourquoi, chrétiens, il nous est bon, priant le Miserere, de nous pénétrer de tout ce qu&apos;il impliquait pour son auteur. Il nous est bon de contempler la bonté du Dieu de l&apos;Ancien Testament, penché sur sa créature, modelant son œuvre comme un ouvrier consciencieux, à nous qui avons vu jusqu&apos;où ce Dieu est descendu, serviteur agenouillé aux pieds des siens, esclave accomplissant à la lettre la besogne dont il a été chargé. Il nous est utile de revenir sur la loyauté du Dieu fidèle à son alliance, pour saisir ce que nous a donné le Père en nous livrant son Fils.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Celui qui, tant de fois, avait engagé sa parole nous signifie, I en nous donnant son Verbe, ce que comportait cet engage! ment : un don à la mort, une alliance plus forte que l&apos;enfer, « novi et aeterni Testamenti ». Il était bon que le Dieu d&apos;Israël nous dise que son cœur était celui d&apos;un passionné, | blessé d&apos;amour. Ce message brûlant que nous transmettent les prophètes nous aide à comprendre pourquoi, trop écrasé par sa souffrance pour nous laisser des confidences, Jésus 1 expirant nous a livré le secret de son cœur ouvert.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Iniquitatem meam ego cognosco. Tibi soli peccavi.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le souvenir de David est ici inséparable du psaume. Le mot « contre toi, contre toi seul j&apos;ai péché » a souvent fait conclure qu&apos;il devait s&apos;agir d&apos;une faute secrète, dont nul n&apos;avait souffert. Peut-être la conclusion est-elle un peu hâtive. Car il y a, dans l&apos;épisode du péché de David et de son repentir (2 Sam., 12, 1-12), un mot qui ressemble singulièrement à celui-là. Nathan est venu trouver David, qui a fait assassiner Urie, afin de pouvoir jouir sans scrupules de Bethsabée. Il lui raconte la parabole émouvante du riche qui ne manquait de rien et, pour offrir un festin, dépouille le pauvre de la brebis qui était son trésor. Il vient de lancer au roi, soulevé d&apos;indignation : « Cet homme, c&apos;est toi. »</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il lui a fait mesurer le scandale de son injustice : David est le roi, il peut satisfaire tous ses désirs, il a fallu qu&apos;il aille prendre à Urie tout ce qu&apos;il possédait. Or David comprend parfaitement. Mais sa réaction n&apos;est pas celle d&apos;une logique humaine. Il ne dit pas : « J&apos;ai péché contre un malheureux. » Il trouve du premier coup le mot vrai : « J&apos;ai péché contre Yahvé. » On voit ici s&apos;appliquer, avant qu&apos;en ait été révélé le secret, la loi évangélique : « C&apos;est à moi que vous l&apos;avez fait. »</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:soft-page-break/>La réaction du Miserere, la réaction de David, la réaction qui découvre Dieu au fond de son péché, est celle qui a permis au psaume d&apos;être redit sans cesse en Israël par des générations de pécheurs. Chacun d&apos;eux avait ses propres péchés. Tous se retrouvaient dans la conscience commune d&apos;avoir offensé Dieu. L&apos;Esprit-Saint qui avait inspiré le psaume formait ainsi les âmes.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il ne cesse pas de les former. Encore aujourd&apos;hui, un chrétien a grand profit à réciter le Miserere en évoquant le péché que la tradition d&apos;Israël lui donnait pour origine, et en découvrant à son tour que ses fautes ont des dimensions plus qu&apos;humaines, qu&apos;elles atteignent Dieu. Il peut cependant aller plus loin. Il peut, grâce à l&apos;Évangile, donner tout son sens à la réaction de David et du Miserere. Non seulement il sait qu&apos;en offensant les hommes, il pèche contre Dieu. Il a appris à reconnaître, sous les traits du pauvre, de l&apos;abandonné, de son ennemi, le visage du Fils de l&apos;homme. Devant cette face divine qu&apos;il meurtrit à chaque nouveau péché, il peut redire, en un sens nouveau, le Tibi soli peccavi.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Ut justificeris in sermonibus tuis et vincas cum judicaris.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Pour comprendre ce verset, le plus important est d&apos;avoir éprouvé la véritable contrition, et tous les sentiments qu&apos;elle développe dans un cœur. Il y a bien autre chose dans ces mots qu&apos;une simple rétractation, une formule d&apos;excuses de quelqu&apos;un qui a fait une erreur et veut rétablir la vérité.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il y a d&apos;abord le besoin de donner raison à Dieu, de faire éclater publiquement son triomphe. Il y a le besoin de savourer cette victoire de Dieu et de sa justice, de s&apos;en émerveiller et de l&apos;en louer. Rien ne remplace, et rien ne saurait dépasser, pour comprendre le Miserere, cette expérience spirituelle de la contrition, telle, par exemple, que les Exercices visent à nous la faire trouver.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A nouveau cependant, la connaissance concrète du milieu biblique où est né le psaume et des résonances qu&apos;il y prend est utile pour nourrir notre repentir. Ce verset évoque en effet un des grands thèmes de l&apos;Ancien Testament, celui du procès. Yahvé a un procès avec son peuple (Osée, 2, 4; 4, 1; 12, 3; Jér., 2, 9, 29; 25, 31; Is., I, 18; 3, 14; 5, 3). Ce procès date du jour où Dieu a élu Israël. La première étape au désert, Méribah, perpétue le souvenir de l&apos;heure où les Hébreux, à peine libérés d&apos;Egypte, accusèrent leur Sauveur (Ex., 17, 7). Dans ce procès, chose incroyable, Yahvé n&apos;est point d&apos;abord juge, mais partie. Sans doute est-ce toujours lui qui prononce la sentence, mais il commence par plaider</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">lui-même sa cause. Son bon droit est si clair que le premier venu peut rendre la sentence : Habitants de Jérusalem et gens de Juda,</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Soyez, s&apos;il vous plaît, juges entre ma vigne et moi. (Is., 5, 3.) Passez donc aux îles de Kittim, Envoyez enquêter à Qédar.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A-t-on jamais vu cela : Un peuple changer de dieux ?</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:soft-page-break/>— Or ce ne sont pas même des dieux ! Et mon peuple a troqué sa Gloire contre l&apos;Inconsistance. (Jér., 2, 10 s.)</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Dieu comparaissant devant un tribunal, Dieu réclamant des juges, cette situation inouïe est dans la logique de son choix. Il a voulu conclure alliance avec Israël. Cette condescendance, qui ne retire rien à sa souveraine initiative, le met cependant, d&apos;une certaine façon, au niveau de son partenaire, l&apos;oblige à attendre une réponse, à dialoguer, à discuter. Telle est l&apos;exigence de l&apos;amour : Mon peuple, que t&apos;ai-je fait ?</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Comment t&apos;ai-je fatigué? Réponds-moi. (Mic., 6, 3.)</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A la plaidoirie de Dieu, il n&apos;est pas de réponse possible.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Presque toujours chez les prophètes, elle s&apos;achève en menaces redoutables. L&apos;amour déçu ne peut plus que maudire ceux qui se dérobent à lui. La seule solution pour le pécheur est le silence. Qu&apos;il entende Dieu lui retracer l&apos;histoire de ses péchés, qu&apos;il laisse longuement retentir ses accusations, qu&apos;il savoure la joie d&apos;avoir enfin trouvé sa place, et qu&apos;il s&apos;émerveille des inventions de l&apos;amour divin. Il suffit, pour prendre cette attitude, de se laisser porter par le Miserere, en son sens immédiat et naturel.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Tout cependant invite un chrétien à creuser encore. Saint Paul lui révèle que ce silence du pécheur devant Dieu n&apos;est pas seulement le fruit d&apos;un psaume isolé, mais le sens même de tout l&apos;Ancien Testament : Or, nous (chrétiens) le savons, tout ce que dit la Loi, c&apos;est à l&apos;adresse de ceux qui sont sous la Loi, afin que toute bouche soit close, et que le monde entier passe sous le jugement de Dieu. (Rom., 3, 19.)</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">t 1\&apos; Et l&apos;Église lui apprend à percevoir, dans le silence du Crucifié à bout de forces, le plaidoyer de Dieu, venu effectivement comparaître devant nos tribunaux : m Mon peuple, que t&apos;ai-je fait?</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Comment t&apos;ai-je fatigué? Réponds-moi.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">chantent les Impropères du vendredi saint. Le procès de Jésus lève l&apos;ambiguïté qui subsiste dans les textes de l&apos;Ancien Testament. Comment Dieu peut-il être en même temps le plaignant et le juge ? Comment notre verset peut-il dire que Dieu doit triompher à la fois dans sa plaidoirie, sermo- nibus, et dans sa sentence, judicaris ? Jésus le déclare solennellement au Grand Prêtre : l&apos;heure où il est condamné est aussi celle où il prend place à la droite de Dieu pour juger - -le monde (Mt., 26, 64). Ce qui se passe dans les prétoires de Jérusalem est en réalité le jugement du monde. Le jugement de chaque homme se prononce ici. Lorsqu&apos;il paraîtra pour rendre compte de sa vie, l&apos;homme se réveillera, en face de ce condamné silencieux, de ce regard voilé de sang, et son sort éternel dépendra de la réponse qu&apos;il pourra donner à la question posée par l&apos;Amour : « Que t&apos;ai-je fait ? Répondsmoi. »</text:p>
+   <text:p text:style-name="P3"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P3">Ecce in iniquitatibus conceptus sum.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Ce verset est évidemment l&apos;un de ceux où le sens spirituel paraît le plus immédiat, et semble nous faire retrouver le dogme chrétien du péché originel. Il est certainement l&apos;un des passages de l&apos;Ancien Testament qui insistent le plus sur l&apos;état de déchéance où naît l&apos;homme. Il affirme que le pécheur qui prie ici l&apos;est depuis qu&apos;il existe, donc avant qu&apos;il ait pu pécher personnellement. On ne peut cependant soutenir qu&apos;il contienne le dogme révélé. Car il ne se préoccupe pas de l&apos;origine de cette souillure. Il reste que, replacée dans la croyance, si profonde chez les Juifs pieux, d&apos;appartenir à une race pécheresse, cette humble confession est sur le chemin direct qui mène à l&apos;affirmation chrétienne, et que,</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">si nous la chargeons d&apos;une plénitude nouvelle, nous n&apos;en faussons pas l&apos;orientation profonde1.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Amplius lava me. lavabis me. asperges me hyssopo.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A plusieurs reprises, le psalmiste demande à Dieu de prendre lui-même en main sa purification. Les images qu&apos;il emploie sont suggestives.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">L&apos;aspersion d&apos;hysope était utilisée dans la liturgie juive pour les purifications (Nom., 19, 18). L&apos;intérêt du texte est qu&apos;il fait célébrer ce rite par Dieu lui-même. Il est clair qu&apos;il ne prend pas l&apos;expression à la lettre, et ne s&apos;attend pas à voir Yahvé prendre la branche dans ses doigts. Il témoigne au contraire d&apos;un sens profond du caractère spirituel des rites. Il a conscience que leur efficacité ne vient pas du geste matériel, mais de l&apos;action divine. Il croit cependant à leur valeur; il est possible que ce verset ait été destiné à accompagner le rite extérieur et à lui donner sa signification.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il est clair en tout cas que ce texte de l&apos;Ancien Testament est de ceux qui ne prennent toute leur portée qu&apos;avec le Christ. Tout ce que peut espérer le psalmiste, c&apos;est que Dieu ratifie pour son compte le geste liturgique. Il ne peut encore soupçonner que sa formule doit devenir, avec Jésus, bien plus qu&apos;une belle image. Nous savons, nous, que Dieu luimême est venu tracer sur l&apos;homme les gestes qui pardonnent. Nous croyons que les sacrements chrétiens doivent leur efficacité infaillible à ce qu&apos;ils sont les gestes mêmes de Jésus, et que le pardon de l&apos;Église nous vient des mains du Christ.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Parmi les rites de purification auxquels servait le rameau d&apos;hysope, il en est un spécialement expressif, et auquel le Miserere faisait spontanément penser un Hébreu : c&apos;est la purification du lépreux (Lév., 14, 4-7). Parmi toutes les maladies, la lèpre était celle qui inspirait le plus d&apos;horreur.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Tout en elle exhalait la souillure et la corruption. Elle est dans la Bible l&apos;une des grandes images du péché et de la réprobation divine (Is., 53, 4). En implorant une aspersion</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:soft-page-break/>I. Sur le sens de ce verset cf. l&apos;excellent article de M. FEUILLET, Le verset 7 du « Miserere » et le péché originel, dans Recherches de Science religieuse, 1944, pp. 5-26.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">d&apos;hysope, le Miserere place le pécheur dans la condition de paria qui était celle des lépreux, il le plonge dans la réalité du péché, une pourriture de la vie. A cette horreur, Dieu seul peut l&apos;arracher.Un chrétien n&apos;a pas de peine à se retrouver dans ce monde d&apos;images. L&apos;Évangile lui montre Jésus purifiant les lépreux, et les évangélistes ont tous gardé, pour cette guérison, le mot consacré de « purifier », qui traduisait si bien la transformation (Luc, 5, 13; 7, 22; 17, 14 et parall.) et se prêtait naturellement au sens que Jésus donnait à ces miracles.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">D&apos;autre part, les premiers chrétiens ont immédiatement associé à la Passion de Jésus la vision d&apos;Is., 53, le Serviteur de Yahvé apparaissant, tel un lépreux, et sauvant les pécheurs au prix de son sang. Il fallait, pour purifier le lépreux, tremper l&apos;hysope dans le sang d&apos;un oiseau (Lév., 14, 6). Il est tout naturel qu&apos;en récitant ce verset, nous songions au sang dont nous avons été arrosés et qui a lavé nos souillures.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">L&apos;autre geste que le psaume demande à Dieu est d&apos;un genre tout différent. Ce n&apos;est plus la sérénité de la liturgie. C&apos;est un nettoyage vigoureux, une lessive, et si l&apos;opération, même pour nous, évoque des manipulations énergiques, et pas toujours très appétissantes, elle en disait au moins autant aux Hébreux. La lessive était l&apos;affaire des foulons. Le linge trempait dans de l&apos;eau additionnée de cendre et de potasse (Jér. 2, 22), mais il fallait ajouter à ces actions chimiques le battement des pieds piétinant le tout. Les prophètes évoquent plus d&apos;une fois ces traitements, et la peine qu&apos;ils supposent. Peine perdue lorsque l&apos;homme tente lui-même de laver ses souillures : Quand tu te lessiverais à la potasse, en jetant la cendre sans compter, ton iniquité resterait marquée devant moi. (Jér., 2, 22.) Jusque sur tes mains on découvre les traces sanglantes d&apos;innocents. (Jér., 2, 34.) Il faut que le Seigneur se charge de l&apos;affaire. Mais elle sera douloureuse. Il faut que Yahvé lave la souillure des filles de Sion, efface dans Jérusalem les taches de sang, au vent du jugement, au vent dévastateur. (Is., 4, 4-)</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le psalmiste, en composant sa prière, avait sans doute sous les yeux des images de ce genre, et il nous est bon de nous les représenter concrètement. Mais nous savons, comme il ne pouvait pas le soupçonner, quelle lessive a représenté pour Dieu notre purification, et le dégoût de Jésus devant cette horreur.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Exaltabunt ossa hUlniliata.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Ces os humiliés sont en réalité des os broyés. C&apos;est le fond de la souffrance : la charpente de l&apos;homme, le squelette solide est atteint. Tout ce qui résistait est brisé. Il faut cette purification profonde pour détruire le péché. L&apos;une des merveilles de ce psaume est qu&apos;il n&apos;oublie aucun des aspects du péché et de son pardon. Tout y est, la prière de l&apos;homme, l&apos;action directe de Dieu, le lent travail de la douleur. Le psalmiste connaît la souffrance, et il y retrouve son péché.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:soft-page-break/>Le juste persécuté du psaume 34, pour exprimer sa confiance, assure que « Yahvé garde tous ses os, et qu&apos;aucun ne sera broyé » (34, 21). Le seul Juste est Jésus, et c&apos;est pourquoi saint Jean prend soin de noter que le soldat ne brisa pas les jambes de Jésus2. Il faut que le pécheur soit brisé jusqu&apos;à la moelle pour devenir capable « de percevoir la joie et l&apos;allégresse ».</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le psalmiste sait d&apos;ailleurs que cet écrasement sous la souffrance ne suffit pas à purifier. Il dira un peu plus loin, reprenant le même mot, que Dieu ne rejette pas « le cœur broyé ». Il reprend là un texte d&apos;Is., 57, 15, qui tirait la leçon de l&apos;exil. Israël a été détruit, rayé de la carte du monde, piétiné par son vainqueur. Tant d&apos;épreuves seraient vaines si les os seuls étaient brisés. Il faut le broiement du cœur, ce que nous nommons toujours, sans souvent mesurer la force du mot, la contrition.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Prise à la lettre, l&apos;expression « que tressaillent les os que tu as broyés » impliquerait une résurrection. Tout l&apos;être mort revit sous l&apos;action de Dieu. Il ne semble pas que le poète ait en fait dépassé la zone de l&apos;image. Mais la logique</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">2. A. LEFÈVRE, Études Carmélitaines, 1950 (Le Cœur), pp. III sq.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">de ses images l&apos;amène à des perspectives d&apos;un renouveau total, bien proche d&apos;une résurrection.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Cor mundum crea in me.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le mot employé ici (BR&apos;), et que rend exactement le latin crea, est en effet le mot réservé aux œuvres créatrices de Dieu. La Bible l&apos;emploie lorsque Dieu fait surgir quelque chose là où rien n&apos;existait 3. Le cas s&apos;est présenté trois fois.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le jour où Dieu fit surgir le monde — le jour où, par une démarche unique dans l&apos;histoire, et analogue à celle par laquelle il avait fait surgir la terre et l&apos;humanité, Yahvé vint prendre Israël en Égypte pour en faire son peuple (Deut., 4, 32) — enfin le jour où Yahvé, sur les ruines du monde corrompu par le péché, doit faire régner sa justice en faisant apparaître un monde nouveau (Jér., 31, 22; Is., 4, 5; 43, 7; 45, 8; 65, 17 s.). Toujours donc il s&apos;agit de manifestations exceptionnelles de la puissance divine. Toujours aussi elles donnent naissance à des réalités nouvelles, sans exemple dans le passé.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Un texte prophétique, parlant précisément du monde nouveau que Yahvé allait faire naître avec le peuple purifié par l&apos;exil, avait transposé ce mot de création dans le domaine intérieur. Il nommait Dieu « Celui qui crée sur les lèvres la louange » (Is., 57, 19). S&apos;inspirant peut-être de cet exemple, en tout cas par une démarche identique, le Miserere voit le monde nouveau, annoncé par les prophètes depuis des années, prendre naissance dans le cœur du pécheur purifié. Rien ne prouve que le psalmiste ait renoncé à l&apos;espérance dont vivait son peuple, de voir, après les hontes et les ruines de l&apos;exil, renaître une Jérusalem nouvelle, transfigurée, fidèle à Dieu, et en même temps rayonnante de grandeur et de prospérité. Mais un psaume comme le nôtre, qui a, sur des textes prophétiques très proches comme <text:soft-page-break/>les dix derniers chapitres d&apos;Isaïe, l&apos;avantage de nous mettre en contact avec un chant populaire, destiné à une assemblée, nous</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">3. que le chaos, dit-on souvent. Il n&apos;est pas sûr que l&apos;auteur du récit de la création n&apos;ait pas entendu signifier par ce chaos, qui a l&apos;air primitif, le poids fatal de néant qui fait le fond de toute créature. Cf. G. VON RAD, Das Erste Buch Mose, Göttingen, 1950, p. 38.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">apprend comment les meilleurs en Israël savaient interpréter ces images qui nous paraissent parfois si uniquement matérielles. Jérusalem ressuscitée, cela signifie pour eux des cœurs renouvelés, l&apos;expulsion du péché.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Spiritum sanctam tuum ne auferas a me. spiritu principali confirma me.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Ils savent aussi, ces Israélites fidèles à leurs Écritures, que cette purification est une œuvre de puissance, que Dieu y déploie sa force tout autant que dans les miracles les plus éclatants, ceux de la mer Rouge et du désert. Il faut qu&apos;un esprit nouveau vienne en l&apos;homme se substituer à ses forces intérieures ordinaires.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Pour l&apos;auteur du Miserere, cet esprit n&apos;est pas encore le Saint-Esprit. Seul le Fils nous a révélé l&apos;intimité de la Trinité Sainte. Il ne faut pas mettre de majuscules à cet esprit saint. Car ce n&apos;est pas une personne. C&apos;est une force de Dieu, mais une force qui est aussi celle de l&apos;homme, puisqu&apos;en lui elle devient, selon le sens de l&apos;hébreu traduit par principali, un esprit de fermeté et de générosité. Et cependant c&apos;est un esprit « saint », c&apos;est-à-dire qui appartient en propre à Dieu. Il faut se souvenir de ce qu&apos;est la sainteté pour un Hébreu. C&apos;est un des traits propres de Dieu, c&apos;est celui qui lui est réservé, et qui marque la distance infranchissable qui le sépare de la créature. L&apos;homme peut être juste, et bon, et fidèle, à l&apos;exemple de Dieu. Mais Dieu seul est saint, et ce qui touche à son service.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">La profondeur spirituelle du Miserere tient précisément dans l&apos;accent qu&apos;il met sur ces deux aspects de l&apos;esprit. Il faut qu&apos;il vienne directement de Dieu, mais il faut qu&apos;il transforme l&apos;homme. Est-ce possible? Il l&apos;affirme, sans savoir comment. La révélation de l&apos;Esprit-Saint, envoyé par le Père.au cœur de ses fils, l&apos;expliquera.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Domine, labia mea aperies.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">A première vue, ce mot ne paraît qu&apos;un détail secondaire.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il est normal que le pécheur pardonné dise sa joie et sa</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">reconnaissance, et c&apos;est un motif constant, non seulement dans les psaumes israélites, mais dans les supplications analogues adressées aux divinités d&apos;Assyrie ou de Babylone, que la promesse, si l&apos;on est exaucé, de publier la grandeur du dieu. C&apos;est une démarche humaine, mais qu&apos;il nous est facile d&apos;oublier, témoin les neuf lépreux de l&apos;Évangile.</text:p>
+   <text:p text:style-name="P3"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P3">Mais le verset du Miserere dit plus que la reconnaissance, même la plus vive. Il se situe dans les perspectives de renouvellement et de transformation intérieurs, si caracté- ristiques du psaume. Si le pénitent a besoin qu&apos;on lui ouvre les lèvres, c&apos;est qu&apos;il les-a fermées, c&apos;est qu&apos;elles sont com- plètement desséchées. Il a les os broyés sous l&apos;épreuve. Et ce n&apos;est pas une simple figure. Précisément parce que l&apos;épreuve est réelle, elle le réduit à l&apos;impuissance totale, Il est inerte, sans réactions. Il faut qu&apos;un autre vienne de force lui ouvrir les lèvres qu&apos;il ne peut même plus remuer.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Comme plus d&apos;une fois déjà, le psaume transpose ici dans le domaine intérieur et personnel une expérience faite par tout son peuple. Les derniers chapitres d&apos;Isaïe, évoquant l&apos;état de prostration d&apos;Israël après l&apos;exil, le comparent, suivant une image traditionnelle, à une terre desséchée, épuisée par le manque d&apos;eau, incapable de rien produire. Mais sur ce désert Dieu va, miraculeusement, faire surgir une végétation. Le fruit de cette végétation divine se nomme le « fruit des lèvres », la louange (Is., 57, 19). Israël va retrouver la parole, pour pouvoir rendre gloire à son Sauveur.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Cette renaissance de la louange est le signe de l&apos;action de Dieu. Elle est une création au sens strict du mot (ibid.) : Comme la terre fait éclore ses germes, et comme un jardin fait germer ses semences, N ainsi le Seigneur Yahvé fera germer la justice</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">et la louange devant toutes les nations. (Is., 61, II.) Louer Dieu n&apos;est pas un geste quelconque, qu&apos;on puisse déclencher à son gré. C&apos;est une explosion du cœur qui vient d&apos;être saisi par Dieu. Il faut la Grâce pour nous rendre capable de parler à Dieu. Sans l&apos;Esprit-Saint nous ne pouvons atteindre le Père, nous dit saint Paul (Rom., 8, 15, 26). Pour Paul, les cris suscités par l&apos;Esprit viennent du cœur; la langue même ne peut les exprimer. Le Miserere est surtout une prière récitée à haute voix, et pleinement</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">consciente. Mais, s&apos;il ignore encore le cœur à cœur avec l&apos;Esprit-Saint, il est déjà pénétré du besoin, de recevoir de Dieu sa prière.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Docebo iniquos vias tuas. tunc aedificentur muri Jerusalem.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Cette prière si personnelle, cette prière qui n&apos;a de sens que pour qui a senti qu&apos;il se trouve directement en face de Dieu, et qu&apos;il a une réponse personnelle il donner à son Seigneur, s&apos;achève cependant sur les horizons les plus larges. Le psalmiste n&apos;oublie pas le destin de son peuple, la situation misérable où il se trouve : une ville sans remparts, incapable de se défendre, un temple sans culte digne de ce nom. Il sent profondément cette déchéance. Si elle n&apos;est pas l&apos;essentiel, elle est cependant un signe et un châtiment. La restauration matérielle viendra, les beaux sacrifices recommenceront, le temple reprendra vie, si d&apos;abord le peuple sait reprendre à son compte ces accents de pénitence, si, brisé par l&apos;épreuve, il sait tirer de ses souffrances le sacrifice qu&apos;attend Dieu, celui du cœur broyé. Cette conversion, le pécheur repentant promet à Dieu d&apos;y travailler. Il a fait l&apos;expérience du péché, il ira trouver les pécheurs. Il leur enseignera a les voies de Dieu ». Les voies de Dieu, pour un autre, cela pourrait signifier un catéchisme appris par cœur. <text:soft-page-break/>Pour lui cela demeure quelque chose de concret. C&apos;est l&apos;itinéraire qu&apos;il a suivi. Il s&apos;y croyait seul.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Il vient de découvrir que Dieu l&apos;y attendait, il vient de découvrir que Dieu, lui aussi, avait ses chemins.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Le bon Pasteur, lui, a parcouru de ses pieds meurtris et sanglants nos chemins. Ce sont eux qui demeurent, pour l&apos;éternité, les chemins de Dieu.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Lyon-Fourvière.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">JACQUES GUILLET, S. J.</text:p>
+   <text:p text:style-name="P3"/>
+  </office:text>
+ </office:body>
+</office:document>
