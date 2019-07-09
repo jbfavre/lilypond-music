@@ -7,7 +7,7 @@
 }
 \score {
   {
-    \repeat unfold 12 { s1 \break }
+    \repeat unfold 32 { s1 \break }
   }
    \layout {
     indent = 0\in
@@ -44,4 +44,5 @@
   left-margin = 15
   bottom-margin = 10
   top-margin = 10
+  print-page-number = ##f
 }
