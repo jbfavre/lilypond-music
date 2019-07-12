@@ -509,218 +509,98 @@
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef treble
         \mark \markup { \bold "46" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key d \major \time 3/4 fs,2 a4 fs2 g4 a2 d4 b g e cs2 d4 e2 cs4 d2. \bar "||" \break
         \mark \markup { \bold "47" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key f \major \time 2/4 a'4 bf c d f d c2 bf4 c a bf g8 f e4 f2 \bar "||" \break
         \mark \markup { \bold "48" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key f \major \time 4/4 d'4 cs d f bf,2 a4 d e d cs2 d4 bf bf g a2 f4 g e cs d2 \bar "||" \break
         \mark \markup { \bold "49" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key g \minor \time 4/4 d'2 ef f d1 ef2 c1 bf2 a1. bf2 f' d ef1 c2 a1. bf \bar "||" \break
         \mark \markup { \bold "50" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key b \minor \time 4/4  d2 fs4 d e2 cs as b4 d cs1 b2 as4 b g g' e cs as b cs as b1 \bar "||" \break
         \mark \markup { \bold "51" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key c \major \time 4/4 c4 d c b a2 g c e4 g e c b2 b4 e c2 d4 g e2 f4 d b c a g a c d2 b c1 \bar "||" \break
         \mark \markup { \bold "52" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key df \major \time 3/4 \partial 4 f4 df2 c4 a2 bf4 f'2 df4 c2 bf4 gf'4 ef c a bf gf f2. f2. \bar "||" \break
         \mark \markup { \bold "53" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key c \major \time 4/4 c'2 d4 b gs2 a4 c e2 c4 d e1 a2 f4 d b a gs a b2 gs a1 \bar "||" \break
         \mark \markup { \bold "54" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key a \major \time 2/2 a2 b gs a d fs e1 a2 fs e d e cs d b gs1 a2 d b1 a1 \bar "||" \break
         \mark \markup { \bold "55" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key b \major \time 4/4 b4 gs e cs ds e gs b ds2 b4 cs as gs fss2 gs4 b cs e gs e ds cs ds b as gs fss2 gs \bar "||" \break
         \mark \markup { \bold "56" }
-        \key g \major
-        \time 3/4
-        b4 d b a2. g4 b g fs2. e2 d4 e2 g4 a c a fs2. g2 g4 d' g, a fs2. g2. \bar "||" \break
+        \key g \major \time 3/4 b4 d b a2. g4 b g fs2. e2 d4 e2 g4 a c a fs2. g2 g4 d' g, a fs2. g2. \bar "||" \break
         \mark \markup { \bold "57" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key c \major \time 4/4 a2 e'4 c d2 e4 a f d b gs a2 gs4 r4 a2 c4 e c a f e f2 a4 b gs2 a \bar "||" \break
         \mark \markup { \bold "58" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key e \major \time 2/4 cs4 e cs ds e fs e2 a4 fs e ds e cs b2 cs4 e cs ds b a gs a fs ds' cs b gs2 a a4 e' a, b gs2 a \bar "||" \break
         \mark \markup { \bold "59" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key f \major \time 6/8 d4 cs8 d4 f8 a4. f4 d8 cs4 d8 bf4 a8 g f g a4. d4 cs8 d4 f8 a4. f4 d8 bf4. g4 e8 cs4. d \bar "||" \break
         \mark \markup { \bold "60" }
-        \key d \major
-        \time 4/4
-        s1 \bar "||" \break
+        \key g \major \time 3/2 g2 a c d e g g a fs g d b e1 d2 b c d g, a fs g1. \bar "||" \break
       }
       \new Staff \with { instrumentName = "A."} \relative c' {
         \override Staff.KeySignature.break-visibility = #all-invisible
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef treble
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key g \major
-        \time 3/4
-        s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2.
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
+        \key d \major \time 3/4 \repeat unfold 7 { s2. }
+        \key f \major \time 2/4 \repeat unfold 8 { s2 }
+        \key f \major \time 4/4 \repeat unfold 6 { s1 }
+        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key c \major \time 4/4 \repeat unfold 10 { s1 }
+        \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key a \major \time 2/2 \repeat unfold 12 { s1 }
+        \key b \major \time 4/4 \repeat unfold 8 { s1 }
+        \key g \major \time 3/4 \repeat unfold 12 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key e \major \time 2/4 \repeat unfold 20 { s2 }
+        \key f \major \time 6/8 \repeat unfold 8 { s2. }
+        \key g \major \time 3/2 \repeat unfold 8 { s1. }
       }
       \new Staff \with { instrumentName = "T."} \relative c' {
         \override Staff.KeySignature.break-visibility = #all-invisible
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef "treble_8"
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key g \major
-        \time 3/4
-        s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2.
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
+        \key d \major \time 3/4 \repeat unfold 7 { s2. }
+        \key f \major \time 2/4 \repeat unfold 8 { s2 }
+        \key f \major \time 4/4 \repeat unfold 6 { s1 }
+        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key c \major \time 4/4 \repeat unfold 10 { s1 }
+        \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key a \major \time 2/2 \repeat unfold 12 { s1 }
+        \key b \major \time 4/4 \repeat unfold 8 { s1 }
+        \key g \major \time 3/4 \repeat unfold 12 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key e \major \time 2/4 \repeat unfold 20 { s2 }
+        \key f \major \time 6/8 \repeat unfold 8 { s2. }
+        \key g \major \time 3/2 \repeat unfold 8 { s1. }
       }
       \new Staff \with { instrumentName = "B."} {
         \override Staff.KeySignature.break-visibility = #all-invisible
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef bass
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key g \major
-        \time 3/4
-        s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2. s2.
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
-        \key d \major
-        \time 4/4
-        s1
+        \key d \major \time 3/4 \repeat unfold 7 { s2. }
+        \key f \major \time 2/4 \repeat unfold 8 { s2 }
+        \key f \major \time 4/4 \repeat unfold 6 { s1 }
+        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key c \major \time 4/4 \repeat unfold 10 { s1 }
+        \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key a \major \time 2/2 \repeat unfold 12 { s1 }
+        \key b \major \time 4/4 \repeat unfold 8 { s1 }
+        \key g \major \time 3/4 \repeat unfold 12 { s2. }
+        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key e \major \time 2/4 \repeat unfold 20 { s2 }
+        \key f \major \time 6/8 \repeat unfold 8 { s2. }
+        \key g \major \time 3/2 \repeat unfold 8 { s1. }
       }
     >>
     \layout { \context { \Score \omit BarNumber } ragged-last = ##f }
