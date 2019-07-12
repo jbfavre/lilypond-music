@@ -347,7 +347,7 @@
         \key g \major \time 4/4 \repeat unfold 10 { s1 }
         \key a \major \time 3/2 \repeat unfold 8 { s1. }
         \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
+        \key af \major \time 4/4 \repeat unfold 7 { s1 }
         \key ef \major \time 2/4 \repeat unfold 12 { s2 }
         \key bf \major \time 6/8 \repeat unfold 7 { s2. }
         \key bf \major \time 2/4 \repeat unfold 16 { s2 }
@@ -368,7 +368,7 @@
         \key g \major \time 4/4 \repeat unfold 10 { s1 }
         \key a \major \time 3/2 \repeat unfold 8 { s1. }
         \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
+        \key af \major \time 4/4 \repeat unfold 7 { s1 }
         \key ef \major \time 2/4 \repeat unfold 12 { s2 }
         \key bf \major \time 6/8 \repeat unfold 7 { s2. }
         \key bf \major \time 2/4 \repeat unfold 16 { s2 }
@@ -389,7 +389,7 @@
         \key g \major \time 4/4 \repeat unfold 10 { s1 }
         \key a \major \time 3/2 \repeat unfold 8 { s1. }
         \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
+        \key af \major \time 4/4 \repeat unfold 7 { s1 }
         \key ef \major \time 2/4 \repeat unfold 12 { s2 }
         \key bf \major \time 6/8 \repeat unfold 7 { s2. }
         \key bf \major \time 2/4 \repeat unfold 16 { s2 }
@@ -436,62 +436,62 @@
         <<
           \mark \markup { \bold "36" }
           \key f \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s1 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <6>4 <6>4 <5>2 <6> <5> <5\!>4 <6> <6\!> <5> <5\!>2 <5\!> <6>4 <6> <5> <6> <6\!> <5> <5\!> <6> <5>2 <5\!>1 } }
+          \new Voice { f2 d4 bf, c2 a, bf, c4 d e f c2 d bf,4 g, a, bf, c d bf,2 c f,1 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "37" }
           \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 10 { s2 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <5> <6> <6\!> <_+>2 <6>4 <6> <6\!> <5> <6> <6> <_+> <6> <6\!> <_+> <5> <5\!> <5\!>2 } }
+          \new Voice { g,4 bf, ef c d2 bf,4 g, fs, g, ef c d bf, c d ef c g2 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "38" }
           \key g \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 10 { s1 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <5> <5\!> <5\!> <6> <5> <5\!> <6> <5> <6> <5> <5\!>2 <5\!>4 <5> <5\!> <5\!> <5\!> <5> <5\!>2 <6>4 <6> <5> <6> <5> <5> <6> <5> <6> <5> <5\!>2 <5\!>4 <6> <5>2 <5\!> } }
+          \new Voice { g4 fs g c d b, c d e2 c d b,4 d e c d fs g2 e4 c d b, c e fs g c2 d e4 c d2 g,2 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "39" }
           \key a \major \time 3/2
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s1. } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>1 <6>2 <5>1 <6>2 <5>2 <5> <6> <5>1. <6>2 <6> <6\!> <5> <6> <5> <6> <6\!> <5> <5\!>1. } }
+          \new Voice { a1 gs2 fs1 e2 d1. e1. cs2 a, fs e cs d fs d e a,1. \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "40" }
           \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \partial 4 s4 \repeat unfold 8 { s2 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <6> <6\!> <5> <6> <6\!> <5> <5\!> <5\!> <5\!> <5\!> <6> <6\!> <5> <5\!>2 } }
+          \new Voice { \partial 4 f4 d bf, a, bf, g ef f d g ef f g ef f bf,2 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "41" }
           \key af \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \partial 4 s4 \repeat unfold 7 { s1 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <5> <6> <_!> <6> <6\!> <_!> <5> <6> <6\!> <6> <5> <_!> <5> <6> <6\!> <6> <5> <6> <6\!> <6\!> <_!>2 <5>1 } }
+          \new Voice { f4 e f df c af, bf, c df2 af,2 bf,4 c df2 af, df af,4 bf, c2 f,1 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "42" }
           \key ef \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 12 { s2 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <5> <6> <5> <5> <6> <5> <6> <6\!> <5>2 <5\!>4 <5> <5\!> <5\!> <5\!> <5\!> <6> <6> <5> <5\!> <5\!>2 } }
+          \new Voice { ef4 c bf, g, af, c d ef c af, bf,2 g,4 bf, c af, bf, ef c af, c bf, ef2 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "43" }
           \key bf \major \time 6/8
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 7 { s2. } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6>8 <6\!>4 <5>8 <_+>4. <6>4 <6>8 <6\!>4 <6>8 <_+>4. <6>4 <5>8 <_+>4 <6>8 <6\!>4 <5>8 <6>4 <6\!>8 <_+>4 <6>8 <6\!>4 <_+>8 <5>2. } }
+          \new Voice { g4 ef8 c4. d bf,4 g,8 ef4 c8 d4. bf,4 c8 d4 e8 fs4 g8 ef!4 c8 d4 bf,8 c4 d8 g,2. \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "44" }
           \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 16 { s2 } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <5> <5\!> <5\!> <5\!> <6> <5> <6> <5> <6> <6\!> <5> <5\!> <6> <5>2 <5\!>4 <5\!> <6> <6\!> <6\!> <5> <5\!> <5\!> <5\!> <5\!> <6> <5> <5\!>2 <5\!>2} }
+          \new Voice { bf,4 d ef f ef2 f g4 ef a, bf, g2 f ef4 c d ef f g d ef f ef d c f2 bf,\bar "||" \break }
         >>
         <<
           \mark \markup { \bold "45" }
           \key e \major \time 6/8
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2. } \bar "||" \break }
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6>8 <6\!>4 <5>8 <5\!>8 <6>4 <5>4. <6>4 <6>8 <5>4 <6>8 <6\!>4 <5>8 <5\!>4. <5\!>4 <5>8 <5\!>4. <5\!>4 <5>8 <5\!>4. <6>4 <6>8 <5>4 <6>8 <6\!>8 <5>8 <5\!>8 <5\!>4. } }
+          \new Voice { e4 cs8 ds4 e8 a,4. b, gs, fs,4 gs,8 a,4. b, gs,4 b,8 cs4. b,4 ds8 e4. cs4 a,8 fs,4 gs,8 a,4 b,8 e4. \bar "||" \break }
         >>
       }
     >>
