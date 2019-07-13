@@ -623,63 +623,63 @@
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef treble
-        \key f \major \time 2/4 \repeat unfold 8 { s2 }
-        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key d \major \time 4/4 \repeat unfold 8 { s1 }
         \key f \major \time 3/4 \repeat unfold 8 { s2. }
-        \key d \major \time 2/4 \repeat unfold 8 { s2 }
-        \key af \major \time 3/4 \repeat unfold 8 { s2. }
-        \key f \major \time 4/4 \repeat unfold 8 { s1 }
-        \key bf \major \time 2/4 \repeat unfold 10 { s2 }
-        \key g \major \time 4/4 \repeat unfold 10 { s1 }
-        \key a \major \time 3/2 \repeat unfold 8 { s1. }
-        \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
-        \key ef \major \time 2/4 \repeat unfold 12 { s2 }
-        \key bf \major \time 6/8 \repeat unfold 7 { s2. }
-        \key bf \major \time 2/4 \repeat unfold 16 { s2 }
+        \key c \major \time 3/2 \repeat unfold 8 { s1. }
+        \key g \major \time 2/4 \repeat unfold 13 { s2 }
+        \key g \major \time 4/4 \repeat unfold 8 { s1 }
+        \key f \major \time 3/2 \repeat unfold 12 { s1. }
+        \key gf \major \time 6/8 \repeat unfold 8 { s2. }
+        \key f \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 3/4 \repeat unfold 16 { s2. }
+        \key af \major \time 4/4 \repeat unfold 16 { s1 }
+        \key df \major \time 4/4 \repeat unfold 16 { s1 }
         \key e \major \time 6/8 \repeat unfold 8 { s2. }
+        \key af \major \time 2/4 \repeat unfold 18 { s2 }
+        \key bf \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 4/4 \repeat unfold 12 { s1 }
       }
       \new Staff \with { instrumentName = "A."} \relative c' {
         \override Staff.KeySignature.break-visibility = #all-invisible
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef treble
-        \key f \major \time 2/4 \repeat unfold 8 { s2 }
-        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key d \major \time 4/4 \repeat unfold 8 { s1 }
         \key f \major \time 3/4 \repeat unfold 8 { s2. }
-        \key d \major \time 2/4 \repeat unfold 8 { s2 }
-        \key af \major \time 3/4 \repeat unfold 8 { s2. }
-        \key f \major \time 4/4 \repeat unfold 8 { s1 }
-        \key bf \major \time 2/4 \repeat unfold 10 { s2 }
-        \key g \major \time 4/4 \repeat unfold 10 { s1 }
-        \key a \major \time 3/2 \repeat unfold 8 { s1. }
-        \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
-        \key ef \major \time 2/4 \repeat unfold 12 { s2 }
-        \key bf \major \time 6/8 \repeat unfold 7 { s2. }
-        \key bf \major \time 2/4 \repeat unfold 16 { s2 }
+        \key c \major \time 3/2 \repeat unfold 8 { s1. }
+        \key g \major \time 2/4 \repeat unfold 13 { s2 }
+        \key g \major \time 4/4 \repeat unfold 8 { s1 }
+        \key f \major \time 3/2 \repeat unfold 12 { s1. }
+        \key gf \major \time 6/8 \repeat unfold 8 { s2. }
+        \key f \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 3/4 \repeat unfold 16 { s2. }
+        \key af \major \time 4/4 \repeat unfold 16 { s1 }
+        \key df \major \time 4/4 \repeat unfold 16 { s1 }
         \key e \major \time 6/8 \repeat unfold 8 { s2. }
+        \key af \major \time 2/4 \repeat unfold 18 { s2 }
+        \key bf \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 4/4 \repeat unfold 12 { s1 }
       }
       \new Staff \with { instrumentName = "T."} \relative c' {
         \override Staff.KeySignature.break-visibility = #all-invisible
         \override Staff.TimeSignature.break-visibility = #begin-of-line-visible
         \override Staff.KeyCancellation.break-visibility = #all-invisible
         \clef "treble_8"
-        \key f \major \time 2/4 \repeat unfold 8 { s2 }
-        \key c \major \time 4/4 \repeat unfold 8 { s1 }
+        \key d \major \time 4/4 \repeat unfold 8 { s1 }
         \key f \major \time 3/4 \repeat unfold 8 { s2. }
-        \key d \major \time 2/4 \repeat unfold 8 { s2 }
-        \key af \major \time 3/4 \repeat unfold 8 { s2. }
-        \key f \major \time 4/4 \repeat unfold 8 { s1 }
-        \key bf \major \time 2/4 \repeat unfold 10 { s2 }
-        \key g \major \time 4/4 \repeat unfold 10 { s1 }
-        \key a \major \time 3/2 \repeat unfold 8 { s1. }
-        \key bf \major \time 2/4 \partial 4 s4 \repeat unfold 8 { s2 }
-        \key af \major \time 4/4 \partial 4 s4 \repeat unfold 7 { s1 }
-        \key ef \major \time 2/4 \repeat unfold 12 { s2 }
-        \key bf \major \time 6/8 \repeat unfold 7 { s2. }
-        \key bf \major \time 2/4 \repeat unfold 16 { s2 }
+        \key c \major \time 3/2 \repeat unfold 8 { s1. }
+        \key g \major \time 2/4 \repeat unfold 13 { s2 }
+        \key g \major \time 4/4 \repeat unfold 8 { s1 }
+        \key f \major \time 3/2 \repeat unfold 12 { s1. }
+        \key gf \major \time 6/8 \repeat unfold 8 { s2. }
+        \key f \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 3/4 \repeat unfold 16 { s2. }
+        \key af \major \time 4/4 \repeat unfold 16 { s1 }
+        \key df \major \time 4/4 \repeat unfold 16 { s1 }
         \key e \major \time 6/8 \repeat unfold 8 { s2. }
+        \key af \major \time 2/4 \repeat unfold 18 { s2 }
+        \key bf \major \time 3/4 \repeat unfold 12 { s2. }
+        \key a \major \time 4/4 \repeat unfold 12 { s1 }
       }
       \new Staff \with { instrumentName = "B."} {
         \override Staff.KeySignature.break-visibility = #all-invisible
@@ -688,96 +688,93 @@
         \clef bass
         <<
           \mark \markup { \bold "61" }
-          \key f \major
-          \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2 } \bar "||" \break }
+          \key d \major \time 4/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <6+ 4> <6> <6\!> <6\! 4> <6\!> <6\! 4> <_+> <6> <6+ 4> <5> <6> <6\! 4> <_+> <5>1 } }
+          \new Voice { b,2 cs d g fs e fs1 d2 cs b, g fs1 b, \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "62" }
-          \key c \major
-          \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s1 } \bar "||" \break }
+          \key f \major \time 3/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6 4> <5> <6>2 <5>4 <6> <6> <6\!> <6\! 4> <5>2 <6>4 <5> <6 4> <6\!> <6\!> <5> <6> <6\! 4> <5> <5\!>2. } }
+          \new Voice { f2. e2 f4 d2 bf,4 c2. a,4 bf, c d e f bf, c c f,2. \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "63" }
-          \key f \major
-          \time 3/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2. } \bar "||" \break }
+          \key c \major \time 3/2
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <5> <5\!> <6> <_+> <6> <6+ 4> <5> <6> <6\! 4>2 <_+>1 <5>2 <6 4> <6\!> <6\!> <5> <6 4> <6\!> <6\!> <_+> <5>1. } }
+          \new Voice { a,2 c f d e c b, a, f e1. d2 e f c d e f d e a,1. \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "64" }
-          \key d \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2 } \bar "||" \break }
+          \key g \major \time 2/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <5> <6> <5> <6 4> <6\!> <6\!> <5> <6> <6\! 4> <5> <6> <6\! 4> <5> <6> <6\! 4> <5> <5\!> <6> <5> <6> <6\! 4> <5> <5\!>2 } }
+          \new Voice { g4 e d b, c d e fs g c d2 b,4 a, g, e d c d b, c2 d g \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "65" }
-          \key af \major \time 3/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2. } \bar "||" \break }
+          \key g \major \time 4/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6 4> <5> <6> <5> <6> <6\! 4> <_+> <6> <6+ 4> <5> <6> <6\! 4> <5> <_+>2 <6>4 <5> <6 4> <6\!> <6\! 4> <6\!> <6\! 4> <_+> <5> <6> <6\! 4> <6\!> <_+>2 <5> } }
+          \new Voice { e2~e4 ds e a, b,2 g4 fs e c b, a, b,2 g,4 a, b, c b, a, b,2 c b,4 a, b,2 e2 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "66" }
-          \key f \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s1 } \bar "||" \break }
+          \key f \major \time 3/2
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <6 4> <5> <6> <6\! 4> <5> <5\!> <6 4> <5> <6> <6\! 4> <5> <6>1 <6\!>2 <5>1. <6>2 <6\! 4> <5> <6> <5> <6> <6\! 4> <5> <6> <5> <6> <5> <5\!> <6 4>1 <5>1. } }
+          \new Voice { f1. bf,2 c1 d2 c bf, a, g, f, d1 bf,2 c1. a2 g f e f d c bf, a, bf,1 c2 f1.~ f \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "67" }
-          \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 10 { s2 } \bar "||" \break }
+          \key gf \major \time 6/8
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6 4>8 <5>4 <5\!>8 <5\!>4 <6 4>8 <5>4 <5\!>8 <5\!>4 <6>8 <6\! 4>4 <5>8 <6>4 <5>8 <5\!>4 <_>8 <5>4 <6 4>8 <5>4 <5>8 <6>4 <6\! 4>8 <5>4 <6>8 <5>4 <6>8 <6\! 4>4 <5>8 <5\!>4 <6 4>8 <5>4 <_>8} }
+          \new Voice { gf4.~ gf4 df8 ef4.~ ef4 bf,8 cf4 bf,8 af,4 gf,8 f,4 gf,8 df4 r8 gf,4.~ gf,4 gf8 ef4 df8 cf4 bf,8 cf4 cf'8 df'4 df8 gf4.~ gf4 r8 \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "68" }
-          \key g \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 10 { s1 } \bar "||" \break }
+          \key f \major \time 3/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <5> <5/> <6 4> <5> <6> <6+ 4> <6> <5> <6 4> <6\!> <_+> <6> <6+ 4> <5> <6> <6\! 4> <6\!> <6\! 4> <_+> <6> <5> <6 4> <6\!> <6\!> <5> <6> <6\! 4> <_+> <5>2 <6 4>4  <5>2.} }
+          \new Voice { d4 cs d bf a g f e f g a bf a f e d bf a g a2 f4 g a bf cs d g, a,2 d2.~ d \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "69" }
-          \key a \major \time 3/2
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s1. } \bar "||" \break }
+          \key a \major \time 3/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6 4> <5> <5\!> <6 4> <5> <5\!> <6 4> <5> <5\!> <5\!> <5\!> <6> <6\! 4> <5> <6> <6\! 4> <5> <6> <6\! 4> <5> <6 4>2 <5>4 <6> <5> <6 4> <6\!> <6\!> <5> <5\!> <6\! 4> <6\!> <6\! 4> <5> <5\!> <6> <5> <6> <5> <5\!> <5\!> <6 4>2 <5>4 <5\!>2. } }
+          \new Voice { a2. e fs cs4 d e fs e d cs b, a, fs e d e2. cs4 d e fs gs a d e fs e d e cs fs d e fs d e2. a, \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "70" }
-          \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \partial 4 s4 \repeat unfold 8 { s2 } \bar "||" \break }
+          \key af \major \time 4/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <6 4> <_!>1 <6>2 <6! 4> <5> <6 4> <6\!> <6\!> <6! 4> <5> <5\!> <6 4> <5> <6> <5> <_!> <5> <6> <_!> <6> <5> <6 4> <5> <6> <5> <6 4> <_!>1 <5> } }
+          \new Voice { f,2 df c1 af,2 g, f, f e af g f bf af g e f c df bf, c af, bf, c bf, af, bf, df c1 f, \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "71" }
-          \key af \major \time 4/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \partial 4 s4 \repeat unfold 7 { s1 } \bar "||" \break }
+          \key df \major \time 4/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>2 <6 4> <5> <5\!> <5\!> <6 4> <5> <5\!> <5\!> <6 4> <5> <5> <5\!> <6 4> <6\!> <6\!> <5> <5> <5\!> <5> <6> <5> <6> <6\! 4> <5> <5> <6> <5> <5\!> <6 4> <5>1  } }
+          \new Voice { df1~ df2 bf, f1~ f2  df af1~ af2 c df ef f af, bf, df ef gf c df bf, af, gf, bf, gf, af, df1~ df\bar "||" \break }
         >>
         <<
           \mark \markup { \bold "72" }
-          \key ef \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 12 { s2 } \bar "||" \break }
+          \key e \major \time 6/8
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6+ 4>8 <6>4 <_+>8 <6>4 <6\!>8 <6\! 4>4 <_+>8 <6>4 <6\!>8 <5>4 <5\!>8 <6 4>4 <_+>8 <5>4 <6>8 <_+>4 <6>8 <5>4 <6 4>8 <6\!>4 <6\! 4>8 <5>4 <6>8 <6\! 4>4 <_+>8 <5>4 <6>8 <_+>4. <5> } }
+          \new Voice { cs4 ds8 e4 gs8 e4 a8 gs4. e4 bs,8 cs4 fs8 gs4. a4 fs8 gs4 e8 fs4 gs8 a4 gs8 fs4 fs8 gs4 gs,8 a,4 fs,8 gs,4. cs \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "73" }
-          \key bf \major \time 6/8
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 7 { s2. } \bar "||" \break }
+          \key af \major \time 2/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6> <6\! 4> <5> <6> <6\! 4> <5> <6> <6\! 4> <5> <5\!>2 <6>4 <5> <5\!> <6> <6\!> <5> <6 4> <6\!> <6\!> <5> <6\!> <5> <5\!> <6> <5> <5\!> <6\!> <5> <5\!>2 <5\!>4  <6 4> <5>2 } }
+          \new Voice { af,4 f ef df c bf, af, f ef df ef2 c4 df ef f g, af, bf, c df ef c df ef f ef df c bf, ef2 af, af, \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "74" }
-          \key bf \major \time 2/4
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 16 { s2 } \bar "||" \break }
+          \key bf \major \time 3/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <5\!> <6 4> <5> <5\!> <6 4> <6\!> <5> <6 4> <6\! 4\!> <6\!> <_+> <6> <6> <6\! 4> <5> <5\!> <6 4> <5> <6> <5> <6> <6\! 4> <_+> <6> <5> <6 4> <6\!> <_+> <6> <6\!> <6\! 4> <_+> <5>2. } }
+          \new Voice { g,4 ef d c a g fs g ef d c d bf, g f ef c' bf a fs g c d2 bf,4 c d ef d bf, ef d2 g,2. \bar "||" \break }
         >>
         <<
           \mark \markup { \bold "75" }
-          \key e \major \time 6/8
-          \new FiguredBass { \figuremode { \bassFigureExtendersOn  } }
-          \new Voice { \repeat unfold 8 { s2. } \bar "||" \break }
+          \key a \major \time 4/4
+          \new FiguredBass { \figuremode { \bassFigureExtendersOn <5>4 <6 4> <5> <5\!> <5\!>4 <6 4> <5> <6> <5> <6 4> <6\!> <6\! 4> <6\!> <5> <5\!> <5> <5\!> <6 4> <6\!> <6\! 4> <6\!> <5> <5\!> <6> <5> <6> <6\! 4> <5> <6> <6\! 4> <5> <6>  <6\! 4> <5> <6> <6\!> <6\! 4> <5> <5\!> <6> <6\!> <5> <6 4> <5> <5\!>1} }
+          \new Voice { a2. d4 e2. cs4 d e fs e d2 e4 gs, a, b, cs b, a,2 b,4 gs, a, fs e d cs b, a, fs e d cs fs e2 fs2 cs4 d e2 a,1 \bar "||" \break }
         >>
       }
     >>
