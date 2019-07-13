@@ -496,6 +496,7 @@
         >>
       }
     >>
+    \layout { \context { \Score \omit BarNumber } ragged-last = ##f }
   }
   \pageBreak
   \score { % chants donnés
