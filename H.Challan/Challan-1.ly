@@ -518,7 +518,7 @@
         \mark \markup { \bold "48" }
         \key f \major \time 4/4 d'4 cs d f bf,2 a4 d e d cs2 d4 bf bf g a2 f4 g e cs d2 \bar "||" \break
         \mark \markup { \bold "49" }
-        \key g \minor \time 4/4 d'2 ef f d1 ef2 c1 bf2 a1. bf2 f' d ef1 c2 a1. bf \bar "||" \break
+        \key bf \major \time 3/2 d'2 ef f d1 ef2 c1 bf2 a1. bf2 f' d ef1 c2 a1. bf \bar "||" \break
         \mark \markup { \bold "50" }
         \key b \minor \time 4/4  d2 fs4 d e2 cs as b4 d cs1 b2 as4 b g g' e cs as b cs as b1 \bar "||" \break
         \mark \markup { \bold "51" }
@@ -550,7 +550,7 @@
         \key d \major \time 3/4 \repeat unfold 7 { s2. }
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
-        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key bf \major \time 3/2 \repeat unfold 8 { s1. }
         \key a \major \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
@@ -571,7 +571,7 @@
         \key d \major \time 3/4 \repeat unfold 7 { s2. }
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
-        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key bf \major \time 3/2 \repeat unfold 8 { s1. }
         \key a \major \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
@@ -592,7 +592,7 @@
         \key d \major \time 3/4 \repeat unfold 7 { s2. }
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
-        \key g \minor \time 4/4 \repeat unfold 8 { s1. }
+        \key bf \major \time 3/2 \repeat unfold 8 { s1. }
         \key a \major \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
