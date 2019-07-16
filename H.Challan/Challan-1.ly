@@ -551,7 +551,7 @@
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
         \key bf \major \time 3/2 \repeat unfold 8 { s1. }
-        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key b \minor \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
         \key c \major \time 4/4 \repeat unfold 8 { s1 }
@@ -572,7 +572,7 @@
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
         \key bf \major \time 3/2 \repeat unfold 8 { s1. }
-        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key b \minor \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
         \key c \major \time 4/4 \repeat unfold 8 { s1 }
@@ -593,7 +593,7 @@
         \key f \major \time 2/4 \repeat unfold 8 { s2 }
         \key f \major \time 4/4 \repeat unfold 6 { s1 }
         \key bf \major \time 3/2 \repeat unfold 8 { s1. }
-        \key a \major \time 4/4 \repeat unfold 8 { s1 }
+        \key b \minor \time 4/4 \repeat unfold 8 { s1 }
         \key c \major \time 4/4 \repeat unfold 10 { s1 }
         \key df \major \time 3/4 \partial 4 s4 \repeat unfold 8 { s2. }
         \key c \major \time 4/4 \repeat unfold 8 { s1 }
