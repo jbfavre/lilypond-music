@@ -7,9 +7,10 @@
 \paper {
   #(include-special-characters)
   print-all-headers = ##t
-  max-systems-per-page = 5
+  max-systems-per-page = 3
 }
-#(set-global-staff-size 13)
+#(set-global-staff-size 18)
+#(set-default-paper-size "a4landscape")
 
 \book {
   \header {
