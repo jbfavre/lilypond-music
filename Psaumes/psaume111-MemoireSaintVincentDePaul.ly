@@ -11,7 +11,7 @@
 \include "../libs/psalmody.ily"
 
 title = "Psaume 111"
-subtitle = \markup { \column { "Mémoire de Saint Vincent de Paul" "(Fête patronale, Clichy-la-Garenne)" }}
+subtitle = \markup { \column { "Mémoire de Saint Vincent de Paul" "Liturgie des Saints, Diocèse de Nanterre" "(forme directe)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, septembre 2019"
 
@@ -45,19 +45,19 @@ sopranoAntiphonMusic = \relative c' {
 
 altoAntiphonMusic = \relative c' {
   \partial 4
-  a4 d2 e4 d4 d fs fs2 \breathe e4 e2 e4 d2 d4 d2. (d2.) \fermata
+  a4 d2 e4 d4 e fs fs2 \breathe e4 e2 e4 d2 d4 d2. (d2.) \fermata
   \bar "|."
   }
 
 tenorAntiphonMusic =  \relative c {
   \partial 4
-  fs4 g2 b4 d d d ds2 \breathe e4 c2. a2. c4 (b) a b2. \fermata
+  fs4 g2 b4 d b d b2 \breathe b4 c2. a2. c4 (b) a b2. \fermata
   \bar "|."
   }
 
 bassAntiphonMusic =  \relative c {
   \partial 4
-  d4 b2 e4 fs d c b2 \breathe b4 c2 a4 d2 d4 g,2. (g2.) \fermata
+  d4 b2 e4 fs e d ds2 \breathe e4 c2 a4 d2 d4 g,2. (g2.) \fermata
   \bar "|."
   }
 
@@ -90,28 +90,32 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
     \cadenzaOn \caesura
-    g4 a b \tempoVerseAcelerando b\breve \tempoVerseRallentando a4 \bar "||" \caesura
+    g4 a b \bar "||" \caesura
+    \tempoVerseAcelerando b\breve \tempoVerseRallentando a4 \bar "||" \caesura
     \tempoVerseAcelerando b\breve \tempoVerseRallentando a4 g \bar "||" \caesura
     \tempoVerseAcelerando a\breve \tempoVerseRallentando g4 a \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    d d d d\breve fs4 \caesura
+    d d d \bar "||" \caesura
+    d\breve fs4 \caesura
     fs\breve fs4 e \caesura
     e\breve e4 fs \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    b b g4 g\breve a4 \caesura
+    b b g4 \bar "||" \caesura
+    g\breve a4 \caesura
     b\breve b4 b \caesura
     c\breve b4 d? \caesura
   }
 
 bassVerseMusic = \relative c' {
     \caesura
-    g, g g g\breve d'4 \caesura
+    g, g g \bar "||" \caesura
+    g\breve d'4 \caesura
     ds\breve ds!4 e \caesura
     c\breve e4 d? \caesura
   }
