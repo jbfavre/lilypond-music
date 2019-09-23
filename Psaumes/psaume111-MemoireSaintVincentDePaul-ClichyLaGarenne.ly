@@ -51,7 +51,7 @@ altoAntiphonMusic = \relative c' {
 
 tenorAntiphonMusic =  \relative c' {
   \partial 4
-  b4 b d d e b2 b b (c) b1 b2 (d2) g,4 g a2 c2 b4 a b1 \fermata
+  b4 b d d e b2 b b (c) b1 b2 d g, a4 c c2 b4 a b1 \fermata
   \bar "|."
   }
 
@@ -77,8 +77,10 @@ antiphonLyrics = \lyricmode {
 
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \antiphonLyrics
-tenorAntiphonLyrics = \antiphonLyrics
-bassAntiphonLyrics = \tenorAntiphonLyrics
+tenorAntiphonLyrics = \lyricmode {
+  Heu -- reux le ser -- vi -- teur fi -- dè -- le, Dieu lui con -- fi -- e sa mai -- son.
+  }
+bassAntiphonLyrics = \antiphonLyrics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%          Verses          %%%%%%%%%%
@@ -112,14 +114,14 @@ altoVerseMusic = \relative c' {
     }
     \alternative {
       { e\breve e4 fs \caesura }
-      { e\breve e4 ds \caesura }
+      { e\breve e4 ds! \caesura }
     }
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
     \repeat volta 5 {
-      b4 c d \bar "|.|" \caesura
+      b4 d d \bar "|.|" \caesura
       d\breve d4 \caesura
       b\breve b4 \caesura
       g\breve b4 b \caesura
