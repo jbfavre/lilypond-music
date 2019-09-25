@@ -45,19 +45,19 @@ sopranoAntiphonMusic = \relative c' {
 
 altoAntiphonMusic = \relative c' {
   \partial 4
-  ds4 e fs g g fs2 fs e1 ds1 e2 fs4 fs e2 d4 d d1 (d) \fermata
+  ds4 e fs g g g2 fs e1 ds1 e2 fs4 fs e2 d4 d d1 (d) \fermata
   \bar "|."
   }
 
 tenorAntiphonMusic =  \relative c' {
   \partial 4
-  b4 b d d e b2 b b (c) b1 b2 d g, a4 c c2 b4 a b1 \fermata
+  b4 b d d e b2 b b (c4 a) b1 b2 d g, a4 c c2 b4 a b1 \fermata
   \bar "|."
   }
 
 bassAntiphonMusic =  \relative c {
   \partial 4
-  b4 e d g c, d2 ds2 e1 b1 e2 d4 b c2 d4 d g,1 (g) \fermata
+  b4 e d g c, d2 ds2 e1 b1 e2 d4 b c cs d2 g,1 (g) \fermata
   \bar "|."
   }
 
