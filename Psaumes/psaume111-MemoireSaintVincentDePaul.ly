@@ -45,13 +45,13 @@ sopranoAntiphonMusic = \relative c' {
 
 altoAntiphonMusic = \relative c' {
   \partial 4
-  a4 d2 e4 d4 e fs fs2 \breathe e4 e2 e4 d2 d4 d2. (d2.) \fermata
+  a4 d2 e4 d4 e fs fs2 \breathe e4 e2 e4 d2 a4 d2. (d2.) \fermata
   \bar "|."
   }
 
 tenorAntiphonMusic =  \relative c {
   \partial 4
-  fs4 g2 b4 d b d b2 \breathe b4 c2. a2. c4 (b) a b2. \fermata
+  fs4 g2 b4 d b d b2 \breathe b4 c2. a2 c4 c4 (b) a b2. \fermata
   \bar "|."
   }
 
