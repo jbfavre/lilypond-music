@@ -33,13 +33,6 @@ tempocroche = \tempo \markup {  %% \tempo et non \mark
       e,4\mp b'8 c b a g a f2 a4\p b8 g a g f d e2\pp \fermata \bar "||" \break      
     }
   }
-  \layout {
-    ragged-last = ##f
-    ragged-right = ##f
-    \context {
-      \Staff \RemoveEmptyStaves
-    }
-  }
 }
 \markup { \vspace #1 }
 \score {
@@ -104,7 +97,7 @@ tempocroche = \tempo \markup {  %% \tempo et non \mark
                 a'4. b8 c4. d8 e2 r8 fs gs a f4 d b e c8[ e a g] f[ e f d] \break
                 e[ fs gs e] a4 f d e c a gs a d,8[ c' b a] gs[ a e fs16 gs] a8[ f c d] \bar "||" \key e \minor \break
                 e4. fs8 g4. a8 b2 r8 cs ds e c4 a fs b g4. a8 g[ fs g e] ds4. fs8 b[ c a b] \break
-                g4. a8 g[ fs g e] ds4. fs8 b[ a e fs] g[ e ds e] a,[ g' fs e] ds[ fs b, ds] e2
+                g4. a8 g[ fs g e] ds4. fs8 b[ a g fs] g[ e ds e] a,[ g' fs e] ds[ fs b, ds] e2
     }
   }
 }
