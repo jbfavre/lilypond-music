@@ -146,33 +146,33 @@ verseLyrics = \markuplist {
     \hspace #.1
     \column{
       \vspace #1
-      \concat { \fontsize #-3 \typewriter "1. " "Le " Seigne \underline u r " est mon berger,"}
-      \concat { "     je ne " m \underline a nque " de rien,"}
+      \concat { \fontsize #-3 \typewriter "1. " "Le " Seigne \underline u r " est mon berger," }
+      \concat { "     je ne " m \underline a nque " de rien," }
       \concat { "     Sur des " pr \underline é s " d’herbe fraîche," }
-      \concat { "     il me " f \underline a it " reposer."}
+      \concat { "     il me " f \underline a it " reposer." }
       \vspace #1
       \concat { \fontsize #-3 \typewriter "2. " "Il me mène vers les "  e \underline a ux " tranquilles" }
-      \concat { "     et me " f \underline a it " revivre;"}
-      \concat { "     il me conduit par le " j \underline u ste " chemin"}
-      \concat { "     pour " l’honn \underline e ur " de son nom."}
+      \concat { "     et me " f \underline a it " revivre;" }
+      \concat { "     il me conduit par le " j \underline u ste " chemin" }
+      \concat { "     pour " l’honn \underline e ur " de son nom." }
       \vspace #1
-      \concat { \fontsize #-3 \typewriter "3. " "Si je traverse les " rav \underline i ns " de la mort,"}
-      \concat { "     je ne " cr \underline a ins " aucun mal,"}
-      \concat { "     car tu " \underline e s " avec moi&nbsp;:"}
-      \concat { "     ton bâton me " gu \underline i de " et me rassure."}
+      \concat { \fontsize #-3 \typewriter "3. " "Si je traverse les " rav \underline i ns " de la mort," }
+      \concat { "     je ne " cr \underline a ins " aucun mal," }
+      \concat { "     car tu " \underline e s " avec moi&nbsp;:" }
+      \concat { "     ton bâton me " gu \underline i de " et me rassure." }
     }
     \hspace #1
     \column{
       \vspace #1
-      \concat { \fontsize #-3 \typewriter "4. " "Tu prépares la " t \underline a ble " pour moi"}
-      \concat { "     " dev \underline a nt " mes ennemis;"}
-      \concat { "     tu répands le " parf \underline u m " sur ma tête,"}
-      \concat { "     ma " c \underline o upe " est débordante."}
+      \concat { \fontsize #-3 \typewriter "4. " "Tu prépares la " t \underline a ble " pour moi" }
+      \concat { "     " dev \underline a nt " mes ennemis;" }
+      \concat { "     tu répands le " parf \underline u m " sur ma tête," }
+      \concat { "     ma " c \underline o upe " est débordante." }
       \vspace #1
-      \concat { \fontsize #-3 \typewriter "5. " "Grâce et " bonh \underline e ur " m’accompagnent"}
-      \concat { "     tous les " j \underline o urs " de ma vie;"}
-      \concat { "     j’habiterai la " mais \underline o n " du Seigneur"}
-      \concat { "     pour la " dur \underline é e " de mes jours."}
+      \concat { \fontsize #-3 \typewriter "5. " "Grâce et " bonh \underline e ur " m’accompagnent" }
+      \concat { "     tous les " j \underline o urs " de ma vie;" }
+      \concat { "     j’habiterai la " mais \underline o n " du Seigneur" }
+      \concat { "     pour la " dur \underline é e " de mes jours." }
     }
     \hspace #1
   }
