@@ -13,7 +13,7 @@
 title = "Psaume 22-11"
 subtitle = "4e dimanche de Carême (Lætare) - Année A"
 composer = "Jean Baptiste Favre"
-dedicace = "Clichy la Garenne, 25 septembre 2017"
+dedicace = "Clichy la Garenne, 22 octobre 2019"
 
 tempoAntiphon = {
   \set Score.tempoHideNote = ##t
@@ -45,20 +45,17 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
-    d8 cs a4 (a8) d e e f2
-    a4 a8 f8 d4 d8 d cs2 \fermata
+   d8 cs d4 (d8) d e e f2 a4 a8 a g4 e8 e e2 \fermata
    \bar "|." \break
   }
 
-tenorAntiphonMusic =  \relative c' {
-    g8 g f4 (f8) f8 g8 c c2
-    c4 c8 a g4 g8 b cs2 \fermata
+tenorAntiphonMusic =  \relative c {
+   f8 a a4 (a8)[ a] c c c2 e4 d8 d d4 d8 b cs2 \fermata
    \bar "|." \break
   }
 
 bassAntiphonMusic =  \relative c {
-    bf8 a d4 (d8) bf8 c e f2
-    e4 f8 c e4 b8 e8 e2 \fermata
+   bf8 a d8 c (bf8) d c e f2 a4 f8 f g4 e8 e a,2 \fermata
    \bar "|." \break
   }
 
@@ -90,26 +87,26 @@ sopranoVerseMusic = \relative c' {
 
 altoVerseMusic = \relative c' {
     \caesura
-    d\breve cs1 a4 \caesura
-    d\breve e1 f4 \caesura
+    d\breve cs1 d4 \caesura
+    d\breve e1 c4 \caesura
     f\breve a1 f4 \caesura
-    f\breve g1 e4 d4 cs4
+    f\breve g1 e4 e4 e4
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    bf\breve g1 f4 \caesura
-    a\breve g1 f4 \caesura
-    a\breve c1 bf4 \caesura
-    a\breve b1 g4 b4 cs4
+    bf\breve a1 a4 \caesura
+    bf\breve g1 a4 \caesura
+    a\breve a1 bf4 \caesura
+    a\breve d1 d4 b4 cs4
   }
 
 bassVerseMusic = \relative c {
     \caesura
     g'\breve e1 d4 \caesura
-    bf\breve c1 c4 \caesura
+    bf\breve c1 f4 \caesura
     d\breve e1 f4 \caesura
-    c\breve d1 b4 e4 e4
+    f\breve g1 e4 e4 a,4
   }
 
 %{
