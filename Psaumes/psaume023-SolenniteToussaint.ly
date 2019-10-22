@@ -38,22 +38,22 @@ tempoVerseAcelerando = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  d4 fs g a a g fs2 a4 b b a g fs g a2.  \fermata
+  d4 fs g a a d, b'2 a4  g fs g a g e fs2.  \fermata
   \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  a4 d d e e e d2 fs4 g g fs e d <d e> <cs e>2. \fermata
+  a4 d  d e e b d2 ds4 e e e e e cs d2. \fermata
   \bar "|."
   }
 
 tenorAntiphonMusic =  \relative c {
-  fs4 b g cs cs cs b2 <cs d>4 <b d> d ds b a b a2. \fermata
+  fs4 b g a a fs g2 fs4 b b b cs cs a a2. \fermata
   \bar "|."
   }
 
 bassAntiphonMusic =  \relative c {
-  d4 b b a a as b2 d4 g, g b4 e fs b, a2. \fermata
+  d4 b b cs cs b g2 b4 e e e a, a a d2. \fermata
   \bar "|."
   }
 
@@ -84,28 +84,28 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 % (chez les Soprano uniquement!) les paramètres de tempo MIDI
 % en utilisant \tAcce et \tRall
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
-    \tempoVerseAcelerando cs\breve \tempoVerseRallentando d1 a4 b \bar "||" \caesura
-    \tempoVerseAcelerando g\breve \tempoVerseRallentando cs1 b4 g a \bar "||" \caesura
+    \tempoVerseAcelerando fs\breve \tempoVerseRallentando a1 b4 \bar "||" \caesura
+    \tempoVerseAcelerando b\breve \tempoVerseRallentando a1 g4 fs \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c' {
     \caesura
-    s\breve s1 s4 s \caesura
-    s\breve s1 s4 s s \caesura
+    d\breve e1 d4 \caesura
+    g\breve e1 e4 d \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
-    s\breve s1 s4 s \caesura
-    s\breve s1 s4 s s \caesura
+    a\breve a1 fs4 \caesura
+    b\breve cs1 cs4 b \caesura
   }
 
 bassVerseMusic = \relative f {
     \caesura
-    a,\breve s1 s4 s \caesura
-    s\breve s1 s4 s s \caesura
+    d\breve cs1 b4 \caesura
+    e\breve a,1 a4 d \caesura
   }
 
 %{
@@ -163,4 +163,4 @@ verseLyrics = \markup {
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
 % Load midi output
-\include "../libs/layouts/outputMidi.ily"
+%\include "../libs/layouts/outputMidi.ily"
