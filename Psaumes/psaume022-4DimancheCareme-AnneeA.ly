@@ -10,6 +10,8 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
+staffCustomSize = 18
+
 title = "Psaume 22-11"
 subtitle = "4e dimanche de Carême (Lætare) - Année A"
 composer = "Jean Baptiste Favre"
@@ -50,7 +52,7 @@ altoAntiphonMusic = \relative c' {
   }
 
 tenorAntiphonMusic =  \relative c {
-   f8 a a4 (a8)[ a] c c c2 e4 d8 d d4 d8 b cs2 \fermata
+   f8 a a4 (bf8)[ bf] c c c2 e4 d8 d d4 d8 b cs2 \fermata
    \bar "|." \break
   }
 
@@ -80,7 +82,7 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando g'\breve a1 \tempoVerseRallentando f4 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
+    \tempoVerseAcelerando f\breve e1 g4 \tempoVerseRallentando a4 \bar "||" \caesura
     \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando d4 \bar "||" \caesura
     \tempoVerseAcelerando c\breve b1 \tempoVerseRallentando a4 g4 a4 \bar "|."
   }
@@ -88,7 +90,7 @@ sopranoVerseMusic = \relative c' {
 altoVerseMusic = \relative c' {
     \caesura
     d\breve cs1 d4 \caesura
-    d\breve e1 c4 \caesura
+    d\breve c1 e4 c4 \caesura
     f\breve a1 f4 \caesura
     f\breve g1 e4 e4 e4
   }
@@ -96,7 +98,7 @@ altoVerseMusic = \relative c' {
 tenorVerseMusic = \relative c' {
     \caesura
     bf\breve a1 a4 \caesura
-    bf\breve g1 a4 \caesura
+    bf\breve g1 g4 c4 \caesura
     a\breve a1 bf4 \caesura
     a\breve d1 d4 b4 cs4
   }
@@ -104,7 +106,7 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c {
     \caesura
     g'\breve e1 d4 \caesura
-    bf\breve c1 f4 \caesura
+    bf\breve c1 c4 f4 \caesura
     d\breve e1 f4 \caesura
     f\breve g1 e4 e4 a,4
   }
@@ -142,7 +144,7 @@ verseLyrics = \markuplist {
   \fill-line {
     \hspace #.1
     \column{
-      \vspace #1
+      \vspace #-1
       \concat { \fontsize #-3 \typewriter "1. " "Le " Seigne \underline u r " est mon berger," }
       \concat { "     je ne " m \underline a nque " de rien," }
       \concat { "     Sur des " pr \underline é s " d’herbe fraîche," }
