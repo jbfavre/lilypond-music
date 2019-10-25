@@ -87,25 +87,25 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando fs\breve \tempoVerseRallentando a1 b4 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve \tempoVerseRallentando a1 g4 fs \bar "||" \caesura
+    \tempoVerseAcelerando b\breve \tempoVerseRallentando a1 a4 \bar "||" \caesura
   }
 
 altoVerseMusic = \relative c' {
     \caesura
     d\breve e1 d4 \caesura
-    g\breve e1 e4 d \caesura
+    g\breve e1 fs4 \caesura
   }
 
 tenorVerseMusic = \relative c' {
     \caesura
     a\breve a1 fs4 \caesura
-    b\breve cs1 cs4 b \caesura
+    b\breve cs1 d4 \caesura
   }
 
 bassVerseMusic = \relative f {
     \caesura
     d\breve cs1 b4 \caesura
-    e\breve a,1 a4 d \caesura
+    e\breve a,1 d4 \caesura
   }
 
 %{
