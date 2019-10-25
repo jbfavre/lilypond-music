@@ -90,7 +90,7 @@ sopranoVerseMusic = \relative c' {
 altoVerseMusic = \relative c' {
     \caesura
     d\breve cs1 d4 \caesura
-    d\breve c1 e4 c4 \caesura
+    d\breve c1 c4 f4 \caesura
     f\breve a1 f4 \caesura
     f\breve g1 e4 e4 e4
   }
@@ -98,7 +98,7 @@ altoVerseMusic = \relative c' {
 tenorVerseMusic = \relative c' {
     \caesura
     bf\breve a1 a4 \caesura
-    bf\breve g1 g4 c4 \caesura
+    bf\breve g1 c4 c4 \caesura
     a\breve a1 bf4 \caesura
     a\breve d1 d4 b4 cs4
   }
@@ -106,7 +106,7 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c {
     \caesura
     g'\breve e1 d4 \caesura
-    bf\breve c1 c4 f4 \caesura
+    bf\breve c1 e4 f4 \caesura
     d\breve e1 f4 \caesura
     f\breve g1 e4 e4 a,4
   }

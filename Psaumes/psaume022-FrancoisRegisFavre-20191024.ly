@@ -41,18 +41,18 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-   d8 e f4 (f8) f8 g g a2
+   d8 e f4 (f8) f8 e g a2
    c4 d8 c b4 a8 g a2 \fermata
    \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-   d8 cs d4 (d8) d e e f2 a4 a8 a g4 e8 e e2 \fermata
+   d8 cs d4 (d8) d c c f2 a4 a8 a g4 e8 e e2 \fermata
    \bar "|." \break
   }
 
 tenorAntiphonMusic =  \relative c {
-   f8 a a4 (bf8)[ bf] c c c2 e4 d8 d d4 d8 b cs2 \fermata
+   f8 a a4 (a8)[ bf] g c c2 e4 d8 d d4 d8 b cs2 \fermata
    \bar "|." \break
   }
 
@@ -94,7 +94,7 @@ sopranoVerseMusic = \relative c' {
 altoVerseMusic = \relative c' {
     \caesura
     d\breve cs1 d4 \caesura
-    d\breve c1 e4 c4 \caesura
+    d\breve c1 c4 f4 \caesura
     f\breve a1 f4 \caesura
     f\breve g1 e4 e4 e4
   }
@@ -102,7 +102,7 @@ altoVerseMusic = \relative c' {
 tenorVerseMusic = \relative c' {
     \caesura
     bf\breve a1 a4 \caesura
-    bf\breve g1 g4 c4 \caesura
+    bf\breve g1 c4 c4 \caesura
     a\breve a1 bf4 \caesura
     a\breve d1 d4 b4 cs4
   }
@@ -110,7 +110,7 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c {
     \caesura
     g'\breve e1 d4 \caesura
-    bf\breve c1 c4 f4 \caesura
+    bf\breve c1 e4 f4 \caesura
     d\breve e1 f4 \caesura
     f\breve g1 e4 e4 a,4
   }
@@ -191,6 +191,7 @@ verseLyrics = \markuplist {
 \include "../libs/layouts/commonLayout.ily"
 \include "../libs/layouts/psalmody.ily"
 
+subtitle = \markup { \column { "François-Régis Favre" "17 juin 1937 - &dagger; 20 octobre 2019" "(Psalmodie à 2 voix mixtes)"} }
 sopranoVerseMusic = \relative c' {
     \cadenzaOn \caesura
     \tempoVerseAcelerando g'\breve a1 \tempoVerseRallentando f4 \bar "||" \caesura
