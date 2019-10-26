@@ -39,7 +39,7 @@ tempoVerseAcelerando = {
 
 sopranoAntiphonMusic = \relative c' {
   \partial 8 
-  d8 a'4.-> b8 g4.-> a8 bf! g e g f g a f g4 f e2 \fermata
+  d8 a'4. b8 g4. a8 bf! g e g f g a f g4 f e2 \fermata
   \bar "|." \break
   }
 
