@@ -12,21 +12,14 @@
 
 title = "Bénédiction solennelle"
 subtitle = "Vigile Pascale"
+poet = "Missel Romain"
 composer = "Jean Baptiste Favre"
-dedicace = "Clichy la Garenne, septembre 2019"
+dedicace = "Clichy la Garenne, octobre 2019"
 
 global = {
   \key c \major
   \time 4/2
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%          Verses          %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% quand on a fini de rentrer la musique partout, on peut préciser
-% (chez les Soprano uniquement!) les paramètres de tempo MIDI
-% en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
     \set Staff.shortInstrumentName = ""
@@ -124,5 +117,3 @@ groupedVersesLyrics = {
 % Load Psalmody layout
 \include "libs/layouts/commonLayout.ily"
 \include "libs/layouts/psalmodyOnly.ily"
-% Load midi output
-%\include "../libs/layouts/outputMidi.ily"
