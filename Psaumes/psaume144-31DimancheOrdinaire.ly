@@ -39,7 +39,7 @@ tempoVerseAcelerando = {
 
 sopranoAntiphonMusic = \relative c' {
   \partial 8 
-  d8 a'4. b8 g4. a8 bf! g e g f g a f g4 f e2 \fermata
+  d8 a'4.-> b8 g4.-> a8 bf! g e g f g a f g4 f e2 \fermata
   \bar "|." \break
   }
 
@@ -51,7 +51,7 @@ altoAntiphonMusic = \relative c' {
 
 tenorAntiphonMusic =  \relative c' {
   \partial 8 
-  d8 d4. a8 b4. b!8 bf! bf bf bf a bf a a bf4 a a2 \fermata
+  d8 d4. a8 b4. b!8 bf! bf bf bf a a d a bf4 a a2 \fermata
   \bar "|."
   }
 
@@ -92,7 +92,7 @@ altoVerseMusic = \relative c' {
 
 tenorVerseMusic = \relative c' {
     \caesura
-    d\breve b!1 b!4 d \caesura
+    d\breve b!1 g4 d' \caesura
     e\breve bf1 d4 \caesura
   }
 
