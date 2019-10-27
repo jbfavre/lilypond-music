@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:generator>LibreOffice/6.3.3.1$Linux_X86_64 LibreOffice_project/30$Build-1</meta:generator><dc:date>2019-10-27T18:58:54.279089917</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT28M23S</meta:editing-duration><meta:editing-cycles>7</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="661" meta:object-count="0"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/6.3.3.1$Linux_X86_64 LibreOffice_project/30$Build-1</meta:generator><dc:date>2019-10-27T19:15:57.093623215</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT32M8S</meta:editing-duration><meta:editing-cycles>8</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="661" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
@@ -32,7 +32,7 @@
       </config:config-item-map-entry>
      </config:config-item-map-named>
      <config:config-item config:name="ActiveTable" config:type="string">Feuil1</config:config-item>
-     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">3180</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1580</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">131</config:config-item>
      <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -97,7 +97,7 @@
    <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
    <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
    <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">qgH+/0RDUEwyNTQwRE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpEQ1BMMjU0MEROAAAAAAAAAAAAAAAAAAAAAAAWAAMAywAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9RENQTDI1NDBETgpvcmllbnRhdGlvbj1Qb3J0cmFpdApjb3BpZXM9MQpjb2xsYXRlPWZhbHNlCm1hcmdpbmRhanVzdG1lbnQ9MCwwLDAsMApjb2xvcmRlcHRoPTI0CnBzbGV2ZWw9MApwZGZkZXZpY2U9MQpjb2xvcmRldmljZT0wClBQRENvbnRleERhdGEKRHVwbGV4Ok5vbmUAUGFnZVNpemU6QTQASW5wdXRTbG90OlRSQVkxAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">qgH+/0RDUEwyNTQwRE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpEQ1BMMjU0MEROAAAAAAAAAAAAAAAAAAAAAAAWAAMAywAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9RENQTDI1NDBETgpvcmllbnRhdGlvbj1Qb3J0cmFpdApjb3BpZXM9MQpjb2xsYXRlPWZhbHNlCm1hcmdpbmRhanVzdG1lbnQ9MCwwLDAsMApjb2xvcmRlcHRoPTI0CnBzbGV2ZWw9MApwZGZkZXZpY2U9MQpjb2xvcmRldmljZT0wClBQRENvbnRleERhdGEKSW5wdXRTbG90OlRSQVkxAER1cGxleDpOb25lAFBhZ2VTaXplOkE0AAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
    <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
@@ -723,7 +723,7 @@
      <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
     </style:region-left>
     <style:region-right>
-     <text:p><text:date style:data-style-name="N2" text:date-value="2019-10-27">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="18:53:24.362494267">00:00:00</text:time></text:p>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2019-10-27">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="19:02:00.078914237">00:00:00</text:time></text:p>
     </style:region-right>
    </style:header>
    <style:header-left style:display="false"/>
@@ -1355,10 +1355,10 @@
      <table:table-cell table:style-name="ce10" table:formula="of:=HYPERLINK(&quot;https://www.choralepolefontainebleau.org/psaumes-du-calendrier-liturgique/psaume-061-1-dieu-seul-7296/&quot;;&quot;En Dieu seul&quot;)" office:value-type="string" office:string-value="En Dieu seul" calcext:value-type="string">
       <text:p>En Dieu seul</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
       <text:p>102-4</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce17" table:formula="of:=HYPERLINK(&quot;https://www.choralepolefontainebleau.org/psaumes-du-calendrier-liturgique/psaume-102-4-seigneur-tendresse-7589/&quot;;&quot;Le Seigneur est tendresse&quot;)" office:value-type="string" office:string-value="Le Seigneur est tendresse" calcext:value-type="string">
+     <table:table-cell table:style-name="ce40" table:formula="of:=HYPERLINK(&quot;https://www.choralepolefontainebleau.org/psaumes-du-calendrier-liturgique/psaume-102-4-seigneur-tendresse-7589/&quot;;&quot;Le Seigneur est tendresse&quot;)" office:value-type="string" office:string-value="Le Seigneur est tendresse" calcext:value-type="string">
       <text:p>Le Seigneur est tendresse</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce21" office:value-type="string" calcext:value-type="string">
