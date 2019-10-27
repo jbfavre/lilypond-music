@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 144"
+title = "Psaume 144-7"
 subtitle = \markup { \column { "31e dimanche du temps ordinaire - Année C" "(forme directe alternée)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, octobre 2019"
