@@ -10,7 +10,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/psalmody.ily"
 
-title = "Psaume 23"
+title = "Psaume 23-5"
 subtitle = \markup { \column { "Solennité de la Toussaint" "(forme directe)" }}
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, septembre 2019"
