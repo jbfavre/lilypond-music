@@ -5,10 +5,10 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
-\include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
-\include "libs/translations/fr.ily"
-\include "libs/psalmody.ily"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
+\include "../libs/psalmody.ily"
 
 antiphonText = "Répons"
 verseText = "Versets"
@@ -153,10 +153,10 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "libs/defaultPianoSettings.ly"
-\include "libs/layouts/commonPiano.ily"
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
 % Load Psalmody layout
-\include "libs/layouts/commonLayout.ily"
-\include "libs/layouts/psalmody.ily"
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody.ily"
 % Load midi output
-%\include "libs/layouts/outputMidi.ily"
+%\include "../libs/layouts/outputMidi.ily"

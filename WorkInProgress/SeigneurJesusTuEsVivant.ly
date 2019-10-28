@@ -4,9 +4,9 @@
   Default settings and some translations are needed
   at the beginning so that they can be overrided
 %}
-\include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
-\include "libs/translations/fr.ily"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
 %{
   Since defined in libs/translations/fr.ly
   Following variables must be overrided after file include
@@ -99,8 +99,8 @@ verseHarmony = \figuremode {
     <III>4. <I> <V> <VI>4 <III>8 <IV>4 <II>8 <V>4. <I>
   }
 
-\include "libs/settingsPiano.ly"
-%\include "libs/layouts/commonPiano.ily"
+\include "../libs/settingsPiano.ly"
+%\include "../libs/layouts/commonPiano.ily"
 
 
 groupedVersesLyrics = <<
@@ -112,6 +112,6 @@ verseLyrics =  <<
 %{
   Include layout and draw score
 %}
-\include "libs/layouts/commonLayout.ily"
-\include "libs/psalmody.ily"
-\include "libs/layouts/singlePsalmody.ily"
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/psalmody.ily"
+\include "../libs/layouts/psalmody.ily"

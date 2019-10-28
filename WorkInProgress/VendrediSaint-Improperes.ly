@@ -5,9 +5,9 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
-\include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
-\include "libs/translations/fr.ily"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
 %{
   Since defined in libs/translations/fr.ly
   Following variables must be overrided after file include
@@ -17,7 +17,7 @@ bassVoiceTitle = "H."
 antiphonText = "Intonation"
 verseText = "Couplets"
 
-\include "libs/psalmody.ily"
+\include "../libs/psalmody.ily"
 
 %{
   Composition details
@@ -96,8 +96,8 @@ bassAntiphonLyrics = \lyricmode {
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 
-\include "libs/defaultPianoSettings.ly"
-\include "libs/layouts/commonPiano.ily"
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonPiano.ily"
 
 %{
   Moi je t’ai fait sortir d’Égypte, j’ai englouti le Pharaon&nbsp;:
@@ -136,6 +136,6 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "libs/layouts/commonLayout.ily"
-\include "libs/layouts/psalmody-2VoicesNoPiano.ily"
-\include "libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonLayout.ily"
+\include "../libs/layouts/psalmody-2VoicesNoPiano.ily"
+\include "../libs/layouts/outputMidi.ily"
