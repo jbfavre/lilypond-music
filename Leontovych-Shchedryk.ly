@@ -50,7 +50,7 @@ all = \markup { "All" }
   top-margin = 0.625\in
   bottom-margin = 0.625\in
   
-  markup-system-spacing #'basic-distance = #20
+  %markup-system-spacing #'basic-distance = #20
   page-count = #3
   max-systems-per-page = #2
   ragged-last-bottom = ##f
