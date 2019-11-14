@@ -130,7 +130,7 @@
     <<
       \clef bass \time 3/4 \key b \minor
       \relative f { b,4 cs d e2. b4 d8 b g4 fs2. \bar "||" }
-      \new FiguredBass { \figuremode { <5>4 <6+> <6> <5>2. <5>4 \bassFigureExtendersOn <5>8 <5> <6>4 <5>2. } }
+      \new FiguredBass { \figuremode { <5>4 <6+> <6> <5>2. <5>4 \bassFigureExtendersOn <5>8 <5> <6>4 <_+>2. } }
     >>
   >>
 }
