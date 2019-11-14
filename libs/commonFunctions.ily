@@ -22,6 +22,15 @@ silence = #(
   )
 )
 
+markCustom = 
+   #(define-music-function
+     (parser location markName)
+     (markup?)
+   #{
+     \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+     { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps #markName }} }
+   #})
+
 #(define-markup-command (arrow-at-angle layout props angle-deg length fill)
    (number? number? boolean?)
    (let* (

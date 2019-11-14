@@ -1,23 +1,22 @@
 \version "2.18.2"
+silenceAntiphon = \silence \sopranoAntiphonMusic
 
 scoreTitleMarkupSetting = \markup \columns {
   \fill-line {
       \column {
         \line {
           \left-column {
-            \vspace #1.1
-            \fontsize #7 \sans \fromproperty #'header:title
+            \fontsize #8 \sans \fromproperty #'header:title
             \fontsize #1 \typewriter \fromproperty #'header:subtitle
           }
         }
       }
       \column {
         \line {
-          \fontsize #-2
+          \fontsize #-1
           \left-column {
             \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
             \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-            " "
             \typewriter \italic \fromproperty #'header:dedication
           }
         }
@@ -104,6 +103,7 @@ oddFooterMarkupSetting = \markup {
       composerPrefix = \composerPrefix
       poet = \poet
       poetPrefix = \poetPrefix
+      date = "toto"
       dedication = \dedicace
     }
   }
