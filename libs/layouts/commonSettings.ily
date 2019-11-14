@@ -12,10 +12,10 @@ topToMarkupSpacing =
      (stretchability . 5))
 
 markupToSystemSpacing =
-  #'((basic-distance . 10)
-     (minimum-distance . 10)
-     (padding . 10)
-     (stretchability . 10))
+  #'((basic-distance . 5)
+     (minimum-distance . 5)
+     (padding . 5)
+     (stretchability . 5))
 
 systemToSystemSpacing = 
   #'((basic-distance . 5)

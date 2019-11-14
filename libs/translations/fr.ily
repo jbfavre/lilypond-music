@@ -1,8 +1,5 @@
 \version "2.18.2"
 
-antiphonText = "Antienne"
-verseText = "Psalmodie"
-
 sopranoVoiceTitle = "Soprano"
 sopranoVoiceShortTitle = "S"
 altoVoiceTitle = "Alto"
