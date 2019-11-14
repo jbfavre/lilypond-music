@@ -31,10 +31,10 @@
       \clef treble \time 3/8 \key f \minor
       \relative c' {
         r4. r4.
-        f8 g af c [bf8.] af16 g8 af bf af [g8.] e16 \break
-        f8 g af bf [c8.] df16 ef8 [f8.] df16 df4 c8 \break
-        c8 b c gf' [f8.] ef16 bf8 a bf f' [ef8.] df16 \break
-        af8 g af ef' [df8.] c16 c8 [b8.] c16 c4.
+        f8 g af c bf af g af bf af g e \break
+        f8 g af bf c df ef [f8.] df16 df4 c8 \break
+        c8 b c gf'8. f16 ef8 bf a bf f'8. ef16 df8 \break
+        af8 g af ef'8. df16 c8 c8 [b8.] c16 c4.
       }
     >>
     \new Staff
@@ -57,7 +57,7 @@
             r8 <f bf df> <bf df f>
             r8 <g bf ef> <bf ef g>
             r8 <ef, af c> <af c ef>
-            r8 <f bf df> <bf df f>
+            r8 <f af df> <af df f>
             r8 <b d f> <g d' f>
             <g c ef>16 d' c bf af g
           }
