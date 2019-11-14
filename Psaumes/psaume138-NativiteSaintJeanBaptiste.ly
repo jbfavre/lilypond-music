@@ -6,28 +6,15 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
+\include "../libs/settings.ily"
 
 title = "Psaume 138"
 subtitle = "Solennité de la nativité de saint Jean Baptiste"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, juin 2018"
 
-staffCustomSize = 16
-systemToSystemSpacing = 
-  #'((basic-distance . 3)
-     (minimum-distance . 3)
-     (padding . 3)
-     (stretchability . 3))
-scoreMarkupSpacing =
-  #'((padding . 3)
-   (basic-distance . 3)
-   (minimum-distance . 3)
-   (stretchability . 3))
 global = {
-  \omit Staff.TimeSignature
   \time 4/4
   \key f \major
 }
@@ -37,9 +24,9 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
+  \markCustom "Antienne"
   r8 c8 f a g4 g4 r8 a4 g4 f4.
-  r8 g8 a a c4 c8 bf a g4 f8 g4. (a8) a2
-  \bar "|." \break
+  r8 g8 a a c4 c8 bf a g4 f8 g4. (a8) a2 \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
@@ -48,8 +35,8 @@ altoAntiphonMusic = \relative c' {
   }
 
 tenorAntiphonMusic =  \relative c' {
-  a4 a4 r8 bf8 e d cs4 cs4 d4. e8 f8
-  f8 fs fs g4 g8 f f4 f8 d c4 (bf) c2
+  a4 a4 r8 bf8 e d cs4 cs4 d4. e8
+  f8 f8 fs fs g4 g8 f f4 f8 d c4 (bf) c2
   }
 
 bassAntiphonMusic =  \relative c {
@@ -58,19 +45,19 @@ bassAntiphonMusic =  \relative c {
   }
 
 antiphonLyrics = \lyricmode {
-    Je te rends grâ -- ce, ô mon Dieu,
-    Je te rends grâ -- ces, pour tant de mer -- veil -- les.
+  Je te rends grâ -- ce, ô mon Dieu,
+  Je te rends grâ -- ces, pour tant de mer -- veil -- les.
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics =  \lyricmode {
-    Grâ -- ce&nbsp;! Je te rends grâ -- ce, ô mon Dieu,
-    Je te rends grâ -- ce pour tant de mer -- veil -- les.
+  Grâ -- ce&nbsp;! Je te rends grâ -- ce, ô mon Dieu,
+  Je te rends grâ -- ce pour tant de mer -- veil -- les.
   }
 bassAntiphonLyrics =   \lyricmode {
-    Je te rends grâ -- ce, ô mon Dieu,
-    Grâ -- ce&nbsp;! Je te rends grâ -- ce, ô mon Dieu,
+  Je te rends grâ -- ce, ô mon Dieu,
+  Grâ -- ce&nbsp;! Je te rends grâ -- ce, ô mon Dieu,
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,82 +65,65 @@ bassAntiphonLyrics =   \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando g4 \bar "||" \caesura
-    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando g4 g f \bar "||"
-    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando bf4 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando g4 \bar "||"
+  \silence \sopranoAntiphonMusic
+  \markCustom "Psalmodie par strophe" \cadenzaOn
+  f\breve f1 g4 \bar "||"
+  g\breve a1 g4 g f \bar "||"
+  g\breve a1 bf4 \bar "||"
+  a\breve g1 g4 \bar "||"
   }
 altoVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando c\breve c1 \tempoVerseRallentando d4 \bar "||" \caesura
-    \tempoVerseAcelerando e\breve e1 \tempoVerseRallentando e4 d d \bar "||"
-    \tempoVerseAcelerando d\breve fs1 \tempoVerseRallentando g4 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando e4 \bar "||"
+  \silence \sopranoAntiphonMusic
+  c\breve c1 d4
+  e\breve e1 e4 d d
+  d\breve fs1 g4
+  f\breve f1 e4
   }
 
 tenorVerseMusic = \relative c' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando bf4 \bar "||" \caesura
-    \tempoVerseAcelerando a\breve cs1 \tempoVerseRallentando a4 a a \bar "||"
-    \tempoVerseAcelerando bf\breve d1 \tempoVerseRallentando d4 \bar "||" \caesura
-    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando c4 \bar "||"
+  \silence \sopranoAntiphonMusic
+  a\breve a1 bf4
+  a\breve cs1 a4 a a
+  bf\breve d1 d4
+  d\breve d1 c4
   }
 
 bassVerseMusic = \relative c {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando e4 \bar "||" \caesura
-    \tempoVerseAcelerando cs\breve a1 \tempoVerseRallentando cs!4 d d \bar "||"
-    \tempoVerseAcelerando bf\breve a1 \tempoVerseRallentando g4 \bar "||" \caesura
-    \tempoVerseAcelerando bf\breve b1 \tempoVerseRallentando c4 \bar "||"
-   }
-
-%{
-
-  Tu me scrutes, Seigne_u_r, et tu sais !
-  Tu sais quand je m’ass_o_is, quand je me lève ;
-  de très loin, tu pén_è_tres mes pensées,
-  tous mes chemins te s_o_nt familiers.
-  
-  C’est toi qui as cré_é_ mes reins,
-  qui m’as tissé dans le s_e_in de ma mère.
-  Je reconnais devant t_o_i le prodige,
-  l’être étonn_a_nt que je suis.
-  
-  Étonn_a_ntes sont tes œuvres,
-  toute mon _â_me le sait.
-  Mes os n’étaient pas cach_é_s pour toi
-  quand j’étais façonn_é_ dans le secret.
-
-%}
+  \silence \sopranoAntiphonMusic
+  f\breve f1 e4
+  cs\breve a1 cs!4 d d
+  bf\breve a1 g4
+  bf\breve b1 c4
+  }
 
 verseLyrics = \markuplist {
-  \vspace #1
   \override #'(font-family . sans)
   \override #'(font-size . 2)
-  \fill-line {
-    \left-column{
-      \vspace #1
-      \concat { "Tu me scrutes, Seigne" \underline u "r, et tu sais !"}
-      \concat { "Tu sais quand je m’ass" \underline o "is, quand je me lève ;"}
-      \concat { "de très loin, tu pén" \underline è "tres mes pensées,"}
-      \concat { "tous mes chemins te s" \underline o "nt familiers."}
-      \vspace #1
-      \concat { "C’est toi qui as cré" \underline é " mes reins,"}
-      \concat { "qui m’as tissé dans le s" \underline e "in de ma mère."}
-      \concat { "Je reconnais devant t" \underline o "i le prodige,"}
-      \concat { "l’être étonn" \underline a "nt que je suis."}
-      \vspace #1
-      \concat { "Étonn" \underline a "ntes sont tes œuvres,"}
-      \concat { "toute mon " \underline â "me le sait."}
-      \concat { "Mes os n’étaient pas cach" \underline é "s pour toi"}
-      \concat { "quand j’étais façonn" \underline é " dans le secret."}
+  \column {
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "1. " "Tu me scrutes, Seigne" \underline u "r, et tu sais !"}
+        \concat { \typewriter "   " "Tu sais quand je m’ass" \underline o "is, quand je me lève ;"}
+        \concat { \typewriter "   " "de très loin, tu pén" \underline è "tres mes pensées,"}
+        \concat { \typewriter "   " "tous mes chemins te s" \underline o "nt familiers."}
+      }
+      \hspace #1
+      \left-column {
+        \concat { \typewriter "2. " "C’est toi qui as cré" \underline é " mes reins,"}
+        \concat { \typewriter "   " "qui m’as tissé dans le s" \underline e "in de ma mère."}
+        \concat { \typewriter "   " "Je reconnais devant t" \underline o "i le prodige,"}
+        \concat { \typewriter "   " "l’être étonn" \underline a "nt que je suis."}
+      }
     }
-  }
-  \vspace #5
-  \fill-line {
-    \override #'(font-name . "Latin Modern Sans")
-    \column { \concat { \underline "Consignes d'exécution" "&nbsp;: l'antienne sera chantée comme une mélopée, avec douceur et amour." } }
+    \vspace #1
+    \fill-line {
+      \left-column {
+        \concat { \typewriter "3. " "Étonn" \underline a "ntes sont tes œuvres,"}
+        \concat { \typewriter "   " "toute mon " \underline â "me le sait."}
+        \concat { \typewriter "   " "Mes os n’étaient pas cach" \underline é "s pour toi"}
+        \concat { \typewriter "   " "quand j’étais façonn" \underline é " dans le secret."}
+      }
+    }
   }
 }
 
@@ -162,9 +132,21 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+staffCustomSize = 17.9
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

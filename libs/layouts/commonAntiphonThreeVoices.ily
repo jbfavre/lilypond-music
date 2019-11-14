@@ -12,12 +12,6 @@
       \new Lyrics \lyricsto "Alto" { \altoAntiphonLyrics }
     >>
     \new Staff <<
-      \set Staff.instrumentName = "Ténor"
-      \clef "treble_8" 
-      \new Voice = "Ten" { \global \tenorAntiphonMusic }
-      \new Lyrics \lyricsto "Ten" { \tenorAntiphonLyrics }
-    >>
-    \new Staff <<
       \set Staff.instrumentName = "Basse"
       \clef "bass" 
       \new Voice = "Bass" { \global \bassAntiphonMusic }

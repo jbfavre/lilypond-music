@@ -13,14 +13,10 @@
       >>
     >>
     \new Staff = "TenorBass" \with { printPartCombineTexts = ##f } <<
-      \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+      \set Staff.shortInstrumentName = \markup { \right-column { "B" } }
       \override Staff.VerticalAxisGroup.remove-first = ##t
       \global
       \clef bass
-      \partcombine
-      <<
-        \voiceThree { \tenorVerseMusic }
-      >>
       <<
         \voiceFour { \bassVerseMusic }
       >>

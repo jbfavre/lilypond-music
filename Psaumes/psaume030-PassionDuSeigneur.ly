@@ -6,26 +6,17 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
+\include "../libs/settings.ily"
 
 title = "Psaume 30"
 subtitle = "Passion du Seigneur"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 17 Mars 2018"
 
-%staffCustomSize = 15
-%systemToSystemSpacing = 
-%  #'((basic-distance . 3)
-%     (minimum-distance . 3)
-%     (padding . 3)
-%     (stretchability . 3))
-
 global = {
-  \omit Staff.TimeSignature
-  
   \key d \minor
+  \time 4/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,137 +24,101 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  \partial 2 d2 a'2. a4 g2 a f2
-  e8 f g4 f2 e d1 \fermata
-  \bar "|." \break
+  \markCustom "Antienne"
+  \partial 4 d4 a'2 g4 a f2 e4 f g2 f4 e d2 \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  \partial 2 bf2 f'2. f4 e2 e2 d2 d8 d d4 d2 d4 (c) a1
+  \partial 4 bf4 f'2 e4 e d2 d4 d d2 d4 d8 (c) a2 \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  \partial 2 g2 a2. a4 g2 c bf bf8 a bf4 a2 a f1
+  \partial 4 g4 a2 g4 c bf2 bf4 a bf2 a4 a f2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-  \partial 2 e2 d2. c4 bf2 a bf'4 a
-  g4 e f (g) a2 d,1 \fermata
+  \partial 4 e4 d4 c bf a bf'4 (a) g4 e f2 g4 a d,2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
-    Ô Pè -- re, en tes mains je re -- mets mon es -- prit.
+    Ô Père, en tes mains je re -- mets mon es -- prit.
   }
-
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \antiphonLyrics
-bassAntiphonLyrics = \antiphonLyrics
+bassAntiphonLyrics = \lyricmode {
+    Ô Pè -- re, en tes mains je re -- mets mon es -- prit.
+  }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando e4 e d \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  \markCustom "Psalmodie par verset" \cadenzaOn
+  f\breve g1 a4 \bar "||"
+  f\breve e1 e4 e d \bar "|."
   }
 
 altoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando e4 \bar "||" \caesura
-    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando d4 c a \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  d\breve d1 e4
+  d\breve d1 d4 c a
   }
 
 tenorVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando a\breve bf1 \tempoVerseRallentando c4 \bar "||" \caesura
-    \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando a4 a f \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  a\breve bf1 c4
+  bf\breve bf1 a4 a f
   }
 
 bassVerseMusic = \relative c {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando a4 \caesura
-    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando a4 a d \caesura
-   }
-
-%{
-
-En toi, Seigneur, j’ai mon refuge ;
-garde-moi d’être humilié pour toujours.
-En tes mains je remets mon esprit ;
-tu me rachètes, Seigneur, Dieu de vérité.
-
-Je suis la risée de mes adversaires
-et même de mes voisins ;
-je fais peur à mes amis,
-s’ils me voient dans la rue, ils me fuient.
-
-On m’ignore comme un mort oublié,
-comme une chose qu’on jette.
-J’entends les calomnies de la foule :
-ils s’accordent pour m’ôter la vie.
-
-Moi, je suis sûr de toi, Seigneur,
-je dis : « Tu es mon Dieu ! »
-Mes jours sont dans ta main : délivre-moi
-des mains hostiles qui s’acharnent.
-
-Sur ton serviteur, que s’illumine ta face ;
-sauve-moi par ton amour.
-Soyez forts, prenez courage,
-vous tous qui espérez le Seigneur !
-
-%}
+  \silence \sopranoAntiphonMusic
+  d\breve bf1 a4
+  bf\breve g1 a4 a d
+  }
 
 verseLyrics = \markuplist {
-  \vspace #1
-  \override #'(font-family . sans)
-  \override #'(font-size . 2)
-  \fill-line {
-    \hspace #1
-    \column{
-      \concat { \fontsize #-3 \typewriter "1. " "En toi, Seigne" \underline u "r, j’ai mon refuge&nbsp;;"}
-      \concat { "   garde-moi d’être humili" \underline é " pour toujours."}
-      \concat { "   En tes mains je rem" \underline e "ts mon esprit&nbsp;;"}
-      \concat { "   tu me rachètes, Seigneur, Die" \underline u " de vérité."}
-      \vspace #1
-      \concat { \fontsize #-3 \typewriter "2. " "Je suis la ris" \underline é "e de mes adversaires"}
-      \concat { "   et m" \underline ê "me de mes voisins&nbsp;;"}
-      \concat { "   je fais pe" \underline u "r à mes amis,"}
-      \concat { "   s’ils me voient dans la r" \underline u "e, ils me fuient."}
-      \vspace #1
-      \concat { \fontsize #-3 \typewriter "3. " "On m’ignore comme un m" \underline o "rt oublié,"}
-      \concat { "   comme une ch" \underline o "se qu’on jette."}
-      \concat { "   J’entends les calomn" \underline i "es de la foule&nbsp;:"}
-      \concat { "   ils s’accordent pour m’ôt" \underline e "r la vie."}
-    }
-    \hspace #1
-    \column {
-      \concat { \fontsize #-3 \typewriter "4. " "Moi, je suis sûr de t" \underline o "i, Seigneur,"}
-      \concat { "   je dis : «&nbsp;Tu " \underline e "s mon Dieu&nbsp;!&nbsp;»"}
-      \concat { "   Mes jours sont dans ta m" \underline a "in&nbsp;: délivre-moi"}
-      \concat { "   des mains host" \underline i "les qui s’acharnent."}
-      \vspace #1
-      \concat { \fontsize #-3 \typewriter "5. " "Sur ton serviteur, que s’illum" \underline i "ne ta face&nbsp;;"}
-      \concat { "   sauve-m" \underline o "i par ton amour."}
-      \concat { "   Soyez f" \underline o "rts, prenez courage,"}
-      \concat { "   vous tous qui espér" \underline e "z le Seigneur&nbsp;!"}
-    }
-    \hspace #1
-  }
   \vspace #5
-  \fill-line {
   \override #'(font-family . sans)
   \override #'(font-size . 2)
-    \column { \concat { \underline "Consignes d'exécution" "&nbsp;:" } }
-    \hspace #1
-    \override #'(font-name . "Latin Modern Sans")
-    \override #'(font-size . 2)
-    \column {
-      \line { "L'antienne n'est chantée qu'en début et en fin du psaume." }
-      \line { "Les versets sont alternés entre le psalmiste (ou le chœur) et l'assemblée."}
+  \column {
+    \fill-line {
+      \left-column {
+        \concat { \typewriter "1. " "En toi, Seigne" \underline u "r, j’ai mon refuge&nbsp;;"}
+        \concat { \typewriter "   " "garde-moi d’être humili" \underline é " pour toujours."}
+        \concat { \typewriter "   " "En tes mains je rem" \underline e "ts mon esprit&nbsp;;"}
+        \concat { \typewriter "   " "tu me rachètes, Seigneur, Die" \underline u " de vérité."}
+        \vspace #1
+        \concat { \typewriter "2. " "Je suis la ris" \underline é "e de mes adversaires"}
+        \concat { \typewriter "   " "et m" \underline ê "me de mes voisins&nbsp;;"}
+        \concat { \typewriter "   " "je fais pe" \underline u "r à mes amis,"}
+        \concat { \typewriter "   " "s’ils me voient dans la r" \underline u "e, ils me fuient."}
+      }
+      \hspace #1
+      \left-column {
+        \vspace #1
+        \concat { \typewriter "3. " "On m’ignore comme un m" \underline o "rt oublié,"}
+        \concat { \typewriter "   " "comme une ch" \underline o "se qu’on jette."}
+        \concat { \typewriter "   " "J’entends les calomn" \underline i "es de la foule&nbsp;:"}
+        \concat { \typewriter "   " "ils s’accordent pour m’ôt" \underline e "r la vie."}
+        \vspace #1
+        \concat { \typewriter "4. " "Moi, je suis sûr de t" \underline o "i, Seigneur,"}
+        \concat { \typewriter "   " "je dis : «&nbsp;Tu " \underline e "s mon Dieu&nbsp;!&nbsp;»"}
+        \concat { \typewriter "   " "Mes jours sont dans ta m" \underline a "in&nbsp;: délivre-moi"}
+        \concat { \typewriter "   " "des mains host" \underline i "les qui s’acharnent."}
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \left-column {
+        \concat { \typewriter "5. " "Sur ton serviteur, que s’illum" \underline i "ne ta face&nbsp;;"}
+        \concat { \typewriter "   " "sauve-m" \underline o "i par ton amour."}
+        \concat { \typewriter "   " "Soyez f" \underline o "rts, prenez courage,"}
+        \concat { \typewriter "   " "vous tous qui espér" \underline e "z le Seigneur&nbsp;!"}
+      }
     }
   }
 }
@@ -173,9 +128,19 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

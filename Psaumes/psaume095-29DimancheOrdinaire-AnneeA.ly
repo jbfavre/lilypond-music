@@ -6,9 +6,8 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
+\include "../libs/settings.ily"
 
 title = "Psaume 95-2"
 subtitle = "29e dimanche du Temps Ordinaire - Année A"
@@ -16,8 +15,6 @@ composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 25 novembre 2017"
 
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
   \key e \major
 }
 
@@ -26,29 +23,24 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  gs'4 b b8 a8 gs4. \breathe
-  e8 fs gs a gs fs2 gs2 \fermata
-  \bar "|." \break
+  \markCustom "Antienne"
+  gs'4 b b8 a8 gs4. \breathe e8 fs gs a gs fs2 gs2 \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  b4 ds ds8 fs e4 \breathe
-  b4 cs8 e e e cs4 (ds) e2
+  b4 ds ds8 fs e4 \breathe b4 cs8 e e e cs4 (ds) e2 \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  e,4 fs fs8 ds8 gs4 \breathe
-  gs4 a8 b cs cs a4 <a cs> <gs b>2
+  e,4 fs fs8 ds8 gs4 \breathe gs4 a8 b cs cs a4 <a cs> <gs b>2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-  e4 b b8 bs8 cs4 \breathe
-  b4 a8 gs fs16 a cs8 a4 (b) e,2 \fermata
+  e4 b b8 bs8 cs4 \breathe b4 a8 gs fs16 a cs8 a4 (b) e,2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
-  Ren -- dez au Sei -- gneur
-  La gloi -- re~et la puis -- san -- ce
+  Ren -- dez au Sei -- gneur la gloi -- re~et la puis -- san -- ce
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -60,92 +52,66 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% quand on a fini de rentrer la musique partout, on peut préciser
-% (chez les Soprano uniquement!) les paramètres de tempo MIDI
-% en utilisant \tAcce et \tRall
-
 sopranoVerseMusic = \relative c'' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando b\breve cs1 \tempoVerseRallentando b4 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando gs4 gs fs \bar "||" \caesura
-    \tempoVerseAcelerando gs\breve a1 \tempoVerseRallentando gs4 fs e \bar "||" \caesura
-    \tempoVerseAcelerando e\breve a1 \tempoVerseRallentando gs4 e fs \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  \markCustom "Psalmodie par verset" \cadenzaOn
+  b\breve cs1 b4 \bar "||"
+  b\breve a1 gs4 gs fs \bar "||"
+  gs\breve a1 gs4 fs e \bar "||"
+  e\breve a1 gs4 e fs \bar "|."
   }
 
 altoVerseMusic = \relative c'' {
-    \caesura
-    gs\breve e1 es4 \bar "||" \caesura
-    es!\breve cs1 e4 e ds \bar "||" \caesura
-    ds\breve ds1 ds4 ds cs \bar "||" \caesura
-    cs\breve e1 e4 cs4 ds \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  gs\breve e1 es4
+  es!\breve cs1 e4 e ds
+  ds\breve ds1 ds4 ds cs
+  cs\breve e1 e4 cs4 ds
   }
 
 tenorVerseMusic = \relative c' {
-    \caesura
-    b\breve a1 cs4 \bar "||" \caesura
-    gs\breve a1 b4 cs b \bar "||" \caesura
-    gs\breve bs1 bs4 gs gs \bar "||" \caesura
-    a\breve cs1 b4 gs b \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  b\breve a1 cs4
+  gs\breve a1 b4 cs b
+  gs\breve bs1 bs4 gs gs
+  a\breve cs1 b4 gs b
   }
 
 bassVerseMusic = \relative c {
-    \caesura
-    e\breve a1 gs4 \bar "||" \caesura
-    cs,\breve fs1 e!4 e b \bar "||" \caesura
-    bs\breve gs1 gs4 bs cs8[ \parenthesizeAll b8] \bar "||" \caesura
-    a\breve fs'1 e4 cs b \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  e\breve a1 gs4
+  cs,\breve fs1 e!4 e b
+  bs\breve gs1 gs4 bs cs8[ \parenthesizeAll b8]
+  a\breve fs'1 e4 cs b
   }
 
-%{
-
-  Chantez au Seigne_u_r un chant nouveau,
-  chantez au Seigne_u_r, terre entière,
-  racontez à tous les pe_u_ples sa gloire,
-  à toutes les nati_o_ns ses merveilles !
-
-  Il est grand, le Seigne_u_r, hautement loué,
-  redoutable au-dess_u_s de tous les dieux :
-  néant, tous les die_u_x des nations !
-  Lui, le Seigne_u_r, a fait les cieux.
-
-  Rendez au Seigne_u_r, familles des peuples,
-  rendez au Seigneur la glo_i_re et la puissance,
-  rendez au Seigneur la glo_i_re de son nom.
-  Apportez votre offr_a_nde, entrez dans ses parvis.
-
-  Adorez le Seigne_u_r, éblouissant de sainteté :
-  tremblez devant lu_i_, terre entière.
-  Allez dire aux nations : « Le Seigne_u_r est roi ! »
-  Il gouverne les pe_u_ples avec droiture.
-
-%}
-
 verseLyrics = \markup {
+  \vspace #5
   \override #'(font-family . sans)
-  \override #'(font-size . 2)
+  \override #'(font-size . 1.9)
   \fill-line {
     \left-column{
-      " "
-      " "
-      \concat { "Chantez au " Seigne \underline u r " un chant nouveau,"}
-      \concat { "chantez au " Seigne \underline u r, " terre entière,"}
-      \concat { "racontez à tous les " pe \underline u ples " sa gloire,"}
-      \concat { "à toutes les " nati \underline o ns " ses merveilles&nbsp;!"}
-      " "
-      \concat { "Il est grand, le " Seigne \underline u r, " hautement loué,"}
-      \concat { "redoutable " au-dess \underline u s " de tous les dieux&nbsp;:"}
-      \concat { "néant, tous les " die \underline u x " des nations&nbsp;!"}
-      \concat { "Lui, le " Seigne \underline u r, " a fait les cieux."}
-      " "
-      \concat { "Rendez au " Seigne \underline u r, " familles des peuples,"}
-      \concat { "rendez au Seigneur la " glo \underline i re " et la puissance,"}
-      \concat { "rendez au Seigneur la "glo \underline i re " de son nom."}
-      \concat { "Apportez votre " offr \underline a nde, " entrez dans ses parvis."}
-      " "
-      \concat { "Adorez le " Seigne \underline ur, " éblouissant de sainteté&nbsp;:"}
-      \concat { "tremblez devant " lu \underline i, " terre entière."}
-      \concat { "Allez dire aux nations&nbsp;: «&nbsp;Le " Seigne \underline u r " est roi&nbsp;!&nbsp;»"}
-      \concat { "Il gouverne les " pe \underline u ples " avec droiture."}
+      \concat { \typewriter "1. " "Chantez au Seigne" \underline u "r un chant nouveau,"}
+      \concat { \typewriter "   " "chantez au Seigne" \underline u "r, terre entière,"}
+      \concat { \typewriter "   " "racontez à tous les pe" \underline u "ples sa gloire,"}
+      \concat { \typewriter "   " "à toutes les nati" \underline o "ns ses merveilles&nbsp;!"}
+      \vspace #1
+      \concat { \typewriter "2. " "Il est grand, le Seigne" \underline u "r, hautement loué,"}
+      \concat { \typewriter "   " "redoutable au-dess" \underline u "s de tous les dieux&nbsp;:"}
+      \concat { \typewriter "   " "néant, tous les die" \underline u "x des nations&nbsp;!"}
+      \concat { \typewriter "   " "Lui, le Seigne" \underline u "r, a fait les cieux."}
+    }
+    \hspace #1
+    \left-column {
+      \concat { \typewriter "3. " "Rendez au Seigne" \underline u "r, familles des peuples,"}
+      \concat { \typewriter "   " "rendez au Seigneur la glo" \underline i "re et la puissance,"}
+      \concat { \typewriter "   " "rendez au Seigneur la glo" \underline i "re de son nom."}
+      \concat { \typewriter "   " "Apportez votre offr" \underline a "nde, entrez dans ses parvis."}
+      \vspace #1
+      \concat { \typewriter "4. " "Adorez le Seigne" \underline u "r, éblouissant de sainteté&nbsp;:"}
+      \concat { \typewriter "   " "tremblez devant " lu \underline i ", terre entière."}
+      \concat { \typewriter "   " "Allez dire aux nations&nbsp;: «&nbsp;Le Seigne" \underline u "r est roi&nbsp;!&nbsp;»"}
+      \concat { \typewriter "   " "Il gouverne les pe" \underline u "ples avec droiture."}
     }
   }
 }
@@ -155,9 +121,19 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

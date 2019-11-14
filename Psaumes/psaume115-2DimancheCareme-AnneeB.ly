@@ -6,25 +6,15 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
+\include "../libs/settings.ily"
 
 title = "Psaume 115-3"
 subtitle = "Deuxième dimanche de Carême - Année B"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 20 février 2018"
 
-%staffCustomSize = 15
-%systemToSystemSpacing = 
-%  #'((basic-distance . 3)
-%     (minimum-distance . 3)
-%     (padding . 3)
-%     (stretchability . 3))
-
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
   \key g \major
 }
 
@@ -33,27 +23,24 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  \partial 8 d8[ e fs] g4 fs8[ g] a[ a g a] b4 a8[ b] c[ c b g] a2
-  \bar "|." \break
+  \markCustom "Antienne"
+  \partial 8 d8[ e fs] g4 fs8[ g] a[ a g a] b4 a8[ b] c[ c b g] a2 \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
   \partial 8 a8[ c c] d4 fs8[ d] c[ d c e] ds4 b8[ d!] e[ c d e] fs2
-  \bar "|." \break
   }
 
 tenorAntiphonMusic =  \relative c {
   \partial 8 fs8[ g a] g4 a8[ g] e[ fs g a] fs4 g8[ fs] g[ a g g] a2
-  \bar "|." \break
   }
 
 bassAntiphonMusic =  \relative c {
   \partial 8 d8 c a b4 d8[ b] a[ c e c] b[ ds] e[ d!] c[ e d b] d2
-  \bar "|." \break
   }
 
 antiphonLyrics = \lyricmode {
-    Je mar -- che -- rai en pré -- sen -- ce du Sei -- gneur sur la ter -- re des vi -- vants
+  Je mar -- che -- rai en pré -- sen -- ce du Sei -- gneur sur la ter -- re des vi -- vants
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -66,75 +53,65 @@ bassAntiphonLyrics = ""
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando g4 \bar "||" \caesura
-    \tempoVerseAcelerando c\breve \tempoVerseRallentando b4 g a \bar "||" \caesura
-    \tempoVerseAcelerando a\breve b1 \tempoVerseRallentando a4 g \bar "||" \caesura
-    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando a4 g \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+  \markCustom "Psalmodie par strophe" \cadenzaOn
+   b\breve a1 g4 \bar "||"
+   c\breve b4 g a \bar "||"
+   a\breve b1 a4 g \bar "||"
+   g\breve a1 a4 g \bar "|."
   }
-sopranoVerseRepons = \lyricmode {}
 altoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando e4 \caesura
-    \tempoVerseAcelerando e\breve \tempoVerseRallentando g4 e fs \caesura
-    \tempoVerseAcelerando fs\breve g1 \tempoVerseRallentando e4 e \caesura
-    \tempoVerseAcelerando e\breve e1 \tempoVerseRallentando fs4 d \caesura
+  \silence \sopranoAntiphonMusic
+   d\breve d1 e4
+   e\breve g4 e fs
+   fs\breve g1 e4 e
+   e\breve e1 fs4 d
   }
 
 tenorVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando b\breve a1 \tempoVerseRallentando b4 \caesura
-    \tempoVerseAcelerando c\breve \tempoVerseRallentando b4 c a \caesura
-    \tempoVerseAcelerando b\breve b1 \tempoVerseRallentando c4 b \caesura
-    \tempoVerseAcelerando c\breve c1 \tempoVerseRallentando c4 b \caesura
+  \silence \sopranoAntiphonMusic
+   b\breve a1 b4
+   c\breve b4 c a
+   b\breve b1 c4 b
+   c\breve c1 c4 b
   }
 
 bassVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando g\breve fs1 \tempoVerseRallentando e4 \caesura
-    \tempoVerseAcelerando a\breve \tempoVerseRallentando e4 c d \caesura
-    \tempoVerseAcelerando ds\breve e1 \tempoVerseRallentando g4 e \caesura
-    \tempoVerseAcelerando c\breve a1 \tempoVerseRallentando d4 g, \caesura
+  \silence \sopranoAntiphonMusic
+   g\breve fs1 e4
+   a\breve e4 c d
+   ds\breve e1 g4 e
+   c\breve a1 d4 g,
    }
 
-%{
-
-  Je crois, et je p_a_rlerai,
-  moi qui ai beauco_u_p souffert.
-  Il en co_û_te au Seigneur
-  de voir mour_i_r les siens !
-  
-  Ne suis-je pas, Seigne_u_r, ton serviteur,
-  moi, dont tu bris_a_s les chaînes ?
-  Je t’offrirai le sacrif_i_ce d’action de grâce,
-  j’invoquerai le n_o_m du Seigneur.
-  
-  Je tiendrai mes prom_e_sses au Seigneur,
-  oui, devant to_u_t son peuple,
-  à l’entrée de la mais_o_n du Seigneur,
-  au milie_u_ de Jérusalem !
-
-%}
-
 verseLyrics = \markuplist {
+  \vspace #5
   \override #'(font-family . sans)
   \override #'(font-size . 2)
-  \fill-line {
-    \column{
-      \concat { "Je crois, et je p" \underline a "rlerai,"}
-      \concat { "moi qui ai beauco" \underline u "p souffert."}
-      \concat { "Il en co" \underline û "te au Seigneur"}
-      \concat { "de voir mour" \underline i "r les siens&nbsp;!"}
-      " "
-      \concat { "Ne suis-je pas, Seigne" \underline u "r, ton serviteur,"}
-      \concat { "moi, dont tu bris" \underline a "s les chaînes&nbsp;?"}
-      \concat { "Je t’offrirai le sacrif" \underline i "ce d’action de grâce,"}
-      \concat { "j’invoquerai le n" \underline o "m du Seigneur."}
-      " "
-      \concat { "Je tiendrai mes prom" \underline e "sses au Seigneur,"}
-      \concat { "oui, devant to" \underline u "t son peuple,"}
-      \concat { "à l’entrée de la mais" \underline o "n du Seigneur,"}
-      \concat { "au milie" \underline u " de Jérusalem&nbsp;!"}
+  \column {
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "1. " "Je crois, et je p" \underline a "rlerai,"}
+        \concat { \typewriter "   " "moi qui ai beauco" \underline u "p souffert."}
+        \concat { \typewriter "   " "Il en co" \underline û "te au Seigneur"}
+        \concat { \typewriter "   " "de voir mour" \underline i "r les siens&nbsp;!"}
+      }
+      \hspace #1
+      \left-column{
+        \concat { \typewriter "2. " "Ne suis-je pas, Seigne" \underline u "r, ton serviteur,"}
+        \concat { \typewriter "   " "moi, dont tu bris" \underline a "s les chaînes&nbsp;?"}
+        \concat { \typewriter "   " "Je t’offrirai le sacrif" \underline i "ce d’action de grâce,"}
+        \concat { \typewriter "   " "j’invoquerai le n" \underline o "m du Seigneur."}
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "3. " "Je tiendrai mes prom" \underline e "sses au Seigneur,"}
+        \concat { \typewriter "   " "oui, devant to" \underline u "t son peuple,"}
+        \concat { \typewriter "   " "à l’entrée de la mais" \underline o "n du Seigneur,"}
+        \concat { \typewriter "   " "au milie" \underline u " de Jérusalem&nbsp;!"}
+      }
     }
   }
 }
@@ -144,9 +121,19 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

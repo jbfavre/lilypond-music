@@ -54,7 +54,7 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  \markCustom "Psalmodie par verset"
+  \markCustom "Psalmodie par verset" \cadenzaOn
   a\breve g1 b!4 a \bar "||"
   bf\breve g1 a4 \bar "|." \break
   }
@@ -93,6 +93,7 @@ verseLyrics = \markup {
       \concat { \typewriter "   " "la bonté du Seigne" \underline u "r est pour tous," }
       \concat { \typewriter "   " "sa tendresse, pour to" \underline u "tes ses œuvres." }
     }
+    \hspace #1
     \left-column {
       \concat { \typewriter "3. " "Que tes œuvres, Seigne" \underline u "r, te rendent grâce" }
       \concat { \typewriter "   " "et que tes fid" \underline è "les te bénissent&nbsp;!" }

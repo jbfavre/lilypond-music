@@ -6,44 +6,25 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
-% Ajust this setting to get a single page psalm
-staffCustomSize = 18
-tempoAntiphon = {
-  \set Score.tempoHideNote = ##t
-  \tempo 4=120
-}
-tempoVerseRallentando = {
-  \set Score.tempoHideNote = ##t
-  \tempo 4=120
-}
-tempoVerseAcelerando = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=120
-}
+\include "../libs/settings.ily"
 
 title = "Psaume 117-2"
 subtitle = "Deuxième dimanche de Pâques - Année A"
 composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, octobre 2017"
 
 global = {
-  \omit Staff.TimeSignature
-  \cadenzaOn
   \key c \major
 }
-% Ajust this setting to get a single page psalm
-staffSize = 17
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  d4 e f2 e4 f g2 b4 b a2 \breathe
-  a4 g c b a g a2 \fermata
-  \bar "|." \break
+  \markCustom "Antienne"
+  d4 e f2 e4 f g2 b4 b a2 \breathe a4 g c b a g a2 \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
@@ -74,9 +55,10 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-    \caesura
-    \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b2 \bar "||" \caesura
-    \tempoVerseAcelerando g\breve f1 \tempoVerseRallentando a2 \bar "||"  
+  \silence \sopranoAntiphonMusic
+  \markCustom "Psalmodie par verset" \cadenzaOn
+  a\breve c1 b2 \bar "||"
+  g\breve f1 a2 \bar "|."
   }
 
 altoVerseMusic = \relative c' {
@@ -88,59 +70,39 @@ tenorVerseMusic = \relative c' {
 bassVerseMusic = \relative c {
   }
 
-%{
-
-  Oui, que le d_i_se Israël:
-  Étern_e_l est son amour! +
-  Que le dise la mais_o_n d’Aaron:
-  Étern_e_l est son amour! *
-  Qu’ils le disent, ceux qui cr_a_ignent le Seigneur:
-  Étern_e_l est son amour!
-
-  On m’a poussé, bouscul_é_ pour m’abattre;
-  mais le Seign_e_ur m’a défendu.
-  Ma force et mon ch_a_nt, c’est le Seigneur;
-  il est pour m_o_i le salut.
-  Clameurs de joie et de victoire
-  sous les tentes des justes.
-
-  La pierre qu’ont rejet_é_e les bâtisseurs
-  est devenue la p_i_erre d’angle ;
-  c’est là l’œ_u_vre du Seigneur,
-  la merv_e_ille devant nos yeux.
-  Voici le j_o_ur que fit le Seigneur,
-  qu’il soit pour nous jour de f_ê_te et de joie !
-
-%}
-
 verseLyrics = \markup {
   \override #'(font-family . sans)
   \override #'(font-size . 2)
-  \fill-line {
-    \left-column{
-      " "
-      " "
-      \concat { "Oui, que le " d \underline i se" "Israël&nbsp;: }
-      \concat { Étern \underline e l" "est" "son" "amour&nbsp;!" " \super &plus; }
-      \concat { "Que le dise la " mais \underline on" "d’Aaron&nbsp;: }
-      \concat { Étern \underline e l" "est" "son" "amour&nbsp;!" " \super * }
-      \concat { "Qu’ils le disent, ceux qui " cr \underline a ignent" "le" "Seigneur&nbsp;: }
-      \concat { Étern \underline e l" "est" "son" "amour&nbsp;! }
-      " "
-      \concat { "On m’a poussé, " bouscul \underline é " "pour" "m’abattre; }
-      \concat { "mais le " Seign \underline e ur" "m’a" "défendu. }
-      \concat { "Ma force et mon " ch \underline a nt," "c’est" "le" "Seigneur; }
-      \concat { "il est pour " m \underline o i" "le" "salut. }
-      \concat { "Clameurs de j" \underline o "ie et de victoire" }
-      \concat { "sous les t" \underline e "ntes des justes." }
-      " "
-      \concat { "La pierre qu’ont rejet" \underline é "e les bâtisseurs" }
-      \concat { "est devenue la p" \underline i "erre d’angle&nbsp;;" }
-      \concat { "c’est là l’œ" \underline u "vre du Seigneur," }
-      \concat { "la merv" \underline e "ille devant nos yeux." }
-      \concat { "Voici le j" \underline o "ur que fit le Seigneur," }
-      \concat { "qu’il soit pour nous jour de f" \underline ê "te et de joieanbsp;!" }
-
+  \column {
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "1. " "Oui, que le " d \underline i se" "Israël&nbsp;: }
+        \concat { \typewriter "   " "Étern" \underline e l" "est" "son" "amour&nbsp;!" " \super &plus; }
+        \concat { \typewriter "   " "Que le dise la " mais \underline on" "d’Aaron&nbsp;: }
+        \concat { \typewriter "   " "Étern" \underline e l" "est" "son" "amour&nbsp;!" " \super * }
+        \concat { \typewriter "   " "Qu’ils le disent, ceux qui " cr \underline a ignent" "le" "Seigneur&nbsp;: }
+        \concat { \typewriter "   " "Étern" \underline e l" "est" "son" "amour&nbsp;! }
+      }
+      \hspace #1
+      \left-column {
+        \concat { \typewriter "2. " "On m’a poussé, " bouscul \underline é " "pour" "m’abattre; }
+        \concat { \typewriter "   " "mais le " Seign \underline e ur" "m’a" "défendu. }
+        \concat { \typewriter "   " "Ma force et mon " ch \underline a nt," "c’est" "le" "Seigneur; }
+        \concat { \typewriter "   " "il est pour " m \underline o i" "le" "salut. }
+        \concat { \typewriter "   " "Clameurs de j" \underline o "ie et de victoire" }
+        \concat { \typewriter "   " "sous les t" \underline e "ntes des justes." }
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "3. " "La pierre qu’ont rejet" \underline é "e les bâtisseurs" }
+        \concat { \typewriter "   " "est devenue la p" \underline i "erre d’angle&nbsp;;" }
+        \concat { \typewriter "   " "c’est là l’œ" \underline u "vre du Seigneur," }
+        \concat { \typewriter "   " "la merv" \underline e "ille devant nos yeux." }
+        \concat { \typewriter "   " "Voici le j" \underline o "ur que fit le Seigneur," }
+        \concat { \typewriter "   " "qu’il soit pour nous jour de f" \underline ê "te et de joieanbsp;!" }
+      }
     }
   }
 }
@@ -150,9 +112,24 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+% Ajust this setting to get a single page psalm
+staffCustomSize = 18
+% Ajust this setting to get a single page psalm
+staffSize = 17
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
