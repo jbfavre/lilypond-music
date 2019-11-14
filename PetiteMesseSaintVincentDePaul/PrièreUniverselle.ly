@@ -13,25 +13,25 @@ puMainSopranoMusic = \relative c' {
   \mark \default
   af4 bf c c bf af g2 \break
   \mark \default
-  f4 g af2 g4 f f2 \break
+  f4 g af2 g4 g f2 \break
 }
 
 puMainAltoMusic = \relative c' {
-  c4 e f f df e c2
-  f4 g af af f f g2
-  df4 df f2 df4 f8 (ef) c2
+  c4 c f f f e c2
+  f4 g af af f f e2
+  df4 df f2 f4 e c2
 }
 
 puMainTenorMusic = \relative c' {
   af4 c c df df c8 (bf) af2
   c4 ef ef f bf, bf c2
-  af4 bf c (df) bf g af2
+  af4 bf c2 d4 c8 (bf) a2
 }
 
 puMainBasseMusic = \relative c {
-  f4 e f8 (ef) df4 bf c f2
-  f4 ef af8 (g) f (ef) df4 d e2
-  df8 c bf4 af4 f'8 (ef) bf8 b c4 f2
+  f4 (f8) e f (ef) df4 bf c f2
+  f4 ef af8 (g) f (ef) d (e) f4 c2
+  df8 (c) bf4 <f f'>4 f'8 ef b4 c <f f,>2
 }
 
 puMainSopranoLyrics = \lyricmode {
@@ -43,6 +43,6 @@ puMainSopranoLyrics = \lyricmode {
 puMainBasseLyrics = \lyricmode {
   Ô Sei -- gneur, é -- cou -- te nous;
   Ô Sei -- gneur, e -- xau -- ce nous;
-  Ô Sei -- gneur, Ô Sei -- gneur, sau -- ve nous.
+  Ô Sei -- gneur, Sei -- gneur, sau -- ve nous.
 }
 

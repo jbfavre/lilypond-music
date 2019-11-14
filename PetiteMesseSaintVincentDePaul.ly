@@ -39,7 +39,7 @@ pianoProperties = {
     \autoBeamOn
   }
 tagline = ""
-staffCustomSize = 14
+%staffCustomSize = 14
 blankPage = {
     % Hide Staff, Key & Time signature symbols to get a blank page
     \once \override Staff.StaffSymbol #'stencil = ##f
