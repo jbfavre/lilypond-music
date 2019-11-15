@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-11-12T22:55:19.376623944</meta:creation-date><dc:date>2019-11-13T10:57:44.839530116</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT20M45S</meta:editing-duration><meta:editing-cycles>4</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="23" meta:paragraph-count="323" meta:word-count="5953" meta:character-count="33154" meta:non-whitespace-character-count="27376"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">271872</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22844</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23828</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2921</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">275205</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">271872</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22842</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">295698</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">180</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">988805</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1247903</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-size="130%" fo:font-weight="bold" style:font-size-asian="130%" style:font-weight-asian="bold" style:font-size-complex="130%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="2" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.353cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-size="115%" fo:font-weight="bold" style:font-size-asian="115%" style:font-weight-asian="bold" style:font-size-complex="115%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_3" style:display-name="Heading 3" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="3" style:list-style-name="" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.247cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties style:font-name="Liberation Serif" fo:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="14pt" fo:font-weight="bold" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
+   <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Visited_20_Internet_20_Link" style:display-name="Visited Internet Link" style:family="text">
+   <style:text-properties fo:color="#800000" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="0012b8f7"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="001f6045" officeooo:paragraph-rsid="001f6045"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00111f15"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="0012b8f7"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00130a9f"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="0018c303" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="0018c303" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0018c303"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="001dca16"/>
+  </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="0010ec58"/>
+  </style:style>
+  <style:style style:name="T7" style:family="text">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-size="28pt" fo:font-weight="bold" officeooo:rsid="0010ec58" style:font-name-asian="DejaVu Sans" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties officeooo:rsid="00111f15"/>
+  </style:style>
+  <style:style style:name="T9" style:family="text">
+   <style:text-properties officeooo:rsid="00130a9f"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Cadre3" text:anchor-type="paragraph" draw:z-index="0">
+     <draw:text-box fo:min-height="0.34cm" fo:min-width="10.8cm">
+      <text:p text:style-name="P19"><text:span text:style-name="T7">Nouveaux textes de chants pour la messe</text:span></text:p>
+      <text:p text:style-name="P8">Joseph Gelineau</text:p>
+      <text:p text:style-name="P3">Publié dans « La Maison-Dieu », <text:span text:style-name="T6">96</text:span>, Éditions du CERF, 19<text:span text:style-name="T6">68</text:span></text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P7"><text:span text:style-name="T2">Notice détaillée</text:span><text:span text:style-name="T3"> : </text:span><text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/bpt6k6555273x/f1.item" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T3">https://gallica.bnf.fr/ark:/12148/bpt6k6555273x/f1.item</text:span></text:a></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Tit</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T1">e</text:span> : La Maison-Dieu : cahiers de pastorale liturgique</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Auteur</text:span> : Service national de la pastorale liturgique et sacramentelle (France). Auteur du texte</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">D</text:span><text:span text:style-name="T1">ate </text:span><text:span text:style-name="T2">d’édition</text:span><text:span text:style-name="T4"> </text:span>: 196<text:span text:style-name="T6">8</text:span>-<text:span text:style-name="T6">1</text:span>0</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T4">Contributeur</text:span> : Roguet, Aimon-Marie (1906-1991). Directeur de publication</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Type</text:span> : text<text:span text:style-name="T4">e</text:span></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Type</text:span> : <text:span text:style-name="T4">publication en série imprimée</text:span></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Langue</text:span> : <text:span text:style-name="T4">français</text:span></text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">Description</text:span> : octobre 1968</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">Description</text:span> : 1968/10 (N96)-1968/12.</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Droits</text:span> : <text:span text:style-name="T4">domaine public</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">Identifi</text:span><text:span text:style-name="T2">ant</text:span> : ark:/12148/bpt6k6555273x</text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Source</text:span> : Les éditions du Cerf, 2013-279298</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Notice du catalogue</text:span> : <text:a xlink:type="simple" xlink:href="http://catalogue.bnf.fr/ark:/12148/cb34348843p" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://catalogue.bnf.fr/ark:/12148/cb34348843p</text:a></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Provenance</text:span> : Bibliothèque nationale de France</text:p>
+   <text:p text:style-name="P4"><text:span text:style-name="T1">Date </text:span><text:span text:style-name="T2">de mise en ligne</text:span> : <text:span text:style-name="T5">25</text:span>/11/2013</text:p>
+   <text:p text:style-name="P17">D<text:span text:style-name="T6">ans</text:span> le n° 92 de La Maison-Dieu, consacré au renouveau des hymnes, on a évoqué (pp. 174-180) le problème des chants processionnaux de la messe. La simple traduction des antiennes traditionnelles du missel romain ne fournit que rarement des textes qui, par leur forme, leur style, leur structure rythmique et poétique, leur convenance pastorale, permettent de composer des chants vraiment adaptés à la célébration. La réforme générale de la messe — dont on espère la promulgation prochaine — appellera nécessairement que, sous le contrôle des Conférences épiscopales, une certaine souplesse et variété existe pour les chants d&apos;entrée, d&apos;offertoire et de communion. Pour répondre à cette situation nouvelle, des créations s&apos;imposeront.</text:p>
+   <text:p text:style-name="P12">La Maison-Dieu présente ici une double série de textes qui sont le résultat de plusieurs années de travail en collaboration, et d&apos;expériences. Le premier intérêt qu&apos;ils offrent est d&apos; « exister » et de pouvoir susciter par là même aussi bien des recherches musicales que d&apos;autres créations littéraires 1.</text:p>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1">1. CHANTS D&apos;ENTRÉE</text:h>
+   <text:p text:style-name="P11">Tout en accompagnant l&apos;entrée du célébrant et de ses ministres (fonction processionnelle), le premier chant de la messe a une fonction plus large : il doit ouvrir la célébration 2.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">1. Les textes ici présentés sont protégés par le C.N.P.L., qui en a le copyright. Les compositeurs qui désirent les mettre en musique sont priés de prendre contact avec le C.N.P.L. Pour toute édition, l&apos;éditeur doit passer contrat préalable avec le C.N.P.L.<text:line-break/>Rappelons ici que le C.N.P.L. met à la disposition des auteurs et des compositeurs un service appelé C.L.E. (Commission liturgique pour l&apos;élaboration de nouvelles compositions littéraires et musicales), auquel chacun peut s&apos;adresser. Une collaboration directe entre auteurs et compositeurs est ainsi facilitée.</text:p>
+   <text:p text:style-name="P11">2. Voir 1 étude de Claude ROZIER, dans Eglise qui Chante, 89, pp. 7-9.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P12">Pour ce chant d&apos;ouverture, on peut utiliser trois formes :<text:line-break/>- l&apos;hymne populaire (ou cantique) avec refrain ;<text:line-break/>- un psaume avec antienne brève ;<text:line-break/>- la grande antienne avec refrain et verset.</text:p>
+   <text:p text:style-name="P12">Le premier type est le plus abordable pour les assemblées disposant de moyens modestes. Mais le répertoire dont nous disposons est encore insuffisant.</text:p>
+   <text:p text:style-name="P12">Le deuxième type a été très largement utilisé en France depuis quinze ans. Tout en gardant sa valeur, spécialement pour des communautés initiées ou des messes de semaine, il présente des difficultés pastorales (commencer par un psaume) ou <text:soft-page-break/>liturgiques (forme trop proche de celle du graduel), et il constitue un manque à gagner lyrique et communautaire (refrain trop court, psalmodie trop maigre, place réduite faite à la chorale).</text:p>
+   <text:p text:style-name="P12">Le troisième type est celui qui offre le plus de possibilités liturgiques et pastorales, littéraires et musicales, chorales et communautaires. Il a été bien étudié et expérimenté depuis plusieurs années. Nous nous permettons de renvoyer à ces études, spécialement pour ce qui concerne la mise en œuvre musicale de tels chants et leur utilisation pastorale 3.</text:p>
+   <text:p text:style-name="P12">Afin d&apos;ouvrir plus largement la voie à de telles créations, nous présentons ici une série de textes pour l&apos;année liturgique4.</text:p>
+   <text:p text:style-name="P10">Joseph GELINEAU, s.j.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P12">3. Voir Eglise qui Chante, 71-72 : « Le chant d&apos;entrée », pp. 8-20.<text:line-break/>A l&apos;intention des compositeurs, rappelons sommairement la structure chorale que supposent ces textes :<text:line-break/>La stance, appelée aussi grande antienne, ou tropaire, est normalement exécutée par la chorale. Elle peut être introduite par un prélude instrumental. La structure littéraire suggère souvent des alternances, dialogues, questions et réponses, changements de « niveau », etc. Elle doit toujours se terminer musicalement de manière à appeler le refrain qui suit.<text:line-break/>Le refrain, marqué, est normalement confié au peuple.<text:line-break/>Les versets du psaume sont confiés à un ou à des solistes (ou à un petit chœur). Chaque verset doit se terminer de manière à faciliter la reprise du refrain. Le verset d&apos;entrée se prend au moment où le célébrant entre. Il a un relief spécial. Le nombre des versets doit rester facultatif à l&apos;exécution selon la durée du chant.<text:line-break/>Le Gloire au Père termine la série des versets. Il n&apos;a pas été répété avec chaque texte. Il est souhaitable qu&apos;il soit chanté par toute l&apos;assemblée. On peut utiliser soit le texte actuel en usage, soit cet autre, mieux rythmé :</text:p>
+   <text:p text:style-name="P18">Gloire au Père, et au Fils, et au Saint-Esprit<text:line-break/>(au Dieu qui est, qui était et qui vient)<text:line-break/>pour les siècles des siècles. Amen.</text:p>
+   <text:p text:style-name="P11">Le chant peut se terminer ici. Mais selon la structure complète, après le « Gloire au Père », on répète une fois la stance et le refrain.</text:p>
+   <text:p text:style-name="P11">4. Pour plusieurs temps et fêtes, spécialement le Carême, les dimanches après Pâques, les derniers dimanches après la Pentecôte et l&apos;Avent, ces textes tiennent compte de la réforme en cours du Calendrier et du nouveau Lectionnaire triennal pour les dimanches.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:h text:style-name="P1" text:outline-level="2">POUR LE TEMPS DE L&apos;AVENT</text:h>
+   <text:p text:style-name="P12">Stance :</text:p>
+   <text:p text:style-name="P12">Réjouis-toi, terre stérile :<text:line-break/>Un homme envoyé de Dieu<text:line-break/>annonce au monde sa joie :<text:line-break/>« Dans le désert, va jaillir l&apos;eau vive !<text:line-break/>Le rameau de Jessé fleurira ! »<text:line-break/><text:tab/>Peuple, console-toi,<text:line-break/><text:tab/>Appelle ton Sauveur :</text:p>
+   <text:p text:style-name="P12">℟ Viens, espérance des hommes,<text:line-break/>Viens, salut de l&apos;univers !</text:p>
+   <text:p text:style-name="P13">Psaume 79 :<text:line-break/>1 Réveille, ô Dieu, ta vaillance<text:line-break/>et viens à notre secours.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P13">2 Dieu de l&apos;univers, fais-nous revenir,<text:line-break/>que ton visage s&apos;illumine et nous serons sauvés.<text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P13">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P13">Quelqu&apos;un est au milieu de vous<text:line-break/>que vous ne connaissez pas.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P13">(Gloire au Père et stance)</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">POUR LE TEMPS DE L&apos;AVENT</text:h>
+   <text:p text:style-name="P14">Stance :</text:p>
+   <text:p text:style-name="P14">Peuples de l&apos;univers, écoutez la nouvelle :<text:line-break/>« L&apos;aveugle voit, le sourd entend, des morts se sont levés. »<text:line-break/>Pauvres qui attendez aux portes du Royaume,<text:line-break/>reconnaissez le Messie de Dieu !<text:line-break/>Allez à lui et demandez :</text:p>
+   <text:p text:style-name="P14">℟ (Chorale) : « N&apos;es-tu pas celui qui doit venir ? »<text:line-break/>(Tous) : Dis-nous si tu es celui-là ?</text:p>
+   <text:p text:style-name="P14">Psaume 24 :</text:p>
+   <text:p text:style-name="P14">1 En toi, tout le jour, j&apos;espère,<text:line-break/>en raison de ta bonté, Seigneur<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P14">2 Souviens-toi de ta tendresse, Seigneur,<text:line-break/>de ton amour, car ils sont de toujours.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P14"><text:soft-page-break/>Une voix crie dans le désert :<text:line-break/>Aplanissez le chemin du Seigneur.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">NOËL : MESSE DE MINUIT</text:h>
+   <text:p text:style-name="P14">Stance :</text:p>
+   <text:p text:style-name="P14">La lumière née de la lumière<text:line-break/><text:tab/>apparaît dans la nuit de Judée ;<text:line-break/>La parole éternelle du Père,<text:line-break/><text:tab/>nous appelle avec les bergers.<text:line-break/>Allons voir, dans les bras de Marie,<text:line-break/><text:tab/>Dieu qui se fait l&apos;un de nous<text:line-break/><text:tab/>pour que nous vivions de sa vie.</text:p>
+   <text:p text:style-name="P14">Refrain :</text:p>
+   <text:p text:style-name="P14">Notre Sauveur est né pour nous,<text:line-break/>paix sur la terre et gloire à Dieu !</text:p>
+   <text:p text:style-name="P14">Psaume 2 :</text:p>
+   <text:p text:style-name="P15">1 Le Seigneur m&apos;a dit : « Tu es mon Fils,<text:line-break/>moi, aujourd&apos;hui, je t&apos;ai engendré. »<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 « C&apos;est moi qui ai sacré mon roi<text:line-break/>sur Sion, ma sainte montagne. »<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Quand vint la plénitude des temps,<text:line-break/>Dieu envoya son Fils, né d&apos;une femme.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">NOËL : MESSE DU JOUR</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15">Un enfant nous est né,<text:line-break/><text:tab/>un Fils nous est donné :</text:p>
+   <text:p text:style-name="P15">℟ Gloire à Dieu dans le ciel ! (bis)</text:p>
+   <text:p text:style-name="P15">Messager du Très-Haut,<text:line-break/><text:tab/>et Prince de la Paix :</text:p>
+   <text:p text:style-name="P15">℟ Gloire à toi, Fils de Dieu ! (bis)</text:p>
+   <text:p text:style-name="P15">Le Verbe s&apos;est fait chair,<text:line-break/><text:tab/>il demeure parmi nous :</text:p>
+   <text:p text:style-name="P15">℟ Paix aux hommes qu&apos;il aime ! (bis)</text:p>
+   <text:p text:style-name="P15">Psaume 97 :</text:p>
+   <text:p text:style-name="P15"><text:soft-page-break/>1 Chantez au Seigneur un chant nouveau, car il a fait des merveilles.</text:p>
+   <text:p text:style-name="P15">℟ Gloire à Dieu dans le ciel ! (bis)</text:p>
+   <text:p text:style-name="P15">2 Acclamez le Seigneur, terre entière,<text:line-break/>éclatez en cris de joie !</text:p>
+   <text:p text:style-name="P15">℟ Gloire à toi, Fils de Dieu ! (bis)</text:p>
+   <text:p text:style-name="P15">3 Tous les lointains de la terre ont vu<text:line-break/>le salut de notre Dieu.</text:p>
+   <text:p text:style-name="P15">℟ Paix aux hommes qu&apos;il aime ! (bis)</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">ÉPIPHANIE</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15">Aujourd&apos;hui se manifeste à l&apos;univers<text:line-break/>l&apos;enfant né dans le secret d&apos;une étable.<text:line-break/>Les Mages découvrent l&apos;étoile et s&apos;écrient :<text:line-break/><text:tab/>« Dieu s&apos;est révélé aux nations !<text:line-break/><text:tab/>Venez avec nous à Bethléem<text:line-break/>où s&apos;est levé le Soleil de justice ;<text:line-break/><text:tab/>Prosternez-vous et adorez » !</text:p>
+   <text:p text:style-name="P15">℟ Gloire à toi, lumière des hommes<text:line-break/>qui nous as pris dans ta clarté.</text:p>
+   <text:p text:style-name="P15">Psaume 71 :</text:p>
+   <text:p text:style-name="P15">1 Tous les rois se prosterneront devant lui,<text:line-break/>tous les païens le serviront.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 Il délivrera le pauvre qui appelle<text:line-break/>et le petit qui est sans aide.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Voici venir le Seigneur souverain,<text:line-break/>le règne et la gloire en sa main.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟ </text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">BAPTÊME DU CHRIST</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15">Baigne le corps du Sauveur,<text:line-break/><text:tab/>ô Jourdain, fleuve pascal ;<text:line-break/>Ensevelis le Fils d&apos;Adam<text:line-break/>pour qu&apos;une humanité nouvelle<text:line-break/><text:tab/>surgisse avec lui de tes eaux ;<text:line-break/>le Père lui rend témoignage,<text:line-break/><text:soft-page-break/>l&apos;Esprit l&apos;envoie vers les nations ;<text:line-break/>Alors, Jean le reconnaît et proclame :</text:p>
+   <text:p text:style-name="P15">℟ Gloire à l&apos;Agneau sans péché,<text:line-break/>qui baptise dans l&apos;Esprit et le feu.</text:p>
+   <text:p text:style-name="P15">Psaume 28 :</text:p>
+   <text:p text:style-name="P15">1 La voix du Seigneur sur les eaux,<text:line-break/>le Seigneur sur les eaux innombrables.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 Dieu donne la puissance à son peuple,<text:line-break/>Dieu bénit son peuple dans la paix.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Nul n&apos;a jamais vu Dieu,<text:line-break/>mais le Fils unique l&apos;a fait connaître.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">2<text:span text:style-name="T8">ème</text:span> DIMANCHE APRÈS L&apos;EPIPHANIE<text:line-break/>Cana</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15">Aux noces de Cana en Galilée<text:line-break/>l&apos;époux de notre humanité est venu<text:line-break/>pour dire aux convives : « L&apos;heure est proche<text:line-break/><text:tab/>où vous boirez le vin du Royaume à venir. »<text:line-break/>Avec sa mère et ses disciples,<text:line-break/><text:tab/>invités aux noces de l&apos;Agneau,<text:line-break/>chantons-lui notre foi :</text:p>
+   <text:p text:style-name="P15">℟ Béni sois-tu, Messie de Dieu<text:line-break/>qui nous as révélé ta gloire !</text:p>
+   <text:p text:style-name="P15">1 Toute la terre se prosterne devant toi,<text:line-break/>elle chante pour ton nom.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 Il changea la mer en terre ferme,<text:line-break/>on passa le fleuve à pied sec.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Voyant le premier miracle de Jésus<text:line-break/>ses disciples crurent en lui,<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">POUR LES DIMANCHES APRÈS L&apos;ÉPIPHANIE<text:line-break/>Première prédication de Jésus</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15"><text:soft-page-break/>Sur les chemins de Galilée, Jésus passait<text:line-break/><text:tab/>annonçant la joyeuse nouvelle :<text:line-break/>« Le Royaume des cieux est proche de vous !<text:line-break/>Les temps sont accomplis,<text:line-break/><text:tab/>repentez-vous, et rendez gloire à Dieu » :</text:p>
+   <text:p text:style-name="P15">℟ Un grand prophète a surgi parmi nous,<text:line-break/>et Dieu a visité son peuple.</text:p>
+   <text:p text:style-name="P15">Psaume 32 :</text:p>
+   <text:p text:style-name="P15">1 Droite est la Parole du Seigneur,<text:line-break/>et toute son œuvre est vérité.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 Heureux le peuple dont le Seigneur est le Dieu,<text:line-break/>la nation qu&apos;il s&apos;est choisie en héritage.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Voici mon Serviteur : je l&apos;ai choisi<text:line-break/>pour annoncer aux nations la vraie foi.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟ </text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">POUR LES DIMANCHES APRÈS L&apos;ÉPIPHANIE<text:line-break/>Début du ministère de Jésus</text:h>
+   <text:p text:style-name="P15">Stance :</text:p>
+   <text:p text:style-name="P15">Par amour des hommes, Jésus mon Sauveur,<text:line-break/><text:tab/>tu passais en faisant le bien :<text:line-break/>Médecin, qui guéris toute blessure,<text:line-break/><text:tab/>Maître, qui éclaires les cœurs,<text:line-break/><text:tab/>Berger, qui rassembles ton troupeau,<text:line-break/>ne repousse pas ma prière :</text:p>
+   <text:p text:style-name="P15">℟ Seigneur Jésus, si tu le veux,<text:line-break/>tu peux me guérir.</text:p>
+   <text:p text:style-name="P15">Psaume 145 :</text:p>
+   <text:p text:style-name="P15">1 Loue, ô mon âme, le Seigneur,<text:line-break/>je veux louer le Seigneur tant que je vis.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:p text:style-name="P15">2 Il rend justice aux opprimés,<text:line-break/>il donne aux affamés du pain.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟ </text:p>
+   <text:p text:style-name="P15">℣ d&apos;entrée :</text:p>
+   <text:p text:style-name="P15">Il a pris sur lui nos infirmités,<text:line-break/>il s&apos;est chargé de nos maladies.<text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>℟</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>MERCREDI DES CENDRES</text:h>
+   <text:p text:style-name="P11">Stance : Tu connais ton œuvre, Dieu créateur : souviens-toi que nous sommes poussière ; Ferme les yeux sur les péchés des hommes, et ne condamne pas le pauvre qui t&apos;implore : W N&apos;oublie pas tes miséricordes, Seigneur, Pardonne-moi !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P14">Psaume 56 : 1 Pitié pour moi, ô Dieu, pitié pour moi, en toi s&apos;abrite mon âme. W 2 J&apos;appelle vers Dieu le Très-Haut, le Dieu qui a tout fait pour moi.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Seigneur, ne nous traite pas selon nos péchés ; ne nous punis pas selon nos fautes. W</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">PREMIER DIMANCHE DE CARÊME<text:line-break/>Tentation au désert. Election des catéchumènes</text:h>
+   <text:p text:style-name="P11">Stance: Voici les jours favorables et le temps du salut : Dans le désert où l&apos;Esprit le conduit, Jésus est soumis à l&apos;épreuve ; il rej ette plaisirs, honneurs et puissance, pour ne servir que Dieu seul et nous garder du Mauvais.</text:p>
+   <text:p text:style-name="P11">Qui refuserait de le suivre ?</text:p>
+   <text:p text:style-name="P11">137 Le Christ est ma force et ma lumière, lui seul est mon salut.</text:p>
+   <text:p text:style-name="P14">Psaume 90 : 1 Le malheur ne peut fondre sur toi, ni la plaie approcher de ta tente. p; 2 Qui demeure à l&apos;abri du Très-Haut trouve en lui son refuge.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Il m&apos;appelle, et moi, je lui réponds : je veux le délivrer, le glorifier. p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">DEUXIÈME DIMANCHE DE CARÊME<text:line-break/>Transfiguration du Seigneur</text:h>
+   <text:p text:style-name="P13">Stance : Avant d&apos;entrer dans sa Passion, le Fils de l&apos;homme a révélé sa gloire ; Pour que nos cœurs ne se troublent pas, Dieu lui rend témoignage : « Voici mon Fils bien-aimé, écoutez-le ! »</text:p>
+   <text:p text:style-name="P11">Portez avec lui votre croix, en suppliant : Tp Viens, transfigure nos vies, splendeur éternelle de Dieu !</text:p>
+   <text:p text:style-name="P14">Psaume 24 : 1 Desserre l&apos;angoisse de mon cœur, hors de mes tourments tire-moi. p; 2 Garde mon âme, délivre-moi, j&apos;espère en toi, Seigneur.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Il transformera notre corps de misère en le conformant à son corps de gloire, p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>TROISIÈME DIMANCHE DE CARÊME<text:line-break/>La Samaritaine. 1er scrutin et tradition du Symbole</text:h>
+   <text:p text:style-name="P11">Stance : Si tu savais le don de Dieu, si tu croyais celui qui te parle, tu connaîtrais le Père en esprit et vérité ; Laisse les puits de Samarie et viens boire l&apos;eau vive du Rocher : Jésus Christ.</text:p>
+   <text:p text:style-name="P11">ij1 Seigneur, donne-moi cette eau, que je n&apos;aie plus jamais soif !</text:p>
+   <text:p text:style-name="P14">Psaume 35 : 1 En toi est la source de vie, par ta lumière nous voyons la lumière. ij1 2 Garde ton amour à ceux qui t&apos;ont connu, la justice à tous les cœurs droits.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Si quelqu&apos;un a soif, qu&apos;il vienne à moi et qu&apos;il boive 1}7</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">QUATRIÈME DIMANCHE DE CARÊME<text:line-break/>L&apos;aveugle-né. 2e scrutin</text:h>
+   <text:p text:style-name="P11">Stance : Aveugle de cœur dès ma naissance, je viens à toi, lumière du monde : Touche mes yeux et lave-moi dans la fontaine où l&apos;Esprit chasse les ténèbres du péché : ij1 Que je voie les splendeurs de ta gloire, que je vive en enfant de lumière !</text:p>
+   <text:p text:style-name="P14">Psaume 17 : 1 Je t&apos;aime, Seigneur, ma force, j&apos;invoque le Seigneur : je suis sauvé. ij1 2 C&apos;est toi ma lumière, Seigneur ; mon Dieu, éclaire mes ténèbres.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Jadis vous étiez ténèbres, maintenant, dans le Christ, vous êtes lumière. R7</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">CINQUIÈME DIMANCHE DE CARÊME<text:line-break/>Lazare. 3e scrutin et tradition du Notre Père</text:h>
+   <text:p text:style-name="P11">Stance : Le Maître de la vie s&apos;approche du tombeau : « Lazare, éveille-toi d&apos;entre les morts !</text:p>
+   <text:p text:style-name="P11">Et vous, ensevelis dans le péché, voyez et croyez que je suis la résurrection. »</text:p>
+   <text:p text:style-name="P11">W Si nous mourons avec toi, Seigneur, Avec toi, nous entrerons dans la vie.</text:p>
+   <text:p text:style-name="P14">Psaume 29 : 1 Je t&apos;exalte, Seigneur, toi qui me relèves. W 2 Au soir, la visite des larmes, au matin, les cris de joie.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Si les morts ne ressuscitent pas, le Christ non plus n&apos;est pas ressuscité. W</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">DIMANCHE DE LA PASSION (RAMEAUX)</text:h>
+   <text:p text:style-name="P11">Stance: Six jours avant la Pâque, Jésus, le Messie, entre à Jérusalem parmi la foule qui l&apos;acclame : « Hosanna ! Au fils de David ! »</text:p>
+   <text:p text:style-name="P11">Accueillons, nous aussi, notre Roi : W Béni soit le Sauveur qui vient, plein de grâce et de vérité !</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/>Psaume 23&apos; : 1 Ouvrez-vous, portes éternelles, qu&apos;il entre le Roi de gloire W 2 Qui est ce roi de gloire ?</text:p>
+   <text:p text:style-name="P14">C&apos;est le Seigneur, Dieu de l&apos;univers ! :ij1 (ni ℣ d&apos;entrée, ni Gloire au Père)</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">JEUDI SAINT</text:h>
+   <text:p text:style-name="P11">Stance : Avant d&apos;être livré, Jésus lave les pieds de ses amis ; avant de passer de ce monde à son Père, il leur donne sa chair et son sang.</text:p>
+   <text:p text:style-name="P11">Voyez le Maître au rang des serviteurs, et comprenez ce qu&apos;il a dit : 137 Qui donne sa vie pour les siens les aime du plus grand amour.</text:p>
+   <text:p text:style-name="P14">Psaume 39 : 1 Tu ne voulais ni sacrifices ni victimes, alors j&apos;ai dit : Voici, je viens. IV 2 Je n&apos;ai pas caché ton amour et ta vérité à la grande assemblée.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Notre fierté, c&apos;est la croix de Jésus Christ, sauvés par lui, nous vivons, ressuscités. IV</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">JOUR DE PAQUES</text:h>
+   <text:p text:style-name="P11">Stance : Pourquoi chercher parmi les morts celui qui est vivant ?</text:p>
+   <text:p text:style-name="P11">Rappelez-vous le tombeau ouvert, et ce que l&apos;Ange nous a dit : « Voici que l&apos;Agneau immolé est entré dans sa gloire. Alléluia ! »</text:p>
+   <text:p text:style-name="P11">Répétez-le au monde entier : Çr Christ est vainqueur de la mort, Alléluia !</text:p>
+   <text:p text:style-name="P11">Aux morts il a donné la vie, Alléluia !</text:p>
+   <text:p text:style-name="P11">Psaume 138 : 1 Si j&apos;escalade les cieux, tu es là, qu&apos;aux enfers je me couche, te voici. IV 2 Je te rends grâce pour tant de mystères, prodige que je suis et que tes œuvres. 1$?</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Je suis ressuscité, Alléluia, de nouveau, me voici près de toi. IV</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">DEUXIÈME DIMANCHE DE PAQUES<text:line-break/>Dimanche du renouveau et de l&apos;Apôtre Thomas</text:h>
+   <text:p text:style-name="P11">Stance : Créatures nouvelles dans le Christ, goûtez son pardon et sa paix : Plus heureux que l&apos;Apôtre Thomas qui toucha les plaies de Jésus, sans le voir, vous le croyez vivant lorsque vous confessez dans l&apos;Esprit-Saint : P; Tu es mon Seigneur et mon Dieu !</text:p>
+   <text:p text:style-name="P11">Alléluia, Alléluia !</text:p>
+   <text:p text:style-name="P14">Psaume 80 : 1 C&apos;est moi le Seigneur ton Dieu, qui t&apos;ai fait monter de la terre d&apos;Egypte. :w 2 Je t&apos;ai nourri de la farine du froment et rassasié avec le miel du rocher.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Demeurez en moi comme je demeure en vous. p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>QUATRIÈME DIMANCHE DE PAQUES<text:line-break/>Bon Pasteur</text:h>
+   <text:p text:style-name="P11">Stance: Le Bon Pasteur s&apos;est livré lui-même pour que vous ayez la vie.</text:p>
+   <text:p text:style-name="P11">Laissez-vous conduire à sa voix et suivez-le en chantant : P; Tu es la porte du Royaume, Alléluia, tu es la route vers le Père, Alléluia !</text:p>
+   <text:p text:style-name="P11">Psaume 32 : 1 Le Seigneur a les yeux sur ses fidèles, sur ceux qui espèrent son amour. p; 2 Pour nous préserver de la mort, nous garder en vie au temps de la famine. ij!</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Vous étiez errants comme des brebis, mais vous avez trouvé votre berger. p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">DIMANCHES DU TEMPS PASCAL</text:h>
+   <text:p text:style-name="P11">Stance : Hommes nouveaux, baptisés dans le Christ, Alléluia, vous avez revêtu le Christ, Alléluia !</text:p>
+   <text:p text:style-name="P11">Héritiers avec lui d&apos;un Royaume de lumière, vous possédez la liberté des fils de Dieu pour annoncer au monde : lY&quot; Nous sommes au Christ et le Christ est à Dieu.</text:p>
+   <text:p text:style-name="P11">Alléluia ! Alléluia !</text:p>
+   <text:p text:style-name="P14">Psaume 65 : 1 Venez, voyez les gestes de Dieu, redoutable en hauts faits pour les hommes. W 2 Il changea la mer en terre ferme, on passa le fleuve à pied sec.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Tous ceux qu&apos;anime l&apos;Esprit de Dieu sont enfants de Dieu. p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">ASCENSION</text:h>
+   <text:p text:style-name="P11">Stance : Vers ton Père et notre Père, tu t&apos;en vas, Sauveur du monde : Emporte notre humanité dans ta gloire, et demeure au milieu de nous par ton Esprit Consolateur.</text:p>
+   <text:p text:style-name="P11">Que l&apos;univers tressaille d&apos;espérance en écoutant nos cris de joie : W Honneur au Fils de l&apos;Homme, Alléluia !</text:p>
+   <text:p text:style-name="P11">qui nous introduit près de Dieu, Alléluia !</text:p>
+   <text:p text:style-name="P14">Psaume 46 : 1 Tous les peuples, battez des mains, acclamez Dieu en éclats de joie. P,7 2 Dieu monte parmi l&apos;acclamation, le Seigneur, aux éclats du cor.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Vous l&apos;avez vu partir vers le ciel ; c&apos;est ainsi qu&apos;il reviendra. p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">PENTECOTE</text:h>
+   <text:p text:style-name="P11">Stance: Un grand vent s&apos;est levé dans la maison des apôtres ; en toute langue on entend publier les merveilles de Dieu ; Peuples, comprenez et chantez : :w Béni sois-tu, Esprit créateur, qui renouvelles tout l&apos;univers. Alléluia !</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/>Psaume 67 : 1 Royaumes de la terre, chantez au Seigneur, venez reconnaître la puissance de Dieu. I £ 7 2 C&apos;est lui le Seigneur, le Dieu d&apos;Israël, qui donne au peuple force et puissance. l)!</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : L&apos;Esprit du Seigneur a rempli l&apos;univers, il sait tout et contient tout.</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">TRINITÉ</text:h>
+   <text:p text:style-name="P11">Stance : Mystère du Dieu vivant et de son amour pour les hommes : Le Très-Haut nous envoie son Fils, et se révèle notre Père ; Le Christ, exalté dans la gloire, nous donne son Esprit ; en lui, nous proclamons : W Honneur et louange à Dieu qui est, qui était et qui vient !</text:p>
+   <text:p text:style-name="P14">Psaume 8 : 1 Seigneur, notre Dieu, qu&apos;il est grand ton nom, par tout l&apos;univers. :w 2 Qu&apos;est ce que l&apos;homme, que tu en gardes mémoire, le fils d&apos;Adam, que tu en prennes souci ?</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Allez, baptisez toutes les nations au nom du Père, et du Fils, et du Saint-Esprit ! :w</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">FÊTE-DIEU</text:h>
+   <text:p text:style-name="P11">Stance: Quand vint le jour d&apos;étendre les bras et de lier la mort sur la croix, le Fils de l&apos;homme, au cours d&apos;un repas, livra son corps aux mains des pécheurs : P; Nous partageons la coupe et le pain pour annoncer la mort du Seigneur.</text:p>
+   <text:p text:style-name="P14">Psaume 110 : 1 Il laisse un mémorial de ses merveilles, le Seigneur est tendresse et pitié. I £ 7 2 Il donne à qui le craint la nourriture, il se souvient de son alliance pour toujours.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Il les a nourris de la fleur du froment (Alléluia), et rassasiés du miel du rocher (Alléluia). :w</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">DERNIERS DIMANCHES APRÈS LA PENTECOTE<text:line-break/>Dimanches eschatologiques</text:h>
+   <text:p text:style-name="P11">Stance : Un cri retentira dans la nuit : « Voici l&apos;Epoux qui vient. &gt; Le Maître viendra comme un voleur, en un temps que nul ne connaît ; Ce jour-là, serez-vous prêts ?</text:p>
+   <text:p text:style-name="P11">:w Garde-nous vigilants, Seigneur, jusqu&apos;à l&apos;heure où tu paraîtras.</text:p>
+   <text:p text:style-name="P14">Psaume 96 : 1 Les montagnes fondent comme cire devant le Maître de toute la terre. :w 2 La lumière se lève pour le juste, et pour l&apos;homme au cœur droit, la joie.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Quand viendra le Fils de l&apos;homme, trouvera-t-il la foi sur la terre ? p;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:soft-page-break/>DERNIER DIMANCHE APRÈS LA PENTECOTE<text:line-break/>Christ Roi universel</text:h>
+   <text:p text:style-name="P13">Stance : Quand les empires tomberont devant toi, Roi des rois et Seigneur des seigneurs, lorsque la mort verra mourir son pouvoir, Christ, possédant toute puissance, tu remettras la royauté à ton Père, et nous serons pour toujours avec toi.</text:p>
+   <text:p text:style-name="P11">Vois l&apos;espérance de ton peuple qui t&apos;acclame : 47 Gloire à toi, Dieu de l&apos;univers, Vienne ton Royaume éternel !</text:p>
+   <text:p text:style-name="P14">Psaume 88 : 1 Justice et Jugement sont l&apos;appui de ton trône, amour et vérité marchent devant ta face. I^.7 2 Heureux le peuple qui sait l&apos;acclamation, à la clarté de ta face, ils iront.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : En vérité, je vous le dis : Mon Royaume n&apos;est pas de ce monde. :ij?&apos;</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">ANNONCIATION : 25 MARS<text:line-break/>(et Temps de l&apos;Avent)</text:h>
+   <text:p text:style-name="P13">Stance : L&apos;ange Gabriel annonce la merveille : Les derniers temps sont arrivés.</text:p>
+   <text:p text:style-name="P11">Le mystère caché depuis toujours se dévoile aujourd&apos;hui : Le Fils de Dieu devient Fils de la Vierge.</text:p>
+   <text:p text:style-name="P11">Reconnaissez le signe du Très-Haut en saluant la Mère de Dieu : 137 Réjouis-toi, pleine de grâce, le Seigneur est avec toi.</text:p>
+   <text:p text:style-name="P14">Psaume 84 : 1 La vérité germera de la terre et des cieux se penchera la justice. :ij?&apos; 2 Dieu lui-même donne le bonheur, et notre terre donne son fruit.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : La Vierge enfantera un fils : on lui donnera pour nom Emmanuel. ij1</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">VISITATION : 2 JUILLET<text:line-break/>(et Temps de l&apos;Avent)</text:h>
+   <text:p text:style-name="P13">Stance : A travers les collines de Judée, la joyeuse nouvelle s&apos;en va vers la maison de Zacharie : « Le rameau de Jessé va fleurir. »</text:p>
+   <text:p text:style-name="P14">Elisabeth reçoit l&apos;Esprit Saint en accueillant la Mère de son Dieu ; Avec Marie, nous exultons de joie en voyant s&apos;accomplir la promesse :</text:p>
+   <text:p text:style-name="P14">1 (pour la fête) Le Seigneur fait pour nous des merveilles ; il se souvient de son amour.</text:p>
+   <text:p text:style-name="P11">2 (pour l&apos;Avent) Ciel, répands ta rosée, Nuée, fais pleuvoir le juste, Terre, enfante un sauveur.</text:p>
+   <text:p text:style-name="P11">Psaume i8 : 1 Les cieux racontent la gloire de Dieu, et l&apos;œuvre de ses mains, le firmament l&apos;annonce. P; 2 Le jour, au jour, en publie le récit, et la nuit, à la nuit, en donne la connaissance.</text:p>
+   <text:p text:style-name="P14"><text:soft-page-break/>℣ d&apos;entrée : Tu es bénie entre les femmes et le fruit de tes entrailles est béni. P;</text:p>
+   <text:h text:style-name="P2" text:outline-level="2">TRANSFIGURATION : 6 AOUT</text:h>
+   <text:p text:style-name="P14">Stance : Avant d&apos;être humilié sur le calvaire, le Fils de l&apos;homme a révélé sa gloire : Elie le prophète, et Moïse avaient parlé de lui ; aujourd&apos;hui nous entendons la voix de son Père lui rendre témoignage, et maintenant qu&apos;il est ressuscité nous proclamons ce qui virent ses disciples :</text:p>
+   <text:p text:style-name="P14">Gloire à toi, splendeur éternelle de Dieu !</text:p>
+   <text:p text:style-name="P11">Par ta lumière, nous voyons la lumière.</text:p>
+   <text:p text:style-name="P14">Psaume 98 : 1 Dans la colonne de nuée, il parlait avec eux, ty&quot; 2 Exaltez le Seigneur notre Dieu, prosternez-vous devant sa sainte montagne.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Notre cité se trouve dans les cieux, d&apos;où nous attendons Jésus Christ, notre Sauveur. W</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">ASSOMPTION</text:h>
+   <text:p text:style-name="P14">Stance : Bénie sois-tu entre les femmes, Mère de Jésus Christ !</text:p>
+   <text:p text:style-name="P11">Le Dieu que tu reçus dans ton sein, te reçoit dans la gloire ; la première, après ton Fils ressuscité, tu pénètres dans le ciel où l&apos;Eglise est appelée comme toi à chanter éternellement : If Le Seigneur fit pour nous des merveilles, Saint est son nom !</text:p>
+   <text:p text:style-name="P14">Psaume 15 : 1 Mon cœur exulte et mes entrailles jubilent, ma chair reposera en sûreté. W 2 Devant ta face, plénitude de joie, à ta droite, délices éternelles.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Il s&apos;est penché sur son humble servante, désormais tous les âges me diront bienheureuse. W</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">TOUSSAINT : 1er NOVEMBRE</text:h>
+   <text:p text:style-name="P14">Stance : Aujourd&apos;hui le ciel et la terre communient dans une même joie : Devant le trône de l&apos;Agneau se tient la multitude des élus ; sur la montagne où Jésus s&apos;est assis les pauvres reçoivent l&apos;annonce du bonheur.</text:p>
+   <text:p text:style-name="P11">Partout on entend chanter l&apos;Eglise en fête : If Exultez de joie, tressaillez d&apos;allégresse, vous qui possédez le Royaume des cieux !</text:p>
+   <text:p text:style-name="P14">Psaume 32 : 1 Criez de joie pour le Seigneur, les justes ; aux cœurs droits la louange va bien. If 2 Heureux le peuple dont le Seigneur est le Dieu, la nation qu&apos;il s&apos;est choisie en héritage.</text:p>
+   <text:p text:style-name="P14">℣ d&apos;entrée : Je vis une foule immense, de tous peuples, races et langues. W</text:p>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:soft-page-break/>II. CHANTS D&apos;OFFERTOIRE</text:h>
+   <text:p text:style-name="P14">Dans les débuts du renouveau pour une participation active des fidèles à la messe, l&apos;offertoire a tenu une place énorme. Il y a vingt ans, fleurissaient les « cantiques d&apos;offertoire ». Une réaction s&apos;est produite, et ce chant de la messe a été relégué au second plan par d&apos;autres plus importants.</text:p>
+   <text:p text:style-name="P14">En fait, la réforme de la messe conserve ce chant, mais sa fonction se trouve notablement modifiée par la restauration de la prière universelle. Lorsque la prière universelle s&apos;achève, on entre nettement dans la liturgie eucharistique.</text:p>
+   <text:p text:style-name="P14">Dans l&apos;ancienne messe romaine, la transition était plus floue. Les antiennes d&apos;offertoire du missel romain, créées pour accompagner l&apos;offrande des fidèles, n&apos;étaient ni offertoriales ni eucharistiques (sauf exceptions). Désormais, la liturgie de la Parole étant achevée, le chant d&apos;offertoire accompagne l&apos;apport du pain et du vin à l&apos;autel. Le « repas du Seigneur » commence. On a donc quelque difficulté à devoir lire ou chanter des textes sans aucun rapport avec ce qui s&apos;accomplit dans l&apos;assemblée.</text:p>
+   <text:p text:style-name="P14">Dans la messe actuelle, le chant d&apos;offertoire se présente comme une ouverture de l&apos;eucharistie, accompagnant l&apos;apport des dons à l&apos;autel : il débouche sur la « prière sur les offrandes » qui conclut ce premier temps de l&apos;eucharistie.</text:p>
+   <text:p text:style-name="P14">Cette nouvelle fonction appelle de nouveaux textes, exprimant le sens de l&apos;action : en prenant le pain et le vin, le Christ inaugure un mystère d&apos;échange et de consécration où s&apos;accomplit son offrande et la nôtre, par son sacrifice pascal.</text:p>
+   <text:p text:style-name="P14">Ce thème peut être explicité de plusieurs manières (sans anticiper sur le contenu propre de la prière eucharistique), spécialement selon les temps liturgiques.</text:p>
+   <text:p text:style-name="P14">Mais faut-il chanter à l&apos;offertoire ? Après une liturgie de la Parole très dense et avant la prière eucharistique, on sent le besoin d&apos;un moment de détente. Aussi préfère-t-on souvent le silence, ou le jeu d&apos;un instrument.</text:p>
+   <text:p text:style-name="P14">Les deux solutions (chant de l&apos;offertoire ou silence méditatif de l&apos;assemblée) ne s&apos;opposent pas, si une chorale exécute le chant. Remarquons qu&apos;actuellement l&apos;offertoire est souvent le seul chant de la messe où la chorale peut intervenir selon son art propre, par une pièce musicale plus élaborée ou polyphonique. C&apos;est une valeur de la célébration non négligeable dans beaucoup d&apos;assemblées.</text:p>
+   <text:p text:style-name="P14">La forme littéraire et chorale utilisée dans les textes qu&apos;on trouvera ci-dessous est celle de la « grande antienne » (ou tropaire), se concluant par une acclamation ou une supplication qui peut être employée comme refrain. Ce refrain peut être repris, si l&apos;on veut, après un verset biblique (toujours ad libitum).</text:p>
+   <text:p text:style-name="P14">Le texte du tropaire est rythmé et assonancé de façon à faciliter la composition chorale (qui peut utiliser des styles divers : verbo-mélodisme, choral, polyphonie, etc.). Refrain métrique et verset prosaïque permettent des structures contrastantes. <text:soft-page-break/>On peut avantageusement inclure le chant entre un prélude et un postlude d&apos;orgue ou d&apos;instruments.</text:p>
+   <text:p text:style-name="P14">L&apos;ensemble doit rester assez bref. On peut d&apos;ailleurs arrêter le chant après le premier refrain, ou le continuer avec le verset et la reprise du refrain selon les cas.</text:p>
+   <text:p text:style-name="P14">Il y a là matière à de vraies créations musicales. Ces textes pourront intéresser des compositeurs qui, jusqu&apos;ici trouvaient quelques difficultés soit dans les textes traduits, soit dans des pièces dont les exigences fonctionnelles leur semblaient trop contraignantes.</text:p>
+   <text:p text:style-name="P9">J. G.</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2">AVENT</text:h>
+   <text:p text:style-name="P11">Depuis l&apos;origine des temps, l&apos;humanité gémit en travail d&apos;enfantement : de la terre va germer le Sauveur !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Nos mains chargées de très humbles présents, (bis) les yeux levés vers les biens du Royaume, (bis) W Allons au-devant de celui qui vient !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Dieu lui-même donne le bonheur, et notre terre donne son fruit.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Allons au-devant de celui qui vient !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">NOËL</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Pour nous sauver, le Verbe de Dieu s&apos;est fait un corps de chair et de sang ; Qu&apos;il prenne aussi dans ses propres mains la coupe et le pain où nous recevrons le don merveilleux de son renouveau.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Voici la bonté de Dieu sur la terre des vivants ; A toi le ciel, à toi la terre, à toi, les enfants des hommes.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Voici la bonté de Dieu sur la terre des vivants !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">APRÈS L&apos;ÉPIPHANIE</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11"><text:soft-page-break/>D&apos;où sont venus tous ces présents sinon de toi, Esprit divin, Source féconde ?</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Comment deviendrons-nous vivants sinon par toi, Esprit nouveau, Ferment du monde ?</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Rassemble-nous en un seul corps pour la gloire de Dieu le Père.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Un seul corps et un seul esprit, dans une seule espérance.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Rassemble-nous en un seul corps pour la gloire de Dieu le Père.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">CARÊME</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Comment avez-vous préparé les dons que vous déposerez sur l&apos;autel de Dieu en sacrifice ?</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Voici ce qu&apos;il attend de vous dans sa richesse : tout simplement d&apos;aimer avec tendresse de vivre avec justice et de marcher joyeux sous son regard.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">137 Mon Dieu, je m&apos;avance vers toi pour que ta volonté soit faite.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">t Offrez de justes sacrifices et soyez sûrs du Seigneur.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Mon Dieu, je m&apos;avance vers toi pour que ta volonté soit faite.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">PASSION</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Qui donc est entré dans la ville assis sur un ânon ?</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">C&apos;est Dieu, Roi de gloire éternelle, homme plus pauvre que nous.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11"><text:soft-page-break/>Quand nous l&apos;aurons livré, il deviendra le pain rompu et le vin répandu en signe d&apos;Alliance Nouvelle.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Pour être à jamais pardonnés, entrons dans son mystère d&apos;amour.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Ouvrez-moi les portes de justice, j&apos;entrerai, je rendrai grâce.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Pour être à jamais pardonnés, entrons dans son mystère d&apos;amour</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">PAQUES</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Graine jetée en terre, Unique semence de Dieu, tu as levé au cœur de la matière pour tout rénover ; Refais ce geste merveilleux pour que les éléments de la nature ici consacrés nous transfigurent.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Christ ressuscité dans la chair, fais de nous ton corps dans l&apos;Esprit.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Qui sème dans les larmes moissonne en chantant.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Christ ressuscité dans la chair, fais de nous ton corps dans l&apos;Esprit.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">ASCENSION</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Afin que tout soit accompli, le Fils de Dieu, venu du ciel, est remonté dans la gloire du Père.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Désormais, Grand Prêtre éternel, il intercède pour ses frères, les nourrit de son corps et leur envoie l&apos;Esprit.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Reste avec nous, Seigneur, jusqu&apos;à la fin des temps !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Je m&apos;en vais, et je reviens à vous.</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P11">IV Reste avec nous, Seigneur, jusqu&apos;à la fin des temps !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">PENTECOTE</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Le monde s&apos;ouvre à la vie, l&apos;homme reçoit l&apos;Esprit.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Au souffle du Très-Haut se lève un peuple nouveau de toute race, langue et frontière, W Pour devenir le corps de Jésus Christ et transformer la face de la terre.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">C&apos;est dans l&apos;Esprit Saint que vous serez baptisés; W Pour devenir le corps de Jésus Christ et transformer la face de la terre.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">ÉTÉ</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Vous qui peinez sous le fardeau, voyez entre les mains de Jésus Christ passant de ce monde à son Père, tout l&apos;univers, les hommes, leurs travaux, qu&apos;il veut transfigurer.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Par le mystère de son corps livré, il annonce un monde nouveau.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Nous attendons une terre nouvelle où la justice habitera.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">137 Par le mystère de son corps livré, il annonce un monde nouveau.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">AUTOMNE</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Quand tu viendras dans ta vigne préférée au jour de la vendange, tu ne trouveras pas, Seigneur, en nos mains le fruit que tu désires, et pourtant nous avons soif de vin nouveau.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Iy Verse-nous le sang du raisin broyé au pressoir de la croix, et nous élèverons vers toi la coupe qui te rend gloire.</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P11">t Seigneur, efface nos péchés, Aide-nous, Dieu notre Sauveur.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Iy Et nous élèverons vers toi la cou pe qui te rend gloire.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">POUR TOUS LES TEMPS</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Quand tout fut préparé Jésus dit à ses amis : J&apos;ai désiré d&apos;un grand désir manger cette Pâque avec vous avant de souffrir.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Iy Viens, Seigneur Jésus, que nous buvions avec toi le vin de la Pâque nouvelle dans ton Royaume !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Ils l&apos;avaient reconnu à la fraction du pain.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">W Viens, Seigneur Jésus, que nous buvions avec toi le vin de la Pâque nouvelle dans ton Royaume !</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">LES « PRECES » DES LAUDES ET DES VÊPRES</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">L</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">ES informations données sur le projet de réforme de l&apos;Office divin 1 font état du rétablissement de Preces quotidiennes aux Laudes et aux Vêpres.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">C&apos;est d&apos;ailleurs dans cette perspective que l&apos;Instruction Tres abhinc annos (4 mai 1967) au n° 21 permet, dans la célébration de ces deux Heures avec le peuple, de « remplacer le capitule par une lecture plus longue. en ajoutant si c&apos;est opportun une brève homélie » et de « faire aussi la Prière universelle », ajoutant que, si on insère ces éléments, on peut ne dire que trois psaumes.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">La faculté d&apos;ajouter une « prière universelle » accordée par ce texte invitait à une première création à titre d&apos;essai, mais celle-ci restait hésitante, puisque le genre littéraire n&apos;était en rien précisé, alors que l&apos;actuel bréviaire romain ne comporte <text:soft-page-break/>qu&apos;une formule, identique pour Laudes et Vêpres, connue sous le nom de preces feriales : sans doute l&apos;Instruction parle de « prière universelle », mais faut-il transposer tel quel dans l&apos;Office ce qui a été rétabli dans la Messe ?</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Le présent article voudrait préciser, après un bref rappel historique, le sens des nouvelles Preces de l&apos;Office, et les critères selon lesquels elles pourraient être rédigées.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Les « preces » dans l&apos;histoire.</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">La grande liberté dont jouirent les Eglises des premiers siècles pour l&apos;organisation de l&apos;Office ne permet d&apos;avoir que des renseignements très incomplets ; il n&apos;en est que plus remarquable de découvrir combien fréquemment est men-</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">1. Cf. Notitiae, nos 28-29, p. 141.</text:p>
+  </office:text>
+ </office:body>
+</office:document>

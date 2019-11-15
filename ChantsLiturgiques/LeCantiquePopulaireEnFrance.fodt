@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-11-12T22:55:19.376623944</meta:creation-date><dc:date>2019-11-12T22:56:16.977747725</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT58S</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="10" meta:paragraph-count="62" meta:word-count="4008" meta:character-count="24454" meta:non-whitespace-character-count="20506"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22844</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23828</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2921</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">2501</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22842</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">23827</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">180</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">988805</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1109080</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
+   <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Visited_20_Internet_20_Link" style:display-name="Visited Internet Link" style:family="text">
+   <style:text-properties fo:color="#800000" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="001f6045" officeooo:paragraph-rsid="001f6045"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="1.951cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="2cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="000f1685"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="001dca16"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="0018c303" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="0018c303" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0018c303"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="001dca16"/>
+  </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="001f6045"/>
+  </style:style>
+  <style:style style:name="T7" style:family="text">
+   <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P8"><draw:frame draw:style-name="fr1" draw:name="Cadre3" text:anchor-type="paragraph" draw:z-index="0">
+     <draw:text-box fo:min-height="0.34cm" fo:min-width="10.8cm">
+      <text:p text:style-name="P13">LE CANTIQUE POPULAIRE EN FRANCE</text:p>
+      <text:p text:style-name="Subtitle">Nécessité, difficultés et conditions d&apos;un renouveau</text:p>
+      <text:p text:style-name="P5">Joseph Gelineau</text:p>
+      <text:p text:style-name="P1">Publié dans « La Maison-Dieu », <text:span text:style-name="T4">7</text:span>, Éditions du CERF, 19<text:span text:style-name="T6">46</text:span></text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P4"><text:span text:style-name="T2">Notice détaillée</text:span><text:span text:style-name="T3"> : </text:span><text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/bpt6k6555430v?rk=21459;2" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T3">https://gallica.bnf.fr/ark:/12148/bpt6k6555430v?rk=21459;2</text:span></text:a></text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Tit</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T1">e</text:span> : La Maison-Dieu : cahiers de pastorale liturgique</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T2">Auteur</text:span> : Service national de la pastorale liturgique et sacramentelle (France). Auteur du texte</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T2">D</text:span><text:span text:style-name="T1">ate </text:span><text:span text:style-name="T2">d’édition</text:span><text:span text:style-name="T4"> </text:span>: 1956-07</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T4">Contributeur</text:span> : Roguet, Aimon-Marie (1906-1991). Directeur de publication</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Type</text:span> : text<text:span text:style-name="T4">e</text:span></text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Type</text:span> : <text:span text:style-name="T4">publication en série imprimée</text:span></text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T2">Langue</text:span> : <text:span text:style-name="T4">français</text:span></text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Description</text:span> : 19<text:span text:style-name="T5">4</text:span>6</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Description</text:span> : 1946 (N7).</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T2">Droits</text:span> : <text:span text:style-name="T4">domaine public</text:span></text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Identifi</text:span><text:span text:style-name="T2">ant</text:span> : ark:/12148/bpt6k6555430v</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Source</text:span> : Les éditions du Cerf, 2013-279298</text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T2">Notice du catalogue</text:span> : <text:a xlink:type="simple" xlink:href="http://catalogue.bnf.fr/ark:/12148/cb34348843p" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://catalogue.bnf.fr/ark:/12148/cb34348843p</text:a></text:p>
+   <text:p text:style-name="P3"><text:span text:style-name="T1">Provenance</text:span> : Bibliothèque nationale de France</text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T1">Date </text:span><text:span text:style-name="T2">de mise en ligne</text:span> : <text:span text:style-name="T5">25</text:span>/11/2013</text:p>
+   <text:p text:style-name="P8">Dans l&apos;office du culte, le chant est la forme normale de la prière commune : le rythme unit les voix, les paroles unissent les esprits. Mais cette prière n&apos;atteindra sa perfection que grâce à une intelligence suffisante du texte. Cette exigence explique, dans la religion catholique, à côté des textes liturgiques en latin, le constant usage de chants religieux populaires en langue vulgaire, que, depuis le XVIIe siècle on nomme « cantiques ». En France, dès qu&apos;après l&apos;époque gallo-romaine le peuple ne comprit plus le latin, apparut ce chant en langue vulgaire qui permettait une participation plus active des fidèles aux cérémonies religieuses. Nous avons conservé des acclamations en langue germanique du IXe siècle et depuis le XIIe siècle les psaumes n&apos;ont pas cessé d&apos;être traduits en français et, nous en avons la certitude, d&apos;être chantés. Le « cantique » apparaît donc comme une forme nécessaire du culte populaire.</text:p>
+   <text:p text:style-name="P7">Or le cantique, à l&apos;époque contemporaine, souffre d&apos;une véritable crise de valeur. Nettement distingué de la cantate de style plus relevé ou de forme polyphonique, réservée à des scholae, il n&apos;est aux yeux de beaucoup qu&apos;un « genre inférieur ». Certains pourtant, désireux de faire prier le peuple et de le faire prier « sur de la beauté », souhaitent de renouveler le répertoire populaire. De nombreux et intéressants efforts ont été tentés depuis bientôt cinquante ans. Les résultats restent partiels. Pourquoi ? Recherchons donc - quelles sont les déficiences actuelles du cantique populaire, les difficultés puis les conditions d&apos;un renouveau. A l&apos;heure où l&apos;on se préoccupe de la place à donner dans le culte à la langue vulgaire, la question vaut d&apos;être étudiée de près.</text:p>
+   <text:p text:style-name="P7">* * *</text:p>
+   <text:p text:style-name="P7">Quels cantiques chante en général le peuple de France? Je ne dis pas telle ou telle paroisse, telle ou telle communauté, mais l&apos;ensemble du peuple de France? Pour en avoir une idée, reportons-nous au répertoire des grandes réunions religieuses, missions, pèlerinages, qui nous révèlent à quel fonds commun on a nécessairement recours. Il est assez significatif. Choisissons, par exemple, les cantiques du « Grand retour » de Notre-Dame de Boulogne, qui constituent, avec le chapelet, la supplication nationale ininterrompue de ces dernières années. Je ne fais pas un choix partial. Les organisateurs ont choisi, sur les thèmes qui les intéressaient, les moins mauvais exemplaires. Mais ils ont dû prendre les plus connus, donc les plus intéressants pour notre étude.</text:p>
+   <text:p text:style-name="P7">Il me suffira de citer les titres (car nous avons tous ces cantiques dans la mémoire!) pour faire connaître le répertoire : « Laudate Mariam », « J&apos;irai la voir un jour », « Les saints et les anges », « Vierge notre espérance », « Chez nous soyez Reine », « Nous voulons Dieu », « Vive Jésus, vive sa croix », « Le voici l&apos;Agneau si doux », « Loué soit à tout instant », « Ave maris stella » (avec l&apos;air populaire à mesure 6/8).</text:p>
+   <text:p text:style-name="P7">On peut défendre environ la moitié des mélodies en question : le refrain de « Reine de France », d&apos;une belle venue; le couplet de « Les saints et les anges », vieille mélodie alsacienne; « Nous voulons Dieu » même, si on le comprend comme un chant de congrès plutôt que comme une prière. « Chez nous soyez Reine » a fait <text:soft-page-break/>fortune. Mais comment ne pas regretter les Laudate Mariam essoufflés avec la diérèse ridicule sur la diphtongue lau; le rythme de valse et le style romance de « Le voici l&apos;Agneau si doux »; l&apos;accent sentimental de « J&apos;irai la voir un jour »; enfin la rengaine rythmique de l&apos; « Ave maris stella » six fois répétée pour chaque couplet ?</text:p>
+   <text:p text:style-name="P7">Mis à part le « Nous voulons Dieu », aucun de ces cantiques n&apos;est correct du point de vue de l&apos;adaptation rythmique des paroles sur la musique. (Cette question est beaucoup plus importante pour la facilité et la qualité du chant qu&apos;on ne le pense généralement.) Certains sont détestables. Citons le refrain de « Vierge notre espérance » avec ses accents sur les finales muettes « Sauve, sauve la France »; et un couplet au hasard dans « Les saints et les anges », où l&apos;accent rythmique tombant sur le deuxième pied de chaque vers ne rencontre pas une seule fois l&apos;accent tonique :</text:p>
+   <text:p text:style-name="P9">Tes enfants rebelles<text:line-break/><text:span text:style-name="T6">V</text:span>eulent devenir<text:line-break/>Des enfants fidèles,<text:line-break/>Daigne les bénir.</text:p>
+   <text:p text:style-name="P7">Le style ne nous consolera guère. C&apos;est l&apos;abus des répétitions : « Sauve, sauve la France »; des exclamations lyriques : « Vive Jésus, vive sa croix! Oh! qu&apos;il est bien juste qu&apos;on l&apos;aime! »; des procédés désuets : « Venez chrétiens », « Chrétiens chantons à haute voix »; des adjectifs affadis : « Auguste Marie » (qui rime avec « Reine chérie » 1) ou sentimentaux : « Le voici l&apos;Agneau si doux »; d&apos;expressions grandiloquentes : « La chaire de son éloquence » (c&apos;est-àdire la croix de Notre-Seigneur). Qui pourra nous trouver sévère? L&apos;accumulation de tant de caractéristiques d&apos;un style vieilli est insupportable et ridicule aux esprits les moins prévenus et les détourne parfois de la prière.</text:p>
+   <text:p text:style-name="P7">A voir de quel cœur le peuple chrétien chante souvent ces cantiques on est parfois porté à l&apos;indulgence pour le fond : « S&apos;ils font prier, dit-on, c&apos;est tout ce qu&apos;il faut. » Sans doute expriment-ils des idées simples : la bonté de Marie qui protège, aide et console, fait les frais des cantiques à la Vierge. Mais y a-t-il dans ce lyrisme vague, outre la simple affirmation que Marie est notre Mère, un mot de théologie mariale ? Il ne faut pas se croire obligé de toujours imiter le « Salve Regina » : « Séchez nos pleurs dans cette triste vie. » Ne peut-on pas nourrir la piété des fidèles avec autre chose que des sentiments creux :</text:p>
+   <text:p text:style-name="P10">Nous voulons sur terre,<text:line-break/>Jusqu&apos;au dernier jour,<text:line-break/>Vous chanter,<text:line-break/>vous plaire,<text:line-break/>Vous aimer toujours.</text:p>
+   <text:p text:style-name="P12">Quelle est la cause d&apos;une telle médiocrité? Le cantique qui veut être vraiment « populaire » ne pourrait-il atteindre pour cette raison à une véritable valeur artistique? Sans doute on peut chanter d&apos;une façon détestable les plus belles <text:soft-page-break/>choses, et la déformation populaire se fait vite sentir. Mais le peuple est accessible à des oeuvres de valeur, pourvu qu&apos;elles soient à sa portée, et il peut les interpréter avec un art incontestable. Le choral allemand, parfaitement populaire, a une haute valeur artistique, tant pour la musique qui fut la source d&apos;inspiration d&apos;un J.-S. Bach, que pour les paroles, oeuvres de poètes religieux du XVIIe siècle.</text:p>
+   <text:p text:style-name="P11">L&apos;état actuel du cantique en France a une raison historique. Contrairement à ce que l&apos;on croit parfois, notre pays a jadis connu, dans le choral religieux, une tradition excellente. Ce genre est né « chez nous », et c&apos;est à nous que les protestants l&apos;ont emprunté. Mais il s&apos;est affadi au XVIIIe siècle, et la Révolution nous en a complètement dépouillés. L&apos;invasion du romantisme a comblé le vide. A ce moment, la musique religieuse prenait un développement singulier. Elle fut plus que toute autre marquée par son époque : la romance sentimentale ou la marche de style « enlevant » rythmaient désormais la prière. Cette production médiocre, où la prolixité était d&apos;autant plus regrettable, s&apos;imposa par toute la France. Elle a constitué ce que nous appelons maintenant le « cantique populaire », mais qui ne correspond pas plus à la vraie tradition du cantique français que le romantisme littéraire à celle du génie français, ou la dévotion sentimentale du XIXe siècle à l&apos;authentique piété catholique. Par une réaction qui s&apos;explique aisément, le goût moderne, choqué dans sa piété par toute démonstration théâtrale ou par un lyrisme sans pudeur, est revenu à des œuvres plus sobres et plus classiques. Là aussi, un excès reste possible (peut-être n&apos;y échappons-nous pas complètement); mais il a plus de chances, avouons-le, de respecter les vraies intentions de l&apos;Église.</text:p>
+   <text:p text:style-name="P11">L&apos;histoire du siècle dernier explique la médiocrité actuelle. Mais le siècle présent ne nous laisse-t-il pas espérer un renouveau ? Depuis la Schola Cantorum qui, il y a près de cinquante ans, en prenait l&apos;initiative, bien des efforts individuels l&apos;ont favorisé, jusqu&apos;à l&apos;élan massif donné par le scoutisme au chant vivant et fort. Actuellement on chante plus que jamais. On se préoccupe de ce que l&apos;on chante. On renouvelle les répertoires. Et cependant, le fond traditionnel et populaire demeure inchangé. Qu&apos;a-t-il donc manqué pour que le progrès fût moins superficiel et atteignît la masse ?</text:p>
+   <text:p text:style-name="P11">* * *</text:p>
+   <text:p text:style-name="P11">Certes les difficultés abondent pour qui entreprend de renouveler le cantique populaire. Elles surgissent tant à propos du texte qu&apos;à propos de la musique.</text:p>
+   <text:p text:style-name="P11">La langue française, remarquait déjà J.-J. Rousseau, se prête plus malaisément qu&apos;aucune autre à être mise en musique. L&apos;accent, en effet, y est peu marqué; on est tenté de le négliger; si on s&apos;en préoccupe, il est plus une gêne qu&apos;une aide. Les e muets sont un écueil terrible. La prosodie classique a aussi des exigences funestes dont la plus regrettable actuellement est sans doute la rime. Le vocabulaire exclusivement religieux du cantique limite a priori le choix des rimes. Comment au bout de quatre siècles éviter : âme, flamme et réclame; Seigneur, cœur et bonheur?. De plus, l&apos;idée étant liée au mot, la rime à son tour ramène nécessairement le compositeur aux mêmes idées. L&apos;originalité en devient <text:soft-page-break/>particulièrement difficile. Le principe du couplet qui attribue un air commun à plusieurs strophes est encore pour le parolier une rude contrainte. Sans doute le genre populaire se refuse à multiplier les airs; alors la répétition exige que tous les couplets soient construits, non seulement avec des vers du même nombre de pieds, mais encore sur le même mètre rythmique, c&apos;est-à-dire que les accents toniques, pour coïncider avec les accents rythmiques, devront toujours tomber dans le vers sur les mêmes pieds. On évitera de souligner, par exemple, un e muet, ou la pénultième d&apos;un mot de deux syllabes, ou une monosyllabe trop faible. Les paroles enfin, loin de contredire la musique, doivent se prêter à ses mouvements expressifs et lyriques.</text:p>
+   <text:p text:style-name="P11">Dernière difficulté : la langue évolue, et bien des formules de prière, jadis vivantes et parfaites, sont aujourd&apos;hui vieillies. On ne peut pas faire chanter impunément à des collégiens les cantiques de Corneille, de Racine, du P. de Montfort, malgré leur richesse et leur limpidité. Maintes expressions vieillottes feront sourire (ce qui ne veut pas dire que le parolier qui veut prendre le style de son siècle doive être le moins du monde vulgaire ou snob). On en vient à se demander si les cantiques, comme les traductions de l&apos;Évangile et de la Bible, ne seraient pas à refaire à chaque génération littéraire!</text:p>
+   <text:p text:style-name="P11">Exigences de la rime, du rythme, de la langue… Hélas! Bien rimer sur un sujet pieux n&apos;est pas faire un cantique. L&apos;essentiel n&apos;est-il pas d&apos;inviter à la prière? La qualité de l&apos;inspiration reste la première des exigences. Le poète doit se doubler d&apos;un théologien. Quelle responsabilité pour qui prétend fournir à nos âmes les mots qui doivent traduire les « gémissements ineffables de l&apos;Esprit »!</text:p>
+   <text:p text:style-name="P11">Renouveler la mélodie du cantique pose un nouveau genre de problème : à quelle source aura-t-on recours ? Ancienne ou moderne? On a pensé avec raison qu&apos;un retour à la musique classique, aux mélodies éternellement belles, dont l&apos;éclat peut temporairement pâlir mais non pas disparaître, était la meilleure solution. Mais auxquels de ces chefsd&apos;œuvre iront nos préférences?</text:p>
+   <text:p text:style-name="P11">Le cantique grégorien a l&apos;avantage d&apos;être tout à fait dans l&apos;esprit de l&apos;Église et le plus proche de sa tradition liturgique. Mais, à part quelques réussites, la plupart des adaptations qu&apos;on en a tentées ne sont pas naturelles et par conséquent pas populaires. Le latin était accentué sur la pénultième ou l&apos;antépénultième. Le français l&apos;est sur la finale et le grégorien était composé pour le latin : problème rythmique dont trop souvent on ne s&apos;est pas préoccupé. De plus les syllabes françaises se prêtent avec bien mauvaise grâce aux modulations des neumes. Le rythme libre est actuellement moins populaire que le rythme mesuré. Enfin les vieux modes semblent souvent barbares aux oreilles modernes.</text:p>
+   <text:p text:style-name="P11">On a beaucoup emprunté au choral allemand et anglais. Le rythme est simple, la mélodie est belle, le style vraiment populaire et religieux. Et certes, c&apos;est justice, comme le fait remarquer un auteur de la fin du XVIe siècle, de reprendre aux protestants le choral qu&apos;ils nous ont « dérobé ». Tout en reconnaissant qu&apos;il a obtenu récemment chez nous un réel succès, le choral ne semble pas apporter pour le <text:soft-page-break/>renouveau du cantique français toutes les qualités désirables. Depuis plus de trois siècles, le choral allemand ou anglais s&apos;est intimement accordé au génie du peuple qui le chante. Mais écoutez nos jeunes Français dérouler un large choral allemand : ils- ne soutiennent pas les notes, ils précipitent ou ralentissent indûment la mesure : le rythme est pour eux trop dépouillé et celui de La Marseillaise leur conviendrait mieux…</text:p>
+   <text:p text:style-name="P11">Ne pourrait-on pas alors trouver dans le vieux folklore national des mélodies de chez nous qui expriment vraiment nos aspirations religieuses les plus profondes? Il nous reste bon nombre de cantiques bretons, basques, provençaux, franc-comtois, lorrains. Personne ne songera à dire par exemple que le noël n&apos;est pas vraiment à la fois populaire et français ? Ces mélodies apportent plus de richesses mélodiques que le choral, écrit presque toujours dans le mode majeur ou mineur, car elles conservent les vieux modes grégoriens, restés comme elles familiers au peuple. Leur rythme est aussi plus alerte. Cette source est peut-être la plus intéressante. Mais ces mélodies sont d&apos;inégale valeur Certaines sont d&apos;architecture très pauvre et de souffle très court. Un choix sévère s&apos;impose. En outre elles sont parfois si caractéristiques d&apos;un esprit provincial qu&apos;elles ne plaisent pas à tout le monde. Ainsi tous ne goûtent pas dans la prière la nostalgie de beaucoup de cantiques bretons. Restent un certain nombre de mélodies classiques, prises chez les meilleurs auteurs et qu&apos;on peut utiliser avec bon- heur. Elles restent malheureusement peu nombreuses.</text:p>
+   <text:p text:style-name="P11">Pourquoi, dès lors, ne pas créer hardiment des mélodies nouvelles ? — Parmi les compositeurs modernes bien peu ont recueilli une approbation générale. Vincent d&apos;Indy, sur des mélodies simples, essaye des rythmes nouveaux. Mais, pour cette raison, ses cantiques ne sont pas populaires. D&apos;autres recherchent des originalités modales ou mélodiques; mais les intervalles ne sont plus assez simples ou assez naturels. A l&apos;opposé, ceux qui s&apos;en tiennent à la naïveté mélodique tombent, comme Bordes, dans la mièvrerie, ou, comme La Tombelle, n&apos;arrivent pas à se dégager d&apos;une vague sentimentalité. sans parler de ceux qui restent dans la plus désespérante banalité. Qui donc a eu le génie de l&apos;aisance et de la simplicité dans l&apos;originalité?</text:p>
+   <text:p text:style-name="P11">Parmi tous ces genres multiples il semble que personne n&apos;ait osé choisir. Pratiquement, pour constituer un recueil, on prend çà et là ce qui semble le meilleur; tous les recueils modernes présentent un choix de mélodies les plus diverses dans l&apos;éclectisme le plus avoué. Alors demeure une difficulté capitale pour le cantique populaire et national : l&apos;absence d&apos;unité. Cette absence d&apos;unité a deux causes très différentes : l&apos;éclectisme des styles et l&apos;individualisme des efforts.</text:p>
+   <text:p text:style-name="P11">Le cantique fera plus difficilement prier l&apos;ensemble des fidèles s&apos;il ne possède pas une certaine unité de style. La musique en effet doit favoriser la prière. Mais pour qu&apos;elle ait prise sur l&apos;âme, il faut que celle-ci soit prédisposée à la t goûter spontanément. Or, l&apos;expérience le montre, tout esprit ne goûte pas de prime abord n&apos;importe quel genre de musique, mais seulement ceux auxquels il a été initié. <text:soft-page-break/>Lorsque le chant grégorien était la seule forme de musique existante et qu&apos;on en avait le sens vivant par éducation, il était un soutien naturel pour la prière. De même la polyphonie palestrinienne dominante au XVIe siècle ou le choral allemand au temps de la musique classique. Mais au siècle où nous vivons, la radio déverse à tout venant les styles musicaux de tous les âges et de tous les peuples. Une oreille accoutumée presque uniquement au swing et aux dissonances risque d&apos;être déroutée par le dépouillement et l&apos;archaïsme des mélodies grégoriennes. Seule une vraie culture artistique, voire une purification intérieure en donnera le sens profond. Sans doute, le temps et une éducation appropriée peuvent faire admettre tous les genres. Pourtant, n&apos;est-ce pas compliquer singulièrement la tâche de revenir en arrière et de puiser à des sources si étrangères à la formation populaire moderne?</text:p>
+   <text:p text:style-name="P11">La diversité du répertoire, en empêchant le cantique français d&apos;acquérir un style unique et prédominant, le prive en même temps de toute la force que le sentiment puise dans la tradition. On a souvent remarqué que la liturgie, par le retour de ses époques et le caractère sacré de ses rites, leur confère un prestige dont bénéficie la prière. On s&apos;attache ainsi à des formes d&apos;art, jadis vivantes, maintenant figées, mais qu&apos;on continue d&apos;aimer malgré tout. C&apos;est pour cette raison que le cantique du XIXe siècle (malheureusement!) est resté si cher aux générations qui nous ont précédés (il jouissait à l&apos;époque où il s&apos;instaura de l&apos;unité du style romantique), à cause de tous les souvenirs affectifs que font Tevivre en elles ces mélodies. Mais comment ne pas envier aux Allemands le choral qui représente vraiment pour eux un patrimoine national et sacré ?</text:p>
+   <text:p text:style-name="P11">La dispersion des efforts n&apos;a pas moins nui au succès du renouveau tenté en France. Les réussites nouvelles n&apos;ont été -connues que de groupes isolés. Mais les vieux airs périmés restent le répertoire commun et on est bien obligé d&apos;y faire appel en dehors des mouvements des paroisses, des communautés qui ont tenté une réforme. Rien de sérieux ne sera fait tant que cette réforme ne sera pas devenue une œuvre nationale.</text:p>
+   <text:p text:style-name="P11">* * *</text:p>
+   <text:p text:style-name="P11">Malgré toutes ces difficultés, peut-on espérer le renouveau d&apos;un chant populaire à la fois religieux et suffisamment artistique? Nous devons tout faire pour le tenter, et jusque-là nous n&apos;avons pas le droit d&apos;en désespérer. Les observations précédentes peuvent nous indiquer en quel sens il vaudra mieux tenter ce travail.</text:p>
+   <text:p text:style-name="P11">En ce qui concerne les textes, on aura avantage à tirer parti, pour la forme, de tous les élargissements légitimes de la poésie du vers : assonance au lieu de la rime; crases, à l&apos;intérieur du vers, de certaines muettes qu&apos;on ne prononce plus, ou de diérèses périmées; assouplissement de la règle classique, depuis longtemps critiquée, de l&apos;hiatus. Bien entendu, la première règle reste le bon goût et les saines exigences de l&apos;oreille. Par contre on attachera la plus grande importance au style et à l&apos;adaptation rythmique des paroles. Dans les essais jusqu&apos;ici proposés, on est <text:soft-page-break/>généralement très loin de ces exigences. Or seul, un texte facile à comprendre et facile à chanter peut favoriser la prière.</text:p>
+   <text:p text:style-name="P11">Pour les idées à exprimer, on s&apos;inspirera des grandes sources de la prière commune : la sainte Écriture et la liturgie. Le cantique populaire doit avoir un fonds théologique qui serve à l&apos;enseignement en même temps qu&apos;à la prière. C&apos;est ainsi que l&apos;ont compris tous les grands apôtres qui se &apos;Sont tant servis du cantique dans leur action apostolique : un P. Coyssard au XVIIe siècle, un P. de Montfort au XVIIIe, un P. Maunoir et tous les missionnaires bretons. Par-dessus tout, un retour s&apos;impose aux mystères essentiels de la religion : la prière au Père, la louange de Dieu, le saint Sacrifice. Le cantique a été accaparé par les « dévotions » (à la Sainte Vierge, aux saints, etc,.) mais combien en a-t-on qui se puissent chanter au canon de la messe, l&apos;acte par excellence de la religion, ou à la clôture d&apos;une grande cérémonie? (Cf. question posée dans La Maison-Dieu, n° 1).</text:p>
+   <text:p text:style-name="P11">Pour la musique, outre les qualités de simplicité, de sobriété, de force, que tout le monde réclame, on cherchera à donner au cantique français une certaine unité. Le retour en arrière est louable tant qu&apos;il correspond pour le peuple à quelque chose de vivant, mais il ne saurait être en soi un idéal. Gardons-nous de nous guider par des admirations d&apos;archéologues ou d&apos;esthètes. Nous ne cherchons pas à faire prier le peuple sur de la beauté pour qu&apos;il dise : « c&apos;est beau », ou qu&apos;il vienne à l&apos;église, comme de trop nombreux voyageurs à Solesmes, chercher une « émotion esthétique » (à ce compte la liturgie manque complètement son but; elle opère un dédoublement tout à fait contraire à la prière) ; nous voulons offrir au peuple des mélodies si belles qu&apos;il soit, comme malgré lui, emporté dans le mouvement de la prière commune et que, sans se demander si cela lui plaît ou déplaît, il chante. Il faut lui présenter une forme d&apos;art qui corresponde à un stade vivant de son évolution sociale et qui soit l&apos;expression d&apos;un état d&apos;esprit « moderne ». L&apos;art moderne est caractérisé par une technique compliquée qui le met souvent très loin des possibilités d&apos;exécution populaire. Le chromatisme, par exemple, reste plus instrumental que vocal. Et pourtant c&apos;est de cet art évolué que se nourrit l&apos;oreille moderne tout au long des jours, par la T.S.F. les enregistrements, etc. Ne pourrait-on pas, puisque même à l&apos;église on doit s&apos;efforcer de plaire et craindre de décevoir, arriver à dominer, à assimiler cette technique qui représente une véritable richesse et qu&apos;exige jusqu&apos;à un certain point notre degré de civilisation ? On attend le musicien de génie qui pourra retrouver à travers elle, après avoir repris un contact direct avec la nature et avec le peuple, une expression naïve et simple. Comme après les productions intempérantes et savantes d&apos;une renaissance, nous sommes, à la recherche d&apos;un classicisme. Quand nous l&apos;aurons trouve la tâche sera facilitée.</text:p>
+   <text:p text:style-name="P11">D&apos;ici là on est réduit aux solutions moyennes. Et heureusement on trouve encore de vieilles mélodies, dans notre folklore par exemple, que le peuple aime à chanter parce qu&apos;elles sont toujours la traduction vivante de ses sentiments religieux. Voilà pourquoi nous recueillons précieusement ces anciens documents.</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/>Mais sitôt que nous aurons entre les mains des œuvres modernes de valeur, l&apos;autorité de la hiérarchie ne pourraitelle être à son tour un facteur d&apos;unité? Par exemple un supplément national destiné aux grandes manifestations religieuses pourrait-être ajouté obligatoirement aux divers recueils. Ces cantiques, vite connus de tous (témoin le succès général qu&apos;a obtenu en peu d&apos;années le cantique « Chez nous soyez Reine ») constitueraient la base sérieuse d&apos;un répertoire national utilisable en de multiples fonctions du culte.</text:p>
+   <text:p text:style-name="P11">* * *</text:p>
+   <text:p text:style-name="P11">Que conclure de toute cette analyse? Tout d&apos;abord que le travail est urgent et qu&apos;il exige, science, courage et ténacité; qu&apos;il faut ensuite, sans souci mesquin de susceptibilités et d&apos;intérêts personnels, travailler unis, pour que tous profitent des réussites privées. Et si un esprit doit animer ce travail, ce doit être le zèle apostolique d&apos;artisans chrétiens.</text:p>
+   <text:p text:style-name="P11">Encore une fois, nous ne sommes pas des archéologues ou des esthètes anxieux de restituer les chefs-d&apos;œuvre du passé, nous sommes avant tout des apôtres qui construisons de pierres vivantes la cité de Dieu et qui voulons y mettre le plus de beauté possible pour qu&apos;elle chante toujours plus magnifiquement la gloire de son Créateur.</text:p>
+   <text:p text:style-name="P11"><text:span text:style-name="T7">Ipsum cantare aedificare est</text:span> (saint Augustin).</text:p>
+   <text:p text:style-name="P11">15 août 1945.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T4">Joseph Gelineau, S.J.</text:span></text:p>
+   <text:p text:style-name="P3">N. B. — Depuis le Congrès national de Pastorale liturgique de Saint-Flour (août-septembre 1945), postérieur à cet article, le C.P.L. assume un « Office du chant religieux et populaire » (cf. La Maison- Dieu, n° 4, p. 43), qui travaille à ce renouveau national. Toutes les collaborations compétentes, suivant les principes énoncés ci-dessus, y sont accueillies.</text:p>
+  </office:text>
+ </office:body>
+</office:document>

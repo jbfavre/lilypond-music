@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-11-12T22:52:44.100885444</meta:creation-date><dc:date>2019-11-12T22:56:37.502196875</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT3M53S</meta:editing-duration><meta:editing-cycles>2</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="11" meta:paragraph-count="62" meta:word-count="5527" meta:character-count="33817" meta:non-whitespace-character-count="28338"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">25</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22844</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23828</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2921</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">2501</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">25</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22842</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">23851</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">180</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">343081</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">485289</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="FreeSans1" svg:font-family="FreeSans" style:font-family-generic="swiss"/>
+  <style:font-face style:name="URW Gothic L" svg:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="14pt" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name="URW Gothic L" fo:font-family="&apos;URW Gothic L&apos;" style:font-family-generic="swiss" style:font-size-asian="12pt" style:font-name-complex="FreeSans1" style:font-family-complex="FreeSans" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:default-outline-level="1" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false"/>
+   <style:text-properties fo:font-size="130%" fo:font-weight="bold" style:font-size-asian="130%" style:font-weight-asian="bold" style:font-size-complex="130%" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Quotations" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
+   <style:paragraph-properties fo:margin-left="1cm" fo:margin-right="1cm" fo:margin-top="0cm" fo:margin-bottom="0.499cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
+   <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Visited_20_Internet_20_Link" style:display-name="Visited Internet Link" style:family="text">
+   <style:text-properties fo:color="#800000" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" fo:margin-left="0.201cm" fo:margin-right="0.201cm" fo:margin-top="0.201cm" fo:margin-bottom="0.201cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content" fo:padding="0.15cm" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="001dca16" officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Subtitle">
+   <style:text-properties officeooo:rsid="001f6045" officeooo:paragraph-rsid="001f6045"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="1.951cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="2cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="115%" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent"/>
+   <style:text-properties officeooo:paragraph-rsid="00053c29"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="00402de1"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="001dca16"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="0018c303" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="0018c303" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0018c303"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="001dca16"/>
+  </style:style>
+  <style:style style:name="T7" style:family="text">
+   <style:text-properties officeooo:rsid="001f6045"/>
+  </style:style>
+  <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
+   <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P10"><draw:frame draw:style-name="fr1" draw:name="Cadre2" text:anchor-type="paragraph" draw:z-index="0">
+     <draw:text-box fo:min-height="0.34cm" fo:min-width="10.8cm">
+      <text:p text:style-name="P15">LA PASTORALE, CLEF DE L&apos;HISTOIRE LITURGIQUE</text:p>
+      <text:p text:style-name="Subtitle">par le R. P. Joseph A. JUNGMANN, s. j.,<text:line-break/>Professeur à l&apos;Université d&apos;Innsbruck<text:line-break/>Consulteur de la Sacrée Congrégation des Rites</text:p>
+      <text:p text:style-name="P3">Publié dans « La Maison-Dieu », <text:span text:style-name="T4">47-48</text:span>, Éditions du CERF, 19<text:span text:style-name="T7">56</text:span></text:p>
+     </draw:text-box>
+    </draw:frame></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T2">Notice détaillée</text:span><text:span text:style-name="T3"> : </text:span><text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/bpt6k6555428s?rk=42918;4" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T3">https://gallica.bnf.fr/ark:/12148/bpt6k6555428s?rk=42918;4</text:span></text:a></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Tit</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T1">e</text:span> : La Maison-Dieu : cahiers de pastorale liturgique</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Auteur</text:span> : Service national de la pastorale liturgique et sacramentelle (France). Auteur du texte</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">D</text:span><text:span text:style-name="T1">ate </text:span><text:span text:style-name="T2">d’édition</text:span><text:span text:style-name="T4"> </text:span>: 1956-07</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T4">Contributeur</text:span> : Roguet, Aimon-Marie (1906-1991). Directeur de publication</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Type</text:span> : text<text:span text:style-name="T4">e</text:span></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Type</text:span> : <text:span text:style-name="T4">publication en série imprimée</text:span></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Langue</text:span> : <text:span text:style-name="T4">français</text:span></text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Description</text:span> : juillet 1956</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Description</text:span> : 1956/07 (N47)-1956/12 (N48).</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Droits</text:span> : <text:span text:style-name="T4">domaine public</text:span></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Identifi</text:span><text:span text:style-name="T2">ant</text:span> : ark:/12148/bpt6k65544524</text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Source</text:span> : Les éditions du Cerf, 2013-279298</text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T2">Notice du catalogue</text:span> : <text:a xlink:type="simple" xlink:href="http://catalogue.bnf.fr/ark:/12148/cb34348843p" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://catalogue.bnf.fr/ark:/12148/cb34348843p</text:a></text:p>
+   <text:p text:style-name="P5"><text:span text:style-name="T1">Provenance</text:span> : Bibliothèque nationale de France</text:p>
+   <text:p text:style-name="P4"><text:span text:style-name="T1">Date </text:span><text:span text:style-name="T2">de mise en ligne</text:span> : 11/11/2013</text:p>
+   <text:p text:style-name="P10">NOTRE-SEIGNEUR JÉSUS-CHRIST apprit à prier à son Eglise et lui confia les sacrements, avant tout l&apos;Eucharistie, trésor précieux que l&apos;Eglise porte respectueusement à travers les siècles. Ce trésor, elle ne l&apos;a pas seulement conservé et protégé, elle l&apos;a façonné, enchâssé dans des formes très riches; au long des siècles elle a créé ce que nous appelons la liturgie de l&apos;Eglise.</text:p>
+   <text:p text:style-name="P9">L&apos;histoire de cette liturgie est longue et presque aussi mouvementée que l&apos;histoire de l&apos;Eglise elle-même. Cette histoire a fait depuis les derniers siècles l&apos;objet d&apos;études multiples, depuis les premières tentatives à l&apos;époque du Concile de Trente jusqu&apos;aux in-folio des Bénédictins de Saint-Maur et aux travaux érudits de notre siècle. Ces études devaient d&apos;abord se contenter d&apos;enregistrer les faits, d&apos;éclairer les connexions et les évolutions, de relever les facteurs déterminants de ce développement, facteurs qui souvent tenaient aux circonstances extérieures, politiques, culturelles et aux tendances générales d&apos;une époque.</text:p>
+   <text:p text:style-name="P9">Mais la maturation progressive de ces travaux permit aussi de plus en plus de déceler l&apos;action de forces silencieuses agissant au dedans. La liturgie ressemble à un arbre : si elle a poussé dans le climat changeant de l&apos;histoire du monde, si elle en a connu les âges de tempête et de floraison, cependant sa croissance procède de l&apos;intérieur et des forces vitales dont elle est issue. La liturgie est la vie de l&apos;Eglise en face de Dieu, de l&apos;Eglise, communauté de tous ceux qui se sont attachés au Christ par le baptême et qui, dimanche après dimanche, se rassemblent pour célébrer, sous la direction du ministère sacerdotal, le mémorial du Seigneur.</text:p>
+   <text:p text:style-name="P9">Sous la direction du ministère sacerdotal, ai-je dit. De tout temps, ce ministère sacerdotal y a vu sa tâche principale : célébrer le culte à la tète de la communauté rassemblée. En outre il avait une tâche particulière aux époques où les formes de ce culte étaient encore flottantes : celle de créer ces formes et d&apos;en fixer l&apos;ordonnance. Or, selon quels principes ces formes ont-elles été créées ? Où trouver la clef pour accéder au secret de ces formes multiples, et à présent si énigmatiques, de la parole, de cette alternance des lectures, des chants et des prières, de cette richesse de gestes et de rites ?</text:p>
+   <text:p text:style-name="P9">Nous trouvons la réponse dans la sollicitude du ministère pastoral pour l&apos;Eglise qui est l&apos;ensemble des fidèles, pour l&apos;Eglise en tant que plebs sancta qui, sous la direction de ses pasteurs dès sa naissance ici-tas, doit rendre à Dieu un culte digne de lui par la prière et le sacrifice, et de cette manière doit être sanctifiée. C&apos;est bien cette préoccupation qui a été décisive quant à la détermination des formes du culte, et cela à plusieurs points de vue.</text:p>
+   <text:h text:style-name="P1" text:outline-level="1">I</text:h>
+   <text:p text:style-name="P5">En premier Heu, il s&apos;agissait d&apos;atteindre ce que nous voyons effectivement réalisé dans la célébration liturgique : il fallait, dans la liturgie, rassembler l&apos;Eglise. Puisque le Seigneur avait établi son institution sous la forme d&apos;un repas en commun, nous voyons les fidèles de la première génération célébrer la fraction du pain per domos, en petites communautés domestiques. Puis les communautés grandissent, <text:soft-page-break/>les églises, les basiliques, les magnifiques cathédrales sont bâties. Mais on n&apos;oublie jamais que l&apos;Eglise appelée à glorifier Dieu, ce n&apos;est pas l&apos;édifice de pierres fait par les hommes, si grandiose soit-il, mais d&apos;abord et toujours cette demeure que Dieu lui-même a voulu se préparer ex vivis et electis lapidibus, et par conséquent non seulement les ministres sacrés qui entourent l&apos;autel, mais l&apos;ensemble des fidèles qu&apos;ils sont appelés à guider. C&apos;est pourquoi nous voyons la liturgie à l&apos;œuvre pour réaliser sur terre ce rassemblement des fidèles et pour le rendre visible. Le Peuple de Dieu devait être visible — et, en effet, en mille et mille endroits on peut le voir et l&apos;entendre. Les fidèles se rassemblent autour des mandataires consacrés, et ainsi leur prière commune monte vers Dieu.</text:p>
+   <text:p text:style-name="P5">Cela s&apos;aperçoit dès les formes les plus anciennes de la liturgie : on ne voulait pas d&apos;un culte dans lequel l&apos;évêque ou le prêtre aurait prononcé, uniquement pour lui-même, des formules mystérieuses, et auquel les fidèles n&apos;avaient qu&apos;à assister en témoins muets. Bien au contraire, le célébrant récite en leur nom les prières, à haute voix et d&apos;une manière perceptible, et il s&apos;exprime au pluriel : nous prions, nous demandons, nous offrons, nous louons et glorifions. Qui plus est, au début de sa prière il invite à y prendre part activement : gratias agamus, nous voulons rendre grâce, nous voulons offrir le sacrifice d&apos;action de grâces; oremus, nous voulons prier.</text:p>
+   <text:p text:style-name="P5">Et pour rendre plus pressant encore cet appel, il adresse d&apos;abord à l&apos;assemblée une salutation : Dominus vobiscuni, à laquelle il faut répondre : Et cum spiritu tuo; ensuite seulement il prononce la prière qui est celle du Peuple de Dieu réuni : populus tuus, Ecclesia tua, plebs tua sancta. Et lorsqu&apos;il a terminé la prière, il attend encore que l&apos;assemblée lui donne son assentiment par le mot : Amen. Celui-ci est en quelque sorte, pour parler avec saint Augustin, la signature que doit apposer le peuple en bas de sa prière : Amen dicere subscribere est (Serm. Denis, 6,3).</text:p>
+   <text:p text:style-name="P5">A cet Amen, surtout à celui de la fin du Canon eucharistique, on accordait dès les premiers temps une importance spéciale. Saint Justin martyr, dont la première Apologie nous a conservé le récit le plus ancien de la célébration eucharistique, et cela dans deux passages, ne mentionne que brièvement l&apos;apport des dons et l&apos;action de grâces que le président de l&apos;assemblée adresse au Père de l&apos;univers, mais, dans les deux textes, il parle des Amen et souligne avec une fierté visible — Justin était un laïc -&apos; que tout le peuple prononce l&apos;Amen; à ses lecteurs païens il explique expressément que ce mot hébreu signifie : Ainsi soit-il.</text:p>
+   <text:p text:style-name="P5">Dans cette ordonnance de la prière liturgique, nous percevons, non seulement dans la liturgie romaine, mais dans toutes les autres liturgies chrétiennes, la langue de l&apos;Eglise primitive&apos;, l&apos;idiome des premières générations. Nous sommes en présence de la tradition de l&apos;Eglise la plus ancienne et la plus vénérable en ce qui concerne son culte. Non seulement l&apos;Amen nous fait entendre aujourd&apos;hui encore la langue parlée par les Apôtres et par le Seigneur lui-même, mais la salutation elle aussi, et la réponse manifestent la tournure particulière de cet idiome ancien. L&apos;intention de l&apos;Eglise naissante, à savoir que son culte devait être l&apos;affaire de la communauté, n&apos;aurait pas pu s&apos;exprimer plus clairement.</text:p>
+   <text:p text:style-name="P5">Cette Eglise naissante s&apos;étend au delà du pays de la Bible, elle pénètre dans le monde de la culture hellénistique et chez les peuples de langue grecque. Elle y apporte sa tradition, non seulement la tradition doctrinale, mais aussi la tradition liturgique dont nous venons de parler. Cependant elle apporte également le principe selon lequel la célébration du culte doit être l&apos;affaire de la communauté. Ainsi le culte conserve-t-il la coloration de son pays de provenance; toutefois, pour la prière et la lecture, nous voyons l&apos;Eglise, non pas maintenir l&apos;araméen ou l&apos;hébreu, <text:soft-page-break/>mais au contraire adopter la langue de ces peuples nouveaux. Sans doute ne se sert-elle pas des dialectes des peuplades particulières de l&apos;Asie Mineure ou de L&apos;Illyrie, mais de la langue littéraire et écrite, du grec qui était plus ou moins compris partout. Et lorsqu&apos;à Rome même la communauté chrétienne déborde le milieu de la colonie grecque, et que la population autochtone de langue latine devient prépondérante, il s&apos;y produit au IIIe siècle, encore une fois, un passage de la liturgie grecque à la liturgie latine. C&apos;est depuis cette époque que s&apos;est formée la liturgie latine de Rome, dans la langue qui, parmi les peuples de l&apos;Occident, resta plus d&apos;un millénaire la langue littéraire et la langue usuelle des gens cultivés, et qui évidemment fut la langue de toutes les assemblées ecclésiastiques. Voilà pourquoi elle pouvait aussi rester la langue de la liturgie.</text:p>
+   <text:p text:style-name="P5">Sans doute, au fond, en cette matière, s&apos;est fait valoir une loi de constance et le latin est devenu langue sacrée; toutefois nous constatons à Rome même jusqu&apos;au début du moyen âge une mobilité étonnante des formes liturgiques, si bien qu&apos;on est en droit de parler d&apos;une pastorale liturgique dans un sens particulier. En effet, nous constatons non seulement que la liturgie a des égards pour la culture populaire dans son ensemble, mais même qu&apos;elle tient compte de certaines sensibilités particulières, en tel lieu, voire dans tel quartier de ville. Ainsi, aux offices des Stations romaines, les lectures sont-elles souvent choisies en accord avec le sanctuaire respectif ou ses environs. Le dimanche de la Sexagésime c&apos;est la statio ad sanctum Paulum : raison de faire raconter sa vie par l&apos;Apôtre luimême. A la Station des Saints-Côme-et-Damien, pèlerinage très fréquenté, la lecture fait allusion à la ferveur des fidèles à visiter ce sanctuaire, mais les avertit par les paroles du prophète de ne pas dire avec une confiance téméraire : templum Domini, templum Domini. Ou bien lorsque le jour où la célébration a lieu dans une église de cimetière, à Saint-Eusèbe, le récit des résurrections devait évoquer le baptême.</text:p>
+   <text:p text:style-name="P5">Evidemment, le fait d&apos;avoir tenu compte de ces éléments populaires dans la liturgie, à l&apos;époque où ses formes s&apos;élaboraient encore, devait susciter certaines tensions, lorsque ces formes étaient transportées en d&apos;autres lieux et chez d&apos;autres peuples. On ne pouvait pas recréer sans cesse la liturgie; elle devait être conservée et continuée au moins dans sa substance. Si elle demandait une accommodation, elle devait être aussi, dans la mesure du possible, pieusement maintenue et fidèlement transmise. Car la liturgie est Parole sacrée; elle veut éviter tout changement brusqué pour participer en quelque sorte à la sainte quiétude de Dieu et procurer ainsi aux fidèles une participation à la paix de Dieu.</text:p>
+   <text:p text:style-name="P5">Mais dans quelle mesure fallait-il, en transportant les formes liturgiques d&apos;un pays à un autre, s&apos;adapter, ou maintenir la tradition ? De quel poids la culture populaire et les besoins concrets devaient-ils peser sur la décision ? Dans chaque cas, selon les circonstances des temps, on pouvait envisager des solutions différentes.</text:p>
+   <text:p text:style-name="P5">En ce qui concerne un des éléments des célébrations, la prédication, l&apos;Eglise a toujours tenu compte des diversités nationales et des besoins des fidèles rassemblés hic et nunc, et l&apos;Eglise a lutté pour ce droit, même s&apos;il s&apos;agissait de minorités ou de groupes restreints. Et lorsque, dans des situations pénibles, la prédication et la catéchèse ne pou* vaient plus s&apos;épanouir librement, comme ce fut le cas parmi certains peuples d&apos;Orient durant des siècles, l&apos;Eglise est passée aux langues nationales, sinon eh totalité, au moins dans les parties du culte qui touchaient davantage les fidèles. Au moins pour les lectures et pour les litanies que le diacre devait alterner avec le peuple, elle s&apos;est servie des langues nouvelles, en particulier de l&apos;arabe.</text:p>
+   <text:p text:style-name="P5"><text:soft-page-break/>En d&apos;autres circonstances, comme à notre époque par exemple, l&apos;usage des langues populaires a été concédé au moins pour donner les sacrements, et pour certaines fonctions du Rituel. Les rites du mariage, les prières des funérailles devraient se faire de sorte que les participants puissent, par la parole aussi, comprendre le sens de ce qui se passe à la lumière des grandes vérités, et s&apos;élever à Dieu dans une prière commune. Et même à la célébration dominicale, du moins lorsqu&apos;elle adopte le rite de la messe basse, un vaste champ reste ouvert pour la prière et le chant communs en liaison avec les formes de la liturgie.</text:p>
+   <text:h text:style-name="P2" text:outline-level="1">II</text:h>
+   <text:p text:style-name="P5">La liturgie voulait de tout temps rassembler les fidèles, afin qu&apos;ils se présentent devant Dieu en tant qu&apos;Eglise et Peuple de Dieu. Mais elle voulait les conduire plus loin, elle voulait guider les fidèles vers un <text:span text:style-name="T5">christianisme conscient</text:span>.</text:p>
+   <text:p text:style-name="P5">Au cours de l&apos;histoire de la liturgie s&apos;est développée une abondance de formes, surtout de formes de prière, dont un modeste choix seulement nous est resté familier. L&apos;Eglise ne s&apos;est jamais contentée d&apos;accomplir strictement les actions sacramentelles que lui avaient imposées son fondateur. Elle ne s&apos;est pas contentée de verser l&apos;eau sur la tête du catéchumène : dès le IIIe siècle elle bénit cette eau au cours d&apos;une prière solennelle, elle fait accéder le catéchumène par étapes au sacrement de la régénération. Elle ne s&apos;est pas non plus contentée de transmettre les pouvoirs sacerdotaux par une simple imposition des mains — très tôt elle a entouré cette action de rites et de prières significatives. De même encore, elle ne se contente pas de prononcer les paroles sacrées sur le pain et le vin, — elle nous conduit respectueusement par échelons jusqu&apos;au sommet de l&apos;action sacramentelle.</text:p>
+   <text:p text:style-name="P5">Quel est le sens de cette prodigalité de formes, et surtout de paroles ? Pourquoi cette structuration précise des prières, cette sorte de monnayage des thèmes de la foi au cours du cycle annuel ? Dans son encyclique Mediator Dei Pie XII a mis en parallèle avec la maxime bien connue : Lex orandi est lex credendi la réciproque : Lex credendi est lex orandi. Il n&apos;y a pas à en douter : de tout temps l&apos;Egli-se a voulu, conjointement avec ses rites sacrés, exprimer sa conscience de la foi par la prière, — et cela en toute simplicité devant Dieu, mais en même temps devant le peuple fidèle. Chaque fois que l&apos;Eglise est rassemblée pour prier, le monde spirituel qui enveloppe tous les rachetés doit devenir une réalité vivante. Les fidèles doivent être amenés à un christianisme conscient, et maintenus dans ce christianisme conscient. De même que la mosaïque de l&apos;abside des basiliques romaines fait briller devant ceux qui entrent la Jérusalem céleste à laquelle nous sommes appelés, et le Christ glorieux qui est notre espérance, et les fleuves du paradis, fleuves de vie qui découlent de la Croix du Seigneur, de même la parole de la prière et de la lecture devait susciter à neuf dans les consciences les grandes vérités de foi.</text:p>
+   <text:p text:style-name="P5">Non sans raison, on a fait remarquer que les formules les plus anciennes de la prière principale de la messe, de la prière eucharistique, sont intimement apparentées aux formules du symbole de foi. En effet, la préface portait parfois un nom qui convient aussi bien à un symbole de foi, ainsi lorsqu&apos;elle est appelée praedicatio, ou bien tout court confession, Èo¡..tOÀÓytl(jlC;. Et, dans cette confession de foi priée, on insiste toujours, en particulier dans les formules les plus anciennes, précisément sur les vérités de foi qui sont fondamentales pour le chrétien. La prière liturgique était tout ensemble le catéchisme de la doctrine <text:soft-page-break/>chrétienne; non pas un catéchisme fait d&apos;exposés détaillés, de distinctions subtiles et d&apos;énumérations multiples, mais un catéchisme qui résume d&apos;une manière impressionnante les thèmes essentiels de la foi et surtout les vérités qui motivent la joie chrétienne.</text:p>
+   <text:p text:style-name="P5">Dès les origines, la prière principale de la messe a le caractère d&apos;une action de grâces. Nous y sommes invités par l&apos;acclamation : Gratias agamus! Car depuis que Dieu « nous a arrachés aux puissances des ténèbres et nous a transférés dans le royaume de son Fils bien-aimé » (Col.<text:span text:style-name="T6">1</text:span>, 13 s.), nous ne saurions faire autre chose ni donner d&apos;autre réponse à Dieu que le remercier, semper et ubique gratias agere, parce que l&apos;œuvre de Dieu en notre faveur n&apos;a été d&apos;un bout à l&apos;autre que grâce gratuite et surabondante. N&apos;est-il. pas d&apos;une grande importance que celte connaissance engendre la disposition fondamentale de l&apos;âme croyante? Le christianisme n&apos;est pas peine et obligation gênante, il est grâce suprême. Et la liturgie conduit à ce christianisme conscient.</text:p>
+   <text:p text:style-name="P5">Dans les liturgies les plus anciennes, et de même dans la liturgie romaine actuelle, le style de la prière a ceci de particulier que presque chaque prière, oraison ou préface, et surtout la finale de la prière eucharistique, est rédigée de sorte que l&apos;élévation vers Dieu se fait per Christum - Dominum nostrum, per Dominum nostrum Jesum Christum, per ipsum et cum ipso. Cela aussi fait partie de la tradition liturgique la plus ancienne. A force d&apos;entendre sans cesse ces paroles et d&apos;y répondre par leur Amen, les fidèles étaient sans cesse rendus attentifs au fait que notre démarche confiante vers Dieu n&apos;est possible que parce que Lui, le Christ, nous a devancés, parce qu&apos;il est notre Chef et notre Seigneur, le Ressuscité qui est passé par la mort et nous a acquis la vie. La répétition incessante de cette formule suffisait à mettre en évidence que le christianisme n&apos;est pas un assemblage quelconque de doctrines et de commandements, mais qu&apos;il est la Bonne Nouvelle du Christ qui veut nous ramener vers le Père céleste, qu&apos;il est essentiellement union au Christ et vie avec Lui.</text:p>
+   <text:p text:style-name="P5">Mais ce thème de l&apos;unique Sauveur a été dès les origines explicité et développé, et cela par les lectures, dont la dernière, l&apos;Evangile, était depuis l&apos;antiquité chrétienne celle où le Christ lui-même parle et agit. C&apos;est pourquoi nous acclamons encore aujourd&apos;hui le Seigneur comme étant présent, par la salutation : Gloria tibi, Domine. Ces lectures étaient destinées aux fidèles et leur étaient proclamées depuis l&apos;ambon; souvent elles étaient précédées d&apos;un appel spécial à l&apos;attention : 7rpôcJxco|U8v, c&apos;est-à-dire : Faites attention! Encore cette parole est-elle davantage répandue et expliquée dans la série des grandes fêtes que l&apos;Eglise célèbre depuis les anciens âges. Ces grandes fêtes au cours de l&apos;année liturgique sont toutes des fêtes du Seigneur : fête de sa naissance et de son Epiphanie, mémoire de sa Passion rédemptrice et de son triomphe pascal, de son Ascension et de l&apos;effusion de l&apos;Esprit, et encore fêtes de sa Mère, de ses apôtres et de ses messagers de la foi. Et enfin, de semaine en semaine, son jour mémorial : le dimanche, Dominica, jour du Dominus noster, ou comme il s&apos;appelle en grec : xupiaxr), jour de notre Kyrios, parce que jour de l&apos;accomplissement de son œuvre rédemptrice par sa victoire pascale.</text:p>
+   <text:p text:style-name="P5">Quand ainsi, semaine après semaine, et année après année, le Seigneur et son œuvre apparaissaient au regard spirituel des fidèles, ceux-ci devaient bien comprendre ce que signifie : être chrétien. Tant que les fidèles comprenaient ce langage et en étaient pénétrés, ils ne pouvaient s&apos;égarer, même si pour le reste leurs connaissances en matière de foi étaient modestes, même si les distinctions subtiles des théologiens ne leur étaient pas familières. C&apos;est pourquoi nous pouvons <text:soft-page-break/>comprendre que, durant des siècles, un ministère pastoral était possible où l&apos;on ne connaissait pas de catéchèse méthodique, où l&apos;on prêchait peu, où l&apos;évêque était presque seul à prêcher, où l&apos;instruction multiforme par le livre n&apos;était pas possible, et où pourtant vivait un christianisme florissant — et cela parce que les grandes vérités chrétiennes étaient maintenues vivantes par la liturgie.</text:p>
+   <text:p text:style-name="P5">En proposant ainsi aux fidèles infatigablement et d&apos;une manière vivante l&apos;image et l&apos;œuvre du Seigneur, l&apos;Eglise au fond n&apos;a pas fait autre chose que ce que le Seigneur lui avait ordonné dans ses dernières heures en disant : Faites ceci en mémoire de moi. Certes, cette parole contenait d&apos;abord l&apos;ordre de célébrer le mystère sacramentel; mais elle impliquait également un avertissement à l&apos;adresse de son Eglise : qu&apos;elle accomplisse cette célébration de sorte que les fidèles ne perdent jamais la mémoire du Seigneur et n&apos;oublient pas ce qu&apos;il signifie pour eux, à savoir qu&apos;il est pour eux la Voie, la Vérité et la Vie. C&apos;est ainsi que la liturgie est un acheminement vers un christianisme conscient.</text:p>
+   <text:p text:style-name="P5">Mais il faut encore une fois poser la question : pourquoi cette richesse de formes de la liturgie? Pourquoi l&apos;Eglise ne s&apos;est-elle pas contentée de formes didactiques, de lectures et de prédications, ou de formes poétiques, d&apos;hymnes et de chants, pour maintenir vivant le souvenir du Seigneur dans l&apos;esprit des fidèles ? Pourquoi cette variété et cette prédominance de la prière, de la prière à haute voix, — alors que la prière passe pour être l&apos;affaire du cœur et de la dévotion silencieuse de l&apos;esprit ? Ou bien, pourquoi au moins la messe, ce mystère très sacré, n&apos;at-elle pas été célébrée dès les origines dans le silence, comme une suite de prières réservées au prêtre tandis que les fidèles ne suivraient que de loin avec un profond respect ? De fait, huit siècles ont passé jusqu&apos;au jour où du moins sa partie centrale, le canon, sous l&apos;influence de circonstances particulières à l&apos;Eglise franque, fut comme cachée sous un voile de silence. Encore une fois voici la réponse : la liturgie voulait guider les fidèles, les initier en somme à la prière et à l&apos;offrande chrétiennes.</text:p>
+   <text:p text:style-name="P5">Partout où se rencontre la foi, il y a aussi la prière, comme réponse spontanée de la créature au Créateur. Mais la prière de l&apos;individu risque toujours de s&apos;enfermer dans les étroits horizons de ses intérêts personnels et de se contenter de la prière de demande. L&apos;Eglise au contraire, dès les origines, a mis au premier plan de sa liturgie la prière de louange, d&apos;action de grâces et d&apos;adoration. Elle a gardé conscience de ce que le Seigneur avait dit à la Samaritaine, auprès du puits de Jacob : « Dieu cherche des adorateurs, des adorateurs tels qu&apos;ils l&apos;adorent en esprit et en vérité. » Où doit-il les trouver sinon dans sa sainte Eglise ? De même que l&apos;oraison dominicale commence par le sanctificetur, de même la prière liturgique de l&apos;Eglise atteint son point culminant dans le triple Sanctus qui jaillit de la grande prière d&apos;action de grâces. Le Sanctus est le chant le .plus ancien de la Liturgie eucharistique, et c&apos;est un chant que de toute évidence, pendant près d&apos;un millénaire, toute la communauté entonnait pour rendre hommage à Dieu una voce avec les anges du ciel. Quelle exaltation devait envahir les fidèles, à savoir qu&apos;ils chantaient dans un chœur aussi grandiose!</text:p>
+   <text:p text:style-name="P5">Déjà dans l&apos;antiquité chrétienne on ne se contentait pas de chanter le Sanctus. Le chant populaire avait sa place, particulièrement à la suite des lectures, surtout après celles de la messe, à l&apos;endroit où nous avons encore aujourd&apos;hui le Graduel et l&apos;Alléluia. Le psalmiste, souvent un jeune lecteur à la voix claire, devait chanter le psaume, alors que la foule chantait après chaque verset le refrain, soit l&apos;Alléluia, soit une acclamation, soit le verset du psaume qui avait été indiqué au début. Saint Augustin se montre vrai pasteur et maître de pastorale liturgique, lorsque dans ses Enarrationes in Psalmos il souligne avec une prédilection visible et une joie <text:soft-page-break/>pastorale très pure les versets que tout le monde venait de chanter ensemble. « Nous avons entendu le psaume, dit-il, et nous nous sommes édifiés mutuellement en chantant d&apos;un seul cœur et d&apos;une seule voix : « Venez, adorons le Seigneur! » (Serm. 176, 1). De tels versets devaient se graver de façon inaltérable dans le cœur des fidèles; ils constituaient un trésor précieux de prière et de sainte joie.La liturgie voulait conduire les chrétiens à la prière chrétienne. La prière de demande fait aussi partie de la prière chrétienne. En diverses occasions, elle prend même une large place dans la liturgie, à tel point que certains jours en ont pris la dénomination : Rogationes, Litania. Mais aussi à l&apos;intérieur de la messe dominicale habituelle depuis le temps du martyr Justin et durant des siècles, et la coutume persiste aujourd &apos;hui encore en Orient, les lectures étaient suivies de prières : prière pour les intentions générales de la chrétienté, pour tous les états et pour les fidèles eux-mêmes, prières normalement alternées, et conclues par le prêtre dans une collecte.</text:p>
+   <text:p text:style-name="P5">Dans d&apos;autres cas, et cela a été l&apos;ancienne coutume de la liturgie romaine — on invitait simplement à prier; un court moment de silence permettait ensuite la prière personnelle. Pour souligner l&apos;intensité de cette prière, on demandait aux fidèles de s&apos;agenouiller : Flectamus genua. Chacun devait faire écho, dans le silence de son cœur, aux paroles de la lecture qu&apos;on venait d&apos;écouter, ou devait recommander à Dieu les intentions spéciales qui lui tenaient à cœur, ou celles qui étaient formulées dans l&apos;invitation à la prière. On ne devait se relever qu&apos;à l&apos;appel : Levate, et lorsque le prêtre commençait son oraisoncollecte. Cette forme de prière nous a été rendue par notre Saint-Père dans la réforme de la liturgie pascale. Voilà comment la liturgie conduit à la prière chrétienne.</text:p>
+   <text:p text:style-name="P5">Prière chrétienne, dis-je. Bien que la liturgie connaisse le culte des saints — les plus anciens sacramentaires de la liturgie romaine contiennent déjà un grand nombre de fêtes des martyrs — elle ne permet jamais que la prière se décompose, qu&apos;on confonde Dieu avec les amis de Dieu, qu&apos;on parle comme si l&apos;auxiliaire céleste pouvait nous aider par sa propre puissance, ou qu&apos;on perde de vue celui qui, selon saint Paul, est le seul médiateur entre Dieu et les hommes. Bien que la liturgie connaisse l&apos;Ora pro nobis, et qu&apos;on trouve même dans les hymnes certains éloges assez audacieux de la puissance des saints, ses invocations débouchent toujours dans la grande ligne : elle se prosterne devant la majesté divine et espère être exaucée intercedentibus Sanctis tuis, Per Dominum Jesum Christum. Il faut noter encore le fait instructif que pendant plusieurs siècles on a observé la prescription de se tourner en priant vers l&apos;orient, en direction du soleil levant — même de nos jours la plupart de nos églises sont encore orientées — parce que dans le soleil levant on voyait l&apos;image de celui qui est la lumière du monde et notre avocat auprès du Père. Ainsi même l&apos;attitude du corps montrait par qui on espérait être exaucé.</text:p>
+   <text:p text:style-name="P5">Conduire vers la manière chrétienne de prier ? Sans jamais faire violence à la liberté des fidèles et les empê-- cher de prier selon leur cœur, l&apos;Eglise, rien qu&apos;en leur faisant entendre sa prière à elle et en les faisant y répondre par leur Amen, devait les rendre conscients de ce que sont nos rapports avec Dieu; ainsi devait toujours être présent à leurs regards le cosmos chrétien; ils devaient apprendre la juste attitude qui convient à la prière chrétienne.</text:p>
+   <text:p text:style-name="P5">Conduire vers la prière chrétienne. La réalité la plus importante dont l&apos;Eglise avait à instruire les fidèles était et reste le sacrifice de la Nouvelle Alliance. C&apos;est chose belle et grande que depuis les origines lointaines de l&apos;Eglise, en tout lieu où habitent des chrétiens catholiques, de dimanche en dimanche des milliers et des <text:soft-page-break/>millions se rassemblent dans les églises pour assister au Saint Sacrifice. Sans doute y en a-t-il toujours eu beaucoup parmi eux qui se contentaient par leur présence de remplir un devoir. Peut-être a-t-on aussi pratiqué une pastorale qui n&apos;attendait et n&apos;exigeait pas davantage que de voir les fidèles rester avec le respect convenable jusqu&apos;à la fin de l&apos;action sacrée. Mais si nous interrogeons la liturgie et si nous l&apos;observons là où ses formes étaient restées vivantes, nous découvrons qu&apos;elle visait bien plus haut. Elle voulait réunir les fidèles comme des circumstantes r- non pas évidemment au sens spatial, mais au sens spirituel du mot — autour de l&apos;autel. Elle leur faisait porter le pain, le vin et d&apos;autres offrandes à l&apos;autel. Ils devaient répondre aux appels du prêtre, et dans sa prière ils sont désignés comme ceux qui offrent le sacrifice : Nos servi tui et plebs tua sancta et ils sont également invités à répondre par leur Amen à cette prière sacrificielle.</text:p>
+   <text:p text:style-name="P5">Partout où les fidèles se prêtaient volontiers aux suggestions de la liturgie, ils devaient se rendre compte qu&apos;ils n&apos;étaient pas que des « étrangers et voyageurs » ou bien de simples spectateurs de ce que le Christ opérait à l&apos;autel par le prêtre, sous le voile de rites et de prières mystérieuses, et que là ce n&apos;était pas seulement le sacrifice du Christ qui se déroulait devant eux, mais le sacrifice que le Christ voulait célébrer avec son Eglise, comme le grand prêtre à la tête de son peuple sacerdotal, pour inclure et assumer tous les fidèles avec leurs peines et leurs soucis, leurs luttes et leurs souffrances, afin d&apos;amener le monde par ce sacrifice vers le Père céleste — jusqu&apos;à l&apos;avènement du jour où Dieu sera tout en tous (i Cor., 15, 28).</text:p>
+   <text:p text:style-name="P5">Les fidèles qui se sont laissés guider de cette manière par l&apos;Eglise devaient être remplis d&apos;une sainte fierté, de la joie d&apos;être dès à présent intégrés dans le Royaume de Dieu.</text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P5">Cette conviction devait certainement fortifier leur foi, mieux que des flots de paroles d&apos;une sagesse rationnelle : cette conviction, elle se traduisait dans une joie sainte, pressentiment d&apos;une possession céleste.</text:p>
+   <text:p text:style-name="P5"/>
+   <text:p text:style-name="P5">C&apos;est sans conteste un succès décisif de la pastorale ecclésiale lorsqu&apos;elle sauve les âmes, lorsqu&apos;elle réussit à guider les hommes de manière que, du moins à l&apos;heure de leur mort, ils aient trouvé le bon chemin et réalisé ainsi leur destinée. Mais c&apos;est, à n&apos;en pas douter, une tâche bien plus grande et plus digne de la vocation chrétienne, c&apos;est même la véritable mission de l&apos;Eglise, de conduire le peuple chrétien de sorte que sur terre déjà il se rassemble dans la sainte joie pour glorifier Dieu, pour « proclamer », selon la belle définition pétrinienne de la vocation de l&apos;Eglise, « les hauts faits de Celui qui nous a appelés des ténèbres à son admirable lumière » (i Petr., 2, 9). Or, c&apos;est précisément à cela que la liturgie a tendu de tous temps.</text:p>
+   <text:p text:style-name="P5">La liturgie, célébrée d&apos;une manière vivante, a été durant des siècles la principale forme de la pastorale. Cela se vérifie d&apos;abord pour les premiers temps, ceux où la liturgie a été créée dans ses formes essentielles. Par le malheur des circonstances cependant, il est arrivé qu&apos;au bas moyen âge de nombreuses églises collégiales et monacales célèbrent sans doute la liturgie avec beaucoup de zèle et d&apos;éclat, et même l&apos;enrichissent de formes nouvelles : mais au même moment s&apos;interposait entre la liturgie et le peuple comme un mur de brume, à travers lequel les fidèles ne pouvaient plus voir que d&apos;une manière confuse ce qui se passait à l&apos;autel. Toutefois, même là, nous constatons que le souci pastoral a su provoquer un développement et une adaptation de la liturgie. En un temps où la langue liturgique était devenue étrangère à la masse du peuple, on s&apos;est attaché à y <text:soft-page-break/>suppléer par des formes dramatiques. Durant tout le moyen âge, on n&apos;a connu comme célébration dominicale du peuple que la forme solennelle de la messe chantée, si possible avec les ministres sacrés; ce fait à lui seul stimulait déjà, et par bien des côtés, la participation au moins sensible au culte. Il y a mieux : la solennité du culte fut encore renforcée. Désormais les luminaires et l&apos;encens ne sont plus seulement portés à la procession de l&apos;entrée; l&apos;autel lui-même est encensé par deux fois selon un cérémonial déterminé, et on va jusqu&apos;à encenser le chœur et le peuple. D&apos;autre part, les luminaires sont placés -sur l&apos;autel; le mouvement de l&apos;évangile prend la forme d&apos;une procession triomphale au Christ. Le cierge du Sanctus annonce l&apos;approche du mystère. Enfin, l&apos;élévation des saintes espèces à la consécration donne un sommet visible à l&apos;ensemble du culte.</text:p>
+   <text:p text:style-name="P5">Néanmoins le mur de brume demeurait. La parole de la liturgie, à laquelle revient d&apos;abord le rôle d&apos;élever les âmes vers Dieu, est devenue inaccessible au peuple. Des prières et des chants dont se compose l&apos;action sacrée, seul le son touche les oreilles. La liturgie devient une suite de paroles et de cérémonies mystérieuses dont le déroulement est fixé par des règles précises, qu&apos;on s&apos;applique à suivre avec un saint respect, mais qui finalement se figent elles aussi. Peut-être cette rigidité était-elle nécessaire pour protéger le sacrifice de l&apos;Eglise contre l&apos;hérésie; peut-être était-elle nécessaire aussi, afin de conserver l&apos;héritage sacré pour des époques ultérieures, pour des temps de plus grande détresse et de décisions plus graves, comme nous les vivons aujourd &apos;hui, pour des temps où les fidèles éprouveraient de nouveau le besoin de trouver dans la liturgie le guide dont les chrétiens des premiers siècles ont bénéficié.</text:p>
+   <text:p text:style-name="P5">Aujourd&apos;hui la rigidité commence à diminuer, des formes qui semblaient pétrifiées redeviennent vivantes. L&apos;Eglise a le sentiment de n&apos;avoir plus besoin de la protection que lui valait naguère cette rigidité. De nouveau, les préoccupations de la pastorale ont, comme jadis, le dernier mot; je veux dire les préoccupations de cette pastorale qui a créé les formes de la liturgie au temps de l&apos;Eglise naissante.</text:p>
+   <text:p text:style-name="P5">Quel n&apos;a pas été l&apos;étonnement dont furent saisis les fidèles, de nos jours et en bien des endroits, lorsque dans la Semaine sainte et la Nuit pascale, ils ont compris d&apos;un coup le déroulement majestueux de la liturgie et que spontanément ils ont réalisé : c&apos;est là notre liturgie.</text:p>
+   <text:p text:style-name="P5">La brume commence à se dissiper, un jour lumineux se lève. L&apos;Eglise dans le recueillement découvre des forces nouvelles. Elle marche avec assurance vers un avenir où elle sera de nouveau le Peuple orant de Dieu</text:p>
+  </office:text>
+ </office:body>
+</office:document>
