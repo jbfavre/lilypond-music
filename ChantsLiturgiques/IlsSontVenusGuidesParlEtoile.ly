@@ -24,13 +24,13 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 stanceRhythms = {
-  \key d \minor \time 3/4
-  \partial 4. s4. s2.*3 \break
+  \key g \minor \time 3/4
+  \partial 4. s4. s2. \time 2/4  s2 s2 \time 3/4 s2.\break
   \key g \major s2.*2 \time 2/4 s2*4 \bar "|."  \break
 }
 stanceMusic = \relative c' {
   \markCustom "Stance"
-  \partial 4. d8 g a bf4 c8 bf a g a4 \autoBeamOff a8 \autoBeamOn a8 bf c d4 c8 bf a f
+  \partial 4. d8 g a bf4 c8 bf a g \time 2/4 a4 a4 r8 a8 bf c \time 3/4 d4 c8 bf a f
   d4 r8 d e fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g g a b a2 \fermata
   \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
   \override Staff.KeyCancellation.break-visibility = #all-invisible
@@ -46,32 +46,48 @@ stanceLyrics = \lyricmode {
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c' {
+antiphonRhythms = {
   \silence \stanceMusic
   \markCustom "Refrain"
   \key g \major \time 2/4
-  r8 d8 g a b4 c8 b a4 \autoBeamOff a8 fs8 \autoBeamOn g a b c d d b g e4 g8 fs g2 \fermata
+  s2*2 s4. \breathe s8 s2*5
   \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
   \override Staff.KeyCancellation.break-visibility = #all-invisible
   \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \bar "|." \break
+}
+sopranoAntiphonMusic = \relative c' {
+  \silence \stanceMusic
+  r8 d8 g a b4 c8 b a4 \autoBeamOff fs8
+  fs8 \autoBeamOn g a b c d c b g e4 g8 fs g2~ g2 \fermata
   }
 
 altoAntiphonMusic = \relative c' {
   \silence \stanceMusic \key g \major 
-  r8 d8 s4 s2 s2 s2 s2 s2 s2
+  r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
+  ds8 \autoBeamOn e fs g g a fs fs e c4 d8 d d2 ~d2 \fermata
   }
 
-tenorAntiphonMusic =  \relative c' {
+tenorAntiphonMusic =  \relative c {
   \silence \stanceMusic \key g \major
-  r8 d8 s4 s2 s2 s2 s2 s2 s2
+  r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
+  b8 \autoBeamOn b d d e d a b b a4 c8 c c4 b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
   \silence \stanceMusic \key g \major
-  r8 d8 s4. s2 s2 s2 s2 s2 s2
+  r8 d8 b a g (g') e g d4 \autoBeamOff  d8
+  b8 \autoBeamOn e d g e fs d ds e a,4 d8 d g,2~ g2 \fermata
   }
 
+antiphonFiguredBass = \figuremode {
+  \silence \stanceMusic
+  s8 <5>8 <6> <6\! 4> <5>4 <6>8 <5> <5\!>4 <5>8 <_+>8 <5> <5\!> <5\!> <6 4> <6> <7\+> <6+> <5> <5\!>4 <7\+>8 <7\+> <5>2 <5>
+  }
+antiphonFiguredHarmony = \figuremode {
+  \silence \stanceMusic
+  s8 <V>8 <I> <V> <I>4 <IV>8 <I> <V>4. <III>8 <VI> <V> <I> <IV> <V>4 <III>8 <VI> <II>4 <V> <I>1
+  }
 antiphonLyrics = \lyricmode {
   Nous a -- vons vu son é -- toi -- le, et nous som -- mes ve -- nus nous pro -- ster -- ner de -- vant Lui.
   }
