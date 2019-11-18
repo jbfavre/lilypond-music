@@ -1,30 +1,33 @@
-\new ChoirStaff = "Antienne4Voix" <<
-    \new Staff <<
+\new ChoirStaff = "Antophon4Voices" <<
+    \override ChoirStaff.VerticalAxisGroup.remove-first = ##t
+    \new Staff = "AntiphonSopranoStaff" <<
       \set Staff.instrumentName = "Soprano"
-      \override Staff.VerticalAxisGroup.remove-first = ##t
       \clef "treble"
-      \new Voice = "Sop" { \global \sopranoAntiphonMusic}
-      \new Lyrics \lyricsto "Sop" { \sopranoAntiphonLyrics }
+       \new Voice = "antiphonRhythms" \antiphonRhythms
+       \new Voice = "antiphonSoprano" { \global \sopranoAntiphonMusic}
+       \new Lyrics \lyricsto "antiphonSoprano" { \sopranoAntiphonLyrics }
     >>
-    \new Staff <<
+    \new Staff = "AntiphonAltoStaff" <<
       \set Staff.instrumentName = "Alto"
-      \override Staff.VerticalAxisGroup.remove-first = ##t
       \clef "treble" 
-      \new Voice = "Alto" { \global \altoAntiphonMusic }
-      \new Lyrics \lyricsto "Alto" { \altoAntiphonLyrics }
+       \new Voice = "antiphonRhythms" \antiphonRhythms
+      \new Voice = "antiphonAlto" { \global \altoAntiphonMusic }
+      \new Lyrics \lyricsto "antiphonAlto" { \altoAntiphonLyrics }
     >>
-    \new Staff <<
+    \new Staff = "AntiphonTenorStaff" <<
       \set Staff.instrumentName = "Ténor"
-      \override Staff.VerticalAxisGroup.remove-first = ##t
       \clef "treble_8" 
-      \new Voice = "Ten" { \global \tenorAntiphonMusic }
-      \new Lyrics \lyricsto "Ten" { \tenorAntiphonLyrics }
+       \new Voice = "antiphonRhythms" \antiphonRhythms
+      \new Voice = "antiphonTenor" { \global \tenorAntiphonMusic }
+      \new Lyrics \lyricsto "antiphonTenor" { \tenorAntiphonLyrics }
     >>
-    \new Staff <<
+    \context Staff = "AntiphonBassStaff" \new FiguredBass { \bassFigureExtendersOn \antiphonFiguredBass }
+    \new Staff  = "AntiphonBassStaff" <<
       \set Staff.instrumentName = "Basse"
-      \override Staff.VerticalAxisGroup.remove-first = ##t
       \clef "bass" 
-      \new Voice = "Bass" { \global \bassAntiphonMusic }
-      \new Lyrics \lyricsto "Bass" { \bassAntiphonLyrics }
+       \new Voice = "antiphonRhythms" \antiphonRhythms
+      \new Voice = "AntiphonBass" { \global \bassAntiphonMusic }
+      \new Lyrics \lyricsto "AntiphonBass" { \bassAntiphonLyrics }
     >>
+    \context Staff = "AntiphonBassStaff" \new FiguredBass {  \bassFigureStaffAlignmentDown \antiphonFiguredHarmony }
   >>
