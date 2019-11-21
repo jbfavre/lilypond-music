@@ -59,30 +59,30 @@ antiphonRhythms = {
 sopranoAntiphonMusic = \relative c' {
   \silence \stanceMusic
   r8 d8 g a b4 c8 b a4 \autoBeamOff fs8
-  fs8 \autoBeamOn g a b c d c b g e4 g8 fs g2~ g2 \fermata
+  fs8 \autoBeamOn g a b c d c b g a4 g8 fs g2~ g2 \fermata
   }
 
 altoAntiphonMusic = \relative c' {
   \silence \stanceMusic \key g \major 
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
-  ds8 \autoBeamOn e fs g g a fs fs e c4 d8 d d2 ~d2 \fermata
+  ds8 \autoBeamOn e fs g g a fs fs e e4 d8 d d2 ~d2 \fermata
   }
 
 tenorAntiphonMusic =  \relative c {
   \silence \stanceMusic \key g \major
   r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
-  b8 \autoBeamOn b d d e d a b b a4 c8 c c4 b8 a b2 \fermata
+  b8 \autoBeamOn b d d e d (a) b4 a c c b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
   \silence \stanceMusic \key g \major
   r8 d8 b a g (g') e g d4 \autoBeamOff  d8
-  b8 \autoBeamOn e d g e fs d ds e a,4 d8 d g,2~ g2 \fermata
+  b8 \autoBeamOn e d g e fs d ds e c4 d8 d g,2~ g2 \fermata
   }
 
 antiphonFiguredBass = \figuremode {
   \silence \stanceMusic
-  s8 <5>8 <6> <6\! 4> <5>4 <6>8 <5> <5\!>4 <5>8 <_+>8 <5> <5\!> <5\!> <6 4> <6> <7\+> <6+> <5> <5\!>4 <7\+>8 <7\+> <5>2 <5>
+  s8 <5>8 <6> <6\! 4> <5>4 <6>8 <5> <5\!>4 <5>8 <_+>8 <5> <5\!> <5\!> <6> <6\!> <7\+> <6+> <5> <6>4 <7\+>8 <7\+> <5>2 <5>
   }
 antiphonFiguredHarmony = \figuremode {
   \silence \stanceMusic
