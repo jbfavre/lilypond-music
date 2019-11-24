@@ -57,34 +57,6 @@
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 5.6"
-    opus = "version lente"
-  }
-  \new Staff
-  <<
-    \clef treble \time 5/8 \key g \minor
-    \relative c'' { g4.~ g8 r8
-                  }
-  >>
-}
-\score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = "exercice 5.7"
-    opus = "version rapide"
-  }
-  \new Staff
-  <<
-    \clef treble \time 5/8 \key g \minor
-    \relative c'' { g4.~ g8 r8
-                  }
-  >>
-}
-\score {
-  \header {
-    title = ##f
-    subtitle = ##f
     piece = "exercice 5.8"
   }
   \new Staff
@@ -109,6 +81,67 @@
                     g4.~ g8 r8
                   }
   >>
+}
+\pageBreak
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 5.6"
+    opus = "modèle"
+  }
+  \new Staff
+  <<
+    \clef treble \time 4/4 \key c \major
+    \relative c'' { a4 c b e d b bf a f g e fs gs ds d d' cs a c b f! e g! e f e d f a d, g bf d, a' c a e' }
+  >>
+  \layout { \context { \Score \omit Score.BarLine \omit Score.TimeSignature \omit Score.Stem }}
+}
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 5.6"
+    opus = "version lente"
+  }
+  \new Staff
+  <<
+    \clef treble \time 4/4 \key c \major
+    \relative c'' { \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1}
+    }
+  >>
+  \layout { \context { \Score \omit BarNumber \omit Score.TimeSignature \omit Score.Stem }}
+}
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 5.7"
+    opus = "version rapide"
+  }
+  \new Staff
+  <<
+    \clef treble \time 4/4 \key c \major
+    \relative c'' { \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1} \break
+                    \repeat unfold 8 {s1}
+    }
+  >>
+  \layout { \context { \Score \omit BarNumber \omit Score.TimeSignature \omit Score.Stem }}
 }
 \layout {
   \context {
