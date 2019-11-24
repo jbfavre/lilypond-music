@@ -9,25 +9,25 @@
     >>
     \new Staff = "AntiphonAltoStaff" <<
       \set Staff.instrumentName = "Alto"
-      \clef "treble" 
+      \clef "treble"
        \new Voice = "antiphonRhythms" \antiphonRhythms
       \new Voice = "antiphonAlto" { \global \altoAntiphonMusic }
       \new Lyrics \lyricsto "antiphonAlto" { \altoAntiphonLyrics }
     >>
     \new Staff = "AntiphonTenorStaff" <<
       \set Staff.instrumentName = "Ténor"
-      \clef "treble_8" 
+      \clef "treble_8"
        \new Voice = "antiphonRhythms" \antiphonRhythms
       \new Voice = "antiphonTenor" { \global \tenorAntiphonMusic }
       \new Lyrics \lyricsto "antiphonTenor" { \tenorAntiphonLyrics }
     >>
-    \context Staff = "AntiphonBassStaff" \new FiguredBass { \bassFigureExtendersOn \antiphonFiguredBass }
     \new Staff  = "AntiphonBassStaff" <<
       \set Staff.instrumentName = "Basse"
-      \clef "bass" 
+      \clef "bass"
        \new Voice = "antiphonRhythms" \antiphonRhythms
       \new Voice = "AntiphonBass" { \global \bassAntiphonMusic }
       \new Lyrics \lyricsto "AntiphonBass" { \bassAntiphonLyrics }
     >>
     \context Staff = "AntiphonBassStaff" \new FiguredBass {  \bassFigureStaffAlignmentDown \antiphonFiguredHarmony }
+    \context Staff = "AntiphonBassStaff" \new FiguredBass { \bassFigureExtendersOn \antiphonFiguredBass }
   >>
