@@ -15,9 +15,7 @@ poet = \markup { \column { "Jean Baptiste Favre" "AELF" } }
 composer = "Jean Baptiste Favre"
 dedicace = "Saint Pierre Quiberon, novembre 2019"
 
-global = {
-  
-}
+global = {}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Stance %%%%%%%%%%
@@ -63,7 +61,7 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
-  \silence \stanceMusic \key g \major 
+  \silence \stanceMusic \key g \major
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
   ds8 \autoBeamOn e fs g g a fs fs e e4 d8 d d2 ~d2 \fermata
   }
