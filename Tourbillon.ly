@@ -34,13 +34,13 @@
         \new Voice = "soprano" { \voiceOne
           \repeat volta 2 {
             f8 g af c bf af g af bf af g e \break
-            f8 g af af c df df [f8.] df16 df4 c8 \break
-            df8 b c gf'8. f16 ef8 c a bf f'8. ef16 df8 \break
-            bf8 g af
+            f8 g af af c df f [ef8.] df16 df4 c8 \break
+            b8 c ef gf8. f16 ef8 a, bf df f8. ef16 df8 \break
+            g,8 af c
             }
           \alternative {
-            { ef'8. df16 c8 c8 [b8.] c16 c4. }
-            { c8 af f bf g e <c f>4. \fermata }
+            { ef8. df16 c8 c8 [b8.] c16 c4. }
+            { c8 af f bf g e <c e>4. <c f>4. \fermata }
             }
         }
       }
@@ -61,7 +61,7 @@
               r8 <f bf df> <bf df f>
               r8 <g bf ef> <bf ef g>
               r8 <ef, af c> <af c ef>
-              r8 <e g c> <g bf e>
+              r8 <e g c> <g bf c>
               r8 <a c ef> <a c f>
               r8 <f bf df> <bf df f>
               r8 <g bf ef> <bf ef g>
@@ -72,7 +72,7 @@
                 r8 <b d f> <g d' f>
                 <g c>16 df' c bf af g }
               { r8 <af c f> <f af c>
-                <g c>4. a4. \fermata }
+                <g c>4. bf8 g8 bf8 a4. \fermata }
             }
           }
         }
@@ -97,7 +97,7 @@
               }
             \alternative {
               { <5>8 <6> <6 4> <5> <6> <5> <5>4. }
-              { <5>8 <6> <5> <5> <5> <6 4> <5>4.  }
+              { <5>8 <6> <5> <5> <5> <6 4> <5>4. <5>4. }
               }
           }
         }
@@ -110,7 +110,7 @@
               }
             \alternative {
               {  df,\sustainOn g\sustainOn c\sustainOn }
-              { f,\sustainOn c'8 bf g f4. \fermata }
+              { f,\sustainOn c'8 bf g f4. f4.\fermata }
               }
           }
         }
@@ -121,7 +121,7 @@
           }
           \alternative {
             { <VI> <II> <V> }
-            { <I> <V> <I> }
+            { <I> <V> <I> <I> }
           }
           }
         }
