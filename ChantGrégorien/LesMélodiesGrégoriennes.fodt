@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Favre</meta:initial-creator><meta:creation-date>2019-11-26T13:38:20.970373467</meta:creation-date><dc:date>2019-11-27T11:08:43.571587511</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT20H15M39S</meta:editing-duration><meta:editing-cycles>10</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="2" meta:object-count="0" meta:page-count="8" meta:paragraph-count="43" meta:word-count="1810" meta:character-count="11470" meta:non-whitespace-character-count="9692"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Favre</meta:initial-creator><meta:creation-date>2019-11-26T13:38:20.970373467</meta:creation-date><dc:date>2019-11-27T13:55:25.926303882</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT20H49M37S</meta:editing-duration><meta:editing-cycles>16</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="2" meta:object-count="0" meta:page-count="15" meta:paragraph-count="113" meta:word-count="5341" meta:character-count="33547" meta:non-whitespace-character-count="28299"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">138994</config:config-item>
-   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">26351</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">31290</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">339596</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">1778</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">18385</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">21645</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">4674</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">161839</config:config-item>
-     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">138994</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">26349</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">170282</config:config-item>
-     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2501</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">349633</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">1778</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">339596</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">20161</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">361239</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">120</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">172</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
      <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
@@ -72,7 +72,7 @@
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1825127</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2349781</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
@@ -229,9 +229,36 @@
     </style:tab-stops>
    </style:paragraph-properties>
   </style:style>
+  <style:style style:name="Footnote" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-left="0.598cm" fo:margin-right="0cm" fo:text-indent="-0.598cm" style:auto-text-indent="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="Contents_20_Heading" style:display-name="Contents Heading" style:family="paragraph" style:parent-style-name="Heading" style:class="index">
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="16pt" fo:font-weight="bold" style:font-size-asian="16pt" style:font-weight-asian="bold" style:font-size-complex="16pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Contents_20_1" style:display-name="Contents 1" style:family="paragraph" style:parent-style-name="Index" style:class="index">
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false">
+    <style:tab-stops>
+     <style:tab-stop style:position="17cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="Contents_20_2" style:display-name="Contents 2" style:family="paragraph" style:parent-style-name="Index" style:class="index">
+   <style:paragraph-properties fo:margin-left="0.499cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false">
+    <style:tab-stops>
+     <style:tab-stop style:position="16.501cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
   <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
    <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
+  <style:style style:name="Footnote_20_Symbol" style:display-name="Footnote Symbol" style:family="text"/>
+  <style:style style:name="Footnote_20_anchor" style:display-name="Footnote anchor" style:family="text">
+   <style:text-properties style:text-position="super 58%"/>
+  </style:style>
+  <style:style style:name="Index_20_Link" style:display-name="Index Link" style:family="text"/>
   <style:style style:name="Graphics" style:family="graphic">
    <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph"/>
   </style:style>
@@ -287,7 +314,7 @@
     </style:list-level-properties>
    </text:outline-level-style>
   </text:outline-style>
-  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="footnote" text:citation-style-name="Footnote_20_Symbol" text:citation-body-style-name="Footnote_20_anchor" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
   <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
   <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
  </office:styles>
@@ -299,65 +326,96 @@
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Signature">
-   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Contents_20_1">
+   <style:paragraph-properties>
+    <style:tab-stops>
+     <style:tab-stop style:position="17cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:paragraph-rsid="001bd967"/>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Contents_20_2">
+   <style:paragraph-properties>
+    <style:tab-stops>
+     <style:tab-stop style:position="16.501cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Contents_20_Heading">
    <style:paragraph-properties fo:break-before="page"/>
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:paragraph-rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="001bd967"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="00196198"/>
   </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Quotations">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Quotations">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Signature">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Signature">
+   <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="0015d358"/>
   </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00177fa2" officeooo:paragraph-rsid="00177fa2"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00177fa2"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00180c80"/>
   </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00196198"/>
   </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
    <style:text-properties officeooo:rsid="0019dd77" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0019dd77" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="001bd967"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="001bd967" officeooo:paragraph-rsid="001bd967"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Title" style:master-page-name="First_20_Page">
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:rsid="001bd967" officeooo:paragraph-rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00233219"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:break-before="page"/>
+   <style:text-properties officeooo:rsid="001bd967" officeooo:paragraph-rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Title" style:master-page-name="First_20_Page">
    <style:paragraph-properties style:page-number="auto"/>
    <style:text-properties officeooo:paragraph-rsid="001ae764"/>
   </style:style>
@@ -381,25 +439,69 @@
    <style:text-properties fo:font-style="italic" officeooo:rsid="00180c80" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T8" style:family="text">
-   <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
+   <style:text-properties fo:font-style="italic" officeooo:rsid="001bd967" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T9" style:family="text">
-   <style:text-properties officeooo:rsid="00180c80"/>
+   <style:text-properties fo:font-style="italic" officeooo:rsid="00213a7a" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T10" style:family="text">
-   <style:text-properties officeooo:rsid="00196198"/>
+   <style:text-properties fo:font-style="italic" style:text-underline-style="none" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T11" style:family="text">
-   <style:text-properties officeooo:rsid="0019dd77"/>
+   <style:text-properties fo:font-style="italic" style:text-underline-style="none" officeooo:rsid="001bd967" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T12" style:family="text">
-   <style:text-properties officeooo:rsid="001ae764"/>
+   <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
+   <style:text-properties fo:font-style="normal" officeooo:rsid="001bd967" style:font-style-asian="normal" style:font-style-complex="normal"/>
+  </style:style>
+  <style:style style:name="T14" style:family="text">
+   <style:text-properties officeooo:rsid="00180c80"/>
+  </style:style>
+  <style:style style:name="T15" style:family="text">
+   <style:text-properties officeooo:rsid="00196198"/>
+  </style:style>
+  <style:style style:name="T16" style:family="text">
+   <style:text-properties officeooo:rsid="0019dd77"/>
+  </style:style>
+  <style:style style:name="T17" style:family="text">
+   <style:text-properties officeooo:rsid="001ae764"/>
+  </style:style>
+  <style:style style:name="T18" style:family="text">
    <style:text-properties officeooo:rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="T19" style:family="text">
+   <style:text-properties officeooo:rsid="00202224"/>
+  </style:style>
+  <style:style style:name="T20" style:family="text">
+   <style:text-properties officeooo:rsid="00208972"/>
+  </style:style>
+  <style:style style:name="T21" style:family="text">
+   <style:text-properties officeooo:rsid="00213a7a"/>
+  </style:style>
+  <style:style style:name="T22" style:family="text">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T23" style:family="text">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="T24" style:family="text">
+   <style:text-properties style:text-underline-style="none"/>
+  </style:style>
+  <style:style style:name="T25" style:family="text">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="001bd967"/>
+  </style:style>
+  <style:style style:name="T26" style:family="text">
+   <style:text-properties officeooo:rsid="00233219"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
+  </style:style>
+  <style:style style:name="Sect1" style:family="section">
+   <style:section-properties style:editable="false">
+    <style:columns fo:column-count="1" fo:column-gap="0cm"/>
+   </style:section-properties>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
@@ -463,12 +565,12 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P21">Les mélodies grégoriennes</text:p>
+   <text:p text:style-name="P28">Les mélodies grégoriennes</text:p>
    <text:p text:style-name="Subtitle">d’après la tradition</text:p>
-   <text:p text:style-name="P12"/>
-   <text:p text:style-name="P12"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"><draw:frame draw:style-name="fr1" draw:name="Image2" text:anchor-type="paragraph" svg:x="0cm" svg:y="0.407cm" svg:width="17cm" svg:height="12.674cm" draw:z-index="1"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"/>
+   <text:p text:style-name="P16"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"><draw:frame draw:style-name="fr1" draw:name="Image2" text:anchor-type="paragraph" svg:x="0cm" svg:y="0.407cm" svg:width="17cm" svg:height="12.674cm" draw:z-index="1"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAqQAAAH4CAYAAACc4v+4AAAABHNCSVQICAgIfAhkiAAAIABJ
        REFUeJyMvdeXHFeW7vc754TJzMryVSg4wtM1yW625czc6bmjNb3GSXq6o7WutHT1pL9D6r9B
        0sOdvqOlq5npaTabZJPd9AaWIOEBEgRAWMJVoVDepYmIY/RwTkRmAWS3gotwlRkZx+397W9/
@@ -17154,13 +17256,13 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P9"/>
-   <text:p text:style-name="P3">par le Rév. Père Dom Joseph Pothier<text:line-break/>Moine bénédictin de l’abbaye de Solesmes, de la congrégation de France</text:p>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P11">par le Rév. Père Dom Joseph Pothier<text:line-break/>Moine bénédictin de l’abbaye de Solesmes, de la congrégation de France</text:p>
    <text:p text:style-name="Quotations"><text:soft-page-break/></text:p>
    <text:p text:style-name="Quotations"/>
    <text:p text:style-name="Quotations"/>
@@ -17173,26 +17275,26 @@
    <text:p text:style-name="Quotations"/>
    <text:p text:style-name="Quotations"/>
    <text:p text:style-name="Quotations"/>
-   <text:p text:style-name="P8">Je cherche partout ce que l’on pensait, ce que l’on faisait,<text:line-break/>ce que l’on aimait dans l’Église aux âges de foi.<text:line-break/>(Dom Guéranger)</text:p>
-   <text:h text:style-name="P5" text:outline-level="1">Préface <text:span text:style-name="T1">de l’édition originale</text:span></text:h>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Notre époque se reprend à étudier et à aimer le passé</text:h>
-   <text:p text:style-name="P14"><text:span text:style-name="T4">La restauration liturgique dont le glorieux Pape Pie IX signalait la portée dans les éloges solennels décernés par lui au nom de l’Église à Dom Guéranger, le vaillant promoteur d’un si heureux mouvement, devait produire en effet des résultats considérables et multiples. Ce retour inespéré à des traditions déjà plus de dix fois séculaires, eut entre autre conséquences, et celle-ci n’est pas la moins importante, d’engager <text:s/>ou au moins d’exciter davantage les esprits à étudier les institutions d’un passé avec lequel, dans le domaine des arts comme dans celui de la science, on avait plus ou moins rompu, au grand détriment du vrai progrès. Et de fait nous voyons, par une coïncidence providentielle, l’art chrétien, c’est-à-dire, la philosophie, la littérature et l’art traditionnels, de toutes parts mieux étudiés, mieux appréciés, cultivés avec un véritable amour et un succès chaque jour croissant.</text:span></text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Recherche<text:span text:style-name="T3">s</text:span> sur le chant grégorien</text:h>
-   <text:p text:style-name="P14"><text:span text:style-name="T4">L’art musical, qui touche de si près à la liturgie, a naturellement profité de cette sorte de renaissance, où, sans mépriser les conquêtes de l’age moderne, on va demander aux âges antérieurs les secrets que l’on avait laissé perdre. Aussi, quand le chant grégorien est venu reprendre possession de nos églises de France, avec les textes augustes dont il est le complément naturel, s’est-on tout de suite préoccupé de l’avoir le meilleur possible, c’est-à-dire le plus conforme possible à la tradition, à saint Grégoire. Des études en ce sens se sont immédiatement faites de différentes côtés ; études consciencieuses, qui cependant ne pouvaient être complétées qu’avec le temps. Le principe sur lequel on devait s’appuyer avait été posé et formulé par Dom Guéranger lui-même ; à savoir que « lorsque des manuscrits différents d’époque et de pays s’accordent sur une version, on peut affirmer qu’on a retrouvé la phrase grégorienne. »</text:span></text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Antiphonaire de S. Gall et de Montpellier</text:h>
-   <text:p text:style-name="P13">Les études sur le chant grégorien se trouvèrent de bonne heure puissamment aidées par la reproduction en <text:span text:style-name="T5">fac simile</text:span><text:span text:style-name="T8"> de l’</text:span><text:span text:style-name="T5">Antiphonaire de Montpellier</text:span><text:span text:style-name="T8">, mise à profit pour l’édition du Graduel Rémo-Cambrésien. Nous signalons ici ces deux publications tant pour leur importance particulière, qu’à cause des félicitations dont l’une et l’autre furent l’objet de la part du Souverain Pontife.</text:span></text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Commission Rémo-Cambraisienne</text:h>
-   <text:p text:style-name="P13">Le bref de Pie IX aux éditeurs des livres de Reims et Cambrai était surtout un encouragement précieux, et nous oserions dire spécialement mérité ; car par ces livres, aussitôt acceptés dans un grand nombre de Diocèses, l’œuvre d’une restauration sérieuse du chant de saint Grégoire recevait <text:s/>une première applications pratique, encore incomplète, sans doute, mais marquant déjà un immense progrès. Le défaut, ou si l’on veut, l’imperfection de cette édition, qui connaît cependant la note musicale de saint Grégoire avec une fidélité à peu près irréprochable, c’est que tout en apprenant aux chantres à varier le mouvement de la mélodie et à sortir des habitudes de lourd martellement <text:soft-page-break/>qui avaient dénaturé et comme écrasé la phrase musicale, elle n’offre elle-même qu’une suite irrégulière de notes longues ou brèves, d’où ne se dégage trop souvent qu’un rythme incomplet et saccadé. Il eut fallu, en reproduisant les notes du manuscrit de Montpellier, reproduire aussi la manière dont elles y sont groupées.</text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Théorie véritable de l’exécution du plain-chant</text:h>
-   <text:p text:style-name="P14">Toutefois l’impulsion était donnée et le mouvement excite alors assez d’intérêt, pour qu’en 1860, au congrès musical de Paris, la question du plain-chant soit posée, et se trouve résolue, en ce qui touche les principes d’exécution, dans le sens du mémoire présenté sur ce sujet capital par M. le Chanoine Gontier du Mans. Ami de Dom Guéranger, M. Gontier avait remarqué comment l’illustre Abbé avait su donner dans son monastère aux Mélodies grégoriennes un accent, un rythme que personne ne sembla<text:span text:style-name="T11">it</text:span> soupçonner . Il y avait là comme une révélation. En réfléchissant d’un autre côté sur l’allure naturelle et chantante que certaines mélodies demeurées populaires, comme le <text:span text:style-name="T5">Credo</text:span><text:span text:style-name="T8">,</text:span> <text:span text:style-name="T4">le </text:span><text:span text:style-name="T6">Gloria</text:span><text:span text:style-name="T4"> etc. avaient toujours conservés « comme des débris sauvés du naufrage des vrais principes, » le judicieux auteur du mémoire en question s’était demandé si cette routine n’était pas en réalité un reste précieux du passé, un écho, sans doute affaibli, mais véritable de la tradition grégorienne. Ressaisissant là le fil rompu et s’aidant des anciens auteurs comme Hucbald, Gui d’Arezzo, Jean de Muris, il avait mis au jour une Méthode que Dom Guéranger déclara « la seule théorie véritable de l’exécution du chant grégorien » (Voir l’approbation imprimée en tête de </text:span><text:span text:style-name="T6">La </text:span><text:span text:style-name="T7">M</text:span><text:span text:style-name="T6">éthode raisonnée de plain-chant</text:span><text:span text:style-name="T4">, page VIII)</text:span></text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2">Circonstances qui ont amenées le présent travail</text:h>
-   <text:p text:style-name="P15"><text:span text:style-name="T9">Au milieu de ces discussions, pendant que non-seulement en France, mais en Belgique, en Suisse et en Allemagne, l’esprit d’investigation se portait, non sans succès, à retrouver les sources du chant de S. Grégoire, Dom Guéranger songeait à une réimpression devenue indispensable pour ses monastères, du Graduel et de l’Antiphonaire monastique, dont les exemplaires sont maintenant très-rares, et incomplets. Le docte Abbé ne pensait pas que l’on pût réimprimer sans une révision sérieuse et sans des études préalables, les livres qu’avaient légués les dix-septièmes et dix-huitièmes siècles ; c’est pourquoi il confia à deux de ses religieux le soin d’entreprendre auparavant les recherches nécessaires. Ces recherches faites sur les manuscrits <text:s/>les plus anciens et contrôlés <text:s/>sur de plus modernes, en appliquant le principe que nous disions plus haut avoir été posé par Dom Guéranger, aboutirent à cette conclusion : c’est que tous les morceaux du Répertoire grégorien ont été conservés intégralement, très-souvent <text:s/>note pour note, et groupe par groupe, dans les manuscrits antérieurs au seizième siècle, et qu’ils se retrouvent même jusque dans des imprimés comme étaient les livres en usage, par exemple, à Lyon, au Mans et ailleurs, avant la révolution liturgique des deux derniers siècles.</text:span></text:p>
-   <text:h text:style-name="P7" text:outline-level="2">Conditions d’une restauration complète du chant grégorienne</text:h>
-   <text:p text:style-name="P16"><text:span text:style-name="T9">Cette confirmation d’un fait déjà constaté par plusieurs, et mis particulièrement en lumière par M. l’abbé Bonhomme , dans ses « </text:span><text:span text:style-name="T7">Principes d’une véritable restauration de Chant grégorien</text:span><text:span text:style-name="T9"> ,» ne laissait aucun doute sur le parti à prendre : faire revivre la tradition grégorienne tant pour la note que pour l’exécution. Pour cela il fallait aussi conserver l’écriture également traditionnelle ; celle-ci </text:span><text:soft-page-break/><text:span text:style-name="T9">par la netteté avec laquelle sont groupés les sons permet de phraser le chant, et de lui donner cette allure facile et naturelle, si propre à l’expression à la fois douce et animée d’une louange et d’une prière qui, comme la louange divine et la prière liturgique, doivent sortir sans apprêt et comme spontanément de l’abondance du cour. Un mémoire avait été rédigé <text:s/>en ce sens <text:s/>et présenté par les humbles files et disciple de Dom Guéranger à leur vénéré père et maître, qui l’approuva entièrement, ainsi que le résultat noté des recherches entreprises par ses ordres et sous sa direction. Comme essai pratique, avant l’impression du Graduel et de l’Antiphonaire, quelques chants pour les Processions durent lithographiés et mis immédiatement en usage. Les pages qui vont suivre et que nous offrons avec simplicité et confiance aux amis de la sainte liturgie et du chant sacré, reproduisent le mémoire approuvé par Dom Guéranger avec les corrections et additions que lui-même en grande partie avait indiquées.</text:span></text:p>
-   <text:h text:style-name="P7" text:outline-level="2">Intérêt que doit inspirer le vrai plain-chant à tous les musiciens</text:h>
-   <text:p text:style-name="P16"><text:span text:style-name="T10">Nous espérons les voir également accueillies avec intérêt et bienveillance par les musiciens profanes eux-mêmes, par ceux surtout qui estiment que la musique moderne a besoin d’être régénérée, retrempée aux sources vives des inspirations anciennes, et que la musique du passé mieux connue et enrichie des ressources légitimement acquises que le présent peut lui offrir, doit être saluée comme la vraie musique de l’avenir.</text:span></text:p>
-   <text:p text:style-name="P18">Pour ce qui est de la musique religieuse, disons-nous plus haut, le mouvement de régénération est heureusement commencé. Un souffle de bonne augure s’est emparé des esprits et les pousse à remonter aux sources les plus anciennes, qui sont aussi les plus pures. L’impulsion nouvelle donnée aux fortes études par le savant et sage Pontife qui tient actuellement d’une main si ferme le gouvernail de l’Église, aura pour résultat de réveiller davantage encore chez tous le goût pour les choses anciennes et traditionnelles : elle devra par conséquent profiter à la cause du chant grégorien lui-même, du chant grégorien tel qu’il est, c’est-à-dire tel que la sciences nous le montre, tel que les monuments de la tradition nous le donnent.</text:p>
-   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="paragraph" svg:x="4.293cm" svg:y="1.468cm" svg:width="8.414cm" svg:height="8.573cm" draw:z-index="0"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P10">Je cherche partout ce que l’on pensait, ce que l’on faisait,<text:line-break/>ce que l’on aimait dans l’Église aux âges de foi.<text:line-break/>(Dom Guéranger)</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc154_566804255"/>Préface <text:span text:style-name="T1">de l’édition originale</text:span><text:bookmark-end text:name="__RefHeading___Toc154_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc156_566804255"/>Notre époque se reprend à étudier et à aimer le passé<text:bookmark-end text:name="__RefHeading___Toc156_566804255"/></text:h>
+   <text:p text:style-name="P18"><text:span text:style-name="T4">La restauration liturgique dont le glorieux Pape Pie IX signalait la portée dans les éloges solennels décernés par lui au nom de l’Église à Dom Guéranger, le vaillant promoteur d’un si heureux mouvement, devait produire en effet des résultats considérables et multiples. Ce retour inespéré à des traditions déjà plus de dix fois séculaires, eut entre autre conséquences, et celle-ci n’est pas la moins importante, d’engager <text:s/>ou au moins d’exciter davantage les esprits à étudier les institutions d’un passé avec lequel, dans le domaine des arts comme dans celui de la science, on avait plus ou moins rompu, au grand détriment du vrai progrès. Et de fait nous voyons, par une coïncidence providentielle, l’art chrétien, c’est-à-dire, la philosophie, la littérature et l’art traditionnels, de toutes parts mieux étudiés, mieux appréciés, cultivés avec un véritable amour et un succès chaque jour croissant.</text:span></text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc158_566804255"/>Recherche<text:span text:style-name="T3">s</text:span> sur le chant grégorien<text:bookmark-end text:name="__RefHeading___Toc158_566804255"/></text:h>
+   <text:p text:style-name="P18"><text:span text:style-name="T4">L’art musical, qui touche de si près à la liturgie, a naturellement profité de cette sorte de renaissance, où, sans mépriser les conquêtes de l’age moderne, on va demander aux âges antérieurs les secrets que l’on avait laissé perdre. Aussi, quand le chant grégorien est venu reprendre possession de nos églises de France, avec les textes augustes dont il est le complément naturel, s’est-on tout de suite préoccupé de l’avoir le meilleur possible, c’est-à-dire le plus conforme possible à la tradition, à saint Grégoire. Des études en ce sens se sont immédiatement faites de différentes côtés ; études consciencieuses, qui cependant ne pouvaient être complétées qu’avec le temps. Le principe sur lequel on devait s’appuyer avait été posé et formulé par Dom Guéranger lui-même ; à savoir que « lorsque des manuscrits différents d’époque et de pays s’accordent sur une version, on peut affirmer qu’on a retrouvé la phrase grégorienne. »</text:span></text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc160_566804255"/>Antiphonaire de S. Gall et de Montpellier<text:bookmark-end text:name="__RefHeading___Toc160_566804255"/></text:h>
+   <text:p text:style-name="P17">Les études sur le chant grégorien se trouvèrent de bonne heure puissamment aidées par la reproduction en <text:span text:style-name="T5">fac simile</text:span><text:span text:style-name="T12"> de l’</text:span><text:span text:style-name="T5">Antiphonaire de Montpellier</text:span><text:span text:style-name="T12">, mise à profit pour l’édition du Graduel Rémo-Cambrésien. Nous signalons ici ces deux publications tant pour leur importance particulière, qu’à cause des félicitations dont l’une et l’autre furent l’objet de la part du Souverain Pontife.</text:span></text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc162_566804255"/>Commission Rémo-Cambraisienne<text:bookmark-end text:name="__RefHeading___Toc162_566804255"/></text:h>
+   <text:p text:style-name="P17">Le bref de Pie IX aux éditeurs des livres de Reims et Cambrai était surtout un encouragement précieux, et nous oserions dire spécialement mérité ; car par ces livres, aussitôt acceptés dans un grand nombre de Diocèses, l’œuvre d’une restauration sérieuse du chant de saint Grégoire recevait <text:s/>une première applications pratique, encore incomplète, sans doute, mais marquant déjà un immense progrès. Le défaut, ou si l’on veut, l’imperfection de cette édition, qui connaît cependant la note musicale de saint Grégoire avec une fidélité à peu près irréprochable, c’est que tout en apprenant aux chantres à varier le mouvement de la mélodie et à sortir des habitudes de lourd martellement <text:soft-page-break/>qui avaient dénaturé et comme écrasé la phrase musicale, elle n’offre elle-même qu’une suite irrégulière de notes longues ou brèves, d’où ne se dégage trop souvent qu’un rythme incomplet et saccadé. Il eut fallu, en reproduisant les notes du manuscrit de Montpellier, reproduire aussi la manière dont elles y sont groupées.</text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc164_566804255"/>Théorie véritable de l’exécution du plain-chant<text:bookmark-end text:name="__RefHeading___Toc164_566804255"/></text:h>
+   <text:p text:style-name="P18">Toutefois l’impulsion était donnée et le mouvement excite alors assez d’intérêt, pour qu’en 1860, au congrès musical de Paris, la question du plain-chant soit posée, et se trouve résolue, en ce qui touche les principes d’exécution, dans le sens du mémoire présenté sur ce sujet capital par M. le Chanoine Gontier du Mans. Ami de Dom Guéranger, M. Gontier avait remarqué comment l’illustre Abbé avait su donner dans son monastère aux Mélodies grégoriennes un accent, un rythme que personne ne sembla<text:span text:style-name="T16">it</text:span> soupçonner. Il y avait là comme une révélation. En réfléchissant d’un autre côté sur l’allure naturelle et chantante que certaines mélodies demeurées populaires, comme le <text:span text:style-name="T5">Credo</text:span><text:span text:style-name="T12">,</text:span> <text:span text:style-name="T4">le </text:span><text:span text:style-name="T6">Gloria</text:span><text:span text:style-name="T4"> etc. avaient toujours conservés « comme des débris sauvés du naufrage des vrais principes, » le judicieux auteur du mémoire en question s’était demandé si cette routine n’était pas en réalité un reste précieux du passé, un écho, sans doute affaibli, mais véritable de la tradition grégorienne. Ressaisissant là le fil rompu et s’aidant des anciens auteurs comme Hucbald, Gui d’Arezzo, Jean de Muris, il avait mis au jour une Méthode que Dom Guéranger déclara « la seule théorie véritable de l’exécution du chant grégorien » (Voir l’approbation imprimée en tête de </text:span><text:span text:style-name="T6">La </text:span><text:span text:style-name="T7">M</text:span><text:span text:style-name="T6">éthode raisonnée de plain-chant</text:span><text:span text:style-name="T4">, page VIII)</text:span></text:p>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc166_566804255"/>Circonstances qui ont amenées le présent travail<text:bookmark-end text:name="__RefHeading___Toc166_566804255"/></text:h>
+   <text:p text:style-name="P19"><text:span text:style-name="T14">Au milieu de ces discussions, pendant que non-seulement en France, mais en Belgique, en Suisse et en Allemagne, l’esprit d’investigation se portait, non sans succès, à retrouver les sources du chant de S. Grégoire, Dom Guéranger songeait à une réimpression devenue indispensable pour ses monastères, du Graduel et de l’Antiphonaire monastique, dont les exemplaires sont maintenant très rares, et incomplets. Le docte Abbé ne pensait pas que l’on pût réimprimer sans une révision sérieuse et sans des études préalables, les livres qu’avaient légués les dix-septièmes et dix-huitièmes siècles ; c’est pourquoi il confia à deux de ses religieux le soin d’entreprendre auparavant les recherches nécessaires. Ces recherches faites sur les manuscrits <text:s/>les plus anciens et contrôlés <text:s/>sur de plus modernes, en appliquant le principe que nous disions plus haut avoir été posé par Dom Guéranger, aboutirent à cette conclusion : c’est que tous les morceaux du Répertoire grégorien ont été conservés intégralement, très-souvent <text:s/>note pour note, et groupe par groupe, dans les manuscrits antérieurs au seizième siècle, et qu’ils se retrouvent même jusque dans des imprimés comme étaient les livres en usage, par exemple, à Lyon, au Mans et ailleurs, avant la révolution liturgique des deux derniers siècles.</text:span></text:p>
+   <text:h text:style-name="P9" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc168_566804255"/>Conditions d’une restauration complète du chant grégorienne<text:bookmark-end text:name="__RefHeading___Toc168_566804255"/></text:h>
+   <text:p text:style-name="P20"><text:span text:style-name="T14">Cette confirmation d’un fait déjà constaté par plusieurs, et mis particulièrement en lumière par M. l’abbé Bonhomme , dans ses « </text:span><text:span text:style-name="T7">Principes d’une véritable restauration de Chant grégorien</text:span><text:span text:style-name="T14"> ,» ne laissait aucun doute sur le parti à prendre : faire revivre la tradition grégorienne tant pour la note que pour l’exécution. Pour cela il fallait aussi conserver l’écriture également traditionnelle ; celle-ci </text:span><text:soft-page-break/><text:span text:style-name="T14">par la netteté avec laquelle sont groupés les sons permet de phraser le chant, et de lui donner cette allure facile et naturelle, si propre à l’expression à la fois douce et animée d’une louange et d’une prière qui, comme la louange divine et la prière liturgique, doivent sortir sans apprêt et comme spontanément de l’abondance du cour. Un mémoire avait été rédigé <text:s/>en ce sens <text:s/>et présenté par les humbles files et disciple de Dom Guéranger à leur vénéré père et maître, qui l’approuva entièrement, ainsi que le résultat noté des recherches entreprises par ses ordres et sous sa direction. Comme essai pratique, avant l’impression du Graduel et de l’Antiphonaire, quelques chants pour les Processions durent lithographiés et mis immédiatement en usage. Les pages qui vont suivre et que nous offrons avec simplicité et confiance aux amis de la sainte liturgie et du chant sacré, reproduisent le mémoire approuvé par Dom Guéranger avec les corrections et additions que lui-même en grande partie avait indiquées.</text:span></text:p>
+   <text:h text:style-name="P9" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc170_566804255"/>Intérêt que doit inspirer le vrai plain-chant à tous les musiciens<text:bookmark-end text:name="__RefHeading___Toc170_566804255"/></text:h>
+   <text:p text:style-name="P20"><text:span text:style-name="T15">Nous espérons les voir également accueillies avec intérêt et bienveillance par les musiciens profanes eux-mêmes, par ceux surtout qui estiment que la musique moderne a besoin d’être régénérée, retrempée aux sources vives des inspirations anciennes, et que la musique du passé mieux connue et enrichie des ressources légitimement acquises que le présent peut lui offrir, doit être saluée comme la vraie musique de l’avenir.</text:span></text:p>
+   <text:p text:style-name="P22">Pour ce qui est de la musique religieuse, disons-nous plus haut, le mouvement de régénération est heureusement commencé. Un souffle de bonne augure s’est emparé des esprits et les pousse à remonter aux sources les plus anciennes, qui sont aussi les plus pures. L’impulsion nouvelle donnée aux fortes études par le savant et sage Pontife qui tient actuellement d’une main si ferme le gouvernail de l’Église, aura pour résultat de réveiller davantage encore chez tous le goût pour les choses anciennes et traditionnelles : elle devra par conséquent profiter à la cause du chant grégorien lui-même, du chant grégorien tel qu’il est, c’est-à-dire tel que la sciences nous le montre, tel que les monuments de la tradition nous le donnent.</text:p>
+   <text:p text:style-name="P21"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="paragraph" svg:x="4.293cm" svg:y="1.468cm" svg:width="8.414cm" svg:height="8.573cm" draw:z-index="0"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAT4AAAFECAYAAAC+gVKXAAAABHNCSVQICAgIfAhkiAAAIABJ
        REFUeJzsnddzXFd+5z+dA7qBRs6ZRCJABAIgwQyJFCVK5ki2LOfx7uzateUq15b/A5f95hfv
        w4aqcbns2bFXW/KMqCFFkQRJMUAMIIlEZIDIOTWAbnRO+0DfMxfNBtAgAYry+luFQqPRfe85
@@ -19802,26 +19904,195 @@
       </office:binary-data>
      </draw:image>
     </draw:frame>Abbaye de Solesmes, en la fête de saint Odon,<text:line-break/>18 novembre 1879</text:p>
-   <text:h text:style-name="P6" text:outline-level="1"><text:span text:style-name="T13">Préface de la réédition de 1980</text:span></text:h>
-   <text:p text:style-name="P19">Document capital dans l’histoire de la restauration du chant grégorien à la croisée des XIXème et XXème siècle, l’ouvrage dont on salue ici la réimpression a été publié en 1880, mettant en forme une série d’études préliminaires dont les tous premiers prototypes remontent au plus tôt à 1856. C’est en 1908 que Dom Mocquereau publiera « <text:span text:style-name="T5">Le nombre musical grégorien</text:span> », cinq an après que le <text:span text:style-name="T8">« </text:span><text:span text:style-name="T5">Motu proprio</text:span><text:span text:style-name="T8"> »</text:span> de Pie X eut consacré le triomphe des idées ici exposées. Ce contexte de dates ne devra jamais être perdu de vue lorsqu’il s’agira d’apprécier à sa juste valeur le travail véritablement colossal que représentent « <text:span text:style-name="T5">Les mélodies grégoriennes</text:span><text:span text:style-name="T8"> »</text:span>. Lues sommairement aujourd’hui, certaines conclusions peuvent sembler hâtives, certaines subtilités non précisées, certaines informations insuffisantes ; les références peuvent paraître imprécises, l’expression diffuse. Relisez attentivement ce maître livre, et vous découvrirez que tout ce qui a été fait depuis lors dans ce domaine n’a guère fait qu’en approfondir les esquisses, en explorer les voies tracées, en préciser les intuitions.</text:p>
-   <text:p text:style-name="P20"/>
-   <text:h text:style-name="P4" text:outline-level="1"><text:soft-page-break/>Chapitre 1 : Excellence et caractère du chant liturgique</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 2 : Importance et conditions d’une bonne exécution du chant grégorien</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 3 : De l’écriture musicale chez les anciens – Notation alphabétique</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 4 : Notation neumatique ou usuelle</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 5 : Phases diverses de l’écriture neumatique</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 6 : Les neumes par rapport à la durée ou à la force des sons – Lettres significatives – Signes romaniens</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 7 : Raison des diverses figures de notes – Règle d’exécution commune à toutes les formules</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 8 : De la prononciation latine</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 9 : De la manière d’unir en chantant les syllabes d’un même mot</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 10 : Des divisions dans la lecture et dans le chant</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 11 : Des Traits mélodiques ou séries de formules sur une même syllabes</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 12 : Observations pratiques sur la valeurs diverse des notes ou des formules</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 13 : Du rythme propre au chant grégorien</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:soft-page-break/>Chapitre 14 : Du rythme mesuré</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 15 : Les récitatifs liturgiques</text:h>
-   <text:h text:style-name="Heading_20_1" text:outline-level="1">Chapitre 16 : Des Psaumes, des Antiennes et des Répons</text:h>
-   <text:p text:style-name="P9"/>
+   <text:h text:style-name="P8" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc172_566804255"/><text:span text:style-name="T18">Préface de la réédition de 1980</text:span><text:bookmark-end text:name="__RefHeading___Toc172_566804255"/></text:h>
+   <text:p text:style-name="P23">Document capital dans l’histoire de la restauration du chant grégorien à la croisée des XIX° et XX° siècles, l&apos;ouvrage dont on salue ici la réimpression a été publié en 1880, mettant en forme une série d’études préliminaires dont les tout premiers prototypes remontent au plus tôt à 1856. C’est en 1908 que dom Mocquereau publiera <text:span text:style-name="T5">Le nombre musical grégorien</text:span><text:span text:style-name="T12">,</text:span> cinq ans après que le <text:span text:style-name="T5">Motu proprio</text:span> de Pie X eut consacré le triomphe des idées ici exposées. Ce contexte de dates ne devra jamais être perdu de vue lorsqu&apos;il s’agira d&apos;apprécier à sa juste valeur le travail véritablement colossal que représentent <text:span text:style-name="T5">Les mélodies grégoriennes</text:span>. Lues sommairement aujourd&apos;hui, certaines conclusions peuvent sembler hâtives, certaines subtilités non précisées, certaines informations insuffisantes ; les références peuvent paraître imprécises, l&apos;expression diffuse. Relisez attentivement ce maître livre, et vous découvrirez que tout ce qui a été fait depuis lors dans ce domaine n’a guère fait qu’en approfondir les esquisses, en explorer les voies tracées, en préciser les intuitions.</text:p>
+   <text:p text:style-name="P23">Après un siècle entier de recherches acharnées et convergentes, dont ce livre marque le point de départ, certaines propositions énoncées dans <text:span text:style-name="T5">Les mélodies grégoriennes</text:span> prendraient volontiers à nos yeux un aspect de lieux communs quasi lénifiants. On oublie trop vite le passé. Je me souviens encore de mon enfance <text:span text:style-name="T19">bourguignonne</text:span> à Seignelay où. malgré les objurgations du curé-doyen, l’abbé Villetard, grégorianiste bien connu, un vieux chantre qu&apos;on appelait le père Besse s’obstinait à marteler un à un, en haletant, tous les E de ses <text:span text:style-name="T5">Kyrie</text:span> d’une voix de stentor insurmontable en défiant son adversaire par-dessus ses lunettes cerclées de fer. Je revois aussi cette grand-messe de Pourain (Yonne), où m&apos;avait conduit Paul Berthier auprès du sculpteur Charlier et de la poétesse Marie Noël, et en particulier son inoubliable procession de l’<text:span text:style-name="T5">Asperges</text:span>. Le prêtre y était suivi en trottinant par un sacristain en surplis trop long, qui soufflait dans un ophicléide : c&apos;est ainsi qu’il accompagnait, selon l’ancien usage, un plain-chant tonitrué, où l&apos;on eût cherché en vain les « délicats touchements d’ictus » chers à l’école solesmienne.</text:p>
+   <text:p text:style-name="P23">Avant Les mélodies grégoriennes. le plain-chant c&apos;était cela. On peut méditer, en se souvenant de Pourain, devant les anciens livres de plain-chant carré qui ont échappé à la destruction, ou devant les gravures qui nous montrent, jusque dans les grandes cathédrales, les chantres de l’office groupés autour de cet étrange instrument qu&apos;était le serpent, si difficile à jouer juste que le chef du laboratoire d’acoustique de la Sorbonne, Emile Leipp, est parvenu sur l’un d’eux à monter une gamme d’un<text:span text:style-name="T19">e</text:span> octave entière par la seul<text:span text:style-name="T19">e</text:span> pression du souffle sans bouger les doigts des trous. Un autre pionnier du renouveau liturgique, Charles Bordes, n’avait-il pas adopté comme devise <text:span text:style-name="T5">Ab antiquo serpente libera nos Domine</text:span> ? Il faut relire le <text:span text:style-name="T5">Cours complet de plain-chant</text:span> d&apos;Adrien de la Fage (1856). l’un des rares manuels qui traitent du sujet avec quelque sérieux, et les recueils d&apos;accompagnement comme celui de Félix Clément (1873), dont diffèrent à peine ceux que notait en 1857 le jeune César Franck, alors organiste de Saint-Jean-Saint-François, avec leurs longues et brèves et leurs abondantes sensibles — dont on oublie qu’étaient largement pourvus aussi bien les messes de Dumont que les descendants du graduel de Nivers. Les cahiers que publiait Eugène Gigout vers 1855 : pour illustrer la doctrine de l’école Niedermeyer, dont on parle si souvent sans prendre la peine de l’étudier, accusent certes un progrès dans l’intelligence modale de l’harmonisation, mais n’envisagent en rien une quelconque remise en cause des mélodies elles-mêmes, ni dans leur texte, ni dans leur phrasé, ni dans leur interprétation. Au reste, même ainsi <text:soft-page-break/>limité à une modeste réhabilitation des « modes anciens », ce ballon d’essai suscitait déjà des protestations passionnées : « Hé quoi, s’écriait Berlioz en 1862, comment peut-on exalter le système musical du plain-chant au détriment de la musique moderne, de la <text:span text:style-name="T5">musique</text:span>, en déclarant le plain-chant seul capable d&apos;exprimer dignement le sentiment religieux ? […] de sorte que l’<text:span text:style-name="T5">Ave verum</text:span> de Mozart, cette expression sublime de l’adoration extatique, qui n’est point dans la tonalité ecclésiastique, ne devrait pas être considéré comme de la vraie musique religieuse ! » Et de parler lui aussi de «l&apos;exécution du plain-chant, toujours chanté ou plutôt beuglé dans nos églises par des voix de taureau, accompagnées d’un serpent ou d&apos;un ophicléide. <text:span text:style-name="T20">À</text:span> entendre de telles successions de notes hideuses et à l’accent menaçant, on se croirait transporté dans un antre de druides préparant un sacrifice humain. C’est affreux, mais je dois encore avouer que tous les morceaux de plain-chant que j&apos;ai entendus étaient ainsi exécutés et avaient <text:span text:style-name="T20">à</text:span> peu près ce caractère<text:note text:id="ftn0" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Compte rendu de La Musique à l&apos;église de J. d&apos;Ortigue, Journal des Débats du 7 janvier 1862, reproduit dans À travers chants.</text:p></text:note-body></text:note> »</text:p>
+   <text:p text:style-name="P23">D&apos;ailleurs, Niedermeyer lui-même, dont d’Ortigue était le collaborateur, lorsqu&apos;il quittait son bureau directorial, oubliait bien vite tous ses soucis de modalité pour écrire des œuvres, religieuses ou non, où l’on en chercherait vainement la trace. Le père Besse était un témoin véridique : il y avait bien réellement le « plain-chant » d&apos;un côté, la « musique » de l’autre.</text:p>
+   <text:p text:style-name="P23">La nouveauté d’un ouvrage se mesure à la force des oppositions qu&apos;il suscite. L&apos;historique de la « réforme » à laquelle Solesmes a attaché son nom, et dont <text:span text:style-name="T5">Les mélodies grégoriennes</text:span> constitue l’un des pivots, a été publié en 1969 par dom Pierre Combe<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Histoire de la restauration du chant grégorien d&apos;après des documents inédits, Solesmes, 1969.</text:p></text:note-body></text:note> avec une parfaite objectivité et une grande abondance de documents et de précisions. On reste effondré devant l’inextricable lacis d’intrigues, d’embûches, de volte-face, de coups fourrés, auquel dut faire face, de leur vallée isolée de la Sarthe, une petite équipe de moines aux prises avec les forces redoutables de trois siècles au moins de décadence routinière, d&apos;idées reçues et d&apos;intérêts financiers menacés ; et cela au milieu des séquelles de la guerre de 70, des persécutions politiques (les moines de Solesmes durent l’année même de la publication des Mélodies grégoriennes s’exiler en Angleterre) et des querelles religieuses de la fin du siècle.</text:p>
+   <text:p text:style-name="P23">Dans tout cela, une grande figure émerge en premier : celle de l’abbé de Solesmes, dom Guéranger (1805-1875), âme et cheville ouvrière du mouvement à ses débuts ; deux précurseurs, le chanoine Gontier, du Mans (1802-1875) et dom Paul Jausions (1834-1870) ; dom Pothier enfin lui-même, entré à Solesmes en 1860 à vingt-cinq ans, et qui devait devenir le maître incontesté de la première génération des restaurateurs. Ce n’est que progressivement que prendra une place prépondérante celui qui allait dominer la génération suivante, l’auteur du <text:span text:style-name="T5">Nombre musical</text:span> et initiateur de la <text:span text:style-name="T5">Paléographie musicale</text:span>, dom André Mocquereau. Entré à Solesmes en 1875, il n’était <text:span text:style-name="T20">encore</text:span> cinq ans plus tard qu’un modeste disciple de son aîné, lequel devait se retirer progressivement devant lui et finir ses jours en 1923 comme abbé de Saint-Wandrille.</text:p>
+   <text:p text:style-name="P23">Parcourons maintenant ensemble ces <text:span text:style-name="T5">Mélodies grégoriennes</text:span> qui eurent un tel retentissement. Et tout d’abord, arrêtons-nous devant leur titre. <text:span text:style-name="T20">À</text:span> lui <text:span text:style-name="T20">seul</text:span>, il constitue une contestation <text:span text:style-name="T20">e</text:span>t un manifeste. Nous avons jusqu’à présent toujours parlé du « plain-chant », <text:span text:style-name="T20">e</text:span>t telle était bien, alors, <text:span text:style-name="T20">l’</text:span>expression consacrée. Dom Pothier est sans dout<text:span text:style-name="T20">e</text:span> l’un des tout premiers à remplacer systématiquement ce terme par le mot « grégorien ». Peu importe, direz-vous, puisque l’un et l’autre sont synonymes. <text:soft-page-break/>Voire. Le chant cautionné jadis par l’autorité de saint Grégoire était certes du <text:span text:style-name="T5">planus cantus </text:span><text:span text:style-name="T12">;</text:span> le plain-chant tel qu’il s&apos;est transmis jusqu’à nous en conservant ce nom (nous sommes, rappelons-le, en 1880), n&apos;est plus du chant « grégorien » : telle est l’idée fondamentale de dom Pothier. Le changement de nom va devenir un étendard de combat. Et la ligne directrice de celui-ci sera celle qu’au X<text:span text:style-name="T20">I</text:span>° siècle déjà, le chroniqueur angoumois Adémar de Chabannes faisait définir au <text:span text:style-name="T20">IX</text:span>° par l’empereur Charlemagne : <text:span text:style-name="T5">Revertimini vos ad fontem sancti Gregorii, quia manifeste corrupistis cantum</text:span><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">« Retournez à la source de saint Grégoire. car manifestement vous avez corrompu le chant. » (Monumcenta Gcrmaniae histarica. Scriptorum. 1, p. 170 et IV. pp. 117-118.) La citation apparaît comme un refrain dans tous les livres ultéricurs qui traiteront de cette question.</text:p></text:note-body></text:note></text:p>
+   <text:p text:style-name="P23">Retrouver les mélodies primitives : est-ce encore possible après si longtemps ? Oui, proclame l’auteur avec force. Il suffit de renoncer aux témoins déformés <text:span text:style-name="T20">e</text:span>t de nous tourner vers les livres antérieurs aux malformations. Ils existent, et leur unanimité sur l&apos;essentiel est une preuve flagrante de leur conformité avec la tradition véritable. Mieux <text:span text:style-name="T20">encore</text:span> : dom Pothier affirme que ces livres n’ont pas seulement conservé la lettre ou la « note » des chants, mais encore le témoignage de leur interprétation véritable. Non seulement les <text:span text:style-name="T20">anciennes</text:span> notations neumatiques, dites <text:span text:style-name="T5">in campo aperto</text:span> parce qu&apos;elles sont imprécises sous le rapport de la hauteur des sons, peuvent être lues par confrontation avec d’autres notations plus récentes, mais encore elles nous donnent, sous le rapport de l&apos;interprétation expressive et rythmique, des indications auxquelles ont renoncé plus tard les écritures mélodiquement plus précises. Les mélodies ainsi révélées ont un tout autre caractère que ce qu&apos;il en reste dans le « plain-chant moderne ». C&apos;est une musique vivante dont la beauté était ensevelie, et qui s’accorde merveilleusement avec l’esprit de la liturgie. en même temps qu’elle traduit avec une remarquable fidélité le texte sacré qu’elle a mission d’amplifier et de rendre sensible aux cœurs et aux âmes.</text:p>
+   <text:p text:style-name="P23">Mais pour aborder cette beauté, il faut, dit l’auteur, remonter au-delà de la grande décadence, c’est-à-dire des travestissements pseudo-palestriniens qui ont suivi le Concile de Trente<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>4</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Voir sur ce point le mémoire inédit de Pierre Gaillard (déposé à la bibliothèque de l’Institut de musicologie), Le Concile de Trente et la musique, 1969.</text:p></text:note-body></text:note>, et retrouver non seulement les textes inaltérés, mais aussi les règles d&apos;exécution, plus importantes encore que la lettre écrite. L’antiphonaire de Montpellier en double notation, neumes et lettres, apparaît en quelque sorte comme la pierre de Rosette de la notation neumatique, guide et inspiratrice de l’interprétation (ici se profile la future « séméiographie musicale » de dom Cardine), et l&apos;on comprend que l’on ait parfois donné à dom Pothier le surnom de « Champollion de la musique grégorienne ».</text:p>
+   <text:p text:style-name="P23">C’est ainsi que, sans prononcer le mot, <text:span text:style-name="T5">Les mélodies grégoriennes</text:span> posent en principe l&apos;importance primordiale de la « paléographie musicale ». L&apos;auteur insiste particulièrement sur le groupement des sons dans l&apos;écriture des neumes composés. Il estime, en effet, qu’il est en liaison directe avec le phrasé, élément essentiel et perdu de l’expression, et qu&apos;il faut revenir aux anciennes graphies, même si, pour les rendre lisibles, on est tenu à un certain compromis avec les notations carrées qui leur ont succédé. À l&apos;encontre des idées alors admises, il affirme que les notations mensurales sont indépendantes des écritures antérieures, et qu’en conséquence la différence de graphie entre <text:span text:style-name="T5">virga</text:span> caudée et <text:span text:style-name="T5">punctum</text:span>, qu&apos;il soit carré ou losangé, simple ou en composition, est sans influence sur le rythme. On sait, en effet, que le « plain-chant moderne » tendait à reporter sur sa propre lecture des notes la valeur mesurée que leur avait donnée dans la <text:span text:style-name="T5">musica mensurata</text:span> depuis le <text:span text:style-name="T21">XIII</text:span>° siècle <text:soft-page-break/>environ, c’est-à-dire trois cents ans au moins après la constitution du grand répertoire. De sorte que la <text:span text:style-name="T10">virga</text:span> caudée signifiait pour eux une longue, le <text:span text:style-name="T5">punctum</text:span> carré une brève, le <text:span text:style-name="T5">punctum</text:span> losangé une semi-brève, particulièrement dans les pénultièmes des proparoxytons, raccourcies en conséquence (ex. <text:span text:style-name="T5">mi</text:span> dans D<text:span text:style-name="T21">o</text:span>minus). Jusqu&apos;au bout, Gontier soutiendra contre Pothier que la virga <text:span text:style-name="T5">cu</text:span><text:span text:style-name="T9">l</text:span><text:span text:style-name="T5">minante</text:span>, c’est-à-dire celle placée presque automatiquement en haut d’un dessin mélodique pour des raisons purement graphiques de dérivation des signes, possède une valeur rythmique, ou tout au moins d’accent, alors que l’auteur des <text:span text:style-name="T5">Mélodies</text:span> (qu’a sur ce point confirmé la paléographie ul<text:span text:style-name="T21">t</text:span>érieure) dénie tout rapport entre les deux notions.</text:p>
+   <text:p text:style-name="P23">D&apos;où le postulat fondamental : quelle que soit leur graphie, toutes les notes de la mélodie ont une valeur métrique égale, sauf à recevoir accidentellement des variations de ductus totalement indépendantes des notions de longues et de brèves, qu’on traduise ou non celles-ci en termes de blanche, noire, etc. Les réformateurs qui ont suivi le Concile de Trente, influencés par les idées humanistes de leur temps, ont commis un contresens monumental en s’imaginant le latin <text:span text:style-name="T21">d’Église</text:span> médiéval soumis comme celui d’Horace ou d’Ovide aux normes de la métrique antique : même les vers authentiquement métriques composés par les poètes chrétiens dissocient, à cet égard, le rythme du vers de celui de la musique qui les accompagne<text:note text:id="ftn4" text:note-class="footnote"><text:note-citation>5</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Voir J. Chailley, L&apos;Ecole musicale de Saint-Martial de Limoges jusqu à la fin du x1° siècle. Paris 1960. pp. 168-175.</text:p></text:note-body></text:note>, de même que dans le « cursus » accentuel, la notion d’accent ne doit pas être confondue avec celle de longueur<text:note text:id="ftn5" text:note-class="footnote"><text:note-citation>6</text:note-citation><text:note-body>
+      <text:p text:style-name="Footnote">Du même, Essai sur la formation dc la versification latine d&apos;accent au Moyen Age. Mcdium Aevum XXIX/I, 1960, pp. 49-80, complété par Sur la rythmique des proses victoricnnes, Festschrift Karl Gustav Fellerer, G. Besse Verlag, Regensburg 1962, pp. 77-81.</text:p></text:note-body></text:note>. S’opposant aux idées reçues, ce postulat a été la cible principale des contradicteurs : les écoles « mensuralistes », de Dechevrens à dom Malherbe en passant par Riemann, se sont succédé, plus éphémères les un<text:span text:style-name="T21">e</text:span>s que les autres : seule la thèse de dom Pothier a victorieusement traversé l&apos;épreuve du temps. Mais si toutes les notes se suivent ainsi en valeur égale, n’est-ce pas justifier le reproche si souvent fait au plain-chant de manquer de rythme ? Il est rythmé, réplique l’auteur, mais non pas selon le solfège simpliste des solfèges conservatoriaux qui assimilent le rythme au retour régulier du temps fort et à l&apos;isochronisme des pulsations d’appui. Ce rythme réside dans le rapport des longueurs d’incises entre elles, et apparaît infiniment plus souple et plus varié que celui des « mesures » modernes. A titre <text:span text:style-name="T21">d’exemple</text:span>, dom Pothier en fournit une illustration en analysant, à la lumière d’un chapitre de Guy d’Arezzo, le simple récitatif du <text:span text:style-name="T5">Pater noster</text:span>. Ainsi replacés dans leur rythme et leur phrasé primitifs, réhabillées des ornements et mélismes dont les avaient indûment dépouillées des « condensations » abusives telles que celles du graduel cistercien ou des mutilations pseudo-palestriniennes, les « mélodies grégoriennes » voient leurs couleurs <text:span text:style-name="T21">se</text:span> raviver et leur beauté réapparaître. L&apos;un de leurs mérites les moins négligeables aux yeux de <text:span text:style-name="T21">l’Église</text:span> est leur parfaite adaptation aux textes sacrés dont elles ont pour mission d’être le support privilégié.</text:p>
+   <text:p text:style-name="P23">Certes, le pionnier de 1880 ne pousse pas encore cette proposition capitale à <text:span text:style-name="T21">s</text:span>es ultimes conséquences, mais il en pose déjà clairement le principe : « L’expression qu’il faut mettre dans le chant grégorien est avant tout l’expression que nous appellerions logique <text:span text:style-name="T21">et</text:span> grammaticale » (p. 51) ; cet accent peut être « soit logique, soit pathétique », et une troisième sorte d’accent qu&apos;il appelle « oratoire », c’est-à-dire l’accent de phrase et non plus de m<text:span text:style-name="T21">o</text:span>t peut encore venir s&apos;y substituer et « modifier les in<text:span text:style-name="T21">f</text:span>lexions des voix » (p- 67). On trouve ici la doctrine du « nombre oratoire.» (p. 216) que contestera l<text:span text:style-name="T21">e</text:span> <text:span text:style-name="T5">Nombre musical grégorien</text:span>, mais que reprendra avec succès l’<text:span text:style-name="T5">Esthétique grégorienne</text:span> de dom Ferretti. Ne sommes-nous pas aux sources de la célèbre correspondance de <text:soft-page-break/>Romain Rolland avec Richard Strauss, lorsque, à propos de la prosodie de <text:span text:style-name="T5">Pelléas et Mélisande</text:span>, le premier met en opposition les conceptions rythmiques de la langue germanique, à l’accent de mot immuable, avec celles du français où il n<text:span text:style-name="T21">e</text:span> cesse d’interférer avec l&apos;accent de phrase ou l&apos;accent expressif, « pathétique », disait dom Pothier, en remontant ainsi du français aux langues latin<text:span text:style-name="T21">e</text:span>s et, de là, au latin lui-même ?</text:p>
+   <text:p text:style-name="P23">Autre prescience lointaine : ne croirait-on pas notre auteur déjà sensible aux déviations qui ont suivi et suivent encore Vatican II lorsqu&apos;il écrit, dès les toutes premières pages de son livre, que « ce n’est pas où il y a des paroles plus abondantes, mais où le sentiment est le plus pur et le plus ardent qu’il y a aussi (..) une adoration plus pleine, une supplication que le Seigneur exauce » ? (p. 35)</text:p>
+   <text:p text:style-name="P25"><text:span text:style-name="T18">Mais ce livre ne se veut pas seulement théologique, scientifique ou démonstratif. Il se veut aussi, et avant tout, pratique. D’où la place importante donnée à la prononciation du latin. Ici encore, cent ans après, il nous semble enfoncer des portes ouvertes. C&apos;était le contraire en 1880. Je crois bien me souvenir — j&apos;étais enfant alors — que c&apos;est vers 1920 que pour la première fois le cardinal Dubois, archevêque de Paris, osa ordonner que désormais le latin soit prononcé « en OÙ », c’est-à-dire que pour </text:span><text:span text:style-name="T8">caelum</text:span><text:span text:style-name="T18"> l’on cesserait de dire </text:span><text:span text:style-name="T8">célomme</text:span><text:span text:style-name="T18"> comme on le faisait partout en France, et que l’on dirait </text:span><text:span text:style-name="T8">tchéloum</text:span><text:span text:style-name="T18"> selon les normes italiennes (on disait « romaines</text:span><text:span text:style-name="T18"><text:note text:id="ftn6" text:note-class="footnote"><text:note-citation>7</text:note-citation><text:note-body>
+       <text:p text:style-name="Footnote">On ne parlait pas encore alors de la « prononciation restituée » inventée par les philologues qui. eux. préconiseront plus tard kahéloum.</text:p></text:note-body></text:note></text:span><text:span text:style-name="T18">»). Usage en vérité fort ancien, puisque, au XIII° siècle déjà, on voyait </text:span><text:span text:style-name="T8">Te Deum</text:span><text:span text:style-name="T18"> rimer avec « chantons » et </text:span><text:span text:style-name="T11">laudamus</text:span><text:span text:style-name="T18"> avec </text:span><text:span text:style-name="T8">levez sus</text:span><text:span text:style-name="T18">, ce qui impliquait phonétiquement à peu près </text:span><text:span text:style-name="T8">té déon lôdamu</text:span><text:span text:style-name="T18">…</text:span></text:p>
+   <text:p text:style-name="P23">Les dernières pages du livre — analyse des neumes, étude des récitatifs, examen non exhaustif de plusieurs aspects du répertoire — ne surprennent plus aujourd’hui, et sembleraient même quelque peu en retrait de ce qu’on trouve communément dans les nombreux ouvrages qui en ont repris la matière. Ici encore, il convient de se reporter, pour en apprécier la valeur, à l&apos;état général des connaissances à l’époque de la publication. On sera même surpris de rencontrer de temps à autre des ébauches de propositions hardies qui réapparaissent parfois de nos jours avec timidité, et dont la portée est telle que les successeurs n’ont cessé de les éluder ou de les édulcorer. Voyez notamment le chapitre sur les ornements, répercussions, tremblements, tout ce que les anciens théoriciens appel<text:span text:style-name="T26">ai</text:span>ent les <text:span text:style-name="T5">flores</text:span> et qui poussent notre auteur à parler sans vergogne (pp. 75-76 ou p. 205), de syncopes et de trilles. Lui-même du reste semble quelque peu effrayé des perspectives ainsi ouvertes, et, prudemment (p. 128 ou 306), à propos du redoutable <text:span text:style-name="T5">quilisma</text:span> indique discrètement la voie où s’engageront ses successeurs pour en minimiser les effets. N’est-il pas même bien près (p. 60), sans trop insister d&apos;ailleurs, d&apos;admettre le quart de ton, en vérité probablement illusoire, que lui font <text:span text:style-name="T26">e</text:span>ntrevoir certains des théoriciens médiévaux dont il a, l’un des tout premiers après Gerbert et De Coussernaker, entrepris lui-même l&apos;étude ?</text:p>
+   <text:p text:style-name="P23">Si sommaire et incomplète qu’elle soit (mais le lecteur désormais, grâce à la présente réédition, pourra se reporter à l&apos;original), cette analyse suffit à montrer combien <text:span text:style-name="T5">Les mélodies grégoriennes</text:span> ont été un livre prophétique, et un moteur puissant pour un mouvement naissant qui n’a cessé depuis lors de s&apos;étendre et de se développer. Il répondait à un besoin, et ce besoin n’a pas disparu de nos jours. On a beaucoup parlé de ses insuffisances. Dans les circonstances qui furent celles de sa conception, le fait surprenant n’est pas que ces insuffisances existent, il est qu’elles ne soient ni plus graves ni plus nombreuses. Les successeurs de dom Mocquereau à dom Cardine sauront <text:soft-page-break/>remarquablement approfondir ses intuitions, préciser <text:span text:style-name="T26">e</text:span>t parfois amender sa doctrine, étoffer sa documentation ; mais si, en 1903, le <text:span text:style-name="T5">Motu proprio</text:span> put consacrer un renouveau de la musique liturgique qui dura jusqu’au massacre qui a suivi Vatican II en violation formelle de la Constitution promulguée par lui, si le nom de Solesmes est désormais lié glorieusement à cette renaissance du chant de <text:span text:style-name="T26">l’Église</text:span> chrétienne, si le « chant grégorien » contrairement à ce qu’on tente d’accréditer. a pu être défini par le dernier Concile comme « le chant propre de la liturgie romaine, (celui) qui dans les actions liturgiques (...) doit occuper la première plac<text:span text:style-name="T19">e</text:span><text:span text:style-name="T19"><text:note text:id="ftn7" text:note-class="footnote"><text:note-citation>8</text:note-citation><text:note-body>
+       <text:p text:style-name="Footnote">Concile Vatican II, Constitution De sacra liturgia. art. 116.</text:p></text:note-body></text:note></text:span> », on ne saurait oublier que cette renaissance, inespérée en 1880, fut l’œuvre d’une toute petite équipe de moines perdus dans la campagne, groupée autour d’un apôtre qui fut dom Guéranger, que dom Pothier en fut l&apos;animateur, <text:span text:style-name="T26">e</text:span>t que l&apos;ouvrage ici réédité, peut être considéré dans l’histoire musicale comme l’un des grands livres qui ont fait notre temps. Qui sait, dans le désarroi de celui-ci, si ne fermente pas quelque part un grain de sénevé préparant en silence, à son exemple, le sursaut rénovateur ?</text:p>
+   <text:p text:style-name="P23"/>
+   <text:p text:style-name="P12">Jacques CHAILLEY</text:p>
+   <text:p text:style-name="P23"/>
+   <text:table-of-content text:style-name="Sect1" text:protected="true" text:name="Table des matières1">
+    <text:table-of-content-source text:outline-level="10">
+     <text:index-title-template text:style-name="Contents_20_Heading">Table des matières</text:index-title-template>
+     <text:table-of-content-entry-template text:outline-level="1" text:style-name="Contents_20_1">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="2" text:style-name="Contents_20_2">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="3" text:style-name="Contents_20_3">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="4" text:style-name="Contents_20_4">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="5" text:style-name="Contents_20_5">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="6" text:style-name="Contents_20_6">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="7" text:style-name="Contents_20_7">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="8" text:style-name="Contents_20_8">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="9" text:style-name="Contents_20_9">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+     <text:table-of-content-entry-template text:outline-level="10" text:style-name="Contents_20_10">
+      <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-text/>
+      <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
+      <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
+     </text:table-of-content-entry-template>
+    </text:table-of-content-source>
+    <text:index-body>
+     <text:index-title text:style-name="Sect1" text:name="Table des matières1_Head">
+      <text:p text:style-name="P5">Table des matières</text:p>
+     </text:index-title>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc154_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Préface de l’édition originale<text:tab/>3</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc156_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Notre époque se reprend à étudier et à aimer le passé<text:tab/>3</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc158_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Recherches sur le chant grégorien<text:tab/>3</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc160_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Antiphonaire de S. Gall et de Montpellier<text:tab/>3</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc162_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Commission Rémo-Cambraisienne<text:tab/>3</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc164_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Théorie véritable de l’exécution du plain-chant<text:tab/>4</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc166_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Circonstances qui ont amenées le présent travail<text:tab/>4</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc168_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Conditions d’une restauration complète du chant grégorienne<text:tab/>4</text:a></text:p>
+     <text:p text:style-name="P4"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc170_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Intérêt que doit inspirer le vrai plain-chant à tous les musiciens<text:tab/>5</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc172_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Préface de la réédition de 1980<text:tab/>6</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc174_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 1 : Excellence et caractère du chant liturgique<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc176_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 2 : Importance et conditions d’une bonne exécution du chant grégorien<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc178_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 3 : De l’écriture musicale chez les anciens – Notation alphabétique<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc180_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 4 : Notation neumatique ou usuelle<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc182_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 5 : Phases diverses de l’écriture neumatique<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc184_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 6 : Les neumes par rapport à la durée ou à la force des sons – Lettres significatives – Signes romaniens<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc186_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 7 : Raison des diverses figures de notes – Règle d’exécution commune à toutes les formules<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc188_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 8 : De la prononciation latine<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc190_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 9 : De la manière d’unir en chantant les syllabes d’un même mot<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc192_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 10 : Des divisions dans la lecture et dans le chant<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc194_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 11 : Des Traits mélodiques ou séries de formules sur une même syllabes<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc196_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 12 : Observations pratiques sur la valeurs diverse des notes ou des formules<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc198_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 13 : Du rythme propre au chant grégorien<text:tab/>14</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc200_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 14 : Du rythme mesuré<text:tab/>15</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc202_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 15 : Les récitatifs liturgiques<text:tab/>15</text:a></text:p>
+     <text:p text:style-name="P3"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc204_566804255" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Chapitre 16 : Des Psaumes, des Antiennes et des Répons<text:tab/>15</text:a></text:p>
+    </text:index-body>
+   </text:table-of-content>
+   <text:p text:style-name="Text_20_body"/>
+   <text:p text:style-name="P27"/>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24">BONUS SIS LIBELLO HUIC</text:p>
+   <text:p text:style-name="P24">PATER ALME DULCISQUE MAGISTER</text:p>
+   <text:p text:style-name="P24">BENEDICTE</text:p>
+   <text:p text:style-name="P24">CENTENARII TUI JUBILÆI GAUDIIS DICATO</text:p>
+   <text:p text:style-name="P24">QUOD BIS SEPTENIS ABHINC SÆCULIS</text:p>
+   <text:p text:style-name="P24">FELIX TE NURSIA GENUIT</text:p>
+   <text:p text:style-name="P24">ORDINI CŒNOBITARUM NORMAM VITÆ</text:p>
+   <text:p text:style-name="P24">MUNDO SALUTIS PRÆSIDIUM</text:p>
+   <text:p text:style-name="P24">UNDE MERITO EXHILARANTUR ANIMI</text:p>
+   <text:p text:style-name="P24">SOLEMNIA AGUNTUR SOLVUNTUR VOTA</text:p>
+   <text:p text:style-name="P24">AFFULGET UTIQUE SPES DE CŒLO</text:p>
+   <text:p text:style-name="P24">TE AUSPICE TE DOCTORE TE DUCE</text:p>
+   <text:p text:style-name="P24">ADHUC DIES VIDENDI BONOS.</text:p>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24">UT CHRISTI NIL AMORI NIL LAUPI PRÆPONATUR</text:p>
+   <text:p text:style-name="P24">PSALLENTIUM VOCI MENS CONCORDET</text:p>
+   <text:p text:style-name="P24">VOX MENTI</text:p>
+   <text:p text:style-name="P24">ET CHORIS PER ORBEM RESONANTIBUS</text:p>
+   <text:p text:style-name="P24">GREGORIANS MODULAMINA</text:p>
+   <text:p text:style-name="P24"/>
+   <text:p text:style-name="P24">TEMPORIBUS NOVIS ANTIQUA REFLORESCAT ÆTAS</text:p>
+   <text:h text:style-name="P6" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc174_566804255"/><text:soft-page-break/>Chapitre 1 : Excellence et caractère du chant liturgique<text:bookmark-end text:name="__RefHeading___Toc174_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc176_566804255"/>Chapitre 2 : Importance et conditions d’une bonne exécution du chant grégorien<text:bookmark-end text:name="__RefHeading___Toc176_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc178_566804255"/>Chapitre 3 : De l’écriture musicale chez les anciens – Notation alphabétique<text:bookmark-end text:name="__RefHeading___Toc178_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc180_566804255"/>Chapitre 4 : Notation neumatique ou usuelle<text:bookmark-end text:name="__RefHeading___Toc180_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc182_566804255"/>Chapitre 5 : Phases diverses de l’écriture neumatique<text:bookmark-end text:name="__RefHeading___Toc182_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc184_566804255"/>Chapitre 6 : Les neumes par rapport à la durée ou à la force des sons – Lettres significatives – Signes romaniens<text:bookmark-end text:name="__RefHeading___Toc184_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc186_566804255"/>Chapitre 7 : Raison des diverses figures de notes – Règle d’exécution commune à toutes les formules<text:bookmark-end text:name="__RefHeading___Toc186_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc188_566804255"/>Chapitre 8 : De la prononciation latine<text:bookmark-end text:name="__RefHeading___Toc188_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc190_566804255"/>Chapitre 9 : De la manière d’unir en chantant les syllabes d’un même mot<text:bookmark-end text:name="__RefHeading___Toc190_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc192_566804255"/>Chapitre 10 : Des divisions dans la lecture et dans le chant<text:bookmark-end text:name="__RefHeading___Toc192_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc194_566804255"/>Chapitre 11 : Des Traits mélodiques ou séries de formules sur une même syllabes<text:bookmark-end text:name="__RefHeading___Toc194_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc196_566804255"/>Chapitre 12 : Observations pratiques sur la valeurs diverse des notes ou des formules<text:bookmark-end text:name="__RefHeading___Toc196_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc198_566804255"/>Chapitre 13 : Du rythme propre au chant grégorien<text:bookmark-end text:name="__RefHeading___Toc198_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc200_566804255"/><text:soft-page-break/>Chapitre 14 : Du rythme mesuré<text:bookmark-end text:name="__RefHeading___Toc200_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc202_566804255"/>Chapitre 15 : Les récitatifs liturgiques<text:bookmark-end text:name="__RefHeading___Toc202_566804255"/></text:h>
+   <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc204_566804255"/>Chapitre 16 : Des Psaumes, des Antiennes et des Répons<text:bookmark-end text:name="__RefHeading___Toc204_566804255"/></text:h>
+   <text:p text:style-name="P13"/>
   </office:text>
  </office:body>
 </office:document>
