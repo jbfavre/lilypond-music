@@ -5,9 +5,10 @@
   title = \markup
      \center-column {
        \combine \null \vspace #1
-       "Tourbillon"
+       "No name (yet)"
        " "
       }
+  composer = "Jean Baptiste Favre"
   subtitle = ""
   tagline = ""
 }
@@ -24,23 +25,25 @@
     title = ##f
     subtitle = ##f
     piece = ##f
+    composer = ##f
   }
   \new PianoStaff <<
     \new Staff
     <<
       \clef treble \time 3/8 \key f \minor
       \relative c' {
-        r4. r4.
+        r4.^"Calme et majestueux" r4.
         \new Voice = "soprano" { \voiceOne
           \repeat volta 2 {
-            f8 g af c bf af g af bf af g e \break
-            f8 g af af c df f [ef8.] df16 df4 c8 \break
-            b8 c ef gf8. f16 ef8 a, bf df f8. ef16 df8 \break
-            g,8 af c
+            f8\mp g af c bf af g af bf af g e \break
+            f8\mf g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8 \break
+            df8\<\mf^"Élargir, avec plus d'emphase" b c gf'8.\f\!\> f16 ef8\! c\mf\< a bf f'8.\!\f\> ef16 df8\! \break
+            bf8\mp\< g af
             }
           \alternative {
-            { ef8. df16 c8 c8 [b8.] c16 c4. }
-            { c8 af f bf g e <c e>4. <c f>4. \fermata }
+            { ef'8.\mf\!\> df16 c8 c8\!\p [b8.] c16 <c e,>4 r8 }
+            { \override TextSpanner.bound-details.left.text = "rit."
+              c8\mf\>\startTextSpan af f bf\p\> g e <c e g>4.\pp\stopTextSpan <c f>4. \fermata }
             }
         }
       }
@@ -56,7 +59,7 @@
               r8 <f af c>[ <af c f>]
               r8 <f af df> <af df f>
               r8 <g bf ef> <bf ef g>
-              r8 <ef, g c> <g c>
+              r8 <g bf c> <g bf c>
               r8 <f af df> <af df f>
               r8 <f bf df> <bf df f>
               r8 <g bf ef> <bf ef g>
@@ -70,34 +73,34 @@
             \alternative {
               { r8 <f af df> <af df f>
                 r8 <b d f> <g d' f>
-                <g c>16 df' c bf af g }
-              { r8 <af c f> <f af c>
-                <g c>4. bf8 g8 bf8 a4. \fermata }
+                <g c>16 (df' c) bf-. af-. g-. }
+              { r8 <f af c> <af c f>
+                <g c>4. bf8 g8 bf8 af4. \fermata }
             }
           }
         }
         \new FiguredBass {
           \figuremode {
-            <5>8 <5> <6>
-            <5>8 <5> <6>
+            <5>4.
+            <5>4.
             \repeat volta 2 {
-              <5> <5> <6>
-              <5> <6> <6 4>
-              <6> <6 4> <4\+>
-              <5> <6> <6 4>
-              <5> <6> <6 4>
-              <6> <6 4> <5>
-              <6> <6 4> <4\+>
-              <5> <6 4> <5>
-              <5> <6> <6 4>
-              <5> <6> <6>
-              <5> <6 4> <5>
-              <6> <6 4> <4\+>
-              <5> <6 4> <5>
+              <5>4.
+              <5>
+              <6>
+              <7 _\+>
+              <5>
+              <6>
+              <6>
+              <5>
+              <5>
+              <5>
+              <5>
+              <6>
+              <5>
               }
             \alternative {
-              { <5>8 <6> <6 4> <5> <6> <5> <5>4. }
-              { <5>8 <6> <5> <5> <5> <6 4> <5>4. <5>4. }
+              { <5>4. <5> <5> }
+              { <6 4>4. <7 _\+> <5> <5> }
               }
           }
         }
@@ -106,11 +109,11 @@
             f4.\sustainOn f\sustainOn
             \repeat volta 2 {
               f4.\sustainOn df\sustainOn ef\sustainOn c\sustainOn df\sustainOn bf'\sustainOn ef,\sustainOn af\sustainOn
-              c\sustainOn f,\sustainOn bf\sustainOn ef,\sustainOn af\sustainOn
+              c->\sustainOn f,->\sustainOn bf->\sustainOn ef,->\sustainOn af\sustainOn
               }
             \alternative {
-              {  df,\sustainOn g\sustainOn c\sustainOn }
-              { f,\sustainOn c'8 bf g f4. f4.\fermata }
+              {  df,\sustainOn g\sustainOn c4\sustainOn r8 }
+              { c4.\sustainOn c f, (f)\fermata }
               }
           }
         }
