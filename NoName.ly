@@ -50,16 +50,16 @@
           c4 a8 fs4. g4 c,8  e4. f \break
           g4. a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
           d'4. d4 d8 c4. (c4) f,8 df'4.^"Larmoyant, moins vite" \break
-          df4 df8 c4. (c) \fermata r4.^"Malicieux" r4. r8 g8-. e-. \break
-          c4-- r8 r4. r4. f8 e8 df8 df4.^"Pesant, moins vite" (df4.) \break
-          c4 r8 r4. r4 c8^"Pesant, moins vite" f4. g4. af4. \break
+          df4 df8 c4. (c) \fermata s4.^"Malicieux" s4. r8 <g g'>8-. <e e'>-. \break
+          <c c'>4-- r8 s4. s4. <f f'>8 <e e'>8 <df df'>8 <df df'>4.^"Pesant, moins vite" (<df df'>4.) \break
+          <c c'>4 r8 r4. r4 c8^"Pesant, moins vite" f4. g4. af4. \break
           bf4. af8 bf16 af g af c4 af8 fs4. g4 c,8 \break
           e4. f g af g8 af16 g fs g \break
           bf4 g8 e4. f4 f8 df'4. df4 df8 \break
-          c4. (c4) f,8 d'4.^"Primesautier, rapide" d4 d8 c4. (c4) f,8 \break
-          f'4. f8 e d c4 a8 f4 bf8 a4. g \break
+          c4-. r8 r4 f,8 d'4.^"Primesautier, un peu plus rapide" d4 d8 c4. (c4) f,8 \break
+          f'4.^"Primesautier, plus rapide" f8 e d c4 a8 f4 bf8 a4. g \break
           f'4. (f4) d8 f4. f8 e d c4 a8 f4 bf8 \break
-          a4 r8 g4 r8 f4 r8 d4 r8 f'4. \fermata \bar "||"
+          a4-> r8 g4-> r8 f4-> r8 d4-> r8 <f a c f>4.\sff \fermata \bar "||"
         }
       }
     >>
