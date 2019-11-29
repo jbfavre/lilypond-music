@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2017-08-23T21:26:42.948226418</meta:creation-date><dc:date>2017-11-12T19:04:37.091627787</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>P4DT10M45S</meta:editing-duration><meta:editing-cycles>59</meta:editing-cycles><meta:generator>LibreOffice/5.4.3.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:printed-by>Jean Favre</meta:printed-by><meta:print-date>2017-10-13T12:04:56.736409621</meta:print-date><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="10" meta:paragraph-count="141" meta:word-count="3271" meta:character-count="19398" meta:non-whitespace-character-count="16288"/></office:meta>
+<office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2017-08-23T21:26:42.948226418</meta:creation-date><dc:date>2019-11-29T19:32:15.823884027</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>P4DT13M12S</meta:editing-duration><meta:editing-cycles>60</meta:editing-cycles><meta:generator>LibreOffice/6.3.3.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:printed-by>Jean Favre</meta:printed-by><meta:print-date>2017-10-13T12:04:56.736409621</meta:print-date><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="10" meta:paragraph-count="141" meta:word-count="3271" meta:character-count="19399" meta:non-whitespace-character-count="16289"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">58827</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">34</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">30235</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">30760</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">30819</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
      <config:config-item config:name="ViewLeft" config:type="long">6620</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">78620</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">2505</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">58827</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">34</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">30233</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">89586</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">30850</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">2</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -29,90 +29,98 @@
    </config:config-item-map-indexed>
   </config:config-item-set>
   <config:config-item-set config:name="ooo:configuration-settings">
-   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintFaxName" config:type="string"/>
-   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintProspect" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">jgH+/0RDUEwyNTQwRE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpEQ1BMMjU0MEROAAAAAAAAAAAAAAAAAAAAAAAWAAMArwAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9RENQTDI1NDBETgpvcmllbnRhdGlvbj1Qb3J0cmFpdApjb3BpZXM9MQpjb2xsYXRlPWZhbHNlCm1hcmdpbmRhanVzdG1lbnQ9MCwwLDAsMApjb2xvcmRlcHRoPTI0CnBzbGV2ZWw9MApwZGZkZXZpY2U9MQpjb2xvcmRldmljZT0wClBQRENvbnRleERhdGEKUGFnZVNpemU6QTQAABIAQ09NUEFUX0RVUExFWF9NT0RFDwBEdXBsZXhNb2RlOjpPZmY=</config:config-item>
-   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="RsidRoot" config:type="int">1034492</config:config-item>
-   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
-   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
-   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterName" config:type="string">DCPL2540DN</config:config-item>
-   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
-   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
-   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
-   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
-   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">1034492</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">DCPL2540DN</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">5456693</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">5433463</config:config-item>
-   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
-   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
    <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
-   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">qgH+/0RDUEwyNTQwRE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpEQ1BMMjU0MEROAAAAAAAAAAAAAAAAAAAAAAAWAAMAywAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9RENQTDI1NDBETgpvcmllbnRhdGlvbj1Qb3J0cmFpdApjb3BpZXM9MQpjb2xsYXRlPWZhbHNlCm1hcmdpbmRhanVzdG1lbnQ9MCwwLDAsMApjb2xvcmRlcHRoPTI0CnBzbGV2ZWw9MApwZGZkZXZpY2U9MQpjb2xvcmRldmljZT0wClBQRENvbnRleERhdGEKUGFnZVNpemU6QTQARHVwbGV4Ok5vbmUASW5wdXRTbG90OlRSQVkxAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
   </config:config-item-set>
  </office:settings>
  <office:scripts>
@@ -296,189 +304,208 @@
    <style:text-properties fo:font-style="italic" officeooo:rsid="001e423c" officeooo:paragraph-rsid="001e423c" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0021a950" officeooo:paragraph-rsid="0021a950"/>
+   <style:text-properties fo:font-style="italic" officeooo:rsid="00510088" officeooo:paragraph-rsid="005199c9" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0021a950" officeooo:paragraph-rsid="0022d9b5"/>
+   <style:text-properties officeooo:rsid="0021a950" officeooo:paragraph-rsid="0021a950"/>
   </style:style>
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="0022d9b5"/>
+   <style:text-properties officeooo:rsid="0021a950" officeooo:paragraph-rsid="0022d9b5"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="002e3dc0"/>
+   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="0022d9b5"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="003abd61"/>
+   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="002e3dc0"/>
   </style:style>
   <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-weight="bold" officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="002e3dc0" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="003abd61"/>
   </style:style>
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00247472" officeooo:paragraph-rsid="00247472"/>
+   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="005199c9"/>
   </style:style>
   <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="0024cbac"/>
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="002e3dc0" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="002931e3"/>
+   <style:text-properties officeooo:rsid="00247472" officeooo:paragraph-rsid="00247472"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002931e3"/>
+   <style:text-properties officeooo:rsid="00247472" officeooo:paragraph-rsid="005199c9"/>
   </style:style>
   <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002ff9eb"/>
+   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="0024cbac"/>
   </style:style>
   <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002ae8ca" officeooo:paragraph-rsid="002ae8ca"/>
+   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="002931e3"/>
   </style:style>
   <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="001a1cd0" officeooo:paragraph-rsid="002d5f74"/>
+   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002931e3"/>
   </style:style>
   <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00305ac2" officeooo:paragraph-rsid="00305ac2"/>
+   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002ff9eb"/>
   </style:style>
   <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00305ac2" officeooo:paragraph-rsid="003842ed"/>
+   <style:text-properties officeooo:rsid="002ae8ca" officeooo:paragraph-rsid="002ae8ca"/>
   </style:style>
   <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="00307fb2"/>
+   <style:text-properties officeooo:rsid="001a1cd0" officeooo:paragraph-rsid="002d5f74"/>
   </style:style>
   <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0030cffb" officeooo:paragraph-rsid="0030cffb"/>
+   <style:text-properties officeooo:rsid="00305ac2" officeooo:paragraph-rsid="00305ac2"/>
   </style:style>
   <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0030cffb" officeooo:paragraph-rsid="002931e3"/>
+   <style:text-properties officeooo:rsid="00305ac2" officeooo:paragraph-rsid="003842ed"/>
   </style:style>
   <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00388ba7" officeooo:paragraph-rsid="00388ba7"/>
+   <style:text-properties officeooo:paragraph-rsid="00307fb2"/>
   </style:style>
   <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0042e6ec" officeooo:paragraph-rsid="0042e6ec"/>
+   <style:text-properties officeooo:rsid="0030cffb" officeooo:paragraph-rsid="0030cffb"/>
   </style:style>
   <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0030cffb" officeooo:paragraph-rsid="002931e3"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00388ba7" officeooo:paragraph-rsid="00388ba7"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0042e6ec" officeooo:paragraph-rsid="0042e6ec"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:rsid="004dfa01" officeooo:paragraph-rsid="004dfa01"/>
   </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="0034704f"/>
   </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0034704f" officeooo:paragraph-rsid="0034704f"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties fo:font-weight="normal" officeooo:rsid="00357eac" officeooo:paragraph-rsid="0034704f" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="002ff9eb"/>
   </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Quotations">
-   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:break-before="page"/>
-   <style:text-properties officeooo:rsid="000fc8fc" officeooo:paragraph-rsid="000fc8fc"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:paragraph-properties fo:break-before="page"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:paragraph-properties fo:break-before="page"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Title">
-   <style:text-properties officeooo:paragraph-rsid="004535ed"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="002d5f74"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
-  </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="000fc8fc" officeooo:paragraph-rsid="000fc8fc"/>
-  </style:style>
-  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="000fc8fc"/>
-  </style:style>
-  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Quotations">
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="005199c9"/>
   </style:style>
-  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
-  </style:style>
-  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Footnote">
-   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="002d5f74"/>
-  </style:style>
-  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:paragraph-properties fo:break-before="page"/>
-  </style:style>
-  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
-   <style:text-properties officeooo:paragraph-rsid="0034704f"/>
-  </style:style>
-  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
-   <style:text-properties officeooo:rsid="0034704f" officeooo:paragraph-rsid="0034704f"/>
-  </style:style>
-  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
-   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
-   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
-   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="0024cbac"/>
-  </style:style>
-  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
-   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002931e3"/>
-  </style:style>
-  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L5">
-   <style:text-properties officeooo:rsid="002ae8ca" officeooo:paragraph-rsid="002ae8ca"/>
-  </style:style>
-  <style:style style:name="P59" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-style="italic" officeooo:rsid="001e423c" officeooo:paragraph-rsid="001e423c" style:font-style-asian="italic" style:font-style-complex="italic"/>
-  </style:style>
-  <style:style style:name="P60" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties fo:font-style="italic" officeooo:rsid="00510088" officeooo:paragraph-rsid="005199c9" style:font-style-asian="italic" style:font-style-complex="italic"/>
-  </style:style>
-  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties fo:font-style="normal" officeooo:rsid="00505752" officeooo:paragraph-rsid="00505752" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties fo:font-style="normal" officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties fo:font-style="normal" fo:font-weight="bold" officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-style-complex="normal" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00510088"/>
   </style:style>
-  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
   </style:style>
-  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
-  </style:style>
-  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00305ac2"/>
   </style:style>
-  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00247472" officeooo:paragraph-rsid="005199c9"/>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0052e877" officeooo:paragraph-rsid="0052e877"/>
   </style:style>
-  <style:style style:name="P69" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Quotations">
+   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:rsid="000fc8fc" officeooo:paragraph-rsid="000fc8fc"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Title">
+   <style:text-properties officeooo:paragraph-rsid="004535ed"/>
+  </style:style>
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="002d5f74"/>
+  </style:style>
+  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
+  </style:style>
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Footnote">
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="002d5f74"/>
+  </style:style>
+  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P59" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P60" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="002d5f74"/>
+  </style:style>
+  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="000fc8fc" officeooo:paragraph-rsid="000fc8fc"/>
+  </style:style>
+  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="002d5f74" officeooo:paragraph-rsid="000fc8fc"/>
+  </style:style>
+  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:paragraph-rsid="0034704f"/>
+  </style:style>
+  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:rsid="0034704f" officeooo:paragraph-rsid="0034704f"/>
+  </style:style>
+  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00305ac2" officeooo:paragraph-rsid="00305ac2"/>
   </style:style>
+  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:font-style="italic" officeooo:rsid="00510088" officeooo:paragraph-rsid="001e423c" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="P69" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="00510088"/>
+  </style:style>
   <style:style style:name="P70" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0052e877" officeooo:paragraph-rsid="0052e877"/>
+   <style:text-properties officeooo:rsid="005199c9" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+   <style:text-properties officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+   <style:text-properties officeooo:rsid="0022d9b5" officeooo:paragraph-rsid="005199c9"/>
+  </style:style>
+  <style:style style:name="P73" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
+   <style:text-properties officeooo:rsid="0024cbac" officeooo:paragraph-rsid="0024cbac"/>
+  </style:style>
+  <style:style style:name="P74" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
+   <style:text-properties officeooo:rsid="002931e3" officeooo:paragraph-rsid="002931e3"/>
+  </style:style>
+  <style:style style:name="P75" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L5">
+   <style:text-properties officeooo:rsid="002ae8ca" officeooo:paragraph-rsid="002ae8ca"/>
+  </style:style>
+  <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="004dfa01"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
@@ -611,6 +638,15 @@
   </style:style>
   <style:style style:name="T44" style:family="text">
    <style:text-properties fo:font-size="8pt" fo:font-style="italic" officeooo:rsid="0022d9b5" style:font-size-asian="8pt" style:font-style-asian="italic" style:font-size-complex="8pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="T45" style:family="text">
+   <style:text-properties officeooo:rsid="004dfa01"/>
+  </style:style>
+  <style:style style:name="T46" style:family="text">
+   <style:text-properties style:font-name="Cantarell" fo:font-size="10pt" officeooo:rsid="004dfa01" style:font-size-asian="10.5pt"/>
+  </style:style>
+  <style:style style:name="T47" style:family="text">
+   <style:text-properties style:font-name="Cantarell" fo:font-size="10pt" officeooo:rsid="00534335" style:font-size-asian="10.5pt"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Frame">
    <style:graphic-properties style:vertical-pos="middle" style:vertical-rel="page" style:horizontal-pos="center" style:horizontal-rel="page"/>
@@ -877,14 +913,14 @@
    </text:list-level-style-number>
   </text:list-style>
   <style:page-layout style:name="pm1">
-   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2.004cm" fo:margin-bottom="2.004cm" fo:margin-left="2.004cm" fo:margin-right="2.004cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2.004cm" fo:margin-bottom="2.004cm" fo:margin-left="2.004cm" fo:margin-right="2.004cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style/>
    <style:footer-style/>
   </style:page-layout>
   <style:page-layout style:name="pm2">
-   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
+   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style/>
@@ -903,209 +939,210 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
    <text:p text:style-name="Standard"><draw:frame draw:style-name="fr1" draw:name="Cadre1" text:anchor-type="paragraph" draw:z-index="0">
      <draw:text-box fo:min-height="0.499cm" fo:min-width="2cm">
-      <text:p text:style-name="P39">Atelier psalmodie</text:p>
+      <text:p text:style-name="P51">Atelier psalmodie</text:p>
       <text:p text:style-name="Subtitle"><text:span text:style-name="T39">Paroisse Saint Vincent de Paul,</text:span><text:line-break/>Clichy la Garenne</text:p>
-      <text:p text:style-name="P30">Vendredi 13 octobre 2017</text:p>
+      <text:p text:style-name="P76"><text:span text:style-name="T45">Vendredi </text:span><text:span text:style-name="T46">2</text:span><text:span text:style-name="T47">9</text:span><text:span text:style-name="T45"> </text:span><text:span text:style-name="T46">n</text:span><text:span text:style-name="T47">ovembre</text:span><text:span text:style-name="T45"> 2019</text:span></text:p>
      </draw:text-box>
     </draw:frame></text:p>
-   <text:p text:style-name="P36"><text:span text:style-name="T1">Références </text:span>:</text:p>
-   <text:list xml:id="list406888594" text:style-name="L1">
+   <text:p text:style-name="P48"><text:span text:style-name="T1">Références </text:span>:</text:p>
+   <text:list xml:id="list3609698796" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P42">Présentation Générale du Missel Romain</text:p>
+     <text:p text:style-name="P63">Présentation Générale du Missel Romain</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P42">Présentation Générale de la Liturgie des Heures</text:p>
+     <text:p text:style-name="P63">Présentation Générale de la Liturgie des Heures</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P43">Guide pratique de chant grégorien (Éd. Pierre Téqui)</text:p>
+     <text:p text:style-name="P64">Guide pratique de chant grégorien (Éd. Pierre Téqui)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P43">Les modes grégoriens (Éd. Solesmes)</text:p>
+     <text:p text:style-name="P64">Les modes grégoriens (Éd. Solesmes)</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P5"/>
-   <text:h text:style-name="P40" text:outline-level="1">Un peu d’histoire</text:h>
-   <text:list xml:id="list1869980341" text:style-name="L2">
+   <text:h text:style-name="P52" text:outline-level="1">Un peu d’histoire</text:h>
+   <text:list xml:id="list2711094781" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P51"><text:span text:style-name="T1">Cantillation</text:span> : <text:span text:style-name="T30">héritée de la liturgie synagonale juive, il ne s’agit plus tout à fait d’une lecture, mais pas encore d’un chant en tant que tel. La mélodie est extrêmement rudimentaire et tient plus d’une stylisation particulière de la parole que du chant.</text:span></text:p>
+     <text:p text:style-name="P65"><text:span text:style-name="T1">Cantillation</text:span> : <text:span text:style-name="T30">héritée de la liturgie synagonale juive, il ne s’agit plus tout à fait d’une lecture, mais pas encore d’un chant en tant que tel. La mélodie est extrêmement rudimentaire et tient plus d’une stylisation particulière de la parole que du chant.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P51"><text:span text:style-name="T7">Psalmodie sans refrain</text:span><text:span text:style-name="T30"> : cette pratique s’est développée dès les premiers siècles pour que l’assemblée liturgique exprime sa réponse à la Parole de Dieu par le chant d’un cantique ou d’un psaume.<text:line-break/>Initialement réservé à un soliste, le chant était exécuté d’un trait sans aucune intervention de l’assemblée.<text:line-break/>C’est le mode d’exécution </text:span><text:span text:style-name="T6">direct</text:span><text:span text:style-name="T31"> qui subsiste encore aujourd’hui.</text:span></text:p>
+     <text:p text:style-name="P65"><text:span text:style-name="T7">Psalmodie sans refrain</text:span><text:span text:style-name="T30"> : cette pratique s’est développée dès les premiers siècles pour que l’assemblée liturgique exprime sa réponse à la Parole de Dieu par le chant d’un cantique ou d’un psaume.<text:line-break/>Initialement réservé à un soliste, le chant était exécuté d’un trait sans aucune intervention de l’assemblée.<text:line-break/>C’est le mode d’exécution </text:span><text:span text:style-name="T6">direct</text:span><text:span text:style-name="T31"> qui subsiste encore aujourd’hui.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P51"><text:span text:style-name="T6">Psalmodie responsoriale</text:span><text:span text:style-name="T31"> : répandue en occident à la fin du IVe siècle (St Ambroise, St Augustin), elle permet une participation plus active de l’assemblée, par l’ajout d’un « refrain » (on ne parle pas encore d’antienne) en fin de strophe ou de verset, refrain qui est repris par toute l’assemblée. Outre l’ajout d’un refrain, on voit également apparaître l’exécution par strophe ou par verset, toujours en vigueur aujourd’hui.<text:line-break/></text:span><text:span text:style-name="T6">C’est la </text:span><text:span text:style-name="T8">principale </text:span><text:span text:style-name="T6">forme utilisée aujourd’hui lors de la messe.</text:span></text:p>
+     <text:p text:style-name="P65"><text:span text:style-name="T6">Psalmodie responsoriale</text:span><text:span text:style-name="T31"> : répandue en occident à la fin du IVe siècle (St Ambroise, St Augustin), elle permet une participation plus active de l’assemblée, par l’ajout d’un « refrain » (on ne parle pas encore d’antienne) en fin de strophe ou de verset, refrain qui est repris par toute l’assemblée. Outre l’ajout d’un refrain, on voit également apparaître l’exécution par strophe ou par verset, toujours en vigueur aujourd’hui.<text:line-break/></text:span><text:span text:style-name="T6">C’est la </text:span><text:span text:style-name="T8">principale </text:span><text:span text:style-name="T6">forme utilisée aujourd’hui lors de la messe.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P51"><text:span text:style-name="T6">Psalmodie alternée</text:span><text:span text:style-name="T31"> : évolution mineure de la « psalmodie responsoriale » choisie par les communautés monastiques qui adoptent la récitation commune du psautier.<text:line-break/>Cette exécution alternée par 2 groupes de la communauté a progressivement conduit à rejeter le « refrain » au début et à la fin du psaume.<text:line-break/></text:span><text:span text:style-name="T6">C’est la naissance de l’antienne</text:span><text:span text:style-name="T21">.</text:span></text:p>
+     <text:p text:style-name="P65"><text:span text:style-name="T6">Psalmodie alternée</text:span><text:span text:style-name="T31"> : évolution mineure de la « psalmodie responsoriale » choisie par les communautés monastiques qui adoptent la récitation commune du psautier.<text:line-break/>Cette exécution alternée par 2 groupes de la communauté a progressivement conduit à rejeter le « refrain » au début et à la fin du psaume.<text:line-break/></text:span><text:span text:style-name="T6">C’est la naissance de l’antienne</text:span><text:span text:style-name="T21">.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P52"><text:span text:style-name="T1">Schola cantorum</text:span><text:span text:style-name="T20"> : aux Ve et Vième siècle, le culte devient public et va gagner en faste. La musique s’impose de plus en plus dans la liturgie, et </text:span><text:span text:style-name="T22">de</text:span><text:span text:style-name="T24">s</text:span><text:span text:style-name="T22"> groupes de musiciens professionnels </text:span><text:span text:style-name="T24">sont engagés par les basiliques</text:span><text:span text:style-name="T22">.<text:line-break/>Cette période voit apparaître un répertoire totalement nouveau. Par exemple, le chant d’entrée (Introït) mais aussi le chant de communion </text:span><text:span text:style-name="T23">(auparavant on chantait le psaume 33)</text:span><text:span text:style-name="T22"> datent de cette époque.<text:line-break/>La psalmodie n’est pas épargnée puisqu’elle gagne en complexité musicale, parfois au détriment du texte qui s’en trouve raccourci. Ainsi naissent le « trait » et le « graduel ».</text:span></text:p>
+     <text:p text:style-name="P66"><text:span text:style-name="T1">Schola cantorum</text:span><text:span text:style-name="T20"> : aux Ve et Vième siècle, le culte devient public et va gagner en faste. La musique s’impose de plus en plus dans la liturgie, et </text:span><text:span text:style-name="T22">de</text:span><text:span text:style-name="T24">s</text:span><text:span text:style-name="T22"> groupes de musiciens professionnels </text:span><text:span text:style-name="T24">sont engagés par les basiliques</text:span><text:span text:style-name="T22">.<text:line-break/>Cette période voit apparaître un répertoire totalement nouveau. Par exemple, le chant d’entrée (Introït) mais aussi le chant de communion </text:span><text:span text:style-name="T23">(auparavant on chantait le psaume 33)</text:span><text:span text:style-name="T22"> datent de cette époque.<text:line-break/>La psalmodie n’est pas épargnée puisqu’elle gagne en complexité musicale, parfois au détriment du texte qui s’en trouve raccourci. Ainsi naissent le « trait » et le « graduel ».</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P33"/>
-   <text:h text:style-name="P37" text:outline-level="1">Structure d’un psaume</text:h>
-   <text:p text:style-name="P25">Le psaume en lui-même est une poésie composée de versets. Les versets sont partagés en 2 ou 3 stiques. <text:span text:style-name="T28">Ils sont également regroupés par strophes.</text:span></text:p>
-   <text:p text:style-name="P25"><text:span text:style-name="T27">Les </text:span>verset<text:span text:style-name="T28">s</text:span> <text:span text:style-name="T27">comportant 2 stiques (cas le plus courant) sont appelé « versets </text:span>distiques ». <text:span text:style-name="T27">Ceux à 3 stiques sont appelés « versets tri-stiques ».</text:span></text:p>
-   <text:p text:style-name="P24">Les séparations entre les stiques sont appelées « médiante », entre l’avant-dernier et le dernier stique, et « flexe » entre le premier et le second stique <text:span text:style-name="T32">(la « flexe » n’existe donc que </text:span>dans un tri-stique<text:span text:style-name="T32">)</text:span>.</text:p>
-   <text:p text:style-name="P23">Enfin, le psaume est accompagné d’une « antienne ». La plupart du temps, l’antienne permet de mettre en évidence un verset du psaume lui-même. Mais il est aussi possible d’utiliser un passage des écritures qui fasse particulièrement écho au psaume.</text:p>
+   <text:p text:style-name="P36"/>
+   <text:h text:style-name="P49" text:outline-level="1">Structure d’un psaume</text:h>
+   <text:p text:style-name="P28">Le psaume en lui-même est une poésie composée de versets. Les versets sont partagés en 2 ou 3 stiques. <text:span text:style-name="T28">Ils sont également regroupés par strophes.</text:span></text:p>
+   <text:p text:style-name="P28"><text:span text:style-name="T27">Les </text:span>verset<text:span text:style-name="T28">s</text:span> <text:span text:style-name="T27">comportant 2 stiques (cas le plus courant) sont appelé « versets </text:span>distiques ». <text:span text:style-name="T27">Ceux à 3 stiques sont appelés « versets tri-stiques ».</text:span></text:p>
+   <text:p text:style-name="P27">Les séparations entre les stiques sont appelées « médiante », entre l’avant-dernier et le dernier stique, et « flexe » entre le premier et le second stique <text:span text:style-name="T32">(la « flexe » n’existe donc que </text:span>dans un tri-stique<text:span text:style-name="T32">)</text:span>.</text:p>
+   <text:p text:style-name="P26">Enfin, le psaume est accompagné d’une « antienne ». La plupart du temps, l’antienne permet de mettre en évidence un verset du psaume lui-même. Mais il est aussi possible d’utiliser un passage des écritures qui fasse particulièrement écho au psaume.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">La place du psaume dans la Liturgie</text:h>
-   <text:p text:style-name="P70">Le psaume intervient entre la première et la deuxième lecture. Il s’agit d’une réponse du peuple de Dieu à la parole divine.</text:p>
-   <text:p text:style-name="P70">Avec l’Alléluia, et son verset, cela permet d’alterner trois mouvements descendants de Dieu vers son peuple (les deux lectures et l’évangile), et deux mouvements ascendants du peuple vers Dieu (le psaume, puis l’Alléluia).</text:p>
-   <text:p text:style-name="P70">De la même manière que les lectures se doivent d’être faites sur un ton le plus neutre possible, de manière à ne pas imposer une quelconque interprétation du texte à l’auditoire, il convient également que la psalmodie soit la plus neutre possible. Nous reviendrons plus en détail sur ce point.</text:p>
+   <text:p text:style-name="P45">Le psaume intervient entre la première et la deuxième lecture. Il s’agit d’une réponse du peuple de Dieu à la parole divine.</text:p>
+   <text:p text:style-name="P45">Avec l’Alléluia, et son verset, cela permet d’alterner trois mouvements descendants de Dieu vers son peuple (les deux lectures et l’évangile), et deux mouvements ascendants du peuple vers Dieu (le psaume, puis l’Alléluia).</text:p>
+   <text:p text:style-name="P45">De la même manière que les lectures se doivent d’être faites sur un ton le plus neutre possible, de manière à ne pas imposer une quelconque interprétation du texte à l’auditoire, il convient également que la psalmodie soit la plus neutre possible. Nous reviendrons plus en détail sur ce point.</text:p>
    <text:h text:style-name="Heading_20_1" text:outline-level="1"><text:span text:style-name="T43">Les formes d’e</text:span>xécution</text:h>
-   <text:p text:style-name="P67"><text:span text:style-name="T27">Il existe 3 exécutions principales : directe (ou continue), alternée et responsoriale (ou antiphonaire).</text:span></text:p>
-   <text:p text:style-name="P66"><text:span text:style-name="T43">Un psaume peut être exécuté par verset ou, par défaut, par strophe. </text:span>Notamment, lorsque les strophes du psaume sont irrégulières, c’est-à-dire qu’elle<text:span text:style-name="T43">s</text:span> contiennent un nombre variable de verset<text:span text:style-name="T43">s</text:span>, on est contraint à une exécution par verset. Lorsque, au contraire, elles sont régulières, on a le choix de l’exécution. Celle-ci va dépendre des habitudes de la paroisse, mais aussi de l’harmonisation disponible.</text:p>
+   <text:p text:style-name="P26">Il existe 3 exécutions principales : directe (ou continue), alternée et responsoriale (ou antiphonaire).</text:p>
+   <text:p text:style-name="P38"><text:span text:style-name="T43">Un psaume peut être exécuté par verset ou, par défaut, par strophe. </text:span>Notamment, lorsque les strophes du psaume sont irrégulières, c’est-à-dire qu’elle<text:span text:style-name="T43">s</text:span> contiennent un nombre variable de verset<text:span text:style-name="T43">s</text:span>, on est contraint à une exécution par verset. Lorsque, au contraire, elles sont régulières, on a le choix de l’exécution. Celle-ci va dépendre des habitudes de la paroisse, mais aussi de l’harmonisation disponible.</text:p>
    <text:p text:style-name="Text_20_body"><text:span text:style-name="T1">Exemple </text:span><text:span text:style-name="T12">de psaume régulier</text:span> : psaume<text:span text:style-name="T33">s</text:span> <text:span text:style-name="T43">22, 44, 62 (uniquement dans sa version « courte » pour la messe), </text:span>137</text:p>
    <text:p text:style-name="Text_20_body"><text:span text:style-name="T1">Exemples de psaumes irréguliers</text:span> : psaumes 68, 102, 103</text:p>
    <text:p text:style-name="Text_20_body">Dans toute la mesure du possible, et en tout cas pour la messe, on essaiera de toujours privilégier une exécution par strophe.</text:p>
-   <text:h text:style-name="P46" text:outline-level="2"><text:span text:style-name="T42">Forme directe</text:span><text:span text:style-name="T42"><text:note text:id="ftn0" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
-       <text:p text:style-name="P47">Du latin « in directum »</text:p></text:note-body></text:note></text:span><text:span text:style-name="T42"> (ou continue)</text:span></text:h>
-   <text:p text:style-name="P60">Il s’agit de la forme d’exécution habituelle pour les moines, ou la liturgie des heures<text:span text:style-name="T41">.</text:span></text:p>
-   <text:p text:style-name="P62">Cette forme peut être utilisée pour la messe ou pour la Liturgie des Heures, mais elle ne semble pas être la forme par défaut.</text:p>
-   <text:p text:style-name="P44"><text:soft-page-break/><text:span text:style-name="T11">Antienne</text:span><text:span text:style-name="T42"> : chantre<text:line-break/><text:line-break/></text:span><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/></text:span><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/></text:span><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/>[…]<text:line-break/><text:line-break/></text:span><text:span text:style-name="T11">Antienne</text:span><text:span text:style-name="T42"> : tous</text:span></text:p>
-   <text:h text:style-name="P46" text:outline-level="2"><text:span text:style-name="T43">Forme alternée</text:span></text:h>
-   <text:p text:style-name="P60">Il s’agit de la forme d’exécution habituelle <text:span text:style-name="T43">dans les monastères</text:span><text:span text:style-name="T41">.</text:span></text:p>
-   <text:p text:style-name="P62">Cette forme reprend la structure de la « forme directe ». Toutefois, les versets enchaînés sont alors chantés en alternance par le psalmiste et l’assemblée, le psalmiste et un chœur, deux chœurs, le chœur et l’assemblée, etc…</text:p>
-   <text:p text:style-name="P63">Si l’on choisit cette forme pour la messe, on veillera à conserver une « participation active de l’assemblée » en préférant une alternance entre le psalmiste ou le chœur d’une part, et l’assemblée d’autre part.</text:p>
-   <text:h text:style-name="P46" text:outline-level="2"><text:span text:style-name="T43">Forme responsoriale (ou antiphonaire</text:span><text:span text:style-name="T43"><text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
-       <text:p text:style-name="P47">Du latin <text:span text:style-name="T13">Antiphona</text:span> qui signifie <text:span text:style-name="T13">Antienne</text:span> (<text:span text:style-name="T13">Antiphon</text:span> en anglais)</text:p></text:note-body></text:note></text:span><text:span text:style-name="T43">)</text:span></text:h>
-   <text:p text:style-name="P9"><text:span text:style-name="T42">Il s’agit de la forme habituelle d’exécution du psaume en paroisse pour la messe</text:span></text:p>
-   <text:p text:style-name="P61">L’antienne est reprise entre chaque verset ou <text:span text:style-name="T42">chaque </text:span>strophe.</text:p>
-   <text:p text:style-name="P44"><text:span text:style-name="T1">Antienne</text:span> : chantre <text:span text:style-name="T25">(généralement répétée par l’assemblée)<text:line-break/><text:line-break/></text:span><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée<text:line-break/><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée<text:line-break/>[…]<text:line-break/><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/><text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée</text:p>
-   <text:p text:style-name="P64"><text:span text:style-name="T43">Une variante de cette forme consiste à utiliser la « forme directe », tout en confiant une acclamation à l’assemblée. Cette acclamation revient généralement de manière régulière tout au long du psaume.</text:span></text:p>
-   <text:p text:style-name="P66"><text:span text:style-name="T43">Le principal exemple, si ce n’est le seul, est le psaume 135, dans lequel l’assemblée peut reprendre le stique « Éternel est son amour ! ». L’antienne n’est alors chantée qu’en début et en fin de psaume.</text:span></text:p>
-   <text:p text:style-name="P65">Mais on peut également inclure le psaume 45 dans cette catégorie qui « prévoit » un « refrain » après chaque strophe</text:p>
-   <text:p text:style-name="P65">Dans le même registre, on pourra citer les psaumes dits « Alléluiatiques » dans lesquels l’assemblée peut reprendre l’acclamation « Alléluia » à intervalle réguliers. On pensera notamment aux psaumes 117, 148 ou encore 150.</text:p>
-   <text:h text:style-name="P49" text:outline-level="1"><text:soft-page-break/>Le rythme</text:h>
-   <text:p text:style-name="P55"><text:span text:style-name="T1">Un psaume est une poésie. </text:span>Il faut donc d’abord en maîtriser la lecture avant de vouloir le chanter.</text:p>
-   <text:p text:style-name="P55">Les seuls « accents » autorisés sont ceux liés à la prosodie du texte, pas à l’interprétation du texte en accentuant un mot plutôt qu’un autre.</text:p>
-   <text:p text:style-name="P55"><text:span text:style-name="T16">I</text:span>l n’y a pas de rythme à proprement parler (hors prosodie <text:span text:style-name="T16">du texte</text:span>). Néanmoins, il convient de respecter la ponctuation.</text:p>
-   <text:p text:style-name="P55">La ponctuation introduit des pauses dans la déclamation ou la psalmodie. Mais il faut savoir les gérer !</text:p>
-   <text:list xml:id="list3500121454" text:style-name="L3">
+   <text:h text:style-name="P55" text:outline-level="2"><text:span text:style-name="T42">Forme directe</text:span><text:span text:style-name="T42"><text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+       <text:p text:style-name="P56">Du latin « in directum »</text:p></text:note-body></text:note></text:span><text:span text:style-name="T42"> (ou continue)</text:span></text:h>
+   <text:p text:style-name="P10">Il s’agit de la forme d’exécution habituelle pour les moines, ou la liturgie des heures<text:span text:style-name="T41">.</text:span></text:p>
+   <text:p text:style-name="P40">Cette forme peut être utilisée pour la messe ou pour la Liturgie des Heures, mais elle ne semble pas être la forme par défaut.</text:p>
+   <text:p text:style-name="P47"><text:span text:style-name="T11">Antienne</text:span><text:span text:style-name="T42"> : chantre<text:line-break/><text:line-break/></text:span><text:soft-page-break/><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/></text:span><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/></text:span><text:span text:style-name="T11">Verset </text:span><text:span text:style-name="T42">: assemblée, chœur ou psalmiste<text:line-break/>[…]<text:line-break/><text:line-break/></text:span><text:span text:style-name="T11">Antienne</text:span><text:span text:style-name="T42"> : tous</text:span></text:p>
+   <text:h text:style-name="P61" text:outline-level="2">Forme alternée</text:h>
+   <text:p text:style-name="P10">Il s’agit de la forme d’exécution habituelle <text:span text:style-name="T43">dans les monastères</text:span><text:span text:style-name="T41">.</text:span></text:p>
+   <text:p text:style-name="P40">Cette forme reprend la structure de la « forme directe ». Toutefois, les versets enchaînés sont alors chantés en alternance par le psalmiste et l’assemblée, le psalmiste et un chœur, deux chœurs, le chœur et l’assemblée, etc…</text:p>
+   <text:p text:style-name="P41">Si l’on choisit cette forme pour la messe, on veillera à conserver une « participation active de l’assemblée » en préférant une alternance entre le psalmiste ou le chœur d’une part, et l’assemblée d’autre part.</text:p>
+   <text:h text:style-name="P55" text:outline-level="2"><text:span text:style-name="T43">Forme responsoriale (ou antiphonaire</text:span><text:span text:style-name="T43"><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+       <text:p text:style-name="P56">Du latin <text:span text:style-name="T13">Antiphona</text:span> qui signifie <text:span text:style-name="T13">Antienne</text:span> (<text:span text:style-name="T13">Antiphon</text:span> en anglais)</text:p></text:note-body></text:note></text:span><text:span text:style-name="T43">)</text:span></text:h>
+   <text:p text:style-name="P68">Il s’agit de la forme habituelle d’exécution du psaume en paroisse pour la messe</text:p>
+   <text:p text:style-name="P39">L’antienne est reprise entre chaque verset ou <text:span text:style-name="T42">chaque </text:span>strophe.</text:p>
+   <text:p text:style-name="P47"><text:span text:style-name="T1">Antienne</text:span> : chantre <text:span text:style-name="T25">(généralement répétée par l’assemblée)<text:line-break/><text:line-break/></text:span><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée<text:line-break/><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée<text:line-break/>[…]<text:line-break/><text:span text:style-name="T2">Verset</text:span><text:span text:style-name="T25"> : psalmiste<text:line-break/><text:line-break/></text:span><text:span text:style-name="T1">Antienne</text:span> : assemblée</text:p>
+   <text:p text:style-name="P69">Une variante de cette forme consiste à utiliser la « forme directe », tout en confiant une acclamation à l’assemblée. Cette acclamation revient généralement de manière régulière tout au long du psaume.</text:p>
+   <text:p text:style-name="P43">Le principal exemple, si ce n’est le seul, est le psaume 135, dans lequel l’assemblée peut reprendre le stique « Éternel est son amour ! ». L’antienne n’est alors chantée qu’en début et en fin de psaume.</text:p>
+   <text:p text:style-name="P43">Mais on peut également inclure le psaume 45 dans cette catégorie qui « prévoit » un « refrain » après chaque strophe</text:p>
+   <text:p text:style-name="P43">Dans le même registre, on pourra citer les psaumes dits « Alléluiatiques » dans lesquels l’assemblée peut reprendre l’acclamation « Alléluia » à intervalle réguliers. On pensera notamment aux psaumes 117, 148 ou encore 150.</text:p>
+   <text:h text:style-name="P53" text:outline-level="1">Le rythme</text:h>
+   <text:p text:style-name="P16"><text:span text:style-name="T1">Un psaume est une poésie. </text:span>Il faut donc d’abord en maîtriser la lecture avant de vouloir le chanter.</text:p>
+   <text:p text:style-name="P16">Les seuls « accents » autorisés sont ceux liés à la prosodie du texte, pas à l’interprétation du texte en accentuant un mot plutôt qu’un autre.</text:p>
+   <text:p text:style-name="P16"><text:soft-page-break/><text:span text:style-name="T16">I</text:span>l n’y a pas de rythme à proprement parler (hors prosodie <text:span text:style-name="T16">du texte</text:span>). Néanmoins, il convient de respecter la ponctuation.</text:p>
+   <text:p text:style-name="P16">La ponctuation introduit des pauses dans la déclamation ou la psalmodie. Mais il faut savoir les gérer !</text:p>
+   <text:list xml:id="list4177796683" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P54">fin de <text:span text:style-name="T26">verset</text:span> : longue pause</text:p>
+     <text:p text:style-name="P72">fin de <text:span text:style-name="T26">verset</text:span> : longue pause</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P54">« milieu » de <text:span text:style-name="T26">verset</text:span> : on ne coupe pas « l’intention »</text:p>
+     <text:p text:style-name="P72">« milieu » de <text:span text:style-name="T26">verset</text:span> : on ne coupe pas « l’intention »</text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P54">« virgule » : pause courte</text:p>
+       <text:p text:style-name="P72">« virgule » : pause courte</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P53">« <text:span text:style-name="T15">point virgule » : pause semi longue (plus que la virgule, moins que la fin de verset)</text:span></text:p>
+       <text:p text:style-name="P71">« <text:span text:style-name="T15">point virgule » : pause semi longue (plus que la virgule, moins que la fin de verset)</text:span></text:p>
       </text:list-item>
      </text:list>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P68">De plus, toutes les syllabes « durent » le même temps.<text:line-break/><text:span text:style-name="T1">Il n’est pas possible « d’accélérer » le rythme de déclamation/psalmodie au prétexte qu’il n’y a pas de mots importants, ou au contraire de « ralentir » au moment d’un mot « important »</text:span>.</text:p>
+   <text:p text:style-name="P19">De plus, toutes les syllabes « durent » le même temps.<text:line-break/><text:span text:style-name="T1">Il n’est pas possible « d’accélérer » le rythme de déclamation/psalmodie au prétexte qu’il n’y a pas de mots importants, ou au contraire de « ralentir » au moment d’un mot « important »</text:span>.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Prononciation du texte</text:h>
-   <text:p text:style-name="P10"><text:span text:style-name="T1">Règle de base</text:span> : on prononce toutes les syllabes, y compris les syllabes finales muettes : « faibles<text:span text:style-name="T1">se</text:span> ». Mais <text:span text:style-name="T34">ces dernières</text:span> sont évidemment allégées par rapport au reste du texte.</text:p>
-   <text:p text:style-name="P10">Dans <text:span text:style-name="T43">le </text:span>cas d’une syllabe muette suivie <text:span text:style-name="T15">par un mot commençant par une voyelle</text:span>, on pourra lier les 2 mots pour fluidifier le texte.</text:p>
-   <text:p text:style-name="P11"><text:span text:style-name="T1">Ex</text:span> : psaume <text:span text:style-name="T15">6</text:span>2, verset <text:span text:style-name="T15">1</text:span> : « <text:span text:style-name="T15">terre aride, altérée sans eau</text:span> » =&gt; « <text:span text:style-name="T15">terr</text:span><text:span text:style-name="T44">(e)</text:span><text:span text:style-name="T15"> aride, altérée sans eau</text:span> ».</text:p>
+   <text:p text:style-name="P11"><text:span text:style-name="T1">Règle de base</text:span> : on prononce toutes les syllabes, y compris les syllabes finales muettes : « faibles<text:span text:style-name="T1">se</text:span> ». Mais <text:span text:style-name="T34">ces dernières</text:span> sont évidemment allégées par rapport au reste du texte.</text:p>
+   <text:p text:style-name="P11">Dans <text:span text:style-name="T43">le </text:span>cas d’une syllabe muette suivie <text:span text:style-name="T15">par un mot commençant par une voyelle</text:span>, on pourra lier les 2 mots pour fluidifier le texte.</text:p>
+   <text:p text:style-name="P12"><text:span text:style-name="T1">Ex</text:span> : psaume <text:span text:style-name="T15">6</text:span>2, verset <text:span text:style-name="T15">1</text:span> : « <text:span text:style-name="T15">terre aride, altérée sans eau</text:span> » =&gt; « <text:span text:style-name="T15">terr</text:span><text:span text:style-name="T44">(e)</text:span><text:span text:style-name="T15"> aride, altérée sans eau</text:span> ».</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:span text:style-name="T16">R</text:span>ythme</text:h>
    <text:h text:style-name="Heading_20_1" text:outline-level="1">Musique</text:h>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Structure musicale</text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Intonation</text:h>
-   <text:p text:style-name="P19">Il s’agit des premières notes de la psalmodie. Elles sont systématiques en grégorien, souvent absentes en psalmodie « moderne ».</text:p>
-   <text:p text:style-name="P19">Dans le cas où elles sont présentes, chaque note correspond à une syllabe. <text:span text:style-name="T26">Lorsque le verset est trop courte, l’intonation est souvent omise.</text:span></text:p>
-   <text:p text:style-name="P19">Elle permet <text:span text:style-name="T26">de marquer le début de la psalmodie. Musicalement, l’intonation permet d’</text:span>installer la psalmodie sur <text:span text:style-name="T26">s</text:span>a « teneur ».</text:p>
-   <text:p text:style-name="P19">En grégorien, l’intonation est utilisée uniquement pour le premier verset. Les suivants débutent directement sur la teneur <text:span text:style-name="T26">(</text:span>ceci est <text:span text:style-name="T26">principalement </text:span>du à l’exécution directe des psaumes<text:span text:style-name="T26">)</text:span>. Il existe néanmoins quelques exceptions, dans lesquelles chaque verset <text:span text:style-name="T34">est réintoné</text:span> (Benedictus, Magnificat, Nunc Dimittis).</text:p>
-   <text:p text:style-name="P26"><text:soft-page-break/>En psalmodie « moderne », l’intonation est assez peu présente.</text:p>
+   <text:p text:style-name="P22">Il s’agit des premières notes de la psalmodie. Elles sont systématiques en grégorien, souvent absentes en psalmodie « moderne ».</text:p>
+   <text:p text:style-name="P22">Dans le cas où elles sont présentes, chaque note correspond à une syllabe. <text:span text:style-name="T26">Lorsque le verset est trop courte, l’intonation est souvent omise.</text:span></text:p>
+   <text:p text:style-name="P22">Elle permet <text:span text:style-name="T26">de marquer le début de la psalmodie. Musicalement, l’intonation permet d’</text:span>installer la psalmodie sur <text:span text:style-name="T26">s</text:span>a « teneur ».</text:p>
+   <text:p text:style-name="P22">En grégorien, l’intonation est utilisée uniquement pour le premier verset. Les suivants débutent directement sur la teneur <text:span text:style-name="T26">(</text:span>ceci est <text:span text:style-name="T26">principalement </text:span>du à l’exécution directe des psaumes<text:span text:style-name="T26">)</text:span>. Il existe néanmoins quelques exceptions, dans lesquelles chaque verset <text:span text:style-name="T34">est réintoné</text:span> (Benedictus, Magnificat, Nunc Dimittis).</text:p>
+   <text:p text:style-name="P29">En psalmodie « moderne », l’intonation est assez peu présente.</text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Teneur ou récitation</text:h>
-   <text:p text:style-name="P19">Note « principale » de la psalmodie.</text:p>
-   <text:p text:style-name="P19">La récitation débute après l’intonation jusqu’à la médiante, et de la médiante jusqu’à la clausule. Elle peut être interrompue par la « flexe ».</text:p>
-   <text:p text:style-name="P19">En grégorien, la teneur est généralement la dominante du ton de la psalmodie.</text:p>
-   <text:p text:style-name="P21">En psalmodie « moderne », la récitation s’effectue souvent sur 2 notes. Ceci permet d’utiliser des harmonies plus complexes. <text:span text:style-name="T29">La première note est alors assimilable à l’intonation, peu présente par ailleurs.</text:span></text:p>
-   <text:p text:style-name="P21">Le texte du psaume prévoit généralement la syllabe sur laquelle <text:span text:style-name="T35">le </text:span>changement de note devra s’effectuer.<text:line-break/><text:span text:style-name="T35">Il s’agit généralement d’un accent tonique du texte. Mais il est possible de choisir une autre syllabe, notamment si la psalmodie suggère une meilleur solution.<text:line-break/></text:span><text:span text:style-name="T9">Il convient toutefois de respecter la priorité donnée du texte. Dans le doute, on respectera les indications déjà présentent.</text:span></text:p>
+   <text:p text:style-name="P22">Note « principale » de la psalmodie.</text:p>
+   <text:p text:style-name="P22">La récitation débute après l’intonation jusqu’à la médiante, et de la médiante jusqu’à la clausule. Elle peut être interrompue par la « flexe ».</text:p>
+   <text:p text:style-name="P22"><text:soft-page-break/>En grégorien, la teneur est généralement la dominante du ton de la psalmodie.</text:p>
+   <text:p text:style-name="P24">En psalmodie « moderne », la récitation s’effectue souvent sur 2 notes. Ceci permet d’utiliser des harmonies plus complexes. <text:span text:style-name="T29">La première note est alors assimilable à l’intonation, peu présente par ailleurs.</text:span></text:p>
+   <text:p text:style-name="P24">Le texte du psaume prévoit généralement la syllabe sur laquelle <text:span text:style-name="T35">le </text:span>changement de note devra s’effectuer.<text:line-break/><text:span text:style-name="T35">Il s’agit généralement d’un accent tonique du texte. Mais il est possible de choisir une autre syllabe, notamment si la psalmodie suggère une meilleur solution.<text:line-break/></text:span><text:span text:style-name="T9">Il convient toutefois de respecter la priorité donnée du texte. Dans le doute, on respectera les indications déjà présentent.</text:span></text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Clausules</text:h>
    <text:p text:style-name="Heading">Médiante</text:p>
-   <text:p text:style-name="P20">La médiante est une formule mélodique qui <text:span text:style-name="T29">sépare l’avant-dernier et le dernier stique</text:span>.</text:p>
-   <text:p text:style-name="P26">Elle est donc toujours présente, que l’on soit en présence d’un distique ou d’un tristique.</text:p>
-   <text:p text:style-name="P26">Par défaut, elle n’est pas indiquée. Elle apparaît sur la forme d’une astérisque « <text:span text:style-name="T1">*</text:span> » lorsque l’on estime qu’il peut y avoir ambiguité. C’est notamment le cas lorsque la flexe est elle-même présente, mais également lorsque des distiques et des tristiques sont présents dans la même strophe par exemple.</text:p>
-   <text:p text:style-name="P26"/>
+   <text:p text:style-name="P23">La médiante est une formule mélodique qui <text:span text:style-name="T29">sépare l’avant-dernier et le dernier stique</text:span>.</text:p>
+   <text:p text:style-name="P29">Elle est donc toujours présente, que l’on soit en présence d’un distique ou d’un tristique.</text:p>
+   <text:p text:style-name="P29">Par défaut, elle n’est pas indiquée. Elle apparaît sur la forme d’une astérisque « <text:span text:style-name="T1">*</text:span> » lorsque l’on estime qu’il peut y avoir ambiguité. C’est notamment le cas lorsque la flexe est elle-même présente, mais également lorsque des distiques et des tristiques sont présents dans la même strophe par exemple.</text:p>
+   <text:p text:style-name="P29"/>
    <text:p text:style-name="Heading">Flexe</text:p>
-   <text:p text:style-name="P26">Son utilisation a beaucoup évoluée dans le temps.</text:p>
-   <text:p text:style-name="P27">Historiquement, la « flexe » est aussi utilisée pour diviser le premier stique d’un verset, afin d’éviter une trop longue psalmodie sur une seule note.</text:p>
-   <text:p text:style-name="P18"><text:span text:style-name="T3">Elle </text:span><text:span text:style-name="T1">ne </text:span><text:span text:style-name="T4">remplace </text:span><text:span text:style-name="T5">jamais</text:span><text:span text:style-name="T4"> la médiante</text:span><text:span text:style-name="T1"> !</text:span></text:p>
-   <text:p text:style-name="P17">L’exécution de la « flexe » obéit à quelques règles simples :</text:p>
-   <text:list xml:id="list1586671151" text:style-name="L4">
+   <text:p text:style-name="P29">Son utilisation a beaucoup évoluée dans le temps.</text:p>
+   <text:p text:style-name="P30">Historiquement, la « flexe » est aussi utilisée pour diviser le premier stique d’un verset, afin d’éviter une trop longue psalmodie sur une seule note.</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T3">Elle </text:span><text:span text:style-name="T1">ne </text:span><text:span text:style-name="T4">remplace </text:span><text:span text:style-name="T5">jamais</text:span><text:span text:style-name="T4"> la médiante</text:span><text:span text:style-name="T1"> !</text:span></text:p>
+   <text:p text:style-name="P20">L’exécution de la « flexe » obéit à quelques règles simples :</text:p>
+   <text:list xml:id="list1012522749" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P56"><text:span text:style-name="T26">La flexe ne comporte qu’une seule </text:span>note. <text:span text:style-name="T26">A</text:span>ucun ornement <text:span text:style-name="T26">n’est </text:span>possible, <text:span text:style-name="T26">afin d’éviter la confusion avec la médiante ou la clausule</text:span></text:p>
+     <text:p text:style-name="P73"><text:span text:style-name="T26">La flexe ne comporte qu’une seule </text:span>note. <text:span text:style-name="T26">A</text:span>ucun ornement <text:span text:style-name="T26">n’est </text:span>possible, <text:span text:style-name="T26">afin d’éviter la confusion avec la médiante ou la clausule</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P57">Elle s’exécute sur la dernière syllabe (ou l’avant-dernière si la dernière syllabe est une syllabe muette)</text:p>
+     <text:p text:style-name="P74">Elle s’exécute sur la dernière syllabe (ou l’avant-dernière si la dernière syllabe est une syllabe muette)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P56"><text:span text:style-name="T26">S</text:span>elon <text:span text:style-name="T17">le mode (ou le ton) </text:span>de <text:span text:style-name="T17">la </text:span>psalmodie (et donc l’harmonie sous-jacente) on baisse <text:span text:style-name="T17">d’un ton si c’est possible, à défaut </text:span>d’une tierce <text:span text:style-name="T17">mineure.</text:span></text:p>
+     <text:p text:style-name="P73"><text:span text:style-name="T26">S</text:span>elon <text:span text:style-name="T17">le mode (ou le ton) </text:span>de <text:span text:style-name="T17">la </text:span>psalmodie (et donc l’harmonie sous-jacente) on baisse <text:span text:style-name="T17">d’un ton si c’est possible, à défaut </text:span>d’une tierce <text:span text:style-name="T17">mineure.</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P21">En psalmodie « moderne », la « flexe » <text:span text:style-name="T29">est également utilisée pour apporter une psalmodie différente aux versets tristiques par rapport aux distiques.</text:span></text:p>
-   <text:p text:style-name="P26"><text:soft-page-break/>Ceci permet de gérer de manière élégante le cas des psaumes comportant à la fois des distiques et des tristiques. Dans ce cas, la formule mélodique la « flexe » est naturellement plus élaborée et devient équivalente à celles des autres stiques.</text:p>
-   <text:p text:style-name="P26">En revanche, la composition de psalmodie comprenant une « flexe » est <text:span text:style-name="T13">de facto</text:span> plus complexe car il importe que son absence ne se remarque pas musicalement !</text:p>
+   <text:p text:style-name="P24">En psalmodie « moderne », la « flexe » <text:span text:style-name="T29">est également utilisée pour apporter une psalmodie différente aux versets tristiques par rapport aux distiques.</text:span></text:p>
+   <text:p text:style-name="P29">Ceci permet de gérer de manière élégante le cas des psaumes comportant à la fois des distiques et des tristiques. Dans ce cas, la formule mélodique la « flexe » est naturellement plus élaborée et devient équivalente à celles des autres stiques.</text:p>
+   <text:p text:style-name="P29">En revanche, la composition de psalmodie comprenant une « flexe » est <text:span text:style-name="T13">de facto</text:span> plus complexe car il importe que son absence ne se remarque pas musicalement !</text:p>
    <text:p text:style-name="Text_20_body">La « flexe » n’est pas indiqué de manière systématique (comme la « médiante » du reste). Elle est souvent indiquée par une obèle « <text:span text:style-name="T40">†</text:span> », ou par le signe « + » <text:span text:style-name="T36">légèrement décalé au dessus du texte.</text:span></text:p>
-   <text:p text:style-name="Heading">Terminaison (ou différence)</text:p>
-   <text:p text:style-name="P21">C’est la conclusion du verset. Il s’agit d’un ornement mélodique qui permet de revenir dans le ton de l’antienne.</text:p>
+   <text:p text:style-name="Heading"><text:soft-page-break/>Terminaison (ou différence)</text:p>
+   <text:p text:style-name="P24">C’est la conclusion du verset. Il s’agit d’un ornement mélodique qui permet de revenir dans le ton de l’antienne.</text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Mélodie</text:h>
-   <text:p text:style-name="P17">La musique est au service du texte, pas l’inverse.</text:p>
-   <text:p text:style-name="P17">La mélodie de l’Antienne devra donc être suffisamment simple pour que l’assemblée puisse la mémoriser en une fois.</text:p>
-   <text:p text:style-name="P21">On pourra prendre un peu plus de liberté pour la psalmodie elle-même. Cependant, il faut prendre en compte l’exécution du psaume : si toute ou partie de l’assemblée est appelée à chanter la psalmodie, on veillera à choisir ou composer une psalmodie accessible aux « non initiés ».</text:p>
-   <text:p text:style-name="P21">Les règles suivantes peuvent s’appliquer :</text:p>
-   <text:list xml:id="list1266496748" text:style-name="L5">
+   <text:p text:style-name="P20">La musique est au service du texte, pas l’inverse.</text:p>
+   <text:p text:style-name="P20">La mélodie de l’Antienne devra donc être suffisamment simple pour que l’assemblée puisse la mémoriser en une fois.</text:p>
+   <text:p text:style-name="P24">On pourra prendre un peu plus de liberté pour la psalmodie elle-même. Cependant, il faut prendre en compte l’exécution du psaume : si toute ou partie de l’assemblée est appelée à chanter la psalmodie, on veillera à choisir ou composer une psalmodie accessible aux « non initiés ».</text:p>
+   <text:p text:style-name="P24">Les règles suivantes peuvent s’appliquer :</text:p>
+   <text:list xml:id="list1773704962" text:style-name="L5">
     <text:list-item>
-     <text:p text:style-name="P58"><text:span text:style-name="T1">Psaume responsorial</text:span> : utilisé notamment lors de la messe, la psalmodie est relativement libre car exécutée par le psalmiste ou le chœur (qui aura pris grand soin de répéter)</text:p>
+     <text:p text:style-name="P75"><text:span text:style-name="T1">Psaume responsorial</text:span> : utilisé notamment lors de la messe, la psalmodie est relativement libre car exécutée par le psalmiste ou le chœur (qui aura pris grand soin de répéter)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P58"><text:span text:style-name="T1">Psaume direct</text:span> ou <text:span text:style-name="T1">antiphonaire</text:span> : dédié à une exécution en communauté plus restreinte, ou à la liturgie des heures, on veillera à ce que la psalmodie soit suffisamment simple pour être mémorisée par l’ensemble des participants <text:span text:style-name="T18">(en paroisse), ou que la communauté ait eu l’occasion de l’apprendre par ailleurs.</text:span></text:p>
+     <text:p text:style-name="P75"><text:span text:style-name="T1">Psaume direct</text:span> ou <text:span text:style-name="T1">antiphonaire</text:span> : dédié à une exécution en communauté plus restreinte, ou à la liturgie des heures, on veillera à ce que la psalmodie soit suffisamment simple pour être mémorisée par l’ensemble des participants <text:span text:style-name="T18">(en paroisse), ou que la communauté ait eu l’occasion de l’apprendre par ailleurs.</text:span></text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Comment psalmodier ?</text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Avant</text:h>
-   <text:p text:style-name="P29">Il faut travailler !</text:p>
-   <text:p text:style-name="P29">Un psaume ne s’improvise pas, il s’apprend. Idéalement, on doit être capable de le chanter par cœur.</text:p>
-   <text:p text:style-name="P29"><text:span text:style-name="T1">Il faut à tout prix ne jamais buter sur le texte</text:span>.</text:p>
+   <text:p text:style-name="P32">Il faut travailler !</text:p>
+   <text:p text:style-name="P32">Un psaume ne s’improvise pas, il s’apprend. Idéalement, on doit être capable de le chanter par cœur.</text:p>
+   <text:p text:style-name="P32"><text:span text:style-name="T1">Il faut à tout prix ne jamais buter sur le texte</text:span>.</text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Pendant</text:h>
-   <text:p text:style-name="P29">C’est d’abord une question de posture, et de ressenti physique pour le psalmiste.</text:p>
-   <text:p text:style-name="P29">Le psalmiste doit se tenir droit à l’ambon et être parfaitement détendu.<text:line-break/>On ne doit pas sentir de mouvement du larynx. S’il y en a, cela signifie que l’on contraint sa voix, et cela s’entend !</text:p>
-   <text:p text:style-name="P29"><text:soft-page-break/>En conséquence, il faut bien connaître sa voix de manière à choisir une mélodie qui nous convienne (pas trop haut, pour ne pas forcer dans l’aigu ou chanter dans sa zone de « passage », pas trop grave pour ne pas « écraser » la mélodie).</text:p>
-   <text:p text:style-name="P29">Se faire plaisir est important si l’on veut transmettre quelque chose à l’assemblée, mais on est et reste au service du texte !<text:line-break/>On n’est pas à l’Opéra !</text:p>
-   <text:p text:style-name="P29">Il faut bannir toute emphase sur le texte, hors prosodie et ponctuation.<text:line-break/>Il faut également bannir toute accélération et ralentissement indus. La psalmodie doit se dérouler naturellement et sans accroc.</text:p>
-   <text:p text:style-name="P29">Il est important de créer une atmosphère de sérénité et de quiétude, afin d’amener l’assemblée, et soit même, à la prière.<text:line-break/>Le plus simple : laissez vous envahir et guider par Dieu !</text:p>
-   <text:p text:style-name="P29">La liturgie des heures précise que le psalmiste chante « à la place du Christ » <text:span text:style-name="T38">(</text:span><text:span text:style-name="T10">PGLH 108</text:span><text:span text:style-name="T38">)</text:span>. <text:span text:style-name="T38">L</text:span>aissez-<text:span text:style-name="T38">le</text:span> prendre les commandes. <text:span text:style-name="T38">Il sait, bien mieux que nous, ce qui est bon.</text:span></text:p>
+   <text:p text:style-name="P32">C’est d’abord une question de posture, et de ressenti physique pour le psalmiste.</text:p>
+   <text:p text:style-name="P32">Le psalmiste doit se tenir droit à l’ambon et être parfaitement détendu.<text:line-break/>On ne doit pas sentir de mouvement du larynx. S’il y en a, cela signifie que l’on contraint sa voix, et cela s’entend !</text:p>
+   <text:p text:style-name="P32">En conséquence, il faut bien connaître sa voix de manière à choisir une mélodie qui nous convienne (pas trop haut, pour ne pas forcer dans l’aigu ou chanter dans sa zone de « passage », pas trop grave pour ne pas « écraser » la mélodie).</text:p>
+   <text:p text:style-name="P32">Se faire plaisir est important si l’on veut transmettre quelque chose à l’assemblée, mais on est et reste au service du texte !<text:line-break/>On n’est pas à l’Opéra !</text:p>
+   <text:p text:style-name="P32">Il faut bannir toute emphase sur le texte, hors prosodie et ponctuation.<text:line-break/>Il faut également bannir toute accélération et ralentissement indus. La psalmodie doit se dérouler naturellement et sans accroc.</text:p>
+   <text:p text:style-name="P32"><text:soft-page-break/>Il est important de créer une atmosphère de sérénité et de quiétude, afin d’amener l’assemblée, et soit même, à la prière.<text:line-break/>Le plus simple : laissez vous envahir et guider par Dieu !</text:p>
+   <text:p text:style-name="P32">La liturgie des heures précise que le psalmiste chante « à la place du Christ » <text:span text:style-name="T38">(</text:span><text:span text:style-name="T10">PGLH 108</text:span><text:span text:style-name="T38">)</text:span>. <text:span text:style-name="T38">L</text:span>aissez-<text:span text:style-name="T38">le</text:span> prendre les commandes. <text:span text:style-name="T38">Il sait, bien mieux que nous, ce qui est bon.</text:span></text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Cas de la polyphonie</text:h>
-   <text:p text:style-name="P29">Dans une exécution polyphonique, <text:span text:style-name="T1">la mélodie a toujours la primeur</text:span>.</text:p>
-   <text:p text:style-name="P29">Cela signifie qu’il faut rester à l’écoute des autres voix, et adapter son propre volume à ce que l’on entend.</text:p>
-   <text:p text:style-name="P29">De plus, la principale difficulté dans une psalmodie polyphonique concerne la parfaite synchronisation du texte.<text:line-break/>Pas de secret, il faut travailler !</text:p>
-   <text:p text:style-name="P29"/>
-   <text:h text:style-name="P37" text:outline-level="1">Les psaumes et leur relation avec la prière chrétienne</text:h>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">100</text:span>. Dans la Liturgie des heures, l’Église prie en grande partie avec ces chants magnifiques composés, sous l’inspiration de l’Esprit Saint, par les auteurs sacrés de l’Ancien Testament. De leur origine, en effet, ces poèmes tiennent la vertu d’élever à Dieu l’esprit des hommes, d’éveiller en eux des sentiments religieux et saints, de les aider admirablement à rendre grâce dans les circonstances heureuses, et de leur apporter consolation et force d’âme dans l’adversité.</text:p>
+   <text:p text:style-name="P32">Dans une exécution polyphonique, <text:span text:style-name="T1">la mélodie a toujours la primeur</text:span>.</text:p>
+   <text:p text:style-name="P32">Cela signifie qu’il faut rester à l’écoute des autres voix, et adapter son propre volume à ce que l’on entend.</text:p>
+   <text:p text:style-name="P32">De plus, la principale difficulté dans une psalmodie polyphonique concerne la parfaite synchronisation du texte.<text:line-break/>Pas de secret, il faut travailler !</text:p>
+   <text:p text:style-name="P32"/>
+   <text:h text:style-name="P49" text:outline-level="1">Les psaumes et leur relation avec la prière chrétienne</text:h>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">100</text:span>. Dans la Liturgie des heures, l’Église prie en grande partie avec ces chants magnifiques composés, sous l’inspiration de l’Esprit Saint, par les auteurs sacrés de l’Ancien Testament. De leur origine, en effet, ces poèmes tiennent la vertu d’élever à Dieu l’esprit des hommes, d’éveiller en eux des sentiments religieux et saints, de les aider admirablement à rendre grâce dans les circonstances heureuses, et de leur apporter consolation et force d’âme dans l’adversité.</text:p>
    <text:p text:style-name="P4">Le psaume est donc un poème, écrit sous l’inspiration de L’Esprit Saint.</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">103</text:span>. Les psaumes ne sont pas des textes à lire, ni des prières en prose, mais des poèmes de louange. Bien qu’ils aient pu quelquefois avoir été utilisé sous forme de lecture, cependant, c’est à juste titre, en raison de leur genre littéraire, qu’ils sont appelés en hébreu <text:span text:style-name="T13">Tehillim</text:span>, c’est-à-dire <text:s/>« cantiques de louange », et en grec <text:span text:style-name="T13">psalmoi</text:span>, c’est-à-dire « cantique à chanter au son du psaltérion ». En effet, tous les psaumes possèdent un caractère musical qui détermine la manière dont il convient de les chanter. C’est pourquoi, même si le psaume est dit sans être chanté, et même dans la solitude et en silence, cette récitation doit être commandée par son caractère musical : sans doute il présente un texte à notre esprit, mais il tend davantage à toucher les cœurs de ceux qui psalmodient et de ceux qui écoutent, voire de ceux qui jouent « sur le psaltérion et la cythare ».</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">103</text:span>. Les psaumes ne sont pas des textes à lire, ni des prières en prose, mais des poèmes de louange. Bien qu’ils aient pu quelquefois avoir été utilisé sous forme de lecture, cependant, c’est à juste titre, en raison de leur genre littéraire, qu’ils sont appelés en hébreu <text:span text:style-name="T13">Tehillim</text:span>, c’est-à-dire <text:s/>« cantiques de louange », et en grec <text:span text:style-name="T13">psalmoi</text:span>, c’est-à-dire « cantique à chanter au son du psaltérion ». En effet, tous les psaumes possèdent un caractère musical qui détermine la manière dont il convient de les chanter. C’est pourquoi, même si le psaume est dit sans être chanté, et même dans la solitude et en silence, cette récitation doit être commandée par son caractère musical : sans doute il présente un texte à notre esprit, mais il tend davantage à toucher les cœurs de ceux qui psalmodient et de ceux qui écoutent, voire de ceux qui jouent « sur le psaltérion et la cythare ».</text:p>
    <text:p text:style-name="P4">Le psaume soit être, dans toute la mesure du possible, chanté. S’il est <text:span text:style-name="T19">récité</text:span>, il convient de respecter le caractère musical du texte.</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">108</text:span>. Celui qui psalmodie dans la Liturgie des heures ne psalmodie pas tellement en son propre nom qu’au nom de tout le Corps du Christ, et même en tenant la place du Christ lui-même[…]</text:p>
-   <text:h text:style-name="P41" text:outline-level="2">Les antiennes et les autres éléments qui aident à prier avec les psaumes</text:h>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">113</text:span>. Même si la Liturgie des heures est accomplie sans que l’on chante, chaque psaume a son antienne, que l’on doit dire même lorsqu’on est seul. En effet, les antiennes aident à mettre en lumière le genre littéraire du psaume ; elles transforment <text:span text:style-name="T14">le psaume en prière personnelle ; elles soulignent une phrase digne d’attention, qui aurait pu échapper ; elles donnent à l’un ou l’autre psaume une nuance particulière selon les circonstances […]</text:span></text:p>
-   <text:p text:style-name="P22">L’antienne est donc partie prenante du psaume qu’elle vient renforcer.</text:p>
-   <text:h text:style-name="P41" text:outline-level="2">La manière de psalmodier</text:h>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">121</text:span>. Selon que le requiert le genre littéraire du psaume ou sa longueur, de même, selon que le psaume est dit en latin ou en langue vivante, et surtout selon qu’il est dit par un seul ou par plusieurs, ou que la célébration se fait avec le peuple rassemblé, on peut proposer une façon ou une autre de dire les psaumes, pour que ceux qui psalmodient perçoivent plus facilement le parfum spirituel et littéraire des psaumes. […]</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">108</text:span>. Celui qui psalmodie dans la Liturgie des heures ne psalmodie pas tellement en son propre nom qu’au nom de tout le Corps du Christ, et même en tenant la place du Christ lui-même[…]</text:p>
+   <text:h text:style-name="P54" text:outline-level="2">Les antiennes et les autres éléments qui aident à prier avec les psaumes</text:h>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">113</text:span>. Même si la Liturgie des heures est accomplie sans que l’on chante, chaque psaume a son antienne, que l’on doit dire même lorsqu’on est seul. En effet, les antiennes aident à mettre en lumière le genre littéraire du psaume ; elles transforment <text:span text:style-name="T14">le psaume en prière personnelle ; elles soulignent une phrase digne d’attention, qui aurait pu échapper ; elles donnent à l’un ou l’autre psaume une nuance particulière selon les circonstances […]</text:span></text:p>
+   <text:p text:style-name="P25">L’antienne est donc partie prenante du psaume qu’elle vient renforcer.</text:p>
+   <text:h text:style-name="P54" text:outline-level="2">La manière de psalmodier</text:h>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">121</text:span>. Selon que le requiert le genre littéraire du psaume ou sa longueur, de même, selon que le psaume est dit en latin ou en langue vivante, et surtout selon qu’il est dit par un seul ou par plusieurs, ou que la célébration se fait avec le peuple rassemblé, on peut proposer une façon ou une autre de dire les psaumes, pour que ceux qui psalmodient perçoivent plus facilement le parfum spirituel et littéraire des psaumes. […]</text:p>
    <text:p text:style-name="P4">Le psaume peut être exécut<text:span text:style-name="T37">é</text:span> de manière solistique (seul) ou polyphonique (à plusieurs)</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">122</text:span>. Les psaumes sont chantés ou dits d’un seul trait (in directum), ou bien en alternant les versets entre deux chœurs ou deux parties de l’assemblée, ou bien selon le mode responsorial, selon les diverses manières approuvées par la tradition ou l’expérience.</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">122</text:span>. Les psaumes sont chantés ou dits d’un seul trait (in directum), ou bien en alternant les versets entre deux chœurs ou deux parties de l’assemblée, ou bien selon le mode responsorial, selon les diverses manières approuvées par la tradition ou l’expérience.</text:p>
    <text:p text:style-name="P4"><text:soft-page-break/>Le psaume peut être chant<text:span text:style-name="T43">é</text:span> sur un mode antiphonaire (alternance de 2 chœurs ou de 2 parties de l’assemblée), responsorial (alternance chantre &amp; chœur, ou chantre &amp; assemblée).</text:p>
    <text:p text:style-name="P4">À la messe, il est généralement question d’un psaume responsorial, le chantre chantant les versets et l’assemblée l’antienne.</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">123</text:span>. Au début de chaque psaume, on prononcera son antienne, comme il a été écrit ci-dessus au nn. 113-120 ; et à la fin du psaume entier, on gardera l’usage de le conclure par « Gloire au Père ». En effet, « Gloire au Père » est la conclusion qui convient, la tradition la recommande, et elle apporte à la prière de l’Ancien Testament un sens laudatif, christologique et trinitaire. Après le psaume, si on le juge bon, on reprend l’antienne.</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">123</text:span>. Au début de chaque psaume, on prononcera son antienne, comme il a été écrit ci-dessus au nn. 113-120 ; et à la fin du psaume entier, on gardera l’usage de le conclure par « Gloire au Père ». En effet, « Gloire au Père » est la conclusion qui convient, la tradition la recommande, et elle apporte à la prière de l’Ancien Testament un sens laudatif, christologique et trinitaire. Après le psaume, si on le juge bon, on reprend l’antienne.</text:p>
    <text:p text:style-name="P4">L’usage de la conclusion « Gloire au Père » est généralement limité à la Liturgie des heures.</text:p>
    <text:p text:style-name="P4">Cependant, on notera que la reprise de l’antienne en fin de psaume est facultative</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">124</text:span>. Que on emploie des psaumes trop longs, les divisions de ces psaumes sont marqués dans le psautier ; elle partagent les phases de la psalmodie de façon à dessiner la structure ternaire de l’heure, tout en respectant strictement le sens objectif du psaume.</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">124</text:span>. Que on emploie des psaumes trop longs, les divisions de ces psaumes sont marqués dans le psautier ; elle partagent les phases de la psalmodie de façon à dessiner la structure ternaire de l’heure, tout en respectant strictement le sens objectif du psaume.</text:p>
    <text:p text:style-name="P4">Par exemple, le psaume 118 n’est jamais intégralement chanté (il est beaucoup trop long !)</text:p>
    <text:p text:style-name="P4"/>
-   <text:p text:style-name="P35"><text:span text:style-name="T1">125</text:span>. En outre, quand le genre littéraire du psaume le suggérera, ses divisions en strophes seront indiquées, pour que, surtout dans le chant en langue vivante, on puisse le dire en répétant l’antienne après chaque strophe. En ce cas, on se contentera de dire « Gloire au Père » à la fin de tout le psaume.</text:p>
+   <text:p text:style-name="P46"><text:span text:style-name="T1">125</text:span>. En outre, quand le genre littéraire du psaume le suggérera, ses divisions en strophes seront indiquées, pour que, surtout dans le chant en langue vivante, on puisse le dire en répétant l’antienne après chaque strophe. En ce cas, on se contentera de dire « Gloire au Père » à la fin de tout le psaume.</text:p>
    <text:p text:style-name="P4">La division en strophe est fondamentale pour l’exécution du psaume</text:p>
   </office:text>
  </office:body>
