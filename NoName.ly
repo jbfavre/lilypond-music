@@ -44,7 +44,11 @@
             { ef'8.\mf\!\> df16 c8 c8\!\p [b8.] c16 <c e,>4 r8 }
             { \override TextSpanner.bound-details.left.text = "rit."
               c8\mf\>\startTextSpan af f bf\p\> g e <c e g>4.\pp\stopTextSpan <c f>4. \fermata }
-            }
+            } \break
+          \key f \major
+          \partial 8 c8 f4. g a bf a8 bf16 a gs a c4 a8 fs4. g4 c,8 \break
+          e4. f g a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
+          d'4. d4 d8 c4. c4 f,8 df'4. df4 df8 c8 g e c4.
         }
       }
     >>
@@ -76,7 +80,9 @@
                 <g c>16 (df' c) bf-. af-. g-. }
               { r8 <f af c> <af c f>
                 <g c>4. bf8 g8 bf8 af4. \fermata }
-            }
+              }
+            \key f \major
+            \partial 8 s8 \repeat unfold 24 { s4. }
           }
         }
         \new FiguredBass {
