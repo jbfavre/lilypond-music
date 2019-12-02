@@ -15,7 +15,7 @@
 \paper {
   #(include-special-characters)
   print-all-headers = ##t
-  max-systems-per-page = 10
+  max-systems-per-page = 14
 }
 %#(set-global-staff-size 16)
 %#(set-default-paper-size "a4landscape")
@@ -106,19 +106,16 @@
   }
   \new Staff
   <<
-    \clef treble \time 4/4 \key c \major
-    \relative c'' { \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1}
+    \clef treble \time 2/4 \key c \major
+    \relative c'' {
+      a4 a c b e2 d4 b bf2 a2 f4 g \break
+      e fs gs2 (gs4) ds d!2 (d4) d' cs a c! b \break
+      f!2 e4 g!e4 f8 e \tuplet 3/2 { d4 f a} \tuplet 3/2 {  d, g bf} \tuplet 3/2 { d, a' c} a e' \bar "||"  \break
+      f4 d e bf a4. gs8 \tuplet 3/2 { a4 f g } ef4 d cs2 r8 e g bf \break
+      a2 r8 g bf df e2 \tuplet 3/2 { d4 df bf } a4 bf8 af8 e!4 r4 e f \break
+      af b! d2 r8 c b! a! f4 g8 f8 e4 f8 e8 \tuplet 3/2 { <d>4 (<d f>4 <d f a>4 } <d f a df>2) \bar "|."
     }
   >>
-  \layout { \context { \Score \omit BarNumber \omit Score.TimeSignature \omit Score.Stem }}
 }
 \score {
   \header {
@@ -129,19 +126,15 @@
   }
   \new Staff
   <<
-    \clef treble \time 4/4 \key c \major
-    \relative c'' { \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1} \break
-                    \repeat unfold 8 {s1}
+    \clef treble \time 3/8 \key c \major
+    \relative c'' {
+      a8 c b e4. e8 d b r8 bf4 a4. r8 f8. g16 e4 fs8 \break
+      gs8 ds r8 d4. d'8 cs a r8 c!8 b! f! e g e4 r8 f e d \break
+      d8. f16 a8 a4. d,8 g bf bf4. r8 d, a' c c a e'4. \bar "||" \break
+      d8. f16 c8 b4 d8 c b af af4 g8 f8. af16 b8 d4. f,8. af16 b8 \break
+      c4. bf8 df af gf bf gf f!4 e!8 f16 g af bf af f g bf d! c b c a8 g fs f8 e8. df'16 c af f bf b g e8. ds16 e8 g4. gf8. f16 gf8 c4. b16 c d e e8 e,4. \break
     }
   >>
-  \layout { \context { \Score \omit BarNumber \omit Score.TimeSignature \omit Score.Stem }}
 }
 \layout {
   \context {
