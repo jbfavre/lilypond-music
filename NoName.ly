@@ -15,7 +15,7 @@
 \paper {
   #(include-special-characters)
   print-all-headers = ##t
-  max-systems-per-page = 10
+  max-systems-per-page = 15
 }
 %#(set-global-staff-size 16)
 %#(set-default-paper-size "a4landscape")
@@ -27,7 +27,8 @@
     piece = ##f
     composer = ##f
   }
-  \new PianoStaff <<
+  \new PianoStaff \with { instrumentName = "Piano" }
+  <<
     \new Staff
     <<
       \clef treble \time 3/8 \key f \minor
@@ -35,9 +36,9 @@
         r4.^"Calme et majestueux" r4.
         \new Voice = "soprano" { \voiceOne
           \repeat volta 2 {
-            f8\mp g af c bf af g af bf af g e \break
-            f8\mf g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8 \break
-            df8\<\mf^"Élargir, avec plus d'emphase" b c gf'8.\f\!\> f16 ef8\! c\mf\< a bf f'8.\!\f\> ef16 df8\! \break
+            f8\mp g af c bf af g af bf af g e
+            f8\mf g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8
+            df8\<\mf^"Élargir, avec plus d'emphase" b c gf'8.\f\!\> f16 ef8\! c\mf\< a bf f'8.\!\f\> ef16 df8\!
             bf8\mp\< g af
             }
           \alternative {
@@ -47,19 +48,23 @@
             } \break
           \key f \major
           \partial 8 c8^"Primesautier, rapide" f4. g a bf a8 bf16 a gs a \break
-          c4 a8 fs4. g4 c,8  e4. f \break
-          g4. a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
-          d'4. d4 d8 c4. (c4) f,8 df'4.^"Larmoyant, moins vite" \break
-          df4 df8 c4. (c) \fermata s4.^"Malicieux" s4. r8 <g g'>8-. <e e'>-. \break
+          c4 a8 fs4. g4 a8 bf4. c d e \break
+          d (d8) c bf c4. (c4) f,8 bf4. c d \break
+          e f4. (f4) d8 b4. c4 f,8 bf4. a \break
+          g8 bf d c a f a4. (a4) g8 f4. r4 c8  e4. \break
+          f g4. a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
+          a4. bf c d c (c8) bf a g4. (g4) f8 \break
+          d'4. d4 d8 c4. r4 f,8 df'4.^"Larmoyant, moins vite" df4 df8 c4. (c) \fermata \break
+          s4.^"Malicieux, alerte" s4. r8 <g g'>8-. <e e'>-. \break
           <c c'>4-- r8 s4. s4. <f f'>8 <e e'>8 <df df'>8 <df df'>4.^"Pesant, moins vite" (<df df'>4.) \break
-          <c c'>4 r8 r4. r4 c8^"Pesant, moins vite" f4. g4. af4. \break
+          <c c'>4 r8 r4. r4 c8^"Pesant, plus lent" f4. g4. af4. \break
           bf4. af8 bf16 af g af c4 af8 fs4. g4 c,8 \break
           e4. f g af g8 af16 g fs g \break
-          bf4 g8 e4. f4 f8 df'4. df4 df8 \break
-          c4-. r8 r4 f,8 d'4.^"Primesautier, un peu plus rapide" d4 d8 c4. (c4) f,8 \break
-          f'4.^"Primesautier, plus rapide" f8 e d c4 a8 f4 bf8 a4. g \break
-          f'4. (f4) d8 f4. f8 e d c4 a8 f4 bf8 \break
-          a4-> r8 g4-> r8 f4-> r8 d4-> r8 <f a c f>4.\sff \fermata \bar "||"
+          bf4 g8 e4. f4 f8 df'4.^"Larmoyant" df4 df8 \break
+          c4-. r8 r4 f,8 d'4.^"Plus joyeux" d4 d8 c4. r4 f,8 \break
+          f'4.^"Éclatant" (f8) e d c4 a8 f4 bf8 a4. g \break
+          f'4. r4 d8 f4. f8 e d c4 a8 f4 <bf bf'>8 \break
+          <a a'>4->\sfz r8 <g g'>4->\sfz r8 <f a c f>4->\sfz \fermata r8 r4. <bf d f bf>4->\sfz r8 <f a c f>4.\sff \fermata \bar "||"
         }
       }
     >>
@@ -93,12 +98,12 @@
                 <g c>4. bf8 g8 bf8 af4. \fermata }
               }
             \key f \major
-            \partial 8 s8 \repeat unfold 22 { s4. }
+            \partial 8 s8 \repeat unfold 54 { s4. }
             r8 <g, g,>8-. <e e,>-. <c c,>4.-- \fermata
             c4.\startTrillSpan c16\stopTrillSpan d e f g a bf4 r8
             c4.\startTrillSpan e16\stopTrillSpan f g a bf c df4.
-            (df4.) r4. r4. r8 g, e <c c,>4.
-            (c4) r8 \repeat unfold 41 { s4. }
+            r4. r4. r4. r8 g, e <c c,>4.
+            (c4) r8 \repeat unfold 42 { s4. }
           }
         }
         \new FiguredBass {
