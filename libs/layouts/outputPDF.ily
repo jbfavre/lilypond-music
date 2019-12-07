@@ -73,39 +73,35 @@ oddFooterMarkupSetting = \markup {
 
 %%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
 #(set-global-staff-size staffCustomSize)
-\bookpart {
-  \score {
-    \partition
-    \layout {
-        ragged-last = ##f
-        short-indent = 0.8\cm
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-            \override NoteHead #'style = #'altdefault
-            \override InstrumentName #'font-name = #"Monospace Regular"
-        }
-        \context {
-            \Score
-            \omit BarNumber
-        }
-        \context {
-            \Voice
-            \consists "Horizontal_bracket_engraver"
-        }
-        \override LyricText #'font-name = #"Latin Modern Sans"
-        \override Score.RehearsalMark.font-family = #'typewriter
-    }
-    \header {
-      title = \title
-      subtitle = \subtitle
-      composer = \composer
-      composerPrefix = \composerPrefix
-      poet = \poet
-      poetPrefix = \poetPrefix
-      date = "toto"
-      dedication = \dedicace
-    }
+\score {
+  \partition
+  \layout {
+      ragged-last = ##f
+      short-indent = 0.8\cm
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \Score
+          \omit BarNumber
+      }
+      \context {
+          \Voice
+          \consists "Horizontal_bracket_engraver"
+      }
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
   }
-  \verseLyrics
+  \header {
+    title = \title
+    subtitle = \subtitle
+    composer = \composer
+    composerPrefix = \composerPrefix
+    poet = \poet
+    poetPrefix = \poetPrefix
+    dedication = \dedicace
+  }
 }
