@@ -1,6 +1,6 @@
 \new ChoirStaff = "Antophon4Voices" <<
-    \override ChoirStaff.VerticalAxisGroup.remove-first = ##t
     \new Staff = "AntiphonSopranoStaff" <<
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \set Staff.instrumentName = "Soprano"
       \clef "treble"
        \new Voice = "antiphonRhythms" \antiphonRhythms
@@ -8,6 +8,7 @@
        \new Lyrics \lyricsto "antiphonSoprano" { \sopranoAntiphonLyrics }
     >>
     \new Staff = "AntiphonAltoStaff" <<
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \set Staff.instrumentName = "Alto"
       \clef "treble"
        \new Voice = "antiphonRhythms" \antiphonRhythms
@@ -15,6 +16,7 @@
       \new Lyrics \lyricsto "antiphonAlto" { \altoAntiphonLyrics }
     >>
     \new Staff = "AntiphonTenorStaff" <<
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \set Staff.instrumentName = "Ténor"
       \clef "treble_8"
        \new Voice = "antiphonRhythms" \antiphonRhythms
@@ -22,6 +24,7 @@
       \new Lyrics \lyricsto "antiphonTenor" { \tenorAntiphonLyrics }
     >>
     \new Staff  = "AntiphonBassStaff" <<
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \set Staff.instrumentName = "Basse"
       \clef "bass"
        \new Voice = "antiphonRhythms" \antiphonRhythms

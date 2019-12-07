@@ -1,12 +1,11 @@
-\new ChoirStaff = "StanceOneVoice" <<
-    \new Staff \with {
-      instrumentName = \markup { \column { "Soliste" " ou" "Schola" } }
-      remove-first = ##t
-    } <<
+\new ChoirStaff = "stanceOneVoice" <<
+    \new Staff <<
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
+      \set Staff.instrumentName = \markup { \column { "Soliste" " ou" "Schola" } }
       \clef "treble"
       \global 
-      \new Voice = "Rhythms" \stanceRhythms
-      \new Voice = "Stance" { \stanceMusic }
-      \new Lyrics \lyricsto "Stance" { \stanceLyrics }
+      \new Voice = "stanceRhythms" \stanceRhythms
+      \new Voice = "stanceMusic" { \stanceMusic }
+      \new Lyrics \lyricsto "stanceMusic" { \stanceLyrics }
     >>
   >>

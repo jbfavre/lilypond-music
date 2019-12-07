@@ -1,28 +1,22 @@
-\new ChoirStaff = "Psalmody" <<
-    \new Staff = "SopranoAlto" \with { printPartCombineTexts = ##f } <<
+\new ChoirStaff = "versePsalmody" <<
+    \new Staff = "verseSopranoAlto" \with { printPartCombineTexts = ##f } <<
       \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
-      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \global
       \clef treble
       \partcombine
-      <<
-        \voiceOne { \sopranoVerseMusic }
-      >>
-      <<
-        \voiceTwo { \altoVerseMusic }
-      >>
+      << \voiceOne { \sopranoVerseMusic } >>
+      << \voiceTwo { \altoVerseMusic } >>
     >>
-    \new Staff = "TenorBass" \with { printPartCombineTexts = ##f } <<
+    \new Staff = "verseTenorBass" \with { printPartCombineTexts = ##f } <<
       \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
-      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \global
       \clef bass
       \partcombine
-      <<
-        \voiceThree { \tenorVerseMusic }
-      >>
-      <<
-        \voiceFour { \bassVerseMusic }
-      >>
+      << \voiceThree { \tenorVerseMusic } >>
+      << \voiceFour { \bassVerseMusic } >>
     >>
+    \context Staff = "verseTenorBass" \new FiguredBass { \bassFigureStaffAlignmentUp \verseFiguredHarmony }
+    \context Staff = "verseTenorBass" \new FiguredBass { \bassFigureExtendersOn \verseFiguredBass }
   >>
