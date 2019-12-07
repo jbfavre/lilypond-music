@@ -96,42 +96,41 @@ altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \antiphonLyrics
 bassAntiphonLyrics = \tenorAntiphonLyrics
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw antiphon          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Stance pour Soliste ou Schola à l'unisson
+    \include "../libs/layouts/commonStanceOneVoice.ily"
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\pageBreak
+% We don't need headers from now
+title = ##f
+subtitle = ##f
+composer = ##f
+composerPrefix = ##f
+poet = ##f
+poetPrefix = ##f
+dedicace = ##f
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%     Verses     %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-verseRhythms = {
-  \silence \sopranoAntiphonMusic
-  \pageBreak
-  \markCustom "Doxologie"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|." \break
-  \markCustom "Psalmodie A"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|." \break
-  \markCustom "Psalmodie B"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|." \break
-  \markCustom "Psalmodie C"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|."
-  s4^\markup { &dagger; } \bar "|."
-}
 sopranoVerseMusic = \relative c'' {
-  \silence \sopranoAntiphonMusic
   \key g \major
-  \cadenzaOn
-  \markCustom "Doxologie"
-  b\breve b1 a4 g4 \bar "||"
-  g\breve g1 a1 b4 \bar "||"
-  b\breve d1 b1 a4 a4 g4 \bar "||"
-  \cadenzaOff
-  a2 a2\fermata \bar "|." \break \pageBreak
   \cadenzaOn
   \markCustom "Psalmodie A"
   g\breve a1 fs4 \bar "||"
@@ -150,13 +149,7 @@ sopranoVerseMusic = \relative c'' {
   }
 
 altoVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
   \key g \major
-  g'\breve fs1 fs4 e4 % Doxologie
-  e\breve e1 e1 fs4
-  g\breve fs1 fs1 fs4 e4 e4
-  e2 fs2
-
   e\breve e1 d4 % A
   fs\breve e1 e4
   fs\breve fs1 e4
@@ -173,13 +166,7 @@ altoVerseMusic = \relative c' {
   }
 
 tenorVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
   \key g \major
-  d\breve d1 d4 b4 % Doxologie
-  b\breve c1 e1 ds4
-  e\breve a,1 b1 b4 b4 b4
-  g4 c4 d2
-
   b\breve a1 a4 % A
   d\breve b1 c4
   d\breve b1 b4
@@ -196,13 +183,7 @@ tenorVerseMusic = \relative c' {
   }
 
 bassVerseMusic = \relative f {
-  \silence \sopranoAntiphonMusic
   \key g \major
-  g\breve d1 d4 e4 % Doxologie
-  e\breve c1 c1 b4
-  e\breve d1 ds1 ds4 e4 e4
-  c4 a4 d2
-
   e\breve c1 d4 % A
   b\breve e1 a,4
   d\breve ds1 e4
@@ -218,15 +199,11 @@ bassVerseMusic = \relative f {
   c,\breve a1 d4
   }
 verseFiguredHarmony = \figuremode {
-  \silence \sopranoAntiphonMusic
-  <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <IV> <II> <V>2 % Doxologie
   <VI>\breve <II>1 <V>4 <III>\breve <VI>1 <II>4 <V>\breve <II>1 <VI>4 <IV>\breve <II>1 <V>4 % A
   <I>\breve <IV>1 <V>1 <_>4 <VI>4 <II>\breve <II>1 <I>4 <II>4 %B
   <VI>\breve <II>1 <II>4 <III>4 <VI>\breve <IV>1 <II>4 <III>4 <VI>\breve <V>1 <III>4 <II>\breve <II>1 <V>4 % C
   }
 verseFiguredBass = \figuremode {
-  \silence \sopranoAntiphonMusic
-  <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <5\!>4 <5\!>4 <5\!>2 % Doxologie
   <5\!>\breve <6>1 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>\breve <_!>1 <5>4 <6 4>\breve <7\+>1 <5\!>4 % A
   <5\!>\breve <6\!>1 <5\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
   <5\!>\breve <7 9>1 <6\+>4 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>4 <5\!>\breve <6\!>1 <5\!>4 <6>\breve <6\! 5>1 <5\!>4 % C
@@ -265,7 +242,39 @@ verseLyrics =  \markup {
         \concat { \typewriter "   " "Les rois de Saba et de Seba fer" \underline o "nt leur offrande." \typewriter "(Ps.71,10)" }
         \concat { \typewriter "   " "Tous les r" \underline o "is se prosterner" \underline o "nt devant lui," }
         \concat { \typewriter "   " "tous les pa" \underline y "s le serviront." \typewriter "(Ps.71,11)  " \typewriter " ℟" }
-        \vspace #0.5
+      }
+    }
+  }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw verses          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/layouts/commonSettings.ily"
+% Prepare partition
+partition = \include "../libs/layouts/commonVerseFourVoices.ily"
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics
+\pageBreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Doxology & Final %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoVerseMusic = \relative c'' { \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
+altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 e2 fs2 }
+tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 g4 c4 d2 }
+bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d2 }
+verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <IV> <II> <V>2 }
+verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <5\!>4 <5\!>4 <5\!>2 }
+
+verseLyrics =  \markup {
+  \override #'(font-family . sans)
+  \override #'(font-size . 1)
+  \column {
+    \fill-line {
+      \left-column{
+        %  « ℣ » et « ℟ »
         \concat { \typewriter "D. " "Gloire au Père et au F" \underline i "ls et au Saint-Esprit." }
         \concat { \typewriter "   " "Au Dieu qui " \underline e "st, qui ét" \underline a "it et qui vient" }
         \concat { \typewriter "   " "Maintenant et à jam" \underline  a "is pour les si" \underline è "cles des siècles," }
@@ -276,25 +285,15 @@ verseLyrics =  \markup {
     }
   }
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Draw Doxology & Final %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
 \include "../libs/layouts/commonSettings.ily"
 
-partition = {
-  <<
-    % Stance pour Soliste ou Schola à l'unisson
-    \include "../libs/layouts/commonStanceOneVoice.ily"
-    % Antienne à 4 voix mixtes
-    \include "../libs/layouts/commonAntiphonFourVoices.ily"
-    \include "../libs/layouts/commonPiano.ily"
-    % Psalmodie à 4 voix mixtes
-    \include "../libs/layouts/commonVerseFourVoices.ily"
-  >>
-}
+partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\verseLyrics
+\pageBreak
