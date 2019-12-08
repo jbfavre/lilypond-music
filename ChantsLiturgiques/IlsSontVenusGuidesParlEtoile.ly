@@ -65,13 +65,13 @@ sopranoAntiphonMusic = \relative c' {
 altoAntiphonMusic = \relative c' {
   \silence \stanceMusic \key g \major
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
-  ds8 \autoBeamOn e fs g g a fs fs e e4 d8 d d2 (d2) \fermata
+  ds8 \autoBeamOn e fs g g a fs fs e e4 e8 d d2 (d2) \fermata
   }
 
 tenorAntiphonMusic =  \relative c {
   \silence \stanceMusic \key g \major
   r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
-  b8 \autoBeamOn b d d e d (a) b4 a c c b8 a b2 \fermata
+  b8 \autoBeamOn b d d e d (a) b4 a d8 c8 c4 b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
@@ -139,7 +139,7 @@ sopranoVerseMusic = \relative c'' {
   a\breve g1 fs4 \bar "|." \break
   \markCustom "Psalmodie B"
   b\breve b1 b1 a4 g4 \bar "||"
-  a\breve c1 b4 \bar "|."
+  a\breve b1 b4 \bar "|."
   a4^\markup { &dagger; } \bar "|." \break
   \markCustom "Psalmodie C"
   b\breve b1 a4 fs4 \bar "||"
@@ -156,7 +156,7 @@ altoVerseMusic = \relative c' {
   g\breve e1 d4
 
   g\breve g1 fs1 fs4 e4 % B
-  e\breve a1 g4
+  e\breve e1 g4
   g4
 
   g\breve g1 fs4 d4 % C
@@ -172,8 +172,8 @@ tenorVerseMusic = \relative c' {
   d\breve b1 b4
   c\breve c1 a4
 
-  d\breve c1 d1 d4 b4 % B
-  a\breve e'1 d4
+  d\breve e1 d1 d4 b4 % B
+  a\breve c1 d4
   e4
 
   e\breve c1 c4 b4 % C
@@ -200,12 +200,12 @@ bassVerseMusic = \relative f {
   }
 verseFiguredHarmony = \figuremode {
   <VI>\breve <II>1 <V>4 <III>\breve <VI>1 <II>4 <V>\breve <II>1 <VI>4 <IV>\breve <II>1 <V>4 % A
-  <I>\breve <IV>1 <V>1 <_>4 <VI>4 <II>\breve <II>1 <I>4 <II>4 %B
+  <I>\breve <VI>1 <III>1 <V>4 <VI>4 <II>\breve <II>1 <I>4 <II>4 %B
   <VI>\breve <II>1 <II>4 <III>4 <VI>\breve <IV>1 <II>4 <III>4 <VI>\breve <V>1 <III>4 <II>\breve <II>1 <V>4 % C
   }
 verseFiguredBass = \figuremode {
   <5\!>\breve <6>1 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>\breve <_!>1 <5>4 <6 4>\breve <7\+>1 <5\!>4 % A
-  <5\!>\breve <6\!>1 <5\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
+  <5\!>\breve <5\!>1 <6\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
   <5\!>\breve <7 9>1 <6\+>4 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>4 <5\!>\breve <6\!>1 <5\!>4 <6>\breve <6\! 5>1 <5\!>4 % C
   }
 
@@ -262,8 +262,8 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' { \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 e2 fs2 }
-tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 g4 c4 d2 }
+altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g4 e4 fs2 }
+tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d2 }
 bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d2 }
 verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <IV> <II> <V>2 }
 verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <5\!>4 <5\!>4 <5\!>2 }
@@ -280,7 +280,11 @@ verseLyrics =  \markup {
         \concat { \typewriter "   " "Maintenant et à jam" \underline  a "is pour les si" \underline è "cles des siècles," }
         \concat { \typewriter "   " "Amen !" }
         \vspace #0.5
-        \concat { \typewriter "℣. " "Verset d'entrée du jour" \typewriter " (Stance puis ℟)" }
+        \concat { \typewriter "In. " "Voici venir le Seigneur souverain&nbsp;;" }
+        \concat { \typewriter "    " "Il tient en main la royauté, la puissance et l'empire." \typewriter " (Stance puis ℟)" }
+        \vspace #0.5
+        \concat { \typewriter "Co. " "Comme les mages guidés par l'étoile" \super \typewriter "*" }
+        \concat { \typewriter "    " "nous sommes venus avec des présents adorer le Seigneur." \typewriter " (Stance puis ℟)" }
       }
     }
   }
