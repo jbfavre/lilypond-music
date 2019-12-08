@@ -10,7 +10,7 @@
 \include "../libs/settings.ily"
 
 title = "Guidés par l'étoile"
-subtitle = "Tropaire pour l'Épiphanie"
+subtitle = \markup { \column { "Tropaire pour l'Épiphanie" "(Introït ou Offertoire)" }}
 poet = "Jean Baptiste Favre, AELF"
 composer = "Jean Baptiste Favre"
 dedicace = "Saint Pierre Quiberon, novembre 2019"
@@ -155,7 +155,7 @@ altoVerseMusic = \relative c' {
   fs\breve fs1 e4
   g\breve e1 d4
 
-  g\breve g1 fs1 fs4 e4 % B
+  g\breve e1 fs1 fs4 e4 % B
   e\breve e1 g4
   g4
 
@@ -172,7 +172,7 @@ tenorVerseMusic = \relative c' {
   d\breve b1 b4
   c\breve c1 a4
 
-  d\breve e1 d1 d4 b4 % B
+  d\breve e1 b1 d4 b4 % B
   a\breve c1 d4
   e4
 
@@ -189,7 +189,7 @@ bassVerseMusic = \relative f {
   d\breve ds1 e4
   e\breve a,1 d4
 
-  g\breve e1 d1 d4 e4 % B
+  g\breve g1 d1 d4 e4 % B
   c\breve a1 g4
   c4
 
@@ -205,7 +205,7 @@ verseFiguredHarmony = \figuremode {
   }
 verseFiguredBass = \figuremode {
   <5\!>\breve <6>1 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>\breve <_!>1 <5>4 <6 4>\breve <7\+>1 <5\!>4 % A
-  <5\!>\breve <5\!>1 <6\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
+  <5\!>\breve <6\!>1 <6\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
   <5\!>\breve <7 9>1 <6\+>4 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>4 <5\!>\breve <6\!>1 <5\!>4 <6>\breve <6\! 5>1 <5\!>4 % C
   }
 
@@ -257,21 +257,22 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
 \pageBreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% Doxology & Final %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Doxology %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' { \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g4 e4 fs2 }
+altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
 tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d2 }
 bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d2 }
-verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <IV> <II> <V>2 }
-verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <5\!>4 <5\!>4 <5\!>2 }
+verseFiguredHarmony = \figuremode { }%<I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <II> <_> <V>2 }
+verseFiguredBass = \figuremode { }%<5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <6\!>4 <5\!>4 <5\!>2 }
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
   \override #'(font-size . 1)
   \column {
+    %\vspace #1
     \fill-line {
       \left-column{
         %  « ℣ » et « ℟ »
@@ -279,12 +280,13 @@ verseLyrics =  \markup {
         \concat { \typewriter "   " "Au Dieu qui " \underline e "st, qui ét" \underline a "it et qui vient" }
         \concat { \typewriter "   " "Maintenant et à jam" \underline  a "is pour les si" \underline è "cles des siècles," }
         \concat { \typewriter "   " "Amen !" }
-        \vspace #0.5
-        \concat { \typewriter "In. " "Voici venir le Seigneur souverain&nbsp;;" }
-        \concat { \typewriter "    " "Il tient en main la royauté, la puissance et l'empire." \typewriter " (Stance puis ℟)" }
-        \vspace #0.5
-        \concat { \typewriter "Co. " "Comme les mages guidés par l'étoile" \super \typewriter "*" }
-        \concat { \typewriter "    " "nous sommes venus avec des présents adorer le Seigneur." \typewriter " (Stance puis ℟)" }
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \rounded-box \bold \center-column {
+        \concat { "Selon le moment de la messe, on prendra au choix" }
+        \concat { "l'antienne d'ouverture ou l'antienne de communion" }
       }
     }
   }
@@ -300,4 +302,77 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
-\pageBreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Antienne d'ouverture %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoVerseMusic = \relative c'' {
+  \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
+  \partial 8 g8 g4 a8 b c d c b a g4 \breathe g8 c4 c8 \break b4. c8 d c b a g a b a a4. g4 r8 \bar "|." }
+altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs a fs fs e4 g8 \repeat unfold 2 { s4. } a8 a fs d d d e fs d d4. d4 r8 }
+tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d e d d b4 g8 \repeat unfold 2 { s4. } e'8 d a g fs g c d c c4. b4 r8 }
+bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d d e4 \breathe g8 e4 fs8 g4. a8 fs d g, a b a d d g4. g4 r8 }
+verseFiguredHarmony = \figuremode { <I>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <III> <V> <VI>4 <_>8 <IV>4 <V>8 <I>4. <II>8 <V> <_> <I> <V> <I> <II> <III> <V> <V>4. <I>4 }
+verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <6\!> <5\!> <5\!>4 <0\!>8 <6\!>4 <6\!>8 <5\!>4. <5\!>8 <6> <7\+> <5\!> <6 4>  <6\!> <5\!> <6> <7\+> <5\!>4. <5\!>4 }
+
+verseLyrics =  \markup {
+  \override #'(font-family . sans)
+  \override #'(font-size . 1)
+  \column {
+    \fill-line {
+      \left-column{
+        %  « ℣ » et « ℟ »
+        \concat { \typewriter "In. " "Voici venir le Seigneur souverain&nbsp;;" \super \typewriter "*" \typewriter " (Soliste puis chœur)" }
+        \concat { \typewriter "    " "Il tient en main la royauté, la puissance et l'empire." \typewriter " (Stance puis ℟)" }
+      }
+    }
+  }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Draw Antienne d'ouverture %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/layouts/commonSettings.ily"
+
+partition = \include "../libs/layouts/commonVerseFourVoices.ily"
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Antienne de communion %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sopranoVerseMusic = \relative c'' {
+  \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne de communion"
+  g8 g a8 b c d c b a a4 \breathe b8 e e e \break d4 d8 c8 d c b a g a c b a4. g4 r8 \bar "|." }
+altoVerseMusic = \relative c' { \key g \major s4. s4. s4. fs4 g8 \repeat unfold 5 { s4. } fs4. d4 r8 }
+tenorVerseMusic = \relative c' { \key g \major s4. s4. s4. d4 d8 \repeat unfold 5 { s4. } d4. b4 r8 }
+bassVerseMusic = \relative f { \key g \major g8 e d8 g8 e b c a c d4 \breathe g8 e8 e fs8 g4 g8 e8 fs d g e c a a c d4. g4 r8 }
+verseFiguredHarmony = \figuremode { }%<I>8 <VI>8 <V>8 <I>8 <IV> <III> <IV> <II> <_> <V>4 <I>8 <IV>4 <_>8 <I>4. <II>8 <V> <_> <I> <IV> <_> <II> <_> <IV> <V>4. <I>4 }
+verseFiguredBass = \figuremode { }%<0>8 <5>8 <5\!>8 <5\!> <6> <5> <5\!> <5\!> <6> <5>4 <5\!>8 <5\!>4 <6>8 <5\!>4. <5\!>8 <6> <7\+> <5\!> <6>  <5\!> <5\!> <5> <5\!> <5\!>4. <5\!>4 }
+
+verseLyrics =  \markup {
+  \override #'(font-family . sans)
+  \override #'(font-size . 1)
+  \column {
+    \fill-line {
+      \left-column{
+        %  « ℣ » et « ℟ »
+        \concat { \typewriter "Co. " "Comme les mages guidés par l'étoile" \super \typewriter "*" \typewriter " (Soliste puis chœur)" }
+        \concat { \typewriter "    " "nous sommes venus avec des présents adorer le Seigneur." \typewriter " (Stance puis ℟)" }
+      }
+    }
+  }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Draw Antienne de communion %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Load Piano settings & layout
+\include "../libs/layouts/commonSettings.ily"
+
+partition = \include "../libs/layouts/commonVerseFourVoices.ily"
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics
