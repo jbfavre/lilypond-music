@@ -28,7 +28,7 @@ stanceRhythms = {
 }
 stanceMusic = \relative c' {
   \markCustom "Stance"
-  \partial 4. d8 g a bf4 c8 bf a g \time 2/4 a4 a4 r8 a8 bf c \time 3/4 d4 c8 bf a g 
+  \partial 4. d8 g a bf4 c8 bf a g \time 2/4 a4 a4 r8 a8 bf c \time 3/4 d4 c8 bf a g
   fs!?4 r8 d e
   fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g g a b a2 \fermata
   \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
@@ -244,7 +244,6 @@ verseLyrics =  \markup {
         \concat { \typewriter "   " "tous les pa" \underline y "s le serviront." \typewriter "(Ps.71,11)  " \typewriter " ℟" }
       }
     }
-    \vspace #5
   }
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -309,10 +308,10 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 
 sopranoVerseMusic = \relative c'' {
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
-  \partial 8 g8 g4 a8 b c d c b a g4 \breathe b8 c4 c8 \break b4. c8 d c b a g a b a a4. g4 r8 \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs a fs fs e4 g8 g4 a8 g4. g8 fs fs d d d e fs d d4. d4 r8 }
-tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d e d d b4 d8 c4 d8 d4. c8 a a g fs g c d c c4. b4 r8 }
-bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d d e4 \breathe g8 e4 fs8 g4. e8 d d g, a b a d d g4. g4 r8 }
+  \partial 8 g8 g4 a8 b c b a g fs g4 \breathe g8 b4 c8 \break d4. c8 b a g b b a g fs g4. g4 r8 \bar "|." }
+altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs e fs d e4 d8 g4 g8 fs4. a8 fs fs e fs e e fs d d4. d4 r8 }
+tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a d b4 b8 b4 e8 b4. e8 b d b d e c d c c8 b a b4 r8 }
+bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d fs e4 \breathe g8 e4 c8 b4. c8 d d e b g a d d g,4. g4 r8 }
 verseFiguredHarmony = \figuremode { <I>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <III> <V> <VI>4 <I>8 <IV>4 <V>8 <I>4. <IV>8 <V> <_> <I> <V> <I> <II> <III> <V> <V>4. <I>4 }
 verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <6\!> <5\!> <5\!>4 <5\!>8 <6\!>4 <6\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <6 4>  <6\!> <5\!> <6> <7\+> <5\!>4. <5\!>4 }
 
