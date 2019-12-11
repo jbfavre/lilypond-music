@@ -82,7 +82,7 @@ bassAntiphonMusic =  \relative c {
 
 antiphonFiguredBass = \figuremode {
   \silence \stanceMusic
-  s8 <5>8 <6> <6\! 4> <5>4 <6>8 <5> <5\!>4 <5>8 <_+>8 <5> <5\!> <5\!> <6> <6\!> <7\+> <6+> <5> <6>4 <7\+>8 <7\+> <5>2 <5>
+  s8 <5>8 <6> <6\! 4> <5>4 <6>8 <5> <5\!>4 <5>8 <_+>8 <5> <5\!> <5\!> <6> <6\!> <7\+> <6> <5> <6>4 <5\!>8 <7\+> <5>2 <5>
   }
 antiphonFiguredHarmony = \figuremode {
   \silence \stanceMusic
@@ -136,7 +136,7 @@ sopranoVerseMusic = \relative c'' {
   g\breve a1 fs4 \bar "||"
   b\breve g1 a4 \bar "||"
   a\breve b1 g4 \bar "||"
-  a\breve g1 fs4 \bar "|." \break
+  g\breve g1 fs4 \bar "|." \break
   \markCustom "Psalmodie B"
   b\breve b1 b1 a4 g4 \bar "||"
   a\breve b1 b4 \bar "|."
@@ -153,7 +153,7 @@ altoVerseMusic = \relative c' {
   e\breve e1 d4 % A
   fs\breve e1 e4
   fs\breve fs1 e4
-  g\breve e1 d4
+  e\breve e1 d4
 
   g\breve e1 fs1 fs4 e4 % B
   e\breve e1 g4
@@ -187,7 +187,7 @@ bassVerseMusic = \relative f {
   e\breve c1 d4 % A
   b\breve e1 a,4
   d\breve ds1 e4
-  e\breve a,1 d4
+  c\breve a1 d?4
 
   g\breve g1 d1 d4 e4 % B
   c\breve a1 g4
@@ -201,12 +201,12 @@ bassVerseMusic = \relative f {
 verseFiguredHarmony = \figuremode {
   <VI>\breve <II>1 <V>4 <III>\breve <VI>1 <II>4 <V>\breve <II>1 <VI>4 <IV>\breve <II>1 <V>4 % A
   <I>\breve <VI>1 <III>1 <V>4 <VI>4 <II>\breve <II>1 <I>4 <II>4 %B
-  <VI>\breve <II>1 <II>4 <III>4 <VI>\breve <IV>1 <II>4 <III>4 <VI>\breve <V>1 <III>4 <II>\breve <II>1 <V>4 % C
+  <VI>\breve <II>1 <II>4 <III>4 <VI>\breve <IV>1 <II>4 <III>4 <VI>\breve <V>1 <I>4 <II>\breve <II>1 <V>4 % C
   }
 verseFiguredBass = \figuremode {
-  <5\!>\breve <6>1 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>\breve <_!>1 <5>4 <6 4>\breve <7\+>1 <5\!>4 % A
+  <5\!>\breve <6>1 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>\breve <6\!>1 <5>4 <6>\breve <7>1 <5\!>4 % A
   <5\!>\breve <6\!>1 <6\!>1 <5>4 <5\!>4 <6>\breve <5>1 <5\!>4 <6>4 % B
-  <5\!>\breve <7 9>1 <6\+>4 <5>4 <5\!>\breve <5\!>1 <5\!>4 <5\!>4 <5\!>\breve <6\!>1 <5\!>4 <6>\breve <6\! 5>1 <5\!>4 % C
+  <5\!>\breve <7 9>1 <6>4 <5>4 <5\!>\breve <5\!>1 <5\!>4 <_+>4 <5\!>\breve <6!\!>1 <5\!>4 <6>\breve <5\! 9>1 <5\!>4 % C
   }
 
 verseLyrics =  \markup {
@@ -263,10 +263,10 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 
 sopranoVerseMusic = \relative c'' { \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
 altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
-tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d2 }
-bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d2 }
-verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <III>4 <VI>4 <_>4 <II> <_> <V>2 }
-verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <5>4 <5\!>\breve <5\!>1 <6>1 <_>4 <5>4 <_>4 <6\!>4 <5\!>4 <5\!>2 }
+tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d?2 }
+bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d?2 }
+verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <_>4 <VI>4 <_>4 <II> <_> <V>2 }
+verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <_+>4 <5\!>\breve <5\!>1 <6>1 <6\! 5>4 <5\!>4 <_>4 <6\! 5\!>4 <5\!>4 <5\!>2 }
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
@@ -310,10 +310,10 @@ sopranoVerseMusic = \relative c'' {
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
   \partial 8 g8 g4 a8 b c b a g fs g4 \breathe g8 b4 c8 \break d4. c8 b a g b b a g fs g4. g4 r8 \bar "|." }
 altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8 }
-tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 d'4. e8 d d b d e c a c c8 b a b4 r8 }
+tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e a, a c c8 b a b4 r8 }
 bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d d e4 \breathe e8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8 }
-verseFiguredHarmony = \figuremode { <I>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <III> <V> <VI>4 <I>8 <IV>4 <V>8 <I>4. <IV>8 <V> <_> <I> <V> <I> <II> <III> <V> <V>4. <I>4 }
-verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <6\!> <5\!> <5\!>4 <5\!>8 <6\!>4 <6\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <6 4>  <6\!> <5\!> <6> <7\+> <5\!>4. <5\!>4 }
+verseFiguredHarmony = \figuremode { <_>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <V> <_> <VI>4 <I>8 <III>4 <IV>8 <III>4. <II>8 <V> <_> <VI> <III> <VI> <II> <V> <_> <I>4. <>4 }
+verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+> <5\!>4 <5\!>8 <6\!>4 <5\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <5\!>  <5\!> <5\!> <5\!> <7\+> <5\!>4. <5>4 }
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
@@ -349,8 +349,8 @@ sopranoVerseMusic = \relative c'' {
 altoVerseMusic = \relative c' { \key g \major g'8 g fs8 g g fs e d d e4 e8 fs fs e8 fs4 fs8 a8 fs fs e fs g e d d d4. d4 r8 }
 tenorVerseMusic = \relative c' { \key g \major g8 b d8 d c d c a c b4 b8 b b g8 d'4 d8 e8 d d b d e c a c c8 b a b4 r8 }
 bassVerseMusic = \relative f { \key g \major g8 e d8 g8 e b c d d e4 \breathe e8 d d c8 b4 b8 c8 d d e b e c d d g,4. g4 r8 }
-verseFiguredHarmony = \figuremode { <I>8 <VI>8 <V>8 <I>8 <IV> <III> <II> <III> <V> <VI>4 <I>8 <IV>4 <V>8 <I>4. <IV>8 <V> <_> <I> <V> <I> <II> <III> <V> <V>4. <I>4 }
-verseFiguredBass = \figuremode { <0>8 <5>8 <5\!>8 <5\!> <6> <5> <6\!> <6\!> <5\!> <5\!>4 <5\!>8 <6\!>4 <6\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <6 4>  <6\!> <5\!> <6> <7\+> <5\!>4. <5\!>4 }
+verseFiguredHarmony = \figuremode { <I>8 <VI>8 <V>8 <I>8 <IV> <III> <II> <V> <_> <VI>4 <I>8 <III>4 <IV>8 <III>4. <II>8 <V> <_> <VI> <III> <VI> <II> <V> <_> <I>4. <_>4 }
+verseFiguredBass = \figuremode { <0>8 <5>8 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+> <5\!>4 <5\!>8 <6\!>4 <5\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <5\!> <5\!> <5\!> <5\!> <7\+> <5\!>4. <5>4 }
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
