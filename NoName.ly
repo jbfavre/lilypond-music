@@ -53,7 +53,7 @@
           e f4. (f4) d8 b4. c4 f,8 bf4. a \break
           g8 bf d c a f a4. (a4) g8 f4. r4 c8  e4. \break
           f g4. a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
-          a4. bf c d c (c8) bf a g4. (g4) f8 \break
+          a4. bf c d c (c8) bf a a4. (g4) f8 \break
           d'4. d4 d8 c4. r4 f,8 df'4.^"Larmoyant, moins vite" df4 df8 c4. (c) \fermata \break
           s4.^"Malicieux, alerte" s4. r8 <g g'>8-. <e e'>-. \break
           <c c'>4-- r8 s4. s4. <f f'>8 <e e'>8 <df df'>8 <df df'>4.^"Pesant, moins vite" (<df df'>4.) \break
@@ -100,7 +100,7 @@
             \key f \major
             \partial 8 s8 \repeat unfold 54 { s4. }
             r8 <g, g,>8-. <e e,>-. <c c,>4.-- \fermata
-            c4.\startTrillSpan c16\stopTrillSpan d e f g a bf4 r8
+            c4.\startTrillSpan d16\stopTrillSpan e f g a bf c4 r8
             c4.\startTrillSpan e16\stopTrillSpan f g a bf c df4.
             r4. r4. r4. r8 g, e <c c,>4.
             (c4) r8 \repeat unfold 42 { s4. }
