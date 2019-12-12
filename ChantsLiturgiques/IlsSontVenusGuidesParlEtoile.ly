@@ -310,7 +310,7 @@ sopranoVerseMusic = \relative c'' {
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
   \partial 8 g8 g4 a8 b c b a g fs g4 \breathe g8 b4 c8 \break d4. c8 b a g b b a g fs g4. g4 r8 \bar "|." }
 altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8 }
-tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e a, a c c8 b a b4 r8 }
+tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e c a c c8 b a b4 r8 }
 bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d d e4 \breathe e8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8 }
 verseFiguredHarmony = \figuremode { <_>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <V> <_> <VI>4 <I>8 <III>4 <IV>8 <III>4. <II>8 <V> <_> <VI> <III> <VI> <II> <V> <_> <I>4. <>4 }
 verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+> <5\!>4 <5\!>8 <6\!>4 <5\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <5\!>  <5\!> <5\!> <5\!> <7\+> <5\!>4. <5>4 }
