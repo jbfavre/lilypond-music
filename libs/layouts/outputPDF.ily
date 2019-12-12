@@ -79,6 +79,10 @@ oddFooterMarkupSetting = \markup {
       ragged-last = ##f
       short-indent = 0.8\cm
       \context {
+          \FiguredBass
+          \override BassFigure #'font-size = #-1
+      }
+      \context {
           \Staff
           \RemoveEmptyStaves
           \override NoteHead #'style = #'altdefault

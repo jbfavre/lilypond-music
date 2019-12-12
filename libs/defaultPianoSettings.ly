@@ -5,7 +5,7 @@ pianoProperties = {
   \hide Hairpin
   \omit DynamicText
   \omit TextScript
-  \set fontSize = #-1
+  %\set fontSize = #-1
   \override StaffSymbol #'staff-space = #(magstep -1)
   \override Hairpin #'style = #'none
   \override InstrumentName #'font-name = #"Monospace Regular"
