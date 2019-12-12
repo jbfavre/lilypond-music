@@ -102,6 +102,8 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
 \include "../libs/layouts/commonSettings.ily"
+% override Staff font size
+staffCustomSize = 16
 
 partition = {
   <<
@@ -249,8 +251,6 @@ verseLyrics =  \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw verses          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Load Piano settings & layout
-\include "../libs/layouts/commonSettings.ily"
 % Prepare partition
 partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 % Load PDF output
@@ -294,11 +294,8 @@ verseLyrics =  \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% Draw Doxology & Final %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Load Piano settings & layout
-\include "../libs/layouts/commonSettings.ily"
-
+% Prepare partition
 partition = \include "../libs/layouts/commonVerseFourVoices.ily"
-
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
@@ -331,11 +328,8 @@ verseLyrics =  \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% Draw Antienne d'ouverture %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Load Piano settings & layout
-\include "../libs/layouts/commonSettings.ily"
-
+% Prepare partition
 partition = \include "../libs/layouts/commonVerseFourVoices.ily"
-
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
@@ -368,11 +362,8 @@ verseLyrics =  \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% Draw Antienne de communion %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Load Piano settings & layout
-\include "../libs/layouts/commonSettings.ily"
-
+% Prepare partition
 partition = \include "../libs/layouts/commonVerseFourVoices.ily"
-
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
