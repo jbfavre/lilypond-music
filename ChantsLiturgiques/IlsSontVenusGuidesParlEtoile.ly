@@ -103,7 +103,7 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 \include "../libs/defaultPianoSettings.ly"
 \include "../libs/layouts/commonSettings.ily"
 % override Staff font size
-staffCustomSize = 16
+%staffCustomSize = 16
 
 partition = {
   <<
