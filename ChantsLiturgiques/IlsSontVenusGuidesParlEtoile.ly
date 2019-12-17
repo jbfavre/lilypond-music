@@ -8,6 +8,10 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
+%\include "../libs/defaultPianoSettings.ly"
+\include "../libs/layouts/commonSettings.ily"
+% override Staff font size
+%staffCustomSize = 16
 
 title = "Guidés par l'étoile"
 subtitle = \markup { \column { "Tropaire pour l'Épiphanie" "(Introït ou Offertoire)" }}
@@ -101,9 +105,6 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ly"
-\include "../libs/layouts/commonSettings.ily"
-% override Staff font size
-%staffCustomSize = 16
 
 partition = {
   <<
