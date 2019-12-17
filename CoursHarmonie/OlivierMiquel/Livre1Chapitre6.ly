@@ -30,14 +30,14 @@
     \new Staff <<
       \clef treble \time 6/8 \key a \minor
       \new Voice = "rhythm" { \partial 8 s8
-        \repeat unfold 4 { s2. } s8^\markup { "demi cadence" } s8 s2 \break
-        s8^\markup {  "cadence plagale" } s8 s2
+        \repeat unfold 3 { s2. } s4^\markup { "demi cadence" } s2 s2. \break
+        s8 s8 s2
         s4. s8 s8^\markup { "cadence rompue" } s8
         \repeat unfold 2 { s2. }
         s8^\markup {  "cadence plagale" } s8 s2 \break
         s2.
-        s4.^\markup { "demi cadence" } s4.
-        s2.^"T"
+        s4.^\markup { "cadence imparfaite" } s4.
+        s2.
         s4. s4.^\markup { "cadence parfaite" }
         s4. s4.^\markup {  "cadence plagale" }
       }
@@ -544,7 +544,7 @@ mesureNumber = 13
     \new Staff <<
       \clef bass \time 2/2 \key c \major
       \new Voice = "bass" {
-        \relative f {
+        \relative f, {
           \repeat unfold \mesureNumber { s1 }
           \repeat unfold \mesureNumber { s1 }
           \cantusFirmus
