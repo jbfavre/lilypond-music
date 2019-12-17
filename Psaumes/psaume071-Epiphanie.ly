@@ -8,6 +8,10 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
+antiphonRhythms = {}
+antiphonFiguredHarmony = {}
+antiphonFiguredBass = {}
+verseFiguredHarmony = {}
 
 title = "Psaume 71-2"
 subtitle = "Épiphanie du Seigneur"
@@ -136,6 +140,6 @@ partition = {
     %\new FiguredBass { \harmony \verseHarmony }
   >>
 }
-
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\verseLyrics
