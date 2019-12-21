@@ -26,6 +26,9 @@
     subtitle = ##f
     piece = "exercice 6.2"
   }
+  \layout {
+    #(layout-set-staff-size 17)
+  }
   \new StaffGroup <<
     \new Staff <<
       \clef treble \time 6/8 \key a \minor
@@ -118,6 +121,9 @@
     subtitle = ##f
     piece = "exercice 6.1"
   }
+  \layout {
+    #(layout-set-staff-size 17)
+  }
   \new Staff
   <<
     \clef treble \time 4/4 \key d \minor
@@ -163,7 +169,7 @@
     }
   >>
 }
-
+\pageBreak
 \score {
   \header {
     title = ##f
@@ -182,7 +188,7 @@
     \new Staff <<
       \clef bass \time 3/2 \key f \minor
       \new Voice = "bass" {
-        \relative f {
+        \relative f { \voiceFour
           f2 ef df c1. bf2 bf' af g f e f1.~ \break
           f1 bf,2 c1. af2 bf c f1. bf,1. f1.
         }
@@ -206,7 +212,7 @@
     \new Staff <<
       \clef treble \time 2/4 \key d \minor
       \new Voice = "melody" {
-        \relative c'' {
+        \relative c'' { \voiceOne
           \repeat unfold 11 { s2 }
         }
       }
@@ -214,7 +220,7 @@
     \new Staff <<
       \clef bass \time 2/4 \key d \minor
       \new Voice = "bass" {
-        \relative f {
+        \relative f { \voiceFour
           d4 cs8 d bf4 a8 cs d4 e8 f cs4 d g, a bf r4 \break
           a8 bf a g f g a cs d g, a a d2 d,4 r4
         }
@@ -268,7 +274,7 @@
     >>
   >>
 }
-
+\pageBreak
 \score {
   \header {
     title = ##f
