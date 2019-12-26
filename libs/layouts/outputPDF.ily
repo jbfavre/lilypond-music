@@ -99,6 +99,21 @@ oddFooterMarkupSetting = \markup {
       \override LyricText #'font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
   }
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+    \context {
+      \Score
+      midiChannelMapping = #'voice
+    }
+    \tempo 2 = 40
+  }
   \header {
     title = \title
     subtitle = \subtitle

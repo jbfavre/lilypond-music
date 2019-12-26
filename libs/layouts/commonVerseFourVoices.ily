@@ -17,6 +17,6 @@
       << \voiceThree { \tenorVerseMusic } >>
       << \voiceFour { \bassVerseMusic } >>
     >>
-    \context Staff = "verseTenorBass" \new FiguredBass { \bassFigureStaffAlignmentUp \verseFiguredHarmony }
-    \context Staff = "verseTenorBass" \new FiguredBass { \bassFigureExtendersOn \verseFiguredBass }
+    %\context Staff = "verseTenorBass" \new FiguredBass { \bassFigureStaffAlignmentUp \verseFiguredHarmony }
+    %\context Staff = "verseTenorBass" \new FiguredBass { \bassFigureExtendersOn \verseFiguredBass }
   >>
