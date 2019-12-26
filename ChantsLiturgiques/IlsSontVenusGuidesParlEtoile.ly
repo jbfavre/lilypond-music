@@ -12,6 +12,7 @@
 \include "../libs/layouts/commonSettings.ily"
 % override Staff font size
 %staffCustomSize = 16
+midiInstrumentName = #"church organ"
 
 title = "Guidés par l'étoile"
 subtitle = \markup { \column { "Tropaire pour l'Épiphanie" "(Introït ou Offertoire)" }}
@@ -31,13 +32,14 @@ stanceRhythms = {
   \key g \major s2. s2. \time 2/4 s2*4 \bar "|."
 }
 stanceMusic = \relative c' {
+  \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+  \override Staff.KeyCancellation.break-visibility = #all-invisible
+  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  \set midiInstrument = \midiInstrumentName
   \markCustom "Stance"
   \partial 4. d8 g a bf4 c8 bf a g \time 2/4 a4 a4 r8 a8 bf c \time 3/4 d4 c8 bf a g
   fs!?4 r8 d e
   fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g g a b a2 \fermata
-  \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-  \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-  \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   }
 
 stanceLyrics = \lyricmode {
@@ -55,30 +57,34 @@ antiphonRhythms = {
   \markCustom "Refrain"
   \key g \major \time 2/4
   s2*2 s4. \breathe s8 s2*5
-  \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-  \override Staff.KeyCancellation.break-visibility = #all-invisible
-  \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+  %\set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+  %\override Staff.KeyCancellation.break-visibility = #all-invisible
+  %\override Staff.TimeSignature.break-visibility = #end-of-line-invisible
   \bar "|." \break
 }
 sopranoAntiphonMusic = \relative c' {
+  \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic
   r8 d8 g a b4 c8 b a4 \autoBeamOff fs8
   fs8 \autoBeamOn g a b c d c b g a4 g8 fs g2 (g2) \fermata
   }
 
 altoAntiphonMusic = \relative c' {
+  \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
   ds8 \autoBeamOn e fs g g a fs fs e e4 e8 d d2 (d2) \fermata
   }
 
 tenorAntiphonMusic =  \relative c {
+  \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
   b8 \autoBeamOn b d d e d (a) b4 a d8 c8 c4 b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
+  \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 d8 b a g (g') e g d4 \autoBeamOff  d8
   b8 \autoBeamOn e d g e fs d ds e c4 d8 d g,2 (g2) \fermata
@@ -133,8 +139,9 @@ dedicace = ##f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' {
-  \key g \major
   \cadenzaOn
+  \set midiInstrument = \midiInstrumentName
+  \key g \major
   \markCustom "Psalmodie A"
   g\breve a1 fs4 \bar "||"
   b\breve g1 a4 \bar "||"
@@ -152,6 +159,8 @@ sopranoVerseMusic = \relative c'' {
   }
 
 altoVerseMusic = \relative c' {
+  \cadenzaOn
+  \set midiInstrument = \midiInstrumentName
   \key g \major
   e\breve e1 d4 % A
   fs\breve e1 e4
@@ -169,6 +178,8 @@ altoVerseMusic = \relative c' {
   }
 
 tenorVerseMusic = \relative c' {
+  \cadenzaOn
+  \set midiInstrument = \midiInstrumentName
   \key g \major
   b\breve a1 a4 % A
   d\breve b1 c4
@@ -186,6 +197,8 @@ tenorVerseMusic = \relative c' {
   }
 
 bassVerseMusic = \relative f {
+  \cadenzaOn
+  \set midiInstrument = \midiInstrumentName
   \key g \major
   e\breve c1 d4 % A
   b\breve e1 a,4
@@ -262,10 +275,10 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Doxology %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' { \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
-tenorVerseMusic = \relative c' { \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d?2 }
-bassVerseMusic = \relative f { \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d?2 }
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
+altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
+tenorVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d?2 }
+bassVerseMusic = \relative f { \set midiInstrument = \midiInstrumentName \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d?2 }
 verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <_>4 <VI>4 <_>4 <II> <_> <V>2 }
 verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <_+>4 <5\!>\breve <5\!>1 <6>1 <6\! 5>4 <5\!>4 <_>4 <6\! 5\!>4 <5\!>4 <5\!>2 }
 
@@ -304,12 +317,12 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Antienne d'ouverture %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName 
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
   \partial 8 g8 g4 a8 b c b a g fs g4 \breathe g8 b4 c8 \break d4. c8 b a g b b a g fs g4. g4 r8 \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8 }
-tenorVerseMusic = \relative c' { \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e c a c c8 b a b4 r8 }
-bassVerseMusic = \relative f { \key g \major g8 e4  d8 g8 e b c d d e4 \breathe e8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8 }
+altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8 }
+tenorVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e c a c c8 b a b4 r8 }
+bassVerseMusic = \relative f { \set midiInstrument = \midiInstrumentName \key g \major g8 e4  d8 g8 e b c d d e4 \breathe e8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8 }
 verseFiguredHarmony = \figuremode { <_>8 <VI>4 <V>8 <I>8 <IV> <III> <II> <V> <_> <VI>4 <I>8 <III>4 <IV>8 <III>4. <II>8 <V> <_> <VI> <III> <VI> <II> <V> <_> <I>4. <>4 }
 verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+> <5\!>4 <5\!>8 <6\!>4 <5\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <5\!>  <5\!> <5\!> <5\!> <7\+> <5\!>4. <5>4 }
 
@@ -338,12 +351,12 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Antienne de communion %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName 
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne de communion"
   g8 g a8 b c b a g fs g4 \breathe g8 b b c8 \break d4 d8 c8 b a g b b a g fs g4. g4 r8 \bar "|." }
-altoVerseMusic = \relative c' { \key g \major g'8 g fs8 g g fs e d d e4 e8 fs fs e8 fs4 fs8 a8 fs fs e fs g e d d d4. d4 r8 }
-tenorVerseMusic = \relative c' { \key g \major g8 b d8 d c d c a c b4 b8 b b g8 d'4 d8 e8 d d b d e c a c c8 b a b4 r8 }
-bassVerseMusic = \relative f { \key g \major g8 e d8 g8 e b c d d e4 \breathe e8 d d c8 b4 b8 c8 d d e b e c d d g,4. g4 r8 }
+altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'8 g fs8 g g fs e d d e4 e8 fs fs e8 fs4 fs8 a8 fs fs e fs g e d d d4. d4 r8 }
+tenorVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g8 b d8 d c d c a c b4 b8 b b g8 d'4 d8 e8 d d b d e c a c c8 b a b4 r8 }
+bassVerseMusic = \relative f { \set midiInstrument = \midiInstrumentName \key g \major g8 e d8 g8 e b c d d e4 \breathe e8 d d c8 b4 b8 c8 d d e b e c d d g,4. g4 r8 }
 verseFiguredHarmony = \figuremode { <I>8 <VI>8 <V>8 <I>8 <IV> <III> <II> <V> <_> <VI>4 <I>8 <III>4 <IV>8 <III>4. <II>8 <V> <_> <VI> <III> <VI> <II> <V> <_> <I>4. <_>4 }
 verseFiguredBass = \figuremode { <0>8 <5>8 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+> <5\!>4 <5\!>8 <6\!>4 <5\!>8 <5\!>4. <6\!>8 <5\!> <7\+> <5\!> <5\!> <5\!> <5\!> <5\!> <7\+> <5\!>4. <5>4 }
 
