@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-11-26T13:38:20.970373467</meta:creation-date><dc:date>2019-12-28T12:39:22.537054904</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>P1DT2H52M30S</meta:editing-duration><meta:editing-cycles>49</meta:editing-cycles><meta:generator>LibreOffice/6.3.4.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="2" meta:image-count="115" meta:object-count="0" meta:page-count="58" meta:paragraph-count="478" meta:word-count="20865" meta:character-count="126969" meta:non-whitespace-character-count="106474"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2019-11-26T13:38:20.970373467</meta:creation-date><dc:date>2019-12-28T12:42:14.945830344</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>P1DT2H55M22S</meta:editing-duration><meta:editing-cycles>50</meta:editing-cycles><meta:generator>LibreOffice/6.3.4.2.0$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="2" meta:image-count="115" meta:object-count="0" meta:page-count="58" meta:paragraph-count="478" meta:word-count="20865" meta:character-count="126972" meta:non-whitespace-character-count="106474"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">1025024</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">968297</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">1445</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">20560</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">20772</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">10836</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">1009751</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">4454</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">975834</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">1445</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">1025024</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">968297</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">22003</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">1045794</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">989067</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -27276,7 +27276,7 @@
    <text:p text:style-name="P44"><text:span text:style-name="T92">Hermann Contract</text:span>, au milieu du onzième siècle, fit aussi usage des lettres, mais dans une pensée totalement différente, Ses lettres à lui déterminent, non les degrés de l’échelle, mais les intervalles que la voix doit franchir en allant d’une note à l’autre. <text:span text:style-name="T135">D</text:span>’après son système :</text:p>
    <text:list xml:id="list2445508853" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P98">E exprimait<text:tab/>l’unisson.</text:p>
+     <text:p text:style-name="P98">E <text:s text:c="3"/>exprimait<text:tab/>l’unisson.</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P98"><text:span text:style-name="T92">S<text:tab/></text:span>—<text:tab/>l’intervalle d’un demi-ton, ou seco<text:span text:style-name="T92">n</text:span>de mineure.</text:p>
@@ -33644,7 +33644,7 @@
     </draw:frame></text:p>
    <text:p text:style-name="Text_20_body">Les signes précédents suffisent à marquer la simple modulation du discours<text:span text:style-name="T116"> ;</text:span> mais pour noter les mouvements de voix plus étendus et beaucoup plus variés que comporte le chant, il est nécessaire d’augmenter le nombre des combinaisons.</text:p>
    <text:p text:style-name="Text_20_body">La notation musicale, outre le <text:span text:style-name="T31">p</text:span><text:span text:style-name="T6">un</text:span><text:span text:style-name="T31">ct</text:span><text:span text:style-name="T6">um</text:span>, la <text:span text:style-name="T6">virga</text:span>, la <text:span text:style-name="T6">clivis</text:span> et le <text:span text:style-name="T31">p</text:span><text:span text:style-name="T6">odatus</text:span>, comprendra donc d’autres formules plus compliquées, mais toujours produites par la combinaison de l’accent grave et de l’accent ai<text:span text:style-name="T111">g</text:span>u.</text:p>
-   <text:list xml:id="list123925046181102" text:continue-numbering="true" text:style-name="L2">
+   <text:list xml:id="list124216112999102" text:continue-numbering="true" text:style-name="L2">
     <text:list-item>
      <text:p text:style-name="P100">Dans le <text:span text:style-name="T6">scandicus</text:span> la voix monte trois degrés<text:span text:style-name="T111"> :</text:span> il faut alors, avant d’arriver à la <text:span text:style-name="T6">vir</text:span><text:span text:style-name="T31">g</text:span><text:span text:style-name="T6">a</text:span>, deux accents graves, qui dans ce cas se changent nécessairement en autant de <text:span text:style-name="T31">punctum</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T31">scandicus</text:span> monte tout droit : <draw:frame draw:style-name="fr4" draw:name="Image10" text:anchor-type="as-char" svg:width="0.21cm" svg:height="0.499cm" draw:z-index="30"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAACbCAYAAADWZU0PAAAKzXpUWHRSYXcgcHJvZmlsZSB0
@@ -36837,7 +36837,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>etc.</text:p>
-   <text:list xml:id="list123924021047727" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list124217526342279" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P106">Si la formule se termine par un son grave, le trait final, ou <text:span text:style-name="T6">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T122"> :</text:span></text:p>
     </text:list-item>
@@ -37488,7 +37488,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:list xml:id="list123924993071196" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list124216458558941" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P104">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T6">s</text:span><text:span text:style-name="T38">t</text:span><text:span text:style-name="T6">rophicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
     </text:list-item>
@@ -38865,7 +38865,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus.</text:p>
-   <text:list xml:id="list123924295045534" text:continue-numbering="true" text:style-name="L5">
+   <text:list xml:id="list124216476611857" text:continue-numbering="true" text:style-name="L5">
     <text:list-item>
      <text:p text:style-name="P107">S<text:span text:style-name="T126">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la droite, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T6">virga</text:span> ou de petit cercle.</text:p>
     </text:list-item>
@@ -39088,7 +39088,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Scandicus.</text:p>
-   <text:list xml:id="list123925107605128" text:continue-numbering="true" text:style-name="L5">
+   <text:list xml:id="list124217239950869" text:continue-numbering="true" text:style-name="L5">
     <text:list-item>
      <text:p text:style-name="P107"><text:span text:style-name="T126">Il</text:span> en est toujours ainsi de <text:span text:style-name="T126">l</text:span>a dernière note d’une formule, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T126"> :</text:span></text:p>
     </text:list-item>
@@ -39310,7 +39310,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus resupinus.</text:p>
-   <text:list xml:id="list123925065280695" text:continue-numbering="true" text:style-name="L5">
+   <text:list xml:id="list124215997548785" text:continue-numbering="true" text:style-name="L5">
     <text:list-item>
      <text:p text:style-name="P107">Si la note culminante de la formule n’est pas la dernière, le <text:span text:style-name="T6">point</text:span> <text:span text:style-name="T126">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T126"> :</text:span></text:p>
     </text:list-item>
@@ -39520,7 +39520,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Pes subpun<text:span text:style-name="T126">c</text:span>tis.</text:p>
-   <text:list xml:id="list123923602479045" text:continue-numbering="true" text:style-name="L5">
+   <text:list xml:id="list124216624846534" text:continue-numbering="true" text:style-name="L5">
     <text:list-item>
      <text:p text:style-name="P107"><text:span text:style-name="T126">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T126">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T6"> superposés</text:span>.</text:p>
     </text:list-item>
