@@ -5,6 +5,7 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
+\include "articulate.ly"
 \include "../libs/commonFunctions.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
@@ -139,7 +140,7 @@ dedicace = ##f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' {
-  \cadenzaOn
+  \cadenzaOn \omit Staff.TimeSignature
   \set midiInstrument = \midiInstrumentName
   \key g \major
   \markCustom "Psalmodie A"
@@ -178,7 +179,7 @@ altoVerseMusic = \relative c' {
   }
 
 tenorVerseMusic = \relative c' {
-  \cadenzaOn
+  \cadenzaOn \omit Staff.TimeSignature
   \set midiInstrument = \midiInstrumentName
   \key g \major
   b\breve a1 a4 % A
@@ -275,10 +276,10 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Doxology %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName \key g \major \cadenzaOn \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
-altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
-tenorVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d?2 }
-bassVerseMusic = \relative f { \set midiInstrument = \midiInstrumentName \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d?2 }
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName \cadenzaOn \omit Staff.TimeSignature \key g \major \markCustom "Doxologie" b\breve b1 a4 g4 \bar "||" g\breve g1 a1 b4 \bar "||" b\breve d1 b1 a4 a4 g4 \bar "||" \cadenzaOff a2 a2\fermata \bar "|." }
+altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \cadenzaOn \omit Staff.TimeSignature \key g \major g'\breve fs1 fs4 e4 e\breve e1 e1 fs4 g\breve fs1 fs1 fs4 e4 e4 g2 fs2 }
+tenorVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \cadenzaOn \omit Staff.TimeSignature \key g \major d\breve d1 d4 b4 b\breve c1 e1 ds4 e\breve a,1 b1 b4 b4 b4 e4 c4 d?2 }
+bassVerseMusic = \relative f { \set midiInstrument = \midiInstrumentName \cadenzaOn \omit Staff.TimeSignature \key g \major g\breve d1 d4 e4 e\breve c1 c1 b4 e\breve d1 ds1 ds4 e4 e4 c4 a4 d?2 }
 verseFiguredHarmony = \figuremode { <I>\breve <V>1 <_>4 <VI>4 <VI>\breve <IV>1 <II>1 <III>4 <VI>\breve <V>1 <III>1 <_>4 <VI>4 <_>4 <II> <_> <V>2 }
 verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!>1 <6>1 <_+>4 <5\!>\breve <5\!>1 <6>1 <6\! 5>4 <5\!>4 <_>4 <6\! 5\!>4 <5\!>4 <5\!>2 }
 
