@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T10:59:21.177317842</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT33M35S</meta:editing-duration><meta:editing-cycles>19</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="11" meta:paragraph-count="110" meta:word-count="4689" meta:character-count="27953" meta:non-whitespace-character-count="23374"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T20:01:25.935056653</dc:date><dc:creator>Jean Baptiste Favre</dc:creator><meta:editing-duration>PT38M24S</meta:editing-duration><meta:editing-cycles>20</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="11" meta:paragraph-count="108" meta:word-count="4675" meta:character-count="27767" meta:non-whitespace-character-count="23200"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">302403</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">314339</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22112</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">23797</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22038</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">11194</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">10975</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">10938</config:config-item>
      <config:config-item config:name="ViewTop" config:type="long">317687</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">302403</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22110</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">326198</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">314339</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22036</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">325531</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">3</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">143</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">374</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
      <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
@@ -73,7 +73,7 @@
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">593624</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">768636</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
@@ -126,7 +126,9 @@
  </office:settings>
  <office:scripts>
   <office:script script:language="ooo:Basic">
-   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
   </office:script>
  </office:scripts>
  <office:font-face-decls>
@@ -143,7 +145,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -315,185 +317,186 @@
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
-  </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
-  </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties style:font-name="Liberation Sans" fo:font-size="16.1000003814697pt" fo:font-weight="bold" officeooo:rsid="0077d87b" officeooo:paragraph-rsid="00087e68" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="16.1000003814697pt" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="16.1000003814697pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="002a82b1" officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00291a78" officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0005f7bb" officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="0030508e"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00388196" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="003959d3" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0045f44c" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="00465734" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="006ef069" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="006c18e7" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="006c8bb5" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="006e13b7" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="006e541e" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="0074ead4" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Caption">
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Caption">
    <style:paragraph-properties fo:keep-with-next="always"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Caption">
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Caption">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:keep-with-next="always"/>
    <style:text-properties fo:font-weight="bold" officeooo:paragraph-rsid="00087e68" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Footnote">
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Footnote">
    <style:text-properties officeooo:rsid="006c8bb5" officeooo:paragraph-rsid="006c8bb5"/>
   </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Footnote">
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Footnote">
    <style:text-properties officeooo:paragraph-rsid="007575bb"/>
   </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="">
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="">
    <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Quotations">
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Quotations">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="005ee330" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="004d6b5f" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="004e7751" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="0033823b" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:rsid="006e13b7" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:rsid="006e279b" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:rsid="006e541e" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:rsid="006ef069" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="005ee330" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="004d6b5f" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties officeooo:rsid="006e13b7" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties officeooo:rsid="006e279b" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties fo:font-weight="bold" officeooo:rsid="006e279b" officeooo:paragraph-rsid="00087e68" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties fo:font-weight="bold" officeooo:rsid="006ef069" officeooo:paragraph-rsid="00087e68" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties officeooo:rsid="006e541e" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:text-properties officeooo:rsid="006ef069" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:margin-left="1.251cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="First_20_Page">
+  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="First_20_Page">
    <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties style:font-name="Liberation Sans" fo:font-size="16.1000003814697pt" fo:font-weight="bold" officeooo:rsid="0077d87b" officeooo:paragraph-rsid="00087e68" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="16.1000003814697pt" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="16.1000003814697pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
   <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
@@ -510,459 +513,464 @@
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="001ae764"/>
   </style:style>
-  <style:style style:name="T2" style:family="text"/>
-  <style:style style:name="T3" style:family="text">
-   <style:text-properties officeooo:rsid="001ae764"/>
-  </style:style>
-  <style:style style:name="T4" style:family="text">
+  <style:style style:name="T2" style:family="text">
    <style:text-properties officeooo:rsid="008f56dd"/>
   </style:style>
-  <style:style style:name="T5" style:family="text">
+  <style:style style:name="T3" style:family="text">
    <style:text-properties officeooo:rsid="00291a78"/>
   </style:style>
-  <style:style style:name="T6" style:family="text">
+  <style:style style:name="T4" style:family="text">
    <style:text-properties officeooo:rsid="00645a2c"/>
   </style:style>
-  <style:style style:name="T7" style:family="text">
+  <style:style style:name="T5" style:family="text">
    <style:text-properties officeooo:rsid="008f1505"/>
   </style:style>
-  <style:style style:name="T8" style:family="text">
+  <style:style style:name="T6" style:family="text">
    <style:text-properties officeooo:rsid="002a82b1"/>
   </style:style>
-  <style:style style:name="T9" style:family="text">
+  <style:style style:name="T7" style:family="text">
    <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T10" style:family="text">
+  <style:style style:name="T8" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="002b4534" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T11" style:family="text">
+  <style:style style:name="T9" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="002ca722" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T12" style:family="text">
+  <style:style style:name="T10" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00645a2c" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T13" style:family="text">
+  <style:style style:name="T11" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="002e54e0" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T14" style:family="text">
+  <style:style style:name="T12" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00291a78" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T15" style:family="text">
+  <style:style style:name="T13" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0005f7bb" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T16" style:family="text">
+  <style:style style:name="T14" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00072347" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T17" style:family="text">
+  <style:style style:name="T15" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00331164" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T18" style:family="text">
+  <style:style style:name="T16" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0030508e" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T19" style:family="text">
+  <style:style style:name="T17" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0033823b" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T20" style:family="text">
+  <style:style style:name="T18" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0059f09d" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T21" style:family="text">
+  <style:style style:name="T19" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00350e9e" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T22" style:family="text">
+  <style:style style:name="T20" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00363566" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T23" style:family="text">
+  <style:style style:name="T21" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00379b24" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T24" style:family="text">
+  <style:style style:name="T22" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="005ead28" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T25" style:family="text">
+  <style:style style:name="T23" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00388196" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T26" style:family="text">
+  <style:style style:name="T24" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="003a1df7" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T27" style:family="text">
+  <style:style style:name="T25" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="003b1371" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T28" style:family="text">
+  <style:style style:name="T26" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0040f959" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T29" style:family="text">
+  <style:style style:name="T27" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0045b366" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T30" style:family="text">
+  <style:style style:name="T28" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00464015" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T31" style:family="text">
+  <style:style style:name="T29" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="004913f1" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T32" style:family="text">
+  <style:style style:name="T30" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="004836e2" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T33" style:family="text">
+  <style:style style:name="T31" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006596e3" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T34" style:family="text">
+  <style:style style:name="T32" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="004b0a7f" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T35" style:family="text">
+  <style:style style:name="T33" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0050ccdf" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T36" style:family="text">
+  <style:style style:name="T34" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0050da53" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T37" style:family="text">
+  <style:style style:name="T35" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00515b86" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T38" style:family="text">
+  <style:style style:name="T36" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="005229d1" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T39" style:family="text">
+  <style:style style:name="T37" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="005484f9" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T40" style:family="text">
+  <style:style style:name="T38" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00562991" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T41" style:family="text">
+  <style:style style:name="T39" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0056e2ea" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T42" style:family="text">
+  <style:style style:name="T40" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0057e106" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T43" style:family="text">
+  <style:style style:name="T41" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0057f593" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T44" style:family="text">
+  <style:style style:name="T42" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0068a528" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T45" style:family="text">
+  <style:style style:name="T43" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0069b59c" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T46" style:family="text">
+  <style:style style:name="T44" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006c18e7" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T47" style:family="text">
+  <style:style style:name="T45" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006c8bb5" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T48" style:family="text">
+  <style:style style:name="T46" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006e13b7" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T49" style:family="text">
+  <style:style style:name="T47" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006e279b" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T50" style:family="text">
+  <style:style style:name="T48" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006e541e" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T51" style:family="text">
+  <style:style style:name="T49" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006ef069" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T52" style:family="text">
+  <style:style style:name="T50" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="006ff54c" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T53" style:family="text">
+  <style:style style:name="T51" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0071e546" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T54" style:family="text">
+  <style:style style:name="T52" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="00739f06" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T55" style:family="text">
+  <style:style style:name="T53" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="0074ead4" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T56" style:family="text">
+  <style:style style:name="T54" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="007575bb" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T57" style:family="text">
+  <style:style style:name="T55" style:family="text">
    <style:text-properties fo:font-style="italic" officeooo:rsid="007703dd" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T58" style:family="text">
+  <style:style style:name="T56" style:family="text">
+   <style:text-properties fo:font-style="italic" officeooo:rsid="000ae9d8" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="T57" style:family="text">
    <style:text-properties fo:font-style="italic" style:text-underline-style="none" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T59" style:family="text">
+  <style:style style:name="T58" style:family="text">
    <style:text-properties fo:font-style="italic" style:text-underline-style="none" officeooo:rsid="004b0a7f" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T60" style:family="text">
+  <style:style style:name="T59" style:family="text">
    <style:text-properties fo:font-style="italic" style:text-underline-style="none" officeooo:rsid="006bad83" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T61" style:family="text">
+  <style:style style:name="T60" style:family="text">
    <style:text-properties fo:font-style="italic" fo:font-weight="normal" officeooo:rsid="0050da53" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="T62" style:family="text">
+  <style:style style:name="T61" style:family="text">
    <style:text-properties officeooo:rsid="002b4534"/>
   </style:style>
-  <style:style style:name="T63" style:family="text">
+  <style:style style:name="T62" style:family="text">
    <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T64" style:family="text">
+  <style:style style:name="T63" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="002b4534" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T65" style:family="text">
+  <style:style style:name="T64" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="0005f7bb" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T66" style:family="text">
+  <style:style style:name="T65" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="004f7a38" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T67" style:family="text">
+  <style:style style:name="T66" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="0050ccdf" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T68" style:family="text">
+  <style:style style:name="T67" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="00562991" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T69" style:family="text">
+  <style:style style:name="T68" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="006596e3" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T70" style:family="text">
+  <style:style style:name="T69" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="0056e2ea" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T71" style:family="text">
+  <style:style style:name="T70" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="006a1164" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T72" style:family="text">
+  <style:style style:name="T71" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="006c18e7" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T73" style:family="text">
+  <style:style style:name="T72" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="006e541e" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T74" style:family="text">
+  <style:style style:name="T73" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="0071e546" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T75" style:family="text">
+  <style:style style:name="T74" style:family="text">
    <style:text-properties fo:font-style="normal" officeooo:rsid="00739f06" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T76" style:family="text">
+  <style:style style:name="T75" style:family="text">
    <style:text-properties officeooo:rsid="002ca722"/>
   </style:style>
-  <style:style style:name="T77" style:family="text">
+  <style:style style:name="T76" style:family="text">
    <style:text-properties officeooo:rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="T78" style:family="text">
+  <style:style style:name="T77" style:family="text">
    <style:text-properties officeooo:rsid="0030508e"/>
   </style:style>
-  <style:style style:name="T79" style:family="text">
+  <style:style style:name="T78" style:family="text">
    <style:text-properties officeooo:rsid="005c9a1b"/>
   </style:style>
-  <style:style style:name="T80" style:family="text">
+  <style:style style:name="T79" style:family="text">
    <style:text-properties officeooo:rsid="00331164"/>
   </style:style>
-  <style:style style:name="T81" style:family="text">
+  <style:style style:name="T80" style:family="text">
    <style:text-properties officeooo:rsid="0033823b"/>
   </style:style>
-  <style:style style:name="T82" style:family="text">
+  <style:style style:name="T81" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" officeooo:rsid="0033823b"/>
   </style:style>
-  <style:style style:name="T83" style:family="text">
+  <style:style style:name="T82" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" fo:font-style="italic" officeooo:rsid="00363566" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T84" style:family="text">
+  <style:style style:name="T83" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" officeooo:rsid="00388196" style:font-name-asian="Liberation Serif" style:font-name-complex="Liberation Serif"/>
   </style:style>
-  <style:style style:name="T85" style:family="text">
+  <style:style style:name="T84" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" fo:font-weight="bold" officeooo:rsid="003b1371" style:font-name-asian="Liberation Serif" style:font-weight-asian="bold" style:font-name-complex="Liberation Serif" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T86" style:family="text">
+  <style:style style:name="T85" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" officeooo:rsid="00465734"/>
   </style:style>
-  <style:style style:name="T87" style:family="text">
+  <style:style style:name="T86" style:family="text">
    <style:text-properties style:font-name="Liberation Serif" officeooo:rsid="004836e2"/>
   </style:style>
-  <style:style style:name="T88" style:family="text">
+  <style:style style:name="T87" style:family="text">
    <style:text-properties fo:font-size="12pt" fo:font-style="italic" officeooo:rsid="0033823b" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-size-complex="12pt" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T89" style:family="text">
+  <style:style style:name="T88" style:family="text">
    <style:text-properties fo:font-size="12pt" fo:font-style="italic" officeooo:rsid="0059f09d" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-size-complex="12pt" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T90" style:family="text">
+  <style:style style:name="T89" style:family="text">
    <style:text-properties officeooo:rsid="005e9252"/>
   </style:style>
-  <style:style style:name="T91" style:family="text">
+  <style:style style:name="T90" style:family="text">
    <style:text-properties officeooo:rsid="00363566"/>
   </style:style>
-  <style:style style:name="T92" style:family="text">
+  <style:style style:name="T91" style:family="text">
    <style:text-properties officeooo:rsid="00379b24"/>
   </style:style>
-  <style:style style:name="T93" style:family="text">
+  <style:style style:name="T92" style:family="text">
    <style:text-properties officeooo:rsid="005ead28"/>
   </style:style>
-  <style:style style:name="T94" style:family="text">
+  <style:style style:name="T93" style:family="text">
    <style:text-properties officeooo:rsid="00388196"/>
   </style:style>
-  <style:style style:name="T95" style:family="text">
+  <style:style style:name="T94" style:family="text">
    <style:text-properties style:text-position="super 58%" officeooo:rsid="005fe28c"/>
   </style:style>
-  <style:style style:name="T96" style:family="text">
+  <style:style style:name="T95" style:family="text">
    <style:text-properties officeooo:rsid="005fe28c"/>
   </style:style>
-  <style:style style:name="T97" style:family="text">
+  <style:style style:name="T96" style:family="text">
    <style:text-properties style:font-name="Liberation Serif1" officeooo:rsid="00388196" style:font-name-asian="WenQuanYi Micro Hei" style:font-name-complex="FreeSans"/>
   </style:style>
-  <style:style style:name="T98" style:family="text">
+  <style:style style:name="T97" style:family="text">
    <style:text-properties officeooo:rsid="003959d3"/>
   </style:style>
-  <style:style style:name="T99" style:family="text">
+  <style:style style:name="T98" style:family="text">
    <style:text-properties text:display="none"/>
   </style:style>
-  <style:style style:name="T100" style:family="text">
+  <style:style style:name="T99" style:family="text">
    <style:text-properties officeooo:rsid="003a1df7"/>
   </style:style>
-  <style:style style:name="T101" style:family="text">
+  <style:style style:name="T100" style:family="text">
    <style:text-properties officeooo:rsid="0045f44c"/>
   </style:style>
-  <style:style style:name="T102" style:family="text">
+  <style:style style:name="T101" style:family="text">
    <style:text-properties officeooo:rsid="003b1371"/>
   </style:style>
-  <style:style style:name="T103" style:family="text">
+  <style:style style:name="T102" style:family="text">
    <style:text-properties officeooo:rsid="0059d4db"/>
   </style:style>
-  <style:style style:name="T104" style:family="text">
+  <style:style style:name="T103" style:family="text">
    <style:text-properties officeooo:rsid="0040f959"/>
   </style:style>
-  <style:style style:name="T105" style:family="text">
+  <style:style style:name="T104" style:family="text">
    <style:text-properties officeooo:rsid="0043f58b"/>
   </style:style>
-  <style:style style:name="T106" style:family="text">
+  <style:style style:name="T105" style:family="text">
    <style:text-properties officeooo:rsid="003ce120"/>
   </style:style>
-  <style:style style:name="T107" style:family="text">
+  <style:style style:name="T106" style:family="text">
    <style:text-properties officeooo:rsid="00464015"/>
   </style:style>
-  <style:style style:name="T108" style:family="text">
+  <style:style style:name="T107" style:family="text">
    <style:text-properties officeooo:rsid="00415c53"/>
   </style:style>
-  <style:style style:name="T109" style:family="text">
+  <style:style style:name="T108" style:family="text">
    <style:text-properties officeooo:rsid="0045b366"/>
   </style:style>
-  <style:style style:name="T110" style:family="text">
+  <style:style style:name="T109" style:family="text">
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T111" style:family="text">
+  <style:style style:name="T110" style:family="text">
    <style:text-properties fo:font-weight="bold" officeooo:rsid="0045b366" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T112" style:family="text">
+  <style:style style:name="T111" style:family="text">
    <style:text-properties fo:font-weight="bold" officeooo:rsid="0050da53" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T113" style:family="text">
+  <style:style style:name="T112" style:family="text">
    <style:text-properties style:text-underline-style="none"/>
   </style:style>
-  <style:style style:name="T114" style:family="text">
+  <style:style style:name="T113" style:family="text">
    <style:text-properties officeooo:rsid="00465734"/>
   </style:style>
-  <style:style style:name="T115" style:family="text">
+  <style:style style:name="T114" style:family="text">
    <style:text-properties officeooo:rsid="00479ec0"/>
   </style:style>
-  <style:style style:name="T116" style:family="text">
+  <style:style style:name="T115" style:family="text">
    <style:text-properties officeooo:rsid="004836e2"/>
   </style:style>
-  <style:style style:name="T117" style:family="text">
+  <style:style style:name="T116" style:family="text">
    <style:text-properties officeooo:rsid="004f7a38"/>
   </style:style>
-  <style:style style:name="T118" style:family="text">
+  <style:style style:name="T117" style:family="text">
    <style:text-properties officeooo:rsid="004913f1"/>
   </style:style>
-  <style:style style:name="T119" style:family="text">
+  <style:style style:name="T118" style:family="text">
    <style:text-properties officeooo:rsid="004b0a7f"/>
   </style:style>
-  <style:style style:name="T120" style:family="text">
+  <style:style style:name="T119" style:family="text">
    <style:text-properties fo:font-size="10pt" fo:font-style="italic" officeooo:rsid="004b0a7f" style:font-size-asian="10pt" style:font-style-asian="italic" style:font-size-complex="10pt" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T121" style:family="text">
+  <style:style style:name="T120" style:family="text">
    <style:text-properties fo:font-size="10pt" fo:font-style="italic" officeooo:rsid="007703dd" style:font-size-asian="10pt" style:font-style-asian="italic" style:font-size-complex="10pt" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T122" style:family="text">
+  <style:style style:name="T121" style:family="text">
    <style:text-properties fo:font-size="10pt" officeooo:rsid="007703dd" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
   </style:style>
-  <style:style style:name="T123" style:family="text">
+  <style:style style:name="T122" style:family="text">
    <style:text-properties officeooo:rsid="0050ccdf"/>
   </style:style>
-  <style:style style:name="T124" style:family="text">
+  <style:style style:name="T123" style:family="text">
    <style:text-properties officeooo:rsid="0050da53"/>
   </style:style>
-  <style:style style:name="T125" style:family="text">
+  <style:style style:name="T124" style:family="text">
    <style:text-properties fo:font-weight="normal" officeooo:rsid="0050da53" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="T126" style:family="text">
+  <style:style style:name="T125" style:family="text">
    <style:text-properties officeooo:rsid="00515b86"/>
   </style:style>
-  <style:style style:name="T127" style:family="text">
+  <style:style style:name="T126" style:family="text">
    <style:text-properties officeooo:rsid="005229d1"/>
   </style:style>
-  <style:style style:name="T128" style:family="text">
+  <style:style style:name="T127" style:family="text">
    <style:text-properties officeooo:rsid="0053f585"/>
   </style:style>
-  <style:style style:name="T129" style:family="text">
+  <style:style style:name="T128" style:family="text">
    <style:text-properties officeooo:rsid="005484f9"/>
   </style:style>
-  <style:style style:name="T130" style:family="text">
+  <style:style style:name="T129" style:family="text">
    <style:text-properties officeooo:rsid="006596e3"/>
   </style:style>
-  <style:style style:name="T131" style:family="text">
+  <style:style style:name="T130" style:family="text">
    <style:text-properties officeooo:rsid="00562991"/>
   </style:style>
-  <style:style style:name="T132" style:family="text">
+  <style:style style:name="T131" style:family="text">
    <style:text-properties officeooo:rsid="0056e2ea"/>
   </style:style>
-  <style:style style:name="T133" style:family="text">
+  <style:style style:name="T132" style:family="text">
    <style:text-properties officeooo:rsid="0057f593"/>
   </style:style>
-  <style:style style:name="T134" style:family="text">
+  <style:style style:name="T133" style:family="text">
    <style:text-properties officeooo:rsid="0057e106"/>
   </style:style>
-  <style:style style:name="T135" style:family="text">
+  <style:style style:name="T134" style:family="text">
    <style:text-properties officeooo:rsid="006ef069"/>
   </style:style>
-  <style:style style:name="T136" style:family="text">
+  <style:style style:name="T135" style:family="text">
    <style:text-properties officeooo:rsid="0068a528"/>
   </style:style>
-  <style:style style:name="T137" style:family="text">
+  <style:style style:name="T136" style:family="text">
    <style:text-properties officeooo:rsid="006a1164"/>
   </style:style>
-  <style:style style:name="T138" style:family="text">
+  <style:style style:name="T137" style:family="text">
    <style:text-properties officeooo:rsid="006bad83"/>
   </style:style>
-  <style:style style:name="T139" style:family="text">
+  <style:style style:name="T138" style:family="text">
    <style:text-properties officeooo:rsid="006c18e7"/>
   </style:style>
-  <style:style style:name="T140" style:family="text">
+  <style:style style:name="T139" style:family="text">
    <style:text-properties officeooo:rsid="006c8bb5"/>
   </style:style>
-  <style:style style:name="T141" style:family="text">
+  <style:style style:name="T140" style:family="text">
    <style:text-properties officeooo:rsid="006e13b7"/>
   </style:style>
-  <style:style style:name="T142" style:family="text">
+  <style:style style:name="T141" style:family="text">
    <style:text-properties officeooo:rsid="006e279b"/>
   </style:style>
-  <style:style style:name="T143" style:family="text">
+  <style:style style:name="T142" style:family="text">
    <style:text-properties officeooo:rsid="006e541e"/>
   </style:style>
-  <style:style style:name="T144" style:family="text">
+  <style:style style:name="T143" style:family="text">
    <style:text-properties officeooo:rsid="006edfda"/>
   </style:style>
-  <style:style style:name="T145" style:family="text">
+  <style:style style:name="T144" style:family="text">
    <style:text-properties officeooo:rsid="0074ead4"/>
   </style:style>
-  <style:style style:name="T146" style:family="text">
+  <style:style style:name="T145" style:family="text">
    <style:text-properties officeooo:rsid="006ff54c"/>
   </style:style>
-  <style:style style:name="T147" style:family="text">
+  <style:style style:name="T146" style:family="text">
    <style:text-properties officeooo:rsid="0071e546"/>
   </style:style>
-  <style:style style:name="T148" style:family="text">
+  <style:style style:name="T147" style:family="text">
    <style:text-properties officeooo:rsid="00739f06"/>
   </style:style>
-  <style:style style:name="T149" style:family="text">
+  <style:style style:name="T148" style:family="text">
    <style:text-properties officeooo:rsid="007575bb"/>
   </style:style>
-  <style:style style:name="T150" style:family="text">
+  <style:style style:name="T149" style:family="text">
    <style:text-properties fo:font-variant="small-caps"/>
   </style:style>
-  <style:style style:name="T151" style:family="text">
+  <style:style style:name="T150" style:family="text">
    <style:text-properties fo:font-variant="small-caps" officeooo:rsid="007575bb"/>
   </style:style>
-  <style:style style:name="T152" style:family="text">
+  <style:style style:name="T151" style:family="text">
    <style:text-properties officeooo:rsid="007703dd"/>
   </style:style>
-  <style:style style:name="T153" style:family="text">
+  <style:style style:name="T152" style:family="text">
    <style:text-properties officeooo:rsid="0077d87b"/>
+  </style:style>
+  <style:style style:name="T153" style:family="text">
+   <style:text-properties officeooo:rsid="000ae9d8"/>
+  </style:style>
+  <style:style style:name="T154" style:family="text">
+   <style:text-properties officeooo:rsid="000bba7c"/>
   </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
@@ -1207,8 +1215,7 @@
     <text:p text:style-name="Footer"/>
    </style:footer>
    <loext:footer-first>
-    <text:p text:style-name="P1"><text:span text:style-name="T1">Transciption réalisée à partir de l’é</text:span>dition originale numérisée et disponible à l’adresse :</text:p>
-    <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="https://ia801406.us.archive.org/35/items/lesmelodiesgrgo00pothgoog/lesmelodiesgrgo00pothgoog.pdf" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://ia801406.us.archive.org/35/items/lesmélodiesgrgo00pothgoog/lesmélodiesgrgo00pothgoog.pdf</text:a></text:p>
+    <text:p text:style-name="P1"/>
    </loext:footer-first>
   </style:master-page>
  </office:master-styles>
@@ -1222,10 +1229,10 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:h text:style-name="P54" text:outline-level="1">Les neumes par rapport à la durée ou à la force des sons – Lettres significatives – Signes romaniens</text:h>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17551_1958176226"/>Les neumes ont un triple but<text:bookmark-end text:name="__RefHeading___Toc17551_1958176226"/></text:h>
-   <text:p text:style-name="P16"><text:span text:style-name="T146">Les neumes, soit les neumes </text:span><text:span text:style-name="T52">à points superposés</text:span><text:span text:style-name="T146">, </text:span>soit ceux qui dérivent de l’accent, ont par eux-mêmes un triple but, une triple signification. Ils indiquent<text:span text:style-name="T146"> :</text:span></text:p>
-   <text:list xml:id="list2294353138" text:style-name="L1">
+   <text:h text:style-name="P53" text:outline-level="1">Les neumes par rapport à la durée ou à la force des sons – Lettres significatives – Signes romaniens</text:h>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17551_1958176226"/>Les neumes ont un triple but<text:bookmark-end text:name="__RefHeading___Toc17551_1958176226"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T145">Les neumes, soit les neumes </text:span><text:span text:style-name="T50">à points superposés</text:span><text:span text:style-name="T145">, </text:span>soit ceux qui dérivent de l’accent, ont par eux-mêmes un triple but, une triple signification. Ils indiquent<text:span text:style-name="T145"> :</text:span></text:p>
+   <text:list xml:id="list3340382763" text:style-name="L1">
     <text:list-item>
      <text:p text:style-name="P57">Quels sons doivent être liés dans le chant, quels sons au contraire doivent être disjoints.</text:p>
     </text:list-item>
@@ -1233,148 +1240,147 @@
      <text:p text:style-name="P57">Dans quel cas la voix doit monter, dans quel cas elle doit descendre.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P57">En quelles circonstances particulières, il convient de faire entendre des sons <text:span text:style-name="T52">t</text:span><text:span text:style-name="T9">rémulants</text:span>, <text:span text:style-name="T9">li</text:span><text:span text:style-name="T52">q</text:span><text:span text:style-name="T9">uescents</text:span>, <text:span text:style-name="T9">ap</text:span><text:span text:style-name="T52">p</text:span><text:span text:style-name="T9">uyés</text:span>, <text:span text:style-name="T9">syncopés</text:span>, <text:span text:style-name="T9">répercu</text:span><text:span text:style-name="T52">t</text:span><text:span text:style-name="T9">és</text:span>.</text:p>
+     <text:p text:style-name="P57">En quelles circonstances particulières, il convient de faire entendre des sons <text:span text:style-name="T50">t</text:span><text:span text:style-name="T7">rémulants</text:span>, <text:span text:style-name="T7">li</text:span><text:span text:style-name="T50">q</text:span><text:span text:style-name="T7">uescents</text:span>, <text:span text:style-name="T7">ap</text:span><text:span text:style-name="T50">p</text:span><text:span text:style-name="T7">uyés</text:span>, <text:span text:style-name="T7">syncopés</text:span>, <text:span text:style-name="T7">répercu</text:span><text:span text:style-name="T50">t</text:span><text:span text:style-name="T7">és</text:span>.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16">La liaison ou la division des sons est le point capital, et sous ce rapport les neumes ont été parfaits dès l’origine.</text:p>
-   <text:p text:style-name="P16">L<text:span text:style-name="T147">e</text:span> <text:span text:style-name="T147">mouvement</text:span> de voix, ou à l’unisson, ou du grave à l’aigu, ou de l’aigu au grave, n’est indiqué d’abord dans les neumes, que d’une manière vague, ainsi que nous l’avons vu. nous avons expliqué les <text:span text:style-name="T147">perfectionnements</text:span> successifs de la notation neumatique, pour suffire aussi sous ce rapport à tous les besoins.</text:p>
-   <text:p text:style-name="P16"><text:span text:style-name="T147">Quant</text:span> à ce qui touche aux ornements mélodiques, les premiers neumes étaient d’une très grande richesse, et il serait difficile de reproduire aujourd’hui, soit dans l’écriture soit dans l’exécution, des nuances d’expression aussi multiples et aussi délicates.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17553_1958176226"/>Les éléments du rythme mesuré ne s’y trouvent pas<text:bookmark-end text:name="__RefHeading___Toc17553_1958176226"/></text:h>
-   <text:p text:style-name="P16">on a voulu chercher autre chose dans les neumes. Habitué que l’<text:span text:style-name="T147">on</text:span> est à diviser les notes musicales modernes en longues et brèves, fortes et faibles, on s’est tout de suite préoccupé de trouver également dans les neumes du chant grégorien, des valeurs diverses en durée ou en force<text:span text:style-name="T147"> ;</text:span> comme si le rythme grégorien était établi sur les bases de la musique mesurée. De là des erreurs et des confusions nombreuses que nous voudrions prévenir, en montrant que les neumes, par rapport à la durée ou à la force des sons, n’ont nullement le sens que l’on s’est trop hâté de leur attribuer.</text:p>
-   <text:p text:style-name="P16">L<text:span text:style-name="T147">es</text:span> neumes par eux-mêmes ne déterminent pas la durée relative des sons.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17555_1958176226"/><text:soft-page-break/>on ne doit pas chercher dans les neumes des longues et des brèves<text:bookmark-end text:name="__RefHeading___Toc17555_1958176226"/></text:h>
-   <text:p text:style-name="P16">Sans doute il se trouve parmi les neumes certains signes, comme par exemple le <text:span text:style-name="T53">p</text:span><text:span text:style-name="T9">ressus</text:span> et aussi le <text:span text:style-name="T9">s</text:span><text:span text:style-name="T53">trop</text:span><text:span text:style-name="T9">hicus</text:span>, qui supposént toujours et indiquent par conséquent une prolongation du son. De même, lorsque deux groupes sont unis de la manière que nous avons décrite à propos des sons syncopés, il y a aussi dans ce cas une tenue de la voix sur la même corde, c’est-à-dire deux notes qui équivalent à un son d’une durée plus longue. Mais en dehors de ces signes spéciaux, il y a la note simple, <text:span text:style-name="T9">virga</text:span> ou <text:span text:style-name="T9">pun</text:span><text:span text:style-name="T53">ct</text:span><text:span text:style-name="T9">um</text:span><text:span text:style-name="T74"> ;</text:span> il y a les formulés communes et ordinaires, telles que le <text:span text:style-name="T53">p</text:span><text:span text:style-name="T9">odatus</text:span>, la <text:span text:style-name="T9">clivis</text:span>, le <text:span text:style-name="T9">torculus</text:span>, le <text:span text:style-name="T9">climacus</text:span>, le <text:span text:style-name="T9">scandicus</text:span>, etc. or nous disons que rien dans les notes simples, rien non plus dans les traits essentiels dont les groupes de notes sont composés, n’indique la durée relative des sons qui leur correspondent.</text:p>
-   <text:p text:style-name="P16">E<text:span text:style-name="T147">n</text:span> effet, les éléments constitutifs des formulés, on s’en souvient, sont<text:span text:style-name="T147"> :</text:span></text:p>
-   <text:list xml:id="list1390661096" text:style-name="L2">
+   <text:p text:style-name="P15">La liaison ou la division des sons est le point capital, et sous ce rapport les neumes ont été parfaits dès l’origine.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T146">e</text:span> <text:span text:style-name="T146">mouvement</text:span> de voix, ou à l’unisson, ou du grave à l’aigu, ou de l’aigu au grave, n’est indiqué d’abord dans les neumes, que d’une manière vague, ainsi que nous l’avons vu. <text:span text:style-name="T153">Nous</text:span> avons expliqué les <text:span text:style-name="T146">perfectionnements</text:span> successifs de la notation neumatique, pour suffire aussi sous ce rapport à tous les besoins.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T146">Quant</text:span> à ce qui touche aux ornements mélodiques, les premiers neumes étaient d’une très grande richesse, et il serait difficile de reproduire aujourd’hui, soit dans l’écriture soit dans l’exécution, des nuances d’expression aussi multiples et aussi délicates.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17553_1958176226"/>Les éléments du rythme mesuré ne s’y trouvent pas<text:bookmark-end text:name="__RefHeading___Toc17553_1958176226"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T153">On</text:span> a voulu chercher autre chose dans les neumes. Habitué que l’<text:span text:style-name="T146">on</text:span> est à diviser les notes musicales modernes en longues et brèves, fortes et faibles, on s’est tout de suite préoccupé de trouver également dans les neumes du chant grégorien, des valeurs diverses en durée ou en force<text:span text:style-name="T146"> ;</text:span> comme si le rythme grégorien était établi sur les bases de la musique mesurée. De là des erreurs et des confusions nombreuses que nous voudrions prévenir, en montrant que les neumes, par rapport à la durée ou à la force des sons, n’ont nullement le sens que l’on s’est trop hâté de leur attribuer.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T146">es</text:span> neumes par eux-mêmes ne déterminent pas la durée relative des sons.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17555_1958176226"/><text:soft-page-break/><text:span text:style-name="T153">O</text:span>n ne doit pas chercher dans les neumes des longues et des brèves<text:bookmark-end text:name="__RefHeading___Toc17555_1958176226"/></text:h>
+   <text:p text:style-name="P15">Sans doute il se trouve parmi les neumes certains signes, comme par exemple le <text:span text:style-name="T51">p</text:span><text:span text:style-name="T7">ressus</text:span> et aussi le <text:span text:style-name="T7">s</text:span><text:span text:style-name="T51">trop</text:span><text:span text:style-name="T7">hicus</text:span>, qui suppos<text:span text:style-name="T153">e</text:span>nt toujours et indiquent par conséquent une prolongation du son. De même, lorsque deux groupes sont unis de la manière que nous avons décrite à propos des sons syncopés, il y a aussi dans ce cas une tenue de la voix sur la même corde, c’est-à-dire deux notes qui équivalent à un son d’une durée plus longue. Mais en dehors de ces signes spéciaux, il y a la note simple, <text:span text:style-name="T7">virga</text:span> ou <text:span text:style-name="T7">pun</text:span><text:span text:style-name="T51">ct</text:span><text:span text:style-name="T7">um</text:span><text:span text:style-name="T73"> ;</text:span> il y a les formules communes et ordinaires, telles que le <text:span text:style-name="T51">p</text:span><text:span text:style-name="T7">odatus</text:span>, la <text:span text:style-name="T7">clivis</text:span>, le <text:span text:style-name="T7">torculus</text:span>, le <text:span text:style-name="T7">climacus</text:span>, le <text:span text:style-name="T7">scandicus</text:span>, etc. or nous disons que rien dans les notes simples, rien non plus dans les traits essentiels dont les groupes de notes sont composés, n’indique la durée relative des sons qui leur correspondent.</text:p>
+   <text:p text:style-name="P15">E<text:span text:style-name="T146">n</text:span> effet, les éléments constitutifs des formules, on s’en souvient, sont<text:span text:style-name="T146"> :</text:span></text:p>
+   <text:list xml:id="list3365323384" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P58">la ligne penchée vers la dpoite <text:span text:style-name="T135">(FIXME : ajouter l’image)</text:span> ;</text:p>
+     <text:p text:style-name="P58">la ligne penchée vers la droite <text:span text:style-name="T134">(FIXME : ajouter l’image)</text:span> ;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P58">la ligne inclinée vers la gauche <text:span text:style-name="T135">(FIXME : ajouter l’image)</text:span> ;</text:p>
+     <text:p text:style-name="P58">la ligne inclinée vers la gauche <text:span text:style-name="T134">(FIXME : ajouter l’image)</text:span> ;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P58">le point <text:span text:style-name="T135">(FIXME : ajouter l’image)</text:span>.</text:p>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="P16"><text:span text:style-name="T147">S</text:span>’il se présente dans quelques manuscrits, des neumes plus variés, cette plus grande variété tient à des traits accessoires ou à des modifications accidentelles dont nous parlerons<text:span text:style-name="T147"> :</text:span> ici nous étudions les formulés telles qu’elles sont en elles-mêmes, abstraction faite de tout accessoire.</text:p>
-   <text:p text:style-name="P16">or qu’est-ce que la <text:span text:style-name="T9">virga</text:span> isolée<text:span text:style-name="T147"> ?</text:span> et dans les formulés, qu’est-ce que le trait incliné sur la dpoite<text:span text:style-name="T147"> ?</text:span> nous l’avons vu<text:span text:style-name="T147"> :</text:span> c’est le signe d’une élévation de la voix, d’un son plus aigu. <text:span text:style-name="T147">Qu</text:span>’est-ce que le <text:span text:style-name="T9">pun</text:span><text:span text:style-name="T53">ct</text:span><text:span text:style-name="T9">um</text:span> seul ou dans une formulé<text:span text:style-name="T147"> ?</text:span> qu’est-ce que le trait incliné sur la gauche<text:span text:style-name="T147"> ?</text:span> le signe d’un mouvement contraire, <text:span text:style-name="T147">c</text:span>’est-à-dire d’un abaissement de la voix, d’un son plus grave.</text:p>
-   <text:p text:style-name="P16">T<text:span text:style-name="T147">elle</text:span> est la signification propre de ces éléments, qui se combinent de diverses manières, selon la diversité des groupes, mais qui sont les mêmes pour tous et doivent avoir dans tous le même sens.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17557_1958176226"/>Valeur de la virga<text:bookmark-end text:name="__RefHeading___Toc17557_1958176226"/></text:h>
-   <text:p text:style-name="P16">Les auteurs modernes qui ont vu dans la <text:span text:style-name="T9">virga</text:span>, soit isolée soit en composition, une note qui par elle-même serait plus longue, et dans le <text:span text:style-name="T53">punct</text:span><text:span text:style-name="T9">um</text:span> seul ou faisant partie d’un groupe, une note brève, ne se sont pas sans doute aperçu de ce qu’il y a d’étrange et d’absolument inadmissible dans les conséquences auxquelles leur système les a <text:span text:style-name="T147">conduit</text:span>, ou logiquement devrait les conduire. Voyons-en quelques-unes.</text:p>
-   <text:p text:style-name="P16">E<text:span text:style-name="T147">n</text:span> étudiant les manuscrits les plus anciens et les plus corrects, ceux de S. Gall par exemple, on a vite remarqué que la <text:span text:style-name="T9">v</text:span><text:span text:style-name="T53">i</text:span><text:span text:style-name="T9">rga</text:span> des neumes, conformement à ce que nous avons dit, répond toujours et dans tous les cas à un son plus élevé que le <text:soft-page-break/>suivant ou que le précédent<text:span text:style-name="T147"> ;</text:span> tandis que le <text:span text:style-name="T53">punct</text:span><text:span text:style-name="T9">um</text:span> au contraire indique toujours un son relativement plus grave. Mais quel chant obtiendrait-on, si toute note plus élevée était par le fait seul de sa position culminante nécessairement une note plus longue, et toute note grave, une note forcement plus brève<text:span text:style-name="T147"> ?</text:span> Ainsi, par exemple, dans le <text:span text:style-name="T9">Gloria in excelsis</text:span> indiqué au Missel pour les fêtes doubles, on trouve les mots <text:span text:style-name="T53">b</text:span><text:span text:style-name="T9">oneæ voluntatis</text:span> avec la <text:span text:style-name="T9">virga</text:span> sur chacune des deux dernières syllabes, et un peu plus loin les mots <text:span text:style-name="T53">mi</text:span><text:span text:style-name="T9">serére nob</text:span><text:span text:style-name="T53">i</text:span><text:span text:style-name="T9">s</text:span> finissant au contraire avec deux <text:span text:style-name="T53">p</text:span><text:span text:style-name="T9">un</text:span><text:span text:style-name="T53">c</text:span><text:span text:style-name="T9">tum</text:span>.</text:p>
-   <text:p text:style-name="P22">(FIXME : ajouter l<text:span text:style-name="T147">es </text:span>image<text:span text:style-name="T147">s</text:span>)</text:p>
-   <text:p text:style-name="P16">pourquoi cette différence<text:span text:style-name="T147"> ?</text:span> pourquoi <text:span text:style-name="T53">nobis</text:span> serait-il bref, et les syllabes <text:span text:style-name="T53">tatis</text:span> longues<text:span text:style-name="T147"> ?</text:span> <text:span text:style-name="T147">N</text:span>’est-il pas plus simple de voir dans cet exemple que la voix monte pour arriver sur la fin du mot <text:span text:style-name="T54">vol</text:span><text:span text:style-name="T9">untatis</text:span> et descend sur <text:span text:style-name="T9">nob</text:span><text:span text:style-name="T54">i</text:span><text:span text:style-name="T9">s</text:span><text:span text:style-name="T75"> ?</text:span></text:p>
-   <text:p text:style-name="P16"/>
-   <text:p text:style-name="P16">T<text:span text:style-name="T148">el</text:span> est en effet le motif qui explique la présence ici du <text:span text:style-name="T54">punctum</text:span>, là de la <text:span text:style-name="T9">virga</text:span><text:span text:style-name="T75"> ;</text:span> motif qui à la vérité n’existe plus depuis que les notes sont échelonnées sur la portée musicale, mais qui se comprend très bien à l’époque ou les neumes étaient encore écrits <text:span text:style-name="T54">a</text:span><text:span text:style-name="T9"> campo aperto</text:span>, sans aucune ligne. Veut-on un autre exemple<text:span text:style-name="T148"> ?</text:span> Dans le ℣. du Graduel <text:span text:style-name="T9">C</text:span><text:span text:style-name="T54">h</text:span><text:span text:style-name="T9">ristus fa</text:span><text:span text:style-name="T54">c</text:span><text:span text:style-name="T9">tus est</text:span>, on remarque une suite de <text:span text:style-name="T54">virga</text:span> sur les mots <text:span text:style-name="T9">exa</text:span><text:span text:style-name="T54">l</text:span><text:span text:style-name="T9">tavit illum</text:span><text:span text:style-name="T75"> ;</text:span> tandis que plus loin sur les mots <text:span text:style-name="T54">q</text:span><text:span text:style-name="T9">uod est super</text:span>, dans les manuscrits, <text:span text:style-name="T148">c</text:span>’est le <text:span text:style-name="T54">punctum</text:span><text:span text:style-name="T148"> </text:span>qui affecte uniformement chaque syllabe.</text:p>
-   <text:p text:style-name="P22">(FIXME : ajouter l<text:span text:style-name="T147">es </text:span>image<text:span text:style-name="T147">s</text:span>)</text:p>
-   <text:p text:style-name="P16"><text:span text:style-name="T148">Cette</text:span> différence de notation s’explique très bien d’après nos principes et en même temps les confirme<text:span text:style-name="T148"> :</text:span> dans le premier passage la voix se maintient sur les cordes aiguës, on a la <text:span text:style-name="T9">v</text:span><text:span text:style-name="T54">i</text:span><text:span text:style-name="T9">rga</text:span><text:span text:style-name="T148"> ;</text:span> dans la seconde le chant est sur les cordes graves, on a le <text:span text:style-name="T54">punctum</text:span>.</text:p>
-   <text:p text:style-name="P16">S<text:span text:style-name="T148">i</text:span> la <text:span text:style-name="T9">virga</text:span> était une longue et le <text:span text:style-name="T54">punctum</text:span> une brève, il faudrait logiquement chanter ici toutes notes brèves et <text:span text:style-name="T148">l</text:span>à toutes notes longues. Non seulement dans ce morceau de chant, mais partout et toujours nous devrions procéder de la sorte, puisque partout et toujours c’est la même manière de noter<text:span text:style-name="T148"> ;</text:span> puisque partout et toujours les notes qui se suivent à l’unisson, quelque longue qu’en soit la série, sont uniformement ou toutes des <text:span text:style-name="T9">v</text:span><text:span text:style-name="T54">ir</text:span><text:span text:style-name="T9">ga</text:span>, ou toutes des <text:span text:style-name="T54">punctum</text:span>.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17559_1958176226"/>La virga et le punctum dans les groupes<text:bookmark-end text:name="__RefHeading___Toc17559_1958176226"/></text:h>
-   <text:p text:style-name="P16">pour les groupes, la conséquence du système que nous combattons serait que dans chaque formulé toute note culminante devrait être toujours longue, sans exception aucune, et celle-là seulement<text:span text:style-name="T148"> ;</text:span> ainsi la seconde note du <text:span text:style-name="T54">p</text:span><text:span text:style-name="T9">odatus</text:span>, la seconde du <text:span text:style-name="T54">tor</text:span><text:span text:style-name="T9">culus</text:span>, la première et la troisième du <text:span text:style-name="T54">porrectus</text:span> seraient autant de longues<text:span text:style-name="T148"> :</text:span> conséquence inadmissible. nous ne devons donc pas chercher dans la différence du <text:span text:style-name="T54">punctum</text:span> et de la <text:span text:style-name="T9">virga</text:span> un moyen de déterminer la valeur temporaire des sons dans le chant grégorien.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17561_1958176226"/><text:soft-page-break/>La virga n’est pas une note forte<text:bookmark-end text:name="__RefHeading___Toc17561_1958176226"/></text:h>
-   <text:p text:style-name="P16">Mais puisque la <text:span text:style-name="T9">virga</text:span> est originairement l’accent aigu, n’indiquerait-elle pas du moins un son fort, accentué<text:span text:style-name="T148"> ?</text:span> Non, encore. Il est impossible en effet de rien comprendre à la Théorie des anciens sur l’accentuation et de bien interpréter leur système de notation musicale, si l’on ne consent pas à se mettre à leur point de vue<text:span text:style-name="T148"> ;</text:span> si l’on s’obstine, par exemple, à confondre dans le chant, comme dans la lecture, d’une part l’acuité avec la durée du son, l’accent avec la quantité<text:span text:style-name="T148"> ;</text:span> et d’autre part, cette même acuité du son avec la force ou l’intensité qu’on peut lui donner. Bien que souvent simultanées, ces modifications de la voix chantante ou parlante demeurent en elles-mêmes toujours indépendantes et séparables<text:span text:style-name="T148"> ;</text:span> souvent aussi de fait elles se trouvent séparées.</text:p>
-   <text:p text:style-name="P16">Q<text:span text:style-name="T148">ue</text:span> dans le simple langage le mouvement alternatif d’<text:span text:style-name="T9">arsis</text:span> et de <text:span text:style-name="T54">t</text:span><text:span text:style-name="T9">hesis</text:span> amène grammaticalement, d’une façon régulière, le temps fort sur la syllabe aiguë, et le temps faible sur les syllabes graves, la chose est facile à comprendre<text:span text:style-name="T148"> ;</text:span> mais lorsque le langage, au lieu d’être simplement accentué, se trouve chant<text:span text:style-name="T148">é</text:span>, <text:span text:style-name="T148">c</text:span>’est bien différent<text:span text:style-name="T148"> ;</text:span> car alors le chant absorbe l’accent<text:span text:style-name="T148"> ;</text:span> et puisque déjà, comme nous l’avons remarqué, la modulation plus variée du débit oratoire vient souvent modifier l’accent grammatical, à plus forte <text:span text:style-name="T148">raison</text:span>, celui-ci devra-t-il facilement disparaître en présence de l’accent musical et du chant proprement dit.</text:p>
-   <text:p text:style-name="P16">I<text:span text:style-name="T148">l</text:span> est donc inutile et même impossible d’identifier, au point de vue du temps fort, l’accent aigu du discours ou l’accent tonique qui vient relever de distance en distance certaines syllabes, et l’accent aigu de la musique qui n’a ni la même régularité, ni la même alternance. Souvent, par exemple, celui-ci maintient la voix sur plusieurs syllabes de suite à une égale hauteur<text:span text:style-name="T148"> ;</text:span> ce qui obligerait à donner plusieurs temps forts successifs, sans mélange de temps faibles, et serait destructif de tout rythme et de tout accent.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17563_1958176226"/>À la teneur des Psaumes, les notes ont toutes la même forme<text:bookmark-end text:name="__RefHeading___Toc17563_1958176226"/></text:h>
-   <text:p text:style-name="P16">L<text:span text:style-name="T148">es</text:span> motifs qui nous ont empêché plus haut de regarder la <text:span text:style-name="T54">virga</text:span> comme une note longue, s’opposént donc également à ce que nous puissions la considérer comme une note forte par elle-même. C’est un fait, comme nous l’avons dit, que la virga dans les anciens manuscrits se poursuit uniformement sans mélange de <text:span text:style-name="T54">punctum</text:span> sur des lignes entières de chant<text:span text:style-name="T148"> ;</text:span> ce qui arrive toutes les fois que la voix ne doit ni monter ni descendre, comme par exemple, dans le chant d’un Psaume, entre l’intonation et la médiante, et depuis celle-ci jusqu’à la terminaison<text:span text:style-name="T145"> ;</text:span> dès lors, pour être logique, il faudrait dire que ces notes successives sont toutes également accentuées, ce qui est impossible<text:span text:style-name="T145"> :</text:span> ou bien alors avouons que la <text:span text:style-name="T55">virga</text:span> n’est pas le signe de l’accent entendu dans le sens d’un temps fort. La vraie signification de la virga est donc celle que nous lui avons donnée et que nous lui maintenons, en la considérant simplement comme une note relativement plus élevée que le <text:span text:style-name="T55">punctum</text:span>.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17565_1958176226"/><text:soft-page-break/>Usage de la note caudée<text:bookmark-end text:name="__RefHeading___Toc17565_1958176226"/></text:h>
-   <text:p text:style-name="P16">L<text:span text:style-name="T145">es</text:span> neumes primitifs transportés sur la portée furent ce qu’ils étaient auparavant et demeurèrent intacts, tant que subsistèrent les saines traditions<text:span text:style-name="T145"> ;</text:span> sauf les modifications purement graphiques et vraiment accidentelles que nous avons décrites. toutefois plusieurs choses avaient perdu leur raison d’être. Ainsi, la <text:span text:style-name="T145">distinction</text:span> entre la <text:span text:style-name="T9">virga</text:span> et le <text:span text:style-name="T55">punctum</text:span>, l’une désignant, comme nous venons de le prouver, un son relativement plus élevé, l’autre un son relativement inférieur, devenait inutile<text:span text:style-name="T145"> :</text:span> puisque la place de la note sur l’échelle en déterminait désormais avec netteté l’intonation. on pouvait donc employer, chaque fois qu’il s’agissait d’exprimer un son unique, grave ou aigu, l’un ou l’autre de ces signes indifféremment, ou seulement l’un des deux, c’est-à-dire toujours la <text:span text:style-name="T9">v</text:span><text:span text:style-name="T55">ir</text:span><text:span text:style-name="T9">ga</text:span> ou toujours le <text:span text:style-name="T55">punctum</text:span>. Mais ce ne fut que très tard que l’on en arriva à cette pratique. Pendant longtemps encore, on vit la virga et le <text:span text:style-name="T55">punctum</text:span> paraître simultanément sur la portée, sans que l’on puisse toujours bien deviner la raison qui a pu à tel endpoit motiver le choix de la note <text:span text:style-name="T9">caud</text:span><text:span text:style-name="T55">ée</text:span> à tel autre, de la note carré<text:span text:style-name="T145">e</text:span>, ou même dans certains livres, de la note losange. <text:span text:style-name="T145">Il</text:span> semble souvent que l’arbitraire et la pure fantaisie du calligraphe ont présidé à ce choix<text:span text:style-name="T145"> ;</text:span> et quand on voit percer une pensée, il est rare que l’écrivain y demeure fidèle jusqu’au bout. Quelquefois cependant la note caudée marque assez régulièrement le commencement ou la fin d’une syllabe musicale ou d’un petit membre de phrase mélodique. <text:span text:style-name="T145">D</text:span>’autres fois les notes sont caudées, carrées ou même losanges à l’imitation de ce qui se ferait régulièrement si ces mêmes notes, au lieu d’appartenir chacune à une syllabe du texte, se trouvaient réunies en <text:span text:style-name="T9">sca</text:span><text:span text:style-name="T55">n</text:span><text:span text:style-name="T9">dicus</text:span>, <text:span text:style-name="T9">climacus</text:span>, ou en un autre groupe.</text:p>
-   <text:list xml:id="list1580917299" text:style-name="L3">
-    <text:list-item>
-     <text:p text:style-name="P59">notes caudées répondant à la <text:span text:style-name="T9">v</text:span><text:span text:style-name="T55">ir</text:span><text:span text:style-name="T9">ga</text:span> de la notation primitive<text:span text:style-name="T145"> :<text:line-break/>(FIXME : ajouter l’image)</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P59">notes caudées marquant la fin des mots<text:span text:style-name="T145"> :</text:span> <text:span text:style-name="T9">mora ul</text:span><text:span text:style-name="T55">t</text:span><text:span text:style-name="T9">im</text:span><text:span text:style-name="T55">æ</text:span><text:span text:style-name="T9"> vo</text:span><text:span text:style-name="T55">ci</text:span><text:span text:style-name="T9">s</text:span>.<text:line-break/><text:span text:style-name="T145">(FIXME : ajouter l’image)</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P59">notes caudées, carrées ou losanges, en rapport avec les formulés mélodiques<text:span text:style-name="T145"> :<text:line-break/>(FIXME : ajouter l’image)</text:span></text:p>
+     <text:p text:style-name="P58">le point <text:span text:style-name="T134">(FIXME : ajouter l’image)</text:span>.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><text:span text:style-name="T145">Chaque</text:span> manuscrit, sous ce rapport, a son système, quand ce n’est pas, comme nous le disions, fantaisie pure. <text:span text:style-name="T145">L</text:span>’accent <text:span text:style-name="T145">t</text:span>onique a aussi quelquefois eu son influence pour motiver la caudée<text:span text:style-name="T145"> :</text:span> mais l’idée de donner à cette note une vraie valeur de longue ou d’accent est une idée toute moderne. Guidetti au seizième siècle ne l’avait pas encore soupçonnée, et ce n’est que dans les éditions posthumes de son <text:span text:style-name="T9">Dire</text:span><text:span text:style-name="T55">ctor</text:span><text:span text:style-name="T9">ium</text:span> que l’on voit la note caudée avec une valeur spéciale. Le système de Guidetti, qui est né de lui et est mort avec lui, consistait à signaler certaines notes, qu’il voulait qu’on exprimât différemment des autres, en les surmontant d’un signe de son invention.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17567_1958176226"/><text:soft-page-break/>Système de Guidetti<text:bookmark-end text:name="__RefHeading___Toc17567_1958176226"/></text:h>
-   <text:p text:style-name="P16">Vo<text:span text:style-name="T145">i</text:span>ci le texte de l’auteur, que nous empruntons à la seconde édition de son <text:span text:style-name="T9">Dire</text:span><text:span text:style-name="T55">c</text:span><text:span text:style-name="T9">torium</text:span>. (Romæ. 158<text:span text:style-name="T145">9</text:span>)</text:p>
-   <text:p text:style-name="P34">No<text:span text:style-name="T145">tæ</text:span> autem sunt hujusmodi <text:span text:style-name="T145">(FIXME : ajouter l’image)<text:line-break/></text:span>H<text:span text:style-name="T145">æ</text:span>c nota <text:span text:style-name="T145">(FIXME : ajouter l’image)</text:span> vocatur brevis cui subjecta syllaba ita profertur ut in canendo tempus unum insumatur.<text:line-break/>Hæc <text:span text:style-name="T145">(FIXME : ajouter l’image)</text:span> dicitur semibrevis … dimidium unius temporis.<text:line-break/>Hæc altera <text:span text:style-name="T145">(FIXME : ajouter l’image)</text:span> … paulo tardius.<text:line-break/>H<text:span text:style-name="T145">æ</text:span>c <text:span text:style-name="T145">(FIXME : ajouter l’image)</text:span> … duorum temporum.<text:line-break/>H<text:span text:style-name="T145">æ (FIXME : ajouter l’image)</text:span> conjun<text:span text:style-name="T145">c</text:span>tæ. Tunc syllaba subjacens leni quodam spiritus impulsu pronunciabitur ; ppoinde ac si duplici scriberetur vocali, ut Doominus pro Dominus, sed cum decore et gratia, quod hic doceri non potest.</text:p>
-   <text:p text:style-name="P16">Citons un exemple<text:span text:style-name="T145"> :</text:span> (Page 481.)</text:p>
-   <text:p text:style-name="P27">(FIXME : ajouter l’image)</text:p>
-   <text:p text:style-name="P16">E<text:span text:style-name="T145">n</text:span> général, surtout en Italie, dans les premiers imprimés comme dans les manuscrits, toute note isolée est une note caudée. En France, les imprimeurs font volontiers usage de la simple carrée<text:span text:style-name="T149"> ;</text:span> en Espagne, de la note losange. Ces divergences n’ont d’importance qu’au point de vue calligraphique ou typographique<text:span text:style-name="T149"> ;</text:span> elles ne font rien à l’exécution du chant, comme nous le verrons en exposant plus loin les principes du rythme grégorien.</text:p>
-   <text:p text:style-name="P16">La thèse que nous soutenons sur l’insuffisance des neumes à exprimer, soit les intervalles précis que la voix doit successivement franchir, soit la durée ou l’intensité relatives des sons, concerne, comme nous l’avons dit, les neumes pris en eux-mêmes, C’est-à-dire dans les éléments qui les constituent, abstraction faite de tout accessoire. Mais dans plusieurs manuscrits, ceux de S. Gall par exemple, et quelques autres de la même école, les signes que nous avons décrits présentent des particularités et des adjon<text:span text:style-name="T149">c</text:span>tions remarquables, dont il nous faut tout de suite expliquer la nature et le but.</text:p>
-   <text:p text:style-name="P16">on voit en effet, dans ces manuscrits, certaines lettres accompagnant çà et là les neumes, puis certains petits traits ou points semblant faire corps avec les formulés elles-mêmes, mais devant en être soigneusement distingués.</text:p>
-   <text:p text:style-name="P16">pour ce qui concerne ces lettres, il faut également bien se garder, comme nous l’avons dit déjà, de les confondre avec celles qui constituent la notation alphabétique.</text:p>
-   <text:p text:style-name="P16"><text:span text:style-name="T149">L</text:span>’<text:span text:style-name="T149">origine</text:span> des lettres et des signes accessoires dont nous parlons est connue ; il peut être utile de la rappeler ici brièvement.</text:p>
-   <text:p text:style-name="P16">À l<text:span text:style-name="T149">a</text:span> demande de Pépin et de Charlemagne, les Papes, on le sait, envoyèrent à plusieurs reprises des chantres habiles pour apprendre aux Francs et aux Germains <text:soft-page-break/>les mélodies grégoriennes. <text:span text:style-name="T149">P</text:span><text:span text:style-name="T151">etrus</text:span> et <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span> furent deux de ces députés. Ils partirent ensemble de Rome<text:span text:style-name="T149"> ;</text:span> mais on raconte qu’au passage des Alpes, <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span> tomba malade, et alla pour se rétablir demander l’hospitalité à la fameuse abbaye de S. Gall, laissant son compagnon poursuivre sa route jusqu’à Metz, ou se trouvait alors le centre d’instruction pour l’enseignement du chant romain. <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span> se plut à S. Gall et y fixant son séjour il fonda là une école de chant qui devint l’heureuse rivale de celle de Metz. Il avait apporté avec lui des livres notes en neumes<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
-      <text:p text:style-name="P31">La biblióthèque de S. Gall conserve encore en assez bon nombre des Antiphonaires et des Graduels très anciens dont l’un d’eux, publié en fac-simile par le P. Lambillótte, paraît être contemporain de R<text:span text:style-name="T150">ómanus</text:span> ; mais quand même on en douterait, il est impossible de ne pas voir dans ce monument vénérable, et dans les autres de la même école, la reproduction du chant, tel que R<text:span text:style-name="T150">ómanus</text:span> l’enseignait.</text:p></text:note-body></text:note><text:span text:style-name="T149"> ;</text:span> mais, comme le disent les auteurs, c’est plutot par la parole que par l’écriture, <text:span text:style-name="T9">potius colloquendo quam conscribendo</text:span>, qu’il est possible d’enseigner la manière de bien chanter. Vu en effet la nature des neumes, vu surtout l’allure libre et naturelle du chant grégorien, il fallait à S. Gall comme ailleurs, pour interpréter les neumes, le secours de l’enseignement oral. <text:span text:style-name="T149">D</text:span>’un autre côté, pour aider ses élèves à retenir ses leçons, <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span> a eu recours à certaines lettres et à certains signes particuliers ajoutés aux neumes. Ces adjon<text:span text:style-name="T149">c</text:span>tions ne sont peut-être pas de l’invention de <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span>, car on en trouve de semblables dans quelques manuscrits de différentes provenances<text:span text:style-name="T149"> ;</text:span> ma<text:span text:style-name="T149">i</text:span>s il a fait un usage spécial de ces signes, qui pour cela sont appelés signes <text:span text:style-name="T9">Romaniens</text:span>.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17569_1958176226"/>Lettres significatives<text:bookmark-end text:name="__RefHeading___Toc17569_1958176226"/></text:h>
-   <text:p text:style-name="P16">Les lettres, mises également en vogue par le chantre <text:span text:style-name="T149">R</text:span><text:span text:style-name="T151">omanus</text:span>, sont nommées <text:span text:style-name="T9">significatives</text:span> par le bienheureux Notker, qui en donne la clef. Elles sont destinées à avertir le chantre, dans les endpoits ou l’on peut présumer qu’il sera plus exposé à se tromper. Parmi ces lettres,</text:p>
-   <text:list xml:id="list1328489800" text:style-name="L4">
+   <text:p text:style-name="P15"><text:span text:style-name="T146">S</text:span>’il se présente dans quelques manuscrits, des neumes plus variés, cette plus grande variété tient à des traits accessoires ou à des modifications accidentelles dont nous parlerons<text:span text:style-name="T146"> :</text:span> ici nous étudions les formules telles qu’elles sont en elles-mêmes, abstraction faite de tout accessoire.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T153">Or</text:span> qu’est-ce que la <text:span text:style-name="T7">virga</text:span> isolée<text:span text:style-name="T146"> ?</text:span> et dans les formules, qu’est-ce que le trait incliné sur la droite<text:span text:style-name="T146"> ?</text:span> nous l’avons vu<text:span text:style-name="T146"> :</text:span> c’est le signe d’une élévation de la voix, d’un son plus aigu. <text:span text:style-name="T146">Qu</text:span>’est-ce que le <text:span text:style-name="T7">pun</text:span><text:span text:style-name="T51">ct</text:span><text:span text:style-name="T7">um</text:span> seul ou dans une formule<text:span text:style-name="T146"> ?</text:span> qu’est-ce que le trait incliné sur la gauche<text:span text:style-name="T146"> ?</text:span> le signe d’un mouvement contraire, <text:span text:style-name="T146">c</text:span>’est-à-dire d’un abaissement de la voix, d’un son plus grave.</text:p>
+   <text:p text:style-name="P15">T<text:span text:style-name="T146">elle</text:span> est la signification propre de ces éléments, qui se combinent de diverses manières, selon la diversité des groupes, mais qui sont les mêmes pour tous et doivent avoir dans tous le même sens.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17557_1958176226"/>Valeur de la virga<text:bookmark-end text:name="__RefHeading___Toc17557_1958176226"/></text:h>
+   <text:p text:style-name="P15">Les auteurs modernes qui ont vu dans la <text:span text:style-name="T7">virga</text:span>, soit isolée soit en composition, une note qui par elle-même serait plus longue, et dans le <text:span text:style-name="T51">punct</text:span><text:span text:style-name="T7">um</text:span> seul ou faisant partie d’un groupe, une note brève, ne se sont pas sans doute aperçu de ce qu’il y a d’étrange et d’absolument inadmissible dans les conséquences auxquelles leur système les a <text:span text:style-name="T153">conduits</text:span>, ou logiquement devrait les conduire. Voyons-en quelques-unes.</text:p>
+   <text:p text:style-name="P15">E<text:span text:style-name="T146">n</text:span> étudiant les manuscrits les plus anciens et les plus corrects, ceux de S. Gall par exemple, on a vite remarqué que la <text:span text:style-name="T7">v</text:span><text:span text:style-name="T51">i</text:span><text:span text:style-name="T7">rga</text:span> des neumes, <text:span text:style-name="T153">conformément</text:span> à ce que nous avons dit, répond toujours et dans tous les cas à un son plus élevé que le <text:soft-page-break/>suivant ou que le précédent<text:span text:style-name="T146"> ;</text:span> tandis que le <text:span text:style-name="T51">punct</text:span><text:span text:style-name="T7">um</text:span> au contraire indique toujours un son relativement plus grave. Mais quel chant obtiendrait-on, si toute note plus élevée était par le fait seul de sa position culminante nécessairement une note plus longue, et toute note grave, une note forcement plus brève<text:span text:style-name="T146"> ?</text:span> Ainsi, par exemple, dans le <text:span text:style-name="T7">Gloria in excelsis</text:span> indiqué au Missel pour les fêtes doubles, on trouve les mots <text:span text:style-name="T51">b</text:span><text:span text:style-name="T7">oneæ voluntatis</text:span> avec la <text:span text:style-name="T7">virga</text:span> sur chacune des deux dernières syllabes, et un peu plus loin les mots <text:span text:style-name="T51">mi</text:span><text:span text:style-name="T7">ser</text:span><text:span text:style-name="T56">e</text:span><text:span text:style-name="T7">re nob</text:span><text:span text:style-name="T51">i</text:span><text:span text:style-name="T7">s</text:span> finissant au contraire avec deux <text:span text:style-name="T51">p</text:span><text:span text:style-name="T7">un</text:span><text:span text:style-name="T51">c</text:span><text:span text:style-name="T7">tum</text:span>.</text:p>
+   <text:p text:style-name="P21">(FIXME : ajouter l<text:span text:style-name="T146">es </text:span>image<text:span text:style-name="T146">s</text:span>)</text:p>
+   <text:p text:style-name="P15">pourquoi cette différence<text:span text:style-name="T146"> ?</text:span> pourquoi <text:span text:style-name="T51">nobis</text:span> serait-il bref, et les syllabes <text:span text:style-name="T51">tatis</text:span> longues<text:span text:style-name="T146"> ?</text:span> <text:span text:style-name="T146">N</text:span>’est-il pas plus simple de voir dans cet exemple que la voix monte pour arriver sur la fin du mot <text:span text:style-name="T52">vol</text:span><text:span text:style-name="T7">untatis</text:span> et descend sur <text:span text:style-name="T7">nob</text:span><text:span text:style-name="T52">i</text:span><text:span text:style-name="T7">s</text:span><text:span text:style-name="T74"> ?</text:span></text:p>
+   <text:p text:style-name="P15">T<text:span text:style-name="T147">el</text:span> est en effet le motif qui explique la présence ici du <text:span text:style-name="T52">punctum</text:span>, là de la <text:span text:style-name="T7">virga</text:span><text:span text:style-name="T74"> ;</text:span> motif qui à la vérité n’existe plus depuis que les notes sont échelonnées sur la portée musicale, mais qui se comprend très bien à l’époque ou les neumes étaient encore écrits <text:span text:style-name="T52">a</text:span><text:span text:style-name="T7"> campo aperto</text:span>, sans aucune ligne. Veut-on un autre exemple<text:span text:style-name="T147"> ?</text:span> Dans le ℣. du Graduel <text:span text:style-name="T7">C</text:span><text:span text:style-name="T52">h</text:span><text:span text:style-name="T7">ristus fa</text:span><text:span text:style-name="T52">c</text:span><text:span text:style-name="T7">tus est</text:span>, on remarque une suite de <text:span text:style-name="T52">virga</text:span> sur les mots <text:span text:style-name="T7">exa</text:span><text:span text:style-name="T52">l</text:span><text:span text:style-name="T7">tavit illum</text:span><text:span text:style-name="T74"> ;</text:span> tandis que plus loin sur les mots <text:span text:style-name="T52">q</text:span><text:span text:style-name="T7">uod est super</text:span>, dans les manuscrits, <text:span text:style-name="T147">c</text:span>’est le <text:span text:style-name="T52">punctum</text:span><text:span text:style-name="T147"> </text:span>qui affecte <text:span text:style-name="T153">uniformément</text:span> chaque syllabe.</text:p>
+   <text:p text:style-name="P21">(FIXME : ajouter l<text:span text:style-name="T146">es </text:span>image<text:span text:style-name="T146">s</text:span>)</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T147">Cette</text:span> différence de notation s’explique très bien d’après nos principes et en même temps les confirme<text:span text:style-name="T147"> :</text:span> dans le premier passage la voix se maintient sur les cordes aiguës, on a la <text:span text:style-name="T7">v</text:span><text:span text:style-name="T52">i</text:span><text:span text:style-name="T7">rga</text:span><text:span text:style-name="T147"> ;</text:span> dans la seconde le chant est sur les cordes graves, on a le <text:span text:style-name="T52">punctum</text:span>.</text:p>
+   <text:p text:style-name="P15">S<text:span text:style-name="T147">i</text:span> la <text:span text:style-name="T7">virga</text:span> était une longue et le <text:span text:style-name="T52">punctum</text:span> une brève, il faudrait logiquement chanter ici toutes notes brèves et <text:span text:style-name="T147">l</text:span>à toutes notes longues. Non seulement dans ce morceau de chant, mais partout et toujours nous devrions procéder de la sorte, puisque partout et toujours c’est la même manière de noter<text:span text:style-name="T147"> ;</text:span> puisque partout et toujours les notes qui se suivent à l’unisson, quelque longue qu’en soit la série, sont <text:span text:style-name="T153">uniformément</text:span> ou toutes des <text:span text:style-name="T7">v</text:span><text:span text:style-name="T52">ir</text:span><text:span text:style-name="T7">ga</text:span>, ou toutes des <text:span text:style-name="T52">punctum</text:span>.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17559_1958176226"/>La virga et le punctum dans les groupes<text:bookmark-end text:name="__RefHeading___Toc17559_1958176226"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T153">Pour</text:span> les groupes, la conséquence du système que nous combattons serait que dans chaque formule toute note culminante devrait être toujours longue, sans exception aucune, et celle-là seulement<text:span text:style-name="T147"> ;</text:span> ainsi la seconde note du <text:span text:style-name="T52">p</text:span><text:span text:style-name="T7">odatus</text:span>, la seconde du <text:span text:style-name="T52">tor</text:span><text:span text:style-name="T7">culus</text:span>, la première et la troisième du <text:span text:style-name="T52">porrectus</text:span> seraient autant de longues<text:span text:style-name="T147"> :</text:span> conséquence inadmissible. <text:span text:style-name="T153">Nous</text:span> ne devons donc pas chercher dans la différence du <text:span text:style-name="T52">punctum</text:span> et de la <text:span text:style-name="T7">virga</text:span> un moyen de déterminer la valeur temporaire des sons dans le chant grégorien.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17561_1958176226"/><text:soft-page-break/>La virga n’est pas une note forte<text:bookmark-end text:name="__RefHeading___Toc17561_1958176226"/></text:h>
+   <text:p text:style-name="P15">Mais puisque la <text:span text:style-name="T7">virga</text:span> est originairement l’accent aigu, n’indiquerait-elle pas du moins un son fort, accentué<text:span text:style-name="T147"> ?</text:span> Non, encore. Il est impossible en effet de rien comprendre à la Théorie des anciens sur l’accentuation et de bien interpréter leur système de notation musicale, si l’on ne consent pas à se mettre à leur point de vue<text:span text:style-name="T147"> ;</text:span> si l’on s’obstine, par exemple, à confondre dans le chant, comme dans la lecture, d’une part l’acuité avec la durée du son, l’accent avec la quantité<text:span text:style-name="T147"> ;</text:span> et d’autre part, cette même acuité du son avec la force ou l’intensité qu’on peut lui donner. Bien que souvent simultanées, ces modifications de la voix chantante ou parlante demeurent en elles-mêmes toujours indépendantes et séparables<text:span text:style-name="T147"> ;</text:span> souvent aussi de fait elles se trouvent séparées.</text:p>
+   <text:p text:style-name="P15">Q<text:span text:style-name="T147">ue</text:span> dans le simple langage le mouvement alternatif d’<text:span text:style-name="T7">arsis</text:span> et de <text:span text:style-name="T52">t</text:span><text:span text:style-name="T7">hesis</text:span> amène grammaticalement, d’une façon régulière, le temps fort sur la syllabe aiguë, et le temps faible sur les syllabes graves, la chose est facile à comprendre<text:span text:style-name="T147"> ;</text:span> mais lorsque le langage, au lieu d’être simplement accentué, se trouve chant<text:span text:style-name="T147">é</text:span>, <text:span text:style-name="T147">c</text:span>’est bien différent<text:span text:style-name="T147"> ;</text:span> car alors le chant absorbe l’accent<text:span text:style-name="T147"> ;</text:span> et puisque déjà, comme nous l’avons remarqué, la modulation plus variée du débit oratoire vient souvent modifier l’accent grammatical, à plus forte <text:span text:style-name="T147">raison</text:span>, celui-ci devra-t-il facilement disparaître en présence de l’accent musical et du chant proprement dit.</text:p>
+   <text:p text:style-name="P15">I<text:span text:style-name="T147">l</text:span> est donc inutile et même impossible d’identifier, au point de vue du temps fort, l’accent aigu du discours ou l’accent tonique qui vient relever de distance en distance certaines syllabes, et l’accent aigu de la musique qui n’a ni la même régularité, ni la même alternance. Souvent, par exemple, celui-ci maintient la voix sur plusieurs syllabes de suite à une égale hauteur<text:span text:style-name="T147"> ;</text:span> ce qui obligerait à donner plusieurs temps forts successifs, sans mélange de temps faibles, et serait destructif de tout rythme et de tout accent.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17563_1958176226"/>À la teneur des Psaumes, les notes ont toutes la même forme<text:bookmark-end text:name="__RefHeading___Toc17563_1958176226"/></text:h>
+   <text:p text:style-name="P15">L<text:span text:style-name="T147">es</text:span> motifs qui nous ont empêché plus haut de regarder la <text:span text:style-name="T52">virga</text:span> comme une note longue, s’oppos<text:span text:style-name="T153">e</text:span>nt donc également à ce que nous puissions la considérer comme une note forte par elle-même. C’est un fait, comme nous l’avons dit, que la virga dans les anciens manuscrits se poursuit <text:span text:style-name="T153">uniformément</text:span> sans mélange de <text:span text:style-name="T52">punctum</text:span> sur des lignes entières de chant<text:span text:style-name="T147"> ;</text:span> ce qui arrive toutes les fois que la voix ne doit ni monter ni descendre, comme par exemple, dans le chant d’un Psaume, entre l’intonation et la médiante, et depuis celle-ci jusqu’à la terminaison<text:span text:style-name="T144"> ;</text:span> dès lors, pour être logique, il faudrait dire que ces notes successives sont toutes également accentuées, ce qui est impossible<text:span text:style-name="T144"> :</text:span> ou bien alors avouons que la <text:span text:style-name="T53">virga</text:span> n’est pas le signe de l’accent entendu dans le sens d’un temps fort. La vraie signification de la virga est donc celle que nous lui avons donnée et que nous lui maintenons, en la considérant simplement comme une note relativement plus élevée que le <text:span text:style-name="T53">punctum</text:span>.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17565_1958176226"/><text:soft-page-break/>Usage de la note caudée<text:bookmark-end text:name="__RefHeading___Toc17565_1958176226"/></text:h>
+   <text:p text:style-name="P15">L<text:span text:style-name="T144">es</text:span> neumes primitifs transportés sur la portée furent ce qu’ils étaient auparavant et demeurèrent intacts, tant que subsistèrent les saines traditions<text:span text:style-name="T144"> ;</text:span> sauf les modifications purement graphiques et vraiment accidentelles que nous avons décrites. <text:span text:style-name="T153">Toutefois</text:span> plusieurs choses avaient perdu leur raison d’être. Ainsi, la <text:span text:style-name="T144">distinction</text:span> entre la <text:span text:style-name="T7">virga</text:span> et le <text:span text:style-name="T53">punctum</text:span>, l’une désignant, comme nous venons de le prouver, un son relativement plus élevé, l’autre un son relativement inférieur, devenait inutile<text:span text:style-name="T144"> :</text:span> puisque la place de la note sur l’échelle en déterminait désormais avec netteté l’intonation. <text:span text:style-name="T153">On</text:span> pouvait donc employer, chaque fois qu’il s’agissait d’exprimer un son unique, grave ou aigu, l’un ou l’autre de ces signes indifféremment, ou seulement l’un des deux, c’est-à-dire toujours la <text:span text:style-name="T7">v</text:span><text:span text:style-name="T53">ir</text:span><text:span text:style-name="T7">ga</text:span> ou toujours le <text:span text:style-name="T53">punctum</text:span>. Mais ce ne fut que très tard que l’on en arriva à cette pratique. Pendant longtemps encore, on vit la virga et le <text:span text:style-name="T53">punctum</text:span> paraître simultanément sur la portée, sans que l’on puisse toujours bien deviner la raison qui a pu à tel endroit motiver le choix de la note <text:span text:style-name="T7">caud</text:span><text:span text:style-name="T53">ée</text:span> à tel autre, de la note carré<text:span text:style-name="T144">e</text:span>, ou même dans certains livres, de la note losange. <text:span text:style-name="T144">Il</text:span> semble souvent que l’arbitraire et la pure fantaisie du calligraphe ont présidé à ce choix<text:span text:style-name="T144"> ;</text:span> et quand on voit percer une pensée, il est rare que l’écrivain y demeure fidèle jusqu’au bout. Quelquefois cependant la note caudée marque assez régulièrement le commencement ou la fin d’une syllabe musicale ou d’un petit membre de phrase mélodique. <text:span text:style-name="T144">D</text:span>’autres fois les notes sont caudées, carrées ou même losanges à l’imitation de ce qui se ferait régulièrement si ces mêmes notes, au lieu d’appartenir chacune à une syllabe du texte, se trouvaient réunies en <text:span text:style-name="T7">sca</text:span><text:span text:style-name="T53">n</text:span><text:span text:style-name="T7">dicus</text:span>, <text:span text:style-name="T7">climacus</text:span>, ou en un autre groupe.</text:p>
+   <text:list xml:id="list3774005974" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P60">les unes ont rapport à l’intonation<text:span text:style-name="T149"> ;</text:span> ainsi<text:span text:style-name="T149"> :</text:span></text:p>
+     <text:p text:style-name="P59">notes caudées répondant à la <text:span text:style-name="T7">v</text:span><text:span text:style-name="T53">ir</text:span><text:span text:style-name="T7">ga</text:span> de la notation primitive<text:span text:style-name="T144"> :<text:line-break/>(FIXME : ajouter l’image)</text:span></text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P59">notes caudées marquant la fin des mots<text:span text:style-name="T144"> :</text:span> <text:span text:style-name="T7">mora ul</text:span><text:span text:style-name="T53">t</text:span><text:span text:style-name="T7">im</text:span><text:span text:style-name="T53">æ</text:span><text:span text:style-name="T7"> vo</text:span><text:span text:style-name="T53">ci</text:span><text:span text:style-name="T7">s</text:span>.<text:line-break/><text:span text:style-name="T144">(FIXME : ajouter l’image)</text:span></text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P59">notes caudées, carrées ou losanges, en rapport avec les formules mélodiques<text:span text:style-name="T144"> :<text:line-break/>(FIXME : ajouter l’image)</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">a</text:span>, <text:span text:style-name="T56">l</text:span>, <text:span text:style-name="T9">s</text:span> avertissent d’élever la voix<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T9">a</text:span><text:span text:style-name="T56">lt</text:span><text:span text:style-name="T9">ius</text:span> — <text:span text:style-name="T9">levatur</text:span> — <text:span text:style-name="T9">sursum</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">d</text:span> et <text:span text:style-name="T56">i</text:span> indiquent au contraire une dépression du son<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T9">d</text:span><text:span text:style-name="T56">e</text:span><text:span text:style-name="T9">prima</text:span><text:span text:style-name="T56">t</text:span><text:span text:style-name="T9">ur</text:span> — <text:span text:style-name="T56">iusum</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">e</text:span>, entre deux notes, signifie qu’elles sont unissonnantes, <text:span text:style-name="T9">e</text:span><text:span text:style-name="T56">qu</text:span><text:span text:style-name="T9">aliter</text:span> (sonantes),</text:p>
-   <text:list xml:id="list105921675146307" text:continue-numbering="true" text:style-name="L4">
+   <text:p text:style-name="P15"><text:span text:style-name="T144">Chaque</text:span> manuscrit, sous ce rapport, a son système, quand ce n’est pas, comme nous le disions, fantaisie pure. <text:span text:style-name="T144">L</text:span>’accent <text:span text:style-name="T144">t</text:span>onique a aussi quelquefois eu son influence pour motiver la caudée<text:span text:style-name="T144"> :</text:span> mais l’idée de donner à cette note une vraie valeur de longue ou d’accent est une idée toute moderne. Guidetti au seizième siècle ne l’avait pas encore soupçonnée, et ce n’est que dans les éditions posthumes de son <text:span text:style-name="T7">Dire</text:span><text:span text:style-name="T53">ctor</text:span><text:span text:style-name="T7">ium</text:span> que l’on voit la note caudée avec une valeur spéciale. Le système de Guidetti, qui est né de lui et est mort avec lui, consistait à signaler certaines notes, qu’il voulait qu’on exprimât différemment des autres, en les surmontant d’un signe de son invention.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17567_1958176226"/><text:soft-page-break/>Système de Guidetti<text:bookmark-end text:name="__RefHeading___Toc17567_1958176226"/></text:h>
+   <text:p text:style-name="P15">Vo<text:span text:style-name="T144">i</text:span>ci le texte de l’auteur, que nous empruntons à la seconde édition de son <text:span text:style-name="T7">Dire</text:span><text:span text:style-name="T53">c</text:span><text:span text:style-name="T7">torium</text:span>. (Romæ. 158<text:span text:style-name="T144">9</text:span>)</text:p>
+   <text:p text:style-name="P33">No<text:span text:style-name="T144">tæ</text:span> autem sunt hujusmodi <text:span text:style-name="T144">(FIXME : ajouter l’image)<text:line-break/></text:span>H<text:span text:style-name="T144">æ</text:span>c nota <text:span text:style-name="T144">(FIXME : ajouter l’image)</text:span> vocatur brevis cui subjecta syllaba ita profertur ut in canendo tempus unum insumatur.<text:line-break/>Hæc <text:span text:style-name="T144">(FIXME : ajouter l’image)</text:span> dicitur semibrevis … dimidium unius temporis.<text:line-break/>Hæc altera <text:span text:style-name="T144">(FIXME : ajouter l’image)</text:span> … paulo tardius.<text:line-break/>H<text:span text:style-name="T144">æ</text:span>c <text:span text:style-name="T144">(FIXME : ajouter l’image)</text:span> … duorum temporum.<text:line-break/>H<text:span text:style-name="T144">æ (FIXME : ajouter l’image)</text:span> conjun<text:span text:style-name="T144">c</text:span>tæ. Tunc syllaba subjacens leni quodam spiritus impulsu pronunciabitur ; ppoinde ac si duplici scriberetur vocali, ut Doominus pro Dominus, sed cum decore et gratia, quod hic doceri non potest.</text:p>
+   <text:p text:style-name="P15">Citons un exemple<text:span text:style-name="T144"> :</text:span> (Page 481.)</text:p>
+   <text:p text:style-name="P26">(FIXME : ajouter l’image)</text:p>
+   <text:p text:style-name="P15">E<text:span text:style-name="T144">n</text:span> général, surtout en Italie, dans les premiers imprimés comme dans les manuscrits, toute note isolée est une note caudée. En France, les imprimeurs font volontiers usage de la simple carrée<text:span text:style-name="T148"> ;</text:span> en Espagne, de la note losange. Ces divergences n’ont d’importance qu’au point de vue calligraphique ou typographique<text:span text:style-name="T148"> ;</text:span> elles ne font rien à l’exécution du chant, comme nous le verrons en exposant plus loin les principes du rythme grégorien.</text:p>
+   <text:p text:style-name="P15">La thèse que nous soutenons sur l’insuffisance des neumes à exprimer, soit les intervalles précis que la voix doit successivement franchir, soit la durée ou l’intensité relatives des sons, concerne, comme nous l’avons dit, les neumes pris en eux-mêmes, C’est-à-dire dans les éléments qui les constituent, abstraction faite de tout accessoire. Mais dans plusieurs manuscrits, ceux de S. Gall par exemple, et quelques autres de la même école, les signes que nous avons décrits présentent des particularités et des adjon<text:span text:style-name="T148">c</text:span>tions remarquables, dont il nous faut tout de suite expliquer la nature et le but.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T153">O</text:span>n voit en effet, dans ces manuscrits, certaines lettres accompagnant çà et là les neumes, puis certains petits traits ou points semblant faire corps avec les formules elles-mêmes, mais devant en être soigneusement distingués.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T153">P</text:span>our ce qui concerne ces lettres, il faut également bien se garder, comme nous l’avons dit déjà, de les confondre avec celles qui constituent la notation alphabétique.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T148">L</text:span>’<text:span text:style-name="T148">origine</text:span> des lettres et des signes accessoires dont nous parlons est connue ; il peut être utile de la rappeler ici brièvement.</text:p>
+   <text:p text:style-name="P15">À l<text:span text:style-name="T148">a</text:span> demande de Pépin et de Charlemagne, les Papes, on le sait, envoyèrent à plusieurs reprises des chantres habiles pour apprendre aux Francs et aux Germains <text:soft-page-break/>les mélodies grégoriennes. <text:span text:style-name="T148">P</text:span><text:span text:style-name="T150">etrus</text:span> et <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span> furent deux de ces députés. Ils partirent ensemble de Rome<text:span text:style-name="T148"> ;</text:span> mais on raconte qu’au passage des Alpes, <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span> tomba malade, et alla pour se rétablir demander l’hospitalité à la fameuse abbaye de S. Gall, laissant son compagnon poursuivre sa route jusqu’à Metz, ou se trouvait alors le centre d’instruction pour l’enseignement du chant romain. <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span> se plut à S. Gall et y fixant son séjour il fonda là une école de chant qui devint l’heureuse rivale de celle de Metz. Il avait apporté avec lui des livres notes en neumes<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+      <text:p text:style-name="P30">La biblióthèque de S. Gall conserve encore en assez bon nombre des Antiphonaires et des Graduels très anciens dont l’un d’eux, publié en fac-simile par le P. Lambillótte, paraît être contemporain de R<text:span text:style-name="T149">ómanus</text:span> ; mais quand même on en douterait, il est impossible de ne pas voir dans ce monument vénérable, et dans les autres de la même école, la reproduction du chant, tel que R<text:span text:style-name="T149">ómanus</text:span> l’enseignait.</text:p></text:note-body></text:note><text:span text:style-name="T148"> ;</text:span> mais, comme le disent les auteurs, c’est <text:span text:style-name="T153">plutôt</text:span> par la parole que par l’écriture, <text:span text:style-name="T7">potius colloquendo quam conscribendo</text:span>, qu’il est possible d’enseigner la manière de bien chanter. Vu en effet la nature des neumes, vu surtout l’allure libre et naturelle du chant grégorien, il fallait à S. Gall comme ailleurs, pour interpréter les neumes, le secours de l’enseignement oral. <text:span text:style-name="T148">D</text:span>’un autre côté, pour aider ses élèves à retenir ses leçons, <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span> a eu recours à certaines lettres et à certains signes particuliers ajoutés aux neumes. Ces adjon<text:span text:style-name="T148">c</text:span>tions ne sont peut-être pas de l’invention de <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span>, car on en trouve de semblables dans quelques manuscrits de différentes provenances<text:span text:style-name="T148"> ;</text:span> ma<text:span text:style-name="T148">i</text:span>s il a fait un usage spécial de ces signes, qui pour cela sont appelés signes <text:span text:style-name="T7">Romaniens</text:span>.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17569_1958176226"/>Lettres significatives<text:bookmark-end text:name="__RefHeading___Toc17569_1958176226"/></text:h>
+   <text:p text:style-name="P15">Les lettres, mises également en vogue par le chantre <text:span text:style-name="T148">R</text:span><text:span text:style-name="T150">omanus</text:span>, sont nommées <text:span text:style-name="T7">significatives</text:span> par le bienheureux Notker, qui en donne la clef. Elles sont destinées à avertir le chantre, dans les endroits ou l’on peut présumer qu’il sera plus exposé à se tromper. Parmi ces lettres,</text:p>
+   <text:list xml:id="list3152987718" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P60">D’autres concernent la nature du son<text:span text:style-name="T149"> :</text:span></text:p>
+     <text:p text:style-name="P60">les unes ont rapport à l’intonation<text:span text:style-name="T148"> ;</text:span> ainsi<text:span text:style-name="T148"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">f</text:span> et <text:span text:style-name="T56">k</text:span> marquent un son éclatant<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T9">frende</text:span>, <text:span text:style-name="T9">klan</text:span><text:span text:style-name="T56">g</text:span><text:span text:style-name="T9">e</text:span> (pour <text:span text:style-name="T9">clange</text:span>).</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T56">g</text:span><text:tab/>—<text:tab/> un son guttural.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T56">h</text:span><text:tab/>—<text:tab/> une aspiration.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">r</text:span><text:tab/>—<text:tab/> une crispation du son.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T56">o</text:span><text:span text:style-name="T149"><text:tab/></text:span>—<text:tab/> une certaine emphase.</text:p>
-   <text:list xml:id="list105923220179855" text:continue-numbering="true" text:style-name="L4">
+   <text:p text:style-name="P52"><text:span text:style-name="T7">a</text:span>, <text:span text:style-name="T54">l</text:span>, <text:span text:style-name="T7">s</text:span> avertissent d’élever la voix<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T7">a</text:span><text:span text:style-name="T54">lt</text:span><text:span text:style-name="T7">ius</text:span> — <text:span text:style-name="T7">levatur</text:span> — <text:span text:style-name="T7">sursum</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">d</text:span> et <text:span text:style-name="T54">i</text:span> indiquent au contraire une dépression du son<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T7">d</text:span><text:span text:style-name="T54">e</text:span><text:span text:style-name="T7">prima</text:span><text:span text:style-name="T54">t</text:span><text:span text:style-name="T7">ur</text:span> — <text:span text:style-name="T54">iusum</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">e</text:span>, entre deux notes, signifie qu’elles sont unissonnantes, <text:span text:style-name="T7">e</text:span><text:span text:style-name="T54">qu</text:span><text:span text:style-name="T7">aliter</text:span> (sonantes),</text:p>
+   <text:list xml:id="list200129016234847" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P60"><text:span text:style-name="T149">D</text:span>’autres insinuent le mouvement lent ou rapide de la note ou de la formulé<text:span text:style-name="T149"> :</text:span></text:p>
+     <text:p text:style-name="P60">D’autres concernent la nature du son<text:span text:style-name="T148"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P53"><text:soft-page-break/><text:span text:style-name="T9">c</text:span> exprime la célérité<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T9">celeriter</text:span> — <text:span text:style-name="T9">ci</text:span><text:span text:style-name="T56">t</text:span><text:span text:style-name="T9">ius</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T56">t</text:span> et <text:span text:style-name="T56">p</text:span> marquent la tenue de la voix<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T56">t</text:span><text:span text:style-name="T9">ene</text:span>, <text:span text:style-name="T56">p</text:span><text:span text:style-name="T9">reme</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">x</text:span> indique un retard, une certaine pause<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T56">expecta</text:span>.</text:p>
-   <text:list xml:id="list105922894420374" text:continue-numbering="true" text:style-name="L4">
+   <text:p text:style-name="P52"><text:span text:style-name="T7">f</text:span> et <text:span text:style-name="T54">k</text:span> marquent un son éclatant<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T7">frende</text:span>, <text:span text:style-name="T7">klan</text:span><text:span text:style-name="T54">g</text:span><text:span text:style-name="T7">e</text:span> (pour <text:span text:style-name="T7">clange</text:span>).</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T54">g</text:span><text:tab/>—<text:tab/> un son guttural.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T54">h</text:span><text:tab/>—<text:tab/> une aspiration.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">r</text:span><text:tab/>—<text:tab/> une crispation du son.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T54">o</text:span><text:span text:style-name="T148"><text:tab/></text:span>—<text:tab/> une certaine emphase.</text:p>
+   <text:list xml:id="list200128203020242" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P60">Certaines lettres ont un sens plus général<text:span text:style-name="T149"> :</text:span></text:p>
+     <text:p text:style-name="P60"><text:span text:style-name="T148">D</text:span>’autres insinuent le mouvement lent ou rapide de la note ou de la formule<text:span text:style-name="T148"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P53"><text:span text:style-name="T56">b</text:span> se joint à une autre lettre pour dire de bien faire ce que celle-ci recommande<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T56">bt</text:span>, <text:span text:style-name="T149">c</text:span>’est-à-dire <text:span text:style-name="T56">b</text:span><text:span text:style-name="T9">ene </text:span><text:span text:style-name="T56">t</text:span><text:span text:style-name="T9">enete</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">m</text:span> invite à la modération<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T9">mediocriter</text:span>.</text:p>
-   <text:p text:style-name="P53"><text:span text:style-name="T9">n</text:span> appelle l’attention<text:span text:style-name="T149"> :</text:span> <text:span text:style-name="T56">not</text:span><text:span text:style-name="T9">a</text:span>.</text:p>
-   <text:list xml:id="list105922693163518" text:continue-numbering="true" text:style-name="L4">
+   <text:p text:style-name="P52"><text:soft-page-break/><text:span text:style-name="T7">c</text:span> exprime la célérité<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T7">celeriter</text:span> — <text:span text:style-name="T7">ci</text:span><text:span text:style-name="T54">t</text:span><text:span text:style-name="T7">ius</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T54">t</text:span> et <text:span text:style-name="T54">p</text:span> marquent la tenue de la voix<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T54">t</text:span><text:span text:style-name="T7">ene</text:span>, <text:span text:style-name="T54">p</text:span><text:span text:style-name="T7">reme</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">x</text:span> indique un retard, une certaine pause<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T54">expecta</text:span>.</text:p>
+   <text:list xml:id="list200128060583940" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P60"><text:span text:style-name="T152">D</text:span>’autres lettres enfin n’ont aucun sens. Notker veut dire sans doute qu’elles sont inusitées. Ce sont <text:span text:style-name="T57">q</text:span>, <text:span text:style-name="T9">v</text:span>, <text:span text:style-name="T9">y</text:span>, <text:span text:style-name="T9">z</text:span>.</text:p>
+     <text:p text:style-name="P60">Certaines lettres ont un sens plus général<text:span text:style-name="T148"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16">pour mieux faire comprendre l’usage et la portée des lettres <text:span text:style-name="T57">significatives</text:span>, nous allons en donner un exemple.</text:p>
-   <text:p text:style-name="P16">À <text:span text:style-name="T152">la</text:span> fin des versets de Graduel ou d’<text:span text:style-name="T9">A</text:span><text:span text:style-name="T57">ll</text:span><text:span text:style-name="T9">eluia</text:span>, on rencontre tantot l’une tantot l’autre des modulations suivantes<text:span text:style-name="T152"> :</text:span></text:p>
-   <text:p text:style-name="P27">(FIXME : ajouter l’image)</text:p>
-   <text:p text:style-name="P16">on comprend combien il est facile au chantre de prendre l’une pour l’autre. pour prévenir toute <text:span text:style-name="T152">ambiguïté</text:span>, le notateur des manuscrits de S. Gall a mis dans la seconde modulation un <text:span text:style-name="T57">i</text:span> (<text:span text:style-name="T57">i</text:span><text:span text:style-name="T9">usum</text:span>) au-dessous du dernier point du <text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">li</text:span><text:span text:style-name="T9">macus</text:span>, C’est-à-dire à l’endpoit même ou les deux phrases mélodiques commencent à être différentes<text:span text:style-name="T152"> ;</text:span> comme pour dire au chantre<text:span text:style-name="T152"> :</text:span> prenez bien garde, vous pourriez être tenté de ne descendre ici qu’au ré, <text:span text:style-name="T152">c</text:span>’est l’u<text:span text:style-name="T152">t</text:span> que vous devez atteindre en omettant le ré.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17571_1958176226"/>Signes romaniens<text:bookmark-end text:name="__RefHeading___Toc17571_1958176226"/></text:h>
-   <text:p text:style-name="P16"><text:span text:style-name="T152">Viennent</text:span> avec les lettres, <text:span text:style-name="T152">l</text:span>es traits ou points surajoutés aux neumes. Ces traits ont pour inventeurs, les inventeurs mêmes des lettres <text:span text:style-name="T152">significatives :</text:span> comme celles-ci, ils se présentent là seulement ou le chantre est jugé avoir besoin d’indication, et doit être mis en garde contre une erreur. on remarque donc dans les manuscrits de S. Gall un trait surmontant la <text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">l</text:span><text:span text:style-name="T9">ivis</text:span>, un point occupant la tête de la virg<text:span text:style-name="T152">a</text:span><text:span text:style-name="T152"><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
-       <text:p text:style-name="Footnote">Ce point au sommet de la <text:span text:style-name="T9">virga</text:span> a une origine toute différente de celui que nous voyons apparaître à l’époque guidonienne. La signification en est également toute autre<text:span text:style-name="T152"> :</text:span> dans l’écriture romanienne, la tête de la <text:span text:style-name="T121">virga</text:span> a une valeur pour le rythme<text:span text:style-name="T152"> ;</text:span> dans l’écriture guidonienne, elle est purement graphique.</text:p></text:note-body></text:note></text:span>; de plus, certains <text:span text:style-name="T57">punctum</text:span>, dans le <text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">l</text:span><text:span text:style-name="T9">imacus</text:span><text:span text:style-name="T63"><text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
-       <text:p text:style-name="Footnote">Le point final du <text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">li</text:span><text:span text:style-name="T9">macus</text:span>, dans certains manuscrits, comme celui de Montpellier, <text:span text:style-name="T152">s’</text:span>allonge régulièrement en forme de virgule. Cette virgule n’a rien de commun avec la notation romanienne<text:span text:style-name="T152"> ;</text:span> elle est le résultat d’une habitude de copiste, semblable à celle qui a fait transformer en y grec l’i final de certains mots, ex. Henry<text:span text:style-name="T152"> ;</text:span> ou qui a fait donner la forme du j au dernier i, lorsqu’il y en a plusieurs à se suivre dans un nombre en chiffres romains, <text:span text:style-name="T122">ij</text:span>. iij. vi<text:span text:style-name="T152">ij</text:span>. etc.</text:p></text:note-body></text:note></text:span> par exemple, se trouvent plus marqués. De même l’accent grave ou le pied du <text:span text:style-name="T57">podatus</text:span>, les traits du <text:span text:style-name="T57">torculus</text:span> sont plus forts que dans les formulés ordinaires.</text:p>
-   <text:p text:style-name="P27"><text:soft-page-break/>(FIXME : ajouter l’image)</text:p>
-   <text:p text:style-name="P16">La présence du point ou petit trait surajouté, comme aussi le renforcement du <text:span text:style-name="T57">punctum</text:span>, indique un ralentissement de la voix. Ce retard correspond souvent à ce que Gui d’Arezzo appelle <text:span text:style-name="T9">mora ul</text:span><text:span text:style-name="T57">t</text:span><text:span text:style-name="T9">im</text:span><text:span text:style-name="T57">æ</text:span><text:span text:style-name="T9"> v</text:span><text:span text:style-name="T57">o</text:span><text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">i</text:span><text:span text:style-name="T9">s</text:span>.</text:p>
-   <text:p text:style-name="P27">(FIXME : ajouter l’image)</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17573_1958176226"/>Signe du retard de la voix<text:bookmark-end text:name="__RefHeading___Toc17573_1958176226"/></text:h>
-   <text:p text:style-name="P16">Ici la voix se reposé un peu sur la fin de chaque groupe<text:span text:style-name="T152"> ;</text:span> et même pour le dernier, le retard devant être plus sensible commence dès la pénultième note. Aussi voyons-nous que ces points, ou ajoutés ou renforces, affectent de préférence la fin des groupes et se multiplient davantage lorsque la pause est plus importante. Ces retards de la voix, marqués par certaines lettres ou par des traits et des points forts, peuvent toujours facilement s’observer, même lorsque la notation ne reproduirait pas ces particularités<text:span text:style-name="T152"> ;</text:span> pourvu toutefois que les groupes soient bien distribués et bien espacés sur la portée.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17575_1958176226"/>Tpois sortes de clivis<text:bookmark-end text:name="__RefHeading___Toc17575_1958176226"/></text:h>
-   <text:p text:style-name="P16">Par<text:span text:style-name="T152">m</text:span>i ces signes, lettres ou traits, qui viennent comme accessoires dans les neumes, et qui sont propres à un petit nombre de manuscrits, ceux qui ont rapport à l’intonation <text:span text:style-name="T57">a</text:span><text:span text:style-name="T152">, </text:span><text:span text:style-name="T57">l</text:span><text:span text:style-name="T152">, </text:span><text:span text:style-name="T57">s</text:span><text:span text:style-name="T152">, </text:span><text:span text:style-name="T57">i</text:span> sont devenus inutiles, une fois que les neumes ont été disposés sur les lignes de la portée. Ceux qui indiquent un son éclatant, guttural, aspiré, etc. sont rares, ou sont <text:span text:style-name="T9">ad </text:span><text:span text:style-name="T57">libitum</text:span>, comme en général dans la musique, tout ce qui est ornement pur.</text:p>
-   <text:p text:style-name="P16">nous devons remarquer qu’il y a trois sortes de <text:span text:style-name="T9">c</text:span><text:span text:style-name="T57">li</text:span><text:span text:style-name="T9">vis</text:span> dans les manuscrits romaniens<text:span text:style-name="T152"> :</text:span> la première ne porte aucun signe particulier, parce que l’exécution en est facile<text:span text:style-name="T152"> ;</text:span> la seconde est surmontée d’un <text:span text:style-name="T57">c</text:span>, indiquant qu’il n’y a pas à s’arrêter sur cette formulé, mais à la couler légèrement<text:span text:style-name="T152"> ;</text:span> la troisième est marquée d’un trait horizontal, qui est l’indice d’un ralentissement dans le mouvement.</text:p>
-   <text:p text:style-name="P27">(FIXME : ajouter l’image)</text:p>
-   <text:p text:style-name="P16">L<text:span text:style-name="T152">e</text:span> trait horizontal, analogue à celui qui surmonte la simple <text:span text:style-name="T9">virga</text:span>, a été pris par quelques <text:span text:style-name="T152">interprètes</text:span>, mais à tort, pour un <text:span text:style-name="T57">c</text:span> couché<text:span text:style-name="T152"> ;</text:span> on n’a pas pris garde que dans une écriture cursive, les traits de cette nature ne peuvent ressembler à ceux que <text:span text:style-name="T152">l</text:span>&apos;on tracerait à la règle, et que facilement ils sont un peu arqués.</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17577_1958176226"/>Tripunctum<text:bookmark-end text:name="__RefHeading___Toc17577_1958176226"/></text:h>
-   <text:p text:style-name="P16">U<text:span text:style-name="T152">ne</text:span> particularité également nécessaire à signaler dans les manuscrits de S. Gall, reproduite dans plusieurs autres, <text:span text:style-name="T152">c</text:span>’est la manière dont sont écrits, en certaines circonstances, le <text:span text:style-name="T57">torculus</text:span> et le <text:span text:style-name="T57">p</text:span><text:span text:style-name="T9">es subbipun</text:span><text:span text:style-name="T57">c</text:span><text:span text:style-name="T9">tis</text:span>. on rencontre en effet ces deux neumes sous une forme qui semblerait empruntée à la notation à <text:span text:style-name="T9">points superposés</text:span>, bien qu’en réalité elle n’appartienne pas à ce système. Sous la <text:soft-page-break/>seconde forme dont nous parlons, le <text:span text:style-name="T57">torculus</text:span> est nommé <text:span text:style-name="T57">t</text:span><text:span text:style-name="T9">ripun</text:span><text:span text:style-name="T57">ct</text:span><text:span text:style-name="T9">um</text:span>, et le <text:span text:style-name="T9">pes subbipun</text:span><text:span text:style-name="T57">ct</text:span><text:span text:style-name="T9">is</text:span> est désigné par le simple qualificatif neutre <text:span text:style-name="T57">subbipuncte</text:span>.</text:p>
-   <text:p text:style-name="P27">(FIXME : ajouter l’image)</text:p>
-   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17579_1958176226"/>Salicus<text:bookmark-end text:name="__RefHeading___Toc17579_1958176226"/></text:h>
-   <text:p text:style-name="P16">C<text:span text:style-name="T152">e</text:span> qui caractérise pratiquement et distingue le <text:span text:style-name="T57">tripunctum</text:span> et le <text:span text:style-name="T57">subbipuncte</text:span>, <text:span text:style-name="T152">c</text:span>’est que dans l’une et l’autre formulés, les premiers sons se trouvent ou sur le même ton ou à un demi-ton de distance. Il y a aussi dans les manuscrits romaniens une sorte de <text:span text:style-name="T57">p</text:span><text:span text:style-name="T9">es </text:span><text:span text:style-name="T57">q</text:span><text:span text:style-name="T9">uassus</text:span> ou de <text:span text:style-name="T9">salicus</text:span> ainsi figuré <text:span text:style-name="T145">(FIXME : ajouter l’image) ;</text:span> il ressemble pour la forme et l’effet <text:span text:style-name="T152">mélodique</text:span> au <text:span text:style-name="T9">q</text:span><text:span text:style-name="T57">uil</text:span><text:span text:style-name="T9">isma</text:span>, avec cette différence qu’il répond à une tierce majeure au lieu d’une tierce mineure, et qu’il n’a que deux courbes au lieu de trois.</text:p>
-   <text:p text:style-name="P16">pour ces particularités, que la plupart des manuscrits ne présentent pas, on comprend que ceux qui les contiennent les donnent avec plus ou moins d’abondance<text:span text:style-name="T152"> ;</text:span> on comprend aussi comment les uns sont plus explicites, sans contredire ceux qui le sont moins, ou ceux qui se taisent absolument. Cette variété apparente des neumes, sous ce rapport comme sous celui du genre d’écriture, prouve que les manuscrits ne sont pas la simple copie les uns des autres<text:span text:style-name="T152"> ;</text:span> et comme tous, quoique chacun à sa manière, expriment le même sens, et conduisent aux mêmes conclusions pratiques, la tradition grégorienne ne s’en trouve par là que plus puissamment confirmée.</text:p>
-   <text:h text:style-name="P9" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17581_1958176226"/>on doit plus d’attention au texte qu’à la note<text:bookmark-end text:name="__RefHeading___Toc17581_1958176226"/></text:h>
-   <text:p text:style-name="P16">Les signes d’écriture, quelque parfaits qu’on les supposé, sont toujours impuissants à exprimer les nuances multiples du rythme de la parole qui est aussi celui du plain-chant. Beaucoup de ces nuances doivent être laissées, dans la musique comme dans le discours, non pas à l’arbitraire, mais au bon sens et à la nature. Le signe matériel sert à guider l’intelligence, mais ne peut la donner. <text:span text:style-name="T153">L</text:span>’intelligence, en s’emparant des mots pour rendre la pensée, leur <text:span text:style-name="T153">communique</text:span> sous le souffle de la pensée elle-même, les inflexions voulues. Ce souffle est le véritable accent du langage<text:span text:style-name="T153"> :</text:span> C’est lui qui coordonne et assouplit les éléments matériels de la phrase, C’est-à-dire les syllabes et les mots, et fait mouvoir dans le chant comme dans le discours les articulations diverses, dont le jeu est nécessaire à la vie de l’un comme de l’autre. Celui qui ne comprend pas une langue peut mettre plus ou moins d’adresse à imiter celui qui a l’intelligence de ce qu’il prononce<text:span text:style-name="T153"> ;</text:span> mais si pour arriver à ce résultat les signes d’accentuation, de <text:span text:style-name="T153">ponctuation</text:span> ou de notation peuvent avoir leur utilité, encore faut-il reconnaître que toujours insuffisants par eux-mêmes, ils peuvent souvent devenir une entrave<text:span text:style-name="T153"> ;</text:span> ce qui arrive lorsque, dans la fausse persuasion qu’on doit leur demander à eux seuls le secret de la bonne prononciation, on cherche à concentrer toute l’attention du lecteur ou du chantre sur ces signes<text:span text:style-name="T153"> ;</text:span> les précautions prises alors pour assurer un meilleur résultat, deviennent par leur exagération même la cause de l’insuccès.</text:p>
-   <text:p text:style-name="P16"><text:soft-page-break/>Qu’<text:span text:style-name="T153">il</text:span> nous soit permis, au sujet des lettres <text:span text:style-name="T153">significatives</text:span>, d’y voir une confirmation éclatante de notre manière d’expliquer la valeur propre des neumes<text:span text:style-name="T153"> ;</text:span> car si par eux-mêmes ces neumes avaient indiqué et les intervalles et la durée et la force des sons, Romanus n’aurait pas songé à ces signes accessoires, destinés dans sa pensée, non pas encore à préciser absolument ces intervalles, cette durée ou cette force, mais à guider les chantres, pour que ceux-ci pussent mieux saisir et mieux observer ce qu’il leur enseignait là-dessus dans ses leçons pratiques.</text:p>
-   <text:p text:style-name="P16">Tour ceci prouve également que les notes grégoriennes ont une grande variété d’expression<text:span text:style-name="T153"> ;</text:span> on peut la leur donner sans qu’il soit nécessaire de chercher dans les neumes ce qui ne doit pas s’y trouver.</text:p>
-   <text:p text:style-name="P16">E<text:span text:style-name="T153">n</text:span> suivant, comme nous l’avons fait, les modifications qui marquent les divers âges de l’écriture musicale grégorienne, chacune d’elles apparaît avec son vrai caractère<text:span text:style-name="T153"> ;</text:span> on voit celles de ces modifications qui résultent d’un développement normal et celles qui constituent une altération<text:span text:style-name="T153"> ;</text:span> on comprend ce qui appartient à l’archéologie pure et ce qui a conservé une portée pratique.</text:p>
-   <text:p text:style-name="P16">E<text:span text:style-name="T153">n</text:span> reproduisant ainsi, et aussi fidèlement que possible, les anciens neumes, dans une forme devenue facilement intelligible à tous, et en même temps consacrée par la tradition, nous concilions le respect dû à l’antiquité avec les besoins du temps présent<text:span text:style-name="T153"> ;</text:span> nous suivons le progrès sans être révolutionnaires.</text:p>
-   <text:p text:style-name="P16">nous allons au chapitre suivant reprendre la série des signes traditionnels de la notation grégorienne et en expliquer de nouveau la nature, afin de pouvoir plus sûrement ensuite en déterminer la valeur.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T54">b</text:span> se joint à une autre lettre pour dire de bien faire ce que celle-ci recommande<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T54">bt</text:span>, <text:span text:style-name="T148">c</text:span>’est-à-dire <text:span text:style-name="T54">b</text:span><text:span text:style-name="T7">ene </text:span><text:span text:style-name="T54">t</text:span><text:span text:style-name="T7">enete</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">m</text:span> invite à la modération<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T7">mediocriter</text:span>.</text:p>
+   <text:p text:style-name="P52"><text:span text:style-name="T7">n</text:span> appelle l’attention<text:span text:style-name="T148"> :</text:span> <text:span text:style-name="T54">not</text:span><text:span text:style-name="T7">a</text:span>.</text:p>
+   <text:list xml:id="list200128749984083" text:continue-numbering="true" text:style-name="L4">
+    <text:list-item>
+     <text:p text:style-name="P60"><text:span text:style-name="T151">D</text:span>’autres lettres enfin n’ont aucun sens. Notker veut dire sans doute qu’elles sont inusitées. Ce sont <text:span text:style-name="T55">q</text:span>, <text:span text:style-name="T7">v</text:span>, <text:span text:style-name="T7">y</text:span>, <text:span text:style-name="T7">z</text:span>.</text:p>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P15"><text:span text:style-name="T154">P</text:span>our mieux faire comprendre l’usage et la portée des lettres <text:span text:style-name="T55">significatives</text:span>, nous allons en donner un exemple.</text:p>
+   <text:p text:style-name="P15">À <text:span text:style-name="T151">la</text:span> fin des versets de Graduel ou d’<text:span text:style-name="T7">A</text:span><text:span text:style-name="T55">ll</text:span><text:span text:style-name="T7">eluia</text:span>, on rencontre <text:span text:style-name="T154">tantôt</text:span> l’une <text:span text:style-name="T154">tantôt</text:span> l’autre des modulations suivantes<text:span text:style-name="T151"> :</text:span></text:p>
+   <text:p text:style-name="P26">(FIXME : ajouter l’image)</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T154">O</text:span>n comprend combien il est facile au chantre de prendre l’une pour l’autre. <text:span text:style-name="T154">Pour</text:span> prévenir toute <text:span text:style-name="T151">ambiguïté</text:span>, le notateur des manuscrits de S. Gall a mis dans la seconde modulation un <text:span text:style-name="T55">i</text:span> (<text:span text:style-name="T55">i</text:span><text:span text:style-name="T7">usum</text:span>) au-dessous du dernier point du <text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">li</text:span><text:span text:style-name="T7">macus</text:span>, C’est-à-dire à l’endroit même ou les deux phrases mélodiques commencent à être différentes<text:span text:style-name="T151"> ;</text:span> comme pour dire au chantre<text:span text:style-name="T151"> :</text:span> prenez bien garde, vous pourriez être tenté de ne descendre ici qu’au ré, <text:span text:style-name="T151">c</text:span>’est l’u<text:span text:style-name="T151">t</text:span> que vous devez atteindre en omettant le ré.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17571_1958176226"/>Signes romaniens<text:bookmark-end text:name="__RefHeading___Toc17571_1958176226"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T151">Viennent</text:span> avec les lettres, <text:span text:style-name="T151">l</text:span>es traits ou points surajoutés aux neumes. Ces traits ont pour inventeurs, les inventeurs mêmes des lettres <text:span text:style-name="T151">significatives :</text:span> comme celles-ci, ils se présentent là seulement ou le chantre est jugé avoir besoin d’indication, et doit être mis en garde contre une erreur. <text:span text:style-name="T154">O</text:span>n remarque donc dans les manuscrits de S. Gall un trait surmontant la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">l</text:span><text:span text:style-name="T7">ivis</text:span>, un point occupant la tête de la virg<text:span text:style-name="T151">a</text:span><text:span text:style-name="T151"><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+       <text:p text:style-name="Footnote">Ce point au sommet de la <text:span text:style-name="T7">virga</text:span> a une origine toute différente de celui que nous voyons apparaître à l’époque guidonienne. La signification en est également toute autre<text:span text:style-name="T151"> :</text:span> dans l’écriture romanienne, la tête de la <text:span text:style-name="T120">virga</text:span> a une valeur pour le rythme<text:span text:style-name="T151"> ;</text:span> dans l’écriture guidonienne, elle est purement graphique.</text:p></text:note-body></text:note></text:span>; de plus, certains <text:span text:style-name="T55">punctum</text:span>, dans le <text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">l</text:span><text:span text:style-name="T7">imacus</text:span><text:span text:style-name="T62"><text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
+       <text:p text:style-name="Footnote">Le point final du <text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">li</text:span><text:span text:style-name="T7">macus</text:span>, dans certains manuscrits, comme celui de Montpellier, <text:span text:style-name="T151">s’</text:span>allonge régulièrement en forme de virgule. Cette virgule n’a rien de commun avec la notation romanienne<text:span text:style-name="T151"> ;</text:span> elle est le résultat d’une habitude de copiste, semblable à celle qui a fait transformer en y grec l’i final de certains mots, ex. Henry<text:span text:style-name="T151"> ;</text:span> ou qui a fait donner la forme du j au dernier i, lorsqu’il y en a plusieurs à se suivre dans un nombre en chiffres romains, <text:span text:style-name="T121">ij</text:span>. iij. vi<text:span text:style-name="T151">ij</text:span>. etc.</text:p></text:note-body></text:note></text:span> par exemple, se trouvent plus marqués. De même l’accent grave ou le pied du <text:span text:style-name="T55">podatus</text:span>, les traits du <text:span text:style-name="T55">torculus</text:span> sont plus forts que dans les formules ordinaires.</text:p>
+   <text:p text:style-name="P26"><text:soft-page-break/>(FIXME : ajouter l’image)</text:p>
+   <text:p text:style-name="P15">La présence du point ou petit trait surajouté, comme aussi le renforcement du <text:span text:style-name="T55">punctum</text:span>, indique un ralentissement de la voix. Ce retard correspond souvent à ce que Gui d’Arezzo appelle <text:span text:style-name="T7">mora ul</text:span><text:span text:style-name="T55">t</text:span><text:span text:style-name="T7">im</text:span><text:span text:style-name="T55">æ</text:span><text:span text:style-name="T7"> v</text:span><text:span text:style-name="T55">o</text:span><text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">i</text:span><text:span text:style-name="T7">s</text:span>.</text:p>
+   <text:p text:style-name="P26">(FIXME : ajouter l’image)</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17573_1958176226"/>Signe du retard de la voix<text:bookmark-end text:name="__RefHeading___Toc17573_1958176226"/></text:h>
+   <text:p text:style-name="P15">Ici la voix se repos<text:span text:style-name="T154">e</text:span> un peu sur la fin de chaque groupe<text:span text:style-name="T151"> ;</text:span> et même pour le dernier, le retard devant être plus sensible commence dès la pénultième note. Aussi voyons-nous que ces points, ou ajoutés ou renforc<text:span text:style-name="T154">é</text:span>s, affectent de préférence la fin des groupes et se multiplient davantage lorsque la pause est plus importante. Ces retards de la voix, marqués par certaines lettres ou par des traits et des points forts, peuvent toujours facilement s’observer, même lorsque la notation ne reproduirait pas ces particularités<text:span text:style-name="T151"> ;</text:span> pourvu toutefois que les groupes soient bien distribués et bien espacés sur la portée.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17575_1958176226"/>T<text:span text:style-name="T154">r</text:span>ois sortes de clivis<text:bookmark-end text:name="__RefHeading___Toc17575_1958176226"/></text:h>
+   <text:p text:style-name="P15">Par<text:span text:style-name="T151">m</text:span>i ces signes, lettres ou traits, qui viennent comme accessoires dans les neumes, et qui sont propres à un petit nombre de manuscrits, ceux qui ont rapport à l’intonation <text:span text:style-name="T55">a</text:span><text:span text:style-name="T151">, </text:span><text:span text:style-name="T55">l</text:span><text:span text:style-name="T151">, </text:span><text:span text:style-name="T55">s</text:span><text:span text:style-name="T151">, </text:span><text:span text:style-name="T55">i</text:span> sont devenus inutiles, une fois que les neumes ont été disposés sur les lignes de la portée. Ceux qui indiquent un son éclatant, guttural, aspiré, etc. sont rares, ou sont <text:span text:style-name="T7">ad </text:span><text:span text:style-name="T55">libitum</text:span>, comme en général dans la musique, tout ce qui est ornement pur.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T154">N</text:span>ous devons remarquer qu’il y a trois sortes de <text:span text:style-name="T7">c</text:span><text:span text:style-name="T55">li</text:span><text:span text:style-name="T7">vis</text:span> dans les manuscrits romaniens<text:span text:style-name="T151"> :</text:span> la première ne porte aucun signe particulier, parce que l’exécution en est facile<text:span text:style-name="T151"> ;</text:span> la seconde est surmontée d’un <text:span text:style-name="T55">c</text:span>, indiquant qu’il n’y a pas à s’arrêter sur cette formule, mais à la couler légèrement<text:span text:style-name="T151"> ;</text:span> la troisième est marquée d’un trait horizontal, qui est l’indice d’un ralentissement dans le mouvement.</text:p>
+   <text:p text:style-name="P26">(FIXME : ajouter l’image)</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T151">e</text:span> trait horizontal, analogue à celui qui surmonte la simple <text:span text:style-name="T7">virga</text:span>, a été pris par quelques <text:span text:style-name="T151">interprètes</text:span>, mais à tort, pour un <text:span text:style-name="T55">c</text:span> couché<text:span text:style-name="T151"> ;</text:span> on n’a pas pris garde que dans une écriture cursive, les traits de cette nature ne peuvent ressembler à ceux que <text:span text:style-name="T154">l’</text:span>on tracerait à la règle, et que facilement ils sont un peu arqués.</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17577_1958176226"/>Tripunctum<text:bookmark-end text:name="__RefHeading___Toc17577_1958176226"/></text:h>
+   <text:p text:style-name="P15">U<text:span text:style-name="T151">ne</text:span> particularité également nécessaire à signaler dans les manuscrits de S. Gall, reproduite dans plusieurs autres, <text:span text:style-name="T151">c</text:span>’est la manière dont sont écrits, en certaines circonstances, le <text:span text:style-name="T55">torculus</text:span> et le <text:span text:style-name="T55">p</text:span><text:span text:style-name="T7">es subbipun</text:span><text:span text:style-name="T55">c</text:span><text:span text:style-name="T7">tis</text:span>. on rencontre en effet ces deux neumes sous une forme qui semblerait empruntée à la notation à <text:span text:style-name="T7">points superposés</text:span>, bien qu’en réalité elle n’appartienne pas à ce système. Sous la <text:soft-page-break/>seconde forme dont nous parlons, le <text:span text:style-name="T55">torculus</text:span> est nommé <text:span text:style-name="T55">t</text:span><text:span text:style-name="T7">ripun</text:span><text:span text:style-name="T55">ct</text:span><text:span text:style-name="T7">um</text:span>, et le <text:span text:style-name="T7">pes subbipun</text:span><text:span text:style-name="T55">ct</text:span><text:span text:style-name="T7">is</text:span> est désigné par le simple qualificatif neutre <text:span text:style-name="T55">subbipuncte</text:span>.</text:p>
+   <text:p text:style-name="P26">(FIXME : ajouter l’image)</text:p>
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17579_1958176226"/>Salicus<text:bookmark-end text:name="__RefHeading___Toc17579_1958176226"/></text:h>
+   <text:p text:style-name="P15">C<text:span text:style-name="T151">e</text:span> qui caractérise pratiquement et distingue le <text:span text:style-name="T55">tripunctum</text:span> et le <text:span text:style-name="T55">subbipuncte</text:span>, <text:span text:style-name="T151">c</text:span>’est que dans l’une et l’autre formules, les premiers sons se trouvent ou sur le même ton ou à un demi-ton de distance. Il y a aussi dans les manuscrits romaniens une sorte de <text:span text:style-name="T55">p</text:span><text:span text:style-name="T7">es </text:span><text:span text:style-name="T55">q</text:span><text:span text:style-name="T7">uassus</text:span> ou de <text:span text:style-name="T7">salicus</text:span> ainsi figuré <text:span text:style-name="T144">(FIXME : ajouter l’image) ;</text:span> il ressemble pour la forme et l’effet <text:span text:style-name="T151">mélodique</text:span> au <text:span text:style-name="T7">q</text:span><text:span text:style-name="T55">uil</text:span><text:span text:style-name="T7">isma</text:span>, avec cette différence qu’il répond à une tierce majeure au lieu d’une tierce mineure, et qu’il n’a que deux courbes au lieu de trois.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T154">P</text:span>our ces particularités, que la plupart des manuscrits ne présentent pas, on comprend que ceux qui les contiennent les donnent avec plus ou moins d’abondance<text:span text:style-name="T151"> ;</text:span> on comprend aussi comment les uns sont plus explicites, sans contredire ceux qui le sont moins, ou ceux qui se taisent absolument. Cette variété apparente des neumes, sous ce rapport comme sous celui du genre d’écriture, prouve que les manuscrits ne sont pas la simple copie les uns des autres<text:span text:style-name="T151"> ;</text:span> et comme tous, quoique chacun à sa manière, expriment le même sens, et conduisent aux mêmes conclusions pratiques, la tradition grégorienne ne s’en trouve par là que plus puissamment confirmée.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc17581_1958176226"/><text:span text:style-name="T154">O</text:span>n doit plus d’attention au texte qu’à la note<text:bookmark-end text:name="__RefHeading___Toc17581_1958176226"/></text:h>
+   <text:p text:style-name="P15">Les signes d’écriture, quelque parfaits qu’on les suppos<text:span text:style-name="T154">e</text:span>, sont toujours impuissants à exprimer les nuances multiples du rythme de la parole qui est aussi celui du plain-chant. Beaucoup de ces nuances doivent être laissées, dans la musique comme dans le discours, non pas à l’arbitraire, mais au bon sens et à la nature. Le signe matériel sert à guider l’intelligence, mais ne peut la donner. <text:span text:style-name="T152">L</text:span>’intelligence, en s’emparant des mots pour rendre la pensée, leur <text:span text:style-name="T152">communique</text:span> sous le souffle de la pensée elle-même, les inflexions voulues. Ce souffle est le véritable accent du langage<text:span text:style-name="T152"> :</text:span> C’est lui qui coordonne et assouplit les éléments matériels de la phrase, C’est-à-dire les syllabes et les mots, et fait mouvoir dans le chant comme dans le discours les articulations diverses, dont le jeu est nécessaire à la vie de l’un comme de l’autre. Celui qui ne comprend pas une langue peut mettre plus ou moins d’adresse à imiter celui qui a l’intelligence de ce qu’il prononce<text:span text:style-name="T152"> ;</text:span> mais si pour arriver à ce résultat les signes d’accentuation, de <text:span text:style-name="T152">ponctuation</text:span> ou de notation peuvent avoir leur utilité, encore faut-il reconnaître que toujours insuffisants par eux-mêmes, ils peuvent souvent devenir une entrave<text:span text:style-name="T152"> ;</text:span> ce qui arrive lorsque, dans la fausse persuasion qu’on doit leur demander à eux seuls le secret de la bonne prononciation, on cherche à concentrer toute l’attention du lecteur ou du chantre sur ces signes<text:span text:style-name="T152"> ;</text:span> les précautions prises alors pour assurer un meilleur résultat, deviennent par leur exagération même la cause de l’insuccès.</text:p>
+   <text:p text:style-name="P15"><text:soft-page-break/>Qu’<text:span text:style-name="T152">il</text:span> nous soit permis, au sujet des lettres <text:span text:style-name="T152">significatives</text:span>, d’y voir une confirmation éclatante de notre manière d’expliquer la valeur propre des neumes<text:span text:style-name="T152"> ;</text:span> car si par eux-mêmes ces neumes avaient indiqué et les intervalles et la durée et la force des sons, Romanus n’aurait pas songé à ces signes accessoires, destinés dans sa pensée, non pas encore à préciser absolument ces intervalles, cette durée ou cette force, mais à guider les chantres, pour que ceux-ci pussent mieux saisir et mieux observer ce qu’il leur enseignait là-dessus dans ses leçons pratiques.</text:p>
+   <text:p text:style-name="P15">Tou<text:span text:style-name="T154">t</text:span> ceci prouve également que les notes grégoriennes ont une grande variété d’expression<text:span text:style-name="T152"> ;</text:span> on peut la leur donner sans qu’il soit nécessaire de chercher dans les neumes ce qui ne doit pas s’y trouver.</text:p>
+   <text:p text:style-name="P15">E<text:span text:style-name="T152">n</text:span> suivant, comme nous l’avons fait, les modifications qui marquent les divers âges de l’écriture musicale grégorienne, chacune d’elles apparaît avec son vrai caractère<text:span text:style-name="T152"> ;</text:span> on voit celles de ces modifications qui résultent d’un développement normal et celles qui constituent une altération<text:span text:style-name="T152"> ;</text:span> on comprend ce qui appartient à l’archéologie pure et ce qui a conservé une portée pratique.</text:p>
+   <text:p text:style-name="P15">E<text:span text:style-name="T152">n</text:span> reproduisant ainsi, et aussi fidèlement que possible, les anciens neumes, dans une forme devenue facilement intelligible à tous, et en même temps consacrée par la tradition, nous concilions le respect dû à l’antiquité avec les besoins du temps présent<text:span text:style-name="T152"> ;</text:span> nous suivons le progrès sans être révolutionnaires.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T154">N</text:span>ous allons au chapitre suivant reprendre la série des signes traditionnels de la notation grégorienne et en expliquer de nouveau la nature, afin de pouvoir plus sûrement ensuite en déterminer la valeur.</text:p>
   </office:text>
  </office:body>
 </office:document>
