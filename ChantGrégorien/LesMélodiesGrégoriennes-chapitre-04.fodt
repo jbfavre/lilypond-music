@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T15:22:20.448224019</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H45M59S</meta:editing-duration><meta:editing-cycles>41</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4870" meta:character-count="29251" meta:non-whitespace-character-count="24456"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T15:23:10.698292550</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H46M49S</meta:editing-duration><meta:editing-cycles>42</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4870" meta:character-count="29251" meta:non-whitespace-character-count="24456"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">176317</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">249721</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22139</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">33690</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22112</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23797</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">2568</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">204110</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">10283</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">259620</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">176317</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22137</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">210005</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">249721</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22110</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">273516</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">3</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">101</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">143</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
      <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
@@ -5727,7 +5727,7 @@
     </text:list-item>
    </text:list>
    <text:p text:style-name="P14">Les mêmes qualificatifs, dans certains tableaux de neumes, se trouvent appliqués à la <text:span text:style-name="T7">virg</text:span><text:span text:style-name="T32">a</text:span>, pour désigner le <text:span text:style-name="T32">cl</text:span><text:span text:style-name="T7">imacus</text:span>, qui est une <text:span text:style-name="T32">virga</text:span><text:span text:style-name="T7"> subbipun</text:span><text:span text:style-name="T32">c</text:span><text:span text:style-name="T7">tis</text:span>, <text:span text:style-name="T7">subtripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc. lorsque la <text:span text:style-name="T7">virga</text:span> est, non plus suivie, mais précédée de points, ce qui est le cas du <text:span text:style-name="T7">scandicus</text:span>, elle est dite, dans les mêmes tableaux, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræb</text:span><text:span text:style-name="T32">i</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræ</text:span><text:span text:style-name="T32">tri</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>. Si les points sont à la fois avant et après, c’est la <text:span text:style-name="T7">virga combipun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span><text:span text:style-name="T47">, </text:span><text:span text:style-name="T7">contripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc.</text:p>
-   <text:p text:style-name="P14">L<text:span text:style-name="T98">a</text:span> série des points, dans les formules ou ils entrent comme éléments, peut avoir en effet plus ou moins d’étendue <text:span text:style-name="T98">;</text:span> ainsi on rencontre quelquefois des formul<text:span text:style-name="T114">e</text:span>s telles que les suivantes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="char" svg:y="1.679cm" svg:width="6.421cm" svg:height="1.499cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14">L<text:span text:style-name="T98">a</text:span> série des points, dans les formules ou ils entrent comme éléments, peut avoir en effet plus ou moins d’étendue <text:span text:style-name="T98">;</text:span> ainsi on rencontre quelquefois des formul<text:span text:style-name="T114">e</text:span>s telles que les suivantes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="char" svg:y="1.679cm" svg:width="15cm" svg:height="3.5cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAACYoAAAI6CAYAAACDn+69AAAPPnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlrciw5boX/cxVeAkESfCyHJMgI78DL9weqpLnqHtszEVZ1S9VZWZkk
        cHAe2eH813/e8B/85Ko1FG29jlojP2WUkSZvevz6Ge+3xPJ+v58+f47+Oh7yjOm9SxzK/M1f
@@ -6152,7 +6152,7 @@
    <text:p text:style-name="P14">Le chant grégorien,<text:span text:style-name="T98"> comme</text:span> nous le savons par le témoignage des anciens, admet certains ornements d’un <text:span text:style-name="T98">caractère</text:span> spécial, certaines nuances d’exécution qui, sans appartenir à l’expression passionnée du théâtre, sans consister non plus en des effets de voix trop recherchés, plus déplacés encore à l’Église <text:span text:style-name="T98">qu’</text:span>ailleurs, demandent cependant, au moins quelquefois, particulièrement pour le <text:span text:style-name="T7">s</text:span><text:span text:style-name="T32">trop</text:span><text:span text:style-name="T7">hicus</text:span> et le <text:span text:style-name="T7">qu</text:span><text:span text:style-name="T32">il</text:span><text:span text:style-name="T7">isma</text:span>, une souplesse d’organe que les chantres romains envoyés en Gaule et en Germanie, du temps de Charlemagne, reprochaient à nos pères de ne pas posséder. Il y a donc dans le chant grégorien, des sons diversement nuancés, que nous distinguerons en sons <text:span text:style-name="T43">sy</text:span><text:span text:style-name="T44">n</text:span><text:span text:style-name="T43">copés</text:span>, <text:span text:style-name="T7">appuyés</text:span>, <text:span text:style-name="T7">répercutés</text:span>, <text:span text:style-name="T7">tremblés</text:span>, et <text:span text:style-name="T7">é</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">ouffés</text:span>.</text:p>
    <text:list xml:id="list3252109086" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>Lorsque deux formules, <text:span text:style-name="T98">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T98">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T98"> ;</text:span> nous verrons, en <text:soft-page-break/>traitant plus loin du <text:span text:style-name="T98">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. <text:span text:style-name="T114">Nous</text:span> en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T98">s’</text:span>agit <text:span text:style-name="T98">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T98">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P38"><text:soft-page-break/><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>Lorsque deux formules, <text:span text:style-name="T98">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T98">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T98"> ;</text:span> nous verrons, en traitant plus loin du <text:span text:style-name="T98">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. <text:span text:style-name="T114">Nous</text:span> en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T98">s’</text:span>agit <text:span text:style-name="T98">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T98">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAANEAAACwCAYAAACRkosQAAAT3npUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjavZpnkty6FYX/YxVeAnJYDi5ClXfg5fs77FaWnpLL01JzhsMGgRtOAMed
          //z7un/xVWKKLpfW66jV85VHHnHyTfevr/G8B5+f9+drv4/8/MV5Z+/zPnIqcUyvH9t8Xz85
@@ -7588,7 +7588,7 @@
       </draw:frame>, qui indique comme le <text:span text:style-name="T7">distropha</text:span> une note jointe à une autre à l’unisson, avec cette différence que l’émission en est plus liée, et se rapproche de la syncope.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T103"><text:line-break/></text:span><text:span text:style-name="T114">L</text:span>orsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:soft-page-break/><text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T103"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P38"><text:soft-page-break/><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T103"><text:line-break/></text:span><text:span text:style-name="T114">L</text:span>orsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T103"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJYAAAB2CAYAAAAqRWpgAAAOBXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZlZcuS4EYbfcQofAcgEkMBxsEb4Bj6+v2SVNL3NTPeMHxxhq0IkxSJB
          IJd/ocL51z9v+Ac/2lsMuVirvdbIT+65y+CgxddPf7Yp5mf7OlXf36Wvzwf7+EI4pez19aeN
@@ -8828,7 +8828,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>etc.</text:p>
-   <text:list xml:id="list152221050571621" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list152313071568852" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P39">Si la formule se termine par un son grave, le trait final, ou <text:span text:style-name="T7">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T105"> :</text:span></text:p>
     </text:list-item>
@@ -9479,7 +9479,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:list xml:id="list152221844765917" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list152311776916430" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P39">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T7">s</text:span><text:span text:style-name="T38">trop</text:span><text:span text:style-name="T7">hicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
     </text:list-item>
@@ -9724,7 +9724,7 @@
      </draw:image>
     </draw:frame> au lieu de <text:span text:style-name="T91">’’’</text:span></text:p>
    <text:p text:style-name="P14"><text:span text:style-name="T114">P</text:span>our l’<text:span text:style-name="T7">oriscus</text:span>, le procédé d’écriture est le même que pour l’<text:span text:style-name="T7">apostropha</text:span>.</text:p>
-   <text:p text:style-name="P14">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T52"> :</text:span> toutes les formules avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T47"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T52"> :</text:span> toutes les formules avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T47"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-<text:soft-page-break/>voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFIAAAA8CAYAAAD10u2xAAAMoXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5Zhbdhw5DkT/uYpZAt8El0PwcU7vYJY/F8ySLKttt9U98zVVdmUpM4sP
        RCAQSLf//cdx/+KVqojLpUnttXpeueceB1/EP69+P4PP9/O+SnxdC9+fd2m+LkROJY7p+bON
@@ -10212,7 +10212,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/><text:span text:style-name="T107">etc.</text:span></text:p>
-   <text:p text:style-name="P14"><text:soft-page-break/><text:span text:style-name="T108">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formule, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formule devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14"><text:span text:style-name="T108">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formule, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formule devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIIAAABiCAYAAACcRwt/AAARmnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZppdhu7EUb/YxVZAqYCUMtBYTgnO8jyc6tJOR5kx895ES021WyigRq+
        AXQ4//rnDf/gp7bcQpU+mrYW+alaNU9ejPj60ec5xfo8Pz8jv99L354P7eONzKnCsbz+7PN9
@@ -10699,7 +10699,7 @@
    <text:p text:style-name="P14">Les formules sont des groupes composés d’autant de <text:span text:style-name="T39">points</text:span> distin<text:span text:style-name="T109">c</text:span>ts qu’il y a de sons différents, et les <text:span text:style-name="T39">points</text:span> sont disposés de manière à diriger le mouvement de la voix de l’aigu au grave ou du grave à l’aigu.</text:p>
    <text:list xml:id="list1507963406" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40">Si le mouvement est descendant, la formule est composée de simples <text:span text:style-name="T39">points</text:span> ainsi superposés verticalement<text:span text:style-name="T109"> :</text:span> et le <text:span text:style-name="T39">point</text:span> placé au sommet de la perpendiculaire <text:span text:style-name="T109">s’</text:span>exprime le premier.</text:p>
+     <text:p text:style-name="P40"><text:soft-page-break/>Si le mouvement est descendant, la formule est composée de simples <text:span text:style-name="T39">points</text:span> ainsi superposés verticalement<text:span text:style-name="T109"> :</text:span> et le <text:span text:style-name="T39">point</text:span> placé au sommet de la perpendiculaire <text:span text:style-name="T109">s’</text:span>exprime le premier.</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.229cm" svg:height="0.3cm" draw:z-index="62"><draw:image loext:mime-type="image/png">
@@ -10856,9 +10856,9 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus.</text:p>
-   <text:list xml:id="list152222454148907" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152312026207038" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40"><text:soft-page-break/>S<text:span text:style-name="T111">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la <text:span text:style-name="T114">droite</text:span>, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
+     <text:p text:style-name="P40">S<text:span text:style-name="T111">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la <text:span text:style-name="T114">droite</text:span>, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="64"><draw:image loext:mime-type="image/png">
@@ -11079,7 +11079,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Scandicus.</text:p>
-   <text:list xml:id="list152221335796899" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152312595591313" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40"><text:span text:style-name="T111">Il</text:span> en est toujours ainsi de <text:span text:style-name="T111">l</text:span>a dernière note d’une formule, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
@@ -11301,7 +11301,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus resupinus.</text:p>
-   <text:list xml:id="list152221368456841" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152313142474010" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40">Si la note culminante de la formule n’est pas la dernière, le <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T111">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
@@ -11511,7 +11511,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Pes subpun<text:span text:style-name="T111">c</text:span>tis.</text:p>
-   <text:list xml:id="list152222880495100" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152312434753667" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40"><text:span text:style-name="T111">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T111">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T7"> superposés</text:span>.</text:p>
     </text:list-item>
