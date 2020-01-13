@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T13:53:08.317394861</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT35M35S</meta:editing-duration><meta:editing-cycles>21</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4868" meta:character-count="29244" meta:non-whitespace-character-count="24467"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T13:55:47.322969280</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT38M13S</meta:editing-duration><meta:editing-cycles>23</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4868" meta:character-count="29244" meta:non-whitespace-character-count="24467"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">49595</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">55224</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">22050</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">11458</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">13868</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">53023</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">12201</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">62904</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">49595</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">55224</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">22049</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">61052</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">66680</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">3</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -126,7 +126,9 @@
  </office:settings>
  <office:scripts>
   <office:script script:language="ooo:Basic">
-   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
   </office:script>
  </office:scripts>
  <office:font-face-decls>
@@ -480,15 +482,18 @@
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="000bb6a7"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph">
-   <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P41" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-align="center" fo:text-indent="0cm"/>
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph">
+   <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-align="center" fo:text-indent="0cm"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="001ae764"/>
@@ -1056,19 +1061,19 @@
    </text:list-level-style-number>
   </text:list-style>
   <style:style style:name="gr1" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  \relative c&apos; { c c d c c d c c d c c d c c \bar &quot;||&quot; }&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Àd- jù- tó- rì- ùm nó- strùm ìn nó- mì- né Dó- mì- nì&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; d&apos; c&apos; b c&apos; a g a g f a g g \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- tó- ri- um nó- strum in nó- mi- ne Dó- mi- ni.&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" style:protect="position size" fo:margin-top="0cm" fo:margin-bottom="0.499cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true"/>
   </style:style>
   <style:style style:name="gr2" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  b b b b a b c&apos; \divisioMaior c&apos; a b b b b a b b c&apos; \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- to- ri- um no- strúm non- ne sít in nó- mi- ne Do- mi- ní?&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  \relative c&apos; { c c d c c d c c d c c d c c \bar &quot;||&quot; }&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Àd- jù- tó- rì- ùm nó- strùm ìn nó- mì- né Dó- mì- nì&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
   </style:style>
   <style:style style:name="gr3" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; c&apos; c&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; c&apos; c&apos; c&apos; c&apos; d&apos; \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- to- ri- um no- strúm non- ne sít in nó- mi- ne Do- mi- ní?&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  b b b b a b c&apos; \divisioMaior c&apos; a b b b b a b b c&apos; \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- to- ri- um no- strúm non- ne sít in nó- mi- ne Do- mi- ní?&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
   </style:style>
   <style:style style:name="gr4" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; d&apos; c&apos; b c&apos; a g a g f a g g \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- tó- ri- um nó- strum in nó- mi- ne Dó- mi- ni.&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="from-left" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; c&apos; c&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; c&apos; c&apos; c&apos; c&apos; d&apos; \bar &quot;||&quot;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- to- ri- um no- strúm non- ne sít in nó- mi- ne Do- mi- ní?&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
   </style:style>
   <style:style style:name="gr5" style:family="graphic">
-   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- tó- ri- um nó- strum in nó- mi- ne Dó- mi- ni.&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="char" style:horizontal-pos="center" style:horizontal-rel="page-content" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
+   <style:graphic-properties OOoLilyPondCode="% For getting started read (copy URL into your web browser):&#x0a;% https://github.com/openlilylib/LO-ly&#x0a;% http://lilypond.org/doc/stable/Documentation/learning/simple-notation%&#x0a;%&#x0a;% Use the &quot;Custom 1&quot; to transpose your music expression. E. g. try &quot;e a&apos;&quot;.&#x0a;&#x0a;\new VaticanaVoice = &quot;cantus&quot; {&#x0a;  c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos; d&apos; c&apos; c&apos;&#x0a;}&#x0a;\new Lyrics \lyricsto &quot;cantus&quot; {&#x0a;  Ad- ju- tó- ri- um nó- strum in nó- mi- ne Dó- mi- ni.&#x0a;}&#x0a;" OOoLilyPondTemplate="Gregorian [SVG]" OOoLilyPondLineWidth="17.5\cm" OOoLilyPondStaffSize="24" OOoLilyPondCustom1="c c" OOoLilyPondCustom2="6\cm" OOoLilyPondUseDefaultCode="False" OOoLilyPondUseDefaultLineWidth="False" OOoLilyPondUseDefaultStaffSize="False" OOoLilyPondUseDefaultCustom1="False" OOoLilyPondUseDefaultCustom2="True" draw:stroke="none" svg:stroke-width="0cm" svg:stroke-color="#3465a4" draw:marker-start="" draw:marker-start-width="0.199cm" draw:marker-start-center="false" draw:marker-end="" draw:marker-end-width="0.199cm" draw:marker-end-center="false" draw:fill="none" draw:fill-color="#729fcf" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.199cm" draw:shadow-offset-y="0.199cm" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" style:protect="position size" fo:margin-top="0cm" fo:margin-bottom="0cm" style:run-through="foreground" style:wrap="none" style:vertical-pos="from-top" style:vertical-rel="char" style:horizontal-pos="center" style:horizontal-rel="page-content" draw:wrap-influence-on-position="once-concurrent" loext:allow-overlap="true" style:flow-with-text="false"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2cm" fo:margin-bottom="2cm" fo:margin-left="2cm" fo:margin-right="2cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
@@ -1368,7 +1373,7 @@
      </draw:image>
     </draw:frame></text:p>
    <text:p text:style-name="P14"><text:soft-page-break/>ou bien en modulant davantage, mais en conservant toujours le <text:span text:style-name="T84">caractère</text:span> de syllabe culminante à la syllabe accentuée<text:span text:style-name="T85"> :</text:span></text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><draw:frame text:anchor-type="paragraph" draw:z-index="17" draw:name="Forme1" draw:style-name="gr4" draw:text-style-name="P41" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.081cm" svg:y="0.672cm">
+   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3988_3513054921"/><draw:frame text:anchor-type="char" draw:z-index="91" draw:name="Forme1" draw:style-name="gr1" draw:text-style-name="P41" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.17cm" svg:y="-0.27cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABdgAAADECAIAAAADAdQYAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -1607,11 +1612,11 @@
       </office:binary-data>
       <text:p/>
      </draw:image>
-    </draw:frame><text:bookmark-start text:name="__RefHeading___Toc3988_3513054921"/>L’accent oratoire est logique ou pathétique<text:bookmark-end text:name="__RefHeading___Toc3988_3513054921"/></text:h>
+    </draw:frame>L’accent oratoire est logique ou pathétique<text:bookmark-end text:name="__RefHeading___Toc3988_3513054921"/></text:h>
    <text:p text:style-name="P14">C<text:span text:style-name="T84">e</text:span> <text:span text:style-name="T85">n’</text:span>est pas que la musique se soit toujours astreinte, même à <text:span text:style-name="T85">l’</text:span>órigine, à imiter dans ses modulations, la modulation même du discours, et à faire ainsi toujours marcher parallèlement son propre accent, <text:span text:style-name="T85">l’</text:span>accent musical, avec <text:span text:style-name="T85">l’</text:span>accent grammatical. nous devons même faire tout de suite ici une remarque importante. Dans la parole, outre <text:span text:style-name="T82">l’accent</text:span> tonique qui module chaque mot selon certaines lois purement grammaticales, il y a <text:span text:style-name="T85">l’</text:span>accent oratoire qui <text:span text:style-name="T82">affecte</text:span> plutot la phrase, et en varie la modulation d’après les pensées ou les sentiments divers qui sont exprimés. Ainsi, en ce qui touche les pensées, la phrase peut être affirmative, négative, dubitative, interrogative<text:span text:style-name="T85"> ;</text:span> et ces diverses circonstances, appartenant à <text:span text:style-name="T85">l’</text:span>ordre logique, amènent des inflexions de voix différentes les unes des autres. En ce qui concerne les sentiments, la phrase exprim<text:span text:style-name="T82">e</text:span> la joie ou la tristesse, la crainte ou <text:span text:style-name="T85">l’</text:span>espérance, le désir ou la répulsion, <text:span text:style-name="T85">l’</text:span>amour ou la haine<text:span text:style-name="T85"> ;</text:span> et ces impressions diverses, venant agiter diversement le cœur de l’hómme, communiquent à sa voix un accent qui varie avec la nature du sentiment lui-même. <text:span text:style-name="T85">L’</text:span>accent oratoire, soit <text:span text:style-name="T7">logique</text:span> soit <text:span text:style-name="T7">pathétique</text:span>, vient alors se substituer à <text:span text:style-name="T85">l’</text:span>accent grammatical et modifier les inflexions de voix que <text:span text:style-name="T85">l’</text:span>accent tonique, laissé à lui seul, donnerait régulièrement à la phrase. Reprenons <text:span text:style-name="T85">l’</text:span>exemple déjà cité, et donnons-lui une forme interrogative<text:span text:style-name="T85"> :</text:span> l’élévation de voix va changer de place, et se porter sur d’autres syllabes.</text:p>
    <text:p text:style-name="P16">Adjutorium nostrúm nonne sít in nomine Dominí ?</text:p>
    <text:p text:style-name="P14">Ce que nous pourrions traduire musicalement de cette manière:</text:p>
-   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="18" draw:name="Forme3" draw:style-name="gr3" draw:text-style-name="P41" svg:width="15.306cm" svg:height="1.659cm" svg:x="0.847cm" svg:y="0.319cm">
+   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="17" draw:name="Forme3" draw:style-name="gr4" draw:text-style-name="P41" svg:width="15.306cm" svg:height="1.659cm" svg:x="0.847cm" svg:y="0.319cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABxAAAADECAIAAAAwBSOMAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -1868,7 +1873,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>ou mieux encore, mais toujours dans le même genre de mouvement<text:span text:style-name="T83"> :</text:span></text:p>
-   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="19" draw:name="Forme4" draw:style-name="gr2" draw:text-style-name="P41" svg:width="15.306cm" svg:height="1.837cm" svg:x="0.847cm" svg:y="0.321cm">
+   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="18" draw:name="Forme4" draw:style-name="gr3" draw:text-style-name="P41" svg:width="15.306cm" svg:height="1.837cm" svg:x="0.847cm" svg:y="0.321cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABxAAAADZCAIAAACPTTLJAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -2137,7 +2142,7 @@
     </draw:frame>C<text:span text:style-name="T86">ette </text:span>manière de provóquer la réponse en suspendant la voix, a fait dire à plusieurs grammairiens, que <text:span text:style-name="T85">l’</text:span>accent, dans les interrogations, affecte la syllabe finale<text:span text:style-name="T85"> :</text:span> ils ont confondu <text:span text:style-name="T85">l’</text:span>accent tonique et <text:span text:style-name="T85">l’</text:span>accent oratoire. Ainsi donc, sans sortir du Domaine de la simple parole, nous voyons déjà, comme dans <text:span text:style-name="T85">l’</text:span>exemple précédent, <text:span text:style-name="T85">l’</text:span>accent tonique se modifier ou même s’effacer en présence de <text:soft-page-break/><text:span text:style-name="T85">l’</text:span>accent oratoire<text:span text:style-name="T85"> ;</text:span> à plus forte raison, comme nous <text:span text:style-name="T85">l’</text:span>expliquerons plus loin en exposant, à propos du <text:span text:style-name="T86">rythme</text:span>, le but et la nature de <text:span text:style-name="T85">l’</text:span>accent tonique, celui-ci doit-il souvent disparaître ou se transformer <text:span text:style-name="T85">lorsqu’</text:span>il se trouve en concurrence avec le chant. Quelle que soit d’ailleurs la différence des modulations, il <text:span text:style-name="T85">n’</text:span>en existe pas moins un rapport réel entre les mouvements de voix propres au langage et ceux de la musique, ainsi <text:span text:style-name="T85">qu’</text:span>entre les signes dont on s’est servi pour les exprimer. poursuivons notre étude comparative.</text:p>
    <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3990_3513054921"/>Accent grave<text:bookmark-end text:name="__RefHeading___Toc3990_3513054921"/></text:h>
    <text:p text:style-name="P14">Il suffit aux grammairiens de noter la syllabe qui, dans chaque mot, a le privilège de <text:span text:style-name="T85">l’</text:span>accent tonique, et qui doit en conséquence être régulièrement proférée <text:span text:style-name="T85">d’</text:span>un ton de voix plus aigu; les autres par rapport à <text:span text:style-name="T87">celles-là</text:span> sont graves, <text:span text:style-name="T85">c’</text:span>est-à-dire moins élevées dans <text:span text:style-name="T85">l’</text:span>échelle des tons, plus humbles <text:span text:style-name="T85">d’</text:span>intonation, et par là même aussi moins éclatantes. Les syllabes graves ne portent ordinairement aucun signe<text:span text:style-name="T85"> ;</text:span> <text:span text:style-name="T85">l</text:span>e signe existe cependant<text:span text:style-name="T85"> :</text:span> c’est également un trait, mais tracé dans le sens opposé à celui de <text:span text:style-name="T85">l’</text:span>accent aigu; il descend de gauche à dpoite <text:span text:style-name="T89">`</text:span>, au lieu de monter <text:span text:style-name="T88">´</text:span>, et son sommet se trouve incliné sur la gauche au lieu de <text:span text:style-name="T85">l’</text:span>être sur la dpoite : <text:span text:style-name="T85">l’</text:span>accent grave est ainsi en tout <text:span text:style-name="T85">l’</text:span>inverse de <text:span text:style-name="T85">l’</text:span>accent aigu.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><draw:frame text:anchor-type="paragraph" draw:z-index="20" draw:name="Forme5" draw:style-name="gr1" draw:text-style-name="P40" svg:width="12.598cm" svg:height="1.625cm" svg:x="2.286cm" svg:y="0.321cm">
+   <text:h text:style-name="P7" text:outline-level="2"><draw:frame text:anchor-type="paragraph" draw:z-index="19" draw:name="Forme5" draw:style-name="gr2" draw:text-style-name="P42" svg:width="12.598cm" svg:height="1.625cm" svg:x="2.286cm" svg:y="0.321cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABdAAAADACAIAAACLR9b6AAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -2377,7 +2382,7 @@
    <text:p text:style-name="P14">Ainsi, par exemple, <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">óma</text:span> se prononcera <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">óóma</text:span><text:span text:style-name="T28"> ;</text:span> nous aurons ici trois temps comme on le voit ci-après, N° 1 ; les deux premiers temps sont sur la première syllabe et le troisième sur la dernière : ceci est la quantité ; voyons <text:span text:style-name="T85">l’</text:span>accent.</text:p>
    <text:p text:style-name="P14"><text:soft-page-break/><text:span text:style-name="T87">Le</text:span> mouvement naturel de la voix est de redescendre après avoir monté, et non pas de finir en montant. Dans la langue latine en particulier, cette loi est absolue en ce qui concerne <text:span text:style-name="T87">l’</text:span>accent grammatical. Régulièrement, dans un mot, la voix monte sur le temps antépénultième, N° 2 ; elle ne fait exception à cette règle que dans le cas ou il lui est impossible de l’óbserver. Ainsi dans <text:span text:style-name="T79">l’</text:span>exemple ci-dessous, N° 3, l<text:span text:style-name="T79">a</text:span> voix, après avoir monté sur la première partie ou le premier temps de la première syllabe du mot, redescend sur la deuxième partie ou le deuxième temps de cette même syllabe, puis vient se reposer sur la finale.</text:p>
    <text:p text:style-name="P17">ooooo</text:p>
-   <text:p text:style-name="P16">N° 1. <draw:frame draw:style-name="fr8" draw:name="Image86" text:anchor-type="char" svg:x="3.701cm" svg:y="1.02cm" svg:width="1.041cm" svg:height="0.499cm" draw:z-index="22"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16">N° 1. <draw:frame draw:style-name="fr8" draw:name="Image86" text:anchor-type="char" svg:x="3.701cm" svg:y="1.02cm" svg:width="1.041cm" svg:height="0.499cm" draw:z-index="21"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAPcAAAB2CAYAAAAUYAUuAAASDHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppchs7EoT/4xRzBOwFHAdrxNxgjj9fNilZ3t7YESNaJNXsbgBVWVmZ
        oN35z7+v+xc/udTscrFWe62en9xzj4M3zb9++vMcfH6en59r78/C98ed1fcHkUOJ1/T608b7
@@ -2494,7 +2499,7 @@
        YII=
       </office:binary-data>
      </draw:image>
-    </draw:frame>Róóma<text:tab/><text:tab/><text:tab/>N°2.<text:span text:style-name="T27"> </text:span><draw:frame draw:style-name="fr8" draw:name="Image87" text:anchor-type="char" svg:x="8.601cm" svg:y="1cm" svg:width="0.99cm" svg:height="0.499cm" draw:z-index="23"><draw:image loext:mime-type="image/png">
+    </draw:frame>Róóma<text:tab/><text:tab/><text:tab/>N°2.<text:span text:style-name="T27"> </text:span><draw:frame draw:style-name="fr8" draw:name="Image87" text:anchor-type="char" svg:x="8.601cm" svg:y="1cm" svg:width="0.99cm" svg:height="0.499cm" draw:z-index="22"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAOUAAAB0CAYAAAB68/XwAAAOtnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZlpkiM3Dkb/8xRzBO4Aj8MFjPAN5vjzkFJVb7a7O+wpdSmzUikmCeBb
        wA723z9u+A8/ZZQaahPto/fITx115MmJxtfPeN5TrM/782Pt/Vn69nqQ+v4gc6lwLK8/Zb7v
@@ -2597,7 +2602,7 @@
    <text:p text:style-name="P14">Au lieuoo<text:span text:style-name="T7">Roma</text:span> prenonoo<text:span text:style-name="T7">m</text:span><text:span text:style-name="T28">æ</text:span> et étudions-en la quantité et <text:span text:style-name="T85">l’</text:span>accent. La quantité est celle que nous indiquons ci-dessous, N° 4. nous avons ici quatre temps au lieu de trois<text:span text:style-name="T85"> ;</text:span> et d’après le principe que nous émettions, <text:span text:style-name="T85">c’</text:span>est-à-dire en plaçant <text:span text:style-name="T85">l’</text:span>accent aigu au troisième temps avant la fin, nous obtiendrons ce que l’on voit au N°5<text:span text:style-name="T85"> ;</text:span> puis en marquant aussi les accents graves, nous aurons ce qui est écrit au N°6.</text:p>
    <text:p text:style-name="P14"/>
    <text:p text:style-name="P17"/>
-   <text:p text:style-name="P16">N° 4 Roomae<text:tab/><draw:frame draw:style-name="fr8" draw:name="Image89" text:anchor-type="char" svg:x="3.5cm" svg:y="1cm" svg:width="1.221cm" svg:height="0.499cm" draw:z-index="24"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16">N° 4 Roomae<text:tab/><draw:frame draw:style-name="fr8" draw:name="Image89" text:anchor-type="char" svg:x="3.5cm" svg:y="1cm" svg:width="1.221cm" svg:height="0.499cm" draw:z-index="23"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAR4AAAB1CAYAAACYjY77AAAVsnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppliO3coX/YxVeAqbAsByM53gHXr6/C7JbLT3pWbLd7CqyWMxMIIY7
        RJY7//Wf1/0H/yxac9lqK70Uz7/cc4+DF81//vX3Pfj8vn9+ON9X4ffvu2rfgyJvJZ7T58c6
@@ -2736,7 +2741,7 @@
        ONAAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:tab/><draw:frame draw:style-name="fr8" draw:name="Image90" text:anchor-type="char" svg:x="8.4cm" svg:y="1cm" svg:width="1.39cm" svg:height="0.499cm" draw:z-index="25"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:tab/><draw:frame draw:style-name="fr8" draw:name="Image90" text:anchor-type="char" svg:x="8.4cm" svg:y="1cm" svg:width="1.39cm" svg:height="0.499cm" draw:z-index="24"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAQUAAABeCAYAAAAqqAERAAARv3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlnlpu5dkX/YxQeAtJFGA7iWm8GHr73AavUUrfcfsGiiuEjiXDDCaA7
        //2P6/6LfzmH6LLVVnopnn+55x4HT5r//OvvPvj87j//7OtZ+PW6s/P1gcilxGP6vKzj8xgG
@@ -2849,7 +2854,7 @@
        SQYQjhCsmRdZ40oKQENBrDCd7H0AVHo/cEsSACkAeM9f1VTWxvDb1m0AAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><draw:frame draw:style-name="fr8" draw:name="Image91" text:anchor-type="char" svg:x="13.3cm" svg:y="1cm" svg:width="1.341cm" svg:height="0.499cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
+    </draw:frame><draw:frame draw:style-name="fr8" draw:name="Image91" text:anchor-type="char" svg:x="13.3cm" svg:y="1cm" svg:width="1.341cm" svg:height="0.499cm" draw:z-index="25"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAQoAAABjCAYAAABjR07vAAAWfXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppkhs5soT/4xTvCFgDwHGwms0N5vjvc5BSt3qZxWxUUpFFkZnICA9f
        kOXOP/9x3f/xpySLLpfarJt5/uSeexw8af7zp7/vwef3/fNnfJ+FX193lr5viLyk59+f6/g8
@@ -5019,7 +5024,7 @@
       <text:p text:style-name="P24">Porrectus flexus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P25"><draw:frame draw:style-name="fr4" draw:name="Image36" text:anchor-type="as-char" svg:width="1cm" svg:height="0.621cm" draw:z-index="28"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P25"><draw:frame draw:style-name="fr4" draw:name="Image36" text:anchor-type="as-char" svg:width="1cm" svg:height="0.621cm" draw:z-index="27"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALEAAABuCAYAAABoQfI/AAANoHpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja1Zlrkhy5DYT/8xQ+AgkSBHkcPiN8Ax/fH6p7ZkcrraX1boTD05qunuoq
           PpBAZqIUzr/+ecM/+MmWaihqrfZaIz+lly6DDy2+fvrznmJ53p+f+T7y9zfnQz3vL4RTmWN+
@@ -5121,7 +5126,7 @@
       <text:p text:style-name="P24">Porrectus subpunctis</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P25"><draw:frame draw:style-name="fr4" draw:name="Image37" text:anchor-type="as-char" svg:width="1cm" svg:height="0.82cm" draw:z-index="29"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P25"><draw:frame draw:style-name="fr4" draw:name="Image37" text:anchor-type="as-char" svg:width="1cm" svg:height="0.82cm" draw:z-index="28"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAM4AAACqCAYAAADlenCIAAAVSnpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja3ZpXlhw3EkX/sYpZAnwAy4E9Z3Ywy5/7sqrJppGhpDMfw5a6mtVZmUCY
           ZwJ05z//vu5f/CklNZeLtdpr9fzJPfc4+KH515/+fA8+P9+fP+u8fxe+fd+N8f5F5K3Ea3r9
@@ -5266,7 +5271,7 @@
      <text:p text:style-name="P35"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent grave</text:span> <text:span text:style-name="T94">`</text:span>, dans le cas ou il n’est pas joint à l’accent aigu, a pris avec la forme, le nom même du point <text:span text:style-name="T65">·</text:span>, et <text:span text:style-name="T95">s’</text:span>est appelé <text:span text:style-name="T7">pun</text:span><text:span text:style-name="T30">ct</text:span><text:span text:style-name="T7">um</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P35"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent aigu</text:span> ˊ employé comme note isolée, a pris en musique le nom de <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">rga</text:span>.<text:line-break/>Dans certains manuscrits il est tracé perpendiculairement<text:span text:style-name="T96"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image7" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.259cm" svg:height="0.499cm" draw:z-index="30"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P35"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent aigu</text:span> ˊ employé comme note isolée, a pris en musique le nom de <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">rga</text:span>.<text:line-break/>Dans certains manuscrits il est tracé perpendiculairement<text:span text:style-name="T96"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image7" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.259cm" svg:height="0.499cm" draw:z-index="29"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEgAAACJCAYAAACPWX5WAAAJP3pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjatZh/lhwpDoT/5xR7BECA4Dj8EO/tDfb4+ymr3NP2eOyxZ7fyVWV2VhYI
          RSgUdLD//PuGf/HKvfRQqvY2Wou8yigjTy56fL3G85lieT6fV/nyXfr6fujj/UXmlnCW1586
@@ -5335,7 +5340,7 @@
      <text:p text:style-name="P35"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent circonflexe</text:span> ^, a conservé chez certains auteurs le nom de <text:span text:style-name="T7">f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exa</text:span> et <text:span text:style-name="T96">s’</text:span>est appelé chez d’autres, <text:span text:style-name="T29">cli</text:span><text:span text:style-name="T7">vis</text:span> ou <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">lini</text:span><text:span text:style-name="T7">s</text:span>, pour <text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">nclivis</text:span> ou <text:span text:style-name="T7">inclin</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">s</text:span><text:span text:style-name="T31"> :</text:span> termes <text:span text:style-name="T96">synonymes</text:span> de <text:span text:style-name="T29">fl</text:span><text:span text:style-name="T7">exa</text:span>. Le nom complet serait <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">ir</text:span><text:span text:style-name="T7">ga flexa</text:span> ou <text:span text:style-name="T7">virga inclivis</text:span>, <text:span text:style-name="T7">virga inclinis</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P35"><text:span text:style-name="T96">L</text:span>’anticirconflexe <draw:frame draw:style-name="fr1" draw:name="Image5" text:anchor-type="as-char" svg:y="-0.395cm" svg:width="0.801cm" svg:height="0.55cm" draw:z-index="31"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P35"><text:span text:style-name="T96">L</text:span>’anticirconflexe <draw:frame draw:style-name="fr1" draw:name="Image5" text:anchor-type="as-char" svg:y="-0.395cm" svg:width="0.801cm" svg:height="0.55cm" draw:z-index="30"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALsAAACBCAYAAACYccuhAAAKoXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZhpkiO7DYT/8xQ+AgkuAI/DNcI38PH9oaTuWd688RuPw39sKVpVXari
          gkwkEgrnH3+/4W+8ctIWSlVrvbXIq/TSZXBi8fXqz2eK5fl8XnO+v0vfXg/2PonCpcwxv/7V
@@ -5408,7 +5413,7 @@
          sEuwS7BLsEuwS7BLsEuwS7ALdgl2CXYJdmm+nmNExiu/ej/nAAAAAElFTkSuQmCC
         </office:binary-data>
        </draw:image>
-      </draw:frame>, sans doute à cause de sa forme, <text:span text:style-name="T96">s’</text:span>est appelé <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T7">p</text:span><text:span text:style-name="T29">o</text:span><text:span text:style-name="T7">datus</text:span>.<text:line-break/><text:span text:style-name="T96">on</text:span> remarque souvent dans les manuscrits, pour le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span>, la <text:span text:style-name="T7">flexa</text:span> et le <text:span text:style-name="T7">torculus</text:span>, l’effet de la tendance dont nous parlions plus haut, et qui porte le scribe, sans <text:span text:style-name="T96">qu’</text:span>il y songe, à faire le trait de l’accent grave moins long que celui de l’accent aigu<text:span text:style-name="T96"> : </text:span><text:span text:style-name="T96"><draw:frame draw:style-name="fr2" draw:name="Image8" text:anchor-type="as-char" svg:width="0.801cm" svg:height="0.43cm" draw:z-index="32"><draw:image loext:mime-type="image/png">
+      </draw:frame>, sans doute à cause de sa forme, <text:span text:style-name="T96">s’</text:span>est appelé <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T7">p</text:span><text:span text:style-name="T29">o</text:span><text:span text:style-name="T7">datus</text:span>.<text:line-break/><text:span text:style-name="T96">on</text:span> remarque souvent dans les manuscrits, pour le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span>, la <text:span text:style-name="T7">flexa</text:span> et le <text:span text:style-name="T7">torculus</text:span>, l’effet de la tendance dont nous parlions plus haut, et qui porte le scribe, sans <text:span text:style-name="T96">qu’</text:span>il y songe, à faire le trait de l’accent grave moins long que celui de l’accent aigu<text:span text:style-name="T96"> : </text:span><text:span text:style-name="T96"><draw:frame draw:style-name="fr2" draw:name="Image8" text:anchor-type="as-char" svg:width="0.801cm" svg:height="0.43cm" draw:z-index="31"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALsAAABlCAYAAAAVpJI1AAAPu3pUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHjavZl7ciSpEYf/5xQ+AiQkj+MACRG+gY/vL6tb2tHsrFcTdlg96uqprqIg
           H78HCudf/7zhH/yUJDEUbb2OWiM/ZZQhkw89vn7G855ied6fn7Xe36Wv50PV9xfCqcwxv/7b
@@ -5507,7 +5512,7 @@
           LgK7COwisAvsIrCLnJ0v/Ydm7/52XL0AAAAASUVORK5CYII=
          </office:binary-data>
         </draw:image>
-       </draw:frame></text:span><text:span text:style-name="T96"><text:line-break/></text:span><text:soft-page-break/>D<text:span text:style-name="T96">e</text:span> plus, quand l’écriture devient cursive, on voit peu à peu l’angle du point de jonction s’arrondir : <draw:frame draw:style-name="fr2" draw:name="Image9" text:anchor-type="as-char" svg:width="0.801cm" svg:height="0.36cm" draw:z-index="33"><draw:image loext:mime-type="image/png">
+       </draw:frame></text:span><text:span text:style-name="T96"><text:line-break/></text:span><text:soft-page-break/>D<text:span text:style-name="T96">e</text:span> plus, quand l’écriture devient cursive, on voit peu à peu l’angle du point de jonction s’arrondir : <draw:frame draw:style-name="fr2" draw:name="Image9" text:anchor-type="as-char" svg:width="0.801cm" svg:height="0.36cm" draw:z-index="32"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAARIAAAB7CAYAAAC4uw8FAAAO8HpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja1ZldciS5DYTfeQofgf8Aj0MSZIRv4OP7Q3VLK+2OZ2fCfrF61F2qriqS
          QCIzwQnnX/+84R/8lBF7qE20j94jP3XUkScHGl8/43lPsT7vrz/y+yh9Px9kvW/yCwqf5fWn
@@ -5611,7 +5616,7 @@
       </draw:frame><text:line-break/>Les signes précédents suffisent à marquer la simple modulation du discours<text:span text:style-name="T95"> ;</text:span> mais pour noter les mouvements de voix plus étendus et beaucoup plus variés que comporte le chant, il est nécessaire d’augmenter le nombre des combinaisons.<text:line-break/>La notation musicale, outre le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">un</text:span><text:span text:style-name="T29">ct</text:span><text:span text:style-name="T7">um</text:span>, la <text:span text:style-name="T7">virga</text:span>, la <text:span text:style-name="T7">clivis</text:span> et le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span>, comprendra donc d’autres formulés plus compliquées, mais toujours produites par la combinaison de l’accent grave et de l’accent ai<text:span text:style-name="T96">g</text:span>u.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P35">Dans le <text:span text:style-name="T7">scandicus</text:span> la voix monte trois degrés<text:span text:style-name="T96"> :</text:span> il faut alors, avant d’arriver à la <text:span text:style-name="T7">vir</text:span><text:span text:style-name="T29">g</text:span><text:span text:style-name="T7">a</text:span>, deux accents graves, qui dans ce cas se changent nécessairement en autant de <text:span text:style-name="T29">punctum</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T29">scandicus</text:span> monte tout dpoit : <draw:frame draw:style-name="fr2" draw:name="Image10" text:anchor-type="as-char" svg:width="0.21cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P35">Dans le <text:span text:style-name="T7">scandicus</text:span> la voix monte trois degrés<text:span text:style-name="T96"> :</text:span> il faut alors, avant d’arriver à la <text:span text:style-name="T7">vir</text:span><text:span text:style-name="T29">g</text:span><text:span text:style-name="T7">a</text:span>, deux accents graves, qui dans ce cas se changent nécessairement en autant de <text:span text:style-name="T29">punctum</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T29">scandicus</text:span> monte tout dpoit : <draw:frame draw:style-name="fr2" draw:name="Image10" text:anchor-type="as-char" svg:width="0.21cm" svg:height="0.499cm" draw:z-index="33"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAACbCAYAAADWZU0PAAAKzXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZhrkiMrDoX/s4pZAgKEYDk8I2YHs/z5lHZ1d1U/7r0TY4edWSQGoSMd
          HVU4//n3Df/ilWNMoai12muNvEovPQ1uWny9+vMtsTzfz6uk9zP5PB76fD9IDLH08+Fl4z1/
@@ -5702,7 +5707,7 @@
    </text:list>
    <text:p text:style-name="P14">Les mêmes qualificatifs, dans certains tableaux de neumes, se trouvent appliqués à la <text:span text:style-name="T7">virg</text:span><text:span text:style-name="T32">a</text:span>, pour désigner le <text:span text:style-name="T32">cl</text:span><text:span text:style-name="T7">imacus</text:span>, qui est une <text:span text:style-name="T32">virga</text:span><text:span text:style-name="T7"> subbipun</text:span><text:span text:style-name="T32">c</text:span><text:span text:style-name="T7">tis</text:span>, <text:span text:style-name="T7">subtripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc. lorsque la <text:span text:style-name="T7">virga</text:span> est, non plus suivie, mais précédée de points, ce qui est le cas du <text:span text:style-name="T7">scandicus</text:span>, elle est dite, dans les mêmes tableaux, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræb</text:span><text:span text:style-name="T32">i</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræ</text:span><text:span text:style-name="T32">tri</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>. Si les points sont à la fois avant et après, c’est la <text:span text:style-name="T7">virga combipun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span><text:span text:style-name="T46">, </text:span><text:span text:style-name="T7">contripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc.</text:p>
    <text:p text:style-name="P14">L<text:span text:style-name="T97">a</text:span> série des points, dans les formulés ou ils entrent comme éléments, peut avoir en effet plus ou moins d’étendue<text:span text:style-name="T97"> :</text:span> ainsi on rencontre quelquefois des formulés telles que les suivantes<text:span text:style-name="T97"> :</text:span></text:p>
-   <text:p text:style-name="P14"><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="paragraph" svg:width="17cm" svg:height="3.967cm" draw:z-index="21"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14"><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="paragraph" svg:width="17cm" svg:height="3.967cm" draw:z-index="20"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAACYoAAAI6CAYAAACDn+69AAAPPnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlrciw5boX/cxVeAkESfCyHJMgI78DL9weqpLnqHtszEVZ1S9VZWZkk
        cHAe2eH813/e8B/85Ko1FG29jlojP2WUkSZvevz6Ge+3xPJ+v58+f47+Oh7yjOm9SxzK/M1f
@@ -6126,7 +6131,7 @@
    <text:p text:style-name="P14">Le chant grégorien,<text:span text:style-name="T97"> comme</text:span> nous le savons par le témoignage des anciens, admet certains ornements d’un <text:span text:style-name="T97">caractère</text:span> spécial, certaines nuances d’exécution qui, sans appartenir à l’expression passionnée du théâtre, sans consister non plus en des effets de voix trop recherchés, plus déplacés encore à l’Église <text:span text:style-name="T97">qu’</text:span>ailleurs, demandent cependant, au moins quelquefois, particulièrement pour le <text:span text:style-name="T7">s</text:span><text:span text:style-name="T32">trop</text:span><text:span text:style-name="T7">hicus</text:span> et le <text:span text:style-name="T7">qu</text:span><text:span text:style-name="T32">il</text:span><text:span text:style-name="T7">isma</text:span>, une souplesse d’organe que les chantres romains envoyés en Gaule et en Germanie, du temps de Charlemagne, reprochaient à nos pères de ne pas posséder. Il y a donc dans le chant grégorien, des sons diversement nuancés, que nous distinguerons en sons <text:span text:style-name="T42">sy</text:span><text:span text:style-name="T43">n</text:span><text:span text:style-name="T42">copés</text:span>, <text:span text:style-name="T7">appuyés</text:span>, <text:span text:style-name="T7">répercutés</text:span>, <text:span text:style-name="T7">tremblés</text:span>, et <text:span text:style-name="T7">é</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">ouffés</text:span>.</text:p>
    <text:list xml:id="list1705224729" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>lorsque deux formulés, <text:span text:style-name="T97">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T97">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T97"> ;</text:span> nous verrons, en traitant plus loin du <text:span text:style-name="T97">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. nous en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T97">s’</text:span>agit <text:span text:style-name="T97">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T97">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T97"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="27"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P36"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>lorsque deux formulés, <text:span text:style-name="T97">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T97">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T97"> ;</text:span> nous verrons, en traitant plus loin du <text:span text:style-name="T97">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. nous en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T97">s’</text:span>agit <text:span text:style-name="T97">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T97">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T97"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAANEAAACwCAYAAACRkosQAAAT3npUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjavZpnkty6FYX/YxVeAnJYDi5ClXfg5fs77FaWnpLL01JzhsMGgRtOAMed
          //z7un/xVWKKLpfW66jV85VHHnHyTfevr/G8B5+f9+drv4/8/MV5Z+/zPnIqcUyvH9t8Xz85
@@ -6255,7 +6260,7 @@
       </draw:frame><text:line-break/>Ici les deux <text:span text:style-name="T32">v</text:span><text:span text:style-name="T7">irga</text:span> font syncopes.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons</text:span><text:span text:style-name="T7"> </text:span><text:span text:style-name="T32">appuyés</text:span>.<text:line-break/>U<text:span text:style-name="T97">ne</text:span> circonstance qui présente beaucoup d’analogie avec le cas précédent, est celle ou la voix, dans un mouvement descendant, doit <text:span text:style-name="T97">s’</text:span>arrêter et appuyer fortement sur l’avant-dernière note du groupe. Le son qui doit être ainsi renforce et prolongé se trouve représenté dans la plupart des manuscrits par un petit trait horizontal brisé <draw:frame draw:style-name="fr1" draw:name="Image12" text:anchor-type="as-char" svg:y="-0.367cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="35"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P36"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons</text:span><text:span text:style-name="T7"> </text:span><text:span text:style-name="T32">appuyés</text:span>.<text:line-break/>U<text:span text:style-name="T97">ne</text:span> circonstance qui présente beaucoup d’analogie avec le cas précédent, est celle ou la voix, dans un mouvement descendant, doit <text:span text:style-name="T97">s’</text:span>arrêter et appuyer fortement sur l’avant-dernière note du groupe. Le son qui doit être ainsi renforce et prolongé se trouve représenté dans la plupart des manuscrits par un petit trait horizontal brisé <draw:frame draw:style-name="fr1" draw:name="Image12" text:anchor-type="as-char" svg:y="-0.367cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGUAAABTCAYAAACGX8l/AAAOGXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZldkiS3DYTfeQofgeAfyOOQBBnhG/j4/lDdO5qRVivJ6wj7QdMxXT3V
          VSwSSGQmOOH86583/IOfErWHUrW30Vrkp4wy0uRDj6+f8bxLLM/789Pq+zv5ej7U/P4icco/
@@ -6342,7 +6347,7 @@
          ZNMXEPcUKAIFikCBIlAEChSBAkWgQJEb8wOEv6CWp0Fn9QAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/>qui surmonte un petit point <draw:frame draw:style-name="fr1" draw:name="Image13" text:anchor-type="as-char" svg:y="-0.365cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="36"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/>qui surmonte un petit point <draw:frame draw:style-name="fr1" draw:name="Image13" text:anchor-type="as-char" svg:y="-0.365cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="35"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAG4AAABOCAYAAADB9yPNAAATVnpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja5ZpXkiQ7ckX/sQouAVosB8Jhxh1w+TwXmd1PD+dxxowf7OyqyIqKRAAu
          rkCUs//6z+v+g3/F9+5yab2OWj3/8sgjTt50//k33vfg8/v+/lX7/i789rzLP34ROZU4ps+P
@@ -6455,7 +6460,7 @@
          vqqniZcHhwotwBHgAIcAhwCHAAc4BDgEuCp6A9k1+LJqMekpAAAAAElFTkSuQmCC
         </office:binary-data>
        </draw:image>
-      </draw:frame>; le point indique un son faible pour terminer le groupe. Ce trait brisé est le <text:span text:style-name="T7">pressus</text:span>. Il <text:span text:style-name="T99">s’</text:span>adjoint tantot à une <text:span text:style-name="T7">virga</text:span> <draw:frame draw:style-name="fr1" draw:name="Image14" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.681cm" svg:height="0.499cm" draw:z-index="37"><draw:image loext:mime-type="image/png">
+      </draw:frame>; le point indique un son faible pour terminer le groupe. Ce trait brisé est le <text:span text:style-name="T7">pressus</text:span>. Il <text:span text:style-name="T99">s’</text:span>adjoint tantot à une <text:span text:style-name="T7">virga</text:span> <draw:frame draw:style-name="fr1" draw:name="Image14" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.681cm" svg:height="0.499cm" draw:z-index="36"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJgAAABwCAYAAADi1bnOAAAOJHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja5ZlZkiQ3DkT/eYo5AkkQBHkcrmZzgzn+PERmVS/qltSSzOZjKroysiIj
          ucABd0d0OP/59w3/4ke61FDUWu21Rn5KLz0P3rT4+unPa4rleX1d+vgsfXs92Pt6zFwSzvL6
@@ -6545,7 +6550,7 @@
          gAkwCTABJsAkwASYBJgAE2ASYAJMgEmACTAV7QlPyvL2t5V3BAAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/>tantot à la seconde note d’une <text:span text:style-name="T7">clivis</text:span><text:span text:style-name="T50"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image15" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="38"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/>tantot à la seconde note d’une <text:span text:style-name="T7">clivis</text:span><text:span text:style-name="T50"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image15" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="37"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHwAAABsCAYAAACoyNYlAAAXlHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZpndhu7loX/YxQ9BOQwHMS13gx6+P1tFJVsX1/L/SxblCmyCjhhhwOa
          /b//OeZ/+JN98iamUnPL2fIntth854dqnz/tfnc23u/3T5mv37mvz5v89gvPU4HH8HpDf72+
@@ -6682,7 +6687,7 @@
          RU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:line-break/>Le groupe entier dans le premier cas représente deux sons, et dans le deuxième cas trois sons<text:span text:style-name="T99"> ;</text:span> mais c’est toujours le son pénultième qui est <text:span text:style-name="T7">pressus</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T33">pressus</text:span> consiste en une petite virgule <text:soft-page-break/>d’une forme particulière, mise à côté des notes d’un groupe ordinaire comme, par exemple, près de la seconde note du <text:span text:style-name="T7">climacus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image17" text:anchor-type="as-char" svg:y="-0.399cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="39"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:line-break/>Le groupe entier dans le premier cas représente deux sons, et dans le deuxième cas trois sons<text:span text:style-name="T99"> ;</text:span> mais c’est toujours le son pénultième qui est <text:span text:style-name="T7">pressus</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T33">pressus</text:span> consiste en une petite virgule <text:soft-page-break/>d’une forme particulière, mise à côté des notes d’un groupe ordinaire comme, par exemple, près de la seconde note du <text:span text:style-name="T7">climacus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image17" text:anchor-type="as-char" svg:y="-0.399cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="38"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJIAAACQCAYAAADjszKFAAASL3pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZppdhs5soX/YxW9BIwBYDkYz+kdvOX3d5OUbJddHl6VVRIpKpmJjLhx
          B7Dc+b//Xvcf/hUfm8ulNutmnn+55x4HT5p//evPz+Dz8/P1Unz/LXz7uuvv133kpcRjev1a
@@ -6793,7 +6798,7 @@
          gWQpPCUP/wNiIgkkgSSBJJAEkkCSQBJIAkkgSSAJJFXvG5Kv8ir+MLrkAAAAAElFTkSuQmCC
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/>ce qui équivaut à <draw:frame draw:style-name="fr1" draw:name="Image16" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="40"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/>ce qui équivaut à <draw:frame draw:style-name="fr1" draw:name="Image16" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="39"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHwAAABsCAYAAACoyNYlAAAXlHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZpndhu7loX/YxQ9BOQwHMS13gx6+P1tFJVsX1/L/SxblCmyCjhhhwOa
          /b//OeZ/+JN98iamUnPL2fIntth854dqnz/tfnc23u/3T5mv37mvz5v89gvPU4HH8HpDf72+
@@ -6933,7 +6938,7 @@
       </draw:frame>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T34">Sons répercutés</text:span><text:span text:style-name="T100">.<text:line-break/>Il</text:span> <text:span text:style-name="T100">n’</text:span>est pas rare de rencontrer dans la notation neumatique, une sorte de virgule, différente du signe ordinaire appelé <text:span text:style-name="T7">virga</text:span>, c’est-à-dire plus courte et un peu plus arquée, du moins dans la plupart des manuscrits. Cette note est simple <text:span text:style-name="T90">’</text:span> double <text:span text:style-name="T90">’’</text:span> ou triple <text:span text:style-name="T90">’’’</text:span> et se nomme suivant le cas, <text:span text:style-name="T7">a</text:span><text:span text:style-name="T34">pos</text:span><text:span text:style-name="T7">tropha</text:span> <text:span text:style-name="T90">’</text:span>, <text:span text:style-name="T7">distropha</text:span> <text:span text:style-name="T90">’’</text:span> ou <text:span text:style-name="T7">tristropha</text:span> <text:span text:style-name="T90">’’’</text:span> et d’une manière générale <text:span text:style-name="T7">s</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">hicus</text:span>. <text:span text:style-name="T100">L</text:span>’<text:span text:style-name="T7">apostropha</text:span> se trouve toujours jointe à une autre formulé, à la <text:span text:style-name="T7">clivis</text:span> par exemple, soit avant <draw:frame draw:style-name="fr1" draw:name="Image18" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="41"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P36"><text:span text:style-name="T34">Sons répercutés</text:span><text:span text:style-name="T100">.<text:line-break/>Il</text:span> <text:span text:style-name="T100">n’</text:span>est pas rare de rencontrer dans la notation neumatique, une sorte de virgule, différente du signe ordinaire appelé <text:span text:style-name="T7">virga</text:span>, c’est-à-dire plus courte et un peu plus arquée, du moins dans la plupart des manuscrits. Cette note est simple <text:span text:style-name="T90">’</text:span> double <text:span text:style-name="T90">’’</text:span> ou triple <text:span text:style-name="T90">’’’</text:span> et se nomme suivant le cas, <text:span text:style-name="T7">a</text:span><text:span text:style-name="T34">pos</text:span><text:span text:style-name="T7">tropha</text:span> <text:span text:style-name="T90">’</text:span>, <text:span text:style-name="T7">distropha</text:span> <text:span text:style-name="T90">’’</text:span> ou <text:span text:style-name="T7">tristropha</text:span> <text:span text:style-name="T90">’’’</text:span> et d’une manière générale <text:span text:style-name="T7">s</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">hicus</text:span>. <text:span text:style-name="T100">L</text:span>’<text:span text:style-name="T7">apostropha</text:span> se trouve toujours jointe à une autre formulé, à la <text:span text:style-name="T7">clivis</text:span> par exemple, soit avant <draw:frame draw:style-name="fr1" draw:name="Image18" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="40"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHAAAABiCAYAAACI/lfbAAARLXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZpJdiO7EUXnWIWXgD6A5aAJnOMdePm+AaZUnX5J5e+BBxZLTCqZRALR
          vAYsp//653H/4Cf35l0u0mqv1fOTe+5x8KL510+/z8Hn+3x/5HmLv38472p83oicShzT84Hx
@@ -7037,7 +7042,7 @@
          UPkDOSLK56QDZmAAAAAASUVORK5CYII=
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/>soit après <draw:frame draw:style-name="fr1" draw:name="Image19" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.621cm" svg:height="0.499cm" draw:z-index="42"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/>soit après <draw:frame draw:style-name="fr1" draw:name="Image19" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.621cm" svg:height="0.499cm" draw:z-index="41"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHIAAABcCAYAAACye+E7AAASBHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja5ZpZciO5FUX/sQovAfOwHIwR3oGX73ORlEoqqburu/xnKSRSySQS+YY7
          PMrs//z7mH/xFWurJqZSc8vZ8hVbbL7zpNrnq93fzsb7+34V/3rNfT5u0ny94DkUeAyvN/TX
@@ -7144,7 +7149,7 @@
          /7YOcoFl09Kq2RGQAlKu5xfNaNnWYfGwOgAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame>. Ce même signe <text:span text:style-name="T100">lorsqu’</text:span>il se trouve redoublé <text:span text:style-name="T90">’’</text:span> <text:span text:style-name="T34">d</text:span><text:span text:style-name="T7">istropha</text:span>, ou triplé <text:span text:style-name="T90">’’’</text:span><text:span text:style-name="T101"> </text:span><text:span text:style-name="T44">t</text:span><text:span text:style-name="T7">ristropha</text:span> peut aussi être joint, comme l’<text:span text:style-name="T7">apos</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">ha</text:span> <text:span text:style-name="T90">’</text:span> à une formulé, <draw:frame draw:style-name="fr1" draw:name="Image21" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="43"><draw:image loext:mime-type="image/png">
+      </draw:frame>. Ce même signe <text:span text:style-name="T100">lorsqu’</text:span>il se trouve redoublé <text:span text:style-name="T90">’’</text:span> <text:span text:style-name="T34">d</text:span><text:span text:style-name="T7">istropha</text:span>, ou triplé <text:span text:style-name="T90">’’’</text:span><text:span text:style-name="T101"> </text:span><text:span text:style-name="T44">t</text:span><text:span text:style-name="T7">ristropha</text:span> peut aussi être joint, comme l’<text:span text:style-name="T7">apos</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">ha</text:span> <text:span text:style-name="T90">’</text:span> à une formulé, <draw:frame draw:style-name="fr1" draw:name="Image21" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="42"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIgAAABsCAYAAACxb/rGAAAT3HpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZppdty4FYX/YxVZAmY8LAfjOdlBlp/vskpque3utuOobBVFsUjgDXcA
          5M5//n3dv/gqIVeXS7Paa/V85Z57HByYf33153vw+fn+fNnH78K3511d719ETiXe0+vHNt7X
@@ -7263,7 +7268,7 @@
          3AAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image38" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.78cm" svg:height="0.499cm" draw:z-index="44"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image38" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.78cm" svg:height="0.499cm" draw:z-index="43"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKQAAABoCAYAAAB/n1uOAAAR3npUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja1ZpZctw6tkX/MYoaAvoDDAdtRM2ghl9rMyXZsmX7Ot77KeWVmGaSBHCa
          3SCvO//593X/4ifXWF0u1mqv1fOTe+5x8Kb5109//gafn7/Pz8hvn4XP5119vylyKnFMr3/a
@@ -7373,7 +7378,7 @@
          AAAASUVORK5CYII=
         </office:binary-data>
        </draw:image>
-      </draw:frame>, <text:span text:style-name="T102">m</text:span>ais souvent aussi il est seul. I<text:span text:style-name="T102">l</text:span> peut encore s’accompagner lui-même <text:span text:style-name="T90">’’ ’’’</text:span> et quelquefois se trouver sous cette forme <draw:frame draw:style-name="fr1" draw:name="Image20" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.349cm" svg:height="0.499cm" draw:z-index="45"><draw:image loext:mime-type="image/png">
+      </draw:frame>, <text:span text:style-name="T102">m</text:span>ais souvent aussi il est seul. I<text:span text:style-name="T102">l</text:span> peut encore s’accompagner lui-même <text:span text:style-name="T90">’’ ’’’</text:span> et quelquefois se trouver sous cette forme <draw:frame draw:style-name="fr1" draw:name="Image20" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.349cm" svg:height="0.499cm" draw:z-index="44"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEgAAABmCAYAAABoS9cBAAAPz3pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjazZldliQpjoXfWcUsAfEnWA4gOKd3MMufT+YekRFZVV1Z2f0w4ZluHhZm
          GEhX917h4fzvv274H35KzSWUqr2N1iI/ZZSRJh96fP2M511ied6fn/LxN/l+PryG4CdxKnPM
@@ -7469,7 +7474,7 @@
          XG/5dBwGTyVSDCCAAAIIoHzjC8XUpt3KP/1FAAAAAElFTkSuQmCC
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:line-break/>Dans ce dernier cas, l’<text:span text:style-name="T7">a</text:span><text:span text:style-name="T35">pos</text:span><text:span text:style-name="T7">tropha</text:span> n’est plus à l’unisson mais à une tierce de distance du <text:span text:style-name="T7">dis</text:span><text:span text:style-name="T35">trop</text:span><text:span text:style-name="T7">ha</text:span>.<text:line-break/>Au <text:span text:style-name="T7">strophicus</text:span> se rapporte l’<text:span text:style-name="T7">oriscus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image39" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="46"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:line-break/>Dans ce dernier cas, l’<text:span text:style-name="T7">a</text:span><text:span text:style-name="T35">pos</text:span><text:span text:style-name="T7">tropha</text:span> n’est plus à l’unisson mais à une tierce de distance du <text:span text:style-name="T7">dis</text:span><text:span text:style-name="T35">trop</text:span><text:span text:style-name="T7">ha</text:span>.<text:line-break/>Au <text:span text:style-name="T7">strophicus</text:span> se rapporte l’<text:span text:style-name="T7">oriscus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image39" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="45"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAE4AAABaCAYAAAAW7WCQAAAOtXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja3ZlpcmNJjoT/xynmCIFYEceJDWZzgzl+f3iklJmqqs7MqjZrsxFNfNQj
          GQvgcHeEwv2//7XwP/yU1FsotWsbrUV+yigjTV5ofP2M51lieZ6fn3Lf78mP90Od7zcStzLX
@@ -7562,7 +7567,7 @@
       </draw:frame>, qui indique comme le <text:span text:style-name="T7">distropha</text:span> une note jointe à une autre à l’unisson, avec cette différence que l’émission en est plus liée, et se rapproche de la syncope.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T102"><text:line-break/></text:span>lorsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T102"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P36"><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T102"><text:line-break/></text:span>lorsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T102"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="46"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJYAAAB2CAYAAAAqRWpgAAAOBXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZlZcuS4EYbfcQofAcgEkMBxsEb4Bj6+v2SVNL3NTPeMHxxhq0IkxSJB
          IJd/ocL51z9v+Ac/2lsMuVirvdbIT+65y+CgxddPf7Yp5mf7OlXf36Wvzwf7+EI4pez19aeN
@@ -7652,7 +7657,7 @@
          BJYElsASWBJYAktgSWAJLIElgSWwBJb0ex/VptQq+KuJKgAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image41" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="48"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image41" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIwAAAByCAYAAACBWDlXAAASO3pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjatZppdhu5FYX/YxVZAmY8LAfjOdlBlp/vFmm1rXbb7rQjWiJZLKKAN9wB
          ZXf+8+/r/sVPtlRdLs1qr9Xzk3vucfDC/OunP3+Dz8/f58fW+7Pw7XHX4vuDyKHEc3q9beN9
@@ -7763,7 +7768,7 @@
          YAQYEWAEGJmcXwwbH/g81gZDAAAAAElFTkSuQmCC
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:line-break/>Le <text:span text:style-name="T36">q</text:span><text:span text:style-name="T7">uilisma</text:span> est toujours précédé d’une note qui est le point de départ du mouvement ascension<text:span text:style-name="T103">n</text:span>el<text:span text:style-name="T103"> :</text:span> cette note est ou un <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">un</text:span><text:span text:style-name="T36">c</text:span><text:span text:style-name="T7">tum</text:span> <draw:frame draw:style-name="fr1" draw:name="Image42" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="49"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:line-break/>Le <text:span text:style-name="T36">q</text:span><text:span text:style-name="T7">uilisma</text:span> est toujours précédé d’une note qui est le point de départ du mouvement ascension<text:span text:style-name="T103">n</text:span>el<text:span text:style-name="T103"> :</text:span> cette note est ou un <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">un</text:span><text:span text:style-name="T36">c</text:span><text:span text:style-name="T7">tum</text:span> <draw:frame draw:style-name="fr1" draw:name="Image42" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="48"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKQAAACICAYAAABp20AMAAAPyHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZpJdhy5EYb3OIWPgCkwHAdABN7zDXx8f5FVZIuSbHW7e9ELVz1WlpKZ
          SCCGfwAV7F//vOEfvGqNOVTpo83WIq8668yLLyO+XvP5TLE+n89r1ffv0tfzYXzclDlVOJbX
@@ -7863,7 +7868,7 @@
          7t1n5cx6220TckGMVx5P7Qf+n/huitUN5AAAAABJRU5ErkJggg==
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image43" text:anchor-type="as-char" svg:y="-0.358cm" svg:width="0.651cm" svg:height="0.499cm" draw:z-index="50"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image43" text:anchor-type="as-char" svg:y="-0.358cm" svg:width="0.651cm" svg:height="0.499cm" draw:z-index="49"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALIAAACICAYAAABDa7GjAAARSHpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjavZlrlhs3DoX/cxWzBBIg+FgOn+fMDmb586Gk7qRtZ2InOWPZLVldqmIB
          F/dBhfOff9/wL/7kIi1kq630UiJ/cs9dBi9afP3pz88U8/Pz+TPl/bv09f3QPj4kvKU86+u/
@@ -7971,7 +7976,7 @@
          DKvSrxYSyBLIAlkCWQJZAlkgSyBLT/ULwIc9Q5LoKQYAAAAASUVORK5CYII=
         </office:binary-data>
        </draw:image>
-      </draw:frame><text:s/>ou la dernière note d’un groupe <draw:frame draw:style-name="fr1" draw:name="Image44" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.93cm" svg:height="0.499cm" draw:z-index="51"><draw:image loext:mime-type="image/png">
+      </draw:frame><text:s/>ou la dernière note d’un groupe <draw:frame draw:style-name="fr1" draw:name="Image44" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.93cm" svg:height="0.499cm" draw:z-index="50"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAMoAAABsCAYAAAArIC1bAAAQ03pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja1ZlrcuPKDYX/9yqyhH4/ltMAuquygyw/HyjZ45m5N3cmSaUqVlmSKYps
          4gDnQYfzj7/f8Dd+aik11DZmX71HfuqqK2/ezPj6Wc9zivV5fn50vz9L328PXd8fZDYVXsvr
@@ -8090,7 +8095,7 @@
      <text:p text:style-name="P37">S<text:span text:style-name="T103">i</text:span> la formulé se termine par un son aigu, <text:span text:style-name="T103">la</text:span> <text:span text:style-name="T7">virga</text:span> se trouve écourtée comme on le voit dans les exemples suivants<text:span text:style-name="T103"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image45" text:anchor-type="as-char" svg:y="-0.249cm" svg:width="0.25cm" svg:height="0.25cm" draw:z-index="52"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image45" text:anchor-type="as-char" svg:y="-0.249cm" svg:width="0.25cm" svg:height="0.25cm" draw:z-index="51"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEsAAABMCAYAAAAlS0pSAAAM/XpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja7ZlZciQ5DkT/eYo5AvflOCQBms0N5vjzwEylllJ1V3XPV9soTRmhyEgu
        cMDdEXL6n38f9y9+so/R5dJ6HbV6fvLII05Oun/8jPsefL7v9yev52fh83WX9/ODyKXEMT3+
@@ -8171,7 +8176,7 @@
        gg==
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>au lieu de <draw:frame draw:style-name="fr1" draw:name="Image46" text:anchor-type="as-char" svg:y="-0.497cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="53"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>au lieu de <draw:frame draw:style-name="fr1" draw:name="Image46" text:anchor-type="as-char" svg:y="-0.497cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="52"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAYAAAA5Od+KAAAR3npUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZppcty4GYb/4xQ5AvblOFircoMcP88LtjSSPR7L4yQVdUlss5sg8C3v
        Atrsf/3zmH/wk2yuJqZSc8vZ8hNbbL7zptrnp92/zsb79/6U8vrMfT5v3j/wnAocw+uC/vp+
@@ -8280,7 +8285,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P19"><text:soft-page-break/><text:tab/>Cette modification du <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">odatus</text:span> se nomme <text:span text:style-name="T7">epi</text:span><text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">honus</text:span>.<text:line-break/><text:tab/>on trouve de même<text:span text:style-name="T103"> :<text:tab/><text:tab/></text:span><text:span text:style-name="T103"><draw:frame draw:style-name="fr1" draw:name="Image47" text:anchor-type="as-char" svg:y="-0.275cm" svg:width="0.289cm" svg:height="0.3cm" draw:z-index="54"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P19"><text:soft-page-break/><text:tab/>Cette modification du <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">odatus</text:span> se nomme <text:span text:style-name="T7">epi</text:span><text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">honus</text:span>.<text:line-break/><text:tab/>on trouve de même<text:span text:style-name="T103"> :<text:tab/><text:tab/></text:span><text:span text:style-name="T103"><draw:frame draw:style-name="fr1" draw:name="Image47" text:anchor-type="as-char" svg:y="-0.275cm" svg:width="0.289cm" svg:height="0.3cm" draw:z-index="53"><draw:image loext:mime-type="image/png">
        <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGUAAABoCAYAAADo4j4RAAAO3HpUWHRSYXcgcHJvZmlsZSB0
         eXBlIGV4aWYAAHja7ZpZkty4EYbfcQofAVsikcfBGuEb+Pj+klXSdGuxRzN6s7uii9UsEgRy
         +RdI4fzrnzf8g59aagtVtDdrLfJTrVoefOjx9WPPe4r1eX9+mry/S5/Ph/blpsypwrG8/tTx
@@ -8372,7 +8377,7 @@
         DucbX9q4pxKS9QwAAAAASUVORK5CYII=
        </office:binary-data>
       </draw:image>
-     </draw:frame></text:span> au lieu de <draw:frame draw:style-name="fr1" draw:name="Image48" text:anchor-type="as-char" svg:y="-0.437cm" svg:width="0.379cm" svg:height="0.499cm" draw:z-index="55"><draw:image loext:mime-type="image/png">
+     </draw:frame></text:span> au lieu de <draw:frame draw:style-name="fr1" draw:name="Image48" text:anchor-type="as-char" svg:y="-0.437cm" svg:width="0.379cm" svg:height="0.499cm" draw:z-index="54"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFoAAAB3CAYAAACDmlfqAAAO4npUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjaxZlpcuS4EUb/4xQ+AhJbAsfBkojwDXx8v2SV1MtM290947AqVCyRLCy5
        fAsV7F//vOEf/BTREkrV3kZrkZ8yykiTDz2+fsbzLrE8789Pne9r8u35oPq+kDiVOebXn/r+
@@ -8465,7 +8470,7 @@
        Yyu+MvG0tt9U6vz6hCs0AyVXhkADTQENNAU00EBTu+oPDRbB4Bf38jIAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>ou <draw:frame draw:style-name="fr1" draw:name="Image49" text:anchor-type="as-char" svg:y="-0.441cm" svg:width="0.37cm" svg:height="0.499cm" draw:z-index="56"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>ou <draw:frame draw:style-name="fr1" draw:name="Image49" text:anchor-type="as-char" svg:y="-0.441cm" svg:width="0.37cm" svg:height="0.499cm" draw:z-index="55"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEgAAABhCAYAAAB1Tue5AAAP6npUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZprdhs7koT/YxWzBLwTWA6e5/QOZvnzRZGSLdvd1/a0aLGoYhEFZEZG
        RIJ253//dd3/8JNT8S4Xa7XX6vnJPfc4eNH866c/z8Hn5/n5yR/vha/nXX2/8JFTiWN6/Wnj
@@ -8562,7 +8567,7 @@
        B3QAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame>.<text:line-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image50" text:anchor-type="as-char" svg:y="-0.464cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="57"><draw:image loext:mime-type="image/png">
+    </draw:frame>.<text:line-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image50" text:anchor-type="as-char" svg:y="-0.464cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="56"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGYAAABaCAYAAABKZyO0AAAVd3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja7ZpZdlu5FUX/MYoMAX0zHLRrZQYZfvbBI2WpSlWxK/WRj1i2KFMkHnCb
        09xHs//1z2P+wZ9UWjYxlZpbzpY/scXmOz9U+/xp97uz8X6/f55X3v9/ed6k/vqF56nAY3j+
@@ -8686,7 +8691,7 @@
        P4PSAspWx8hMAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame> au lieu de <draw:frame draw:style-name="fr1" draw:name="Image51" text:anchor-type="as-char" svg:y="-0.441cm" svg:width="0.921cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
+    </draw:frame> au lieu de <draw:frame draw:style-name="fr1" draw:name="Image51" text:anchor-type="as-char" svg:y="-0.441cm" svg:width="0.921cm" svg:height="0.499cm" draw:z-index="57"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJAAAABOCAYAAADPcp/nAAATXHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlpdhs5EoT/4xRzBOzLcYAE8N7cYI4/XxRp2XKrx+43Ni2SosgqVGZk
        LKA7//n3df/iX+41ulxar6NWz7888oiTJ92//o3nPvj83P/w0vP7p9ddPu8/RF5KPKbXr22+
@@ -8802,12 +8807,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>etc.</text:p>
-   <text:list xml:id="list135309756850055" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list135552364979624" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P37">Si la formulé se termine par un son grave, le trait final, ou <text:span text:style-name="T7">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T104"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image52" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="59"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image52" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGwAAAB4CAYAAAAXIRdAAAAOcXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja1ZlZciO7EUX/sQovAUjMy8GQiPAOvHyfBEtqqV/368kOh8UgiywWUUAO
        d4Cc/uufx/2DvyShuZRrK70Uz1/qqcvgTfOvv35fg0/39f6V9XwXPp939e1HwqnIMb4+1vFc
@@ -8898,7 +8903,7 @@
        F7cVrPa08fA4AAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>pour <draw:frame draw:style-name="fr1" draw:name="Image53" text:anchor-type="as-char" svg:y="-0.427cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="80"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>pour <draw:frame draw:style-name="fr1" draw:name="Image53" text:anchor-type="as-char" svg:y="-0.427cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="79"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFwAAABeCAYAAACuJ3NTAAAVTXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZppcty4loX/YxW9BMzDcjBGvB285fd3wJQseZDtqOqIlqqUMpUJgnc4
        wyXN/u9/jvkfvlK10cRUam45W75ii813fqn2+Wr3p7Px/rxfab7+5j4fN2m//uA5FHgNzz9L
@@ -9022,7 +9027,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P19"><text:span text:style-name="T105"><text:tab/>C</text:span>’est le <text:span text:style-name="T7">cephalicus</text:span>, modification de la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T37">l</text:span><text:span text:style-name="T7">ivis</text:span>.<text:line-break/><text:tab/>De même encore :<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image54" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="81"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P19"><text:span text:style-name="T105"><text:tab/>C</text:span>’est le <text:span text:style-name="T7">cephalicus</text:span>, modification de la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T37">l</text:span><text:span text:style-name="T7">ivis</text:span>.<text:line-break/><text:tab/>De même encore :<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image54" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="80"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKIAAAB0CAYAAAAGlekpAAAO8HpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjaxZlpkhwpEkb/c4o5AjjgwHHY3GxuMMef55FZ1dq6pyW12VSqMrIiIwLw
        5VtQuP/5t4V/8VPikFBq6zpUIz9llCGTDz2+fsbznmJ53p+fKe/v0tfnQyvvL4RTmWN+/dnm
@@ -9116,7 +9121,7 @@
        03a3ZoEogSgQJRBVtw84aQcNSpSk8AAAAABJRU5ErkJggg==
       </office:binary-data>
      </draw:image>
-    </draw:frame> pour <draw:frame draw:style-name="fr1" draw:name="Image55" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.69cm" svg:height="0.499cm" draw:z-index="82"><draw:image loext:mime-type="image/png">
+    </draw:frame> pour <draw:frame draw:style-name="fr1" draw:name="Image55" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.69cm" svg:height="0.499cm" draw:z-index="81"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIIAAABeCAYAAADv/8ypAAASz3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja1Zppchs5EoX/4xRzBOwJHAdrxNxgjj/fK1KyZbu36I6YGKktUlSxCpX5
        8i1gu/Off1/3L75ya9XlYq32Wj1fueceB0+af33152fw+fn5fLX4/lv4+ror5/2HyEuJx/T6
@@ -9229,7 +9234,7 @@
        6xEEBBEQBAQBQUAQEAQEAUFAEBDkXn4AtY0yK1VQIP8AAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:line-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image56" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.801cm" svg:height="0.499cm" draw:z-index="83"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:line-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image56" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.801cm" svg:height="0.499cm" draw:z-index="82"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKoAAABqCAYAAAAsnso2AAAQt3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlpcuS4EUb/4xQ+AhJr4jhYEhG+gY/vl6ySpldPt3tUoSqKRYJALt8C
        BfvPv2/4Fz8lVw2ldm2jtchPGWWkyYHG18943iWW5/35mfP9nXx9PrSPLxKnMp/59Wd/n5fJ
@@ -9333,7 +9338,7 @@
        K9T/juiRE6FEJSUMUyAqQFSAqCAqQFSAqNiIX6KnDi7HN0kPAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame> pour <draw:frame draw:style-name="fr1" draw:name="Image57" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.58cm" svg:height="0.499cm" draw:z-index="84"><draw:image loext:mime-type="image/png">
+    </draw:frame> pour <draw:frame draw:style-name="fr1" draw:name="Image57" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.58cm" svg:height="0.499cm" draw:z-index="83"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIoAAAB2CAYAAAAX1wsGAAATt3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZrncey6loX/I4oJAd6EA7NR9TKY8OdbkHTM9WfuU5eaLZJNAtssA8rZ
        //7nuv/hp4QeXS6t11Gr5yePPOLkQ/cfP+O9B5/f+/vp8/NY+Hm/a/XzQGRXYps+/myfXwiT
@@ -9453,12 +9458,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:list xml:id="list135310686655107" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list135552786058165" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P37">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T7">s</text:span><text:span text:style-name="T38">trop</text:span><text:span text:style-name="T7">hicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image58" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="85"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image58" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="84"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGgAAABqCAYAAABQ1BSqAAARWHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja3ZpXtuO4EYbfsQovAblQy0E8xzvw8v0VyNt9O0xo9zxZmiuqKQoEKvwB
        Grf/8+/j/sUjq/cuF2lVa/U8smaNnTfNPw+9r8Hn+3of9eOz8O15V/v7QeRU4pief8p7PnTO
@@ -9562,7 +9567,7 @@
        TgUJIEACSAABEkCABJAAAiSABBAgAdQ7n0pE4nsmYVwbAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>au lieu de <text:span text:style-name="T90">’’</text:span><text:line-break/><draw:frame draw:style-name="fr1" draw:name="Image59" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="86"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>au lieu de <text:span text:style-name="T90">’’</text:span><text:line-break/><draw:frame draw:style-name="fr1" draw:name="Image59" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="85"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAXU3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZpnViy5loX/axQ9BHkzHNm1egZv+P1tRUIB1xS3uh4siCTJVEjHbCOl
        2f/532P+h6/sUzQxlZpbzpav2GLznQfVPl/t/nY23t/3K8fX/9zn5837PzxPBa7h+bP01+s7
@@ -9698,7 +9703,7 @@
      </draw:image>
     </draw:frame> au lieu de <text:span text:style-name="T90">’’’</text:span></text:p>
    <text:p text:style-name="P14">pour l’<text:span text:style-name="T7">oriscus</text:span>, le procédé d’écriture est le même que pour l’<text:span text:style-name="T7">apostropha</text:span>.</text:p>
-   <text:p text:style-name="P14">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T51"> :</text:span> toutes les formulés avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T46"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T51"> :</text:span> toutes les formulés avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T46"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="86"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFIAAAA8CAYAAAD10u2xAAAMoXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5Zhbdhw5DkT/uYpZAt8El0PwcU7vYJY/F8ySLKttt9U98zVVdmUpM4sP
        RCAQSLf//cdx/+KVqojLpUnttXpeueceB1/EP69+P4PP9/O+SnxdC9+fd2m+LkROJY7p+bON
@@ -9776,7 +9781,7 @@
        alB2fanV3pFVCxBnJCABCUgESEACEpAIkIAEJProDSRyZHpDjU3SAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame> ; le <text:span text:style-name="T7">cephalicus</text:span> se nomme <text:span text:style-name="T7">f</text:span><text:span text:style-name="T38">l</text:span><text:span text:style-name="T7">exa semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image61" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.439cm" svg:height="0.499cm" draw:z-index="88"><draw:image loext:mime-type="image/png">
+    </draw:frame> ; le <text:span text:style-name="T7">cephalicus</text:span> se nomme <text:span text:style-name="T7">f</text:span><text:span text:style-name="T38">l</text:span><text:span text:style-name="T7">exa semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image61" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.439cm" svg:height="0.499cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFoAAABmCAYAAABLEIbUAAAQenpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjavZpnkhs5Ekb/4xR7BCQ8jgOTiJgb7PH3JUi22mg0kkaxZDSLKhZRQJrP
        gHL637+O+w+PVGJzKddWeimeR+qph8Gb5h+Pfl/Fp/t6H3k8P5OP591jCB6BU5FjfPyzPr8g
@@ -9876,7 +9881,7 @@
        XtYPSeqnw9GtJBAAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame> ; il y a aussi le <text:span text:style-name="T7">torculus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image62" text:anchor-type="as-char" svg:y="-0.437cm" svg:width="0.681cm" svg:height="0.499cm" draw:z-index="89"><draw:image loext:mime-type="image/png">
+    </draw:frame> ; il y a aussi le <text:span text:style-name="T7">torculus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image62" text:anchor-type="as-char" svg:y="-0.437cm" svg:width="0.681cm" svg:height="0.499cm" draw:z-index="88"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJYAAABuCAYAAADFwOqWAAAPxHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlplts4skb/YxW9BMzDchARwDlvB2/5fYNSpsfqsl2VcooyRYJADN+A
        DOf//++G//BT84ihtjH76j3yU1ddefNhxtfPet5TrM/761R/f5e+PR/6eX+ROVU4ltd/x35f
@@ -9974,7 +9979,7 @@
        Yzl0sKCS/LCgAgsqyQ8LKrCgkqX5BrwpAQ2AnmCfAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>le <text:span text:style-name="T38">q</text:span><text:span text:style-name="T7">uilisma semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image63" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.72cm" svg:height="0.499cm" draw:z-index="90"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>le <text:span text:style-name="T38">q</text:span><text:span text:style-name="T7">uilisma semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image63" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.72cm" svg:height="0.499cm" draw:z-index="89"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKoAAAB2CAYAAABYigjWAAAQIHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZlpkiQnEkb/c4o5ApuDcxzAwWxuMMef55FZ1YtaaqklG5vKrozsyAgC
        fPkWKpz//PuGf/FTS2uhStc2Wov81FFHnnzQ+PoZz3uK9Xl/fuZ8f5e+PR96e3+ROVU4ltd/
@@ -10076,7 +10081,7 @@
        fL/YkCsHFa9bTgAAAABJRU5ErkJggg==
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image64" text:anchor-type="as-char" svg:y="-0.445cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="91"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/><draw:frame draw:style-name="fr1" draw:name="Image64" text:anchor-type="as-char" svg:y="-0.445cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="90"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKYAAAB2CAYAAABCtuhYAAARR3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZppchtJDoX/5ynmCLkCyOPkGjE3mOPPhyKltt1e2t0zUlikqGJVFvDw
        lqTD+c+/b/gXX7W1GGpTky4S+aq99jx4YvH11Z+fKdbn5/M15P239PXrQT/+kHmp8Fhev+p4
@@ -10186,7 +10191,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/><text:span text:style-name="T106">etc.</text:span></text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T107">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formulé, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formulé devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="60"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14"><text:span text:style-name="T107">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formulé, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formulé devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="59"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIIAAABiCAYAAACcRwt/AAARmnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZppdhu7EUb/YxVZAqYCUMtBYTgnO8jyc6tJOR5kx895ES021WyigRq+
        AXQ4//rnDf/gp7bcQpU+mrYW+alaNU9ejPj60ec5xfo8Pz8jv99L354P7eONzKnCsbz+7PN9
@@ -10293,7 +10298,7 @@
        QCAgEBAICAQEOq0/tIsD74LuvlwAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>pour le <text:span text:style-name="T7">climacus</text:span><text:span text:style-name="T52"> ;</text:span> <draw:frame draw:style-name="fr1" draw:name="Image66" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.69cm" svg:height="0.499cm" draw:z-index="61"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>pour le <text:span text:style-name="T7">climacus</text:span><text:span text:style-name="T52"> ;</text:span> <draw:frame draw:style-name="fr1" draw:name="Image66" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.69cm" svg:height="0.499cm" draw:z-index="60"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHoAAABYCAYAAAA6PePZAAASjHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZpXdhy9EYXfsQovAUAhLgehcI534OX7K/SQoiT+EiV7RpzQ0wGocANa
        Tv/z7+P+xSMH8S7l2kovxfNIPfU4+ND88+j3Nfh0X++jjtdv4fvtLr8dFNkkvMv3B4TB9vzt
@@ -10405,7 +10410,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>pour le <text:span text:style-name="T7">pes subbipun</text:span><text:span text:style-name="T38">c</text:span><text:span text:style-name="T7">tis</text:span>.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T108">L</text:span>’<text:span text:style-name="T7">ancus</text:span> présente dans un certain nombre de manuscrits une forme un peu différente<text:span text:style-name="T108"> :</text:span> il s’écrit à la maniè<text:span text:style-name="T108">r</text:span>e d’une <text:span text:style-name="T7">c</text:span><text:span text:style-name="T39">livi</text:span><text:span text:style-name="T7">s</text:span>, d’un <text:span text:style-name="T39">tor</text:span><text:span text:style-name="T7">culus</text:span><text:span text:style-name="T53">, </text:span><text:span text:style-name="T52">etc.</text:span> augmenté d’un crochet répondant au dernier son du groupe qui en effet est celui qui <text:span text:style-name="T108">s’</text:span>efface davantage dans l’émission de l’<text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image67" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="62"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14"><text:span text:style-name="T108">L</text:span>’<text:span text:style-name="T7">ancus</text:span> présente dans un certain nombre de manuscrits une forme un peu différente<text:span text:style-name="T108"> :</text:span> il s’écrit à la maniè<text:span text:style-name="T108">r</text:span>e d’une <text:span text:style-name="T7">c</text:span><text:span text:style-name="T39">livi</text:span><text:span text:style-name="T7">s</text:span>, d’un <text:span text:style-name="T39">tor</text:span><text:span text:style-name="T7">culus</text:span><text:span text:style-name="T53">, </text:span><text:span text:style-name="T52">etc.</text:span> augmenté d’un crochet répondant au dernier son du groupe qui en effet est celui qui <text:span text:style-name="T108">s’</text:span>efface davantage dans l’émission de l’<text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image67" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="61"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHQAAABqCAYAAABtRnXMAAAWRXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZpZdhy5EUX/sQovAfOwHIzneAdevu9DFseWWpLbosSikpVIABHxhkCZ
        /Z9/H/Mv/qRmvYmp1NxytvyJLTbf+aHa50+7352N9/v9U+Lrd+7rdZP76xeeS4HX8Lrhdd11
@@ -10534,7 +10539,7 @@
        xQQahqnkPgzryPgBNDX1C1ZjukUAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>au lieu de <draw:frame draw:style-name="fr1" draw:name="Image68" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="63"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>au lieu de <draw:frame draw:style-name="fr1" draw:name="Image68" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="62"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHIAAABoCAYAAAAtkKSAAAAWBXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZpXkiM5lkX/sYpZArRYDqTZ7GCW3+fCPSJ1VWZ3tdlkWASZThIOPHEF
        QLP/73+P+R/+pRqtianU3HK2/IstNt95Uu3zr92/zsb79/4r/n3NfXvd5I8PeS4FHsP7gf6+
@@ -10676,7 +10681,7 @@
      <text:p text:style-name="P38">Si le mouvement est descendant, la formulé est composée de simples <text:span text:style-name="T39">points</text:span> ainsi superposés verticalement<text:span text:style-name="T108"> :</text:span> et le <text:span text:style-name="T39">point</text:span> placé au sommet de la perpendiculaire <text:span text:style-name="T108">s’</text:span>exprime le premier.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.229cm" svg:height="0.3cm" draw:z-index="64"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.229cm" svg:height="0.3cm" draw:z-index="63"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAABUCAYAAAA22+FuAAALtnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja7Zlbchw7DkT/uYpZAl/gYzkkQUbcHczy54DVkmVdy/YNz89EjNrqalVV
        8wEkMhNlt//913H/4idJaS5LbaWX4vnJPfc4+ND889Pve/D5vt+fHF/XwvfnneTXhcipxDE9
@@ -10750,7 +10755,7 @@
        gfgVNhmdbCmIncMtEyoggAACCCCAmC4f3x5euq+UUB0AAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/><text:span text:style-name="T109">Clivis</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr2" draw:name="Image70" text:anchor-type="as-char" svg:width="0.161cm" svg:height="0.499cm" draw:z-index="65"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/><text:span text:style-name="T109">Clivis</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr2" draw:name="Image70" text:anchor-type="as-char" svg:width="0.161cm" svg:height="0.499cm" draw:z-index="64"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAACwAAACMCAYAAAAHmEvvAAAMGHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZhrciu7DYT/cxVZAkESfCyHD7AqO8jy82Ek28c+N/dRFaukkUajIYFu
        NBoO9p9/3/Av/rLkHoq2Xketkb8yykiTNz2+/sbzKrE8r89f2u/v5Pv50D++SJzKHPPrY5vv
@@ -10830,12 +10835,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus.</text:p>
-   <text:list xml:id="list135309653320269" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list135552520215913" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P38">S<text:span text:style-name="T110">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la dpoite, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="66"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="65"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFoAAABkCAYAAAAG2CffAAARF3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjaxZpnclu9GYX/YxVZAnpZDupMdpDl5zkgVV0kj79JxLEudUmivOUU0Gb/
        59/H/IufWKM3MZWaW86Wn9hi850n1T5+2v3tbLy/70/qz9fcx/smx+cLnluBa3j8WZ4fcJ37
@@ -10937,7 +10942,7 @@
        ckz5E6yeBYz6Bhof0Z3sSJoMDS7zaKCBpoAGmgIaaNF6Af7LkftCFRZMAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>Podatus.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image72" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="67"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>Podatus.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image72" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="66"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHYAAAB4CAYAAAAnrQZhAAAS/3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZrnleM4lIX/I4oNAd6EA/Nwzmaw4e93KVV7OzOlLklNUSDwzDVgOfu/
        /73uf/gpsXqXS+t11Or5ySOPOHnT/etnPM/B5+f5+Wn1/Vn4+rhrH1+KHEq8pvcX5vv8yfHy
@@ -11053,12 +11058,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Scandicus.</text:p>
-   <text:list xml:id="list135309517578015" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list135552929131545" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P38"><text:span text:style-name="T110">Il</text:span> en est toujours ainsi de <text:span text:style-name="T110">l</text:span>a dernière note d’une formulé, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T110"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image73" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.51cm" svg:height="0.499cm" draw:z-index="68"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image73" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.51cm" svg:height="0.499cm" draw:z-index="67"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFwAAABaCAYAAAA1tjFFAAAU/npUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5ZpZchs5l4XfsYpeAuZhORgj/h308vs7SFK2bLnKruqHjmjJFqkkiUTe
        4Qw3ZfZ//+eY/+Ir1RhNTKXmlrPlK7bYfOdJtc9Xuz+djffn/Urz9Zr7fNyk/nrBcyjwGJ5f
@@ -11179,7 +11184,7 @@
        B8iawJ9uHwRykMIBSVoIcAzgAAc4BnCAYwAHOPbR/gBxubAFJHASEgAAAABJRU5ErkJggg==
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>Porre<text:span text:style-name="T110">ct</text:span>us.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image74" text:anchor-type="as-char" svg:y="-0.462cm" svg:width="0.37cm" svg:height="0.499cm" draw:z-index="69"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>Porre<text:span text:style-name="T110">ct</text:span>us.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image74" text:anchor-type="as-char" svg:y="-0.462cm" svg:width="0.37cm" svg:height="0.499cm" draw:z-index="68"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAF4AAACACAYAAACC5t4xAAAO73pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlrduM6DoT/cxWzBL5BLofPc2YHs/z5QMmJnXTS6b43TixHlkgQQBUK
        lFn/++82/+EnZikmJim55mz5iTVW3/hQ7PVTz7uz8byfn7Tu79zrefO4x3pOBY7h+lfafX3j
@@ -11275,12 +11280,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus resupinus.</text:p>
-   <text:list xml:id="list135309204581173" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list135552806602174" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P38">Si la note culminante de la formulé n’est pas la dernière, le <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T110">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T110"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image75" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.54cm" svg:height="0.499cm" draw:z-index="70"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image75" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.54cm" svg:height="0.499cm" draw:z-index="69"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFAAAABKCAYAAAAsXNNQAAAP/HpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZppcuS4EUb/4xQ+ArbEchwACUT4Bj6+X4IltdT79IwjrGoVKZIFgrl8
        C6rd/s+/j/sXP7kk77LUVnopnp/cc4+Dneafn37fg8/3/f7I6xR/fzru8nidiBxKbNPzZ30d
@@ -11376,7 +11381,7 @@
        RK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>Torculus.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image76" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.319cm" svg:height="0.499cm" draw:z-index="71"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>Torculus.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image76" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.319cm" svg:height="0.499cm" draw:z-index="70"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAE4AAAB4CAYAAABcicStAAAR/HpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppciSpskb/s4q7BGac5TA4ZncHb/n3OJFSSWpVldrsKbtyiMwgwIdv
        INrp//33uP/wlyVml0uT2mv1/OWeexy8Ef/89fscfL7P9y/r67vw+bhrbydFDiVe0/Oxjdfv
@@ -11485,12 +11490,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Pes subpun<text:span text:style-name="T110">c</text:span>tis.</text:p>
-   <text:list xml:id="list135309533011762" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list135552159302899" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P38"><text:span text:style-name="T110">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T110">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T7"> superposés</text:span>.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image77" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="1.431cm" svg:height="0.3cm" draw:z-index="72"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image77" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="1.431cm" svg:height="0.3cm" draw:z-index="71"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAASAAAAA8CAYAAADG4GfUAAAKWHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZh/diQpDoT/5xR7BEAgwXH4+d7eYI+/n7LKbru7Z3Zm3rraleksCoRC
        igg6nP/8+4Z/8ZO1l1CqNe2qkZ/SS8+DmxZfP/15T7E8789P/rhL358HWfFjRIrCVV5/2nhd
@@ -11561,7 +11566,7 @@
        gAABBCCAAAEEIIAAAQQggAABBCCAgHyfrJn0LA/F4gIAAAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/><text:span text:style-name="T7">S</text:span><text:span text:style-name="T40">trop</text:span><text:span text:style-name="T7">hicus</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image78" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.439cm" svg:height="0.499cm" draw:z-index="73"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/><text:span text:style-name="T7">S</text:span><text:span text:style-name="T40">trop</text:span><text:span text:style-name="T7">hicus</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image78" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.439cm" svg:height="0.499cm" draw:z-index="72"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGAAAABsCAYAAACVWrdDAAAUMHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppchu5loX/YxW9BMy4WA7GiN5BL7+/k6Rky2WXXfWeGCKpZBIJ3OEM
        SLnzf/973f/wU3KJLpdmtdfq+ck99zh4Y/7105/n4PPz/PzU90f8/eW4q+v9QeRQ4jW9/mzj
@@ -11681,7 +11686,7 @@
        AAAASUVORK5CYII=
       </office:binary-data>
      </draw:image>
-    </draw:frame> <text:span text:style-name="T7">Quilisma</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image79" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.529cm" svg:height="0.499cm" draw:z-index="74"><draw:image loext:mime-type="image/png">
+    </draw:frame> <text:span text:style-name="T7">Quilisma</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image79" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.529cm" svg:height="0.499cm" draw:z-index="73"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFwAAABWCAYAAABCdPE+AAAWo3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZtXdhw5tkX/MYoeArwZDuxaPYM3/N4HkaRIGUqqV8wS0zAyArjmGCDK
        7P/77zH/4ScHW01MpeaWs+Untth850W1z0+7v52N9/f9SfP1N/f5c5Py6w+ejwLP4Xlb+uv4
@@ -11810,7 +11815,7 @@
        pBjrBcTPza0f2/U7AAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame> <text:span text:style-name="T7">Pressus</text:span>.<text:line-break/><draw:frame draw:style-name="fr1" draw:name="Image80" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="75"><draw:image loext:mime-type="image/png">
+    </draw:frame> <text:span text:style-name="T7">Pressus</text:span>.<text:line-break/><draw:frame draw:style-name="fr1" draw:name="Image80" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="74"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFYAAABkCAYAAAAc5MdRAAAUvHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZrncZs7GoX/o4otATmUgzizHWz5+xyQCrQty75zRVukGPABbzgBoNn/
        ++8x/+EnxeZNTKXmlrPlJzae6Tyo9vHT7m9n4/19f1J+vuZenzc5Pl/wPBW4D48/S3++v/N8
@@ -11931,7 +11936,7 @@
        U764YUIlh532bRgXKAgs63cGqBI7HQ9m8BKsmmAFO6z9ACSN7v2twIWfAAAAAElFTkSuQmCC
       </office:binary-data>
      </draw:image>
-    </draw:frame> <text:span text:style-name="T7">Semivocalis</text:span> grave ou <text:span text:style-name="T7">Cephalicus</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image81" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="76"><draw:image loext:mime-type="image/png">
+    </draw:frame> <text:span text:style-name="T7">Semivocalis</text:span> grave ou <text:span text:style-name="T7">Cephalicus</text:span>.<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image81" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.499cm" svg:height="0.499cm" draw:z-index="75"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGIAAABiCAYAAACrpQYOAAAQI3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZpZdhs5EkX/sYpeAgIzloMhcE7toJffN0BKljW4LFd9tGgxqSSJBGJ4
        A9JO//vXcf/hJ5XiXcq1lc4rflJPPQxeNP/46fdZfLrP96eE53vy83n3+kbgVOQYH3/W8fz8
@@ -12032,7 +12037,7 @@
      </draw:image>
     </draw:frame> <text:span text:style-name="T7">Semivocalis</text:span> aigu ou <text:span text:style-name="T7">Epiphonus</text:span>.</text:p>
    <text:p text:style-name="P14">T<text:span text:style-name="T110">el</text:span> est le mode primitif et ordinaire de combiner les notes dans ce syst<text:span text:style-name="T110">è</text:span>me.</text:p>
-   <text:p text:style-name="P14"><text:soft-page-break/>B<text:span text:style-name="T110">ientot</text:span>, en disposant les <text:span text:style-name="T40">point</text:span><text:span text:style-name="T7">s</text:span>, comme il vient d’être dit, on est arrivé à les relier entre eux et à former de la sorte des groupes, qui présentent une grande analogie avec les figures provenant de la combinaison des accents. Ainsi la <text:span text:style-name="T40">clivis</text:span> présente cette forme <draw:frame draw:style-name="fr1" draw:name="Image82" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="77"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P14"><text:soft-page-break/>B<text:span text:style-name="T110">ientot</text:span>, en disposant les <text:span text:style-name="T40">point</text:span><text:span text:style-name="T7">s</text:span>, comme il vient d’être dit, on est arrivé à les relier entre eux et à former de la sorte des groupes, qui présentent une grande analogie avec les figures provenant de la combinaison des accents. Ainsi la <text:span text:style-name="T40">clivis</text:span> présente cette forme <draw:frame draw:style-name="fr1" draw:name="Image82" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="76"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAABMCAYAAADZXmGYAAAQs3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjavZlpcuQsEob/c4o5AkuyHQdIiJgbzPHnSVR22713zxfjskuySiVBLu+C
        3P7Pv4/7Fz9SsjjJtZVeiudHuvQ42Gn++en3PXi57/dH4uuz8Pm4k/X6IHIosU3Pv3W8zh8c
@@ -12131,7 +12136,7 @@
        eIq+RoZ/gvHUIIhnfABSsnzF2gG/fgAAAABJRU5ErkJggg==
       </office:binary-data>
      </draw:image>
-    </draw:frame><text:s/>le <text:span text:style-name="T40">tor</text:span><text:span text:style-name="T7">culus</text:span> celle de la <text:span text:style-name="T40">clivis</text:span> liée précédée d’un point <draw:frame draw:style-name="fr1" draw:name="Image83" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.52cm" svg:height="0.499cm" draw:z-index="78"><draw:image loext:mime-type="image/png">
+    </draw:frame><text:s/>le <text:span text:style-name="T40">tor</text:span><text:span text:style-name="T7">culus</text:span> celle de la <text:span text:style-name="T40">clivis</text:span> liée précédée d’un point <draw:frame draw:style-name="fr1" draw:name="Image83" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.52cm" svg:height="0.499cm" draw:z-index="77"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGQAAABgCAYAAADrc9dCAAAT93pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppdtw4kK3/YxW9BGIGloMhcE7v4C2/v4tMybOr7FdWlTJFMUkghjsE
        5ez//e9x/8O/nENxKddWeikP/1JPPQzetOf1r9/v/kn3+/1X0vt3/tvjrryPP4FDkdf4+rGO
@@ -12248,7 +12253,7 @@
        Em8EaakUXDeheQAAAABJRU5ErkJggg==
       </office:binary-data>
      </draw:image>
-    </draw:frame>.<text:line-break/>Les points primitifs du <text:span text:style-name="T40">por</text:span><text:span text:style-name="T7">re</text:span><text:span text:style-name="T40">ct</text:span><text:span text:style-name="T7">us</text:span> également se sont allongés en forme de traits, et soudés entre eux, surtout dans le <text:span text:style-name="T7">porre</text:span><text:span text:style-name="T40">ct</text:span><text:span text:style-name="T7">us præpun</text:span><text:span text:style-name="T40">c</text:span><text:span text:style-name="T7">tis</text:span> ou <text:span text:style-name="T7">torculus resupinus</text:span> ainsi écrit<text:span text:style-name="T110"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image84" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.559cm" svg:height="0.499cm" draw:z-index="79"><draw:image loext:mime-type="image/png">
+    </draw:frame>.<text:line-break/>Les points primitifs du <text:span text:style-name="T40">por</text:span><text:span text:style-name="T7">re</text:span><text:span text:style-name="T40">ct</text:span><text:span text:style-name="T7">us</text:span> également se sont allongés en forme de traits, et soudés entre eux, surtout dans le <text:span text:style-name="T7">porre</text:span><text:span text:style-name="T40">ct</text:span><text:span text:style-name="T7">us præpun</text:span><text:span text:style-name="T40">c</text:span><text:span text:style-name="T7">tis</text:span> ou <text:span text:style-name="T7">torculus resupinus</text:span> ainsi écrit<text:span text:style-name="T110"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image84" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.559cm" svg:height="0.499cm" draw:z-index="78"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHYAAABoCAYAAAAkewT6AAAV+3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5ZpZcls7d4XfMYoMAX0zHLRVmUGGn2/hkLIs6/raf+UtVtmkKfIcYDer
        2aDZ//Pfx/wXf1Kt0cRUam45W/7EFpvvPKn2+dPuv87G++/9U/Lrd+7n101+f8jzUuAxvD7Q
