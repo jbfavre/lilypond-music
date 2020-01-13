@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T15:20:58.324534186</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H44M37S</meta:editing-duration><meta:editing-cycles>40</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="14" meta:paragraph-count="172" meta:word-count="4870" meta:character-count="29251" meta:non-whitespace-character-count="24456"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T15:22:20.448224019</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H45M59S</meta:editing-duration><meta:editing-cycles>41</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4870" meta:character-count="29251" meta:non-whitespace-character-count="24456"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">56871</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">176317</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22112</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">23797</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22139</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">33690</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">6706</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">75706</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">2568</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">204110</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">56871</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22110</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">80666</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">176317</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22137</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">210005</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">3</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">143</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">101</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
      <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
@@ -464,7 +464,7 @@
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Caption">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:break-before="page" fo:keep-with-next="always"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="First_20_Page">
@@ -3647,6 +3647,7 @@
    <text:p text:style-name="P14">Dans la grammaire, les accents sont restés tels que nous venons de les décrire<text:span text:style-name="T94"> ;</text:span> mais étant dans la musique d’un usage plus multiplié et plus compliqué, ils ont subi des modifications que nous devons signaler, et ont pris là des développements que nous aurons aussi à faire connaître.</text:p>
    <text:p text:style-name="P14">Les accents grammaticaux, devenus notes de musique, ont ensuite reçu des noms particuliers, en rapport surtout avec la forme spéciale <text:span text:style-name="T94">qu’</text:span>ils ont revêtue.</text:p>
    <text:p text:style-name="P14">Dans le tableau que nous allons mettre sous les yeux du lecteur, nous indiquons d’abord le nom des neumes<text:span text:style-name="T94"> ;</text:span> puis la forme qui les distingue<text:span text:style-name="T94"> ;</text:span> et enfin nous énumérons, dans leur ordre constitutif, les accents graves ou aigus, qui entrent dans la composition de chacun d’eux. <text:span text:style-name="T94">L</text:span>’accent aigu <text:span text:style-name="T94">n’</text:span>a presque subi aucune modification, et il demeure toujours facile à reconnaître. <text:span text:style-name="T94">L</text:span>’accent grave, par suite d’une tendance naturelle au calligraphe, <text:span text:style-name="T94">s’</text:span>est insensiblement raccourci, jusqu’à <text:soft-page-break/>devenir souvent un simple point<text:span text:style-name="T94"> ;</text:span> ce qui arrive toutes les fois <text:span text:style-name="T94">qu’</text:span>il est seul sur une syllabe<text:span text:style-name="T94"> ;</text:span> ou encore lorsque plusieurs accents graves se suivent, soit en montant, soit en descendant. Ce changement du trait en un simple point était nécessaire pour disposer dans une même direction une succession de mêmes accents.</text:p>
+   <text:p text:style-name="P14"/>
    <text:p text:style-name="P34"><text:span text:style-name="T89">Tableau des neumes les plus usités</text:span></text:p>
    <table:table table:name="TableauNeumesUsités" table:style-name="TableauNeumesUsités">
     <table:table-column table:style-name="TableauNeumesUsités.A"/>
@@ -8827,7 +8828,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>etc.</text:p>
-   <text:list xml:id="list152060504309530" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list152221050571621" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P39">Si la formule se termine par un son grave, le trait final, ou <text:span text:style-name="T7">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T105"> :</text:span></text:p>
     </text:list-item>
@@ -9478,7 +9479,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:list xml:id="list152059665031938" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list152221844765917" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
      <text:p text:style-name="P39">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T7">s</text:span><text:span text:style-name="T38">trop</text:span><text:span text:style-name="T7">hicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
     </text:list-item>
@@ -10855,7 +10856,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus.</text:p>
-   <text:list xml:id="list152059834730495" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152222454148907" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40"><text:soft-page-break/>S<text:span text:style-name="T111">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la <text:span text:style-name="T114">droite</text:span>, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
     </text:list-item>
@@ -11078,7 +11079,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Scandicus.</text:p>
-   <text:list xml:id="list152059091251790" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152221335796899" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40"><text:span text:style-name="T111">Il</text:span> en est toujours ainsi de <text:span text:style-name="T111">l</text:span>a dernière note d’une formule, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
@@ -11300,7 +11301,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus resupinus.</text:p>
-   <text:list xml:id="list152059051061416" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152221368456841" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40">Si la note culminante de la formule n’est pas la dernière, le <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T111">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
@@ -11510,7 +11511,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Pes subpun<text:span text:style-name="T111">c</text:span>tis.</text:p>
-   <text:list xml:id="list152059307385315" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list152222880495100" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
      <text:p text:style-name="P40"><text:span text:style-name="T111">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T111">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T7"> superposés</text:span>.</text:p>
     </text:list-item>
