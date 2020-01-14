@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-13T15:23:46.116140810</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H47M24S</meta:editing-duration><meta:editing-cycles>43</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="13" meta:paragraph-count="172" meta:word-count="4870" meta:character-count="29251" meta:non-whitespace-character-count="24456"/></office:meta>
+ <office:meta><meta:initial-creator>Jean Baptiste Favre</meta:initial-creator><meta:creation-date>2020-01-12T21:57:31.183670156</meta:creation-date><dc:date>2020-01-14T08:54:52.087404125</dc:date><dc:creator>Jean Favre</dc:creator><meta:editing-duration>PT1H49M42S</meta:editing-duration><meta:editing-cycles>44</meta:editing-cycles><meta:generator>LibreOffice/6.4.0.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="87" meta:object-count="0" meta:page-count="14" meta:paragraph-count="173" meta:word-count="4872" meta:character-count="29270" meta:non-whitespace-character-count="24474"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">249721</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">640</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22112</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">23797</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22050</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">11458</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">10283</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">259620</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">7583</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">5020</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">249721</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22110</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">273516</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">640</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22049</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">12097</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">3</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
-     <config:config-item config:name="ZoomFactor" config:type="short">143</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">297</config:config-item>
      <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
      <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
     </config:config-item-map-entry>
@@ -73,7 +73,7 @@
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1027770</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1106812</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
@@ -145,7 +145,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" style:font-name="URW Gothic L" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -233,6 +233,10 @@
   <style:style style:name="Table_20_Heading" style:display-name="Table Heading" style:family="paragraph" style:parent-style-name="Table_20_Contents" style:class="extra">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" text:number-lines="false" text:line-number="0"/>
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Subtitle" style:family="paragraph" style:parent-style-name="Heading" style:next-style-name="Text_20_body" style:class="chapter">
+   <style:paragraph-properties fo:margin-top="0.106cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
   </style:style>
   <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
    <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
@@ -355,142 +359,143 @@
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:rsid="0015d358" officeooo:paragraph-rsid="001ae764"/>
   </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="002a82b1" officeooo:paragraph-rsid="0005f7bb"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00291a78" officeooo:paragraph-rsid="0005f7bb"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="002a82b1" officeooo:paragraph-rsid="0005f7bb"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00291a78" officeooo:paragraph-rsid="0005f7bb"/>
+  </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0005f7bb" officeooo:paragraph-rsid="0005f7bb"/>
+   <style:text-properties officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="0030508e"/>
+   <style:text-properties officeooo:rsid="0005f7bb" officeooo:paragraph-rsid="0005f7bb"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00388196" officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:paragraph-rsid="0030508e"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:rsid="00388196" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="003959d3" officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:rsid="003959d3" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="000bb6a7"/>
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0045f44c" officeooo:paragraph-rsid="00087e68"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="000bb6a7"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties officeooo:rsid="0045f44c" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00465734" officeooo:paragraph-rsid="00087e68"/>
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:rsid="0045f44c" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+   <style:text-properties officeooo:rsid="00465734" officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Caption">
-   <style:paragraph-properties fo:keep-with-next="always"/>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Caption">
+   <style:paragraph-properties fo:keep-with-next="always"/>
+   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Caption">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" fo:keep-with-next="always"/>
    <style:text-properties fo:font-weight="bold" officeooo:paragraph-rsid="00087e68" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="">
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="">
    <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="005ee330" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="004d6b5f" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="004e7751" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif1" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="0033823b" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="005ee330" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Table_20_Heading">
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Table_20_Heading">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" officeooo:rsid="004d6b5f" officeooo:paragraph-rsid="00087e68" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans1" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard">
-   <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:line-height="100%" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:line-height="100%" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="DejaVu Sans" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard">
+   <loext:graphic-properties draw:fill="none" draw:fill-color="#729fcf"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:line-height="100%" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent"/>
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Caption">
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Caption">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="First_20_Page">
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Caption">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-weight="bold" officeooo:paragraph-rsid="00087e68" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_1" style:master-page-name="First_20_Page">
    <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L3">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="00087e68"/>
-  </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:break-before="page"/>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L4">
    <style:text-properties officeooo:paragraph-rsid="00087e68"/>
   </style:style>
   <style:style style:name="P43" style:family="paragraph">
@@ -1141,27 +1146,28 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:h text:style-name="P35" text:outline-level="1"><text:span text:style-name="T112">Notation</text:span> neumatique ou usuelle</text:h>
-   <text:p text:style-name="P14"><text:span text:style-name="T112">O</text:span><text:span text:style-name="T79">n</text:span> se servait autrefois, pour noter le chant, de certains signes appelés <text:span text:style-name="T24">n</text:span><text:span text:style-name="T7">e</text:span><text:span text:style-name="T24">u</text:span><text:span text:style-name="T7">mes</text:span>, dont la forme particulière <text:span text:style-name="T80">n’</text:span>a de rapport avec les <text:span text:style-name="T79">caractères</text:span> <text:span text:style-name="T80">d’</text:span>aucun alphabet.</text:p>
-   <text:p text:style-name="P14">I<text:span text:style-name="T79">l</text:span> importe à <text:span text:style-name="T80">l’</text:span>intelligence, comme à la bonne exécution, des mélodies grégoriennes toujours écrites en neumes dans les anciens monuments, que <text:span text:style-name="T80">l’</text:span>on comprenne la nature de ces signes et la valeur qui leur est attribuée par la tradition.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T112">P</text:span>our cela il est <text:span text:style-name="T79">nécessaire</text:span> de les étudier dans leur forme primitive et de suivre dans le cours des siècles les diverses transformations <text:span text:style-name="T80">qu’</text:span>ils ont subies jusqu’à <text:span text:style-name="T80">l’</text:span>époque assez récente de leur totale destruction.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3978_3513054921"/>Deux sortes de neumes<text:bookmark-end text:name="__RefHeading___Toc3978_3513054921"/></text:h>
-   <text:p text:style-name="P14"><text:span text:style-name="T112">O</text:span>n rencontre, dans les monuments liturgiques, des neumes de deux sortes<text:span text:style-name="T80"> :</text:span> les uns dérivés des accents grammaticaux diversement combinés, les autres composés de points groupés par superposition ou par conjonction.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3980_3513054921"/>Les accents grammaticaux deviennent des accents musicaux<text:bookmark-end text:name="__RefHeading___Toc3980_3513054921"/></text:h>
-   <text:p text:style-name="P14">L<text:span text:style-name="T79">es</text:span> neumes les plus ordinaires, et probablement les plus anciens, ont pour élément constitutif le signe même de <text:span text:style-name="T80">l’</text:span>accent dans le discours<text:span text:style-name="T112"> ;</text:span> c’est-à-dire le trait dont le sommet est incliné <text:span text:style-name="T112">tantôt</text:span> à gauche <text:span text:style-name="T112">tantôt</text:span> à <text:span text:style-name="T112">droite</text:span>, employé par les grammairiens pour exprimer que le son de la voix sur telle ou telle syllabe est relativement grave ou aigu. Tel est le point de départ de la notation neumatique, du moins de celle de la première espèce, que nous voulons d’abord expliquer. Que ceux-ci aient leur origine dans les accents, <text:span text:style-name="T80">c’</text:span>est une vérité, croyons-nous, définitivement acquise à la science<text:span text:style-name="T112"> ;</text:span> bien que ceux qui ont le plus <text:span text:style-name="T81">victorieusement</text:span> soutenu cette thèse, comme M. de Coussemaker par exemple<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+   <text:h text:style-name="P37" text:outline-level="1"><text:span text:style-name="T112">Notation</text:span> neumatique</text:h>
+   <text:p text:style-name="Subtitle"><text:span text:style-name="T112">Notation</text:span> neumatique ou usuelle</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T112">O</text:span><text:span text:style-name="T79">n</text:span> se servait autrefois, pour noter le chant, de certains signes appelés <text:span text:style-name="T24">n</text:span><text:span text:style-name="T7">e</text:span><text:span text:style-name="T24">u</text:span><text:span text:style-name="T7">mes</text:span>, dont la forme particulière <text:span text:style-name="T80">n’</text:span>a de rapport avec les <text:span text:style-name="T79">caractères</text:span> <text:span text:style-name="T80">d’</text:span>aucun alphabet.</text:p>
+   <text:p text:style-name="P15">I<text:span text:style-name="T79">l</text:span> importe à <text:span text:style-name="T80">l’</text:span>intelligence, comme à la bonne exécution, des mélodies grégoriennes toujours écrites en neumes dans les anciens monuments, que <text:span text:style-name="T80">l’</text:span>on comprenne la nature de ces signes et la valeur qui leur est attribuée par la tradition.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T112">P</text:span>our cela il est <text:span text:style-name="T79">nécessaire</text:span> de les étudier dans leur forme primitive et de suivre dans le cours des siècles les diverses transformations <text:span text:style-name="T80">qu’</text:span>ils ont subies jusqu’à <text:span text:style-name="T80">l’</text:span>époque assez récente de leur totale destruction.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3978_3513054921"/>Deux sortes de neumes<text:bookmark-end text:name="__RefHeading___Toc3978_3513054921"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T112">O</text:span>n rencontre, dans les monuments liturgiques, des neumes de deux sortes<text:span text:style-name="T80"> :</text:span> les uns dérivés des accents grammaticaux diversement combinés, les autres composés de points groupés par superposition ou par conjonction.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3980_3513054921"/>Les accents grammaticaux deviennent des accents musicaux<text:bookmark-end text:name="__RefHeading___Toc3980_3513054921"/></text:h>
+   <text:p text:style-name="P15">L<text:span text:style-name="T79">es</text:span> neumes les plus ordinaires, et probablement les plus anciens, ont pour élément constitutif le signe même de <text:span text:style-name="T80">l’</text:span>accent dans le discours<text:span text:style-name="T112"> ;</text:span> c’est-à-dire le trait dont le sommet est incliné <text:span text:style-name="T112">tantôt</text:span> à gauche <text:span text:style-name="T112">tantôt</text:span> à <text:span text:style-name="T112">droite</text:span>, employé par les grammairiens pour exprimer que le son de la voix sur telle ou telle syllabe est relativement grave ou aigu. Tel est le point de départ de la notation neumatique, du moins de celle de la première espèce, que nous voulons d’abord expliquer. Que ceux-ci aient leur origine dans les accents, <text:span text:style-name="T80">c’</text:span>est une vérité, croyons-nous, définitivement acquise à la science<text:span text:style-name="T112"> ;</text:span> bien que ceux qui ont le plus <text:span text:style-name="T81">victorieusement</text:span> soutenu cette thèse, comme M. de Coussemaker par exemple<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
       <text:p text:style-name="Footnote">histoire de l’harmonie au <text:span text:style-name="T112">Moyen</text:span><text:span text:style-name="T82"> Âge</text:span>. p. 154</text:p></text:note-body></text:note>, <text:span text:style-name="T80">n’</text:span>en aient pas toujours tiré toutes les conséquences, et <text:span text:style-name="T80">qu’</text:span>ils aient même, par la manière dont ils ont ensuite interprété les neumes, paru en avoir oublié la véritable origine.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3982_3513054921"/>L’accent dans le discours<text:bookmark-end text:name="__RefHeading___Toc3982_3513054921"/></text:h>
-   <text:p text:style-name="P14">L<text:span text:style-name="T81">es</text:span> neumes sont primitivement de véritables accents, et ce fait n’a rien qui <text:span text:style-name="T112">doive</text:span> surprendre, si l’on songe à <text:span text:style-name="T80">l’</text:span>affinité naturelle qui existe entre la musique et ce que l’on nomme accent dans le discours. Celui qui parle élève naturellement la voix sur <text:soft-page-break/>certaines syllabes et la fléchit sur d’autres<text:span text:style-name="T80"> ;</text:span> ce sont ces divers mouvements de voix que les anciens ont appelés <text:span text:style-name="T7">accents</text:span>.</text:p>
-   <text:p text:style-name="P14">C<text:span text:style-name="T81">es</text:span> accents, <text:span text:style-name="T7">graves</text:span> ou <text:span text:style-name="T25">aigus</text:span>, constituent dans le langage une espèce de modulation dont la modulation proprement musicale <text:span text:style-name="T80">n’</text:span>est pour ainsi dire <text:span text:style-name="T80">qu’</text:span>un développement. Ce rapport qui existe dans les choses se remarque aussi dans les noms<text:span text:style-name="T80"> :</text:span> <text:span text:style-name="T7">accent</text:span> (<text:span text:style-name="T7">accentus</text:span>), veut dire chant <text:span text:style-name="T81">(</text:span><text:span text:style-name="T7">ad cantus</text:span>). De plus, comme le font <text:span text:style-name="T112">observer</text:span> plusieurs auteurs, les accents sont nommés <text:span text:style-name="T25">t</text:span><text:span text:style-name="T7">ons</text:span> (<text:span text:style-name="T25">t</text:span><text:span text:style-name="T7">oni</text:span>, <text:span text:style-name="T7">tenores</text:span>) ; et <text:span text:style-name="T80">c’</text:span>est aussi le nom que l’on donne aux modes de la musique.</text:p>
-   <text:p text:style-name="P14">R<text:span text:style-name="T81">ien</text:span> <text:span text:style-name="T80">n’</text:span>était donc plus naturel que de se servir, comme on l’a fait, des mêmes signes pour marquer les accents et pour noter les mélodies<text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3982_3513054921"/>L’accent dans le discours<text:bookmark-end text:name="__RefHeading___Toc3982_3513054921"/></text:h>
+   <text:p text:style-name="P15">L<text:span text:style-name="T81">es</text:span> neumes sont primitivement de véritables accents, et ce fait n’a rien qui <text:span text:style-name="T112">doive</text:span> surprendre, si l’on songe à <text:span text:style-name="T80">l’</text:span>affinité naturelle qui existe entre la musique et ce que <text:soft-page-break/>l’on nomme accent dans le discours. Celui qui parle élève naturellement la voix sur certaines syllabes et la fléchit sur d’autres<text:span text:style-name="T80"> ;</text:span> ce sont ces divers mouvements de voix que les anciens ont appelés <text:span text:style-name="T7">accents</text:span>.</text:p>
+   <text:p text:style-name="P15">C<text:span text:style-name="T81">es</text:span> accents, <text:span text:style-name="T7">graves</text:span> ou <text:span text:style-name="T25">aigus</text:span>, constituent dans le langage une espèce de modulation dont la modulation proprement musicale <text:span text:style-name="T80">n’</text:span>est pour ainsi dire <text:span text:style-name="T80">qu’</text:span>un développement. Ce rapport qui existe dans les choses se remarque aussi dans les noms<text:span text:style-name="T80"> :</text:span> <text:span text:style-name="T7">accent</text:span> (<text:span text:style-name="T7">accentus</text:span>), veut dire chant <text:span text:style-name="T81">(</text:span><text:span text:style-name="T7">ad cantus</text:span>). De plus, comme le font <text:span text:style-name="T112">observer</text:span> plusieurs auteurs, les accents sont nommés <text:span text:style-name="T25">t</text:span><text:span text:style-name="T7">ons</text:span> (<text:span text:style-name="T25">t</text:span><text:span text:style-name="T7">oni</text:span>, <text:span text:style-name="T7">tenores</text:span>) ; et <text:span text:style-name="T80">c’</text:span>est aussi le nom que l’on donne aux modes de la musique.</text:p>
+   <text:p text:style-name="P15">R<text:span text:style-name="T81">ien</text:span> <text:span text:style-name="T80">n’</text:span>était donc plus naturel que de se servir, comme on l’a fait, des mêmes signes pour marquer les accents et pour noter les mélodies<text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
       <text:p text:style-name="Footnote"><text:span text:style-name="T112">On</text:span> <text:span text:style-name="T112">conçoit</text:span> également que ce genre de notation, dont la simplicité même prouve la haute antiquité, ait encore pu suffire à l’époque primitive du chant ecclésiastique, alors que ce chant, au rapport de S. Augustin et de S. Isidore, était parfois si simple, qu’il différait à peine des inflexions ordinaires du discours. <text:span text:style-name="T7">Primi</text:span><text:span text:style-name="T26">t</text:span><text:span text:style-name="T7">iva Ecclesia ita psallebat ui modico flex</text:span><text:span text:style-name="T26">u</text:span><text:span text:style-name="T7"> vocis faceret psallen</text:span><text:span text:style-name="T26">t</text:span><text:span text:style-name="T7">em resonare, ita </text:span><text:span text:style-name="T26">u</text:span><text:span text:style-name="T7">t pronuncianti vicinior esse</text:span><text:span text:style-name="T26">t</text:span><text:span text:style-name="T7"> quan psallent</text:span><text:span text:style-name="T26">i</text:span>. (de officiis c.7. Cf. S. Augustin, Confessions. liv. <text:span text:style-name="T83">X</text:span>.)</text:p></text:note-body></text:note>. Peu importe d’ailleurs que ce soit un véritable emprunt fait par les musiciens aux grammairiens, ou bien que les uns et les autres, <text:span text:style-name="T112">obéissant</text:span> simultanément à la même pensée, aient traduit de la même manière, <text:span text:style-name="T80">d’</text:span>une part les modulations du langage, <text:span text:style-name="T80">d’</text:span>autre part celle du discours<text:span text:style-name="T80"> :</text:span> toujours est-il que les signes sont les mêmes, l’idée qui les a fait naître est la même, et la valeur qui doit leur être attribuée également identique.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3984_3513054921"/>Accent aigu<text:bookmark-end text:name="__RefHeading___Toc3984_3513054921"/></text:h>
-   <text:p text:style-name="P14">I<text:span text:style-name="T81">l</text:span> est facile de nous représenter comment ces accents ont été inventés, soit par les grammairiens, soit par les musiciens. <text:span text:style-name="T80">Qu’</text:span>il <text:span text:style-name="T80">s’</text:span>agisse par exemple <text:span text:style-name="T80">d’</text:span>indiquer que la voix qui parle ou qui chante doit proférer une syllabe ou un son sur un ton plus élevé, le stylet de l’écrivain imite ce mouvement d’ascension et trace un trait montant <text:span text:style-name="T64">´</text:span> dans la direction du geste que ferait dans le même cas la main d’un maître de musique ou de déclamation<text:span text:style-name="T80"> ;</text:span> et il est en effet remarquable que dans les plus anciens textes accentués, <text:span text:style-name="T80">l’</text:span>accent aigu est tracé de bas en haut <text:span text:style-name="T64">´</text:span> et que, contrairement à <text:span text:style-name="T80">l’</text:span>usage actuel, il va en s’<text:span text:style-name="T80">e</text:span>ffilant vers la partie supérieure.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3986_3513054921"/>Valeur musicale de l’accent tonique<text:bookmark-end text:name="__RefHeading___Toc3986_3513054921"/></text:h>
-   <text:p text:style-name="P14">C’<text:span text:style-name="T81">est</text:span> <text:span text:style-name="T81">à</text:span> <text:span text:style-name="T80">l’</text:span>accent aigu, <text:span text:style-name="T80">l’</text:span>accent tonique, dont les grammairiens surmontent la syllab<text:span text:style-name="T81">e</text:span> qui dans chaque mot doit être mise en relief, et que les langues de <text:span text:style-name="T80">l’</text:span>antiquité, plus musicales que les <text:span text:style-name="T112">nôtres</text:span>, distinguaient par un ton de voix plus élevé. Exemple<text:span text:style-name="T80"> :</text:span></text:p>
-   <text:p text:style-name="P17">Adjutórium nóstrum in nomine Dómini.</text:p>
-   <text:p text:style-name="P14">Ce que l’on pourrait traduire musicalement de la sorte<text:span text:style-name="T84"> :</text:span></text:p>
-   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="16" draw:name="Forme2" draw:style-name="gr5" draw:text-style-name="P43" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.168cm" svg:y="0cm">
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3984_3513054921"/>Accent aigu<text:bookmark-end text:name="__RefHeading___Toc3984_3513054921"/></text:h>
+   <text:p text:style-name="P15">I<text:span text:style-name="T81">l</text:span> est facile de nous représenter comment ces accents ont été inventés, soit par les grammairiens, soit par les musiciens. <text:span text:style-name="T80">Qu’</text:span>il <text:span text:style-name="T80">s’</text:span>agisse par exemple <text:span text:style-name="T80">d’</text:span>indiquer que la voix qui parle ou qui chante doit proférer une syllabe ou un son sur un ton plus élevé, le stylet de l’écrivain imite ce mouvement d’ascension et trace un trait montant <text:span text:style-name="T64">´</text:span> dans la direction du geste que ferait dans le même cas la main d’un maître de musique ou de déclamation<text:span text:style-name="T80"> ;</text:span> et il est en effet remarquable que dans les plus anciens textes accentués, <text:span text:style-name="T80">l’</text:span>accent aigu est tracé de bas en haut <text:span text:style-name="T64">´</text:span> et que, contrairement à <text:span text:style-name="T80">l’</text:span>usage actuel, il va en s’<text:span text:style-name="T80">e</text:span>ffilant vers la partie supérieure.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3986_3513054921"/>Valeur musicale de l’accent tonique<text:bookmark-end text:name="__RefHeading___Toc3986_3513054921"/></text:h>
+   <text:p text:style-name="P15">C’<text:span text:style-name="T81">est</text:span> <text:span text:style-name="T81">à</text:span> <text:span text:style-name="T80">l’</text:span>accent aigu, <text:span text:style-name="T80">l’</text:span>accent tonique, dont les grammairiens surmontent la syllab<text:span text:style-name="T81">e</text:span> qui dans chaque mot doit être mise en relief, et que les langues de <text:span text:style-name="T80">l’</text:span>antiquité, plus musicales que les <text:span text:style-name="T112">nôtres</text:span>, distinguaient par un ton de voix plus élevé. Exemple<text:span text:style-name="T80"> :</text:span></text:p>
+   <text:p text:style-name="P18">Adjutórium nóstrum in nomine Dómini.</text:p>
+   <text:p text:style-name="P15">Ce que l’on pourrait traduire musicalement de la sorte<text:span text:style-name="T84"> :</text:span></text:p>
+   <text:p text:style-name="P15"><draw:frame text:anchor-type="paragraph" draw:z-index="16" draw:name="Forme2" draw:style-name="gr5" draw:text-style-name="P43" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.168cm" svg:y="0cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABdgAAADECAIAAAADAdQYAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -1390,8 +1396,8 @@
       <text:p/>
      </draw:image>
     </draw:frame><text:soft-page-break/></text:p>
-   <text:p text:style-name="P14">ou bien en modulant davantage, mais en conservant toujours le <text:span text:style-name="T85">caractère</text:span> de syllabe culminante à la syllabe accentuée<text:span text:style-name="T86"> :</text:span></text:p>
-   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="25" draw:name="Forme1" draw:style-name="gr1" draw:text-style-name="P43" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.168cm" svg:y="0cm">
+   <text:p text:style-name="P15">ou bien en modulant davantage, mais en conservant toujours le <text:span text:style-name="T85">caractère</text:span> de syllabe culminante à la syllabe accentuée<text:span text:style-name="T86"> :</text:span></text:p>
+   <text:p text:style-name="P15"><draw:frame text:anchor-type="paragraph" draw:z-index="25" draw:name="Forme1" draw:style-name="gr1" draw:text-style-name="P43" svg:width="12.665cm" svg:height="1.659cm" svg:x="2.168cm" svg:y="0cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABdgAAADECAIAAAADAdQYAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -1631,12 +1637,12 @@
       <text:p/>
      </draw:image>
     </draw:frame></text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3988_3513054921"/>L’accent oratoire est logique ou pathétique<text:bookmark-end text:name="__RefHeading___Toc3988_3513054921"/></text:h>
-   <text:p text:style-name="P14">C<text:span text:style-name="T85">e</text:span> <text:span text:style-name="T86">n’</text:span>est pas que la musique se soit toujours astreinte, même à <text:span text:style-name="T112">l&apos;origine</text:span>, à imiter dans ses modulations, la modulation même du discours, et à faire ainsi toujours marcher parallèlement son propre accent, <text:span text:style-name="T86">l’</text:span>accent musical, avec <text:span text:style-name="T86">l’</text:span>accent grammatical. <text:span text:style-name="T112">Nous</text:span> devons même faire tout de suite ici une remarque importante. Dans la parole, outre <text:span text:style-name="T83">l’accent</text:span> tonique qui module chaque mot selon certaines lois purement grammaticales, il y a <text:span text:style-name="T86">l’</text:span>accent oratoire qui <text:span text:style-name="T83">affecte</text:span> <text:span text:style-name="T112">plutôt</text:span> la phrase, et en varie la modulation d’après les pensées ou les sentiments divers qui sont exprimés. Ainsi, en ce qui touche les pensées, la phrase peut être affirmative, négative, dubitative, interrogative<text:span text:style-name="T86"> ;</text:span> et ces diverses circonstances, appartenant à <text:span text:style-name="T86">l’</text:span>ordre logique, amènent des inflexions de voix différentes les unes des autres. En ce qui concerne les sentiments, la phrase exprim<text:span text:style-name="T83">e</text:span> la joie ou la tristesse, la crainte ou <text:span text:style-name="T86">l’</text:span>espérance, le désir ou la répulsion, <text:span text:style-name="T86">l’</text:span>amour ou la haine<text:span text:style-name="T86"> ;</text:span> et ces impressions diverses, venant agiter diversement le cœur de <text:span text:style-name="T112">l&apos;homme</text:span>, communiquent à sa voix un accent qui varie avec la nature du sentiment lui-même. <text:span text:style-name="T86">L’</text:span>accent oratoire, soit <text:span text:style-name="T7">logique</text:span> soit <text:span text:style-name="T7">pathétique</text:span>, vient alors se substituer à <text:span text:style-name="T86">l’</text:span>accent grammatical et modifier les inflexions de voix que <text:span text:style-name="T86">l’</text:span>accent tonique, laissé à lui seul, donnerait régulièrement à la phrase. Reprenons <text:span text:style-name="T86">l’</text:span>exemple déjà cité, et donnons-lui une forme interrogative<text:span text:style-name="T86"> :</text:span> l’élévation de voix va changer de place, et se porter sur d’autres syllabes.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3988_3513054921"/>L’accent oratoire est logique ou pathétique<text:bookmark-end text:name="__RefHeading___Toc3988_3513054921"/></text:h>
+   <text:p text:style-name="P15">C<text:span text:style-name="T85">e</text:span> <text:span text:style-name="T86">n’</text:span>est pas que la musique se soit toujours astreinte, même à <text:span text:style-name="T112">l&apos;origine</text:span>, à imiter dans ses modulations, la modulation même du discours, et à faire ainsi toujours marcher parallèlement son propre accent, <text:span text:style-name="T86">l’</text:span>accent musical, avec <text:span text:style-name="T86">l’</text:span>accent grammatical. <text:span text:style-name="T112">Nous</text:span> devons même faire tout de suite ici une remarque importante. Dans la parole, outre <text:span text:style-name="T83">l’accent</text:span> tonique qui module chaque mot selon certaines lois purement grammaticales, il y a <text:span text:style-name="T86">l’</text:span>accent oratoire qui <text:span text:style-name="T83">affecte</text:span> <text:span text:style-name="T112">plutôt</text:span> la phrase, et en varie la modulation d’après les pensées ou les sentiments divers qui sont exprimés. Ainsi, en ce qui touche les pensées, la phrase peut être affirmative, négative, dubitative, interrogative<text:span text:style-name="T86"> ;</text:span> et ces diverses circonstances, appartenant à <text:span text:style-name="T86">l’</text:span>ordre logique, amènent des inflexions de voix différentes les unes des autres. En ce qui concerne les sentiments, la phrase exprim<text:span text:style-name="T83">e</text:span> la joie ou la tristesse, la crainte ou <text:span text:style-name="T86">l’</text:span>espérance, le désir ou la répulsion, <text:span text:style-name="T86">l’</text:span>amour ou la haine<text:span text:style-name="T86"> ;</text:span> et ces impressions diverses, venant agiter diversement le cœur de <text:span text:style-name="T112">l&apos;homme</text:span>, communiquent à sa voix un accent qui varie avec la nature du sentiment lui-même. <text:span text:style-name="T86">L’</text:span>accent oratoire, soit <text:span text:style-name="T7">logique</text:span> soit <text:span text:style-name="T7">pathétique</text:span>, vient alors se substituer à <text:span text:style-name="T86">l’</text:span>accent grammatical et modifier les inflexions de voix que <text:span text:style-name="T86">l’</text:span>accent tonique, laissé à lui seul, donnerait régulièrement à la phrase. Reprenons <text:span text:style-name="T86">l’</text:span>exemple déjà cité, et donnons-lui une forme interrogative<text:span text:style-name="T86"> :</text:span> l’élévation de voix va changer de place, et se porter sur d’autres syllabes.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Accent interrogatif</text:h>
-   <text:p text:style-name="P16">Adjutorium nostr<text:span text:style-name="T112">ú</text:span>m nonne s<text:span text:style-name="T112">í</text:span>t in nomine Domin<text:span text:style-name="T112">í</text:span> ?</text:p>
-   <text:p text:style-name="P14">Ce que nous pourrions traduire musicalement de cette manière:</text:p>
-   <text:p text:style-name="P14"><draw:frame text:anchor-type="paragraph" draw:z-index="17" draw:name="Forme3" draw:style-name="gr4" draw:text-style-name="P43" svg:width="15.306cm" svg:height="1.659cm" svg:x="0.847cm" svg:y="0cm">
+   <text:p text:style-name="P17">Adjutorium nostr<text:span text:style-name="T112">ú</text:span>m nonne s<text:span text:style-name="T112">í</text:span>t in nomine Domin<text:span text:style-name="T112">í</text:span> ?</text:p>
+   <text:p text:style-name="P15">Ce que nous pourrions traduire musicalement de cette manière:</text:p>
+   <text:p text:style-name="P15"><draw:frame text:anchor-type="paragraph" draw:z-index="17" draw:name="Forme3" draw:style-name="gr4" draw:text-style-name="P43" svg:width="15.306cm" svg:height="1.659cm" svg:x="0.847cm" svg:y="0cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABxAAAADECAIAAAAwBSOMAAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -2159,10 +2165,10 @@
       <text:p/>
      </draw:image>
     </draw:frame><text:soft-page-break/>ou mieux encore, mais toujours dans le même genre de mouvement<text:span text:style-name="T84"> :</text:span></text:p>
-   <text:p text:style-name="P14">C<text:span text:style-name="T87">ette </text:span>manière de <text:span text:style-name="T112">provoquer</text:span> la réponse en suspendant la voix, a fait dire à plusieurs grammairiens, que <text:span text:style-name="T86">l’</text:span>accent, dans les interrogations, affecte la syllabe finale<text:span text:style-name="T86"> :</text:span> ils ont confondu <text:span text:style-name="T86">l’</text:span>accent tonique et <text:span text:style-name="T86">l’</text:span>accent oratoire. Ainsi donc, sans sortir du <text:span text:style-name="T113">d</text:span>omaine de la simple parole, nous voyons déjà, comme dans <text:span text:style-name="T86">l’</text:span>exemple précédent, <text:span text:style-name="T86">l’</text:span>accent tonique se modifier ou même s’effacer en présence de <text:span text:style-name="T86">l’</text:span>accent oratoire<text:span text:style-name="T86"> ;</text:span> à plus forte raison, comme nous <text:span text:style-name="T86">l’</text:span>expliquerons plus loin en exposant, à propos du <text:span text:style-name="T87">rythme</text:span>, le but et la nature de <text:span text:style-name="T86">l’</text:span>accent tonique, celui-ci doit-il souvent disparaître ou se transformer <text:span text:style-name="T86">lorsqu’</text:span>il se trouve en concurrence avec le chant. Quelle que soit d’ailleurs la différence des modulations, il <text:span text:style-name="T86">n’</text:span>en existe pas moins un rapport réel entre les mouvements de voix propres au langage et ceux de la musique, ainsi <text:span text:style-name="T86">qu’</text:span>entre les signes dont on s’est servi pour les exprimer. <text:span text:style-name="T113">Poursuivons</text:span> notre étude comparative.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3990_3513054921"/>Accent grave<text:bookmark-end text:name="__RefHeading___Toc3990_3513054921"/></text:h>
-   <text:p text:style-name="P14">Il suffit aux grammairiens de noter la syllabe qui, dans chaque mot, a le privilège de <text:span text:style-name="T86">l’</text:span>accent tonique, et qui doit en conséquence être régulièrement proférée <text:span text:style-name="T86">d’</text:span>un ton de voix plus aigu<text:span text:style-name="T113"> ;</text:span> les autres par rapport à <text:span text:style-name="T88">celles-là</text:span> sont graves, <text:span text:style-name="T86">c’</text:span>est-à-dire moins élevées dans <text:span text:style-name="T86">l’</text:span>échelle des tons, plus humbles <text:span text:style-name="T86">d’</text:span>intonation, et par là même aussi moins éclatantes. Les syllabes graves ne portent ordinairement aucun signe<text:span text:style-name="T86"> ;</text:span> <text:span text:style-name="T86">l</text:span>e signe existe cependant<text:span text:style-name="T86"> :</text:span> c’est également un trait, mais tracé dans le sens opposé à celui de <text:span text:style-name="T86">l’</text:span>accent aigu<text:span text:style-name="T113"> ;</text:span> il descend de gauche à <text:span text:style-name="T113">droite</text:span> <text:span text:style-name="T90">`</text:span>, au lieu de monter <text:span text:style-name="T89">´</text:span>, et son sommet se trouve incliné sur la gauche au lieu de <text:span text:style-name="T86">l’</text:span>être sur la <text:span text:style-name="T113">droite</text:span> : <text:span text:style-name="T86">l’</text:span>accent grave est ainsi en tout <text:span text:style-name="T86">l’</text:span>inverse de <text:span text:style-name="T86">l’</text:span>accent aigu.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><draw:frame text:anchor-type="paragraph" draw:z-index="19" draw:name="Forme5" draw:style-name="gr2" draw:text-style-name="P44" svg:width="12.598cm" svg:height="1.625cm" svg:x="2.201cm" svg:y="0cm">
+   <text:p text:style-name="P15">C<text:span text:style-name="T87">ette </text:span>manière de <text:span text:style-name="T112">provoquer</text:span> la réponse en suspendant la voix, a fait dire à plusieurs grammairiens, que <text:span text:style-name="T86">l’</text:span>accent, dans les interrogations, affecte la syllabe finale<text:span text:style-name="T86"> :</text:span> ils ont confondu <text:span text:style-name="T86">l’</text:span>accent tonique et <text:span text:style-name="T86">l’</text:span>accent oratoire. Ainsi donc, sans sortir du <text:span text:style-name="T113">d</text:span>omaine de la simple parole, nous voyons déjà, comme dans <text:span text:style-name="T86">l’</text:span>exemple précédent, <text:span text:style-name="T86">l’</text:span>accent tonique se modifier ou même s’effacer en présence de <text:span text:style-name="T86">l’</text:span>accent oratoire<text:span text:style-name="T86"> ;</text:span> à plus forte raison, comme nous <text:span text:style-name="T86">l’</text:span>expliquerons plus loin en exposant, à propos du <text:span text:style-name="T87">rythme</text:span>, le but et la nature de <text:span text:style-name="T86">l’</text:span>accent tonique, celui-ci doit-il souvent disparaître ou se transformer <text:span text:style-name="T86">lorsqu’</text:span>il se trouve en concurrence avec le chant. Quelle que soit d’ailleurs la différence des modulations, il <text:span text:style-name="T86">n’</text:span>en existe pas moins un rapport réel entre les mouvements de voix propres au langage et ceux de la musique, ainsi <text:span text:style-name="T86">qu’</text:span>entre les signes dont on s’est servi pour les exprimer. <text:span text:style-name="T113">Poursuivons</text:span> notre étude comparative.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3990_3513054921"/>Accent grave<text:bookmark-end text:name="__RefHeading___Toc3990_3513054921"/></text:h>
+   <text:p text:style-name="P15">Il suffit aux grammairiens de noter la syllabe qui, dans chaque mot, a le privilège de <text:span text:style-name="T86">l’</text:span>accent tonique, et qui doit en conséquence être régulièrement proférée <text:span text:style-name="T86">d’</text:span>un ton de voix plus aigu<text:span text:style-name="T113"> ;</text:span> les autres par rapport à <text:span text:style-name="T88">celles-là</text:span> sont graves, <text:span text:style-name="T86">c’</text:span>est-à-dire moins élevées dans <text:span text:style-name="T86">l’</text:span>échelle des tons, plus humbles <text:span text:style-name="T86">d’</text:span>intonation, et par là même aussi moins éclatantes. Les syllabes graves ne portent ordinairement aucun signe<text:span text:style-name="T86"> ;</text:span> <text:span text:style-name="T86">l</text:span>e signe existe cependant<text:span text:style-name="T86"> :</text:span> c’est également un trait, mais tracé dans le sens opposé à celui de <text:span text:style-name="T86">l’</text:span>accent aigu<text:span text:style-name="T113"> ;</text:span> il descend de gauche à <text:span text:style-name="T113">droite</text:span> <text:span text:style-name="T90">`</text:span>, au lieu de monter <text:span text:style-name="T89">´</text:span>, et son sommet se trouve incliné sur la gauche au lieu de <text:span text:style-name="T86">l’</text:span>être sur la <text:span text:style-name="T113">droite</text:span> : <text:span text:style-name="T86">l’</text:span>accent grave est ainsi en tout <text:span text:style-name="T86">l’</text:span>inverse de <text:span text:style-name="T86">l’</text:span>accent aigu.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><draw:frame text:anchor-type="paragraph" draw:z-index="19" draw:name="Forme5" draw:style-name="gr2" draw:text-style-name="P44" svg:width="12.598cm" svg:height="1.625cm" svg:x="2.201cm" svg:y="0cm">
      <draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABdAAAADACAIAAACLR9b6AAAJMmlDQ1BkZWZhdWx0X3JnYi5p
        Y2MAAEiJlZVnUJNZF8fv8zzphUASQodQQ5EqJYCUEFoo0quoQOidUEVsiLgCK4qINEWQRQEX
@@ -2397,11 +2403,11 @@
       <text:p/>
      </draw:image>
     </draw:frame><text:bookmark-start text:name="__RefHeading___Toc3992_3513054921"/>Syllabe longue<text:bookmark-end text:name="__RefHeading___Toc3992_3513054921"/></text:h>
-   <text:p text:style-name="P14">nous avons écrit cet exemple comme <text:span text:style-name="T86">s’</text:span>il <text:span text:style-name="T86">n’</text:span>y avait <text:span text:style-name="T86">qu’</text:span>un accent sur chaque syllabe<text:span text:style-name="T86"> :</text:span> souvent en effet les grammairiens, pratiquement et même théoriquement, <text:span text:style-name="T88">n’</text:span>en comptent pas davantage<text:span text:style-name="T86"> ;</text:span> toutefois si <text:span text:style-name="T86">l’</text:span>on veut avoir égard à ce que <text:span text:style-name="T86">l’</text:span>on appelle la quantité des syllabes, c’est-à-dire à leur durée relative, et que <text:span text:style-name="T86">l’</text:span>on veuille <text:span text:style-name="T113">observer</text:span> rigoureusement la proportion des longues et des brèves, comme <text:soft-page-break/>les Latins ont parfois essayé de le faire dans leur langue, à l’imitation de ce que les Grecs<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
+   <text:p text:style-name="P15">nous avons écrit cet exemple comme <text:span text:style-name="T86">s’</text:span>il <text:span text:style-name="T86">n’</text:span>y avait <text:span text:style-name="T86">qu’</text:span>un accent sur chaque syllabe<text:span text:style-name="T86"> :</text:span> souvent en effet les grammairiens, pratiquement et même théoriquement, <text:span text:style-name="T88">n’</text:span>en comptent pas davantage<text:span text:style-name="T86"> ;</text:span> toutefois si <text:span text:style-name="T86">l’</text:span>on veut avoir égard à ce que <text:span text:style-name="T86">l’</text:span>on appelle la quantité des syllabes, c’est-à-dire à leur durée relative, et que <text:span text:style-name="T86">l’</text:span>on veuille <text:span text:style-name="T113">observer</text:span> rigoureusement la proportion des longues et des brèves, comme les Latins ont parfois essayé de le faire dans leur langue, à l’imitation de ce que les <text:soft-page-break/>Grecs<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
       <text:p text:style-name="Footnote"><text:span text:style-name="T113">Nous</text:span> ne voulons pas dire ici que tout soit <text:span text:style-name="T88">d’</text:span>importation étrangère dans les lois de la quantité latine. Parmi les voyelles longues, il y en a qui sont telles en vertu d’une cause naturelle, facile à comprendre. Par suite du travail qui préside à la formation des langues, il est arrivé en latin comme dans les autres langues, que deux voyelles successives se sont d’abord assimilées, puis fondues en une seule par contra<text:span text:style-name="T88">c</text:span>tion ; le souvenir des deux voyelles primitives, ayant chacune leur durée propre, a dû évidemment subsister plus ou moins de temps après <text:span text:style-name="T88">qu’</text:span>elles se sont ainsi contractées en une voyelle unique ; et celle-ci, prenant pour elle seule la durée des deux syllabes originaires, n’a pas dissipé incontinent son héritage, mais a conservé le temps double auquel l’oreille était habituée.</text:p></text:note-body></text:note> faisaient dans la leur, la longue devra être considérée comme valant deux brèves.</text:p>
-   <text:p text:style-name="P14">Ainsi, par exemple, <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">oma</text:span> se prononcera <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">ooma</text:span><text:span text:style-name="T28"> ;</text:span> nous aurons ici trois temps comme on le voit ci-après, N°1 ; les deux premiers temps sont sur la première syllabe et le troisième sur la dernière : ceci est la quantité ; voyons <text:span text:style-name="T86">l’</text:span>accent.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T88">Le</text:span> mouvement naturel de la voix est de redescendre après avoir monté, et non pas de finir en montant. Dans la langue latine en particulier, cette loi est absolue en ce qui concerne <text:span text:style-name="T88">l’</text:span>accent grammatical. Régulièrement, dans un mot, la voix monte sur le temps antépénultième, N°2 ; elle ne fait exception à cette règle que dans le cas <text:span text:style-name="T113">où</text:span> il lui est impossible de l’observer. Ainsi dans <text:span text:style-name="T80">l’</text:span>exemple ci-dessous, N°3, l<text:span text:style-name="T80">a</text:span> voix, après avoir monté sur la première partie ou le premier temps de la première syllabe du mot, redescend sur la deuxième partie ou le deuxième temps de cette même syllabe, puis vient se reposer sur la finale.</text:p>
-   <text:p text:style-name="P19"><draw:frame draw:style-name="fr8" draw:name="Image87" text:anchor-type="char" svg:x="9.14cm" svg:y="0.48cm" svg:width="0.99cm" svg:height="0.499cm" draw:z-index="21"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15">Ainsi, par exemple, <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">oma</text:span> se prononcera <text:span text:style-name="T27">R</text:span><text:span text:style-name="T7">ooma</text:span><text:span text:style-name="T28"> ;</text:span> nous aurons ici trois temps comme on le voit ci-après, N°1 ; les deux premiers temps sont sur la première syllabe et le troisième sur la dernière : ceci est la quantité ; voyons <text:span text:style-name="T86">l’</text:span>accent.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T88">Le</text:span> mouvement naturel de la voix est de redescendre après avoir monté, et non pas de finir en montant. Dans la langue latine en particulier, cette loi est absolue en ce qui concerne <text:span text:style-name="T88">l’</text:span>accent grammatical. Régulièrement, dans un mot, la voix monte sur le temps antépénultième, N°2 ; elle ne fait exception à cette règle que dans le cas <text:span text:style-name="T113">où</text:span> il lui est impossible de l’observer. Ainsi dans <text:span text:style-name="T80">l’</text:span>exemple ci-dessous, N°3, l<text:span text:style-name="T80">a</text:span> voix, après avoir monté sur la première partie ou le premier temps de la première syllabe du mot, redescend sur la deuxième partie ou le deuxième temps de cette même syllabe, puis vient se reposer sur la finale.</text:p>
+   <text:p text:style-name="P20"><draw:frame draw:style-name="fr8" draw:name="Image87" text:anchor-type="char" svg:x="9.14cm" svg:y="0.48cm" svg:width="0.99cm" svg:height="0.499cm" draw:z-index="21"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAOUAAAB0CAYAAAB68/XwAAAOtnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZlpkiM3Dkb/8xRzBO4Aj8MFjPAN5vjzkFJVb7a7O+wpdSmzUikmCeBb
        wA723z9u+A8/ZZQaahPto/fITx115MmJxtfPeN5TrM/782Pt/Vn69nqQ+v4gc6lwLK8/Zb7v
@@ -2616,11 +2622,11 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P16">N° 1. Rooma<text:tab/><text:tab/>N°2.<text:span text:style-name="T27"> </text:span><text:span text:style-name="T42">R</text:span><text:span text:style-name="T7">oo</text:span>ma<text:tab/><text:tab/><text:span text:style-name="T113">N°3. </text:span>Rooma</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3994_3513054921"/><text:span text:style-name="T88">Ac</text:span>ce<text:span text:style-name="T113">nt</text:span> circonflexe<text:bookmark-end text:name="__RefHeading___Toc3994_3513054921"/></text:h>
-   <text:p text:style-name="P14">Unissons les deux accents de la voyelle longue, Ró<text:span text:style-name="T92">ò</text:span>, et nous aurons un nouveau signe, forme par la jon<text:span text:style-name="T86">c</text:span>tion de <text:span text:style-name="T86">l’</text:span>accent aigu et de <text:span text:style-name="T86">l’</text:span>accent grave, et appelé accent circonflexe, Rô.</text:p>
-   <text:p text:style-name="P14">Au lieu <text:span text:style-name="T113">de </text:span><text:span text:style-name="T7">Roma</text:span> prenon<text:span text:style-name="T113">s </text:span><text:span text:style-name="T42">R</text:span><text:span text:style-name="T7">om</text:span><text:span text:style-name="T28">æ</text:span> et étudions-en la quantité et <text:span text:style-name="T86">l’</text:span>accent. La quantité est celle que nous indiquons ci-dessous, N°4. nous avons ici quatre temps au lieu de trois<text:span text:style-name="T86"> ;</text:span> et d’après le principe que nous émettions, <text:span text:style-name="T86">c’</text:span>est-à-dire en plaçant <text:span text:style-name="T86">l’</text:span>accent aigu au troisième temps avant la fin, nous obtiendrons ce que l’on voit au N°5<text:span text:style-name="T86"> ;</text:span> puis en marquant aussi les accents graves, nous aurons ce qui est écrit au N°6.</text:p>
-   <text:p text:style-name="P14"><draw:frame draw:style-name="fr8" draw:name="Image89" text:anchor-type="char" svg:x="2.24cm" svg:y="0.48cm" svg:width="1.221cm" svg:height="0.499cm" draw:z-index="22"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17">N° 1. Rooma<text:tab/><text:tab/>N°2.<text:span text:style-name="T27"> </text:span><text:span text:style-name="T42">R</text:span><text:span text:style-name="T7">oo</text:span>ma<text:tab/><text:tab/><text:span text:style-name="T113">N°3. </text:span>Rooma</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3994_3513054921"/><text:span text:style-name="T88">Ac</text:span>ce<text:span text:style-name="T113">nt</text:span> circonflexe<text:bookmark-end text:name="__RefHeading___Toc3994_3513054921"/></text:h>
+   <text:p text:style-name="P15">Unissons les deux accents de la voyelle longue, Ró<text:span text:style-name="T92">ò</text:span>, et nous aurons un nouveau signe, forme par la jon<text:span text:style-name="T86">c</text:span>tion de <text:span text:style-name="T86">l’</text:span>accent aigu et de <text:span text:style-name="T86">l’</text:span>accent grave, et appelé accent circonflexe, Rô.</text:p>
+   <text:p text:style-name="P15">Au lieu <text:span text:style-name="T113">de </text:span><text:span text:style-name="T7">Roma</text:span> prenon<text:span text:style-name="T113">s </text:span><text:span text:style-name="T42">R</text:span><text:span text:style-name="T7">om</text:span><text:span text:style-name="T28">æ</text:span> et étudions-en la quantité et <text:span text:style-name="T86">l’</text:span>accent. La quantité est celle que nous indiquons ci-dessous, N°4. nous avons ici quatre temps au lieu de trois<text:span text:style-name="T86"> ;</text:span> et d’après le principe que nous émettions, <text:span text:style-name="T86">c’</text:span>est-à-dire en plaçant <text:span text:style-name="T86">l’</text:span>accent aigu au troisième temps avant la fin, nous obtiendrons ce que l’on voit au N°5<text:span text:style-name="T86"> ;</text:span> puis en marquant aussi les accents graves, nous aurons ce qui est écrit au N°6.</text:p>
+   <text:p text:style-name="P15"><draw:frame draw:style-name="fr8" draw:name="Image89" text:anchor-type="char" svg:x="2.24cm" svg:y="0.48cm" svg:width="1.221cm" svg:height="0.499cm" draw:z-index="22"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAR4AAAB1CAYAAACYjY77AAAVsnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZppliO3coX/YxVeAqbAsByM53gHXr6/C7JbLT3pWbLd7CqyWMxMIIY7
        RJY7//Wf1/0H/yxac9lqK70Uz7/cc4+DF81//vX3Pfj8vn9+ON9X4ffvu2rfgyJvJZ7T58c6
@@ -3013,11 +3019,11 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P16">N° 4 Roomae<text:tab/><text:tab/><text:tab/>N°5. Roomae<text:tab/><text:tab/><text:tab/>N°6 Roomae</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3996_3513054921"/><text:soft-page-break/>Anticirconflexe<text:bookmark-end text:name="__RefHeading___Toc3996_3513054921"/></text:h>
-   <text:p text:style-name="P14">Joignons les deux accents de la première syllabe, nous aurons <text:span text:style-name="T86">R</text:span>ǒ, l’accent opposé au circonflexe ˇ, c’est-à-dire l’anticirconflexe, l’<text:span text:style-name="T65">άγταγαχλαζόμεγος</text:span> des grammairiens grecs.</text:p>
-   <text:p text:style-name="P14">S<text:span text:style-name="T93">i</text:span> nous voulions traduire musicalement la modulation de l’accent circonflexe, et celle de l’anticirconflexe, nous aurions</text:p>
-   <text:p text:style-name="P20">pour le premier : <draw:frame draw:style-name="fr7" draw:name="Image116" text:anchor-type="as-char" svg:y="-0.75cm" svg:width="1.739cm" svg:height="1.499cm" draw:z-index="0"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17">N° 4 Roomae<text:tab/><text:tab/><text:tab/>N°5. Roomae<text:tab/><text:tab/><text:tab/>N°6 Roomae</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3996_3513054921"/>Anticirconflexe<text:bookmark-end text:name="__RefHeading___Toc3996_3513054921"/></text:h>
+   <text:p text:style-name="P15">Joignons les deux accents de la première syllabe, nous aurons <text:span text:style-name="T86">R</text:span>ǒ, l’accent opposé au circonflexe ˇ, c’est-à-dire l’anticirconflexe, l’<text:span text:style-name="T65">άγταγαχλαζόμεγος</text:span> des grammairiens grecs.</text:p>
+   <text:p text:style-name="P15"><text:soft-page-break/>S<text:span text:style-name="T93">i</text:span> nous voulions traduire musicalement la modulation de l’accent circonflexe, et celle de l’anticirconflexe, nous aurions</text:p>
+   <text:p text:style-name="P21">pour le premier : <draw:frame draw:style-name="fr7" draw:name="Image116" text:anchor-type="as-char" svg:y="-0.75cm" svg:width="1.739cm" svg:height="1.499cm" draw:z-index="0"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAloAAAIHCAYAAABHS/LDAAAlInpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZxrshs5kqz/YxWzBLwDWA6eZrODu/z5HKTUUnVVdc3Y1WmJp8lkJjIe
        Hu6ByHLn//33df/Fn+5TdblYq71Wz5/cc4+DX5r//Onv3+Dz+/f9KcPH77u/ve+8fT+IvJV4
@@ -3641,14 +3647,14 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T93">D</text:span>’<text:span text:style-name="T93">après</text:span> ce que nous avons dit plus haut on doit s’attendre à rencontrer aussi ces accents dans la notation musicale, ou ils se trouvent en effet et avec la même signification<text:span text:style-name="T93"> :</text:span> nous les avons mis <text:span text:style-name="T93">au-dessus</text:span> de la portée dans l’exemple ci-dessus. <text:span text:style-name="T113">Toutefois</text:span>, pas plus dans le cas présent que dans les précédents, la musique n’a l’obligation de se mouler sur ces formes de quantité ou d’accentuation, telles que nous venons de les analyser<text:span text:style-name="T94"> :</text:span> ce que nous avons encore ici à retenir, c’est simplement que la musique a des mouvements de voix analogues à l’accent circonflexe et à l’anticirconflexe, et que ces mouvements ont été primitivement traduits par les mêmes signes d’écriture.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3998_3513054921"/>L’accent est une modulation<text:bookmark-end text:name="__RefHeading___Toc3998_3513054921"/></text:h>
-   <text:p text:style-name="P14"><text:span text:style-name="T94">Remarquons</text:span> encore que, déjà dans la grammaire, le sens propre des divers accents se rapporte à une idée de ton, de modulation, nullement à celle de force ou d’intensité<text:span text:style-name="T94"> ;</text:span> bien <text:span text:style-name="T94">qu’</text:span>en fait, du moins dans le discours, les deux choses, c’est-à-dire l’élévation du ton et l’intensité du son puissent et doivent même souvent <text:span text:style-name="T94">coïncider.</text:span> À plus forte raison dans le chant faut-il s’en tenir, pour l’interprétation de ces signes, à leur valeur purement musicale, sans égard aucun aux degrés différents de durée ou de force qui peuvent leur convenir, mais que ces signes <text:span text:style-name="T94">n’</text:span>indiquent pas.</text:p>
-   <text:p text:style-name="P14">Dans la grammaire, les accents sont restés tels que nous venons de les décrire<text:span text:style-name="T94"> ;</text:span> mais étant dans la musique d’un usage plus multiplié et plus compliqué, ils ont subi des modifications que nous devons signaler, et ont pris là des développements que nous aurons aussi à faire connaître.</text:p>
-   <text:p text:style-name="P14">Les accents grammaticaux, devenus notes de musique, ont ensuite reçu des noms particuliers, en rapport surtout avec la forme spéciale <text:span text:style-name="T94">qu’</text:span>ils ont revêtue.</text:p>
-   <text:p text:style-name="P14">Dans le tableau que nous allons mettre sous les yeux du lecteur, nous indiquons d’abord le nom des neumes<text:span text:style-name="T94"> ;</text:span> puis la forme qui les distingue<text:span text:style-name="T94"> ;</text:span> et enfin nous énumérons, dans leur ordre constitutif, les accents graves ou aigus, qui entrent dans la composition de chacun d’eux. <text:span text:style-name="T94">L</text:span>’accent aigu <text:span text:style-name="T94">n’</text:span>a presque subi aucune modification, et il demeure toujours facile à reconnaître. <text:span text:style-name="T94">L</text:span>’accent grave, par suite d’une tendance naturelle au calligraphe, <text:span text:style-name="T94">s’</text:span>est insensiblement raccourci, jusqu’à <text:soft-page-break/>devenir souvent un simple point<text:span text:style-name="T94"> ;</text:span> ce qui arrive toutes les fois <text:span text:style-name="T94">qu’</text:span>il est seul sur une syllabe<text:span text:style-name="T94"> ;</text:span> ou encore lorsque plusieurs accents graves se suivent, soit en montant, soit en descendant. Ce changement du trait en un simple point était nécessaire pour disposer dans une même direction une succession de mêmes accents.</text:p>
-   <text:p text:style-name="P14"/>
-   <text:p text:style-name="P34"><text:span text:style-name="T89">Tableau des neumes les plus usités</text:span></text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T93">D</text:span>’<text:span text:style-name="T93">après</text:span> ce que nous avons dit plus haut on doit s’attendre à rencontrer aussi ces accents dans la notation musicale, ou ils se trouvent en effet et avec la même signification<text:span text:style-name="T93"> :</text:span> nous les avons mis <text:span text:style-name="T93">au-dessus</text:span> de la portée dans l’exemple ci-dessus. <text:span text:style-name="T113">Toutefois</text:span>, pas plus dans le cas présent que dans les précédents, la musique n’a l’obligation de se mouler sur ces formes de quantité ou d’accentuation, telles que nous venons de les analyser<text:span text:style-name="T94"> :</text:span> ce que nous avons encore ici à retenir, c’est simplement que la musique a des mouvements de voix analogues à l’accent circonflexe et à l’anticirconflexe, et que ces mouvements ont été primitivement traduits par les mêmes signes d’écriture.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3998_3513054921"/>L’accent est une modulation<text:bookmark-end text:name="__RefHeading___Toc3998_3513054921"/></text:h>
+   <text:p text:style-name="P15"><text:span text:style-name="T94">Remarquons</text:span> encore que, déjà dans la grammaire, le sens propre des divers accents se rapporte à une idée de ton, de modulation, nullement à celle de force ou d’intensité<text:span text:style-name="T94"> ;</text:span> bien <text:span text:style-name="T94">qu’</text:span>en fait, du moins dans le discours, les deux choses, c’est-à-dire l’élévation du ton et l’intensité du son puissent et doivent même souvent <text:span text:style-name="T94">coïncider.</text:span> À plus forte raison dans le chant faut-il s’en tenir, pour l’interprétation de ces signes, à leur valeur purement musicale, sans égard aucun aux degrés différents de durée ou de force qui peuvent leur convenir, mais que ces signes <text:span text:style-name="T94">n’</text:span>indiquent pas.</text:p>
+   <text:p text:style-name="P15">Dans la grammaire, les accents sont restés tels que nous venons de les décrire<text:span text:style-name="T94"> ;</text:span> mais étant dans la musique d’un usage plus multiplié et plus compliqué, ils ont subi des modifications que nous devons signaler, et ont pris là des développements que nous aurons aussi à faire connaître.</text:p>
+   <text:p text:style-name="P15">Les accents grammaticaux, devenus notes de musique, ont ensuite reçu des noms particuliers, en rapport surtout avec la forme spéciale <text:span text:style-name="T94">qu’</text:span>ils ont revêtue.</text:p>
+   <text:p text:style-name="P15">Dans le tableau que nous allons mettre sous les yeux du lecteur, nous indiquons d’abord le nom des neumes<text:span text:style-name="T94"> ;</text:span> puis la forme qui les distingue<text:span text:style-name="T94"> ;</text:span> et enfin nous énumérons, dans leur ordre constitutif, les accents graves ou aigus, qui entrent dans la composition de chacun d’eux. <text:span text:style-name="T94">L</text:span>’accent aigu <text:span text:style-name="T94">n’</text:span>a presque subi aucune modification, et il demeure toujours facile à reconnaître. <text:span text:style-name="T94">L</text:span>’accent grave, par suite d’une tendance naturelle au calligraphe, <text:span text:style-name="T94">s’</text:span>est insensiblement raccourci, jusqu’à devenir souvent un simple point<text:span text:style-name="T94"> ;</text:span> ce qui arrive toutes les fois <text:span text:style-name="T94">qu’</text:span>il est seul sur une syllabe<text:span text:style-name="T94"> ;</text:span> ou encore lorsque plusieurs accents graves se suivent, soit en montant, soit en descendant. Ce changement du trait en un simple point était nécessaire pour disposer dans une même direction une succession de mêmes accents.</text:p>
+   <text:p text:style-name="P15"/>
+   <text:p text:style-name="P36"><text:soft-page-break/>Tableau des neumes les plus usités</text:p>
    <table:table table:name="TableauNeumesUsités" table:style-name="TableauNeumesUsités">
     <table:table-column table:style-name="TableauNeumesUsités.A"/>
     <table:table-column table:style-name="TableauNeumesUsités.B"/>
@@ -3657,28 +3663,28 @@
     <table:table-header-rows>
      <table:table-row>
       <table:table-cell table:style-name="TableauNeumesUsités.A1" office:value-type="string">
-       <text:p text:style-name="P31">N°</text:p>
+       <text:p text:style-name="P32">N°</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="TableauNeumesUsités.A1" office:value-type="string">
-       <text:p text:style-name="P31">Nom</text:p>
+       <text:p text:style-name="P32">Nom</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="TableauNeumesUsités.A1" office:value-type="string">
-       <text:p text:style-name="P31">Forme</text:p>
+       <text:p text:style-name="P32">Forme</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="TableauNeumesUsités.D1" office:value-type="string">
-       <text:p text:style-name="P31">Éléments constitutifs</text:p>
+       <text:p text:style-name="P32">Éléments constitutifs</text:p>
       </table:table-cell>
      </table:table-row>
     </table:table-header-rows>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">1</text:p>
+      <text:p text:style-name="P27">1</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Punctum</text:p>
+      <text:p text:style-name="P27">Punctum</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr6" draw:name="Image22" text:anchor-type="as-char" svg:width="0.499cm" svg:height="0.4cm" draw:z-index="2"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr6" draw:name="Image22" text:anchor-type="as-char" svg:width="0.499cm" svg:height="0.4cm" draw:z-index="2"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGQAAABRCAYAAAAkVQNKAAAHZ3pUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7Zddtty4DYTfuYosgQQJglwO/3BOdpDl56O677U9djL2zDwl0zotqdkU
           CKKAQimcf/3Twz/4SNUWilqrvdbIp/TSZXDT4uvTn3OK5Tk/n1re/6Vvx4O+b6IwlLnm108b
@@ -3734,18 +3740,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent grave</text:p>
+      <text:p text:style-name="P29">Accent grave</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">2</text:p>
+      <text:p text:style-name="P27">2</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Virga</text:p>
+      <text:p text:style-name="P27">Virga</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr5" draw:name="Image23" text:anchor-type="as-char" svg:width="1cm" svg:height="0.7cm" draw:z-index="3"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr5" draw:name="Image23" text:anchor-type="as-char" svg:width="1cm" svg:height="0.7cm" draw:z-index="3"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALkAAACDCAYAAADRTLqXAAAKVXpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHjavZhpciS7DYT/8xQ+AjdwOQ5BghG+gY/vD6WWZn2eGT/Z6lBXdXUVFySQ
           mehg//rnDf/gr6QaQ5U+2mwt8ldnnXlxMuLb33zeU6zP+/On8/Vd+vZ6GOX1ReaSn78+9/W6
@@ -3819,18 +3825,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu</text:p>
+      <text:p text:style-name="P29">Accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">3</text:p>
+      <text:p text:style-name="P27">3</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Clivis</text:p>
+      <text:p text:style-name="P27">Clivis</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image24" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="4"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image24" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="4"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIgAAABfCAYAAAAzgY/FAAANunpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7ZlJliO5DYb3PIWPwAkEeByO7/kGPr4/hJTVWUOXq6u98MKpTEVIohgk
           gH9AZDj/+ucN/+CnmORQRa311iI/tdeeBycWXz/9eU6xPs/Pj318lr5+P8h9f5B5q3Asr5c6
@@ -3919,18 +3925,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, et accent grave</text:p>
+      <text:p text:style-name="P29">Accent aigu, et accent grave</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">4</text:p>
+      <text:p text:style-name="P27">4</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Podatus</text:p>
+      <text:p text:style-name="P27">Podatus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image25" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="5"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image25" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="5"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALsAAACBCAYAAACYccuhAAAKoXpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7ZhpkiO7DYT/8xQ+AgkuAI/DNcI38PH9oaTuWd688RuPw39sKVpVXari
           gkwkEgrnH3+/4W+8ctIWSlVrvbXIq/TSZXBi8fXqz2eK5fl8XnO+v0vfXg/2PonCpcwxv/7V
@@ -4006,18 +4012,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent grave, et accent aigu</text:p>
+      <text:p text:style-name="P29">Accent grave, et accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" table:number-rows-spanned="2" office:value-type="string">
-      <text:p text:style-name="P26">5</text:p>
+      <text:p text:style-name="P27">5</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Scandicus</text:p>
+      <text:p text:style-name="P27">Scandicus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image26" text:anchor-type="as-char" svg:width="1cm" svg:height="0.78cm" draw:z-index="6"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image26" text:anchor-type="as-char" svg:width="1cm" svg:height="0.78cm" draw:z-index="6"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAMoAAACeCAYAAABzepVJAAAL8HpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHjatZlrkhw3DoT/8xR7BIIvkMfhA4zYG+zx90N1jyxZsiVZ8nTMVKu6igUi
           gcxEK9j//nvDf/jJtaRQqvY2Wov8lFFGmrzp8fUznr8Sy/P3+dnz/Zl8eT4Me3+QOJU55tc/
@@ -4102,16 +4108,16 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" table:number-rows-spanned="2" office:value-type="string">
-      <text:p text:style-name="P28">Deux accents graves, et un accent aigu</text:p>
+      <text:p text:style-name="P29">Deux accents graves, et un accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:covered-table-cell/>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Salicus</text:p>
+      <text:p text:style-name="P27">Salicus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image27" text:anchor-type="as-char" svg:width="1cm" svg:height="0.771cm" draw:z-index="7"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image27" text:anchor-type="as-char" svg:width="1cm" svg:height="0.771cm" draw:z-index="7"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAANsAAACoCAYAAABpNZsvAAALXHpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHjavZhplhs5DoT/8xRzBBJcQB6HG96bG8zx50OWqry0u9tl92vLUqpSqUwm
           IhARULj/+6+F//Av59FDqdrbaC3yr4wyZPKmx7d/43lNsTyvz7+zXp+lb/eH+f4lYVdmm9/+
@@ -4197,13 +4203,13 @@
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">6</text:p>
+      <text:p text:style-name="P27">6</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Climacus</text:p>
+      <text:p text:style-name="P27">Climacus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image28" text:anchor-type="as-char" svg:width="1cm" svg:height="0.681cm" draw:z-index="8"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image28" text:anchor-type="as-char" svg:width="1cm" svg:height="0.681cm" draw:z-index="8"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAQIAAACxCAYAAAAvZrM/AAALOHpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja1Zhblhw3DkT/uYpZAknwAS6HJMhzZgez/LnIKrVbtmy3LX/MdEmVpews
           JhMRiAgonP/8+4Z/8SN5tFBq1zZai/yUUUaefND4+hnPe4rleX/95Pen9P35sD5fIBzl9c8+
@@ -4287,18 +4293,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, et deux accents graves</text:p>
+      <text:p text:style-name="P29">Accent aigu, et deux accents graves</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">7</text:p>
+      <text:p text:style-name="P27">7</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Torculus</text:p>
+      <text:p text:style-name="P27">Torculus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image29" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="9"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image29" text:anchor-type="as-char" svg:width="1cm" svg:height="0.69cm" draw:z-index="9"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAQEAAACxCAYAAADEUQg8AAAMz3pUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7Zhdkhy5DYTfeQofgQQJgjwOfyN8Ax/fH6p7RqNd7a4U3gdH2GpNV3d1
           VZEEEpkJhvOvf97wD/7lmmooaq32WiP/Si9dBh9afP3rz3uK5XmP72/p8/jlfJgfFwinMsf8
@@ -4393,18 +4399,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent grave, accent aigu, accent grave</text:p>
+      <text:p text:style-name="P29">Accent grave, accent aigu, accent grave</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">8</text:p>
+      <text:p text:style-name="P27">8</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Porrectus</text:p>
+      <text:p text:style-name="P27">Porrectus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image30" text:anchor-type="as-char" svg:width="1cm" svg:height="0.55cm" draw:z-index="10"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image30" text:anchor-type="as-char" svg:width="1cm" svg:height="0.55cm" draw:z-index="10"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAPsAAACMCAYAAAC6Vd/fAAAMnHpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7Zlrkhw3DoT/8xR7BL5AgMfhM8I32OPvh+oeaWRJtuX1n43Yac90q7qK
           BQKJzEQ5nH//dsO/+ClVY6ii1nprkZ/aa8+DDxZfP/35m2J9/j4/d76/S98eD7beX2QOFd7L
@@ -4495,18 +4501,19 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, accent grave, accent aigu</text:p>
+      <text:p text:style-name="P29">Accent aigu, accent grave, accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
+    <text:soft-page-break/>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">9</text:p>
+      <text:p text:style-name="P27">9</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Podatus subpunctis</text:p>
+      <text:p text:style-name="P27">Podatus subpunctis</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image31" text:anchor-type="as-char" svg:width="1cm" svg:height="0.76cm" draw:z-index="11"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image31" text:anchor-type="as-char" svg:width="1cm" svg:height="0.76cm" draw:z-index="11"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAANsAAACnCAYAAACYYyn6AAAN9XpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7ZlJltw2Eob3OEUfAfNwHCAi8F7foI/fX7CySqXBtiR70YsuOpMUyQSB
           GP6BDvaff9/wL/7K6jnUNmZfvUf+6qorbw5mfPtbz3eK9fl+/vS8rqWvz4c9Xhcypwr78vbP
@@ -4603,18 +4610,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, deux accents graves</text:p>
+      <text:p text:style-name="P29">Accent aigu, deux accents graves</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">10</text:p>
+      <text:p text:style-name="P27">10</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Climacus resupinus</text:p>
+      <text:p text:style-name="P27">Climacus resupinus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image32" text:anchor-type="as-char" svg:width="1cm" svg:height="0.681cm" draw:z-index="12"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image32" text:anchor-type="as-char" svg:width="1cm" svg:height="0.681cm" draw:z-index="12"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAOIAAACbCAYAAAB/PUfeAAAOqXpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja3ZlbdiSpEYbfWYWXQAABwXK4nuMdePn+Iquk6e7psSXbT1a1KquzMkmI
           y39B4fzj7zf8jZ/cLYWizWqvNfJTeulp8MHi66c/7xLL8/78nPT+Tn4+H/p8f5E4lTnm13/b
@@ -4714,18 +4721,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, deux accents graves, accent aigu</text:p>
+      <text:p text:style-name="P29">Accent aigu, deux accents graves, accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">11</text:p>
+      <text:p text:style-name="P27">11</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Scandicus flexus</text:p>
+      <text:p text:style-name="P27">Scandicus flexus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image33" text:anchor-type="as-char" svg:width="1cm" svg:height="0.91cm" draw:z-index="13"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image33" text:anchor-type="as-char" svg:width="1cm" svg:height="0.91cm" draw:z-index="13"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAMwAAAC6CAYAAADiWaIuAAAPa3pUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7ZlZltw4DkX/uYpeAkkQJLgcjuf0Dnr5faEIp8e2q8rVf+V0piIVCokC
           Ht6gDOc//77hX/wrYjUUbVZ7rZF/pZeeBy8svv7152eK5fn5/Fvr/V76en+Y4/1GZpewldev
@@ -4831,18 +4838,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Deux accents graves, accent aigu, accent grave</text:p>
+      <text:p text:style-name="P29">Deux accents graves, accent aigu, accent grave</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">12</text:p>
+      <text:p text:style-name="P27">12</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Scandicus subpunctis</text:p>
+      <text:p text:style-name="P27">Scandicus subpunctis</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image34" text:anchor-type="as-char" svg:width="1cm" svg:height="0.951cm" draw:z-index="14"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image34" text:anchor-type="as-char" svg:width="1cm" svg:height="0.951cm" draw:z-index="14"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALsAAACyCAYAAAAan76iAAAQCnpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7ZpZciM5DobfeYo5AkESBHkcrhFzgzn+fEjL1bW4F0c5Yl6m3LZkKZXJ
           BH78C93h/OffN/yLf0VrDEWt1V5r5F/ppafBkxbf/vXnp8Ty/Hz+zfl6T358Pcz0eiPxUuYx
@@ -4949,18 +4956,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Deux accents graves, accent aigu, deux accents graves</text:p>
+      <text:p text:style-name="P29">Deux accents graves, accent aigu, deux accents graves</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">13</text:p>
+      <text:p text:style-name="P27">13</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Torculus resupinus</text:p>
+      <text:p text:style-name="P27">Torculus resupinus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image35" text:anchor-type="as-char" svg:width="1cm" svg:height="0.52cm" draw:z-index="15"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image35" text:anchor-type="as-char" svg:width="1cm" svg:height="0.52cm" draw:z-index="15"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAOUAAAB3CAYAAAD8Z4deAAAJ63pUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja7Zhdkhy5DYTfeQofgQQJgjwOfyN8Ax/fH6p7RtJKK0ux6/CLu2O6eqpY
           LBCZSCQ7nH/984Z/8JKeYihqrfZaI6/SS5fBlxZfr/58pliez+d19H0tfXs+mL0vCKcyx/z6
@@ -5033,18 +5040,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent grave, accent aigu, accent grave, accent aigu</text:p>
+      <text:p text:style-name="P29">Accent grave, accent aigu, accent grave, accent aigu</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">14</text:p>
+      <text:p text:style-name="P27">14</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Porrectus flexus</text:p>
+      <text:p text:style-name="P27">Porrectus flexus</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image36" text:anchor-type="as-char" svg:width="1cm" svg:height="0.621cm" draw:z-index="27"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image36" text:anchor-type="as-char" svg:width="1cm" svg:height="0.621cm" draw:z-index="27"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALEAAABuCAYAAABoQfI/AAANoHpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja1Zlrkhy5DYT/8xQ+AgkSBHkcPiN8Ax/fH6p7ZkcrraX1boTD05qunuoq
           PpBAZqIUzr/+ecM/+MmWaihqrfZaIz+lly6DDy2+fvrznmJ53p+f+T7y9zfnQz3vL4RTmWN+
@@ -5135,18 +5142,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, accent grave, accent aigu, accent grave</text:p>
+      <text:p text:style-name="P29">Accent aigu, accent grave, accent aigu, accent grave</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">15</text:p>
+      <text:p text:style-name="P27">15</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P26">Porrectus subpunctis</text:p>
+      <text:p text:style-name="P27">Porrectus subpunctis</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.A2" office:value-type="string">
-      <text:p text:style-name="P27"><draw:frame draw:style-name="fr4" draw:name="Image37" text:anchor-type="as-char" svg:width="1cm" svg:height="0.82cm" draw:z-index="28"><draw:image loext:mime-type="image/png">
+      <text:p text:style-name="P28"><draw:frame draw:style-name="fr4" draw:name="Image37" text:anchor-type="as-char" svg:width="1cm" svg:height="0.82cm" draw:z-index="28"><draw:image loext:mime-type="image/png">
          <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAM4AAACqCAYAAADlenCIAAAVSnpUWHRSYXcgcHJvZmlsZSB0
           eXBlIGV4aWYAAHja3ZpXlhw3EkX/sYpZAnwAy4E9Z3Ywy5/7sqrJppGhpDMfw5a6mtVZmUCY
           ZwJ05z//vu5f/CklNZeLtdpr9fzJPfc4+KH515/+fA8+P9+fP+u8fxe+fd+N8f5F5K3Ea3r9
@@ -5281,18 +5288,18 @@
        </draw:frame></text:p>
      </table:table-cell>
      <table:table-cell table:style-name="TableauNeumesUsités.D2" office:value-type="string">
-      <text:p text:style-name="P28">Accent aigu, accent grave, accent aigu, deux accents graves</text:p>
+      <text:p text:style-name="P29">Accent aigu, accent grave, accent aigu, deux accents graves</text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P14"/>
-   <text:p text:style-name="P42"><text:span text:style-name="T113">Pour</text:span> l’intelligence du tableau qui précède, comme de ceux qui pourront suivre, il ne faut pas oublier <text:span text:style-name="T95">qu’</text:span>en parlant d’accent dans les neumes, nous prenons ce mot, comme nous l’avons dit, dans un sens exclusivement musical. Ainsi l’accent grave indique simplement un son inférieur à un autre sur l’échelle<text:span text:style-name="T95"> ;</text:span> et l’accent aigu, un son plus élevé. Faisons maintenant quelques observations sur chacun des signes contenus dans notre tableau<text:span text:style-name="T95"> ;</text:span> du moins sur les premiers<text:span text:style-name="T95"> ;</text:span> car une fois que ceux-ci seront expliqués, les derniers se comprendront d’eux-mêmes.</text:p>
-   <text:list xml:id="list842024283" text:style-name="L1">
+   <text:p text:style-name="P15"/>
+   <text:p text:style-name="P4"><text:span text:style-name="T113">Pour</text:span> l’intelligence du tableau qui précède, comme de ceux qui pourront suivre, il ne faut pas oublier <text:span text:style-name="T95">qu’</text:span>en parlant d’accent dans les neumes, nous prenons ce mot, comme nous l’avons dit, dans un sens exclusivement musical. Ainsi l’accent grave indique simplement un son inférieur à un autre sur l’échelle<text:span text:style-name="T95"> ;</text:span> et l’accent aigu, un son plus élevé. Faisons maintenant quelques observations sur chacun des signes contenus dans notre tableau<text:span text:style-name="T95"> ;</text:span> du moins sur les premiers<text:span text:style-name="T95"> ;</text:span> car une fois que ceux-ci seront expliqués, les derniers se comprendront d’eux-mêmes.</text:p>
+   <text:list xml:id="list2390038994" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P37"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent grave</text:span> <text:span text:style-name="T95">`</text:span>, dans le cas <text:span text:style-name="T113">où</text:span> il n’est pas joint à l’accent aigu, a pris avec la forme, le nom même du point <text:span text:style-name="T66">·</text:span>, et <text:span text:style-name="T96">s’</text:span>est appelé <text:span text:style-name="T7">pun</text:span><text:span text:style-name="T30">ct</text:span><text:span text:style-name="T7">um</text:span>.</text:p>
+     <text:p text:style-name="P39"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent grave</text:span> <text:span text:style-name="T95">`</text:span>, dans le cas <text:span text:style-name="T113">où</text:span> il n’est pas joint à l’accent aigu, a pris avec la forme, le nom même du point <text:span text:style-name="T66">·</text:span>, et <text:span text:style-name="T96">s’</text:span>est appelé <text:span text:style-name="T7">pun</text:span><text:span text:style-name="T30">ct</text:span><text:span text:style-name="T7">um</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent aigu</text:span> ˊ employé comme note isolée, a pris en musique le nom de <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">rga</text:span>.<text:line-break/>Dans certains manuscrits il est tracé perpendiculairement<text:span text:style-name="T97"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image7" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.259cm" svg:height="0.499cm" draw:z-index="29"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P39"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent aigu</text:span> ˊ employé comme note isolée, a pris en musique le nom de <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">rga</text:span>.<text:line-break/>Dans certains manuscrits il est tracé perpendiculairement<text:span text:style-name="T97"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image7" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.259cm" svg:height="0.499cm" draw:z-index="29"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEgAAACJCAYAAACPWX5WAAAJP3pUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjatZh/lhwpDoT/5xR7BECA4Dj8EO/tDfb4+ymr3NP2eOyxZ7fyVWV2VhYI
          RSgUdLD//PuGf/HKvfRQqvY2Wou8yigjTy56fL3G85lieT6fV/nyXfr6fujj/UXmlnCW1586
@@ -5358,10 +5365,10 @@
       </draw:frame></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent circonflexe</text:span> ^, a conservé chez certains auteurs le nom de <text:span text:style-name="T7">f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exa</text:span> et <text:span text:style-name="T97">s’</text:span>est appelé chez d’autres, <text:span text:style-name="T29">cli</text:span><text:span text:style-name="T7">vis</text:span> ou <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">lini</text:span><text:span text:style-name="T7">s</text:span>, pour <text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">nclivis</text:span> ou <text:span text:style-name="T7">inclin</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">s</text:span><text:span text:style-name="T31"> :</text:span> termes <text:span text:style-name="T97">synonymes</text:span> de <text:span text:style-name="T29">fl</text:span><text:span text:style-name="T7">exa</text:span>. Le nom complet serait <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">ir</text:span><text:span text:style-name="T7">ga flexa</text:span> ou <text:span text:style-name="T7">virga inclivis</text:span>, <text:span text:style-name="T7">virga inclinis</text:span>.</text:p>
+     <text:p text:style-name="P39"><text:span text:style-name="T29">L</text:span><text:span text:style-name="T7">’accent circonflexe</text:span> ^, a conservé chez certains auteurs le nom de <text:span text:style-name="T7">f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exa</text:span> et <text:span text:style-name="T97">s’</text:span>est appelé chez d’autres, <text:span text:style-name="T29">cli</text:span><text:span text:style-name="T7">vis</text:span> ou <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">lini</text:span><text:span text:style-name="T7">s</text:span>, pour <text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">nclivis</text:span> ou <text:span text:style-name="T7">inclin</text:span><text:span text:style-name="T29">i</text:span><text:span text:style-name="T7">s</text:span><text:span text:style-name="T31"> :</text:span> termes <text:span text:style-name="T97">synonymes</text:span> de <text:span text:style-name="T29">fl</text:span><text:span text:style-name="T7">exa</text:span>. Le nom complet serait <text:span text:style-name="T7">v</text:span><text:span text:style-name="T29">ir</text:span><text:span text:style-name="T7">ga flexa</text:span> ou <text:span text:style-name="T7">virga inclivis</text:span>, <text:span text:style-name="T7">virga inclinis</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37"><text:span text:style-name="T97">L</text:span>’anticirconflexe <draw:frame draw:style-name="fr1" draw:name="Image5" text:anchor-type="as-char" svg:y="-0.395cm" svg:width="0.801cm" svg:height="0.55cm" draw:z-index="30"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P39"><text:span text:style-name="T97">L</text:span>’anticirconflexe <draw:frame draw:style-name="fr1" draw:name="Image5" text:anchor-type="as-char" svg:y="-0.395cm" svg:width="0.801cm" svg:height="0.55cm" draw:z-index="30"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAALsAAACBCAYAAACYccuhAAAKoXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZhpkiO7DYT/8xQ+AgkuAI/DNcI38PH9oaTuWd688RuPw39sKVpVXari
          gkwkEgrnH3+/4W+8ctIWSlVrvbXIq/TSZXBi8fXqz2eK5fl8XnO+v0vfXg/2PonCpcwxv/7V
@@ -5637,7 +5644,7 @@
       </draw:frame><text:line-break/>Les signes précédents suffisent à marquer la simple modulation du discours<text:span text:style-name="T96"> ;</text:span> mais pour noter les mouvements de voix plus étendus et beaucoup plus variés que comporte le chant, il est nécessaire d’augmenter le nombre des combinaisons.<text:line-break/>La notation musicale, outre le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">un</text:span><text:span text:style-name="T29">ct</text:span><text:span text:style-name="T7">um</text:span>, la <text:span text:style-name="T7">virga</text:span>, la <text:span text:style-name="T7">clivis</text:span> et le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span>, comprendra donc d’autres formules plus compliquées, mais toujours produites par la combinaison de l’accent grave et de l’accent ai<text:span text:style-name="T97">g</text:span>u.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Dans le <text:span text:style-name="T7">scandicus</text:span> la voix monte trois degrés<text:span text:style-name="T97"> :</text:span> il faut alors, avant d’arriver à la <text:span text:style-name="T7">vir</text:span><text:span text:style-name="T29">g</text:span><text:span text:style-name="T7">a</text:span>, deux accents graves, qui dans ce cas se changent nécessairement en autant de <text:span text:style-name="T29">punctum</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T29">scandicus</text:span> monte tout <text:span text:style-name="T114">droit</text:span> : <draw:frame draw:style-name="fr2" draw:name="Image10" text:anchor-type="as-char" svg:width="0.21cm" svg:height="0.499cm" draw:z-index="33"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P39">Dans le <text:span text:style-name="T7">scandicus</text:span> la voix monte trois degrés<text:span text:style-name="T97"> :</text:span> il faut alors, avant d’arriver à la <text:span text:style-name="T7">vir</text:span><text:span text:style-name="T29">g</text:span><text:span text:style-name="T7">a</text:span>, deux accents graves, qui dans ce cas se changent nécessairement en autant de <text:span text:style-name="T29">punctum</text:span>. Dans quelques manuscrits, le <text:span text:style-name="T29">scandicus</text:span> monte tout <text:span text:style-name="T114">droit</text:span> : <draw:frame draw:style-name="fr2" draw:name="Image10" text:anchor-type="as-char" svg:width="0.21cm" svg:height="0.499cm" draw:z-index="33"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAACbCAYAAADWZU0PAAAKzXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjarZhrkiMrDoX/s4pZAgKEYDk8I2YHs/z5lHZ1d1U/7r0TY4edWSQGoSMd
          HVU4//n3Df/ilWNMoai12muNvEovPQ1uWny9+vMtsTzfz6uk9zP5PB76fD9IDLH08+Fl4z1/
@@ -5712,22 +5719,22 @@
       </draw:frame>. lorsque les deux <text:span text:style-name="T29">pu</text:span><text:span text:style-name="T7">nc</text:span><text:span text:style-name="T29">t</text:span><text:span text:style-name="T7">um</text:span> expriment deux sons qui se suivent sur le même degré, ou à demi-ton de distance<text:span text:style-name="T97"> :</text:span> c’est le <text:span text:style-name="T7">sa</text:span><text:span text:style-name="T29">licus</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Dans le <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">imacus</text:span>, dont le mouvement est l’inverse du précédent, les deux accents graves qui suivent l’accent aigu ou <text:span text:style-name="T29">virg</text:span><text:span text:style-name="T7">a</text:span> deviennent régulièrement deux <text:span text:style-name="T29">punctum</text:span>.</text:p>
+     <text:p text:style-name="P39">Dans le <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">imacus</text:span>, dont le mouvement est l’inverse du précédent, les deux accents graves qui suivent l’accent aigu ou <text:span text:style-name="T29">virg</text:span><text:span text:style-name="T7">a</text:span> deviennent régulièrement deux <text:span text:style-name="T29">punctum</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37"><text:soft-page-break/>Le <text:span text:style-name="T7">torculus</text:span> commence comme un <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">oda</text:span><text:span text:style-name="T29">t</text:span><text:span text:style-name="T7">us</text:span> et finit comme un <text:span text:style-name="T7">f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exa</text:span><text:span text:style-name="T47"> :</text:span> aussi est-il quelquefois appelé <text:span text:style-name="T7">pes f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exus</text:span> ou <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus flexus</text:span>.</text:p>
+     <text:p text:style-name="P39"><text:soft-page-break/>Le <text:span text:style-name="T7">torculus</text:span> commence comme un <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">oda</text:span><text:span text:style-name="T29">t</text:span><text:span text:style-name="T7">us</text:span> et finit comme un <text:span text:style-name="T7">f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exa</text:span><text:span text:style-name="T47"> :</text:span> aussi est-il quelquefois appelé <text:span text:style-name="T7">pes f</text:span><text:span text:style-name="T29">l</text:span><text:span text:style-name="T7">exus</text:span> ou <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus flexus</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Le <text:span text:style-name="T29">porrectus</text:span><text:span text:style-name="T29"><text:note text:id="ftn4" text:note-class="footnote"><text:note-citation>4</text:note-citation><text:note-body>
+     <text:p text:style-name="P39">Le <text:span text:style-name="T29">porrectus</text:span><text:span text:style-name="T29"><text:note text:id="ftn4" text:note-class="footnote"><text:note-citation>4</text:note-citation><text:note-body>
          <text:p text:style-name="Footnote">Ce nom existe dans les tableaux de neumes, avec un signe qui a la plus grande analogie avec celui que nous appelons <text:span text:style-name="T7">por</text:span><text:span text:style-name="T32">rectus</text:span>, sans qu’il soit bien certain cependant qu’il <text:span text:style-name="T98">s’</text:span>agisse du même signe. L’appellation du reste ne fait rien au fond des choses. <text:span text:style-name="T114">Nous</text:span> ne sommes pas les premiers qui nommons <text:span text:style-name="T99">porrectus</text:span> l’inverse du <text:span text:style-name="T7">torculus</text:span><text:span text:style-name="T47"> ;</text:span> nous le faisons pour n’avoir pas un signe dépourvu de nom et un nom qui ne s’appliquerait à aucun signe vraiment usité.</text:p></text:note-body></text:note></text:span> après avoir fléchi comme la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">li</text:span><text:span text:style-name="T7">vis</text:span>, remonte en manière de <text:span text:style-name="T7">podatus</text:span><text:span text:style-name="T47"> :</text:span> c’est une <text:span text:style-name="T7">c</text:span><text:span text:style-name="T29">livis</text:span><text:span text:style-name="T7"> resupina</text:span>, l’inverse du <text:span text:style-name="T29">tor</text:span><text:span text:style-name="T7">culus</text:span>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span> suivi de deux points en descendant, est appelé <text:span text:style-name="T7">podatus subbipun</text:span><text:span text:style-name="T29">c</text:span><text:span text:style-name="T7">tis</text:span><text:span text:style-name="T7"><text:note text:id="ftn5" text:note-class="footnote"><text:note-citation>5</text:note-citation><text:note-body>
+     <text:p text:style-name="P39">Le <text:span text:style-name="T29">p</text:span><text:span text:style-name="T7">odatus</text:span> suivi de deux points en descendant, est appelé <text:span text:style-name="T7">podatus subbipun</text:span><text:span text:style-name="T29">c</text:span><text:span text:style-name="T7">tis</text:span><text:span text:style-name="T7"><text:note text:id="ftn5" text:note-class="footnote"><text:note-citation>5</text:note-citation><text:note-body>
          <text:p text:style-name="Footnote"><text:span text:style-name="T7">Bipunc</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">is</text:span> est un adjectif forme à l’instar de <text:span text:style-name="T99">Bip</text:span><text:span text:style-name="T7">en</text:span><text:span text:style-name="T32">n</text:span><text:span text:style-name="T7">is</text:span>, <text:span text:style-name="T7">birem</text:span><text:span text:style-name="T32">i</text:span><text:span text:style-name="T7">s</text:span>, etc.</text:p></text:note-body></text:note></text:span> ; <text:span text:style-name="T96">s’</text:span>il en a trois on le nomme <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">oda</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">us subtripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span><text:span text:style-name="T50"> ;</text:span> <text:span text:style-name="T7">subdiatesserris</text:span>, <text:span text:style-name="T96">s’</text:span>il en a quatre, et <text:span text:style-name="T7">s</text:span><text:span text:style-name="T32">ub</text:span><text:span text:style-name="T7">diapentis</text:span>, dans les cas plus rares ou il y en a cinq.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P14">Les mêmes qualificatifs, dans certains tableaux de neumes, se trouvent appliqués à la <text:span text:style-name="T7">virg</text:span><text:span text:style-name="T32">a</text:span>, pour désigner le <text:span text:style-name="T32">cl</text:span><text:span text:style-name="T7">imacus</text:span>, qui est une <text:span text:style-name="T32">virga</text:span><text:span text:style-name="T7"> subbipun</text:span><text:span text:style-name="T32">c</text:span><text:span text:style-name="T7">tis</text:span>, <text:span text:style-name="T7">subtripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc. lorsque la <text:span text:style-name="T7">virga</text:span> est, non plus suivie, mais précédée de points, ce qui est le cas du <text:span text:style-name="T7">scandicus</text:span>, elle est dite, dans les mêmes tableaux, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræb</text:span><text:span text:style-name="T32">i</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræ</text:span><text:span text:style-name="T32">tri</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>. Si les points sont à la fois avant et après, c’est la <text:span text:style-name="T7">virga combipun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span><text:span text:style-name="T47">, </text:span><text:span text:style-name="T7">contripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc.</text:p>
-   <text:p text:style-name="P14">L<text:span text:style-name="T98">a</text:span> série des points, dans les formules ou ils entrent comme éléments, peut avoir en effet plus ou moins d’étendue <text:span text:style-name="T98">;</text:span> ainsi on rencontre quelquefois des formul<text:span text:style-name="T114">e</text:span>s telles que les suivantes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="char" svg:y="1.679cm" svg:width="15cm" svg:height="3.5cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15">Les mêmes qualificatifs, dans certains tableaux de neumes, se trouvent appliqués à la <text:span text:style-name="T7">virg</text:span><text:span text:style-name="T32">a</text:span>, pour désigner le <text:span text:style-name="T32">cl</text:span><text:span text:style-name="T7">imacus</text:span>, qui est une <text:span text:style-name="T32">virga</text:span><text:span text:style-name="T7"> subbipun</text:span><text:span text:style-name="T32">c</text:span><text:span text:style-name="T7">tis</text:span>, <text:span text:style-name="T7">subtripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc. lorsque la <text:span text:style-name="T7">virga</text:span> est, non plus suivie, mais précédée de points, ce qui est le cas du <text:span text:style-name="T7">scandicus</text:span>, elle est dite, dans les mêmes tableaux, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræb</text:span><text:span text:style-name="T32">i</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>, <text:span text:style-name="T32">p</text:span><text:span text:style-name="T7">ræ</text:span><text:span text:style-name="T32">tri</text:span><text:span text:style-name="T7">pun</text:span><text:span text:style-name="T32">cti</text:span><text:span text:style-name="T7">s</text:span>. Si les points sont à la fois avant et après, c’est la <text:span text:style-name="T7">virga combipun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span><text:span text:style-name="T47">, </text:span><text:span text:style-name="T7">contripun</text:span><text:span text:style-name="T32">ct</text:span><text:span text:style-name="T7">is</text:span>, etc.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T98">a</text:span> série des points, dans les formules ou ils entrent comme éléments, peut avoir en effet plus ou moins d’étendue <text:span text:style-name="T98">;</text:span> ainsi on rencontre quelquefois des formul<text:span text:style-name="T114">e</text:span>s telles que les suivantes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr3" draw:name="Image6" text:anchor-type="char" svg:y="1.679cm" svg:width="15cm" svg:height="3.5cm" draw:z-index="26"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAACYoAAAI6CAYAAACDn+69AAAPPnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZlrciw5boX/cxVeAkESfCyHJMgI78DL9weqpLnqHtszEVZ1S9VZWZkk
        cHAe2eH813/e8B/85Ko1FG29jlojP2WUkSZvevz6Ge+3xPJ+v58+f47+Oh7yjOm9SxzK/M1f
@@ -6148,11 +6155,11 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P14">D<text:span text:style-name="T98">e</text:span> toutes les formules que nous avons données, les plus simples sont les plus communes<text:span text:style-name="T98"> ;</text:span> et les tableaux de neumes, chez les auteurs, ne contiennent souvent que des groupes de trois sons au plus.</text:p>
-   <text:p text:style-name="P14">Le chant grégorien,<text:span text:style-name="T98"> comme</text:span> nous le savons par le témoignage des anciens, admet certains ornements d’un <text:span text:style-name="T98">caractère</text:span> spécial, certaines nuances d’exécution qui, sans appartenir à l’expression passionnée du théâtre, sans consister non plus en des effets de voix trop recherchés, plus déplacés encore à l’Église <text:span text:style-name="T98">qu’</text:span>ailleurs, demandent cependant, au moins quelquefois, particulièrement pour le <text:span text:style-name="T7">s</text:span><text:span text:style-name="T32">trop</text:span><text:span text:style-name="T7">hicus</text:span> et le <text:span text:style-name="T7">qu</text:span><text:span text:style-name="T32">il</text:span><text:span text:style-name="T7">isma</text:span>, une souplesse d’organe que les chantres romains envoyés en Gaule et en Germanie, du temps de Charlemagne, reprochaient à nos pères de ne pas posséder. Il y a donc dans le chant grégorien, des sons diversement nuancés, que nous distinguerons en sons <text:span text:style-name="T43">sy</text:span><text:span text:style-name="T44">n</text:span><text:span text:style-name="T43">copés</text:span>, <text:span text:style-name="T7">appuyés</text:span>, <text:span text:style-name="T7">répercutés</text:span>, <text:span text:style-name="T7">tremblés</text:span>, et <text:span text:style-name="T7">é</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">ouffés</text:span>.</text:p>
-   <text:list xml:id="list3252109086" text:style-name="L2">
+   <text:p text:style-name="P15">D<text:span text:style-name="T98">e</text:span> toutes les formules que nous avons données, les plus simples sont les plus communes<text:span text:style-name="T98"> ;</text:span> et les tableaux de neumes, chez les auteurs, ne contiennent souvent que des groupes de trois sons au plus.</text:p>
+   <text:p text:style-name="P15">Le chant grégorien,<text:span text:style-name="T98"> comme</text:span> nous le savons par le témoignage des anciens, admet certains ornements d’un <text:span text:style-name="T98">caractère</text:span> spécial, certaines nuances d’exécution qui, sans appartenir à l’expression passionnée du théâtre, sans consister non plus en des effets de voix trop recherchés, plus déplacés encore à l’Église <text:span text:style-name="T98">qu’</text:span>ailleurs, demandent cependant, au moins quelquefois, particulièrement pour le <text:span text:style-name="T7">s</text:span><text:span text:style-name="T32">trop</text:span><text:span text:style-name="T7">hicus</text:span> et le <text:span text:style-name="T7">qu</text:span><text:span text:style-name="T32">il</text:span><text:span text:style-name="T7">isma</text:span>, une souplesse d’organe que les chantres romains envoyés en Gaule et en Germanie, du temps de Charlemagne, reprochaient à nos pères de ne pas posséder. Il y a donc dans le chant grégorien, des sons diversement nuancés, que nous distinguerons en sons <text:span text:style-name="T43">sy</text:span><text:span text:style-name="T44">n</text:span><text:span text:style-name="T43">copés</text:span>, <text:span text:style-name="T7">appuyés</text:span>, <text:span text:style-name="T7">répercutés</text:span>, <text:span text:style-name="T7">tremblés</text:span>, et <text:span text:style-name="T7">é</text:span><text:span text:style-name="T32">t</text:span><text:span text:style-name="T7">ouffés</text:span>.</text:p>
+   <text:list xml:id="list3584784287" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P38"><text:soft-page-break/><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>Lorsque deux formules, <text:span text:style-name="T98">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T98">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T98"> ;</text:span> nous verrons, en traitant plus loin du <text:span text:style-name="T98">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. <text:span text:style-name="T114">Nous</text:span> en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T98">s’</text:span>agit <text:span text:style-name="T98">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T98">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P40"><text:soft-page-break/><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons syncopés</text:span>.<text:line-break/>Lorsque deux formules, <text:span text:style-name="T98">par exemple</text:span> un <text:span text:style-name="T7">scandicus</text:span> et un <text:span text:style-name="T7">c</text:span><text:span text:style-name="T32">li</text:span><text:span text:style-name="T7">macus</text:span>, viennent à la suite l’un de l’autre, de manière à ce que le premier groupe finisse sur le même degré de l’échelle ou commence le second, et <text:span text:style-name="T98">qu’</text:span>ainsi les deux notes à l’unisson doivent s’émettre d’une façon continue<text:span text:style-name="T98"> ;</text:span> nous verrons, en traitant plus loin du <text:span text:style-name="T98">rythme</text:span>, que cette réduplication du même son produit un effet analogue à celui de la syncope en musique. <text:span text:style-name="T114">Nous</text:span> en parlons ici, simplement pour énumérer ensemble toutes les particularités d’exécution, quoique celle dont il <text:span text:style-name="T98">s’</text:span>agit <text:span text:style-name="T98">n’</text:span>ait pas de signe spécial, et <text:span text:style-name="T98">qu’</text:span>elle s’indique seulement par la juxtaposition des signes<text:span text:style-name="T98"> :</text:span><draw:frame draw:style-name="fr1" draw:name="Image11" text:anchor-type="as-char" svg:y="-0.393cm" svg:width="0.6cm" svg:height="0.499cm" draw:z-index="34"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAANEAAACwCAYAAACRkosQAAAT3npUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHjavZpnkty6FYX/YxVeAnJYDi5ClXfg5fs77FaWnpLL01JzhsMGgRtOAMed
          //z7un/xVWKKLpfW66jV85VHHnHyTfevr/G8B5+f9+drv4/8/MV5Z+/zPnIqcUyvH9t8Xz85
@@ -6281,7 +6288,7 @@
       </draw:frame><text:line-break/>Ici les deux <text:span text:style-name="T32">v</text:span><text:span text:style-name="T7">irga</text:span> font syncopes.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons</text:span><text:span text:style-name="T7"> </text:span><text:span text:style-name="T32">appuyés</text:span>.<text:line-break/>U<text:span text:style-name="T98">ne</text:span> circonstance qui présente beaucoup d’analogie avec le cas précédent, est celle ou la voix, dans un mouvement descendant, doit <text:span text:style-name="T98">s’</text:span>arrêter et appuyer fortement sur l’avant-dernière note du groupe. Le son qui doit être ainsi renforce et prolongé se trouve représenté dans la plupart des manuscrits par un petit trait horizontal brisé <draw:frame draw:style-name="fr1" draw:name="Image12" text:anchor-type="as-char" svg:y="-0.367cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="35"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P40"><text:span text:style-name="T7">S</text:span><text:span text:style-name="T32">ons</text:span><text:span text:style-name="T7"> </text:span><text:span text:style-name="T32">appuyés</text:span>.<text:line-break/>U<text:span text:style-name="T98">ne</text:span> circonstance qui présente beaucoup d’analogie avec le cas précédent, est celle ou la voix, dans un mouvement descendant, doit <text:span text:style-name="T98">s’</text:span>arrêter et appuyer fortement sur l’avant-dernière note du groupe. Le son qui doit être ainsi renforce et prolongé se trouve représenté dans la plupart des manuscrits par un petit trait horizontal brisé <draw:frame draw:style-name="fr1" draw:name="Image12" text:anchor-type="as-char" svg:y="-0.367cm" svg:width="0.61cm" svg:height="0.499cm" draw:z-index="35"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGUAAABTCAYAAACGX8l/AAAOGXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZldkiS3DYTfeQofgeAfyOOQBBnhG/j4/lDdO5qRVivJ6wj7QdMxXT3V
          VSwSSGQmOOH86583/IOfErWHUrW30Vrkp4wy0uRDj6+f8bxLLM/789Pq+zv5ej7U/P4icco/
@@ -6959,7 +6966,7 @@
       </draw:frame>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T34">Sons répercutés</text:span><text:span text:style-name="T101">.<text:line-break/>Il</text:span> <text:span text:style-name="T101">n’</text:span>est pas rare de rencontrer dans la notation neumatique, une sorte de virgule, différente du signe ordinaire appelé <text:span text:style-name="T7">virga</text:span>, c’est-à-dire plus courte et un peu plus arquée, du moins dans la plupart des manuscrits. Cette note est simple <text:span text:style-name="T91">’</text:span> double <text:span text:style-name="T91">’’</text:span> ou triple <text:span text:style-name="T91">’’’</text:span> et se nomme suivant le cas, <text:span text:style-name="T7">a</text:span><text:span text:style-name="T34">pos</text:span><text:span text:style-name="T7">tropha</text:span> <text:span text:style-name="T91">’</text:span>, <text:span text:style-name="T7">distropha</text:span> <text:span text:style-name="T91">’’</text:span> ou <text:span text:style-name="T7">tristropha</text:span> <text:span text:style-name="T91">’’’</text:span> et d’une manière générale <text:span text:style-name="T7">s</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">hicus</text:span>. <text:span text:style-name="T101">L</text:span>’<text:span text:style-name="T7">apostropha</text:span> se trouve toujours jointe à une autre formule, à la <text:span text:style-name="T7">clivis</text:span> par exemple, soit avant <draw:frame draw:style-name="fr1" draw:name="Image18" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="41"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P40"><text:span text:style-name="T34">Sons répercutés</text:span><text:span text:style-name="T101">.<text:line-break/>Il</text:span> <text:span text:style-name="T101">n’</text:span>est pas rare de rencontrer dans la notation neumatique, une sorte de virgule, différente du signe ordinaire appelé <text:span text:style-name="T7">virga</text:span>, c’est-à-dire plus courte et un peu plus arquée, du moins dans la plupart des manuscrits. Cette note est simple <text:span text:style-name="T91">’</text:span> double <text:span text:style-name="T91">’’</text:span> ou triple <text:span text:style-name="T91">’’’</text:span> et se nomme suivant le cas, <text:span text:style-name="T7">a</text:span><text:span text:style-name="T34">pos</text:span><text:span text:style-name="T7">tropha</text:span> <text:span text:style-name="T91">’</text:span>, <text:span text:style-name="T7">distropha</text:span> <text:span text:style-name="T91">’’</text:span> ou <text:span text:style-name="T7">tristropha</text:span> <text:span text:style-name="T91">’’’</text:span> et d’une manière générale <text:span text:style-name="T7">s</text:span><text:span text:style-name="T34">trop</text:span><text:span text:style-name="T7">hicus</text:span>. <text:span text:style-name="T101">L</text:span>’<text:span text:style-name="T7">apostropha</text:span> se trouve toujours jointe à une autre formule, à la <text:span text:style-name="T7">clivis</text:span> par exemple, soit avant <draw:frame draw:style-name="fr1" draw:name="Image18" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.57cm" svg:height="0.499cm" draw:z-index="41"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHAAAABiCAYAAACI/lfbAAARLXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZpJdiO7EUXnWIWXgD6A5aAJnOMdePm+AaZUnX5J5e+BBxZLTCqZRALR
          vAYsp//653H/4Cf35l0u0mqv1fOTe+5x8KL510+/z8Hn+3x/5HmLv38472p83oicShzT84Hx
@@ -7588,7 +7595,7 @@
       </draw:frame>, qui indique comme le <text:span text:style-name="T7">distropha</text:span> une note jointe à une autre à l’unisson, avec cette différence que l’émission en est plus liée, et se rapproche de la syncope.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:soft-page-break/><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T103"><text:line-break/></text:span><text:span text:style-name="T114">L</text:span>orsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T103"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
+     <text:p text:style-name="P40"><text:soft-page-break/><text:span text:style-name="T35">Sons tremblés.</text:span><text:span text:style-name="T103"><text:line-break/></text:span><text:span text:style-name="T114">L</text:span>orsque dans un mouvement ascendant, qui est ordinairement d’une tierce mineure, se rencontre, comme nous l’expliquerons plus loin, un son vibré ou tremblé, la note qui représente cette particularité d’exécution se nomme <text:span text:style-name="T35">quilisma </text:span>: c’est un <text:span text:style-name="T7">podatus</text:span> ou un <text:span text:style-name="T35">tor</text:span><text:span text:style-name="T7">culus</text:span> dont le trait initial est triplé<text:span text:style-name="T103"> :</text:span> <draw:frame draw:style-name="fr1" draw:name="Image40" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.63cm" svg:height="0.499cm" draw:z-index="47"><draw:image loext:mime-type="image/png">
         <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAJYAAAB2CAYAAAAqRWpgAAAOBXpUWHRSYXcgcHJvZmlsZSB0
          eXBlIGV4aWYAAHja7ZlZcuS4EYbfcQofAcgEkMBxsEb4Bj6+v2SVNL3NTPeMHxxhq0IkxSJB
          IJd/ocL51z9v+Ac/2lsMuVirvdbIT+65y+CgxddPf7Yp5mf7OlXf36Wvzwf7+EI4pez19aeN
@@ -8107,16 +8114,16 @@
       </draw:frame></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T36">Sons étouffés.<text:line-break/></text:span>nous entendons ici par sons <text:span text:style-name="T36">ét</text:span><text:span text:style-name="T7">ouffés</text:span> ceux que Gui d’Arezzo nomme <text:span text:style-name="T36">liquescents</text:span>. nous en déterminerons plus loin la nature et l’usage<text:span text:style-name="T104"> ;</text:span> disons seulement ici, pour apprendre à discerner dans l’écriture la présence du son liquescent, que celui-ci ne peut se rencontrer <text:span text:style-name="T104">qu’</text:span>à la fin d’une formul<text:span text:style-name="T114">e</text:span>, et seulement quand on passe d’une syllabe à une autre dans des circonstances que nous indiquerons.</text:p>
+     <text:p text:style-name="P40"><text:span text:style-name="T36">Sons étouffés.<text:line-break/></text:span>nous entendons ici par sons <text:span text:style-name="T36">ét</text:span><text:span text:style-name="T7">ouffés</text:span> ceux que Gui d’Arezzo nomme <text:span text:style-name="T36">liquescents</text:span>. nous en déterminerons plus loin la nature et l’usage<text:span text:style-name="T104"> ;</text:span> disons seulement ici, pour apprendre à discerner dans l’écriture la présence du son liquescent, que celui-ci ne peut se rencontrer <text:span text:style-name="T104">qu’</text:span>à la fin d’une formul<text:span text:style-name="T114">e</text:span>, et seulement quand on passe d’une syllabe à une autre dans des circonstances que nous indiquerons.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P14">pour marquer dans la notation neumatique le son liquescent, le trait final de la formul<text:span text:style-name="T114">e</text:span> se trouve modifié de la manière que nous allons expliquer<text:span text:style-name="T104"> :</text:span></text:p>
-   <text:list xml:id="list2294163067" text:style-name="L3">
+   <text:p text:style-name="P15">pour marquer dans la notation neumatique le son liquescent, le trait final de la formul<text:span text:style-name="T114">e</text:span> se trouve modifié de la manière que nous allons expliquer<text:span text:style-name="T104"> :</text:span></text:p>
+   <text:list xml:id="list1466998716" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P39">S<text:span text:style-name="T104">i</text:span> la formule se termine par un son aigu, <text:span text:style-name="T104">la</text:span> <text:span text:style-name="T7">virga</text:span> se trouve écourtée comme on le voit dans les exemples suivants<text:span text:style-name="T104"> :</text:span></text:p>
+     <text:p text:style-name="P41">S<text:span text:style-name="T104">i</text:span> la formule se termine par un son aigu, <text:span text:style-name="T104">la</text:span> <text:span text:style-name="T7">virga</text:span> se trouve écourtée comme on le voit dans les exemples suivants<text:span text:style-name="T104"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image45" text:anchor-type="as-char" svg:y="-0.249cm" svg:width="0.25cm" svg:height="0.25cm" draw:z-index="52"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image45" text:anchor-type="as-char" svg:y="-0.249cm" svg:width="0.25cm" svg:height="0.25cm" draw:z-index="52"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEsAAABMCAYAAAAlS0pSAAAM/XpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja7ZlZciQ5DkT/eYo5AvflOCQBms0N5vjzwEylllJ1V3XPV9soTRmhyEgu
        cMDdEXL6n38f9y9+so/R5dJ6HbV6fvLII05Oun/8jPsefL7v9yev52fh83WX9/ODyKXEMT3+
@@ -8306,7 +8313,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P21"><text:tab/>Cette modification du <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">odatus</text:span> se nomme <text:span text:style-name="T7">epi</text:span><text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">honus</text:span>.<text:line-break/><text:tab/>on trouve de même<text:span text:style-name="T104"> :<text:tab/><text:tab/></text:span><text:span text:style-name="T104"><draw:frame draw:style-name="fr1" draw:name="Image47" text:anchor-type="as-char" svg:y="-0.275cm" svg:width="0.289cm" svg:height="0.3cm" draw:z-index="54"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P22"><text:tab/>Cette modification du <text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">odatus</text:span> se nomme <text:span text:style-name="T7">epi</text:span><text:span text:style-name="T36">p</text:span><text:span text:style-name="T7">honus</text:span>.<text:line-break/><text:tab/>on trouve de même<text:span text:style-name="T104"> :<text:tab/><text:tab/></text:span><text:span text:style-name="T104"><draw:frame draw:style-name="fr1" draw:name="Image47" text:anchor-type="as-char" svg:y="-0.275cm" svg:width="0.289cm" svg:height="0.3cm" draw:z-index="54"><draw:image loext:mime-type="image/png">
        <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGUAAABoCAYAAADo4j4RAAAO3HpUWHRSYXcgcHJvZmlsZSB0
         eXBlIGV4aWYAAHja7ZpZkty4EYbfcQofAVsikcfBGuEb+Pj+klXSdGuxRzN6s7uii9UsEgRy
         +RdI4fzrnzf8g59aagtVtDdrLfJTrVoefOjx9WPPe4r1eX9+mry/S5/Ph/blpsypwrG8/tTx
@@ -8828,12 +8835,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>etc.</text:p>
-   <text:list xml:id="list152347972802382" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list85453885847169" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P39">Si la formule se termine par un son grave, le trait final, ou <text:span text:style-name="T7">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T105"> :</text:span></text:p>
+     <text:p text:style-name="P41">Si la formule se termine par un son grave, le trait final, ou <text:span text:style-name="T7">accent grave</text:span>, est bouclé de cette manière<text:span text:style-name="T105"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image52" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="79"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image52" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="79"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGwAAAB4CAYAAAAXIRdAAAAOcXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja1ZlZciO7EUX/sQovAUjMy8GQiPAOvHyfBEtqqV/368kOh8UgiywWUUAO
        d4Cc/uufx/2DvyShuZRrK70Uz1/qqcvgTfOvv35fg0/39f6V9XwXPp939e1HwqnIMb4+1vFc
@@ -9048,7 +9055,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P21"><text:span text:style-name="T106"><text:tab/>C</text:span>’est le <text:span text:style-name="T7">cephalicus</text:span>, modification de la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T37">l</text:span><text:span text:style-name="T7">ivis</text:span>.<text:line-break/><text:tab/>De même encore :<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image54" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="81"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P22"><text:span text:style-name="T106"><text:tab/>C</text:span>’est le <text:span text:style-name="T7">cephalicus</text:span>, modification de la <text:span text:style-name="T7">c</text:span><text:span text:style-name="T37">l</text:span><text:span text:style-name="T7">ivis</text:span>.<text:line-break/><text:tab/>De même encore :<text:tab/><text:tab/><draw:frame draw:style-name="fr1" draw:name="Image54" text:anchor-type="as-char" svg:y="-0.383cm" svg:width="0.7cm" svg:height="0.499cm" draw:z-index="81"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAKIAAAB0CAYAAAAGlekpAAAO8HpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjaxZlpkhwpEkb/c4o5AjjgwHHY3GxuMMef55FZ1dq6pyW12VSqMrIiIwLw
        5VtQuP/5t4V/8VPikFBq6zpUIz9llCGTDz2+fsbznmJ53p+fKe/v0tfnQyvvL4RTmWN+/dnm
@@ -9479,12 +9486,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:list xml:id="list152347240210371" text:continue-numbering="true" text:style-name="L3">
+   <text:list xml:id="list85452785077696" text:continue-numbering="true" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P39">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T7">s</text:span><text:span text:style-name="T38">trop</text:span><text:span text:style-name="T7">hicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
+     <text:p text:style-name="P41">Si l’on doit ajouter une note liquescente au <text:span text:style-name="T7">s</text:span><text:span text:style-name="T38">trop</text:span><text:span text:style-name="T7">hicus</text:span> le dernier trait se trouve allongé de cette sorte :</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image58" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="85"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image58" text:anchor-type="as-char" svg:y="-0.423cm" svg:width="0.49cm" svg:height="0.499cm" draw:z-index="85"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAGgAAABqCAYAAABQ1BSqAAARWHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja3ZpXtuO4EYbfsQovAblQy0E8xzvw8v0VyNt9O0xo9zxZmiuqKQoEKvwB
        Grf/8+/j/sUjq/cuF2lVa/U8smaNnTfNPw+9r8Hn+3of9eOz8O15V/v7QeRU4pief8p7PnTO
@@ -9723,8 +9730,8 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> au lieu de <text:span text:style-name="T91">’’’</text:span></text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T114">P</text:span>our l’<text:span text:style-name="T7">oriscus</text:span>, le procédé d’écriture est le même que pour l’<text:span text:style-name="T7">apostropha</text:span>.</text:p>
-   <text:p text:style-name="P14">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T52"> :</text:span> toutes les formules avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T47"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-<text:soft-page-break/>voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15"><text:span text:style-name="T114">P</text:span>our l’<text:span text:style-name="T7">oriscus</text:span>, le procédé d’écriture est le même que pour l’<text:span text:style-name="T7">apostropha</text:span>.</text:p>
+   <text:p text:style-name="P15">Dans certains tableaux de neumes, il n’est question ni de l’<text:span text:style-name="T38">e</text:span><text:span text:style-name="T7">piphonus</text:span> ni du <text:span text:style-name="T7">cephalicus</text:span><text:span text:style-name="T52"> :</text:span> toutes les formules avec son liquescent conservent chacune son nom ordinaire, auquel on ajoute le qualificatif de <text:span text:style-name="T38">h</text:span><text:span text:style-name="T7">em</text:span><text:span text:style-name="T38">i</text:span><text:span text:style-name="T7">vocalis</text:span> ou <text:span text:style-name="T7">semivocalis</text:span><text:span text:style-name="T47"> ;</text:span> qui exprime parfaitement du reste la nature du son liquescent : un son proféré à demi-<text:soft-page-break/>voix. Ainsi l’<text:span text:style-name="T7">epi</text:span><text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">honus</text:span> est appelé <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">es</text:span> ou <text:span text:style-name="T38">p</text:span><text:span text:style-name="T7">odatus semivocalis</text:span> <draw:frame draw:style-name="fr1" draw:name="Image60" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.409cm" svg:height="0.3cm" draw:z-index="87"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFIAAAA8CAYAAAD10u2xAAAMoXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5Zhbdhw5DkT/uYpZAt8El0PwcU7vYJY/F8ySLKttt9U98zVVdmUpM4sP
        RCAQSLf//cdx/+KVqojLpUnttXpeueceB1/EP69+P4PP9/O+SnxdC9+fd2m+LkROJY7p+bON
@@ -10212,7 +10219,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/><text:span text:style-name="T107">etc.</text:span></text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T108">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formule, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formule devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15"><text:span text:style-name="T108">Quelquefois</text:span> il arrive qu’au lieu d’un seul son liquescent terminant une formule, comme dans les cas précédents, il s’en présente deux, ou même dans quelques cas très rares, trois ou quatre, surtout dans le mouvement descendant. Le trait bouclé de la formule devient alors un trait arqué, et le signe se nomme <text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image65" text:anchor-type="as-char" svg:y="-0.385cm" svg:width="0.66cm" svg:height="0.499cm" draw:z-index="58"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAIIAAABiCAYAAACcRwt/AAARmnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjatZppdhu7EUb/YxVZAqYCUMtBYTgnO8jyc6tJOR5kx895ES021WyigRq+
        AXQ4//rnDf/gp7bcQpU+mrYW+alaNU9ejPj60ec5xfo8Pz8jv99L354P7eONzKnCsbz+7PN9
@@ -10431,7 +10438,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame><text:s/>pour le <text:span text:style-name="T7">pes subbipun</text:span><text:span text:style-name="T38">c</text:span><text:span text:style-name="T7">tis</text:span>.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T109">L</text:span>’<text:span text:style-name="T7">ancus</text:span> présente dans un certain nombre de manuscrits une forme un peu différente<text:span text:style-name="T109"> :</text:span> il s’écrit à la maniè<text:span text:style-name="T109">r</text:span>e d’une <text:span text:style-name="T7">c</text:span><text:span text:style-name="T39">livi</text:span><text:span text:style-name="T7">s</text:span>, d’un <text:span text:style-name="T39">tor</text:span><text:span text:style-name="T7">culus</text:span><text:span text:style-name="T54">, </text:span><text:span text:style-name="T53">etc.</text:span> augmenté d’un crochet répondant au dernier son du groupe qui en effet est celui qui <text:span text:style-name="T109">s’</text:span>efface davantage dans l’émission de l’<text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image67" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="60"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15"><text:span text:style-name="T109">L</text:span>’<text:span text:style-name="T7">ancus</text:span> présente dans un certain nombre de manuscrits une forme un peu différente<text:span text:style-name="T109"> :</text:span> il s’écrit à la maniè<text:span text:style-name="T109">r</text:span>e d’une <text:span text:style-name="T7">c</text:span><text:span text:style-name="T39">livi</text:span><text:span text:style-name="T7">s</text:span>, d’un <text:span text:style-name="T39">tor</text:span><text:span text:style-name="T7">culus</text:span><text:span text:style-name="T54">, </text:span><text:span text:style-name="T53">etc.</text:span> augmenté d’un crochet répondant au dernier son du groupe qui en effet est celui qui <text:span text:style-name="T109">s’</text:span>efface davantage dans l’émission de l’<text:span text:style-name="T7">ancus</text:span> <draw:frame draw:style-name="fr1" draw:name="Image67" text:anchor-type="as-char" svg:y="-0.436cm" svg:width="0.55cm" svg:height="0.499cm" draw:z-index="60"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAHQAAABqCAYAAABtRnXMAAAWRXpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZpZdhy5EUX/sQovAfOwHIzneAdevu9DFseWWpLbosSikpVIABHxhkCZ
        /Z9/H/Mv/qRmvYmp1NxytvyJLTbf+aHa50+7352N9/v9U+Lrd+7rdZP76xeeS4HX8Lrhdd11
@@ -10689,20 +10696,20 @@
       </office:binary-data>
      </draw:image>
     </draw:frame>.</text:p>
-   <text:p text:style-name="P14">C<text:span text:style-name="T109">e</text:span>s formules s’appellent aussi <text:span text:style-name="T7">f</text:span><text:span text:style-name="T39">l</text:span><text:span text:style-name="T7">exa cornuta</text:span> ou <text:span text:style-name="T7">sinuosa</text:span>, <text:span text:style-name="T7">pes cornutum</text:span> <text:span text:style-name="T109">ou</text:span> <text:span text:style-name="T39">s</text:span><text:span text:style-name="T7">inuosus</text:span>, <text:span text:style-name="T7">qui</text:span><text:span text:style-name="T39">l</text:span><text:span text:style-name="T7">isma cornu</text:span><text:span text:style-name="T39">t</text:span><text:span text:style-name="T7">um</text:span> <text:span text:style-name="T109">ou</text:span> <text:span text:style-name="T39">s</text:span><text:span text:style-name="T7">inuosum</text:span>.</text:p>
-   <text:p text:style-name="P14">L<text:span text:style-name="T109">a</text:span> note <text:span text:style-name="T7">semivocalis</text:span> est devenue plus tard la <text:span text:style-name="T39">p</text:span><text:span text:style-name="T7">li</text:span><text:span text:style-name="T39">q</text:span><text:span text:style-name="T7">ue</text:span><text:span text:style-name="T54"> ;</text:span> mais, celle-ci <text:span text:style-name="T109">n’</text:span>a plus la même valeur que la <text:span text:style-name="T7">sem</text:span><text:span text:style-name="T39">i</text:span><text:span text:style-name="T7">vocalis</text:span> primitive.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T114">Nous</text:span> venons de faire connaître la forme primitive et régulière des signes principaux de la notation neumatique, de ceux du moins qui dérivent de l’accent grave et de l’accent aigu diversement combinés. Il existe, avons-nous dit, des neumes d’une autre espèce, plus rares que les premiers, mais qui dans certains pays, par exemple dans l’Aquitaine, paraissaient avoir été longtemps les seules connues<text:span text:style-name="T109"> ;</text:span> ou du moins ce sont ceux que les monuments liturgiques de ces régions méridionales nous offrent le plus communément<text:span text:style-name="T109"> :</text:span> on les appelle les <text:span text:style-name="T39">neu</text:span><text:span text:style-name="T7">mes à points superposés</text:span>.</text:p>
-   <text:h text:style-name="P7" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc4000_3513054921"/>Neumes à points superposés<text:bookmark-end text:name="__RefHeading___Toc4000_3513054921"/></text:h>
-   <text:p text:style-name="P14">L<text:span text:style-name="T109">e</text:span> système des accents, qui consiste à représenter les tons graves et les tons aigus par des traits diversement inclinés, parle plus à l’intelligence <text:span text:style-name="T109">qu’</text:span>aux yeux. <text:span text:style-name="T114">Pour</text:span> figurer d’une manière plus sensible et moins abstraite les mouvements divers de la voix dans le chant, on a imaginé de se servir du point comme signe du son.</text:p>
-   <text:p text:style-name="P14">L<text:span text:style-name="T109">e</text:span> <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T109">n’</text:span>est plus ici, comme tout à l’heure, une forme dérivée<text:span text:style-name="T109"> ;</text:span> il est l’élément propre et constitutif de cette seconde espèce de neumes.</text:p>
-   <text:p text:style-name="P14">L<text:span text:style-name="T109">e</text:span> son, dans ce système, est donc représenté par le <text:span text:style-name="T39">point</text:span>, tout aussi bien le son aigu que le son grave<text:span text:style-name="T109"> ;</text:span> et c’est par la combinaison des <text:span text:style-name="T7">points</text:span> que se figure la combinaison des sons.</text:p>
-   <text:p text:style-name="P14">Les formules sont des groupes composés d’autant de <text:span text:style-name="T39">points</text:span> distin<text:span text:style-name="T109">c</text:span>ts qu’il y a de sons différents, et les <text:span text:style-name="T39">points</text:span> sont disposés de manière à diriger le mouvement de la voix de l’aigu au grave ou du grave à l’aigu.</text:p>
-   <text:list xml:id="list1507963406" text:style-name="L4">
+   <text:p text:style-name="P15">C<text:span text:style-name="T109">e</text:span>s formules s’appellent aussi <text:span text:style-name="T7">f</text:span><text:span text:style-name="T39">l</text:span><text:span text:style-name="T7">exa cornuta</text:span> ou <text:span text:style-name="T7">sinuosa</text:span>, <text:span text:style-name="T7">pes cornutum</text:span> <text:span text:style-name="T109">ou</text:span> <text:span text:style-name="T39">s</text:span><text:span text:style-name="T7">inuosus</text:span>, <text:span text:style-name="T7">qui</text:span><text:span text:style-name="T39">l</text:span><text:span text:style-name="T7">isma cornu</text:span><text:span text:style-name="T39">t</text:span><text:span text:style-name="T7">um</text:span> <text:span text:style-name="T109">ou</text:span> <text:span text:style-name="T39">s</text:span><text:span text:style-name="T7">inuosum</text:span>.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T109">a</text:span> note <text:span text:style-name="T7">semivocalis</text:span> est devenue plus tard la <text:span text:style-name="T39">p</text:span><text:span text:style-name="T7">li</text:span><text:span text:style-name="T39">q</text:span><text:span text:style-name="T7">ue</text:span><text:span text:style-name="T54"> ;</text:span> mais, celle-ci <text:span text:style-name="T109">n’</text:span>a plus la même valeur que la <text:span text:style-name="T7">sem</text:span><text:span text:style-name="T39">i</text:span><text:span text:style-name="T7">vocalis</text:span> primitive.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T114">Nous</text:span> venons de faire connaître la forme primitive et régulière des signes principaux de la notation neumatique, de ceux du moins qui dérivent de l’accent grave et de l’accent aigu diversement combinés. Il existe, avons-nous dit, des neumes d’une autre espèce, plus rares que les premiers, mais qui dans certains pays, par exemple dans l’Aquitaine, paraissaient avoir été longtemps les seules connues<text:span text:style-name="T109"> ;</text:span> ou du moins ce sont ceux que les monuments liturgiques de ces régions méridionales nous offrent le plus communément<text:span text:style-name="T109"> :</text:span> on les appelle les <text:span text:style-name="T39">neu</text:span><text:span text:style-name="T7">mes à points superposés</text:span>.</text:p>
+   <text:h text:style-name="P8" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc4000_3513054921"/>Neumes à points superposés<text:bookmark-end text:name="__RefHeading___Toc4000_3513054921"/></text:h>
+   <text:p text:style-name="P15">L<text:span text:style-name="T109">e</text:span> système des accents, qui consiste à représenter les tons graves et les tons aigus par des traits diversement inclinés, parle plus à l’intelligence <text:span text:style-name="T109">qu’</text:span>aux yeux. <text:span text:style-name="T114">Pour</text:span> figurer d’une manière plus sensible et moins abstraite les mouvements divers de la voix dans le chant, on a imaginé de se servir du point comme signe du son.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T109">e</text:span> <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T109">n’</text:span>est plus ici, comme tout à l’heure, une forme dérivée<text:span text:style-name="T109"> ;</text:span> il est l’élément propre et constitutif de cette seconde espèce de neumes.</text:p>
+   <text:p text:style-name="P15">L<text:span text:style-name="T109">e</text:span> son, dans ce système, est donc représenté par le <text:span text:style-name="T39">point</text:span>, tout aussi bien le son aigu que le son grave<text:span text:style-name="T109"> ;</text:span> et c’est par la combinaison des <text:span text:style-name="T7">points</text:span> que se figure la combinaison des sons.</text:p>
+   <text:p text:style-name="P15">Les formules sont des groupes composés d’autant de <text:span text:style-name="T39">points</text:span> distin<text:span text:style-name="T109">c</text:span>ts qu’il y a de sons différents, et les <text:span text:style-name="T39">points</text:span> sont disposés de manière à diriger le mouvement de la voix de l’aigu au grave ou du grave à l’aigu.</text:p>
+   <text:list xml:id="list3853840405" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40"><text:soft-page-break/>Si le mouvement est descendant, la formule est composée de simples <text:span text:style-name="T39">points</text:span> ainsi superposés verticalement<text:span text:style-name="T109"> :</text:span> et le <text:span text:style-name="T39">point</text:span> placé au sommet de la perpendiculaire <text:span text:style-name="T109">s’</text:span>exprime le premier.</text:p>
+     <text:p text:style-name="P42"><text:soft-page-break/>Si le mouvement est descendant, la formule est composée de simples <text:span text:style-name="T39">points</text:span> ainsi superposés verticalement<text:span text:style-name="T109"> :</text:span> et le <text:span text:style-name="T39">point</text:span> placé au sommet de la perpendiculaire <text:span text:style-name="T109">s’</text:span>exprime le premier.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.229cm" svg:height="0.3cm" draw:z-index="62"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image69" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="0.229cm" svg:height="0.3cm" draw:z-index="62"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAABUCAYAAAA22+FuAAALtnpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja7Zlbchw7DkT/uYpZAl/gYzkkQUbcHczy54DVkmVdy/YNz89EjNrqalVV
        8wEkMhNlt//913H/4idJaS5LbaWX4vnJPfc4+ND889Pve/D5vt+fHF/XwvfnneTXhcipxDE9
@@ -10856,12 +10863,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus.</text:p>
-   <text:list xml:id="list152346886452387" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list85454071016215" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40">S<text:span text:style-name="T111">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la <text:span text:style-name="T114">droite</text:span>, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
+     <text:p text:style-name="P42">S<text:span text:style-name="T111">i</text:span> le mouvement est ascendant, les <text:span text:style-name="T40">points</text:span> suivent une ligne ascendante tant soit peu inclinée vers la <text:span text:style-name="T114">droite</text:span>, et le <text:span text:style-name="T40">point</text:span> culminant qui termine la série est allongé en forme de <text:span text:style-name="T7">virga</text:span> ou de petit cercle.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="64"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image71" text:anchor-type="as-char" svg:y="-0.397cm" svg:width="0.45cm" svg:height="0.499cm" draw:z-index="64"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFoAAABkCAYAAAAG2CffAAARF3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjaxZpnclu9GYX/YxVZAnpZDupMdpDl5zkgVV0kj79JxLEudUmivOUU0Gb/
        59/H/IufWKM3MZWaW86Wn9hi850n1T5+2v3tbLy/70/qz9fcx/smx+cLnluBa3j8WZ4fcJ37
@@ -11079,12 +11086,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Scandicus.</text:p>
-   <text:list xml:id="list152348385783805" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list85453769821238" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40"><text:span text:style-name="T111">Il</text:span> en est toujours ainsi de <text:span text:style-name="T111">l</text:span>a dernière note d’une formule, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
+     <text:p text:style-name="P42"><text:span text:style-name="T111">Il</text:span> en est toujours ainsi de <text:span text:style-name="T111">l</text:span>a dernière note d’une formule, quand cette note est plus élevée que la précédente. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image73" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.51cm" svg:height="0.499cm" draw:z-index="66"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image73" text:anchor-type="as-char" svg:y="-0.409cm" svg:width="0.51cm" svg:height="0.499cm" draw:z-index="66"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFwAAABaCAYAAAA1tjFFAAAU/npUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHja5ZpZchs5l4XfsYpeAuZhORgj/h308vs7SFK2bLnKruqHjmjJFqkkiUTe
        4Qw3ZfZ//+eY/+Ir1RhNTKXmlrPlK7bYfOdJtc9Xuz+djffn/Urz9Zr7fNyk/nrBcyjwGJ5f
@@ -11301,12 +11308,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Climacus resupinus.</text:p>
-   <text:list xml:id="list152346848055333" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list85453876957482" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40">Si la note culminante de la formule n’est pas la dernière, le <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T111">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
+     <text:p text:style-name="P42">Si la note culminante de la formule n’est pas la dernière, le <text:span text:style-name="T7">point</text:span> <text:span text:style-name="T111">n’</text:span>est pas allongé. Exemple<text:span text:style-name="T111"> :</text:span></text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image75" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.54cm" svg:height="0.499cm" draw:z-index="68"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image75" text:anchor-type="as-char" svg:y="-0.411cm" svg:width="0.54cm" svg:height="0.499cm" draw:z-index="68"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAFAAAABKCAYAAAAsXNNQAAAP/HpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjazZppcuS4EUb/4xQ+ArbEchwACUT4Bj6+X4IltdT79IwjrGoVKZIFgrl8
        C6rd/s+/j/sXP7kk77LUVnopnp/cc4+Dneafn37fg8/3/f7I6xR/fzru8nidiBxKbNPzZ30d
@@ -11511,12 +11518,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> Pes subpun<text:span text:style-name="T111">c</text:span>tis.</text:p>
-   <text:list xml:id="list152347748559292" text:continue-numbering="true" text:style-name="L4">
+   <text:list xml:id="list85454108690726" text:continue-numbering="true" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P40"><text:span text:style-name="T111">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T111">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T7"> superposés</text:span>.</text:p>
+     <text:p text:style-name="P42"><text:span text:style-name="T111">Quant</text:span> aux signes d’ornement, voici la forme <text:span text:style-name="T111">qu’</text:span>ils affectent dans la notation à <text:span text:style-name="T40">points</text:span><text:span text:style-name="T7"> superposés</text:span>.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P16"><draw:frame draw:style-name="fr1" draw:name="Image77" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="1.431cm" svg:height="0.3cm" draw:z-index="70"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P17"><draw:frame draw:style-name="fr1" draw:name="Image77" text:anchor-type="as-char" svg:y="-0.298cm" svg:width="1.431cm" svg:height="0.3cm" draw:z-index="70"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAASAAAAA8CAYAAADG4GfUAAAKWHpUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjarZh/diQpDoT/5xR7BEAgwXH4+d7eYI+/n7LKbru7Z3Zm3rraleksCoRC
        igg6nP/8+4Z/8ZO1l1CqNe2qkZ/SS8+DmxZfP/15T7E8789P/rhL358HWfFjRIrCVV5/2nhd
@@ -12057,8 +12064,8 @@
       </office:binary-data>
      </draw:image>
     </draw:frame> <text:span text:style-name="T7">Semivocalis</text:span> aigu ou <text:span text:style-name="T7">Epiphonus</text:span>.</text:p>
-   <text:p text:style-name="P14">T<text:span text:style-name="T111">el</text:span> est le mode primitif et ordinaire de combiner les notes dans ce syst<text:span text:style-name="T111">è</text:span>me.</text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T114">Bientôt</text:span>, en disposant les <text:span text:style-name="T40">point</text:span><text:span text:style-name="T7">s</text:span>, comme il vient d’être dit, on est arrivé à les relier entre eux et à former de la sorte des groupes, qui présentent une grande analogie avec les figures provenant de la combinaison des accents. Ainsi la <text:span text:style-name="T40">clivis</text:span> présente cette forme <draw:frame draw:style-name="fr1" draw:name="Image82" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="75"><draw:image loext:mime-type="image/png">
+   <text:p text:style-name="P15">T<text:span text:style-name="T111">el</text:span> est le mode primitif et ordinaire de combiner les notes dans ce syst<text:span text:style-name="T111">è</text:span>me.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T114">Bientôt</text:span>, en disposant les <text:span text:style-name="T40">point</text:span><text:span text:style-name="T7">s</text:span>, comme il vient d’être dit, on est arrivé à les relier entre eux et à former de la sorte des groupes, qui présentent une grande analogie avec les figures provenant de la combinaison des accents. Ainsi la <text:span text:style-name="T40">clivis</text:span> présente cette forme <draw:frame draw:style-name="fr1" draw:name="Image82" text:anchor-type="as-char" svg:y="-0.37cm" svg:width="0.43cm" svg:height="0.499cm" draw:z-index="75"><draw:image loext:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAEIAAABMCAYAAADZXmGYAAAQs3pUWHRSYXcgcHJvZmlsZSB0
        eXBlIGV4aWYAAHjavZlpcuQsEob/c4o5AkuyHQdIiJgbzPHnSVR22713zxfjskuySiVBLu+C
        3P7Pv4/7Fz9SsjjJtZVeiudHuvQ42Gn++en3PXi57/dH4uuz8Pm4k/X6IHIosU3Pv3W8zh8c
@@ -12404,7 +12411,7 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P14"><text:span text:style-name="T114">Nous</text:span> voyons ici les deux systèmes, celui des <text:span text:style-name="T7">accents</text:span> et celui des <text:span text:style-name="T41">points</text:span> arriver aux mêmes termes par des voies différentes. Partis de principes opposés, mais en réalité tendant au même but, qui est d’indiquer des groupes de sons, ils finissent par se rencontrer, par se compénétrer, par <text:span text:style-name="T110">s’</text:span>identifier même, du moins en partie<text:span text:style-name="T110"> ;</text:span> soit par simple coïncidence, soit peut-être aussi que les deux notations se sont emprunté mutuellement quelques signes qui sont devenus communs aux deux systèmes. <text:span text:style-name="T110">C</text:span>’est du moins ce que nous remarquons dans un certain nombre de manuscrits<text:span text:style-name="T110"> ;</text:span> tandis que d’autres restent fidèles à la tradition propre à chaque système.</text:p>
+   <text:p text:style-name="P15"><text:span text:style-name="T114">Nous</text:span> voyons ici les deux systèmes, celui des <text:span text:style-name="T7">accents</text:span> et celui des <text:span text:style-name="T41">points</text:span> arriver aux mêmes termes par des voies différentes. Partis de principes opposés, mais en réalité tendant au même but, qui est d’indiquer des groupes de sons, ils finissent par se rencontrer, par se compénétrer, par <text:span text:style-name="T110">s’</text:span>identifier même, du moins en partie<text:span text:style-name="T110"> ;</text:span> soit par simple coïncidence, soit peut-être aussi que les deux notations se sont emprunté mutuellement quelques signes qui sont devenus communs aux deux systèmes. <text:span text:style-name="T110">C</text:span>’est du moins ce que nous remarquons dans un certain nombre de manuscrits<text:span text:style-name="T110"> ;</text:span> tandis que d’autres restent fidèles à la tradition propre à chaque système.</text:p>
   </office:text>
  </office:body>
 </office:document>
