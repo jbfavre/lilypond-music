@@ -4,9 +4,173 @@
   Default settings and some translations are needed
   at the beginning so that they can be overrided
 %}
-\include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
-\include "../libs/translations/fr.ily"
+%\include "../libs/commonFunctions.ily"
+#(define-markup-command (columns layout props args) (markup-list?)
+   (let ((line-width (/ (chain-assoc-get 'line-width props
+                         (ly:output-def-lookup layout 'line-width))
+                        (max (length args) 1))))
+     (interpret-markup layout props
+       (make-line-markup (map (lambda (line)
+                                (markup #:pad-to-box `(0 . ,line-width) '(0 . 0)
+                                  #:override `(line-width . ,line-width)
+                                  line))
+                               args)))))
+
+silence = #(
+  define-music-function (parser location arg) (ly:music?) (
+    map-some-music (
+      lambda (m) (
+        and (music-is-of-type? m 'note-event)
+        (make-music 'SkipEvent m)
+      )
+    ) arg
+  )
+)
+
+#(define-markup-command (arrow-at-angle layout props angle-deg length fill)
+   (number? number? boolean?)
+   (let* (
+          ;; PI-OVER-180 and degrees->radians are taken from flag-styles.scm
+          (PI-OVER-180 (/ (atan 1 1) 45))
+          (degrees->radians (lambda (degrees) (* degrees PI-OVER-180)))
+          (angle-rad (degrees->radians angle-deg))
+          (target-x (* length (cos angle-rad)))
+          (target-y (* length (sin angle-rad))))
+     (interpret-markup layout props
+                       (markup
+                        #:translate (cons (/ target-x 2) (/ target-y 2))
+                        #:rotate angle-deg
+                        #:translate (cons (/ length -2) 0)
+                        #:concat (#:draw-line (cons length 0)
+                                              #:arrow-head X RIGHT fill)))))
+
+splitStaffBarLineMarkup = \markup \with-dimensions #'(0 . 0) #'(0 . 0) {
+  \combine
+    \arrow-at-angle #45 #(sqrt 8) ##f
+    \arrow-at-angle #-45 #(sqrt 8) ##f
+}
+
+splitStaffBarLine = {
+  \once \override Staff.BarLine.stencil =
+    #(lambda (grob)
+       (ly:stencil-combine-at-edge
+        (ly:bar-line::print grob)
+        X RIGHT
+        (grob-interpret-markup grob splitStaffBarLineMarkup)
+        0))
+  \break
+}
+
+displayFiguredBass = #(define-music-function (parser location figuredBass)
+   (ly:music?)
+   #{
+     \new FiguredBass { #figuredBass }
+   #}
+ )
+
+parenthesizeAll = #(define-music-function (parser location note) (ly:music?)
+#{
+  \once \override ParenthesesItem.font-size = #-1
+  \once \override ParenthesesItem.stencil = #(lambda (grob)
+       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
+              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
+         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
+         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
+         (parentheses-item::print grob)))
+  \parenthesize $note
+#})
+
+%\include "../libs/settings.ily"
+tagline = \markup {
+      \teeny\sans \concat{"gravé avec LilyPond pour " \with-url #"https://www.psaumedudimanche.fr" {\underline{www.psaumedudimanche.fr}}}
+}
+
+copyright = "©"
+poet = "AELF"
+
+title = "Composition title"
+subtitle = "Composition subtitle"
+real_poet = "Poet name"
+composer = "Composer name"
+dedicace = ""
+signature = ""
+signatureDate = ""
+
+% Global staff size.
+% Other sizes will be relative.
+% Good to customize to get a "one page only" psalm, when possible
+staffCustomSize = 16
+
+topToMarkupSpacing =
+  #'((basic-distance . 6)
+     (minimum-distance . 5)
+     (padding . 5)
+     (stretchability . 10))
+
+topToSystemSpacing = 
+  #'((basic-distance . 10)
+     (minimum-distance . 5)
+     (padding . 5)
+     (stretchability . 10))
+
+markupToSystemSpacing =
+  #'((basic-distance . 20)
+     (minimum-distance . 10)
+     (padding . 5)
+     (stretchability . 10))
+
+systemToSystemSpacing = 
+  #'((basic-distance . 20)
+     (minimum-distance . 10)
+     (padding . 5)
+     (stretchability . 10))
+
+scoreMarkupSpacing =
+  #'((padding . 5)
+   (basic-distance . 15)
+   (minimum-distance . 5)
+   (stretchability . 20))
+
+#(set-default-paper-size "a4")
+
+%{
+  Default margins in millimeters (equal to 1\cm)
+%}
+leftMargin = 15
+rightMargin = 15
+topMargin = 10
+bottomMargin = 15
+
+%{
+  Margin for two-sided printed scores
+  Should be set to false for conductor's score, since it's usualy better
+  to have conductor's score printed on one side only when possible
+%}
+twoSided = ##t
+innerMargin = 15
+outerMargin = 15
+
+%{
+  Fonts settings
+%}
+fontMusic = "emmentaler"            % default
+fontBrace = "emmentaler"            % default
+fontRoman = "Latin Modern Roman"
+fontSans = "Latin Modern Sans"
+fontTypewriter = "Monospace Regular"
+fontFactor = 20 % unnecessary if the staff size is default
+
+%\include "../libs/translations/fr.ily"
+antiphonText = "Antienne"
+verseText = "Psalmodie"
+sopranoVoiceTitle = "Soprano"
+altoVoiceTitle = "Alto"
+tenorVoiceTitle = "Ténor"
+bassVoiceTitle = "Basse"
+poetPrefix = "Texte : "
+composerPrefix = "Musique : "
+arangerPrefix = "Harmonisation : "
+
 %{
   Since defined in libs/translations/fr.ly
   Following variables must be overrided after file include
