@@ -10,8 +10,8 @@ anamneseIntonationMusic =  \relative c'' {
   gs4 gs a a8 a gs gs fs fs e2 \break
 }
 anamneseMainSopranoMusic = \relative c'' {
-  \tuplet 3/2 { gs8 gs gs } gs8 gs a4. a8 gs4 fs4 e2 \break
-  r8 e8 e e fs4 fs8 fs e4 fs gs2 \break
+  \tuplet 3/2 { gs8 gs gs } gs8 gs a4. a8 gs4 fs4 e2
+  r8 e8 e e fs4 fs8 fs e4 fs gs2
   r8 gs8 gs fs es4 fs8 gs a4 gs8 fs fs2 (es2) fs2 \fermata
 }
 

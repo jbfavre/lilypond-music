@@ -7,8 +7,8 @@
 \include "PetiteMesseSaintVincentDePaul/Gloria.ly"
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ly"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ly"
-\include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ly"
+\include "PetiteMesseSaintVincentDePaul/Agnus.ly"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Book definition
@@ -19,7 +19,6 @@
 \include "libs/settings.ily"
 \include "libs/translations/fr.ily"
 \include "libs/layouts/book-titling.ily"
-\include "libs/layouts/commonLayout.ily"
 
 %%%%% Override custom variables
 pianoProperties = {
@@ -48,7 +47,7 @@ blankPage = {
   }
 
 %%%%% Define book
-#(set-global-staff-size staffCustomSize)
+%#(set-global-staff-size 16)
 \book {
   \header {
     title = \markup {

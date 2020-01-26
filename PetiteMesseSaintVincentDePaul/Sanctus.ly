@@ -21,7 +21,7 @@ sanctusSolist_BD_AlternativeTwo = \relative c' { e8 (ds16 cs16) ds8 e4. \break }
 sanctusMainSolistMusic =  \relative c' {
     \mark \default
     \repeat volta 2 {
-      b'4 b8 cs4 b8 b (a gs) fs4. \break
+      b'4 b8 cs4 b8 b (a gs) fs4.
       \sanctusSolist_BD_Repeat
     }
     \alternative {
@@ -34,14 +34,13 @@ sanctusMainSolistMusic =  \relative c' {
       \relative c' {
         \cadenzaOn \stemOff b'\breve \cadenzaOff \stemOn
         cs8 cs cs
-        b4 (gs8) b4. \break
+        b4 (gs8) b4.
       }
       \sanctusSolist_BD_Repeat
     }
     \alternative {
       \sanctusSolist_BD_AlternativeOne
       \sanctusSolist_BD_AlternativeTwo
-      
     }
   }
 sanctusMainSolistLyrics = \lyricmode {
