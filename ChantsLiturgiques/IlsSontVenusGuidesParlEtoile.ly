@@ -28,6 +28,7 @@ global = {}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 stanceRhythms = {
+  \tempo 4 = 80
   \key g \minor \time 3/4
   \partial 4. s4. s2. \time 2/4  s2 s2 \time 3/4 s2. \break
   \key g \major s2. s2. \time 2/4 s2*4 \bar "|."
@@ -74,14 +75,14 @@ altoAntiphonMusic = \relative c' {
   \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
-  ds8 \autoBeamOn e fs g g a fs fs e e4 e8 d d2 (d2) \fermata
+  ds8 \autoBeamOn e fs g g a fs fs e e4 fs8 d d2 (d2) \fermata
   }
 
 tenorAntiphonMusic =  \relative c {
   \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
-  b8 \autoBeamOn b d d e d (a) b4 a d8 c8 c4 b8 a b2 \fermata
+  b8 \autoBeamOn b d d e d (a) b4 a a4 c4 b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
@@ -318,7 +319,7 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Antienne d'ouverture %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName 
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne d'ouverture"
   \partial 8 g8 g4 a8 b c b a g fs g4 \breathe g8 b4 c8 \break d4. c8 b a g b b a g fs g4. g4 r8 \bar "|." }
 altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8 }
@@ -352,7 +353,7 @@ partition = \include "../libs/layouts/commonVerseFourVoices.ily"
 %%%%%%%%%% Antienne de communion %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName 
+sopranoVerseMusic = \relative c'' { \set midiInstrument = \midiInstrumentName
   \cadenzaOff \time 3/8 \key g \major \markCustom "Antienne de communion"
   g8 g a8 b c b a g fs g4 \breathe g8 b b c8 \break d4 d8 c8 b a g b b a g fs g4. g4 r8 \bar "|." }
 altoVerseMusic = \relative c' { \set midiInstrument = \midiInstrumentName \key g \major g'8 g fs8 g g fs e d d e4 e8 fs fs e8 fs4 fs8 a8 fs fs e fs g e d d d4. d4 r8 }
