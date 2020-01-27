@@ -45,7 +45,7 @@ bassAntiphonMusic =  \relative c {
   }
 
 antiphonLyrics = \lyricmode {
-  Au -- jourd' -- hui, ne fer -- mez pas vo -- tre cœur, mais é -- cou -- tez la voix du Sei -- gneur&nbsp;! 
+  Au -- jourd' -- hui, ne fer -- mez pas vo -- tre cœur, mais é -- cou -- tez la voix du Sei -- gneur&nbsp;!
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -81,7 +81,6 @@ altoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   g\breve e4
   a\breve fs1 g4
-  
   }
 
 tenorVerseMusic = \relative c' {
