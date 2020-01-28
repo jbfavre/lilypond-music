@@ -41,12 +41,12 @@ stanceMusic = \relative c' {
   \markCustom "Stance"
   \partial 4. d8 g a bf4 c8 bf a g \time 2/4 a4 a4 r8 a8 bf c \time 3/4 d4 c8 bf a g
   fs!?4 r8 d e
-  fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g g a b a2 \fermata
+  fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g4 a8 b a2 \fermata
   }
 
 stanceLyrics = \lyricmode {
   Ils sont ve -- nus, gui -- dés par l'é -- toi -- le, se pro -- ster -- ner de -- vant le ber -- ceau
-  Et dé -- po -- ser, juste aux pieds de l'en -- fant, l'or, la myr -- rhe et l'en -- cens
+  Et dé -- po -- ser, juste aux pieds de l'en -- fant, l'or, la myrrhe et l'en -- cens
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,21 +68,21 @@ sopranoAntiphonMusic = \relative c' {
   \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic
   r8 d8 g a b4 c8 b a4 \autoBeamOff fs8
-  fs8 \autoBeamOn g a b c d c b g a4 g8 fs g2 (g2) \fermata
+  fs8 \autoBeamOn g a b c d c b g g4 g8 fs g2 (g2) \fermata
   }
 
 altoAntiphonMusic = \relative c' {
   \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 d8 d8 fs8 g4 g8 g8 fs4 \autoBeamOff d8
-  ds8 \autoBeamOn e fs g g a fs fs e e4 fs8 d d2 (d2) \fermata
+  ds8 \autoBeamOn e fs g g a fs fs e e4 d8 d d2 (d2) \fermata
   }
 
 tenorAntiphonMusic =  \relative c {
   \set midiInstrument = \midiInstrumentName
   \silence \stanceMusic \key g \major
   r8 fs8 g d'8 d4 c8 d8 d4 \autoBeamOff a8
-  b8 \autoBeamOn b d d e d (a) b4 a a4 c4 b8 a b2 \fermata
+  b8 \autoBeamOn b d d e d (a) b4 c c c b8 a b2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
@@ -234,10 +234,10 @@ verseLyrics =  \markup {
     \fill-line {
       \left-column{
         %  « ℣ » et « ℟ »
-        \concat { \typewriter "℣. " "Servez le Seigne" \underline u "r avec crainte," }
-        \concat { \typewriter "   " "rendez-lui votre homm" \underline a "ge en tremblant." \typewriter "(Ps.2,10)" }
-        \concat { \typewriter "   " "Maintenant, r" \underline o "is, comprenez," }
-        \concat { \typewriter "   " "reprenez-vous, j" \underline u "ges de la terre." \typewriter "(Ps.2,11)  " \typewriter " ℟"}
+        \concat { \typewriter "℣. " "Maintenant, r" \underline o "is, comprenez," }
+        \concat { \typewriter "   " "reprenez-vous, j" \underline u "ges de la terre." \typewriter "(Ps.2,10)  " \typewriter " ℟"}
+        \concat { \typewriter "   " "Servez le Seigne" \underline u "r avec crainte," }
+        \concat { \typewriter "   " "rendez-lui votre homm" \underline a "ge en tremblant." \typewriter "(Ps.2,11)" }
         \vspace #0.5
         \concat { \typewriter "℣. " "Qui est ce roi de gloire ? " \roman \super {"&dagger;"} }
         \concat { \typewriter "     " "c'est le Seign" \underline e "ur, le f" \underline o "rt, le vaillant," }
