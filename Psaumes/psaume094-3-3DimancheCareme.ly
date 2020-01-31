@@ -41,7 +41,7 @@ tenorAntiphonMusic =  \relative c' {
   }
 
 bassAntiphonMusic =  \relative c {
-  \partial 4 r4 e4 c4 d4 \tuplet 3/2 { g8 a fs } g4 r8 e8 a,2 b2 e,2
+  \partial 4 e8 b e4 \tuplet 3/2 { c8 c c } d4 g8 fs8 e8 e8 e e a,4. a8 b4 b8 b e2
   }
 
 antiphonLyrics = \lyricmode {
@@ -57,9 +57,7 @@ tenorAntiphonLyrics = \lyricmode {
   Ne fer -- mez pas %vo -- tre cœur,
   mais é -- cou -- tez
 }
-bassAntiphonLyrics = \lyricmode {
-  Ne fer -- mez pas vo -- tre cœur, mais é -- cou -- tez
-}
+bassAntiphonLyrics = \sopranoAntiphonLyrics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%          Verses          %%%%%%%%%%
