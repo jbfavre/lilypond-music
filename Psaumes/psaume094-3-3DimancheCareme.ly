@@ -29,19 +29,19 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
-  \partial 4 e8 fs g4 \tuplet 3/2 { g8 fs g } \tuplet 3/2 { a g a } b4 r8 e,8 g b c4. b8 a4 g8 a b2 \fermata \bar "|." \break
+  \partial 4 e8 fs g4 \tuplet 3/2 { g8 fs g } \tuplet 3/2 { a g a } b4 r8 e,8 g b c4. b8 a4 g8 fs g2 \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  \partial 4 r4 e4 e fs e r4. g8 a2 fs2 g2
+  \partial 4 e8 ds e4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { d8 d d } d4 \breathe b4 e8 g fs4. fs8 ds4 ds8 ds e2
   }
 
 tenorAntiphonMusic =  \relative c' {
-  \partial 4 r4 b4 c d e r4. e8 e2 ds2 e2
+  \partial 4 g8 b b4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { a8 a a } g4 \breathe g4 b8 e e4. e8 b4 b8 b b2
   }
 
 bassAntiphonMusic =  \relative c {
-  \partial 4 e8 b e4 \tuplet 3/2 { c8 c c } d4 g8 fs8 e8 e8 e e a,4. a8 b4 b8 b e2
+  \partial 4 e8 b e4 \tuplet 3/2 { e8 e e } \tuplet 3/2 { fs8 fs fs } g4 \breathe e4 e8 e a,4. a8 b4 b8 b e,2
   }
 
 antiphonLyrics = \lyricmode {
@@ -68,11 +68,11 @@ sopranoVerseMusic = \relative c'' {
   \markCustom "Psalmodie par verset" \cadenzaOn
   b\breve b1 b4 a4 \bar "|"
   c\breve b1 b4 b4 \bar "||" \break
-  \markCustom "Psalmodie par strophe"
-  e,\breve b'1 g4 a b \bar "|"
-  b\breve a1 a4 \bar "|"
-  c\breve a4 \bar "|"
-  a\breve g4 a4 b \bar "||"
+  %\markCustom "Psalmodie par strophe"
+  %e,\breve b'1 g4 a b \bar "|"
+  %b\breve a1 a4 \bar "|"
+  %c\breve a4 \bar "|"
+  %a\breve g4 a4 b \bar "||"
   }
 
 altoVerseMusic = \relative c'' {
