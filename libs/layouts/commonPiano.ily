@@ -4,16 +4,14 @@
     \set Staff.printPartCombineTexts = ##f
     \once \override Staff.VerticalAxisGroup.remove-first = ##t
     \global \clef treble
-    \partcombine
-    << \pianoSopranoMusic >>
-    << \pianoAltoMusic >>
+    \new Voice = "soprani" { \voiceOne \pianoSopranoMusic }
+    \new Voice = "alti" { \voiceTwo \pianoAltoMusic }s
   >>
   \new Staff <<
     \set Staff.printPartCombineTexts = ##f
     \once \override Staff.VerticalAxisGroup.remove-first = ##t
     \global \clef bass
-    \partcombine
-    << \pianoTenorMusic >>
-    << \pianoBassMusic >>
+    \new Voice = "tenors" { \voiceThree \pianoTenorMusic }
+    \new Voice = "bass" { \voiceFour \pianoBassMusic }
   >>
 >>
