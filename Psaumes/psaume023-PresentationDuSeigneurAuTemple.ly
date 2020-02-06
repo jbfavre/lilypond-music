@@ -29,28 +29,34 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
-  c8 f g a4 bf8 g a bf c4. r4 f,8 d'4. d8 c bf c4. \fermata \bar "|." \break
+  c8 f g a4 bf8 g a bf c4. r4 f,8 d'4. d8 c bf c4. (c4.) \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  \repeat unfold 4 {s4.} c4. f4. f8 f e f %\fermata
+  c8 d e f4 f8 e f f a4. r8 f8 f f4. d8 f f e4. f4. \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  \repeat unfold 4 {s4.} a4. bf4. bf8 e e f %\fermata
+  a8 a c c4 d8 c c d e4 \breathe f,8 d'8 r8 a bf4. g8 c bf g4. a4. \fermata
   }
 
 bassAntiphonMusic =  \relative f {
-  f8 f e d4 c8 bf a g a4. f'4. bf,4. g8 bf c f,4. \fermata
+  f8 d c f4 bf,8 c f bf, a4. r8 d8 d bf4. g8 a d c4. f,4. \fermata
   }
 
 antiphonLyrics = \lyricmode {
   C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; c'est lui, le roi de gloire.
   }
 sopranoAntiphonLyrics = \antiphonLyrics
-altoAntiphonLyrics = \antiphonLyrics
-tenorAntiphonLyrics = \antiphonLyrics
-bassAntiphonLyrics = \tenorAntiphonLyrics
+altoAntiphonLyrics = \lyricmode {
+  C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; oui c'est lui, le roi de gloire.
+  }
+tenorAntiphonLyrics = \lyricmode {
+  C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; c'est lui&nbsp;! c'est lui, le roi de gloire.
+  }
+bassAntiphonLyrics = \lyricmode {
+  C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; oui c'est lui, le roi de gloire.
+  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%          Verses          %%%%%%%%%%
