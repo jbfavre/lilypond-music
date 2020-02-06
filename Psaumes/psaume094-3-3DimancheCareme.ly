@@ -33,15 +33,15 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
-  \partial 4 e8 ds e4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { d8 d d } d4 \breathe b4 e8 g fs4. fs8 ds4 ds8 ds e2
+  \partial 4 e8 ds e4 \tuplet 3/2 { e8 e e } \tuplet 3/2 { fs8 fs fs } fs4 \breathe b,4 e8 g fs4. fs8 fs4 ds8 ds e2
   }
 
 tenorAntiphonMusic =  \relative c' {
-  \partial 4 g8 b b4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { a8 a a } g4 \breathe g4 b8 e e4. e8 b4 b8 b b2
+  \partial 4 g8 b b4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { e8 e e } ds4 \breathe g,4 b8 e e4. e8 ds4 b8 b b2
   }
 
 bassAntiphonMusic =  \relative c {
-  \partial 4 e8 b e4 \tuplet 3/2 { e8 e e } \tuplet 3/2 { fs8 fs fs } g4 \breathe e4 e8 e a,4. a8 b4 b8 b e,2
+  \partial 4 e8 b e4 \tuplet 3/2 { c8 c c } \tuplet 3/2 { c8 c c } b4 \breathe e4 e8 e a,4. a8 b4 b8 b e,2
   }
 
 antiphonLyrics = \lyricmode {
@@ -61,7 +61,7 @@ sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par verset" \cadenzaOn
   b\breve b1 b4 g a \bar "|"
-  c\breve c1 c4 a b \bar "||" \break
+  c\breve c1 c4 a g \bar "||" \break
   %\markCustom "Psalmodie par strophe"
   %e,\breve b'1 g4 a b \bar "|"
   %b\breve a1 a4 \bar "|"
@@ -71,19 +71,19 @@ sopranoVerseMusic = \relative c'' {
 
 altoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  g\breve fs1 g4 g g
-  fs\breve fs1 fs4 fs g
+  g\breve fs1 e4 e e
+  fs\breve fs1 fs4 fs e
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  e\breve d1 e4 e e
+  e\breve b1 c4 c c
   e\breve ds1 ds4 ds e
   }
 
 bassVerseMusic = \relative c {
   \silence \sopranoAntiphonMusic
-  e\breve b1 c4 c c
+  e\breve d1 c4 c c
   a\breve b1 b4 b e
   }
 
