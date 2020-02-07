@@ -8,10 +8,6 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
-antiphonRhythms = {}
-antiphonFiguredHarmony = {}
-antiphonFiguredBass = {}
-verseFiguredHarmony = {}
 
 title = "Psaume 23-3"
 subtitle = "Présentation du Seigneur au Temple"
@@ -37,7 +33,7 @@ altoAntiphonMusic = \relative c' {
   }
 
 tenorAntiphonMusic =  \relative c' {
-  a8 a c c4 d8 c c d e4 \breathe f,8 d'8 r8 a bf4. g8 c bf g4. a4. \fermata
+  a8 a c c4 d8 c c d e4 \breathe f,8 a8 r8 a bf4. g8 c bf g4. a4. \fermata
   }
 
 bassAntiphonMusic =  \relative f {
@@ -52,7 +48,7 @@ altoAntiphonLyrics = \lyricmode {
   C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; oui c'est lui, le roi de gloire.
   }
 tenorAntiphonLyrics = \lyricmode {
-  C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; c'est lui&nbsp;! c'est lui, le roi de gloire.
+  C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; c'est lui, c'est lui, le roi de gloire.
   }
 bassAntiphonLyrics = \lyricmode {
   C'est le Sei -- gneur, Dieu de l'u -- ni -- vers; oui c'est lui, le roi de gloire.
@@ -62,29 +58,33 @@ bassAntiphonLyrics = \lyricmode {
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c' {
+sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  \markCustom "Psalmodie par verset" \cadenzaOn
-  fs\breve a1 b4 \bar "||"
-  b\breve a1 a4 \bar "||"
+  \markCustom "Psalmodie par strophe" \cadenzaOn
+  a\breve c1 g4 \bar "||"
+  f\breve bf1 a4 \bar "||"
+  d\breve d1 c4 \bar "||"
   }
 
 altoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  d\breve e1 d4
-  g\breve e1 fs4
+  f\breve f1 e4
+  d\breve f1 e4
+  f\breve g1 e4
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  a\breve a1 fs4
-  b\breve cs1 d4
+  c\breve a1 c4
+  a\breve bf1 c4
+  bf\breve bf1 g4
   }
 
 bassVerseMusic = \relative f {
   \silence \sopranoAntiphonMusic
-  d\breve cs1 b4
-  e\breve a,1 d4
+  f\breve f1 c4
+  d\breve d1 a4
+  bf\breve g1 c4
   }
 
 verseLyrics = \markup {
@@ -93,25 +93,24 @@ verseLyrics = \markup {
   \override #'(font-size . 2)
   \fill-line {
     \left-column{
-      \concat { \typewriter "1. " "Au Seigneur, le m" \underline o "nde et sa richesse," }
-      \concat { \typewriter "   " "la terre et to" \underline u "s ses habitants&nbsp;!" }
-      \concat { \typewriter "   " "C’est lui qui l’a fond" \underline é "e sur les mers" }
-      \concat { \typewriter "   " "et la garde inébranl" \underline a "ble sur les flots." }
+      \concat { \typewriter "1. " "Portes, levez vos frontons," }
+      \concat { \typewriter "   " "élevez-vous, portes éternelles&nbsp;:" }
+      \concat { \typewriter "   " "qu’il entre, le roi de gloire&nbsp;!" }
       \vspace #1
-      \concat { \typewriter "2. " "Qui peut gravir la mont" \underline a "gne du Seigneur" }
-      \concat { \typewriter "   " "et se ten" \underline i "r dans le lieu saint&nbsp;?" }
-      \concat { \typewriter "   " "L’homme au cœur pur, aux m" \underline a "ins innocentes," }
-      \concat { \typewriter "   " "qui ne livre pas son " \underline â "me aux idoles." }
+      \concat { \typewriter "2. " "Qui est ce roi de gloire&nbsp;?" }
+      \concat { \typewriter "   " "C’est le Seigneur, le fort, le vaillant," }
+      \concat { \typewriter "   " "le Seigneur, le vaillant des combats." }
       \vspace #1
-      \concat { \typewriter "3. " "Il obtient, du Seigne" \underline u "r, la bénédiction," }
-      \concat { \typewriter "   " "et de Dieu son Sauve" \underline u "r, la justice." }
-      \concat { \typewriter "   " "Voici le peuple de ce" \underline u "x qui le cherchent&nbsp;!" }
-      \concat { \typewriter "   " "Voici Jacob qui rech" \underline e "rche ta face&nbsp;!" }
-
+      \concat { \typewriter "3. " "Portes, levez vos frontons," }
+      \concat { \typewriter "   " "levez-les, portes éternelles&nbsp;:" }
+      \concat { \typewriter "   " "qu’il entre, le roi de gloire&nbsp;!" }
+      \vspace #1
+      \concat { \typewriter "4. " "Qui donc est ce roi de gloire&nbsp;?" }
+      \concat { \typewriter "   " "C’est le Seigneur, Dieu de l’univers&nbsp;;" }
+      \concat { \typewriter "   " "c’est lui, le roi de gloire." }
     }
   }
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,3 +132,4 @@ partition = {
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\verseLyrics
