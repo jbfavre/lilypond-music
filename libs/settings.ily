@@ -32,3 +32,7 @@ verseFiguredBass = \figuremode {
   }
 verseHarmony = \figuremode {
   }
+antiphonRhythms = {}
+antiphonFiguredHarmony = {}
+antiphonFiguredBass = {}
+verseFiguredHarmony = {}
