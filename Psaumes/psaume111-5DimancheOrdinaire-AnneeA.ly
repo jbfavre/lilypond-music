@@ -29,21 +29,24 @@ global = {
 
 sopranoAntiphonMusic = \relative c'' {
   \markCustom "Antienne"
-  \partial 8 b8 b b g a b4 g d'8 d c c b b a g a2 b2  \fermata \bar "|." \break
+  \partial 8 b8 b b g a b4 b d8 d c c b b a g a2 b2 \fermata \bar "|." \break
   \markCustom "Antienne 2"
-  b4 g8 (a) b8 b g g d'4 (c) b8 b a (g) a2 b2 \fermata \bar "|." \break
+  b4 g8 (a) b4 b d4 c b8 b a (g) g8 (a4) a8 b2 \fermata \bar "|." \pageBreak
   }
 
-altoAntiphonMusic = \relative c' {
-  \partial 8 s8 \repeat unfold 6 { s2 } \repeat unfold 6 { s2 }
+altoAntiphonMusic = \relative c'' {
+  \partial 8 b8 g g g fs g4 g fs8 fs e fs g g fs g e4 (fs) d2 \fermata
+  g4 g8 (fs) g4 g fs e8 fs g4 fs8 g e4 (fs) d2 \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  \partial 8 s8 \repeat unfold 6 { s2 } \repeat unfold 6 { s2 }
+  \partial 8 b8 d d d d d4 e d8 b a a d d d d c2 b2 \fermata
+  d4 d d4 e d8 (b) a4 d8 d d4 c4 c4 b2 \fermata
   }
 
-bassAntiphonMusic =  \relative c {
-  \partial 8 s8 \repeat unfold 6 { s2 } \repeat unfold 6 { s2 }
+bassAntiphonMusic =  \relative f {
+  \partial 8 b8 g g b a g4 e b8 b c d g g, a b c4 (d) g2 \fermata
+  g4 b8 (a) g4 e b c8 d g g, a (b) c4 (d) g2 \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -63,46 +66,46 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par verset" \cadenzaOn
-  b\breve s1 s4 \bar "|"
-  b\breve s1 s4 \bar "||" \break
+  b\breve g4 a b \bar "|"
+  c\breve b1 a4 g a \bar "||" \break
   \markCustom "Psalmodie par strophe"
-  b\breve s1 s4 \bar "|"
-  b\breve s1 s4 \bar "|"
-  b\breve s1 s4 \bar "|"
-  b\breve s1 s4 \bar "||"
+  b\breve g4 a b \bar "|"
+  b\breve b1 a4 g a \bar "|"
+  c\breve a4 b c \bar "|"
+  c\breve b1 a4 g a \bar "||"
   }
 
 altoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  b\breve s1 s4
-  b\breve s1 s4
+  g\breve g4 fs g
+  fs\breve g1 e4 e fs
 
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
+  g\breve g4 fs g
+  fs\breve g1 e4 e fs
+  a\breve g4 gs a
+  fs\breve g1 e4 e fs
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  b\breve s1 s4
-  b\breve s1 s4
+  d\breve d4 d d
+  d\breve d1 c4 b d
 
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
+  d\breve d4 d d
+  d\breve b1 c4 b d
+  e\breve e4 e e
+  d\breve d1 c4 b d
   }
 
-bassVerseMusic = \relative c {
+bassVerseMusic = \relative f {
   \silence \sopranoAntiphonMusic
-  b\breve s1 s4
-  b\breve s1 s4
+  g,\breve b4 a g
+  a\breve g1 c4 e d
 
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
-  b\breve s1 s4
+  g\breve b4 a g
+  b,\breve e1 c4 e d
+  a\breve c4 b a
+  a\breve g1 c4 e d
   }
 verseLyrics = \markup {
   \vspace #3
@@ -140,6 +143,7 @@ partition = {
     % Antienne à 4 voix mixtes
     \include "../libs/layouts/commonAntiphonFourVoices.ily"
     \include "../libs/layouts/commonPiano.ily"
+    %\pageBreak
     % Psalmodie à 4 voix mixtes
     \include "../libs/layouts/commonVerseFourVoices.ily"
     %\new FiguredBass { \figuredBass \verseFiguredBass }
