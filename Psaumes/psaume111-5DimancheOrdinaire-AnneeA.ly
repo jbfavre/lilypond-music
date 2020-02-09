@@ -45,7 +45,7 @@ tenorAntiphonMusic =  \relative c' {
   }
 
 bassAntiphonMusic =  \relative f {
-  \partial 8 b8 g g b a g4 e b8 b c d g g, a b c4 (d) g2 \fermata
+  \partial 8 g8 g g b a g4 e b8 b c d g g, a b c4 (d) g2 \fermata
   g4 b8 (a) g4 e b c8 d g g, a (b) c4 (d) g2 \fermata
   }
 
