@@ -20,29 +20,33 @@ dedicace = "Clichy la Garenne, février 2020"
 
 global = {
   \time 3/4
-  \key a \minor
+  \key f \minor
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c'' {
+sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
-  \partial 4 r8 a8 (a8. b16) gs4 r8 c8 (c8. d16) b4. r8 \repeat unfold 3 { s2. }
+  %\partial 4 r8 a8 (a8. b16) gs4 r8 c8 (c8. d16) b4. r8 \repeat unfold 3 { s2. }
+  \partial 4 f4 c'2 af4 bf2. bf4 af g af (g) f f2. \break
   }
 
 
 altoAntiphonMusic = \relative c' {
-  \partial 4 r8 e8 (e4) e4 r8 a8 (a4) f4. r8 \repeat unfold 3 { s2. }
+  %\partial 4 r8 e8 (e4) e4 r8 a8 (a4) f4. r8 \repeat unfold 3 { s2. }
+  \partial 4 f4 af2 f4 f2. f4 f f e4 c2 c2.
   }
 
 tenorAntiphonMusic = \relative c' {
-  \partial 4 r8 c (c b) b4 r8 c8 (e d) d4. r8 \repeat unfold 3 { s2. }
+  %\partial 4 r8 c (c b) b4 r8 c8 (e d) d4. r8 \repeat unfold 3 { s2. }
+  \partial 4 r4 f4 f ef d2. bf4 df! df c4 c2 af2.
   }
 
-bassAntiphonMusic = \relative f, {
-  \partial 4 a4 e'2 c4 d2 r4 e4 f d e (c) b a2. \fermata \bar "|." \break
+bassAntiphonMusic = \relative f {
+  %\partial 4 a4 e'2 c4 d2 r4 e4 f d c (d) e a,2. \fermata \bar "|." \break
+  \partial 4 r4 f4 f c d2. df!4 bf bf c4 e2 f2.
   }
 
 antiphonLyrics = \lyricmode {
@@ -60,27 +64,43 @@ bassAntiphonLyrics = \antiphonLyrics
 
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  \markCustom "Psalmodie par verset" \cadenzaOn
-  a\breve a1 a4 \bar "|"
-  a\breve a1 a4 \bar "||" \break
+  \markCustom "Psalmodie par strophe avec répons" \cadenzaOn
+  af\breve g4 af f \bar "|"
+  af\breve bf1 c4 \bar "||"
+  \cadenzaOff \time 3/4 \mark "℟1" \partial 4 f,4 c'2 af4 bf2. \cadenzaOn  \bar "||" \break
+  bf\breve c1 af4 \bar "|"
+  bf\breve bf1 c4 \bar "||"
+  \cadenzaOff \time 3/4 \mark "℟2" bf4 af g af (g) f f2. \cadenzaOn  \bar "||"
   }
 
 altoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  e\breve e1 e4
-  e\breve e1 e4
+  f\breve ef4 ef df
+  f\breve g1 g4
+  \partial 4 f4 af2 f4 f2.
+  g\breve g1 f4
+  f\breve g1 g4
+  f4 f f e4 c2 c2.
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  c\breve c1 c4
-  c\breve c1 c4
+  c\breve c4 c af
+  df\breve df1 e4
+  \partial 4 r4 f4 f ef d2.
+  ef\breve c1 c4
+  df\breve df1 e4
+  bf4 df! df c4 c2 af2.
   }
 
-bassVerseMusic = \relative f, {
+bassVerseMusic = \relative f {
   \silence \sopranoAntiphonMusic
-  a\breve a1 a4
-  a\breve a1 a4
+  f\breve c4 c df
+  df\breve df1 c4
+  \partial 4 r4 f4 f c d2.
+  ef\breve e1 f4
+  df\breve df1 c4
+  df!4 bf bf c4 e2 f2.
   }
 verseLyrics = \markup {
   \vspace #3
@@ -88,25 +108,25 @@ verseLyrics = \markup {
   \override #'(font-size . 2)
   \fill-line {
     \column{
-      \concat { \typewriter "1. " "Pitié pour moi, mon Dieu, dans ton amour," }
-      \concat { \typewriter "   " "selon ta grande miséricorde, efface mon péché." }
-      \concat { \typewriter "   " "Lave-moi tout entier de ma faute," }
-      \concat { \typewriter "   " "purifie-moi de mon offense." }
+      \concat { \typewriter "1. " "Pitié pour moi, mon Die" \underline u ", dans ton amour," }
+      \concat { \typewriter "   " "selon ta grande miséricorde, eff" \underline a "ce mon péché." }
+      \concat { \typewriter "   " "Lave-moi tout enti" \underline e "r de ma faute," }
+      \concat { \typewriter "   " "purifie-m" \underline o "i de mon offense." }
       " "
-      \concat { \typewriter "2. " "Oui, je connais mon péché," }
-      \concat { \typewriter "   " "ma faute est toujours devant moi." }
-      \concat { \typewriter "   " "Contre toi, et toi seul, j’ai péché," }
-      \concat { \typewriter "   " "ce qui est mal à tes yeux, je l’ai fait." }
+      \concat { \typewriter "2. " "Oui, je conn" \underline a "is mon péché," }
+      \concat { \typewriter "   " "ma faute est touj" \underline o "urs devant moi." }
+      \concat { \typewriter "   " "Contre toi, et toi se" \underline u "l, j’ai péché," }
+      \concat { \typewriter "   " "ce qui est mal à tes ye" \underline u "x, je l’ai fait." }
       " "
-      \concat { \typewriter "3. " "Crée en moi un cœur pur, ô mon Dieu," }
-      \concat { \typewriter "   " "renouvelle et raffermis au fond de moi mon esprit." }
-      \concat { \typewriter "   " "Ne me chasse pas loin de ta face," }
-      \concat { \typewriter "   " "ne me reprends pas ton esprit saint." }
+      \concat { \typewriter "3. " "Crée en moi un cœur p" \underline u "r, ô mon Dieu," }
+      \concat { \typewriter "   " "renouvelle et raffermis au fond de m" \underline o "i mon esprit." }
+      \concat { \typewriter "   " "Ne me chasse p" \underline a "s loin de ta face," }
+      \concat { \typewriter "   " "ne me reprends p" \underline a "s ton esprit saint." }
       " "
-      \concat { \typewriter "4. " "Rends-moi la joie d’être sauvé&nbsp;;" }
-      \concat { \typewriter "   " "que l’esprit généreux me soutienne." }
-      \concat { \typewriter "   " "Seigneur, ouvre mes lèvres," }
-      \concat { \typewriter "   " "et ma bouche annoncera ta louange." }
+      \concat { \typewriter "4. " "Rends-moi la j" \underline o "ie d’être sauvé&nbsp;;" }
+      \concat { \typewriter "   " "que l’esprit génére" \underline u "x me soutienne." }
+      \concat { \typewriter "   " "Seigneur, " \underline o "uvre mes lèvres," }
+      \concat { \typewriter "   " "et ma bouche annoncer" \underline a " ta louange." }
     }
   }
 }
