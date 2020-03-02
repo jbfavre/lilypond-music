@@ -6,24 +6,22 @@
 staffCustomSize = 18
 
 topToMarkupSpacing =
-  #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 5))
+  #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
 
 markupToSystemSpacing =
-  #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 5))
+  #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
 
-systemToSystemSpacing =
-  #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 5))
-
-#(set-default-paper-size "a4")
+systemToSystemSpacing = 
+  #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
 
 %{
   Default margins in millimeters (equal to 1\cm)
@@ -123,4 +121,3 @@ oddFooterMarkupSetting = \markup {
   #(include-special-characters)
 
 }
-
