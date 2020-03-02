@@ -17,7 +17,7 @@ markupToSystemSpacing =
      (padding . 5)
      (stretchability . 5))
 
-systemToSystemSpacing = 
+systemToSystemSpacing =
   #'((basic-distance . 5)
      (minimum-distance . 5)
      (padding . 5)
