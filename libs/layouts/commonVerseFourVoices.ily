@@ -5,8 +5,9 @@
       \global
       \clef treble
       \partcombine
-      << \voiceOne { \sopranoVerseMusic } >>
-      << \voiceTwo { \altoVerseMusic } >>
+      \new Voice = "verseSoprano" << \voiceOne { \sopranoVerseMusic } >>
+      \new Voice = "verseAlto" << \voiceTwo { \altoVerseMusic } >>
+      \new Lyrics \lyricsto "verseSoprano" { \reponsSopAltLyrics }
     >>
     \new Staff = "verseTenorBass" \with { printPartCombineTexts = ##f } <<
       \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
@@ -16,6 +17,7 @@
       \partcombine
       << \voiceThree { \tenorVerseMusic } >>
       << \voiceFour { \bassVerseMusic } >>
+      \new Lyrics { \reponsTenBassLyrics }
     >>
     %\context Staff = "verseTenorBass" \new FiguredBass { \bassFigureStaffAlignmentUp \verseFiguredHarmony }
     %\context Staff = "verseTenorBass" \new FiguredBass { \bassFigureExtendersOn \verseFiguredBass }

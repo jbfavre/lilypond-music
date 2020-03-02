@@ -36,3 +36,6 @@ antiphonRhythms = {}
 antiphonFiguredHarmony = {}
 antiphonFiguredBass = {}
 verseFiguredHarmony = {}
+
+reponsSopAltLyrics = {}
+reponsTenBassLyrics = {}
