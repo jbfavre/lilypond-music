@@ -131,6 +131,7 @@ verseLyrics = \markup {
   }
 }
 
+reponsSopAltLyrics = \lyricmode { \repeat unfold 7 { _ } ℟&nbsp;:&nbsp;Pi -- tié, Sei -- gneur&nbsp;! \repeat unfold 6 { _ } ℟&nbsp;:&nbsp;car nous a -- vons pé -- ché. }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
