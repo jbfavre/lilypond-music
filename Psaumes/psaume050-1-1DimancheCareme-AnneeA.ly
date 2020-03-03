@@ -30,7 +30,7 @@ global = {
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
   %\partial 4 r8 a8 (a8. b16) gs4 r8 c8 (c8. d16) b4. r8 \repeat unfold 3 { s2. }
-  \partial 4 f4 c'2 af4 bf2. bf4 af g af (g) f f2. \break
+  \partial 4 f4 c'2 af4 bf2. c4 df bf c (af) g f2. \break
   }
 
 
