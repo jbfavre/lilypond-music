@@ -61,7 +61,7 @@
             }
           \alternative {
             { a8 b cs f e d c g c bf gs a a e a g e f f e d e4 r16 a \break }
-            { bf8 f bf a8. fs16 g8 a e a g8. e16 f8 g a g g a g a bf a bf df bf <e, g bf c>4. \fermata \mark \markup { \musicglyph #"scripts.segno" } }
+            { bf8 f bf a8. fs16 g8 a e a g8. e16 f8 g a g g a g a bf a bf df bf <df, g bf df> bf' g <e g bf c>4. \fermata \mark \markup { \musicglyph #"scripts.segno" } }
             }
           \bar "||"
           \cadenzaOn
@@ -77,7 +77,7 @@
           \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
           \break
           \key f \minor \mark \markup { \musicglyph #"scripts.coda" }
-          <af df>8 af df <g, c> a bf <g c> g c <f, bf> g af <df, f bf> af' g <c, e af> g' f <af, c f>4. \fermata
+          <af df>8 af df <g, c> a bf <g c> g c <f, bf> g af <f bf> c' bf <c, f bf> g'  af <e g bf> af g <c, e g>4. <c f>4. \fermata
         }
       }
       \new Voice = "alto" { \voiceTwo
@@ -88,7 +88,7 @@
             }
           \alternative {
             { <cs e>4. <g' bf d> e <c f> <cs e> d d <a cs>4 r8 }
-            { <d f>4. e e d d d d f s4. }
+            { <d f>4. e e d d d d f s4. s4. }
             }
         }
       }
@@ -143,7 +143,7 @@
               }
             \alternative {
               { <a, e' a> <bf g'> <c e g c> <f a> <cs e a> <d a'> <e gs b> a,16 e' a cs e r16 }
-              { <d, bf'>4. <e bf'> <cs a'> <d a'> <b g'> <bf g'> <a f'> <df bf'> <c c'> \fermata }
+              { <d, bf'>4. <e bf'> <cs a'> <d a'> <b g'> <bf g'> <a f'> <df bf'> <bf g'> c8 g' c }
               }
             \bar "||"
             \cadenzaOn
@@ -158,7 +158,7 @@
             \once \override Staff.Clef.break-visibility = #end-of-line-invisible
             \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
             \key f \minor
-            <f df'>4. <g df'> <ef bf' c> <f af c> <bf, bf'> <c g'> f, \fermata
+            <f, df'>4. <g df'> <ef bf' c> <f af c> <df bf'> <f af> <c c'> << { \voiceOne bf'8 g bf af4. \fermata } \\ { \voiceTwo f,4. (f4.) } >>
           }
           
         }
@@ -180,7 +180,7 @@
             }
           \alternative {
             { <5> <6> <5> <5> <6> <5> <5> <5> }
-            { <6> <5> <6> <5> <6> <6> <6 4> <6> <5> }
+            { <6> <5> <6> <5> <6> <6> <6 4> <6> <6> <5> }
             }
           <_>
           <6> <5> <6> <5> <5> <5> <5>
@@ -204,7 +204,7 @@
             }
           \alternative {
             { <V> <IV> <VII> <III> <V> <I> <II> <V> }
-            { <VI> <II> <V> <I> <IV> <IV> <I> <VI> <VII> }
+            { <VI> <II> <V> <I> <IV> <IV> <I> <VI> <IV> <VII> }
             }
           <_>
           <VI> <II> <V> <I> <IV> <V> <I>
