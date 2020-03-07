@@ -5,12 +5,13 @@
   title = \markup
      \center-column {
        \combine \null \vspace #1
-       "No name (yet)"
-       " "
+     "Bord de mer"
+       "Op. 1"
       }
   composer = "Jean Baptiste Favre"
   subtitle = ""
   tagline = ""
+  date = "Clichy-la-Garenne, février 2020"
 }
 \paper {
   #(include-special-characters)
@@ -19,34 +20,201 @@
 }
 %#(set-global-staff-size 16)
 %#(set-default-paper-size "a4landscape")
-
 \score {
   \header {
     title = ##f
-    subtitle = ##f
-    piece = ##f
     composer = ##f
+    subtitle = ##f
+    tagline = ##f
+    piece = ##f
   }
   \new PianoStaff \with { instrumentName = "Piano" }
   <<
-    \new Staff
+    \new Staff = "up"
     <<
       \clef treble \time 3/8 \key f \minor
-      \relative c' {
-        r4.^"Calme et majestueux" r4.
-        \new Voice = "soprano" { \voiceOne
+      \new Voice = "soprano" { \voiceOne
+        \relative c' {
+          r4.^"Calme et majestueux" r4.
+          \once \override Score.RehearsalMark.break-visibility = #begin-of-line-invisible
+          \mark \markup { \musicglyph #"scripts.segno" }
           \repeat volta 2 {
-            f8\mp g af c bf af g af bf af g e
+            f8\mp g af c bf af g af bf af g e \break
             f8\mf g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8
-            df8\<\mf^"Élargir, avec plus d'emphase" b c gf'8.\f\!\> f16 ef8\! c\mf\< a bf f'8.\!\f\> ef16 df8\!
+            %\once \override Score.RehearsalMark.font-size = #4
+            \mark \markup { \musicglyph #"scripts.coda" }
+            df8\<\mf^"Élargir, avec plus d'emphase" b c gf'8.\f\!\> f16 ef8\! \break
+            c\mf\< a bf f'8.\!\f\> ef16 df8\!
             bf8\mp\< g af
             }
           \alternative {
-            { ef'8.\mf\!\> df16 c8 c8\!\p [b8.] c16 <c e,>4 r8 }
+            { ef'8.\mf\!\> df16 c8 c8\!\p [b8.] c16 <c e,>4 r8 \break }
             { \override TextSpanner.bound-details.left.text = "rit."
-              c8\mf\>\startTextSpan af f bf\p\> g e <c e g>4.\pp\stopTextSpan <c f>4. \fermata }
-            } \break
-          \key f \major
+              c8\mf\>\startTextSpan af f bf\p\> g e <c e g>4.\pp\stopTextSpan <c a'>4. \fermata }
+            }
+          \bar "||"
+          \break
+          \key d \minor r4 a'8
+          \repeat volta 2 {
+            d, f bf a4 e8 f4. d4.
+            e8 f g bf e d <g, bf c>8 g c bf gs a8 \break
+            }
+          \alternative {
+            { a8 b cs f e d c g c bf gs a a e a g e f f e d e4 r16 a \break }
+            { bf8 f bf a8. fs16 g8 a e a g8. e16 f8 g a g g a g a bf a bf df bf <e, g bf c>4. \fermata \mark \markup { \musicglyph #"scripts.segno" } }
+            }
+          \bar "||"
+          \cadenzaOn
+            \stopStaff
+              \repeat unfold 1 {
+                s4.
+                \bar ""
+              }
+           \startStaff
+          \cadenzaOff
+          \once \override Staff.KeySignature.break-visibility = #end-of-line-invisible
+          \once \override Staff.Clef.break-visibility = #end-of-line-invisible
+          \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+          \break
+          \key f \minor \mark \markup { \musicglyph #"scripts.coda" }
+          <af df>8 af df <g, c> a bf <g c> g c <f, bf> g af <df, f bf> af' g <c, e af> g' f <af, c f>4. \fermata
+        }
+      }
+      \new Voice = "alto" { \voiceTwo
+        \relative f {
+          \repeat unfold 22 { s4. }
+          \repeat volta 2 {
+            s4. a4. cs4. d4. bf4.bf4. e4. s4. <c f>4.
+            }
+          \alternative {
+            { <cs e>4. <g' bf d> e <c f> <cs e> d d <a cs>4 r8 }
+            { <d f>4. e e d d d d f s4. }
+            }
+        }
+      }
+    >>
+    \new Staff = "down"
+    <<
+      \clef bass \key f \minor
+      \new Voice = "harmony" { \voiceOne
+        \relative f {
+          r8 <f af c>[ <af c f>]
+          r8 <f af c>[ <af c f>]
+          \repeat volta 2 {
+            r8 <f af c>[ <af c f>]
+            r8 <f af df> <af df f>
+            r8 <g bf ef> <bf ef g>
+            r8 <g bf c> <g bf c>
+            r8 <f af df> <af df f>
+            r8 <f bf df> <bf df f>
+            r8 <g bf ef> <bf ef g>
+            r8 <ef, af c> <af c ef>
+            r8 <e g c> <g bf c>
+            r8 <a c ef> <a c f>
+            r8 <f bf df> <bf df f>
+            r8 <g bf ef> <bf ef g>
+            r8 <ef, af c> <af c ef>
+            }
+          \alternative {
+            { r8 <f af df> <af df f>
+              r8 <b d f> <g d' f>
+              <g c>16 (df' c) bf-. af-. g-. }
+            { r8 <f af c> <af c f>
+              <g c>4. bf8 g8 bf8 a4. \fermata }
+            }
+        }
+      }
+      \new Voice = "bass" { \voiceTwo
+        \relative f, {
+          f4.\sustainOn f\sustainOn
+          \repeat volta 2 {
+            f4.\sustainOn df\sustainOn ef\sustainOn c\sustainOn df\sustainOn bf'\sustainOn ef,\sustainOn af\sustainOn
+            c->\sustainOn f,->\sustainOn bf->\sustainOn ef,->\sustainOn af\sustainOn
+            }
+          \alternative {
+            {  df,\sustainOn g\sustainOn c4\sustainOn r8 }
+            { c4.\sustainOn c f, (f)\fermata }
+            }
+          \key d \minor
+            \repeat volta 2 {
+              r4. <d' f>4. <cs e a> <c! f a>
+              <bf f'>4 a8
+              <g e'>4. <c g'> <e c'> <f a>
+              }
+            \alternative {
+              { <a, e' a> <bf g'> <c e g c> <f a> <cs e a> <d a'> <e gs b> a,16 e' a cs e r16 }
+              { <d, bf'>4. <e bf'> <cs a'> <d a'> <b g'> <bf g'> <a f'> <df bf'> <c c'> \fermata }
+              }
+            \bar "||"
+            \cadenzaOn
+              \stopStaff
+                \repeat unfold 1 {
+                  s4.
+                  \bar ""
+                }
+             \startStaff
+            \cadenzaOff
+            \once \override Staff.KeySignature.break-visibility = #end-of-line-invisible
+            \once \override Staff.Clef.break-visibility = #end-of-line-invisible
+            \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+            \key f \minor
+            <f df'>4. <g df'> <ef bf' c> <f af c> <bf, bf'> <c g'> f, \fermata
+          }
+          
+        }
+      \new FiguredBass {
+        \figuremode {
+          <5>4. <5>4.
+          \repeat volta 2 {
+            <5>4. <5> <6> <7 _\+>
+            <5> <6> <6> <5> <5> <5>
+            <5> <6> <5>
+            }
+          \alternative {
+            { <5>4. <5> <5> }
+            { <6 4>4. <7 _\+> <5> <5> }
+            }
+          <_>
+          \repeat volta 2 {
+            <5> <6> <4> <6> <6> <5> <6> <5>
+            }
+          \alternative {
+            { <5> <6> <5> <5> <6> <5> <5> <5> }
+            { <6> <5> <6> <5> <6> <6> <6 4> <6> <5> }
+            }
+          <_>
+          <6> <5> <6> <5> <5> <5> <5>
+        }
+      }
+      \new FiguredBass {
+        \figuremode {
+          <I>4. <I>
+          \repeat volta 2 {
+            <I> <VI> <V> <V>
+            <VI> <IV> <V> <III> <V> <I>
+            <IV> <V> <III>
+            }
+          \alternative {
+            { <VI> <II> <V> }
+            { <I> <V> <I> <I> }
+            }
+          <_>
+          \repeat volta 2 {
+            <I> <V> <I> <VI> <II> <VII> <VII> <III>
+            }
+          \alternative {
+            { <V> <IV> <VII> <III> <V> <I> <II> <V> }
+            { <VI> <II> <V> <I> <IV> <IV> <I> <VI> <VII> }
+            }
+          <_>
+          <VI> <II> <V> <I> <IV> <V> <I>
+        }
+      }
+     >>
+  >>
+}
+% Partie soprane
+%{            \key f \major
           \partial 8 c8^"Primesautier, rapide" f4. g a bf a8 bf16 a gs a \break
           c4 a8 fs4. g4 a8 bf4. c d e \break
           d (d8) c bf c4. (c4) f,8 bf4. c d \break
@@ -65,96 +233,13 @@
           f'4.^"Éclatant" (f8) e d c4 a8 f4 bf8 a4. g \break
           f'4. r4 d8 f4. f8 e d c4 a8 f4 <bf bf'>8 \break
           <a a'>4->\sfz r8 <g g'>4->\sfz r8 <f a c f>4->\sfz \fermata r8 r4. <bf d f bf>4->\sfz r8 <f a c f>4.\sff \fermata \bar "||"
-        }
-      }
-    >>
-    \new Staff
-    <<
-      \clef bass \key f \minor
-        \new Voice = "harmony" { \voiceOne
-          \relative f {
-            r8 <f af c>[ <af c f>]
-            r8 <f af c>[ <af c f>]
-            \repeat volta 2 {
-              r8 <f af c>[ <af c f>]
-              r8 <f af df> <af df f>
-              r8 <g bf ef> <bf ef g>
-              r8 <g bf c> <g bf c>
-              r8 <f af df> <af df f>
-              r8 <f bf df> <bf df f>
-              r8 <g bf ef> <bf ef g>
-              r8 <ef, af c> <af c ef>
-              r8 <e g c> <g bf c>
-              r8 <a c ef> <a c f>
-              r8 <f bf df> <bf df f>
-              r8 <g bf ef> <bf ef g>
-              r8 <ef, af c> <af c ef>
-            }
-            \alternative {
-              { r8 <f af df> <af df f>
-                r8 <b d f> <g d' f>
-                <g c>16 (df' c) bf-. af-. g-. }
-              { r8 <f af c> <af c f>
-                <g c>4. bf8 g8 bf8 af4. \fermata }
-              }
-            \key f \major
+%}
+% partie basse
+%{            \key f \major
             \partial 8 s8 \repeat unfold 54 { s4. }
             r8 <g, g,>8-. <e e,>-. <c c,>4.-- \fermata
             c4.\startTrillSpan d16\stopTrillSpan e f g a bf c4 r8
             c4.\startTrillSpan e16\stopTrillSpan f g a bf c df4.
             r4. r4. r4. r8 g, e <c c,>4.
             (c4) r8 \repeat unfold 42 { s4. }
-          }
-        }
-        \new FiguredBass {
-          \figuremode {
-            <5>4.
-            <5>4.
-            \repeat volta 2 {
-              <5>4.
-              <5>
-              <6>
-              <7 _\+>
-              <5>
-              <6>
-              <6>
-              <5>
-              <5>
-              <5>
-              <5>
-              <6>
-              <5>
-              }
-            \alternative {
-              { <5>4. <5> <5> }
-              { <6 4>4. <7 _\+> <5> <5> }
-              }
-          }
-        }
-        \new Voice = "bass" { \voiceTwo
-          \relative f, {
-            f4.\sustainOn f\sustainOn
-            \repeat volta 2 {
-              f4.\sustainOn df\sustainOn ef\sustainOn c\sustainOn df\sustainOn bf'\sustainOn ef,\sustainOn af\sustainOn
-              c->\sustainOn f,->\sustainOn bf->\sustainOn ef,->\sustainOn af\sustainOn
-              }
-            \alternative {
-              {  df,\sustainOn g\sustainOn c4\sustainOn r8 }
-              { c4.\sustainOn c f, (f)\fermata }
-              }
-          }
-        }
-        \new FiguredBass { \figuremode {
-          <I>4. <I>
-          \repeat volta 2 {
-            <I> <VI> <V> <V> <VI> <IV> <V> <III> <V> <I> <IV> <V> <III>
-          }
-          \alternative {
-            { <VI> <II> <V> }
-            { <I> <V> <I> <I> }
-          }
-          }
-        }
-    >>
-  >>
-}
+%}
