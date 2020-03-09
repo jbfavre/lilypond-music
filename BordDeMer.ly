@@ -5,7 +5,7 @@
   title = \markup
      \center-column {
        \combine \null \vspace #1
-     "Un zèbre en bord de mer"
+       "Un zèbre en bord de mer"
        "Op. 1"
       }
   composer = "Jean Baptiste Favre"
@@ -74,7 +74,7 @@
           \cadenzaOff
           \once \override Staff.KeySignature.break-visibility = #end-of-line-invisible
           \once \override Staff.Clef.break-visibility = #end-of-line-invisible
-          \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+          \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
           \break
           \key f \minor \mark \markup { \musicglyph #"scripts.coda" }
           <af df>8 af df <g, c> a bf <g c> g c <f, bf> g af <f bf> c' bf <c, f bf> g'  af <e g bf> af g <c, e g>4. <c f>4. \fermata
@@ -156,11 +156,11 @@
             \cadenzaOff
             \once \override Staff.KeySignature.break-visibility = #end-of-line-invisible
             \once \override Staff.Clef.break-visibility = #end-of-line-invisible
-            \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+            \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
             \key f \minor
             <f, df'>4. <g df'> <ef bf' c> <f af c> <df bf'> <f af> <c c'> << { \voiceOne bf'8 g bf af4. \fermata } \\ { \voiceTwo f,4. (f4.) } >>
           }
-          
+
         }
       \new FiguredBass {
         \figuremode {
