@@ -5,7 +5,7 @@
   title = \markup
      \center-column {
        \combine \null \vspace #1
-     "Bord de mer"
+     "Un zèbre en bord de mer"
        "Op. 1"
       }
   composer = "Jean Baptiste Favre"
