@@ -70,7 +70,7 @@ sopranoVerseMusic = \relative c'' {
   \cadenzaOff \time 3/4 \mark "℟1" \partial 4 f,4 c'2 af4 bf2. \cadenzaOn  \bar "||" \break
   bf\breve c1 af4 \bar "|"
   bf\breve bf1 c4 \bar "||"
-  \cadenzaOff \time 3/4 \mark "℟2" bf4 af g af (g) f f2. \cadenzaOn  \bar "||"
+  \cadenzaOff \time 3/4 \mark "℟2" c4 df bf c (af) g f2. \cadenzaOn  \bar "||"
   }
 
 altoVerseMusic = \relative c' {
