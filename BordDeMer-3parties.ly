@@ -75,10 +75,10 @@
         \mark \default
         \relative c' {
           \key f \major r4
-          c8 f8. g16 a c bf8 g bf a f a g4 c,8 d4 e8 f a c a b4 \break c4
-          c,8 f8. g16 a c bf8 g bf a f a g4 c,8 d4 e8 f a g f4 e8 \break f4
-          f8 bf8. a16 g8 a f a c8. bf16 a8 g4. r4 c,8 f8. g16 a c bf8 g bf c a cs d4. \break
-          r4 f,8 f'8. e16 d8 c4 f,8 f'8. ef16 df8 c4. r4 f,8 f'8. e16 d8 c a c d e c f8 f,8 r8
+          c8 f8. g16 a c bf8 g bf a f a g4 c,8 <g b d>4 <g bf e>8 <a c f> a' <f c'> <d f a> <d g b>4 \break <e g bf c>4
+          c8 f8. g16 a c bf8 g bf a f a g4 c,8 <g b d>4 <g bf e>8 <c f> <d f a> <bf d g> <c f>4 e8 \break <a, c f>4
+          f'8 bf8. a16 g8 a f a c8. bf16 a8 g4. r4 c,8 f8. g16 a c bf8 g bf c a cs d4. \break
+          r4 f,8 f'8. e16 d8 c4 f,8 f'8. ef16 df8 <e, g bf c>4. r4 f8 f'8. e16 d8 c a c < f, bf d> <g bf e> g' <a, c f>8 r8 r8
           \bar "||"
         }
         \pageBreak
@@ -160,6 +160,10 @@
               <g c>4. bf8 g8 bf8 a4. \fermata }
             }
           %\mark "B"
+          s4. s8 <a c>8 <a c> s8 <g bf> <g bf> s8 <a c>8 <a c> <bf c>4. s4. s4. s4. s4.
+          s8 <a c>8 <a c> s8 <g bf> <g bf> s8 <a c>8 <a c> <bf c>4. s4. s4. g8 bf4 s4.
+          s4. s4. s4. s4. s4. s8 <a c>8 <a c> s8 <g bf> <g bf> s4. s4.
+          s4. s8 <d' f> <d f> s4. s8 <df f> <df f>
           %\mark "C"
         }
       }
@@ -177,9 +181,10 @@
             }
           %\mark "B"
           \key f \major
-          r4. f'4. d f e4 c8 b4 bf8 a c f d g g, c4.
-          f4. d f c b4 bf8 a bf g c4. f,4.
-          \repeat unfold 19 { s4. }
+          r4. f'4. d f e4 c8 b4 bf8 a f a d g g, c4.
+          f4. d f e4 c8 b4 bf8 a bf g c4. f,4.
+          s4. s4. s4. s4. s4. f'4. d c <bf f' bf>
+          r4. bf'4. f8 a c bf4. c4. r4. bf8 <d f> <d f> f, <a c> <a c> bf c c, f8 f, r8
           %\mark "C"
           \key d \minor
             \repeat volta 2 {
