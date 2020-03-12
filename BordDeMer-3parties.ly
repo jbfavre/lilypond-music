@@ -158,7 +158,7 @@
           s4. r8 bf4 (bf8) <a c>8 <a c> s8 <g bf> <g bf> s8 <a c>8 <a c> <bf c>4. s4. s4. g8 bf4 s4.
           s4. s4. s4. s4. s4. s8 <a c>8 <a c> s8 <bf d> <bf d> s4. s4.
           s8 <d f> <d f> s4. s8 <df f> <df f>
-          s4. s4. s4. s4. s4. 
+          s4. s4. s4. s4. s4.
           %\mark "C"
           \repeat unfold 34 { s4. }
           %/mark "Coda"
