@@ -20,6 +20,7 @@
 #(set-global-staff-size 22)
 %#(set-default-paper-size "a4landscape")
 
+%{
 \score {
   \header {
     title = ##f
@@ -268,7 +269,7 @@
     >>
   >>
 }
-
+%}
 \score {
   \header {
     title = ##f
@@ -279,16 +280,25 @@
     \new Staff <<
       \clef treble \time 6/8 \key b \minor
       \new Voice = "violon1" {
-        \relative c'' {
-          \repeat unfold 8 { s2. }
+        \relative c' {
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+          fs8 b as b fs r8 b as b cs fs, r8 cs' d fs d4 r8 d fs e fs cs r8
+          e cs fs g4 r8 d8 e d cs fs e cs d d cs4 b8 as b d cs4.
         }
       }
     >>
     \new Staff <<
       \clef treble \time 6/8 \key b \minor
       \new Voice = "violon2" {
-        \relative c'' {
-          \repeat unfold 8 { s2. }
+        \relative c' {
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+          d8 fs e fs b, r8 fs' e d fs cs r8 as' b cs fs,4 r8 fs cs' b as4 r8 b8 fs d' b4 r8 a! b fs as b4 as8 b fs as!4 fs8 fs4 fs8 as4.
         }
       }
     >>
@@ -311,7 +321,7 @@
     >>
   >>
 }
-
+%{
 \score {
   \header {
     title = ##f
@@ -409,7 +419,7 @@
     >>
   >>
 }
-
+%}
 \layout {
   \context {
     \Score
