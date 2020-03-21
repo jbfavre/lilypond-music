@@ -269,7 +269,6 @@
     >>
   >>
 }
-%}
 \score {
   \header {
     title = ##f
@@ -321,12 +320,11 @@
     >>
   >>
 }
-%{
 \score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 7.7"
+    piece = "exercice 7.8"
   }
   \new ChoirStaff <<
     \new Staff <<
@@ -341,15 +339,23 @@
       \clef treble \time 4/4 \key d \major
       \new Voice = "alto" {
         \relative c'' {
-          \repeat unfold 8 { s1 }
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+          a2 g4 g fs fs a2 a2 g4 a fs g e e g g fs2 a2 g4 g fs fs a2 a1
         }
       }
     >>
     \new Staff <<
       \clef "treble_8" \time 4/4 \key d \major
       \new Voice = "tenor" {
-        \relative c'' {
-          \repeat unfold 8 { s1 }
+        \relative c' {
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+          fs2 d4 e cs b e2 fs2 d4 a b b a b d e cs2 fs2 d4 e cs b e2 fs1
         }
       }
     >>
@@ -357,7 +363,13 @@
       \clef bass \time 4/4 \key d \major
       \new Voice = "bass" {
         \relative f {
-          \repeat unfold 8 { s1 }
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+          d2 g4 e fs d a a' d,2
+          b4 cs b g a g g' e fs2
+          d2 g4 e fs d a a' d,1
         }
       }
       \new FiguredBass { \figuremode {
@@ -370,12 +382,12 @@
     >>
   >>
 }
-
+%}
 \score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 7.8"
+    piece = "exercice 7.9"
   }
   \new ChoirStaff <<
     \new Staff <<
@@ -419,7 +431,6 @@
     >>
   >>
 }
-%}
 \layout {
   \context {
     \Score
