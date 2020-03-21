@@ -402,15 +402,15 @@
       \clef treble \time 2/4 \key f \major
       \new Voice = "alto" {
         \relative c'' {
-          \repeat unfold 9 { s2 }
+          a4 f f bf8 d, e4 r4 d4 c8 e f4 bf8 f d4 e f bf8 f f4 e f2
         }
       }
     >>
     \new Staff <<
       \clef "treble_8" \time 2/4 \key f \major
       \new Voice = "tenor" {
-        \relative c'' {
-          \repeat unfold 9 { s2 }
+        \relative c' {
+          c4 bf d f8 d c4 r4 bf4 c d f d c d f c c8 bf a2
         }
       }
     >>
@@ -418,7 +418,7 @@
       \clef bass \time 2/4 \key f \major
       \new Voice = "bass" {
         \relative f {
-          \repeat unfold 9 { s2 }
+          f4 d d bf a r4 g4 a d bf f' c d bf f' c f2
         }
       }
       \new FiguredBass { \figuremode {
