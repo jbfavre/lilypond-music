@@ -1,6 +1,11 @@
 \version "2.18.2"
 \language "english"
 
+tagName = #'no-figuredbass
+perPageSystemNumber = 5
+%tagName = ""
+%perPageSystemNumber = 4
+
 \header {
   title = \markup
      \center-column {
@@ -17,7 +22,7 @@
   #(include-special-characters)
   print-all-headers = ##t
   max-systems-per-page = 5
-  systems-per-page = 4
+  systems-per-page = \perPageSystemNumber
 }
 %#(set-global-staff-size 16)
 %#(set-default-paper-size "a4landscape")
@@ -29,7 +34,7 @@
     tagline = ##f
     piece = ##f
   }
-  \new PianoStaff \with { instrumentName = "Piano" }
+  \removeWithTag \tagName \new PianoStaff \with { instrumentName = "Piano" }
   <<
     \new Staff = "up"
     <<
@@ -213,7 +218,7 @@
         s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn
         s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn s4.\sustainOn
       }
-      \new FiguredBass \with { fontSize = #10 } {
+      \tag #'no-figuredbass \new FiguredBass \with { fontSize = #10 } {
         \figuremode {
           %\mark "A"
           <5>4. <5>4.
@@ -237,7 +242,7 @@
           <5>4. <5> <6> <7 _\+> <5> <5> <6> <5> <6> <5> <6> <5> <6> <5> <5> <5> <5>
         }
       }
-      \new FiguredBass {
+      \tag #'no-figuredbass \new FiguredBass {
         \figuremode {
           %\mark "A"
           <I>4. <I>
