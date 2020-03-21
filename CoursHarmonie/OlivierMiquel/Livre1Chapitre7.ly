@@ -20,7 +20,6 @@
 #(set-global-staff-size 22)
 %#(set-default-paper-size "a4landscape")
 
-%{
 \score {
   \header {
     title = ##f
@@ -382,7 +381,6 @@
     >>
   >>
 }
-%}
 \score {
   \header {
     title = ##f
@@ -402,6 +400,10 @@
       \clef treble \time 2/4 \key f \major
       \new Voice = "alto" {
         \relative c'' {
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
           a8 f f4 f2 c4 r4 d4 c8 e d4 bf c c d f f e c2
         }
       }
@@ -410,6 +412,10 @@
       \clef "treble_8" \time 2/4 \key f \major
       \new Voice = "tenor" {
         \relative c' {
+          \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
           c4 d c d g, r4 bf4 g f f f e a bf c c8 bf a2
         }
       }
@@ -418,7 +424,11 @@
       \clef bass \time 2/4 \key f \major
       \new Voice = "bass" {
         \relative f {
-          f4 f f bf, c r4 bf4 c d bf c c d bf f' c f2
+           \override NoteHead.color = #grey
+          \override Stem.color = #grey
+          \override Beam.color = #grey
+          \override Accidental.color = #grey
+         f4 f f bf, c r4 bf4 c d bf c c d bf f' c f2
         }
       }
       \new FiguredBass { \figuremode {
