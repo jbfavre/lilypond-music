@@ -402,7 +402,7 @@
       \clef treble \time 2/4 \key f \major
       \new Voice = "alto" {
         \relative c'' {
-          a4 f f bf8 d, e4 r4 d4 c8 e f4 bf8 f d4 e f bf8 f f4 e f2
+          a8 f f4 f2 c4 r4 d4 c8 e d4 bf c c d f f e c2
         }
       }
     >>
@@ -410,7 +410,7 @@
       \clef "treble_8" \time 2/4 \key f \major
       \new Voice = "tenor" {
         \relative c' {
-          c4 bf d f8 d c4 r4 bf4 c d f d c d f c c8 bf a2
+          c4 d c d g, r4 bf4 g f f f e a bf c c8 bf a2
         }
       }
     >>
@@ -418,7 +418,7 @@
       \clef bass \time 2/4 \key f \major
       \new Voice = "bass" {
         \relative f {
-          f4 d d bf a r4 g4 a d bf f' c d bf f' c f2
+          f4 f f bf, c r4 bf4 c d bf c c d bf f' c f2
         }
       }
       \new FiguredBass { \figuremode {
