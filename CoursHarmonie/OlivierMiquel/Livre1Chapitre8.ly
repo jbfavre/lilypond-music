@@ -20,6 +20,7 @@
 %#(set-global-staff-size 18)
 %#(set-default-paper-size "a4landscape")
 
+%{
 \score {
   \header {
     title = ##f
@@ -113,26 +114,25 @@
     >>
   >>
 }
-%{
 \score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 8.4"
+    piece = "exercice 8.4 (Sol majeur)"
   }
   \new StaffGroup <<
     \new Staff <<
       \clef treble \time 3/4 \key g \major
       \new Voice = "melody" {\voiceOne
         \relative c'' {
-          d4 g,8 a b c d4 g, g e' c8 d e fs g4 g, g c d8 c b \break
-          a b4 c8 b a g a4 b8 c d b a2. d4 g,8 a b c d4 g, g \break
-          e' c8 d e fs g4 g, g c d8 c b a b4 c8 b a g a4 b8 a g fs <b, d g>2.\bar "|."
+          d4 g,8 a^"P" b c^"P" d4 g, g e' c8 d^"P" e fs^"P" g4 g, g c d8^"B" c b^"P" a \break
+          b4 c8^"B" b a^"P" g a4^"P" b8^"P" c^"P" d b a2. d4 g,8 a^"P" b c^"P" d4 g, g \break
+          e' c8 d^"P" e fs^"P" g4 g, g c d8^"B" c b^"P" a b4 c8^"B" b a^"P" g a4 b8^"B" a g^"P" fs <b, d g>2.\bar "|."
         }
       }
       \new Voice = "melody2" { \voiceTwo
         \relative c' {
-          s2. s2. s2. s2. s4 e4 fs g s2 s4 g2 fs2. s2. s2. s2. s2. s2. s2. s2. s2.
+          s2. s2. s2. s2. s4 e4 fs_"P" g s2 s4 g2 fs2. s2. s2. s2. s2. s2. s2. s2. s2.
         }
       }
     >>
@@ -140,14 +140,70 @@
       \clef bass \time 3/4 \key g \major
       \new Voice = "bass" {
         \relative f {
-          <g b d>2 a4 b2. c b a g d'4 b g d' d,8 c' b a b2 a4 g b g c2. <b d>4 c8 b a g a2 fs4 g2 b4 c d d, g2 g,4
+          <g b d>2 a4^"B" b2. c b a g d'4 b g d' d,8 c'^"P" b^"P" a b2 a4^"P" g b g c2. <b d>4 c8^"B" b a^"P" g a2 fs4 g2 b4 c^"P" d d, g2 g,4
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+          <5>2. <6> <5> <6> <5> <5> <6 4> <5> <6> <5>4 <6> <5> <5>2. <6> <6>2 <5>4 <5>2. <5> <5>
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+          <I>2. <I> <IV> <I> <II> <I> <I> <V> <I> <I> <IV> <I> <VII> <I> <V> <I>
         }
       }
     >>
   >>
 }
 %}
-\layout {
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 8.5 (Si bémol majeur)"
+  }
+  \new StaffGroup <<
+    \new Staff <<
+      \clef treble \time 2/4 \key bf \major
+      \new Voice = "melody" {
+        \relative c'' {
+          bf8.\mf\< (a16 g8.\!\> a16 bf8.\!) d16 c (bf c) f,-. d'8. f16 (g a g ef bf8.) d16 ef (f ef) \break
+          g,-. a8. (c16 bf8\< c16 d ef8.) g16\! f (ef\f) d-. c-. d8. f,16\p g8 a32\< (g fs g\! d'8.\>) d16 c4\! \breathe \break
+          bf8.\mf\< (a16 g8.\!\> a16 bf8.\!) d16 c (bf c) f,-. d'8. f16\f bf-> (a g f ef8) d16 (ef f ef d c) \break
+          d8 c16 (bf) a8 bf32 (a g a bf8.) f16 g8\p a32 (g fs g d'8) c16 (bf c8.) bf16 bf2
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass \time 2/4 \key bf \major
+      \new Voice = "bass" {
+        \relative f {
+          \repeat unfold 16 {s2}
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass \time 2/4 \key bf \major
+      \new Voice = "bass" {
+        \relative f {
+          \repeat unfold 16 {s2}
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+
+        }
+      }
+    >>
+  >>
+}\layout {
   \context {
     \Score
     \override RehearsalMark.self-alignment-X =
