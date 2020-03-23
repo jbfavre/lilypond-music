@@ -35,20 +35,28 @@
         }
       }
     >>
+    \new Staff <<
+      \clef treble \time 4/4 \key ef \major
+      \new Voice = "melody" {
+        \relative c'' {
+          c4 b8 c g8 f16 g ef8 f16 ef f4 g8 f c'8 b16 c d8 ef16 d b4 a8 b g2 \breathe f'4 g8 f ef4 d c4 b8 c af4 bf8 af g4 f8 g f4 g8 f  g1 \breathe f'4 g8 f ef8 d16 ef d8 c16 d c4 b8 c b4 c8 b c1 \bar "|."
+        }
+      }
+    >>
   >>
 }
 \score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 8.2"
+    piece = "exercice 8.2 (Sol mineur)"
   }
   \new StaffGroup <<
     \new Staff <<
       \clef treble \time 3/4 \key bf \major
       \new Voice = "melody" {
         \relative c'' {
-          d4 g8 fs16 g d4 ef4. ef8 d4 d8 cs16 d bf'8 a16 bf g8 fs16 g ef16 c d c bf8 c16 bf a8 g16 a g4 \bar "|."
+          d4 g8 fs16^"B" g d4 ef4. ef8 d4 d8 cs16^"B" d bf'8 a16^"B" bf g8 fs16^"B" g ef16 c d^"B" c bf8 c16^"B" bf a8 g16^"B" a g4 \bar "|."
         }
       }
     >>
@@ -56,7 +64,7 @@
       \clef treble \time 3/4 \key bf \major
       \new Voice = "alto" {
         \relative c'' {
-          bf4 bf8 a bf4 c4 d8 c bf4 a g2~ g2 fs8 e16 fs g4
+          bf4 bf8 a^"B" bf4 c4 d8^"B" c bf4 a g2~ g2 fs8 e16^"B" fs g4
         }
       }
     >>
@@ -64,7 +72,17 @@
       \clef bass \time 3/4 \key bf \major
       \new Voice = "bass" {
         \relative f {
-          g2.~ g2. fs4 g bf,8 a16 bf c4 d d, g
+          g2.~ g2. fs4 g bf,8 a16^"B" bf c4 d d, g
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+          <5>2. <6 4>2 <5>4 <6>4 <5>4 <6>4 <5> <6 4> <_+> <5>
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+          <I>2. <IV>2 <I>4 <V>4 <I>2 <IV>4 <I> <V> <I>
         }
       }
     >>
@@ -81,7 +99,7 @@
       \clef treble \time 4/4 \key g \major
       \new Voice = "melody" {
         \relative c'' {
-          g2 b d g fs r2 g c, d2. a'4 fs2 g e a,4 fs g2 r2  \bar "|."
+          g8 fs^"B" g a^"P" b a^"B" b c^"P" d4 e8^"P" fs^"P" g2 fs r2 g8 fs^"P" e^"P" d^"P" c4 d8^"P" e^"B" d8 c^"B" d e^"P" fs^"P" g^"P" a4 fs4 g8^"B" fs g2 e8 d^"P" c^"P" b^"P" a8 g16^"B" a fs4 g2 r2  \bar "|."
         }
       }
     >>
@@ -89,12 +107,13 @@
       \clef bass \time 4/4 \key g \major
       \new Voice = "bass" {
         \relative f {
-          g2 e fs c d r2 r2 e g fs a, c4 e c a d d, g2 r2
+          g4 fs^"P" e4 d8^"B" e fs4 e8^"P" d^"P" c2 d r2 r2 e4 fs^"P" g2 fs a,4 b^"P" c8 d^"P" e8 d^"P" c b^"P" a8 b16^"P" c^"P" d4 d, g2 r2
         }
       }
     >>
   >>
 }
+%{
 \score {
   \header {
     title = ##f
@@ -127,6 +146,7 @@
     >>
   >>
 }
+%}
 \layout {
   \context {
     \Score
