@@ -1,198 +1,7 @@
 \version "2.18.2"
 \language "english"
-%{
-  Default settings and some translations are needed
-  at the beginning so that they can be overrided
-%}
-%\include "../libs/commonFunctions.ily"
-#(define-markup-command (columns layout props args) (markup-list?)
-   (let ((line-width (/ (chain-assoc-get 'line-width props
-                         (ly:output-def-lookup layout 'line-width))
-                        (max (length args) 1))))
-     (interpret-markup layout props
-       (make-line-markup (map (lambda (line)
-                                (markup #:pad-to-box `(0 . ,line-width) '(0 . 0)
-                                  #:override `(line-width . ,line-width)
-                                  line))
-                               args)))))
 
-silence = #(
-  define-music-function (parser location arg) (ly:music?) (
-    map-some-music (
-      lambda (m) (
-        and (music-is-of-type? m 'note-event)
-        (make-music 'SkipEvent m)
-      )
-    ) arg
-  )
-)
-
-#(define-markup-command (arrow-at-angle layout props angle-deg length fill)
-   (number? number? boolean?)
-   (let* (
-          ;; PI-OVER-180 and degrees->radians are taken from flag-styles.scm
-          (PI-OVER-180 (/ (atan 1 1) 45))
-          (degrees->radians (lambda (degrees) (* degrees PI-OVER-180)))
-          (angle-rad (degrees->radians angle-deg))
-          (target-x (* length (cos angle-rad)))
-          (target-y (* length (sin angle-rad))))
-     (interpret-markup layout props
-                       (markup
-                        #:translate (cons (/ target-x 2) (/ target-y 2))
-                        #:rotate angle-deg
-                        #:translate (cons (/ length -2) 0)
-                        #:concat (#:draw-line (cons length 0)
-                                              #:arrow-head X RIGHT fill)))))
-
-splitStaffBarLineMarkup = \markup \with-dimensions #'(0 . 0) #'(0 . 0) {
-  \combine
-    \arrow-at-angle #45 #(sqrt 8) ##f
-    \arrow-at-angle #-45 #(sqrt 8) ##f
-}
-
-splitStaffBarLine = {
-  \once \override Staff.BarLine.stencil =
-    #(lambda (grob)
-       (ly:stencil-combine-at-edge
-        (ly:bar-line::print grob)
-        X RIGHT
-        (grob-interpret-markup grob splitStaffBarLineMarkup)
-        0))
-  \break
-}
-
-displayFiguredBass = #(define-music-function (parser location figuredBass)
-   (ly:music?)
-   #{
-     \new FiguredBass { #figuredBass }
-   #}
- )
-
-parenthesizeAll = #(define-music-function (parser location note) (ly:music?)
-#{
-  \once \override ParenthesesItem.font-size = #-1
-  \once \override ParenthesesItem.stencil = #(lambda (grob)
-       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
-              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
-         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
-         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
-         (parentheses-item::print grob)))
-  \parenthesize $note
-#})
-
-%\include "../libs/settings.ily"
-tagline = \markup {
-      \teeny\sans \concat{"gravé avec LilyPond pour " \with-url #"https://www.psaumedudimanche.fr" {\underline{www.psaumedudimanche.fr}}}
-}
-
-copyright = "©"
-poet = "AELF"
-
-title = "Composition title"
-subtitle = "Composition subtitle"
-real_poet = "Poet name"
-composer = "Composer name"
-dedicace = ""
-signature = ""
-signatureDate = ""
-
-% Global staff size.
-% Other sizes will be relative.
-% Good to customize to get a "one page only" psalm, when possible
-staffCustomSize = 16
-
-topToMarkupSpacing =
-  #'((basic-distance . 6)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 10))
-
-topToSystemSpacing =
-  #'((basic-distance . 10)
-     (minimum-distance . 5)
-     (padding . 5)
-     (stretchability . 10))
-
-markupToSystemSpacing =
-  #'((basic-distance . 20)
-     (minimum-distance . 10)
-     (padding . 5)
-     (stretchability . 10))
-
-systemToSystemSpacing =
-  #'((basic-distance . 20)
-     (minimum-distance . 10)
-     (padding . 5)
-     (stretchability . 10))
-
-scoreMarkupSpacing =
-  #'((padding . 5)
-   (basic-distance . 15)
-   (minimum-distance . 5)
-   (stretchability . 20))
-
-#(set-default-paper-size "a4")
-
-%{
-  Default margins in millimeters (equal to 1\cm)
-%}
-leftMargin = 15
-rightMargin = 15
-topMargin = 10
-bottomMargin = 15
-
-%{
-  Margin for two-sided printed scores
-  Should be set to false for conductor's score, since it's usualy better
-  to have conductor's score printed on one side only when possible
-%}
-twoSided = ##t
-innerMargin = 15
-outerMargin = 15
-
-%{
-  Fonts settings
-%}
-fontMusic = "emmentaler"            % default
-fontBrace = "emmentaler"            % default
-fontRoman = "Latin Modern Roman"
-fontSans = "Latin Modern Sans"
-fontTypewriter = "Monospace Regular"
-fontFactor = 20 % unnecessary if the staff size is default
-
-%\include "../libs/translations/fr.ily"
-antiphonText = "Antienne"
-verseText = "Psalmodie"
-sopranoVoiceTitle = "Soprano"
-altoVoiceTitle = "Alto"
-tenorVoiceTitle = "Ténor"
-bassVoiceTitle = "Basse"
-poetPrefix = "Texte : "
-composerPrefix = "Musique : "
-arangerPrefix = "Harmonisation : "
-
-%{
-  Since defined in libs/translations/fr.ly
-  Following variables must be overrided after file include
-%}
-sopranoVoiceTitle = "S."
-altoVoiceTitle = "A."
-tenorVoiceTitle = "T."
-bassVoiceTitle = "B."
-
-%{
-  Composition details
-%}
-title = "Salut, Dame sainte"
-subtitle = "Motet à la Vierge pour chœur mixte a cappella"
-real_poet = "Saint François d'Assise"
-composer = "Olivier Bardot"
-dedicace = "à Pierre Pincemaille"
-signature = "À Châtillon&ndash;sur&ndash;Indre"
-signatureDate = "Août 2017"
-
-staffCustomSize = 16
-
+% variables de tempo. Utilisées à la voix de soprane
 tempoOne = \markup{\typewriter \bold "Très modéré mais avec ferveur"}
 tempoTwo = \markup{\typewriter \bold "Plus ardent, avec beaucoup de densité"}
 tempoThree = \markup{\typewriter \bold "Très apaisé, confiant, sempre legato"}
@@ -202,6 +11,7 @@ tempoSix = \markup { \typewriter \bold "Confiant et apaisé"}
 tempoSeven = { \override TextSpanner.bound-details.left.text = \markup { \italic \large { \roman { céder un peu } } } }
 tempoEight = { \override TextSpanner.bound-details.left.text = \markup { \italic \large { \roman { céder encore } } } }
 
+% variables d'expression. Utilisées à la voix de soprane
 dynamicOne = \markup{\typewriter \italic"Avec une grande tendresse"}
 dynamicTwo = \markup { \typewriter \italic "Bien en dehors"}
 
@@ -409,9 +219,18 @@ bassLyrics = \lyricmode {
   }
 
 %{
-  Include layout and draw score
+  Bloc de titre
 %}
-%\include "../libs/layouts/commonLayout.ily"
+#(define-markup-command (columns layout props args) (markup-list?)
+   (let ((line-width (/ (chain-assoc-get 'line-width props
+                         (ly:output-def-lookup layout 'line-width))
+                        (max (length args) 1))))
+     (interpret-markup layout props
+       (make-line-markup (map (lambda (line)
+                                (markup #:pad-to-box `(0 . ,line-width) '(0 . 0)
+                                  #:override `(line-width . ,line-width)
+                                  line))
+                               args)))))
 scoreTitleMarkupSetting = \markup \columns {
       \column {
         \line {
@@ -426,8 +245,8 @@ scoreTitleMarkupSetting = \markup \columns {
           \column{" "}
           \line {
             \fontsize #-1 \left-column {
-              \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-              \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+              \line { \concat { \typewriter "Texte: " \sans \fromproperty #'header:poet \bold " " } }
+              \line { \concat { \typewriter "Musique: " \sans \fromproperty #'header:composer \bold " " } }
               " "
               \typewriter \italic \fromproperty #'header:dedication
             }
@@ -435,121 +254,101 @@ scoreTitleMarkupSetting = \markup \columns {
       }
     }
   }
-oddFooterMarkupSetting = \markup {
-    \fill-line {
-      \center-column {
-        \sans
-        \line {
-          %% Copyright header field only on first page in each bookpart.
-          %\on-the-fly #part-first-page \column {\fromproperty #'header:copyright }
-          %\on-the-fly #part-first-page \column { \on-the-fly #last-page "−" }
-          %% Tagline header field only on last page in the book.
-          %\on-the-fly #last-page  \column {\fromproperty #'header:tagline }
-        }
-      }
-    }
-  }
 
+#(set-default-paper-size "a4")
+#(set-global-staff-size 16)
 \paper {
+  % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
+  #(include-special-characters)
+  print-all-headers = ##f
+  left-margin = 15
+  right-margin = 15
+  top-margin = 10
+  bottom-margin = 15
 
-  left-margin = \leftMargin
-  right-margin = \rightMargin
-  top-margin = \topMargin
-  bottom-margin = \bottomMargin
+  two-sided = ##t
+  inner-margin = 15
+  outer-margin = 15
 
-  top-markup-spacing = \topToMarkupSpacing
-  top-system-spacing = \topToSystemSpacing
-  markup-system-spacing = \markupToSystemSpacing
-  system-system-spacing = \systemToSystemSpacing
-  score-markup-spacing = \scoreMarkupSpacing
+  top-markup-spacing = #'((basic-distance . 6)
+                          (minimum-distance . 5)
+                          (padding . 5)
+                          (stretchability . 10))
 
-  two-sided = \twoSided
-  inner-margin = \innerMargin
-  outer-margin = \outerMargin
-
+  top-system-spacing = #'((basic-distance . 10)
+                          (minimum-distance . 5)
+                          (padding . 5)
+                          (stretchability . 10))
+  markup-system-spacing = #'((basic-distance . 20)
+                             (minimum-distance . 10)
+                             (padding . 5)
+                             (stretchability . 10))
+  system-system-spacing = #'((basic-distance . 20)
+                             (minimum-distance . 10)
+                             (padding . 5)
+                             (stretchability . 10))
+  score-markup-spacing = #'((padding . 5)
+                            (basic-distance . 15)
+                            (minimum-distance . 5)
+                            (stretchability . 20))
 
   #(define fonts
     (set-global-fonts
-     #:music fontMusic
-     #:brace fontBrace
-     #:roman fontRoman
-     #:sans fontSans
-     #:typewriter fontTypewriter
-     #:factor (/ staff-height pt fontFactor)
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Latin Modern Roman"
+     #:sans "Latin Modern Sans"
+     #:typewriter "Monospace Regular"
+     #:factor (/ staff-height pt 20)
     ))
 
-  % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
-  #(include-special-characters)
-
   scoreTitleMarkup = \scoreTitleMarkupSetting
-  oddFooterMarkup = \oddFooterMarkupSetting
 }
-%\include "../libs/layouts/SATB-NoPianoLayout.ily"
-partition = {
+\header {
+  tagline = ##f
+}
+
+\score {
   <<
     \new ChoirStaff <<
-      \new Staff = "Soprano" <<
-        \set Staff.instrumentName = \sopranoVoiceTitle
+      \new Staff <<
+        \set Staff.instrumentName = "S."
         \new Voice = "Sop" { \clef "treble" \global \sopranoMusic }
         \new Lyrics \lyricsto "Sop" { \sopranoLyrics }
       >>
       \new Staff <<
-        \set Staff.instrumentName = \altoVoiceTitle
+        \set Staff.instrumentName = "A."
         \new Voice = "Alto" { \clef "treble" \global \altoMusic }
         \new Lyrics \lyricsto "Alto" { \altoLyrics }
       >>
       \new Staff <<
-        \set Staff.instrumentName = \tenorVoiceTitle
+        \set Staff.instrumentName = "T."
         \new Voice = "Ten" { \clef "treble_8" \global \tenorMusic }
         \new Lyrics \lyricsto "Ten" { \tenorLyrics }
       >>
       \new Staff <<
-        \set Staff.instrumentName = \bassVoiceTitle
+        \set Staff.instrumentName = "B."
         \new Voice = "Bass" { \clef "bass" \global \bassMusic }
         \new Lyrics \lyricsto "Bass" { \bassLyrics }
       >>
     >>
   >>
-}
-%%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
-
-\bookpart {
-  #(set-global-staff-size staffCustomSize)
-  \score {
-    \keepWithTag #'visuel \partition
-    \layout {
-        ragged-last = ##f
-        %indent = 1.5\cm
-        %short-indent = 0.5\cm
-        \context {
-            \Staff \RemoveEmptyStaves
-            \override NoteHead #'style = #'altdefault
-            \override InstrumentName #'font-name = #"Monospace Regular"
-        }
-        \override LyricText #'font-name = #"Latin Modern Sans"
-    }
-    \header {
-      title = \title
-      subtitle = \subtitle
-      composer = \composer
-      composerPrefix = \composerPrefix
-      poet = \real_poet
-      poetPrefix = \poetPrefix
-      dedication = \dedicace
-    }
+  \header {
+    title = "Salut, Dame sainte"
+    subtitle = "Motet à la Vierge pour chœur mixte a cappella"
+    composer = "Olivier Bardot"
+    poet = "Saint François d'Assise"
+    dedication = "à Pierre Pincemaille"
+    tagline = ""
   }
-  \markup {
-    \columns {
-      \column { " " }
-      \column {
-        \columns {
-          \column { " " }
-          \right-column {
-            \sans \signature
-            \sans \signatureDate
-          }
-        }
+  \layout {
+      ragged-last = ##f
+      \context {
+          \Staff \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
       }
-    }
+      \override LyricText #'font-name = #"Latin Modern Sans"
   }
 }
+\markup { \fill-line { " " \sans "À Châtillon&ndash;sur&ndash;Indre, août 2017" } }
