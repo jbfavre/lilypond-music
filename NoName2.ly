@@ -38,7 +38,7 @@ tagName = ""
     \removeWithTag \tagName \new Staff \with { instrumentName = "Flute" }
     <<
       \clef treble \time 3/4
-      \relative c'' { \voiceOne
+      \relative c'' {
         %\mark "A"
         \key f \minor
         r2. r2.
@@ -170,7 +170,7 @@ tagName = ""
       \clef bass \time 3/4
       \relative f {
         \key f \minor
-        \oneVoice { f2 f4 f4. f8 f4  } \voiceTwo
+        f2 f4 f4. f8 f4
         f2 f4 f4. f8 f4 
         bf,2 bf4 f'4. f8 f4 f2 f4 bf,4. bf8 bf4 f'2 f4 c4 c' c,
         f2 f4 f4. f8 f4 bf,2 bf4 c4. c8 c4 af2 af4 ef'4. ef8 ef4 df4 bf c f4. f8 f4
