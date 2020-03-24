@@ -7,16 +7,12 @@ tagName = ""
 %perPageSystemNumber = 4
 
 \header {
-  title = \markup
-     \center-column {
-       \combine \null \vspace #1
-       "No name (yet) 2"
-       "Op. 2"
-      }
+  title = "No name (yet) 2"
   composer = "Jean Baptiste Favre"
   subtitle = ""
   tagline = ""
   date = "Clichy-la-Garenne, mars 2020"
+  opus = "op. 2"
 }
 \paper {
   #(include-special-characters)
@@ -25,7 +21,7 @@ tagName = ""
   %systems-per-page = \perPageSystemNumber
 }
 %#(set-global-staff-size 16)
-%#(set-default-paper-size "a4landscape")
+
 \score {
   \header {
     title = ##f
@@ -171,7 +167,7 @@ tagName = ""
       \relative f {
         \key f \minor
         f2 f4 f4. f8 f4
-        f2 f4 f4. f8 f4 
+        f2 f4 f4. f8 f4
         bf,2 bf4 f'4. f8 f4 f2 f4 bf,4. bf8 bf4 f'2 f4 c4 c' c,
         f2 f4 f4. f8 f4 bf,2 bf4 c4. c8 c4 af2 af4 ef'4. ef8 ef4 df4 bf c f4. f8 f4
         %\mark "B"
