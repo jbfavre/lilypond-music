@@ -107,7 +107,7 @@ topToMarkupSpacing =
      (padding . 5)
      (stretchability . 10))
 
-topToSystemSpacing = 
+topToSystemSpacing =
   #'((basic-distance . 10)
      (minimum-distance . 5)
      (padding . 5)
@@ -119,7 +119,7 @@ markupToSystemSpacing =
      (padding . 5)
      (stretchability . 10))
 
-systemToSystemSpacing = 
+systemToSystemSpacing =
   #'((basic-distance . 20)
      (minimum-distance . 10)
      (padding . 5)
@@ -251,7 +251,7 @@ sopranoMusic = \relative c'' {
                  >> \oneVoice
   }
 altoMusic = \relative c' {
-    
+
     f4\(\p e d8 e e4 f8 g f e f4 d8\) c\( d4
     (d8) b cs4 cs\) d\(\< f d << c!\!\mp  { s8\> s } >>  c8 d e4\!\)
     f2\mp c4 c4 c8 (f) g (f) ef (c) df4 f8 af
@@ -411,5 +411,145 @@ bassLyrics = \lyricmode {
 %{
   Include layout and draw score
 %}
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/SATB-NoPianoLayout.ily"
+%\include "../libs/layouts/commonLayout.ily"
+scoreTitleMarkupSetting = \markup \columns {
+      \column {
+        \line {
+          \right-column {
+            \fontsize #7 \sans \fromproperty #'header:title
+            \fontsize #1 \typewriter \fromproperty #'header:subtitle
+          }
+        }
+      }
+      \column {
+        \columns {
+          \column{" "}
+          \line {
+            \fontsize #-1 \left-column {
+              \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+              \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+              " "
+              \typewriter \italic \fromproperty #'header:dedication
+            }
+          }
+      }
+    }
+  }
+oddFooterMarkupSetting = \markup {
+    \fill-line {
+      \center-column {
+        \sans
+        \line {
+          %% Copyright header field only on first page in each bookpart.
+          %\on-the-fly #part-first-page \column {\fromproperty #'header:copyright }
+          %\on-the-fly #part-first-page \column { \on-the-fly #last-page "−" }
+          %% Tagline header field only on last page in the book.
+          %\on-the-fly #last-page  \column {\fromproperty #'header:tagline }
+        }
+      }
+    }
+  }
+
+\paper {
+
+  left-margin = \leftMargin
+  right-margin = \rightMargin
+  top-margin = \topMargin
+  bottom-margin = \bottomMargin
+
+  top-markup-spacing = \topToMarkupSpacing
+  top-system-spacing = \topToSystemSpacing
+  markup-system-spacing = \markupToSystemSpacing
+  system-system-spacing = \systemToSystemSpacing
+  score-markup-spacing = \scoreMarkupSpacing
+
+  two-sided = \twoSided
+  inner-margin = \innerMargin
+  outer-margin = \outerMargin
+
+
+  #(define fonts
+    (set-global-fonts
+     #:music fontMusic
+     #:brace fontBrace
+     #:roman fontRoman
+     #:sans fontSans
+     #:typewriter fontTypewriter
+     #:factor (/ staff-height pt fontFactor)
+    ))
+
+  % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
+  #(include-special-characters)
+
+  scoreTitleMarkup = \scoreTitleMarkupSetting
+  oddFooterMarkup = \oddFooterMarkupSetting
+}
+%\include "../libs/layouts/SATB-NoPianoLayout.ily"
+partition = {
+  <<
+    \new ChoirStaff <<
+      \new Staff = "Soprano" <<
+        \set Staff.instrumentName = \sopranoVoiceTitle
+        \new Voice = "Sop" { \clef "treble" \global \sopranoMusic }
+        \new Lyrics \lyricsto "Sop" { \sopranoLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = \altoVoiceTitle
+        \new Voice = "Alto" { \clef "treble" \global \altoMusic }
+        \new Lyrics \lyricsto "Alto" { \altoLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = \tenorVoiceTitle
+        \new Voice = "Ten" { \clef "treble_8" \global \tenorMusic }
+        \new Lyrics \lyricsto "Ten" { \tenorLyrics }
+      >>
+      \new Staff <<
+        \set Staff.instrumentName = \bassVoiceTitle
+        \new Voice = "Bass" { \clef "bass" \global \bassMusic }
+        \new Lyrics \lyricsto "Bass" { \bassLyrics }
+      >>
+    >>
+  >>
+}
+%%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
+
+\bookpart {
+  #(set-global-staff-size staffCustomSize)
+  \score {
+    \keepWithTag #'visuel \partition
+    \layout {
+        ragged-last = ##f
+        %indent = 1.5\cm
+        %short-indent = 0.5\cm
+        \context {
+            \Staff \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \override LyricText #'font-name = #"Latin Modern Sans"
+    }
+    \header {
+      title = \title
+      subtitle = \subtitle
+      composer = \composer
+      composerPrefix = \composerPrefix
+      poet = \real_poet
+      poetPrefix = \poetPrefix
+      dedication = \dedicace
+    }
+  }
+  \markup {
+    \columns {
+      \column { " " }
+      \column {
+        \columns {
+          \column { " " }
+          \right-column {
+            \sans \signature
+            \sans \signatureDate
+          }
+        }
+      }
+    }
+  }
+}
