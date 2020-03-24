@@ -7,33 +7,32 @@ perPageSystemNumber = 5
 %perPageSystemNumber = 4
 
 \header {
-  title = \markup
-     \center-column {
-       \combine \null \vspace #1
-       "Un zèbre en bord de mer"
-       "Op. 1"
-      }
+  title = "Un zèbre en bord de mer"
   composer = "Jean Baptiste Favre"
+  poet = ""
+  opus = "op. 1"
+  dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
   subtitle = ""
   tagline = ""
-  date = "Clichy-la-Garenne, février 2020"
 }
+
 \paper {
   #(include-special-characters)
-  print-all-headers = ##t
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Latin Modern Roman"
+     #:sans "Latin Modern Sans"
+     #:typewriter "Monospace Regular"
+     #:factor (/ staff-height pt 20)
+    ))
   max-systems-per-page = 5
   systems-per-page = \perPageSystemNumber
 }
 %#(set-global-staff-size 16)
 %#(set-default-paper-size "a4landscape")
 \score {
-  \header {
-    title = ##f
-    composer = ##f
-    subtitle = ##f
-    tagline = ##f
-    piece = ##f
-  }
   \removeWithTag \tagName \new PianoStaff \with { instrumentName = "Piano" }
   <<
     \new Staff = "up"
@@ -268,33 +267,3 @@ perPageSystemNumber = 5
      >>
   >>
 }
-% Partie soprane
-%{            \key f \major
-          \partial 8 c8^"Primesautier, rapide" f4. g a bf a8 bf16 a gs a \break
-          c4 a8 fs4. g4 a8 bf4. c d e \break
-          d (d8) c bf c4. (c4) f,8 bf4. c d \break
-          e f4. (f4) d8 b4. c4 f,8 bf4. a \break
-          g8 bf d c a f a4. (a4) g8 f4. r4 c8  e4. \break
-          f g4. a g8 a16 g fs g bf4 g8 e4. f4 f8 \break
-          a4. bf c d c (c8) bf a a4. (g4) f8 \break
-          d'4. d4 d8 c4. r4 f,8 df'4.^"Larmoyant, moins vite" df4 df8 c4. (c) \fermata \break
-          s4.^"Malicieux, alerte" s4. r8 <g g'>8-. <e e'>-. \break
-          <c c'>4-- r8 s4. s4. <f f'>8 <e e'>8 <df df'>8 <df df'>4.^"Pesant, moins vite" (<df df'>4.) \break
-          <c c'>4 r8 r4. r4 c8^"Pesant, plus lent" f4. g4. af4. \break
-          bf4. af8 bf16 af g af c4 af8 fs4. g4 c,8 \break
-          e4. f g af g8 af16 g fs g \break
-          bf4 g8 e4. f4 f8 df'4.^"Larmoyant" df4 df8 \break
-          c4-. r8 r4 f,8 d'4.^"Plus joyeux" d4 d8 c4. r4 f,8 \break
-          f'4.^"Éclatant" (f8) e d c4 a8 f4 bf8 a4. g \break
-          f'4. r4 d8 f4. f8 e d c4 a8 f4 <bf bf'>8 \break
-          <a a'>4->\sfz r8 <g g'>4->\sfz r8 <f a c f>4->\sfz \fermata r8 r4. <bf d f bf>4->\sfz r8 <f a c f>4.\sff \fermata \bar "||"
-%}
-% partie basse
-%{            \key f \major
-            \partial 8 s8 \repeat unfold 54 { s4. }
-            r8 <g, g,>8-. <e e,>-. <c c,>4.-- \fermata
-            c4.\startTrillSpan d16\stopTrillSpan e f g a bf c4 r8
-            c4.\startTrillSpan e16\stopTrillSpan f g a bf c df4.
-            r4. r4. r4. r8 g, e <c c,>4.
-            (c4) r8 \repeat unfold 42 { s4. }
-%}
