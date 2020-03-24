@@ -18,6 +18,7 @@ perPageSystemNumber = 5
 
 \paper {
   #(include-special-characters)
+  print-all-headers = ##f
   #(define fonts
     (set-global-fonts
      #:music "emmentaler"
