@@ -1,9 +1,9 @@
 \version "2.18.2"
 \language "english"
 
-tagName = #'no-figuredbass
+%tagName = #'no-figuredbass
 perPageSystemNumber = 5
-%tagName = ""
+tagName = ""
 %perPageSystemNumber = 4
 
 dynamicsUpStaff = {
@@ -17,7 +17,7 @@ dynamicsUpStaff = {
     }
     \alternative {
       { s4.\mf\!\> s4.\!\p s4. \break }
-      { s4.\mf\> \tempo "Céder" s4.\p\> s4.\pp \break s4. }
+      { s4.\mf\> \tempo "Céder" << s4.\p\> { s8^"rit." s4 } >> s4.\pp \break s4. }
     }
   %\mark "B"
   \bar "||"
@@ -26,7 +26,7 @@ dynamicsUpStaff = {
   s4. s4. s4\f\! s8\mf s4. s4.*3 \break
   s4.\< s8 s8\!\> s8 s4 s8\! s4 s8\mf \tempo "Ritardando" s4. s4. \break
   s4. s4. \tempo "Léger, enjoué" s4. s4. s4. s4.\< \break
-  s4. s4.\!\f s4. \tempo "molto céder" s4.\> s4.\!\mf \tempo "Plus rapide, espiègle" s4.\f \break
+  s4. s4.\!\f s4. \tempo "molto céder" s4.\> s4.\!\mf \tempo "Rapide, espiègle" s4.\f \break
   s4. s4. s4.
   %\mark "C"
   \bar "||"
@@ -186,6 +186,53 @@ basseStaff = {
   }
 }
 
+basseChiffree = {
+  \figuremode {
+    %\mark "A"
+    <5>4. <5>4.
+    \repeat unfold 2 {
+      <5>4. <5> <6> <7 _\+> <5> <5> <6> <5> <5> <5> <5> <6> <5>
+      }
+    \alternative {
+      { <5>4. <5> <5> }
+      { <6 4>4. <7 _\+> <5> <5> }
+      }
+    %\mark "B"
+    <5> <5> <5> <6> <6>4 <6 4>8 <6>4. <5>8 <5>4 <5>4. <5> <5> <5> <6> <6>4 <6>8 <6> <5> <5> <5>4. <5> <_> <_> <_> <5> <_> <5> <5> <6> <5> <5> <5> <5> <5> <5> <6> <5>8 <5> <_>  <5>4.
+    %\mark "C"
+    \repeat unfold 2 {
+      <5> <6> <_> <6> <6> <5> <6> <5>
+      }
+    \alternative {
+      { <5> <6> <5> <5> <6> <5> <5 _+> <5 _+> }
+      { <6> <5> <6> <5> <6> <6> <6 4> <6> <6 _-> <5> }
+      }
+    <5>4. <5> <6> <7 _\+> <5> <5> <6> <5> <6> <5> <6> <5> <6> <5> <5> <5> <5>
+  }
+}
+basseDegres = {
+  \figuremode {
+    %\mark "A"
+    <I>4. <I>
+    \repeat unfold 2 { <I> <VI> <V> <V> <VI> <IV> <V> <III> <V> <I> <IV> <V> <III> }
+    \alternative {
+      { <VI> <II> <V> }
+      { <I> <V> <I> <I> }
+      }
+    %\mark "B"
+    \repeat unfold 33 { <_> }
+    %\mark "C"
+    \repeat unfold 2 {
+      <I> <V> <I> <VI> <II> <VII> <VII> <III>
+      }
+    \alternative {
+      { <V> <IV> <VII> <III> <V> <I> <II> <V> }
+      { <VI> <II> <V> <I> <IV> <IV> <I> <VI> <IV> <VII> }
+      }
+    <I> <VI> <V> <V> <VI> <IV> <V> <III>
+    <VI> <II> <V> <I> <IV> <I> <V> <I> <I>
+  }
+}
 
 \header {
   title = "Un zèbre en bord de mer"
@@ -221,63 +268,27 @@ basseStaff = {
     <<
       \set Score.markFormatter = #format-mark-box-alphabet
       \clef treble \time 3/8
+      \new Dynamics { \dynamicsUpStaff }
       \new Voice = "soprano" { \voiceOne \sopraneStaff }
       \new Voice = "alto"  { \voiceTwo \altoStaff }
-      \new Dynamics { \dynamicsUpStaff }
     >>
     \new Staff = "down"
     <<
       \clef bass \key f \minor
       \new Voice = "tenor" { \voiceOne \tenorStaff }
       \new Voice = "bass"  { \voiceTwo \basseStaff }
+      %\tag #'no-figuredbass  \basseChiffree
+      %\context Staff = "down" { \voiceOne \tenorStaff }
+      %\context Staff = "down" { \voiceTwo \basseStaff }
       \new Dynamics { \dynamicsDownStaff }
-      \tag #'no-figuredbass \new FiguredBass \with { fontSize = #10 } {
-        \figuremode {
-          %\mark "A"
-          <5>4. <5>4.
-          \repeat unfold 2 {
-            <5>4. <5> <6> <7 _\+> <5> <5> <6> <5> <5> <5> <5> <6> <5>
-            }
-          \alternative {
-            { <5>4. <5> <5> }
-            { <6 4>4. <7 _\+> <5> <5> }
-            }
-          %\mark "B"
-          <5> <5> <5> <6> <6>4 <6 4>8 <6>4. <5>8 <5>4 <5>4. <5> <5> <5> <6> <6>4 <6>8 <6> <5> <5> <5>4. <5> <_> <_> <_> <5> <_> <5> <5> <6> <5> <5> <5> <5> <5> <5> <6> <5>8 <5> <_>  <5>4.
-          %\mark "C"
-          \repeat unfold 2 {
-            <5> <6> <_> <6> <6> <5> <6> <5>
-            }
-          \alternative {
-            { <5> <6> <5> <5> <6> <5> <5 _+> <5 _+> }
-            { <6> <5> <6> <5> <6> <6> <6 4> <6> <6 _-> <5> }
-            }
-          <5>4. <5> <6> <7 _\+> <5> <5> <6> <5> <6> <5> <6> <5> <6> <5> <5> <5> <5>
-        }
-      }
-      \tag #'no-figuredbass \new FiguredBass {
-        \figuremode {
-          %\mark "A"
-          <I>4. <I>
-          \repeat unfold 2 { <I> <VI> <V> <V> <VI> <IV> <V> <III> <V> <I> <IV> <V> <III> }
-          \alternative {
-            { <VI> <II> <V> }
-            { <I> <V> <I> <I> }
-            }
-          %\mark "B"
-          \repeat unfold 33 { <_> }
-          %\mark "C"
-          \repeat unfold 2 {
-            <I> <V> <I> <VI> <II> <VII> <VII> <III>
-            }
-          \alternative {
-            { <V> <IV> <VII> <III> <V> <I> <II> <V> }
-            { <VI> <II> <V> <I> <IV> <IV> <I> <VI> <IV> <VII> }
-            }
-          <I> <VI> <V> <V> <VI> <IV> <V> <III>
-          <VI> <II> <V> <I> <IV> <I> <V> <I> <I>
-        }
-      }
+      \tag #'no-figuredbass \new FiguredBass { \basseChiffree }
+      \tag #'no-figuredbass \new FiguredBass { \basseDegres }
      >>
   >>
+  \layout {
+    \context {
+      \FiguredBass
+      \override BassFigure #'font-size = #-1
+    }
+  }
 }
