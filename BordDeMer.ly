@@ -23,10 +23,10 @@ dynamicsUpStaff = {
   \bar "||"
   \mark \default
   \tempo "Léger, enjoué" 4.= 80 s4.\mf s4.*3 s4.\< \break
-  s4. s4. s4.\f\! s4.\mf s4.*3 \break
-  s4.\< s8 s8\!\> s8 s4 s8\!\mf s4. \tempo "Ritardando" s4. s4. \break
+  s4. s4. s4\f\! s8\mf s4. s4.*3 \break
+  s4.\< s8 s8\!\> s8 s4 s8\! s4 s8\mf \tempo "Ritardando" s4. s4. \break
   s4. s4. \tempo "Léger, enjoué" s4. s4. s4. s4.\< \break
-  s4. s4.\!\f s4. \tempo "molto céder" s4. s4. \tempo "Plus rapide, espiègle" s4. \break
+  s4. s4.\!\f s4. \tempo "molto céder" s4.\> s4.\!\mf \tempo "Plus rapide, espiègle" s4.\f \break
   s4. s4. s4.
   %\mark "C"
   \bar "||"
