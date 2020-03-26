@@ -16,6 +16,7 @@
   #(include-special-characters)
   print-all-headers = ##t
   max-systems-per-page = 10
+  systems-per-page=4
 }
 %#(set-global-staff-size 18)
 %#(set-default-paper-size "a4landscape")
@@ -168,8 +169,8 @@
       \clef treble \time 2/4 \key bf \major
       \new Voice = "melody" {
         \relative c'' {
-          bf8.\mf\< (a16 g8.\!\> a16 bf8.\!) d16 c (bf c) f,-. d'8. f16 (g a g ef bf8.) d16 ef (f ef) \break
-          g,-. a8. (c16 bf8\< c16 d ef8.) g16\! f (ef\f) d-. c-. d8. f,16\p g8 a32\< (g fs g\! d'8.\>) d16 c4\! \breathe \break
+          bf8.\mf\< (a16^"P" g8.\!\> a16^"P" bf8.\!) d16 c (bf^"B" c) f,-. d'8. f16 (g a^"B" g ef bf8.) d16 ef (f^"B" ef) \break
+          g,-. a8. (c16 bf8\< c16^"P" d^"P" ef8.) g16\! f (ef\f^"P") d-.^"P" c-. d8. f,16\p g8 a32^"B"\< (g fs^"B" g\! d'8.\>) d16 c4\! \breathe \break
           bf8.\mf\< (a16 g8.\!\> a16 bf8.\!) d16 c (bf c) f,-. d'8. f16\f bf-> (a g f ef8) d16 (ef f ef d c) \break
           d8 c16 (bf) a8 bf32 (a g a bf8.) f16 g8\p a32 (g fs g d'8) c16 (bf c8.) bf16 bf2
           \bar "|."
@@ -177,28 +178,35 @@
       }
     >>
     \new Staff <<
-      \clef bass \time 2/4 \key bf \major
-      \new Voice = "bass" {
-        \relative f {
-          \repeat unfold 16 {s2}
+      \clef treble \time 2/4 \key bf \major
+      \new Voice = "alto" {
+        \relative c' {
+          d8. d16 ef4 f4 f4 f ef d c
+          c16 d^"P" ef^"P" f d4 g8 a16^"P" bf16^"P" c8 bf16^"B" c a4 ef f8. g16^"P" a4
+          d,8. d16 ef4 f4 f4 f  d8 ef16^"P" f^"P" g4 f8 g^"B"
+          f8 ef16^"P" d^"P" c4 f ef bf' a4 f2
         }
       }
     >>
     \new Staff <<
       \clef bass \time 2/4 \key bf \major
       \new Voice = "bass" {
-        \relative f {
-          \repeat unfold 16 {s2}
+        \relative f, {
+          bf4 bf bf a bf8 c16^"P" d^"P" ef4 g c, f g8 f ef4 a, d8 c16^"B" d ef4 bf f' bf, bf bf a bf8. a16^"P" g4 c8 bf^"P" a4 bf f'8 ef^"P" d8 c16^"B" d16 ef4 f f, bf2
         }
       }
       \new FiguredBass{
-        \figuremode {
-
+        \figuremode { <5>4 <6 4> <5> <6> <5> <5> <5> <5>
+                      <5> <5> <5> <6>  <5> <5> <5> <5>
+                      <5> <6 4> <5> <6> <5> <5> <5> <6>
+                      <5> <5> <6> <5> <6 4> <5> <5>2
         }
       }
       \new FiguredBass{
-        \figuremode {
-
+        \figuremode { <I>4 <IV> <I> <V> <I> <IV> <VI> <II>
+                      <V> <VI> <IV> <V> <III> <IV> <I> <V>
+                      <I> <IV> <I> <V> <I> <VI> <II> <V>
+                      <I> <V> <I> <IV> <I> <V> <I>
         }
       }
     >>
