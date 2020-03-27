@@ -6,6 +6,15 @@ tagName = ""
 
 #(set-global-staff-size 18)
 
+fluteMusic = \relative c''' {
+        s2.*4
+        %  5 - \mark "A"
+        \repeat unfold 2 { c4. bf8 af bf c2 af4 (df8 ef f ef df4) c2. \breathe c8 (bf af bf c4) bf8 (af g af bf4) }
+        \alternative {
+          { af8 (g f g af4) g2 \breathe df'4 }
+          { af4 bf g f2. }
+        }
+}
 pianoUpDynamics = {
         \tempo 2. = 55
         s2.*4 \break
@@ -44,14 +53,18 @@ pianoUpDynamics = {
         \bar "|."
 %}
 }
-pianoUpOneMusic = \relative c'' {
-        s2.*4
+pianoUpOneMusic = \relative c' {
+        s2.*2
+        af'2 g4 f4. ef8 df4
         %  5 - \mark "A"
-        \repeat unfold 2 { c4. bf8 af bf c2 af4 (df8 ef f ef df4) c2. \breathe c8 (bf af bf c4) bf8 (af g af bf4) }
-        \alternative {
-          { af8 (g f g af4) g2 \breathe df'4 }
-          { af4 bf g f2. }
-        }
+        af'2 g4 f4. ef8 df4
+        af'2 g4 f4. ef8 df4
+        af'2 g4 f4. ef8 df4
+        af'2 g4 g4. g4.
+        af2 g4 f4. ef8 df4
+        af'2 g4 f4. ef8 df4
+        af'2 g4 f4. ef8 df4
+        f4 g g af2.
 %{
         % 21 - \mark "B"
         \repeat unfold 2 { g4. af8 g f g2 g4 (af8 bf c bf af4) g2. \breathe af8 (bf c bf af4) g8 (af bf af g4) }
@@ -76,9 +89,12 @@ pianoUpOneMusic = \relative c'' {
 %}
 }
 pianoUpTwoMusic = \relative c' {
-        s2.*4
+        s2.*2
         %  5 - \mark "A"
-        s2.*16
+        c2. c2. c2. c2. df2. c2.
+        ef2. df2. f2. s2.
+        f2. f2. f2. c2.
+        c2. c2. f4 df e f2.
 %{
         % 21 - \mark "B"
         s2.*16
@@ -91,10 +107,42 @@ pianoUpTwoMusic = \relative c' {
 %}
 }
 
-pianoDownOneMusic = \relative c' {
-        s2.*4
-        %  5 - \mark "A"
-        s2.*16
+pianoDownOneMusic = \relative c {
+        <<
+          { \mergeDifferentlyHeadedOn
+            \mergeDifferentlyDottedOn
+            s2.*4
+            %  5 - \mark "A"
+            f8 af c f c af f8 af c f c af
+            f8 bf df f df bf
+            f8 af c f c af
+            af c ef af ef c
+            g bf df g df bf
+            f af c f c af
+            e g c e c g
+            f8 af c f c af
+            f8 af c f c af
+            f8 bf df f df bf
+            e, g c e c g
+            ef af c ef c af
+            g bf ef g ef bf
+            c4 df c c2.
+          } \\
+          { s2.*4
+            %  5 - \mark "A"
+            f,2. f f f af g f e f f f e ef g
+          } % \\
+          %{ {\voiceFour \shiftOff
+            f,2 f4 f4. f8 f4 f2 f4 f4. f8 f4
+            %  5 - \mark "A"
+            f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
+            af2 af4 bf4. bf8 bf4 c2 c4 c4. c4.
+            f,2 f4 f4. f8 f4 bf2 bf4 c4. c8 c4
+            af2 af4 ef'4. ef8 e4
+            f4 bf, c f8 f16 f16 f8 f8 f8 f8
+          }%}
+        >>
+        
 %{
         % 21 - \mark "B"
         s2.*16
@@ -106,13 +154,14 @@ pianoDownOneMusic = \relative c' {
         s2.*8
 %}
 }
-pianoDownTwoMusic = \relative c, {
-        \repeat unfold 2 { f2 f4 f4. f8 f4 }
+pianoDownTwoMusic = \relative c, { \voiceFour
+        f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
         %  5 - \mark "A"
         f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
-        af2 af4 bf4. bf8 bf4 c2 c4 c4 c' c,
-        f2 f4 f4. f8 f4 bf,2 bf4 c4. c8 c4
-        af2 af4 ef'4. ef8 e4 f4 bf c f,8 f16 f16 f8 f8 f8 f8
+        af2 af4 bf4. bf8 bf4 c2 c4 c4. c4.
+        f,2 f4 f4. f8 f4 bf2 bf4 c4. c8 c4
+        af2 af4 ef'4. ef8 e4
+        f4 bf, c f8 f16 f16 f8 f8 f8 f8
 %{
         % 21 - \mark "B"
         c2 c4 c4. c8 c4 df2 bf4 c4. c8 c4 af2 af4 ef'4. ef8 e4 f2 df4 c4. c8 c4
@@ -144,7 +193,7 @@ pianoDownDynamics = {
 basseChiffree = {
         s2.*4
         %  5 - \mark "A"
-        \figuremode { <5>2. <5> <6 4> <5> <5> <6> <6 4> <_!> <5> <5> <5> <_!> <5> <5>2 <6>4 <5>4 <6> <_!> <5>2. }
+        \figuremode { <5>2. <5> <6 4> <5> <5> <6> <6 4> <_!> <5> <5> <5> <_!> <5> <6 5/>2 <6>4 <5>4 <6> <_!> <5>2. }
 %{
         % 21 - \mark "B"
         \figuremode { <5>2. <5> <6>2 <5>4 <5>2. <5> <5>2 <6>4 <5>2 <5>4 <5>2. <6> <5> <5>2 <5>4 <5>2. <5> <5>2 <6>4 <5> <6> <5> <5>2. }
@@ -159,7 +208,7 @@ basseChiffree = {
 basseDegres = {
         s2.*4
         %  5 - \mark "A"
-        \figuremode { <I>2. <I> <IV> <I> <III> <II> <I> <V> <I> <I> <IV> <V> <III> <VII>2 <V>4 <I>4 <II> <V> <I>2. }
+        \figuremode { <I>2. <I> <IV> <I> <III> <II> <I> <V> <I> <I> <IV> <V> <III> <V> <I>4 <II> <V> <I>2. }
 %{
         % 21 - \mark "B"
         \figuremode { <V> <V> <IV> <V> <III> <VII>2 <V>4 <I>2 <VI>4 <V>2. <II> <V> <I>2 <VI>4 <V>2. <I> <IV>2 <V>4 <I> <II> <V> <I>2. }
@@ -185,7 +234,7 @@ basseDegres = {
 \paper {
   #(include-special-characters)
   print-all-headers = ##f
-  systems-per-page = 6
+  max-systems-per-page = 6
 }
 
 %{
@@ -245,7 +294,7 @@ basseDegres = {
         \clef treble \time 3/4 \key f \minor
         \set Score.markFormatter = #format-mark-box-alphabet
         \new Dynamics \pianoUpDynamics
-        \new Voice { \voiceOne \pianoUpOneMusic }
+        \new Voice { \voiceOne << \fluteMusic \\ \pianoUpOneMusic >> }
         \new Voice { \voiceTwo \pianoUpTwoMusic }
       >>
       \new Staff
