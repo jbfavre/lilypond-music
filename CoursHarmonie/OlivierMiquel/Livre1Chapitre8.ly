@@ -16,7 +16,7 @@
   #(include-special-characters)
   print-all-headers = ##t
   max-systems-per-page = 10
-  min-systems-per-page = 4
+  %min-systems-per-page = 4
   %systems-per-page=4
 }
 %#(set-global-staff-size 18)
@@ -158,7 +158,6 @@
     >>
   >>
 }
-%}
 \score {
   \header {
     title = ##f
@@ -256,7 +255,7 @@
     >>
   >>
 }
-%{
+%}
 \score {
   \header {
     title = ##f
@@ -269,8 +268,8 @@
       \time 4/4 \key bf \major
       \new Voice = "soprane" {
         \relative c'' {
-          bf8--\mf d-- f-- g16 (f) bf,8 d a g16 (a) bf8 f c' bf16 (c) d4 r4 bf8\f a16 (bf) c8 ef bf16\p (a bf b c d ef8)
-          f8\< c d16 c bf a g a bf\! c a4 bf8--\mf d-- f-- g16 (f) bf,8 d a g16 (a) bf8 c16 (d) c4 bf8 (c16 bf a g a8) bf2 r2
+          bf8--\mf d-- f-- g16^"B" (f) bf,8 d a g16^"B" (a) bf8 f c' bf16^"B" (c) d4 r4 bf8\f a16^"B" (bf) c8 ef bf16\p (a^"B" bf b^"P" c d^"P" ef8)
+          f8\< c d16 c^"P" bf^"P" a^"P" g a^"P" bf^"P"\! c a4 bf8--\mf d-- f-- g16^"B" (f) bf,8 d a g16^"B" (a) bf8 c16^"P" (d) c4 bf8 (c16^"B" bf a g^"B" a8) bf2 r2
           \bar "|."
         }
       }
@@ -279,8 +278,8 @@
       \clef treble
       \time 4/4 \key bf \major
       \new Voice = "alto" {
-        \relative c'' { s1*7
-          \bar "|."
+        \relative c' {
+          f2 g4 f f2 g4 r ef2 d4 ef c bf c f f2 g4 f  g f g f f2 r
         }
       }
     >>
@@ -288,8 +287,8 @@
       \clef "treble_8"
       \time 4/4 \key bf \major
       \new Voice = "tenor" {
-        \relative c'' { s1*7
-          \bar "|."
+        \relative c' {
+          d4 c d2 (d4) c bf r g2 g2 f g4 c d4 c d2 d4 c ef8 d^"P" c4 d2 r 
         }
       }
     >>
@@ -297,21 +296,23 @@
       \clef bass
       \time 4/4 \key bf \major
       \new Voice = "bass" {
-        \relative f, { s1*7
+        \relative f {
+          bf4 a g f bf a g r ef4 c g' c,8 bf^"P"
+          a4 bf ef f16 fs^"P" g^"P" a^"P" bf4 a g f g a ef f bf,2 r
         }
       }
       \new FiguredBass{
-        \figuremode { <5>
+        \figuremode { <5>4 <6> <5> <6> <5> <6> <5> <_> <5> <5> <5> <5>
+                      <6> <5> <6> <5> <5> <6> <5> <6> <5> <6> <5> <5> <5>2 <_>
         }
       }
       \new FiguredBass{
-        \figuremode { <I>
+        \figuremode { <I>4 <V> <VI> <III> <I> <V> <VI> <_> <IV> <II> <VI> <II> <V> <I> <II> <V> <I> <V> <VI> <III> <VI> <V> <IV> <V> <I>
         }
       }
     >>
   >>
 }
-%}
 \layout {
   \context {
     \Score
