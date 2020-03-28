@@ -16,7 +16,8 @@
   #(include-special-characters)
   print-all-headers = ##t
   max-systems-per-page = 10
-  systems-per-page=4
+  min-systems-per-page = 4
+  %systems-per-page=4
 }
 %#(set-global-staff-size 18)
 %#(set-default-paper-size "a4landscape")
@@ -172,7 +173,7 @@
           bf8.\mf\< (a16^"P" g8.\!\> a16^"P" bf8.\!) d16 c (bf^"B" c) f,-. d'8. f16 (g a^"B" g ef bf8.) d16 ef (f^"B" ef) \break
           g,-. a8. (c16 bf8\< c16^"P" d^"P" ef8.) g16\! f (ef\f^"P") d-.^"P" c-. d8. f,16\p g8 a32^"B"\< (g fs^"B" g\! d'8.\>) d16 c4\! \breathe \break
           bf8.\mf\< (a16 g8.\!\> a16 bf8.\!) d16 c (bf c) f,-. d'8. f16\f bf-> (a g f ef8) d16 (ef f ef d c) \break
-          d8 c16 (bf) a8 bf32 (a g a bf8.) f16 g8\p a32 (g fs g d'8) c16 (bf c8.) bf16 bf2
+          d8 c16 (bf) a8 bf32 (a g a bf8.) f16 g8\p a32 (g fs g d'8) c16 (bf c8.) bf16 <bf d,>2
           \bar "|."
         }
       }
@@ -181,10 +182,10 @@
       \clef treble \time 2/4 \key bf \major
       \new Voice = "alto" {
         \relative c' {
-          d8. d16 ef4 f4 f4 f ef d c
-          c16 d^"P" ef^"P" f d4 g8 a16^"P" bf16^"P" c8 bf16^"B" c a4 ef f8. g16^"P" a4
-          d,8. d16 ef4 f4 f4 f  d8 ef16^"P" f^"P" g4 f8 g^"B"
-          f8 ef16^"P" d^"P" c4 f ef bf' a4 f2
+          d8. d16 ef4 d4 f4 f ef d c
+          c16 d^"P" ef^"P" f d4 g8 a16^"P" bf16^"P" c8 bf16^"B" c bf4 bf f8. g16^"P" a4
+          d,8. d16 ef4 f4 f4 f  g16 f^"P" ef16^"P" d^"P" c4 f8 g^"B"
+          f2 (f4) ef bf' a4 f2
         }
       }
     >>
@@ -192,26 +193,126 @@
       \clef bass \time 2/4 \key bf \major
       \new Voice = "bass" {
         \relative f, {
-          bf4 bf bf a bf8 c16^"P" d^"P" ef4 g c, f g8 f ef4 a, d8 c16^"B" d ef4 bf f' bf, bf bf a bf8. a16^"P" g4 c8 bf^"P" a4 bf f'8 ef^"P" d8 c16^"B" d16 ef4 f f, bf2
+          bf4 bf bf a bf8 c16^"P" d^"P" ef4 g c, f bf, ef a, bf8 c16^"P" d ef4 f f bf, bf bf a bf8. a16^"P" g4 c8 bf^"P" a4 bf c4 d8 c16^"B" d16 ef4 f f, bf2
         }
       }
       \new FiguredBass{
         \figuremode { <5>4 <6 4> <5> <6> <5> <5> <5> <5>
-                      <5> <5> <5> <6>  <5> <5> <5> <5>
+                      <5> <5> <5> <6>  <5> <5> <6 4> <5>
                       <5> <6 4> <5> <6> <5> <5> <5> <6>
-                      <5> <5> <6> <5> <6 4> <5> <5>2
+                      <5> <6 4> <6> <5> <6 4> <5> <5>2
         }
       }
       \new FiguredBass{
         \figuremode { <I>4 <IV> <I> <V> <I> <IV> <VI> <II>
-                      <V> <VI> <IV> <V> <III> <IV> <I> <V>
+                      <V> <I> <IV> <V> <I> <IV> <I> <V>
                       <I> <IV> <I> <V> <I> <VI> <II> <V>
                       <I> <V> <I> <IV> <I> <V> <I>
         }
       }
     >>
   >>
-}\layout {
+}
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 8.6 (Sol majeur)"
+  }
+  \new StaffGroup <<
+    \new Staff <<
+      \clef treble
+      \time 6/8 \key g \major
+      \new Voice = "melody" {
+        \relative c'' {
+          \partial 4.
+          d16 (cs d e d c b8) d,16 (cs d8-.) d'16 (cs d e d df c8) a16 (gs a8-.) g'!16 (fs g b, g' e)
+          d8 b16 (as b8-.) e16 (d cs c b bf a!4.) d16 (cs d e d c b8) d,16 (cs d8-.) e16 (fs g a b c!) d (e d g, g' fs e fs e a, a' af g fs e d c b a g fs e fs a g4.)
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass
+      \time 6/8 \key g \major
+      \new Voice = "bass" {
+        \relative f {
+          \partial 4. r4.
+          g b a e b c d r g, g g c d d
+          g,4.
+        }
+      }
+      \new FiguredBass{
+        \figuremode { <_>4. <5> <6> <5> <5> <5> <5>
+                      <5> <_> <5> <6 4> <5> <5> <6 4> <5> <5>
+          
+        }
+      }
+      \new FiguredBass{
+        \figuremode { <_>4. <I> <I> <II> <VI> <III> <IV>
+                      <V> <_> <I> <IV> <I> <II> <I> <V> <I>
+        }
+      }
+    >>
+  >>
+}
+%{
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 8.7 (Si bémol majeur)"
+  }
+  \new ChoirStaff <<
+    \new Staff <<
+      \clef treble
+      \time 4/4 \key bf \major
+      \new Voice = "soprane" {
+        \relative c'' {
+          bf8--\mf d-- f-- g16 (f) bf,8 d a g16 (a) bf8 f c' bf16 (c) d4 r4 bf8\f a16 (bf) c8 ef bf16\p (a bf b c d ef8)
+          f8\< c d16 c bf a g a bf\! c a4 bf8--\mf d-- f-- g16 (f) bf,8 d a g16 (a) bf8 c16 (d) c4 bf8 (c16 bf a g a8) bf2 r2
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef treble
+      \time 4/4 \key bf \major
+      \new Voice = "alto" {
+        \relative c'' { s1*7
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef "treble_8"
+      \time 4/4 \key bf \major
+      \new Voice = "tenor" {
+        \relative c'' { s1*7
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass
+      \time 4/4 \key bf \major
+      \new Voice = "bass" {
+        \relative f, { s1*7
+        }
+      }
+      \new FiguredBass{
+        \figuremode { <5>
+        }
+      }
+      \new FiguredBass{
+        \figuremode { <I>
+        }
+      }
+    >>
+  >>
+}
+%}
+\layout {
   \context {
     \Score
     \override RehearsalMark.self-alignment-X =
