@@ -17,7 +17,7 @@
   print-all-headers = ##t
   max-systems-per-page = 10
   %min-systems-per-page = 4
-  %systems-per-page=4
+  %systems-per-page=6
 }
 %#(set-global-staff-size 18)
 %#(set-default-paper-size "a4landscape")
@@ -255,7 +255,6 @@
     >>
   >>
 }
-%}
 \score {
   \header {
     title = ##f
@@ -308,6 +307,132 @@
       }
       \new FiguredBass{
         \figuremode { <I>4 <V> <VI> <III> <I> <V> <VI> <_> <IV> <II> <VI> <II> <V> <I> <II> <V> <I> <V> <VI> <III> <VI> <V> <IV> <V> <I>
+        }
+      }
+    >>
+  >>
+}
+%}
+global = { \time 2/2 \key g \major }
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 8.8"
+  }
+  \new PianoStaff <<
+    \new Staff = "soprane" <<
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+      \set Staff.explicitClefVisibility = #end-of-line-invisible 
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \clef treble
+      \global
+      \new Voice = "soprane" {
+        \relative c'' { \override Slur.color = #red
+          \mark "A"
+          r2 e d( \once \override NoteHead.color = #red b) c (^"Redite" a) g fs e fs \once \override NoteHead.color = #red \once \override Slur.color = #red a (^"8e conséc."c \once \override NoteHead.color = #red b) \once \override NoteHead.color = #red e, fs
+          \once \override NoteHead.color = #red g(^"Répétition"
+          \once \override NoteHead.color = #red g) b
+          \once \override NoteHead.color = #red c(
+          \once \override NoteHead.color = #red ds)^"2de aug"
+          e1 \break \global
+          \mark "B"
+          g,1
+          \once \override NoteHead.color = #red d'
+          c a b g
+          \once \override NoteHead.color = #red e^"8e directe"
+          fs g
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff = "basse" <<
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+      \set Staff.explicitClefVisibility = #end-of-line-invisible 
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \clef bass
+      \global
+      \new Voice = "bass" {
+        \relative f { \override Slur.color = #red
+          \clef alto
+          e1
+          \once \override NoteHead.color = #red fs^"4te avec si"
+          a
+          b
+          c
+          \once \override NoteHead.color = #red a(
+          \once \override NoteHead.color = #red b)^"4te avec mi"
+          a1
+          g
+          fs
+          e
+          \global
+          \clef bass r2 g
+          \once \override NoteHead.color = #red a^"4te avec ré"
+          b c
+          c,( d)^"Redite" c(d)
+          \once \override NoteHead.color = #red g e fs
+          \once \override NoteHead.color = #red e c d
+          \once \override NoteHead.color = #red a g1
+        }
+      }
+      \new FiguredBass{
+        \figuremode {
+          <_>1 <6 4> <_> <_> <_> <_> <6 4> <_> <_> <5/> <_>
+           <_> <_> <_> <_> <6 4> <_> <_> <6 4>
+        }
+      }
+    >>
+  >>
+}
+global = { \time 2/2 }
+\score {
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 8.9"
+  }
+  \new PianoStaff <<
+    \new Staff <<
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+      \set Staff.explicitClefVisibility = #end-of-line-invisible 
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \clef treble
+      \global
+      \new Voice = "soprane" {
+        \relative c'' {
+          \mark "Mode majeur"
+          \key c \major
+          c1 a b d e f d c \break
+          r2 g2 a c d c b f e g a g a b c1 \break
+          %\mark "Mode de Ré"
+          %\key c \major
+          %d,1 f g a e g f e c d \break
+          %r2 s2 s1*9 \break
+          %\mark "Mode de La"
+          %\key g \major
+          %e'1 d e c b a g a b g fs e \break
+          %r2 s2 s1*11
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
+      \set Staff.explicitClefVisibility = #end-of-line-invisible 
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \clef bass
+      \global
+      \new Voice = "bass" {
+        \relative f {
+          r2 c2 d c b a g b c g a f g b c1
+          c1 a b d e f d c
+          %r2 s2 s1*9
+          %d1 f g a e g f e c d
+          %\key g \major
+          %r2 s2 s1*11
+          %\clef tenor
+          %e'1 d e c b a g a b g fs e
         }
       }
     >>
