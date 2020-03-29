@@ -255,7 +255,6 @@
     >>
   >>
 }
-%}
 \score {
   \header {
     title = ##f
@@ -313,7 +312,7 @@
     >>
   >>
 }
-%{
+%}
 global = { \time 2/2 \key g \major }
 \score {
   \header {
@@ -439,7 +438,7 @@ global = { \time 2/2 }
     >>
   >>
 }
-%}\layout {
+\layout {
   \context {
     \Score
     \override RehearsalMark.self-alignment-X =
