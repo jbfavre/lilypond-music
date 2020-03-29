@@ -255,6 +255,7 @@
     >>
   >>
 }
+%}
 \score {
   \header {
     title = ##f
@@ -278,7 +279,7 @@
       \time 4/4 \key bf \major
       \new Voice = "alto" {
         \relative c' {
-          f2 g4 f f2 g4 r ef2 d4 ef c bf c f f2 g4 f  g f g f f2 r
+          f2 g4 d f2 f4 r ef2 d4 ef c bf c f f2 g4 d  g f g f f2 r
         }
       }
     >>
@@ -296,8 +297,8 @@
       \time 4/4 \key bf \major
       \new Voice = "bass" {
         \relative f {
-          bf4 a g f bf a g r ef4 c g' c,8 bf^"P"
-          a4 bf ef f16 fs^"P" g^"P" a^"P" bf4 a g f g a ef f bf,2 r
+          bf4 a g f bf, a bf r ef4 c g' c,8 bf^"P"
+          a4 bf ef f4 bf4 a g f g a ef f bf,2 r
         }
       }
       \new FiguredBass{
@@ -306,13 +307,13 @@
         }
       }
       \new FiguredBass{
-        \figuremode { <I>4 <V> <VI> <III> <I> <V> <VI> <_> <IV> <II> <VI> <II> <V> <I> <II> <V> <I> <V> <VI> <III> <VI> <V> <IV> <V> <I>
+        \figuremode { <I>4 <V> <VI> <III> <I> <V> <I> <_> <IV> <II> <VI> <II> <V> <I> <II> <V> <I> <V> <VI> <III> <VI> <V> <IV> <V> <I>
         }
       }
     >>
   >>
 }
-%}
+%{
 global = { \time 2/2 \key g \major }
 \score {
   \header {
@@ -438,7 +439,7 @@ global = { \time 2/2 }
     >>
   >>
 }
-\layout {
+%}\layout {
   \context {
     \Score
     \override RehearsalMark.self-alignment-X =
