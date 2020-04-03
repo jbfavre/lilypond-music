@@ -312,7 +312,6 @@
     >>
   >>
 }
-%}
 global = { \time 2/2 \key g \major }
 \score {
   \header {
@@ -385,6 +384,7 @@ global = { \time 2/2 \key g \major }
     >>
   >>
 }
+%}
 global = { \time 2/2 }
 \score {
   \header {
@@ -404,11 +404,11 @@ global = { \time 2/2 }
           \mark "Mode majeur"
           \key c \major
           c1 a b d e f d c \break
-          r2 g2 a c d c b f e g a g a b c1 \break
-          \mark "Mode de Ré"
-          \key c \major
-          d,1 f g a e g f e c d \break
-          r2 s2 s1*9 \break
+          r2 g2 a c d c b a^"Note mélodique" (g b) a g a b c1 \break
+          %\mark "Mode de Ré"
+          %\key c \major
+          %d,1 f g a e g f e c d \break
+          %r2 s2 s1*9 \break
           %\mark "Mode de La"
           %\key g \major
           %e'1 d e c b a g a b g fs e \break
@@ -425,10 +425,10 @@ global = { \time 2/2 }
       \global
       \new Voice = "bass" {
         \relative f {
-          r2 c2 d c b a g b c g a f g b c1
-          c1 a b d e f d c
-          r2 s2 s1*9
-          d1 f g a e g f e c d
+          r2 c2 d c b a g b c b a f g b c1
+          c1 a b d (e) f d c
+          %r2 s2 s1*9
+          %d1 f g a e g f e c d
           %\key g \major
           %r2 s2 s1*11
           %\clef tenor
