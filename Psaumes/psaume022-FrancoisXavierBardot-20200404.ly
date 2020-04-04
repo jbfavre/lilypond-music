@@ -10,7 +10,7 @@
 \include "../libs/settings.ily"
 
 title = "Psaume 22"
-subtitle = \markup { \column { "François-Xavier Bardot" "7 septembre 1977 - &dagger; 4 avril 2020" } }
+subtitle = \markup { \column { "François-Xavier Bardot" "8 septembre 1977 - &dagger; 4 avril 2020" } }
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 22 octobre 2019"
 
