@@ -35,27 +35,27 @@ global = { \time 4/4 \key g \major }
       \global
       \new Voice = "soprane" {  \voiceOne
         \relative c'' {
-          r1 s1 s2 g4 b d4. e8 d c b g d4 s2. s4
+          s1 s1 s2 g4 b d4. e8 d c b g d4 s2. s4
           \bar "|."
         }
       }
-      \new Voice = "alto" { \voiceTwo
+      \new Voice = "alto" {
         \relative c'' {
-          r2 g4 b d4. e8 d c b g d4 s2. s1 s1 s4
+          \oneVoice r4 r4 \voiceTwo g4 b d4. e8 d c b g d4 s2. s1 s1 s4
         }
       }
     >>
     \new Staff <<
       \clef bass
       \global
-      \new Voice = "tenor" { \voiceOne
+      \new Voice = "tenor" {
         \relative f {
-          r1 r2 g4 b d4. e8 d c b g d4 s2. s1 s4
+          r1 r4 r4 \voiceOne g4 b d4. e8 d c b g d4 s2. s1 s4
         }
       }
       \new Voice = "bass" { \voiceTwo
         \relative f {
-          r1 r1 s1 s2 g,4 b d4. e8 d c b g d4
+          s1 s2 r4 r4 r1 r4 r4 g,4 b d4. e8 d c b g d4
         }
       }
     >>
