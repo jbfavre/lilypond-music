@@ -5,6 +5,7 @@
 perPageSystemNumber = 5
 tagName = ""
 %perPageSystemNumber = 4
+midiInstrumentName = #"grandPiano"
 
 dynamicsUpStaff = {
   \mark \default
@@ -65,6 +66,7 @@ dynamicsDownStaff = {
 }
 
 sopraneStaff = {
+  \set midiInstrument = \midiInstrumentName
   %\mark "A"
   \relative c' {
     \key f \minor r4. r4.
@@ -109,6 +111,7 @@ sopraneStaff = {
 }
 
 altoStaff = { \voiceTwo
+  \set midiInstrument = \midiInstrumentName
   \relative f {
     %\mark "A"
     \repeat unfold 35 { s4. }
@@ -128,6 +131,7 @@ altoStaff = { \voiceTwo
 }
 
 tenorStaff = {
+  \set midiInstrument = \midiInstrumentName
   \relative f {
     %\mark "A"
     r8 <f af c>[ <af c f>] r8 <f af c>[ <af c f>]
@@ -153,6 +157,7 @@ tenorStaff = {
 }
 
 basseStaff = {
+  \set midiInstrument = \midiInstrumentName
   %\mark "A"
   \relative f, {
     f4. f
