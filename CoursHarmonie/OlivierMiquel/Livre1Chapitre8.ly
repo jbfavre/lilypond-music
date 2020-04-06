@@ -404,7 +404,7 @@ global = { \time 2/2 }
           \mark "Mode majeur"
           \key c \major
           c1 a b d e f d c \break
-          r2 g2 a c d c b \once \override NoteHead.color = #red a^\markup { \with-color #red "Note mélodique" } (g b) a g a b c1 \break
+          r2 g2 a c d c b a g b a g a b c1 \break
           \mark "Mode de Ré"
           \key c \major
           d,1 \once \override NoteHead.color = #red f( \once \override NoteHead.color = #red g) a e g f e c d \break
@@ -426,7 +426,7 @@ global = { \time 2/2 }
       \new Voice = "bass" {
         \relative f {
           r2 c2 d c b a g b c b a f g b c1
-          c1 a b d (e) f d c
+          c1 a b d e f d c
           r2 d2 a \once \override NoteHead.color = #red b( \once \override NoteHead.color = #red c) \once \override NoteHead.color = #red b a \once \override NoteHead.color = #red b c d c e f d c e f e d1
           d1 f g a e g f e c d
           \key g \major
