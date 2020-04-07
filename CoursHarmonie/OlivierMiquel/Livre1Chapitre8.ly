@@ -407,12 +407,12 @@ global = { \time 2/2 }
           r2 g2 a c d c b a g b a g a b c1 \break
           \mark "Mode de Ré"
           \key c \major
-          d,1 \once \override NoteHead.color = #red f( \once \override NoteHead.color = #red g) a e g f e c d \break
-          r2 a'2  f d e d \once \override NoteHead.color = #red c( \once \override NoteHead.color = #red e \once \override NoteHead.color = #red g) a b e, f a g f g e d1\break
+          d,1 f g a e g f e c d \break
+          r2 a'2  f d e d c d e f e g a c g f g e d1\break
           \mark "Mode de La"
           \key g \major
           e'1 d e c b a g a b g fs e \break
-          r2 b'2 d c b g a \once \override NoteHead.color = #red g^"Ne s'explique pas" b g fs a b \once \override NoteHead.color = #red c^"Ne s'explique pas" \once \override NoteHead.color = #red e c d b d e d a b1
+          r2 b'2 d c b g a e fs g fs a b d c e d b d e d a b1
           \bar "|."
         }
       }
@@ -427,12 +427,12 @@ global = { \time 2/2 }
         \relative f {
           r2 c2 d c b a g b c b a f g b c1
           c1 a b d e f d c
-          r2 d2 a \once \override NoteHead.color = #red b( \once \override NoteHead.color = #red c) \once \override NoteHead.color = #red b a \once \override NoteHead.color = #red b c d c e f d c e f e d1
+          r2 d2 a c b g f c' e d c e f d c e f e d1
           d1 f g a e g f e c d
           \key g \major
-          r2 \once \override NoteHead.color = #red a'2^"Tonique obligatoire" b a g fs e d e g fs d e d c a g \once \override NoteHead.color = #red a( \once \override NoteHead.color = #red b) \once \override NoteHead.color = #red a( \once \override NoteHead.color = #red b) d e1
+          r2 e2 b' a g fs e d e g fs d e d c a g a b c b d e1
           \clef tenor
-          e'1 d e c b a g \once \override NoteHead.color = #red a_"Quinte directe" b g fs e
+          e'1 d e c b a g a b g fs e
         }
       }
     >>
