@@ -35,7 +35,7 @@ global = { \time 4/4 \key g \major }
       \global
       \new Voice = "soprane" {  \voiceOne
         \relative c'' {
-          s1 s1 s2 g4 b d4. e8 d c b g d4 s2. s4
+          s1 s1 r4 r4 g4 b d4. e8 d c b g d4 s2. s4
           \bar "|."
         }
       }
