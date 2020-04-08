@@ -412,7 +412,7 @@ global = { \time 2/2 }
           \mark "Mode de La"
           \key g \major
           e'1 d e c b a g a b g fs e \break
-          r2 b'2 d c b g a e fs g fs a b d c e d b d e d a b1
+          r2 b'2 d c b g a e fs g fs a b d c a g a b c d a b1
           \bar "|."
         }
       }
@@ -427,10 +427,10 @@ global = { \time 2/2 }
         \relative f {
           r2 c2 d c b a g b c b a f g b c1
           c1 a b d e f d c
-          r2 d2 a c b g f c' e d c e f d c e f e d1
+          r2 d2 a c b g f g a c b c d f c d c e d1
           d1 f g a e g f e c d
           \key g \major
-          r2 e2 b' a g fs e d e g fs d e d c a g a b c b d e1
+          r2 e2 b' a g fs e d e g fs d e d c a g a b c d b e1
           \clef tenor
           e'1 d e c b a g a b g fs e
         }
