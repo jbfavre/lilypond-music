@@ -401,14 +401,14 @@ global = { \time 2/2 }
       \global
       \new Voice = "soprane" {
         \relative c'' {
-          \mark "Mode majeur"
-          \key c \major
-          c1 a b d e f d c \break
-          r2 g2 a c d c b a g b a g a b c1 \break
+          %\mark "Mode majeur"
+          %\key c \major
+          %c1 a b d e f d c \break
+          %r2 g2 a c d c b a g b a g a b c1 \break
           \mark "Mode de Ré"
           \key c \major
           d,1 f g a e g f e c d \break
-          r2 a'2  f d e d c d e f e g a c g f g e d1\break
+          %r2 a'2  f d e d c d e f e g a c g f g e d1\break
           \mark "Mode de La"
           \key g \major
           e'1 d e c b a g a b g fs e \break
@@ -425,10 +425,10 @@ global = { \time 2/2 }
       \global
       \new Voice = "bass" {
         \relative f {
-          r2 c2 d c b a g b c b a f g b c1
-          c1 a b d e f d c
+          %r2 c2 d c b a g b c b a f g b c1
+          %c1 a b d e f d c
           r2 d2 a c b g f g a c b c d f c d c e d1
-          d1 f g a e g f e c d
+          %d1 f g a e g f e c d
           \key g \major
           r2 e2 b' a g fs e d e g fs d e d c a g a b c d b e1
           \clef tenor
