@@ -1,193 +1,288 @@
-\version "2.18.2"
+\version "2.20.0"
 \language "english"
 
-%tagName = #'no-figuredbass
+#(define absolute-volume-alist '())
+#(set! absolute-volume-alist
+      (append
+       '(
+         ("ff" . 1)
+         ("f" . 0.80)
+         ("mf" . 0.65)
+         ("mp" . 0.50)
+         ("p" . 0.35)
+         ("pp" . 0.20)
+         )
+       absolute-volume-alist))
+%{ Default values from /usr/share/lilypond/2.20.0/scm/midi.scm
+         ("ff" . 1)
+         ("f" . 0.80)
+         ("mf" . 0.65)
+         ("mp" . 0.50)
+         ("p" . 0.35)
+         ("pp" . 0.20)
+%}
+\header {
+  title = "Un zèbre en bord de mer"
+  composer = "Jean Baptiste Favre"
+  poet = ""
+  opus = "op. 1"
+  dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
+  subtitle = ""
+  tagline = ""
+}
+
 perPageSystemNumber = 5
-tagName = ""
 %perPageSystemNumber = 4
-midiInstrumentName = #"grandPiano"
+
+% Control FiguredBass display
+% Used with \keepWithTag
+% FiguredBass will be displayed if figuredBassTag is set to "figuredBass"
+figuredBassTag = "noFiguredBass"
+
+% Controls Midi dynamics inclusion
+% Used with \keepWithTag 
+% FiguredBass will be displayed if midiTag is set to "midi"
+midiTag = "midi"
+midiInstrumentName = "acoustic grand"
 
 dynamicsUpStaff = {
-  \mark \default
-  \tempo "Calme et majestueux" 4. = 60
-    s4.*2
+    \once \set Score.tempoHideNote = ##t \tempo "Calme et majestueux" 4. = 40
+    s4.\tag #'midi' \p s4.
+    %\mark "A"
+    % miti time: 0.00'
+    \mark \default
     \repeat unfold 2 {
-      s4.\mp s4.*3 \break
-      s4.\mf s4.*3 \tempo "Élargir, avec plus d'emphase" s4.\mf\< s4.\!\f\>\! \break
-      s4.\mf\< s4.\!\f\>\! s4.\mp\<
+      s4.\p s4.*3 \break
+      s4.\mp\< s4. s4.\!\tag #'midi' \f\> s4\!\tag #'midi' \mp s8\tag #'midi' \mf
+      \once \set Score.tempoHideNote = ##t \tempo "Élargir, avec plus d'emphase" 4. = 39
+      s4.\mf\< s4.\!\tag #'midi' \f\> \break
+      s4.\!\tag #'midi' \mf\< s4.\!\f\> s4.\!\tag #'midi' \mp\<
     }
     \alternative {
-      { s4.\mf\!\> s4.\!\p s4. \break }
-      { s4.\mf\> \tempo "Céder" << s4.\p\> { s8^"rit." s4 } >> s4.\pp \break s4. }
+      { s4.\!\mf\> s4.\!\p s4. \break }
+      { s4.\!\mf\>
+        \once \set Score.tempoHideNote = ##t \tempo "Céder" 4. = 35
+        << s4.\!\p\> { s8 s4 } >>
+        \tag #'midi \tempo 4.=33
+        s4.\!\pp \break
+        \tag #'midi \tempo 4.=10
+        s4
+        \tag #'midi \tempo 4.=65
+        s8\tag #'midi' \p
+      }
     }
   %\mark "B"
+  % midi time: 0.55'
   \bar "||"
   \mark \default
-  \tempo "Léger, enjoué" 4.= 80 s4.\mf s4.*3 s4.\< \break
-  s4. s4. s4\f\! s8\mf s4. s4.*3 \break
-  s4.\< s8 s8\!\> s8 s4 s8\! s4 s8\mf \tempo "Ritardando" s4. s4. \break
-  s4. s4. \tempo "Léger, enjoué" s4. s4. s4. s4.\< \break
-  s4. s4.\!\f s4. \tempo "molto céder" s4.\> s4.\!\mf \tempo "Rapide, espiègle" s4.\f \break
-  s4. s4. s4.
+  \once \set Score.tempoHideNote = ##t \tempo "Léger, enjoué" 4.= 65
+  s4.\mp\< s4.\!\tag #'midi' \mf\tag #'midi' \> s4.\!\tag #'midi' \mp\> s4\!\tag #'midi' \p s8\tag #'midi' \p s4.\mp\tag #'midi' \< \break
+  s4.\!\f s4.\tag #'midi' \< s4\!\ff s8\tag #'midi' \mp s4.\mp\< s4.\!\tag #'midi' \mf\tag #'midi' \> s4.\!\tag #'midi' \mp\> s4.\!\tag #'midi' \p \break
+  s4.\mp\tag #'midi' \< s8\!\f s8 s8 s4\> s8 s4\!\mp s8\tag #'midi' \mf
+  \once \set Score.tempoHideNote = ##t \tempo "Ritardando" 4. = 63
+  s4.\f s4. \break
+  s4. s4.
+  \once \set Score.tempoHideNote = ##t \tempo "Léger, enjoué" 4. = 65
+  s4\tag #'midi' \> s8\!\tag #'midi' \mp s4.\mp\< s4.\!\tag #'midi' \mf\< s4.\f\tag #'midi' \< \break
+  s4. s4.\!\ff\> s8 s8\!\tag #'midi' \f\tag #'midi' \> s8
+  \once \set Score.tempoHideNote = ##t \tempo "molto céder" 4. = 55
+  s4.\!\mf\>
+  \tag #'midi \tempo 4.= 30
+  s4\!\tag #'midi' \pp
+  \once \set Score.tempoHideNote = ##t \tempo "Pressé" 4. = 80
+  s8\tag #'midi' \mf s4.\f \break
+  s4. s4.\< s8\!\ff
+  \tag #'midi \tempo 4. = 5
+  s8
+  \tag #'midi \tempo 4. = 35
+  s8\tag #'midi' \mf
   %\mark "C"
+  % midi time: 1.30'
   \bar "||"
   \mark \default
-  \tempo "Méditatif" s4.\mf s4. \break
-  s4. s4. s4.\< s4. s4.\!\f\> s4. \break
-  s4.\!\mf\< s4.\f\!\> s8\!\mf s4 s4. s4. \tempo "Céder" s4. \break
-  s4. s4.\mp s4.\mf s4. s4. s4. \break
-  s4.\< s4. s4.\f\!\> s4. s4.\!\f\> s4.\mf \break
-  s4.\f\> s4.\mf\> s4.\!\p\< s4.\<\mp s4.\!\<\mf s4.\!\f \break
-  \tempo "Céder" s4.\f\> s4.\!\mf
+  \once \set Score.tempoHideNote = ##t \tempo "Méditatif" 4. = 35
+  s8\mf\< s8 s8\!\tag #'midi' \f\tag #'midi' \> s4.\!\tag #'midi' \mf\> \break
+  s4.\!\mp\> s4.\!\tag #'midi' \p s4.\p\tag #'midi' \< s4. s4.\!\f\tag #'midi' \> s4\!\mf  s8\tag #'midi' \>\break
+  s4.\!\tag #'midi' \mp\< s4.\!\f s4.\> s4. s4.\!\mf\tag #'midi' \>
+  \once \set Score.tempoHideNote = ##t \tempo "Céder"
+  s4. \break
+  s4.\!\tag #'midi' \mp\> s4\!\p s16 s16\tag #'midi' \mp s4\mp\< s8\!\tag #'midi' \f\tag #'midi' \> s4.\!\tag #'midi' \mf\> s4.\!\mp\> s4.\!\tag #'midi' \p \break
+  s4.\p\tag #'midi' \< s4. s4.\!\f s4\mf s8 s4.\f s4\mf s8 \break
+  s4.\f s4.\mf s4.\p\< s4.\<\mp s4.\!\<\mf s4.\!\f\< \break
+  \once \set Score.tempoHideNote = ##t \tempo "Céder"
+  s4.\!\ff
+  \tag #'midi \tempo 4. = 25
+  s8\tag #'midi' \ff s8\tag #'midi' \mf s8\!\tag #'midi' \p
   %\mark "D"
+  % midi time: 2.30'
   \bar "||"
   \mark \default
-  \tempo "Serein et apaisé" s4.\mp s4.*3 \break
-  s4.\mf s4. s4.*2 s4.\mf\> s4.\mp \break
-  s4.\mf\> s4.\mp s4.\mf\> s4.\!\mp\> \tempo "Céder" s4.\!\p\> s4.\!\pp s4.
+  \once \set Score.tempoHideNote = ##t \tempo "Serein et apaisé" 4. = 40
+  s4.\!\mp s4.*3 \break
+  s4.\mf\< s4. s4.\!\tag #'midi' \f\> s4.\!\mf s4.\f s4.\mf \break
+  s4.\f s4.\mf s4.\f\> s4.\!\mf\>
+  \once \set Score.tempoHideNote = ##t \tempo "Céder" 4. = 39 s8\!\mp
+  \tag #'midi \tempo 4. = 38 s8
+  \tag #'midi \tempo 4. = 36 s8
+  \tag #'midi \tempo 4. = 34 s8\>
+  \tag #'midi \tempo 4. = 32 s8
+  \tag #'midi \tempo 4. = 30 s8
+  s4.\!\p
   \bar "|."
 }
 
 dynamicsDownStaff = {
   %\mark "A"
-  \repeat unfold 34 { s4.\sustainOn } s4.
+  \repeat unfold 34 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
   %\mark "B"
-  \repeat unfold 5 { s4.\sustainOn } s4. s4.
-  \repeat unfold 6 { s4.\sustainOn } s4.
-  \repeat unfold 6 { s4.\sustainOn } s4.
-  \repeat unfold 4 { s4.\sustainOn } s4.
-  s4.\sustainOn s4. s4.\sustainOn
+  \repeat unfold 5 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4. s4.
+  \repeat unfold 6 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
+  \repeat unfold 6 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
+  \repeat unfold 4 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
+  s8\sustainOn s8 s8\tag #'midi \sustainOff s4. s8\sustainOn s8 s8\tag #'midi \sustainOff
   \repeat unfold 4 { s4. }
   %\mark "C"
-  \repeat unfold 15 { s4.\sustainOn } s4.
-  \repeat unfold 17 { s4.\sustainOn } s4.
+  \repeat unfold 15 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
+  \repeat unfold 17 { s8\sustainOn s8 s8\tag #'midi \sustainOff } s4.
   %\mark "D"
-  \repeat unfold 17 { s4.\sustainOn }
+  \repeat unfold 17 { s8\sustainOn s8 s8\tag #'midi \sustainOff }
 }
 
-sopraneStaff = {
-  \set midiInstrument = \midiInstrumentName
+sopraneVoice = {
   %\mark "A"
   \relative c' {
-    \key f \minor r4. r4.
+    \key f \minor \oneVoice { r4. r4. }
     \voiceOne
     \repeat unfold 2 {
-      f8 g af c bf af g af bf af g e
-      f8 g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8 df8 b c gf'8. f16 ef8
-      c a bf f'8. ef16 df8 bf8 g af
+      f8( g af c bf af) g( af bf af g e)
+      f8( g af af c df f [ef8.] df16 \acciaccatura ef16 df4) c8 df8( b c gf'8. f16 ef8)
+      c( a bf f'8. ef16 df8) bf8( g af
       }
     \alternative {
-      { ef'8. df16 c8 c8 [b8.] c16 <c e,>4 r8 }
-      { c8 af f bf g e <c e g>4. <c a'>4 \fermata c8 }
+      { ef'8. df16 c8) c8( [b8.] c16 <c e,>4) r8 }
+      { c8 af f) bf( g e g4.)
+        f4\fermata c8 }
       }
   }
   %\mark "B"
   \relative c' {
     \key f \major
-    f8. g16 a c bf8 g bf a f a g4 c,8 <g d'>4 <g e'>8 <a c f> a' <f c'> <d f a> <d g b>4 <e g c>4
-    c8 f8. g16 a c bf8 g bf a f a g4 c,8 <g d'>4 <g e'>8 <c f> <d f a> <bf d g> <c f>4 e8 <a, c f>4
-    f'8 bf8. a16 g8 a f a c8. bf16 a8 g4. \oneVoice r4 \voiceOne c,8 f8. g16 a c bf8 g bf c a cs d4 \fermata f,8
-    f'8. e16 d8 c a f8 f'8. ef16 df8 <e, g bf c>4 \fermata f8 f'8. e16 d8 c a c < f, bf d>_. <g bf e>_. g'_. <a, c f>8_. r8 \fermata a8
+    f8. g16 a c bf8_> g_. bf_. a_> f_. a_. g4 c,8 d4 e8 f-> a-. c-. a b4 c4
+    c,8 f8. g16 a c bf8_> g_. bf_. a_> f_. a_. g4 c,8 d4 e8 f-> a-. g-. f4 e8 f4
+    f8 bf8._> a16 g8 a_> f_. a_. c8._> bf16 a8 g4._> \oneVoice r4 \voiceOne c,8 f8. g16 a c bf8_> g_. bf_. c_> a_. cs_. d4\fermata
+    f,8 f'8._>( e16 d8_. c a f8) f'8._>( ef16 df8 <c, e g bf c>4\arpeggio)\fermata f8 f'8. e16 d8 c_. a_. c_.
+    < f, bf d>_. <g bf e>_. g'_. <a, c f>8_. \oneVoice r8\fermata \voiceOne a8
   }
   %\mark "C"
   \relative c'' {
     \key d \minor
     \repeat unfold 2 {
-      d, f bf a4 e8 f4. d4.
-      e8 f g bf e d <g, bf c>8 g c bf gs a8
+      d,( f bf a4 e8 f4. d4.)
+      e8( f g bf e d) c8( g c bf gs a8)
       }
     \alternative {
-      { a8 b cs f e d c g c bf gs a <e a> e a <d, g> e f f e d e4 r16 a }
-      { bf8 f bf a8. fs16 g8 a e a g8. e16 f8 g a g g a g a bf a bf df bf
-        <df, g bf df> bf' g <e g bf c>4. \fermata }
+      { a8( b cs <d f> e d) c( g c bf gs a) a( e a g e f) f( e d e4) { \oneVoice r16 } \voiceOne a }
+      { bf8( f bf a8. fs16 g8) a( e a g8. e16 f8) g( a g g a g) a( bf a bf df bf)
+        df( bf g <bf c>4.)\fermata }
       }
   }
   %/mark "Coda"
   \relative c'' {
     \key f \minor
-    f,8 g af c bf af g af bf af g e f8 g af af c df f [ef8.] df16 \acciaccatura ef16 df4 c8
-    <af df>8 af df <g, c> a bf <g c> g c <f, bf> g af <f bf> c' bf <c, f bf> g'  af <e g bf> af g <c, e g>4. <c f>4. \fermata
+    f,8( g af c bf af) g( af bf af g e) f8( g af af c df f [ef8.] df16 \acciaccatura ef16 df4) c8
+    df8( af df c a bf) c( g c bf g af) bf( c bf bf g  af) bf( af g g4.) f4.\fermata
   }
 }
 
-altoStaff = { \voiceTwo
-  \set midiInstrument = \midiInstrumentName
-  \relative f {
+altoVoice = { \voiceTwo
+  \relative f' {
     %\mark "A"
-    \repeat unfold 35 { s4. }
+    s4.*33 <c e>4. c4.
     %\mark "B"
-    \repeat unfold 33 { s4. }
+    s4.*4
+    g4 g8 <a c>4 f'8 <d f>8 <d g>4 <e g>4 s8
+    s4.*4
+    g,4 g8 c8 <d f> <bf d> c4 s8 <a c>4 s8
+    s4.*17
     %\mark "C"
     \repeat unfold 2 {
-      a4. e'4. d4. bf4.bf4. e4. s4. <c f>4.
+      a4. e'4. d4. bf4.bf4. e4. <g bf> <c, f>4.
       }
     \alternative {
-      { <cs e>4. <g' bf d> e <c f> s4. s4. d <a cs>4 s8 }
-      { <d f>4. e e d d d d f s4. s4. }
+      { <cs e>4. <g' bf> e <c f> e4. d4. d <a cs>4 s8 }
+      { <d f>4. e e d d d d f <df g bf>4. <e g>4. }
       }
   }
   %/mark "Coda"
-  \repeat unfold 17 { s4. }
-}
-
-tenorStaff = {
-  \set midiInstrument = \midiInstrumentName
-  \relative f {
-    %\mark "A"
-    r8 <f af c>[ <af c f>] r8 <f af c>[ <af c f>]
-    \repeat unfold 2 {
-      r8 <f af c>[ <af c f>] r8 <f af df> <af df f> r8 <g bf ef> <bf ef g> r8 <g bf c> <g bf c>
-      r8 <f af df> <af df f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
-      r8 <e g c> <g bf c> r8 <a c ef> <a c f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
-      }
-    \alternative {
-      { r8 <f af df> <af df f> r8 <b d f> <g d' f> <g c>16 (df' c) bf-. af-. g-. }
-      { r8 <f af c> <af c f> <g c>4. bf8 g8 bf8 a4. \fermata }
-      }
-    %\mark "B"
-    s8 <a c>8 <a c> s8 <g bf> <g bf> s8 <a c>8 <a c> <bf c>4. s4. s4. s4. r8 bf4 (bf8) <a c>8 <a c>
-    s8 <g bf> <g bf> s8 <a c>8 <a c> <bf c>4. s4. s4. g8 bf4 s4. s4. s4. s4. s4. s4. s8 <a c>8 <a c>
-    s8 <bf d> <bf d> s4. s4. s8 <d f> <d f> s4. s8 <df f> <df f> s4. s4. s4. s4. s4.
-    %\mark "C"
-    \repeat unfold 34 { s4. }
-    %/mark "D"
-    r8 <f, af c>[ <af c f>] r8 <f af df> <af df f> r8 <g bf ef> <bf ef g> r8 <g bf c> <g bf c>
-    r8 <f af df> <af df f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
+  \relative f' {
+    s4.*8
+    af4. g g f f <c f> <e g> <c e> <c>
   }
 }
 
-basseStaff = {
-  \set midiInstrument = \midiInstrumentName
-  %\mark "A"
-  \relative f, {
-    f4. f
+tenorVoice = {
+  \relative f {
+    %\mark "A"
+    r8 <f af c> <af c f> r8 <f af c> <af c f>
     \repeat unfold 2 {
-      f4. df ef c df bf' ef, af c-> f,-> bf-> ef,-> af
+      r8 <f af c> <af c f> r8 <f af df> <af df f> r8 <g bf ef> <bf ef g> r8 <g bf c> <g bf c>
+      r8 <f af df> <af df f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
+      r8 <e g c> <g bf c e> r8 <a c ef> <a c f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
       }
     \alternative {
-      {  df, g c4 r8 }
-      { c4. c f, (f)\fermata }
+      { r8 <f af df> <af df f> r8 <b d f> <g d' f> <g c>16 (df') c-. bf-. af-. g-. }
+      { r8 <f af c> <af c f> <g c>4. bf8 g8 bf8 a4. }
+      }
+    %\mark "B"
+    r8 <a c>8 <a c> r8 <g bf> <g bf> r8 <a c>8 <a c> r8 <bf c>4 r4. r4. r4. r8 bf4~ bf8 <a c>8 <a c>
+    r8 <g bf> <g bf> r8 <a c>8 <a c> r8 <bf c>4 r4. r4. r8 <g bf>4 r4. r8 <g d'>4 r8 <f c'>4 r8 <g bf>4 c4.~ c4 s8 r8 <a c>8 <a c>
+    r8 <bf d> <bf d> r8 <c e> <a e'> <f bf>4. r8 <d' f> <d f> s4. r8 <df f> <df f> s4. r8 <d f> <d f> r8 <c f> <c f> r4. r4 s8
+    %\mark "C"
+    r8 <f, d'>4
+    r8 <e a>4 r8 <f a>4 r8 f4 r8 e4 r8 g4 r8 c4 r8 a4
+    r8 <e a>4 r8 g4 r8 <g c>4 r8 a4 r8 <e a>4 r8 a4 r8 <gs b>4
+    r4. r8 <f d'>4 r8 <e a>4 r8 <f a>4 r8 f4 r8 e4 r8 g4 r8 c4 r8 a4 r8 bf4~ bf8 bf4
+    r8 a4~ a8 a4 r8 g4~ g8 g4 r8 f4 r8 bf4 r8 g4
+    r4.
+    %/mark "D"
+    r8 <f af c>[ <af c f>] r8 <f af df> <af df f> r8 <g bf ef> <bf ef g> r8 <g bf c> <g bf c>
+    r8 <f af df> <af df f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
+    r8 df4~ df8 df4 r8 <bf c>4~ <bf c>8 <af c>4 r8 bf4 r8 af4 r8 c4 bf8 g bf a4. 
+  }
+}
+
+basseVoice = {
+  %\mark "A"
+  \relative f, {
+    f4._> f_>
+    \repeat unfold 2 {
+      f4._> df_> ef_> c_> df_> bf'_> ef,_> af_> c_> f,_> bf_> ef,_> af_>
+      }
+    \alternative {
+      { df,_> g_> c4_> r8 }
+      { c4._> c_> f,_>~ f\fermata }
       }
   }
   %\mark "B"
   \relative f, {
     \key f \major
-    f'4. d f e4 r8 b4 bf8 a f a d g g, c4. f4. d f e4 r8 b4 bf8 a bf g c4. f,4. <c' g' d'>4. <c f c'>4. <c g' bf>4.
-    <c c'>4. (<c c'>4) r8 f4. g a8 c a <bf, f' bf>4 \fermata r8 bf'4. f8 a c bf4. c4 r8 bf8 <d f> <d f> a <c f> <c f> bf^. c^. c,^. f8^. f,^. \fermata r8
+    f'4._> d_> f_> e4._> b4 bf8 a_> f_. a_. d_. g_. g,_. c4._> f4._> d_> f_> e4_> r8 b4 bf8 a_> bf_. g_. c4._> f,4._> c'4._> c4._> c4._>
+    c4._>~ c4 { \oneVoice r8 } \voiceFour f4._> g_> a_> bf,4\fermata r8 bf'4._> f8( a c) bf4._> <c, e g bf c>4\arpeggio\fermata
+    { \oneVoice r8 } \voiceFour bf'4._> a4._> bf8^. c^. c,^. f8^. f,^.\fermata { \oneVoice r8 } \voiceFour
   }
   %\mark "C"
   \relative f, {
     \key d \minor
-    \repeat unfold 2 { <d' f>4. <cs e a> <c! f a> <bf f'>4 a8 <g e'>4. <c g'> <e c'> <f a> }
+    \repeat unfold 2 { d'4._> cs_> c!_> bf4_> a8 g4._> c_> e_> f_> }
     \alternative {
-      { <a, e' a> <bf g'> <c e g c> <f a> <cs e a> <d a'> <e gs b> a,16 e' a cs e r16 }
-      { <d, bf'>4. <e bf'> <cs a'> <d a'> <b g'> <bf g'> <a f'> <df bf'> <bf g'> c8 g' c \fermata}
+      { a,_> bf_> c_> f_> cs_> d_> e_> a,16^. e'^. a^. cs^. e^. \oneVoice r16 \voiceFour }
+      { d,4._> e_> cs_> d_> b_> bf!_> a_> df_> bf_> c8\fermata g' c}
     }
   }
   %/mark "D"
   \relative f, {
     \key f \minor
-    f4. df ef c df bf' ef, af <f' df'>4. <g df'> <e bf' c> <f af c> <df bf'> <f af> <c c'> << { \voiceOne bf'8 g bf af4. \fermata } \\ { \voiceTwo f,4. (f4.) \fermata } >>
+    f4._> df_> ef_> c_> df_> bf'_> ef,_> af_> f'4._> g_> e_> f_> df_> f_> c_> f,4. (f4.)\fermata
   }
 }
 
@@ -238,20 +333,57 @@ basseDegres = {
     <VI> <II> <V> <I> <IV> <I> <V> <I> <I>
   }
 }
-
-\header {
-  title = "Un zèbre en bord de mer"
-  composer = "Jean Baptiste Favre"
-  poet = ""
-  opus = "op. 1"
-  dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
-  subtitle = ""
-  tagline = ""
+pianoStaff = {
+  \new PianoStaff \with { instrumentName = "Piano" }
+  <<
+    \set Score.markFormatter = #format-mark-box-alphabet
+    %\set Score.dynamicAbsoluteVolumeFunction = #myDynamics
+    \tag #'midi \set Staff.midiInstrument = \midiInstrumentName
+    \new Staff = "up"
+    <<
+      \clef treble \time 3/8
+      \new Voice = "soprano" << %\set Voice.dynamicAbsoluteVolumeFunction = #myDynamics
+                                \tag #'midi \set Voice.midiMinimumVolume = #0.3
+                                \tag #'midi \set Voice.midiMaximumVolume = #1
+                                \voiceOne \sopraneVoice
+                                \tag #'midi \dynamicsUpStaff
+                                \tag #'midi \dynamicsDownStaff
+      >>
+      \new Voice = "alto"    << %\set Voice.dynamicAbsoluteVolumeFunction = #myDynamics
+                                \tag #'midi \set Voice.midiMinimumVolume = #0.2
+                                \tag #'midi \set Voice.midiMaximumVolume = #0.9
+                                \voiceTwo \altoVoice
+                                \tag #'midi \dynamicsUpStaff
+                                \tag #'midi \dynamicsDownStaff
+      >>
+      \new Dynamics << \dynamicsUpStaff >>
+    >>
+    \new Staff = "down"
+    <<
+      \clef bass \key f \minor
+      \new Voice = "tenor" << %\set Voice.dynamicAbsoluteVolumeFunction = #myDynamics
+                              \tag #'midi \set Voice.midiMinimumVolume = #0.2
+                              \tag #'midi \set Voice.midiMaximumVolume = #0.9
+                              \voiceThree \tenorVoice
+                              \tag #'midi \dynamicsUpStaff
+                              \tag #'midi \dynamicsDownStaff
+      >>
+      \new Voice = "bass"  << %\set Voice.dynamicAbsoluteVolumeFunction = #myDynamics
+                              \tag #'midi \set Voice.midiMinimumVolume = #0.2
+                              \tag #'midi \set Voice.midiMaximumVolume = #0.9
+                              \voiceFour \basseVoice
+                              \tag #'midi \dynamicsUpStaff
+                              \tag #'midi \dynamicsDownStaff
+      >>
+      \new Dynamics << \dynamicsDownStaff >>
+      \tag #'figuredBass \new FiguredBass << \basseChiffree >>
+      \tag #'figuredBass \new FiguredBass << \basseDegres >>
+     >>
+  >>
 }
 
 \paper {
   #(include-special-characters)
-  print-all-headers = ##f
   #(define fonts
     (set-global-fonts
      #:music "emmentaler"
@@ -264,36 +396,19 @@ basseDegres = {
   max-systems-per-page = 5
   systems-per-page = \perPageSystemNumber
 }
-%#(set-global-staff-size 16)
-%#(set-default-paper-size "a4landscape")
+
 \score {
-  \removeWithTag \tagName \new PianoStaff \with { instrumentName = "Piano" }
-  <<
-    \new Staff = "up"
-    <<
-      \set Score.markFormatter = #format-mark-box-alphabet
-      \clef treble \time 3/8
-      \new Dynamics { \dynamicsUpStaff }
-      \new Voice = "soprano" { \voiceOne \sopraneStaff }
-      \new Voice = "alto"  { \voiceTwo \altoStaff }
-    >>
-    \new Staff = "down"
-    <<
-      \clef bass \key f \minor
-      \new Voice = "tenor" { \voiceOne \tenorStaff }
-      \new Voice = "bass"  { \voiceTwo \basseStaff }
-      %\tag #'no-figuredbass  \basseChiffree
-      %\context Staff = "down" { \voiceOne \tenorStaff }
-      %\context Staff = "down" { \voiceTwo \basseStaff }
-      \new Dynamics { \dynamicsDownStaff }
-      \tag #'no-figuredbass \new FiguredBass { \basseChiffree }
-      \tag #'no-figuredbass \new FiguredBass { \basseDegres }
-     >>
-  >>
+  \keepWithTag \figuredBassTag \pianoStaff
   \layout {
     \context {
       \FiguredBass
       \override BassFigure #'font-size = #-1
     }
   }
+}
+\score {
+  %\articulate <<
+    \keepWithTag \midiTag \pianoStaff
+  %>>
+  \midi {}
 }
