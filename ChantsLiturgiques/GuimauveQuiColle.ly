@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \language "english"
 \header {
   title = "Guimauve"
@@ -24,9 +24,6 @@ global = { \time 6/8 \key g \major }
   }
   \new PianoStaff <<
     \new Staff = "haut" <<
-      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-      \set Staff.explicitClefVisibility = #end-of-line-invisible
-      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
       \clef treble
       \global
       \new Voice = "soprane" { \voiceOne
