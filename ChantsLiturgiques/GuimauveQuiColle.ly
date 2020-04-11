@@ -50,10 +50,10 @@ global = { \time 6/8 \key g \major }
       \context Staff = "haut" \figuremode {
           \override Staff.BassFigureAlignmentPositioning.direction = #UP
           \bassFigureStaffAlignmentUp
-          <_>4. <G> <_> <E> <_> <C> <"Am/C"> <D>
-          <_>4. <"B/D#"> <B> <E> <"E7/D"> <"Am/C"> <Am> <D> <_>8 <"G/D">4
-          <B>4. <C> <G> <_> <"C/E"> <C> <D> <_>
-          <"B/D#">4. <B> <E> <"E7/D"> <"Am/C"> <D> <G> <_>
+          <_>4. <G> <_> <Em> <_> <C> <"Am/C"> <D>
+          <_>4. <"B/D#"> <B> <Em> <"Em7/D"> <"Am/C"> <Am> <D> <_>8 <"G/D">4
+          <Bm>4. <C> <G> <_> <"C/E"> <C> <D> <_>
+          <"B/D#">4. <B> <Em> <"Em7/D"> <"Am/C"> <D> <G> <_>
       }
     >>
     \new Staff <<
