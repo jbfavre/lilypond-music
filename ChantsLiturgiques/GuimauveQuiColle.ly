@@ -11,8 +11,8 @@
   %max-systems-per-page = 4
   %min-systems-per-page = 4
   %systems-per-page=4
-ragged-last-bottom = ##f
-ragged-bottom = ##f
+  ragged-last-bottom = ##f
+  ragged-bottom = ##f
 }
 
 global = { \time 6/8 \key g \major }
