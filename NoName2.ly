@@ -6,7 +6,7 @@ tagName = ""
 
 #(set-global-staff-size 18)
 
-fluteMusic = \relative c''' {
+fluteMusic = \relative c'' {
         s2.*4
         %  5 - \mark "A"
         \repeat unfold 2 { c4. bf8 af bf c2 af4 (df8 ef f ef df4) c2. \breathe c8 (bf af bf c4) bf8 (af g af bf4) }
@@ -16,7 +16,7 @@ fluteMusic = \relative c''' {
         }
 }
 pianoUpDynamics = {
-        \tempo 2. = 55
+        \tempo 4 = 165
         s2.*4 \break
         %  5 - \mark "A"
         \mark \default
@@ -57,12 +57,12 @@ pianoUpOneMusic = \relative c' {
         s2.*2
         af'2 g4 f4. ef8 df4
         %  5 - \mark "A"
-        af'2 g4 f4. ef8 df4
-        af'2 g4 f4. ef8 df4
+        af'2 g4 f4. f8 f4
+        af2 g4 f4. ef8 df4
         af'2 g4 f4. ef8 df4
         af'2 g4 g4. g4.
         af2 g4 f4. ef8 df4
-        af'2 g4 f4. ef8 df4
+        af'2 g4 f4. e8 df4
         af'2 g4 f4. ef8 df4
         f4 g g af2.
 %{
@@ -157,7 +157,7 @@ pianoDownOneMusic = \relative c {
 pianoDownTwoMusic = \relative c, { \voiceFour
         f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
         %  5 - \mark "A"
-        f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
+        \override NoteColumn.force-hshift = #0 f2 f4 f4. f8 f4 f2 f4 f4. f8 f4
         af2 af4 bf4. bf8 bf4 c2 c4 c4. c4.
         f,2 f4 f4. f8 f4 bf2 bf4 c4. c8 c4
         af2 af4 ef'4. ef8 e4
@@ -313,5 +313,7 @@ basseDegres = {
       \FiguredBass
       \override BassFigure #'font-size = #-1
     }
+  }
+  \midi {
   }
 }
