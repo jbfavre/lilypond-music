@@ -4,14 +4,13 @@
 %tagName = #'no-figuredbass
 tagName = ""
 
-#(set-global-staff-size 18)
 
-fluteMusic = \relative c'' {
-        s2.*4
+fluteMusic = \relative c''' {
+        r2. r2. r2. r2.
         %  5 - \mark "A"
         \repeat unfold 2 { c4. bf8 af bf c2 af4 (df8 ef f ef df4) c2. \breathe c8 (bf af bf c4) bf8 (af g af bf4) }
         \alternative {
-          { af8 (g f g af4) g2 \breathe df'4 }
+          { af8 (g f g af4) g4. r8 \breathe df'4 }
           { af4 bf g f2. }
         }
 }
@@ -62,8 +61,8 @@ pianoUpOneMusic = \relative c' {
         af'2 g4 f4. ef8 df4
         af'2 g4 g4. g4.
         af2 g4 f4. ef8 df4
-        af'2 g4 f4. e8 df4
-        af'2 g4 f4. ef8 df4
+        af'2 g4 g4. e8 g4
+        af2 g4 g4. ef8 g4
         f4 g g af2.
 %{
         % 21 - \mark "B"
@@ -126,7 +125,7 @@ pianoDownOneMusic = \relative c {
             e, g c e c g
             ef af c ef c af
             g bf ef g ef bf
-            c4 df c c2.
+            c4 df c << c2. \\ {f,8 f16 f16 f8 f8 f8 f8} >>
           } \\
           { s2.*4
             %  5 - \mark "A"
@@ -161,7 +160,7 @@ pianoDownTwoMusic = \relative c, { \voiceFour
         af2 af4 bf4. bf8 bf4 c2 c4 c4. c4.
         f,2 f4 f4. f8 f4 bf2 bf4 c4. c8 c4
         af2 af4 ef'4. ef8 e4
-        f4 bf, c f8 f16 f16 f8 f8 f8 f8
+        f4 bf, c f,2.
 %{
         % 21 - \mark "B"
         c2 c4 c4. c8 c4 df2 bf4 c4. c8 c4 af2 af4 ef'4. ef8 e4 f2 df4 c4. c8 c4
@@ -234,7 +233,7 @@ basseDegres = {
 \paper {
   #(include-special-characters)
   print-all-headers = ##f
-  max-systems-per-page = 6
+  max-systems-per-page = 4
 }
 
 %{
@@ -286,22 +285,46 @@ basseDegres = {
 %}
 
 \score {
-  \removeWithTag \tagName <<
+  \keepWithTag midi <<
+    \new Staff \with { instrumentName = "Flute" shortinstrumentName = "F." }
+    <<
+      \set Staff.midiInstrument = "synth bass 1"
+        \set Score.markFormatter = #format-mark-box-alphabet
+        \clef treble \time 3/4 \key f \minor
+        \tag #'midi \set Voice.midiMinimumVolume = #0.4
+        \tag #'midi \set Voice.midiMaximumVolume = #1
+        \new Voice << \fluteMusic >>
+    >>
+    \new Staff \with { instrumentName = "Violoncelle" shortinstrumentName = "V." }
+    <<
+      \set Staff.midiInstrument = "electric bass (pick)"
+        \set Score.markFormatter = #format-mark-box-alphabet
+        \clef bass \time 3/4 \key f \minor
+        \tag #'midi \set Voice.midiMinimumVolume = #0.4
+        \tag #'midi \set Voice.midiMaximumVolume = #1
+        \new Voice << \pianoDownTwoMusic >>
+    >>
     \new PianoStaff \with { instrumentName = "Piano" shortInstrumentName = "P." }
     <<
       \new Staff
       <<
-        \clef treble \time 3/4 \key f \minor
+        \tag #'midi \set Staff.midiMinimumVolume = #0.2
+        \tag #'midi \set Staff.midiMaximumVolume = #0.8
+        \set Staff.midiInstrument = "acoustic grand"
         \set Score.markFormatter = #format-mark-box-alphabet
+        \clef treble \time 3/4 \key f \minor
         \new Dynamics \pianoUpDynamics
-        \new Voice { \voiceOne << \fluteMusic \\ \pianoUpOneMusic >> }
-        \new Voice { \voiceTwo \pianoUpTwoMusic }
+        \new Voice << \voiceOne \pianoUpOneMusic >>
+        \new Voice << \voiceTwo \pianoUpTwoMusic >>
       >>
       \new Staff
       <<
+        \tag #'midi \set Staff.midiMinimumVolume = #0.2
+        \tag #'midi \set Staff.midiMaximumVolume = #0.8
+        \set Staff.midiInstrument = "acoustic grand"
+        \set Score.markFormatter = #format-mark-box-alphabet
         \clef bass \time 3/4 \key f \minor
-        \new Voice { \voiceOne \pianoDownOneMusic }
-        \new Voice { \voiceTwo \pianoDownTwoMusic }
+        \new Voice << \voiceOne \pianoDownOneMusic >>
         \new Dynamics \pianoDownDynamics
         \tag #'no-figuredbass \new FiguredBass { \basseChiffree }
         \tag #'no-figuredbass \new FiguredBass { \basseDegres }
@@ -314,6 +337,5 @@ basseDegres = {
       \override BassFigure #'font-size = #-1
     }
   }
-  \midi {
-  }
+  \midi {}
 }
