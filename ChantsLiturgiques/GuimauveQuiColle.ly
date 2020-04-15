@@ -27,14 +27,15 @@ pianoMusic =   \new PianoStaff
       \set Staff.midiInstrument = "acoustic grand"
       \clef treble
       \global
-      \tempo 4. = 35
+      %\tempo 8 = 90
+      \tempo 4. = 60
       \new Voice = "soprane" { \voiceOne
         \relative c' {
           \partial 4.
           d8 e8. a16 b4.~ b8. a16 g a b4.~ b8. g16 a b c4. b8  a8 b8 a4. \oneVoice r4 \voiceOne a8 \break
           b4. c8 b a a4 g fs8 g a4. e4 a8 a4. \oneVoice r8 \voiceOne b8 c \break
           d4. c8 b a a4 b4 a8 b c4. b8 c d a4. \oneVoice r8 \voiceOne a8 a \break
-          b4. ds!8 b a a4 g fs8 g a4. a4. g4. \oneVoice r4.
+          b4. ds!8 b a a4 g a8 b a4. a4. g4. \oneVoice r4.
           %r8 d8 c b4. fs4 b8 a4. g8 fs g a4. g8 fs e fs4. \break
           %r8 fs8 fs g4. a8 g fs fs4. e fs g fs4.( f4) e8 e4.
           \bar "|."
@@ -59,7 +60,7 @@ pianoMusic =   \new PianoStaff
           \partial 4.
           s4. d2. e2. e4. e4. d4. s4.
           b2. b2. a2. d4. s8 b4
-          b4. g4. d'2. c4. e4. d4. s8 d8 c
+          b4. e4. d2. c4. e4. d4. s8 d8 c
           b2. b2. c4. c4. b4. s4.
         }
       }
@@ -67,8 +68,8 @@ pianoMusic =   \new PianoStaff
         \relative f {
           \partial 4.
           \oneVoice r4. \voiceTwo g4.~ g8 g8 fs e4.~ e8 e8 d8 c2. d4. \oneVoice r4. \voiceTwo
-          ds4. b e d c4 b8 a8 b c d4. \oneVoice r8 \voiceTwo d8 c
-          b4. c g' g4 fs8 e4. c4. d4. \oneVoice r8 \voiceTwo d4
+          ds4. b4. e4. d c4 b8 a8 b c d4. \oneVoice r8 \voiceTwo d8 c
+          b4. c g' fs4. e4. c4. d4. \oneVoice r8 \voiceTwo d4
           ds4. b e d c d g, \oneVoice r4.
         }
       }
