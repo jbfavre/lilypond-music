@@ -1,9 +1,18 @@
 \version "2.20.0"
 \language "english"
 
+\header {
+  title = "No name (yet)"
+  composer = "Jean Baptiste Favre"
+  poet = ""
+  opus = "op. 2"
+  dedication = \markup { \italic "Clichy-la-Garenne, mars 2020" }
+  subtitle = ""
+  tagline = ""
+}
+
 %tagName = #'no-figuredbass
 tagName = ""
-
 
 fluteMusic = \relative c''' {
         r2. r2. r2. r2.
@@ -141,7 +150,7 @@ pianoDownOneMusic = \relative c {
             f4 bf, c f8 f16 f16 f8 f8 f8 f8
           }%}
         >>
-        
+
 %{
         % 21 - \mark "B"
         s2.*16
@@ -219,16 +228,6 @@ basseDegres = {
         \figuremode { }
 %}
       }
-
-\header {
-  title = "No name (yet)"
-  composer = "Jean Baptiste Favre"
-  poet = ""
-  opus = "op. 2"
-  dedication = \markup { \italic "Clichy-la-Garenne, mars 2020" }
-  subtitle = ""
-  tagline = ""
-}
 
 \paper {
   #(include-special-characters)
@@ -337,5 +336,14 @@ basseDegres = {
       \override BassFigure #'font-size = #-1
     }
   }
-  \midi {}
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
