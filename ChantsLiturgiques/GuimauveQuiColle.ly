@@ -52,7 +52,7 @@ pianoMusic =   \new PianoStaff
       }
     >>
     \new Staff <<
-      \set Staff.midiInstrument = "acoutic grand"
+      \set Staff.midiInstrument = "acoustic grand"
       \clef bass
       \global
       \new Voice = "tenor" { \voiceOne
@@ -107,6 +107,15 @@ pianoMusic =   \new PianoStaff
     subtitle = ##f
     piece = ##f
   }
-  \removeWithTag visuel \pianoMusic
-  \midi {}
+  \keepWithTag midi \pianoMusic
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
