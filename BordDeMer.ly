@@ -40,12 +40,13 @@ perPageSystemNumber = 5
 figuredBassTag = "noFiguredBass"
 
 % Controls Midi dynamics inclusion
-% Used with \keepWithTag 
+% Used with \keepWithTag
 % FiguredBass will be displayed if midiTag is set to "midi"
 midiTag = "midi"
 midiInstrumentName = "acoustic grand"
 
 dynamicsUpStaff = {
+    \set Score.markFormatter = #format-mark-box-alphabet
     \once \set Score.tempoHideNote = ##t \tempo "Calme et majestueux" 4. = 40
     s4.\tag #'midi \p  s4.
     %\mark "A"
@@ -157,8 +158,8 @@ dynamicsDownStaff = {
 sopraneVoice = {
   %\mark "A"
   \relative c' {
-    \key f \minor \oneVoice { r4. r4. }
-    \voiceOne
+    \key f \minor
+    \oneVoice r4. r4. \voiceOne
     \repeat unfold 2 {
       f8( g af c bf af) g( af bf af g e)
       f8( g af af c df f [ef8.] df16 \acciaccatura ef16 df4) c8 df8( b c gf'8. f16 ef8)
@@ -183,7 +184,7 @@ sopraneVoice = {
       e8( f g bf e d) c8( g c bf gs a8)
       }
     \alternative {
-      { a8( b cs <d f> e d) c( g c bf gs a) a( e a g e f) f( e d e4) { \oneVoice r16 } \voiceOne a }
+      { a8( b cs <d f> e d) c( g c bf gs a) a( e a g e f) f( e d e4) \oneVoice r16 \voiceOne a }
       { bf8( f bf a8. fs16 g8) a( e a g8. e16 f8) g( a g g a g) a( bf a bf df bf)
         df( bf g <bf c>4.)\fermata }
       }
@@ -245,7 +246,7 @@ tenorVoice = {
     %/mark "D"
     r8 <f af c>[ <af c f>] r8 <f af df> <af df f> r8 <g bf ef> <bf ef g> r8 <g bf c> <g bf c>
     r8 <f af df> <af df f> r8 <f bf df> <bf df f> r8 <g bf ef> <bf ef g> r8 <ef, af c> <af c ef>
-    r8 df4~ df8 df4 r8 <bf c>4~ <bf c>8 <af c>4 r8 bf4 r8 af4 r8 f4 bf8 g bf a4. 
+    r8 df4~ df8 df4 r8 <bf c>4~ <bf c>8 <af c>4 r8 bf4 r8 af4 r8 f4 bf8 g bf a4.
   }
 }
 
@@ -265,8 +266,8 @@ basseVoice = {
   \relative f, {
     \key f \major
     f'4._> d_> f_> e4._> b4 bf8 a_> f_. a_. d_. g_. g,_. c4._> f4._> d_> f_> e4_> r8 b4 bf8 a_> bf_. g_. c4._> f,4._> c'4._> c4._> c4._>
-    c4._>~ c4 { \oneVoice r8 } \voiceFour f4._> g_> a_> bf,4\fermata r8 bf'4._> f8( a c) bf4._> <c, e g bf c>4\arpeggio\fermata
-    { \oneVoice r8 } \voiceFour bf'4._> a4._> bf8^. c^. c,^. f8^. f,^.\fermata { \oneVoice r8 } \voiceFour
+    c4._>~ c4 \oneVoice r8 \voiceFour f4._> g_> a_> bf,4\fermata r8 bf'4._> f8( a c) bf4._> <c, e g bf c>4\arpeggio\fermata
+    \oneVoice r8 \voiceFour bf'4._> a4._> bf8^. c^. c,^. f8^. f,^.\fermata \oneVoice r8 \voiceFour
   }
   %\mark "C"
   \relative f, {
@@ -334,24 +335,23 @@ basseDegres = {
 pianoStaff = {
   \new PianoStaff \with { instrumentName = "Piano" }
   <<
-    \set Score.markFormatter = #format-mark-box-alphabet
     \new Staff = "up"
     <<
       \tag #'midi \set Staff.midiInstrument = \midiInstrumentName
       \clef treble \time 3/8
       \new Voice = "soprano" << \tag #'midi \set Voice.midiMinimumVolume = #0.3
                                 \tag #'midi \set Voice.midiMaximumVolume = #1
-                                \voiceOne \sopraneVoice
                                 \tag #'midi \dynamicsUpStaff
                                 \tag #'midi \dynamicsDownStaff
+                                \voiceOne \sopraneVoice
       >>
       \new Voice = "alto"    << \tag #'midi \set Voice.midiMinimumVolume = #0.2
                                 \tag #'midi \set Voice.midiMaximumVolume = #0.9
-                                \voiceTwo \altoVoice
                                 \tag #'midi \dynamicsUpStaff
                                 \tag #'midi \dynamicsDownStaff
+                                \voiceTwo \altoVoice
       >>
-      \new Dynamics << \dynamicsUpStaff >>
+      \tag #'visuel \new Dynamics << \dynamicsUpStaff >>
     >>
     \new Staff = "down"
     <<
@@ -359,19 +359,19 @@ pianoStaff = {
       \clef bass \key f \minor
       \new Voice = "tenor" << \tag #'midi \set Voice.midiMinimumVolume = #0.2
                               \tag #'midi \set Voice.midiMaximumVolume = #0.9
-                              \voiceThree \tenorVoice
                               \tag #'midi \dynamicsUpStaff
                               \tag #'midi \dynamicsDownStaff
+                              \voiceThree \tenorVoice
       >>
       \new Voice = "bass"  << \tag #'midi \set Voice.midiMinimumVolume = #0.2
                               \tag #'midi \set Voice.midiMaximumVolume = #0.9
-                              \voiceFour \basseVoice
                               \tag #'midi \dynamicsUpStaff
                               \tag #'midi \dynamicsDownStaff
+                              \voiceFour \basseVoice
       >>
-      \new Dynamics << \dynamicsDownStaff >>
-      \tag #'figuredBass \new FiguredBass << \basseChiffree >>
-      \tag #'figuredBass \new FiguredBass << \basseDegres >>
+      \tag #'visuel \new Dynamics << \dynamicsDownStaff >>
+      \tag #'visuel \tag #'figuredBass \new FiguredBass << \basseChiffree >>
+      \tag #'visuel \tag #'figuredBass \new FiguredBass << \basseDegres >>
      >>
   >>
 }
@@ -393,7 +393,6 @@ pianoStaff = {
 
 \score {
   \keepWithTag \figuredBassTag \pianoStaff
-  %\keepWithTag \midiTag \pianoStaff
   \layout {
     \context {
       \FiguredBass
@@ -402,8 +401,15 @@ pianoStaff = {
   }
 }
 \score {
-  %\articulate <<
-    \keepWithTag \midiTag \pianoStaff
-  %>>
-  \midi {}
+  \keepWithTag midi \pianoStaff
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
