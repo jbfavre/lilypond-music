@@ -19,9 +19,7 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
-%#(set-global-staff-size 18)
-%#(set-default-paper-size "a4landscape")
-
+%%{
 global = { \time 4/4 \key g \major }
 motif = {
   g4 b d4. c8 b a g d' fs,4
@@ -38,13 +36,13 @@ motif = {
       \global
       \new Voice = "soprane" {  \voiceOne
         \relative c'' {
-          r1 r1 r2 \motif g4 b d8 e d4
+          r1 r1 r2 \motif g4 b8 c d e d4
           \bar "|."
         }
       }
       \new Voice = "alto" { \voiceTwo
         \relative c'' {
-          r2 \motif e4 d2 a'4 g fs8 d4. d2 g4 fs d
+          r2 \motif e4 d2 a'4 g8 fs d2 d2 g4 fs d
         }
       }
     >>
@@ -77,7 +75,7 @@ global = { \time 3/4 \key c \major }
       \global
       \relative c'' {
         r4 r4 r4 r2. c4 \tuplet 3/2 { e8 d e } g8. f16 e8. d16 d8. e16 d4
-        r4 \tuplet 3/2 { e8 d e } \tuplet 3/2 { a,8 b c } b4 c8. b16 a4 \tuplet 3/2 { b8 c d } e4 \tuplet 3/2 { e8 f e } d8. d16 e4 d c2 r4
+        r4 \tuplet 3/2 { e8 d e } \tuplet 3/2 { b8 c d } b4 c8. b16 a8. a16 \tuplet 3/2 { b8 c d } e4 \tuplet 3/2 { e8 f e } d8. d16 e4 d c2 r4
         \bar "|."
       }
     >>
@@ -86,7 +84,7 @@ global = { \time 3/4 \key c \major }
       \global
       \relative c' {
         r4 r4 r4 c4 \tuplet 3/2 { e8 d e } g8. f16 e8. d16 \tuplet 3/2 { c8 d c } d4 \tuplet 3/2 { g8 a g } \tuplet 3/2 { a b a } b4
-        \tuplet 3/2 { e,8 d e } \tuplet 3/2 { a,8b c } d8. d16 e2 f8. f16 g4 g8. g16 r4 a4 c8. c16 b8 a g2 r4
+        \tuplet 3/2 { e,8 d e } \tuplet 3/2 { a,8b c } d8. d16 g8. f16 e4 f8. f16 g4 g8. a16 g4 a4 c8. c16 b8 a g2 r4
       }
     >>
     \new Staff <<
@@ -111,6 +109,7 @@ global = { \time 3/4 \key c \major }
     >>
   >>
 }
+%%}
 %{
 global = { \time 4/4 \key c \major }
 \score {
@@ -162,17 +161,18 @@ global = { \time 4/4 \key c \major }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
     >>
   >>
 }
+%{
 global = { \time 4/4 \key f \major }
 \score {
   \header {
@@ -214,12 +214,12 @@ global = { \time 4/4 \key f \major }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
     >>
@@ -252,7 +252,7 @@ global = { \time 2/4 \key c \major }
       }
       \new FiguredBass{
         \figuremode {
-          
+
           <_>2 <_>2 <_>2
           <_>2 <_>4 \bassFigureExtendersOn <0>8. <0>16 <6>8. <6>16 <5>8 <5> <6 4>8 <6\!>8 <5>16 <6> <6\!> <6+\!>
           <5> <_+> <5>8 <0>8. <0>16 <6>8. <6>16 <5>8 <5>8 <6 4> <6\!> <5>16 <6> <6\! 4> <_+\!> <5>4 <0>
@@ -260,7 +260,7 @@ global = { \time 2/4 \key c \major }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
     >>
@@ -308,12 +308,12 @@ global = { \time 6/8 \key a \major }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
       \new FiguredBass{
         \figuremode {
-          
+
         }
       }
     >>
@@ -328,9 +328,9 @@ global = { \time 2/2 \key a \minor}
   }
   \new PianoStaff <<
     \new Staff <<
-      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
-      \set Staff.explicitClefVisibility = #end-of-line-invisible 
-      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+      \set Staff.explicitClefVisibility = #end-of-line-invisible
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
       \clef treble
       \global
       \new Voice = "soprane" {
@@ -343,9 +343,9 @@ global = { \time 2/2 \key a \minor}
       }
     >>
     \new Staff <<
-      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible 
-      \set Staff.explicitClefVisibility = #end-of-line-invisible 
-      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible 
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+      \set Staff.explicitClefVisibility = #end-of-line-invisible
+      \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
       \clef bass
       \global
       \new Voice = "bass" {
@@ -372,3 +372,4 @@ global = { \time 2/2 \key a \minor}
   }
 ragged-last = ##f
 }
+%}
