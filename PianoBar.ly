@@ -93,17 +93,17 @@ pianoMusic =   \new PianoStaff
   <<
     \tag #'visuel \new ChordNames {
       \chordmode {
-        \partial 4 s4
-        g1 e:m c a:m
-        d:7 d:7/fs g2 fs:dim g1:7/f
-        c1 a:m b:m e:m
-        cs:dim6/e a:7
-        g2 cs:dim6/e d:7 c a:m
-        d:7 d:7/fs g2 fs:dim g1:7/f
-        c1 a:m b:m e
-        a:m d g2 fs2:dim7 f2:aug7 g4 g4:aug/b
-        c1 a:m b:m e
-        a:m d c g
+        \partial 4
+        s4 g1 e:m c a:m
+           d:7 d:7/fs g2 fs:dim g1:7/f
+           c1 a:m b:m e:m
+           cs:dim6/e a:7
+           g2 cs:dim6/e d:7 c a:m
+           d:7 d:7/fs g2 fs:dim g1:7/f
+           c1 a:m b:m e
+           a:m d g2 fs2:dim7 f2:aug7 g4 g4:aug/b
+           c1 a:m b:m e
+           a:m d c g
       }
     }
     \new Staff = "haut" <<
