@@ -19,7 +19,7 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
-%%{
+%{
 global = { \time 4/4 \key g \major }
 motif = {
   g4 b d4. c8 b a g d' fs,4
@@ -109,8 +109,7 @@ global = { \time 3/4 \key c \major }
     >>
   >>
 }
-%%}
-%{
+%}
 global = { \time 4/4 \key c \major }
 \score {
   \header {
@@ -126,7 +125,6 @@ global = { \time 4/4 \key c \major }
         c4 b c r4 e8 c a g g4 r4 g4 f g r4 c8 a b c c4 r4 \break
         c4 b c r4 e8 c a g g4 r4 g4 f g r4 c8 a b c c4 r4 \break
         c4 b c r4 e8 c a g g4 r4 g4 f g r4 c8 a b c c4 r4 \break
-        c4 b c r4 e8 c a g g4 r4 g4 f g r4 c8 a b c c4 r4
         \bar "|."
       }
     >>
@@ -134,39 +132,40 @@ global = { \time 4/4 \key c \major }
       \clef treble
       \global
       \relative c'' {
-        s1*4
-        s1*4
-        s1*4
-        s1*4
+        g2. r4 e2 g4 r4 e4 d e a a g2 r4
+        g2 e4 r4 c d2 r4 e f e r4 a d, e r4
+        g2 g4 r4 a8 e f e16 d c4 e e2 d2 f4 d e r4
       }
     >>
     \new Staff <<
       \clef "treble_8"
       \global
-      \relative c'' {
-        s1*4
-        s1*4
-        s1*4
-        s1*4
+      \relative c' {
+        e4 d c r4 g c d r4 c a c r4 f d e r4
+        e4 d c r4 a d b r4 b d c r4 e g g r4
+        e2 e2~ e4 d c c b r4 b2 a4 g g r4
       }
     >>
     \new Staff <<
       \clef bass
       \global
       \relative f {
-        s1*4
-        s1*4
-        s1*4
-        s1*4
+        c4 g' e r4 c a b r4 c d c r4 f g c, r4
+        c4 g a r4 a8 g f4 g4 r4 e'4 d c b a g c r4
+        r2 c4 b c4 r4 e8 c a g g4 r4 g' f8 g8 f4 g c, r4
       }
       \new FiguredBass{
         \figuremode {
-
+          <5>4 <5> <6> <_> <5> <5> <6> <_> <5> <5> <5> <_> <5> <5> <5> <_>
+          <5>4 <6> <5> <_> <5> <6> <5> <_> <5> <6> <5> <_> <5> <5> <5> <_>
+          <_>4 <_> <5> <0> <6> <_> <6> <5> <6> <_> <5> <_> <5> <5> <5> <_>
         }
       }
       \new FiguredBass{
         \figuremode {
-
+          <I>4 <V> <I> <_> <I> <VI> <V> <_> <I> <II> <I> <_><IV> <V> <I> <_>
+          <I>4 <V> <VI> <_> <VI> <II> <V> <_> <III> <VII> <I> <_> <VI> <V> <I> <_>
+          <_>2 <I>4 <_> <VI> <_> <I> <VI> <III> <_> <V> <_> <IV> <V> <I> <_>
         }
       }
     >>
