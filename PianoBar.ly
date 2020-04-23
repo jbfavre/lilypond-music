@@ -12,7 +12,7 @@
   #(include-special-characters)
   print-all-headers = ##f
   ragged-last-bottom = ##f
-  systems-per-page = 5
+  systems-per-page = 6
 }
 midiInstrumentName = "celesta"
 global = { \time 4/4 \key g \major \tempo "Swing" 4 = 120 }
@@ -34,7 +34,7 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "E"
              e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
              c2 b8 a g! b8~ b2 a2 g1 g1 \break
-             \mark \default
+             \mark \default %\mark "F"
              r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4
              c8 b c a~ a4 g c8 r8 g4 a bf b!8 bf b! a~ a4 g4
              b!8 bf b! a~ a4 g a a b cs d8 r8 r2.
@@ -57,7 +57,10 @@ altoVoice = \relative c' {
              g2 g a a fs fs gs d
              e e fs fs e1 <b d fs>1
              %\mark "F"
-             R1 f'4 f f f
+             R1 f'4 f f f f f f f
+             e4 e e e e8 r8 r2.
+             f4 f f f f f f f
+             e4 e4 fs <g a> <fs a>8 r8 r2.
         }
 tenorVoice = \relative c' {
           \partial 4
@@ -75,9 +78,10 @@ tenorVoice = \relative c' {
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1
+             %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4
-             r4 <c e>4 r4 <c e>4 <c e>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4
-             R1 r8 r8 r2.
+             r4 <g c>4 r4 <g c>4 <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4
+             <cs e>4 <cs e>4 d4 e fs8 r8 r2.
         }
 bassesVoice = \relative f {
           \partial 4
