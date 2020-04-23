@@ -15,7 +15,7 @@
   systems-per-page = 5
 }
 midiInstrumentName = "celesta"
-global = { \time 4/4 \key g \major \tempo "Swing" 4 = 110 }
+global = { \time 4/4 \key g \major \tempo "Swing" 4 = 120 }
 sopraneVoice = \relative c' {
   \set Score.markFormatter = #format-mark-box-alphabet
           \partial 4
@@ -34,7 +34,10 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "E"
              e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
              c2 b8 a g! b8~ b2 a2 g1 g1 \break
-
+             \mark \default
+             r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4
+             c8 b c a~ a4 g c8 r8 g4 a bf b!8 bf b! a~ a4 g4
+             b!8 bf b! a~ a4 g a a b cs d8 r8 r2.
           \bar "|."
         }
 altoVoice = \relative c' {
@@ -53,6 +56,8 @@ altoVoice = \relative c' {
              %\mark "E"
              g2 g a a fs fs gs d
              e e fs fs e1 <b d fs>1
+             %\mark "F"
+             R1 f'4 f f f
         }
 tenorVoice = \relative c' {
           \partial 4
@@ -70,6 +75,9 @@ tenorVoice = \relative c' {
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1
+             R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4
+             r4 <c e>4 r4 <c e>4 <c e>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4
+             R1 r8 r8 r2.
         }
 bassesVoice = \relative f {
           \partial 4
@@ -77,7 +85,7 @@ bassesVoice = \relative f {
              d2 e fs e4 fs g2 fs f4 d4 b4 g4
              %\mark "B"
              c2 b a b4 c b2 c4 d e2 e2
-             e2 e a, b4 c d2 e fs4 d e fs
+             e2 e a, b4 cs d2 e fs4 d e fs
              %\mark "C"
              g2 fs e d c b a b4 c
              d2 e fs e4 fs g2 fs f4 d4 b4 g4
@@ -87,6 +95,9 @@ bassesVoice = \relative f {
              %\mark "E"
              c2 b a b4 c b2 c4 d e2 fs4 gs
              a2 g! fs e4 d c2 b4 a g1
+             %\mark "F"
+             R1 g'4 r d r g4 r d r c4 r g
+             r c8 r c4 b a g r d' r g r d r a' g fs e d8 r8 r2.
         }
 
 pianoMusic =   \new PianoStaff
@@ -115,7 +126,7 @@ pianoMusic =   \new PianoStaff
                                \voiceOne \sopraneVoice
       }
       \new Voice = "alto" { \tag #'midi \set Voice.midiMinimumVolume = #0.2
-                            \tag #'midi \set Voice.midiMaximumVolume = #0.6
+                            \tag #'midi \set Voice.midiMaximumVolume = #0.8
                             \voiceTwo \altoVoice
       }
     >>
@@ -124,11 +135,11 @@ pianoMusic =   \new PianoStaff
       \clef bass
       \global
       \new Voice = "tenor" { \tag #'midi \set Voice.midiMinimumVolume = #0.2
-                             \tag #'midi \set Voice.midiMaximumVolume = #0.6
+                             \tag #'midi \set Voice.midiMaximumVolume = #0.8
                              \voiceOne \tenorVoice
       }
       \new Voice = "bass" { \tag #'midi \set Voice.midiMinimumVolume = #0.2
-                            \tag #'midi \set Voice.midiMaximumVolume = #0.6
+                            \tag #'midi \set Voice.midiMaximumVolume = #0.8
                             \voiceTwo \bassesVoice
       }
     >>
