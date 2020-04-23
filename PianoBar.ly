@@ -21,15 +21,15 @@ sopraneVoice = \relative c' {
           \partial 4
           d4 \mark \default %\mark "A"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. g4 \break
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
              \mark \default %\mark "B"
-             e'2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4 \break
+             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4 \break
              cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4 \break
              \mark \default %\mark "C"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. g4 \break
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
              \mark \default %\mark "D"
-             e'2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
              c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4 \break
              \mark \default %\mark "E"
              e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
@@ -39,37 +39,37 @@ sopraneVoice = \relative c' {
         }
 altoVoice = \relative c' {
           \partial 4
-          s4 g'2 g g2. g4 e2 e a2. d,4
-             fs2 fs a2. fs4 d2 fs2 d2. f4
+          s4 g'2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
+             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
              % \mark "B"
              g2 g a2 a fs fs g! g!
              g g g2. r4 fs2 g2 a2. r4
              %\mark "C"
-             g2 g g2. g4 e2 e a2. d,4
-             fs2 fs a2. fs4 d2 fs2 d2. f4
+             g2 a4 fs g2. g4 e2 e4 <d gs> a'2. d,4
+             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
              %\mark "D"
-             g2 g a2 a fs fs gs gs
+             g2 g a2 a fs e4 <c fs> gs'2 gs
              e e fs fs g2 a2 a2 f4 g4
              %\mark "E"
-             g2 g a a fs fs gs gs
-             e e fs fs e1 <b d>1
+             g2 g a a fs fs gs d
+             e e fs fs e1 <b d fs>1
         }
 tenorVoice = \relative c' {
           \partial 4
-          s4 r4 <b d>4 r4 <b d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <a e'>4 r4 <e c'>4 r4 r4
-             r4 <a d>4 r4 <a d>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
+          s4 r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+             r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "B"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b d>4
-             r4 <g cs>4 r4 <g cs>4 r4 <a d>4 r4 r4 a2 a2 d2. r4
+             r4 <g cs>4 r4 <g cs>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
              %\mark "C"
-             r4 <b d>4 r4 <b d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <a e'>4 r4 <e c'>4 r4 r4
-             r4 <a d>4 r4 <a d>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
+             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+             r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "D"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 d2 e2 ef2 b2
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
-             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <b, d g>1
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1
         }
 bassesVoice = \relative f {
           \partial 4
@@ -94,16 +94,16 @@ pianoMusic =   \new PianoStaff
     \tag #'visuel \new ChordNames {
       \chordmode {
         \partial 4
-        s4 g1 e:m c a:m
+        s4 g1 e:m a2.:m e4:7 a1:m
            d:7 d:7/fs g2 fs:dim g1:7/f
            c1 a:m b:m e:m
-           cs:dim6/e a:7
-           g2 cs:dim6/e d:7 c a:m
+           cs:dim6/e a:7 d2 cs:dim6/e d1:7
+           g1 e:m a2.:m e4:7 a1:m
            d:7 d:7/fs g2 fs:dim g1:7/f
-           c1 a:m b:m e
-           a:m d g2 fs2:dim7 f2:aug7 g4 g4:aug/b
-           c1 a:m b:m e
-           a:m d c g
+           c1 a:m b:m e:7
+           a:m d g2 fs2:dim7 f2:aug7 g4:7 g4:aug/a
+           c1 a:m b:m e:7
+           a:m d:6 c g:7+
       }
     }
     \new Staff = "haut" <<
