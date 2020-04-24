@@ -18,7 +18,7 @@ midiInstrumentName = "celesta"
 global = { \time 4/4 \key g \major \tempo "Swing" 4 = 120 }
 sopraneVoice = \relative c' {
   \set Score.markFormatter = #format-mark-box-alphabet
-          %{\partial 4
+          \partial 4
           d4 \mark \default %\mark "A"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
              c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
@@ -33,22 +33,37 @@ sopraneVoice = \relative c' {
              c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4 \break
              \mark \default %\mark "E"
              e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
-             c2 b8 a g! b8~ b2 a2 g1 g1 \break %}
+             c2 b8 a g! b8~ b2 a2 g1 g1 \break
              \mark \default %\mark "F"
-             r4 g'4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g \break
+             r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g \break
              c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a8 g4 fs8 e4 e f fs \break
              g8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g4 \break
              c8 r8 c4 b bf a8 gs a b d c b a g c e g4 e8 c g fs4 c' e8 d8~ d4 \break
-             c8 r8 r2.
+             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g \break
+             c8 r8 c4 d e f8 g e f~ f c d f e f d e~ e c d e d e c d~ d b c d e r8 c4 d e \break
+             f8 g e f~ f c d f e f ds e~ e c d e d4. d8 e4 fs \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e d, g c d e d d, fs a c d, } c'2 r4 d,4 \break
+             \mark \default %\mark "G"
+             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             \mark \default %\mark "H"
+             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4 \break
+             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4 \break
+             \mark \default %\mark "I"
+             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             \mark \default %\mark "J"
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
+             c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4 \break
+             \mark \default %\mark "K"
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
+             c2 b8 a g! b8~ b2 a2 g1 g1
              %g a a b cs d8 r8 r2. s1 \break
-             s1*3 \break
-             s1*4 \break
-             s1*4
           \bar "|."
         }
 altoVoice = \relative c' {
-          %{\partial 4
-          s4 g'2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
+          \partial 4 s4
+             %\mark "A"
+             g'2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
              fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
              % \mark "B"
              g2 g a2 a fs fs g! g!
@@ -61,16 +76,37 @@ altoVoice = \relative c' {
              e e fs fs g2 a2 a2 f4 g4
              %\mark "E"
              g2 g a a fs fs gs d
-             e e fs fs e1 <b d fs>1%}
+             e e fs fs e1 <b d fs>1
              %\mark "F"
-             R1 f4 f f f f f f f
+             R1 f'4 f f f f f f f
              e4 e e e e8 r8 r2.
-             f4 f f f f f f
+             f4 f f f f f f r4 s1
+             s1 f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
+             <e g>8 r8 s2. fs4 fs fs fs e g8 a4 a4 r8 c4 a c8 g~ g4
+             <e g>8 r8 r2. f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
+             <e g>8 r8 r2. f2 a2 g2 a2
+             s1*8
+             %\mark "G"
+             g2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
+             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             % \mark "H"
+             g2 g a2 a fs fs g! g!
+             g g g2. r4 fs2 g2 a2. r4
+             %\mark "I"
+             g2 a4 fs g2. g4 e2 e4 <d gs> a'2. d,4
+             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             %\mark "J"
+             g2 g a2 a fs e4 <c fs> gs'2 gs
+             e e fs fs g2 a2 a2 f4 g4
+             %\mark "K"
+             g2 g a a fs fs gs d
+             e e fs fs e1 <b d fs>1
              %f e4 e4 fs <g a> <fs a>8 r8 r2.
         }
 tenorVoice = \relative c' {
-          %{\partial 4
-          s4 r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+          \partial 4 s4
+             %\mark "A"
+             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "B"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b d>4
@@ -83,17 +119,36 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 d2 e2 ef2 b2
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
-             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1%}
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1
              %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r4 r4 r1
              r1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8
+             <g c>8 r8 r2. r4 <a c>4 r <a d>4 c e <c e> e4 r4 <g, c>4 r4 <g c>4
+             <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
+             <g c>8 r8 r2. r4 <f c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <f d'> r4 <f d'> s1
+             s1*7
+             %\mark "G"
+             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+             r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
+             %\mark "H"
+             r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b d>4
+             r4 <g cs>4 r4 <g cs>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
+             %\mark "I"
+             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+             r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
+             %\mark "J"
+             r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 r4
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 d2 e2 ef2 b2
+             %\mark "K"
+             r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1  <g>1
              %<b d>4 <cs e>4 <cs e>4 d4 e fs8 r8 r2.
         }
 bassesVoice = \relative f {
-          %{\partial 4
-          r4 g2 fs e d c b a b4 c
+          \partial 4 r4
+             %\mark "A"
+             g2 fs e d c b a b4 c
              d2 e fs e4 fs g2 fs f4 d4 b4 g4
              %\mark "B"
              c2 b a b4 c b2 c4 d e2 e2
@@ -106,17 +161,31 @@ bassesVoice = \relative f {
              a2 g fs e4 fs g2 fs f g8 g, a b
              %\mark "E"
              c2 b a b4 c b2 c4 d e2 fs4 gs
-             a2 g! fs e4 d c2 b4 a g1%}
+             a2 g! fs e4 d c2 b4 a g1
              %\mark "F"
-             R1 g4 r d r g4 r d r c4 r g r
+             R1 g'4 r d r g4 r d r c4 r g r
              c8 r c4 b a g r d' r g r d r4 r1
              r1 g4 r d r g4 r d r c4 r g r
-             c8 r8 c4 d e fs fs d d e g a c d, d g, g
-             c8 r8 r2.
+             c8 r8 c4 d e fs r4 d r4 e g a a d, d g, g
+             c8 r8 r2. g'4 r d r g4 r d r c4 r g r
+             c8 r8 c4 b bf a r4 f r4 c' r4 a4 r4 b4 r4 g4 r4 c8 r8 c'4 b bf
+             a4 r4 f4 r4 c'4 r4 a4 r4 c4. c8 b4 a g r4 b r4 c r4 d r4 d,4 ds e fs
+             %\mark "A"
+             g2 fs e d c b a b4 c
+             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             %\mark "B"
+             c2 b a b4 c b2 c4 d e2 e2
+             e2 e a, b4 cs d2 e fs4 d e fs
+             %\mark "C"
+             g2 fs e d c b a b4 c
+             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             %\mark "D"
+             c2 b a b4 c b2 c4 d e2 fs4 gs
+             a2 g fs e4 fs g2 fs f g8 g, a b
+             %\mark "E"
+             c2 b a b4 c b2 c4 d e2 fs4 gs
+             a2 g! fs e4 d c2 b4 a g1
              %r a' g fs e d8 r8 r2.
-             s1*3
-             s1*4
-             s1*4
         }
 
 pianoMusic =   \new PianoStaff
