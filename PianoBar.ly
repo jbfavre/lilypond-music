@@ -127,7 +127,7 @@ tenorVoice = \relative c' {
              <g c>8 r8 r2. r4 <a c>4 r <a d>4 c e <c e> e4 r4 <g, c>4 r4 <g c>4
              <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 r2. r4 <f c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <f d'> r4 <f d'> s1
-             s1*7
+             s1*6
              %\mark "G"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
