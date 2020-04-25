@@ -49,10 +49,8 @@ sopraneVoice = \relative c' {
              c8 r8 c4 b bf \tripletFeel 8 { a8[ gs a b] d[ c b a] g![ c e] g4 e8[ c g] } fs4 c' \tripletFeel 8 { e8 d8~ } d4 \break
              \mark \default %\mark "H"
              c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] a4 } g \break
-             %c8 r8 c4 d e \tripletFeel 8 { f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] } \break
              c8 r8 c4 d e f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] \break
-             %e r8 c4 d e \tripletFeel 8 { f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] } \tripletFeel 8 { d4. d8 e4 fs } \break
-             e r8 c4 d e f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] d4. d8 e4 fs \break
+             e r8 c4 d e f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] \tripletFeel 8 { d4. d8 e4 fs } \break
              \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e d d, fs a c d } c2 r4 d,4 \break
              \mark \default %\mark "I"
              \acciaccatura cs'8 d2 \tripletFeel 8 { c8[ b c d~] } d2. g,4 a2. b4 c2. d,4 \break
@@ -198,7 +196,7 @@ bassesVoice = \relative f {
              e4 r4 e4 r4 a,4 r4 b4 cs d2 e2 fs4 d e fs
              %\mark "C"
              g4 r4 fs4 r4 e4 r4 d4 r4 c4 r4 b4 r4 a4 r4 b4 c
-             d4 r4 e4 r4 fs4 r4 e4 d g2 fs f4 d4 b4 g4
+             d4 r4 e4 r4 fs4 r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
              %\mark "D"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
              a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ gs, a b] }
