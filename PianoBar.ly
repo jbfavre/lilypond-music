@@ -12,7 +12,7 @@
   #(include-special-characters)
   print-all-headers = ##f
   ragged-last-bottom = ##f
-  max-systems-per-page = 7
+  max-systems-per-page = 6
 }
 midiInstrumentName = "celesta"
 global = { \time 4/4 \key g \major \tempo "Swing" 4 = 120 }
@@ -20,42 +20,46 @@ sopraneVoice = \relative c' {
   \set Score.markFormatter = #format-mark-box-alphabet
           \partial 4
           d4 \mark \default %\mark "A"
-             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
              \mark \default %\mark "B"
-             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4 \break
-             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4 \break
+             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4
+             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4
              \mark \default %\mark "C"
-             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
              \mark \default %\mark "D"
-             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
-             c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4 \break
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4
+             c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4
              \mark \default %\mark "E"
-             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
-             c2 b8 a g! b8~ b2 a2 g1 g1 \break
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4
+             c2 b8 a g! b8~ b2 a2 g1 g1 \bar"||"
              \mark \default %\mark "F"
-             r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g \break
-             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a8 g4 fs8 e4 e f fs \break
-             g8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g4 \break
-             c8 r8 c4 b bf a8 gs a b d c b a g c e g4 e8 c g fs4 c' e8 d8~ d4 \break
-             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g \break
-             c8 r8 c4 d e f8 g e f~ f c d f e f d e~ e c d e d e c d~ d b c d e r8 c4 d e \break
-             f8 g e f~ f c d f e f ds e~ e c d e d4. d8 e4 fs \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e d, g c d e d d, fs a c d, } c'2 r4 d,4 \break
+             r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g
+             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a8 g4 fs8 e4 e f fs
              \mark \default %\mark "G"
-             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             g8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g4
+             c8 r8 c4 b bf a8 gs a b d c b a g c e g4 e8 c g fs4 c' e8 d8~ d4
+             \mark \default %\mark "G"
+             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g
+             c8 r8 c4 d e f8 g e f~ f c d f e f d e~ e c d e d e c d~ d b c d
+             e r8 c4 d e f8 g e f~ f c d f e f ds e~ e c d e d4. d8 e4 fs
+             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e d, g c d e d d, fs a c d, } c'2 r4 d,4
              \mark \default %\mark "H"
-             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4 \break
-             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4 \break
+             d'2 c8 b c d~ \break
+             d2. g,4 a2. b4 c2. d,4
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
              \mark \default %\mark "I"
-             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4 \break
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4 \break
+             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4
+             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4
              \mark \default %\mark "J"
-             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
-             c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4 \break
+             d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
              \mark \default %\mark "K"
-             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4 \break
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4
+             c2 b8 a g8 b8~ b2. a4 b2 c2 cs2 d4 ds4
+             \mark \default %\mark "L"
+             e2 d8 c d e8~ e2. c4 d2 c8 b a b8~ b2. d4
              c2 b8 a g! b8~ b2 a2 g1 g1
              %g a a b cs d8 r8 r2. s1 \break
           \bar "|."
@@ -82,7 +86,7 @@ altoVoice = \relative c' {
              e4 e e e e8 r8 r2.
              f4 f f f f f f r4 s1
              s1 f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
-             <e g>8 r8 s2. fs4 fs fs fs e g8 a4 a4 r8 c4 a c8 g~ g4
+             <e g>8 r8 s2. fs4 fs fs fs e g8 a4 a4 r8 c,4 a' c8 g~ g4
              <e g>8 r8 r2. f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
              <e g>8 r8 r2. f2 a2 g2 a2
              s1*8
