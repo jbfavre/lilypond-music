@@ -15,16 +15,16 @@
   max-systems-per-page = 6
 }
 midiInstrumentName = "celesta"
-global = { \time 4/4 \key g \major \tempo "Swing" 4 = 120 }
+global = { \time 4/4 \key g \major \tempo "Swing" 4 = 180 }
 sopraneVoice = \relative c' {
   \set Score.markFormatter = #format-mark-box-alphabet
           \partial 4
           d4 \mark \default %\mark "A"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
-             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
+             c'2 b8 a b c~ c2. fs,4 g2 a2 b2. g4
              \mark \default %\mark "B"
-             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4
-             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4
+             e'2 d8 c d e8~ e2. fs4 d2 c8 b c d~ d2. d4
+             cs2 b8 a b cs~ cs2. a4 d2 cs2 c!2. d,4
              \mark \default %\mark "C"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
              c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
@@ -36,10 +36,10 @@ sopraneVoice = \relative c' {
              c2 b8 a g! b8~ b2 a2 g1 g1 \bar"||"
              \mark \default %\mark "F"
              r4 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g
-             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a8 g4 fs8 e4 e f fs
+             c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a8 g4 f8 e4 e f fs
              \mark \default %\mark "G"
              g8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g4
-             c8 r8 c4 b bf a8 gs a b d c b a g c e g4 e8 c g fs4 c' e8 d8~ d4
+             c8 r8 c4 b bf a8 gs a b d c b a g! c e g4 e8 c g fs4 c' e8 d8~ d4
              \mark \default %\mark "G"
              c8 r8 g4 a bf b!8 bf b! a~ a4 g4 b!8 bf b! a~ a4 g4 c8 b c a~ a4 g
              c8 r8 c4 d e f8 g e f~ f c d f e f d e~ e c d e d e c d~ d b c d
@@ -50,8 +50,8 @@ sopraneVoice = \relative c' {
              d2. g,4 a2. b4 c2. d,4
              c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
              \mark \default %\mark "I"
-             e2 d8 c d e8~ e2. fs4 d2 c8 b c d d2. d4
-             cs2 b8 a b cs cs2. a4 d2 cs2 c!2. d,4
+             e2 d8 c d e8~ e2. fs4 d2 c8 b c d~ d2. d4
+             cs2 b8 a b cs~ cs2. a4 d2 cs2 c!2. d,4
              \mark \default %\mark "J"
              d'2 c8 b c d~ d2. g,4 a2. b4 c2. d,4
              c'2 b8 a b c~ c2. fs,4 g2 a2 b2. ds4
@@ -67,44 +67,44 @@ sopraneVoice = \relative c' {
 altoVoice = \relative c' {
           \partial 4 s4
              %\mark "A"
-             g'2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
-             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             g'2 a4. g8~ g2. g4 e2. <d gs>4 a'2. d,4
+             fs2 g4. a8~ a2. fs4 d2 <ef fs>2 d2. f4
              % \mark "B"
-             g2 g a2 a fs fs g! g!
-             g g g2. r4 fs2 g2 a2. r4
+             g2 g4. a8~ a2. a4 fs2 fs4. gs8~ gs2. gs4
+             g2 g4. g8~ g2. r4 fs2 g2 a2. r4
              %\mark "C"
-             g2 a4 fs g2. g4 e2 e4 <d gs> a'2. d,4
-             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             g2 a4. g8~ g2. g4 e2. <d gs>4 a'2. d,4
+             fs2 g4. a8~ a2. fs4 d2 <ef fs>2 d2. <f g>4
              %\mark "D"
-             g2 g a2 a fs e4 <c fs> gs'2 gs
-             e e fs fs g2 a2 a2 f4 g4
+             g2 g4. a8~ a2. a4 fs2 e4. gs8~ gs2. gs4
+             e2 e4. fs8~ fs2. fs4 g2 a2 a2 f4 g4
              %\mark "E"
-             g2 g a a fs fs gs d
-             e e fs fs e1 <b d fs>1
+             g2 g4. a8~ a2. a4 fs2 fs4. gs8~ gs2. e4
+             e2 e4. fs8~ fs2 fs e1 <b d fs>1
              %\mark "F"
              R1 f'4 f f f f f f f
              e4 e e e e8 r8 r2.
              f4 f f f f f f r4 s1
-             s1 f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
-             <e g>8 r8 s2. fs4 fs fs fs e g8 a4 a4 r8 c,4 a' c8 g~ g4
-             <e g>8 r8 r2. f8 f f f~ f4 r4 f8 f f f~ f4 r4 e8 e e e~ e4 r4
+             s1 f4 f f f f f f f e e e e
+             <e g>8 r8 s2. f4 f f f e g8 a4 a4 r8 c,4 a' b8 f~ f4
+             <e g>8 r8 r2. f4 f f f f f f f e e e e
              <e g>8 r8 r2. f2 a2 g2 a2
              s1*8
              %\mark "G"
-             g2 a4 fs  g2. g4 e2 e4 <d gs> a'2. d,4
-             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             g2 a4. g8~  g2. g4 e2. <d gs>4 a'2. d,4
+             fs2 g4. a8~ a2. fs4 d2 <ef fs>2 d2. <f g>4
              % \mark "H"
-             g2 g a2 a fs fs g! g!
-             g g g2. r4 fs2 g2 a2. r4
+             g2 g4. a8~ a2. a4 fs2 fs4. gs8~ gs!2. gs!4
+             g!2 g4. g8~ g2. r4 fs2 g2 a2. r4
              %\mark "I"
-             g2 a4 fs g2. g4 e2 e4 <d gs> a'2. d,4
-             fs2 g a2. fs4 d2 <ef fs>2 d2. <f g>4
+             g2 a4. g8~ g2. g4 e2. <d gs>4 a'2. d,4
+             fs2 g4. a8~ a2. fs4 d2 <ef fs>2 d2. <f g>4
              %\mark "J"
-             g2 g a2 a fs e4 <c fs> gs'2 gs
-             e e fs fs g2 a2 a2 f4 g4
+             g2 g4. a8~ a2. a4 fs2 e4. gs!8~ gs!2. e4
+             e2 e4. fs8~ fs2. fs4 g2 a2 a2 f4 g4
              %\mark "K"
-             g2 g a a fs fs gs d
-             e e fs fs e1 <b d fs>1
+             g2 g4. a8~ a2. a4 fs2 fs4. gs!8~ gs!2. d4
+             e2 e4. fs8~ fs2 fs e1 <b d fs>1
              %f e4 e4 fs <g a> <fs a>8 r8 r2.
         }
 tenorVoice = \relative c' {
@@ -128,8 +128,8 @@ tenorVoice = \relative c' {
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r4 r4 r1
              r1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8 r2. r4 <a c>4 r <a d>4 c e <c e> e4 r4 <g, c>4 r4 <g c>4
-             <g c>8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
+             <g c>8 r8 r2. r4 <a c>4 r <a d>4 r4 <g c> r4 <g c> r4 <fs d'>4 r4 <b d>4
+             c8 r8 r2. r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 r2. r4 <f c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <f d'> r4 <f d'> s1
              s1*6
              %\mark "G"
@@ -152,43 +152,43 @@ tenorVoice = \relative c' {
 bassesVoice = \relative f {
           \partial 4 r4
              %\mark "A"
-             g2 fs e d c b a b4 c
-             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
+             d4 r4 e r4 fs r4 e4 fs g2 fs f4 d4 b4 g4
              %\mark "B"
-             c2 b a b4 c b2 c4 d e2 e2
-             e2 e a, b4 cs d2 e fs4 d e fs
+             c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 e4 r4
+             e4 r4 e r4 a, r4 b4 cs d2 e fs4 d e fs
              %\mark "C"
-             g2 fs e d c b a b4 c
-             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
+             d4 r4 e r4 fs r4 e4 fs g2 fs f4 d4 b4 g4
              %\mark "D"
-             c2 b a b4 c b2 c4 d e2 fs4 gs
-             a2 g fs e4 fs g2 fs f g8 g, a b
+             c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
+             a4 r4 g r4 fs r4 e4 fs g2 fs f g8 g, a b
              %\mark "E"
-             c2 b a b4 c b2 c4 d e2 fs4 gs
-             a2 g! fs e4 d c2 b4 a g1
+             c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
+             a4 r4 g! r4 fs r4 e4 d c2 b4 a g1
              %\mark "F"
              R1 g'4 r d r g4 r d r c4 r g r
              c8 r c4 b a g r d' r g r d r4 r1
-             r1 g4 r d r g4 r d r c4 r g r
-             c8 r8 c4 d e fs r4 d r4 e g a a d, d g, g
-             c8 r8 r2. g'4 r d r g4 r d r c4 r g r
-             c8 r8 c4 b bf a r4 f r4 c' r4 a4 r4 b4 r4 g4 r4 c8 r8 c'4 b bf
-             a4 r4 f4 r4 c'4 r4 a4 r4 c4. c8 b4 a g r4 b r4 c r4 d r4 d,4 ds e fs
+             r4 c4 b a g r d' r g4 r d r c4 r g r
+             c8 r8 c4 d e f r4 d r4 e r4 a, r4 d r4 g r4
+             c,8 r8 c4 b a g4 r d' r g4 r d r c4 r g r
+             c8 r8 c4 b bf a r4 f r4 c' r4 a4 r4 d4 r4 g,4 r4 c8 r8 c4 b bf
+             a4 r4 f4 r4 c'4 r4 a4 r4 d4 c b a g r4 b r4 c r4 d r4 d4 ds e fs
              %\mark "A"
-             g2 fs e d c b a b4 c
-             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
+             d4 r4 e r4 fs r4 e4 fs g4 r4 fs r4 f4 d4 b4 g4
              %\mark "B"
-             c2 b a b4 c b2 c4 d e2 e2
-             e2 e a, b4 cs d2 e fs4 d e fs
+             c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 e4 r4
+             e4 r4 e4 r4 a,4 r4 b4 cs d4 r4 e4 r4 fs4 d e fs
              %\mark "C"
-             g2 fs e d c b a b4 c
-             d2 e fs e4 fs g2 fs f4 d4 b4 g4
+             g4 r4 fs4 r4 e4 r4 d4 r4 c4 r4 b4 r4 a4 r4 b4 c
+             d4 r4 e4 r4 fs4 r4 e4 fs g2 fs f4 d4 b4 g4
              %\mark "D"
-             c2 b a b4 c b2 c4 d e2 fs4 gs
-             a2 g fs e4 fs g2 fs f g8 g, a b
+             c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
+             a4 r4 g4 r4 fs4 r4 e4 fs g2 fs f g8 g, a b
              %\mark "E"
-             c2 b a b4 c b2 c4 d e2 fs4 gs
-             a2 g! fs e4 d c2 b4 a g1
+             c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
+             a4 r4 g!4 r4 fs4 r4 e4 d c2 b4 a g1
              %r a' g fs e d8 r8 r2.
         }
 
