@@ -4,11 +4,13 @@
 \include "articulate.ly"
 % Only in lilypond 2.21
 \include "swing.ly"
-
 \include "libs/rhythmMarks.ily"
+
+keepTags   = #'(visuel notvideo)
 
 %%% To enable processing with ly2video, uncomment include and paper blockbelow
 %\include "libs/ly2video.ily"
+%removeTags = #'(notvideo school)
 %\paper {
 %   page-breaking = #ly:one-line-breaking
 %   top-margin    = 148\mm
@@ -16,7 +18,6 @@
 %   left-margin   = 46\mm
 %   right-margin  = 46\mm
 %}
-%removeTags = #'(notvideo school)
 
 %%% To enable processing with ly2video, comment paper block below
 \paper {
@@ -26,8 +27,6 @@
   max-systems-per-page = 6
 }
 removeTags = #'(school)
-
-keepTags   = #'(visuel notvideo)
 
 \header {
   title = \markup { \override #'(font-name . "Park Lane NF") \fontsize #8 \smallCaps "Piano Bar" }
@@ -89,7 +88,7 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "M"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4 \break
              c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g2.  fs4
-             \tag #'(midi)   { b,16~ d~ e~ g~ <b, d e g>2.~ <b d e g>1 }
+             \tag #'midi { \set tieWaitForNote = ##t b,32~ d~ e~ g~ <b, d e g>4.~ <b d e g>2~ <b d e g>1 \unset tieWaitForNote }
              \tag #'(visuel) { <b d e g>1\arpeggio~ <b d e g>1 }
           \bar "|."
         }
