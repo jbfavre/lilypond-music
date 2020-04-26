@@ -53,13 +53,13 @@ sopraneVoice = \relative c' {
              e r8 c4 d e f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] \tripletFeel 8 { d4. d8 e4 fs } \break
              \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \break
              \mark \default %\mark "I"
-             \acciaccatura cs'8 d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4~ a8 e8 b'4 e,8 c'8~ } c2. d,4 \break
+             \acciaccatura cs'8 d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. g4 \break
              \mark \default %\mark "J"
              \acciaccatura ds'8 e2 \tripletFeel 8 { d8[ c d e8~] } e2. fs4 d2 \tripletFeel 8 { c8[ b c d~] } d2. d4 \break
              cs2 \tripletFeel 8 { b8[ a b cs~] } cs2. a4 \tripletFeel 8 { d4. cs8~ cs4. c8~ } c!2. d,4 \break
              \mark \default %\mark "K"
-             d'2 \tripletFeel 8 { c8[ b c d~] } d2. g,4 a2. b4 c2. d,4 \break
+             d'2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. ds4 \break
              \mark \default %\mark "L"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2~  \tuplet  3/2 4 { b8 f' e d c b } \break
@@ -98,13 +98,13 @@ altoVoice = \relative c' {
              <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
              %\mark "G"
-             g2 \tripletFeel 8 { a4. g8~  g2. g4 e2. d8 a'8~ } a2. d,4
+             g2 \tripletFeel 8 { a4. g8~  g2. g4 e2. e8 a8~ } a2. d,4
              fs2 \tripletFeel 8 { g4. a8~ } a2. fs4 \tripletFeel 8 { d4. <ef fs>8~ <ef fs>4. d8~ } d2. <d f>4
              % \mark "H"
              e2 \tripletFeel 8 { g4. a8~ } a2 \tuplet 3/2 { e8 fs g } a4 fs2 \tripletFeel 8 { fs4. gs8~ } gs!2. gs!4
              g!2 \tripletFeel 8 { g4. g8~ } g2. r4 \tripletFeel 8 { fs4. g8~ g4. a8~ } a2. r4
              %\mark "I"
-             g2 \tripletFeel 8 { a4. g8~ } g2. g4 e2. <d gs>4 a'2. d,4
+             g2 \tripletFeel 8 { a4. g8~ g2. g4 e2. e8 a8~ } a2. d,4
              fs2 \tripletFeel 8 { g4. a8~ } a2. fs4 d2 <ef fs>2 d2. <f g>4
              %\mark "J"
              g2 \tripletFeel 8 { g4. a8~ } a2 \tuplet 3/2 { e8 fs g } a4 fs2 \tripletFeel 8 { e4. gs!8~ } gs!2. e4
@@ -146,7 +146,7 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b d>4
              r4 <g cs>4 r4 <g cs>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
              %\mark "I"
-             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
+             r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <gs b>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "J"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 r4
@@ -201,7 +201,7 @@ bassesVoice = \relative f {
              d4 r4 e4 r4 fs4 r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
              %\mark "D"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
-             a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ gs, a b] }
+             a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ \tweak color #red gs, a b] }
              %\mark "E"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
              a4 r4 g!4 r4 fs4 r4 e4 d \tripletFeel 8 { c4. b8~ b8 bf8 } af4 g1
