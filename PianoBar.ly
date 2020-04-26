@@ -51,7 +51,7 @@ sopraneVoice = \relative c' {
              c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] a4 } g \break
              c8 r8 c4 d e f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] \break
              e r8 c4 d e f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] \tripletFeel 8 { d4. d8 e4 fs } \break
-             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e c, e g c d e e, g a cs e } d2 r4 d,4 \break
+             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \break
              \mark \default %\mark "I"
              \acciaccatura cs'8 d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4~ a8 e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. g4 \break
@@ -90,11 +90,11 @@ altoVoice = \relative c' {
              e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 <b d fs>1 R1 R1
              %\mark "F"
              R1 f'4 f f f f4 f4 f
-             f4 e e4 e e <e g>8 r8 e4 <e g> <e g>
+             f4 e e4 e e <e g>8 r8 e4 <c e> <e g>
              f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c4 c d d
              d f g g f4 f f f f4 f f f e4 e e e
              <e g>8 r8 g4 f g \tripletFeel 8 { f4 f f f e g8 a4 a4 r8 } c,4 a' \tripletFeel 8 { b8 f~ } f4
-             <e g>8 r8 e4 <e g> <e g> f4 f f f f f f f e e e e
+             <e g>8 r8 e4 <c e> <c g'> f4 f f f f f f f e e e e
              <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
              %\mark "G"
@@ -132,13 +132,13 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1 R1 R1
              %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8 c4 c c r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g a <g b> c
+             <g c>8 r8 c4 g a r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g a <g b> c
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <a c>4 r <a d>4 r4 <g c> r4 <e a> r4 <fs d'>4 r4 <b d>4
-             c8 r8 c4 c c r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
+             c8 r8 c4 g a r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <a d> r4 <b d> <g c>4 e'4 d c
              r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> a2 b2
-             r4 <b d>4 r4 <g d'> r4 <e c'> r4 <e a> c'2 r2
+             r4 <b d>4 r4 <g d'> r4 <e c'> r4 <a e'> c2 r2
              %\mark "G"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <gs b>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
