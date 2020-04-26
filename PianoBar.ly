@@ -89,8 +89,8 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "M"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4 \break
              c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g2.  fs4
-             \tag #'visuel { <b, d e g>1\arpeggio }
-             \tag #'midi   { \set tieWaitForNote = ##t \grace { b16\pp ~ d\p ~  e\mp ~ g\f ~ } <b, d e g>1 \unset tieWaitForNote }
+             \tag #'(midi)   { b,16~ d~ e~ g~ <b, d e g>2.~ <b d e g>1 }
+             \tag #'(visuel) { <b d e g>1\arpeggio~ <b d e g>1 }
           \bar "|."
         }
 altoVoice = \relative c' {
@@ -133,7 +133,7 @@ altoVoice = \relative c' {
              e2 e2~ e4 fs4 g a g2 a2 \tripletFeel 8 { a4. <gs b>8~ } <gs b>4 <f! g!>4
              %\mark "K"
              g2 \tripletFeel 8 { b8 a4 af8 } \tuplet 3/2 4 { g8 fs f } e4~ \tuplet 3/2 4 { e8 fs g} a4 a2~ \tripletFeel 8 { a8[ g fs f] } <e gs!>2. <d b'>4
-             <e a>2 e2~ e4 fs4 fs2 e2. <as, cs>4 s1
+             <e a>2 e2~ e4 fs4 fs2 e2. <as, cs>4 s1 s1
         }
 tenorVoice = \relative c' {
           \partial 4 s4
@@ -175,7 +175,7 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 d2 e2 ef2 d4 b
              %\mark "K"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
-             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>2. af4 g1
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>2. af4 g1~ g1
         }
 bassesVoice = \relative f {
           \partial 4 r4
@@ -226,7 +226,7 @@ bassesVoice = \relative f {
              a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ \tweak color #red gs, a b] }
              %\mark "E"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
-             a4 r4 g!4 r4 fs4 r4 e4 d \tripletFeel 8 { c4. b8~ b8 bf8 } af4 g1
+             a4 r4 g!4 r4 fs4 r4 e4 d \tripletFeel 8 { c4. b8~ b8 bf8 } af4 g1~ g1
         }
 
 pianoMusic =   \new PianoStaff
@@ -318,7 +318,7 @@ pianoMusic =   \new PianoStaff
     subtitle = ##f
     piece = ##f
   }
-  \keepWithTag midi \pianoMusic
+  \removeWithTag \removeTags \keepWithTag midi \pianoMusic
   \midi {
     \context {
       \Staff
