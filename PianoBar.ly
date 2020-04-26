@@ -5,6 +5,90 @@
 % Only in lilypond 2.21
 \include "swing.ly"
 
+rhythmMarkStaffReduce = #-3
+rhythmMarkLabelFontSize = #-2
+
+rhythmMark = #(define-music-function (parser location label musicI musicII ) (string? ly:music? ly:music?)
+   #{
+      \mark \markup {
+        \line \general-align #Y #DOWN {
+          \combine
+            \italic \fontsize #rhythmMarkLabelFontSize $label
+            \transparent \italic \fontsize #rhythmMarkLabelFontSize f
+
+          \score {                     % 2nd column in line
+            \new Staff \with {
+              fontSize = #rhythmMarkStaffReduce
+              \override StaffSymbol.staff-space = #(magstep rhythmMarkStaffReduce)
+              \override StaffSymbol.line-count = #0
+              \override VerticalAxisGroup.Y-extent = #'(-0.85 . 4)
+            }
+
+            {
+              \relative c' { \stemUp $musicI }
+
+%             \override Score.SpacingSpanner.strict-note-spacing = ##t
+              \once \override Score.TextScript.Y-offset = #-0.4
+              s4.^\markup{ \halign #-1 \italic "=" }
+
+              \relative c' { \stemUp $musicII }
+            }
+
+            \layout {
+              ragged-right= ##t
+              indent = 0
+              \context {
+                \Staff
+                \remove "Clef_engraver"
+                \remove "Time_signature_engraver"
+              }
+            } % layout end
+
+          } % Score end
+
+        } % line end
+      } % markup end
+   #})
+rhyMarkI = { b'1*1/8 }
+
+rhyMarkII = { b'2*1/4 }
+
+rhyMarkIV = { b'4*1/2 }
+
+rhyMarkEighth = { b'8 }
+
+rhyMarkIIEighths = {
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4) % tight
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 3/16) % even
+  b'8[ b8]
+}
+rhyMarkTriplets = {
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2) % super-tight
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4) % tight
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 3/16) % even
+  \tuplet 3/2 { b'4 b8 }
+}
+rhyMarkSlurredTriplets = {
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4) % tight
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 5/32) % slighty tighter as even
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/8) % even
+  \tuplet 3/2 { b'8 ~ b8 b8 }
+}
+rhyMarkDottedEighths = {
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4) % tight
+  \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 3/16) % even
+  % \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/8) % loose
+  { b'8.[ b16*2] }
+}
+
+#(set! paper-alist (cons '("myvideo" . (cons (* 16 cm) (* 9 cm))) paper-alist))
+\paper {
+  #(set-paper-size "myvideo")
+  top-margin = 2\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
+  page-breaking = #ly:one-line-breaking
+}
 \header {
   title = \markup { \override #'(font-name . "Park Lane NF") \fontsize #8 \smallCaps "Piano Bar" }
   subtitle = ""
@@ -21,14 +105,17 @@
   %systems-per-page = 6
 }
 midiInstrumentName = "honky-tonk"
-global = { \time 4/4 \key g \major \tempo "Swing" 4 = 110 }
+global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 110 \time 4/4 \key g \major }
 sopraneVoice = \relative c' {
-  \set Score.markFormatter = #format-mark-box-alphabet
           \partial 4
-          d4 \mark \default %\mark "A"
+          d4
+             \once \override Score.RehearsalMark.X-offset = #0  % td
+             \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+             \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets
+             %\mark \default %\mark "A"
              d'2 \tripletFeel 8 { c8[ b c d~] } d2. g,4 a2. b4 c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 g2 a2 b2. g4 \break
-             \mark \default %\mark "B"
+             \mark #2 %\mark "B"
              e'2 \tripletFeel 8 { d8[ c d e8~] } e2. fs4 d2 \tripletFeel 8 { c8[ b c d~] } d2. d4 \break
              cs2 \tripletFeel 8 { b8[ a b cs~] } cs2. a4 d2 cs2 c!2. d,4 \break
              \mark \default %\mark "C"
@@ -49,11 +136,13 @@ sopraneVoice = \relative c' {
              c8 r8 c4 b bf \tripletFeel 8 { a8[ gs a b] d[ c b a] g![ c e] g4 e8[ c g] } fs4 c' \tripletFeel 8 { e8 d8~ } d4 \break
              \mark \default %\mark "H"
              c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] a4 } g \break
-             c8 r8 c4 d e f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] \break
-             e r8 c4 d e f8[ g e f~] f[ c d f] e[ f ds e~] e[ c d e] \tripletFeel 8 { d4. d8 e4 fs } \break
+             c8 r8 c4 d e \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] \break
+             e r8 c4 d e \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths f8 g e f~ f c d f e f ds e~ e c d e
+             \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets
+             \tripletFeel 8 { d4. d8 e4 fs } \break
              \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \break
              \mark \default %\mark "I"
-             \acciaccatura cs'8 d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
+             \acciaccatura cs'8 \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkSlurredTriplets d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. g4 \break
              \mark \default %\mark "J"
              \acciaccatura ds'8 e2 \tripletFeel 8 { d8[ c d e8~] } e2. fs4 d2 \tripletFeel 8 { c8[ b c d~] } d2. d4 \break
@@ -209,7 +298,7 @@ bassesVoice = \relative f {
 
 pianoMusic =   \new PianoStaff
   <<
-    \tag #'visuel \new ChordNames {
+    \tag #'notvisuel \new ChordNames {
       \chordmode {
         \partial 4
         s4 g1 e:m a2.:m e4:7 a1:m
@@ -226,6 +315,7 @@ pianoMusic =   \new PianoStaff
     }
     \new Staff = "haut" <<
       \set Staff.midiInstrument = \midiInstrumentName
+      \set Score.markFormatter = #format-mark-box-alphabet
       \clef treble
       \global
       \new Voice = "soprane" { \tag #'midi \set Voice.midiMinimumVolume = #0.3
@@ -250,7 +340,7 @@ pianoMusic =   \new PianoStaff
                             \voiceTwo \bassesVoice
       }
     >>
-    \tag #'notvisuel \new FiguredBass{
+    \tag #'visuel \new FiguredBass{
       \figuremode { \bassFigureExtendersOn
         <_>4 <5>1 <5\!> <5\!> <5\!>
              <5\!> <6\!> <5\!>2 <5\!>2 <2>1
@@ -264,7 +354,7 @@ pianoMusic =   \new PianoStaff
              <5\!> <6\!> <5\!> <5\!>
       }
     }
-    \tag #'notvisuel \new FiguredBass{
+    \tag #'visuel \new FiguredBass{
       \figuremode {
         <_>4 <I>1 <VI> <IV> <II> <V> <V>
              <I>2 <VII>2 <I>1
