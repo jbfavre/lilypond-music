@@ -5,7 +5,7 @@
 % Only in lilypond 2.21
 \include "swing.ly"
 
-\include "libs/RhythmMarks.ly"
+\include "libs/rhythmMarks.ily"
 
 %\include "libs/ly2video.ily"
 \paper {
