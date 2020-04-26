@@ -21,7 +21,7 @@
   %systems-per-page = 6
 }
 midiInstrumentName = "honky-tonk"
-global = { \time 4/4 \key g \major \tempo "swing" 4 = 110 }
+global = { \time 4/4 \key g \major \tempo "Swing" 4 = 110 }
 sopraneVoice = \relative c' {
   \set Score.markFormatter = #format-mark-box-alphabet
           \partial 4
