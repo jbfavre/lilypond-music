@@ -93,7 +93,7 @@ altoVoice = \relative c' {
              d f g g f4 f f f f4 f f f e4 e e e
              <e g>8 r8 g4 f g \tripletFeel 8 { f4 f f f e g8 a4 a4 r8 } c,4 a' \tripletFeel 8 { b8 f~ } f4
              <e g>8 r8 e4 <e g> <e g> f4 f f f f f f f e e e e
-             <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 g4. d8~ d2 <e g>8 r8 g4 <f g> <e g>
+             <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
              %\mark "G"
              g2 \tripletFeel 8 { a4. g8~ }  g2. g4 e2. <d gs>4 a'2. d,4
@@ -134,7 +134,7 @@ tenorVoice = \relative c' {
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <a c>4 r <a d>4 r4 <g c> r4 <e a> r4 <fs d'>4 r4 <b d>4
              c8 r8 c4 c c r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <f d'> r4 <f d'> <g c>4 e'4 d c
+             <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <a d> r4 <b d> <g c>4 e'4 d c
              r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> a2 b2
              r4 <b d>4 r4 <g d'> r4 <e c'> r4 <e a> c'2 r2
              %\mark "G"
