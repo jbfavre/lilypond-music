@@ -67,10 +67,3 @@
     \override ChordName #'after-line-breaking = #dump-spacetime-info
   }
 }
-\paper {
-   page-breaking = #ly:one-line-breaking
-   top-margin    = 148\mm
-   bottom-margin = 148\mm
-   left-margin   = 46\mm
-   right-margin  = 46\mm
-}
