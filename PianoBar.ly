@@ -7,14 +7,27 @@
 
 \include "libs/rhythmMarks.ily"
 
+%%% To enable processing with ly2video, uncomment include and paper blockbelow
 %\include "libs/ly2video.ily"
+%\paper {
+%   page-breaking = #ly:one-line-breaking
+%   top-margin    = 148\mm
+%   bottom-margin = 148\mm
+%   left-margin   = 46\mm
+%   right-margin  = 46\mm
+%}
+%removeTags = #'(notvideo school)
+
+%%% To enable processing with ly2video, comment paper block below
 \paper {
   #(include-special-characters)
   print-all-headers = ##f
-  %ragged-last-bottom = ##f
-  %ragged-bottom = ##f
-  %systems-per-page = 6
+  ragged-last-bottom = ##f
+  max-systems-per-page = 6
 }
+removeTags = #'(school)
+
+keepTags   = #'(visuel notvideo)
 
 \header {
   title = \markup { \override #'(font-name . "Park Lane NF") \fontsize #8 \smallCaps "Piano Bar" }
@@ -296,7 +309,7 @@ pianoMusic =   \new PianoStaff
     subtitle = ##f
     piece = ##f
   }
-  \removeWithTag #'school \keepWithTag #'(visuel notvideo) \pianoMusic
+  \removeWithTag \removeTags \keepWithTag \keepTags \pianoMusic
   \layout {}
 }
 \score {
