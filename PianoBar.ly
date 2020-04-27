@@ -45,7 +45,7 @@ global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 132 \ti
 sopraneVoice = \relative c' {
           \partial 4
           d4
-             \tag #'notvideo \once \override Score.RehearsalMark.X-offset = #0  % td
+             \tag #'notvideo \once \override Score.RehearsalMark.X-offset = #0
              \tag #'notvideo \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
              \tag #'notvideo \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets
              %\mark \default %\mark "A"
