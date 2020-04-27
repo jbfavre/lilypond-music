@@ -28,7 +28,7 @@ keepTags   = #'(visuel notvideo)
   #(include-special-characters)
   print-all-headers = ##f
   ragged-last-bottom = ##f
-  systems-per-page = 5
+  max-systems-per-page = 6
 }
 removeTags = #'(school)
 
@@ -62,10 +62,10 @@ sopraneVoice = \relative c' {
              c2 \tripletFeel 8 { b8[ a g8 b8~] } b2 a2 b2 c2 cs2 d4 ds4 \break
              \mark \default %\mark "E"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4 \break
-             c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1 <b, d e g>1 R1 R1 \break
+             c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1 <b, d e g>1 \break
              \bar"||" \pageBreak
              \mark \default \key c \major %\mark "F"
-             r4 g'4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g \break
+             R1 R1 r4 g'4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g \break
              c8 r8 g4 a as \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] a8 g4 f8 } e8 r8 e4 f fs \break
              \mark \default %\mark "G"
              g8 r8 g4 a bf \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g4 \break
@@ -112,9 +112,9 @@ altoVoice = \relative c' {
              e2 \tripletFeel 8 { e4. fs8~} fs2 fs2 g2 a2 a2 f4 g4
              %\mark "E"
              g2 \tripletFeel 8 { g4. g8~} g2. a4 fs2 \tripletFeel 8 { fs4. gs8~} gs2. e4
-             e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 s1 R1 R1
+             e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 s1
              \key c \major %\mark "F"
-             R1 f4 f f f f4 f4 f
+             R1 R1 R1 f4 f f f f4 f4 f
              f4 e e4 e e <e g>8 r8 e4 g <e g>
              f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c8 r8 c4 d d
              %\mark "G"
@@ -156,9 +156,9 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 <a d>4 d2 e2 ef2 b2
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
-             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1 R1 R1
+             r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1
              \key c \major %\mark "F"
-             R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
+             R1 R1 R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
              %\mark "G"
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
@@ -200,18 +200,18 @@ bassesVoice = \relative f {
              a4 r4 g r4 fs r4 d4 r4 g2 fs f \tripletFeel 8 { g8[ g, a b] }
              %\mark "E"
              c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
-             a4 r4 g! r4 fs r4 e4 d c2 b4 a
+             a4 r4 g! r4 fs r4 e4 d c2 b4 a g1
+             \key c \major %\mark "F"
              <<
-               { g1 R1 R1 }
+               { R1 R1 }
                \new DrumStaff \with { \remove "Time_signature_engraver"
                                       alignAboveContext = #"main"
                                       fontSize = #-3
                                       \override StaffSymbol.staff-space = #(magstep -3)
                                       \override StaffSymbol.thickness = #(magstep -3)
                                       firstClef = ##t
-               } \drummode { R1 r2 ss4 r4 ss4 r4 ss4 ss ss r2 r4 }
+               } \drummode { r2 ss4 r4 ss4 r4 ss4 ss ss r2 r4 }
              >>
-             \key c \major %\mark "F"
              g'4 r d r g4 r d r c4 r g r
              c8 r c4 b a g r d' r g r d r4 c8 r8 c4 b af
              %\mark "G"
