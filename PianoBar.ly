@@ -66,10 +66,11 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "E"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4
              c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1
-             \once \hide Score.MetronomeMark \tempo 4=80 <b, d e g>1\fermata \tempo 4=50 \break
+             \once \hide Score.MetronomeMark <b, d e g>1\fermata \break
              \bar"||" \pageBreak
              \mark \default \key c \major %\mark "F"
-             r4 \once \hide Score.MetronomeMark \tempo 4=132 g'4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g
+             R1 R1
+             r4 \once \hide Score.MetronomeMark g'4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g
              c8 r8 g4 a bf \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] a8 g4 f8 } e8 r8 e4 f fs \break
              \mark \default %\mark "G"
              g8 r8 g4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g4
@@ -118,6 +119,7 @@ altoVoice = \relative c' {
              g2 \tripletFeel 8 { g4. g8~} g2. a4 fs2 \tripletFeel 8 { fs4. gs8~} gs2. e4
              e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 s1
              \key c \major %\mark "F"
+             R1 R1
              R1 f4 f f f f4 f4 f
              f4 e e4 e e <e g>8 r8 e4 d <e g>
              f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c8 r8 c4 d d
@@ -162,6 +164,7 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1
              \key c \major %\mark "F"
+             R1 R1
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 c4 d c r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
              %\mark "G"
@@ -205,9 +208,20 @@ bassesVoice = \relative f {
              a4 r4 g r4 fs r4 d4 r4 g2 fs f \tripletFeel 8 { e8[ gs, a b] } % e8[ b, a g] ?
              %\mark "E"
              c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
-             a4 r4 g! r4 fs r4 e4 d c2 b4 a g1\fermata \key c \major
+             a4 r4 g! r4 fs r4 e4 d c2 b4 a g1\fermata
+             <<
+               { R1 R1 R1 }
+               \new DrumStaff \with { \remove "Time_signature_engraver"
+                                      alignAboveContext = #"main"
+                                      fontSize = #-3
+                                      \override StaffSymbol.staff-space = #(magstep -3)
+                                      \override StaffSymbol.thickness = #(magstep -3)
+                                      firstClef = ##t
+               } { \drummode { r2 ss4 r4 ss4 r4 ss4 ss ss r2 r4 } }
+             >>
              %\mark "F"
-             R1 g'4 r d r g4 r d r c4 r g r
+             \key c \major
+             g'4 r d r g4 r d r c4 r g r
              c8 r c4 b bf g r d' r g r d r4 c8 r8 c4 b a
              %\mark "G"
              g8 r8 g'4 f e d r g, r d' r g, r c4 r g r
