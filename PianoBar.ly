@@ -41,7 +41,7 @@ removeTags = #'(school)
   tagline = ""
 }
 midiInstrumentName = "honky-tonk"
-global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 110 \time 4/4 \key g \major }
+global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 132 \time 4/4 \key g \major }
 sopraneVoice = \relative c' {
           \partial 4
           d4
@@ -62,22 +62,22 @@ sopraneVoice = \relative c' {
              c2 \tripletFeel 8 { b8[ a g8 b8~] } b2 a2 b2 c2 cs2 d4 ds4 \break
              \mark \default %\mark "E"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4 \break
-             c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1 g1 R1 R1 \break
+             c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1 <b, d e g>1 R1 R1 \break
              \bar"||" \pageBreak
-             \mark \default %\mark "F"
-             r4 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g \break
-             c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] a8 g4 f8 } e8 r8 e4 f fs \break
+             \mark \default \key c \major %\mark "F"
+             r4 g'4 a as \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g \break
+             c8 r8 g4 a as \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] a8 g4 f8 } e8 r8 e4 f fs \break
              \mark \default %\mark "G"
-             g8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g4 \break
+             g8 r8 g4 a bf \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { b!8[ as b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g4 \break
              c8 r8 c4 b bf \tripletFeel 8 { a8[ gs a b] d[ c b a] g![ c e] g4 e8[ c g] } fs4 c' \tripletFeel 8 { e8 d8~ } d4 \break
              \mark \default %\mark "H"
-             c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] a4 } g \break
+             c8 r8 g4 a as \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] a4 } g \break
              c8 r8 c4 d e \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths } f8[ g e f~] f[ c d f] e[ f d e~] e[ c d e] d[ e c d~] d[ b c d] \break
              e r8 c4 d e \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths } f8 g e f~ f c d f e f ds e~ e c d e
              \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets }
              \tripletFeel 8 { d4. d8 e4 fs } \break
-             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \bar"||" \break
-             \mark \default %\mark "I"
+             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e e e, g a b cs } d2 r4 d,4 \bar"||" \break
+             \key g \major \mark \default %\mark "I"
              \acciaccatura cs'8 \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkSlurredTriplets } d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. g4 \break
              \mark \default %\mark "J"
@@ -111,10 +111,10 @@ altoVoice = \relative c' {
              g2 \tripletFeel 8 { g4. a8~} a2. a4 fs2 \tripletFeel 8 { e4. gs8~} gs2. gs4
              e2 \tripletFeel 8 { e4. fs8~} fs2 fs2 g2 a2 a2 f4 g4
              %\mark "E"
-             g2 \tripletFeel 8 { g4. a8~} a2. a4 fs2 \tripletFeel 8 { fs4. gs8~} gs2. e4
-             e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 <b d fs>1 R1 R1
-             %\mark "F"
-             R1 f'4 f f f f4 f4 f
+             g2 \tripletFeel 8 { g4. g8~} g2. a4 fs2 \tripletFeel 8 { fs4. gs8~} gs2. e4
+             e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 s1 R1 R1
+             \key c \major %\mark "F"
+             R1 f4 f f f f4 f4 f
              f4 e e4 e e <e g>8 r8 e4 g <e g>
              f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c8 r8 c4 d d
              d d g g f4 f f f f4 f f f e4 e e e
@@ -122,7 +122,7 @@ altoVoice = \relative c' {
              <e g>8 r8 e4 g <e g> f4 f f f f f f f e e e e
              <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
-             %\mark "G"
+             \key g \major %\mark "I"
              g2 \tripletFeel 8 { a4. g8~  g2. g4 e2. e8 a8~ } a2. d,4
              fs2 \tripletFeel 8 { g4. a8~ } a2. fs4 \tripletFeel 8 { d4. <ef fs>8~ <ef fs>4. d8~ } d2. <d f>4
              % \mark "H"
@@ -145,7 +145,7 @@ tenorVoice = \relative c' {
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "B"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b e>4
-             r4 <g cs>4 r4 <e g>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
+             r4 <e, a>4 r4 <e a>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
              %\mark "C"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <e b'>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
@@ -155,16 +155,16 @@ tenorVoice = \relative c' {
              %\mark "E"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1 R1 R1
-             %\mark "F"
+             \key c \major %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8 c4 e c r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
+             <g c>8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <a c>4 r <a d>4 r4 <g c> r4 <e a> r4 <fs d'>4 r4 <b d>4
              c8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <a d> r4 <b d> <g c>4 e'4 d c
              r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> a2 b2
              r4 <b d>4 r4 <g d'> r4 <e c'> r4 <a e'> c2 r2
-             %\mark "G"
+             \key g \major %\mark "I"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <gs b>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
              %\mark "H"
@@ -187,12 +187,12 @@ bassesVoice = \relative f {
              d4 r4 e r4 fs r4 e4 d g2 fs f4 d4 b4 g4
              %\mark "B"
              c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 b4 r4
-             e4 r4 cs r4 a r4 b4 cs d2 e fs4 d e fs
+             a4 r4 cs r4 a r4 b4 cs d2 e fs4 d e fs
              %\mark "C"
              g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
-             d4 r4 e r4 fs r4 e4 fs g2 fs f4 d4 b4 g4
+             d4 r4 e r4 fs r4 e4 d g2 fs f4 d4 b4 g4
              %\mark "D"
-             c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
+             c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 e
              a4 r4 g r4 fs r4 d4 r4 g2 fs f \tripletFeel 8 { g8[ g, a b] }
              %\mark "E"
              c4 r4 b r4 a r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
@@ -207,15 +207,15 @@ bassesVoice = \relative f {
                                       firstClef = ##t
                } \drummode { R1 r2 ss4 r4 ss4 r4 ss4 ss ss r2 r4 }
              >>
-             %\mark "F"
+             \key c \major %\mark "F"
              g'4 r d r g4 r d r c4 r g r
-             c8 r c4 b bf g r d' r g r d r4 c8 r8 c4 b af
+             c8 r c4 b a g r d' r g r d r4 c8 r8 c4 b af
              g8 r8 g'4 f e d r g, r d' r g, r c4 r g r
              c8 r8 c4 d e f r4 d r4 e r4 a, r4 d r4 g r4
              c,8 r8 c4 b a g4 r d' r g4 r d r c4 r g r
              c8 r8 c4 b bf a r4 f r4 c' r4 a4 r4 d4 r4 g,4 r4 c8 r8 c4 b bf
              a4 r4 f4 r4 c'4 r4 a4 r4 d4 c b a g r4 b r4 c r4 cs r4 d4 ds e fs
-             %\mark "A"
+             \key g \major %\mark "I"
              g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
              d4 r4 e r4 fs r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
              %\mark "B"
