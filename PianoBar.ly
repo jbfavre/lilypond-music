@@ -117,24 +117,26 @@ altoVoice = \relative c' {
              R1 f4 f f f f4 f4 f
              f4 e e4 e e <e g>8 r8 e4 g <e g>
              f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c8 r8 c4 d d
+             %\mark "G"
              d d g g f4 f f f f4 f f f e4 e e e
              <e g>8 r8 g4 f g \tripletFeel 8 { f4 f f f e g8 a4 a4 r8 } c,4 a' \tripletFeel 8 { b8 f~ } f4
+             %\mark "H"
              <e g>8 r8 e4 g <e g> f4 f f f f f f f e e e e
              <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
              \key g \major %\mark "I"
              g2 \tripletFeel 8 { a4. g8~  g2. g4 e2. e8 a8~ } a2. d,4
              fs2 \tripletFeel 8 { g4. a8~ } a2. fs4 \tripletFeel 8 { d4. <ef fs>8~ <ef fs>4. d8~ } d2. <d f>4
-             % \mark "H"
+             % \mark "J"
              e2 \tripletFeel 8 { g4. a8~ } a2 \tuplet 3/2 { e8 fs g } a4 fs2 \tripletFeel 8 { fs4. gs8~ } gs!2. gs!4
              g!2 \tripletFeel 8 { g4. g8~ } g2. r4 \tripletFeel 8 { fs4. g8~ g4. a8~ } a2. r4
-             %\mark "I"
+             %\mark "K"
              g2 \tripletFeel 8 { a4. g8~ g2. g4 e2. e8 a8~ } a2. d,4
              fs2 \tripletFeel 8 { g4. a8~ } a2. fs4 d2 <ef fs>2 d2. <f g>4
-             %\mark "J"
+             %\mark "L"
              g2 \tripletFeel 8 { g4. a8~ } a2 \tuplet 3/2 { e8 fs g } a4 fs2 \tripletFeel 8 { e4. gs!8~ } gs!2. e4
              e2 e2~ e4 fs4 g a g2 a2 \tripletFeel 8 { a4. <gs b>8~ } <gs b>4 <f! g!>4
-             %\mark "K"
+             %\mark "M"
              g2 \tripletFeel 8 { b8 a4 af8 } \tuplet 3/2 4 { g8 fs f } e4~ \tuplet 3/2 4 { e8 fs g} a4 a2~ \tripletFeel 8 { a8[ g fs f] } <e gs!>2. <d b'>4
              <e a>2 e2~ e4 fs4 fs2 e2. <as, cs>4 s1 s1
         }
@@ -158,8 +160,10 @@ tenorVoice = \relative c' {
              \key c \major %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
+             %\mark "G"
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <a c>4 r <a d>4 r4 <g c> r4 <e a> r4 <fs d'>4 r4 <b d>4
+             %\mark "H"
              c8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <a d> r4 <b d> <g c>4 e'4 d c
              r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> a2 b2
@@ -167,16 +171,16 @@ tenorVoice = \relative c' {
              \key g \major %\mark "I"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <gs b>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
-             %\mark "H"
+             %\mark "J"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 <b d>4
              r4 <g cs>4 r4 <g cs>4 r4 <e a>4 r4 r4 a2 a2 d2. r4
-             %\mark "I"
+             %\mark "K"
              r4 <b d>4 r4 <a d>4 r4 <b e>4 r4 <b e>4 r4 <a e'>4 r4 <gs b>4 r4 <e c'>4 r4 r4
              r4 <a d>4 r4 <b e>4 r4 <a d>4 r4 r4 b2 c2 b2 r2
-             %\mark "J"
+             %\mark "L"
              r4 <c e>4 r4 <c e>4 r4 <c e>4 r4 r4 r4 <b d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 d2 e2 ef2 d4 b
-             %\mark "K"
+             %\mark "M"
              r4 <c e>4 r4 <c e>4 r4 <e, c'>4 r4 r4 r4 <b' d>4 r4 r4 r4 <b d>4 r4 r4
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>2. af4 g1~ g1
         }
@@ -210,24 +214,26 @@ bassesVoice = \relative f {
              \key c \major %\mark "F"
              g'4 r d r g4 r d r c4 r g r
              c8 r c4 b a g r d' r g r d r4 c8 r8 c4 b af
+             %\mark "G"
              g8 r8 g'4 f e d r g, r d' r g, r c4 r g r
              c8 r8 c4 d e f r4 d r4 e r4 a, r4 d r4 g r4
+             %\mark "H"
              c,8 r8 c4 b a g4 r d' r g4 r d r c4 r g r
              c8 r8 c4 b bf a r4 f r4 c' r4 a4 r4 d4 r4 g,4 r4 c8 r8 c4 b bf
              a4 r4 f4 r4 c'4 r4 a4 r4 d4 c b a g r4 b r4 c r4 cs r4 d4 ds e fs
              \key g \major %\mark "I"
              g4 r4 fs r4 e r4 d r4 c r4 b r4 a r4 b4 c
              d4 r4 e r4 fs r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
-             %\mark "B"
+             %\mark "J"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 e4 r4
              e4 r4 e4 r4 a,4 r4 b4 cs d2 e2 fs4 d e fs
-             %\mark "C"
+             %\mark "K"
              g4 r4 fs4 r4 e4 r4 d4 r4 c4 r4 b4 r4 a4 r4 b4 c
              d4 r4 e4 r4 fs4 r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
-             %\mark "D"
+             %\mark "L"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
              a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ gs, a b] }
-             %\mark "E"
+             %\mark "M"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
              a4 r4 g!4 r4 fs4 r4 e4 d \tripletFeel 8 { c4. b8~ b8 bf8 } af4 g1~ g1
         }
