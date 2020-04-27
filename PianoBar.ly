@@ -226,7 +226,7 @@ bassesVoice = \relative f {
              d4 r4 e4 r4 fs4 r4 e4 d g2 fs \tripletFeel 8 { f4~ f16 d c  b~ b8 a4 g8 }
              %\mark "D"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
-             a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ \tweak color #red gs, a b] }
+             a4 r4 g4 r4 fs4 r4 e4 d g2 fs f \tripletFeel 8 { e8[ gs, a b] }
              %\mark "E"
              c4 r4 b4 r4 a4 r4 b4 c b4 r4 c4 d e4 r4 fs4 gs
              a4 r4 g!4 r4 fs4 r4 e4 d \tripletFeel 8 { c4. b8~ b8 bf8 } af4 g1~ g1
