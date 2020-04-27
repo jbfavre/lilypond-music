@@ -28,7 +28,7 @@ keepTags   = #'(visuel notvideo)
   #(include-special-characters)
   print-all-headers = ##f
   ragged-last-bottom = ##f
-  max-systems-per-page = 6
+  systems-per-page = 5
 }
 removeTags = #'(school)
 
@@ -63,10 +63,10 @@ sopraneVoice = \relative c' {
              \mark \default %\mark "E"
              e2 \tripletFeel 8 { d8[ c d e8~] } e2. c4 d2 \tripletFeel 8 { c8[ b a b8~] } b2. d4 \break
              c2 \tripletFeel 8 { b8[ a g! b8~] } b2 a2 g1 g1 R1 R1 \break
-             \bar"||"
+             \bar"||" \pageBreak
              \mark \default %\mark "F"
              r4 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g \break
-             c8 r8 g4 \tweak color #red a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] a8 g4 f8 } e4 e \tweak color #red f fs \break
+             c8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] a8 g4 f8 } e8 r8 e4 f fs \break
              \mark \default %\mark "G"
              g8 r8 g4 a bf \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { b!8[ bf b! a~] } a4 g4 \tripletFeel 8 { c8[ b c a~] } a4 g4 \break
              c8 r8 c4 b bf \tripletFeel 8 { a8[ gs a b] d[ c b a] g![ c e] g4 e8[ c g] } fs4 c' \tripletFeel 8 { e8 d8~ } d4 \break
@@ -76,7 +76,7 @@ sopraneVoice = \relative c' {
              e r8 c4 d e \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths } f8 g e f~ f c d f e f ds e~ e c d e
              \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets }
              \tripletFeel 8 { d4. d8 e4 fs } \break
-             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \break
+             \tuplet 3/2 4 { g8 d, g b d g f d, g b d f e e, g c d e cs e, g a b cs } d2 r4 d,4 \bar"||" \break
              \mark \default %\mark "I"
              \acciaccatura cs'8 \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkSlurredTriplets } d2 \tripletFeel 8 { c8[ b c d~] d2. g,4 a4. e8 b'4 e,8 c'8~ } c2. d,4 \break
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 \tripletFeel 8 { g4. a8~ a4. b8~ } b2. g4 \break
@@ -115,11 +115,11 @@ altoVoice = \relative c' {
              e2 \tripletFeel 8 { e4. fs8~} fs2 fs e1 <b d fs>1 R1 R1
              %\mark "F"
              R1 f'4 f f f f4 f4 f
-             f4 e e4 e e <e g>8 r8 e4 <\tweak color #red c \tweak color #red e> <e g>
-             f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c4 c \tweak color #red d d
+             f4 e e4 e e <e g>8 r8 e4 g <e g>
+             f4 f4 f4 f \tripletFeel 8 { f4 f f8 r4 r8 } c8 r8 c4 d d
              d d g g f4 f f f f4 f f f e4 e e e
              <e g>8 r8 g4 f g \tripletFeel 8 { f4 f f f e g8 a4 a4 r8 } c,4 a' \tripletFeel 8 { b8 f~ } f4
-             <e g>8 r8 e4 <c e> <c g'> f4 f f f f f f f e e e e
+             <e g>8 r8 e4 g <e g> f4 f f f f f f f e e e e
              <e g>8 r8 g4 <f g> <e g> f4. a8~a2 g4. a8~ a2 f4. g8~ g2 <e g>8 r8 g4 <f g> <e g>
              f4. a8~ a2 g4. a8~ a2 fs2 d2 s1 s1 <fs a>2 r2
              %\mark "G"
@@ -157,10 +157,10 @@ tenorVoice = \relative c' {
              r4 <c e>4 r4 <c e>4 r4 <a d>4 r4 r4 <g c>1 <g>1 R1 R1
              %\mark "F"
              R1 r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
-             <g c>8 r8 c4 \tweak color #red g a r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g a \tweak color #red b c
+             <g c>8 r8 c4 e c r4 <b d>4 r <b d>4 r4 <b d>4 r4 <b d>4 g8 r8 g4 g c
              <g b>4 <b d> <b d> <c e> r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <a c>4 r <a d>4 r4 <g c> r4 <e a> r4 <fs d'>4 r4 <b d>4
-             c8 r8 c4 g a r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
+             c8 r8 c4 e d r4 <b d>4 r <b d>4 r4 <b d>4 r <b d>4 r4 <g c>4 r4 <g c>4
              <g c>8 r8 e'4 d c r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> r4 <a d> r4 <b d> <g c>4 e'4 d c
              r4 <f, c'>4 r4 <a c> r4 <g c> r4 <e a c> a2 b2
              r4 <b d>4 r4 <g d'> r4 <e c'> r4 <a e'> c2 r2
@@ -209,7 +209,7 @@ bassesVoice = \relative f {
              >>
              %\mark "F"
              g'4 r d r g4 r d r c4 r g r
-             c8 r c4 \tweak color #red b a g r d' r g r d r4 c4 c \tweak color #red b a
+             c8 r c4 b bf g r d' r g r d r4 c8 r8 c4 b af
              g8 r8 g'4 f e d r g, r d' r g, r c4 r g r
              c8 r8 c4 d e f r4 d r4 e r4 a, r4 d r4 g r4
              c,8 r8 c4 b a g4 r d' r g4 r d r c4 r g r
