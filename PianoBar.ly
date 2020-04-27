@@ -2,8 +2,12 @@
 \language "english"
 % Renders swing rhythm in midi
 \include "articulate.ly"
-% Only in lilypond 2.21
+% Will be included in lilypond 2.21
+% In the mean time, you can get it from
+% https://github.com/lilypond/lilypond/blob/master/ly/swing.ly
 \include "swing.ly"
+% This one has been found here:
+% http://lsr.di.unimi.it/LSR/Item?id=204
 \include "libs/rhythmMarks.ily"
 
 keepTags   = #'(visuel notvideo)
