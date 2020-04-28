@@ -10,17 +10,53 @@
 % http://lsr.di.unimi.it/LSR/Item?id=204
 \include "libs/rhythmMarks.ily"
 
+\include "libs/layouts/book-titling.ily"
 
 %%% To enable processing with ly2video, comment paper block below
 \paper {
   #(set-paper-size "a4")
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Latin Modern Roman"
+     #:sans "Latin Modern Sans"
+     #:factor (/ staff-height pt 20)
+    ))
   top-margin = 1\cm
   bottom-margin = 1\cm
   #(include-special-characters)
   print-all-headers = ##f
   ragged-last-bottom = ##f
   max-systems-per-page = 6
+  bookTitleMarkup = \markup \column {
+    \fill-line { \fontsize #5 \italic \fromproperty #'header:composer }
+    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \typewriter \fromproperty #'header:date }
+    \combine \null \vspace #14
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #4
+    \fill-line { \fontsize #10 \fromproperty #'header:title }
+    \combine \null \vspace #1
+    \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
+    \combine \null \vspace #3
+    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
+    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #14
+    \fill-line{
+      \column{
+        \when-property #'header:poet \fill-line {
+          \concat { \typewriter "Paroles: " \fontsize #2 \italic \fromproperty #'header:poet }
+        }
+        \when-property #'header:arranger \fill-line {
+          \concat { \typewriter "Arrangements: " \fontsize #2 \italic \fromproperty #'header:arranger }
+        }
+      }
+    }
+    }
+  scoreTitleMarkup = \markup \null
 }
+\pageBreak
 removeTags = #'(school)
 keepTags   = #'(visuel notvideo)
 
@@ -41,63 +77,68 @@ keepTags   = #'(visuel notvideo)
 
 \header {
   title = \markup { \override #'(font-name . "Park Lane NF") \fontsize #8 \smallCaps "Piano Bar" }
-  subtitle = ""
+  subtitle = \markup { \smallCaps "Pièce Pour Piano" }
   composer = "Jean Baptiste Favre"
-  opus = "op. 2"
+  opus = "Op. 2"
   dedication = \markup { \italic "Clichy-la-Garenne, avril 2020" }
   tagline = ""
+  date = "Avril 2020"
 }
 midiInstrumentName = "honky-tonk"
 global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 132 \time 4/4 \key g \major }
 marksToDisplay = {
-        s4
-        \tag #'notvideo \once \override Score.RehearsalMark.X-offset = #0
-        \tag #'notvideo \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-        \tag #'notvideo \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets
+        \partial 4 s4
+            \tag #'notvideo \once \override Score.RehearsalMark.X-offset = #0
+            \tag #'notvideo \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+            \tag #'notvideo \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets
         %\mark \default %\mark "A"
-        s1*8 \break
+            s1*8 \break
         \mark #2 %\mark "B"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "C"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "D"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "E"
-        s1*7 s1\fermata \break
-        \bar"||" \pageBreak
+            s1*7 s1\fermata \break
+            \bar"||" \pageBreak
         \mark \default %\mark "F"
-        s1*10 \break
+            s1*10 \break
         \mark \default %\mark "G"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "H"
-        s1*5
-        \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths }
-        s1*3 \break
-        s1*1
-        \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths }
-        s1*2
-        \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets }
-        s1*4
-        \bar"||" \break
+            s1*5
+            \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+                              \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths }
+            s1*3 \break
+            s1*1
+            \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+                              \rhythmMark #"binaire" \rhyMarkIIEighths \rhyMarkIIEighths }
+            s1*2
+            \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+                              \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkTriplets }
+            s1*4
+            \bar"||" \break
         \mark \default %\mark "I"
-        \acciaccatura { s8 }
-        \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkSlurredTriplets }
-        s1*8 \break
+            \acciaccatura { s8 }
+            \tag #'notvideo { \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+                              \rhythmMark #"ternaire" \rhyMarkIIEighths \rhyMarkSlurredTriplets }
+            s1*8 \break
         \mark \default %\mark "J"
-        \acciaccatura { s8 }
-        s1*8 \break
+            \acciaccatura { s8 }
+            s1*8 \break
         \mark \default %\mark "K"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "L"
-        s1*8 \break
+            s1*8 \break
         \mark \default %\mark "M"
-        s1*8 s1\fermata
-        \bar "|."
+            s1*8 s1\fermata
+            \bar "|."
       }
 chordNames = \new ChordNames {
         \chordmode {
-          \partial 4
-          s4 g1 e:m a2.:m e4:7 a1:m
+          \partial 4 s4
+             g1 e:m a2.:m e4:7 a1:m
              d:7 d:7/fs g2 fs:dim g1:7/f
              c1 a:m b:m e:m
              cs:dim6/e a:7 d2 cs:dim6/e d1:7
@@ -110,8 +151,7 @@ chordNames = \new ChordNames {
         }
       }
 sopraneVoice = \relative c' {
-          \partial 4
-          d4
+          \partial 4 d4
           %\mark "A"
              d'2 \tripletFeel 8 { c8[ b c d~] } d2. g,4 a2. b4 c2. d,4
              c'2 \tripletFeel 8 { b8[ a b c~] } c2. fs,4 g2 a2 b2. g4
@@ -311,7 +351,8 @@ bassesVoice = \relative f {
         }
 numericFiguredBass = \new FiguredBass{
           \figuremode { \bassFigureExtendersOn
-            <_>4 <5>1 <5\!> <5\!> <5\!>
+            \partial 4 <_>4
+                 <5>1 <5\!> <5\!> <5\!>
                  <5\!> <6\!> <5\!>2 <5\!>2 <2>1
                  <5\!>1 <5\!> <5\!> <5\!>
                  <6\!> <_+\!> <5\!>2 <6\!> <6\!>1
@@ -325,7 +366,8 @@ numericFiguredBass = \new FiguredBass{
         }
 degreeFiguredBass = \new FiguredBass{
           \figuremode {
-            <_>4 <I>1 <VI> <IV> <II> <V> <V>
+            \partial 4 <_>4
+                 <I>1 <VI> <IV> <II> <V> <V>
                  <I>2 <VII>2 <I>1
                  <IV>1 <II> <III> <VI>
                  <IV> <II> <V>2 <IV>2 <V>1
@@ -337,7 +379,9 @@ degreeFiguredBass = \new FiguredBass{
                  <II> <V> <IV> <I>
           }
         }
-pianoMusic =   \new PianoStaff
+pianoMusic =   \new PianoStaff \with {
+    instrumentName = "Piano"
+  }
   <<
     \tag #'(notvideo school) \chordNames
     \new Staff = "haut" <<
@@ -366,13 +410,9 @@ pianoMusic =   \new PianoStaff
 \score {
   \removeWithTag \removeTags \keepWithTag midi \pianoMusic
   \midi {
-    \context {
-      \Staff
-      \remove "Staff_performer"
-    }
-    \context {
-      \Voice
-      \consists "Staff_performer"
-    }
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
   }
 }
