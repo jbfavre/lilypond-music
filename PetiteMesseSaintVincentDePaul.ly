@@ -253,7 +253,7 @@ blankPage = {
             \gloriaGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              { \silence \gloriaIntonationMusic 
+              { \silence \gloriaIntonationMusic
                 \partcombine
                 <<  \gloriaTenorMusic >>
                 <<  \gloriaBasseMusic >>
@@ -266,7 +266,7 @@ blankPage = {
             \gloriaGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              { \silence \gloriaIntonationMusic 
+              { \silence \gloriaIntonationMusic
                 \partcombine
                 <<  \gloriaTenorMusic >>
                 <<  \gloriaBasseMusic >>
@@ -525,7 +525,7 @@ blankPage = {
             \anamneseGlobal \clef treble
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              { \silence \anamneseIntonationMusic 
+              { \silence \anamneseIntonationMusic
                 \partcombine
                 <<  \anamneseMainSopranoMusic >>
                 <<  \anamneseMainAltoMusic >>
@@ -538,7 +538,7 @@ blankPage = {
             \anamneseGlobal \clef bass
             \set Staff.printPartCombineTexts = ##f
             \new Voice <<
-              { \silence \anamneseIntonationMusic 
+              { \silence \anamneseIntonationMusic
                 \partcombine
                 <<  \anamneseMainTenorMusic >>
                 <<  \anamneseMainBasseMusic >>
