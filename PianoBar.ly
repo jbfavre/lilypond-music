@@ -312,20 +312,10 @@ pianoMusic =   \new PianoStaff
   >>
 
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = ##f
-  }
   \removeWithTag \removeTags \keepWithTag \keepTags \pianoMusic
   \layout {}
 }
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = ##f
-  }
   \removeWithTag \removeTags \keepWithTag midi \pianoMusic
   \midi {
     \context {
