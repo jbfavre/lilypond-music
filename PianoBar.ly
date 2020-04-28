@@ -13,6 +13,10 @@
 keepTags   = #'(visuel notvideo)
 
 %%% To enable processing with ly2video, uncomment include and paper blockbelow
+% To render the score as a video, please run:
+% > . ./.venv/bin/activate # to enable Virtualenv
+% > LANG=C ly2video -i PianoBar.ly -o PianoBar2.mp4 -x 1280 -y 720 -q1 -f60 --note-cursor -s -r200
+%
 %\include "libs/ly2video.ily"
 %removeTags = #'(notvideo school)
 %\paper {
