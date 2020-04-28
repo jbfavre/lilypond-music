@@ -14,6 +14,9 @@
 
 %%% To enable processing with ly2video, comment paper block below
 \paper {
+  #(include-special-characters)
+  ragged-last-bottom = ##f
+  max-systems-per-page = 6
   #(set-paper-size "a4")
   #(define fonts
     (set-global-fonts
@@ -25,10 +28,6 @@
     ))
   top-margin = 1\cm
   bottom-margin = 1\cm
-  #(include-special-characters)
-  print-all-headers = ##f
-  ragged-last-bottom = ##f
-  max-systems-per-page = 6
   bookTitleMarkup = \markup \column {
     \fill-line { \fontsize #5 \italic \fromproperty #'header:composer }
     \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \typewriter \fromproperty #'header:date }
@@ -38,8 +37,8 @@
     \fill-line { \fontsize #10 \fromproperty #'header:title }
     \combine \null \vspace #1
     \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
-    \combine \null \vspace #3
-    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
+    \combine \null \vspace #1
+    \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
     \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     \combine \null \vspace #14
