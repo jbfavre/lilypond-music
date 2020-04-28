@@ -1,5 +1,6 @@
 \version "2.20.0"
 \language "english"
+\include "libs/layouts/book-titling.ily"
 
 #(define absolute-volume-alist '())
 #(set! absolute-volume-alist
@@ -24,19 +25,57 @@
 \header {
   title = "Un zèbre en bord de mer"
   composer = "Jean Baptiste Favre"
-  poet = ""
   opus = "op. 1"
   dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
   subtitle = ""
   tagline = ""
 }
 
-perPageSystemNumber = 5
-%perPageSystemNumber = 4
-
+\paper {
+  #(include-special-characters)
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Latin Modern Roman"
+     #:sans "Latin Modern Sans"
+     #:typewriter "Monospace Regular"
+     #:factor (/ staff-height pt 20)
+    ))
+  max-systems-per-page = 5
+  systems-per-page = 5
+  bookTitleMarkup = \markup \column {
+    \fill-line { \fontsize #5 \italic \fromproperty #'header:composer }
+    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \typewriter \fromproperty #'header:date }
+    \combine \null \vspace #14
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #4
+    \fill-line { \fontsize #10 \fromproperty #'header:title }
+    \combine \null \vspace #1
+    \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
+    \combine \null \vspace #3
+    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
+    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #14
+    \fill-line{
+      \column{
+        \when-property #'header:poet \fill-line {
+          \concat { \typewriter "Paroles: " \fontsize #2 \italic \fromproperty #'header:poet }
+        }
+        \when-property #'header:arranger \fill-line {
+          \concat { \typewriter "Arrangements: " \fontsize #2 \italic \fromproperty #'header:arranger }
+        }
+      }
+    }
+    }
+  scoreTitleMarkup = \markup \null
+}
+\pageBreak
 % Control FiguredBass display
 % Used with \keepWithTag
 % FiguredBass will be displayed if figuredBassTag is set to "figuredBass"
+keepTags = #'(visuel)
 figuredBassTag = "noFiguredBass"
 
 % Controls Midi dynamics inclusion
@@ -376,23 +415,9 @@ pianoStaff = {
   >>
 }
 
-\paper {
-  #(include-special-characters)
-  #(define fonts
-    (set-global-fonts
-     #:music "emmentaler"
-     #:brace "emmentaler"
-     #:roman "Latin Modern Roman"
-     #:sans "Latin Modern Sans"
-     #:typewriter "Monospace Regular"
-     #:factor (/ staff-height pt 20)
-    ))
-  max-systems-per-page = 5
-  systems-per-page = \perPageSystemNumber
-}
 
 \score {
-  \keepWithTag \figuredBassTag \pianoStaff
+  \keepWithTag \keepTags \pianoStaff
   \layout {
     \context {
       \FiguredBass
