@@ -69,7 +69,7 @@
       \vspace #0.5
       \fill-line {
         \line { "" }
-        \center-column { \fontsize #6 \sans \fromproperty #'header:title }
+        \center-column { \fontsize #6 \sans \bold \fromproperty #'header:title }
         \line { "" }
       }
       \fill-line {
