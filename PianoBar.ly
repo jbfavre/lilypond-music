@@ -51,7 +51,7 @@
     \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     \combine \null \vspace #1
-    \fill-line { \epsfile #X #100 #"PianoBar.eps" }
+    \fill-line { \epsfile #X #100 #"libs/images/PianoBar.eps" }
     \combine \null \vspace #14
     \fill-line{
       \column{
