@@ -12,6 +12,15 @@
 
 \include "libs/layouts/book-titling.ily"
 
+\header {
+  title = "Piano Bar"
+  subtitle = "Divertissement pour Piano"
+  composer = "Jean Baptiste Favre"
+  opus = "op. 2"
+  tagline = ""
+  date = "Clichy-la-Garenne, avril 2020"
+}
+
 %%% To enable processing with ly2video, comment paper block below
 \paper {
   #(include-special-characters)
@@ -34,13 +43,15 @@
     \combine \null \vspace #14
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     \combine \null \vspace #4
-    \fill-line { \fontsize #10 \fromproperty #'header:title }
+    \fill-line { \override #'(font-name . "Park Lane NF") \fontsize #17 \fromproperty #'header:title }
     \combine \null \vspace #1
-    \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
+    \fill-line { \when-property #'header:subtitle \smallCaps \fontsize #3 \fromproperty #'header:subtitle }
     \combine \null \vspace #1
     \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
     \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #1
+    \fill-line { \epsfile #X #100 #"PianoBar.eps" }
     \combine \null \vspace #14
     \fill-line{
       \column{
@@ -52,8 +63,28 @@
         }
       }
     }
+  }
+  scoreTitleMarkup =  \markup {
+    \column {
+      \vspace #0.5
+      \fill-line {
+        \line { "" }
+        \center-column { \fontsize #6 \sans \fromproperty #'header:title }
+        \line { "" }
+      }
+      \fill-line {
+        \line { "" }
+        \center-column { "" }
+        \line {
+          \right-column {
+            \fontsize #1 \sans \fromproperty #'header:composer
+            \fontsize #0.8 \typewriter \fromproperty #'header:opus
+          }
+        }
+      }
+      \vspace #1
     }
-  scoreTitleMarkup = \markup \null
+  }
 }
 \pageBreak
 removeTags = #'(school)
@@ -74,15 +105,6 @@ keepTags   = #'(visuel notvideo)
 %   right-margin  = 46\mm
 %}
 
-\header {
-  title = \markup { \override #'(font-name . "Park Lane NF") \fontsize #8 \smallCaps "Piano Bar" }
-  subtitle = \markup { \smallCaps "Pièce Pour Piano" }
-  composer = "Jean Baptiste Favre"
-  opus = "Op. 2"
-  dedication = \markup { \italic "Clichy-la-Garenne, avril 2020" }
-  tagline = ""
-  date = "Avril 2020"
-}
 midiInstrumentName = "honky-tonk"
 global = { \override Score.MetronomeMark.padding = #7 \tempo "Swing" 4 = 132 \time 4/4 \key g \major }
 marksToDisplay = {

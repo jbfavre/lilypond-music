@@ -27,8 +27,9 @@
   composer = "Jean Baptiste Favre"
   opus = "op. 1"
   dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
-  subtitle = ""
+  subtitle = "Fantaisie pour Piano"
   tagline = ""
+  date = "Clichy-la-Garenne, février 2020"
 }
 
 \paper {
@@ -39,11 +40,11 @@
      #:brace "emmentaler"
      #:roman "Latin Modern Roman"
      #:sans "Latin Modern Sans"
-     #:typewriter "Monospace Regular"
      #:factor (/ staff-height pt 20)
     ))
-  max-systems-per-page = 5
   systems-per-page = 5
+  top-margin = 1\cm
+  bottom-margin = 1\cm
   bookTitleMarkup = \markup \column {
     \fill-line { \fontsize #5 \italic \fromproperty #'header:composer }
     \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \typewriter \fromproperty #'header:date }
@@ -53,10 +54,12 @@
     \fill-line { \fontsize #10 \fromproperty #'header:title }
     \combine \null \vspace #1
     \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
-    \combine \null \vspace #3
-    \fill-line { \postscript #"-20 0 moveto 40 0 rlineto stroke" }
+    \combine \null \vspace #1
+    \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
     \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #1
+    \fill-line { \epsfile #X #50 #"BordDeMer.eps" }
     \combine \null \vspace #14
     \fill-line{
       \column{
@@ -68,15 +71,35 @@
         }
       }
     }
+  }
+  scoreTitleMarkup = \markup {
+    \column {
+      \vspace #0.5
+      \fill-line {
+        \line { "" }
+        \center-column { \fontsize #6 \sans \fromproperty #'header:title }
+        \line { "" }
+      }
+      \fill-line {
+        \line { "" }
+        \center-column { "" }
+        \line {
+          \right-column {
+            \fontsize #1 \sans \fromproperty #'header:composer
+            \fontsize #0.8 \typewriter \fromproperty #'header:opus
+          }
+        }
+      }
+      \vspace #1
     }
-  scoreTitleMarkup = \markup \null
+  }
 }
 \pageBreak
 % Control FiguredBass display
 % Used with \keepWithTag
 % FiguredBass will be displayed if figuredBassTag is set to "figuredBass"
-keepTags = #'(visuel)
-figuredBassTag = "noFiguredBass"
+removeTags = #'(school)
+keepTags   = #'(visuel notvideo)
 
 % Controls Midi dynamics inclusion
 % Used with \keepWithTag
@@ -371,7 +394,7 @@ basseDegres = {
     <VI> <II> <V> <I> <IV> <I> <V> <I> <I>
   }
 }
-pianoStaff = {
+pianoMusic = {
   \new PianoStaff \with { instrumentName = "Piano" }
   <<
     \new Staff = "up"
@@ -409,15 +432,15 @@ pianoStaff = {
                               \voiceFour \basseVoice
       >>
       \tag #'visuel \new Dynamics << \dynamicsDownStaff >>
-      \tag #'visuel \tag #'figuredBass \new FiguredBass << \basseChiffree >>
-      \tag #'visuel \tag #'figuredBass \new FiguredBass << \basseDegres >>
+      \tag #'visuel \tag #'school \new FiguredBass << \basseChiffree >>
+      \tag #'visuel \tag #'school \new FiguredBass << \basseDegres >>
      >>
   >>
 }
 
 
 \score {
-  \keepWithTag \keepTags \pianoStaff
+  \removeWithTag \removeTags \keepWithTag \keepTags \pianoMusic
   \layout {
     \context {
       \FiguredBass
@@ -426,7 +449,7 @@ pianoStaff = {
   }
 }
 \score {
-  \keepWithTag midi \pianoStaff
+  \removeWithTag \removeTags \keepWithTag midi \pianoMusic
   \midi {
     \context {
       \Staff
