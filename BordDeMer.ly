@@ -25,7 +25,7 @@
 \header {
   title = "Un zèbre en bord de mer"
   composer = "Jean Baptiste Favre"
-  opus = "op. 1"
+  opus = "Op. 1"
   dedication = \markup { \italic "Clichy-la-Garenne, février 2020" }
   subtitle = "Fantaisie pour Piano"
   tagline = ""
@@ -38,28 +38,25 @@
     (set-global-fonts
      #:music "emmentaler"
      #:brace "emmentaler"
-     #:roman "Latin Modern Roman"
-     #:sans "Latin Modern Sans"
-     #:factor (/ staff-height pt 20)
+     #:roman "Arial"
+     #:sans "Cantarell thin"
     ))
   systems-per-page = 5
   top-margin = 1\cm
   bottom-margin = 1\cm
   bookTitleMarkup = \markup \column {
-    \fill-line { \fontsize #5 \italic \fromproperty #'header:composer }
-    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \typewriter \fromproperty #'header:date }
+    \fill-line { \fontsize #5 \fromproperty #'header:composer }
+    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
     \combine \null \vspace #14
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     \combine \null \vspace #4
     \fill-line { \fontsize #10 \fromproperty #'header:title }
     \combine \null \vspace #1
-    \fill-line { \when-property #'header:subtitle \fontsize #3 \fromproperty #'header:subtitle }
+    \fill-line { \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
     \combine \null \vspace #1
     \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
-    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \typewriter \bold \fromproperty #'header:opus }
+    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \sans \bold \fromproperty #'header:opus }
     \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
-    \combine \null \vspace #1
-    \fill-line { \epsfile #X #50 #"libs/images/BordDeMer.eps" }
     \combine \null \vspace #14
     \fill-line{
       \column{
@@ -77,7 +74,7 @@
       \vspace #0.5
       \fill-line {
         \line { "" }
-        \center-column { \fontsize #6 \sans \bold \fromproperty #'header:title }
+        \center-column { \fontsize #6 \bold \fromproperty #'header:title }
         \line { "" }
       }
       \fill-line {
@@ -85,8 +82,8 @@
         \center-column { "" }
         \line {
           \right-column {
-            \fontsize #1 \sans \fromproperty #'header:composer
-            \fontsize #0.8 \typewriter \fromproperty #'header:opus
+            \fontsize #1 \fromproperty #'header:composer
+            \fontsize #0.8 \sans \fromproperty #'header:opus
           }
         }
       }
