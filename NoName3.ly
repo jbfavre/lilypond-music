@@ -20,18 +20,30 @@
 \paper {
   #(set-paper-size "a4")
 }
+removeTags = #'(school)
+keepTags   = #'(visuel notvideo)
+
+% Controls Midi dynamics inclusion
+% Used with \keepWithTag
+% FiguredBass will be displayed if midiTag is set to "midi"
+midiTag = "midi"
+midiInstrumentName = "acoustic grand"
 
 global = {
   \key g \minor
   \time 4/4
-  \tempo "Lent, imposant" 4=50
 }
 
+rightDynamics = {
+  \tempo "Lent, imposant" 4=50
+  s1*5
+  s2. \tempo 4=85
+}
 rightOne = \relative c'' {
   \global
   r4 <d g bf d>2.\fermata r4 <d f a d>2.\fermata r4 <e g bf d>2.\fermata r4 <ef g c d>2.\fermata  r4 <d fs a d>2.\fermata
   d'2~ d8 c8 bf! a g fs ef! d c bf! a g fs ef! d cs d4. d8 bf'2. a4 g1 R1 d'2 d4 d c2. d4 bf2 a g1 r4 g4 g a bf2 bf c2. c4 d1
-  d2 d4 d f2. f4 d2 c bf1 r4 bf4 af af g2 c4 ef ef2. d4 d4 e f g af2 f4 f ef2 c ef2. d4 d2 c2
+  d2 d4 d f2. f4 d2 c bf1 r4 bf4 af af g2 c4 ef ef2. d4 d4 e f g af2 f4 f ef2 c ef2. df4 df2 c2
 }
 
 rightTwo = \relative c'' {
@@ -50,22 +62,43 @@ leftTwo = \relative f {
   g'8 d g bf d bf g d g8 d g bf d bf g d g8 d g bf d bf g d ef c ef g c g ef c g' d g bf d a fs d
   g d g bf d bf g d ef bf ef g bf g ef bf d bf d f bf f d bf ef c ef a c a ef c fs d fs a d a fs d
   g d g bf d bf g d f c f a c a f c fs d fs a c a fs d g d g bf d bf g d ef c ef af c af! ef c
-  ef c ef g c g ef c g' d g b! d b! g d e! c e! g c g e! c f c f a c a f c ef c ef af c af ef c
+  ef c ef g c g ef c g' d g b! d b! g d e! c e! g c g e! c f c f af c af f c ef c ef af c af ef c
   ef bf ef g bf g ef bf e c e g c g e c
 
 }
 
-\score {
-  \new PianoStaff \with {
+pianoStaff = \new PianoStaff \with {
     instrumentName = "Piano"
   } <<
     \new Staff = "right" \with {
       midiInstrument = "acoustic grand"
-    } << \rightOne \\ \rightTwo >>
+    } << \rightOne \\ \rightTwo \\ \tag #'midi \rightDynamics >>
+    \tag #'visuel \new Dynamics << \rightDynamics >>
     \new Staff = "left" \with {
       midiInstrument = "acoustic grand"
     } { \clef bass << \leftOne \\ \leftTwo >> }
   >>
-  \layout { }
-  \midi { }
+
+\score {
+  \removeWithTag \removeTags \keepWithTag \keepTags \pianoStaff
+  \layout {
+    \context {
+      \FiguredBass
+      \override BassFigure #'font-size = #-1
+    }
+  }
+}
+
+\score {
+  \removeWithTag \removeTags \keepWithTag midi \pianoStaff
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
