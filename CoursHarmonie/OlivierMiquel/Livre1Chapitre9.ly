@@ -109,7 +109,6 @@ global = { \time 3/4 \key c \major }
     >>
   >>
 }
-%}
 global = { \time 4/4 \key c \major }
 \score {
   \header {
@@ -171,7 +170,7 @@ global = { \time 4/4 \key c \major }
     >>
   >>
 }
-%{
+%}
 global = { \time 4/4 \key f \major }
 \score {
   \header {
@@ -184,46 +183,52 @@ global = { \time 4/4 \key f \major }
       \clef treble
       \global
       \relative c'' {
-        f4\f (c d c8 bf a4 g f) r4 f'4 (c d c8 bf a4 g f2) a8\p (bf c4) c8 (d c bf) a (bf c4) c8 (d c bf) a4 g8\< g f (g a bf)\! c4\f (d8 e f2)
+        f4\f (c d c8 bf a4 g f) r4 f'4 (c d c8 bf a4 g f2) \break
+        a8\p (bf c4) c8 (d c bf) a (bf c4) c8 (d c bf) a4 g8\< g f (g a bf)\! c4\f (d8 e f2)
         \bar "|."
       }
     >>
     \new Staff <<
       \clef treble
       \global
-      \relative c'' {
-        r1*4
-        r1*4
+      \relative c' {
+        f4 a bf a8 g f4 e d e f4 r4 f4 c c8 d e d c bf c4
+        f8 e f4 e8 d e4 d c f g f4 g a8 g f4 g4 f8 g a2
       }
     >>
     \new Staff <<
       \clef "treble_8"
       \global
-      \relative c'' {
-        r1*4
-        r1*4
+      \relative c' {
+        R1 c4 c8 bf a4 g c8 d e4 d a8 g f4 g a8 g a bf
+        c bf a g g4 a8 g f4 g a8 bf c4 d d8 c c4 d4 e d c2
       }
     >>
     \new Staff <<
       \clef bass
       \global
       \relative f {
-        r1*4
-        r1*4
+        r1 f4 c d c8 bf a4 g f8 g a bf c2 f2
+        f,8 g a bf c bf a bf d4 e f e d4 bf8 c f8 e d4 c8 bf a g f2
       }
       \new FiguredBass{
         \figuremode {
-
+          s1 <5>4 <5> <5> <5> <6> <6 4> <6> <6 4>8 <6> <6 4>4 <5> <5>2
+          <5>4 <6> <5>4 <5>8 <5>8 <5>4 <6> <5> <6> <5> <6>8 <5> <5>4 <5> <5>2 <5>
         }
       }
       \new FiguredBass{
         \figuremode {
-
+          s1 <I>4 <V> <VI> <V> <I> <V> <VI> <_>8 <II> <I>4 <V> <I>2
+          <I>2 <V>4 <III>8 <IV> <VI>4 <V> <I> <V>4 <VI>4 <II>8 <V> <I>4 <VI> <V>2 <I>
         }
       }
     >>
   >>
+  \layout {}
+  \midi {}
 }
+%{
 global = { \time 2/4 \key c \major }
 \score {
   \header {
