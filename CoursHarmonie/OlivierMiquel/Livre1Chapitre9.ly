@@ -228,14 +228,8 @@ global = { \time 4/4 \key f \major }
   \layout {}
   \midi {}
 }
-%{
 global = { \time 2/4 \key c \major }
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = "exercice 9.5"
-  }
   \new StaffGroup <<
     \new Staff <<
       \clef treble
@@ -269,7 +263,15 @@ global = { \time 2/4 \key c \major }
       }
     >>
   >>
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 9.5"
+  }
+  \layout {}
+  \midi {}
 }
+%{
 global = { \time 6/8 \key a \major }
 \score {
   \header {
