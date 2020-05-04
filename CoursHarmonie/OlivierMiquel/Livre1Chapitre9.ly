@@ -193,15 +193,15 @@ global = { \time 4/4 \key f \major }
       \global
       \relative c' {
         f4 a bf a8 g f4 e d e f4 r4 f4 c c8 d e d c bf c4
-        f8 e f4 e8 d e4 d c f g f4 g a8 g f4 g4 f8 g a2
+        f8 e e4 e4 e4 c c8 d e4 g f4 d8 d c4 f4 g4 f8 g a2
       }
     >>
     \new Staff <<
       \clef "treble_8"
       \global
       \relative c' {
-        R1 c4 c8 bf a4 g c8 d e4 d a8 g f4 g a8 g a bf
-        c bf a g g4 a8 g f4 g a8 bf c4 d d8 c c4 d4 e d c2
+        R1 c4 c8 bf a8 bf c4 c8 d e4 d a8 g f4 g a8 g a bf
+        c bf a g g2 a4 a g4 c4 a bf8 bf a8 bf c d e4 d8 c c2
       }
     >>
     \new Staff <<
@@ -209,18 +209,19 @@ global = { \time 4/4 \key f \major }
       \global
       \relative f {
         r1 f4 c d c8 bf a4 g f8 g a bf c2 f2
-        f,8 g a bf c bf a bf d4 e f e d4 bf8 c f8 e d4 c8 bf a g f2
+        f,8 g a bf c2 f,8 g a bf c4 e f4 bf,8 c c2 c8 bf a g f2
       }
       \new FiguredBass{
         \figuremode {
-          s1 <5>4 <5> <5> <5> <6> <6 4> <6> <6 4>8 <6> <6 4>4 <5> <5>2
-          <5>4 <6> <5>4 <5>8 <5>8 <5>4 <6> <5> <6> <5> <6>8 <5> <5>4 <5> <5>2 <5>
+          \bassFigureExtendersOn
+          s1 <5>4 <5\!> <5\!> <5\!> <6> <6\! 4> <6\!> <6\! 4>8 <6\!> <6\! 4>4 <5> <5\!>2
+          <5\!>4 <5\!> <5\!>2 <5\!>2 <5\!>4 <5> <5\!> <6> <5\!>2 <5\!> <5\!>
         }
       }
       \new FiguredBass{
         \figuremode {
           s1 <I>4 <V> <VI> <V> <I> <V> <VI> <_>8 <II> <I>4 <V> <I>2
-          <I>2 <V>4 <III>8 <IV> <VI>4 <V> <I> <V>4 <VI>4 <II>8 <V> <I>4 <VI> <V>2 <I>
+          <I>4 <III> <V>2 <I>2 <V>2 <VI>4 <II>4 <I>2 <V>2 <I>
         }
       }
     >>
@@ -228,6 +229,7 @@ global = { \time 4/4 \key f \major }
   \layout {}
   \midi {}
 }
+%{
 global = { \time 2/4 \key c \major }
 \score {
   \new StaffGroup <<
@@ -271,7 +273,6 @@ global = { \time 2/4 \key c \major }
   \layout {}
   \midi {}
 }
-%{
 global = { \time 6/8 \key a \major }
 \score {
   \header {
