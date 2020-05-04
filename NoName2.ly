@@ -5,7 +5,7 @@
   title = "No name (yet)"
   composer = "Jean Baptiste Favre"
   poet = ""
-  opus = "op. 2"
+  opus = "op. ?"
   dedication = \markup { \italic "Clichy-la-Garenne, mars 2020" }
   subtitle = ""
   tagline = ""
