@@ -25,11 +25,6 @@ motif = {
   g4 b d4. c8 b a g d' fs,4
 }
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = "exercice 9.1"
-  }
   \new PianoStaff <<
     \new Staff <<
       \clef treble
@@ -61,14 +56,16 @@ motif = {
       }
     >>
   >>
-}
-global = { \time 3/4 \key c \major }
-\score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 9.2"
+    piece = "exercice 9.1"
   }
+  \layout {}
+  \midi {}
+}
+global = { \time 3/4 \key c \major }
+\score {
   \new StaffGroup <<
     \new Staff <<
       \clef treble
@@ -108,14 +105,16 @@ global = { \time 3/4 \key c \major }
       }
     >>
   >>
-}
-global = { \time 4/4 \key c \major }
-\score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 9.3"
+    piece = "exercice 9.2"
   }
+  \layout {}
+  \midi {}
+}
+global = { \time 4/4 \key c \major }
+\score {
   \new StaffGroup <<
     \new Staff <<
       \clef treble
@@ -169,15 +168,17 @@ global = { \time 4/4 \key c \major }
       }
     >>
   >>
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 9.3"
+  }
+  \layout {}
+  \midi {}
 }
 %}
 global = { \time 4/4 \key f \major }
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = "exercice 9.4"
-  }
   \new StaffGroup <<
     \new Staff <<
       \clef treble
@@ -226,10 +227,14 @@ global = { \time 4/4 \key f \major }
       }
     >>
   >>
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 9.4"
+  }
   \layout {}
   \midi {}
 }
-%{
 global = { \time 2/4 \key c \major }
 \score {
   \new StaffGroup <<
@@ -273,13 +278,9 @@ global = { \time 2/4 \key c \major }
   \layout {}
   \midi {}
 }
+%{
 global = { \time 6/8 \key a \major }
 \score {
-  \header {
-    title = ##f
-    subtitle = ##f
-    piece = "exercice 9.6"
-  }
   \new StaffGroup <<
     \new Staff <<
       \clef treble
@@ -325,14 +326,16 @@ global = { \time 6/8 \key a \major }
       }
     >>
   >>
-}
-global = { \time 2/2 \key a \minor}
-\score {
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice 9.7"
+    piece = "exercice 9.6"
   }
+  \layout {}
+  \midi {}
+}
+global = { \time 2/2 \key a \minor}
+\score {
   \new PianoStaff <<
     \new Staff <<
       \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
@@ -363,20 +366,12 @@ global = { \time 2/2 \key a \minor}
       }
     >>
   >>
-}
-\layout {
-  \context {
-    \Score
-    \override RehearsalMark.self-alignment-X =
-      #(lambda (grob)
-         (let* ((break-dir (ly:item-break-dir grob)))
-           (case break-dir
-             ((-1) RIGHT)  ;; end-of-line   -> right aligned
-             ((1) LEFT)    ;; begin-of-line -> left-aligned
-             (else CENTER) ;; otherwise     -> center-aligned
-             )))
-    \omit BarNumber
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 9.7"
   }
-ragged-last = ##f
+  \layout {}
+  \midi {}
 }
 %}
