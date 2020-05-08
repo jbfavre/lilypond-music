@@ -176,7 +176,6 @@ global = { \time 4/4 \key c \major }
   \layout {}
   \midi {}
 }
-%}
 global = { \time 4/4 \key f \major }
 \score {
   \new StaffGroup <<
@@ -235,6 +234,7 @@ global = { \time 4/4 \key f \major }
   \layout {}
   \midi {}
 }
+%}
 global = { \time 2/4 \key c \major }
 \score {
   \new StaffGroup <<
