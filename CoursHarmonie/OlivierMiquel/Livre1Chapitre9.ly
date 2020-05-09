@@ -234,7 +234,6 @@ global = { \time 4/4 \key f \major }
   \layout {}
   \midi {}
 }
-%}
 global = { \time 2/4 \key c \major }
 DCfine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
@@ -349,7 +348,7 @@ partThreeVioloncelle = {
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%{
+%}
 global = { \time 6/8 \key a \major }
 \score {
   \new StaffGroup <<
@@ -407,6 +406,7 @@ global = { \time 6/8 \key a \major }
   \layout {}
   \midi {}
 }
+%{
 global = { \time 2/2 \key a \minor}
 \score {
   \new PianoStaff <<
