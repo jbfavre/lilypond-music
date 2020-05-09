@@ -252,10 +252,10 @@ daCapoViolonUn = {
   c8~ c32 a c b c8~ c32 a c f f16. g32 f16. e32 e8 r8 c8~ c32 a c b c8~ c32 a b c d16. e32 f16. d32 c16. b32 b16. a32 a8 r8\fermata
 }
 daCapoViolonDeux = {
-  e4 a32 f a gs a8~ a16. b32 a16. gs32 gs8 r8 e32 c e a a8~  a32 f a gs a8 f16. e32 d16. f32 a16. gs32 gs8 a8 r8
+  e4 a32 f a gs a8~ a16. b32 a16. gs32 gs8 r8 e32 c e d e8  a32 f a gs a8 f16. e32 d16. f32 a16. gs32 gs8 a8 r8
 }
 daCapoVioloncelle = {
-  a8 g? f e d4 e32 f e d e32 d c b a8 g! f e d8 d'8 e8 e,8 a8 r8\fermata
+  a8 g? f e d4 e32 f e d e32 d c b a8 g? f e d8 d'8 e8 e,8 a8 r8\fermata
 }
 partTwoDynamics = {
   s4 s2 s2 s4
@@ -291,33 +291,34 @@ partThreeVioloncelle = {
         \partTwoDynamics
         \partThreeDynamics
         \bar ":|."
-        %\tag #'midi \daCapoDynamic
       }
       \new Voice {
+        %\set Voice.midiInstrument = "acoustic guitar (steel)"
         \relative c'' { \voiceOne
           \daCapoViolonUn
           \partTwoViolonUn
           \partThreeViolonUn
-          %\tag #'midi \daCapoViolonUn
         }
       }
       \new Voice {
+        %\set Voice.midiInstrument = "acoustic guitar (steel)"
         \relative c' { \voiceTwo
           \daCapoViolonDeux
           \partTwoViolonDeux
           \partThreeViolonDeux
-          %\tag #'midi \daCapoViolonDeux
         }
       }
     >>
     \new Staff <<
       \clef bass
       \global
-      \relative f {
-        \daCapoVioloncelle
-        \partTwoVioloncelle
-        \partThreeVioloncelle
-        %\tag #'midi \daCapoVioloncelle
+      \new Voice {
+        %\set Voice.midiInstrument = "electric bass (pick)"
+        \relative f {
+          \daCapoVioloncelle
+          \partTwoVioloncelle
+          \partThreeVioloncelle
+        }
       }
       \tag #'visuel \new FiguredBass{
         \figuremode {
@@ -341,7 +342,12 @@ partThreeVioloncelle = {
     piece = "exercice 9.5"
   }
   \layout {}
-  \midi {}
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
 }
 %{
 global = { \time 6/8 \key a \major }
@@ -376,17 +382,19 @@ global = { \time 6/8 \key a \major }
       \clef bass
       \global
       \relative f {
-        s2.*6
-        s2.*6
+        a4. a4. a4. e4. a, d4. a4. gs4. a4. d4. e4. fs4. cs4. fs4. b,4. gs4. cs4. e4. a4. a4. a4. e4. a2.
+
       }
       \new FiguredBass{
         \figuremode {
-
+          <5>4. <6 4> <5> <_+> <5>4. <5> <5> <6> <5> <6> <_+> <5>
+          <5> <5> <5> <6> <6> <_+> <5> <6 4> <5> <_+> <5>2.
         }
       }
       \new FiguredBass{
         \figuremode {
-
+          <I>4. <IV> <I> <V> <I> <IV> <I> <V> <I> <II> <V> <VI>
+          <III> <VI> <II> <V> <I> <V> <I> <IV> <I> <V> <I>2.
         }
       }
     >>
