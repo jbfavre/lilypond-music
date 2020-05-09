@@ -236,36 +236,101 @@ global = { \time 4/4 \key f \major }
 }
 %}
 global = { \time 2/4 \key c \major }
+DCfine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.C. al fine" }
+}
+Fine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small \italic "fine" }
+}
+
+daCapoDynamic = {
+  s2 s2 s2 s2 s8 \Fine s8
+}
+daCapoViolonUn = {
+  c8~ c32 a c b c8~ c32 a c f f16. g32 f16. e32 e8 r8 c8~ c32 a c b c8~ c32 a b c d16. e32 f16. d32 c16. b32 b16. a32 a8 r8\fermata
+}
+daCapoViolonDeux = {
+  e4 a32 f a gs a8~ a16. b32 a16. gs32 gs8 r8 e32 c e a a8~  a32 f a gs a8 f16. e32 d16. f32 a16. gs32 gs8 a8 r8
+}
+daCapoVioloncelle = {
+  a8 g? f e d4 e32 f e d e32 d c b a8 g! f e d8 d'8 e8 e,8 a8 r8\fermata
+}
+partTwoDynamics = {
+  s4 s2 s2 s4
+}
+partTwoViolonUn = {
+  r4 r4 c16 d32 c b16 c d16 e32 d c16 b a16 b32 a a16 gs a16. b32 c8 \breathe
+}
+partTwoViolonDeux = {
+  r4 b,16c32 b a16 b e8 d16 e f8 e16 d c16 f e d c16. gs'32 a8
+}
+partTwoVioloncelle = {
+  a16 (b32 a gs16 a) d8 c16 (b) a8 a' (a8) gs a16 d, c b a16 e a8 \breathe
+}
+partThreeDynamics = {
+  s4 s2 s2 s2 \DCfine
+}
+partThreeViolonUn = {
+  r4 r4 c16 d32 c b16 c d16 e32 d c16 b a16 b a gs a4 r4
+}
+partThreeViolonDeux = {
+  r4 b,16c32 b a16 b e8 d16 e f8 e16 d c16 d c b c4 r4
+}
+partThreeVioloncelle = {
+  a16 (b32 a gs16 a) d8 c16 (b) a8 a' (a8) gs a16 d,e e, a4 a32( b c \set stemRightBeamCount = #1 d \set stemLeftBeamCount = #1 e fs gs e)
+}
 \score {
   \new StaffGroup <<
     \new Staff <<
       \clef treble
       \global
-      \relative c'' {
-        c8 (c32) a c b c8 (c32) a c f f16. g32 f16. e32 e8 r8 c8 (c32) a c b c8 (c32) a b c \break
-        d16. e32 f16. d32 c16. b32 b16. a32 a8 r8\fermata r4 s2*2
-        s2*4
-        \bar "|."
+      \new Dynamics {
+        \daCapoDynamic
+        \partTwoDynamics
+        \partThreeDynamics
+        \bar ":|."
+        %\tag #'midi \daCapoDynamic
+      }
+      \new Voice {
+        \relative c'' { \voiceOne
+          \daCapoViolonUn
+          \partTwoViolonUn
+          \partThreeViolonUn
+          %\tag #'midi \daCapoViolonUn
+        }
+      }
+      \new Voice {
+        \relative c' { \voiceTwo
+          \daCapoViolonDeux
+          \partTwoViolonDeux
+          \partThreeViolonDeux
+          %\tag #'midi \daCapoViolonDeux
+        }
       }
     >>
     \new Staff <<
       \clef bass
       \global
-      \relative f, {
-        s2*4 a8 r8\fermata a16 (b32 a gs16 a) d8 c16 (b) a8 a' (a8) gs a16 d, c b
-        a e a8 \breathe a16 (b32 a gs16 a) d8 c16 (b) a8 a' (a8) gs a16 d,e e, a4 a32( b c \set stemRightBeamCount = #1 d \set stemLeftBeamCount = #1 e fs gs e)
+      \relative f {
+        \daCapoVioloncelle
+        \partTwoVioloncelle
+        \partThreeVioloncelle
+        %\tag #'midi \daCapoVioloncelle
       }
-      \new FiguredBass{
+      \tag #'visuel \new FiguredBass{
         \figuremode {
-
-          <_>2 <_>2 <_>2
-          <_>2 <_>4 \bassFigureExtendersOn <0>8. <0>16 <6>8. <6>16 <5>8 <5> <6 4>8 <6\!>8 <5>16 <6> <6\!> <6+\!>
-          <5> <_+> <5>8 <0>8. <0>16 <6>8. <6>16 <5>8 <5>8 <6 4> <6\!> <5>16 <6> <6\! 4> <_+\!> <5>4 <0>
+          <5>4 <5>4 <5>4 <_+>4 <5>4 <5>4 <5>4 <6 4>8 <_+>8 <5>4
+          \bassFigureExtendersOn <0>8. <0>16 <6>8. <6>16 <5>8 <5> <6 4>8 <6\!>8 <5>16 <6> <6\!> <6+\!> <5> <_+> <5>8
+          \bassFigureExtendersOn <0>8. <0>16 <6>8. <6>16 <5>8 <5>8 <6 4> <6\!> <5>16 <6> <6\! 4> <_+\!> <5>4 <0>
         }
       }
-      \new FiguredBass{
+      \tag #'visuel \new FiguredBass{
         \figuremode {
-
+          <I>4 <VI>4 <IV>4 <V>4 <I>4 <VI>4 <IV>4 <I>8 <V>8 <I>4
+          <_>4 <II>4 <I>4 <IV>8 <V>8 <I>16 <II> <I> <V> <I> <V> <I>8
+          <_>4 <II>4 <I>4 <IV>8 <V> <I>16 <II> <I> <V> <I>4 <_>
         }
       }
     >>
