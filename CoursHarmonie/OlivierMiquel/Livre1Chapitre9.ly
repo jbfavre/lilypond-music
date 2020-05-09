@@ -435,19 +435,19 @@ global = { \time 2/2 \key a \minor \tempo 1 = 60}
       \global
       \new Voice = "bass" {
         \relative f, {
-          r2 a2 s1*9
-          a1 f' d c e b d a b a
+          r2 a2 f a b d e d c a gs a b d c d e gs a1
+          a,1 f' d c e b d a b a
         }
       }
       \new FiguredBass{
         \figuremode {
-          <5>1 s1*7 <5>1 <5>1
+          s2 <5>2 <5> <6> <5> <6> <5> <P> <6> <5> <6> <P> <5> <6> <5> <P> <6>2 <5> <5>1
           <5>1 s1*8 <5>1
         }
       }
       \new FiguredBass{
         \figuremode {
-          <I>1 <II IV VI> <II IV VII> <I III VI> <I III V> <II V VII> <II IV VII> <I IV VI> <V> <I>
+          s2 <I>2 <VI>1 <II> <III> <I> <V> <II> <I> <V> <I>
           <I>1 <IV VI> <II IV> <I III> <III V> <II VII> <II IV> <I VI> <II VII> <I>
         }
       }
