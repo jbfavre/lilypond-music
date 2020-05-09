@@ -293,7 +293,7 @@ partThreeVioloncelle = {
         \bar ":|."
       }
       \new Voice {
-        %\set Voice.midiInstrument = "acoustic guitar (steel)"
+        \set Voice.midiInstrument = "acoustic guitar (steel)"
         \relative c'' { \voiceOne
           \daCapoViolonUn
           \partTwoViolonUn
@@ -301,7 +301,7 @@ partThreeVioloncelle = {
         }
       }
       \new Voice {
-        %\set Voice.midiInstrument = "acoustic guitar (steel)"
+        \set Voice.midiInstrument = "acoustic bass"
         \relative c' { \voiceTwo
           \daCapoViolonDeux
           \partTwoViolonDeux
@@ -313,7 +313,7 @@ partThreeVioloncelle = {
       \clef bass
       \global
       \new Voice {
-        %\set Voice.midiInstrument = "electric bass (pick)"
+        \set Voice.midiInstrument = "electric bass (pick)"
         \relative f {
           \daCapoVioloncelle
           \partTwoVioloncelle
