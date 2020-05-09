@@ -348,7 +348,6 @@ partThreeVioloncelle = {
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
 global = { \time 6/8 \key a \major }
 \score {
   \new StaffGroup <<
@@ -402,9 +401,14 @@ global = { \time 6/8 \key a \major }
     piece = "exercice 9.6"
   }
   \layout {}
-  \midi {}
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
 }
-%{
+%}
 global = { \time 2/2 \key a \minor}
 \score {
   \new PianoStaff <<
@@ -443,6 +447,10 @@ global = { \time 2/2 \key a \minor}
     piece = "exercice 9.7"
   }
   \layout {}
-  \midi {}
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
 }
-%}
