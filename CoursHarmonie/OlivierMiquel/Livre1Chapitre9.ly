@@ -364,30 +364,28 @@ global = { \time 6/8 \key a \major }
     \new Staff <<
       \clef treble
       \global
-      \relative c'' {
-        s2.*6
-        s2.*6
+      \relative c' {
+        e4. fs4. e2. e8 d e fs8 e d e4. e8 gs fs e8 d e b4. e4 d8 cs4. cs4 e8 fs4. fs4 d8 e4. e8 fs e e4. e4. d8 e d e2. e2.
       }
     >>
     \new Staff <<
       \clef "treble_8"
       \global
-      \relative c'' {
-        s2.*6
-        s2.*6
+      \relative c' {
+        cs4. a4. cs8 d cs b a b cs4. d4. cs8 d cs b4. a8 gs a b4 fs8 gs4. a4. gs4. fs4 a8 b4 a8 gs8 a gs a4 cs8 b4. cs4. a4 b8 cs8 d cs b a4 cs2.
       }
     >>
     \new Staff <<
       \clef bass
       \global
       \relative f {
-        a4. a4. a4. e4. a, d4. a4. gs4. a4. d4. e4. fs4. cs4. fs4. b,4. gs4. cs4. e4. a4. a4. a4. e4. a2.
+        a4. a4. a4. e4. a,8 b cs d cs b a gs a gs4 b8 a4 cs8 d4. e4. fs8 e d cs4 b8 a8 b cs d4 fs8 e4 d8 cs8 d4 e4. a4 gs8 fs4. e4. e,4. a2.
 
       }
       \new FiguredBass{
         \figuremode {
-          <5>4. <6 4> <5> <_+> <5>4. <5> <5> <6> <5> <6> <_+> <5>
-          <5> <5> <5> <6> <6> <_+> <5> <6 4> <5> <_+> <5>2.
+          <5>4. <6 4> <5> <5> <5>4. <5> <5> <6> <5> <6> <5> <5>
+          <5> <6> <6> <5> <6> <5> <5> <6> <6 4> <5> <5>2.
         }
       }
       \new FiguredBass{
