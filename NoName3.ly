@@ -83,7 +83,7 @@ rightOne = \relative c'' {
 rightTwo = \relative c'' {
   \global
    s1*7
-   s1*3 r1 g2 g4 g
+   s1*3 R1 g2 g4 g
    g2. g4 g2 fs2 s1 r4 g g f ef2. ef4 g2 a4 g fs1
    s1*22
    g2 g4 g
