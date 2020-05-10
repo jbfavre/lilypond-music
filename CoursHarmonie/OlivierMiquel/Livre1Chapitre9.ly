@@ -409,7 +409,7 @@ global = { \time 6/8 \key a \major }
   }
 }
 %}
-global = { \time 2/2 \key a \minor \tempo 1 = 60}
+global = { \time 2/2 \key a \minor }
 \score {
   \new PianoStaff <<
     \new Staff <<
@@ -422,7 +422,7 @@ global = { \time 2/2 \key a \minor \tempo 1 = 60}
         \relative c'' {
           \mark "La mineur"
           a1 f' d c e b d a b a \break
-          r2 s2 s1*9
+          r2 e2 d c d f e fs gs e d e fs gs a c b gs a1
           \bar "|."
         }
       }
@@ -435,20 +435,20 @@ global = { \time 2/2 \key a \minor \tempo 1 = 60}
       \global
       \new Voice = "bass" {
         \relative f, {
-          r2 a2 f a b d e d c a gs a b d c d e gs a1
+          r2 a2 f a b d e d c a gs a b c d f gs e a1
           a,1 f' d c e b d a b a
         }
       }
-      \new FiguredBass{
+      \new FiguredBass {
         \figuremode {
-          s2 <5>2 <5> <6> <5> <6> <5> <P> <6> <5> <6> <P> <5> <6> <5> <P> <6>2 <5> <5>1
-          <5>1 s1*8 <5>1
+          s2 <5>2 <5> <_> <5> <_> <5> <P> <6> <_> <6> <P> <5> <P> <5> <_> <6>2 <_> <5>1
+          <5>1 <6>2 <P> <5> <_> <5> <P> <5> <P> <5> <P> <5> <P> <5> <_> <6> <_> <5>1
         }
       }
-      \new FiguredBass{
+      \new FiguredBass {
         \figuremode {
-          s2 <I>2 <VI>1 <II> <III> <I> <V> <II> <I> <V> <I>
-          <I>1 <IV VI> <II IV> <I III> <III V> <II VII> <II IV> <I VI> <II VII> <I>
+          s2 <I>2 <VI>1 <II> <III> <I> <V> <II> <IV> <V> <I>
+          <I>1 <IV> <IV> <III> <V> <II> <IV> <I> <VII> <I>
         }
       }
     >>
