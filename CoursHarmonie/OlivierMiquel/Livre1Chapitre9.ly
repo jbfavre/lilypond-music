@@ -348,6 +348,7 @@ partThreeVioloncelle = {
     \context { \Voice \consists "Staff_performer" }
   }
 }
+%}
 global = { \time 6/8 \key a \major }
 \score {
   \new StaffGroup <<
@@ -364,14 +365,14 @@ global = { \time 6/8 \key a \major }
       \clef treble
       \global
       \relative c' {
-        e4. fs4. e2. e8 d e fs8 e d e4. e8 gs fs e8 d e b4. e4 d8 cs4. cs4 e8 fs4. fs4 d8 e4. e8 fs e e4. e4. d8 e d e2. e2.
+        e4. fs4. e2. e8 d e fs8 e d e4. e8 gs fs e8 d e fs4. e4 d8 cs4. cs4 e8 fs4. fs4 d8 e4. e8 fs e e4. e4. d8 e d e2. e2.
       }
     >>
     \new Staff <<
       \clef "treble_8"
       \global
       \relative c' {
-        cs4. a4. cs8 d cs b a b cs4. d4. cs8 d cs b4. a8 gs a b4 fs8 gs4. a4. gs4. fs4 a8 b4 a8 gs8 a gs a4 cs8 b4. cs4. a4 b8 cs8 d cs b a4 cs2.
+        r2. cs8 d cs b a b cs4. r4. cs8 d cs b4. cs8 gs a b4 fs8 gs4. a4. gs4. fs4 a8 b4 a8 gs8 a gs a4 cs8 b4. cs4. a4 b8 cs8 d cs b a8 b cs2.
       }
     >>
     \new Staff <<
@@ -408,7 +409,6 @@ global = { \time 6/8 \key a \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
 global = { \time 2/2 \key a \minor }
 \score {
   \new PianoStaff <<
