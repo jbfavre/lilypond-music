@@ -1,25 +1,28 @@
     \paper {
-      bookTitleMarkup = \markup \columns {
-        \fill-line {
+      #(include-special-characters)
+      top-margin = 1\cm
+      bottom-margin = 1\cm
+      % Should the last system expand to fill the line ?
+      % Yes -> ##f
+      % No  -> ##t
+      ragged-last = ##f
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
+      bookTitleMarkup = \markup \null
+      scoreTitleMarkup = \markup {
+        \column {
+          \vspace #0.5
+          \fill-line {
             \column {
-              \line {
-                \right-column {
-                  \fontsize #7 \sans \fromproperty #'header:piece
-                  \fontsize #0 \typewriter \fromproperty #'header:subtitle
-                }
-              }
+              \fontsize #6 \bold \fromproperty #'header:piece
+              \fromproperty #'header:title
             }
-            \column {
-              \line {
-                \left-column {
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \fontsize #-2 \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
+            \right-column {
+              \fontsize #1 \fromproperty #'header:composer
+              \fontsize #0.8 \sans \fromproperty #'header:opus
             }
           }
+          \vspace #1
+        }
       }
     }
-

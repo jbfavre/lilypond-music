@@ -1,6 +1,12 @@
 \version "2.18.2"
 \language "english"
 
+%\include "../libs/commonFunctions.ily"
+%\include "../libs/settings.ily"
+%\include "../libs/translations/fr.ily"
+%\include "../libs/layouts/book-titling.ily"
+%\include "../PetiteMesseSaintVincentDePaul/pianoSettings.ily"
+
 stemOff = \hide Staff.Stem
 stemOn  = \undo \stemOff
 
@@ -17,7 +23,7 @@ sanctusSolist_BD_AlternativeOne = \relative c' {
     e8 (fs4) gs4.
     \unset melismaBusyProperties
   }
-sanctusSolist_BD_AlternativeTwo = \relative c' { e8 (ds16 cs16) ds8 e4. \break }
+sanctusSolist_BD_AlternativeTwo = \relative c' { e8 (ds16 cs16) ds8 e4. }
 sanctusMainSolistMusic =  \relative c' {
     \mark \default
     \repeat volta 2 {
@@ -27,7 +33,7 @@ sanctusMainSolistMusic =  \relative c' {
     \alternative {
       \sanctusSolist_BD_AlternativeOne
       \sanctusSolist_BD_AlternativeTwo
-      
+
     }
     \mark \default
     \repeat volta 2 {
@@ -112,7 +118,7 @@ sanctusTenor_BD_Alternative = \relative c {
   }
 sanctusTenorMusic = \relative c {
     \repeat volta 2 {
-      e'8 (b) gs a (b) cs e (cs b) ds4. 
+      e'8 (b) gs a (b) cs e (cs b) ds4.
       gs,8 a gs fs (gs) a
     }
     \alternative {
@@ -167,3 +173,64 @@ sanctusMainBasseMusic = \relative c {
 sanctusMainBasseLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneBasseLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoBasseLyrics = \sanctusVerseTwoSolistLyrics
+
+sanctusScore = \score {
+    <<
+      \new ChoirStaff
+      <<
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
+        <<
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusSoprano" { \sanctusMainSopranoMusic }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusMainSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseOneSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseTwoSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+        <<
+          \sanctusGlobal \clef treble
+          \new Voice = "sanctusAlto" { \sanctusMainAltoMusic }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusMainAltoLyrics }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseOneAltoLyrics }
+          \new Lyrics \lyricsto "sanctusAlto" { \sanctusVerseTwoAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+        <<
+          \sanctusGlobal \clef "treble_8"
+          \new Voice = "sanctusTenor" { \sanctusTenorMusic }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusMainTenorLyrics }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseOneTenorLyrics }
+          \new Lyrics \lyricsto "sanctusTenor" { \sanctusVerseTwoTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+        <<
+          \sanctusGlobal \clef bass
+          \new Voice = "sanctusBasse" { \sanctusMainBasseMusic }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusMainBasseLyrics }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseOneBasseLyrics }
+          \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
+        >>
+      >>
+      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      <<
+        \set PianoStaff.instrumentName = #"Orgue"
+        \new Staff <<
+          \sanctusGlobal \clef treble
+          \set Staff.printPartCombineTexts = ##f
+          \partcombine
+          << \sanctusMainSopranoMusic >>
+          << \sanctusMainAltoMusic >>
+        >>
+        \new Staff <<
+          \sanctusGlobal \clef bass
+          \set Staff.printPartCombineTexts = ##f
+          \partcombine
+          << \sanctusTenorMusic >>
+          << \sanctusMainBasseMusic >>
+        >>
+      >>
+    >>
+    \layout {
+      #(layout-set-staff-size 15)
+    }
+  }

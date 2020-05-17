@@ -1,6 +1,12 @@
 \version "2.18.2"
 \language "english"
 
+%\include "../libs/commonFunctions.ily"
+%\include "../libs/settings.ily"
+%\include "../libs/translations/fr.ily"
+%\include "../libs/layouts/book-titling.ily"
+%\include "../PetiteMesseSaintVincentDePaul/pianoSettings.ily"
+
 agnusGlobal = {
   \key f \minor
   \time 4/4
@@ -8,20 +14,21 @@ agnusGlobal = {
 }
 agnusSolistCommonMusic = {
     \mark \default
-    f4 (g) af2 g4 (af) bf2 af4 bf c bf af g f e \break
+    f4 (g) af2 g4 (af) bf2 af4 bf c bf af g f e
   }
 agnusSolistMusic = \relative c' {
+    \bar ".|:"
     \repeat volta 2 { \agnusSolistCommonMusic }
     % mesure 5: 0'10
-    \alternative { { \mark \default g f g af f2 f bf4 af g f g2 g2 \break } }
+    \alternative { { g f g af f2 f bf4 af g f g2 g2 } } \bar ":|."
     \agnusSolistCommonMusic
-    \mark \default
     % mesure 9: 0'24
-    \repeat volta 2 { g2 (c4) bf bf (g) af2 \break }
+    \repeat volta 2 { g2 (c4) bf bf (g) af2  }
     \alternative {
       { bf4 (af g f4) | g1 }
       { bf4 (af g e4) | f1 }
     }
+    \bar "|."
   }
 agnusSolistCommonLyrics = \lyricmode {
     A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di,
@@ -112,13 +119,72 @@ agnusBasseLyrics = \lyricmode {
       { pa -- cem }
     }
   }
-%    \new PianoStaff <<
-%          \relative c' {
-%            <c f>4  <df g> <c af'>2 <bf g'>4 <f' af> <e bf'>2 <c af'>4 <g' bf> <af c> <g bf> <af c,> <e g> <e f> <c e> \break
-%            g' f g af f2 f bf4 af g f g2 g2 \break
-%            g2 (c4) bf bf (g) af2 bf4 (af g f) g1 \break
-%            g2 (c4) bf bf (g) af2 bf4 (af g e) f1
-%          }
-%          \relative c {
-%            <f af>4 <fes bf> <f af>2 <ef g>4 <df af'> <c g'>2 <f af>4 <ef g> <ef af> <c e> <af f'> <df bf> <c g> <c g>
-%          }
+
+agnusScore = \score {
+      <<
+        \new ChoirStaff
+        <<
+          \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
+          <<
+            \agnusGlobal \clef treble
+            \new Voice = "agnusSoprano" { \agnusSopranoMusic }
+            \new Lyrics \lyricsto "agnusSoprano" { \agnusSopranoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
+          <<
+            \agnusGlobal \clef treble
+            \new Voice = "agnusAlto" { \agnusAltoMusic }
+            \new Lyrics \lyricsto "agnusAlto" { \agnusAltoLyrics }
+          >>
+          \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
+          <<
+            \agnusGlobal \clef "treble_8"
+            \new Voice = "agnusTenor" { \agnusTenorMusic }
+            \new Lyrics \lyricsto "agnusTenor" { \agnusTenorLyrics }
+          >>
+          \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
+          <<
+            \agnusGlobal \clef bass
+            \new Voice = "agnusBasse" { \agnusBasseMusic }
+            \new Lyrics \lyricsto "agnusBasse" { \agnusBasseLyrics }
+          >>
+        >>
+        %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+        %<<
+        %  \new Staff <<
+        %    \clef treble
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \agnusGlobal \agnusSopranoMusic >>
+        %    << \agnusGlobal \agnusAltoMusic >>
+        %  >>
+        %  \new Staff <<
+        %    \clef bass
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \agnusGlobal \agnusTenorMusic >>
+        %    << \agnusGlobal \agnusBasseMusic >>
+        %  >>
+        %>>
+      >>
+      \layout {
+        ragged-last = ##f
+        short-indent = 0.8\cm
+        \context {
+            \Staff
+            \RemoveEmptyStaves
+            \override NoteHead #'style = #'altdefault
+            \override InstrumentName #'font-name = #"Monospace Regular"
+        }
+        \context {
+            \Score
+            \omit BarNumber
+        }
+        \context {
+            \Voice
+            \consists "Horizontal_bracket_engraver"
+        }
+        \override LyricText #'font-family = #'sans
+        \override Score.RehearsalMark.font-family = #'typewriter
+      }
+    }

@@ -1,6 +1,12 @@
 \version "2.18.2"
 \language "english"
 
+%\include "../libs/commonFunctions.ily"
+%\include "../libs/settings.ily"
+%\include "../libs/translations/fr.ily"
+%\include "../libs/layouts/book-titling.ily"
+%\include "../PetiteMesseSaintVincentDePaul/pianoSettings.ily"
+
 gloriaGlobal = {
   \key e \major
   \time 3/8
@@ -42,7 +48,7 @@ gloriaSolistMusic = \relative c' {
       e4. a gs8 fs e e fs4 gs4. \break
     \mark "Tous"
       % Dómine Fili Unigénite,
-      b8 b b cs4 cs8 b (a) gs b (a) gs fs4. 
+      b8 b b cs4 cs8 b (a) gs b (a) gs fs4.
       % Jesu Christe.
       e4. a fs gs \break
     \mark "Chantre"
@@ -131,10 +137,10 @@ gloriaAltoMusic =  \relative c' {
     r4. r4. r4.
     b4 d8 e c g cs4 e8 fs d a
     b8 a fs g e g g4 fs8 g4.
-  
+
     r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
     r4. r4. r4. r4. r4. r4. r4. r4. r4.
-  
+
     b4 d8 e (c) g cs4 e8 fs (d) a | \break
     ds4 (fs8) e c (g)
     \override TextSpanner.bound-details.left.text =
@@ -155,10 +161,10 @@ gloriaTenorMusic = \relative c {
     e8 fs g c, d4 g,4.
     g8 a b c d e a, b cs d e fs
     fs8 ds b g' e b c a4 g4.
-  
+
     r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4. r4.
     r4. r4. r4. r4. r4. r4. r4. r4. r4.
-  
+
     d'8 (b) g c4 d8 e (cs) a d4 e8
     fs8 (ds) b g' (e) b
     \override TextSpanner.bound-details.left.text =
@@ -173,3 +179,112 @@ gloriaTenorLyrics = \lyricmode {
 
 gloriaBasseMusic = \gloriaTenorMusic
 gloriaBasseLyrics = \gloriaTenorLyrics
+
+gloriaScore = \score {
+    <<
+      \new ChoirStaff
+      <<
+        \new Staff \with { instrumentName = "Intonation" }
+        <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaIntonationVoice" { \gloriaIntonationMusic }
+          \new Lyrics \lyricsto "gloriaIntonationVoice" { \gloriaIntonationLyrics }
+        >>
+        \new Staff <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \set Staff.instrumentName = "Soprano"
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaSoprano" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "S." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaSopranoMusic
+          }
+          \new Lyrics \lyricsto "gloriaSoprano" { \gloriaSopranoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Alto" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef treble
+          \new Voice = "gloriaAlto" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "A." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaAltoMusic
+          }
+          \new Lyrics \lyricsto "gloriaAlto" { \gloriaAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = "Ténor" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef "treble_8"
+          \new Voice = "gloriaTenor" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "T." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaTenorMusic
+          }
+          \new Lyrics \lyricsto "gloriaTenor" { \gloriaTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = "Basse" } <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef bass
+          \new Voice = "gloriaBasse" {
+            \set Staff.shortInstrumentName = \markup { \right-column { "B." } }
+            \silence \gloriaIntonationMusic
+            \tag #'visuel \gloriaBasseMusic
+          }
+          \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
+        >>
+      >>
+      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      <<
+        \new Staff <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef treble
+          \set Staff.printPartCombineTexts = ##f
+          \new Voice <<
+            { \silence \gloriaIntonationMusic
+              \partcombine
+              <<  \gloriaTenorMusic >>
+              <<  \gloriaBasseMusic >>
+            }
+          >>
+        >>
+        \new Staff <<
+          \override Staff.VerticalAxisGroup.remove-empty = ##t
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \gloriaGlobal \clef bass
+          \set Staff.printPartCombineTexts = ##f
+          \new Voice <<
+            { \silence \gloriaIntonationMusic
+              \partcombine
+              <<  \gloriaTenorMusic >>
+              <<  \gloriaBasseMusic >>
+            }
+          >>
+        >>
+      >>
+    >>
+    \layout {
+      ragged-last = ##f
+      short-indent = 0.8\cm
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \Score
+          \omit BarNumber
+      }
+      \context {
+          \Voice
+          \consists "Horizontal_bracket_engraver"
+      }
+      \override LyricText #'font-family = #'sans
+      \override Score.RehearsalMark.font-family = #'typewriter
+    }
+  }
