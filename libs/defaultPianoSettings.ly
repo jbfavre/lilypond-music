@@ -11,6 +11,7 @@ pianoProperties = {
   \override InstrumentName #'font-name = #"Monospace Regular"
   \autoBeamOn
 }
+pianoCounterpointMusic = \counterpointAntiphonMusic
 pianoSopranoMusic = \sopranoAntiphonMusic
 pianoAltoMusic = \altoAntiphonMusic
 pianoTenorMusic  = \tenorAntiphonMusic

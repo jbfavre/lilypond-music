@@ -14,9 +14,8 @@
       \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \global
       \clef bass
-      \partcombine
-      << \voiceThree { \tenorVerseMusic } >>
-      << \voiceFour { \bassVerseMusic } >>
+      \new Voice = "verseTenor" << \voiceOne { \tenorVerseMusic } >>
+      \new Voice = "verseBass" << \voiceTwo { \bassVerseMusic } >>
       \new Lyrics { \reponsTenBassLyrics }
     >>
     %\context Staff = "verseTenorBass" \new FiguredBass { \bassFigureStaffAlignmentUp \verseFiguredHarmony }

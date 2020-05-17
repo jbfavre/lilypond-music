@@ -1,8 +1,6 @@
 \version "2.18.2"
 
-tagline = \markup {
-      \teeny\sans \concat{"gravé avec LilyPond pour " \with-url #"https://www.psaumedudimanche.fr" {\underline{www.psaumedudimanche.fr}}}
-}
+tagline = ""
 
 copyright = "©"
 poet = "AELF"

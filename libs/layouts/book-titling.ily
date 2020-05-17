@@ -1,9 +1,9 @@
 %% http://lsr.di.unimi.it/LSR/Item?id=368
-%% see also http://www.lilypond.org/doc/v2.18/Documentation/snippets/paper-and-layout 
+%% see also http://www.lilypond.org/doc/v2.18/Documentation/snippets/paper-and-layout
 %% see also http://nicolas.sceaux.free.fr/
 
 %%% book-titling.ily  -- a titling stylesheet for use in books
-%%% 
+%%%
 %%% Author: Nicolas Sceaux <nicolas.sceaux@free.fr>
 %%%
 
@@ -119,28 +119,7 @@
 %%% Title page
 %%%
 \paper {
-  bookTitleMarkup = \markup \when-property #'header:title \column {
-    \combine \null \vspace #4
-    \fill-line { \fontsize #8 \italic \fromproperty #'header:composer }
-    \combine \null \vspace #1
-    \fill-line { \fontsize #8 \italic \fromproperty #'header:poet }
-    \combine \null \vspace #1
-    \fill-line { \fontsize #0.3 \fromproperty #'header:date }
-    \combine \null \vspace #4
-    \fill-line { \postscript #"-30 0 moveto 60 0 rlineto stroke" }
-    \combine \null \vspace #4
-    \fill-line { \fontsize #10 \fromproperty #'header:title }
-    \combine \null \vspace #4
-    \fill-line { \postscript #"-30 0 moveto 60 0 rlineto stroke" }
-    \combine \null \vspace #4
-    \fill-line { \fontsize #4 \fromproperty #'header:subtitle }
-    \fill-line {
-      \when-property #'header:arrangement \column {
-        \combine \null \vspace #5
-        \fill-line { \fontsize #3 \fromproperty #'header:arrangement }
-      }
-    }
-  }
+  bookTitleMarkup = \markup \null
   scoreTitleMarkup = \markup \null
 }
 
@@ -269,14 +248,14 @@
 %%% Utilities for adding (no-)page breaks, toplevel markups
 %%%
 #(define (add-page-break parser)
-  (collect-music-for-book parser 
+  (collect-music-for-book parser
    (make-music 'Music
 	       'page-marker #t
 	       'line-break-permission 'force
 	       'page-break-permission 'force)))
 
 #(define (add-no-page-break parser)
-  (collect-music-for-book parser 
+  (collect-music-for-book parser
    (make-music 'Music
 	       'page-marker #t
 	       'page-break-permission 'forbid)))
@@ -299,7 +278,7 @@
         (lambda ()
           (set! major-number (1+ major-number))
           (set! minor-number 0)))
-  (set! rehearsal-number 
+  (set! rehearsal-number
         (lambda ()
           (set! minor-number (1+ minor-number))
           (format #f "~a-~a" major-number minor-number))))
@@ -343,7 +322,7 @@ section =
   (add-toplevel-markup parser (markup #:section-title (string-upper-case title)))
   (add-no-page-break parser)
   (make-music 'Music 'void #t))
-                        
+
 piece =
 #(define-music-function (parser location title) (markup?)
   (add-toc-item parser 'tocPieceMarkup title)
@@ -352,7 +331,7 @@ piece =
       (add-toplevel-markup parser (markup #:rehearsal-number (rehearsal-number))))
   (add-no-page-break parser)
   (make-music 'Music 'void #t))
-                        
+
 titledPiece =
 #(define-music-function (parser location title) (markup?)
   (add-toc-item parser 'tocPieceMarkup title)
