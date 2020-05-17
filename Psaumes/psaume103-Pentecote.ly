@@ -11,36 +11,46 @@
 
 title = "Psaume 103"
 subtitle = "Pentecôte"
-composer = "Magnificat"
-dedicace = "juin 2017"
+composer = "Jean Baptiste Favre"
+dedicace = "Clichy la Garenne, mai 2020"
 
 global = {
-  \key ef \major
+  \time 6/4 \key a \major \tempo 2. = 50
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c' {
-  \markCustom "Antienne"
-  ef8 ef d4. d8 f4 f8 f ef4.  \breathe ef8 f g af4 af8 af c c bf af bf4 bf \fermata \bar "|." \break
+counterpointAntiphonMusic = \relative c'' {
+  \markCustom "Antienne Alleluiatique"
+  r2. e8 (fs) e (d) cs b cs2 cs4 fs8 (gs) fs (e) d e fs4 a gs a2.\fermata
+  }
+sopranoAntiphonMusic = \relative c'' {
+  a4. cs8 a4 b2. cs4. b8 a4 b2. d4 d b cs2.\fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
+  e4. a8 e4 e2. fs4. fs8 fs4 fs2. fs4 fs gs e2.
   }
 
 tenorAntiphonMusic =  \relative c' {
+  cs4. e8 cs4 b2. a4. a8 a4 b2. b4 b d cs2.
   }
 
-bassAntiphonMusic =  \relative c {
+bassAntiphonMusic =  \relative f {
+  a4. a8 a4 gs2. fs4. fs8 e4 d2. b4 b e a,2.
   }
 
 antiphonLyrics = \lyricmode {
-  Ô Sei -- gneur, en -- voie ton Es -- prit
-  qui re -- nou -- vel -- le la fa -- ce de la ter -- re!
+  %Ô Sei -- gneur, en -- voie ton Es -- prit
+  %qui re -- nou -- vel -- le la fa -- ce de la ter -- re!
+  Al -- le -- lu -- ia, Al -- le -- lu -- ia, Al -- le -- lu -- ia&nbsp;!
   }
 
+counterpointAntiphonLyrics = \lyricmode {
+  Al -- le -- lu -- ia, A -- men, Al -- le -- lu -- ia, Al -- le -- lu -- ia&nbsp;!
+  }
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \antiphonLyrics
 tenorAntiphonLyrics = \antiphonLyrics
@@ -53,22 +63,36 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  g\breve bf1 ef,4 \bar "||"
-  ef\breve af1 f4 \bar "||"
-  g\breve bf1 c4 \bar "||"
-  bf\breve a1 g4 \bar "|." \break
-  \markCustom "Psalmodie par verset"
-  g\breve bf1 f4 \bar "||"
-  ef\breve af f4 \bar "|."
+  cs\breve b1 a4 \bar "||"
+  fs\breve gs4 a b \bar "||"
+  d\breve cs1 b4 \bar "||"
+  b\breve a1 a4 gs a \bar "||"
+  %g\breve bf1 c4 \bar "||"
+  %bf\breve a1 g4 \bar "|." \break
   }
 
-altoVerseMusic = \relative c' {
+altoVerseMusic = \relative c'' {
+  \silence \sopranoAntiphonMusic
+  a\breve gs1 fs4
+  d\breve d4 e e
+  fs\breve fs1 d4
+  fs\breve e1 e4 e e
   }
 
 tenorVerseMusic = \relative c' {
+  \silence \sopranoAntiphonMusic
+  e\breve e1 cs4
+  a\breve b4 cs b
+  b\breve as1 b4
+  a\breve b1 b4 d cs
   }
 
-bassVerseMusic = \relative c {
+bassVerseMusic = \relative f {
+  \silence \sopranoAntiphonMusic
+  a\breve e1 fs4
+  d\breve b4 b e
+  b\breve fs1 b4
+  d\breve e1 e4 e a,
   }
 
 verseLyrics = \markup {
@@ -112,7 +136,7 @@ verseLyrics = \markup {
 partition = {
   <<
     % Antienne à 4 voix mixtes
-    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonAntiphonFourVoicesWithCounterpoint.ily"
     \include "../libs/layouts/commonPiano.ily"
     % Psalmodie à 4 voix mixtes
     \include "../libs/layouts/commonVerseFourVoices.ily"
@@ -123,3 +147,30 @@ partition = {
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\score {
+\new PianoStaff \with { \pianoProperties } <<
+  \set PianoStaff.instrumentName = #"Orgue"
+  \new Staff <<
+    \set Staff.printPartCombineTexts = ##f
+    \once \override Staff.VerticalAxisGroup.remove-first = ##t
+    \global \clef treble
+    \new Voice = "soprani" { \voiceOne \pianoCounterpointMusic }
+    \new Voice = "soprani" { \voiceOne \pianoSopranoMusic }
+    \new Voice = "alti" { \voiceTwo \pianoAltoMusic }s
+  >>
+  \new Staff <<
+    \set Staff.printPartCombineTexts = ##f
+    \once \override Staff.VerticalAxisGroup.remove-first = ##t
+    \global \clef bass
+    \new Voice = "tenors" { \voiceOne \pianoTenorMusic }
+    \new Voice = "bass" { \voiceTwo \pianoBassMusic }
+  >>
+>>
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
+}
+\verseLyrics
