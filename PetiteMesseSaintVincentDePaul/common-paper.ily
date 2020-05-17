@@ -15,7 +15,7 @@
           \fill-line {
             \column {
               \fontsize #6 \bold \fromproperty #'header:piece
-              \fromproperty #'header:title
+              \pieceExtract
             }
             \right-column {
               \fontsize #1 \fromproperty #'header:composer

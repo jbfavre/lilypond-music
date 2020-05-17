@@ -211,24 +211,24 @@ sanctusScore = \score {
           \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
         >>
       >>
-      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
-      <<
-        \set PianoStaff.instrumentName = #"Orgue"
-        \new Staff <<
-          \sanctusGlobal \clef treble
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \sanctusMainSopranoMusic >>
-          << \sanctusMainAltoMusic >>
-        >>
-        \new Staff <<
-          \sanctusGlobal \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \sanctusTenorMusic >>
-          << \sanctusMainBasseMusic >>
-        >>
-      >>
+      %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      %<<
+      %  \set PianoStaff.instrumentName = #"Orgue"
+      %  \new Staff <<
+      %    \sanctusGlobal \clef treble
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \partcombine
+      %    << \sanctusMainSopranoMusic >>
+      %    << \sanctusMainAltoMusic >>
+      %  >>
+      %  \new Staff <<
+      %    \sanctusGlobal \clef bass
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \partcombine
+      %    << \sanctusTenorMusic >>
+      %    << \sanctusMainBasseMusic >>
+      %  >>
+      %>>
     >>
     \layout {
       #(layout-set-staff-size 15)

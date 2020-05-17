@@ -15,7 +15,7 @@
 \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
 
 \header {
-  title = \scoreTitle
+  pieceExtract = \pieceExtract
   piece = "Alleluia"
   poetPrefix = \poetPrefix
   composerPrefix = \composerPrefix

@@ -81,25 +81,25 @@ puScore = \score {
           \new Lyrics \lyricsto "puBasse" { \puMainBasseLyrics }
         >>
       >>
-      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
-      <<
-        \new Staff
-        <<
-          \puGlobal \clef treble
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \puMainSopranoMusic >>
-          << \puMainAltoMusic >>
-        >>
-        \new Staff
-        <<
-          \puGlobal \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine
-          << \puMainTenorMusic >>
-          << \puMainBasseMusic >>
-        >>
-      >>
+      %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      %<<
+      %  \new Staff
+      %  <<
+      %    \puGlobal \clef treble
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \partcombine
+      %    << \puMainSopranoMusic >>
+      %    << \puMainAltoMusic >>
+      %  >>
+      %  \new Staff
+      %  <<
+      %    \puGlobal \clef bass
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \partcombine
+      %    << \puMainTenorMusic >>
+      %    << \puMainBasseMusic >>
+      %  >>
+      %>>
     >>
     \layout {
       ragged-last = ##f

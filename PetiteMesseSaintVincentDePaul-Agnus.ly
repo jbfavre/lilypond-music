@@ -12,9 +12,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
+pieceExtract = \markup { \column { \typewriter "Extrait de: " "Petite messe de Saint Vincent de Paul" }}
 \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
+
 \header {
-  title = \markup { \column { \typewriter "Extrait de: " "Petite messe de Saint Vincent de Paul" } }
   piece = "Agnus"
   poetPrefix = \poetPrefix
   composerPrefix = \composerPrefix

@@ -74,23 +74,23 @@ alleluiaScore = \score {
             \new Lyrics \lyricsto "alleluiaBasse" { \alleluiaBasseLyrics }
           >>
         >>
-        \new PianoStaff \with { \pianoProperties instrumentName = \organVoiceTitle shortInstrumentName = \organVoiceShortTitle }
-        <<
-          \new Staff <<
-            \alleluiaGlobal \clef treble
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \alleluiaSopranoMusic >>
-            << \alleluiaAltoMusic >>
-          >>
-          \new Staff <<
-            \alleluiaGlobal \clef bass
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \alleluiaTenorMusic >>
-            << \alleluiaBasseMusic >>
-          >>
-        >>
+        %\new PianoStaff \with { \pianoProperties instrumentName = \organVoiceTitle shortInstrumentName = \organVoiceShortTitle }
+        %<<
+        %  \new Staff <<
+        %    \alleluiaGlobal \clef treble
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \alleluiaSopranoMusic >>
+        %    << \alleluiaAltoMusic >>
+        %  >>
+        %  \new Staff <<
+        %    \alleluiaGlobal \clef bass
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \alleluiaTenorMusic >>
+        %    << \alleluiaBasseMusic >>
+        %  >>
+        %>>
       >>
       \midi {
         % Move MIDI performer from Staff level to Voice

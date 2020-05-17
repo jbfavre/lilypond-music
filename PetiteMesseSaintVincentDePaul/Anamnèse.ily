@@ -94,35 +94,35 @@ anamneseScore =     \score {
           \new Lyrics \lyricsto "anamneseBasse" { \anamneseMainSopranoLyrics }
         >>
       >>
-      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
-      <<
-        \new Staff <<
-          \override Staff.VerticalAxisGroup.remove-empty = ##t
-          \override Staff.VerticalAxisGroup.remove-first = ##t
-          \anamneseGlobal \clef treble
-          \set Staff.printPartCombineTexts = ##f
-          \new Voice <<
-            { \silence \anamneseIntonationMusic
-              \partcombine
-              <<  \anamneseMainSopranoMusic >>
-              <<  \anamneseMainAltoMusic >>
-            }
-          >>
-        >>
-        \new Staff <<
-          \override Staff.VerticalAxisGroup.remove-empty = ##t
-          \override Staff.VerticalAxisGroup.remove-first = ##t
-          \anamneseGlobal \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \new Voice <<
-            { \silence \anamneseIntonationMusic
-              \partcombine
-              <<  \anamneseMainTenorMusic >>
-              <<  \anamneseMainBasseMusic >>
-            }
-          >>
-        >>
-      >>
+      %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      %<<
+      %  \new Staff <<
+      %    \override Staff.VerticalAxisGroup.remove-empty = ##t
+      %    \override Staff.VerticalAxisGroup.remove-first = ##t
+      %    \anamneseGlobal \clef treble
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \new Voice <<
+      %      { \silence \anamneseIntonationMusic
+      %        \partcombine
+      %        <<  \anamneseMainSopranoMusic >>
+      %        <<  \anamneseMainAltoMusic >>
+      %      }
+      %    >>
+      %  >>
+      %  \new Staff <<
+      %    \override Staff.VerticalAxisGroup.remove-empty = ##t
+      %    \override Staff.VerticalAxisGroup.remove-first = ##t
+      %    \anamneseGlobal \clef bass
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \new Voice <<
+      %      { \silence \anamneseIntonationMusic
+      %        \partcombine
+      %        <<  \anamneseMainTenorMusic >>
+      %        <<  \anamneseMainBasseMusic >>
+      %      }
+      %    >>
+      %  >>
+      %>>
     >>
     \layout {
       ragged-last = ##f

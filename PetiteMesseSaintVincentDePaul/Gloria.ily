@@ -237,35 +237,35 @@ gloriaScore = \score {
           \new Lyrics \lyricsto "gloriaBasse" { \gloriaBasseLyrics }
         >>
       >>
-      \new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
-      <<
-        \new Staff <<
-          \override Staff.VerticalAxisGroup.remove-empty = ##t
-          \override Staff.VerticalAxisGroup.remove-first = ##t
-          \gloriaGlobal \clef treble
-          \set Staff.printPartCombineTexts = ##f
-          \new Voice <<
-            { \silence \gloriaIntonationMusic
-              \partcombine
-              <<  \gloriaTenorMusic >>
-              <<  \gloriaBasseMusic >>
-            }
-          >>
-        >>
-        \new Staff <<
-          \override Staff.VerticalAxisGroup.remove-empty = ##t
-          \override Staff.VerticalAxisGroup.remove-first = ##t
-          \gloriaGlobal \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \new Voice <<
-            { \silence \gloriaIntonationMusic
-              \partcombine
-              <<  \gloriaTenorMusic >>
-              <<  \gloriaBasseMusic >>
-            }
-          >>
-        >>
-      >>
+      %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
+      %<<
+      %  \new Staff <<
+      %    \override Staff.VerticalAxisGroup.remove-empty = ##t
+      %    \override Staff.VerticalAxisGroup.remove-first = ##t
+      %    \gloriaGlobal \clef treble
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \new Voice <<
+      %      { \silence \gloriaIntonationMusic
+      %        \partcombine
+      %        <<  \gloriaTenorMusic >>
+      %        <<  \gloriaBasseMusic >>
+      %      }
+      %    >>
+      %  >>
+      %  \new Staff <<
+      %    \override Staff.VerticalAxisGroup.remove-empty = ##t
+      %    \override Staff.VerticalAxisGroup.remove-first = ##t
+      %    \gloriaGlobal \clef bass
+      %    \set Staff.printPartCombineTexts = ##f
+      %    \new Voice <<
+      %      { \silence \gloriaIntonationMusic
+      %        \partcombine
+      %        <<  \gloriaTenorMusic >>
+      %        <<  \gloriaBasseMusic >>
+      %      }
+      %    >>
+      %  >>
+      %>>
     >>
     \layout {
       ragged-last = ##f
