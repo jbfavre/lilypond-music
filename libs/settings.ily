@@ -13,23 +13,15 @@ dedicace = ""
 signature = ""
 signatureDate = ""
 
-
+pieceExtract = ""
+counterpointAntiphonMusic = {}
 sopranoVerseRepons=\lyricmode {}
 
-startPsalmody={
-  \break \cadenzaOn
-  \accidentalStyle "forget"
-}
+figuredBass = \figuremode { }
+harmony = \figuremode { }
 
-figuredBass = \figuremode {
-  }
-harmony = \figuremode {
-  }
-
-verseFiguredBass = \figuremode {
-  }
-verseHarmony = \figuremode {
-  }
+verseFiguredBass = \figuremode { }
+verseHarmony = \figuremode { }
 antiphonRhythms = {}
 antiphonFiguredHarmony = {}
 antiphonFiguredBass = {}

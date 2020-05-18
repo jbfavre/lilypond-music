@@ -40,33 +40,8 @@ oddFooterMarkupSetting = \markup {
   }
 
 \paper {
-
-  left-margin = \leftMargin
-  right-margin = \rightMargin
-  top-margin = \topMargin
-  bottom-margin = \bottomMargin
-
-  top-markup-spacing = \topToMarkupSpacing
-  markup-system-spacing = \markupToSystemSpacing
-  system-system-spacing = \systemToSystemSpacing
-
-  two-sided = \twoSided
-  inner-margin = \innerMargin
-  outer-margin = \outerMargin
-
   scoreTitleMarkup = \scoreTitleMarkupSetting
   oddFooterMarkup = \oddFooterMarkupSetting
-
-  #(define fonts
-    (set-global-fonts
-     #:music fontMusic
-     #:brace fontBrace
-     #:roman fontRoman
-     #:sans fontSans
-     #:typewriter fontTypewriter
-     #:factor (/ staff-height pt fontFactor)
-    ))
-
   % special characters support http://lilypond.org/doc/v2.18/Documentation/notation/special-characters#ascii-aliases
   #(include-special-characters)
 

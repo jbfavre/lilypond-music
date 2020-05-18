@@ -1,5 +1,6 @@
 \version "2.18.2"
 
+% Used * for lyrics layout
 #(define-markup-command (columns layout props args) (markup-list?)
    (let ((line-width (/ (chain-assoc-get 'line-width props
                          (ly:output-def-lookup layout 'line-width))
@@ -11,6 +12,7 @@
                                   line))
                                args)))))
 
+% Used in Psaumes/* & ChantsLiturgiques/*
 silence = #(
   define-music-function (parser location arg) (ly:music?) (
     map-some-music (
@@ -22,7 +24,8 @@ silence = #(
   )
 )
 
-markCustom = 
+% Used in Psaumes/* & ChantsLiturgiques/*
+markCustom =
    #(define-music-function
      (parser location markName)
      (markup?)
@@ -31,47 +34,7 @@ markCustom =
      { \mark \markup { \override #'(box-padding . 0.5) \box \line { \fontsize #-1.5 \smallCaps #markName }} }
    #})
 
-#(define-markup-command (arrow-at-angle layout props angle-deg length fill)
-   (number? number? boolean?)
-   (let* (
-          ;; PI-OVER-180 and degrees->radians are taken from flag-styles.scm
-          (PI-OVER-180 (/ (atan 1 1) 45))
-          (degrees->radians (lambda (degrees) (* degrees PI-OVER-180)))
-          (angle-rad (degrees->radians angle-deg))
-          (target-x (* length (cos angle-rad)))
-          (target-y (* length (sin angle-rad))))
-     (interpret-markup layout props
-                       (markup
-                        #:translate (cons (/ target-x 2) (/ target-y 2))
-                        #:rotate angle-deg
-                        #:translate (cons (/ length -2) 0)
-                        #:concat (#:draw-line (cons length 0)
-                                              #:arrow-head X RIGHT fill)))))
-
-splitStaffBarLineMarkup = \markup \with-dimensions #'(0 . 0) #'(0 . 0) {
-  \combine
-    \arrow-at-angle #45 #(sqrt 8) ##f
-    \arrow-at-angle #-45 #(sqrt 8) ##f
-}
-
-splitStaffBarLine = {
-  \once \override Staff.BarLine.stencil =
-    #(lambda (grob)
-       (ly:stencil-combine-at-edge
-        (ly:bar-line::print grob)
-        X RIGHT
-        (grob-interpret-markup grob splitStaffBarLineMarkup)
-        0))
-  \break
-}
-
-displayFiguredBass = #(define-music-function (parser location figuredBass)
-   (ly:music?)
-   #{
-     \new FiguredBass { #figuredBass }
-   #}
- )
-
+% Used in Psaumes/*
 parenthesizeAll = #(define-music-function (parser location note) (ly:music?)
 #{
   \once \override ParenthesesItem.font-size = #-1
