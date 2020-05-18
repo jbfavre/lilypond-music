@@ -96,7 +96,7 @@ bassAntiphonLyrics = \lyricmode {
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonPiano.ily"
 
 %{

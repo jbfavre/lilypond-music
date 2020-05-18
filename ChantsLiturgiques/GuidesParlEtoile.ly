@@ -9,7 +9,7 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
-%\include "../libs/defaultPianoSettings.ly"
+%\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 % override Staff font size
 %staffCustomSize = 16
@@ -112,7 +112,7 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 %%%%%%%%%%%%%%%%%%%          Draw antiphon          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 
 partition = {
   <<

@@ -136,7 +136,7 @@ reponsSopAltLyrics = \lyricmode { \repeat unfold 7 { _ } ℟&nbsp;:&nbsp;Pi -- t
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 
 partition = {

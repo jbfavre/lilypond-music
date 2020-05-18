@@ -149,7 +149,7 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonPiano.ily"
 % Load Psalmody layout
 \include "../libs/layouts/commonLayout.ily"

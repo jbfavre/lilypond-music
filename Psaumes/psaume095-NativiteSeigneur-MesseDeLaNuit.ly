@@ -124,7 +124,7 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 
 partition = {
@@ -207,7 +207,7 @@ bassVerseMusic = \relative c {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ly"
+\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 
 partition = {
