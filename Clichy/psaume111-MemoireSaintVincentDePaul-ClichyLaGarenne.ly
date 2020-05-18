@@ -8,7 +8,6 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
 
 title = "Psaume 111"
 subtitle = \markup { \column { "Mémoire de Saint Vincent de Paul" "Fête patronale de Clichy la Garenne" "(forme directe)" }}
@@ -91,58 +90,59 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c'' {
-    \cadenzaOn \caesura
+  \silence \sopranoAntiphonMusic
+    \cadenzaOn
     \repeat volta 5 {
-      g4 a b \bar "|.|" \caesura
-      \tempoVerseAcelerando b\breve \tempoVerseRallentando a4 \bar "||" \caesura
-      \tempoVerseAcelerando g\breve \tempoVerseRallentando fs4 \bar "||" \caesura
-      \tempoVerseAcelerando e\breve \tempoVerseRallentando fs4 g \bar "||" \caesura
+      g4 a b \bar "|.|"
+       b\breve  a4 \bar "||"
+       g\breve  fs4 \bar "||"
+       e\breve  fs4 g \bar "||"
     }
     \alternative {
-      { \tempoVerseAcelerando a\breve \tempoVerseRallentando g4 a \bar "||" \caesura }
-      { \tempoVerseAcelerando a\breve \tempoVerseRallentando g4 fs \bar "||" \caesura }
+      {  a\breve  g4 a \bar "||"  }
+      {  a\breve  g4 fs \bar "||"  }
     }
   }
 
 altoVerseMusic = \relative c' {
-    \caesura
+  \silence \sopranoAntiphonMusic
     \repeat volta 5 {
-      d4 fs g \bar "|.|" \caesura
-      g\breve fs4 \caesura
-      e\breve ds4 \caesura
-      e\breve ds!4 e \caesura
+      d4 fs g \bar "|.|"
+      g\breve fs4
+      e\breve ds4
+      e\breve ds!4 e
     }
     \alternative {
-      { e\breve e4 fs \caesura }
-      { e\breve e4 ds! \caesura }
+      { e\breve e4 fs  }
+      { e\breve e4 ds!  }
     }
   }
 
 tenorVerseMusic = \relative c' {
-    \caesura
+  \silence \sopranoAntiphonMusic
     \repeat volta 5 {
-      b4 d d \bar "|.|" \caesura
-      d\breve d4 \caesura
-      b\breve b4 \caesura
-      g\breve b4 b \caesura
+      b4 d d \bar "|.|"
+      d\breve d4
+      b\breve b4
+      g\breve b4 b
     }
     \alternative {
-      { a\breve c4 a \caesura }
-      { a\breve c4 b \caesura }
+      { a\breve c4 a  }
+      { a\breve c4 b  }
     }
   }
 
 bassVerseMusic = \relative c' {
-    \caesura
+  \silence \sopranoAntiphonMusic
     \repeat volta 5 {
-      g d g \bar "|.|" \caesura
-      g\breve d4 \caesura
-      e\breve b4 \caesura
-      c\breve b4 e \caesura
+      g d g \bar "|.|"
+      g\breve d4
+      e\breve b4
+      c\breve b4 e
     }
     \alternative {
-      { c\breve c4 d4 \caesura }
-      { c\breve a4 b4 \caesura }
+      { c\breve c4 d4  }
+      { c\breve a4 b4  }
     }
   }
 
@@ -243,9 +243,21 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ily"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+staffCustomSize = 16.5
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics

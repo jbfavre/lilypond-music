@@ -8,7 +8,6 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
 
 antiphonText = "Répons"
 verseText = "Versets"
@@ -86,10 +85,10 @@ bassAntiphonMusic =  \relative c' {
   }
 
 antiphonLyrics = \lyricmode {
-  Ho -- 
+  Ho --
   \repeat volta 2 { san -- na, Ho -- san -- na, Ho -- }
   \alternative { { san -- na au plus haut des cieux&nbsp;! Ho -- } { san -- na au plus haut des cieux&nbsp;! } }
-   
+
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -106,27 +105,28 @@ bassAntiphonLyrics = \antiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando e\breve^\markup{ \sans "Verset 1"} \tempoVerseRallentando g4 \bar "||" \caesura
-    \tempoVerseAcelerando g\breve \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando a8 a \tuplet 3/2 { c8 c c } a8 a \tempoVerseRallentando b4 \bar "||" \caesura
-    \tempoVerseAcelerando g8 g \tuplet 3/2 { a8 f a } \tempoVerseRallentando g4 \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+    \cadenzaOn
+     e\breve^\markup{ \sans "Verset 1"}  g4 \bar "||"
+     g\breve  a4 \bar "||"
+     a8 a \tuplet 3/2 { c8 c c } a8 a  b4 \bar "||"
+     g8 g \tuplet 3/2 { a8 f a }  g4 \bar "||"
     \break
-    \tempoVerseAcelerando e\breve^\markup{ \sans "Verset 2"} g1 \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando a8 a c c a a \tempoVerseRallentando b4 \bar "||" \caesura
-    \tempoVerseAcelerando g8 g \tuplet 3/2 { a8 f a } \tempoVerseRallentando g4 \bar "||" \caesura
+     e\breve^\markup{ \sans "Verset 2"} g1  a4 \bar "||"
+     a8 a c c a a  b4 \bar "||"
+     g8 g \tuplet 3/2 { a8 f a }  g4 \bar "||"
   }
 
 altoVerseMusic = \relative c'' {
-    \caesura
+
   }
 
 tenorVerseMusic = \relative c' {
-    \caesura
+
   }
 
 bassVerseMusic = \relative c' {
-    \caesura
+
   }
 
 verseLyrics = \markup {
@@ -154,9 +154,19 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ily"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody.ily"
-% Load midi output
-%\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

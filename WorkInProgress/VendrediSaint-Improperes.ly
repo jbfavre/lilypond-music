@@ -58,25 +58,26 @@ bassAntiphonMusic =  \relative c {
 }
 
 sopranoVerseMusic = \relative c' {
+  \silence \sopranoAntiphonMusic
   \cadenzaOn
-  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "|"
-  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando g4 g a \bar "|" \break
-  \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando a4 g g \bar "|"
+   f\breve g1  a4 \bar "|"
+   f\breve g1  g4 g a \bar "|" \break
+   bf\breve bf1  a4 g g \bar "|"
   }
 altoVerseMusic= \relative c' {
-  \cadenzaOn
+  \silence \sopranoAntiphonMusic
   c\breve e1 d4
   d\breve e1 e4 e e
   g\breve f1 f4 f f8[ e]
   }
 tenorVerseMusic= \relative c' {
-  \cadenzaOn
+  \silence \sopranoAntiphonMusic
   a\breve g1 f4
   a\breve c1 c4 c cs
   df\breve df!1 df!4 d bf
   }
 bassVerseMusic = \relative c {
-  \cadenzaOn
+  \silence \sopranoAntiphonMusic
   f\breve c1 d4
   d\breve c1 c4 bf a
   bf\breve g1 bf4 b8[ d] c4
@@ -102,13 +103,13 @@ bassAntiphonLyrics = \lyricmode {
 %{
   Moi je t’ai fait sortir d’Égypte, j’ai englouti le Pharaon&nbsp;:
   Toi, tu m’as livré aux grands prêtres !
-  
+
   Pour toi je m’avançai dans la colonne de nuée&nbsp;:
   Toi tu m’as conduit à Pilate&nbsp;!
-  
+
   Moi, dans ta main j’ai mis un sceptre, je t’ai promu peuple royal&nbsp;:
   Toi, tu as placé sur ma tête la couronne d’épines&nbsp;!
-  
+
   Moi, je t’ai par ma toute puissance exalté&nbsp;:
   Toi, tu m’as pendu au gibet de la Croix&nbsp;!
 %}
@@ -136,6 +137,23 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody-2VoicesNoPiano.ily"
-\include "../libs/layouts/outputMidi.ily"
+% Load Piano settings & layout
+\include "../libs/defaultPianoSettings.ily"
+\include "../libs/layouts/commonSettings.ily"
+staffCustomSize = 16.5
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics

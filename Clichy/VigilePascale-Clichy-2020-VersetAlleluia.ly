@@ -5,10 +5,9 @@
   because they are used in antiphon & verse music definition
   You can override default values simply by declaring variables again.
 %}
-\include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
-\include "libs/translations/fr.ily"
-\include "libs/psalmody.ily"
+\include "../libs/commonFunctions.ily"
+\include "../libs/settings.ily"
+\include "../libs/translations/fr.ily"
 
 title = "Psaume 117 - Alleluia"
 subtitle = \markup { \column { "Z117-4" "Vigile Pascale" }}
@@ -80,35 +79,36 @@ bassAntiphonLyrics = \tenorAntiphonLyrics
 % en utilisant \tAcce et \tRall
 
 sopranoVerseMusic = \relative c' {
-    \cadenzaOn \caesura
-    \tempoVerseAcelerando fs\breve \tempoVerseRallentando a4 \bar "||" \caesura
-    \tempoVerseAcelerando fs\breve \tempoVerseRallentando b4 \bar "||" \caesura
-    \tempoVerseAcelerando g\breve \tempoVerseRallentando b4 \bar "||" \caesura
-    \tempoVerseAcelerando b\breve \tempoVerseRallentando cs4 b as \bar "||" \caesura
+  \silence \sopranoAntiphonMusic
+    \cadenzaOn
+     fs\breve  a4 \bar "||"
+     fs\breve  b4 \bar "||"
+     g\breve  b4 \bar "||"
+     b\breve  cs4 b as \bar "||"
   }
 
 altoVerseMusic = \relative c' {
-    \caesura
-    d\breve e4 \caesura
-    e\breve d4 \caesura
-    e\breve fs4 \caesura
-    g\breve g4 f! e \caesura
+  \silence \sopranoAntiphonMusic
+    d\breve e4
+    e\breve d4
+    e\breve fs4
+    g\breve g4 f! e
   }
 
 tenorVerseMusic = \relative c' {
-    \caesura
-    a\breve a4 \caesura
-    as\breve b4 \caesura
-    b\breve d4 \caesura
-    d\breve e4 d cs! \caesura
+  \silence \sopranoAntiphonMusic
+    a\breve a4
+    as\breve b4
+    b\breve d4
+    d\breve e4 d cs!
   }
 
 bassVerseMusic = \relative f {
-    \caesura
-    d\breve cs4 \caesura
-    cs\breve fs4 \caesura
-    e\breve b4 \caesura
-    g'\breve e4 f! fs \caesura
+  \silence \sopranoAntiphonMusic
+    d\breve cs4
+    cs\breve fs4
+    e\breve b4
+    g'\breve e4 f! fs
   }
 
 verseLyrics = \markup {
@@ -131,10 +131,20 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "libs/defaultPianoSettings.ily"
-\include "libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "libs/layouts/commonLayout.ily"
-\include "libs/layouts/psalmody.ily"
-% Load midi output
-%\include "../libs/layouts/outputMidi.ily"
+\include "../libs/defaultPianoSettings.ily"
+\include "../libs/layouts/commonSettings.ily"
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"

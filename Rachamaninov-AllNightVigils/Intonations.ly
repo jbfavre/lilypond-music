@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 
 #(set-global-staff-size 14)
 \header {
@@ -53,6 +53,22 @@ intonationLyricsFrench = \lyricmode {
 }
 
 \score {
+  \new ChoirStaff
+  <<
+    \new Staff
+    <<
+      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+    >>
+    \new Staff \with { instrumentName = \markup \center-column { Soliste } }
+    <<
+      \new Voice = "solisteUn" { \voiceOne \intonationMusic \amenMen }
+      \new Lyrics { \lyricsto "solisteUn" \intonationLyricsSlavon }
+      \new Lyrics { \lyricsto "solisteUn" \intonationLyricsLatin }
+    >>
+  >>
   \header {
     piece = "Numéro 1"
   }
@@ -61,21 +77,6 @@ intonationLyricsFrench = \lyricmode {
       \Staff \RemoveEmptyStaves
     }
   }
-  \new ChoirStaff <<
-    \new Staff <<
-     \override Staff.VerticalAxisGroup.remove-first = ##t
-       \new Voice = "voixUn" { \voiceOne \amenWomen }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-    >>
-    \new Staff \with {
-      instrumentName = \markup \center-column { Soliste }
-    } <<
-      \new Voice = "solisteUn" { \voiceOne \intonationMusic \amenMen }
-      \new Lyrics { \lyricsto "solisteUn" \intonationLyricsSlavon }
-      \new Lyrics { \lyricsto "solisteUn" \intonationLyricsLatin }
-    >>
-  >>
 }
 
 
@@ -115,6 +116,22 @@ intonationLyricsFrench = \lyricmode {
 Car à Toi sont dus toute la gloire, l’honneur et l’adoration : au Père, au Fils et au Saint-Esprit, maintenant et à jamais, et pour les siècles des siècles.
 }
 \score {
+  \new ChoirStaff
+  <<
+    \new Staff
+    <<
+     \override Staff.VerticalAxisGroup.remove-first = ##t
+       \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+    >>
+    \new Staff \with { instrumentName = \markup \center-column { Soliste } }
+    <<
+      \new Voice = "solisteTrois" { \voiceOne \intonationMusic \amenMen }
+      \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsSlavon }
+      \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsLatin }
+    >>
+  >>
   \header {
     piece = "Numéro 3"
   }
@@ -123,21 +140,6 @@ Car à Toi sont dus toute la gloire, l’honneur et l’adoration : au Père, au
       \Staff \RemoveEmptyStaves
     }
   }
-  \new ChoirStaff <<
-    \new Staff <<
-     \override Staff.VerticalAxisGroup.remove-first = ##t
-       \new Voice = "voixUn" { \voiceOne \amenWomen }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-    >>
-    \new Staff \with {
-      instrumentName = \markup \center-column { Soliste }
-    } <<
-      \new Voice = "solisteTrois" { \voiceOne \intonationMusic \amenMen }
-      \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsSlavon }
-      \new Lyrics { \lyricsto "solisteTrois" \intonationLyricsLatin }
-    >>
-  >>
 }
 
 
@@ -174,6 +176,22 @@ intonationLyricsFrench = \lyricmode {
   Car c’est à Toi qu’appartiennent le règne, la puissance et la gloire, au Père, au Fils et au Saint-Esprit, maintenant et à jamais, et pour les siècles des siècles.
 }
 \score {
+  \new ChoirStaff
+  <<
+    \new Staff
+    <<
+      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+    >>
+    \new Staff \with { instrumentName = \markup \center-column { Soliste } }
+    <<
+      \new Voice = "solisteSix" { \voiceOne \intonationMusic \amenMen }
+      \new Lyrics { \lyricsto "solisteSix" \intonationLyricsSlavon }
+      \new Lyrics { \lyricsto "solisteSix" \intonationLyricsLatin }
+    >>
+  >>
   \header {
     piece = "Numéro 6"
   }
@@ -182,21 +200,6 @@ intonationLyricsFrench = \lyricmode {
       \Staff \RemoveEmptyStaves
     }
   }
-  \new ChoirStaff <<
-    \new Staff <<
-      \override Staff.VerticalAxisGroup.remove-first = ##t
-      \new Voice = "voixUn" { \voiceOne \amenWomen }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-    >>
-    \new Staff \with {
-      instrumentName = \markup \center-column { Soliste }
-    } <<
-      \new Voice = "solisteSix" { \voiceOne \intonationMusic \amenMen }
-      \new Lyrics { \lyricsto "solisteSix" \intonationLyricsSlavon }
-      \new Lyrics { \lyricsto "solisteSix" \intonationLyricsLatin }
-    >>
-  >>
 }
 
 
@@ -235,6 +238,22 @@ intonationLyricsFrench = \lyricmode {
   Car Ton Nom est béni, et Ton royaume est glorifié, celui du Père, du Fils et du Saint-Esprit, maintenant et à jamais, et pour les siècles des siècles.
 }
 \score {
+  \new ChoirStaff
+  <<
+    \new Staff
+    <<
+      \override Staff.VerticalAxisGroup.remove-first = ##t
+      \new Voice = "voixUn" { \voiceOne \amenWomen }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+      \new Lyrics \lyricsto "voixUn" { A -- min' }
+    >>
+    \new Staff \with { instrumentName = \markup \center-column { Soliste } }
+    <<
+      \new Voice = "solisteDix" { \voiceOne \intonationMusic \amenMen}
+      \new Lyrics { \lyricsto "solisteDix" \intonationLyricsSlavon }
+      \new Lyrics { \lyricsto "solisteDix" \intonationLyricsLatin }
+    >>
+  >>
   \header {
     piece = "Numéro 10"
   }
@@ -243,19 +262,4 @@ intonationLyricsFrench = \lyricmode {
       \Staff \RemoveEmptyStaves
     }
   }
-  \new ChoirStaff <<
-    \new Staff <<
-      \override Staff.VerticalAxisGroup.remove-first = ##t
-      \new Voice = "voixUn" { \voiceOne \amenWomen }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-      \new Lyrics { \lyricsto "voixUn" \lyricmode { A -- min' } }
-    >>
-    \new Staff \with {
-      instrumentName = \markup \center-column { Soliste }
-    } <<
-      \new Voice = "solisteDix" { \voiceOne \intonationMusic \amenMen}
-      \new Lyrics { \lyricsto "solisteDix" \intonationLyricsSlavon }
-      \new Lyrics { \lyricsto "solisteDix" \intonationLyricsLatin }
-    >>
-  >>
 }

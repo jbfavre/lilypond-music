@@ -8,7 +8,6 @@
 \include "../libs/commonFunctions.ily"
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
-\include "../libs/psalmody.ily"
 
 title = "Psaume 103"
 subtitle = "Vigile Pascale, Clichy la Garenne, 2018"
@@ -16,7 +15,7 @@ composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, mars 2018"
 
 staffCustomSize = 15
-systemToSystemSpacing = 
+systemToSystemSpacing =
   #'((basic-distance . 3)
      (minimum-distance . 3)
      (padding . 3)
@@ -36,20 +35,20 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoAntiphonMusic = \relative c' {
-  \partial 8 d8  | d8. f16 g8 a bf c d8. (c16 bf8) c4 f,8 bf a g f4 d8 f8 g4 a 
-             d,8  d8. f16 g8 a bf c d8. c16 bf8 c4 f,8 bf a g f4 d8 f8 e4 d4.
+  \partial 8 d8 d8. f16 g8 a bf c d8. (c16 bf8) c4 f,8 bf a g f4 d8 f8 g4 a
+             d,8  d8. f16 g8 a bf c d8. (c16 bf8) c4 f,8 bf a g f4 d8 f8 e4 d4.
   \bar "|." \break
   }
 altoAntiphonMusic =  \relative c {}
 tenorAntiphonMusic =  \relative c {}
 bassAntiphonMusic =  \relative c {
-  \partial 8 d8 | d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 d d4 a
-             d8 | d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 a8 a4 d4.
+  \partial 8 d8 d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 d d4 a
+             d8 d8. d16 d8 d d d bf4. f'4 f8 g g g d4 d8 a8 a4 d4.
   }
 
 antiphonLyrics = \lyricmode {
     Bé -- nis le Sei -- gneur, ô mon â -- me, du fond de mon ê -- tre son saint Nom.
-    Bé -- nis le Sei -- gneur, ô mon â -- me, et n'oublie au -- cun de ses bien -- faits&nbsp;!
+    Bé -- nis le Sei -- gneur, ô mon â -- me, et n'ou -- blie au -- cun de ses bien -- faits&nbsp;!
   }
 
 sopranoAntiphonLyrics = \antiphonLyrics
@@ -62,20 +61,22 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sopranoVerseMusic = \relative c'' {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando a\breve bf1 \tempoVerseRallentando bf4 a \bar "||" \caesura
-    \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando f4 e \bar "||" \caesura \break
-    \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando g4 a \bar "||" \caesura
-    \tempoVerseAcelerando f\breve f1 \tempoVerseRallentando g4 f e d \bar "||"
+  \silence \sopranoAntiphonMusic
+    \cadenzaOn
+     a\breve bf1  bf4 a \bar "||"
+     g\breve a1  f4 e \bar "||" \break
+     f\breve g1  g4 a \bar "||"
+     f\breve f1  g4 f e d \bar "||"
   }
 altoVerseMusic = \relative c {}
 tenorVerseMusic = \relative c {}
 bassVerseMusic = \relative c {
-    \caesura \cadenzaOn 
-    \tempoVerseAcelerando d\breve f1 \tempoVerseRallentando g4 a \caesura
-    \tempoVerseAcelerando g\breve f1 \tempoVerseRallentando d4 a \caesura \break
-    \tempoVerseAcelerando bf\breve g1 \tempoVerseRallentando c4 f \caesura
-    \tempoVerseAcelerando bf,\breve a1 \tempoVerseRallentando g4 bf a d
+  \silence \sopranoAntiphonMusic
+    \cadenzaOn
+     d\breve f1  g4 a
+     g\breve f1  d4 a \break
+     bf\breve g1  c4 f
+     bf,\breve a1  g4 bf a d
    }
 
 %{
@@ -150,9 +151,21 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ily"
-\include "../libs/layouts/commonPiano.ily"
-% Load Psalmody layout
-\include "../libs/layouts/commonLayout.ily"
-\include "../libs/layouts/psalmody-2VoicesNoPiano.ily"
-% Load midi output
-\include "../libs/layouts/outputMidi.ily"
+\include "../libs/layouts/commonSettings.ily"
+staffCustomSize = 16.5
+
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    \include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \include "../libs/layouts/commonPiano.ily"
+    % Psalmodie à 4 voix mixtes
+    \include "../libs/layouts/commonVerseFourVoices.ily"
+    %\new FiguredBass { \figuredBass \verseFiguredBass }
+    %\new FiguredBass { \harmony \verseHarmony }
+  >>
+}
+
+% Load PDF output
+\include "../libs/layouts/outputPDF.ily"
+\verseLyrics
