@@ -1,7 +1,5 @@
     \paper {
       #(include-special-characters)
-      top-margin = 1\cm
-      bottom-margin = 1\cm
       % Should the last system expand to fill the line ?
       % Yes -> ##f
       % No  -> ##t

@@ -231,6 +231,6 @@ sanctusScore = \score {
       %>>
     >>
     \layout {
-      #(layout-set-staff-size 15)
+      #(layout-set-staff-size 20)
     }
   }

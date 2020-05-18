@@ -23,8 +23,6 @@
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ily"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
-pieceExtract = ""
-
 blankPage = {
     % Hide Staff, Key & Time signature symbols to get a blank page
     \once \override Staff.StaffSymbol #'stencil = ##f
@@ -50,6 +48,10 @@ blankPage = {
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     }
     scoreTitleMarkup = \markup \null
+    top-margin = 1.5 \cm
+    bottom-margin = 1.5 \cm
+    left-margin = 2 \cm
+    right-margin = 2 \cm
   }
   \header {
     title = \markup { \sans \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
