@@ -23,13 +23,6 @@
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ily"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
-blankPage = {
-    % Hide Staff, Key & Time signature symbols to get a blank page
-    \once \override Staff.StaffSymbol #'stencil = ##f
-    \once \override Staff.Clef #'transparent = ##t
-    \once \override Staff.TimeSignature #'stencil = ##f
-  }
-
 %%%%% Define book
 \book {
   \paper {
@@ -61,7 +54,8 @@ blankPage = {
     copyright = \markup \null
     tagline = \markup \null
   }
-  \blankPage
+  % Ensure first page is blank for cover display
+  \pageBreak
   \bookpart {
     \kyrieScore
     \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
