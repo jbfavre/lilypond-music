@@ -7,21 +7,16 @@
 \include "libs/layouts/book-titling.ily"
 \include "PetiteMesseSaintVincentDePaul/pianoSettings.ily"
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Include each part of the Petite Messe de Saint Vincent de Paul
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
-pieceExtract = \markup { \column { \typewriter "Extrait de: " "Petite messe de Saint Vincent de Paul" }}
-\include "PetiteMesseSaintVincentDePaul/common-paper.ily"
+\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 
 \header {
+  title = "Petite messe de Saint Vincent de Paul"
   piece = "Agnus"
-  poetPrefix = \poetPrefix
-  composerPrefix = \composerPrefix
-  poet = "AELF"
   composer = "Jean Baptiste Favre"
-  copyright = ""
-  tagline = ""
+  poet = "AELF"
+  opus = ##f
+  copyright = \markup { \typewriter "Extrait de la Petite messe de Saint Vincent de Paul" }
 }
 \agnusScore

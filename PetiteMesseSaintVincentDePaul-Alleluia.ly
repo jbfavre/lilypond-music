@@ -12,16 +12,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
 
-\include "PetiteMesseSaintVincentDePaul/common-paper.ily"
+\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 
 \header {
-  pieceExtract = \pieceExtract
+  title = "Petite messe de Saint Vincent de Paul"
   piece = "Alleluia"
-  poetPrefix = \poetPrefix
-  composerPrefix = \composerPrefix
-  poet = "AELF"
   composer = "Jean Baptiste Favre"
-  copyright = ""
-  tagline = ""
+  poet = "AELF"
+  opus = ##f
+  copyright = \markup { \typewriter "Extrait de la Petite messe de Saint Vincent de Paul" }
 }
 \alleluiaScore

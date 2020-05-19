@@ -13,7 +13,7 @@
     ragged-last = ##f
     ragged-bottom = ##t
     ragged-last-bottom = ##f
-    page-breaking = #ly:page-turn-breaking
+    min-systems-per-page = 3
     bookTitleMarkup = \markup \null
     scoreTitleMarkup = \markup {
       \column {
@@ -21,7 +21,6 @@
         \fill-line {
           \column {
             \fontsize #6 \bold \fromproperty #'header:piece
-            \when-property #'header:title \typewriter "Extrait de: " \fromproperty #'header:title
           }
           \right-column {
             \line { \when-property #'header:poet \typewriter "Texte: " \fontsize #1 \fromproperty #'header:poet }
@@ -29,7 +28,7 @@
             \when-property #'header:opus \fontsize #0.8 \sans \fromproperty #'header:opus
           }
         }
-        \vspace #1
+        \vspace #0.5
       }
     }
   }

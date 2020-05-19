@@ -12,15 +12,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ily"
 
-\include "PetiteMesseSaintVincentDePaul/common-paper.ily"
+\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 \header {
-  pieceExtract = \pieceExtract
-  piece = "Prière Universelle"
-  poetPrefix = \poetPrefix
-  composerPrefix = \composerPrefix
-  poet = "AELF"
+  title = "Petite messe de Saint Vincent de Paul"
+  piece = "Prière universelle"
   composer = "Jean Baptiste Favre"
-  copyright = ""
-  tagline = ""
+  poet = "AELF"
+  opus = ##f
+  copyright = \markup { \typewriter "Extrait de la Petite messe de Saint Vincent de Paul" }
 }
 \puScore
