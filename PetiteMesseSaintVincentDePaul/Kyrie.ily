@@ -15,9 +15,9 @@ kyrieGlobal = {
 
 kyrieSolistMusic = \relative c' {
       \mark \default
-      \repeat volta 2 { f8 (g) af (bf) c4 c c8 (bf16 af) bf4 c2\fermata }
+      \repeat volta 2 { f8 (g) af (bf) c4 c c8 (bf16 af) bf4 c2\fermata } \break
       \mark \default
-      \repeat volta 2 { c4 (df) c4. bf8 af (g) af (bf) g2\fermata }
+      \repeat volta 2 { c4 (df) c4. bf8 af (g) af (bf) g2\fermata } \break
       \mark \default
       \repeat volta 2 { f8 (g) af (bf) c4 c c8 (bf16 af) g8 (af) f2\fermata }
   }

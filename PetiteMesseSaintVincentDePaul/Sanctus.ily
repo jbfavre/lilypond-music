@@ -15,26 +15,21 @@ sanctusGlobal = {
   \time 3/8
   \tempo 4. = 40
 }
-sanctusSolist_BD_Repeat = \relative c' { \mark \default e8 fs (gs) a8 gs e }
+sanctusSolist_BD_Repeat = \relative c' { e8 fs gs a8 (gs) e }
 sanctusSolist_BD_AlternativeOne = \relative c' {
-    \set melismaBusyProperties = #'()
-    \slurDown
-    \slurDashed
-    e8 (fs4) gs4.
-    \unset melismaBusyProperties
+    e8 fs4 gs4.
   }
 sanctusSolist_BD_AlternativeTwo = \relative c' { e8 (ds16 cs16) ds8 e4. }
 sanctusMainSolistMusic =  \relative c' {
     \mark \default
     \repeat volta 2 {
-      b'4 b8 cs4 b8 b (a gs) fs4.
+      b'4 b8 cs4 b8 b (a gs) fs4. \break
       \sanctusSolist_BD_Repeat
     }
     \alternative {
       \sanctusSolist_BD_AlternativeOne
       \sanctusSolist_BD_AlternativeTwo
-
-    }
+    } \break
     \mark \default
     \repeat volta 2 {
       \relative c' {
@@ -76,13 +71,9 @@ sanctusMainSopranoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneSopranoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoSopranoLyrics = \sanctusVerseTwoSolistLyrics
 
-sanctusAlto_BD_Repeat = \relative c' { cs8 ds (ds) cs e cs }
+sanctusAlto_BD_Repeat = \relative c' { cs8 ds ds cs (e) cs }
 sanctusAlto_BD_Alternative = \relative c' {
-    \set melismaBusyProperties = #'()
-    \slurDown
-    \slurDashed
-    cs8 (b4) b4.
-    \unset melismaBusyProperties
+    cs8 b4 b4.
   }
 sanctusMainAltoMusic = \relative c' {
     \repeat volta 2 {
@@ -108,13 +99,9 @@ sanctusMainAltoLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneAltoLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoAltoLyrics = \sanctusVerseTwoSolistLyrics
 
-sanctusTenor_BD_Repeat = \relative c' { gs8 a (gs) fs gs a }
+sanctusTenor_BD_Repeat = \relative c' { gs8 a gs fs (gs) a }
 sanctusTenor_BD_Alternative = \relative c {
-    \set melismaBusyProperties = #'()
-    \slurDown
-    \slurDashed
     fs4 a8 gs4.
-    \unset melismaBusyProperties
   }
 sanctusTenorMusic = \relative c {
     \repeat volta 2 {
@@ -144,11 +131,7 @@ sanctusVerseTwoTenorLyrics = \sanctusVerseTwoSolistLyrics
 
 sanctusBasse_BD_Repeat = \relative c { cs8 cs b a (a) cs }
 sanctusBasse_BD_Alternative = \relative c {
-    \set melismaBusyProperties = #'()
-    \slurDown
-    \slurDashed
     a4 b8 <e \parenthesize e,>4.
-    \unset melismaBusyProperties
   }
 sanctusMainBasseMusic = \relative c {
     \repeat volta 2 {
@@ -230,7 +213,7 @@ sanctusScore = \score {
       %  >>
       %>>
     >>
-    \layout {
-      #(layout-set-staff-size 20)
-    }
+    %\layout {
+      %#(layout-set-staff-size 16)
+    %}
   }

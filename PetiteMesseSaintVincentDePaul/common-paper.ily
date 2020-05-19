@@ -4,8 +4,9 @@
       % Yes -> ##f
       % No  -> ##t
       ragged-last = ##f
-      ragged-bottom = ##f
+      ragged-bottom = ##t
       ragged-last-bottom = ##f
+      page-breaking = #ly:page-turn-breaking
       bookTitleMarkup = \markup \null
       scoreTitleMarkup = \markup {
         \column {

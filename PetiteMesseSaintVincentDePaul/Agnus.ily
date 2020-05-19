@@ -14,13 +14,13 @@ agnusGlobal = {
 }
 agnusSolistCommonMusic = {
     \mark \default
-    f4 (g) af2 g4 (af) bf2 af4 bf c bf af g f e
+    f4 (g) af2 g4 (af) bf2 af4 bf c bf af g f e \break
   }
 agnusSolistMusic = \relative c' {
     \bar ".|:"
     \repeat volta 2 { \agnusSolistCommonMusic }
     % mesure 5: 0'10
-    \alternative { { g f g af f2 f bf4 af g f g2 g2 } } \bar ":|."
+    \alternative { { g f g af f2 f bf4 af g f g2 g2 } } \bar ":|." \break
     \agnusSolistCommonMusic
     % mesure 9: 0'24
     \repeat volta 2 { g2 (c4) bf bf (g) af2  }

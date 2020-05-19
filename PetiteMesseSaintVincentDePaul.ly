@@ -23,6 +23,12 @@
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ily"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
+blankPage = {
+    % Hide Staff, Key & Time signature symbols to get a blank page
+    \once \override Staff.StaffSymbol #'stencil = ##f
+    \once \override Staff.Clef #'transparent = ##t
+    \once \override Staff.TimeSignature #'stencil = ##f
+  }
 %%%%% Define book
 \book {
   \paper {
@@ -55,7 +61,7 @@
     tagline = \markup \null
   }
   % Ensure first page is blank for cover display
-  \pageBreak
+  \blankPage
   \bookpart {
     \kyrieScore
     \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
@@ -107,18 +113,6 @@
   \bookpart {
     \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
     \header {
-      piece = "Sanctus"
-      subtitle = \markup { \column { "Petite messe de" "Saint Vincent de Paul" } }
-      poetPrefix = \poetPrefix
-      composerPrefix = \composerPrefix
-      poet = "AELF"
-      copyright = ""
-    }
-    \sanctusScore
-  }
-  \bookpart {
-    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
-    \header {
       piece = "Anamnèse"
       subtitle = \markup { \column { "Petite messe de" "Saint Vincent de Paul" } }
       poetPrefix = \poetPrefix
@@ -127,6 +121,18 @@
       copyright = ""
     }
     \anamneseScore
+  }
+  \bookpart {
+    \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
+    \header {
+      piece = "Sanctus"
+      subtitle = \markup { \column { "Petite messe de" "Saint Vincent de Paul" } }
+      poetPrefix = \poetPrefix
+      composerPrefix = \composerPrefix
+      poet = "AELF"
+      copyright = ""
+    }
+    \sanctusScore
   }
   \bookpart {
     \include "PetiteMesseSaintVincentDePaul/common-paper.ily"
