@@ -49,9 +49,9 @@ oddFooterMarkupSetting = \markup {
   markup-system-spacing = \markupToSystemSpacing
   system-system-spacing = \systemToSystemSpacing
 
-  two-sided = \twoSided
-  inner-margin = \innerMargin
-  outer-margin = \outerMargin
+  %two-sided = \twoSided
+  %inner-margin = \innerMargin
+  %outer-margin = \outerMargin
 
   scoreTitleMarkup = \scoreTitleMarkupSetting
   oddFooterMarkup = \oddFooterMarkupSetting

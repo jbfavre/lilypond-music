@@ -17,7 +17,7 @@ markupToSystemSpacing =
      (padding . 3)
      (stretchability . 3))
 
-systemToSystemSpacing = 
+systemToSystemSpacing =
   #'((basic-distance . 3)
      (minimum-distance . 3)
      (padding . 3)
@@ -26,10 +26,10 @@ systemToSystemSpacing =
 %{
   Default margins in millimeters (equal to 1\cm)
 %}
-leftMargin = 10
-rightMargin = 10
-topMargin = 5
-bottomMargin = 5
+leftMargin = 20
+rightMargin = 20
+topMargin = 10
+bottomMargin = 10
 
 %{
   Margin for two-sided printed scores
