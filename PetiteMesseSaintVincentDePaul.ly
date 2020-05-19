@@ -32,6 +32,13 @@ blankPage = {
 %%%%% Define book
 \book {
   \paper {
+    #(define fonts
+      (set-global-fonts
+       #:music "emmentaler"
+       #:brace "emmentaler"
+       #:roman "Arial"
+       #:sans "Cantarell thin"
+      ))
     bookTitleMarkup = \markup \column {
       \fill-line { \fontsize #5 \fromproperty #'header:composer }
       \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
@@ -53,7 +60,7 @@ blankPage = {
     right-margin = 2 \cm
   }
   \header {
-    title = \markup { \sans \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
+    title = \markup { \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
     subtitle = \markup { \sans \center-column { "Pour soliste et chœur à 3 voix" "ou" "chœur à 4 voix" } }
     composer = "Jean Baptiste Favre"
     date = \markup { \typewriter "Clichy-la-Garenne, 2020" }
