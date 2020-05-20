@@ -18,7 +18,7 @@
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ily"
 \include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
 \include "PetiteMesseSaintVincentDePaul/Gloria.ily"
-\include "PetiteMesseSaintVincentDePaul/PrièreUniverselle.ily"
+\include "PetiteMesseSaintVincentDePaul/PriereUniverselle.ily"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ily"
 \include "PetiteMesseSaintVincentDePaul/Anamnèse.ily"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
