@@ -20,7 +20,7 @@
 \include "PetiteMesseSaintVincentDePaul/Gloria.ily"
 \include "PetiteMesseSaintVincentDePaul/PriereUniverselle.ily"
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ily"
-\include "PetiteMesseSaintVincentDePaul/Anamnèse.ily"
+\include "PetiteMesseSaintVincentDePaul/Anamnese.ily"
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 
 %%%%% Define book
