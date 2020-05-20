@@ -21,8 +21,9 @@
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
     }
     scoreTitleMarkup = \markup \null
+    two-sided = ##t
     top-margin = 1.5 \cm
     bottom-margin = 1.5 \cm
-    left-margin = 2 \cm
-    right-margin = 2 \cm
+    inner-margin = 2 \cm
+    outer-margin = 1 \cm
   }
