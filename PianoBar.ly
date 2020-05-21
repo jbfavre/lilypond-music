@@ -25,7 +25,6 @@
 \paper {
   #(include-special-characters)
   ragged-last-bottom = ##f
-  max-systems-per-page = 6
   #(set-paper-size "a4")
   #(define fonts
     (set-global-fonts
@@ -34,8 +33,12 @@
      #:roman "Arial"
      #:sans "Cantarell thin"
     ))
-  top-margin = 1\cm
-  bottom-margin = 1\cm
+  max-systems-per-page = 5
+  two-sided = ##t
+  top-margin = 1.5 \cm
+  bottom-margin = 1.5 \cm
+  inner-margin = 2 \cm
+  outer-margin = 1 \cm
   bookTitleMarkup = \markup \column {
     \fill-line { \fontsize #5 \fromproperty #'header:composer }
     \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
