@@ -41,7 +41,7 @@
      #:roman "Arial"
      #:sans "Cantarell thin"
     ))
-  max-systems-per-page = 4
+  systems-per-page = 5
   two-sided = ##t
   top-margin = 1.5 \cm
   bottom-margin = 1.5 \cm
