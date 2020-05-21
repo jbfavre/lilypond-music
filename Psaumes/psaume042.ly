@@ -142,3 +142,4 @@ partition = {
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\verseLyrics

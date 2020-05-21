@@ -110,7 +110,7 @@ verseLyrics = \markup {
       \left-column {
         \concat { \typewriter "2. " "Tu reprends leur " so \underline u ffle, " ils expirent" }
         \concat { \typewriter "   " "et " reto \underline u rnent " à leur poussière." }
-        \concat { \typewriter "   " "Tu envoies ton " so \underline u ffle&nbsp;: " ils sont créés;" }
+        \concat { \typewriter "   " "Tu envoies ton " so \underline u ffle&nbsp;: " ils sont créés&nbsp;;" }
         \concat { \typewriter "   " "tu renouvelles la " f \underline a ce " de la terre." }
       }
     }
@@ -119,7 +119,7 @@ verseLyrics = \markup {
       \left-column {
         \concat { \typewriter "3. " "Gloire au " Seigne \underline u r " à tout jamais&nbsp;!" }
         \concat { \typewriter "   " "Que Dieu se " réjou \underline i sse " en ses œuvres&nbsp;!" }
-        \concat { \typewriter "   " "Que mon poème lui " s \underline o it " agréable;" }
+        \concat { \typewriter "   " "Que mon poème lui " s \underline o it " agréables&nbsp;;" }
         \concat { \typewriter "   " "moi, je me " réjou \underline i s " dans le Seigneur." }
       }
     }
