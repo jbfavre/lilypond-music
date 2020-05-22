@@ -78,13 +78,15 @@ bassVerseMusic = \relative f {
   }
 
 verseLyrics = \markup {
-  \vspace #5
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
+  \vspace #2.3
   \override #'(font-family . sans)
   \override #'(font-size . 2)
   \fill-line {
     \left-column{
       \concat { \typewriter "1. " "Je t’exalterai, mon Die" \underline u ", mon Roi," }
-      \concat { \typewriter "   " "je bénirai ton nom toujo" \underline u "rs et à jamais!" }
+      \concat { \typewriter "   " "je bénirai ton nom toujo" \underline u "rs et à jamais&nbsp;!" }
       \concat { \typewriter "   " "Chaque jour je te b" \underline é "nirai," }
       \concat { \typewriter "   " "je louerai ton nom toujo" \underline u "rs et à jamais." }
       \vspace #1
@@ -92,9 +94,7 @@ verseLyrics = \markup {
       \concat { \typewriter "   " "lent à la col" \underline è "re et plein d’amour&nbsp;;" }
       \concat { \typewriter "   " "la bonté du Seigne" \underline u "r est pour tous," }
       \concat { \typewriter "   " "sa tendresse, pour to" \underline u "tes ses œuvres." }
-    }
-    \hspace #1
-    \left-column {
+      \vspace #1
       \concat { \typewriter "3. " "Que tes œuvres, Seigne" \underline u "r, te rendent grâce" }
       \concat { \typewriter "   " "et que tes fid" \underline è "les te bénissent&nbsp;!" }
       \concat { \typewriter "   " "Ils diront la gl" \underline o "ire de ton règne," }
