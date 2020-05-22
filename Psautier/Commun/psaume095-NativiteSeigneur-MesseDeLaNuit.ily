@@ -121,6 +121,7 @@ PsXCV-NdS-partition = \score {
   <<
     % Antienne à 4 voix mixtes
     \new ChoirStaff = "AntiphonFourVoices" <<
+
       \new Staff = "AntiphonSopranoStaff" <<
         \once \override Staff.VerticalAxisGroup.remove-first = ##t
         \set Staff.instrumentName = "Soprano"
@@ -193,27 +194,9 @@ PsXCV-NdS-partition = \score {
     >>
   >>
   \layout {
-      ragged-last = ##f
-      short-indent = 0.8\cm
-      \context {
-          \FiguredBass
-          \override BassFigure #'font-size = #-1
-      }
-      \context {
-          \Staff
-          \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
-      }
-      \context {
-          \Score
-          \omit BarNumber
-      }
-      \context {
-          \Voice
-          \consists "Horizontal_bracket_engraver"
-      }
-      \override LyricText #'font-name = #"Latin Modern Sans"
-      \override Score.RehearsalMark.font-family = #'typewriter
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+    }
   }
 }

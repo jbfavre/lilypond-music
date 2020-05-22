@@ -2,6 +2,7 @@
     ragged-last = ##f
     ragged-bottom = ##t
     ragged-last-bottom = ##f
+    short-indent = 0.8\cm
     bookTitleMarkup = \markup \null
     scoreTitleMarkup = \markup {
       \column {

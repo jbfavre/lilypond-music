@@ -21,7 +21,7 @@
 \book {
   \include "Psautier/bookPaper.ily"
   \header {
-    title = \markup { \center-column { "Psaumes pour" "les dimanches et fêtes" } }
+    title = \markup { \center-column { "Psautier" } }
     subtitle = \markup { \center-column { "Année A" } }
     composer = "Jean Baptiste Favre"
     poet = "AELF"
