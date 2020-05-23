@@ -22,7 +22,7 @@
   % Book headers for cover page
   \header {
     title = \markup { \center-column { "Psautier" } }
-    subtitle = \markup { \center-column { "Année A" } }
+    subtitle = \markup { \center-column { "Dimanches et fêtes" "Année A" } }
     composer = "Jean Baptiste Favre"
     poet = "AELF"
     date = "2020"

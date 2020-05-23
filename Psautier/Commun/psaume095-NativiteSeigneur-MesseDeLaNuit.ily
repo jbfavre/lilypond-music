@@ -66,9 +66,22 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicRythm = \relative c'' {
   s\breve s1 s4 s \bar "||"
   \mark \default
   s\breve s1 s4 s \bar "|."
+  \break
+  \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
+  \markCustom "Psalmodie par verset"
+  \set Score.markFormatter = #format-mark-box-alphabet
+  \cadenzaOn
+  s\breve s1 s4 \bar "||"
+  \mark #2
+  s\breve s1 s4 s \bar "||"
+  \mark \default
+  s\breve s1 s4 s \bar "|."
   }
 psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicSoprano = \relative c'' {
   \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
+  a\breve a1 g4
+  a\breve c1 a4 b
+  b\breve g1 b4 a
   a\breve a1 g4
   a\breve c1 a4 b
   b\breve g1 b4 a
@@ -79,10 +92,16 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicAlto = \relative c' {
   e\breve e1 e4
   e\breve e1 e4 fs
   g\breve d1 g4 e
+  e\breve e1 e4
+  e\breve e1 e4 fs
+  g\breve d1 g4 e
   }
 
 psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicTenor = \relative c' {
   \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
+  c\breve c1 b4
+  c\breve a1 a4 b
+  d\breve b1 d4 cs
   c\breve c1 b4
   c\breve a1 a4 b
   d\breve b1 d4 cs
@@ -93,10 +112,14 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicBass = \relative c {
   a\breve a1 e'4
   a,\breve c1 c4 d
   g,\breve g1 g4 a
+  a\breve a1 e'4
+  a,\breve c1 c4 d
+  g,\breve g1 g4 a
   }
 
 psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseLyrics = \markup {
-    \vspace #2
+    \override #'(font-size . 2)
+    \vspace #5
     \override #'(font-family . sans)
     \override #'(font-size . 2)
     \column {
