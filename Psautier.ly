@@ -6,11 +6,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% Include common files
-\include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
-\include "libs/translations/fr.ily"
-\include "libs/layouts/book-titling.ily"
-\include "Psautier/pianoSettings.ily"
+\include "Psautier/commonFunctions.ily"
+\include "Psautier/bookTitle.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Include each part of the Petite Messe de Saint Vincent de Paul
@@ -19,7 +16,10 @@
 
 %%%%% Define book
 \book {
+  % Book wide \paper block
   \include "Psautier/bookPaper.ily"
+
+  % Book headers for cover page
   \header {
     title = \markup { \center-column { "Psautier" } }
     subtitle = \markup { \center-column { "Année A" } }
@@ -28,7 +28,8 @@
     date = "2020"
   }
 
-  \pageBreak % Ensure first page is blank for cover display
+  % Ensure first page is blank for cover display
+  \pageBreak
 
   %  1° dim de l'Avent		121-5	Dans la joie
   %  Immaculée conception	097-7	Chantez au Seigneur
@@ -38,40 +39,21 @@
   %  Veillée Noël		095-1	Aujourd'hui un sauveur
   \bookpart {
     \include "Psautier/scorePaper.ily"
-    \header {
-      piece = "Psaume 95"
-      subsubtitle = "Nativité du Seigneur, messe de la nuit"
-      date = "Saint Pierre Quiberon, 25 décembre 2018"
-      title = ##f
-      copyright = ##f
+    \score {
+      \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition
+      \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-header
+      \layout {
+        \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override VerticalAxisGroup.remove-first = ##t
+        }
+      }
     }
-    \PsXCV-NdS-partition
-    \PsXCV-NdS-verseLyrics
+    \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseLyrics
   }
   %  Noël 25 décembre		096	La lumière aujourd'hui
-  \bookpart {
-    \PsXCV-NdS-partition
-    \include "Psautier/scorePaper.ily"
-    \header {
-      piece = "Ps. 96: La lumière aujourd'hui"
-      subsubtitle = "Nativité du Seigneur, messe de l'aurore"
-      date = "Saint Pierre Quiberon, 25 décembre 2018"
-      title = ##f
-      copyright = ##f
-      \include "Psautier/Commun/psaume095-NativiteSeigneur-MesseDeLaNuit.ily"
-    }
-  }
   %  Noël 25 décembre		097-2	La terre entière
-  \bookpart {
-    \include "Psautier/scorePaper.ily"
-    \header {
-      piece = "Ps. 97: La terre tout entière"
-      subsubtitle = "Nativité du Seigneur, messe du jour"
-      date = "Saint Pierre Quiberon, 25 décembre 2018"
-      title = ##f
-      copyright = ##f
-    }
-  }
   %  Sainte famille		127-3	Heureux les habitants
   %  Marie mère de Dieu 1°/1	066-1	Que Dieu nous prenne
   %  Epiphanie			071-2	Toutes les nations, Seigneur
