@@ -42,13 +42,7 @@
     \score {
       \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition
       \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-header
-      \layout {
-        \context {
-          \Staff
-          \RemoveEmptyStaves
-          \override VerticalAxisGroup.remove-first = ##t
-        }
-      }
+      \include "Psautier/scoreLayout.ily"
     }
     \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseLyrics
   }

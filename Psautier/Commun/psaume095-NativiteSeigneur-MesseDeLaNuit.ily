@@ -13,7 +13,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-header = \header {
 %%%%%%%%%% Antienne %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global = {
+psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime = {
   \key g \major
   \time 6/8
   }
@@ -65,7 +65,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicRythm = \relative c'' {
   \mark #2
   s\breve s1 s4 s \bar "||"
   \mark \default
-  s\breve s1 s4 s \bar "||"
+  s\breve s1 s4 s \bar "|."
   }
 psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicSoprano = \relative c'' {
   \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
@@ -139,7 +139,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef "treble"
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
         \new Voice = "antiphonSoprano" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicSoprano \fermata}
         \new Lyrics \lyricsto "antiphonSoprano" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonLyricsSoprano }
@@ -150,7 +150,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef "treble"
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
         \new Voice = "antiphonAlto" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicAlto \fermata}
         \new Lyrics \lyricsto "antiphonAlto" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonLyricsAlto }
@@ -161,7 +161,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef "treble_8"
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
         \new Voice = "antiphonTenor" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicTenor \fermata}
         \new Lyrics \lyricsto "antiphonTenor" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonLyricsTenor }
@@ -172,7 +172,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef "bass"
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonRythm
         \new Voice = "antiphonBass" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicBass \fermata}
         \new Lyrics \lyricsto "antiphonBass" { \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonLyricsBass }
@@ -184,13 +184,13 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       \set PianoStaff.shortInstrumentName = #"O"
       \new Staff <<
         \clef treble
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \new Voice = "pianoSoprano" { \voiceOne \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicSoprano }
         \new Voice = "pianoAlto" { \voiceTwo \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicAlto }
       >>
       \new Staff <<
         \clef bass
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \new Voice = "pianoTenor" { \voiceThree \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicTenor }
         \new Voice = "pianoBass" { \voiceFour \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-antiphonMusicBass }
       >>
@@ -202,7 +202,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef treble
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicRythm
         \partcombine
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicSoprano
@@ -213,7 +213,7 @@ psaumeXCV-NativiteSeigneur-MesseDeLaNuit-partition = <<
       }
       <<
         \clef bass
-        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-global
+        \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-keyTime
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicRythm
         \partcombine
         \psaumeXCV-NativiteSeigneur-MesseDeLaNuit-verseMusicTenor
