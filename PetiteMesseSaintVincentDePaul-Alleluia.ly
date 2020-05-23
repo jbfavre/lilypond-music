@@ -10,16 +10,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Include each part of the Petite Messe de Saint Vincent de Paul
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 \include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
 
-\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-
-\header {
-  title = "Petite messe de Saint Vincent de Paul"
-  piece = "Alleluia"
-  composer = "Jean Baptiste Favre"
-  poet = "AELF"
-  opus = ##f
-  copyright = \markup { \typewriter "Extrait de la Petite messe de Saint Vincent de Paul" }
+\alleluiaHeader
+\score {
+  \alleluiaScore
+  \layout {
+    short-indent = 0.8\cm
+    \context {
+        \Staff
+        \RemoveEmptyStaves
+        \override NoteHead #'style = #'altdefault
+        \override InstrumentName #'font-name = #"Monospace Regular"
+    }
+    \context {
+        \Score
+        \omit BarNumber
+    }
+    \context {
+        \Voice
+        \consists "Horizontal_bracket_engraver"
+    }
+    \override LyricText #'font-family = #'sans
+    \override Score.RehearsalMark.font-family = #'typewriter
+  }
 }
-\alleluiaScore

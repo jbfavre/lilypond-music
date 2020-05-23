@@ -13,7 +13,8 @@
     ragged-last = ##f
     ragged-bottom = ##t
     ragged-last-bottom = ##f
-    min-systems-per-page = 3
+    %min-systems-per-page = 3
+    tagline = ##f
     bookTitleMarkup = \markup \null
     scoreTitleMarkup = \markup {
       \column {
