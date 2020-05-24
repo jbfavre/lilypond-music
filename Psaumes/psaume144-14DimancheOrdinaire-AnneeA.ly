@@ -9,72 +9,89 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
 
-title = "Psaume 144-7"
-subtitle = \markup { \column { "14e dimanche du temps ordinaire" "Année A" }}
-composer = "Jean Baptiste Favre"
-dedicace = "Clichy la Garenne, mai 2020"
-
-global = {
-  \key d \minor
-  \time 2/4
+scoreHeader = \header {
+  title = "Psaume 144-7"
+  subtitle = \markup { \column { "14e dimanche du temps ordinaire" "Année A" }}
+  composer = "Jean Baptiste Favre"
+  poet = "AELF"
+  date = "Clichy la Garenne, mai 2020"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% Antiphon %%%%%%%%%%
+%%%%%%%%%% Antienne %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c' {
+keyTime = {
+  \key g \minor
+  \time 2/4
+}
+
+antiphonRythm = {
+  \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne"
-  \partial 8 d8 a'4. b8 g4. a8 bf! g e g f g a f g4 f e2 \fermata \bar "|." \break
+  \partial 8 s8
+  s2*6 \bar "|." \break
   }
 
-altoAntiphonMusic = \relative c' {
-  \partial 8 d8 f4. f8 d4. d8 g e d e d d f d d4 d cs2 \fermata
+antiphonMusicSoprano = \relative c'' {
+  \partial 8 g8 bf4. g8 c4. a8 <a c> bf <g bf> a <f a> g <f g> f g4 g g2
+}
+
+antiphonMusicAlto = \relative g' {
+  \partial 8 r8 r8 g8 g g g4. g8 g4 f ef d d ef d2
   }
 
-tenorAntiphonMusic =  \relative c' {
-  \partial 8 d8 d4. a8 b4. b!8 bf! bf bf bf a a d a bf4 a a2 \fermata
+antiphonMusicTenor =  \relative c' {
+  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d c a8 c c4 c8 (a) b2
   }
 
-bassAntiphonMusic =  \relative c {
-  \partial 8 d8 d4. d8 d4. d8 d d d d d d d d g,4 d' a2 \fermata
+antiphonMusicBass =  \relative f {
+  \partial 8 r8 r8 g8 f f ef4. c8 g'4 f ef d g g g2
   }
 
-antiphonLyrics = \lyricmode {
+antiphonLyricsSoprano = \lyricmode {
   Mon Dieu, mon Roi, je bé -- ni -- rai ton nom tou -- jours et à ja -- mais&nbsp;!
   }
-sopranoAntiphonLyrics = \antiphonLyrics
-altoAntiphonLyrics = \antiphonLyrics
-tenorAntiphonLyrics = \antiphonLyrics
-bassAntiphonLyrics = \tenorAntiphonLyrics
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%     Verses     %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-sopranoVerseMusic = \relative c'' {
-  \silence \sopranoAntiphonMusic
-  \markCustom "Psalmodie par verset" \cadenzaOn
-  a\breve g1 b!4 a \bar "||"
-  bf\breve g1 a4 \bar "|." \break
+antiphonLyricsAlto = \lyricmode {
+  Mon Dieu, mon Roi, je bé -- nis ton nom, à ja -- mais&nbsp;!
+  }
+antiphonLyricsTenor = \lyricmode {
+  Mon Dieu, mon Roi, je bé -- nis ton nom tou -- jours, à ja -- mais&nbsp;!
+  }
+antiphonLyricsBass = \lyricmode {
+  Mon Dieu, mon Roi, je bé -- nis ton nom, à ja -- mais&nbsp;!
   }
 
-altoVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
-  f\breve d1 g4 f
-  g\breve e1 f4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%     Versets     %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+verseRythm = {
+  \antiphonRythm
+  \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
+  \markCustom "Psalmodie par verset"
+  \cadenzaOn
+  s\breve s1 s4 s \bar "||"
+  s\breve s1 s4 \bar "|." \break
   }
 
-tenorVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
-  d\breve b!1 g4 d'
-  e\breve bf1 d4
+verseMusicSoprano = \relative c'' {
+  \antiphonRythm
+  g\breve a1 bf4 c
+  bf\breve a1 g4
   }
 
-bassVerseMusic = \relative f {
-  \silence \sopranoAntiphonMusic
-  d\breve d1 d4 d
-  d\breve d1 d4
+verseMusicAlto = \relative c' {
+  \antiphonRythm
+  }
+
+verseMusicTenor = \relative c' {
+  \antiphonRythm
+
+  }
+
+verseMusicBass = \relative f {
+  \antiphonRythm
   }
 
 verseLyrics = \markup {
@@ -94,7 +111,9 @@ verseLyrics = \markup {
       \concat { \typewriter "   " "lent à la col" \underline è "re et plein d’amour&nbsp;;" }
       \concat { \typewriter "   " "la bonté du Seigne" \underline u "r est pour tous," }
       \concat { \typewriter "   " "sa tendresse, pour to" \underline u "tes ses œuvres." }
-      \vspace #1
+    }
+    \hspace #1
+    \left-column {
       \concat { \typewriter "3. " "Que tes œuvres, Seigne" \underline u "r, te rendent grâce" }
       \concat { \typewriter "   " "et que tes fid" \underline è "les te bénissent&nbsp;!" }
       \concat { \typewriter "   " "Ils diront la gl" \underline o "ire de ton règne," }
@@ -111,22 +130,214 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ily"
-\include "../libs/layouts/commonSettings.ily"
-
-partition = {
-  <<
+partition = <<
     % Antienne à 4 voix mixtes
-    \include "../libs/layouts/commonAntiphonFourVoices.ily"
-    \include "../libs/layouts/commonPiano.ily"
+    \new ChoirStaff = "antiphonChoirStaff"
+    <<
+      \new Staff = "antiphonSopranoStaff" \with {
+        instrumentName = "Soprano"
+        shortInstrumentName = "S"
+      }
+      <<
+        \clef "treble"
+        \keyTime
+        \antiphonRythm
+        \new Voice = "antiphonSoprano" { \antiphonMusicSoprano \fermata }
+        \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
+      >>
+      \new Staff = "antiphonAltoStaff" \with {
+        instrumentName = "Alto"
+        shortInstrumentName = "A"
+      }
+      <<
+        \clef "treble"
+        \keyTime
+        \antiphonRythm
+        \new Voice = "antiphonAlto" { \antiphonMusicAlto \fermata }
+        \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
+      >>
+      \new Staff = "antiphonTenorStaff" \with {
+        instrumentName = "Ténor"
+        shortInstrumentName = "T"
+      }
+      <<
+        \clef "treble_8"
+        \keyTime
+        \antiphonRythm
+        \new Voice = "antiphonTenor" { \antiphonMusicTenor \fermata }
+        \new Lyrics \lyricsto "antiphonTenor" \antiphonLyricsTenor
+      >>
+      \new Staff  = "antiphonBassStaff" \with {
+        instrumentName = "Basse"
+        shortInstrumentName = "B"
+      }
+      <<
+        \clef "bass"
+        \keyTime
+        \antiphonRythm
+        \new Voice = "antiphonBass" { \antiphonMusicBass \fermata }
+        \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
+      >>
+    >>
+    % Accompagnement Piano / Orgue
+    \new PianoStaff = "antiphonPianoStaff" \with {
+      instrumentName = #"Orgue"
+      shortInstrumentName = #"O"
+    }
+    <<
+      \new Staff = "antiphonPianoStaffSA"
+      <<
+        \clef treble
+        \keyTime
+        \new Voice = "antiphonMusicSoprano" { \voiceOne \antiphonMusicSoprano \fermata }
+        \new Voice = "antiphonMusicAlto" { \voiceTwo \antiphonMusicAlto }
+      >>
+      \new Staff = "antiphonPianoStaffTB"
+      <<
+        \clef bass
+        \keyTime
+        \new Voice = "antiphonMusicTenor" { \voiceThree \antiphonMusicTenor }
+        \new Voice = "antiphonMusicBass" { \voiceFour \antiphonMusicBass \fermata }
+      >>
+    >>
     % Psalmodie à 4 voix mixtes
-    \include "../libs/layouts/commonVerseFourVoices.ily"
-    %\new FiguredBass { \figuredBass \verseFiguredBass }
-    %\new FiguredBass { \harmony \verseHarmony }
+    \new ChoirStaff = "verseChoirStaff"
+    <<
+      \new Staff = "verseChoirStaffSA" \with {
+        shortInstrumentName = \markup { \right-column { "S" "A" } }
+      }
+      <<
+        \clef treble
+        \keyTime
+        \verseRythm
+        \partcombine
+        \verseMusicSoprano
+        \verseMusicAlto
+      >>
+      \new Staff = "verseChoirStaffTB" \with {
+        shortInstrumentName = \markup { \right-column { "T" "B" } }
+      }
+      <<
+        \clef bass
+        \keyTime
+        \verseRythm
+        \partcombine
+        \verseMusicTenor
+        \verseMusicBass
+      >>
+    >>
   >>
+
+% PDF output
+\include "../libs/layouts/book-titling.ily"
+\paper {
+  #(include-special-characters)
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Latin Modern Roman"
+     #:sans "Latin Modern Sans"
+    ))
+  tagline = ##f
+  copyright = ##f
+  scoreTitleMarkup = \markup \columns {
+    \fill-line {
+      \column {
+        \line {
+          \left-column {
+            \fontsize #8 \sans \fromproperty #'header:title
+            \fontsize #1 \typewriter \fromproperty #'header:subtitle
+          }
+        }
+      }
+      \column {
+        \line {
+          \fontsize #-1
+          \left-column {
+            \line { \concat { \typewriter "Texte&nbsp;: " \sans \fromproperty #'header:poet \bold " " } }
+            \line { \concat { \typewriter "Musique&nbsp;: " \sans \fromproperty #'header:composer \bold " " } }
+            \typewriter \italic \fromproperty #'header:date
+          }
+        }
+      }
+    }
+  }
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  %left-margin = 1\cm
+  %right-margin = 1\cm
 }
 
-% Load PDF output
-\include "../libs/layouts/outputPDF.ily"
+\score {
+  \partition
+  \layout {
+    short-indent = 0.8\cm
+    \context {
+      \Score
+      \override RehearsalMark.font-family = #'typewriter
+    }
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+    }
+    \context {
+      \ChoirStaff
+      \override VerticalAxisGroup.remove-first = ##t
+      \override InstrumentName.font-family = #'sans
+    }
+    \context {
+      \PianoStaff
+      \override InstrumentName.font-family = #'sans
+    }
+  }
+  \scoreHeader
+}
+
+% Midi output
+\score {
+  <<
+    \new PianoStaff = "antiphonMusic" \with {
+      instrumentName = #"Orgue"
+      shortInstrumentName = #"O"
+    }
+    <<
+      \new Staff <<
+        \keyTime \tempo 4 = 60 \clef treble
+        \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
+        \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
+      >>
+      \new Staff <<
+        \keyTime \clef bass
+        \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
+        \new Voice = "antiphonMusicBass" \antiphonMusicBass
+      >>
+    >>
+    \new ChoirStaff = "verseMusic"
+    <<
+      \new Staff = "verseMusicSA" \with {
+        shortInstrumentName = \markup { \right-column { "S" "A" } }
+      }
+      <<
+        \keyTime
+        \clef treble
+        \verseRythm
+        \partcombine
+        \new Voice = "verseMusicSoprano" \verseMusicSoprano
+        \new Voice = "verseMusicAlto" \verseMusicAlto
+      >>
+      \new Staff = "verseMusicTB" \with {
+        shortInstrumentName = \markup { \right-column { "T" "B" } }
+      }
+      <<
+        \keyTime
+        \clef bass
+        \verseRythm
+        \new Voice = "verseMusicTenor" \verseMusicTenor
+        \new Voice = "verseMusicBass" \verseMusicBass
+      >>
+    >>
+  >>
+  \midi {}
+}
 \verseLyrics
