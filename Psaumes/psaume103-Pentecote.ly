@@ -29,10 +29,10 @@ antiphonRythm = \relative c' {
   \time 4/4 s1 s1 \bar "|." \break
   }
 
-antiphonMusicCounterpoint = \relative c'' {
-  r2. e8 (fs) e (d) cs b cs2 cs4 fs8 (gs) fs (e) d e
-  fs4 a gs2 a1
-  }
+%antiphonMusicCounterpoint = \relative c'' {
+%  r2. e8 (fs) e (d) cs b cs2 cs4 fs8 (gs) fs (e) d e
+%  fs4 a gs2 a1
+%  }
 antiphonMusicCounterpoint = \relative c'' {
   r2. b4. cs8 d e cs2 cs4 b4. cs8 d e
   fs4 fs e2 e1
