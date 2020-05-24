@@ -241,10 +241,10 @@ partition = <<
     >>
     % Psalmodie à 4 voix mixtes
     \new ChoirStaff = "verseChoirStaff"
+    \with { printPartCombineTexts = ##f }
     <<
-      \new Staff = "verseChoirStaffSA" \with {
-        shortInstrumentName = \markup { \right-column { "S" "A" } }
-      }
+      \new Staff = "verseChoirStaffSA"
+      \with { shortInstrumentName = \markup { \right-column { "S" "A" } } }
       <<
         \clef treble
         \keyTime
@@ -253,9 +253,8 @@ partition = <<
         \verseMusicSoprano
         \verseMusicAlto
       >>
-      \new Staff = "verseChoirStaffTB" \with {
-        shortInstrumentName = \markup { \right-column { "T" "B" } }
-      }
+      \new Staff = "verseChoirStaffTB"
+      \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
       <<
         \clef bass
         \keyTime
