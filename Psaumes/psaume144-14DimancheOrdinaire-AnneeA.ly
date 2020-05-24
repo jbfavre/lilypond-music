@@ -10,7 +10,7 @@
 \include "../libs/settings.ily"
 
 scoreHeader = \header {
-  title = "Psaume 144-7"
+  title = "Psaume 144"
   subtitle = \markup { \column { "14e dimanche du temps ordinaire" "Année A" }}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
@@ -34,15 +34,15 @@ antiphonRythm = {
   }
 
 antiphonMusicSoprano = \relative c'' {
-  \partial 8 g8 bf4. g8 c4. a8 <a c> bf <g bf> a <f a> g <f g> f g4 g g2
+  \partial 8 g8 bf4. g8 c4. a8 c bf bf a a g g f g4 g g2
 }
 
 antiphonMusicAlto = \relative g' {
-  \partial 8 r8 r8 g8 g g g4. g8 g4 f ef d d ef d2
+  \partial 8 r8 r8 g8 g g g4. g8 a bf g a f g ef f d4 ef d2
   }
 
 antiphonMusicTenor =  \relative c' {
-  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d c a8 c c4 c8 (a) b2
+  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d8 (c) c (bf) a c c4 c8 (a) b2
   }
 
 antiphonMusicBass =  \relative f {
@@ -53,7 +53,7 @@ antiphonLyricsSoprano = \lyricmode {
   Mon Dieu, mon Roi, je bé -- ni -- rai ton nom tou -- jours et à ja -- mais&nbsp;!
   }
 antiphonLyricsAlto = \lyricmode {
-  Mon Dieu, mon Roi, je bé -- nis ton nom, à ja -- mais&nbsp;!
+  Mon Dieu, mon Roi, je bé -- ni -- rai ton nom tou -- jours et à ja -- mais&nbsp;!
   }
 antiphonLyricsTenor = \lyricmode {
   Mon Dieu, mon Roi, je bé -- nis ton nom tou -- jours, à ja -- mais&nbsp;!
@@ -72,34 +72,37 @@ verseRythm = {
   \markCustom "Psalmodie par verset"
   \cadenzaOn
   s\breve s1 s4 s \bar "||"
-  s\breve s1 s4 \bar "|." \break
+  s\breve s1 s4 s s \bar "|." \break
   }
 
 verseMusicSoprano = \relative c'' {
   \antiphonRythm
-  g\breve a1 bf4 c
-  bf\breve a1 g4
+  bf\breve bf1 bf4 c
+  a\breve a1 a4 bf g
   }
 
-verseMusicAlto = \relative c' {
+verseMusicAlto = \relative f' {
   \antiphonRythm
+  g\breve f1 e4 ef
+  g\breve fs1 fs4 fs4 d
   }
 
 verseMusicTenor = \relative c' {
   \antiphonRythm
-
+  d\breve d1 d4 c
+  ef\breve ef1 d4 c bf
   }
 
 verseMusicBass = \relative f {
   \antiphonRythm
+  g\breve g1 g4 g
+  c,\breve d1 d4 fs g
   }
 
 verseLyrics = \markup {
+  \vspace #5
   \override #'(font-family . sans)
-  \override #'(font-size . 2)
-  \vspace #2.3
-  \override #'(font-family . sans)
-  \override #'(font-size . 2)
+  \override #'(font-size . 1.8)
   \fill-line {
     \left-column{
       \concat { \typewriter "1. " "Je t’exalterai, mon Die" \underline u ", mon Roi," }
@@ -183,6 +186,11 @@ partition = <<
     \new PianoStaff = "antiphonPianoStaff" \with {
       instrumentName = #"Orgue"
       shortInstrumentName = #"O"
+      \hide PhrasingSlur
+      \hide Slur
+      \hide Hairpin
+      \omit DynamicText
+      \omit TextScript
     }
     <<
       \new Staff = "antiphonPianoStaffSA"
@@ -202,10 +210,10 @@ partition = <<
     >>
     % Psalmodie à 4 voix mixtes
     \new ChoirStaff = "verseChoirStaff"
+    \with { printPartCombineTexts = ##f }
     <<
-      \new Staff = "verseChoirStaffSA" \with {
-        shortInstrumentName = \markup { \right-column { "S" "A" } }
-      }
+      \new Staff = "verseChoirStaffSA"
+      \with { shortInstrumentName = \markup { \right-column { "S" "A" } } }
       <<
         \clef treble
         \keyTime
@@ -214,9 +222,8 @@ partition = <<
         \verseMusicSoprano
         \verseMusicAlto
       >>
-      \new Staff = "verseChoirStaffTB" \with {
-        shortInstrumentName = \markup { \right-column { "T" "B" } }
-      }
+      \new Staff = "verseChoirStaffTB"
+      \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
       <<
         \clef bass
         \keyTime
