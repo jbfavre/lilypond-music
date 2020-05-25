@@ -24,7 +24,7 @@ scoreHeader = \header {
 keyTime = {
   \key g \minor
   \time 2/4
-  \tempo "Pas trop lent" 4 = 60
+  \tempo "Pas trop lent" 4 = 50
 }
 
 antiphonRythm = {
@@ -43,7 +43,7 @@ antiphonMusicAlto = \relative g' {
   }
 
 antiphonMusicTenor =  \relative c' {
-  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d8 (c) c (bf) a c c4 c8 (a) b2
+  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d c a8 c c4 c8 (a) b2
   }
 
 antiphonMusicBass =  \relative f {
@@ -68,35 +68,31 @@ antiphonLyricsBass = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 verseRythm = {
-  \antiphonRythm
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par verset"
   \cadenzaOn
-  s\breve s1 s4 s \bar "||"
-  s\breve s1 s4 s s \bar "|." \break
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s s8. \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s s \bar "|." \break
+  \cadenzaOff
   }
 
 verseMusicSoprano = \relative c'' {
-  \antiphonRythm
-  bf\breve bf1 bf4 c
+  bf\breve bf1 bf4 c s8.
   a\breve a1 a4 bf g
   }
 
 verseMusicAlto = \relative f' {
-  \antiphonRythm
-  g\breve f1 e4 ef
+  g\breve f1 e4 ef s8.
   g\breve fs1 fs4 fs4 d
   }
 
 verseMusicTenor = \relative c' {
-  \antiphonRythm
-  d\breve d1 d4 c
+  d\breve d1 d4 c s8.
   ef\breve ef1 d4 c bf
   }
 
 verseMusicBass = \relative f {
-  \antiphonRythm
-  g\breve g1 g4 g
+  g\breve g1 g4 g s8.
   c,\breve d1 d4 fs g
   }
 
@@ -213,25 +209,25 @@ partition = <<
     \new ChoirStaff = "verseChoirStaff"
     \with { printPartCombineTexts = ##f }
     <<
-      \new Staff = "verseChoirStaffSA"
-      \with { shortInstrumentName = \markup { \right-column { "S" "A" } } }
+      \new Staff = "verseMusicSA" \with {
+        shortInstrumentName = \markup { \right-column { "S" "A" } }
+      }
       <<
+        \keyTime
         \clef treble
-        \keyTime
-        \verseRythm
-        \partcombine
-        \verseMusicSoprano
-        \verseMusicAlto
+        \new Voice { \antiphonRythm \verseRythm }
+        \new Voice = "verseMusicSoprano" { \voiceOne \antiphonRythm \verseMusicSoprano }
+        \new Voice = "verseMusicAlto" { \voiceTwo \antiphonRythm \verseMusicAlto }
       >>
-      \new Staff = "verseChoirStaffTB"
-      \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
+      \new Staff = "verseMusicTB" \with {
+        shortInstrumentName = \markup { \right-column { "T" "B" } }
+      }
       <<
-        \clef bass
         \keyTime
-        \verseRythm
-        \partcombine
-        \verseMusicTenor
-        \verseMusicBass
+        \clef bass
+        \new Voice { \antiphonRythm \verseRythm }
+        \new Voice = "verseMusicTenor" { \voiceOne \antiphonRythm \verseMusicTenor }
+        \new Voice = "verseMusicBass" { \voiceTwo \antiphonRythm \verseMusicBass }
       >>
     >>
   >>
@@ -305,13 +301,9 @@ partition = <<
 % Midi output
 \score {
   <<
-    \new PianoStaff = "antiphonMusic" \with {
-      instrumentName = #"Orgue"
-      shortInstrumentName = #"O"
-    }
-    <<
+    \new PianoStaff = "antiphonMusic" <<
       \new Staff <<
-        \keyTime \tempo 4 = 60 \clef treble
+        \keyTime \tempo 4 = 50 \clef treble
         \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
         \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
       >>
@@ -321,31 +313,32 @@ partition = <<
         \new Voice = "antiphonMusicBass" \antiphonMusicBass
       >>
     >>
-    \new ChoirStaff = "verseMusic"
-    <<
-      \new Staff = "verseMusicSA" \with {
-        shortInstrumentName = \markup { \right-column { "S" "A" } }
-      }
-      <<
+    \new ChoirStaff = "verseMusic" <<
+      \new Staff = "verseMusicSA" <<
         \keyTime
         \clef treble
-        \verseRythm
-        \partcombine
-        \new Voice = "verseMusicSoprano" \verseMusicSoprano
-        \new Voice = "verseMusicAlto" \verseMusicAlto
+        \new Voice { \antiphonRythm \verseRythm \verseRythm }
+        \new Voice = "verseMusicSoprano" { \voiceOne \antiphonRythm \verseMusicSoprano \verseMusicSoprano }
+        \new Voice = "verseMusicAlto" { \voiceTwo \antiphonRythm \verseMusicAlto \verseMusicAlto }
       >>
-      \new Staff = "verseMusicTB" \with {
-        shortInstrumentName = \markup { \right-column { "T" "B" } }
-      }
-      <<
+      \new Staff = "verseMusicTB" <<
         \keyTime
         \clef bass
-        \verseRythm
-        \new Voice = "verseMusicTenor" \verseMusicTenor
-        \new Voice = "verseMusicBass" \verseMusicBass
+        \new Voice { \antiphonRythm \verseRythm \verseRythm }
+        \new Voice = "verseMusicTenor" { \voiceOne \antiphonRythm \verseMusicTenor \verseMusicTenor }
+        \new Voice = "verseMusicBass" { \voiceTwo \antiphonRythm \verseMusicBass \verseMusicBass }
       >>
     >>
   >>
-  \midi {}
+  \midi {
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
 }
 \verseLyrics
