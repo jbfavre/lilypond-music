@@ -88,21 +88,21 @@ alleluiaScore =  <<
             \new Lyrics \lyricsto "alleluiaBasse" { \alleluiaBasseLyrics }
           >>
         >>
-        \new PianoStaff \with { instrumentName = \organVoiceTitle shortInstrumentName = \organVoiceShortTitle }
-        <<
-          \new Staff <<
-            \alleluiaKeyTime \clef treble
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \transpose a g { \alleluiaSopranoMusic } \fermata >>
-            << \transpose a g { \alleluiaAltoMusic } >>
-          >>
-          \new Staff <<
-            \alleluiaKeyTime \clef bass
-            \set Staff.printPartCombineTexts = ##f
-            \partcombine
-            << \transpose a g { \alleluiaTenorMusic } >>
-            << \transpose a g { \alleluiaBasseMusic } \fermata >>
-          >>
-        >>
+        %\new PianoStaff \with { instrumentName = \organVoiceTitle shortInstrumentName = \organVoiceShortTitle }
+        %<<
+        %  \new Staff <<
+        %    \alleluiaKeyTime \clef treble
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \transpose a g { \alleluiaSopranoMusic } \fermata >>
+        %    << \transpose a g { \alleluiaAltoMusic } >>
+        %  >>
+        %  \new Staff <<
+        %    \alleluiaKeyTime \clef bass
+        %    \set Staff.printPartCombineTexts = ##f
+        %    \partcombine
+        %    << \transpose a g { \alleluiaTenorMusic } >>
+        %    << \transpose a g { \alleluiaBasseMusic } \fermata >>
+        %  >>
+        %>>
       >>
