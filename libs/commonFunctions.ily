@@ -46,3 +46,18 @@ parenthesizeAll = #(define-music-function (parser location note) (ly:music?)
          (parentheses-item::print grob)))
   \parenthesize $note
 #})
+
+% Used to accelerate Psalmody
+% Avoid endless \breve notes
+tAcceBreve = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=100
+}
+tAcceRonde = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=80
+}
+tRall = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=60
+}
