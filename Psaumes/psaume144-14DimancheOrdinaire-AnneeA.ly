@@ -93,7 +93,7 @@ verseMusicTenor = \relative c' {
 
 verseMusicBass = \relative f {
   g\breve g1 g4 g s8.
-  c,\breve d1 d4 fs g
+  c,\breve d1 d4 d g
   }
 
 verseLyrics = \markup {
