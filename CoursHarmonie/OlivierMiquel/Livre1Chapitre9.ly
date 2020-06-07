@@ -372,14 +372,14 @@ global = { \time 6/8 \key a \major }
       \clef "treble_8"
       \global
       \relative c' {
-        r2. cs8 d cs b a b cs4. r4. cs8 d cs b4. cs8 gs a b4 fs8 gs4. a4. gs4. fs4 a8 b4 a8 gs8 a gs a4 cs8 b4. cs4. a4 b8 cs8 d cs b a8 b cs2.
+        r2. cs8 d cs b a b cs4. r4. cs8 d cs b4. cs8 gs a b4 fs8 gs4. a4 fs8 gs4. fs4 a8 b4 a8 gs8 a gs a4 cs8 b4. cs4. a4 b8 cs8 d cs b a8 b cs2.
       }
     >>
     \new Staff <<
       \clef bass
       \global
       \relative f {
-        a4. a4. a4. e4. a,8 b cs d cs b a gs a gs4 b8 a4 cs8 d4. e4. fs8 e d cs4 b8 a8 b cs d4 fs8 e4 d8 cs8 d4 e4. a4 gs8 fs4. e4. e,4. a2.
+        a4. a4. a4. e4. a,8 b cs d cs b a gs a gs4 b8 a4. d4. e4. fs8 e d cs4 b8 a8 b cs d4 fs8 e4 d8 cs8 d4 e4. a4 gs8 fs4. e4. e,4. a2.
 
       }
       \new FiguredBass{
