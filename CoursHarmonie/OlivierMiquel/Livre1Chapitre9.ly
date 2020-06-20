@@ -19,7 +19,6 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
-%{
 global = { \time 4/4 \key g \major }
 motif = {
   g4 b d4. c8 b a g d' fs,4
@@ -348,7 +347,7 @@ partThreeVioloncelle = {
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
+
 global = { \time 6/8 \key a \major }
 \score {
   \new StaffGroup <<
@@ -422,7 +421,7 @@ global = { \time 2/2 \key a \minor }
         \relative c'' {
           \mark "La mineur"
           a1 f' d c e b d a b a \break
-          r2 e2 d c d f e fs gs e d e fs gs a c b gs a1
+          r2 e2 d c d f e a gs a b c b fs a gs fs gs a1
           \bar "|."
         }
       }
@@ -434,21 +433,21 @@ global = { \time 2/2 \key a \minor }
       \clef bass
       \global
       \new Voice = "bass" {
-        \relative f, {
-          r2 a2 d e f g a gs a a, gs a b c d fs gs e a1
-          a,1 f' d c e b d a b a
+        \relative f {
+          r2 a2 d, e fs gs a a, c d e gs b b, c a gs e a1
+          a1 f' d c e b d a b a
         }
       }
       \new FiguredBass {
         \figuremode {
-          s2 <5>2 <5> <P> <6> <P> <5> <B> <5> <_> <6> <P> <5> <P> <5> <_> <5>2 <_> <5>1
-          <5>1 <6>2 <P> <5> <_> <5> <P> <5> <P> <5> <P> <5> <P> <5> <_> <6> <_> <5>1
+          s2 <5>2 <5> <P> <6> <P> <5> <_> <5> <P> <5> <_> <5> <_> <6> <_> <5>2 <_> <5>1
+          <5>1 <6>2 <B> <5> <_> <6> <_> <5> <P> <5> <B> <6> <_> <5> <P> <5> <P> <5>1
         }
       }
       \new FiguredBass {
         \figuremode {
-          s2 <I>2 <IV>1 <IV> <I> <I> <V> <II> <IV> <V> <I>
-          <I>1 <IV> <IV> <III> <V> <II> <IV> <I> <VII> <I>
+          s2 <I>2 <IV>1 <IV> <I> <III> <V> <II> <I> <V> <I>
+          <I>1 <IV> <IV> <I> <V> <II> <II> <I> <VII> <I>
         }
       }
     >>
