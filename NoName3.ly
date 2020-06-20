@@ -52,12 +52,12 @@ rightOne = \relative c'' {
   % introduction
   r4 <d g bf d>2.\fermata r4 <d f a d>2.\fermata r4 <e g bf d>2.\fermata r4 <ef g bf d>2.\fermata  <d fs a d>1\fermata
   d'2~ d8 c8 bf! a \break
-  g fs ef! d c bf! a g fs ef! d cs d4. d8 bf'2. a4 g1 R1
+  g fs ef! d c bf! a g fs ef! d cs d4. d8 bf'2. a4 \time 6/8 g2.( g2.)
   % motif 1
-  d'2^"motif 1" d4 d c2. d4 bf2 a g1 r4 g g a bf2. bf4 c2 ef d1
+  d'4.^"motif 1" d4 d8 c4. c4 d8 bf4. a g2. \time 4/4 r4 g g a \time 6/8 bf4.( bf4) bf8 c4. ef d4. f8 e ef
   % motif 2
-  d2^"motif 2" d4 d f2. ef4 d2 c bf1 r4 bf4 c d ef2. ef4 a,2 bf a1 g2 g4 a bf1 bf2 bf4 c d1 d2 g4 f ef2 d4 c bf a d c c2 bf2
-  \key af \major af2 bf4 af af2 g f g4 f f2 ef d2 fs4 a d ef e fs
+  d4.^"motif 2" d4 d8 f4. f4 ef8 d4. c bf2. \time 4/4 r4 bf4 c d \time 6/8 ef4. ef4 ef8 a,4. bf a2. g4. g4 a8 bf4. bf bf bf4 c8 d2. d4. g4 f8 ef4. d4 c bf a d c c2 bf2
+%{  \key af \major af2 bf4 af af2 g f g4 f f2 ef d2 fs4 a d ef e fs
   \key g \minor d2 d4 d c2. d4 bf2 a g1
   r4 g4 g a bf2. bf4 c2. c4 d1
   d2 d4 d f2. f4 d2 c bf1 \pageBreak
@@ -78,62 +78,29 @@ rightOne = \relative c'' {
   s1*5 \break
   s1*5 \break
   s1*5 \break
+%}
 }
 
 rightTwo = \relative c'' {
   \global
    s1*7
-   s1*3 R1 g2 g4 g
-   g2. g4 g2 fs2 s1 r4 g g f ef2. ef4 g2 a4 g fs1
-   s1*22
-   g2 g4 g
-   g2. g4 g2 fs2 s2. f4 ef4 ef4 d c bf2. f'4
-   g2. g4 a1 g2 g4 g a2. a4 a2 a
-   g1 r4 ef4 ef ef c2 g'4 g b2. b4 c c c c
-   c2 c4 c af2. af4 bf2 bf g2. g4 s1
 }
 
 leftOne = \relative f {
   \global
-  r4 <g bf d g>2.\fermata r4 <a d f a>2.\fermata r4 <g bf e g>2.\fermata r4 <g c ef g>2.\fermata <a d fs a>1\fermata R1*2
-  R1*2 s1*2
-  % motif 1
-  s1*5 s1*3
-  s1*22
-  s1*5 s1*5
-  s1*5
-  s1*5
-  s1*5
+  r4 <g bf d g>2.\fermata r4 <a d f a>2.\fermata r4 <g bf e g>2.\fermata r4 <g c ef g>2.\fermata <a d fs a>1\fermata R1*4
+  r8 bf( d g d bf) r8 bf( d g d bf)
+  %motif 1
+  r8 bf( d g d bf) r8 c( d ef d c) r8 bf( d) r8 a( c) r8 bf( d g d) r8
 }
 
 leftTwo = \relative f {
   \global
   % introduction
-  <g, g,>1\fermata <f f,>1\fermata <e e,>1\fermata <ef! ef,!>1\fermata <d d,>1\fermata R1*2 R1 d1 g'8( d g bf d bf g d) g8( d g bf d bf g d)
-  % motif 1
-  g8( d g bf d bf g d) ef8( c ef g c g ef f) g8( d g bf) d8( c a fs) g8( d g bf d bf g d)  g8( d g bf d bf f d) ef8( bf ef g bf g ef d) ef8( c ef g c a g ef) fs8( d fs a d c a fs)
-  g8( d g bf d bf g d) f8( c f a c a f c) fs8( d fs a d a fs d) g8( d g bf) f8( d f bf) ef,8(bf ef g bf g ef d) c8( g c ef g ef c g) c8( g c ef) g8(d g bf) fs8(d fs a d a fs d) g2 ef4 c g'1 ef2 f bf,1 g c d ef ef ef f c d d'4 c bf a
-  % motif 2
-  g8( d g bf d bf g d) ef8( c ef g c g ef f) g8( d g bf d c a fs) g8( d g bf d bf f d) ef8( bf ef g bf g ef c) d8( bf d f bf f d bf) ef8( c ef a c a g ef) fs8( d fs a d cs c a)
-  % motif 3
-  g8( d g bf d bf g d) f8( c f a c a f ef) fs8( d fs a c a fs d) g8( d g bf d bf g d)
-  \key af \major ef8( c ef af c af! ef d) ef8( c ef g c g ef f) g8( d g b! d b! g d) e!8( c e! g c g e! c)
-  % motif 4
-  \key f \minor f8( c f af c af f df) ef8( c ef af c af ef df) ef8( bf ef g bf g ef df) e8( c e g c g e c) df8( af df f af f df ef) f8( c f af c af f df) e8( c e! af c af g e!) f8(c f af c af f c)
-  df2 c4 bf f2 f'4 ef df2 c4 df c1 f2 f4 ef
-  df2 c4 bf ef1 c4 e f af gf1 f1 f1
-  \key bf \major f2 ef4 d c2 ef f f g1
-  \key g \minor ef2 d4 c g2 g'4 f ef2. ef4 d1 R1
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
-  s1*5
+  <g, g,>1\fermata <f f,>1\fermata <e e,>1\fermata <ef! ef,!>1\fermata <d d,>1\fermata R1*2 R1 d1
+  g'2. g2.
+  %motif 1
+  g2. g2. g4. fs4. g4.( g4) f8 ef2 d4 c g4.( g8) g'8 f c4.( c8) a'8 g d16 fs a d fs a r4. g,4.
 }
 
 pianoStaff = \new PianoStaff \with {
