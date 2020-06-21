@@ -29,13 +29,16 @@ global = { \time 3/8 \key f \major }
       \global
       \new Voice = "soprane" {  \voiceOne
         \relative c'' {
-          s4.*9
+          a8 g f d4 d'8 e d c a4. \break e'8 f e c d bf g4 a8 g f e f4.
           \bar "|."
         }
       }
       \new Voice = "alto" { \voiceTwo
-        \relative c'' {
-          s4.*9
+        \relative c' {
+          c4. bf4 bf8
+          c bf c c4.
+          g'8 a g
+          a4 g8 e4 f8 d8 c4 c4.
         }
       }
     >>
@@ -44,7 +47,7 @@ global = { \time 3/8 \key f \major }
       \global
       \new Voice = "tenor" { \voiceOne
         \relative f {
-          s4.*9
+          f8 e f f4 g8 g8 f g f4. c'4. e8 f d c4 c8 bf8 a g a4.
         }
       }
       \new Voice = "bass" { \voiceTwo
@@ -59,7 +62,7 @@ global = { \time 3/8 \key f \major }
       }
       \new FiguredBass{
         \figuremode {
-          <I>8 <IV> <I> <IV>4 <II>8 <V> <IV> <V> <I>4. <V>8 <I> <V> <III> <VI> <II> <V>4 <I>8 <II> <I> <V> <I>4.
+          <I>8 <V> <I> <IV>4 <II>8 <V> <IV> <V> <I>4. <V>8 <I> <V> <III> <VI> <II> <V>4 <I>8 <II> <I> <V> <I>4.
         }
       }
     >>
@@ -67,11 +70,12 @@ global = { \time 3/8 \key f \major }
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice R.3"
+    piece = "exercice R.3 (à 4 voix)"
   }
   \layout {}
   \midi {}
 }
+%{
 global = { \time 4/4 \key a \minor }
 \score {
   \new PianoStaff <<
@@ -107,14 +111,16 @@ global = { \time 4/4 \key a \minor }
         \figuremode {}
       }
       \new FiguredBass{
-        \figuremode {}
+        \figuremode {
+          <I>1 <V>2 <_>2 <IV> <I> <VI>1 <III>2 <V> <I>
+        }
       }
     >>
   >>
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice R.4"
+    piece = "exercice R.4 (à 4 voix)"
   }
   \layout {}
   \midi {}
@@ -159,15 +165,18 @@ global = { \time 2/4 \key a \minor }
         }
       }
       \new FiguredBass{
-        \figuremode {}
+        \figuremode {
+          <V> <I> <VI> <II> <V> <I> <V> <VI> <II> <V> <I>8 <V> <I> <II> <V>4 <I> <VI> <II>8 <V> <I>4
+        }
       }
     >>
   >>
   \header {
     title = ##f
     subtitle = ##f
-    piece = "exercice R.5"
+    piece = "exercice R.5 (à 3 voix)"
   }
   \layout {}
   \midi {}
 }
+%}
