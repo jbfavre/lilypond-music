@@ -21,6 +21,7 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
+%%{
 global = { \time 3/8 \key f \major }
 \score {
   \new PianoStaff <<
@@ -75,7 +76,7 @@ global = { \time 3/8 \key f \major }
   \layout {}
   \midi {}
 }
-%{
+%%}
 global = { \time 4/4 \key a \minor }
 \score {
   \new PianoStaff <<
@@ -89,8 +90,9 @@ global = { \time 4/4 \key a \minor }
         }
       }
       \new Voice = "alto" { \voiceTwo
-        \relative c'' {
-          s4.*9
+        \relative c' {
+          e2 a2 gs2
+          r4 gs4 a4 b a gs a a2. a2 f4 e e1
         }
       }
     >>
@@ -98,21 +100,24 @@ global = { \time 4/4 \key a \minor }
       \clef bass
       \global
       \new Voice = "tenor" { \voiceOne
-        \relative f {
-          s4.*9
+        \relative c' {
+          c4 b e d b2
+          r4 b4 d4 f e2 e4 d c d c2 b4 b cs1
         }
       }
       \new Voice = "bass" { \voiceTwo
-        \relative f, {
-          s1*6
+        \relative f {
+          a4 gs a f e2 r4 e4 d2 a4 b c4 d4 e f a, c d4 e a,1
         }
       }
       \new FiguredBass{
-        \figuremode {}
+        \figuremode {
+          <5>4 <6> <5> <6> <5>2 <_>4 <5>4 <5> <6> <5> <6 4> <6> <5> <6 4> <6> <5> \bassFigureExtendersOn <5>\bassFigureExtendersOff <6> <5> <_+>1
+        }
       }
       \new FiguredBass{
         \figuremode {
-          <I>1 <V>2 <_>2 <IV> <I> <VI>1 <III>2 <V> <I>
+          <I>4 <V> <I> <IV> <V>2 <_>4 <V>4 <IV> <II> <I>4 <V> <I> <IV> <I> <IV> <I>2 <VI>4 <V> <I>
         }
       }
     >>
@@ -125,6 +130,7 @@ global = { \time 4/4 \key a \minor }
   \layout {}
   \midi {}
 }
+%{
 global = { \time 2/4 \key a \minor }
 \score {
   \new PianoStaff <<
