@@ -48,7 +48,7 @@ global = { \time 3/8 \key f \major }
       \global
       \new Voice = "tenor" { \voiceOne
         \relative f {
-          f8 e f f4 g8 c bf c c4. c4. e8 f d c4 c8 bf8 a g a4.
+          f8 e f f4 g8 g bf c c4. c4. e8 f d c4 c8 bf8 a g a4.
         }
       }
       \new Voice = "bass" { \voiceTwo
