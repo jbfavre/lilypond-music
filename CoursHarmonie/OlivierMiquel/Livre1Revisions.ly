@@ -37,8 +37,8 @@ global = { \time 3/8 \key f \major }
       \new Voice = "alto" { \voiceTwo
         \relative c' {
           c4. bf4 bf8
-          c bf c c4.
-          g'8 a g
+          g'8 f g f4.
+          g8 a g
           a4 g8 e4 f8 d8 c4 c4.
         }
       }
@@ -48,7 +48,7 @@ global = { \time 3/8 \key f \major }
       \global
       \new Voice = "tenor" { \voiceOne
         \relative f {
-          f8 e f f4 g8 g8 f g f4. c'4. e8 f d c4 c8 bf8 a g a4.
+          f8 e f f4 g8 c bf c c4. c4. e8 f d c4 c8 bf8 a g a4.
         }
       }
       \new Voice = "bass" { \voiceTwo
@@ -77,6 +77,7 @@ global = { \time 3/8 \key f \major }
   \midi {}
 }
 %%}
+%{
 global = { \time 4/4 \key a \minor }
 \score {
   \new PianoStaff <<
@@ -85,7 +86,7 @@ global = { \time 4/4 \key a \minor }
       \global
       \new Voice = "soprane" {  \voiceOne
         \relative c'' {
-          a4( e' c d e2) r4 e4 f( d c b a) f'( e d e c b gs a1)
+          a4( e' c d e2) r4 e4 f( d c b \break a) f'( e d e c b gs a1)
           \bar "|."
         }
       }
