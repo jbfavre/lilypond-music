@@ -77,7 +77,6 @@ global = { \time 3/8 \key f \major }
   \midi {}
 }
 %%}
-%{
 global = { \time 4/4 \key a \minor }
 \score {
   \new PianoStaff <<
