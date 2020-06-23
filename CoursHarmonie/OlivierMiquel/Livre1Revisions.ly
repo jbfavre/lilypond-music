@@ -21,7 +21,7 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
-%%{
+%{
 global = { \time 3/8 \key f \major }
 \score {
   \new PianoStaff <<
@@ -76,7 +76,6 @@ global = { \time 3/8 \key f \major }
   \layout {}
   \midi {}
 }
-%%}
 global = { \time 4/4 \key a \minor }
 \score {
   \new PianoStaff <<
@@ -130,7 +129,7 @@ global = { \time 4/4 \key a \minor }
   \layout {}
   \midi {}
 }
-%{
+%}
 global = { \time 2/4 \key a \minor }
 \score {
   \new PianoStaff <<
@@ -185,4 +184,3 @@ global = { \time 2/4 \key a \minor }
   \layout {}
   \midi {}
 }
-%}
