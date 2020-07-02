@@ -69,60 +69,77 @@ antiphonLyricsBass = \lyricmode {
 
 verseRythm = {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
-  \markCustom "Psalmodie par verset"
+  \markCustom "Psalmodie"
   \cadenzaOn
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s s8. \bar "||"
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s s \bar "|." \break
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "|." \break
   \cadenzaOff
   }
 
 verseMusicSoprano = \relative c'' {
-  bf\breve bf1 bf4 c s8.
-  a\breve a1 a4 bf g
+  bf\breve bf1 bf4 c
+  a\breve a1 bf4
+  g\breve g1 a4
+  a\breve a1 bf4 g
   }
 
 verseMusicAlto = \relative f' {
-  g\breve f1 e4 ef s8.
-  g\breve fs1 fs4 d4 d
+  g\breve f1 e4 ef
+  g\breve g1 g4
+  ef\breve ef1 g4
+  fs\breve fs1 d4 d
   }
 
 verseMusicTenor = \relative c' {
-  d\breve d1 d4 c s8.
-  ef\breve ef1 d4 c bf
+  d\breve d1 d4 c
+  ef\breve ef1 d4
+  bf\breve c1 ef4
+  ef\breve d1 c4 bf
   }
 
 verseMusicBass = \relative f {
-  g\breve g1 g4 g s8.
-  c,\breve d1 d4 fs g
+  g\breve g1 g4 g
+  ef\breve c1 g'4
+  g\breve ef1 c4
+  d\breve d1 fs4 g
   }
 
 verseLyrics = \markup {
-  \vspace #5
-  \override #'(font-family . sans)
-  \override #'(font-size . 1.8)
-  \fill-line {
-    \left-column{
-      \concat { \typewriter "1. " "Je t’exalterai, mon Die" \underline u ", mon Roi," }
-      \concat { \typewriter "   " "je bénirai ton nom toujo" \underline u "rs et à jamais&nbsp;!" }
-      \concat { \typewriter "   " "Chaque jour je te b" \underline é "nirai," }
-      \concat { \typewriter "   " "je louerai ton nom toujo" \underline u "rs et à jamais." }
-      \vspace #1
-      \concat { \typewriter "2. " "Le Seigneur est tendr" \underline e "sse et pitié," }
-      \concat { \typewriter "   " "lent à la col" \underline è "re et plein d’amour&nbsp;;" }
-      \concat { \typewriter "   " "la bonté du Seigne" \underline u "r est pour tous," }
-      \concat { \typewriter "   " "sa tendresse, pour to" \underline u "tes ses œuvres." }
+  \column {
+    \fill-line{
+      \center-column {
+        "Pour la forme directe avec alternance par verset,"
+        "on ne prendra que les première et dernière mesures de la psalmodie"}
     }
-    \hspace #1
-    \left-column {
-      \concat { \typewriter "3. " "Que tes œuvres, Seigne" \underline u "r, te rendent grâce" }
-      \concat { \typewriter "   " "et que tes fid" \underline è "les te bénissent&nbsp;!" }
-      \concat { \typewriter "   " "Ils diront la gl" \underline o "ire de ton règne," }
-      \concat { \typewriter "   " "ils parler" \underline o "nt de tes exploits." }
-      \vspace #1
-      \concat { \typewriter "4. " "Le Seigneur est vrai en t" \underline o "ut ce qu’il dit," }
-      \concat { \typewriter "   " "fidèle en to" \underline u "t ce qu’il fait." }
-      \concat { \typewriter "   " "Le Seigneur souti" \underline e "nt tous ceux qui tombent," }
-      \concat { \typewriter "   " "il redresse to" \underline u "s les accablés." }
+    \vspace #2
+    \override #'(font-family . sans)
+    \override #'(font-size . 1.8)
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "1. " "Je t’exalterai, mon Die" \underline u ", mon Roi," }
+        \concat { \typewriter "   " "je bénirai ton nom toujo" \underline u "rs et à jamais&nbsp;!" }
+        \concat { \typewriter "   " "Chaque jour je te b" \underline é "nirai," }
+        \concat { \typewriter "   " "je louerai ton nom toujo" \underline u "rs et à jamais." }
+        \vspace #1
+        \concat { \typewriter "2. " "Le Seigneur est tendr" \underline e "sse et pitié," }
+        \concat { \typewriter "   " "lent à la col" \underline è "re et plein d’amour&nbsp;;" }
+        \concat { \typewriter "   " "la bonté du Seigne" \underline u "r est pour tous," }
+        \concat { \typewriter "   " "sa tendresse, pour to" \underline u "tes ses œuvres." }
+      }
+      \hspace #1
+      \left-column {
+        \concat { \typewriter "3. " "Que tes œuvres, Seigne" \underline u "r, te rendent grâce" }
+        \concat { \typewriter "   " "et que tes fid" \underline è "les te bénissent&nbsp;!" }
+        \concat { \typewriter "   " "Ils diront la gl" \underline o "ire de ton règne," }
+        \concat { \typewriter "   " "ils parler" \underline o "nt de tes exploits." }
+        \vspace #1
+        \concat { \typewriter "4. " "Le Seigneur est vrai en t" \underline o "ut ce qu’il dit," }
+        \concat { \typewriter "   " "fidèle en to" \underline u "t ce qu’il fait." }
+        \concat { \typewriter "   " "Le Seigneur souti" \underline e "nt tous ceux qui tombent," }
+        \concat { \typewriter "   " "il redresse to" \underline u "s les accablés." }
+      }
     }
   }
 }
