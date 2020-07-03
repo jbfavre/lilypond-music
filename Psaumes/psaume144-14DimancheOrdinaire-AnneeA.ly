@@ -72,37 +72,37 @@ verseRythm = {
   \markCustom "Psalmodie"
   \cadenzaOn
   \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "||"
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "||"
   \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s \bar "|." \break
   \cadenzaOff
   }
 
 verseMusicSoprano = \relative c'' {
   bf\breve bf1 bf4 c
-  a\breve a1 bf4
-  g\breve g1 a4
+  a\breve a1 a4 bf
+  g\breve g1 g4 a
   a\breve a1 bf4 g
   }
 
 verseMusicAlto = \relative f' {
   g\breve f1 e4 ef
-  g\breve g1 g4
-  ef\breve ef1 g4
+  fs\breve fs1 ef4 d
+  ef\breve ef1 ef4 g
   fs\breve fs1 d4 d
   }
 
 verseMusicTenor = \relative c' {
   d\breve d1 d4 c
-  ef\breve ef1 d4
-  bf\breve c1 ef4
+  d\breve cs1 c4 bf4
+  bf\breve bf1 bf4 ef
   ef\breve d1 c4 bf
   }
 
 verseMusicBass = \relative f {
   g\breve g1 g4 g
-  ef\breve c1 g'4
-  g\breve ef1 c4
+  d\breve d1 d4 g
+  ef\breve d1 cs4 c
   d\breve d1 fs4 g
   }
 
