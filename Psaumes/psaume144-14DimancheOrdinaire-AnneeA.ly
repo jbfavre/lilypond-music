@@ -24,7 +24,7 @@ scoreHeader = \header {
 keyTime = {
   \key g \minor
   \time 2/4
-  \tempo "Pas trop lent" 4 = 50
+  \tempo "Pas trop lent" 4 = 65
 }
 
 antiphonRythm = {
