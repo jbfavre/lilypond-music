@@ -19,7 +19,7 @@
   %min-systems-per-page = 4
   %systems-per-page=6
 }
-
+%{
 global = { \time 2/2 \key f \major }
 \score {
   \new PianoStaff <<
@@ -73,6 +73,83 @@ global = { \time 2/2 \key f \major }
     title = ##f
     subtitle = ##f
     piece = "exercice 10.1"
+  }
+  \layout {
+    ragged-last = ##f
+    ragged-right = ##f
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
+}
+%}
+global = { \time 4/4 \key a \major }
+\score {
+  \new PianoStaff <<
+    \new Staff <<
+      \clef treble
+      \global
+      \new Voice = "soprane" { \voiceOne
+        \relative c'' {
+          e4 fs8 gs16 fs e4 gs16 fs e d
+          cs4 d8 e16 d cs4 e16 d cs b
+          a4 b8 cs16 b a4 cs16 b a gs \break
+          fs8 e16 fs gs8 fs16 gs a8 gs16 a b8 a16 b a2 gs4 a8 b a1
+          \bar "|."
+        }
+      }
+    >>
+    \new Staff <<
+      \clef "treble_8"
+      \global
+      \new Voice = "tenor" { \voiceOne
+        \relative c' {
+          cs8 b16 cs d4 cs8 d16 cs b4
+          a8 gs16 a b4 a8 b16 a gs4
+          fs8 e16 fs gs4 fs8 gs16 fs e4
+          d2 e4 fs16 gs a b cs4 d8 cs b2 cs1
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass
+      \global
+      \new Voice = "tenor" { \voiceOne
+        \relative c' {
+        }
+      }
+      \new Voice = "bass" { \voiceTwo
+        \relative f {
+          a2. e8 d16 e
+          fs2. cs8 b16 cs
+          d2. a8 gs16 a
+          b2 cs4 d
+          e2 e,2
+          a1
+        }
+      }
+      \new FiguredBass {
+        \figuremode {
+          <5>4 <6 4> <5> <5> <5>4 <6 4> <5> <5> <5>4 <6 4> <5> <5>  <5>2 <6>4 <6> <6 4>2 <5> <5>1
+        }
+      }
+      \new FiguredBass {
+        \figuremode {
+          <I>4 <IV> <I> <V> <VI> <II> <VI> <III> <IV> <VII> <IV> <I> <II>2 <I>4 <IV> <I>2 <V> <I>1
+        }
+      }
+    >>
+  >>
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 10.2"
   }
   \layout {
     ragged-last = ##f
