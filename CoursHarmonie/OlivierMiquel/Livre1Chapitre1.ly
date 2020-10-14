@@ -30,7 +30,7 @@ tempocroche = \tempo \markup {  %% \tempo et non \mark
     \new Staff \relative c' {
       \key c \major
       \time 2/4 e4\mf b'8\< c b d c a\! b2\f e4\f d8\> c d c b a\! b2\mf \break
-      e,4\mp b'8 c b a g a f2 a4\p b8 g a g f d e2\pp \fermata \bar "||" \break      
+      e,4\mp b'8 c b a g a f2 a4\p b8 g a g f d e2\pp \fermata \bar "||" \break
     }
   }
 }
@@ -61,7 +61,7 @@ tempocroche = \tempo \markup {  %% \tempo et non \mark
   \new StaffGroup {
     \new Staff \relative c' {
       \cadenzaOn
-      \once \override Staff.TimeSignature #'stencil = ##f 
+      \once \override Staff.TimeSignature #'stencil = ##f
       \key c \major
       c4 df e f gs a bs
     }
