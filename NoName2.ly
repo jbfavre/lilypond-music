@@ -1,14 +1,88 @@
 \version "2.20.0"
 \language "english"
+\include "libs/layouts/book-titling.ily"
 
+#(define absolute-volume-alist '())
+#(set! absolute-volume-alist
+      (append
+       '(
+         ("ff" . 1)
+         ("f" . 0.80)
+         ("mf" . 0.65)
+         ("mp" . 0.50)
+         ("p" . 0.35)
+         ("pp" . 0.20)
+         )
+       absolute-volume-alist))
+%{ Default values from /usr/share/lilypond/2.20.0/scm/midi.scm
+         ("ff" . 1)
+         ("f" . 0.80)
+         ("mf" . 0.65)
+         ("mp" . 0.50)
+         ("p" . 0.35)
+         ("pp" . 0.20)
+%}
 \header {
-  title = "No name (yet)"
+  title = "No name (yet) 2"
   composer = "Jean Baptiste Favre"
-  poet = ""
-  opus = "op. ?"
-  dedication = \markup { \italic "Clichy-la-Garenne, mars 2020" }
+  opus = "Op. x"
+  dedication = \markup { \italic "Saint Pierre Quiberon, septembre 2020" }
   subtitle = ""
   tagline = ""
+  date = "Saint Pierre Quiberon, septembre 2020"
+}
+
+\paper {
+  #(include-special-characters)
+  print-all-headers = ##f
+  max-systems-per-page = 4
+%{  bookTitleMarkup = \markup \column {
+    \fill-line { \fontsize #5 \fromproperty #'header:composer }
+    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
+    \combine \null \vspace #14
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #4
+    \fill-line { \fontsize #10 \fromproperty #'header:title }
+    \combine \null \vspace #1
+    \fill-line { \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
+    \combine \null \vspace #1
+    \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
+    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \sans \bold \fromproperty #'header:opus }
+    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
+    \combine \null \vspace #14
+    \fill-line{
+      \column{
+        \when-property #'header:poet \fill-line {
+          \concat { \typewriter "Paroles: " \fontsize #2 \italic \fromproperty #'header:poet }
+        }
+        \when-property #'header:arranger \fill-line {
+          \concat { \typewriter "Arrangements: " \fontsize #2 \italic \fromproperty #'header:arranger }
+        }
+      }
+    }
+  }
+  scoreTitleMarkup = \markup {
+    \column {
+      \vspace #0.5
+      \fill-line {
+        \line { "" }
+        \center-column { \fontsize #6 \bold \fromproperty #'header:title }
+        \line { "" }
+      }
+      \fill-line {
+        \line { "" }
+        \center-column { "" }
+        \line {
+          \right-column {
+            \fontsize #1 \fromproperty #'header:composer
+            \fontsize #0.8 \sans \fromproperty #'header:opus
+          }
+        }
+      }
+      \vspace #1
+    }
+  }
+%}
 }
 
 %tagName = #'no-figuredbass
@@ -228,12 +302,6 @@ basseDegres = {
         \figuremode { }
 %}
       }
-
-\paper {
-  #(include-special-characters)
-  print-all-headers = ##f
-  max-systems-per-page = 4
-}
 
 %{
 \score {
