@@ -88,6 +88,7 @@ global = { \time 2/2 \key f \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
+%}
 global = { \time 4/4 \key a \major }
 \score {
   \new PianoStaff <<
@@ -99,7 +100,7 @@ global = { \time 4/4 \key a \major }
           e4 fs8 gs16 fs e4 gs16 fs e d
           cs4 d8 e16 d cs4 e16 d cs b
           a4 b8 cs16 b a4 cs16 b a gs \break
-          fs8 e16 fs gs8 fs16 gs a8 gs16 a b8 a16 b a2 gs4 a8 b a1
+          fs8 e16 fs gs8 fs16 gs a8 gs16 a b8 cs16 b a2 gs4 a8 b a1
           \bar "|."
         }
       }
@@ -164,7 +165,9 @@ global = { \time 4/4 \key a \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
+
+
+%{
 global = { \time 6/8 \key bf \major }
 \score {
   \new PianoStaff <<
@@ -228,3 +231,4 @@ global = { \time 6/8 \key bf \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
+%}
