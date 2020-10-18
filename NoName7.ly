@@ -133,11 +133,10 @@ sopraneVoice = {
     a4 a b b a g a2 \break
     b4 a g a b d c2 b2 \break
     a4 a b b cs cs d2 \break
-    %d4. e8 g4. g8 fs d e4 d4 r s2*2 \break
-    %r4 a b4. d8 e8 d c b a4 b \break
-    %s2*6
-
-%    f4 g a b c2 cs4 r \break
+    d4. e8 g4. g8 fs d e4 d4 r s2*2 \break
+    r4 a b4. d8 e8 d c b a4 b \break
+    s2*6
+    %f4 g a b c2 cs4 r \break
   }
 }
 
@@ -147,9 +146,9 @@ altoVoice = { \voiceTwo
     fs4 d g g g g fs2
     g4 fs e fs g fs g2 g
     fs8 g fs4 g8 a g4 a8 b a g fs2
-    %s2*6
-    %s2*4
-    %r4 fs g4. b8 c8 b a g g4 fs8 e fs2 g2
+    s2*6
+    s2*4
+    r4 fs g4. b8 c8 b a g g4 fs8 e fs2 g2
   }
 }
 
@@ -160,9 +159,9 @@ tenorVoice = {
     d4 d d e e e d2
     d4 d8 c b4 d d b e2 d
     d4 d4 e4 e e8 d cs b a2
-    %s2*3
-    %d4. e8 g4. g8 fs d e4
-    %d2 s2*3
+    s2*3
+    d4. e8 g4. g8 fs d e4
+    d2 s2*3
   }
 }
 
@@ -173,9 +172,9 @@ basseVoice = {
     d4 fs g8 fs e d c4 cs d2
     g4 d e d4 g, b c8 d e fs g2
     d4 fs e g a4 a, d2
-    %s2*6
-    %s2*4
-    %r4 d4 e d a8 b c e c2 d g,
+    s2*6
+    s2*4
+    r4 d4 e d a8 b c e c2 d g,
   }
 }
 
