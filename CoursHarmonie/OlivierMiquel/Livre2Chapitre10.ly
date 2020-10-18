@@ -88,7 +88,6 @@ global = { \time 2/2 \key f \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
 global = { \time 4/4 \key a \major }
 \score {
   \new PianoStaff <<
@@ -165,9 +164,7 @@ global = { \time 4/4 \key a \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-
-
-%{
+%}
 global = { \time 6/8 \key bf \major }
 \score {
   \new PianoStaff <<
@@ -176,12 +173,19 @@ global = { \time 6/8 \key bf \major }
       \global
       \new Voice = "soprane" { \voiceOne
         \relative c'' {
-          s2.*12
+          bf4. d4.
+          ef8 d c d4. g8 f ef f4. bf8 a g a4. f8 ef d ef d c c2 r8 bf
+          d8 ef d c4 a8 bf8 c bf a4 f8 g8 a g f4 d8 ef8 f ef d4 bf8
+          ef8 f g a bf c bf2.
           \bar "|."
         }
       }
       \new Voice = "alto" { \voiceTwo
         \relative c' {
+          d4. bf c f ef a
+          g4. c bf g a2 r4
+          bf4. a4. g4. f4. ef4. d4.
+          c4. bf4. c4. c8 bf a bf2.
         }
       }
     >>
@@ -189,13 +193,19 @@ global = { \time 6/8 \key bf \major }
       \clef bass
       \global
       \new Voice = "tenor" { \voiceOne
-        \relative c' {
+        \relative c {
+          f8 ef f g4. g8 f g bf4. bf8 a bf d4.
+          d8 c d f4. d4. c8 d ef f2 r4
+          f4. f d d bf bf
+          g4. g g4. f f2.
         }
       }
       \new Voice = "bass" { \voiceTwo
         \relative c {
-          bf4. g8 f g c4. bf8 a bf ef4. d8 c d g4. f8 ef f bf4. ef, f2. \break
-          bf4. f8 ef f g4. d8 c d ef4. bf8 a bf c4. g8 f g ef4. f bf2.
+          bf4. g8 f g c4. bf8 a bf ef4. d8 c d \break
+          g4. f8 ef f bf4. ef, f2. \break
+          bf4. f8 ef f g4. d8 c d ef4. bf8 a bf \break
+          c4. g8 f g ef4. f bf2.
         }
       }
       \new FiguredBass {
@@ -231,4 +241,3 @@ global = { \time 6/8 \key bf \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
