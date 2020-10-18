@@ -4,10 +4,11 @@
 \include "libs/layouts/book-titling.ily"
 
 \header {
-  title = "À la cours du Roi"
-  subtitle = ""
+  title = "No Name (yet) 8"
   composer = "Jean Baptiste Favre"
-  opus = "Op. 3"
+  opus = "Op. x"
+  dedication = \markup { \italic "Saint Pierre Quiberon, septembre 2020" }
+  subtitle = ""
   tagline = ""
   date = "Île d'Hoëdic, août 2020"
 }
@@ -30,6 +31,7 @@
   bottom-margin = 1.5 \cm
   inner-margin = 2 \cm
   outer-margin = 1 \cm
+%{
   bookTitleMarkup = \markup \column {
     \fill-line { \fontsize #5 \fromproperty #'header:composer }
     \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
@@ -76,8 +78,9 @@
       \vspace #1
     }
   }
+%}
 }
-\pageBreak
+%\pageBreak
 removeTags = #'(school)
 keepTags   = #'(visuel notvideo)
 
