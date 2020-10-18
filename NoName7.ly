@@ -120,11 +120,8 @@ dynamicsDownStaff = {
 }
 
 %{
-Mes. 3 : le Ré du soprano n’est pas logique : ce n’est pas une 7e du VI puisque non préparée.
-         Pour être valide, il faudrait entrer en La mineur (donc Sol# dans l’accord) et aboutir
-         à une ½ cadence dans ce ton.
 Mes.8-9 : ce choix de degré n’est pas correct puisque la cadence donne des quintes consécutives basse/chant.
-Ici, la 7e dans le IV est valable, car bien préparée/résolue. Mais dommage, le V ne va pas…
+          Ici, la 7e dans le IV est valable, car bien préparée/résolue. Mais dommage, le V ne va pas…
 Mes. 15-16 : V-VI renversé n’est pas très heureux, et on a des quintes consécutives ténor/chant.
 Mes. 17-18 : on a une cadence parfaite en Ré (V-I et non II-V), l’accord du I n’a pas de tierce…
 %}
@@ -136,9 +133,9 @@ sopraneVoice = {
     a4 a b b a g a2 \break
     b4 a g a b d c2 b2 \break
     a4 a b b cs cs d2 \break
-    d4. e8 g4. g8 fs d e4 d4 r s2*2 \break
-    r4 a b4. d8 e8 d c b a4 b \break
-    s2*6
+    %d4. e8 g4. g8 fs d e4 d4 r s2*2 \break
+    %r4 a b4. d8 e8 d c b a4 b \break
+    %s2*6
 
 %    f4 g a b c2 cs4 r \break
   }
@@ -146,39 +143,39 @@ sopraneVoice = {
 
 altoVoice = { \voiceTwo
   \relative f' {
-    g4 fs e fs g g g2 g
+    g4 fs e fs g fs g2 g
     fs4 d g g g g fs2
-    g4 fs e fs g g g2 g
-    d4 fs e g a a a2
-    s2*6
-    s2*4
-    r4 fs g4. b8 c8 b a g g4 fs8 e fs2 g2
+    g4 fs e fs g fs g2 g
+    fs8 g fs4 g8 a g4 a8 b a g fs2
+    %s2*6
+    %s2*4
+    %r4 fs g4. b8 c8 b a g g4 fs8 e fs2 g2
   }
 }
 
 tenorVoice = {
   \key g \major
   \relative c' {
-    d4 d8 c b4 d d e e2 d
+    d4 d8 c b4 d d4 b4 e2 d
     d4 d d e e e d2
-    d4 d8 c b4 d d e e2 d
-    d4 d e e e e d2
-    s2*3
-    d4. e8 g4. g8 fs d e4
-    d2 s2*3
+    d4 d8 c b4 d d b e2 d
+    d4 d4 e4 e e8 d cs b a2
+    %s2*3
+    %d4. e8 g4. g8 fs d e4
+    %d2 s2*3
   }
 }
 
 basseVoice = {
   %\mark "A"
   \relative f {
-    g4 d e d4 g8 fs e b c d e fs g2
+    g4 d e d4 g,4 b4 c8 d e fs g2
     d4 fs g8 fs e d c4 cs d2
-    g4 d e d8 fs g fs e b c d e fs g2
-    fs4 d g e a a, d2
-    s2*6
-    s2*4
-    r4 d4 e d a8 b c e c2 d g,
+    g4 d e d4 g, b c8 d e fs g2
+    d4 fs e g a4 a, d2
+    %s2*6
+    %s2*4
+    %r4 d4 e d a8 b c e c2 d g,
   }
 }
 
@@ -187,15 +184,15 @@ basseChiffree = {
     <5>4 <5> <5> <5> <5> <5> <5>2 <5>
     <5>4 <6> <5> <5> <5> <_> <5>2
     <5>4 <5> <5> <5> <5> <5> <5>2 <5>
-    <6>4 <_> <6> <_> <5+>2 <5>
+    <5>4 <6> <5> <6> <5+> <_> <5>
   }
 }
 basseDegres = {
   \figuremode {
-    <I>4 <V> <VI> <V> <I> <VI> <IV>2 <I>
+    <I>4 <V> <VI> <V> <I> <III> <IV>2 <I>
     <V>4 <_> <I> <VI> <IV> <_> <V>2
     <I>4 <V> <VI> <V> <I> <VI> <IV>2 <I>
-    <V> <VI> <II>2 <V>
+    <V>4 <_> <VI> <_> <II> <_> <V>
   }
 }
 pianoMusic = {
