@@ -241,7 +241,7 @@ global = { \time 6/8 \key bf \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%{
+
 global = { \time 4/4 \key g \major }
 \score {
   \new PianoStaff <<
@@ -308,4 +308,3 @@ global = { \time 4/4 \key g \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
