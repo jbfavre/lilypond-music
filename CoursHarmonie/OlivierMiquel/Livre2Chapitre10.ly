@@ -174,7 +174,7 @@ global = { \time 6/8 \key bf \major }
       \new Voice = "soprane" { \voiceOne
         \relative c'' {
           bf4. d4.
-          ef8 d c d4. g8 f ef f4. bf8 a g a4. f8 ef d ef d c c2 r8 bf
+          ef8 d c f4. g8 f ef a4. bf8 a g c4. f,8 ef d ef d c c2 r8 c
           d8 ef d c4 a8 bf8 c bf a4 f8 g8 a g f4 d8 ef8 f ef d4 bf8
           ef8 f g a bf c bf2.
           \bar "|."
@@ -182,8 +182,8 @@ global = { \time 6/8 \key bf \major }
       }
       \new Voice = "alto" { \voiceTwo
         \relative c' {
-          d4. bf c f ef a
-          g4. c bf g a2 r4
+          d4. bf c d ef f
+          g4. a bf g a2 r4
           bf4. a4. g4. f4. ef4. d4.
           c4. bf4. c4. c8 bf a bf2.
         }
@@ -194,7 +194,7 @@ global = { \time 6/8 \key bf \major }
       \global
       \new Voice = "tenor" { \voiceOne
         \relative c {
-          f8 ef f g4. g8 f g bf4. bf8 a bf d4.
+          f8 ef f g4.~ g8 f g bf4.~ bf8 a bf d4.~
           d8 c d f4. d4. c8 d ef f2 r4
           f4. f d d bf bf
           g4. g g4. f f2.
@@ -241,3 +241,71 @@ global = { \time 6/8 \key bf \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
+%{
+global = { \time 4/4 \key g \major }
+\score {
+  \new PianoStaff <<
+    \new Staff <<
+      \clef treble
+      \global
+      \new Voice = "soprane" { \voiceOne
+        \relative c'' {
+          \partial 2 s2
+          s1*14
+          \bar "|."
+        }
+      }
+      \new Voice = "alto" { \voiceTwo
+        \relative c' {
+        }
+      }
+    >>
+    \new Staff <<
+      \clef bass
+      \global
+      \new Voice = "tenor" { \voiceOne
+        \relative c {
+        }
+      }
+      \new Voice = "bass" { \voiceTwo
+        \relative c {
+          \partial 2 d4. d8 g4 g8 fs g4 d e e8 d e4 b c8 d e g d4 r4 \break
+          b4 c d b e2 a, d g, c d \break
+          e8 d c b a b c a d c b a g a b g c b c a d4 d, \break
+          g r8 g'8 e4 r8 c8 c4 r8 b8 a4 r8 a'8 d,2 d2 g,1
+        }
+      }
+      \new FiguredBass {
+        \figuremode {
+          <5>2 <5>4. <6>8 <5>4 <5> <5>4. <6>8 <5>4 <5> <5>4. <5>8 <5>4 <_>
+          <6>4 <5> <5> <6> <5>2 <5> <5> <5> <5> <6 4>4 <5> <5>2 <5> <5> <5> <5>4 <6> <6 4> <5>
+          <5>4 <_> <5> <_>8 <6 4> <5>4 <_>8 <6 4> <5>4 <_> <6 4>2 <5>
+        }
+      }
+      \new FiguredBass {
+        \figuremode {
+          <V>
+        }
+      }
+    >>
+  >>
+  \header {
+    title = ##f
+    subtitle = ##f
+    piece = "exercice 10.4"
+  }
+  \layout {
+    ragged-last = ##f
+    ragged-right = ##f
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
+  \midi {
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+  }
+}
+%}
