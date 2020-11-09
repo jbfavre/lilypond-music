@@ -23,7 +23,7 @@
          ("pp" . 0.20)
 %}
 \header {
-  title = "Les petits riens"
+  title = "Les petits riens (motifs)"
   composer = "Jean Baptiste Favre"
   opus = "Op. x"
   dedication = \markup { \italic "Saint Pierre Quiberon, novembre 2020" }
@@ -121,43 +121,34 @@ global = {
 }
 
 rightDynamics = {
-  \tempo 4 = 60
-  \repeat volta 2 {
-    \mark \default
-    s2*8 \break
-    s2*4 \break
-    s2*4 \break
-  }
+  %\tempo 4 = 60
+  s2*8 \break
+  s2*8 \break
+  s2*8 \break
+  s2*8 \break
 }
 rightOne = \relative c'' {
   \global
-  \repeat volta 2 {
-    r2 r2
-    r2 r2
-    r2 r2
-    r2 r2
-    g'4 fs8 e fs4 r4
-    g4 a8 g fs4 r4
-    g4 fs8 e d4 c8 (b) c4 c b2
-  }
-  c2 d e \fermata
+  % Couplets
+  g'4 fs8 e fs4 r g a8 g fs4 r
+  e8 ds cs4 ds r e fs8 e ds4 r
+  g4 g fs4 r e4 e ds4 r
+  e4 e ds4 r b4 c! b4 r
+  % Refrain
+  e4 d8 c b4 c8 b a4 cs b4 r
+  e4 fs8 e d4 e8 d cs4 cs b r
+  g'4 fs8 e d4 e8 d cs4 cs ds r
+  g4 fs8 e d4 c8 b c4 c b r
 }
 
-rightTwo = \relative c'' {
+rightTwo = \relative c' {
   \global
-  \repeat volta 2 {
-    r2 r2
-    r2 r2
-    g4 fs8 e fs4 r4
-    g4 a8 g fs4 r4
-    \repeat unfold 1 {
-      e4 a8 g b4 \breathe b4
-      b4 cs b r4
-    }
-    b4 a8 g a4 a
-    a4 a fs2
-  }
-  a a b2 \fermata
+  e4 a b4 r e,4 e ds r
+  g4 a b r g fs fs r
+  e4 a b r g a8 g fs4 r
+  e8 g a4 b4 r g4 a8 g fs4 r
+  s2*12
+  b4 a8 g a4 a a a fs r
 }
 rightTwoLyrics = \lyricmode {
   \set stanza = #"1. "
@@ -173,21 +164,12 @@ rightTwoLyrics = \lyricmode {
 
 leftOne = \relative f {
   \global
-  \repeat volta 2 {
-    r2 r2
-    r2 r2
-    r8 b4 cs8 ds4 r4
-    r8 b4 cs8 ds4 r4
-    r8 b4 cs8 ds4 r4
-    r8 b4 e8 ds4 r4
-    r8 b4 b8 r8 d!8 fs d8
-    r8 e8 fs e8
-  }
-    \alternative {
-      { e8 cs4 ds8 }
-      { ds2 }
-    }
-  e2 fs gs \fermata
+  b4 cs ds r b4 c! ds r
+  b4 a8 g fs4 r b4 c! b r
+  b4 cs ds r b c! b r
+  b4 cs ds r e fs8 e ds4 r
+  s2*12
+  r8 b4 b8 r8 d!8 fs d r8 e8 fs e e cs ds4
 }
 leftOneLyrics = \lyricmode {
   Pas -- sent jours; pas le temps.
@@ -198,16 +180,18 @@ leftOneLyrics = \lyricmode {
 
 leftTwo = \relative f {
   \global
-  \repeat volta 2 {
-    \repeat unfold 3 {
-      e4 e8 e b4 r4
-      e4 a, b4 r4
-    }
-    e,4 e8 e fs4. fs8
-    a4 a b2 \breathe
+  \repeat unfold 4 {
+    \mark \default
+    e2 b4 r4 e4 a, b4 r4 \bar "||"
   }
-  a2 fs e \fermata
-
+  \mark \default
+  e,4 fs g r4 a4 as b4 r4 \bar "||"
+  \mark \default
+  e,4 e fs r8 fs a4 a b r \bar "||"
+  \mark \default
+  e,4 fs g r4 a4 as b4 r4 \bar "||"
+  \mark \default
+  e,4 e fs r8 fs a4 a b r \bar "||"
 }
 leftTwoLyrics = \lyricmode {
   \set stanza = #"1. "
@@ -230,7 +214,7 @@ pianoStaff = \new ChoirStaff
     } {
       \new Voice = "rightOneVoice" { \clef treble \rightOne }
       \tag #'midi' \new Voice = "righOneDynamics" { \rightDynamics }
-    } \addlyrics {
+    } %{\addlyrics {
         \set stanza = #"1. "
         Tom -- be la pluie, souf -- fle le vent,
         nu -- a -- ges gris, nu -- a -- ges blancs
@@ -268,18 +252,18 @@ pianoStaff = \new ChoirStaff
       \addlyrics {
           Pas le temps.
       }
-      %\addlyrics {
-      %  \set stanza = #"2. "
-      %  Un jour viendra j'en suis certain,
-      %  Où d'éphémères petits riens,
-      %  Deviendront d'éternels instants;
-      %}
+      \addlyrics {
+        \set stanza = #"2. "
+        Un jour viendra j'en suis certain,
+        Où d'éphémères petits riens,
+        Deviendront d'éternels instants;
+      } %}
     \new Staff = "rightTwo" \with {
       midiInstrument = "acoustic grand"
     } {
       \new Voice = "rightTwoVoice" { \clef treble \rightTwo }
       \tag #'midi' \new Voice = "righTwoDynamics" { \rightDynamics }
-    } \addlyrics {
+    } %{\addlyrics {
         \set stanza = #"1. "
         Tom -- be la pluie, souf -- fle le vent,
         nu -- a -- ges gris, nu -- a -- ges blancs
@@ -315,29 +299,29 @@ pianoStaff = \new ChoirStaff
         Au loin s'al -- lume un -- e lu -- mière,
         Qui dans la nuit forme un a -- mer;
       }
-      %\addlyrics {
-      %  \set stanza = #"2. "
-      %  Un jour viendra j'en suis certain,
-      %  Où d'éphémères petits riens,
-      %  Deviendront d'éternels instants;
-      %}
+      \addlyrics {
+        \set stanza = #"2. "
+        Un jour viendra j'en suis certain,
+        Où d'éphémères petits riens,
+        Deviendront d'éternels instants;
+      }%}
     \tag #'visuel \new Dynamics << \rightDynamics >>
     \new Staff = "leftOne" \with {
       midiInstrument = "acoustic grand"
     } {
       \new Voice = "leftOneVoice" { \clef "treble_8" \leftOne }
     }
-    \context Lyrics = "leftOne" {
-      \lyricsto "leftOneVoice" { \leftOneLyrics }
-    }
+    %\context Lyrics = "leftOne" {
+    %  \lyricsto "leftOneVoice" { \leftOneLyrics }
+    %}
     \new Staff = "leftTwo" \with {
       midiInstrument = "acoustic grand"
     } {
       \new Voice = "leftTwoVoice" { \clef bass \leftTwo }
     }
-    \context Lyrics = "leftTwo" {
-      \lyricsto "leftTwoVoice" { \leftTwoLyrics }
-    }
+    %\context Lyrics = "leftTwo" {
+    %  \lyricsto "leftTwoVoice" { \leftTwoLyrics }
+    %}
   >>
 
 \score {
