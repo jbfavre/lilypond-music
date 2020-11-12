@@ -153,14 +153,14 @@ couplet_Basses = \relative f { e4 e8 e b4 r8 b8 e4 a, b4 r4 }
 couplet_Basses_Deux = \relative f, { e4\mf e8 e b'4 r8 b8 e4 a, b4 r4 }
 
 % Couplet A
-couplet_A_Sopranes = \relative c'' { g4 fs8 e fs4 r g a8 g fs4 r }
-couplet_A_Altos = \relative c' { r8 e a a b4 r r8 e, fs e ds4 r }
-couplet_A_Tenors = \relative f { r8 b8 b cs ds4 r r8 b8 c? c8 ds4 r }
+couplet_A_Sopranes = \relative c'' { g4 fs8 e fs4 r g a8 g fs4 r4 }
+couplet_A_Altos = \relative c' { r8 e a g fs4 r r8 e fs e ds4 r }
+couplet_A_Tenors = \relative f { r8 b8 b cs ds4 r r8 b8 c? c8 ds4 r r8 b8 b cs ds4 r r8 b8 c? c8 ds4 r }
 couplet_A_Basses = \couplet_Basses
 % Couplet B
 couplet_B_Sopranes = \relative c' { r8 e8 fs g fs4 r4 r8 g8 a g fs4 r }
-couplet_B_Altos = \relative c'' { g4 a8 b b4 r g a8 fs b4 r }
-couplet_B_Tenors = \relative f' { g4 fs8 e ds4 r r8 e c8 c ds4 r }
+couplet_B_Altos = \relative c'' { b4 a8 b b4 r g a8 fs b4 r }
+couplet_B_Tenors = \relative f' { g4 fs8 e ds4 r r8 e c?8 c ds4 r }
 couplet_B_Basses = \couplet_Basses
 % Couplet C
 couplet_C_Sopranes = \relative c'' { r8 g' e e fs4 r e4 e8 e ds4 r }
@@ -183,15 +183,15 @@ conclusion_Basses = \relative f { \couplet_Basses_Deux \break \couplet_Basses_De
 conclusion_solo = \relative f { r8\f b a g fs4 r8 g e8 (fs) g (a) b4 r4 r8\f b a g fs4 r4 e8 (fs) g a b4 r4 r8 b a g g b d cs b4 r }
 
 % Première Basse
-refrain_Un_Basse = \relative f, { e4 fs8 fs g4 r8 g8 a4 as4 b4 r }
+refrain_Un_Basse = \relative f, { \break e4 fs8 fs g4 r8 g8 a4 a4 b4 r }
 % Seconde Basse
 refrain_Deux_Basse = \relative f, { e4. e8 fs8 fs4 fs8 a4 a b r }
 % Troisième basse (conclusion)
 refrain_Trois_Basse = \relative f, { e4. e8 fs8 fs4 fs8 a4 a b2 \fermata \break <a a'>2\ff\fermata <a' fs,>2\fermata <gs e,>2\fermata }
 % Refrain A
-refrain_A_Soprane = \relative c'' { r8 e d8 c b4 r8 b cs4 cs b4 r }
-refrain_A_Alto = \relative c' { g'4 a8 a g4 r8 g8 g4 fs4 fs4 r }
-refrain_A_Tenor = \relative f { r8 b4 c8 r8 d8 e d8 r8 e e e r8 e cs8 ds8 }
+refrain_A_Soprane = \relative c'' { e8 fs4 d8 b4 r8 b cs4 cs b4 r }
+refrain_A_Alto = \relative c'' { g4 a8 a g4 r8 g8 e4 fs4 fs4 r }
+refrain_A_Tenor = \relative f { r8 b d c r8 b8 e d8 r8 cs fs e r8 e cs8 ds8 }
 refrain_A_Basse = \refrain_Un_Basse
 % Refrain B
 refrain_B_Soprane = \relative c'' { e4 fs8 e d4 e8 (d) c4 c b r }
@@ -210,8 +210,8 @@ refrain_D_Tenor = \relative f { r8 b4 b8 r8 d!8 fs d r8 e8 fs e ds4 r }
 refrain_D_Basse = \refrain_Deux_Basse
 
 refrain_E_Soprane = \relative c''' { g4 fs8 e d4 c8 (b) c4 c b2\fermata c2\ff\fermata d2\fermata e2\fermata }
-refrain_E_Alto = \relative c'' { b4 a8 g a4 a a a fs2\fermata <e a>2\ff\fermata <e a>2\fermata <e b'>2\fermata }
-refrain_E_Tenor = \relative f { r8 b4 b8 r8 d!8 fs d r8 e8 fs e ds2\fermata <e a>2\ff\fermata <fs a>2\fermata gs2\fermata }
+refrain_E_Alto = \relative c'' { b4 a8 g a4 a a a fs2\fermata <e a>2\ff\fermata <d a'>2\fermata <e b'>2\fermata }
+refrain_E_Tenor = \relative f { r8 b4 b8 r8 d!8 fs d r8 e8 fs e ds2\fermata <c e>2\ff\fermata <a fs'>2\fermata <gs gs'>2\fermata }
 refrain_E_Basse = \refrain_Trois_Basse
 
 global = { \key e \minor \time 2/4 }
@@ -230,7 +230,7 @@ rightOne = {
 }
 rightOneDynamics = {
   s2*4 s2*4 s2*4 s2*4
-  s2*4 s2*4 s2\mf\< s8 s8\! s4 s8 s8\> s4 s8 s8\! s4 s2\mf\< s8 s8\! s4\> s2 s8 s8\!\p s4
+  s2*4 s2*4 s2\mp\< s8 s8\! s4 s8 s8\> s4 s8 s8\! s4 s2\mf\< s8 s8\! s4\> s2 s8 s8\!\p s4
   s2*4 s2*4 s2*4 s2*4
   s2*4 s2*4 s2*4 s2*4
   s2*4 s2*4 s2*4 s2*4
@@ -278,7 +278,7 @@ rightTwoLyrics = \lyricmode {
 
 leftOne =  {
   \global
-  s2*4 \couplet_A_Tenors \couplet_A_Tenors  \refrain_A_Tenor
+  s2*4 \couplet_A_Tenors  \refrain_A_Tenor
   s2*4 \couplet_B_Sopranes \couplet_B_Tenors  \refrain_B_Tenor
   s2*4 \couplet_C_Tenors \couplet_C_Tenors_Bis \refrain_C_Tenor
   s2*4 \couplet_D_Tenors \couplet_D_Tenors_Bis  \refrain_D_Tenor
@@ -299,7 +299,7 @@ leftOneDynamics = {
   %s2*4 s2*4 s2*4 s2*4
 }
 leftOneLyrics = \lyricmode {
-  \refrain \refrain Pas -- sent les jours mais, mais pas le pas le temps.
+  \refrain \refrain Pas -- sent les, les jours mais, mais pas le pas le temps.
   \couplet_deux \refrain
   \refrain \refrain Pas -- sent les jours, mais pas le temps.
   \refrain \refrain Pas -- sent les jours mais, mais pas le temps.
@@ -308,7 +308,7 @@ leftOneLyrics = \lyricmode {
 
 leftTwo = {
   \global
-  \couplet_A_Basses \mark "A" \repeat unfold 2 { \couplet_A_Basses \break } \refrain_A_Basse \bar "||" \break
+  \mark "L-C-C-L / C-L-C-L" \couplet_A_Basses \mark "A" \couplet_A_Basses \couplet_A_Basses \break \refrain_A_Basse \bar "||" \break
   \couplet_B_Basses \mark "B" \repeat unfold 2 { \couplet_B_Basses \break }  \refrain_B_Basse \bar "||" \break
   \couplet_Basses \mark "C" \repeat unfold 2 { \couplet_C_Basses \break }  \refrain_C_Basse \bar "||" \break
   \couplet_D_Basses \mark "D" \repeat unfold 2 { \couplet_D_Basses \break } \refrain_D_Basse \bar "||" \break
