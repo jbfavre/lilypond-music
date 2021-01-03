@@ -325,7 +325,7 @@ partition = <<
   <<
     \new PianoStaff = "antiphonMusic" <<
       \new Staff <<
-        \keyTime \tempo 4 = 50 \clef treble
+        \keyTime \tempo 4. = 70 \clef treble
         \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
         \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
       >>
