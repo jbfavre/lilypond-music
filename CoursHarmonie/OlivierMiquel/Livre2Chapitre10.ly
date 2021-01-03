@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \language "english"
 
 \header {
@@ -164,7 +164,6 @@ global = { \time 4/4 \key a \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
-%}
 global = { \time 6/8 \key bf \major }
 \score {
   \new PianoStaff <<
@@ -241,32 +240,81 @@ global = { \time 6/8 \key bf \major }
     \context { \Voice \consists "Staff_performer" }
   }
 }
+%}
 
 global = { \time 4/4 \key g \major }
 \score {
   \new PianoStaff <<
-    \new Staff <<
+    \new Staff \with { instrumentName = "Violon 1"} <<
       \clef treble
       \global
-      \new Voice = "soprane" { \voiceOne
-        \relative c'' {
+      \new Voice = "annotations" {
+        \override HorizontalBracket.direction = #UP
+        \override HorizontalBracket.padding = 3
+        \relative c {
           \partial 2 s2
-          s1*14
+          \override Rest.stencil = ##f
+          r4 -\tweak HorizontalBracketText.text "Modèle" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "Reproduction" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "1/2 cadence" \startGroup s2 s8. r16\stopGroup
+          s1
+          r4 -\tweak HorizontalBracketText.text "Modèle" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "Reproduction" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "1/2 cadence" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "Reprise \"ornée\" mes. 5" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "Reprise \"ornée\" mes. 6" \startGroup s2 s8. r16\stopGroup
+          r4 -\tweak HorizontalBracketText.text "Reprise \"ornée\" mes. 7 (presque)" \startGroup s2 s8. r16\stopGroup
+          s1*2
+          r2 -\tweak HorizontalBracketText.text "Cadence parfaite"
+              \tweak HorizontalBracket.outside-staff-priority #80 \startGroup s2 s2. s8. r16\stopGroup
           \bar "|."
         }
       }
-      \new Voice = "alto" { \voiceTwo
-        \relative c' {
+      \new Voice = "violon" {
+        \relative c''' {
+          \partial 2 a4. a8
+          b8 c b a g a16 g fs8 e16 fs
+          g8 a g fs e8 fs16 e d8 c16 d
+          e8 fs e d fs4 r4
+          d8 g16 fs e8. g16 a g fs e d4
+          g8 a16 g fs8 g a4 r8 g
+          fs8 g16 fs e8 fs g4 r8 fs
+          e8 fs16 e d8 e g4 fs
+          g8 a16 g fs e fs g a4 r8 a16 g
+          fs8 g16 fs e d e fs g4 r8 g16 fs
+          e8 fs16 g e d e fs g4 a
+          g8 a16 g  fs8 g16 a b4 r8 a8
+          g8 a16 g fs8 g16 fs e4 r8 e16 fs
+          g8 g16 a b8 g fs4.\startTrillSpan e16\stopTrillSpan fs g1
         }
       }
     >>
-    \new Staff <<
-      \clef bass
+    \new Staff \with { instrumentName = "Violon 2"} <<
+      \clef treble
       \global
-      \new Voice = "tenor" { \voiceOne
-        \relative c {
+      \new Voice = "alto" { \voiceTwo
+        \relative c'' {
+          \partial 2 fs8 g fs e
+          d4 r8 d b c d c
+          b4 r8 b g a b a
+          g8 a16 b c8 b a4 r4
+          g4 g8 fs16 e fs4 g16 fs g a
+          b4 r8 b c d c b
+          a4 r8 a8 b c b a
+          g4 r8 g b4 a
+          b4 r8 b c b16 a g8 a16 b
+          a4 r8 a b a16 g fs8 g16 a
+          g8 r8 a4 b8 a16 g fs8 g16 a
+          b4 r8 b8 g fs16 g a b c d
+          e4. d8 c8 d16 c b8 c16 b
+          \once \override TrillSpanner.direction = #UP
+          b4.\startTrillSpan c16\stopTrillSpan b a8 a16 b c b a8 b1
         }
       }
+    >>
+    \new Staff \with { instrumentName = "Violoncelle"} <<
+      \clef bass
+      \global
       \new Voice = "bass" { \voiceTwo
         \relative c {
           \partial 2 d4. d8 g4 g8 fs g4 d e e8 d e4 b c8 d e g d4 r4 \break
@@ -284,7 +332,19 @@ global = { \time 4/4 \key g \major }
       }
       \new FiguredBass {
         \figuremode {
-          <V>
+          <V>2
+          <I>4. <V>8 <I>4 <V>4
+          <VI>4. <III>8 <VI>4 <III>4
+          <IV>4. <I>8 <V>4 <_>4
+          <I>4 <II> <III> <I>
+          <VI>2 <II>
+          <V> <I>
+          <IV> <I>4 <V>4
+          <VI>2 <II>
+          <V> <I>
+          <IV>4 <II> <I> <V>
+          <I>2 <VI>4. <VII>8
+          <IV>4. <VI>8 <II>2 <I> <V> <I>1
         }
       }
     >>
@@ -299,6 +359,10 @@ global = { \time 4/4 \key g \major }
     ragged-right = ##f
     \context {
       \Staff \RemoveEmptyStaves
+    }
+    \context {
+      \Voice
+      \consists "Horizontal_bracket_engraver"
     }
   }
   \midi {
