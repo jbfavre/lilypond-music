@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Include each part of the Petite Messe de Saint Vincent de Paul
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include "PetiteMesseSaintVincentDePaul/Gloria.ily"
+\include "PetiteMesseSaintVincentDePaul/GloireADieu.ily"
 
 \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 \header {
