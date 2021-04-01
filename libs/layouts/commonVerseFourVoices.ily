@@ -4,7 +4,7 @@
       \once \override Staff.VerticalAxisGroup.remove-first = ##t
       \global
       \clef treble
-      \partcombine
+      %\partcombine
       \new Voice = "verseSoprano" << \voiceOne { \sopranoVerseMusic } >>
       \new Voice = "verseAlto" << \voiceTwo { \altoVerseMusic } >>
       \new Lyrics \lyricsto "verseSoprano" { \reponsSopAltLyrics }
