@@ -12,11 +12,11 @@
 title = "Psaume 117-1"
 subtitle = "Résurrection du Seigneur"
 composer = "Jean Baptiste Favre"
-dedicace = "Abbaye de Solesmes, mars 2018"
+dedicace = "Clichyla Garenne, mars 2021"
 
 global = {
   \key g \major
-  \time 6/8
+  \time 3/8
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,23 +25,23 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
-  \partial 2 d8 g4 g8 a4 a8 b[ c a] g4.
-  g8[ a b] a[ b a] g[ e fs] g2. \fermata \bar "|." \break
+  \partial 8 d8 g4 g8 a4 a8 b c a a8 (g4)
+  g8 a b c b a g a fs g4. (g) \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  \partial 2 a8 d4 b8 d4 e8 ds[ fs ds] e4.
-  e4 d8 c4 c8 d8[ (d) a] d2. \fermata
+  r8 d4 e8 e4 fs8 fs4 fs8 e4.
+  e4 e8 e4 e8 d8 d4 d4. (d4.) \fermata
   }
 
-tenorAntiphonMusic =  \relative c {
-  \partial 2 fs8 g4 g8 fs4 a8 fs[ b b] b4.
-  c4 g8 e4 a8 a[ (a) c] c[ a] b2 \fermata
+tenorAntiphonMusic =  \relative c' {
+  r8 b4 c8 c8 c d ds8 b b b4.
+  c4 c8 c4 a8 a4 c8 c4 b16 a b4. \fermata
   }
 
-bassAntiphonMusic =  \relative c {
-  \partial 2 d8 b4 e8 d4 c8 b[ ds fs] e4 (d8)
-  c4 b8 a4 e'8 d[ c a] g2. \fermata
+bassAntiphonMusic =  \relative c' {
+  r8 g8 fs e8 fs8 (e8) d16 c16 b4 ds8 e4 (d8)
+  c4 b8 a8 b c8 d4 d16 d16 g,4. (g) \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -50,13 +50,13 @@ antiphonLyrics = \lyricmode {
 
 sopranoAntiphonLyrics = \antiphonLyrics
 altoAntiphonLyrics = \lyricmode {
-  Voi -- ci le jour que fit le Sei -- gneur, jour de fête, de fête~et de joie !
+  Jour de fê -- te, jour de joie, jour de fê -- te, jour de joie !
   }
 tenorAntiphonLyrics = \lyricmode {
-  Voi -- ci le jour que fit le Sei -- gneur, jour de fête, de fête~et de joie !
+  Voi -- ci le jour que fit le Sei -- gneur, jour de fê -- te, jour de fê -- te~et de joie !
   }
 bassAntiphonLyrics = \lyricmode {
-  Voi -- ci le jour que fit le Sei -- gneur, jour de fête, de fête~et de joie !
+  Voi -- ci le jour que fit le Sei -- gneur, jour de fê -- te, de fê -- te~et de joie !
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,32 +66,32 @@ bassAntiphonLyrics = \lyricmode {
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  b\breve b1 c4 a b \bar "||"
-  b\breve b1 a4 g a \bar "||"
+  b\breve c4 a b \bar "||"
+  g\breve g1 a4 b a \bar "||"
   a\breve b1 a4 g \bar "||"
   g\breve s8 c1 b4 g a g \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
-altoVerseMusic = \relative c' {
+altoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
-  d\breve d1 e4 d d
-  g\breve g1 fs4 d fs
+  g\breve g4 fs d
+  e\breve e1 e4 e fs
   fs\breve ds1 ds4 b4
   e\breve s8 a1 g4 e e8 (fs) d4
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  b\breve b1 g4 fs g
-  d'\breve e1 a,4 b a
+  d\breve e4 d b
+  b\breve c1 c4 c d
   b\breve fs1 b4 b
   c\breve s8 e1 b4 c a4 b4
   }
 
 bassVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  g\breve g1 c,4 d g
-  g\breve e1 d4 b d
+  g\breve c,4 d g
+  e\breve c1 c4 c d
   ds\breve b1 ds4 e8[ (d)]
   c\breve b8 a1 e'4 c cs8 (d) g,4
   }
@@ -133,7 +133,7 @@ verseLyrics = \markuplist {
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
-
+staffCustomSize = 16
 partition = {
   <<
     % Antienne à 4 voix mixtes
@@ -148,3 +148,4 @@ partition = {
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
+\verseLyrics

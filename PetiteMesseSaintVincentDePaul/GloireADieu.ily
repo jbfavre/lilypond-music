@@ -31,12 +31,12 @@ gloriaSolistMusic = \relative c' {
   \mark \default
   a4 a8 a a4 a8 a a4 gs8 gs a4 a \bar "||" \break
   \time 3/8
-  d,8^"Chantre" f g \time 6/8 a4 d,16^"Assemblée" e f4 g8 a4.  f8^"Chantre" g g a4 f16^"Assemblée" e f4 g8 a4. \bar "||" \break
+  d,8^"Chantre" f g \time 6/8 a4 d,16^"Assemblée" e f4 g8 a4. f8^"Chantre" g g a4 f16^"Assemblée" e f4 g8 a4. \bar "||" \break
   d,16^"Chantre" f g8 bf a a8 f g16 a g8 f e4 e8\bar "||"
   d8^"Assemblée" f4 g4. bf8 bf a4 a8 f g a g f e2 \bar "||" \break
   d4^"Chantre" e f8 g f e d4 cs d2 \bar "||" \break
   d8^"Assemblée" d e e f g f e d4 cs d4 d \bar "||" \break
-  \time 3/8 d8^"Chantre" f a bf bf a g a bf a4 g8 f4.^"Assemblée" g8 f g a4.~ a4. \bar "||" \break
+  \time 3/8 d8^"Chantre" f a \time 6/8 bf bf a g a bf a4 g8 f4.^"Assemblée" g8 f g a4.~ a4. \bar "||" \break
   d,8^"Chantre" f a c c c bf a g a a g^"Assemblée" f4. g8 f g a4. a4 a8^"Chantre"\bar "||" \break
   d,8 f a d d c bf a g a4 g8 f4.^"Assemblée" g8 f g a4. \bar "||" \break
   r8 a8^"Chantre" a bf4.  g a4. r4 a8^"Assemblée" c4. bf4 bf8 a4. \bar "||" \break
@@ -83,11 +83,11 @@ gloriaBasseMusic = \relative f {
   d8 d c4 b8 b bf bf a4. a8
   d4 d8 d c4 c8 c b4 bf8 bf a4 a
   d8 c bf a4 d16 d c4 bf8 a4. bf8 bf e a,4 a16 a bf8 (g') e8 a,4.
-  s2*4
-  s2*4
-  s2*4
-  s2*4
-  s2*4
+  s4.*4
+  s4.*4
+  s4.*4
+  s4.*4
+  s4.*4
   d8 d c bf bf bf e e e a, (b) cs d4 (c8) bf a bf a4.~ a4.
   d8 d d c bf a g a bf a b cs d4 c8 bf a bf a4. a4 a8
   d8 d c bf bf a g a bf a (b) cs d4. e4. a,4.
