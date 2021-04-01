@@ -30,18 +30,18 @@ sopranoAntiphonMusic = \relative c' {
   }
 
 altoAntiphonMusic = \relative c' {
-  f4 f4 df8 f e4 c f f e \breathe
-  c4 df df f f f2 e c2
+  f4 f4 df4 c4 c f f e \breathe
+  c4 df df c df8 (ef) f2 e c2
   }
 
 tenorAntiphonMusic =  \relative c {
-  f4 c'4. bf8 bf4 af bf df df4 (c8) \breathe bf
-  af4 bf c c df2 (df4) c8 (bf) af2 \fermata
+  f4 c'4. bf8 bf4 af bf df (df4) c8 \breathe bf
+  af4 bf c2 df (df4) c8 bf af2 \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-  f4 f f c4 f8 (ef) df (c) bf4 c \breathe
-  c4 df8 (c) bf4 f f'8 (ef) bf2 c f \fermata
+  f4 f f e4 f8 (ef) df (c) bf4 c \breathe
+  c4 df8 (c) bf4 f'4. ef8 bf2 c f \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -62,29 +62,34 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  f\breve e4 \bar "||"
-  e4 f\breve g4 f e \bar "||"
-  e4 f g af\breve af4 g f e \bar "||"
-  e\breve f1 af4 g4 \bar "||"
-  g\breve af1 bf4 g4 f4
-  \bar "|."
+  f\breve g1 af4 \bar "||"
+  bf\breve af1 g4 \bar "||"
+  af\breve bf1 c4 \bar "||"
+  bf\breve af1 g4 \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
-altoVerseMusic = \relative c'' {
+altoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
+  c\breve c1 c4
+  f\breve f1 e4
+  f\breve g1 af4
+  g\breve f1 e!4
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
+  af\breve c1 c4
+  df\breve c1 c4
+  c\breve ef1 ef4
+  c\breve c1 c4
   }
 
 bassVerseMusic = \relative c {
   \silence \sopranoAntiphonMusic
-  f\breve c4
-  f\breve e1 f4 c4
-  c\breve f1 ef4 af4
-  af\breve e1 f4 c4
-  c\breve df1 bf4 c4 f4
+  f\breve e1 f4
+  bf,\breve f1 c'4
+  f\breve ef1 af4
+  e\breve f1 c'4
   }
 
 verseLyrics = \markuplist {
