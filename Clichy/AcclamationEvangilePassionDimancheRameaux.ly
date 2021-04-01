@@ -1,7 +1,7 @@
 \version "2.18.2"
 \language "english"
 
-#(set-global-staff-size 14)
+%#(set-global-staff-size 14)
 \header {
   title = "Acclamation de l'Évangile de la Passion"
   subtitle = "Dimanche des Rameaux"
