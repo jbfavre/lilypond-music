@@ -66,9 +66,12 @@ bassAntiphonLyrics = \lyricmode {
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  b\breve c4 a b \bar "||"
+  b\breve a4 a b \bar "||"
   b\breve a1 b4 b \bar "||"
   b\breve a1 a4 a g \bar "||"
+  a\breve g1 a4 \bar "|." \break
+  \markCustom "Psalmodie par verset" \cadenzaOn
+  b\breve a4 a b \bar "||"
   a\breve g1 a4 \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
@@ -78,6 +81,8 @@ altoVerseMusic = \relative c'' {
   g\breve fs1 fs4 fs
   g\breve fs1 fs4 fs d
   e\breve e1 fs4
+  g\breve g4 fs g
+  e\breve e1 fs4
   }
 
 tenorVerseMusic = \relative c' {
@@ -86,6 +91,8 @@ tenorVerseMusic = \relative c' {
   e\breve e1 e4 ds
   e\breve e1 d4 c b
   c\breve b1 d4
+  d\breve e4 d d
+  c\breve b1 d4
   }
 
 bassVerseMusic = \relative c' {
@@ -93,6 +100,8 @@ bassVerseMusic = \relative c' {
   g\breve c,4 d g
   e\breve c1 b4 b
   e\breve fs1 fs4 fs g
+  c,\breve e1 d4
+  g\breve c,4 d g
   c,\breve e1 d4
   }
 
