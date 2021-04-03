@@ -12,7 +12,7 @@
 title = "Psaume 115"
 subtitle = "Jeudi Saint"
 composer = "Jean Baptiste Favre"
-dedicace = "Clichyla Garenne, avril 2021"
+dedicace = "Clichy la Garenne, avril 2021"
 
 global = {
   \key f \minor
