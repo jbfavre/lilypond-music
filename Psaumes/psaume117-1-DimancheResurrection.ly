@@ -79,7 +79,7 @@ altoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   g\breve g4 fs g
   g\breve fs1 fs4 fs
-  g\breve fs1 fs4 fs d
+  g\breve fs1 fs4 fs e
   e\breve e1 fs4
   g\breve g4 fs g
   e\breve e1 fs4
@@ -99,8 +99,8 @@ bassVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
   g\breve c,4 d g
   e\breve c1 b4 b
-  e\breve fs1 fs4 fs g
-  c,\breve e1 d4
+  e\breve fs1 d4 ds e
+  c\breve e1 d4
   g\breve c,4 d g
   c,\breve e1 d4
   }
