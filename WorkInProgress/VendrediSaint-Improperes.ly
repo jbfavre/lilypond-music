@@ -31,30 +31,36 @@ composer = "Jean Baptiste Favre"
 staffCustomSize = 16
 
 global = {
-    \key f \major
+  \key a \minor
+  \time 2/4
   }
 
 SoloBass = \relative c {
   \cadenzaOn
-  a'4. a8 a4 a8 a bf4 bf a2 \bar "|"
-  a4 a a8[ a] g[ f] g1 \bar "|"
-  a8[ (g)] f4 f2 \bar "|"
+  a'\breve gs2 \bar "|"
+  a\breve b4 a gs!2 \bar "|" \break
+  \cadenzaOff
   }
-sopranoAntiphonMusic = \relative c' {
+sopranoAntiphonMusic = \relative c'' {
   \silence \SoloBass
-  f4 g a2 f4 g a2 f8[ f g g] a4 bf8[ a] g4 g f2 \bar "||" \break
+  r4 a8 b c4. b8 a4 a gs!2 \bar "||" \break
+  a4 a4 gs2 a4 b gs4 gs8 gs \break
+  a4 b c c8 b a2 gs2 a2 \bar "||" \break
 }
 altoAntiphonMusic = \relative c' {
   \silence \SoloBass
-  c4 e c2 d4 e f2 d8[ d e e] e4 f8[ f] f4 f8[ (e)] c2 \bar "||" \break
+  r4 e8 g g4. f8 e4 e e2
+  e4 f e2 e4 f e e8 e e4 f4 a4 f e2 e2 e2
   }
 tenorAntiphonMusic =  \relative c' {
   \silence \SoloBass
-  a4 g a2 a4 c c2 a8[ a c c] cs4 df8[ df!] d4 bf a2 \bar "||" \break
+  r4 c8 d e4. d8 c4 d8 c b2
+  c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d c2 b c
   }
 bassAntiphonMusic =  \relative c {
   \SoloBass
-  f4 c f2 d4 c f2 f8[ d c bf] a4 g8[ bf] b[ (d)] c4 <f f,>2 \bar "||" \break
+  r4 a'8 g c,4. d8 e4 e e2 \bar "||" \break
+  a,4 d e2 c4 d e4 e8 d c4 b4 a d8 d e2 e2 a,2
 }
 
 sopranoVerseMusic = \relative c' {
@@ -84,6 +90,7 @@ bassVerseMusic = \relative c {
   }
 
 sopranoAntiphonLyrics = \lyricmode {
+  Ô mon peu -- ple, Ré -- ponds moi.
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 altoAntiphonLyrics = \lyricmode {
@@ -91,14 +98,16 @@ altoAntiphonLyrics = \lyricmode {
 tenorAntiphonLyrics = \lyricmode {
   }
 bassAntiphonLyrics = \lyricmode {
-  Ô mon peu ple, Que t'ai -- je fais&nbsp;?
-  En quoi t'ai- -- je con -- tris -- té&nbsp;?
-  Ré -- ponds moi.
+  \once \override LyricText.self-alignment-X = #LEFT
+  "Ô mon peuple, Que t'ai-je" fais&nbsp;?
+  \once \override LyricText.self-alignment-X = #LEFT
+  "En quoi t'ai-je" con -- tris -- té&nbsp;?
+  Ô mon peu -- ple, Ré -- ponds moi.
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 
 \include "../libs/defaultPianoSettings.ily"
-\include "../libs/layouts/commonPiano.ily"
+%\include "../libs/layouts/commonPiano.ily"
 
 %{
   Moi je t’ai fait sortir d’Égypte, j’ai englouti le Pharaon&nbsp;:
@@ -115,21 +124,113 @@ bassAntiphonLyrics = \lyricmode {
 %}
 
 verseLyrics = \markuplist {
-  \override #'(font-name . "Latin Modern Sans")
-  \override #'(font-size . 3)
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
+  \column {
+    \fill-line {
+      \column {
+        \concat { \typewriter "I. " "Peuple égar" \underline é " par l'amertume," }
+        \concat { \typewriter "   " "Peuple au cœ" \underline u "r fermé, souviens-toi&nbsp;!" }
+        \concat { \typewriter "   " "Le M" \underline a "ître t'a libéré" }
+        \concat { \typewriter "   " "Tant d'am" \underline o "ur serait-il sans réponse," }
+        \concat { \typewriter "   " "tant d'amour d'un Di" \underline e "u crucifié&nbsp;?" }
+      }
+    }
+    \vspace #2
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "1. " "Moi, depuis l'aur" \underline o "re des mondes," }
+        \concat { \typewriter "   " "j'ai prépar" \underline é " ton aujourd'hui&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu rej" \underline e "ttes la vraie Vie" }
+        \concat { \typewriter "   " "qui peut donner la j" \underline o "ie sans ombre," }
+        \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" }
+        \vspace #1
+        \concat { \typewriter "3. " "Moi, j'ai pris p" \underline a "rt à ton exode," }
+        \concat { \typewriter "   " "par la nu" \underline é "e je t'ai conduit&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu m'enf" \underline e "rmes dans ta nuit," }
+        \concat { \typewriter "   " "tu ne sais pl" \underline u "s où va ma gloire," }
+        \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" }
+      }
+      \hspace #1
+      \left-column {
+        \concat { \typewriter "2. " "Moi, j'ai brisé tes l" \underline i "ens d'esclave," }
+        \concat { \typewriter "   " "j'ai fait sombr" \underline e "r tes ennemis&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu me l" \underline i "vres à l'ennemi," }
+        \concat { \typewriter "   " "tu me prép" \underline a "res une autre Pâque," }
+        \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" }
+        \vspace #1
+        \concat { \typewriter "4. " "Moi, j'ai envoy" \underline é " mes prophètes," }
+        \concat { \typewriter "   " "ils ont cri" \underline é " dans ton exil&nbsp;;" }
+        \concat { \typewriter "   " "toi, t" \underline u " ne veux pas revenir" }
+        \concat { \typewriter "   " "tu deviens s" \underline o "urd quand je t'appelle," }
+        \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" }
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \column {
+        \concat { \typewriter "5. " "Moi, j'ai voul" \underline u ", vivante Sève," }
+        \concat { \typewriter "   " "jeter l'esp" \underline o "ir de fruits nouveaux&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu te c" \underline o "upes de mes eaux" }
+        \concat { \typewriter "   " "mais pour all" \underline e "r vers quelle sève&nbsp;?" }
+        \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" }
+      }
+    }
+  }
+  \vspace #5
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
+  \column {
+    \fill-line {
+      \column {
+        \concat { \typewriter "II. " "Vigne aux rais" \underline i "ns d'amertume," }
+        \concat { \typewriter "    " "Vigne aux sarm" \underline e "nts dessechés, souviens-toi&nbsp;!" }
+        \concat { \typewriter "    " "La Gr" \underline a "ppe fut vendangée&nbsp;;" }
+        \concat { \typewriter "    " "Ce Fruit m" \underline û "r serait-il sans partage," }
+        \concat { \typewriter "    " "ce Fruit mûr que Di" \underline e "u a pressé&nbsp;?" }
+      }
+    }
+    \vspace #2
+    \fill-line {
+      \left-column{
+        \concat { \typewriter "6. " "Moi, j'ai porté le p" \underline o "ids des chaînes," }
+        \concat { \typewriter "   " "j'ai courbé le d" \underline o "s sous les fouets&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu me bl" \underline e "sses en l'opprimé," }
+        \concat { \typewriter "   " "l'innocent tomb" \underline é " sous la haine," }
+        \concat { \typewriter "   " "    ô mon frère, réponds-moi&nbsp;!" }
+        \vspace #1
+        \concat { \typewriter "8. " "Moi, j'ai march" \underline é " vers le calvaire," }
+        \concat { \typewriter "   " "où mes deux br" \underline a "s furent cloués&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu ref" \underline u "ses la montée," }
+        \concat { \typewriter "   " "quand meurt en cr" \underline o "ix l'un de mes frères," }
+        \concat { \typewriter "   " "    ô mon frère, réponds-moi&nbsp;!" }
+      }
+      \hspace #1
+      \left-column {
+        \concat { \typewriter "7. " "Moi, j'ai porté sc" \underline e "ptre et couronne" }
+        \concat { \typewriter "   " "et mante" \underline a "u royal empourpré&nbsp;;" }
+        \concat { \typewriter "   " "toi, tu roug" \underline i "s de confesser" }
+        \concat { \typewriter "   " "le Fils de Di" \underline e "u parmi les hommes&nbsp;?," }
+        \concat { \typewriter "   " "    ô mon frère, réponds-moi&nbsp;!" }
+        \vspace #1
+        \concat { \typewriter "9. " "Moi, je rev" \underline i "s depuis l'Aurore" }
+        \concat { \typewriter "   " "où le Viv" \underline a "nt m'a réveillé&nbsp;;" }
+        \concat { \typewriter "   " "toi, le tém" \underline o "in de ma clarté," }
+        \concat { \typewriter "   " "es-tu viv" \underline a "nt parmi les hommes&nbsp;?" }
+        \concat { \typewriter "   " "    ô mon frère, réponds-moi&nbsp;!" }
+      }
+    }
+  }
+  \vspace #5
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
   \fill-line {
-    \column{
-      \concat { "Moi je t’ai fait sort" \underline i "r d’Égypte, j’ai englout" \underline i " le Pharaon&nbsp;:" }
-      \concat { "Toi, tu m’as livr" \underline é " aux grands prêtres&nbsp;!" }
-      " "
-      \concat { "Pour t" \underline oi " je m’avanç" \underline ai " dans la col" \underline o "nne de nuée&nbsp;:" }
-      \concat { "Toi tu m’as condu" \underline i "t à Pilate&nbsp;!" }
-      " "
-      \concat { "Moi, dans ta main j’ai m" \underline i "s un sceptre, je t’ai prom" \underline u " peuple royal&nbsp;:" }
-      \concat { "Toi, tu as placé sur ma tête la cour" \underline o "nne d’épines&nbsp;!" }
-      " "
-      \concat { "Moi, je t’ai par ma toute puiss" \underline a "nce exalté&nbsp;:" }
-      \concat { "Toi, tu m’as pendu au gib" \underline e "t de la Croix&nbsp;!" }
+    \column {
+      \concat { \typewriter "III. " "Frère sevr" \underline é " d'amertume," }
+      \concat { \typewriter "     " "frère au cœ" \underline u "r desséché, souviens-toi&nbsp;!" }
+      \concat { \typewriter "     " "Ton fr" \underline è "re t'a relevé," }
+      \concat { \typewriter "     " "Jésus-Christ, le V" \underline e "rbe et la Réponse," }
+      \concat { \typewriter "     " "Jésus-Christ, l'Am" \underline o "ur révélé." }
     }
   }
 }
@@ -140,7 +241,7 @@ verseLyrics = \markuplist {
 % Load Piano settings & layout
 \include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
-staffCustomSize = 16.5
+%staffCustomSize = 16.5
 
 partition = {
   <<
