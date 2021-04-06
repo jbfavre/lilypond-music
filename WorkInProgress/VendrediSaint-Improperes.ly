@@ -27,40 +27,100 @@ real_poet = ""
 subtitle = "Vendredi saint - Chant des reproches"
 composer = "Jean Baptiste Favre"
 
-
-staffCustomSize = 16
-
 global = {
   \key a \minor
   \time 2/4
   }
-
-SoloBass = \relative c {
-  \cadenzaOn
-  a'\breve gs2 \bar "|"
-  a\breve b4 a gs!2 \bar "|" \break
-  \cadenzaOff
+stanceRhythms = {
+  \mark "Stance"
+  s4 s s2
+  s4 s s s s2
+  s4 s %s s s s s2 \bar "||" \break
+}
+stanceMelody = {
+  a4 a gs2 gs4 gs a b gs2 a4 b c c b2 a gs! \break
   }
+stanceLyrics = \lyricmode {
+  Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
+  En quoi t'ai- -- je con -- tris -- té&nbsp;?
+}
+stanceSopranoMusic = \relative c'' { \stanceMelody }
+stanceAltoMusic = \relative c' { e4 e e2 e4 e e f  e2 e4 g g g d2 e4 f e2 }
+stanceTenorMusic = \relative c' { c4 c b2 b4 b c d b2 c4 d e e d2 c4 b b2 }
+stanceBassMusic = \relative c' { a4 a e2 e4 e a d, e2 a4 g c, c g'2 a4 d, e2 }
+StancePartition = {
+  <<
+    % Stance pour soliste et orgue
+    \new ChoirStaff = "stance2Voices" \with { instrumentName = "Soliste" } <<
+      \new Staff = "stanceHighStaff" <<
+        \clef "bass"
+        \new Voice = "stanceRhythms" { \stanceRhythms }
+        \new Voice = "stanceMelody" { \global \relative c' { \stanceMelody } }
+        \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
+      >>
+    >>
+    \new ChoirStaff = "stance2Voices" \with { instrumentName = "Clavier" } <<
+      \new Staff = "stanceHighStaff" <<
+        \clef "treble"
+        \new Voice = "stanceRhythms" { \stanceRhythms }
+        \new Voice = "stanceSoprano" { \voiceOne \global \stanceSopranoMusic }
+        \new Voice = "stanceAlto" { \voiceTwo \global \stanceAltoMusic }
+      >>
+      \new Staff  = "stanceLowStaff" <<
+        \clef "bass"
+        \new Voice = "stanceRhythms" \antiphonRhythms
+        \new Voice = "stanceTenor" { \voiceOne \global \stanceTenorMusic }
+        \new Voice = "stanceBass" { \voiceTwo \global \stanceBassMusic }
+      >>
+    >>
+  >>
+}
+
+
+
+
+reponRhythms = {s2*5 \break}
+reponSopranoMusic = \relative c'' { a4. a8 a8 a4. a2 a gs }
+reponAltoMusic = \relative c' { e4. e8 f8 f4. e2 f e }
+reponTenorMusic = \relative c' { c4. c8 d8 d4. c4 b a2 b }
+reponBassMusic = \relative c { a4. a8 b8 b4. c2 d e }
+reponLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
+ReponPartition = {
+  <<
+    % Répons pour chœur à 4 voix mixtes
+    \new ChoirStaff = "repon2Voices" \with { instrumentName = "Clavier" } <<
+      \new Staff = "reponHighStaff" <<
+        \clef "treble"
+        \new Voice = "reponRhythms" \reponRhythms
+        \new Voice = "reponSoprano" { \voiceOne \global \reponSopranoMusic }
+        \new Voice = "reponAlto" { \voiceTwo \global \reponAltoMusic }
+      >>
+      \new Lyrics \lyricsto "reponSoprano" { \reponLyrics }
+      \new Staff  = "reponLowStaff" <<
+        \clef "bass"
+        \new Voice = "reponRhythms" \reponRhythms
+        \new Voice = "reponTenor" { \voiceOne \global \reponTenorMusic }
+        \new Voice = "reponBass" { \voiceTwo \global \reponBassMusic }
+      >>
+    >>
+  >>
+}
+
+
+
+
+
 sopranoAntiphonMusic = \relative c'' {
-  \silence \SoloBass
-  r4 a8 b c4. b8 a4 a gs!2 \bar "||" \break
-  a4 a4 gs2 a4 b gs4 gs8 gs \break
-  a4 b c c8 b a2 gs2 a2 \bar "||" \break
+  a4 a4 gs2 a4 b gs4 gs8 gs a4 b c c8 b a2 gs2 a2 \bar "||"
 }
 altoAntiphonMusic = \relative c' {
-  \silence \SoloBass
-  r4 e8 g g4. f8 e4 e e2
   e4 f e2 e4 f e e8 e e4 f4 a4 f e2 e2 e2
   }
-tenorAntiphonMusic =  \relative c' {
-  \silence \SoloBass
-  r4 c8 d e4. d8 c4 d8 c b2
+tenorAntiphonMusic = \relative c' {
   c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d c2 b c
   }
-bassAntiphonMusic =  \relative c {
-  \SoloBass
-  r4 a'8 g c,4. d8 e4 e e2 \bar "||" \break
-  a,4 d e2 c4 d e4 e8 d c4 b4 a d8 d e2 e2 a,2
+bassAntiphonMusic = \relative c {
+  a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e2 e2 a,2
 }
 
 sopranoVerseMusic = \relative c' {
@@ -90,7 +150,6 @@ bassVerseMusic = \relative c {
   }
 
 sopranoAntiphonLyrics = \lyricmode {
-  Ô mon peu -- ple, Ré -- ponds moi.
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 altoAntiphonLyrics = \lyricmode {
@@ -98,11 +157,6 @@ altoAntiphonLyrics = \lyricmode {
 tenorAntiphonLyrics = \lyricmode {
   }
 bassAntiphonLyrics = \lyricmode {
-  \once \override LyricText.self-alignment-X = #LEFT
-  "Ô mon peuple, Que t'ai-je" fais&nbsp;?
-  \once \override LyricText.self-alignment-X = #LEFT
-  "En quoi t'ai-je" con -- tris -- té&nbsp;?
-  Ô mon peu -- ple, Ré -- ponds moi.
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 
@@ -129,6 +183,17 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \column {
+        \concat { \bold "Ô mon peuple, que t'ai-je fait ?" }
+        \concat { \bold "En quoi t'ai-je contristé ? Réponds-moi." }
+      }
+    }
+  }
+  \vspace #2
+  \override #'(font-family . sans)
+  \override #'(font-size . 2)
+  \column {
+    \fill-line {
+      \column {
         \concat { \typewriter "I. " "Peuple égar" \underline é " par l'amertume," }
         \concat { \typewriter "   " "Peuple au cœ" \underline u "r fermé, souviens-toi&nbsp;!" }
         \concat { \typewriter "   " "Le M" \underline a "ître t'a libéré" }
@@ -136,7 +201,7 @@ verseLyrics = \markuplist {
         \concat { \typewriter "   " "tant d'amour d'un Di" \underline e "u crucifié&nbsp;?" }
       }
     }
-    \vspace #2
+    \vspace #1
     \fill-line {
       \left-column{
         \concat { \typewriter "1. " "Moi, depuis l'aur" \underline o "re des mondes," }
@@ -177,7 +242,7 @@ verseLyrics = \markuplist {
       }
     }
   }
-  \vspace #5
+  \vspace #2
   \override #'(font-family . sans)
   \override #'(font-size . 2)
   \column {
@@ -190,7 +255,7 @@ verseLyrics = \markuplist {
         \concat { \typewriter "    " "ce Fruit mûr que Di" \underline e "u a pressé&nbsp;?" }
       }
     }
-    \vspace #2
+    \vspace #1
     \fill-line {
       \left-column{
         \concat { \typewriter "6. " "Moi, j'ai porté le p" \underline o "ids des chaînes," }
@@ -221,7 +286,7 @@ verseLyrics = \markuplist {
       }
     }
   }
-  \vspace #5
+  \vspace #2
   \override #'(font-family . sans)
   \override #'(font-size . 2)
   \fill-line {
@@ -239,22 +304,98 @@ verseLyrics = \markuplist {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Load Piano settings & layout
-\include "../libs/defaultPianoSettings.ily"
+%\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 %staffCustomSize = 16.5
-
-partition = {
+RefrainPartition = {
   <<
-    % Antienne à 4 voix mixtes
-    \include "../libs/layouts/commonAntiphonFourVoices.ily"
-    \include "../libs/layouts/commonPiano.ily"
-    % Psalmodie à 4 voix mixtes
-    \include "../libs/layouts/commonVerseFourVoices.ily"
-    %\new FiguredBass { \figuredBass \verseFiguredBass }
-    %\new FiguredBass { \harmony \verseHarmony }
+    % Refrain pour chœur à 4 voix mixtes
+    \new ChoirStaff = "Antophon2Voices" \with { instrumentName = "Chœur" } <<
+      \new Staff = "AntiphonHighStaff" <<
+        \clef "treble"
+        \new Voice = "antiphonRhythms" { \antiphonRhythms }
+        \new Voice = "antiphonSoprano" { \voiceOne \global \sopranoAntiphonMusic }
+        \new Voice = "antiphonAlto" { \voiceTwo \global \altoAntiphonMusic }
+        \new Lyrics \lyricsto "antiphonSoprano" { \sopranoAntiphonLyrics }
+      >>
+      \new Staff  = "AntiphonLowStaff" <<
+        \clef "bass"
+        \new Voice = "antiphonRhythms" \antiphonRhythms
+        \new Voice = "antiphonTenor" { \voiceOne \global \tenorAntiphonMusic }
+        \new Voice = "antiphonBass" { \voiceTwo \global \bassAntiphonMusic }
+        \new Lyrics \lyricsto "antiphonBass" { \bassAntiphonLyrics }
+      >>
+    >>
   >>
 }
+GlobalPartition = {
+  \StancePartition
+  \ReponPartition
+  \RefrainPartition
+}
+    % Psalmodie à 4 voix mixtes
+    %{\new ChoirStaff = "versePsalmody" <<
+      \new Staff = "verseSopranoAlto" \with { printPartCombineTexts = ##f } <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef treble
+        %\partcombine
+        \new Voice = "verseSoprano" << \voiceOne { \sopranoVerseMusic } >>
+        \new Voice = "verseAlto" << \voiceTwo { \altoVerseMusic } >>
+        \new Lyrics \lyricsto "verseSoprano" { \reponsSopAltLyrics }
+      >>
+      \new Staff = "verseTenorBass" \with { printPartCombineTexts = ##f } <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        \new Voice = "verseTenor" << \voiceOne { \tenorVerseMusic } >>
+        \new Voice = "verseBass" << \voiceTwo { \bassVerseMusic } >>
+        \new Lyrics { \reponsTenBassLyrics }
+      >>
+    >>%}
 
 % Load PDF output
-\include "../libs/layouts/outputPDF.ily"
+%\include "../libs/layouts/outputPDF.ily"
+%%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
+#(set-global-staff-size staffCustomSize)
+\score {
+  \GlobalPartition
+  \layout {
+      ragged-last = ##f
+      short-indent = 0.8\cm
+      \context {
+          \FiguredBass
+          \override BassFigure #'font-size = #-1
+      }
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \Score
+          \omit BarNumber
+      }
+      \context {
+          \Voice
+          \consists "Horizontal_bracket_engraver"
+      }
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
+  }
+  \header {
+    title = \title
+    subtitle = \subtitle
+    composer = \composer
+    composerPrefix = \composerPrefix
+    poet = \poet
+    poetPrefix = \poetPrefix
+    dedication = \dedicace
+  }
+}
+
+\pageBreak
 \verseLyrics
