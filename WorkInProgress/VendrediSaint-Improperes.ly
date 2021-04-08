@@ -172,32 +172,33 @@ StancePartition = {
 %%%%%
 %%%%% Répons pour chœur à 4 voix mixtes
 %%%%%
-reponRhythms = { s2*4 \bar "||" \break }
-reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
-reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
-reponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
-reponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
-reponLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
-ReponPartition = {
+stanceReponRhythms = { s2*4 \bar "||" \break }
+stanceReponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
+stanceReponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
+stanceReponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
+stanceReponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
+stanceReponLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
+StanceReponPartition = {
   <<
     % Répons pour chœur à 4 voix mixtes
-    \new ChoirStaff = "repon2Voices" \with { instrumentName = "Chœur" } <<
-      \new Staff = "reponHighStaff" <<
+    \new ChoirStaff = "stanceRepon2Voices" \with { instrumentName = "Chœur" } <<
+      \new Staff = "stanceReponHighStaff" <<
         \clef "treble"
-        \new Voice = "reponRhythms" \reponRhythms
-        \new Voice = "reponSoprano" { \voiceOne \reponSopranoMusic }
-        \new Voice = "reponAlto" { \voiceTwo \reponAltoMusic }
+        \new Voice = "stanceReponRhythms" \stanceReponRhythms
+        \new Voice = "stanceReponSoprano" { \voiceOne \stanceReponSopranoMusic }
+        \new Voice = "stanceReponAlto" { \voiceTwo \stanceReponAltoMusic }
       >>
-      \new Lyrics \lyricsto "reponSoprano" { \reponLyrics }
-      \new Staff  = "reponLowStaff" <<
+      \new Lyrics \lyricsto "stanceReponSoprano" { \stanceReponLyrics }
+      \new Staff  = "stanceReponLowStaff" <<
         \clef "bass"
-        \new Voice = "reponRhythms" \reponRhythms
-        \new Voice = "reponTenor" { \voiceOne \reponTenorMusic }
-        \new Voice = "reponBass" { \voiceTwo \reponBassMusic }
+        \new Voice = "stanceReponRhythms" \stanceReponRhythms
+        \new Voice = "stanceReponTenor" { \voiceOne \stanceReponTenorMusic }
+        \new Voice = "stanceReponBass" { \voiceTwo \stanceReponBassMusic }
       >>
     >>
   >>
 }
+
 %%%%%
 %%%%%
 %%%%%
@@ -212,20 +213,20 @@ ReponPartition = {
 %%%%% Antienne pour chœur à 4 voix mixtes
 %%%%%
 antienneRhythms = \relative c { \markCustom "Repons" s2*8 \bar "||" \break }
-sopranoAntienneMusic = \relative c'' {
+antienneSopranoMusic = \relative c'' {
   a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2
 }
-altoAntienneMusic = \relative c' {
+antienneAltoMusic = \relative c' {
   e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2
   }
-tenorAntienneMusic = \relative c' {
+antienneTenorMusic = \relative c' {
   c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d c4 b c2
   }
-bassAntienneMusic = \relative c {
+antienneBassMusic = \relative c {
   a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2
 }
 
-sopranoAntienneLyrics = \lyricmode {
+antienneSopranoLyrics = \lyricmode {
   Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous.
   }
 AntiennePartition = {
@@ -235,15 +236,15 @@ AntiennePartition = {
       \new Staff = "antienneHighStaff" <<
         \clef "treble"
         \new Voice = "antienneRhythms" { \antienneRhythms }
-        \new Voice = "antienneSoprano" { \voiceOne \sopranoAntienneMusic }
-        \new Voice = "antienneAlto" { \voiceTwo \altoAntienneMusic }
+        \new Voice = "antienneSoprano" { \voiceOne \antienneSopranoMusic }
+        \new Voice = "antienneAlto" { \voiceTwo \antienneAltoMusic }
       >>
-        \new Lyrics \lyricsto "antienneSoprano" { \sopranoAntienneLyrics }
+        \new Lyrics \lyricsto "antienneSoprano" { \antienneSopranoLyrics }
       \new Staff  = "antienneLowStaff" <<
         \clef "bass"
         \new Voice = "antienneRhythms" \antienneRhythms
-        \new Voice = "antienneTenor" { \voiceOne \tenorAntienneMusic }
-        \new Voice = "antienneBass" { \voiceTwo \bassAntienneMusic }
+        \new Voice = "antienneTenor" { \voiceOne \antienneTenorMusic }
+        \new Voice = "antienneBass" { \voiceTwo \antienneBassMusic }
       >>
     >>
   >>
@@ -261,34 +262,53 @@ AntiennePartition = {
 %%%%%
 %%%%% Chorus pour chœur à 4 voix mixtes
 %%%%%
-chorusRhythms = \relative c' { \global \markCustom "Chorus" s2*8 \break s2*8 \break s2*8 \break }
-sopranoChorusMusic = \relative c'' { a2 s2*7 a2 s2*7 a2 s2*7 }
-altoChorusMusic = \relative c' { e2 s2*7 e2 s2*7 e2 s2*7 }
-tenorChorusMusic = \relative c' { c2 s2*7 c2 s2*7 c2 s2*7 }
-bassChorusMusic = \relative c' { a2 s2*7 a2 s2*7 a2 s2*7 }
-chorusLyrics = \lyricmode {
+chorusOneRhythms = \relative c' { \global \markCustom "Chorus" s2*7 }
+chorusOneSopranoMusic = {
+  \relative c'' {
+    %c4 b8 c d4 c b a g8 g8 \breathe a8 b c4 c b2
+    a4 g!8 a b4 c b a gs a b4. a8 g!4 fs e2
+  }
+}
+chorusOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 d b2 }
+chorusOneTenorMusic = \relative c' { c4 c8 c d4 e d c b c d4. c8 b4 b8 (a) gs2}
+chorusOneBassMusic = \relative c' { a4 a8 a g4 c, g' a e a,4 g4. a8 b4 b e2 }
+chorusOneLyrics = \lyricmode {
   Peu -- ple~é -- ga -- ré par l'a -- mer -- tu -- me,
-  Peu -- ple~au cœur fer -- mé, sou -- viens- -- toi&nbsp;!
-  Le Maî -- tre t'a li -- bé -- ré
+  Peu -- ple~au cœur fer -- mé,
+}
+
+chorusTwoRhythms = \relative c' { s2*7 }
+chorusTwoSopranoMusic = \relative c'' { a8 s4. s2*6 }
+chorusTwoAltoMusic =  \relative c' { e8 s4. s2*6 }
+chorusTwoTenorMusic = \relative c' { c8 s4. s2*6 }
+chorusTwoBassMusic = \relative c' { a8 s4. s2*6 }
+chorusTwoLyrics = \lyricmode {
   Tant d'a -- mour se -- rait- -- il sans ré -- pon -- se,
   tant d'a -- mour d'un Dieu cru -- ci -- fié&nbsp;?
 }
+chorusReponRhythms = { s2*5 \bar "||" \break }
+chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+chorusReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
+
 ChorusPartition = {
   <<
     % Refrain pour chœur à 4 voix mixtes
     \new ChoirStaff = "chorus2Voices" \with { instrumentName = "Chœur" } <<
       \new Staff = "chorusHighStaff" <<
         \clef "treble"
-        \new Voice = "chorusRhythms" { \chorusRhythms }
-        \new Voice = "chorusSoprano" { \voiceOne \sopranoChorusMusic }
-        \new Voice = "chorusAlto" { \voiceTwo \altoChorusMusic }
+        \new Voice = "chorusRhythms" { \chorusOneRhythms \chorusReponRhythms \chorusTwoRhythms \break }
+        \new Voice = "chorusSoprano" { \voiceOne \chorusOneSopranoMusic \chorusReponSopranoMusic \chorusTwoSopranoMusic }
+        \new Voice = "chorusAlto" { \voiceTwo \chorusOneAltoMusic \chorusReponAltoMusic \chorusTwoAltoMusic }
       >>
-      %\new Lyrics \lyricsto "chorusSoprano" { \chorusLyrics }
+      \new Lyrics \lyricsto "chorusSoprano" { \chorusOneLyrics \chorusReponLyrics \chorusTwoLyrics }
       \new Staff  = "chorusLowStaff" <<
         \clef "bass"
-        \new Voice = "chorusRhythms" \chorusRhythms
-        \new Voice = "chorusTenor" { \voiceOne \tenorChorusMusic }
-        \new Voice = "chorusBass" { \voiceTwo \bassChorusMusic }
+        \new Voice = "chorusRhythms" { \chorusOneRhythms \chorusReponRhythms \chorusTwoRhythms }
+        \new Voice = "chorusTenor" { \voiceOne \chorusOneTenorMusic \chorusReponTenorMusic \chorusTwoTenorMusic }
+        \new Voice = "chorusBass" { \voiceTwo \chorusOneBassMusic \chorusReponBassMusic \chorusTwoBassMusic }
       >>
     >>
   >>
@@ -298,7 +318,7 @@ ChorusPartition = {
 %%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
 \bookpart {
   \score {
-    { \StancePartition \ReponPartition \AntiennePartition }
+    { \StancePartition \StanceReponPartition \AntiennePartition }
     \layout {
         ragged-last = ##f
         \context {
@@ -389,11 +409,11 @@ bassVerseMusic = \relative c {
     \column {
       \fill-line {
         \column {
-          \concat { \typewriter "I. " "Peuple égar" \underline é " par l'amertume," }
-          \concat { \typewriter "   " "Peuple au cœ" \underline u "r fermé, souviens-toi&nbsp;!" }
-          \concat { \typewriter "   " "Le M" \underline a "ître t'a libéré" }
-          \concat { \typewriter "   " "Tant d'am" \underline o "ur serait-il sans réponse," }
-          \concat { \typewriter "   " "tant d'amour d'un Di" \underline e "u crucifié&nbsp;?" }
+          \concat { \typewriter "Chorus I. " "Peuple égar" \underline é " par l'amertume," }
+          \concat { \typewriter "          " "Peuple au cœ" \underline u "r fermé, souviens-toi&nbsp;!" }
+          \concat { \typewriter "          " "Le M" \underline a "ître t'a libéré" }
+          \concat { \typewriter "          " "Tant d'am" \underline o "ur serait-il sans réponse," }
+          \concat { \typewriter "          " "tant d'amour d'un Di" \underline e "u crucifié&nbsp;?" }
         }
       }
       \vspace #1
@@ -473,11 +493,11 @@ bassVerseMusic = \relative c {
     \column {
       \fill-line {
         \column {
-          \concat { \typewriter "II. " "Vigne aux rais" \underline i "ns d'amertume," }
-          \concat { \typewriter "    " "Vigne aux sarm" \underline e "nts dessechés, souviens-toi&nbsp;!" }
-          \concat { \typewriter "    " "La Gr" \underline a "ppe fut vendangée&nbsp;;" }
-          \concat { \typewriter "    " "Ce Fruit m" \underline û "r serait-il sans partage," }
-          \concat { \typewriter "    " "ce Fruit mûr que Di" \underline e "u a pressé&nbsp;?" }
+          \concat { \typewriter "Chorus II. " "Vigne aux rais" \underline i "ns d'amertume," }
+          \concat { \typewriter "           " "Vigne aux sarm" \underline e "nts dessechés, souviens-toi&nbsp;!" }
+          \concat { \typewriter "           " "La Gr" \underline a "ppe fut vendangée&nbsp;;" }
+          \concat { \typewriter "           " "Ce Fruit m" \underline û "r serait-il sans partage," }
+          \concat { \typewriter "           " "ce Fruit mûr que Di" \underline e "u a pressé&nbsp;?" }
         }
       }
       \vspace #1
@@ -524,11 +544,11 @@ bassVerseMusic = \relative c {
     \override #'(font-size . 2)
     \fill-line {
       \column {
-        \concat { \typewriter "III. " "Frère sevr" \underline é " d'amertume," }
-        \concat { \typewriter "     " "frère au cœ" \underline u "r desséché, souviens-toi&nbsp;!" }
-        \concat { \typewriter "     " "Ton fr" \underline è "re t'a relevé," }
-        \concat { \typewriter "     " "Jésus-Christ, le V" \underline e "rbe et la Réponse," }
-        \concat { \typewriter "     " "Jésus-Christ, l'Am" \underline o "ur révélé." }
+        \concat { \typewriter "Chorus III. " "Frère sevr" \underline é " d'amertume," }
+        \concat { \typewriter "            " "frère au cœ" \underline u "r desséché, souviens-toi&nbsp;!" }
+        \concat { \typewriter "            " "Ton fr" \underline è "re t'a relevé," }
+        \concat { \typewriter "            " "Jésus-Christ, le V" \underline e "rbe et la Réponse," }
+        \concat { \typewriter "            " "Jésus-Christ, l'Am" \underline o "ur révélé." }
       }
     }
   }
