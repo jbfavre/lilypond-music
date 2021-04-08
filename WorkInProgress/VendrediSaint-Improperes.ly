@@ -119,19 +119,19 @@ global = {
 %%%%%
 stanceRhythms = {
   \global
-  \markCustom "Stance" s2*10 \break
+  \markCustom "Stance" \partial 4 s4 \time 3/4 s2. \time 2/4 s2 \time 3/4 s2. \time 2/4 s2 \break
 }
 stanceMelody = {
-  a4 a gs2 gs4 gs a b gs2 a4 b c c b2 a gs!
+  \partial 4 a8 a gs4 gs8 gs a b gs4 a8 b c8 b8 a4 a gs!2 \breathe
   }
 stanceLyrics = \lyricmode {
   Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
   En quoi t'ai- -- je con -- tris -- té&nbsp;?
 }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
-stanceAltoMusic = \relative c' { e4 e e2 e4 e e f  e2 e4 g g g d2 e4 f e2 }
-stanceTenorMusic = \relative c' { c4 c b2 b4 b c d b2 c4 d e e d2 c4 b b2 }
-stanceBassMusic = \relative c' { a4 a e2 e4 e a d, e2 a4 g c, c g'2 a4 d, e2 }
+stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 d8 e4 f e2 }
+stanceTenorMusic = \relative c' { c8 c b4 b8 b c d b4 c8 d e8 d8 c4 c4 b2 }
+stanceBassMusic = \relative c' { a8 a e4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
 StancePartition = {
   <<
     % Stance pour soliste et orgue
@@ -174,8 +174,8 @@ StancePartition = {
 %%%%%
 reponRhythms = { s2*4 \bar "||" \break }
 reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
-reponAltoMusic = \relative c' { e4. e8 f4. f8 e4 f e2 }
-reponTenorMusic = \relative c' { c4. c8 d4. d8 c8 b a4 b2 }
+reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
+reponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
 reponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
 reponLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
 ReponPartition = {
@@ -213,13 +213,13 @@ ReponPartition = {
 %%%%%
 antienneRhythms = \relative c { \markCustom "Repons" s2*8 \bar "||" \break }
 sopranoAntienneMusic = \relative c'' {
-  a4 a4 gs2 a4 b gs4 gs8 gs a4 b c c8 b a4 gs a2
+  a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2
 }
 altoAntienneMusic = \relative c' {
-  e4 f e2 e4 f e e8 e e4 f4 a4 f e4 e e2
+  e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2
   }
 tenorAntienneMusic = \relative c' {
-  c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d c4 b c2
+  c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d c4 b c2
   }
 bassAntienneMusic = \relative c {
   a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2
@@ -293,29 +293,6 @@ ChorusPartition = {
     >>
   >>
 }
-verseLyrics = \markuplist {
-  \override #'(font-family . sans)
-  \override #'(font-size . 2)
-  \column {
-    \fill-line {
-      \column {
-        \concat { \bold { \typewriter "Stance. " "Ô mon peuple, que t'ai-je fait ?" } }
-        \concat { \bold { \typewriter "        " "En quoi t'ai-je contristé ?" } }
-        \concat { \bold { \typewriter "        " "Ô mon peuple, réponds-moi." } }
-      }
-    }
-  }
-  \vspace #1
-  \override #'(font-family . sans)
-  \override #'(font-size . 2)
-  \column {
-    \fill-line {
-      \column {
-        \concat {  \with-color #red { \typewriter "   ℟." } \italic "Ô Dieu saint, ô Dieu fort, ô Dieu immortel prends pitié de nous." }
-      }
-    }
-  }
-}
 
 
 %%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
@@ -339,7 +316,29 @@ verseLyrics = \markuplist {
       dedication = \dedicace
     }
   }
-  \verseLyrics
+  \markuplist {
+    \override #'(font-family . sans)
+    \override #'(font-size . 2)
+    \column {
+      \fill-line {
+        \column {
+          \concat { \bold { \typewriter "Stance. " "Ô mon peuple, que t'ai-je fait ?" } }
+          \concat { \bold { \typewriter "        " "En quoi t'ai-je contristé ?" } }
+          \concat { \bold { \typewriter "        " "Ô mon peuple, réponds-moi." } }
+        }
+      }
+    }
+    \vspace #1
+    \override #'(font-family . sans)
+    \override #'(font-size . 2)
+    \column {
+      \fill-line {
+        \column {
+          \concat {  \with-color #red { \typewriter "   ℟." } \italic "Ô Dieu saint, ô Dieu fort, ô Dieu immortel prends pitié de nous." }
+        }
+      }
+    }
+  }
 }
 sopranoVerseMusic = \relative c' {
   \cadenzaOn
