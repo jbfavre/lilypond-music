@@ -302,9 +302,27 @@ ChorusOnePartition = {
     >>
   >>
 }
+
+chorusOneRhythms = { \global \markCustom "Chorus" s2*7 }
+chorusOneSopranoMusic = \relative c'' { a4 c8 b a2 gs4 a b c d4 e8 d c4 b8 a gs2 }
+chorusOneAltoMusic =  \relative c' { s2*7 }
+chorusOneTenorMusic = \relative c' { s2*7 }
+chorusOneBassMusic = \relative c' { s2*7 }
+
+chorusReponRhythms = { s2*2 s2*3 \bar "||" }
+chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+
+chorusTwoRhythms = { s2*7 }
+chorusTwoSopranoMusic = \relative c'' { c4 d b c8 d e4 d8 c b4 a4 c8 d c b a4 a8 gs a2 }
+chorusTwoAltoMusic =  \relative c' { s2*7 }
+chorusTwoTenorMusic = \relative c' { s2*7 }
+chorusTwoBassMusic = \relative c' { s2*6 a,2 }
 chorusOneLyrics = \lyricmode {
-  Vi -- gne aux rai -- sins d'a -- mer -- tu -- me,
-  Vi -- gne aux sar -- ments des -- sé -- chés
+  Vi -- gne~aux rai -- sins d'a -- mer -- tu -- me,
+  Vi -- gne~aux sar -- ments des -- sé -- chés
 }
 chorusReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
 chorusTwoLyrics = \lyricmode {
@@ -331,14 +349,32 @@ ChorusTwoPartition = {
     >>
   >>
 }
+
+chorusOneRhythms = { \global \markCustom "Chorus" s2*7 }
+chorusOneSopranoMusic = \relative c'' { a4 c8 b a2 gs4 a b c e4. d8 c4 b8 a gs2 }
+chorusOneAltoMusic =  \relative c' { s2*7 }
+chorusOneTenorMusic = \relative c' { s2*7 }
+chorusOneBassMusic = \relative c' { s2*7 }
+
+chorusReponRhythms = { s2*2 s2*3 \bar "||" }
+chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+
+chorusTwoRhythms = { s2*8 }
+chorusTwoSopranoMusic = \relative c' { e4 g a4. g8 a c b a gs4 a4 d8 e c a b2 d4 d cs2 }
+chorusTwoAltoMusic =  \relative c' { s2*8 }
+chorusTwoTenorMusic = \relative c' { s2*8 }
+chorusTwoBassMusic = \relative c' { s2*4 gs8 e a f d2 d4 gs, a2 }
 chorusOneLyrics = \lyricmode {
   Frè -- re se -- vré d'a -- mer -- tu --me,
-  frè -- re au cœur des -- sé -- ché
+  frè -- re~au cœur des -- sé -- ché
 }
 chorusReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
 chorusTwoLyrics = \lyricmode {
   Jé -- sus- -- Christ, le Ver -- be~et la Ré -- pon -- se,
-  Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.ˇ
+  Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
 }
 ChorusThreePartition = {
   <<
