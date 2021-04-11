@@ -254,24 +254,22 @@ AntiennePartition = {
 %%%%%
 %%%%% Chorus pour chœur à 4 voix mixtes
 %%%%%
-chorusOneRhythms = { \global \markCustom "Chorus" s2*7 }
-chorusOneSopranoMusic = \relative c'' { a4 g!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
+chorusOneRhythms = { \global \markCustom "Choral I" s2*7 }
+chorusOneSopranoMusic = \relative c'' { a4 gs!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
 chorusOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 ds e2 }
 chorusOneTenorMusic = \relative c' { c4 d8 c d4 e d c b c d4. c8 b4 b8 (a) gs2 }
-chorusOneBassMusic = \relative c' { a4 b8 a g4 c, g' a e a,4 g4. a8 b4 b e2 }
+chorusOneBassMusic = \relative c' { a4 e8 a g4 c, g' a e a,4 g4. a8 b4 b e2 }
 
 chorusReponRhythms = { s2*2 s2*3 \bar "||" }
 chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
 chorusReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
 chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
-
 chorusTwoRhythms = { s2*7 }
 chorusTwoSopranoMusic = \relative c'' { a8 g!8 a8 b c4 b a a gs a d8 d c b a4 a8 gs a2 }
 chorusTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e b'8 b a f e4 e8 e e2 }
 chorusTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c f8 f e d c4 c8 b c2 }
 chorusTwoBassMusic = \relative c' { a8 b8 a g c,4 g' d8 (e) f (d) e4 a,4 b8 b c d e (f) d e a,2 }
-
 chorusOneLyrics = \lyricmode {
   Peu -- ple~é -- ga -- ré par l'a -- mer -- tu -- me,
   Peu -- ple~au cœur fer -- mé,
@@ -303,11 +301,16 @@ ChorusOnePartition = {
   >>
 }
 
-chorusOneRhythms = { \global \markCustom "Chorus" s2*7 }
-chorusOneSopranoMusic = \relative c'' { a4 c8 b a2 gs4 a b c d4 e8 d c4 b8 a gs2 }
+chorusOneRhythms = { \global \markCustom "Choral II" s2*7 }
+chorusOneSopranoMusic = \relative c'' { a4 a8 b c2 b4 a gs a c4 c8 b a4 b8 c b2 }
 chorusOneAltoMusic =  \relative c' { s2*7 }
 chorusOneTenorMusic = \relative c' { s2*7 }
 chorusOneBassMusic = \relative c' { s2*7 }
+%chorusOneRhythms = { \global \markCustom "Chorus II" s2*8 }
+%chorusOneSopranoMusic = \relative c'' { a4 b c c b b a a c d e e d c b2 }
+%chorusOneAltoMusic =  \relative c' { e4 e a a f gs4 e4 e4 a4 s4 s2*3 }
+%chorusOneTenorMusic = \relative c' { c4 d e d d4 b4 c4 c4 e4 s4 s2*3 }
+%chorusOneBassMusic = \relative c' { a4 gs a8 g f e d b e4 a a a g c,8 b a c d4 ds e2 }
 
 chorusReponRhythms = { s2*2 s2*3 \bar "||" }
 chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
@@ -316,7 +319,7 @@ chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 
 chorusTwoRhythms = { s2*7 }
-chorusTwoSopranoMusic = \relative c'' { c4 d b c8 d e4 d8 c b4 a4 c8 d c b a4 a8 gs a2 }
+chorusTwoSopranoMusic = \relative c'' { c4 d b c8 b a4 b8 c b4 e,4 a8 b c b a4 a8 gs a2 }
 chorusTwoAltoMusic =  \relative c' { s2*7 }
 chorusTwoTenorMusic = \relative c' { s2*7 }
 chorusTwoBassMusic = \relative c' { s2*6 a,2 }
@@ -350,8 +353,8 @@ ChorusTwoPartition = {
   >>
 }
 
-chorusOneRhythms = { \global \markCustom "Chorus" s2*7 }
-chorusOneSopranoMusic = \relative c'' { a4 c8 b a2 gs4 a b c e4. d8 c4 b8 a gs2 }
+chorusOneRhythms = { \global \markCustom "Choral III" s2*7 }
+chorusOneSopranoMusic = \relative c'' { a4 c8 b a2 gs4 a b c d4. c8 b4 a8 a gs2 }
 chorusOneAltoMusic =  \relative c' { s2*7 }
 chorusOneTenorMusic = \relative c' { s2*7 }
 chorusOneBassMusic = \relative c' { s2*7 }
