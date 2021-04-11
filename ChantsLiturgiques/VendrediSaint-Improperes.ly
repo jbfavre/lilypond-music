@@ -9,89 +9,6 @@
 \include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 
-% Global staff size.
-% Other sizes will be relative.
-% Good to customize to get a "one page only" psalm, when possible
-%staffCustomSize = 16
-%#(set-global-staff-size staffCustomSize)
-
-topToMarkupSpacing =
-  #'((basic-distance . 3)
-     (minimum-distance . 3)
-     (padding . 3)
-     (stretchability . 3))
-
-markupToSystemSpacing =
-  #'((basic-distance . 10)
-     (minimum-distance . 10)
-     (padding . 10)
-     (stretchability . 10))
-
-systemToSystemSpacing =
-  #'((basic-distance . 3)
-     (minimum-distance . 3)
-     (padding . 3)
-     (stretchability . 3))
-
-%{
-  Default margins in millimeters (equal to 1\cm)
-%}
-leftMargin = 20
-rightMargin = 20
-topMargin = 10
-bottomMargin = 10
-
-%{
-  Margin for two-sided printed scores
-  Should be set to false for conductor's score, since it's usualy better
-  to have conductor's score printed on one side only when possible
-%}
-twoSided = ##t
-innerMargin = 10
-outerMargin = 10
-
-%{
-  Fonts settings
-%}
-fontMusic = "emmentaler"            % default
-fontBrace = "emmentaler"            % default
-fontRoman = "Latin Modern Roman"
-fontSans = "Latin Modern Sans"
-fontTypewriter = "Monospace Regular"
-fontFactor = 20 % unnecessary if the staff size is default
-
-scoreTitleMarkupSetting = \markup \columns {
-  \fill-line {
-      \column {
-        \line {
-          \left-column {
-            \vspace #1.1
-            \fontsize #7 \sans \fromproperty #'header:title
-            \fontsize #1 \typewriter \fromproperty #'header:subtitle
-          }
-        }
-      }
-      \column {
-        \line {
-          \fontsize #-2
-          \left-column {
-            \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-            \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-            " "
-            \typewriter \italic \fromproperty #'header:dedication
-          }
-        }
-      }
-    }
-}
-oddFooterMarkupSetting = \markup {}
-\paper {
-  markup-system-spacing = \markupToSystemSpacing
-  scoreTitleMarkup = \scoreTitleMarkupSetting
-  oddFooterMarkup = \oddFooterMarkupSetting
-  #(include-special-characters)
-}
-
 %%%%%
 %%%%% Composition details
 %%%%%
@@ -421,6 +338,42 @@ ChorusPsalmPartition = {
 %%%%%
 %%%%%
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 15)
+       (minimum-distance . 15)
+       (padding . 15)
+       (stretchability . 15))
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 3))
+    scoreTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \left-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:title
+                  \fontsize #3 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \line {
+                \left-column {
+                  \vspace #1
+                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
+                  " "
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \StancePartition \StanceReponPartition \AntiennePartition }
     \layout {
@@ -474,6 +427,18 @@ ChorusPsalmPartition = {
 %%%%%
 %%%%%
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    top-markup-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \ChorusOnePartition \AntiennePartition }
     \layout {
@@ -527,6 +492,18 @@ ChorusPsalmPartition = {
 %%%%%
 %%%%%
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    top-markup-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \ChorusPsalmPartition \StanceReponPartition \AntiennePartition }
     \layout {
@@ -624,6 +601,18 @@ StanceReponPartition = {
 }
 
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    top-markup-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \ChorusTwoPartition \AntiennePartition }
     \layout {
@@ -677,6 +666,18 @@ StanceReponPartition = {
 %%%%%
 %%%%%
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    top-markup-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \ChorusPsalmPartition \StanceReponPartition \AntiennePartition }
     \layout {
@@ -742,6 +743,18 @@ StanceReponPartition = {
 %%%%%
 %%%%%
 \bookpart {
+  \paper {
+    markup-system-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    top-markup-spacing = #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . 0)
+       (stretchability . 0))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     { \ChorusThreePartition }
     \layout {
