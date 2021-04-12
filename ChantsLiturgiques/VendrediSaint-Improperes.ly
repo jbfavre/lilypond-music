@@ -6,28 +6,118 @@
   You can override default values simply by declaring variables again.
 %}
 \include "../libs/commonFunctions.ily"
-\include "../libs/settings.ily"
+%\include "../libs/settings.ily"
 \include "../libs/translations/fr.ily"
 
 %%%%%
 %%%%% Composition details
 %%%%%
 title = "Impropères"
-real_poet = ""
 subtitle = "Vendredi saint - Chant des reproches"
-composer = "Jean Baptiste Favre"
 
 global = {
   \key a \minor
   \time 2/4
   }
-
+\paper {
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  left-margin = 2\cm
+  right-margin = 2\cm
+  % Plan for recto-verso printing
+  two-sided = ##t
+  inner-margin =  2\cm
+  %outer-margin = 2\cm
+  %indent = 1.5\cm
+  %short-indent = 0.5\cm
+  }
+FirstScorePaper = \paper {
+    markup-system-spacing = #'((basic-distance . 20)
+       (minimum-distance . 20)
+       (padding . 20)
+       (stretchability . 20))
+    top-markup-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    top-system-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 8)
+       (minimum-distance . 8)
+       (padding . 3)
+       (stretchability . 3))
+    scoreTitleMarkup = \markup \columns {
+        \fill-line {
+            \column {
+              \line {
+                \left-column {
+                  \vspace #1.1
+                  \fontsize #7 \sans \fromproperty #'header:title
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
+              }
+            }
+            \column {
+              \vspace #0.5
+              \fontsize #-2 \line {
+                \left-column {
+                  \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet }
+                  \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer }
+                  \typewriter \italic \fromproperty #'header:dedication
+                }
+              }
+            }
+          }
+      }
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
+OtherScoresPaper = \paper {
+    markup-system-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    top-markup-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    top-system-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 5)
+       (minimum-distance . 5)
+       (padding . 5)
+       (stretchability . 5))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
+FirstScoreHeader =     \header {
+    title = \title
+    subtitle = \subtitle
+    composer = "Jean Baptiste Favre"
+    composerPrefix = "Musique&nbsp;: "
+    poet = "AELF"
+    poetPrefix = "Texte&nbsp;: "
+    dedication = "Clichy-la-Garenne, avril 2021"
+  }
+OtherScoresHeader = \header {
+    title = ##f
+    subtitle = ##f
+    composer = ##f
+    composerPrefix = ##f
+    poet = ##f
+    poetPrefix = ##f
+    dedication = ##f
+  }
 %%%%%
 %%%%%
 %%%%%
 %%%%%
 %%%%%
-%%%%% Définitions de la partition
+%%%%% Définitions des partitions
 %%%%%
 %%%%%
 %%%%%
@@ -294,6 +384,7 @@ chorusPsalmSoprano = \relative c'' { a\breve gs4 b\breve a4 c\breve b4 a\breve g
 chorusPsalmAlto = \relative c' { e\breve e4 f\breve e4 a\breve f4 e\breve e4 }
 chorusPsalmTenor = \relative c' {c\breve b4 d\breve c4 e\breve d4 c\breve b4 }
 chorusPsalmBass = \relative c { a\breve b4 b\breve c4 c\breve d4 e\breve e4}
+
 ChorusPsalmOnePartition = {
     \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
     {
@@ -393,42 +484,7 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 15)
-       (minimum-distance . 15)
-       (padding . 15)
-       (stretchability . 15))
-    top-markup-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
-    scoreTitleMarkup = \markup \columns {
-        \fill-line {
-            \column {
-              \line {
-                \left-column {
-                  \vspace #1.1
-                  \fontsize #7 \sans \fromproperty #'header:title
-                  \fontsize #3 \typewriter \fromproperty #'header:subtitle
-                }
-              }
-            }
-            \column {
-              \line {
-                \left-column {
-                  \vspace #1
-                  \line { \concat { \typewriter \fromproperty #'header:poetPrefix \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter \fromproperty #'header:composerPrefix \sans \fromproperty #'header:composer \bold " " } }
-                  " "
-                  \typewriter \italic \fromproperty #'header:dedication
-                }
-              }
-            }
-          }
-      }
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \FirstScorePaper
   \score {
     \StancePartition
     \layout {
@@ -438,19 +494,10 @@ ChorusPsalmTwoPartition = {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = \title
-      subtitle = \subtitle
-      composer = \composer
-      composerPrefix = \composerPrefix
-      poet = \poet
-      poetPrefix = \poetPrefix
-      dedication = \dedicace
-    }
+    \FirstScoreHeader
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \column {
@@ -462,7 +509,6 @@ ChorusPsalmTwoPartition = {
     }
     \vspace #1
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \column {
@@ -482,18 +528,7 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    top-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \OtherScoresPaper
   \score {
     \ChorusOnePartition
     \layout {
@@ -515,7 +550,6 @@ ChorusPsalmTwoPartition = {
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \column {
@@ -547,18 +581,7 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    top-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \OtherScoresPaper
   \score {
     \ChorusPsalmOnePartition
     \layout {
@@ -568,19 +591,10 @@ ChorusPsalmTwoPartition = {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = ##f
-      subtitle = ##f
-      composer = ##f
-      composerPrefix = ##f
-      poet = ##f
-      poetPrefix = ##f
-      dedication = ##f
-    }
+    \OtherScoresHeader
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \left-column{
@@ -634,18 +648,7 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    top-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \OtherScoresPaper
   \score {
     \ChorusTwoPartition
     \layout {
@@ -655,19 +658,10 @@ ChorusPsalmTwoPartition = {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = ##f
-      subtitle = ##f
-      composer = ##f
-      composerPrefix = ##f
-      poet = ##f
-      poetPrefix = ##f
-      dedication = ##f
-    }
+    \OtherScoresHeader
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \column {
@@ -699,18 +693,7 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    top-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \OtherScoresPaper
   \score {
     \ChorusPsalmTwoPartition
     \layout {
@@ -720,19 +703,10 @@ ChorusPsalmTwoPartition = {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = ##f
-      subtitle = ##f
-      composer = ##f
-      composerPrefix = ##f
-      poet = ##f
-      poetPrefix = ##f
-      dedication = ##f
-    }
+    \OtherScoresHeader
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \left-column{
@@ -776,20 +750,9 @@ ChorusPsalmTwoPartition = {
 %%%%%
 %%%%%
 \bookpart {
-  \paper {
-    markup-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    top-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 0)
-       (stretchability . 0))
-    oddFooterMarkup = \markup {}
-    #(include-special-characters)
-  }
+  \OtherScoresPaper
   \score {
-    { \ChorusThreePartition }
+    \ChorusThreePartition
     \layout {
         ragged-last = ##f
         \context {
@@ -797,19 +760,10 @@ ChorusPsalmTwoPartition = {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = ##f
-      subtitle = ##f
-      composer = ##f
-      composerPrefix = ##f
-      poet = ##f
-      poetPrefix = ##f
-      dedication = ##f
-    }
+    \OtherScoresHeader
   }
   \markuplist {
     \override #'(font-family . sans)
-    \override #'(font-size . 2)
     \column {
       \fill-line {
         \column {
