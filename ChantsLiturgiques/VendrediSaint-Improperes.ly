@@ -22,14 +22,13 @@ global = {
 \paper {
   top-margin = 1\cm
   bottom-margin = 1\cm
-  left-margin = 2\cm
-  right-margin = 2\cm
-  % Plan for recto-verso printing
+  left-margin = 1\cm
+  right-margin = 1\cm
+  indent = 1\cm
+  % Plan for recto-verso printing with inner margin
   two-sided = ##t
   inner-margin =  2\cm
-  %outer-margin = 2\cm
-  %indent = 1.5\cm
-  %short-indent = 0.5\cm
+  outer-margin = 1.5\cm
   }
 FirstScorePaper = \paper {
     markup-system-spacing = #'((basic-distance . 20)
