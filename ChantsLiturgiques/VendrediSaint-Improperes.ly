@@ -4,7 +4,12 @@
 \include "../libs/commonFunctions.ily"
 
 %%%%%
-%%%%% Composition details
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Définitions des partitions
+%%%%%
 %%%%%
 title = "Impropères"
 subtitle = "Vendredi saint - Chant des reproches"
@@ -16,6 +21,179 @@ global = {
   \key a \minor
   \time 2/4
   }
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Stance pour soliste et orgue
+%%%%%
+%%%%%
+stanceRhythms = { \partial 4 s4 \time 3/4 s2. \time 2/4 s2 \time 3/4 s2. \time 2/4 s2 \break }
+stanceMelody = { \partial 4 a8 a gs4 gs8 gs a b gs4 a8 b c8 b8 a4 a gs!2 \breathe }
+stanceSopranoMusic = \relative c'' { \stanceMelody }
+stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 d8 e4 f e2 }
+stanceTenorMusic = \relative c' { c8 c b4 b8 b c d b4 c8 d e8 d8 c4 c4 b2 }
+stanceBassMusic = \relative c' { a8 a e4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
+stanceLyrics = \lyricmode {
+  Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
+  En quoi t'ai- -- je con -- tris -- té&nbsp;?
+}
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Répons pour chœur à 4 voix mixtes
+%%%%%
+%%%%%
+reponRhythms = { s2*4 \bar "||" \break }
+reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
+reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
+reponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
+reponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
+reponOneLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
+reponTwoLyrics = \lyricmode { Ô mon frè -- re, ré -- ponds- -- moi. }
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Antienne pour chœur à 4 voix mixtes
+%%%%%
+%%%%%
+antienneRhythms = { s2*8 \bar "||" \break }
+antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
+antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
+antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d c4 b c2 }
+antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
+antienneLyrics = \lyricmode { Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Choral & Psaume I pour chœur à 4 voix mixtes
+%%%%%
+%%%%%
+chorusOnePartOneRhythms = { \global \markCustom "Choral I" s2*7 }
+chorusOnePartOneSopranoMusic = \relative c'' { a4 gs!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
+chorusOnePartOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 ds e2 }
+chorusOnePartOneTenorMusic = \relative c' { c4 d8 c d4 e d c b c d4. c8 b4 b8 (a) gs2 }
+chorusOnePartOneBassMusic = \relative c' { a4 e8 a g4 c, g' a e a,4 g4. a8 b4 b e2 }
+chorusOnePartOneLyrics = \lyricmode {
+  Peu -- ple~é -- ga -- ré par l'a -- mer -- tu -- me,
+  Peu -- ple~au cœur fer -- mé,
+}
+
+chorusOneReponRhythms = { s2*2 s2*3 \bar "||" }
+chorusOneReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusOneReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+chorusOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
+
+chorusOnePartTwoRhythms = { s2*7 }
+chorusOnePartTwoSopranoMusic = \relative c'' { a8 gs!8 a8 b c4 b a a gs a b8 b a g! fs4 fs8 fs e2 }
+chorusOnePartTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e g8 g e e e4 ds8 b b2 }
+chorusOnePartTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c d8 d c cs8 b8 c a4 gs2 }
+chorusOnePartTwoBassMusic = \relative c' { a8 e8 a g c,4 g' d8 (e) f (d) e4 a,4 g8 g a as b4 b8 b e2 }
+chorusOnePartTwoLyrics = \lyricmode {
+  Tant d'a -- mour se -- rait- -- il sans ré -- pon -- se,
+  tant d'a -- mour d'un Dieu cru -- ci -- fié&nbsp;?
+}
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Choral & Psaume II pour chœur à 4 voix mixtes
+%%%%%
+%%%%%
+chorusTwoPartOneRhythms = { \global \markCustom "Choral II" s2*7 }
+chorusTwoPartOneSopranoMusic = \relative c' { e4 a8 b c2 b4 a gs a b4 c8 b a4 a8 a gs2 }
+chorusTwoPartOneAltoMusic =  \relative c' { c4 e8 e e2 f4 e e e g g8 f e4 f8 f  e2 }
+chorusTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 d c4 c8 c b2 }
+chorusTwoPartOneBassMusic = \relative c { a4 a'8 gs a2 b8 b, c d e4 a,4 g4 a8 b c4 f8 d e2 }
+chorusTwoPartOneLyrics = \lyricmode {
+  Vi -- gne~aux rai -- sins d'a -- mer -- tu -- me,
+  Vi -- gne~aux sar -- ments des -- sé -- chés
+}
+
+chorusTwoReponRhythms = { s2*2 s2*3 \bar "||" }
+chorusTwoReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusTwoReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+chorusTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
+
+chorusTwoPartTwoRhythms = { s2*7 }
+chorusTwoPartTwoSopranoMusic = \relative c'' { a4 a gs a8 b c4 b8 a a4 gs4 a8 b c b a4 a8 gs a2 }
+chorusTwoPartTwoAltoMusic =  \relative c' { e4 f e e8 e e4 f8 fs fs4 e e8 e e f e8 f8 e4 e2 }
+chorusTwoPartTwoTenorMusic = \relative c' { c4 c b a8 gs a4 b8 b b4 b a8 gs a d c8 c8 b4 c2 }
+chorusTwoPartTwoBassMusic = \relative c' { a4 d, e c8 b a4 d8 ds e4 e c8 b a b c8 d8 e4 a,2 }
+chorusTwoPartTwoLyrics = \lyricmode {
+  Ce Fruit mûr se -- rait- -- il sans par -- ta -- ge,
+  ce Fruit mûr que Dieu a pres -- sé&nbsp;?
+}
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Choral III pour chœur à 4 voix mixtes
+%%%%%
+%%%%%
+chorusThreePartOneRhythms = { \global \markCustom "Choral III" s2*7 }
+chorusThreePartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. a8 b4 a8 a gs2 }
+chorusThreePartOneAltoMusic =  \relative c' { e4 e8 e e2 e4 e e e e4. e8 f4 e8 f e2 }
+chorusThreePartOneTenorMusic = \relative c' { c4 b8 a b2 c4 b a gs a4. c8 d4 c8 c b2 }
+chorusThreePartOneBassMusic = \relative c' { a4 gs8 a d,2  e4 e8 d c4 b a4. a8 b4 c8 d e2 }
+chorusThreePartOneLyrics = \lyricmode {
+  Frè -- re se -- vré d'a -- mer -- tu --me,
+  frè -- re~au cœur des -- sé -- ché
+}
+
+chorusThreeReponRhythms = { s2*2 s2*3 \bar "||" }
+chorusThreeReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
+chorusThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+chorusThreeReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
+chorusThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+chorusThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
+
+chorusThreePartTwoRhythms = { s2*4 \break s2*4 }
+chorusThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
+chorusThreePartTwoAltoMusic =  \relative c' { e4 e f4. g8 a f e f e4 e4 e8 e e f f2 f4 d e2}
+chorusThreePartTwoTenorMusic = \relative c' { c4 b c8 d4 d8 e d c b b4 c b8 b c c b2 a4 b a2 }
+chorusThreePartTwoBassMusic = \relative c' { a4 g f e a,8 b c d e4 a,8 a' gs8 gs a f d2 d4 gs, a2 }
+chorusThreePartTwoLyrics = \lyricmode {
+  Jé -- sus- -- Christ, le Ver -- be~et la Ré -- pon -- se,
+  Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
+}
+
+chorusPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn \repeat unfold 4 { s\breve s4 \bar "|" } \cadenzaOff \bar"||" \break }
+chorusPsalmSoprano = \relative c'' { a\breve gs4 b\breve a4 c\breve b4 a\breve gs!4 }
+chorusPsalmAlto = \relative c' { e\breve e4 f\breve e4 a\breve f4 e\breve e4 }
+chorusPsalmTenor = \relative c' {c\breve b4 d\breve c4 e\breve d4 c\breve b4 }
+chorusPsalmBass = \relative c { a\breve b4 b\breve c4 c\breve d4 e\breve e4}
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%% Impression de la partition
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
 \paper {
   top-margin = 1\cm
   bottom-margin = 1\cm
@@ -106,291 +284,6 @@ OtherScoresHeader = \header {
     dedication = ##f
   }
 
-
-
-
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Définitions des partitions
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Stance pour soliste et orgue
-%%%%%
-%%%%%
-stanceRhythms = { \partial 4 s4 \time 3/4 s2. \time 2/4 s2 \time 3/4 s2. \time 2/4 s2 \break }
-stanceMelody = { \partial 4 a8 a gs4 gs8 gs a b gs4 a8 b c8 b8 a4 a gs!2 \breathe }
-stanceSopranoMusic = \relative c'' { \stanceMelody }
-stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 d8 e4 f e2 }
-stanceTenorMusic = \relative c' { c8 c b4 b8 b c d b4 c8 d e8 d8 c4 c4 b2 }
-stanceBassMusic = \relative c' { a8 a e4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
-stanceLyrics = \lyricmode {
-  Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
-  En quoi t'ai- -- je con -- tris -- té&nbsp;?
-}
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Répons pour chœur à 4 voix mixtes
-%%%%%
-%%%%%
-reponRhythms = { s2*4 \bar "||" \break }
-reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
-reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
-reponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
-reponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
-reponOneLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
-reponTwoLyrics = \lyricmode { Ô mon frè -- re, ré -- ponds- -- moi. }
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Antienne pour chœur à 4 voix mixtes
-%%%%%
-%%%%%
-antienneRhythms = { s2*8 \bar "||" \break }
-antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
-antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
-antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d c4 b c2 }
-antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
-antienneLyrics = \lyricmode { Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Choral I pour chœur à 4 voix mixtes
-%%%%%
-%%%%%
-chorusOnePartOneRhythms = { \global \markCustom "Choral I" s2*7 }
-chorusOnePartOneSopranoMusic = \relative c'' { a4 gs!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
-chorusOnePartOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 ds e2 }
-chorusOnePartOneTenorMusic = \relative c' { c4 d8 c d4 e d c b c d4. c8 b4 b8 (a) gs2 }
-chorusOnePartOneBassMusic = \relative c' { a4 e8 a g4 c, g' a e a,4 g4. a8 b4 b e2 }
-chorusOnePartOneLyrics = \lyricmode {
-  Peu -- ple~é -- ga -- ré par l'a -- mer -- tu -- me,
-  Peu -- ple~au cœur fer -- mé,
-}
-
-chorusOneReponRhythms = { s2*2 s2*3 \bar "||" }
-chorusOneReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-chorusOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
-chorusOneReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-chorusOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
-chorusOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
-
-chorusOnePartTwoRhythms = { s2*7 }
-chorusOnePartTwoSopranoMusic = \relative c'' { a8 gs!8 a8 b c4 b a a gs a b8 b a g! fs4 fs8 fs e2 }
-chorusOnePartTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e g8 g e e e4 ds8 b b2 }
-chorusOnePartTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c d8 d c cs8 b8 c a4 gs2 }
-chorusOnePartTwoBassMusic = \relative c' { a8 e8 a g c,4 g' d8 (e) f (d) e4 a,4 g8 g a as b4 b8 b e2 }
-chorusOnePartTwoLyrics = \lyricmode {
-  Tant d'a -- mour se -- rait- -- il sans ré -- pon -- se,
-  tant d'a -- mour d'un Dieu cru -- ci -- fié&nbsp;?
-}
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Choral II pour chœur à 4 voix mixtes
-%%%%%
-%%%%%
-chorusTwoPartOneRhythms = { \global \markCustom "Choral II" s2*7 }
-chorusTwoPartOneSopranoMusic = \relative c' { e4 a8 b c2 b4 a gs a b4 c8 b a4 a8 a gs2 }
-chorusTwoPartOneAltoMusic =  \relative c' { c4 e8 e e2 f4 e e e g g8 f e4 f8 f  e2 }
-chorusTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 d c4 c8 c b2 }
-chorusTwoPartOneBassMusic = \relative c { a4 a'8 gs a2 b8 b, c d e4 a,4 g4 a8 b c4 f8 d e2 }
-chorusTwoPartOneLyrics = \lyricmode {
-  Vi -- gne~aux rai -- sins d'a -- mer -- tu -- me,
-  Vi -- gne~aux sar -- ments des -- sé -- chés
-}
-
-chorusTwoReponRhythms = { s2*2 s2*3 \bar "||" }
-chorusTwoReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-chorusTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
-chorusTwoReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-chorusTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
-chorusTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
-
-chorusTwoPartTwoRhythms = { s2*7 }
-chorusTwoPartTwoSopranoMusic = \relative c'' { a4 a gs a8 b c4 b8 a a4 gs4 a8 b c b a4 a8 gs a2 }
-chorusTwoPartTwoAltoMusic =  \relative c' { e4 f e e8 e e4 f8 fs fs4 e e8 e e f e8 f8 e4 e2 }
-chorusTwoPartTwoTenorMusic = \relative c' { c4 c b a8 gs a4 b8 b b4 b a8 gs a d c8 c8 b4 c2 }
-chorusTwoPartTwoBassMusic = \relative c' { a4 d, e c8 b a4 d8 ds e4 e c8 b a b c8 d8 e4 a,2 }
-chorusTwoPartTwoLyrics = \lyricmode {
-  Ce Fruit mûr se -- rait- -- il sans par -- ta -- ge,
-  ce Fruit mûr que Dieu a pres -- sé&nbsp;?
-}
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Choral III pour chœur à 4 voix mixtes
-%%%%%
-%%%%%
-chorusPartOneRhythms = { \global \markCustom "Choral III" s2*7 }
-chorusPartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. a8 b4 a8 a gs2 }
-chorusPartOneAltoMusic =  \relative c' { e4 e8 e e2 e4 e e e e4. e8 f4 e8 f e2 }
-chorusPartOneTenorMusic = \relative c' { c4 b8 a b2 c4 b a gs a4. c8 d4 c8 c b2 }
-chorusPartOneBassMusic = \relative c' { a4 gs8 a d,2  e4 e8 d c4 b a4. a8 b4 c8 d e2 }
-chorusPartOneLyrics = \lyricmode {
-  Frè -- re se -- vré d'a -- mer -- tu --me,
-  frè -- re~au cœur des -- sé -- ché
-}
-
-chorusReponRhythms = { s2*2 s2*3 \bar "||" }
-chorusReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-chorusReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
-chorusReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-chorusReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
-chorusReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
-
-chorusPartTwoRhythms = { s2*4 \break s2*4 }
-chorusPartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
-chorusPartTwoAltoMusic =  \relative c' { e4 e f4. g8 a f e f e4 e4 e8 e e f f2 f4 d e2}
-chorusPartTwoTenorMusic = \relative c' { c4 b c8 d4 d8 e d c b b4 c b8 b c c b2 a4 b a2 }
-chorusPartTwoBassMusic = \relative c' { a4 g f e a,8 b c d e4 a,8 a' gs8 gs a f d2 d4 gs, a2 }
-chorusPartTwoLyrics = \lyricmode {
-  Jé -- sus- -- Christ, le Ver -- be~et la Ré -- pon -- se,
-  Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
-}
-ChorusThreePartition = {
-  <<
-    \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
-      \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
-        \clef "treble"
-        \new Voice = "chorusRhythms" { \chorusPartOneRhythms \break \chorusReponRhythms \break \chorusPartTwoRhythms }
-        \new Voice = "chorusSoprano" { \voiceOne \chorusPartOneSopranoMusic \chorusReponSopranoMusic \chorusPartTwoSopranoMusic }
-        \new Voice = "chorusAlto" { \voiceTwo \chorusPartOneAltoMusic \chorusReponAltoMusic \chorusPartTwoAltoMusic }
-      >>
-      \new Lyrics \lyricsto "chorusSoprano" { \chorusPartOneLyrics \chorusReponLyrics \chorusPartTwoLyrics }
-      \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
-        \clef "bass"
-        \new Voice = "chorusRhythms" { \chorusPartOneRhythms \chorusReponRhythms \chorusPartTwoRhythms }
-        \new Voice = "chorusTenor" { \voiceOne \chorusPartOneTenorMusic \chorusReponTenorMusic \chorusPartTwoTenorMusic }
-        \new Voice = "chorusBass" { \voiceTwo \chorusPartOneBassMusic \chorusReponBassMusic \chorusPartTwoBassMusic }
-      >>
-    >>
-  >>
-}
-
-chorusPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn \repeat unfold 4 { s\breve s4 \bar "|" } \cadenzaOff \bar"||" \break }
-chorusPsalmSoprano = \relative c'' { a\breve gs4 b\breve a4 c\breve b4 a\breve gs!4 }
-chorusPsalmAlto = \relative c' { e\breve e4 f\breve e4 a\breve f4 e\breve e4 }
-chorusPsalmTenor = \relative c' {c\breve b4 d\breve c4 e\breve d4 c\breve b4 }
-chorusPsalmBass = \relative c { a\breve b4 b\breve c4 c\breve d4 e\breve e4}
-
-ChorusPsalmOnePartition = {
-    \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
-    {
-      <<
-        \new Staff = "psalmodyHighStaff"
-        <<
-          \clef "treble"
-          \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms \break }
-          \new Voice = "psalmodySoprano" { \voiceOne \chorusPsalmSoprano }
-          \new Voice = "psalmodyAlto" { \voiceTwo \chorusPsalmAlto }
-        >>
-        \new Staff  = "psalmodyLowStaff" <<
-          \clef "bass"
-          \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms }
-          \new Voice = "psalmodyTenor" { \voiceOne \chorusPsalmTenor }
-          \new Voice = "psalmodyBass" { \voiceTwo \chorusPsalmBass }
-        >>
-      >>
-      <<
-        \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
-        <<
-          \clef "treble"
-          \new Voice = "psalmodyReponRhythms" { \reponRhythms \break \antienneRhythms }
-          \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
-          \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
-        >>
-        \new Lyrics \lyricsto "psalmodyReponSoprano" { \reponOneLyrics \antienneLyrics }
-        \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
-        <<
-          \clef "bass"
-          \new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
-          \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
-          \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
-        >>
-      >>
-    }
-}
-
-ChorusPsalmTwoPartition = {
-    \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
-    {
-      <<
-        \new Staff = "psalmodyHighStaff"
-        <<
-          \clef "treble"
-          \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms \break }
-          \new Voice = "psalmodySoprano" { \voiceOne \chorusPsalmSoprano }
-          \new Voice = "psalmodyAlto" { \voiceTwo \chorusPsalmAlto }
-        >>
-        \new Staff  = "psalmodyLowStaff" <<
-          \clef "bass"
-          \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms }
-          \new Voice = "psalmodyTenor" { \voiceOne \chorusPsalmTenor }
-          \new Voice = "psalmodyBass" { \voiceTwo \chorusPsalmBass }
-        >>
-      >>
-      <<
-        \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
-        <<
-          \clef "treble"
-          \new Voice = "psalmodyReponRhythms" { \global \reponRhythms \break \antienneRhythms }
-          \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
-          \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
-        >>
-        \new Lyrics \lyricsto "psalmodyReponSoprano" { \reponTwoLyrics \antienneLyrics }
-        \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
-        <<
-          \clef "bass"
-          \new Voice = "psalmodyReponRhythms" { \global \reponRhythms \antienneRhythms }
-          \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
-          \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
-        >>
-      >>
-    }
-}
-
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%% Impression de la partition
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-%%%%%
-
-
 %%%%%
 %%%%%
 %%%%%
@@ -404,20 +297,24 @@ ChorusPsalmTwoPartition = {
   \score {
     {
       <<
-        \new Staff = "stanceSolistStaff" \with { instrumentName = "Soliste" } <<
+        \new Staff = "stanceSolistStaff" \with { instrumentName = "Soliste" }
+        <<
           \clef "bass"
           \new Voice = "stanceRhythms" { \markCustom "Stance" \global \stanceRhythms }
           \new Voice = "stanceMelody" { \relative c' { \stanceMelody } }
         >>
         \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
-        \new PianoStaff = "stancePiano" \with { instrumentName = "Piano" } <<
-          \new Staff = "stancePianoHighStaff" <<
+        \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" }
+        <<
+          \new Staff = "stancePianoHighStaff"
+          <<
             \clef "treble"
             \new Voice = "stancePianoRhythms" { \stanceRhythms \break }
             \new Voice = "stancePianoSoprano" { \voiceOne \stanceSopranoMusic }
             \new Voice = "stancePianoAlto" { \voiceTwo \stanceAltoMusic }
           >>
-          \new Staff  = "stancePianoLowStaff" <<
+          \new Staff  = "stancePianoLowStaff"
+          <<
             \clef "bass"
             \new Voice = "stancePianoRhythms" { \stanceRhythms }
             \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
@@ -425,15 +322,18 @@ ChorusPsalmTwoPartition = {
           >>
         >>
       >>
-      \new ChoirStaff = "stanceChoirStaff" <<
-        \new Staff = "stanceHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
+      \new ChoirStaff = "stanceChoirStaff"
+      <<
+        \new Staff = "stanceHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
+        <<
           \clef "treble"
           \new Voice = "stanceRhythms" { \reponRhythms \break \markCustom "Repons" \antienneRhythms }
           \new Voice = "stanceSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
           \new Voice = "stanceAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
         >>
         \new Lyrics \lyricsto "stanceSoprano" { \reponOneLyrics \antienneLyrics }
-        \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
+        \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
+        <<
           \clef "bass"
           \new Voice = "stanceRhythms" { \reponRhythms \antienneRhythms }
           \new Voice = "stanceTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic}
@@ -485,21 +385,19 @@ ChorusPsalmTwoPartition = {
   \OtherScoresPaper
   \score {
     {
-      <<
-        \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
-          \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
-            \clef "treble"
-            \new Voice = "chorusRhythms" { \chorusOnePartOneRhythms \break \chorusOneReponRhythms \break \chorusOnePartTwoRhythms \break \antienneRhythms }
-            \new Voice = "chorusSoprano" { \voiceOne \chorusOnePartOneSopranoMusic \chorusOneReponSopranoMusic \chorusOnePartTwoSopranoMusic \antienneSopranoMusic }
-            \new Voice = "chorusAlto" { \voiceTwo \chorusOnePartOneAltoMusic \chorusOneReponAltoMusic \chorusOnePartTwoAltoMusic \antienneAltoMusic }
-          >>
-          \new Lyrics \lyricsto "chorusSoprano" { \chorusOnePartOneLyrics \chorusOneReponLyrics \chorusOnePartTwoLyrics \antienneLyrics }
-          \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
-            \clef "bass"
-            \new Voice = "chorusRhythms" { \chorusOnePartOneRhythms \chorusOneReponRhythms \chorusOnePartTwoRhythms \antienneRhythms }
-            \new Voice = "chorusTenor" { \voiceOne \chorusOnePartOneTenorMusic \chorusOneReponTenorMusic \chorusOnePartTwoTenorMusic \antienneTenorMusic }
-            \new Voice = "chorusBass" { \voiceTwo \chorusOnePartOneBassMusic \chorusOneReponBassMusic \chorusOnePartTwoBassMusic \antienneBassMusic }
-          >>
+      \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
+        \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
+          \clef "treble"
+          \new Voice = "chorusRhythms" { \chorusOnePartOneRhythms \break \chorusOneReponRhythms \break \chorusOnePartTwoRhythms \break \antienneRhythms }
+          \new Voice = "chorusSoprano" { \voiceOne \chorusOnePartOneSopranoMusic \chorusOneReponSopranoMusic \chorusOnePartTwoSopranoMusic \antienneSopranoMusic }
+          \new Voice = "chorusAlto" { \voiceTwo \chorusOnePartOneAltoMusic \chorusOneReponAltoMusic \chorusOnePartTwoAltoMusic \antienneAltoMusic }
+        >>
+        \new Lyrics \lyricsto "chorusSoprano" { \chorusOnePartOneLyrics \chorusOneReponLyrics \chorusOnePartTwoLyrics \antienneLyrics }
+        \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
+          \clef "bass"
+          \new Voice = "chorusRhythms" { \chorusOnePartOneRhythms \chorusOneReponRhythms \chorusOnePartTwoRhythms \antienneRhythms }
+          \new Voice = "chorusTenor" { \voiceOne \chorusOnePartOneTenorMusic \chorusOneReponTenorMusic \chorusOnePartTwoTenorMusic \antienneTenorMusic }
+          \new Voice = "chorusBass" { \voiceTwo \chorusOnePartOneBassMusic \chorusOneReponBassMusic \chorusOnePartTwoBassMusic \antienneBassMusic }
         >>
       >>
     }
@@ -555,7 +453,43 @@ ChorusPsalmTwoPartition = {
 \bookpart {
   \OtherScoresPaper
   \score {
-    \ChorusPsalmOnePartition
+    {
+      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
+      {
+        <<
+          \new Staff = "psalmodyHighStaff"
+          <<
+            \clef "treble"
+            \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms \break }
+            \new Voice = "psalmodySoprano" { \voiceOne \chorusPsalmSoprano }
+            \new Voice = "psalmodyAlto" { \voiceTwo \chorusPsalmAlto }
+          >>
+          \new Staff  = "psalmodyLowStaff" <<
+            \clef "bass"
+            \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms }
+            \new Voice = "psalmodyTenor" { \voiceOne \chorusPsalmTenor }
+            \new Voice = "psalmodyBass" { \voiceTwo \chorusPsalmBass }
+          >>
+        >>
+        <<
+          \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
+          <<
+            \clef "treble"
+            \new Voice = "psalmodyReponRhythms" { \reponRhythms \break \antienneRhythms }
+            \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
+            \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
+          >>
+          \new Lyrics \lyricsto "psalmodyReponSoprano" { \reponOneLyrics \antienneLyrics }
+          \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
+          <<
+            \clef "bass"
+            \new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
+            \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
+            \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
+          >>
+        >>
+      }
+    }
     \layout {
         ragged-last = ##f
         \context {
@@ -623,21 +557,19 @@ ChorusPsalmTwoPartition = {
   \OtherScoresPaper
   \score {
     {
-      <<
-        \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
-          \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
-            \clef "treble"
-            \new Voice = "chorusRhythms" { \chorusTwoPartOneRhythms \break \chorusTwoReponRhythms \break \chorusTwoPartTwoRhythms \break \antienneRhythms }
-            \new Voice = "chorusSoprano" { \voiceOne \chorusTwoPartOneSopranoMusic \chorusTwoReponSopranoMusic \chorusTwoPartTwoSopranoMusic \antienneSopranoMusic }
-            \new Voice = "chorusAlto" { \voiceTwo \chorusTwoPartOneAltoMusic \chorusTwoReponAltoMusic \chorusTwoPartTwoAltoMusic \antienneAltoMusic }
-          >>
-          \new Lyrics \lyricsto "chorusSoprano" { \chorusTwoPartOneLyrics \chorusTwoReponLyrics \chorusTwoPartTwoLyrics \antienneLyrics }
-          \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
-            \clef "bass"
-            \new Voice = "chorusRhythms" { \chorusTwoPartOneRhythms \chorusTwoReponRhythms \chorusTwoPartTwoRhythms \antienneRhythms }
-            \new Voice = "chorusTenor" { \voiceOne \chorusTwoPartOneTenorMusic \chorusTwoReponTenorMusic \chorusTwoPartTwoTenorMusic \antienneTenorMusic }
-            \new Voice = "chorusBass" { \voiceTwo \chorusTwoPartOneBassMusic \chorusTwoReponBassMusic \chorusTwoPartTwoBassMusic \antienneBassMusic }
-          >>
+      \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
+        \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
+          \clef "treble"
+          \new Voice = "chorusRhythms" { \chorusTwoPartOneRhythms \break \chorusTwoReponRhythms \break \chorusTwoPartTwoRhythms \break \antienneRhythms }
+          \new Voice = "chorusSoprano" { \voiceOne \chorusTwoPartOneSopranoMusic \chorusTwoReponSopranoMusic \chorusTwoPartTwoSopranoMusic \antienneSopranoMusic }
+          \new Voice = "chorusAlto" { \voiceTwo \chorusTwoPartOneAltoMusic \chorusTwoReponAltoMusic \chorusTwoPartTwoAltoMusic \antienneAltoMusic }
+        >>
+        \new Lyrics \lyricsto "chorusSoprano" { \chorusTwoPartOneLyrics \chorusTwoReponLyrics \chorusTwoPartTwoLyrics \antienneLyrics }
+        \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
+          \clef "bass"
+          \new Voice = "chorusRhythms" { \chorusTwoPartOneRhythms \chorusTwoReponRhythms \chorusTwoPartTwoRhythms \antienneRhythms }
+          \new Voice = "chorusTenor" { \voiceOne \chorusTwoPartOneTenorMusic \chorusTwoReponTenorMusic \chorusTwoPartTwoTenorMusic \antienneTenorMusic }
+          \new Voice = "chorusBass" { \voiceTwo \chorusTwoPartOneBassMusic \chorusTwoReponBassMusic \chorusTwoPartTwoBassMusic \antienneBassMusic }
         >>
       >>
     }
@@ -685,7 +617,43 @@ ChorusPsalmTwoPartition = {
 \bookpart {
   \OtherScoresPaper
   \score {
-    \ChorusPsalmTwoPartition
+    {
+      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
+      {
+        <<
+          \new Staff = "psalmodyHighStaff"
+          <<
+            \clef "treble"
+            \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms \break }
+            \new Voice = "psalmodySoprano" { \voiceOne \chorusPsalmSoprano }
+            \new Voice = "psalmodyAlto" { \voiceTwo \chorusPsalmAlto }
+          >>
+          \new Staff  = "psalmodyLowStaff" <<
+            \clef "bass"
+            \new Voice = "psalmodyRhythms" { \global \chorusPsalmRhythms }
+            \new Voice = "psalmodyTenor" { \voiceOne \chorusPsalmTenor }
+            \new Voice = "psalmodyBass" { \voiceTwo \chorusPsalmBass }
+          >>
+        >>
+        <<
+          \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
+          <<
+            \clef "treble"
+            \new Voice = "psalmodyReponRhythms" { \global \reponRhythms \break \antienneRhythms }
+            \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
+            \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
+          >>
+          \new Lyrics \lyricsto "psalmodyReponSoprano" { \reponTwoLyrics \antienneLyrics }
+          \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
+          <<
+            \clef "bass"
+            \new Voice = "psalmodyReponRhythms" { \global \reponRhythms \antienneRhythms }
+            \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
+            \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
+          >>
+        >>
+      }
+    }
     \layout {
         ragged-last = ##f
         \context {
@@ -742,7 +710,25 @@ ChorusPsalmTwoPartition = {
 \bookpart {
   \OtherScoresPaper
   \score {
-    \ChorusThreePartition
+    {
+      <<
+        \new ChoirStaff = "chorusChoirStaff" \with { instrumentName = "Chœur" } <<
+          \new Staff = "chorusChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
+            \clef "treble"
+            \new Voice = "chorusRhythms" { \chorusThreePartOneRhythms \break \chorusThreeReponRhythms \break \chorusThreePartTwoRhythms }
+            \new Voice = "chorusSoprano" { \voiceOne \chorusThreePartOneSopranoMusic \chorusThreeReponSopranoMusic \chorusThreePartTwoSopranoMusic }
+            \new Voice = "chorusAlto" { \voiceTwo \chorusThreePartOneAltoMusic \chorusThreeReponAltoMusic \chorusThreePartTwoAltoMusic }
+          >>
+          \new Lyrics \lyricsto "chorusSoprano" { \chorusThreePartOneLyrics \chorusThreeReponLyrics \chorusThreePartTwoLyrics }
+          \new Staff  = "chorusChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
+            \clef "bass"
+            \new Voice = "chorusRhythms" { \chorusThreePartOneRhythms \chorusThreeReponRhythms \chorusThreePartTwoRhythms }
+            \new Voice = "chorusTenor" { \voiceOne \chorusThreePartOneTenorMusic \chorusThreeReponTenorMusic \chorusThreePartTwoTenorMusic }
+            \new Voice = "chorusBass" { \voiceTwo \chorusThreePartOneBassMusic \chorusThreeReponBassMusic \chorusThreePartTwoBassMusic }
+          >>
+        >>
+      >>
+    }
     \layout {
         ragged-last = ##f
         \context {
