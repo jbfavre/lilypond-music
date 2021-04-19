@@ -181,9 +181,9 @@ choralThreePartTwoLyrics = \lyricmode {
 
 choralPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn s\breve s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 s \cadenzaOff \bar"||" \break }
 choralPsalmSoprano = \relative c'' { a\breve gs4 b\breve gs!1 a4 c\breve c1 b4 b\breve a1 a4 gs! }
-choralPsalmAlto = \relative c' { e\breve e4 f\breve e1 e4 e\breve f1 f4 e\breve e1 d4 e }
-choralPsalmTenor = \relative c' {c\breve b4 d\breve d1 c4 c\breve d1 d4 d\breve c1 b4 b }
-choralPsalmBass = \relative c { a\breve e'4 b\breve e1 a,4 a\breve a'1 a4 gs!\breve f1 f4 e}
+choralPsalmAlto = \relative c' { e\breve e4 f\breve e1 e4 e\breve f1 f4 e\breve e1 e4 e }
+choralPsalmTenor = \relative c' {c\breve b4 d\breve d1 c4 c\breve d1 d4 b\breve c1 c4 d }
+choralPsalmBass = \relative c { a\breve e'4 b\breve e1 a,4 a\breve a'1 a4 gs!\breve a1 a,4 bf}
 
 %%%%%
 %%%%%
