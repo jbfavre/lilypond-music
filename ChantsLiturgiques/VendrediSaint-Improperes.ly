@@ -33,9 +33,9 @@ global = {
 stanceRhythms = { \partial 4 s4 \time 3/4 s2. \time 2/4 s2 \time 3/4 s2. \time 2/4 s2 \break }
 stanceMelody = { \partial 4 a8 a gs4 gs8 gs a b gs4 a8 b c8 b8 a4 a gs!2 \breathe }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
-stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 d8 e4 f e2 }
-stanceTenorMusic = \relative c' { c8 c b4 b8 b c d b4 c8 d e8 d8 c4 c4 b2 }
-stanceBassMusic = \relative c' { a8 a e4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
+stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 g8 e4 f e2 }
+stanceTenorMusic = \relative c' { c8 c b4 b8 b c b b4 c8 d e8 d8 c4 c4 b2 }
+stanceBassMusic = \relative c { a8 a e'4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
 stanceLyrics = \lyricmode {
   Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
   En quoi t'ai- -- je con -- tris -- té&nbsp;?
