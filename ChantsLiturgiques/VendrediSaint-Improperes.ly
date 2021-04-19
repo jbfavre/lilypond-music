@@ -30,12 +30,12 @@ global = {
 %%%%% Stance pour soliste et orgue
 %%%%%
 %%%%%
-stanceRhythms = { \partial 4 s4 \time 3/4 s2. \time 2/4 s2 \time 3/4 s2. \time 2/4 s2 \break }
-stanceMelody = { \partial 4 a8 a gs4 gs8 gs a b gs4 a8 b c8 b8 a4 a gs!2 \breathe }
+stanceRhythms = { \time 3/4 \partial 2 s2 s2. \time 2/4 s2 s2 s2 s2 \break }
+stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 \breathe }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
-stanceAltoMusic = \relative c' { e8 e e4 e8 e e f  e4 e8 g g8 g8 e4 f e2 }
-stanceTenorMusic = \relative c' { c8 c b4 b8 b c b b4 c8 d e8 d8 c4 c4 b2 }
-stanceBassMusic = \relative c { a8 a e'4 e8 e a, d e4 a8 g c,8 g'8 a4 d, e2 }
+stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
+stanceTenorMusic = \relative c' { c4. c8 d4 c8 b c b b2 c8 d e d d (c) c (b) b2 }
+stanceBassMusic = \relative c' { a4. a8 e4 e8 e a, d e2 a8 g c, g' a4 d, e2 }
 stanceLyrics = \lyricmode {
   Ô mon peu -- ple, que t'ai- -- je fait&nbsp;?
   En quoi t'ai- -- je con -- tris -- té&nbsp;?
@@ -52,7 +52,7 @@ stanceLyrics = \lyricmode {
 reponRhythms = { s2*4 \bar "||" \break }
 reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
 reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
-reponTenorMusic = \relative c' { c4. c8 d4. d8 c4 c b2 }
+reponTenorMusic = \relative c' { c4. c8 d4. d8 d (c) c (b) b2 }
 reponBassMusic = \relative c { a4. a8 b4. b8 c4 d e2 }
 % Paroles pour la Stance
 reponOneLyrics = \lyricmode { Ô mon peu -- ple, ré -- ponds- -- moi. }
@@ -70,7 +70,7 @@ reponTwoLyrics = \lyricmode { Ô mon frè -- re, ré -- ponds- -- moi. }
 antienneRhythms = { s2*8 \bar "||" \break }
 antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
 antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
-antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d c4 b c2 }
+antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c (b) c2 }
 antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
 antienneLyrics = \lyricmode { Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
 
@@ -169,7 +169,7 @@ choralThreeReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
 
-choralThreePartTwoRhythms = { s2*4 \break s2*4 }
+choralThreePartTwoRhythms = { s2*4 s2*4 }
 choralThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
 choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. g8 a f e f e4 e4 e8 e e f f2 f4 d e2}
 choralThreePartTwoTenorMusic = \relative c' { c4 b c8 d4 d8 e d c b b4 c b8 b c c b2 a4 b a2 }
@@ -179,11 +179,11 @@ choralThreePartTwoLyrics = \lyricmode {
   Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
 }
 
-choralPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn \repeat unfold 4 { s\breve s4 \bar "|" } \cadenzaOff \bar"||" \break }
-choralPsalmSoprano = \relative c'' { a\breve gs4 b\breve a4 c\breve b4 a\breve gs!4 }
-choralPsalmAlto = \relative c' { e\breve e4 f\breve e4 a\breve f4 e\breve e4 }
-choralPsalmTenor = \relative c' {c\breve b4 d\breve c4 e\breve d4 c\breve b4 }
-choralPsalmBass = \relative c { a\breve b4 b\breve c4 c\breve d4 e\breve e4}
+choralPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn s\breve s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 s \cadenzaOff \bar"||" \break }
+choralPsalmSoprano = \relative c'' { a\breve gs4 b\breve gs!1 a4 c\breve c1 b4 b\breve a1 a4 gs! }
+choralPsalmAlto = \relative c' { e\breve e4 f\breve e1 e4 e\breve f1 f4 e\breve e1 d4 e }
+choralPsalmTenor = \relative c' {c\breve b4 d\breve d1 c4 c\breve d1 d4 d\breve c1 b4 b }
+choralPsalmBass = \relative c { a\breve e'4 b\breve e1 a,4 a\breve a'1 a4 gs!\breve f1 f4 e}
 
 %%%%%
 %%%%%
@@ -210,9 +210,9 @@ choralPsalmBass = \relative c { a\breve b4 b\breve c4 c\breve d4 e\breve e4}
 
 FirstScorePaper = \paper {
     markup-system-spacing = #'((basic-distance . 20)
-       (minimum-distance . 20)
-       (padding . 20)
-       (stretchability . 20))
+       (minimum-distance . 15)
+       (padding . 18)
+       (stretchability . 16))
     top-markup-spacing = #'((basic-distance . 5)
        (minimum-distance . 5)
        (padding . 5)
@@ -271,6 +271,18 @@ OtherScoresPaper = \paper {
     oddFooterMarkup = \markup {}
     #(include-special-characters)
   }
+LastScorePaper = \paper {
+    top-system-spacing = #'((basic-distance . 5)
+       (minimum-distance . 30)
+       (padding . 30)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 8)
+       (minimum-distance . 8)
+       (padding . 3)
+       (stretchability . 3))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+}
 FirstScoreHeader = \header {
     title = \title
     subtitle = \subtitle
@@ -528,7 +540,7 @@ OtherScoresHeader = \header {
           \vspace #1
           \concat { \typewriter "4. " "Moi, j'ai envoy" \underline é " mes prophètes," }
           \concat { \typewriter "   " "ils ont cri" \underline é " dans ton exil&nbsp;;" }
-          \concat { \typewriter "   " "toi, t" \underline u " ne veux pas revenir" }
+          \concat { \typewriter "   " "toi, tu ne ve" \underline u "x pas revenir" }
           \concat { \typewriter "   " "tu deviens s" \underline o "urd quand je t'appelle," }
           \concat { \typewriter "   " "    ô mon peuple, réponds-moi&nbsp;!" \with-color #red { \typewriter "   ℟." } }
         }
@@ -710,7 +722,7 @@ OtherScoresHeader = \header {
 %%%%%
 %%%%%
 \bookpart {
-  \OtherScoresPaper
+  \LastScorePaper
   \score {
     {
       <<
