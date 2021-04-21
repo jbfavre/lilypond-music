@@ -1,5 +1,16 @@
 \version "2.22.0"
 \language "english"
+tRall = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=70
+}
+tAcce = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=100
+}
+cesure = {
+  \tag #'audio s4
+}
 
 \include "../libs/commonFunctions.ily"
 
@@ -17,6 +28,8 @@ composer = "Jean Baptiste Favre"
 poet = "AELF"
 dedication = "Clichy-la-Garenne, avril 2021"
 
+midiInstrumentName = "acoustic grand"
+
 global = {
   \key a \minor
   \time 2/4
@@ -30,7 +43,7 @@ global = {
 %%%%% Stance pour soliste et orgue
 %%%%%
 %%%%%
-stanceRhythms = { \time 3/4 \partial 2 s2 s2. \time 2/4 s2 s2 s2 s2 \break }
+stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2 s2. \time 2/4 s2 s2 s2 s2 \break }
 stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 \breathe }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
 stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
@@ -67,7 +80,7 @@ reponTwoLyrics = \lyricmode { Ô mon frè -- re, ré -- ponds- -- moi. }
 %%%%% Antienne pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-antienneRhythms = { s2*8 \bar "||" \break }
+antienneRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2*8 \bar "||" \break }
 antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
 antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
 antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c (b) c2 }
@@ -179,11 +192,11 @@ choralThreePartTwoLyrics = \lyricmode {
   Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
 }
 
-choralPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn s\breve s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 \bar "|" s\breve s1 s4 s \cadenzaOff \bar"||" \break }
-choralPsalmSoprano = \relative c'' { a\breve gs4 b\breve gs!1 a4 c\breve c1 b4 b\breve a1 a4 gs! }
-choralPsalmAlto = \relative c' { e\breve e4 f\breve e1 e4 e\breve f1 f4 e\breve e1 e4 e }
-choralPsalmTenor = \relative c' {c\breve b4 d\breve d1 c4 c\breve d1 d4 b\breve c1 c4 d }
-choralPsalmBass = \relative c { a\breve e'4 b\breve e1 a,4 a\breve a'1 a4 gs!\breve a1 a,4 bf}
+choralPsalmRhythms = { \markCustom "Psalmodie" \cadenzaOn \cesure \tAcce s\breve \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 s \cesure \cadenzaOff \bar"||" \break }
+choralPsalmSoprano = \relative c'' { \cesure a\breve gs4 \cesure b\breve gs!1 a4  \cesure c\breve c1  b4 \cesure b\breve   a1 a4 gs! \cesure }
+choralPsalmAlto =    \relative c'  { \cesure e\breve e4  \cesure f\breve e1   e4  \cesure e\breve f1  f4 \cesure e\breve   e1 e4 e \cesure }
+choralPsalmTenor =   \relative c'  { \cesure c\breve b4  \cesure d\breve d1   c4  \cesure c\breve d1  d4 \cesure b\breve   c1 c4 d \cesure }
+choralPsalmBass =    \relative c   { \cesure a\breve e'4 \cesure b\breve e1   a,4 \cesure a\breve a'1 a4 \cesure gs!\breve a1 a,4 bf \cesure }
 
 %%%%%
 %%%%%
@@ -207,12 +220,23 @@ choralPsalmBass = \relative c { a\breve e'4 b\breve e1 a,4 a\breve a'1 a4 gs!\br
   inner-margin =  2\cm
   outer-margin = 1.5\cm
   }
-
+MidiOutput = \midi {
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+      \tempo 4 = 75
+      \set midiMergeUnisons = ##t
+    }
 FirstScorePaper = \paper {
-    markup-system-spacing = #'((basic-distance . 20)
+    markup-system-spacing = #'((basic-distance . 15)
        (minimum-distance . 15)
-       (padding . 18)
-       (stretchability . 16))
+       (padding . 15)
+       (stretchability . 15))
     top-markup-spacing = #'((basic-distance . 5)
        (minimum-distance . 5)
        (padding . 5)
@@ -311,14 +335,14 @@ OtherScoresHeader = \header {
   \score {
     {
       <<
-        \new Staff = "stanceSolistStaff" \with { instrumentName = "Soliste" }
+        \new Staff = "stanceSolistStaff" \with { instrumentName = "Soliste" midiInstrument = \midiInstrumentName }
         <<
           \clef "bass"
           \new Voice = "stanceRhythms" { \markCustom "Stance" \global \stanceRhythms }
           \new Voice = "stanceMelody" { \relative c' { \stanceMelody } }
         >>
         \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
-        \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" }
+        \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" midiInstrument = \midiInstrumentName }
         <<
           \new Staff = "stancePianoHighStaff"
           <<
@@ -338,7 +362,7 @@ OtherScoresHeader = \header {
       >>
       \new ChoirStaff = "stanceChoirStaff"
       <<
-        \new Staff = "stanceHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
+        \new Staff = "stanceHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "treble"
           \new Voice = "stanceRhythms" { \reponRhythms \break \markCustom "Repons" \antienneRhythms }
@@ -346,7 +370,7 @@ OtherScoresHeader = \header {
           \new Voice = "stanceAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
         >>
         \new Lyrics \lyricsto "stanceSoprano" { \reponOneLyrics \antienneLyrics }
-        \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
+        \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "bass"
           \new Voice = "stanceRhythms" { \reponRhythms \antienneRhythms }
@@ -362,6 +386,7 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
+    \MidiOutput
     \FirstScoreHeader
   }
   \markuplist {
@@ -422,15 +447,8 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
-    \header {
-      title = ##f
-      subtitle = ##f
-      composer = ##f
-      composerPrefix = ##f
-      poet = ##f
-      poetPrefix = ##f
-      dedication = ##f
-    }
+    \MidiOutput
+    \OtherScoresHeader
   }
   \markuplist {
     \override #'(font-family . sans)
@@ -511,6 +529,7 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
+    \MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -594,6 +613,7 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
+    \MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -675,6 +695,7 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
+    \MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -750,6 +771,7 @@ OtherScoresHeader = \header {
             \RemoveEmptyStaves
         }
     }
+    \MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
