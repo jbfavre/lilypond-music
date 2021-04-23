@@ -114,9 +114,9 @@ choralOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t
 
 choralOnePartTwoRhythms = { s2*7 }
 choralOnePartTwoSopranoMusic = \relative c'' { a8 gs!8 a8 b c4 b a a gs a b8 b a g! fs4 fs8 fs e2 }
-choralOnePartTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e g8 g e e e4 ds8 b b2 }
-choralOnePartTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c d8 d c cs8 b8 c a4 gs2 }
-choralOnePartTwoBassMusic = \relative c' { a8 e8 a g c,4 g' d8 (e) f (d) e4 a,4 g8 g a as b4 b8 b e2 }
+choralOnePartTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e g8 g e e e4 ds8 ds b2 }
+choralOnePartTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c d8 d c b b c a b gs2 }
+choralOnePartTwoBassMusic = \relative c' { a8 e8 a g c,4 g' d8 (e) f (d) e4 a,4 g8 g a e' b4 b8 b e2 }
 choralOnePartTwoLyrics = \lyricmode {
   Tant d'a -- mour se -- rait- -- il sans ré -- pon -- se,
   tant d'a -- mour d'un Dieu cru -- ci -- fié&nbsp;?
@@ -166,10 +166,10 @@ choralTwoPartTwoLyrics = \lyricmode {
 %%%%%
 %%%%%
 choralThreePartOneRhythms = { \global \markCustom "Choral III" s2*7 }
-choralThreePartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. a8 b4 a8 a gs2 }
-choralThreePartOneAltoMusic =  \relative c' { e4 e8 e e2 e4 e e e e4. e8 f4 e8 f e2 }
-choralThreePartOneTenorMusic = \relative c' { c4 b8 a b2 c4 b a gs a4. c8 d4 c8 c b2 }
-choralThreePartOneBassMusic = \relative c' { a4 gs8 a d,2  e4 e8 d c4 b a4. a8 b4 c8 d e2 }
+choralThreePartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. b8 a4 a8 a gs2 }
+choralThreePartOneAltoMusic =  \relative c' { e4 e8 e f2 e4 e e f a4. f8 e4 f8 f e2 }
+choralThreePartOneTenorMusic = \relative c' { c4 d8 c d2 c4 b a d e4. d8 c4 c8 b b2 }
+choralThreePartOneBassMusic = \relative c' { a4 gs8 a b4 (b,) c8 d e d c4 b a4. b8 c4 d8 d e2 }
 choralThreePartOneLyrics = \lyricmode {
   Frè -- re se -- vré d'a -- mer -- tu --me,
   frè -- re~au cœur des -- sé -- ché
@@ -184,9 +184,9 @@ choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re
 
 choralThreePartTwoRhythms = { s2*8 }
 choralThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
-choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. g8 a f e f e4 e4 e8 e e f f2 f4 d e2}
-choralThreePartTwoTenorMusic = \relative c' { c4 b c8 d4 d8 e d c b b4 c b8 b c c b2 a4 b a2 }
-choralThreePartTwoBassMusic = \relative c' { a4 g f e a,8 b c d e4 a,8 a' gs8 gs a f d2 d4 gs, a2 }
+choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. f8 a f e f e4 e4 e8 e e f f2 f4 f e2}
+choralThreePartTwoTenorMusic = \relative c' { c4 b c4. d8 e d c b b4 c b8 b c c b2 b4 b a2 }
+choralThreePartTwoBassMusic = \relative c' { a4 g f d8 (b) a8 b c d e4 a,8 a' gs8 gs a f d2 d4 gs, a2 }
 choralThreePartTwoLyrics = \lyricmode {
   Jé -- sus- -- Christ, le Ver -- be~et la Ré -- pon -- se,
   Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
