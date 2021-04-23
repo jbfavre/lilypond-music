@@ -427,7 +427,7 @@ OtherScoresHeader = \header {
       \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
         \new Staff = "choralChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
           \clef "treble"
-          \new Voice = "choralRhythms" { \choralOnePartOneRhythms \break \choralOneReponRhythms \break \choralOnePartTwoRhythms \bar "||" \break \antienneRhythms }
+          \new Voice = "choralRhythms" { \choralOnePartOneRhythms \break \choralOneReponRhythms \break \choralOnePartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
           \new Voice = "choralSoprano" { \voiceOne \choralOnePartOneSopranoMusic \choralOneReponSopranoMusic \choralOnePartTwoSopranoMusic \antienneSopranoMusic }
           \new Voice = "choralAlto" { \voiceTwo \choralOnePartOneAltoMusic \choralOneReponAltoMusic \choralOnePartTwoAltoMusic \antienneAltoMusic }
         >>
@@ -507,7 +507,7 @@ OtherScoresHeader = \header {
           \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
           <<
             \clef "treble"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \antienneRhythms }
+            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
             \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
             \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
           >>
@@ -593,7 +593,7 @@ OtherScoresHeader = \header {
       \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
         \new Staff = "choralChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
           \clef "treble"
-          \new Voice = "choralRhythms" { \choralTwoPartOneRhythms \break \choralTwoReponRhythms \break \choralTwoPartTwoRhythms \bar "||" \break \antienneRhythms }
+          \new Voice = "choralRhythms" { \choralTwoPartOneRhythms \break \choralTwoReponRhythms \break \choralTwoPartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
           \new Voice = "choralSoprano" { \voiceOne \choralTwoPartOneSopranoMusic \choralTwoReponSopranoMusic \choralTwoPartTwoSopranoMusic \antienneSopranoMusic }
           \new Voice = "choralAlto" { \voiceTwo \choralTwoPartOneAltoMusic \choralTwoReponAltoMusic \choralTwoPartTwoAltoMusic \antienneAltoMusic }
         >>
@@ -673,7 +673,7 @@ OtherScoresHeader = \header {
           \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
           <<
             \clef "treble"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \antienneRhythms }
+            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
             \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
             \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
           >>
