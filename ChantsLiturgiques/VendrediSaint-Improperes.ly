@@ -133,8 +133,8 @@ choralOnePartTwoLyrics = \lyricmode {
 choralTwoPartOneRhythms = { \global \markCustom "Choral II" s2*7 }
 choralTwoPartOneSopranoMusic = \relative c' { e4 a8 b c2 b4 a gs a b4 c8 b a4 a8 a gs2 }
 choralTwoPartOneAltoMusic =  \relative c' { c4 e8 e e2 f4 e e e g g8 f e4 f8 f  e2 }
-choralTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 d c4 c8 c b2 }
-choralTwoPartOneBassMusic = \relative c { a4 a'8 gs a2 b8 b, c d e4 a,4 g4 a8 b c4 f8 d e2 }
+choralTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 b c4 c8 c b2 }
+choralTwoPartOneBassMusic = \relative c { a4 a'8 gs a2 b8 b, c d e4 a,4 g4 c8 d e4 f8 d e2 }
 choralTwoPartOneLyrics = \lyricmode {
   (Ch.)&nbsp;Vi -- gne~aux rai -- sins d'a -- mer -- tu -- me,
   Vi -- gne~aux sar -- ments des -- sé -- chés
@@ -149,9 +149,9 @@ choralTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fu
 
 choralTwoPartTwoRhythms = { s2*7 }
 choralTwoPartTwoSopranoMusic = \relative c'' { a4 a gs a8 b c4 b8 a a4 gs4 a8 b c b a4 a8 gs a2 }
-choralTwoPartTwoAltoMusic =  \relative c' { e4 f e e8 e e4 f8 fs fs4 e e8 e e f e8 f8 e4 e2 }
-choralTwoPartTwoTenorMusic = \relative c' { c4 c b a8 gs a4 b8 b b4 b a8 gs a d c8 c8 b4 c2 }
-choralTwoPartTwoBassMusic = \relative c' { a4 d, e c8 b a4 d8 ds e4 e c8 b a b c8 d8 e4 a,2 }
+choralTwoPartTwoAltoMusic =  \relative c' { e4 f e e8 e e4 f8 fs fs4 e e8 e e f e4 e8 e e2 }
+choralTwoPartTwoTenorMusic = \relative c' { c4 c b a8 gs a4 b8 b b4 b a8 gs a d c4 b8 b c2 }
+choralTwoPartTwoBassMusic = \relative c' { a4 d, e c8 b a4 d8 ds e4 e c8 b a b c8 (d8) e8 e a,2 }
 choralTwoPartTwoLyrics = \lyricmode {
   Ce Fruit mûr se -- rait- -- il sans par -- ta -- ge,
   ce Fruit mûr que Dieu a pres -- sé&nbsp;?
@@ -184,7 +184,7 @@ choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re
 
 choralThreePartTwoRhythms = { s2*8 }
 choralThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
-choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. f8 a f e f e4 e4 e8 e e f f2 f4 f e2}
+choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. f8 a f e f e4 e4 e8 e e f f2 f4 e e2}
 choralThreePartTwoTenorMusic = \relative c' { c4 b c4. d8 e d c b b4 c b8 b c c b2 b4 b a2 }
 choralThreePartTwoBassMusic = \relative c' { a4 g f d8 (b) a8 b c d e4 a,8 a' gs8 gs a f d2 d4 gs, a2 }
 choralThreePartTwoLyrics = \lyricmode {
