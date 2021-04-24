@@ -95,7 +95,7 @@ antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu i
 %%%%% Choral & Psaume I pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralOnePartOneRhythms = { \global \markCustom "Choral I" s2*7 }
+choralOnePartOneRhythms = { \global \markCustom "Choral I" s4\mf\< s s2 s2 s2 s2\!\> s2 s2\mf }
 choralOnePartOneSopranoMusic = \relative c'' { a4 gs!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
 choralOnePartOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 ds e2 }
 choralOnePartOneTenorMusic = \relative c' { c4 d8 c d4 e d c b c d4. c8 b4 b8 (a) gs2 }
@@ -105,14 +105,14 @@ choralOnePartOneLyrics = \lyricmode {
   Peu -- ple~au cœur fer -- mé,
 }
 
-choralOneReponRhythms = { s2*5 }
+choralOneReponRhythms = { s2\mf\< s2 s4\!\> s s2 s2\!\mf }
 choralOneReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
 choralOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
 choralOneReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 choralOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
 
-choralOnePartTwoRhythms = { s2*7 }
+choralOnePartTwoRhythms = { s2\mf\< s2 s2 s2\!\> s2 s2 s2\!\mf }
 choralOnePartTwoSopranoMusic = \relative c'' { a8 gs!8 a8 b c4 b a a gs a b8 b a g! fs4 fs8 fs e2 }
 choralOnePartTwoAltoMusic =  \relative c' { e8 e e g g4 g f f e e g8 g e e e4 ds8 ds b2 }
 choralOnePartTwoTenorMusic = \relative c' { c8 d8 c d e4 d c c b c d8 d c b b c a b gs2 }
@@ -130,7 +130,7 @@ choralOnePartTwoLyrics = \lyricmode {
 %%%%% Choral & Psaume II pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralTwoPartOneRhythms = { \global \markCustom "Choral II" s2*7 }
+choralTwoPartOneRhythms = { \global \markCustom "Choral II" s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
 choralTwoPartOneSopranoMusic = \relative c' { e4 a8 b c2 b4 a gs a b4 c8 b a4 a8 a gs2 }
 choralTwoPartOneAltoMusic =  \relative c' { c4 e8 e e2 f4 e e e g g8 f e4 f8 f  e2 }
 choralTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 b c4 c8 c b2 }
@@ -140,14 +140,14 @@ choralTwoPartOneLyrics = \lyricmode {
   Vi -- gne~aux sar -- ments des -- sé -- chés
 }
 
-choralTwoReponRhythms = { s2*5 }
+choralTwoReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralTwoReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
 choralTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
 choralTwoReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 choralTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
 
-choralTwoPartTwoRhythms = { s2*7 }
+choralTwoPartTwoRhythms = { s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
 choralTwoPartTwoSopranoMusic = \relative c'' { a4 a gs a8 b c4 b8 a a4 gs4 a8 b c b a4 a8 gs a2 }
 choralTwoPartTwoAltoMusic =  \relative c' { e4 f e e8 e e4 f8 fs fs4 e e8 e e f e4 e8 e e2 }
 choralTwoPartTwoTenorMusic = \relative c' { c4 c b a8 gs a4 b8 b b4 b a8 gs a d c4 b8 b c2 }
@@ -165,7 +165,7 @@ choralTwoPartTwoLyrics = \lyricmode {
 %%%%% Choral III pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralThreePartOneRhythms = { \global \markCustom "Choral III" s2*7 }
+choralThreePartOneRhythms = { \global \markCustom "Choral III" s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
 choralThreePartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. b8 a4 a8 a gs2 }
 choralThreePartOneAltoMusic =  \relative c' { e4 e8 e f2 e4 e e f a4. f8 e4 f8 f e2 }
 choralThreePartOneTenorMusic = \relative c' { c4 d8 c d2 c4 b a d e4. d8 c4 c8 b b2 }
@@ -175,14 +175,14 @@ choralThreePartOneLyrics = \lyricmode {
   frè -- re~au cœur des -- sé -- ché
 }
 
-choralThreeReponRhythms = { s2*5 }
+choralThreeReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralThreeReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
 choralThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
 choralThreeReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
 choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
 
-choralThreePartTwoRhythms = { s2*8 }
+choralThreePartTwoRhythms = { s2\mf s2 s2\< s2 s2\!\f\< s2 s2 s2\!\ff }
 choralThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2 d4 d cs2 }
 choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. f8 a f e f e4 e4 e8 e e f f2 f4 e e2}
 choralThreePartTwoTenorMusic = \relative c' { c4 b c4. d8 e d c b b4 c b8 b c c b2 b4 b a2 }
@@ -276,22 +276,22 @@ FirstScorePaper = \paper {
     #(include-special-characters)
   }
 OtherScoresPaper = \paper {
-    markup-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 5)
+    markup-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
        (stretchability . 5))
-    top-markup-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 5)
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+     4 (stretchability . 5))
+    top-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
        (stretchability . 5))
-    top-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 5)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 5)
-       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+      (stretchability . 5))
     oddFooterMarkup = \markup {}
     #(include-special-characters)
   }
