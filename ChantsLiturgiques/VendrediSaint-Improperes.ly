@@ -44,7 +44,7 @@ global = {
 %%%%%
 %%%%%
 stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2\p s2. \time 2/4 s2 s4\mf\< s4\f\>s2  s2\p\! }
-stanceMelody = { a4.^"(éploré)" a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
+stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
 stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
 stanceTenorMusic = \relative c' { c4. c8 d4 c8 b c b b2 c8 d e d d (c) c (b) b2 }
@@ -241,10 +241,10 @@ FirstScorePaper = \paper {
        (minimum-distance . 3)
        (padding . 3)
        (stretchability . 3))
-    top-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
+    top-system-spacing = #'((basic-distance . 4)
+       (minimum-distance . 5)
+       (padding . 4)
+       (stretchability . 10))
     system-system-spacing = #'((basic-distance . 3)
        (minimum-distance . 3)
        (padding . 3)
@@ -339,7 +339,7 @@ OtherScoresHeader = \header {
         <<
           \clef "treble"
           \new Voice = "stanceRhythms" { \markCustom "Stance" \global \stanceRhythms }
-          \new Voice = "stanceMelody" { \relative c'' { \stanceMelody } }
+          \new Voice = "stanceMelody" { \relative c'' { ^"(éploré)" \stanceMelody } }
         >>
         \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
         \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" midiInstrument = \midiInstrumentName }
