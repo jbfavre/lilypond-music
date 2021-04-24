@@ -44,7 +44,7 @@ global = {
 %%%%%
 %%%%%
 stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2\p s2. \time 2/4 s2 s4\mf\< s4\f\>s2  s2\p\! }
-stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
+stanceMelody = { a4.^"(éploré)" a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
 stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
 stanceTenorMusic = \relative c' { c4. c8 d4 c8 b c b b2 c8 d e d d (c) c (b) b2 }
@@ -62,7 +62,7 @@ stanceLyrics = \lyricmode {
 %%%%% Répons pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-reponRhythms = { s2\p s2\< s4\mf s4\> s2\p\! }
+reponRhythms = { s2\p^"(suppliant)" s2\< s4\mf s4\> s2\p\! }
 reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
 reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
 reponTenorMusic = \relative c' { c4. c8 d4. d8 d (c) c (b) b2 }
@@ -80,7 +80,7 @@ reponTwoLyrics = \lyricmode { Ch.&nbsp;:&nbsp;Ô mon frè -- re, ré -- ponds- -
 %%%%% Antienne pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-antienneRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2\p s2 s2\mf s4 s4\< s2 s4\f \breathe s4\mf\> s2 s2\p\! }
+antienneRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2\p^"(implorant)" s2 s2\mf s4 s4\< s2 s4\f \breathe s4\mf\> s2 s2\p\! }
 antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
 antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
 antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c (b) c2 }
@@ -233,20 +233,20 @@ MidiOutput = \midi {
       \set midiMergeUnisons = ##t
     }
 FirstScorePaper = \paper {
-    markup-system-spacing = #'((basic-distance . 15)
-       (minimum-distance . 15)
-       (padding . 15)
-       (stretchability . 15))
-    top-markup-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
+    markup-system-spacing = #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . 5)
        (stretchability . 5))
-    top-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 5)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 8)
-       (minimum-distance . 8)
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 3))
+    top-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 3))
+    system-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
        (padding . 3)
        (stretchability . 3))
     scoreTitleMarkup = \markup \columns {
