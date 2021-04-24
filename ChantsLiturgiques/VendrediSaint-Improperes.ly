@@ -43,7 +43,7 @@ global = {
 %%%%% Stance pour soliste et orgue
 %%%%%
 %%%%%
-stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2 s2. \time 2/4 s2*4 \breathe }
+stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2\p s2. \time 2/4 s2 s4\mf\< s4\f\>s2  s2\p\! }
 stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
 stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
@@ -62,7 +62,7 @@ stanceLyrics = \lyricmode {
 %%%%% Répons pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-reponRhythms = { s2*4 }
+reponRhythms = { s2\p s2\< s4\mf s4\> s2\p\! }
 reponSopranoMusic = \relative c'' { a4. a8 a4. a8 a4 a gs2 }
 reponAltoMusic = \relative c' { e4. e8 e4. e8 e4 f e2 }
 reponTenorMusic = \relative c' { c4. c8 d4. d8 d (c) c (b) b2 }
@@ -80,7 +80,7 @@ reponTwoLyrics = \lyricmode { Ch.&nbsp;:&nbsp;Ô mon frè -- re, ré -- ponds- -
 %%%%% Antienne pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-antienneRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2*8 }
+antienneRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2\p s2 s2\mf s4 s4\< s2 s4\f \breathe s4\mf\> s2 s2\p\! }
 antienneSopranoMusic = \relative c'' { a4 a4 gs2 a4 b8 (a) gs4 gs8 gs a4 b c c8 b a4 gs a2 }
 antienneAltoMusic = \relative c' { e4 f e2 e4 f e e8 e e4 f4 a4 f8 f e4 e e2 }
 antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c (b) c2 }
