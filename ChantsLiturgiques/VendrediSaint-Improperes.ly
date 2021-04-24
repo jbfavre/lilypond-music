@@ -354,7 +354,7 @@ OtherScoresHeader = \header {
           \new Staff  = "stancePianoLowStaff"
           <<
             \clef "bass"
-            \new Voice = "stancePianoRhythms" { \stanceRhythms }
+            %\new Voice = "stancePianoRhythms" { \stanceRhythms }
             \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
             \new Voice = "stancePianoBass" { \voiceTwo \stanceBassMusic }
           >>
@@ -373,7 +373,7 @@ OtherScoresHeader = \header {
         \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "bass"
-          \new Voice = "stanceRhythms" { \reponRhythms \antienneRhythms }
+          %\new Voice = "stanceRhythms" { \reponRhythms \antienneRhythms }
           \new Voice = "stanceTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic}
           \new Voice = "stanceBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
         >>
@@ -434,7 +434,7 @@ OtherScoresHeader = \header {
         \new Lyrics \lyricsto "choralSoprano" { \choralOnePartOneLyrics \choralOneReponLyrics \choralOnePartTwoLyrics \antienneLyrics }
         \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
           \clef "bass"
-          \new Voice = "choralRhythms" { \choralOnePartOneRhythms \choralOneReponRhythms \choralOnePartTwoRhythms \antienneRhythms }
+          %\new Voice = "choralRhythms" { \choralOnePartOneRhythms \choralOneReponRhythms \choralOnePartTwoRhythms \antienneRhythms }
           \new Voice = "choralTenor" { \voiceOne \choralOnePartOneTenorMusic \choralOneReponTenorMusic \choralOnePartTwoTenorMusic \antienneTenorMusic }
           \new Voice = "choralBass" { \voiceTwo \choralOnePartOneBassMusic \choralOneReponBassMusic \choralOnePartTwoBassMusic \antienneBassMusic }
         >>
@@ -498,7 +498,7 @@ OtherScoresHeader = \header {
           >>
           \new Staff  = "psalmodyLowStaff" <<
             \clef "bass"
-            \new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
+            %\new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
             \new Voice = "psalmodyTenor" { \voiceOne \choralPsalmTenor }
             \new Voice = "psalmodyBass" { \voiceTwo \choralPsalmBass }
           >>
@@ -515,7 +515,7 @@ OtherScoresHeader = \header {
           \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
           <<
             \clef "bass"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
+            %\new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
             \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
             \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
           >>
@@ -600,7 +600,7 @@ OtherScoresHeader = \header {
         \new Lyrics \lyricsto "choralSoprano" { \choralTwoPartOneLyrics \choralTwoReponLyrics \choralTwoPartTwoLyrics \antienneLyrics }
         \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
           \clef "bass"
-          \new Voice = "choralRhythms" { \choralTwoPartOneRhythms \choralTwoReponRhythms \choralTwoPartTwoRhythms \antienneRhythms }
+          %\new Voice = "choralRhythms" { \choralTwoPartOneRhythms \choralTwoReponRhythms \choralTwoPartTwoRhythms \antienneRhythms }
           \new Voice = "choralTenor" { \voiceOne \choralTwoPartOneTenorMusic \choralTwoReponTenorMusic \choralTwoPartTwoTenorMusic \antienneTenorMusic }
           \new Voice = "choralBass" { \voiceTwo \choralTwoPartOneBassMusic \choralTwoReponBassMusic \choralTwoPartTwoBassMusic \antienneBassMusic }
         >>
@@ -664,7 +664,7 @@ OtherScoresHeader = \header {
           >>
           \new Staff  = "psalmodyLowStaff" <<
             \clef "bass"
-            \new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
+            %\new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
             \new Voice = "psalmodyTenor" { \voiceOne \choralPsalmTenor }
             \new Voice = "psalmodyBass" { \voiceTwo \choralPsalmBass }
           >>
@@ -681,7 +681,7 @@ OtherScoresHeader = \header {
           \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
           <<
             \clef "bass"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
+            %\new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
             \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
             \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
           >>
@@ -757,7 +757,7 @@ OtherScoresHeader = \header {
           \new Lyrics \lyricsto "choralSoprano" { \choralThreePartOneLyrics \choralThreeReponLyrics \choralThreePartTwoLyrics }
           \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
             \clef "bass"
-            \new Voice = "choralRhythms" { \choralThreePartOneRhythms \choralThreeReponRhythms \choralThreePartTwoRhythms }
+            %\new Voice = "choralRhythms" { \choralThreePartOneRhythms \choralThreeReponRhythms \choralThreePartTwoRhythms }
             \new Voice = "choralTenor" { \voiceOne \choralThreePartOneTenorMusic \choralThreeReponTenorMusic \choralThreePartTwoTenorMusic }
             \new Voice = "choralBass" { \voiceTwo \choralThreePartOneBassMusic \choralThreeReponBassMusic \choralThreePartTwoBassMusic }
           >>
