@@ -233,18 +233,18 @@ MidiOutput = \midi {
       \set midiMergeUnisons = ##t
     }
 FirstScorePaper = \paper {
-    markup-system-spacing = #'((basic-distance . 10)
-       (minimum-distance . 10)
+    markup-system-spacing = #'((basic-distance . 30)
+       (minimum-distance . 30)
        (padding . 5)
        (stretchability . 5))
     top-markup-spacing = #'((basic-distance . 3)
        (minimum-distance . 3)
        (padding . 3)
        (stretchability . 3))
-    top-system-spacing = #'((basic-distance . 4)
-       (minimum-distance . 5)
-       (padding . 4)
-       (stretchability . 10))
+    top-system-spacing = #'((basic-distance . 6)
+       (minimum-distance . 6)
+       (padding . 6)
+       (stretchability . 5))
     system-system-spacing = #'((basic-distance . 3)
        (minimum-distance . 3)
        (padding . 3)
@@ -284,9 +284,9 @@ OtherScoresPaper = \paper {
        (minimum-distance . 3)
        (padding . 3)
      4 (stretchability . 5))
-    top-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
+    top-system-spacing = #'((basic-distance . 9)
+       (minimum-distance . 9)
+       (padding . 7)
        (stretchability . 5))
     system-system-spacing = #'((basic-distance . 3)
        (minimum-distance . 3)
@@ -421,7 +421,26 @@ OtherScoresHeader = \header {
 %%%%%
 %%%%%
 \bookpart {
-  \OtherScoresPaper
+  \paper {
+    markup-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 5))
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+     4 (stretchability . 5))
+    top-system-spacing = #'((basic-distance . 10)
+       (minimum-distance . 10)
+       (padding . 5)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+      (stretchability . 5))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     {
       \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
@@ -649,7 +668,26 @@ OtherScoresHeader = \header {
 %%%%%
 %%%%%
 \bookpart {
-  \OtherScoresPaper
+  \paper {
+    markup-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 5))
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+     4 (stretchability . 5))
+    top-system-spacing = #'((basic-distance . 25)
+       (minimum-distance . 25)
+       (padding . 5)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+      (stretchability . 5))
+    oddFooterMarkup = \markup {}
+    #(include-special-characters)
+  }
   \score {
     {
       \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
