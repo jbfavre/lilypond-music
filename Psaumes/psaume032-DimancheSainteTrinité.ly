@@ -113,26 +113,33 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Rendez grâce au Seigne" \underline u "r&nbsp;: Il est bon&nbsp;!"}
-        \concat { \typewriter "   " "Étern" \underline e "l est son amour&nbsp;!"}
-        \concat { \typewriter "   " "Oui, que le d" \underline i "se Israël&nbsp;:"}
-        \concat { \typewriter "   " "Étern" \underline e "l est son amour&nbsp;!"}
+        \concat { \typewriter "1. " "Oui, elle est droite, la par" \underline o "le du Seigneur&nbsp;;"}
+        \concat { \typewriter "   " "il est fid" \underline è "le en tout ce qu’il fait."}
+        \concat { \typewriter "   " "Il aime le bon dro" \underline i "t et la justice&nbsp;;"}
+        \concat { \typewriter "   " "la terre est rempl" \underline i "e de son amour."}
       }
       \hspace #1
       \left-column {
-        \concat { \typewriter "2. " "Le bras du Seigne" \underline u "r se lève,"}
-        \concat { \typewriter "   " "le bras du Seigne" \underline u "r est fort&nbsp;!"}
-        \concat { \typewriter "   " "Non, je ne mourrai p" \underline a "s, je vivrai"}
-        \concat { \typewriter "   " "pour annoncer les acti" \underline o "ns du Seigneur."}
+        \concat { \typewriter "2. " "Le Seigneur a fait les ci" \underline e "ux par sa parole,"}
+        \concat { \typewriter "   " "l’univers, par le so" \underline u "ffle de sa bouche."}
+        \concat { \typewriter "   " "Il parla, et ce qu’il d" \underline i "t exista&nbsp;;"}
+        \concat { \typewriter "   " "il commanda, et ce qu’il d" \underline i "t survint."}
       }
     }
     \vspace #1
     \fill-line {
+      \left-column{
+        \concat { \typewriter "3. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
+        \concat { \typewriter "   " "qui mettent leur esp" \underline o "ir en son amour,"}
+        \concat { \typewriter "   " "pour les délivr" \underline e "r de la mort,"}
+        \concat { \typewriter "   " "les garder en vie aux j" \underline o "urs de famine."}
+      }
+      \hspace #1
       \left-column {
-        \concat { \typewriter "3. " "La pierre qu’ont rejet" \underline é "e les bâtisseurs"}
-        \concat { \typewriter "   " "est deven" \underline u "e la pierre d’angle&nbsp;:"}
-        \concat { \typewriter "   " "c’est là l’œ" \underline u "vre du Seigneur,"}
-        \concat { \typewriter "   " "la merv" \underline e "ille devant nos yeux."}
+        \concat { \typewriter "4. " "Nous attendons notre v" \underline i "e du Seigneur&nbsp;:"}
+        \concat { \typewriter "   " "il est pour nous un appu" \underline i ", un bouclier."}
+        \concat { \typewriter "   " "Que ton amour, Seign" \underline e "ur, soit sur nous"}
+        \concat { \typewriter "   " "comme notre esp" \underline o "ir est en toi&nbsp;!"}
       }
     }
   }
