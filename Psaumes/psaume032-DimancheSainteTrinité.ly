@@ -25,19 +25,31 @@ global = {
 
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
-  \partial 4. d8 a' b a4 a8 fs8 a fs fs4 e e fs2. \fermata \bar "|." \break
+  \override BreathingSign.text = \markup {
+    \musicglyph #"scripts.caesura.straight"
+  }
+  \partial 4. d8 a' b a4 a8 \breathe fs8 a g fs4 e e fs2. \fermata \bar "|." \break
   }
 
 altoAntiphonMusic = \relative c' {
-  d8 fs g e4 e8 d8 e8 e d4 d cs d2. \fermata
+  \override BreathingSign.text = \markup {
+    \musicglyph #"scripts.caesura.straight"
+  }
+  \partial 4. d8 fs g g8 (fs) e \breathe d e e d4 d cs d2. \fermata
   }
 
 tenorAntiphonMusic =  \relative c' {
-  d8 d d cs4 a8 a8 cs8 cs b4 b a a2. \fermata
+  \override BreathingSign.text = \markup {
+    \musicglyph #"scripts.caesura.straight"
+  }
+  \partial 4. d8 d d cs4 cs8 \breathe a cs cs b4 b a a2. \fermata
   }
 
 bassAntiphonMusic =  \relative c {
-  d8 d b cs4 cs8 d a as b (a) g4 a d2. \fermata
+  \override BreathingSign.text = \markup {
+    \musicglyph #"scripts.caesura.straight"
+  }
+  \partial 4. d8 d g, a4 a8 \breathe d a as b (a) g4 a d2. \fermata
   }
 
 antiphonLyrics = \lyricmode {
@@ -56,43 +68,43 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c'' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  b\breve a1 a4 b \bar "||"
-  b\breve a1 b4 b \bar "||"
-  b\breve a1 a4 a g \bar "||"
-  a\breve g1 a4 \bar "|." \break
+  a\breve b1 a4 g fs \bar "||"
+  g\breve fs1 e4 \bar "||"
+  e\breve fs1 d4 \bar "||"
+  g\breve fs1 e4 e \bar "|." \break
   \markCustom "Psalmodie par verset" \cadenzaOn
-  b\breve a1 a4 b \bar "||"
-  a\breve g1 a4 \bar "|."
+  a\breve b1 a4 \bar "||"
+  fs\breve g1 a4 \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
-altoVerseMusic = \relative c'' {
+altoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  g\breve g1 fs4 g
-  g\breve fs1 fs4 fs
-  g\breve fs1 fs4 fs e
-  e\breve e1 fs4
-  g\breve g1 fs4 g
-  e\breve e1 fs4
+  fs\breve g1 e4 e d
+  d\breve d1 cs4
+  cs\breve cs1 b4
+  d\breve d1 d4 cs
+  fs\breve g1 e4
+  d\breve e1 e4
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  d\breve e1 d4 d
-  e\breve e1 e4 ds
-  e\breve e1 d4 c b
-  c\breve b1 d4
-  d\breve e1 d4 d
-  c\breve b1 d4
+  d\breve d1 cs4 cs d
+  b\breve a1 a4
+  a\breve fs1 fs4
+  b\breve b1 b4 a
+  d\breve d1 cs4
+  b\breve d1 cs4
   }
 
-bassVerseMusic = \relative c' {
+bassVerseMusic = \relative c {
   \silence \sopranoAntiphonMusic
-  g\breve c,1 d4 g
-  e\breve c1 b4 b
-  e\breve fs1 d4 ds e
-  c\breve e1 d4
-  g\breve c,1 d4 g
-  c,\breve e1 d4
+  d\breve g,1 a4 as b
+  g\breve d'1 a'4
+  a,\breve as1 b4
+  g\breve gs1 a4 a
+  d\breve g,1 a4
+  b\breve b1 a4
   }
 
 verseLyrics = \markuplist {
