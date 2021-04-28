@@ -45,14 +45,15 @@ global = {
 %%%%%
 %%%%%
 solistRhythms = { \set Score.tempoHideNote = ##t s2 s2. s2 s4 s4 s2  s2 }
-solistMelody = \relative c' { r8 d f8 g a4 a8 d d4 (c8 bf) a4 r8 a \break g4 a f8 d e f g a g f f4 e }
-solistSopranoMusic = \relative c' { d4 f8 g a4 a8 d d4 (c8 bf) a2 \break g4 a f8 d e f g a g f f4 e }
-solistAltoMusic = \relative c' { a4 d4 e4 f g e c2 e d4 c d2 cs }
-solistTenorMusic = \relative c { f4 bf4 cs4 a  bf  g f a c a a2 g4 bf8 b a2 }
-solistBassMusic = \relative c { d4 bf a d g, c f4 f, c'4 cs d c! bf g8 gs a2  }
+solistMelody = \relative c' { r8 d f8 g a4 a8 d d4 (c8 bf) a4 r8 a \break g4 a f8 d e f g a g f f4 e8 \breathe e8 \break d d e e f4 g8 g a2 }
+solistSopranoMusic = \relative c' { d4 f8 g a4 a8 d d4 (c8 bf) a2 \break g4 a f8 d e f g a g f f4 e d e f g a2 }
+solistAltoMusic = \relative c' { a4 d4 e4 f g e c2 e d4 c d2 cs d4 (d) c4 d e2 }
+solistTenorMusic = \relative c { f4 bf4 cs4 a  bf  g f a c a a2 g4 bf8 b a2 f4 bf a g cs2 }
+solistBassMusic = \relative c { d4 bf a d g, c f4 f, c'4 cs d c! bf g8 gs a2 bf4 g8 g' f4 bf,4 a2 }
 solistLyrics = \lyricmode {
   À la vic -- ti -- me Pas -- ca -- le
   chré -- tiens, of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
+  l'A -- gneau a ra -- che -- té les bre -- bis
 }
 
 %%%%%
