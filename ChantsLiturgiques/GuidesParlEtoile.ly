@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 \language "english"
 %{
   Default settings are needed at the beginning
@@ -12,7 +12,7 @@
 %\include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 % override Staff font size
-%staffCustomSize = 16
+staffCustomSize = 16
 midiInstrumentName = #"church organ"
 
 title = "Guidés par l'étoile"
@@ -229,7 +229,7 @@ verseFiguredBass = \figuremode {
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
-  \override #'(font-size . 1)
+  %\override #'(font-size . 1)
   \column {
     \fill-line {
       \left-column{
@@ -286,9 +286,8 @@ verseFiguredBass = \figuremode { <5\!>\breve <5\!>1 <_>4 <5\!>4 <5\!>\breve <5\!
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
-  \override #'(font-size . 1)
+  %\override #'(font-size . 1)
   \column {
-    %\vspace #1
     \fill-line {
       \left-column{
         %  « ℣ » et « ℟ »
@@ -300,6 +299,7 @@ verseLyrics =  \markup {
     }
     \vspace #1
     \fill-line {
+      \override #'(font-size . 1)
       \rounded-box \bold \center-column {
         \concat { "Selon le moment de la messe, on prendra au choix" }
         \concat { "l'antienne d'ouverture ou l'antienne de communion" }
@@ -330,7 +330,7 @@ verseFiguredBass = \figuremode { <0>8 <5>4 <5\!>8 <5\!> <6> <5> <6\!> <5\!> <7\+
 
 verseLyrics =  \markup {
   \override #'(font-family . sans)
-  \override #'(font-size . 1)
+  %\override #'(font-size . 1)
   \column {
     \fill-line {
       \left-column{
