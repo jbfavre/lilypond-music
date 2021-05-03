@@ -161,7 +161,7 @@ ScoreHeader = \header {
           \new Voice = "solistMelody" { \solistMelody }
         >>
         \new Lyrics \lyricsto "solistMelody" { \solistLyrics }
-        \new PianoStaff = "solistPiano" \with { instrumentName = "Clavier" midiInstrument = \midiInstrumentName }
+        \new PianoStaff = "solistPiano" \with { instrumentName = "Orgue" midiInstrument = \midiInstrumentName }
         <<
           \new Staff = "solistPianoHighStaff"
           <<
