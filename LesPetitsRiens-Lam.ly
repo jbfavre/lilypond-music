@@ -60,8 +60,8 @@ splitStaffBarLine = {
   composer = "Jean Baptiste Favre"
   poet = "@ConteurDeNotes"
   opus = "Op. 3"
-  dedication = \markup { \italic "Saint Pierre Quiberon, novembre 2020" }
-  subtitle = "pour chœur à quatre voix et soliste"
+  dedication = \markup { \italic "Clichy la Garenne, mai 2021" }
+  subtitle = "pour chœur à quatre voix"
   tagline = ""
   date = "Clichy la Garenne, mai 2021"
 }
@@ -182,13 +182,22 @@ strophe_conclusion_accompagnement = \lyricmode {
   d'é -- ter -- nels ins -- tants
 }
 
-% Intro
-intro_Sopranes = { r2 r r r }
-intro_Altos    = { r2 r4. e8 a4 f e4 r4 }
-intro_Tenors   = { r2 r r r }
-intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
+% Refrain
+refrain_Sopranes = { e4 d8 d c4 r8 e8
+                     d4 d4 b4 r4 }
+refrain_Altos    = { r8 e8 g f r8 e8 a g
+                     r8 fs8 b a r8 a8 fs gs }
+refrain_Tenors   = { c4 b8 b g4 r8 c8
+                     a4 a gs r4 }
+refrain_Basses   = { a4 b8 b c4 r8 c8
+                     d4 d e4 r4 }
 
 % Lettre A
+lettre_A_Intro_Sopranes = { r2 r r r }
+lettre_A_Intro_Altos    = { r2 r4. e8 c8 (d) d (c) b4 r4 }
+lettre_A_Intro_Tenors   = { r2 r r r }
+lettre_A_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
+
 lettre_A_Couplet_Sopranes = { c4 b8 a b4 r4
                               c4 d8 c b4 r4
                               c8 d4 e8 d c b gs
@@ -204,32 +213,60 @@ lettre_A_Couplet_Tenors   = { e4 c8 d r8 d8 c b
                               r8 d8 d c b4 r8 b a4 a gs r
                               }
 lettre_A_Couplet_Basses   = { a4 a8 a e4 r4
-                              a4 d,8 d e4 r4
+                              a,4 d8 d e4 r4
                               a4 a8 a e4 r8 e8
                               a,4 d e r4
                               }
-lettre_A_Refrain_Sopranes = { c4 d8 d e4 r8 e8 d4 c b4 r4 }
-%lettre_A_Refrain_Altos    = { r8 e8 g f r8 e8 a g r8 fs b a r8 a8 fs gs }
-lettre_A_Refrain_Altos    = { r8 e8 g f r8 e8 a g r8 fs8 b a r8 a8 fs gs }
-lettre_A_Refrain_Tenors   = { c4 b8 b a4 r8 e8 fs4 fs gs r4 }
-lettre_A_Refrain_Basses   = { a4 b8 b c4 r8 c8 d4 d e4 r4 }
+
+% Lettre B
+lettre_B_Intro_Sopranes = { r2 r r r }
+lettre_B_Intro_Altos    = { r2 r4 r8 e8 e4 fs gs r4 }
+lettre_B_Intro_Tenors   = { a4 a8 a e'4 r8 e8 c8 (d) d (c) b4 r4 }
+lettre_B_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
+
+% Lettre C
+lettre_C_Intro_Sopranes = { a4 a8 a e'4 r8 e8 c8 (d) d (c) b4 r4 }
+lettre_C_Intro_Altos    = { r2 r4 r8 e8 e4 fs gs r4 }
+lettre_C_Intro_Tenors   = { r2 r r r }
+lettre_C_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
+
+% Lettre D
+
+% Lettre E
+
+% Lettre F
+lettre_F_Sopranes = { r8 e r c r d c b }
+lettre_F_Altos    = { a8 r e r f r gs r }
+lettre_F_Tenors   = { r8 c r e r f r d }
+lettre_F_Basses   = { a8 r c r b r e, r }
+
+lettre_F_Final_Sopranes = { c2 \fermata a2-- <gs b>-- cs \fermata }
+lettre_F_Final_Altos    = { a2 \fermata f2-- f-- a \fermata }
+lettre_F_Final_Tenors   = { ef2 \fermata d2-- d2-- e2 \fermata }
+lettre_F_Final_Basses   = { f2 \fermata d2-- b-- a \fermata }
 
 global = { \key a \minor \time 2/4 }
 
 rightOne = {
   \global
-  \intro_Sopranes
+  \relative c'' \lettre_A_Intro_Sopranes
   % Lettre A
   \relative c'' \lettre_A_Couplet_Sopranes
-  \relative c'' \lettre_A_Refrain_Sopranes
+  \relative c'' \refrain_Sopranes
   % Lettre B
+  \relative c'' \lettre_B_Intro_Sopranes
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
   % Lettre C
+  \relative c'' \lettre_C_Intro_Sopranes
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \relative c'' \repeat unfold 2 \lettre_F_Sopranes
+  \relative c'' \lettre_F_Final_Sopranes
 }
 rightOneDynamics = {
   s2*4
@@ -239,14 +276,29 @@ rightOneDynamics = {
   s2*6 \break
   s2*4 \break
   % Lettre B
-  \mark "B"
-  s2*6 \break
-  s2*5 \break
-  s2*5 \break
+  \mark "B-C-D-E"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \break
+  s2*4 \break
   % Lettre C
+  \mark "C"
+  s2*4 \break
   % Lettre D
+  \mark "D"
+  s2*4 \break
   % Lettre E
+  \mark "E"
+  s2*4 \break
   % Lettre F
+  \mark "F"
+  \set Score.repeatCommands = #(list(list 'volta "1.-3.") 'start-repeat)
+  \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
+  s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
+  \break
+  s2*4
+  \set Score.repeatCommands = #'((volta #f))
+  \bar ".|"
 }
 rightOneLyrics = \lyricmode {
   % Lettre A
@@ -258,22 +310,30 @@ rightOneLyrics = \lyricmode {
   % Lettre D
   % Lettre E
   % Lettre F
+  Pas -- sent les jours mais, pas le, pas le temps
+  Pas&nbsp;! Pas le temps&nbsp;!
 }
 
 rightTwo = {
   \global
-  \relative c' \intro_Altos
+  \relative c' \lettre_A_Intro_Altos
   % Lettre A
   \relative c' \lettre_A_Couplet_Altos
-  \relative c' \lettre_A_Refrain_Altos
+  \relative c' \refrain_Altos
   % Lettre B
+  \relative c' \lettre_B_Intro_Altos
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
   % Lettre C
+  \relative c' \lettre_C_Intro_Altos
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \relative c'' \repeat unfold 2 \lettre_F_Altos
+  \relative c'' \lettre_F_Final_Altos
 }
 rightTwoDynamics = {
   s2*4
@@ -282,12 +342,19 @@ rightTwoDynamics = {
   s2*6
   % Lettre B
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
+  s2*4
   % Lettre C
+  s2*4
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
+  s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
+  s2*4
 }
 rightTwoLyrics = \lyricmode {
   mais pas le temps.
@@ -296,26 +363,35 @@ rightTwoLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les, les jours mais, mais pas le, pas le temps.
   % Lettre B
+  mais pas le temps.
   % Lettre C
   % Lettre D
   % Lettre E
   % Lettre F
+  Pas -- sent les jours, mais pas le temps
+  Pas&nbsp;! Pas le temps&nbsp;!
 }
 
 leftOne =  {
   \global
-  \intro_Tenors
+  \relative c' \lettre_A_Intro_Tenors
   % Lettre A
   \relative c' \lettre_A_Couplet_Tenors
-  \relative c' \lettre_A_Refrain_Tenors
+  \relative c' \refrain_Tenors
   % Lettre B
+  \relative c' \lettre_B_Intro_Tenors
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
   % Lettre C
+  \relative c' \lettre_C_Intro_Tenors
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \relative c' \repeat unfold 2 \lettre_F_Tenors
+  \relative c' \lettre_F_Final_Tenors
 }
 leftOneDynamics = {
   s2*4
@@ -324,12 +400,19 @@ leftOneDynamics = {
   s2*6
   % Lettre B
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
+  s2*4
   % Lettre C
+  s2*4
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
+  s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
+  s2*4
 }
 leftOneLyrics = \lyricmode {
   % Lettre A
@@ -341,21 +424,27 @@ leftOneLyrics = \lyricmode {
   % Lettre D
   % Lettre E
   % Lettre F
+  Pas -- sent les jours, mais pas le temps
+  Pas&nbsp;! Pas le temps&nbsp;!
   }
 
 leftTwo = {
   \global
-  \relative f \intro_Basses
+  \relative f \lettre_A_Intro_Basses
   % Lettre A
   \relative f \lettre_A_Couplet_Basses
-  \relative c \lettre_A_Refrain_Basses
+  \relative c \refrain_Basses
   % Lettre B
+  \relative f \lettre_B_Intro_Basses
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
   % Lettre C
+  \relative f \lettre_C_Intro_Basses
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   %{<<
     {
       \set Staff.InstrumentName = #"Baryton"
@@ -372,14 +461,11 @@ leftTwo = {
   \set Staff.InstrumentName = #"Basses"
   \set Staff.shortInstrumentName = #"B."
   \refrain_Trois_Basse \break
+  %}
   % Lettre F
-  \set Score.repeatCommands =
-    #(list(list 'volta "1.-3.") 'start-repeat)
-    \epilogue_Basses \bar ":|."
-  \break
-  \final_Basses
-  \set Score.repeatCommands = #'((volta #f))
-  \bar ".|" %}
+  %\relative f \repeat unfold 2 \lettre_F_Basses
+  \relative f \repeat unfold 2 \lettre_F_Basses \bar ":|."
+  \relative f \lettre_F_Final_Basses
 }
 leftTwoDynamics = {
   s2*4
@@ -388,12 +474,19 @@ leftTwoDynamics = {
   s2*6
   % Lettre B
   s2*4
-  s2*6
-  s2*6
+  s2*4
+  s2*4
+  s2*4
   % Lettre C
+  s2*4
   % Lettre D
+  s2*4
   % Lettre E
+  s2*4
   % Lettre F
+  \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
+  s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
+  s2*4
 }
 leftTwoLyrics = \lyricmode {
   Pas -- sent les jours, mais pas le temps.
@@ -402,10 +495,13 @@ leftTwoLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
+  Pas -- sent les jours, mais pas le temps.
   % Lettre C
   % Lettre D
   % Lettre E
   % Lettre F
+  Pas -- sent les jours, mais pas le temps
+  Pas&nbsp;! Pas le temps&nbsp;!
   }
 
 choirStaff = \new ChoirStaff
