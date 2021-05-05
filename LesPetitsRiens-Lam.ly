@@ -194,7 +194,7 @@ refrain_Basses   = { a4 b8 b c4 r8 c8
 
 % Lettre A
 lettre_A_Intro_Sopranes = { r2 r r r }
-lettre_A_Intro_Altos    = { r2 r4. e8 c8 (d) d (c) b4 r4 }
+lettre_A_Intro_Altos    = { r2 r4 r8 gs8 a4 f e4 r4 }
 lettre_A_Intro_Tenors   = { r2 r r r }
 lettre_A_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
 
@@ -220,7 +220,7 @@ lettre_A_Couplet_Basses   = { a4 a8 a e4 r4
 
 % Lettre B
 lettre_B_Intro_Sopranes = { r2 r r r }
-lettre_B_Intro_Altos    = { r2 r4 r8 e8 e4 fs gs r4 }
+lettre_B_Intro_Altos    = { r2 r4 r8 gs8 e4 fs gs r4 }
 lettre_B_Intro_Tenors   = { a4 a8 a e'4 r8 e8 c8 (d) d (c) b4 r4 }
 lettre_B_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
 
@@ -316,12 +316,12 @@ rightOneLyrics = \lyricmode {
 
 rightTwo = {
   \global
-  \relative c' \lettre_A_Intro_Altos
+  \relative c'' \lettre_A_Intro_Altos
   % Lettre A
   \relative c' \lettre_A_Couplet_Altos
   \relative c' \refrain_Altos
   % Lettre B
-  \relative c' \lettre_B_Intro_Altos
+  \relative c'' \lettre_B_Intro_Altos
   s2*4
   s2*4
   s2*4
