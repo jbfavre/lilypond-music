@@ -183,12 +183,12 @@ strophe_conclusion_accompagnement = \lyricmode {
 }
 
 % Refrain
-refrain_Sopranes = { e4 d8 d c4 r8 e8
-                     d4 d4 b4 r4 }
+refrain_Sopranes = { e4 d8 d e4 r8 e8
+                     d4. c8 b4 r4 }
 refrain_Altos    = { r8 e8 g f r8 e8 a g
                      r8 fs8 b a r8 a8 fs gs }
-refrain_Tenors   = { c4 b8 b g4 r8 c8
-                     a4 a gs r4 }
+refrain_Tenors   = { c4 b8 a g4 r8 c8
+                     a4 fs gs r4 }
 refrain_Basses   = { a4 b8 b c4 r8 c8
                      d4 d e4 r4 }
 
@@ -198,19 +198,19 @@ lettre_A_Intro_Altos    = { r2 r4 r8 e8 e4 f? gs4 r4 }
 lettre_A_Intro_Tenors   = { r2 r r r }
 lettre_A_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
 
-lettre_A_Couplet_Sopranes = { c4 b8 a d4 r4
-                              c4 d8 c b4 r4
+lettre_A_Couplet_Sopranes = { c4 c8 d e4 r4
+                              c4 a8 b b4 r4
                               c8 d4 e8 d c b gs
-                              a4 d b r4
+                              a4 b b r4
                               }
 lettre_A_Couplet_Altos    = { r8 e8 e fs gs4 r4
                               r8 e8 f? f gs4 r4
                               e4 fs8 fs gs4 r8 e8
-                              f?4 f e r4
+                              e4 f gs r4
                               }
 lettre_A_Couplet_Tenors   = { e4 c8 c b4 r4
-                              e4 d8 f e4 r4
-                              r8 d8 d c b4 r8 b a4 a gs r
+                              e4 d8 d d4 r4
+                              r8 d8 d c b4 r8 b c4 d d r
                               }
 lettre_A_Couplet_Basses   = { a4 a8 a e4 r4
                               a,4 d8 d e4 r4
@@ -416,7 +416,7 @@ leftOneDynamics = {
 }
 leftOneLyrics = \lyricmode {
   % Lettre A
-  Tom -- be la la plui -- e, souf -- fle le vent,
+  Tom -- be la pluie, souf -- fle le vent,
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
