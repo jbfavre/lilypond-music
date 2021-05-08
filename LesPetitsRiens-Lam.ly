@@ -192,6 +192,19 @@ refrain_Tenors   = { c4 b8 a g4 r8 c8
 refrain_Basses   = { a4 b8 b c4 r8 c8
                      d4 d e4 r4 }
 
+refrain_Deux_Sopranes = { e4 d c r8 bf8
+                          a8 (c) b! (a) a gs a b
+                          }
+refrain_Deux_Altos    = { a8 (g) g8 f f (e) r4
+                          f4 fs e e
+                          }
+refrain_Deux_Tenors   = { c4 b g a
+                          a b b d
+                          }
+refrain_Deux_Basses   = { a4 b c4 cs
+                          d4 ds e e
+                          }
+
 % Lettre A
 lettre_A_Intro_Sopranes = { r2 r r r }
 lettre_A_Intro_Altos    = { r2 r4 r8 e8 e4 f? gs4 r4 }
@@ -210,7 +223,8 @@ lettre_A_Couplet_Altos    = { r8 e8 e fs gs4 r4
                               }
 lettre_A_Couplet_Tenors   = { e4 c8 c b4 r4
                               e4 d8 d d4 r4
-                              r8 d8 d c b4 r8 b c4 d d r
+                              r8 d8 d c b4 r8 b
+                              c4 d d r
                               }
 lettre_A_Couplet_Basses   = { a4 a8 a e4 r4
                               a,4 d8 d e4 r4
@@ -219,10 +233,39 @@ lettre_A_Couplet_Basses   = { a4 a8 a e4 r4
                               }
 
 % Lettre B
-lettre_B_Intro_Sopranes = { r2 r r r }
-lettre_B_Intro_Altos    = { r2 r4 r8 gs8 e4 fs gs r4 }
-lettre_B_Intro_Tenors   = { a4 a8 a e'4 r8 e8 c8 (d) d (c) b4 r4 }
-lettre_B_Intro_Basses   = { a4 a8 a e4 r8 e8 a,4 d e r4 }
+lettre_B_Intro_Sopranes = { r2 r4 r8 e8
+                            a4 b b r4
+                            }
+lettre_B_Intro_Altos    = { r2 r4 r8 e8
+                            e4 fs gs r4
+                            }
+lettre_B_Intro_Tenors   = { a4 a8 a e'4 r8 e8
+                            c8 (d) d4 d r4
+                            }
+lettre_B_Intro_Basses   = { a4 a8 a e4 r8
+                            e8 a,4 d e r4
+                            }
+
+lettre_B_Couplet_Sopranes = { c4 b8 a b4 r4
+                              c4 d8 c b4 r4
+                              e4 d8 c d4 r4
+                              c8 c c8 (b) b4 c8 (d)
+                              }
+lettre_B_Couplet_Altos = { g4 fs8 fs gs4 r
+                           g?4 f? gs r
+                           a8 gs fs4 gs r8 gs
+                           a8 (gs) fs4 gs r
+                           }
+lettre_B_Couplet_Tenors = { c8 e d4 d r
+                            r8 c b c d4 r
+                            c4 b8 a b4 r8 b8
+                            e4 d d4 r
+                           }
+lettre_B_Couplet_Basses = { a4 a e r
+                            a4 d, e r
+                            a4 a8 a e4 r8 e
+                            a,4 d e4 r
+                           }
 
 % Lettre C
 lettre_C_Intro_Sopranes = { a4 a8 a e'4 r8 e8 c8 (d) d (c) b4 r4 }
@@ -254,10 +297,9 @@ rightOne = {
   \relative c'' \lettre_A_Couplet_Sopranes
   \relative c'' \refrain_Sopranes
   % Lettre B
-  \relative c'' \lettre_B_Intro_Sopranes
-  s2*4
-  s2*4
-  s2*4
+  \relative c' \lettre_B_Intro_Sopranes
+  \relative c'' \lettre_B_Couplet_Sopranes
+  \relative c'' \refrain_Deux_Sopranes
   % Lettre C
   \relative c'' \lettre_C_Intro_Sopranes
   % Lettre D
@@ -277,9 +319,8 @@ rightOneDynamics = {
   s2*4 \break
   % Lettre B
   \mark "B-C-D-E"
-  s2*4 \break
-  s2*4 \break
-  s2*4 \break
+  s2*6 \break
+  s2*6 \break
   s2*4 \break
   % Lettre C
   \mark "C"
@@ -306,6 +347,10 @@ rightOneLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges gris et blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
+  mais pas le temps.
+  La ma -- rée monte, et puis des -- cend
+  Vol d'al -- ba -- tros, dans le cou -- chant
+  Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre C
   % Lettre D
   % Lettre E
@@ -321,10 +366,9 @@ rightTwo = {
   \relative c' \lettre_A_Couplet_Altos
   \relative c' \refrain_Altos
   % Lettre B
-  \relative c'' \lettre_B_Intro_Altos
-  s2*4
-  s2*4
-  s2*4
+  \relative c' \lettre_B_Intro_Altos
+  \relative c'' \lettre_B_Couplet_Altos
+  \relative c'' \refrain_Deux_Altos
   % Lettre C
   \relative c' \lettre_C_Intro_Altos
   % Lettre D
@@ -364,6 +408,8 @@ rightTwoLyrics = \lyricmode {
   Pas -- sent les, les jours mais, mais pas le, pas le temps.
   % Lettre B
   mais pas le temps.
+  La ma -- rée monte, et des -- cend
+  Vol d'al -- ba -- tros, dans le cou -- chant
   % Lettre C
   % Lettre D
   % Lettre E
@@ -380,9 +426,8 @@ leftOne =  {
   \relative c' \refrain_Tenors
   % Lettre B
   \relative c' \lettre_B_Intro_Tenors
-  s2*4
-  s2*4
-  s2*4
+  \relative c' \lettre_B_Couplet_Tenors
+  \relative c' \refrain_Deux_Tenors
   % Lettre C
   \relative c' \lettre_C_Intro_Tenors
   % Lettre D
@@ -420,6 +465,9 @@ leftOneLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
+  Pas -- sent les jours, mais pas le temps.
+  La ma -- rée monte, et puis des -- cend
+  Vol d'al -- ba -- tros, dans le cou -- chant
   % Lettre C
   % Lettre D
   % Lettre E
@@ -436,9 +484,8 @@ leftTwo = {
   \relative c \refrain_Basses
   % Lettre B
   \relative f \lettre_B_Intro_Basses
-  s2*4
-  s2*4
-  s2*4
+  \relative f \lettre_B_Couplet_Basses
+  \relative c \refrain_Deux_Basses
   % Lettre C
   \relative f \lettre_C_Intro_Basses
   % Lettre D
@@ -496,6 +543,8 @@ leftTwoLyrics = \lyricmode {
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
   Pas -- sent les jours, mais pas le temps.
+  ma -- rée monte, et des -- cend
+  Vol d'al -- ba -- tros, dans le cou -- chant
   % Lettre C
   % Lettre D
   % Lettre E
