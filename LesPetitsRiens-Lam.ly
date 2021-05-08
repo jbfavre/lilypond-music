@@ -318,25 +318,25 @@ lettre_D_Couplet_Basses = { a8 a a4 e r
                            }
 
 % Lettre E
-lettre_E_Couplet_Sopranes = { e4 d8 c b4 r4
-                              a8 (b) c8 d e4 r4
+lettre_E_Couplet_Sopranes = { r8 e8 d c b4 r8 c8
+                              a8 (b) c8 (d) e4 e8 r8
                               r8 e8 d c b4 r4
-                              a8 (b) c d e4 r4
+                              a8 (b) c d e4 e8 r8
                               }
 lettre_E_Couplet_Altos    = { r8 e8 fs fs gs4 r4
-                              r8 e8 f? f gs4 r4
+                              r8 e8 f? f gs4 gs8 r8
                               e4 fs8 fs gs4 r8 e8
-                              e4 f! gs r4
+                              e4 f! gs gs8 r8
                               }
 lettre_E_Couplet_Tenors   = { c4 d8 d d4 r4
-                              c4 b8 b b4 r4
+                              c4 b8 b b4 b8 r8
                               c4 c8 c b4 r8 b
-                              c4 d d r
+                              c4 d d d8 r8
                               }
 lettre_E_Couplet_Basses   = { a,4 a8 a e'4 r4
-                              a4 f8 f e4 r4
+                              a4 f8 f e4 e8 r8
                               a,4 a8 a e'4 r8 e8
-                              a4 f e r4
+                              a4 f e e8 r
                               }
 
 % Lettre F
@@ -357,7 +357,8 @@ rightOne = {
   \relative c'' \lettre_A_Intro_Sopranes
   % Lettre A
   \relative c'' \lettre_A_Couplet_Sopranes
-  \relative c'' \refrain_Sopranes
+  \relative c'' { e4 d c r8 bf8
+                  a8 (c) b! (a) a gs (a b)}
   % Lettre B
   \relative c'' \lettre_B_Couplet_Sopranes
   \relative c'' \refrain_Sopranes
@@ -491,7 +492,7 @@ rightTwoLyrics = \lyricmode {
   % Lettre A
   Tom -- be la pluie, souf -- fle le vent,
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
-  Pas -- sent les, les jours mais, mais pas le, pas le temps.
+  Pas -- sent les jours, mais pas le temps.
   % Lettre B
   %mais pas le temps.
   La ma -- rée monte, et des -- cend
