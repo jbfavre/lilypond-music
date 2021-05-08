@@ -194,17 +194,17 @@ refrain_Basses   = { a4 b8 b c4 r8 c8
                      d4 d e4 r4 }
 
 refrain_Sopranes = { e4 d c r8 bf8
-                          a8 (c) b! (a) a gs a b
-                          }
+                     a8 (c) b! (a) a gs a b
+                     }
 refrain_Altos    = { a8 (g) g8 f f (e) r4
-                          f4 fs e e
-                          }
+                     f4 fs e e
+                     }
 refrain_Tenors   = { c4 b g a
-                          a b b d
-                          }
+                     a b b d
+                     }
 refrain_Basses   = { a4 b c4 cs
-                          d4 ds e e
-                          }
+                     d4 ds e e
+                     }
 
 % Lettre A
 lettre_A_Intro_Sopranes = { r2 r r r }
@@ -322,25 +322,25 @@ lettre_E_Couplet_Sopranes = { r8 e8 d c b4 r8 c8
                               a8 (b) c8 (d) c4 b8 r8
                               r8 e8 d c b4 r4
                               a8 (b) c d c4 b8 r8
-                              r8 e8 d c c e d c c (b) c8 (d)
+                              r8 e8 d c c (e) e (d) d (c) c (b) b4 c8 (d)
                               }
 lettre_E_Couplet_Altos    = { e4 fs8 fs gs4 r8 gs8
                               a4 a gs4 gs8 r8
                               e4 fs8 fs gs4 r8 gs8
                               a4 a gs gs8 r8
-                              a4 f e d b r
+                              a4 f e2 f4 fs gs r
                               }
 lettre_E_Couplet_Tenors   = { c4 d8 d d4 r8 d
                               c4 d d d8 r8
                               c4 d8 d d4 r8 d
                               c4 d d d8 r8
-                              c4 b a a gs r
+                              c4 b g a a (b) d r
                               }
 lettre_E_Couplet_Basses   = { a,4 a8 a e'4 r8 e8
                               a4 f4 e4 e8 r8
                               a,4 a8 a e'4 r8 e8
                               a4 f e e8 r
-                              a,4 b c d e4 r4
+                              a,4 b c cs d (ds) e4 r4
                               }
 
 % Lettre F
@@ -374,7 +374,9 @@ rightOne = {
   \relative c'' \refrain_Sopranes
   % Lettre E
   \relative c'' \lettre_E_Couplet_Sopranes
-  \relative c'' \refrain_Sopranes
+  \relative c'' { e4 d c r8 bf8
+                  a8 (c) b! (a) a gs a b cs2 \fermata
+                  }
   % Lettre F
   \relative c'' \repeat unfold 2 \lettre_F_Sopranes
   \relative c'' \lettre_F_Final_Sopranes
@@ -405,8 +407,8 @@ rightOneDynamics = {
   \mark "E"
   s2*4 \break
   s2*4 \break
-  s2*3 \break
   s2*4 \break
+  s2*5 \break
   % Lettre F
   \mark "F"
   \set Score.repeatCommands = #(list(list 'volta "1.-3.") 'start-repeat)
@@ -439,7 +441,7 @@ rightOneLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront d'é -- ter -- nels ins -- tants&nbsp;!
-  Pas -- sent les jours, mais pas le temps, pas le temps
+  Pas -- sent les jours, mais pas le temps, pas le temps, Pas&nbsp;!
   % Lettre F
   Pas -- sent les jours mais, mais pas, pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -462,7 +464,9 @@ rightTwo = {
   \relative c'' \refrain_Altos
   % Lettre E
   \relative c' \lettre_E_Couplet_Altos
-  \relative c'' \refrain_Altos
+  \relative c'' { a8 (g) g8 f f (e) r4
+                  f4 fs e e e2 \fermata
+                  }
   % Lettre F
   \relative c'' \repeat unfold 2 \lettre_F_Altos
   \relative c'' \lettre_F_Final_Altos
@@ -487,8 +491,8 @@ rightTwoDynamics = {
   % Lettre E
   s2*4
   s2*4
-  s2*3
   s2*4
+  s2*5
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
   s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
@@ -516,8 +520,8 @@ rightTwoLyrics = \lyricmode {
   % Lettre E
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
-  d'é -- ter -- nels ins -- tants&nbsp;!
-  Pas -- sent les jours, mais pas le temps
+  De -- vien -- dront é -- ter -- nels&nbsp;!
+  Pas -- sent les jours, mais pas le temps, Pas&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -540,7 +544,9 @@ leftOne =  {
   \relative c' \refrain_Tenors
   % Lettre E
   \relative c' \lettre_E_Couplet_Tenors
-  \relative c' \refrain_Tenors
+  \relative c' { c4 b g a
+                 a b b8 d c b a2 \fermata
+                 }
   % Lettre F
   \relative c' \repeat unfold 2 \lettre_F_Tenors
   \relative c' \lettre_F_Final_Tenors
@@ -565,8 +571,8 @@ leftOneDynamics = {
   % Lettre E
   s2*4
   s2*4
-  s2*3
   s2*4
+  s2*5
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
   s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
@@ -593,8 +599,8 @@ leftOneLyrics = \lyricmode {
   % Lettre E
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
-  d'é -- ter -- nels ins -- tants&nbsp;!
-  Pas -- sent les jours, mais pas le temps
+  De -- vien -- dront é -- ter -- nels&nbsp;!
+  Pas -- sent les jours, pas le temps, pas le temps, Pas&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -617,7 +623,9 @@ leftTwo = {
   \relative c \refrain_Basses
   % Lettre E
   \relative f \lettre_E_Couplet_Basses
-  \relative c \refrain_Basses
+  \relative c { a4 b c4 cs
+                d4 ds e e a2 \fermata
+                }
   %{<<
     {
       \set Staff.InstrumentName = #"Baryton"
@@ -659,8 +667,8 @@ leftTwoDynamics = {
   % Lettre E
   s2*4
   s2*4
-  s2*3
   s2*4
+  s2*5
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
   s8\startTextSpan s4. s2 s2 s4. s8\stopTextSpan \bar ":|."
@@ -688,8 +696,8 @@ leftTwoLyrics = \lyricmode {
   % Lettre E
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
-  d'é -- ter -- nels ins -- tants&nbsp;!
-  Pas -- sent les jours, mais pas le temps
+  De -- vien -- dront é -- ter -- nels&nbsp;!
+  Pas -- sent les jours, mais pas le temps, Pas&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
