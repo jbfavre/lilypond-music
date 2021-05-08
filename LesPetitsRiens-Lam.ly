@@ -261,7 +261,7 @@ lettre_B_Couplet_Tenors = { c8 e d4 d r
                             c4 b8 a b4 r8 b8
                             e4 d d4 r
                            }
-lettre_B_Couplet_Basses = { a4 a e r
+lettre_B_Couplet_Basses = { a8 a a4 e r
                             a4 d, e r
                             a4 a8 a e4 r8 e
                             a,4 d e4 r
@@ -297,15 +297,19 @@ rightOne = {
   \relative c'' \lettre_A_Couplet_Sopranes
   \relative c'' \refrain_Sopranes
   % Lettre B
-  \relative c' \lettre_B_Intro_Sopranes
+  %\relative c' \lettre_B_Intro_Sopranes
   \relative c'' \lettre_B_Couplet_Sopranes
   \relative c'' \refrain_Deux_Sopranes
   % Lettre C
-  \relative c'' \lettre_C_Intro_Sopranes
+  %\relative c'' \lettre_C_Intro_Sopranes
+  \relative c'' \lettre_B_Couplet_Sopranes
+  \relative c'' \refrain_Deux_Sopranes
   % Lettre D
-  s2*4
+  \relative c'' \lettre_B_Couplet_Sopranes
+  \relative c'' \refrain_Deux_Sopranes
   % Lettre E
-  s2*4
+  \relative c'' \lettre_B_Couplet_Sopranes
+  \relative c'' \refrain_Deux_Sopranes
   % Lettre F
   \relative c'' \repeat unfold 2 \lettre_F_Sopranes
   \relative c'' \lettre_F_Final_Sopranes
@@ -319,17 +323,23 @@ rightOneDynamics = {
   s2*4 \break
   % Lettre B
   \mark "B-C-D-E"
-  s2*6 \break
-  s2*6 \break
+  s2*4 \break
+  s2*4 \break
   s2*4 \break
   % Lettre C
   \mark "C"
   s2*4 \break
+  s2*4 \break
+  s2*4 \break
   % Lettre D
   \mark "D"
   s2*4 \break
+  s2*4 \break
+  s2*4 \break
   % Lettre E
   \mark "E"
+  s2*4 \break
+  s2*4 \break
   s2*4 \break
   % Lettre F
   \mark "F"
@@ -347,12 +357,18 @@ rightOneLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges gris et blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
-  mais pas le temps.
+  %mais pas le temps.
   La ma -- rée monte, et puis des -- cend
   Vol d'al -- ba -- tros, dans le cou -- chant
-  Pas -- sent les jours, mais pas le temps, pas le temps
+  Pas -- sent Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre C
+  La viel -- le~ hor -- loge dans le sa -- lon
+  Son -- nent les heures et les sai -- sons
+  Pas -- sent Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre D
+  Pom -- mes au four, pou -- les au pot,
+  Le thé au lait, les bons gâ -- teaux
+  Pas -- sent Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre E
   % Lettre F
   Pas -- sent les jours mais, pas le, pas le temps
@@ -366,15 +382,19 @@ rightTwo = {
   \relative c' \lettre_A_Couplet_Altos
   \relative c' \refrain_Altos
   % Lettre B
-  \relative c' \lettre_B_Intro_Altos
+  %\relative c' \lettre_B_Intro_Altos
   \relative c'' \lettre_B_Couplet_Altos
   \relative c'' \refrain_Deux_Altos
   % Lettre C
-  \relative c' \lettre_C_Intro_Altos
+  %\relative c' \lettre_C_Intro_Altos
+  \relative c'' \lettre_B_Couplet_Altos
+  \relative c'' \refrain_Deux_Altos
   % Lettre D
-  s2*4
+  \relative c'' \lettre_B_Couplet_Altos
+  \relative c'' \refrain_Deux_Altos
   % Lettre E
-  s2*4
+  \relative c'' \lettre_B_Couplet_Altos
+  \relative c'' \refrain_Deux_Altos
   % Lettre F
   \relative c'' \repeat unfold 2 \lettre_F_Altos
   \relative c'' \lettre_F_Final_Altos
@@ -388,12 +408,17 @@ rightTwoDynamics = {
   s2*4
   s2*4
   s2*4
-  s2*4
   % Lettre C
+  s2*4
+  s2*4
   s2*4
   % Lettre D
   s2*4
+  s2*4
+  s2*4
   % Lettre E
+  s2*4
+  s2*4
   s2*4
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
@@ -407,11 +432,18 @@ rightTwoLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les, les jours mais, mais pas le, pas le temps.
   % Lettre B
-  mais pas le temps.
+  %mais pas le temps.
   La ma -- rée monte, et des -- cend
   Vol d'al -- ba -- tros, dans le cou -- chant
+  Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre C
+  La viel -- le~ hor -- loge dans le sa -- lon
+  Son -- nent les heures et les sai -- sons
+  Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre D
+  Pom -- mes au four, pou -- les au pot,
+  Le thé au lait, les bons gâ -- teaux
+  Pas -- sent les jours, mais pas le temps, pas le temps
   % Lettre E
   % Lettre F
   Pas -- sent les jours, mais pas le temps
@@ -425,15 +457,19 @@ leftOne =  {
   \relative c' \lettre_A_Couplet_Tenors
   \relative c' \refrain_Tenors
   % Lettre B
-  \relative c' \lettre_B_Intro_Tenors
+  %\relative c' \lettre_B_Intro_Tenors
   \relative c' \lettre_B_Couplet_Tenors
   \relative c' \refrain_Deux_Tenors
   % Lettre C
-  \relative c' \lettre_C_Intro_Tenors
+  %\relative c' \lettre_C_Intro_Tenors
+  \relative c' \lettre_B_Couplet_Tenors
+  \relative c' \refrain_Deux_Tenors
   % Lettre D
-  s2*4
+  \relative c' \lettre_B_Couplet_Tenors
+  \relative c' \refrain_Deux_Tenors
   % Lettre E
-  s2*4
+  \relative c' \lettre_B_Couplet_Tenors
+  \relative c' \refrain_Deux_Tenors
   % Lettre F
   \relative c' \repeat unfold 2 \lettre_F_Tenors
   \relative c' \lettre_F_Final_Tenors
@@ -447,12 +483,17 @@ leftOneDynamics = {
   s2*4
   s2*4
   s2*4
-  s2*4
   % Lettre C
+  s2*4
+  s2*4
   s2*4
   % Lettre D
   s2*4
+  s2*4
+  s2*4
   % Lettre E
+  s2*4
+  s2*4
   s2*4
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
@@ -465,11 +506,18 @@ leftOneLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
-  Pas -- sent les jours, mais pas le temps.
+  %Pas -- sent les jours, mais pas le temps.
   La ma -- rée monte, et puis des -- cend
   Vol d'al -- ba -- tros, dans le cou -- chant
+  Pas -- sent les jours, mais pas le temps.
   % Lettre C
+  La viel -- le~ hor -- loge dans le sa -- lon
+  Son -- nent les heures et les sai -- sons
+  Pas -- sent les jours, mais pas le temps.
   % Lettre D
+  Pom -- mes au four, pou -- les au pot,
+  Le thé au lait, les bons gâ -- teaux
+  Pas -- sent les jours, mais pas le temps.
   % Lettre E
   % Lettre F
   Pas -- sent les jours, mais pas le temps
@@ -483,15 +531,19 @@ leftTwo = {
   \relative f \lettre_A_Couplet_Basses
   \relative c \refrain_Basses
   % Lettre B
-  \relative f \lettre_B_Intro_Basses
+  %\relative f \lettre_B_Intro_Basses
   \relative f \lettre_B_Couplet_Basses
   \relative c \refrain_Deux_Basses
   % Lettre C
-  \relative f \lettre_C_Intro_Basses
+  %\relative f \lettre_C_Intro_Basses
+  \relative f \lettre_B_Couplet_Basses
+  \relative c \refrain_Deux_Basses
   % Lettre D
-  s2*4
+  \relative f \lettre_B_Couplet_Basses
+  \relative c \refrain_Deux_Basses
   % Lettre E
-  s2*4
+  \relative f \lettre_B_Couplet_Basses
+  \relative c \refrain_Deux_Basses
   %{<<
     {
       \set Staff.InstrumentName = #"Baryton"
@@ -523,12 +575,17 @@ leftTwoDynamics = {
   s2*4
   s2*4
   s2*4
-  s2*4
   % Lettre C
+  s2*4
+  s2*4
   s2*4
   % Lettre D
   s2*4
+  s2*4
+  s2*4
   % Lettre E
+  s2*4
+  s2*4
   s2*4
   % Lettre F
   \override TextSpanner.bound-details.left.text = \markup { \upright "acc." }
@@ -542,11 +599,18 @@ leftTwoLyrics = \lyricmode {
   nu -- a -- ges gris, nu -- a -- ges blancs&nbsp;;
   Pas -- sent les jours, mais pas le temps.
   % Lettre B
-  Pas -- sent les jours, mais pas le temps.
-  ma -- rée monte, et des -- cend
+  %Pas -- sent les jours, mais pas le temps.
+  La ma -- rée monte, et des -- cend
   Vol d'al -- ba -- tros, dans le cou -- chant
+  Pas -- sent les jours, mais pas le temps.
   % Lettre C
+  La viel -- le~ hor -- loge dans le sa -- lon
+  Son -- nent les heures et les sai -- sons
+  Pas -- sent les jours, mais pas le temps.
   % Lettre D
+  Pom -- mes au four, pou -- les au pot,
+  Le thé au lait, les bons gâ -- teaux
+  Pas -- sent les jours, mais pas le temps.
   % Lettre E
   % Lettre F
   Pas -- sent les jours, mais pas le temps
