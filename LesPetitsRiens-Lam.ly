@@ -544,7 +544,7 @@ leftOne =  {
   \relative c' \refrain_Tenors
   % Lettre E
   \relative c' \lettre_E_Couplet_Tenors
-  \relative c' { c4 b g a
+  \relative c' { c4 b8 a g4 a
                  a b b8 d c b a2 \fermata
                  }
   % Lettre F
@@ -600,7 +600,7 @@ leftOneLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront é -- ter -- nels&nbsp;!
-  Pas -- sent les jours, pas le temps, mais pas le temps&nbsp;!
+  Pas -- sent les jours, mais pas le temps, mais pas le temps&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
