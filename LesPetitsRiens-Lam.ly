@@ -719,7 +719,7 @@ choirStaff = \new ChoirStaff
   <<
     \new Dynamics = "rightOneDynamics" { \rightOneDynamics }
     \new Staff = "rightOne" \with { midiInstrument = "acoustic grand"
-                                    instrumentName = "Sopranos"
+                                    instrumentName = "S."
                                     shortInstrumentName = "S." }
                                     <<
                                       \new Voice = "rightOneVoice" { \clef treble \rightOne }
@@ -728,7 +728,7 @@ choirStaff = \new ChoirStaff
                                     >>
     \new Dynamics = "rightTwoDynamics" { \rightTwoDynamics }
     \new Staff = "rightTwo" \with { midiInstrument = "acoustic grand"
-                                    instrumentName = "Altos"
+                                    instrumentName = "A."
                                     shortInstrumentName = "A." }
                                     <<
                                       \new Voice = "rightTwoVoice" { \clef treble \rightTwo }
@@ -737,7 +737,7 @@ choirStaff = \new ChoirStaff
                                     >>
     \new Dynamics = "leftOneDynamics" { \leftOneDynamics }
     \new Staff = "leftOne" \with { midiInstrument = "acoustic grand"
-                                   instrumentName = "Ténors"
+                                   instrumentName = "T."
                                    shortInstrumentName = "T." }
                                    <<
                                      \new Voice = "leftOneVoice" { \clef "treble_8" \leftOne }
@@ -746,7 +746,7 @@ choirStaff = \new ChoirStaff
                                    >>
     \new Dynamics = "leftTwoDynamics" { \dynamicUp \leftTwoDynamics }
     \new Staff = "leftTwo" \with { midiInstrument = "acoustic grand"
-                                   instrumentName = "Basses"
+                                   instrumentName = "B."
                                    shortInstrumentName = "B." }
                                    <<
                                      \new Voice = "leftTwoVoice" { \clef bass \leftTwo }
