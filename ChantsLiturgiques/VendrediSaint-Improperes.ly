@@ -321,6 +321,29 @@ OtherScoresHeader = \header {
     poet = ##f
     dedication = ##f
   }
+AllScoreLayout = \layout {
+      ragged-last = ##f
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \PianoStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \ChoirStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
+  }
 
 %%%%%
 %%%%%
@@ -379,13 +402,7 @@ OtherScoresHeader = \header {
         >>
       >>
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \FirstScoreHeader
   }
@@ -459,13 +476,7 @@ OtherScoresHeader = \header {
         >>
       >>
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \OtherScoresHeader
   }
@@ -541,13 +552,7 @@ OtherScoresHeader = \header {
         >>
       }
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \OtherScoresHeader
   }
@@ -625,13 +630,7 @@ OtherScoresHeader = \header {
         >>
       >>
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \OtherScoresHeader
   }
@@ -726,13 +725,7 @@ OtherScoresHeader = \header {
         >>
       }
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \OtherScoresHeader
   }
@@ -802,13 +795,7 @@ OtherScoresHeader = \header {
         >>
       >>
     }
-    \layout {
-        ragged-last = ##f
-        \context {
-            \Staff
-            \RemoveEmptyStaves
-        }
-    }
+    \AllScoreLayout
     \MidiOutput
     \OtherScoresHeader
   }
