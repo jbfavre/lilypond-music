@@ -1,61 +1,8 @@
 \version "2.22.0"
 \language "english"
-\include "libs/layouts/book-titling.ily"
+\include "libs/commonFunctions.ily"
 
-#(define absolute-volume-alist '())
-#(set! absolute-volume-alist
-      (append
-       '(
-         ("ff" . 0.8)
-         ("f" . 0.80)
-         ("mf" . 0.65)
-         ("mp" . 0.50)
-         ("p" . 0.35)
-         ("pp" . 0.20)
-         )
-       absolute-volume-alist))
-%{ Default values from /usr/share/lilypond/2.20.0/scm/midi.scm
-         ("ff" . 1)
-         ("f" . 0.80)
-         ("mf" . 0.65)
-         ("mp" . 0.50)
-         ("p" . 0.35)
-         ("pp" . 0.20)
-%}
-#(define-markup-command (arrow-at-angle layout props angle-deg length fill)
-   (number? number? boolean?)
-   (let* (
-          ;; PI-OVER-180 and degrees->radians are taken from flag-styles.scm
-          (PI-OVER-180 (/ (atan 1 1) 45))
-          (degrees->radians (lambda (degrees) (* degrees PI-OVER-180)))
-          (angle-rad (degrees->radians angle-deg))
-          (target-x (* length (cos angle-rad)))
-          (target-y (* length (sin angle-rad))))
-     (interpret-markup layout props
-                       (markup
-                        #:translate (cons (/ target-x 2) (/ target-y 2))
-                        #:rotate angle-deg
-                        #:translate (cons (/ length -2) 0)
-                        #:concat (#:draw-line (cons length 0)
-                                              #:arrow-head X RIGHT fill)))))
-
-splitStaffBarLineMarkup = \markup \with-dimensions #'(0 . 0) #'(0 . 0) {
-  \combine
-    \arrow-at-angle #45 #(sqrt 8) ##f
-    \arrow-at-angle #-45 #(sqrt 8) ##f
-}
-
-splitStaffBarLine = {
-  \once \override Staff.BarLine.stencil =
-    #(lambda (grob)
-       (ly:stencil-combine-at-edge
-        (ly:bar-line::print grob)
-        X RIGHT
-        (grob-interpret-markup grob splitStaffBarLineMarkup)
-        0))
-  \break
-}
-\header {
+headers = \header {
   title = "Les petits riens"
   composer = "Jean Baptiste Favre"
   poet = "@ConteurDeNotes"
@@ -65,78 +12,6 @@ splitStaffBarLine = {
   tagline = ""
   date = "Clichy la Garenne, mai 2021"
 }
-
-\paper {
-  #(include-special-characters)
-  #(set-paper-size "a4")
-  two-sided = ##t
-  top-margin = 1\cm
-  bottom-margin = 1.1\cm
-  left-margin = 1.5\cm
-  right-margin = 1\cm
-  #(define fonts
-    (set-global-fonts
-     #:music "emmentaler"
-     #:brace "emmentaler"
-     #:roman "Arial"
-     #:sans "Cantarell thin"
-    ))
-%{  bookTitleMarkup = \markup \column {
-    \fill-line { \fontsize #5 \fromproperty #'header:composer }
-    \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
-    \combine \null \vspace #14
-    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
-    \combine \null \vspace #4
-    \fill-line { \fontsize #10 \fromproperty #'header:title }
-    \combine \null \vspace #1
-    \fill-line { \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
-    \combine \null \vspace #1
-    \fill-line { \postscript #"-10 0 moveto 20 0 rlineto stroke" }
-    \when-property #'header:opus \fill-line { \combine \vspace #1.5 \fontsize #5 \sans \bold \fromproperty #'header:opus }
-    \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
-    \combine \null \vspace #14
-    \fill-line{
-      \column{
-        \when-property #'header:poet \fill-line {
-          \concat { \typewriter "Paroles: " \fontsize #2 \italic \fromproperty #'header:poet }
-        }
-        \when-property #'header:arranger \fill-line {
-          \concat { \typewriter "Arrangements: " \fontsize #2 \italic \fromproperty #'header:arranger }
-        }
-      }
-    }
-  }
-  scoreTitleMarkup = \markup {
-    \column {
-      \vspace #0.5
-      \fill-line {
-        \line { "" }
-        \center-column { \fontsize #6 \bold \fromproperty #'header:title }
-        \line { "" }
-      }
-      \fill-line {
-        \line { "" }
-        \center-column { "" }
-        \line {
-          \right-column {
-            \fontsize #1 \fromproperty #'header:composer
-            \fontsize #0.8 \sans \fromproperty #'header:opus
-          }
-        }
-      }
-      \vspace #1
-    }
-  }%}
-}
-%\pageBreak
-removeTags = #'(school)
-keepTags   = #'(visuel notvideo)
-
-% Controls Midi dynamics inclusion
-% Used with \keepWithTag
-% FiguredBass will be displayed if midiTag is set to "midi"
-midiTag = "midi"
-midiInstrumentName = "acoustic grand"
 
 % Fragments
 
@@ -353,6 +228,143 @@ lettre_F_Final_Sopranes = { c2 \fermata a2-- <gs b>-- cs \fermata }
 lettre_F_Final_Altos    = { a2 \fermata f2-- f-- a \fermata }
 lettre_F_Final_Tenors   = { ef2 \fermata d2-- d2-- e2 \fermata }
 lettre_F_Final_Basses   = { f2 \fermata d2-- b-- a \fermata }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%     Draw partitions     %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+AllScoreLayout = \layout {
+      ragged-last = ##f
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \PianoStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \ChoirStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
+  }
+
+#(define absolute-volume-alist '())
+#(set! absolute-volume-alist
+      (append
+       '(
+         ("ff" . 0.8)
+         ("f" . 0.80)
+         ("mf" . 0.65)
+         ("mp" . 0.50)
+         ("p" . 0.35)
+         ("pp" . 0.20)
+         )
+       absolute-volume-alist))
+#(define-markup-command (arrow-at-angle layout props angle-deg length fill)
+   (number? number? boolean?)
+   (let* (
+          ;; PI-OVER-180 and degrees->radians are taken from flag-styles.scm
+          (PI-OVER-180 (/ (atan 1 1) 45))
+          (degrees->radians (lambda (degrees) (* degrees PI-OVER-180)))
+          (angle-rad (degrees->radians angle-deg))
+          (target-x (* length (cos angle-rad)))
+          (target-y (* length (sin angle-rad))))
+     (interpret-markup layout props
+                       (markup
+                        #:translate (cons (/ target-x 2) (/ target-y 2))
+                        #:rotate angle-deg
+                        #:translate (cons (/ length -2) 0)
+                        #:concat (#:draw-line (cons length 0)
+                                              #:arrow-head X RIGHT fill)))))
+
+splitStaffBarLineMarkup = \markup \with-dimensions #'(0 . 0) #'(0 . 0) {
+  \combine
+    \arrow-at-angle #45 #(sqrt 8) ##f
+    \arrow-at-angle #-45 #(sqrt 8) ##f
+}
+
+splitStaffBarLine = {
+  \once \override Staff.BarLine.stencil =
+    #(lambda (grob)
+       (ly:stencil-combine-at-edge
+        (ly:bar-line::print grob)
+        X RIGHT
+        (grob-interpret-markup grob splitStaffBarLineMarkup)
+        0))
+  \break
+}
+
+\paper {
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
+  indent = 1\cm
+  % Plan for recto-verso printing with inner margin
+  two-sided = ##t
+  inner-margin =  2\cm
+  outer-margin = 1.5\cm
+
+  oddFooterMarkup = {}
+  #(include-special-characters)
+
+  markup-system-spacing = #'((basic-distance . 30)
+     (minimum-distance . 30)
+     (padding . 5)
+     (stretchability . 5))
+  top-markup-spacing = #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
+  top-system-spacing = #'((basic-distance . 6)
+     (minimum-distance . 6)
+     (padding . 6)
+     (stretchability . 5))
+  system-system-spacing = #'((basic-distance . 3)
+     (minimum-distance . 3)
+     (padding . 3)
+     (stretchability . 3))
+  scoreTitleMarkup = \markup \columns {
+    \fill-line {
+        \column {
+          \line {
+            \left-column {
+              \fontsize #8 \sans \fromproperty #'header:title
+              \fontsize #1 \typewriter \fromproperty #'header:subtitle
+            }
+          }
+        }
+        \column {
+          \line {
+            \fontsize #-1
+            \left-column {
+              \line { \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet \bold " " } }
+              \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
+              \typewriter \italic \fromproperty #'header:dedication
+            }
+          }
+        }
+      }
+  }
+  oddFooterMarkup = {}
+}
+
+removeTags = #'(school)
+keepTags   = #'(visuel notvideo)
+
+% Controls Midi dynamics inclusion
+% Used with \keepWithTag
+% FiguredBass will be displayed if midiTag is set to "midi"
+midiTag = "midi"
+midiInstrumentName = "acoustic grand"
 
 global = { \key a \minor \time 2/4 }
 
@@ -745,12 +757,8 @@ choirStaff = \new ChoirStaff
 
 \score {
   \removeWithTag \removeTags \keepWithTag visuel \choirStaff
-  \layout {
-    \context {
-      \FiguredBass
-      \override BassFigure #'font-size = #-1
-    }
-  }
+  \headers
+  \AllScoreLayout
 }
 
 \score {
