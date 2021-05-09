@@ -441,7 +441,7 @@ rightOneLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront d'é -- ter -- nels ins -- tants&nbsp;!
-  Pas -- sent les jours, mais pas le temps, pas le temps, Pas&nbsp;!
+  Pas -- sent les jours, mais pas le temps, mais pas le temps&nbsp;!
   % Lettre F
   Pas -- sent les jours mais, mais pas, pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -465,7 +465,7 @@ rightTwo = {
   % Lettre E
   \relative c' \lettre_E_Couplet_Altos
   \relative c'' { a8 (g) g8 f f (e) r4
-                  f4 fs e e e2 \fermata
+                  f4 fs e2 e2 \fermata
                   }
   % Lettre F
   \relative c'' \repeat unfold 2 \lettre_F_Altos
@@ -521,7 +521,7 @@ rightTwoLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront é -- ter -- nels&nbsp;!
-  Pas -- sent les jours, mais pas le temps, Pas&nbsp;!
+  Pas -- sent les jours, mais pas le temps&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -600,7 +600,7 @@ leftOneLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront é -- ter -- nels&nbsp;!
-  Pas -- sent les jours, pas le temps, pas le temps, Pas&nbsp;!
+  Pas -- sent les jours, pas le temps, mais pas le temps&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
@@ -624,7 +624,7 @@ leftTwo = {
   % Lettre E
   \relative f \lettre_E_Couplet_Basses
   \relative c { a4 b c4 cs
-                d4 ds e e a2 \fermata
+                d4 ds e2 a2 \fermata
                 }
   %{<<
     {
@@ -697,7 +697,7 @@ leftTwoLyrics = \lyricmode {
   Un jour vien -- dra, où d'é -- phé -- mè -- res
   Ces pe -- tits riens, bel -- les chi -- mè -- res
   De -- vien -- dront é -- ter -- nels&nbsp;!
-  Pas -- sent les jours, mais pas le temps, Pas&nbsp;!
+  Pas -- sent les jours, mais pas le temps&nbsp;!
   % Lettre F
   Pas -- sent les jours, mais pas le temps
   Pas&nbsp;! Pas le temps&nbsp;!
