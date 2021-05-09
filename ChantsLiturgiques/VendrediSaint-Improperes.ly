@@ -264,8 +264,8 @@ FirstScorePaper = \paper {
               \vspace #0.5
               \fontsize #-2 \line {
                 \left-column {
-                  \concat { \typewriter "Texte&nbsp;: " \sans \fromproperty #'header:poet }
-                  \concat { \typewriter "Musique&nbsp;: " \sans \fromproperty #'header:composer }
+                  \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet }
+                  \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer }
                   \typewriter \italic \fromproperty #'header:dedication
                 }
               }
