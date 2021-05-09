@@ -26,7 +26,7 @@ title = "À la victime pascale"
 subtitle = "Dimanche de Pâques - Séquence"
 composer = "Jean Baptiste Favre"
 poet = "AELF"
-dedication = "Clichy-la-Garenne, avril 2021"
+dedication = "Clichy-la-Garenne, mai 2021"
 
 midiInstrumentName = "acoustic grand"
 
@@ -122,8 +122,8 @@ ScorePaper = \paper {
               \vspace #0.5
               \fontsize #-2 \line {
                 \left-column {
-                  \concat { \typewriter "Texte&nbsp;: " \sans \fromproperty #'header:poet }
-                  \concat { \typewriter "Musique&nbsp;: " \sans \fromproperty #'header:composer }
+                  \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet }
+                  \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer }
                   \typewriter \italic \fromproperty #'header:dedication
                 }
               }
