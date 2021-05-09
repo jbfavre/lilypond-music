@@ -122,10 +122,8 @@ verseMusicBass = \relative f, {
   }
 
 verseLyrics = \markup {
-  \override #'(font-size . 2)
-  \vspace #5
+  \vspace #2
   \override #'(font-family . sans)
-  \override #'(font-size . 2)
   \column {
     \fill-line {
       \left-column{
@@ -142,7 +140,7 @@ verseLyrics = \markup {
         \concat { \typewriter "   " "tu renouvelles la f" \underline a "ce de la terre." }
       }
     }
-    \vspace #2
+    \vspace #1
     \fill-line {
       \left-column {
         \concat { \typewriter "3. " "Gloire au Seigne" \underline u "r à tout jamais !" }
@@ -162,19 +160,19 @@ partition = <<
     % Antienne à 4 voix mixtes
     \new ChoirStaff = "antiphonChoirStaff"
     <<
-      \new Staff = "antiphonCounterpointStaff" \with {
-        instrumentName = "Ctre-chant"
-        shortInstrumentName = "C"
-      }
-      <<
-        \clef "treble"
-        \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonCounterpoint" { \antiphonMusicCounterpoint \fermata }
-        \new Lyrics \lyricsto "antiphonCounterpoint" \antiphonLyricsCounterpoint
-      >>
+      %\new Staff = "antiphonCounterpointStaff" \with {
+      %  instrumentName = "Ctre-chant"
+      %  shortInstrumentName = "C"
+      %}
+      %<<
+      %  \clef "treble"
+      %  \keyTime
+      %  \antiphonRythm
+      %  \new Voice = "antiphonCounterpoint" { \antiphonMusicCounterpoint \fermata }
+      %  \new Lyrics \lyricsto "antiphonCounterpoint" \antiphonLyricsCounterpoint
+      %>>
       \new Staff = "antiphonSopranoStaff" \with {
-        instrumentName = "Soprano"
+        instrumentName = "S."
         shortInstrumentName = "S"
       }
       <<
@@ -185,7 +183,7 @@ partition = <<
         \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
       >>
       \new Staff = "antiphonAltoStaff" \with {
-        instrumentName = "Alto"
+        instrumentName = "A."
         shortInstrumentName = "A"
       }
       <<
@@ -196,7 +194,7 @@ partition = <<
         \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
       >>
       \new Staff = "antiphonTenorStaff" \with {
-        instrumentName = "Ténor"
+        instrumentName = "T."
         shortInstrumentName = "T"
       }
       <<
@@ -207,7 +205,7 @@ partition = <<
         \new Lyrics \lyricsto "antiphonTenor" \antiphonLyricsTenor
       >>
       \new Staff  = "antiphonBassStaff" \with {
-        instrumentName = "Basse"
+        instrumentName = "B."
         shortInstrumentName = "B"
       }
       <<
@@ -220,7 +218,7 @@ partition = <<
     >>
     % Accompagnement Piano / Orgue
     \new PianoStaff = "antiphonPianoStaff" \with {
-      instrumentName = #"Orgue"
+      instrumentName = #"O."
       shortInstrumentName = #"O"
     }
     <<
@@ -240,43 +238,61 @@ partition = <<
       >>
     >>
     % Psalmodie à 4 voix mixtes
-    \new ChoirStaff = "verseChoirStaff"
-    \with { printPartCombineTexts = ##f }
+    \new ChoirStaff = "verseChoirStaff" \with { printPartCombineTexts = ##f }
     <<
       \new Staff = "verseChoirStaffSA"
       \with { shortInstrumentName = \markup { \right-column { "S" "A" } } }
       <<
+        \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef treble
         \keyTime
-        \verseRythm
-        \partcombine
-        \verseMusicSoprano
-        \verseMusicAlto
+        \new Voice \verseRythm
+        \new Voice { \voiceOne \verseMusicSoprano }
+        \new Voice { \voiceTwo \verseMusicAlto }
       >>
       \new Staff = "verseChoirStaffTB"
       \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
       <<
+        \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef bass
         \keyTime
-        \verseRythm
-        \partcombine
-        \verseMusicTenor
-        \verseMusicBass
+        \new Voice \verseRythm
+        \new Voice { \voiceOne \verseMusicTenor }
+        \new Voice { \voiceTwo \verseMusicBass }
       >>
     >>
   >>
 
 % PDF output
-\include "../libs/layouts/book-titling.ily"
 \paper {
-  #(include-special-characters)
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
+    markup-system-spacing = #'((basic-distance . 30)
+       (minimum-distance . 30)
+       (padding . 5)
+       (stretchability . 5))
+    top-markup-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 3))
+    top-system-spacing = #'((basic-distance . 6)
+       (minimum-distance . 6)
+       (padding . 6)
+       (stretchability . 5))
+    system-system-spacing = #'((basic-distance . 3)
+       (minimum-distance . 3)
+       (padding . 3)
+       (stretchability . 3))
   #(define fonts
     (set-global-fonts
      #:music "emmentaler"
      #:brace "emmentaler"
      #:roman "Latin Modern Roman"
-     #:sans "Latin Modern Sans"
+     #:sans "Cantarell"
     ))
+  #(include-special-characters)
   tagline = ##f
   copyright = ##f
   scoreTitleMarkup = \markup \columns {
@@ -301,33 +317,32 @@ partition = <<
       }
     }
   }
-  top-margin = 1\cm
-  bottom-margin = 1\cm
-  %left-margin = 1\cm
-  %right-margin = 1\cm
 }
 
 \score {
   \partition
   \layout {
-    short-indent = 0.8\cm
-    \context {
-      \Score
-      \override RehearsalMark.font-family = #'typewriter
-    }
-    \context {
-      \Staff
-      \RemoveEmptyStaves
-    }
-    \context {
-      \ChoirStaff
-      \override VerticalAxisGroup.remove-first = ##t
-      \override InstrumentName.font-family = #'sans
-    }
-    \context {
-      \PianoStaff
-      \override InstrumentName.font-family = #'sans
-    }
+      ragged-last = ##f
+      \context {
+          \Staff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \PianoStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+          \ChoirStaff
+          \RemoveEmptyStaves
+          \override NoteHead #'style = #'altdefault
+          \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
   }
   \scoreHeader
 }
@@ -335,10 +350,7 @@ partition = <<
 % Midi output
 \score {
   <<
-    \new PianoStaff = "antiphonMusic" \with {
-      instrumentName = #"Orgue"
-      shortInstrumentName = #"O"
-    }
+    \new PianoStaff = "antiphonMusic"
     <<
       \new Staff <<
         \keyTime \tempo 2. = 80 \clef treble
@@ -360,8 +372,7 @@ partition = <<
       <<
         \keyTime
         \clef treble
-        \verseRythm
-        \partcombine
+        \new Voice \verseRythm
         \new Voice = "verseMusicSoprano" \verseMusicSoprano
         \new Voice = "verseMusicAlto" \verseMusicAlto
       >>
@@ -371,7 +382,7 @@ partition = <<
       <<
         \keyTime
         \clef bass
-        \verseRythm
+        \new Voice \verseRythm
         \new Voice = "verseMusicTenor" \verseMusicTenor
         \new Voice = "verseMusicBass" \verseMusicBass
       >>
