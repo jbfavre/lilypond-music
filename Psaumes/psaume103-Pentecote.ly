@@ -24,50 +24,57 @@ keyTime = {
 antiphonRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne Alleluiatique"
-  \time 6/4
-  s2. s2. s2. s2.
-  \time 4/4 s1 s1 \bar "|." \break
+  \time 3/8
+  s4.*6
+  s4.*3 \bar "|." \break
   }
 
 antiphonMusicCounterpoint = \relative c'' {
-  r2. e8 (fs) e (d) cs b cs2 cs4 fs8 (gs) fs (e) d e
-  fs4 a gs2 a1
   }
-%antiphonMusicCounterpoint = \relative c'' {
-%  r2. b4. cs8 d e cs2 cs4 b4. cs8 d e
-%  fs4 fs e2 e1
-%  }
 
 antiphonMusicSoprano = \relative c'' {
-  a4. cs8 a4 b2. cs4. b8 a4 b2.
-  b4 a gs2 a1
+  \autoBeamOff
+  \repeat volta 2 {
+    a8. cs16 a8 b4. cs8. b16 cs8 a4 a8
+  } \alternative {
+    { d4 cs8 b4. }
+    { a8 gs4 a4. (a4.) }
+  }
   }
 
-antiphonMusicPianoSoprano = \relative c'' {
-  a4. cs8 a4 b4. cs8 d e cs4. b8 a4 b4. cs8 d e
-  b4 a gs2 a1
-  }
 antiphonMusicAlto = \relative c' {
-  e4. a8 e4 e2. fs4. fs8 fs4 fs2.
-  fs4 fs e2 e1
+  \autoBeamOff
+  \repeat volta 2 {
+    e8. e16 e8 gs4. gs8. gs16 gs8 fs4 fs8
+  } \alternative {
+    { fs4 fs8 e4. }
+    { fs8 e4 e4. (e4.) }
+  }
   }
 
 antiphonMusicTenor =  \relative c' {
-  cs4. e8 cs4 b2. a4. cs8 cs4 b2.
-  d4 d d2 cs1
+  \autoBeamOff
+  \repeat volta 2 {
+    cs8. cs16 cs8 d4. cs8. cs16 cs8 cs4 cs8
+  } \alternative {
+    { b4 a8 gs4. }
+    { b8 d d d cs b cs4. }
+  }
   }
 
 antiphonMusicBass =  \relative f {
-  a4. a8 a4 gs2. fs4. fs8 e4 d2.
-  b4 b e2 a,1
+  \autoBeamOff
+  \repeat volta 2 {
+    a8. a16 a8 e4. es8. es16 es8 fs4 e8
+  } \alternative {
+    { d8 ds4 e4. }
+    { d8 e4 a,4. (a4.) }
+  }
   }
 
 antiphonLyrics = \lyricmode {
   Al -- le -- lu -- ia, Al -- le -- lu -- ia, Al -- le -- lu -- ia&nbsp;!
-  }
-
-antiphonLyricsCounterpoint = \lyricmode {
-  Al -- le -- lu -- ia, A -- men, Al -- le -- lu -- ia, Al -- le -- lu -- ia&nbsp;!
+        le -- lu -- ia&nbsp;!
   }
 
 antiphonLyricsSoprano = \antiphonLyrics
@@ -171,48 +178,36 @@ partition = <<
       %  \new Voice = "antiphonCounterpoint" { \antiphonMusicCounterpoint \fermata }
       %  \new Lyrics \lyricsto "antiphonCounterpoint" \antiphonLyricsCounterpoint
       %>>
-      \new Staff = "antiphonSopranoStaff" \with {
-        instrumentName = "S."
-        shortInstrumentName = "S"
-      }
+      \new Staff = "antiphonSopranoStaff" \with { instrumentName = "S." shortInstrumentName = "S" }
       <<
         \clef "treble"
         \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonSoprano" { \antiphonMusicSoprano \fermata }
+        \new Dynamics \antiphonRythm
+        \new Voice = "antiphonSoprano" { \antiphonMusicSoprano }
         \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
       >>
-      \new Staff = "antiphonAltoStaff" \with {
-        instrumentName = "A."
-        shortInstrumentName = "A"
-      }
+      \new Staff = "antiphonAltoStaff" \with { instrumentName = "A." shortInstrumentName = "A" }
       <<
         \clef "treble"
         \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonAlto" { \antiphonMusicAlto \fermata }
+        \new Dynamics \antiphonRythm
+        \new Voice = "antiphonAlto" { \antiphonMusicAlto }
         \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
       >>
-      \new Staff = "antiphonTenorStaff" \with {
-        instrumentName = "T."
-        shortInstrumentName = "T"
-      }
+      \new Staff = "antiphonTenorStaff" \with { instrumentName = "T." shortInstrumentName = "T" }
       <<
         \clef "treble_8"
         \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonTenor" { \antiphonMusicTenor \fermata }
-        \new Lyrics \lyricsto "antiphonTenor" \antiphonLyricsTenor
+        \new Dynamics \antiphonRythm
+        \new Voice = "antiphonTenor" { \antiphonMusicTenor }
+        \new Lyrics \lyricsto "antiphonTenor" { \antiphonLyricsTenor \lyricmode { Al -- le -- lu -- ia&nbsp;! } }
       >>
-      \new Staff  = "antiphonBassStaff" \with {
-        instrumentName = "B."
-        shortInstrumentName = "B"
-      }
+      \new Staff  = "antiphonBassStaff" \with { instrumentName = "B." shortInstrumentName = "B" }
       <<
         \clef "bass"
         \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonBass" { \antiphonMusicBass \fermata }
+        \new Dynamics \antiphonRythm
+        \new Voice = "antiphonBass" { \antiphonMusicBass }
         \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
       >>
     >>
@@ -220,13 +215,14 @@ partition = <<
     \new PianoStaff = "antiphonPianoStaff" \with {
       instrumentName = #"O."
       shortInstrumentName = #"O"
+      printPartCombineTexts = ##f
     }
     <<
       \new Staff = "antiphonPianoStaffSA"
       <<
         \clef treble
         \keyTime
-        \new Voice = "antiphonMusicSoprano" { \voiceOne \antiphonMusicPianoSoprano }
+        \new Voice = "antiphonMusicSoprano" { \voiceOne \antiphonMusicSoprano }
         \new Voice = "antiphonMusicAlto" { \voiceTwo \antiphonMusicAlto }
       >>
       \new Staff = "antiphonPianoStaffTB"
@@ -350,16 +346,18 @@ partition = <<
 % Midi output
 \score {
   <<
+    \unfoldRepeats {
     \new PianoStaff = "antiphonMusic"
     <<
       \new Staff <<
-        \keyTime \tempo 2. = 80 \clef treble
-        \new Voice = "antiphonMusicCounterpoint" \antiphonMusicCounterpoint
+        \keyTime \tempo 4. = 60 \clef treble
+        \new Dynamics \antiphonRythm
         \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
         \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
       >>
       \new Staff <<
         \keyTime \clef bass
+        \new Dynamics \antiphonRythm
         \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
         \new Voice = "antiphonMusicBass" \antiphonMusicBass
       >>
@@ -372,7 +370,7 @@ partition = <<
       <<
         \keyTime
         \clef treble
-        \new Voice \verseRythm
+        \new Dynamics \antiphonRythm
         \new Voice = "verseMusicSoprano" \verseMusicSoprano
         \new Voice = "verseMusicAlto" \verseMusicAlto
       >>
@@ -382,11 +380,12 @@ partition = <<
       <<
         \keyTime
         \clef bass
-        \new Voice \verseRythm
+        \new Dynamics \antiphonRythm
         \new Voice = "verseMusicTenor" \verseMusicTenor
         \new Voice = "verseMusicBass" \verseMusicBass
       >>
     >>
+    }
   >>
   \midi {}
 }
