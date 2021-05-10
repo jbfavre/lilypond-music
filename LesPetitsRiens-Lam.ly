@@ -10,7 +10,7 @@ headers = \header {
   dedication = \markup { \italic "Clichy la Garenne, mai 2021" }
   subtitle = "pour chœur à quatre voix"
   tagline = ""
-  date = "Clichy la Garenne, mai 2021"
+  date = "Clichy la Garenne, avril 2021"
 }
 
 % Fragments

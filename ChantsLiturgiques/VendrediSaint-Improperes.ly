@@ -23,7 +23,7 @@ cesure = {
 %%%%%
 %%%%%
 title = "Impropères"
-subtitle = "Vendredi saint - Chant des reproches"
+subtitle = \markup { \column { "Vendredi saint" "(Chant des reproches)" } }
 composer = "Jean Baptiste Favre"
 poet = "AELF"
 dedication = "Clichy-la-Garenne, avril 2021"
