@@ -1,6 +1,6 @@
 \version "2.22.0"
 \language "english"
-\include "libs/layouts/book-titling.ily"
+\include "../libs/layouts/book-titling.ily"
 
 #(define absolute-volume-alist '())
 #(set! absolute-volume-alist

@@ -5,12 +5,12 @@
 % Will be included in lilypond 2.21
 % In the mean time, you can get it from
 % https://github.com/lilypond/lilypond/blob/master/ly/swing.ly
-\include "libs/swing.ily"
+\include "../libs/swing.ily"
 % This one has been found here:
 % http://lsr.di.unimi.it/LSR/Item?id=204
-\include "libs/rhythmMarks.ily"
+\include "../libs/rhythmMarks.ily"
 
-\include "libs/layouts/book-titling.ily"
+\include "../libs/layouts/book-titling.ily"
 
 \header {
   title = "Piano Bar"
