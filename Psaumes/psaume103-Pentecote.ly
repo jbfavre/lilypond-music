@@ -15,7 +15,7 @@ scoreHeader = \header {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 keyTime = {
-  \time 6/4 \key a \major
+  \time 6/4 \key g \major
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,43 +33,43 @@ antiphonMusicCounterpoint = \relative c'' {
   }
 
 antiphonMusicSoprano = \relative c'' {
-  \autoBeamOff
-  \repeat volta 2 {
-    a8. cs16 a8 b4. cs8. b16 cs8 a4 a8
-  } \alternative {
-    { d4 cs8 b4. }
-    { a8 gs4 a4. (a4.) }
-  }
+    \autoBeamOff
+    \repeat volta 2 {
+      g8. b16 g8 a4. b8. a16 b8 g4 g8
+    } \alternative {
+      { c4 b8 a4. }
+      { g8 fs4 g4. (g4.) }
+    }
   }
 
 antiphonMusicAlto = \relative c' {
-  \autoBeamOff
-  \repeat volta 2 {
-    e8. e16 e8 gs4. gs8. gs16 gs8 fs4 fs8
-  } \alternative {
-    { fs4 fs8 e4. }
-    { fs8 e4 e4. (e4.) }
-  }
+    \autoBeamOff
+    \repeat volta 2 {
+      d8. d16 d8 fs4. fs8. fs16 fs8 e4 e8
+    } \alternative {
+      { e4 e8 d4. }
+      { e8 d4 d4. (d4.) }
+    }
   }
 
 antiphonMusicTenor =  \relative c' {
-  \autoBeamOff
-  \repeat volta 2 {
-    cs8. cs16 cs8 d4. cs8. cs16 cs8 cs4 cs8
-  } \alternative {
-    { b4 a8 gs4. }
-    { b8 d d d cs b cs4. }
-  }
+    \autoBeamOff
+    \repeat volta 2 {
+      b8. b16 b8 c4. b8. b16 b8 b4 b8
+    } \alternative {
+      { a4 g8 fs4. }
+      { a8 c c c b a b4. }
+    }
   }
 
 antiphonMusicBass =  \relative f {
-  \autoBeamOff
-  \repeat volta 2 {
-    a8. a16 a8 e4. es8. es16 es8 fs4 e8
-  } \alternative {
-    { d8 ds4 e4. }
-    { d8 e4 a,4. (a4.) }
-  }
+    \autoBeamOff
+    \repeat volta 2 {
+      g8. g16 g8 d4. ds8. ds16 ds8 e4 d8
+    } \alternative {
+      { c8 cs4 d4. }
+      { c8 d4 g,4. (g4.) }
+    }
   }
 
 antiphonLyrics = \lyricmode {
@@ -98,34 +98,34 @@ verseRythm = \relative c' {
   }
 verseMusicSoprano = \relative c' {
   \antiphonRythm
-  e\breve fs1 gs4 a
-  a\breve b1 b4 b cs
-  cs\breve b1 a4
-  b\breve a1 a4 gs a
+  d\breve e1 fs4 g
+  g\breve a1 a4 a b
+  b\breve a1 g4
+  a\breve g1 g4 fs g
   }
 
 verseMusicAlto = \relative c' {
   \antiphonRythm
-  cs\breve d1 es4 fs
-  fs\breve fs1 gs4 fs es!
-  e\breve e1 fs4
-  fs\breve e1 e4 e e
+  b\breve c1 ds4 e
+  e\breve e1 fs4 e ds!
+  d\breve d1 e4
+  e\breve d1 d4 d d
   }
 
 verseMusicTenor = \relative f {
   \antiphonRythm
-  a\breve a1 cs4 cs
-  d\breve b1 b4 b gs
-  a\breve gs1 cs4
-  b\breve b1 b4 d cs
+  g\breve g1 b4 b
+  c\breve a1 a4 a fs
+  g\breve fs1 b4
+  a\breve a1 a4 c b
   }
 
 verseMusicBass = \relative f, {
   \antiphonRythm
-  a\breve d1 cs4 fs
-  d\breve d1 d4 d cs
-  a\breve e'1 fs4
-  d\breve e1 e4 e a,
+  g\breve c1 b4 e
+  c\breve c1 c4 c b
+  g\breve d'1 e4
+  c\breve d1 d4 d g,
   }
 
 verseLyrics = \markup {
