@@ -92,40 +92,40 @@ verseRythm = \relative c' {
   \markCustom "Psalmodie par strophe"
   \cadenzaOn
   s\breve s1 s4 s \bar "||"
-  s\breve s1 s4 s s \bar "||"
+  s\breve s1 s4 s \bar "||"
   s\breve s1 s4 \bar "||"
-  s\breve s1 s4 s s \bar "|."
+  s\breve s1 s4 s \bar "|."
   }
 verseMusicSoprano = \relative c' {
   \antiphonRythm
   d\breve e1 fs4 g
-  g\breve a1 a4 a b
+  g\breve a1 a4 b
   b\breve a1 g4
-  a\breve g1 g4 fs g
+  a\breve g1 fs4 g
   }
 
 verseMusicAlto = \relative c' {
   \antiphonRythm
   b\breve c1 ds4 e
-  e\breve e1 fs4 e ds!
+  e\breve fs1 e4 ds!
   d\breve d1 e4
-  e\breve d1 d4 d d
+  e\breve d1 d4 d
   }
 
 verseMusicTenor = \relative f {
   \antiphonRythm
   g\breve g1 b4 b
-  c\breve a1 a4 a fs
+  c\breve a1 a4 fs
   g\breve fs1 b4
-  a\breve a1 a4 c b
+  a\breve a1 c4 b
   }
 
 verseMusicBass = \relative f, {
   \antiphonRythm
   g\breve c1 b4 e
-  c\breve c1 c4 c b
+  c\breve c1 c4 b
   g\breve d'1 e4
-  c\breve d1 d4 d g,
+  c\breve d1 d4 g,
   }
 
 verseLyrics = \markup {
@@ -158,6 +158,7 @@ verseLyrics = \markup {
     }
   }
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
@@ -261,26 +262,14 @@ partition = <<
 
 % PDF output
 \paper {
-  top-margin = 1\cm
-  bottom-margin = 1\cm
-  left-margin = 1\cm
-  right-margin = 1\cm
-    markup-system-spacing = #'((basic-distance . 30)
-       (minimum-distance . 30)
-       (padding . 5)
-       (stretchability . 5))
-    top-markup-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
-    top-system-spacing = #'((basic-distance . 6)
-       (minimum-distance . 6)
-       (padding . 6)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
+  top-margin = 2\cm
+  bottom-margin = 2\cm
+  left-margin = 1.5\cm
+  right-margin = 1.5\cm
+  markup-system-spacing = #'((basic-distance . 20)
+     (minimum-distance . 20)
+     (padding . 10)
+     (stretchability . 5))
   #(define fonts
     (set-global-fonts
      #:music "emmentaler"
