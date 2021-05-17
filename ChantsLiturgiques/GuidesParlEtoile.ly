@@ -72,7 +72,7 @@ versetRhythms = {
   s\breve s1 s4 \bar "||"
   s\breve s1 s4 \bar "|." \break
   \markCustom "Psalmodie B"
-  s\breve s1 s1 s4 s4 \bar "||"
+  s\breve s1 s4 s4 \bar "||"
   s\breve s1 s4 \bar "|."
   s4^\markup { &dagger; } \bar "|." \break
   \markCustom "Psalmodie C"
@@ -87,14 +87,14 @@ versetSopranosMusic = \relative c'' {
   a\breve b1 g4
   g\breve g1 fs4
 
-  b\breve b1 b1 a4 g4
+  b\breve b1 a4 g4
   a\breve b1 b4
   a4
 
-  b\breve b1 a4 fs4 \bar "||"
-  g\breve c1 c4 b4 \bar "||"
-  b\breve d1 d4 \bar "||"
-  c\breve b1 a4 \bar "|."
+  b\breve b1 a4 fs4
+  g\breve c1 c4 b4
+  b\breve d1 d4
+  c\breve b1 a4
   }
 
 versetAltosMusic = \relative c' {
@@ -103,7 +103,7 @@ versetAltosMusic = \relative c' {
   fs\breve fs1 e4
   e\breve e1 d4
 
-  g\breve e1 fs1 fs4 e4 % B
+  g\breve fs1 fs4 e4 % B
   e\breve e1 g4
   g4
 
@@ -119,7 +119,7 @@ versetTenorsMusic = \relative c' {
   d\breve b1 b4
   c\breve c1 a4
 
-  d\breve e1 b1 d4 b4 % B
+  d\breve b1 d4 b4 % B
   a\breve c1 d4
   e4
 
@@ -135,7 +135,7 @@ versetBassesMusic = \relative f {
   d\breve ds1 e4
   c\breve a1 d?4
 
-  g\breve g1 d1 d4 e4 % B
+  g\breve d1 d4 e4 % B
   c\breve a1 g4
   c4
 
