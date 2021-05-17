@@ -91,41 +91,63 @@ verseRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe"
   \cadenzaOn
+  s\breve s1 s4 \bar "||"
   s\breve s1 s4 s \bar "||"
+  \cadenzaOff
+  s8^"Tous" s4 s4. \bar "||" \break
+  \cadenzaOn
   s\breve s1 s4 s \bar "||"
   s\breve s1 s4 \bar "||"
-  s\breve s1 s4 s \bar "|."
+  \cadenzaOff
+  s8^"Tous" s4 s4. s4. s4. \bar "||"
+  \cadenzaOn
   }
-verseMusicSoprano = \relative c' {
+verseMusicSoprano = \relative c'' {
   \antiphonRythm
-  d\breve e1 fs4 g
-  g\breve a1 a4 b
   b\breve a1 g4
-  a\breve g1 fs4 g
+  g\breve c1 b4 a
+  \cadenzaOff
+  g8. b16 g8 a4.
+  \cadenzaOn
+  b\breve a1 b4 g
+  g\breve a1 a4
+  \cadenzaOff
+  g8. b16 g8 a4 a8
+  g8 fs4 g4.
+  \cadenzaOn
   }
 
-verseMusicAlto = \relative c' {
+verseMusicAlto = \relative c'' {
   \antiphonRythm
-  b\breve c1 ds4 e
-  e\breve fs1 e4 ds!
-  d\breve d1 e4
-  e\breve d1 d4 d
+  g\breve fs1 e4
+  e\breve e1 e4 d
+  d8. d16 d8 fs4.
+  g\breve fs1 fs4 e
+  e\breve e1 fs4
+  d8. d16 d8 fs4 e8
+  d8 d4 d4.
   }
 
-verseMusicTenor = \relative f {
+verseMusicTenor = \relative c' {
   \antiphonRythm
-  g\breve g1 b4 b
-  c\breve a1 a4 fs
-  g\breve fs1 b4
-  a\breve a1 c4 b
+  d\breve d1 d4
+  c\breve a1 g4 fs
+  b8. b16 b8 a4.
+  d\breve d1 b4 b
+  c\breve c1 c4
+  b8. b16 b8 c4 c8
+  a8 c4 b4.
   }
 
 verseMusicBass = \relative f, {
   \antiphonRythm
-  g\breve c1 b4 e
-  c\breve c1 c4 b
   g\breve d'1 e4
-  c\breve d1 d4 g,
+  c\breve c1 cs4 d
+  g8. g16 g8 d4.
+  g,\breve d'1 ds4 e
+  c\breve a1 d4
+  g8. g16 g8 d4 c8
+  d8 d4 g,4.
   }
 
 verseLyrics = \markup {
@@ -212,6 +234,7 @@ partition = <<
         \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
       >>
     >>
+%{
     % Accompagnement Piano / Orgue
     \new PianoStaff = "antiphonPianoStaff" \with {
       instrumentName = #"O."
@@ -234,6 +257,7 @@ partition = <<
         \new Voice = "antiphonMusicBass" { \voiceFour \antiphonMusicBass }
       >>
     >>
+%}
     % Psalmodie à 4 voix mixtes
     \new ChoirStaff = "verseChoirStaff" \with { printPartCombineTexts = ##f }
     <<
@@ -266,9 +290,9 @@ partition = <<
   bottom-margin = 2\cm
   left-margin = 1.5\cm
   right-margin = 1.5\cm
-  markup-system-spacing = #'((basic-distance . 20)
-     (minimum-distance . 20)
-     (padding . 10)
+  markup-system-spacing = #'((basic-distance . 17)
+     (minimum-distance . 17)
+     (padding . 7)
      (stretchability . 5))
   #(define fonts
     (set-global-fonts
