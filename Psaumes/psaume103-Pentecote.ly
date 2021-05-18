@@ -91,12 +91,12 @@ verseRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe"
   \cadenzaOn
+  s\breve s4 \bar "||"
   s\breve s1 s4 \bar "||"
-  s\breve s1 s4 s \bar "||"
   \cadenzaOff
   s8^"Tous" s4 s4. \bar "||" \break
   \cadenzaOn
-  s\breve s1 s4 s \bar "||"
+  s\breve s4 \bar "||"
   s\breve s1 s4 \bar "||"
   \cadenzaOff
   s8^"Tous" s4 s4. s4. s4. \bar "||"
@@ -104,12 +104,12 @@ verseRythm = \relative c' {
   }
 verseMusicSoprano = \relative c'' {
   \antiphonRythm
+  b\breve a4
   b\breve a1 g4
-  g\breve c1 b4 a
   \cadenzaOff
   g8. b16 g8 a4.
   \cadenzaOn
-  b\breve a1 b4 g
+  a\breve g4
   g\breve a1 a4
   \cadenzaOff
   g8. b16 g8 a4 a8
@@ -119,35 +119,35 @@ verseMusicSoprano = \relative c'' {
 
 verseMusicAlto = \relative c'' {
   \antiphonRythm
+  g\breve g4
   g\breve fs1 e4
-  e\breve e1 e4 d
   d8. d16 d8 fs4.
-  g\breve fs1 fs4 e
+  fs\breve e4
   e\breve e1 fs4
-  d8. d16 d8 fs4 e8
+  d8. d16 d8 e4 e8
   d8 d4 d4.
   }
 
 verseMusicTenor = \relative c' {
   \antiphonRythm
-  d\breve d1 d4
-  c\breve a1 g4 fs
+  d\breve e4
+  d\breve d1 b4
   b8. b16 b8 a4.
-  d\breve d1 b4 b
-  c\breve c1 c4
-  b8. b16 b8 c4 c8
-  a8 c4 b4.
+  b\breve b4
+  c\breve cs1 d4
+  b8. b16 b8 c4 a8
+  b8 (a) c b4.
   }
 
-verseMusicBass = \relative f, {
+verseMusicBass = \relative f {
   \antiphonRythm
+  g\breve c,4
   g\breve d'1 e4
-  c\breve c1 cs4 d
   g8. g16 g8 d4.
-  g,\breve d'1 ds4 e
+  ds\breve e4
   c\breve a1 d4
-  g8. g16 g8 d4 c8
-  d8 d4 g,4.
+  g8. g16 g8 c,4 c8
+  d4 d8 g,4.
   }
 
 verseLyrics = \markup {
@@ -181,6 +181,10 @@ verseLyrics = \markup {
   }
 }
 
+verseReponsLyrics = \lyricmode {
+  _ _ _ _ _ Al -- lé -- lu -- ia
+  _ _ _ _ _ Al -- lé -- lu -- ia, Al lé -- lu -- ia&nbsp;!
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
@@ -268,9 +272,10 @@ partition = <<
         \clef treble
         \keyTime
         \new Voice \verseRythm
-        \new Voice { \voiceOne \verseMusicSoprano }
+        \new Voice = "verseSoprano" { \voiceOne \verseMusicSoprano }
         \new Voice { \voiceTwo \verseMusicAlto }
       >>
+      \new Lyrics \lyricsto "verseSoprano" \verseReponsLyrics
       \new Staff = "verseChoirStaffTB"
       \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
       <<
@@ -290,9 +295,13 @@ partition = <<
   bottom-margin = 2\cm
   left-margin = 1.5\cm
   right-margin = 1.5\cm
-  markup-system-spacing = #'((basic-distance . 17)
-     (minimum-distance . 17)
-     (padding . 7)
+  markup-system-spacing = #'((basic-distance . 5)
+     (minimum-distance . 5)
+     (padding . 1)
+     (stretchability . 5))
+ system-system-spacing = #'((basic-distance . 5)
+     (minimum-distance . 5)
+     (padding . 1)
      (stretchability . 5))
   #(define fonts
     (set-global-fonts
