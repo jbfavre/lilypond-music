@@ -25,6 +25,18 @@ stanceMusic = \relative c' {
   fs!?4 r8 d e
   fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g4 a8 b a2 \fermata
   }
+stanceAltoMusic = \relative c' {
+  d8 d d d4 e2 fs2 fs4 g8 a bf4 g4 ef4
+  d4. s4. s4. s4. s2 fs2 e2 fs2
+  }
+stanceTenorMusic = \relative c {
+  fs8 g8 g g4 g4 a a2 d4 d8 f f4 ef a,
+  a4. s4. s4. s4. s2 a4. b8 b4 c4 a2
+  }
+stanceBassMusic = \relative c {
+  d8 bf a g4 c2 d2 d4 g8 f bf,4 c cs d4.
+  d8 cs c b g'4. fs8 e ds2 d4. ds8 e8 d c a d2
+  }
 stanceLyrics = \lyricmode {
   Ils sont ve -- nus, gui -- dés par l'é -- toi -- le, se pro -- ster -- ner de -- vant le ber -- ceau
   Et dé -- po -- ser, juste aux pieds de l'en -- fant, l'or, la myrrhe et l'en -- cens
@@ -468,8 +480,7 @@ AllScoreLayout = \layout {
               \break
               }
             \new Voice = "stancePianoSoprano" { \voiceOne \stanceMusic }
-            \new Voice = "stancePianoAlto" { \voiceTwo \stanceRhythms
-            }
+            \new Voice = "stancePianoAlto" { \voiceTwo \stanceAltoMusic }
           >>
           \new Staff  = "stancePianoLowStaff"
           <<
@@ -481,9 +492,8 @@ AllScoreLayout = \layout {
               \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
               \break
               }
-            \new Voice = "stancePianoTenor" { \voiceOne \stanceRhythms }
-            \new Voice = "stancePianoBass" { \voiceTwo \stanceRhythms
-            }
+            \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
+            \new Voice = "stancePianoBass" { \voiceTwo \stanceBassMusic }
           >>
         >>
       >>
