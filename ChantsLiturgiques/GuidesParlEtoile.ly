@@ -27,15 +27,15 @@ stanceMusic = \relative c' {
   }
 stanceAltoMusic = \relative c' {
   d8 d d d4 e2 fs2 fs4 g8 a bf4 g4 ef4
-  d4. s4. s4. s4. s2 fs2 e2 fs2
+  d4. r8 c8 e e2 fs4 d2 fs2 e2 fs2
   }
 stanceTenorMusic = \relative c {
-  fs8 g8 g g4 g4 a a2 d4 d8 f f4 ef a,
-  a4. s4. s4. s4. s2 a4. b8 b4 c4 a2
+  fs8 g8 g g2 a4 a2 d4 d8 f f4 ef a,
+  a4. fs8 a c b2 d4 b2 a4. b8 b4 c4 a2
   }
 stanceBassMusic = \relative c {
   d8 bf a g4 c2 d2 d4 g8 f bf,4 c cs d4.
-  d8 cs c b g'4. fs8 e ds2 d4. ds8 e8 d c a d2
+  d8 c a e'2 d4 g2 d4. ds8 e8 d c a d2
   }
 stanceLyrics = \lyricmode {
   Ils sont ve -- nus, gui -- dés par l'é -- toi -- le, se pro -- ster -- ner de -- vant le ber -- ceau
