@@ -26,12 +26,12 @@ stanceMusic = \relative c' {
   fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g4 a8 b a2 \fermata
   }
 stanceAltoMusic = \relative c' {
-  d8 d d d4 e2 fs2 fs4 g8 a bf4 g4 ef4
+  d8 d d d4 ef2 fs2 fs4 d8 f f4 ef e
   d4. r8 c8 e e2 fs4 d2 fs2 e2 fs2
   }
 stanceTenorMusic = \relative c {
-  fs8 g8 g g2 a4 a2 d4 d8 f f4 ef a,
-  a4. fs8 a c b2 d4 b2 a4. b8 b4 c4 a2
+  fs8 g8 fs g2 a4 a2 a4 g8 a bf4 g4 g8 r8
+  a4. fs8 g c b2 c4 b2 a4. b8 b4 c4 a2
   }
 stanceBassMusic = \relative c {
   d8 bf a g4 c2 d2 d4 g8 f bf,4 c cs d4.
