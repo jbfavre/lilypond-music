@@ -125,7 +125,7 @@
               fs4 g a b2 g4 a fs2 e2. \break
               \time 2/4
               b'4 g8 a b4 r8 b8 g a b a d cs b (a) b4. g8 \break
-              c8 c b a g4. e8 g4 a b2
+              c8 c b a g4. e8 \time 6/8 g4. a b4. b8 a g fs4.
             }
           }
           \new Lyrics \lyricsto "soprano" {
@@ -140,7 +140,7 @@
               al -- le -- lu -- ia&nbsp;!
               Viens, Es -- prit Saint&nbsp;!
               Em -- plis le cœur de tes fi -- dè les&nbsp;!
-              Al -- lume en eux le feu de ton a -- mours&nbsp;!
+              Al -- lume en eux le feu de ton a -- mours&nbsp;! Al -- lé -- lu -- ia&nbsp;!
             }
           }
         >>
