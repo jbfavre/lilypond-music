@@ -65,28 +65,49 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' {
+sopranoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
-  %\markCustom "Psalmodie par strophe" \cadenzaOn
-  %a\breve b1 a4 g fs \bar "||"
-  %g\breve fs1 e4 \bar "||"
-  %e\breve fs1 d4 \bar "||"
-  %g\breve fs1 e4 e \bar "|." \break
-  %\markCustom "Psalmodie par verset" \cadenzaOn
-  %a\breve b1 a4 \bar "||"
-  %fs\breve g1 a4 \bar "|."
+  \markCustom "Psalmodie par strophe" \cadenzaOn
+  f\breve g1 a4 \bar "||"
+  a\breve bf1 c4 \bar "||"
+  c\breve bf1 a4 \bar "||"
+  a\breve g1 g4 \bar "|." \break
+  \markCustom "Psalmodie par verset" \cadenzaOn
+  f\breve g1 a4 \bar "||"
+  a\breve g1 g4 \bar "|." \break
   }
 sopranoVerseRepons = \lyricmode {}
 altoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
+  d\breve e1 f4
+  f\breve gs1 a4
+  a\breve g?1 e4
+  f\breve s1 e4
+
+  d\breve e1 f4
+  f\breve s1 e4
   }
 
 tenorVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
+  a\breve c1 c4
+  c\breve e1 e4
+  f\breve d1 cs4
+  d\breve d1 c?4
+
+  a\breve c1 c4
+  d\breve d1 c4
   }
 
 bassVerseMusic = \relative c {
   \silence \sopranoAntiphonMusic
+  d\breve c1 f4
+  f\breve e1 a4
+  f\breve g1 a4
+  d,\breve b1 c4
+
+  d\breve c1 f4
+  d\breve b!1 c4
   }
 
 verseLyrics = \markuplist {
