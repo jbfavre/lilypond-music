@@ -104,10 +104,10 @@ bassVerseMusic = \relative c {
   d\breve c1 f4
   f\breve e1 a4
   f\breve g1 a4
-  d,\breve b1 c4
+  d,\breve bf1 c4
 
   d\breve c1 f4
-  d\breve b!1 c4
+  d\breve bf1 c4
   }
 
 verseLyrics = \markuplist {
@@ -124,7 +124,7 @@ verseLyrics = \markuplist {
       \hspace #1
       \left-column {
         \concat { \typewriter "2. " "Le juste grandir" \underline a " comme un palmier,"}
-        \concat { \typewriter "   " "il poussera comme un c" \underline è "re du Liban"}
+        \concat { \typewriter "   " "il poussera comme un c" \underline è "dre du Liban"}
         \concat { \typewriter "   " "planté dans les parv" \underline i "s du Seigneur,"}
         \concat { \typewriter "   " "il grandira dans la mais" \underline o "n de notre Dieu."}
       }
@@ -132,7 +132,7 @@ verseLyrics = \markuplist {
     \vspace #1
     \fill-line {
       \left-column{
-        \concat { \typewriter "3. " "Vieillissant, il fructif" \underline i "e ensore,"}
+        \concat { \typewriter "3. " "Vieillissant, il fructif" \underline i "e encore,"}
         \concat { \typewriter "   " "il garde sa s" \underline è "ve et sa verdeur,"}
         \concat { \typewriter "   " "pour annoncer&nbsp;: «&nbsp;Le Seigne" \underline u "r est droit&nbsp;!"}
         \concat { \typewriter "   " "Pas de ruse en Die" \underline u ", mon rocher&nbsp;!&nbsp;»."}
