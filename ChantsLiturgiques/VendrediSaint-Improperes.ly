@@ -171,7 +171,7 @@ choralThreePartOneAltoMusic =  \relative c' { e4 e8 e f2 e4 e e f a4. f8 e4 f8 f
 choralThreePartOneTenorMusic = \relative c' { c4 d8 c d2 c4 b a d e4. d8 c4 c8 b b2 }
 choralThreePartOneBassMusic = \relative c' { a4 gs8 a b4 (b,) c8 d e d c4 b a4. b8 c4 d8 d e2 }
 choralThreePartOneLyrics = \lyricmode {
-  Frè -- re se -- vré d'a -- mer -- tu --me,
+  Frè -- re se -- vré d'a -- mer -- tu -- me,
   frè -- re~au cœur des -- sé -- ché
 }
 
