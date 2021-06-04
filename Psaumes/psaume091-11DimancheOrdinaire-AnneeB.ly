@@ -85,7 +85,7 @@ altoVerseMusic = \relative c' {
   f\breve s1 e4
 
   d\breve e1 f4
-  f\breve s1 e4
+  f\breve f1 e4
   }
 
 tenorVerseMusic = \relative c' {
