@@ -69,7 +69,7 @@ sopranoVerseMusic = \relative c' {
   \silence \sopranoAntiphonMusic
   \markCustom "Psalmodie par strophe" \cadenzaOn
   f\breve g1 a4 \bar "||"
-  a\breve bf1 c4 \bar "||"
+  a\breve b1 c4 \bar "||"
   c\breve bf1 a4 \bar "||"
   a\breve g1 g4 \bar "|." \break
   \markCustom "Psalmodie par verset" \cadenzaOn
@@ -82,7 +82,7 @@ altoVerseMusic = \relative c' {
   d\breve e1 f4
   f\breve gs1 a4
   a\breve g?1 e4
-  f\breve s1 e4
+  f\breve f1 e4
 
   d\breve e1 f4
   f\breve f1 e4
