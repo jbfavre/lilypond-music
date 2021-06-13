@@ -24,20 +24,20 @@ puMainSopranoMusic = \relative c' {
 
 puMainAltoMusic = \relative c' {
   c4 c f f f e c2
-  f4 g af af f f e2
-  df4 df f2 f4 e c2
+  f4 g af af af8 (g) f4 e2
+  f4 f8 (e) f2 f4 e c2
 }
 
 puMainTenorMusic = \relative c' {
   af4 c c df df c8 (bf) af2
-  c4 ef ef f bf, bf c2
-  af4 bf c2 d4 c8 (bf) a2
+  c4 ef ef f f8 (c) c4 c2
+  af4 df8 (c) c2 d4 c8 (bf) a2
 }
 
 puMainBasseMusic = \relative c {
-  f4 (f8) e f (ef) df4 bf c f2
+  f4 (f8) e f (ef) df (c) bf4 c f2
   f4 ef af8 (g) f (ef) d (e) f4 c2
-  df8 (c) bf4 <f f'>4 f'8 ef b4 c <f f,>2
+  df8 (c) bf (c) <f f,>4 f8 d b4 c <f f,>2
 }
 
 puMainSopranoLyrics = \lyricmode {
