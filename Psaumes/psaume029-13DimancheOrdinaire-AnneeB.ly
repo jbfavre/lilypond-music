@@ -75,10 +75,10 @@ sopranoVerseMusic = \relative c'' {
   g\breve fs1 g4 \bar "||"
   a\breve a1 g4 \bar "||"
   b\breve as1 b4 \bar "||"
-  g\breve g1 fs4 \bar "|." \break
+  g\breve a1 a4 \bar "|." \break
   \markCustom "Psalmodie par verset" \cadenzaOn
   g\breve fs1 g4 \bar "||"
-  a\breve a1 g4 \bar "|."
+  g\breve a1 a4 \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
 altoVerseMusic = \relative c' {
@@ -86,10 +86,10 @@ altoVerseMusic = \relative c' {
   e\breve e1 e4
   e\breve ef1 d4
   g\breve g1 g4
-  e\breve e1 d4
+  e\breve g1 fs4
 
   e\breve e1 e4
-  e\breve ef1 d4
+  e\breve g1 fs4
   }
 
 tenorVerseMusic = \relative c' {
@@ -97,10 +97,10 @@ tenorVerseMusic = \relative c' {
   b\breve c1 b4
   a\breve g1 b4
   d\breve ef1 d4
-  b\breve c1 a4
+  b\breve c1 c4
 
   b\breve c1 b4
-  a\breve g1 b4
+  b\breve c1 c4
   }
 
 bassVerseMusic = \relative c {
@@ -108,10 +108,10 @@ bassVerseMusic = \relative c {
   e\breve a,1 e'4
   c\breve c1 g'4
   g\breve c,1 g'4
-  e\breve a,1 d4
+  e\breve ef1 d4
 
   e\breve a,1 e'4
-  c\breve c1 g'4
+  e\breve ef1 d4
   }
 
 verseLyrics = \markuplist {
