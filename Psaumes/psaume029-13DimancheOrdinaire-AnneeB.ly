@@ -75,7 +75,9 @@ sopranoVerseMusic = \relative c'' {
   g\breve fs1 g4 \bar "||"
   a\breve a1 g4 \bar "||"
   b\breve as1 b4 \bar "||"
-  g\breve a1 a4 \bar "|." \break
+  g\breve a?1 a4 \bar "|." \break
+  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+  \key e \minor
   \markCustom "Psalmodie par verset" \cadenzaOn
   g\breve fs1 g4 \bar "||"
   g\breve a1 a4 \bar "|."
@@ -86,7 +88,7 @@ altoVerseMusic = \relative c' {
   e\breve e1 e4
   e\breve ef1 d4
   g\breve g1 g4
-  e\breve g1 fs4
+  e?\breve g1 fs4
 
   e\breve e1 e4
   e\breve g1 fs4
@@ -108,8 +110,10 @@ bassVerseMusic = \relative c {
   e\breve a,1 e'4
   c\breve c1 g'4
   g\breve c,1 g'4
-  e\breve ef1 d4
+  e?\breve ef1 d4
 
+  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+  \key e \minor
   e\breve a,1 e'4
   e\breve ef1 d4
   }
