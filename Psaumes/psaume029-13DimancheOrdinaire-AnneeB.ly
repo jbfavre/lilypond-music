@@ -12,7 +12,7 @@
 title = "Psaume 29"
 subtitle = "13ème Dimanche du Temps Ordinaire"
 composer = "Jean Baptiste Favre"
-dedicace = "Clichyla Garenne, juin 2021"
+dedicace = "Clichy la Garenne, juin 2021"
 
 global = {
   \key g \major
