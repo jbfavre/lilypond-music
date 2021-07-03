@@ -16,8 +16,6 @@
   subsubtitle = "Petite messe de Saint Vincent de Paul"
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  opus = ##f
   tagline = \markup { \typewriter "Extrait de la Petite messe de Saint Vincent de Paul" }
 }
-#(set-global-staff-size 18)
 \kyrieScore

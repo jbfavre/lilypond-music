@@ -174,8 +174,7 @@ gloriaTenorLyrics = \lyricmode {
 gloriaBasseMusic = \gloriaTenorMusic
 gloriaBasseLyrics = \gloriaTenorLyrics
 
-gloriaScore = \score {
-    <<
+gloriaScore = <<
       \new ChoirStaff
       <<
         \new Staff \with { instrumentName = "Intonation" }
@@ -261,4 +260,3 @@ gloriaScore = \score {
       %  >>
       %>>
     >>
-  }

@@ -42,8 +42,7 @@ anamneseMainSopranoLyrics = \lyricmode {
   Nous at -- ten -- dons ta ve -- nue dans la gloi -- re
 }
 
-anamneseScore =     \score {
-    <<
+anamneseScore = <<
       \new ChoirStaff
       <<
         \new Staff \with {instrumentName = "Intonation" }
@@ -118,4 +117,3 @@ anamneseScore =     \score {
       %  >>
       %>>
     >>
-  }

@@ -1,5 +1,13 @@
 \paper {
 
+  #(define fonts
+    (set-global-fonts
+     #:music "emmentaler"
+     #:brace "emmentaler"
+     #:roman "Arial"
+     #:sans "Cantarell thin"
+    ))
+
   #(include-special-characters)
 
   top-markup-spacing = #'((basic-distance . 3)
@@ -12,14 +20,18 @@
      (padding . 3)
      (stretchability . 3))
 
+%{
   system-system-spacing = #'((basic-distance . 3)
      (minimum-distance . 3)
      (padding . 3)
      (stretchability . 3))
+%}
 
   %two-sided = \twoSided
   %inner-margin = \innerMargin
   %outer-margin = \outerMargin
+
+  min-systems-per-page = 4
 
   % Should the last system expand to fill the line ?
   % Yes -> ##f
@@ -30,10 +42,10 @@
   tagline = ##f
 
   two-sided = ##t
-  top-margin = 1.5 \cm
-  bottom-margin = 1.5 \cm
-  inner-margin = 2 \cm
-  outer-margin = 1 \cm
+  top-margin = 1.5\cm
+  bottom-margin = 1.5\cm
+  inner-margin = 2\cm
+  outer-margin = 1\cm
 
   bookTitleMarkup = \markup \column {
     \fill-line { \fontsize #5 \fromproperty #'header:composer }
@@ -55,8 +67,8 @@
         \line {
           \left-column {
             \vspace #1.1
-            \fontsize #7 \sans \fromproperty #'header:piece
-            \fontsize #1 \typewriter \fromproperty #'header:subsubtitle
+            \fontsize #7 \fromproperty #'header:piece
+            \fontsize #1 \sans \fromproperty #'header:subsubtitle
           }
         }
       }

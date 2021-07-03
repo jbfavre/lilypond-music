@@ -2,18 +2,18 @@
 \language "english"
 
 puGlobal = {
-  \time 2/2
+  \time 2/4
   \key f \minor
   \tempo 4=80
 }
 
 puMainSopranoMusic = \relative c' {
   \mark \default
-  f4 g af af g g f2 \break
+  f4 g af af \noBreak g g f2 \break
   \mark \default
-  af4 bf c c bf af g2 \break
+  af4 bf c c \noBreak bf af g2 \break
   \mark \default
-  f4 g af2 g4 g f2
+  f4 g af2 \noBreak g4 g f2
 }
 
 puMainAltoMusic = \relative c' {
@@ -46,8 +46,7 @@ puMainBasseLyrics = \lyricmode {
   Ô Sei -- gneur, Sei -- gneur, sau -- ve nous.
 }
 
-puScore = \score {
-    <<
+puScore = <<
       \new ChoirStaff
       <<
         \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
@@ -95,4 +94,3 @@ puScore = \score {
       %  >>
       %>>
     >>
-  }

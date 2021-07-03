@@ -17,7 +17,7 @@ sanctusSolist_BD_AlternativeTwo = \relative c' { e8 (ds16 cs16) ds8 e4. }
 sanctusMainSolistMusic =  \relative c' {
     \mark \default
     \repeat volta 2 {
-      b'4 b8 cs4 b8 b (a gs) fs4. \break
+      b'4 b8 cs4 b8 b (a gs) fs4.
       \sanctusSolist_BD_Repeat
     }
     \alternative {
@@ -151,8 +151,7 @@ sanctusMainBasseLyrics = \sanctusMainSolistLyrics
 sanctusVerseOneBasseLyrics = \sanctusVerseOneSolistLyrics
 sanctusVerseTwoBasseLyrics = \sanctusVerseTwoSolistLyrics
 
-sanctusScore = \score {
-    <<
+sanctusScore = <<
       \new ChoirStaff
       <<
         \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
@@ -188,23 +187,24 @@ sanctusScore = \score {
           \new Lyrics \lyricsto "sanctusBasse" { \sanctusVerseTwoBasseLyrics }
         >>
       >>
-      %\new PianoStaff \with { \pianoProperties instrumentName = "Orgue" shortInstrumentName = "O." }
-      %<<
-      %  \set PianoStaff.instrumentName = #"Orgue"
-      %  \new Staff <<
-      %    \sanctusGlobal \clef treble
-      %    \set Staff.printPartCombineTexts = ##f
-      %    \partcombine
-      %    << \sanctusMainSopranoMusic >>
-      %    << \sanctusMainAltoMusic >>
-      %  >>
-      %  \new Staff <<
-      %    \sanctusGlobal \clef bass
-      %    \set Staff.printPartCombineTexts = ##f
-      %    \partcombine
-      %    << \sanctusTenorMusic >>
-      %    << \sanctusMainBasseMusic >>
-      %  >>
-      %>>
+      %{\new ChoirStaff
+      <<
+        \new Staff \with { instrumentName = \markup { \column {"S." "A."} } shortInstrumentName = \markup { \column {"S." "A."}  }  }
+        <<
+          \sanctusGlobal \clef treble
+          \set Staff.printPartCombineTexts = ##f
+          \new Voice = "sanctusSoprano" << \voiceOne \sanctusMainSopranoMusic >>
+          \new Voice << \voiceTwo \sanctusMainAltoMusic >>
+        >>
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusMainSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseOneSopranoLyrics }
+          \new Lyrics \lyricsto "sanctusSoprano" { \sanctusVerseTwoSopranoLyrics }
+        \new Staff \with { instrumentName = \markup { \column {"T." "B."} } shortInstrumentName = \markup { \column {"T." "B."}  } }
+        <<
+          \sanctusGlobal \clef bass
+          \set Staff.printPartCombineTexts = ##f
+          \new Voice << \voiceOne \sanctusTenorMusic >>
+          \new Voice << \voiceTwo \sanctusMainBasseMusic >>
+        >>
+      >>%}
     >>
-  }

@@ -11,18 +11,8 @@
 \include "libs/layouts/book-titling.ily"
 
 %%%%% First page
-\paper {
-  \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-  #(define fonts
-    (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "Latin Modern Roman"
-      #:sans "Latin Modern Sans"
-      #:typewriter "Monospace Regular"
-      #:factor (/ staff-height pt 20)
-  ))
-}
+%#(set-global-staff-size 20)
+\include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
 \header {
   title = \markup { \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
   subtitle = \markup { \center-column { "Pour soliste et chœur à 3 voix" "ou" "chœur à 4 voix" } }
@@ -32,10 +22,7 @@
   date = "Clichy la Garenne, 2020"
 }
 
-\pageBreak % Ensure first page is blank for cover display
-\paper {
-  \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-}
+\pageBreak
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ily"
 \score {
   \kyrieScore
@@ -43,24 +30,23 @@
     piece = "Kyrie"
     tagline = ##f
   }
+  \layout{
+    #(layout-set-staff-size 17)
+    system-count = 3
+  }
 }
 
-%\pageBreak % Ensure first page is blank for cover display
+%\pageBreak
 %\include "PetiteMesseSaintVincentDePaul/Gloria.ily"
 %\score {
 %  \gloriaScore
 %  \header {
-%    title = ##f
 %    piece = "Gloria"
-%    subtitle = "Petite messe de Saint Vincent de Paul"
-%    poetPrefix = \poetPrefix
-%    composerPrefix = \composerPrefix
-%    poet = "AELF"
-%    copyright = ##f
+%    tagline = ##f
 %  }
 %}
 
-\pageBreak % Ensure first page is blank for cover display
+\pageBreak
 \include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
 \score {
   \alleluiaScore
@@ -68,9 +54,13 @@
     piece = "Alleluia"
     tagline = ##f
   }
+  \layout {
+    #(layout-set-staff-size 17)
+    system-count = 3
+  }
 }
 
-\pageBreak % Ensure first page is blank for cover display
+\pageBreak
 \include "PetiteMesseSaintVincentDePaul/PriereUniverselle.ily"
 \score {
   \puScore
@@ -78,19 +68,13 @@
     piece = "Prière universelle"
     tagline = ##f
   }
-}
-
-\pageBreak % Ensure first page is blank for cover display
-\include "PetiteMesseSaintVincentDePaul/Anamnese.ily"
-\score {
-  \anamneseScore
-  \header {
-    piece = "Anamnèse"
-    tagline = ##f
+  \layout{
+    #(layout-set-staff-size 17)
+    system-count = 3
   }
 }
 
-\pageBreak % Ensure first page is blank for cover display
+\pageBreak
 \include "PetiteMesseSaintVincentDePaul/Sanctus.ily"
 \score {
   \sanctusScore
@@ -98,14 +82,34 @@
     piece = "Sanctus"
     tagline = ##f
   }
+  \layout{
+    #(layout-set-staff-size 17)
+    system-count = 3
+  }
 }
 
-\pageBreak % Ensure first page is blank for cover display
+\pageBreak
+\include "PetiteMesseSaintVincentDePaul/Anamnese.ily"
+\score {
+  \anamneseScore
+  \header {
+    piece = "Anamnèse"
+    tagline = ##f
+  }
+  \layout{
+    #(layout-set-staff-size 17)
+  }
+}
+
+\pageBreak
 \include "PetiteMesseSaintVincentDePaul/Agnus.ily"
 \score {
   \agnusScore
   \header {
     piece = "Agnus"
     tagline = ##f
+  }
+  \layout{
+    #(layout-set-staff-size 17)
   }
 }

@@ -22,9 +22,9 @@ alleluiaRythm = \relative c' {
     s2.*6 \bar "|."
   }
 alleluiaSolistMusic = \relative c'' {
-    a4. cs8 a4 b2. cs4. b8 a4 b2. d4 cs a gs2.
+    a4. cs8 a4 b2. cs4. b8 a4 b2. \break d4 cs a gs2. \noBreak
     \mark \default
-    a4. cs8 a4 b2. cs4. b8 a4 b2 b4 a gs2 a2.
+    a4. cs8 a4 b2. \break cs4. b8 a4 b2 b4 a gs2 a2.
   }
 alleluiaSolistLyrics = \lyricmode {
     Al -- le -- lu -- ia&nbsp;! Al -- le -- lu -- ia&nbsp;! Al -- le -- lu -- ia&nbsp;!
@@ -55,26 +55,26 @@ alleluiaBasseLyrics = \alleluiaSolistLyrics
 alleluiaScore =  <<
         \new ChoirStaff
         <<
-          \new Staff \with { instrumentName = \sopranoVoiceTitle shortInstrumentName = \sopranoVoiceShortTitle }
+          \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
           <<
             \alleluiaKeyTime \clef treble
             \new Voice = "alleluiaRythm" { \alleluiaRythm }
             \new Voice = "alleluiaSoprano" { \transpose a g { \alleluiaSopranoMusic } \fermata }
             \new Lyrics \lyricsto "alleluiaSoprano" { \alleluiaSopranoLyrics }
           >>
-          \new Staff \with { instrumentName = \altoVoiceTitle shortInstrumentName = \altoVoiceShortTitle }
+          \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
           <<
             \alleluiaKeyTime \clef treble
             \new Voice = "alleluiaAlto" { \transpose a g { \alleluiaAltoMusic } \fermata }
             \new Lyrics \lyricsto "alleluiaAlto" { \alleluiaAltoLyrics }
           >>
-          \new Staff \with { instrumentName = \tenorVoiceTitle shortInstrumentName = \tenorVoiceShortTitle }
+          \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
           <<
             \alleluiaKeyTime \clef "treble_8"
             \new Voice = "alleluiaTenor" { \transpose a g { \alleluiaTenorMusic } \fermata }
             \new Lyrics \lyricsto "alleluiaTenor" { \alleluiaTenorLyrics }
           >>
-          \new Staff \with { instrumentName = \bassVoiceTitle shortInstrumentName = \bassVoiceShortTitle }
+          \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
           <<
             \alleluiaKeyTime \clef bass
             \new Voice = "alleluiaBasse" { \transpose a g { \alleluiaBasseMusic } \fermata }

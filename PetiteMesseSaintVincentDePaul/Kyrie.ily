@@ -59,25 +59,25 @@ kyrieBasseLyrics = \lyricmode {
 kyrieScore = <<
       \new ChoirStaff
       <<
-        \new Staff \with { instrumentName = \sopranoVoiceTitle shortInstrumentName = \sopranoVoiceShortTitle }
+        \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
         <<
           \kyrieGlobal \clef treble
           \new Voice = "kyrieSoprano" { \kyrieSopranoMusic }
           \new Lyrics \lyricsto "kyrieSoprano" { \kyrieSopranoLyrics }
         >>
-        \new Staff \with { instrumentName = \altoVoiceTitle shortInstrumentName = \altoVoiceShortTitle }
+        \new Staff \with { instrumentName = "Alto" shortInstrumentName = "A." }
         <<
           \kyrieGlobal \clef treble
           \new Voice = "kyrieAlto" { \kyrieAltoMusic }
           \new Lyrics \lyricsto "kyrieAlto" { \kyrieAltoLyrics }
         >>
-        \new Staff \with { instrumentName = \tenorVoiceTitle shortInstrumentName = \tenorVoiceShortTitle }
+        \new Staff \with { instrumentName = "Ténor" shortInstrumentName = "T." }
         <<
           \kyrieGlobal \clef "treble_8"
           \new Voice = "kyrieTenor" { \kyrieTenorMusic }
           \new Lyrics \lyricsto "kyrieTenor" { \kyrieTenorLyrics }
         >>
-        \new Staff \with { instrumentName = \bassVoiceTitle shortInstrumentName = \bassVoiceShortTitle }
+        \new Staff \with { instrumentName = "Basse" shortInstrumentName = "B." }
         <<
           \kyrieGlobal \clef bass
           \new Voice = "kyrieBasse" { \kyrieBasseMusic }

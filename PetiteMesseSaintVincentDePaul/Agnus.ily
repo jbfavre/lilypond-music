@@ -114,8 +114,7 @@ agnusBasseLyrics = \lyricmode {
     }
   }
 
-agnusScore = \score {
-      <<
+agnusScore = <<
         \new ChoirStaff
         <<
           \new Staff \with { instrumentName = "Soprano" shortInstrumentName = "S." }
@@ -161,4 +160,3 @@ agnusScore = \score {
         %  >>
         %>>
       >>
-    }
