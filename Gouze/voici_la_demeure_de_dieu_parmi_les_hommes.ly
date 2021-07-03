@@ -62,7 +62,6 @@ re\breve si dod8 re4
   Terre ad -- mi -- ra -- ble, Ter -- re de la Pro -- mes -- se, Mè -- re de l'Em -- ma -- nu -- el!
   \override LyricText #'self-alignment-X = #-1
   \set stanza = "1. " "L'Ange du Seigneur fut envoy" -- "é         à" Ma -- rie,
-  %\set stanza = "1. "
   "Et  la  Vierge   fut   éblou" -- "ie   par    la" Lu -- mière.
   \set stanza = "1. " "Écoute    Ma" -- "rie, Vierge" du Christ:
   "Tu   concevras   et   tu   enfante" -- ras un fils.
@@ -73,9 +72,8 @@ re\breve si dod8 re4
 \addlyrics {
   \repeat unfold 34 \skip 1
   \override LyricText #'self-alignment-X = #-1
-  \set stanza = "2. " "Le   Seigneur   t'a   regar" -- "dée dans son" A -- mou;
-  %\set stanza = "2. "
-  "Reçois   la   Parole   que,   par" "l'Ange, Il" t'en -- vois;
+  \set stanza = "2. " "Le   Seigneur   t'a   regar" -- "dée dans son" A -- mour;
+  "Reçois   la   Parole   que,   par" "l'Ange, Il" t'en -- voie;
   \set stanza = "2. " "Il   vient   vers   nous,   le" "Dieu vé" -- ri -- table.
   "Il revêt   dans ton sein   la" "chair du premier" A -- dam,
   \set stanza = "2. " "Engendré   par le Père   et" "né dans le" temps,
@@ -86,8 +84,9 @@ re\breve si dod8 re4
   \repeat unfold 34 \skip 1
   \override LyricText #'self-alignment-X = #-1
   \set stanza = "3. " "Voici la mère de mon Sau" -- "veur qui vient" à moi:
-  \set stanza = "3. " "Bienheureuse es" "tu, toi qui" a cru, "et béni le" "fruit de tes" en -- trailles.
-  \set stanza = "3. " "Ce   qui   est engendré   en toi" "vient de l’Es" -- prit Saint.
+  "Bienheureuse es" "tu, toi qui" a cru,
+  \set stanza = "3. " "et béni le" "fruit de tes" en -- trailles.
+  "Ce   qui   est engendré   en toi" "vient de l’Es" -- prit Saint.
   \set stanza = "3. " "Dès    que    ta    salutation    a    reten" -- "ti à mes o" -- reilles,
   \set stanza = "3. " "l’Enfant   a   tressailli    d’allé" -- "gresse en" mon sein.
 
@@ -97,7 +96,6 @@ re\breve si dod8 re4
   \repeat unfold 34 \skip 1
   \override LyricText #'self-alignment-X = #-1
   \set stanza = "4. " "Réjouissez-vous avec moi, bien ai" -- "més du" Sei -- gneur;
-  %\set stanza = "4. "
   "Mon cœur est devenu le" Temple de Dieu;
   \set stanza = "4. " "Il   s'est   penché   sur son" humble ser -- vante.
   "Il a fait de mon sein   la" porte du Ciel;
