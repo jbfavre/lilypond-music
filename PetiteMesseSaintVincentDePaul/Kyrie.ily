@@ -1,12 +1,6 @@
 \version "2.18.2"
 \language "english"
 
-%\include "../libs/commonFunctions.ily"
-%\include "../libs/settings.ily"
-%\include "../libs/translations/fr.ily"
-%\include "../libs/layouts/book-titling.ily"
-%\include "../PetiteMesseSaintVincentDePaul/pianoSettings.ily"
-
 kyrieGlobal = {
   \key f \minor
   \time 2/4
@@ -62,8 +56,7 @@ kyrieBasseLyrics = \lyricmode {
     Chris -- te E -- le -- i -- son
     Ky -- ri -- e E -- le -- i -- son
   }
-kyrieScore = \score {
-    <<
+kyrieScore = <<
       \new ChoirStaff
       <<
         \new Staff \with { instrumentName = \sopranoVoiceTitle shortInstrumentName = \sopranoVoiceShortTitle }
@@ -109,23 +102,3 @@ kyrieScore = \score {
       %  >>
       %>>
     >>
-    \layout {
-      short-indent = 0.8\cm
-      \context {
-          \Staff
-          \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
-      }
-      \context {
-          \Score
-          \omit BarNumber
-      }
-      \context {
-          \Voice
-          \consists "Horizontal_bracket_engraver"
-      }
-      \override LyricText #'font-family = #'sans
-      \override Score.RehearsalMark.font-family = #'typewriter
-    }
-  }

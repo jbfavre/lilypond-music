@@ -1,12 +1,6 @@
 \version "2.18.2"
 \language "english"
 
-%\include "../libs/commonFunctions.ily"
-%\include "../libs/settings.ily"
-%\include "../libs/translations/fr.ily"
-%\include "../libs/layouts/book-titling.ily"
-%\include "../PetiteMesseSaintVincentDePaul/pianoSettings.ily"
-
 stemOff = \hide Staff.Stem
 stemOn  = \undo \stemOff
 
@@ -213,7 +207,4 @@ sanctusScore = \score {
       %  >>
       %>>
     >>
-    %\layout {
-      %#(layout-set-staff-size 16)
-    %}
   }
