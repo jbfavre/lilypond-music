@@ -7,104 +7,105 @@
 
 %%%%% Include common files
 \include "libs/commonFunctions.ily"
-\include "libs/settings.ily"
 \include "libs/translations/fr.ily"
 \include "libs/layouts/book-titling.ily"
-\include "PetiteMesseSaintVincentDePaul/pianoSettings.ily"
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Include each part of the Petite Messe de Saint Vincent de Paul
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% First page
+\paper {
+  \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
+  #(define fonts
+    (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "Latin Modern Roman"
+      #:sans "Latin Modern Sans"
+      #:typewriter "Monospace Regular"
+      #:factor (/ staff-height pt 20)
+  ))
+}
+\header {
+  title = \markup { \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
+  subtitle = \markup { \center-column { "Pour soliste et chœur à 3 voix" "ou" "chœur à 4 voix" } }
+  subsubtitle = "Petite messe de Saint Vincent de Paul"
+  composer = "Jean Baptiste Favre"
+  poet = "AELF"
+  date = "Clichy la Garenne, 2020"
+}
+
+\pageBreak % Ensure first page is blank for cover display
+\paper {
+  \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
+}
 \include "PetiteMesseSaintVincentDePaul/Kyrie.ily"
-\include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
-\include "PetiteMesseSaintVincentDePaul/Gloria.ily"
-\include "PetiteMesseSaintVincentDePaul/PriereUniverselle.ily"
-\include "PetiteMesseSaintVincentDePaul/Sanctus.ily"
-\include "PetiteMesseSaintVincentDePaul/Anamnese.ily"
-\include "PetiteMesseSaintVincentDePaul/Agnus.ily"
-
-%%%%% Define book
-\book {
-  \include "PetiteMesseSaintVincentDePaul/bookPaper.ily"
+\score {
+  \kyrieScore
   \header {
-    title = \markup { \center-column { "Petite messe" "de" "Saint Vincent de Paul" } }
-    subtitle = \markup { \center-column { "Pour soliste et chœur à 3 voix" "ou" "chœur à 4 voix" } }
-    composer = "Jean Baptiste Favre"
-    poet = "AELF"
-    date = "Clichy-la-Garenne, 2020"
+    piece = "Kyrie"
+    tagline = ##f
   }
+}
 
-  \pageBreak % Ensure first page is blank for cover display
-
-  \bookpart {
-    \kyrieScore
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Kyrie"
-      title = ##f
-      copyright = ##f
-    }
-  }
-  \bookpart {
-    \alleluiaScore
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Alleluia"
-      title = ##f
-      copyright = ##f
-    }
-  }
-%  \bookpart {
-%    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-%    \header {
-%      title = ##f
-%      piece = "Gloria"
-%      subtitle = "Petite messe de Saint Vincent de Paul"
-%      poetPrefix = \poetPrefix
-%      composerPrefix = \composerPrefix
-%      poet = "AELF"
-%      copyright = ##f
-%    }
-%    \gloriaScore
+%\pageBreak % Ensure first page is blank for cover display
+%\include "PetiteMesseSaintVincentDePaul/Gloria.ily"
+%\score {
+%  \gloriaScore
+%  \header {
+%    title = ##f
+%    piece = "Gloria"
+%    subtitle = "Petite messe de Saint Vincent de Paul"
+%    poetPrefix = \poetPrefix
+%    composerPrefix = \composerPrefix
+%    poet = "AELF"
+%    copyright = ##f
 %  }
-  \bookpart {
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Prière universelle"
-      poet = "AELF"
-      title = ##f
-      copyright = ##f
-    }
-    \puScore
+%}
+
+\pageBreak % Ensure first page is blank for cover display
+\include "PetiteMesseSaintVincentDePaul/Alleluia.ily"
+\score {
+  \alleluiaScore
+  \header {
+    piece = "Alleluia"
+    tagline = ##f
   }
-  \bookpart {
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Anamnèse"
-      poet = "AELF"
-      title = ##f
-      copyright = ##f
-    }
-    \anamneseScore
+}
+
+\pageBreak % Ensure first page is blank for cover display
+\include "PetiteMesseSaintVincentDePaul/PriereUniverselle.ily"
+\score {
+  \puScore
+  \header {
+    piece = "Prière universelle"
+    tagline = ##f
   }
-  \bookpart {
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Sanctus"
-      poet = "AELF"
-      title = ##f
-      copyright = ##f
-    }
-    \sanctusScore
+}
+
+\pageBreak % Ensure first page is blank for cover display
+\include "PetiteMesseSaintVincentDePaul/Anamnese.ily"
+\score {
+  \anamneseScore
+  \header {
+    piece = "Anamnèse"
+    tagline = ##f
   }
-  \bookpart {
-    \include "PetiteMesseSaintVincentDePaul/scorePaper.ily"
-    \header {
-      piece = "Agnus"
-      poet = "AELF"
-      title = ##f
-      copyright = ##f
-    }
-    \agnusScore
+}
+
+\pageBreak % Ensure first page is blank for cover display
+\include "PetiteMesseSaintVincentDePaul/Sanctus.ily"
+\score {
+  \sanctusScore
+  \header {
+    piece = "Sanctus"
+    tagline = ##f
+  }
+}
+
+\pageBreak % Ensure first page is blank for cover display
+\include "PetiteMesseSaintVincentDePaul/Agnus.ily"
+\score {
+  \agnusScore
+  \header {
+    piece = "Agnus"
+    tagline = ##f
   }
 }
