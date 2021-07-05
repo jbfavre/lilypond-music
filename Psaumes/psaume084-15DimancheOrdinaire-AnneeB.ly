@@ -4,10 +4,10 @@
 
 scoreHeader = \header {
   title = "Psaume 84"
-  subtitle = "15ème Dimanche du Temps Ordinaire"
+  subtitle = \markup { \column { "15ème Dimanche du Temps Ordinaire" "Année B" }}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  date = "Clichy la Garenne, juillet 2020"
+  date = "Clichy la Garenne, juillet 2021"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
