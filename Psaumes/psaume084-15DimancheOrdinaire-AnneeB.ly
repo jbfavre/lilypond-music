@@ -47,8 +47,8 @@ antiphonMusicTenor =  \relative c' {
   }
 
 antiphonMusicBass =  \relative f {
-  d4. c8 f,8 (g) a8 e' a4 r8
-  a,8 b cs d8 (c) g4 a d2. \fermata
+  d4. c8 f,8 (g) a8 e' a4
+  a,4 b8 cs d8 (c) g4 a d2. \fermata
   }
 
 antiphonLyrics = \lyricmode {
