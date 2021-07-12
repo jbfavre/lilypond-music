@@ -310,6 +310,7 @@ partition = <<
   }
 }
 
+#(set-global-staff-size 18)
 \score {
   \partition
   \layout {
