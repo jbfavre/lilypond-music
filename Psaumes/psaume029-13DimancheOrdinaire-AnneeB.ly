@@ -121,37 +121,29 @@ bassVerseMusic = \relative c {
 verseLyrics = \markuplist {
   \override #'(font-family . sans)
   \override #'(font-size . 2)
-  \column {
-    \fill-line {
-      \left-column{
-        \concat { \typewriter "1. " "Je t’exalte, Seigneur : tu m’as relevé,"}
-        \concat { \typewriter "   " "tu m’épargnes les rires de l’ennemi."}
-        \concat { \typewriter "   " "Seigneur, tu m’as fait remonter de l’abîme"}
-        \concat { \typewriter "   " "et revivre quand je descendais à la fosse."}
-      }
-      \hspace #1
-      \left-column {
-        \concat { \typewriter "2. " "Fêtez le Seigneur, vous, ses fidèles,"}
-        \concat { \typewriter "   " "rendez grâce en rappelant son nom très saint."}
-        \concat { \typewriter "   " "Sa colère ne dure qu’un instant,"}
-        \concat { \typewriter "   " "sa bonté, toute la vie."}
-      }
+  \fill-line {
+    \left-column{
+      \concat { \typewriter "1. " "Je t’exalte, Seigne" \underline u "r : tu m’as relevé,"}
+      \concat { \typewriter "   " "tu m’épargnes les r" \underline i "res de l’ennemi."}
+      \concat { \typewriter "   " "Seigneur, tu m’as fait remont" \underline e "r de l’abîme"}
+      \concat { \typewriter "   " "et revivre quand je descend" \underline a "is à la fosse."}
+      \vspace #1
+      \concat { \typewriter "3. " "Avec le soir, vi" \underline e "nnent les larmes,"}
+      \concat { \typewriter "   " "mais au mat" \underline i "n, les cris de joie."}
+      \concat { \typewriter "   " "Tu as changé mon de" \underline u "il en une danse,"}
+      \concat { \typewriter "   " "mes habits funèbres en par" \underline u "re de joie."}
     }
-    \vspace #1
-    \fill-line {
-      \left-column{
-        \concat { \typewriter "3. " "Avec le soir, viennent les larmes,"}
-        \concat { \typewriter "   " "mais au matin, les cris de joie."}
-        \concat { \typewriter "   " "Tu as changé mon deuil en une danse,"}
-        \concat { \typewriter "   " "mes habits funèbres en parure de joie."}
-      }
-      \hspace #1
-      \left-column {
-        \concat { \typewriter "4. " "Que mon cœur ne se taise pas,"}
-        \concat { \typewriter "   " "qu’il soit en fête pour toi,"}
-        \concat { \typewriter "   " "et que sans fin, Seigneur, mon Dieu,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"}
-        \concat { \typewriter "   " "je te rende grâce !"}
-      }
+    \hspace #1
+    \left-column{
+      \concat { \typewriter "2. " "Fêtez le Seigneur, vo" \underline u "s, ses fidèles,"}
+      \concat { \typewriter "   " "rendez grâce en rappel" \underline a "nt son nom très saint."}
+      \concat { \typewriter "   " "Sa colère ne d" \underline u "re qu’un instant,"}
+      \concat { \typewriter "   " "sa bont" \underline é ", toute la vie."}
+      \vspace #1
+      \concat { \typewriter "4. " "Que mon cœur ne se t" \underline a "ise pas,"}
+      \concat { \typewriter "   " "qu’il soit en f" \underline ê "te pour toi,"}
+      \concat { \typewriter "   " "et que sans fin, Seigne" \underline u "r, mon Dieu,"}
+      \concat { \typewriter "   " "je te r" \underline e "nde grâce !"}
     }
   }
 }
