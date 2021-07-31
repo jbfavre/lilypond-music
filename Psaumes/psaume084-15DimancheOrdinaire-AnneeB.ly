@@ -79,20 +79,20 @@ verseRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe"
   \cadenzaOn
+  s\breve s1 s4 s \bar "||"
+  s\breve s1 s4 s \bar "||"
   s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||" \break
+  s\breve s1 s4 s s s \bar "||" \break
   \markCustom "Psalmodie par verset"
   s\breve s1 s4 \bar "||"
   s\breve s1 s4 s \bar "||"
   }
 verseMusicSoprano = \relative c' {
   \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
+  d\breve a'1 g4 a
+  f\breve g1 f4 e
+  f\breve g1 a4
+  f\breve g1 f4 e e d
 
   f\breve g1 a4
   f\breve e1 e4 e
@@ -100,10 +100,10 @@ verseMusicSoprano = \relative c' {
 
 verseMusicAlto = \relative c' {
   \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
+  s\breve s1 s4 s
+  s\breve s1 s4 s
+  s\breve s1 s4
+  s\breve s1 s4 s s s
 
   d\breve e1 f4
   d\breve d1 d4 cs
@@ -111,10 +111,10 @@ verseMusicAlto = \relative c' {
 
 verseMusicTenor = \relative c {
   \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
+  s\breve s1 s4 s
+  s\breve s1 s4 s
+  s\breve s1 s4
+  s\breve s1 s4 s s s
 
   a'\breve c1 c4
   bf\breve bf1 a4 a
@@ -122,10 +122,10 @@ verseMusicTenor = \relative c {
 
 verseMusicBass = \relative f {
   \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
+  s\breve s1 s4 s
+  s\breve s1 s4 s
+  s\breve s1 s4
+  s\breve s1 s4 s s s
 
   d\breve c1 f,4
   g\breve g1 a4 a
