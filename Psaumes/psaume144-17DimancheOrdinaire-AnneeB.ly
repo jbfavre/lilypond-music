@@ -202,7 +202,7 @@ partition = <<
         \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
       >>
     >>
-    % Accompagnement Piano / Orgue
+%{    % Accompagnement Piano / Orgue
     \new PianoStaff = "antiphonPianoStaff" \with {
       instrumentName = #"O."
       shortInstrumentName = #"O"
@@ -224,7 +224,7 @@ partition = <<
         \new Voice = "antiphonMusicBass" { \voiceFour \antiphonMusicBass }
       >>
     >>
-    % Psalmodie à 4 voix mixtes
+%}    % Psalmodie à 4 voix mixtes
     \new ChoirStaff = "verseChoirStaff" \with { printPartCombineTexts = ##f }
     <<
       \new Staff = "verseChoirStaffSA"
