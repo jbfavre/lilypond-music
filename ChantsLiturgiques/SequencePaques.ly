@@ -3,24 +3,6 @@
 \include "gregorian.ly"
 \include "../libs/commonFunctions.ily"
 
-%{
-        \new VaticanaVoice = "cantus" {
-          \[ c'\melisma c' \flexa a \]
-          \[ a \flexa \deminutum g\melismaEnd \]
-          f \divisioMinima
-          \[ f\melisma \pes a c' c' \pes d'\melismaEnd \]
-          c' \divisioMinima \break
-          \[ c'\melisma c' \flexa a \]
-          \[ a \flexa \deminutum g\melismaEnd \] f \divisioMinima
-        }
-      >>
-      \new Lyrics \lyricsto "cantus" {
-        San- ctus, San- ctus, San- ctus
-      }
-
-%}
-
-
 headers = \header {
   title = "À la victime Pascale"
   subtitle = "Séquence du dimanche de Pâques"
@@ -43,10 +25,17 @@ amenSolistMusic = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 reponsRhythms = {
   \key f \major \time 2/2
+  \markCustom "A"
   \partial 4 s4 s1*4  \bar "||" \break % Chrétiens offrez…
+  \markCustom "B"
   \partial 4 s4 s1*9  \bar "||" \break % L'Agneau…
+  \markCustom "C"
   \partial 4 s4 s1*11 \bar "||" \break % La mort et la vie…
+  \markCustom "D"
   \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
+  \markCustom "E"
+                s1*16 \bar "||" \break % J'ai vu les anges
+  \markCustom "F"
                 s1*10 \bar "|." \break % Nous le savons
   }
 reponsSopranosMusic = \relative c'' {
@@ -65,6 +54,11 @@ reponsSopranosMusic = \relative c'' {
   f2 g a c4 b a2. \breathe
   a4 g2 a4 g f2 e4 f g2 f2 e1
   r4 a4 g a f2 f g4 f e e d1 \fermata
+
+  d2 a'4 a a2. g4 f2 e2 d1 % J'ai vu les Anges
+  f2 g2 a2 c4 b a2 gs a2. \breathe
+  a4 g g a a f2 g4 a g2 f e2. \breathe
+  a4 g g a a f2. f4 g (f) e2 d1
 
   d2 d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
   a2 g4 a f2 e4 d d2 d4 c! d1 \fermata
@@ -86,8 +80,13 @@ reponsAltosMusic = \relative c' {
   e4 e2 e d d d d cs1
   e2 e2 d1 d2 d4. cs8 a1
 
+  d2 f4 f e2. e4 d2 cs d1
+  d2 e f f e e e2.
+  e4 e2 e d d d d cs2.
+  e4 e2 e2 d1 d2 d4 cs a1
+
   d2 d4 d f2. f4 e2 e d d e d d cs2 % Nous le savons
-  e2 e4 e d2. bf4 a1 a1
+  e2 e4 e d2. bf4 bf2 a a1
   }
 reponsTenorsMusic =  \relative c' {
   \partial 4 d4 a2 d2 a2. a4 c2. g4 c4 b a4 \fermata r4 % Chrétiens offrez…
@@ -103,7 +102,12 @@ reponsTenorsMusic =  \relative c' {
   \partial 4 f4 f2. f4  a4 cs d a a4 (bf8 b) a2 \breathe % Dis-nous Marie Madeleine…
   a2 c c4 b a gs a2. \breathe
   cs4 d2 a a a bf b a1
-  cs2 d4 a a2 bf4 b a2. g4 fs1
+  cs2 d4 a a2 bf4 b a2. g4 f1
+
+  d'2 a4 a a2. a4 a2 a4 g f1
+  a2 c c2 a4 g c2 b a2.
+  cs4 d2 a2 a a bf b a1
+  cs2 d4 a a1 bf4 b a g f1
 
   d'2 d4 d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
   cs2 d4 a a2 g2 g1 f1
@@ -125,8 +129,13 @@ reponsBassesMusic =  \relative c {
   a4 b2 cs4 cs d2 d4 c g2 gs a1
   a2 b4 cs d c g gs a2 a2 d1 \fermata
 
+  d2 d4 d cs a b cs d g, a2 d1
+  d2 c f, f4 g a2 b cs2.
+  a4 b2 cs d4 c bf2 g2 gs a2.
+  a4 b2 cs d4 c bf a g gs a2 a1
+
   d2 d4 d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
-  a2 b4 cs d4 c bf4 g a1 d1 \fermata
+  a2 b4 cs d4 c bf a g2 a d1 \fermata
   }
 reponsLyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
@@ -143,6 +152,11 @@ reponsLyrics = \lyricmode {
   qu'a-s -- tu vu en che -- min&nbsp;?
   J'ai vu le sé -- pul -- cre du Christ vi -- vant
   J'ai vu la gloi -- re du Res -- sus -- sci -- té.
+
+  J'ai vu les an -- ges, ses té -- moins,
+  le Su -- ai -- re~et les vê -- te -- ments.
+  Le Christ, mon es -- pé -- ran -- ce,~est res -- su -- sci -- té&nbsp;!
+  Il vous pré -- cè -- de -- ra en Ga -- li -- lée.
 
   Nous le sa -- vons&nbsp;: le Christ
   est vrai -- ment res -- su -- sci -- té des morts.
@@ -178,6 +192,7 @@ OtherPageHeaders = \header {
   oddFooterMarkup = {}
   #(include-special-characters)
 
+  %systems-per-page = 4
   %#(define fonts
   %  (set-global-fonts
   %   #:music "emmentaler"
