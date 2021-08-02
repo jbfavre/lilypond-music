@@ -26,16 +26,17 @@ headers = \header {
   subtitle = "Séquence du dimanche de Pâques"
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  dedication = "Clichy la Garenne, juillet 2021"
+  subsubtitle = "Clichy la Garenne, août 2021"
+  dedication = "Au père Thomas B."
   }
 
 cantusSolistMusic = {
   \clef "vaticana-do3"
-  d2 c d f g f e d \finalis
+  d c d f g f e d \finalis
 }
 amenSolistMusic = {
   \clef "vaticana-do3"
-  \[ d2\melisma e2 d2\melismaEnd \] \[ \augmentum c4\melisma \pes \augmentum d\melismaEnd \] c4 f4 s4 \[ e2\melisma \flexa \deminutum d2\melismaEnd \] d2 \finalis
+  \[ d\melisma e d\melismaEnd \] \[ \augmentum c\melisma \pes \augmentum d\melismaEnd \] \divisioMinima c f \[ e\melisma \flexa \deminutum d\melismaEnd \] d \finalis
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%     Répons     %%%%%
@@ -66,7 +67,7 @@ reponsSopranosMusic = \relative c'' {
   r4 a4 g a f2 f g4 f e e d1 \fermata
 
   d2 d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
-  a2 g4 a f2 e4 d d2 d4 c d1 \fermata
+  a2 g4 a f2 e4 d d2 d4 c! d1 \fermata
   }
 reponsAltosMusic = \relative c' {
   \partial 4 f4 e2 e d2. e4 f2. e4 e2 e4 r4 % Chrétiens offrez…
@@ -89,7 +90,7 @@ reponsAltosMusic = \relative c' {
   e2 e4 e d2. bf4 a1 a1
   }
 reponsTenorsMusic =  \relative c' {
-  \partial 4 d4 a2 d2 a2 a4 c (c2) c4 d c4 b a4 \fermata r4 % Chrétiens offrez…
+  \partial 4 d4 a2 d2 a2. a4 c2. g4 c4 b a4 \fermata r4 % Chrétiens offrez…
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
@@ -155,11 +156,12 @@ reponsLyrics = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FirstPageHeaders = \headers
 OtherPageHeaders = \header {
-  title = ##f
-  subtitle = ##f
   composer = ##f
-  poet = ##f
   dedication = ##f
+  poet = ##f
+  subsubtitle = ##f
+  subtitle = ##f
+  title = ##f
   }
 
 \paper {
@@ -202,8 +204,8 @@ FirstScorePaper = \paper {
        (minimum-distance . 3)
        (padding . 3)
        (stretchability . 3))
-    scoreTitleMarkup = \markup \columns {
-      \fill-line {
+    scoreTitleMarkup = \markup { \columns {
+        \fill-line {
           \column {
             \line {
               \left-column {
@@ -218,11 +220,12 @@ FirstScorePaper = \paper {
               \left-column {
                 \line { \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet \bold " " } }
                 \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
-                \typewriter \italic \fromproperty #'header:dedication
+                \typewriter \italic \fromproperty #'header:subsubtitle
               }
             }
           }
         }
+      }
     }
     oddFooterMarkup = {}
   }
