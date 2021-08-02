@@ -3,24 +3,6 @@
 \include "gregorian.ly"
 \include "../libs/commonFunctions.ily"
 
-%{
-        \new VaticanaVoice = "cantus" {
-          \[ c'\melisma c' \flexa a \]
-          \[ a \flexa \deminutum g\melismaEnd \]
-          f \divisioMinima
-          \[ f\melisma \pes a c' c' \pes d'\melismaEnd \]
-          c' \divisioMinima \break
-          \[ c'\melisma c' \flexa a \]
-          \[ a \flexa \deminutum g\melismaEnd \] f \divisioMinima
-        }
-      >>
-      \new Lyrics \lyricsto "cantus" {
-        San- ctus, San- ctus, San- ctus
-      }
-
-%}
-
-
 headers = \header {
   title = "Magnificat"
   subtitle = "Cantique de la Vierge Marie"
