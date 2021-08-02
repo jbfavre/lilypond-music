@@ -38,49 +38,49 @@ cantusSolistMusic = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 reponsRhythms = {
   \key f \major \time 2/2
-  \partial 4 s4 s1*5 \bar "||" \break   % Chrétiens offrez…
-  \partial 4 s4 s1*3 \break s1*4 \break s1*4 \bar "||" \break % L'Agneau…
-  \partial 4 s4 s1*7 \break s1*6 \bar "|." \break % La mort et la vie…
+  \partial 4 s4 s1*4 \bar "||" \break   % Chrétiens offrez…
+  \partial 4 s4 s1*9 \bar "||" \break % L'Agneau…
+  \partial 4 s4 s1*11 \bar "|." \break % La mort et la vie…
   }
 reponsSopranosMusic = \relative c'' {
-  \partial 4 a4 a2 g f4 e f g a a c b a2 (gs2) a2 s
+  \partial 4 a4 a2 g f4 e f g a a c b a4 (gs) a4 \fermata r4
   \partial 4 a4 g g a a f2 e4 e d2 r4
-  d4 f2 g4 g a2 c4 b a2 gs a2. r4
-  g2 a4 a f2. f4 e2 e d2 d4 r4
-  \partial 4 d d2 a'4 a a4 a a4 g f2 (e2) e1 \breathe
+  d4 f2 g4 g a2 c4 b a4 gs a2 \breathe
+  g2 a4 a f4 f e e d2 d4 r4
+  \partial 4 d d2 a'4 a a4 a a4 g f2 e2 \breathe
   f2 g4 g a2 c4 b a2 r4
-  a4 g g a a f2 e2 e2 r2 r4
-  a4 g a f (e e2) d1
+  a4 g g a a f4 e e2 r4
+  a4 g a f2 (e) d1
   \fermata
   }
 reponsAltosMusic = \relative c' {
-  \partial 4 f4 e2 e d2 d4 e f2 f4 e4 e2 e e s
-  \partial 4 e4 e2 e2 d d4. cs8 a2 r4
-  d4 d2 e2 f2 f2 e2 e2 e2. r4
-  e2 e2 d2. d4 d2 d4 cs a2 a2
-  \partial 4 a4 a2 d2 e2 e2 d1 cs1 \breathe
-  d2 e f e2 e2 r4
-  e4 e2 e d d cs r2
-  e2 e2 d2. cs4 a1
+  \partial 4 f4 e2 e d2. e4 f2. e4 e2 e4 \fermata r
+  \partial 4 e4 e1 d2 (d4.) cs8 a2 r4
+  d4 d2 e2 f1 e2 e2 \breathe
+  e1 d2.  cs4 a2. r4
+  \partial 4 a4 a2. d4 e1 d2 cs2 \breathe
+  d2 e f e2 (e) r4
+  e4 e1 d2 cs2
+  e1 d2. cs4 a1
   }
 reponsTenorsMusic =  \relative c' {
-  \partial 4 d4 a2 d2 a2 a4 c c2 c4 d c2 b a2 s
-  \partial 4 cs4 d2 a2 a2 bf4 a8 g f2 r4
-  a4 a2 c2 c2 a4 b c2 b a2. r4
-  b2 a2 a2. a4 bf2 a4 g f2 f2
-  \partial 4 f4 f2 f2 a4 cs d a a2 (bf) a1 \breathe
-  a2 c c4 b a gs a2 r4 cs d2 a a bf a r2
-  cs2 d4 a a4 bf a g f1
+  \partial 4 d4 a2 d2 a2 a4 c (c2) c4 d c4 b a4 \fermata r
+  \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4
+  a4 a2 c2 c2 a4 b c4 b a2 \breathe
+  b2 a2 a4 bf a g f2. r4
+  \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe
+  a2 c c4 b a gs a2 r4 cs d2 a (a4) bf a2
+  cs2 d4 a a2 bf4 a8 g f1
   }
 reponsBassesMusic =  \relative c {
-  \partial 4 d4 cs a b cs d2. c4 f, f f g a2 b cs2 s
+  \partial 4 d4 cs a b cs d2. c4 f,2. g4 a4 b cs4 \fermata r
   \partial 4 a4 b2 cs2 d4 c g a d2 r4
-  d4 d2 c f, f4 g a2 b cs2. r4
-  b2 cs4 cs d2 c g2 a d d
-  \partial 4 d4 d2 d4 d cs4 a b cs d2 (g,) a1 \breathe
+  d4 d2 c f, f4 g a4 b cs2 \breathe
+  b2 cs d4 c g a d2. r4
+  \partial 4 d4 d1 cs4 a b cs d4 (g,) a2 \breathe
   d2 c f,4 g a b cs2 r4
-  a4 b2 cs d g, a2 r2
-  a2 b4 cs d g, a2 d1
+  a4 b2 cs d4 g, a2
+  a2 b4 cs d2 g,4 a d1
   }
 reponsLyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
