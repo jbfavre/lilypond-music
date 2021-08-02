@@ -28,11 +28,11 @@ reponsRhythms = {
   \markCustom "A"
   \partial 4 s4 s1*4  \bar "||" \break % Chrétiens offrez…
   \markCustom "B"
-  \partial 4 s4 s1*9  \bar "||" \break % L'Agneau…
+  \partial 4 s4 s1*9  \bar "||" \pageBreak % L'Agneau…
   \markCustom "C"
   \partial 4 s4 s1*11 \bar "||" \break % La mort et la vie…
   \markCustom "D"
-  \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
+  \partial 4 s4 s1*14 \bar "||" \pageBreak % Dis-nous Marie Madeleine…
   \markCustom "E"
                 s1*16 \bar "||" \break % J'ai vu les anges
   \markCustom "F"
@@ -192,7 +192,7 @@ OtherPageHeaders = \header {
   oddFooterMarkup = {}
   #(include-special-characters)
 
-  %systems-per-page = 4
+  systems-per-page = 5
   %#(define fonts
   %  (set-global-fonts
   %   #:music "emmentaler"
