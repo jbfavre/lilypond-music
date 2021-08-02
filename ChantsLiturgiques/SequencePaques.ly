@@ -38,49 +38,94 @@ cantusSolistMusic = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 reponsRhythms = {
   \key f \major \time 2/2
-  \partial 4 s4 s1*4 \bar "||" \break   % Chrétiens offrez…
+  \partial 4 s4 s1*4 \bar "||" \break % Chrétiens offrez…
   \partial 4 s4 s1*9 \bar "||" \break % L'Agneau…
-  \partial 4 s4 s1*11 \bar "|." \break % La mort et la vie…
+  \partial 4 s4 s1*11 \bar "|" \break % La mort et la vie…
+  \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
   }
 reponsSopranosMusic = \relative c'' {
-  \partial 4 a4 a2 g f4 e f g a a c b a4 (gs) a4 \fermata r4
-  \partial 4 a4 g g a a f2 e4 e d2 r4
+  \partial 4 a4 a2 g f4 e f g a a c b a4 (gs) a4 \fermata r4 % Chrétiens offrez…
+
+  \partial 4 a4 g g a a f2 e4 e d2 r4 % L'Agneau…
   d4 f2 g4 g a2 c4 b a4 gs a2 \breathe
   g2 a4 a f4 f e e d2 d4 r4
-  \partial 4 d d2 a'4 a a4 a a4 g f2 e2 \breathe
+
+  \partial 4 d d2 a'4 a a4 a a4 g f2 e2 \breathe % La mort et la vie…
   f2 g4 g a2 c4 b a2 r4
   a4 g g a a f4 e e2 r4
   a4 g a f2 (e) d1
   \fermata
+
+  \partial 4 d4 d2. a'4 a2 a4 g f2 e % Dis-nous Marie Madeleine…
+  f2 g a c4 b a2.
+  a4 g2 a4 g f2 e4 f g2 f2 e1
+  r4 a4 g a f f g f e2 e d1
+
+  r4 d d d a'2. a4 a2 a4 g4 f f e f g2 f e1
+  f2 g4 g a2 c4 b a2 a4 gs a1
+  g2 (a f e) d1
+  \fermata
   }
 reponsAltosMusic = \relative c' {
-  \partial 4 f4 e2 e d2. e4 f2. e4 e2 e4 \fermata r
-  \partial 4 e4 e1 d2 (d4.) cs8 a2 r4
+  \partial 4 f4 e2 e d2. e4 f2. e4 e2 e4 \fermata r4 % Chrétiens offrez…
+
+  \partial 4 e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
   d4 d2 e2 f1 e2 e2 \breathe
   e1 d2.  cs4 a2. r4
-  \partial 4 a4 a2. d4 e1 d2 cs2 \breathe
+
+  \partial 4 a4 a2. d4 e1 d2 cs2 \breathe % La mort et la vie…
   d2 e f e2 (e) r4
   e4 e1 d2 cs2
   e1 d2. cs4 a1
+
+  \partial 4 a4 a2. d4 e2 e2 d2 cs \breathe
+  d2 e f e2 e2. \breathe
+  e4 e2 e d d d d cs1
+  e2 e2 d2 d d2. cs4 a1
+
+  r4 d d d f2. f4 e2 e d d e d d cs2
+  d2 e f2 f4 e4 e2 e e1
+  e2 e d2. cs4 a1
   }
 reponsTenorsMusic =  \relative c' {
-  \partial 4 d4 a2 d2 a2 a4 c (c2) c4 d c4 b a4 \fermata r
-  \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4
+  \partial 4 d4 a2 d2 a2 a4 c (c2) c4 d c4 b a4 \fermata r4 % Chrétiens offrez…
+
+  \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
   b2 a2 a4 bf a g f2. r4
-  \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe
+
+  \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe % La mort et la vie…
   a2 c c4 b a gs a2 r4 cs d2 a (a4) bf a2
   cs2 d4 a a2 bf4 a8 g f1
+
+  \partial 4 f4 f2. f4  a4 cs d a a4 (bf8 b) a2 \breathe % La mort et la vie…
+  a2 c c4 b a gs a2. \breathe cs4 d2 a a a bf b a1
+  cs2 d4 a a2 bf4 b a2. g4 fs1
+
+  r4 d' d d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
+  a2 c c c4 d c2 b a1
+  d2 a a4 bf a g fs1
   }
 reponsBassesMusic =  \relative c {
-  \partial 4 d4 cs a b cs d2. c4 f,2. g4 a4 b cs4 \fermata r
-  \partial 4 a4 b2 cs2 d4 c g a d2 r4
+  \partial 4 d4 cs a b cs d2. c4 f,2. g4 a4 b cs4 \fermata r4 % Chrétiens offrez…
+
+  \partial 4 a4 b2 cs2 d4 c g a d2 r4 % L'Agneau…
   d4 d2 c f, f4 g a4 b cs2 \breathe
   b2 cs d4 c g a d2. r4
-  \partial 4 d4 d1 cs4 a b cs d4 (g,) a2 \breathe
+
+  \partial 4 d4 d1 cs4 a b cs d4 (g,) a2 \breathe % La mort et la vie…
   d2 c f,4 g a b cs2 r4
   a4 b2 cs d4 g, a2
   a2 b4 cs d2 g,4 a d1
+
+  \partial 4 d4 d2. d4 cs a b cs d8 c g gs a2
+  d2 c f,4 g a b cs2.
+  a4 b2 cs4 cs d2 d4 c g2 gs a1
+  a2 b4 cs d c g gs a2 a2 d1
+
+  r4 d d d d2. d4 cs a b cs d c bf a g2 gs a1
+  d2 c2 f,2 f4 g a2 b cs1
+  b2 cs d4 g, a2 d1
   }
 reponsLyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
@@ -92,6 +137,19 @@ reponsLyrics = \lyricmode {
   La mort et la vi -- e s'af -- fron -- tè -- rent
   en un du -- el pro -- di -- gieux.
   Le Maî -- tre de la vie mou -- rut&nbsp;; vi -- vant, il rè -- gne.
+
+  Dis- -- nous, Ma -- rie Ma -- de -- lei -- ne,
+  qu'a-s -- tu vu en che -- min&nbsp;?
+  J'ai vu le sé -- pul -- cre du Christ vi -- vant
+  J'ai vu la gloi -- re du Res -- sus -- sci -- té.
+
+  Nous le sa -- vons&nbsp;: le Christ
+  est vrai -- ment res -- su -- sci -- té des morts.
+
+  Roi vic -- to -- rieux
+  Prends- -- nous tous en pi -- tié&nbsp;!
+
+  A -- men.
   }
 
 
