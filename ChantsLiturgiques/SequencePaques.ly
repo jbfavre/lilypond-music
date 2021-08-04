@@ -14,6 +14,7 @@ headers = \header {
 
 cantusSolistMusic = {
   \clef "vaticana-do3"
+  %\noBreak
   d c d f g f e d \finalis
 }
 amenSolistMusic = {
@@ -28,18 +29,22 @@ reponsRhythms = {
   \markCustom "A"
   \partial 4 s4 s1*4  \bar "||" \break % Chrétiens offrez…
   \markCustom "B"
-  \partial 4 s4 s1*9  \bar "||" \pageBreak % L'Agneau…
+  \partial 4 s4 s1*9  \bar "||" \break % L'Agneau…
   \markCustom "C"
   \partial 4 s4 s1*11 \bar "||" \break % La mort et la vie…
+%  \markCustom "D'"
+%  \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
+%  \markCustom "E'"
+%                s1*16 \bar "||" \pageBreak % J'ai vu les anges
   \markCustom "D"
-  \partial 4 s4 s1*14 \bar "||" \pageBreak % Dis-nous Marie Madeleine…
+  \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
   \markCustom "E"
                 s1*16 \bar "||" \break % J'ai vu les anges
   \markCustom "F"
                 s1*10 \bar "|." \break % Nous le savons
   }
 reponsSopranosMusic = \relative c'' {
-  \partial 4 a4 a2 g f4 e f g a a c b a4 (gs) a4 \fermata r4 % Chrétiens offrez…
+  \partial 4 a4 a2 g f4 e f g a b c b a4 (gs) a4 \fermata r4 % Chrétiens offrez…
 
   \partial 4 a4 g g a a f2 e4 e d2 r4 % L'Agneau…
   d4 f2 g4 g a2 c4 b a4 gs a2 \breathe
@@ -50,6 +55,7 @@ reponsSopranosMusic = \relative c'' {
   a4 g g a a f4 e e2 r4
   a4 g a f2 (e) d1 \fermata
 
+  %{
   \partial 4 d4 d2. a'4 a2 a4 g f2 e \breathe % Dis-nous Marie Madeleine…
   f2 g a c4 b a2. \breathe
   a4 g2 a4 g f2 e4 f g2 f2 e1
@@ -59,12 +65,22 @@ reponsSopranosMusic = \relative c'' {
   f2 g2 a2 c4 b a2 gs a2. \breathe
   a4 g g a a f2 g4 a g2 f e2. \breathe
   a4 g g a a f2. f4 g (f) e2 d1
+  %}
+  \partial 4 c4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
+  r4 f4 g a bf2 a g2. \breathe
+  a4 d2 d4 d c2 c4 bf a2 a a2. \breathe
+  a4 d2. d4 c c d c a2 a a2. \breathe
+
+  d,4 e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
+  b2 cs d e4 d c!2 b a2. \breathe
+  a4 g g a4 g f2 g4 a bf2 bf a2. \breathe
+  a4 g bf a g f2 g4 (f) e2 e d1 \fermata
 
   d2 d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
   a2 g4 a f2 e4 d d2 d4 c! d1 \fermata
   }
 reponsAltosMusic = \relative c' {
-  \partial 4 f4 e2 e d2. e4 f2. e4 e2 e4 r4 % Chrétiens offrez…
+  \partial 4 f4 e2 e d2. e4 f2. f4 e2 e4 r4 % Chrétiens offrez…
 
   \partial 4 e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
   d4 d2 e2 f1 e2 e2 \breathe
@@ -75,7 +91,8 @@ reponsAltosMusic = \relative c' {
   e4 e1 d2 cs2
   e1 d2. cs4 a1
 
-  \partial 4 a4 a2. d4 e2 e2 d2 cs \breathe % Dis-nous Marie Madeleine…
+%{
+  \partial 4 a4 a2. d4 e2 e2 d2 cs \breathe
   d2 e f e2 e2. \breathe
   e4 e2 e d d d d cs1
   e2 e2 d1 d2 d4. cs8 a1
@@ -84,12 +101,22 @@ reponsAltosMusic = \relative c' {
   d2 e f f e e e2.
   e4 e2 e d d d d cs2.
   e4 e2 e2 d1 d2 d4 cs a1
+%}
+  \partial 4 c4 f1 g2. e4 d1 \breathe % Dis-nous Marie Madeleine…
+  d1 f1 e2. \breathe
+  e4 f1 g1 f1 e2. \breathe
+  e4 f1 g1 f2 e e2. \breathe
+
+  d4 bf2. d4 e1 d2 e f1 \breathe % J'ai vu les anges
+  g1 f2 g4 f e2 d cs2. \breathe
+  e4 e1 d2 e2 e1 f2. \breathe
+  f4 e1 d2 e4 d d2. cs4 a1
 
   d2 d4 d f2. f4 e2 e d d e d d cs2 % Nous le savons
   e2 e4 e d2. bf4 bf2 a a1
   }
 reponsTenorsMusic =  \relative c' {
-  \partial 4 d4 a2 d2 a2. a4 c2. g4 c4 b a4 \fermata r4 % Chrétiens offrez…
+  \partial 4 d4 e2 d2 a2. a4 c2. g4 c4 b a4 \fermata r4 % Chrétiens offrez…
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
@@ -99,7 +126,8 @@ reponsTenorsMusic =  \relative c' {
   a2 c c4 b a gs a2 r4 cs d2 a (a4) bf a2
   cs2 d4 a a2 bf4 a8 g f1
 
-  \partial 4 f4 f2. f4  a4 cs d a a4 (bf8 b) a2 \breathe % Dis-nous Marie Madeleine…
+%{
+  \partial 4 f4 f2. f4  a4 cs d a a4 (bf8 b) a2 \breathe
   a2 c c4 b a gs a2. \breathe
   cs4 d2 a a a bf b a1
   cs2 d4 a a2 bf4 b a2. g4 f1
@@ -108,6 +136,16 @@ reponsTenorsMusic =  \relative c' {
   a2 c c2 a4 g c2 b a2.
   cs4 d2 a2 a a bf b a1
   cs2 d4 a a1 bf4 b a g f1
+%}
+  \partial 4 c'4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
+  bf4 a1 a d2 df c2. \breathe
+  a4 a1 c c2. d4 cs2. \breathe
+  cs4 d1 c c2. d4 cs2. d,4 \breathe
+
+  g1 bf a2 c c1 \breathe % J'ai vu les anges
+  d2 a a c4 b a2 gs a2. \breathe
+  cs4 d2 a2 a2 d2 d2 c2 c2. \breathe
+  c4  bf2 a a d bf2 a4 g f1
 
   d'2 d4 d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
   cs2 d4 a a2 g2 g1 f1
@@ -124,7 +162,8 @@ reponsBassesMusic =  \relative c {
   a4 b2 cs d4 g, a2
   a2 b4 cs d2 g,4 a d1 \fermata
 
-  \partial 4 d4 d2. d4 cs a b cs d8 c g gs a2 \breathe % Dis-nous Marie Madeleine…
+%{
+  \partial 4 d4 d2. d4 cs a b cs d8 c g gs a2 \breathe
   d2 c f,4 g a b cs2. \breathe
   a4 b2 cs4 cs d2 d4 c g2 gs a1
   a2 b4 cs d c g gs a2 a2 d1 \fermata
@@ -133,6 +172,16 @@ reponsBassesMusic =  \relative c {
   d2 c f, f4 g a2 b cs2.
   a4 b2 cs d4 c bf2 g2 gs a2.
   a4 b2 cs d4 c bf a g gs a2 a1
+%}
+  \partial 4 c'4 f,1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
+  c bf1 c2. \breathe
+  cs4 d1 e f2 g a2. \breathe
+  a4 d,1 e f2 g a2. \breathe
+
+  d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
+  f'2 e d c4 d e2 e e2. \breathe
+  a,4 b2 cs d4 c bf a g2 c f2. \breathe
+  f,4 g2 a d4 c bf a g2 a d1 \fermata
 
   d2 d4 d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
   a2 b4 cs d4 c bf a g2 a d1 \fermata
@@ -142,14 +191,14 @@ reponsLyrics = \lyricmode {
 
   L'A -- gneau a ra -- che -- té les bre -- bis&nbsp;;
   Le Christ in -- no -- cent a ré -- con -- ci -- lié
-  l'hom -- me pé -- cheur a -- avec le Pè -- re.
+  l'hom -- me pé -- cheur a -- vec le Pè -- re.
 
   La mort et la vi -- e s'af -- fron -- tè -- rent
   en un du -- el pro -- di -- gieux.
   Le Maî -- tre de la vie mou -- rut&nbsp;; vi -- vant, il rè -- gne.
 
-  Dis- -- nous, Ma -- rie Ma -- de -- lei -- ne,
-  qu'a-s -- tu vu en che -- min&nbsp;?
+  Dis- -- nous, Ma -- ri -- e Ma -- de -- lei -- ne,
+  qu'as -- tu vu en che -- min&nbsp;?
   J'ai vu le sé -- pul -- cre du Christ vi -- vant
   J'ai vu la gloi -- re du Res -- sus -- sci -- té.
 
@@ -192,7 +241,7 @@ OtherPageHeaders = \header {
   oddFooterMarkup = {}
   #(include-special-characters)
 
-  systems-per-page = 5
+  %systems-per-page = 6
   %#(define fonts
   %  (set-global-fonts
   %   #:music "emmentaler"
