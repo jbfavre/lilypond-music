@@ -77,19 +77,19 @@ reponsSopranosMusic = \relative c'' {
   a4 g bf a g f2 g4 (f) e2 e d1 \fermata
 
   d2 d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
-  a2 g4 a f2 e4 d d2 d4 c! d1 \fermata
+  a2 g4 a f2 e4 e d2 d4 c! d1 \fermata
   }
 reponsAltosMusic = \relative c' {
   \partial 4 f4 e2 e d2. e4 f2. f4 e2 e4 r4 % Chrétiens offrez…
 
   \partial 4 e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
   d4 d2 e2 f1 e2 e2 \breathe
-  e1 d2.  cs4 a2. r4
+  e1 d2.  d8 cs a2. r4
 
   \partial 4 a4 a2. d4 e1 d2 cs2 \breathe % La mort et la vie…
   d2 e f e2 (e) r4
   e4 e1 d2 cs2
-  e1 d2. cs4 a1
+  e1 d2. d8 cs a1
 
 %{
   \partial 4 a4 a2. d4 e2 e2 d2 cs \breathe
@@ -113,14 +113,14 @@ reponsAltosMusic = \relative c' {
   f4 e1 d2 e4 d d2. cs4 a1
 
   d2 d4 d f2. f4 e2 e d d e d d cs2 % Nous le savons
-  e2 e4 e d2. bf4 bf2 a a1
+  e2 e4 e d2. d4 a2 a a1
   }
 reponsTenorsMusic =  \relative c' {
   \partial 4 d4 e2 d2 a2. a4 c2. g4 c4 b a4 \fermata r4 % Chrétiens offrez…
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
-  b2 a2 a4 bf a g f2. r4
+  b2 a2 a4 a bf a8 g f2. r4
 
   \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe % La mort et la vie…
   a2 c c4 b a gs a2 r4 cs d2 a (a4) bf a2
@@ -140,7 +140,7 @@ reponsTenorsMusic =  \relative c' {
   \partial 4 c'4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
   bf4 a1 a d2 df c2. \breathe
   a4 a1 c c2. d4 cs2. \breathe
-  cs4 d1 c c2. d4 cs2. d,4 \breathe
+  a4 a1 c c2. d4 cs2. d,4 \breathe
 
   g1 bf a2 c c1 \breathe % J'ai vu les anges
   d2 a a c4 b a2 gs a2. \breathe
@@ -148,7 +148,7 @@ reponsTenorsMusic =  \relative c' {
   c4  bf2 a a d bf2 a4 g f1
 
   d'2 d4 d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
-  cs2 d4 a a2 g2 g1 f1
+  cs2 d4 a a2 g4 bf g2 g8 f e4 f1
   }
 reponsBassesMusic =  \relative c {
   \partial 4 d4 cs a b cs d2. c4 f,2. g4 a4 b cs4 \fermata r4 % Chrétiens offrez…
@@ -176,7 +176,7 @@ reponsBassesMusic =  \relative c {
   \partial 4 c'4 f,1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
   c bf1 c2. \breathe
   cs4 d1 e f2 g a2. \breathe
-  a4 d,1 e f2 g a2. \breathe
+  cs,4 d1 e f2 g a2. \breathe
 
   d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
   f'2 e d c4 d e2 e e2. \breathe
@@ -184,7 +184,7 @@ reponsBassesMusic =  \relative c {
   f,4 g2 a d4 c bf a g2 a d1 \fermata
 
   d2 d4 d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
-  a2 b4 cs d4 c bf a g2 a d1 \fermata
+  a2 b4 cs d4 c bf g g2 a d1 \fermata
   }
 reponsLyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
