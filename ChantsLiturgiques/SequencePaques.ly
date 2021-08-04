@@ -69,7 +69,7 @@ reponsSopranosMusic = \relative c'' {
   \partial 4 c4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
   r4 f4 g a bf2 a g2. \breathe
   a4 d2 d4 d c2 c4 bf a2 a a2. \breathe
-  a4 d2. d4 c c d c a2 a a2. \breathe
+  a4 <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize e'>2 <a \parenthesize d> <a \parenthesize cs>2. \breathe
 
   d,4 e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2. \breathe
