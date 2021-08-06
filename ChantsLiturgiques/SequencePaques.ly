@@ -48,7 +48,7 @@ reponsSopranosMusic = \relative c'' {
 
   \partial 4 a4 g g a a f2 e4 e d2 r4 % L'Agneau…
   d4 f2 g4 g a2 c4 b a4 gs a2 \breathe
-  g2 a4 a f4 f e e d2 \fermata d4 r4
+  a2 g4 a f f e e d2 \fermata d4 r4
 
   \partial 4 d d2 a'4 a a4 a a4 g f2 e2 \breathe % La mort et la vie…
   f2 g4 g a2 c4 b a2 r4
@@ -84,7 +84,7 @@ reponsAltosMusic = \relative c' {
 
   \partial 4 e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
   d4 d2 e2 f1 e2 e2 \breathe
-  e1 d2.  d8 cs a2. r4
+  e1 d2. d8 cs a2. r4
 
   \partial 4 a4 a2. d4 e1 d2 cs2 \breathe % La mort et la vie…
   d2 e f e2 (e) r4
@@ -120,7 +120,7 @@ reponsTenorsMusic =  \relative c' {
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
-  b2 a2 a4 a bf a8 g f2. r4
+  cs2 b4 a a a bf a8 g f2. r4
 
   \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe % La mort et la vie…
   a2 c c4 b a gs a2 r4 cs d2 a (a4) bf a2
@@ -155,7 +155,7 @@ reponsBassesMusic =  \relative c {
 
   \partial 4 a4 b2 cs2 d4 c g a d2 r4 % L'Agneau…
   d4 d2 c f, f4 g a4 b cs2 \breathe
-  b2 cs d4 c g a d2. \fermata r4
+  a2 b4 cs d c g a d2. \fermata r4
 
   \partial 4 d4 d1 cs4 a b cs d4 (g,) a2 \breathe % La mort et la vie…
   d2 c f,4 g a b cs2 r4
@@ -187,7 +187,7 @@ reponsBassesMusic =  \relative c {
   a2 b4 cs d4 c bf g g2 a d1 \fermata
   }
 reponsLyrics = \lyricmode {
-  Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge
+  Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge.
 
   L'A -- gneau a ra -- che -- té les bre -- bis&nbsp;;
   Le Christ in -- no -- cent a ré -- con -- ci -- lié
