@@ -73,7 +73,7 @@
         fa -- ce, Io pos -- sa~ac -- cen -- der -- mi ad al -- tra fa -- ce&nbsp;? Om -- bra di
         Fil -- li -- de, ri -- posa in pa -- ce, ri posa in pa -- ce; É~i -- nest in -- gui -- bi -- le l'an -- ti -- co&nbsp;ar --
         dor; Om -- bra di Fil -- li -- de, ri -- posa in pa -- ce, ri -- posa in pa -- ce; É~i -- nest in --
-        gui -- bi -- le l'an -- tico ar -- dor, É~i -- nest in -- gui -- bi -- le l'an -- tico ar -- dor, É~i -- nest in --
+        gui -- bi -- le l'an -- ti -- co&nbsp;ar -- dor, É~i -- nest in -- gui -- bi -- le l'an -- ti -- co&nbsp;ar -- dor, É~i -- nest in --
         gui -- bi -- le l'an --  ti -- co&nbsp;ar -- dor.
       }
     >>
