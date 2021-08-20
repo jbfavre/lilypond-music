@@ -19,7 +19,7 @@
     <<
       \new Voice = "canto" {
         \autoBeamOff
-        \key g \major
+        \key e \minor
         \relative c' {
           \partial 4. s4. s2.*3 \break
           r4 r8 b8\p e g b8. c16 b8 a g fs
@@ -82,7 +82,7 @@
       \new Staff = "up" {
         %\autoBeamOff
         \clef treble
-        \key g \major
+        \key e \minor
         \relative c' {
           \partial 4. b8\p (e g)
           b8.( c16 \autoBeamOff b8) \autoBeamOn <g b>( <b fs> <b f>)
@@ -133,7 +133,7 @@
       \new Staff = "down" {
         %\autoBeamOff
         \clef bass
-        \key g \major
+        \key e \minor
         \relative c' {
           \partial 4. r4 r8
           r4 r8 e8 (ds d)
