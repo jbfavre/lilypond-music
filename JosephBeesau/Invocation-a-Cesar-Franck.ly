@@ -6,7 +6,7 @@ pdim = \markup { \dynamic p \italic dim. }
 pprit = \markup { \dynamic pp rit. }
 
 \header {
-  dedication = "À Monsieur H. DELALANDE"
+  dedication = \markup{\concat {"À Monsieur H. D" \smallCaps "elalande" }}
   title = "Invocation à César Franck"
   composer = "Joseph BÉESAU"
 }
@@ -25,15 +25,15 @@ global = {
 rightOne = \relative c'' {
   \global \set Score.connectArpeggios = ##t
   % En avant la musique !
-  c8_\pdolce( ef4 c8 bf af4 bf8) c8( ef4 c8 << {c2} { \hideNotes c4. ef,8) \unHideNotes } >> ef'8->( bf4 c8 bf af4 bf8) \break
-  c8 af4 bf8 c2 f8\mf\<(-> ef4 bf'8 f8\! ef4.) f8\p(-> ef4 bf'8\arpeggio f?8 << { ef4.} {\hideNotes c4 g8) \unHideNotes}>> ef'8( df4 c8 bf af4 cf8) \break
-  ef,8 f4 c'!8 bf af4. \tempo "un peu plus vite" r8\mf <af cf>4-.\<^\p( <af cf>4\!-._\> <af cf>4-. <af cf>8-.\!) df8\p\>( ef bf af\!) bf2 \break
+  c8_\pdolce( ef4 c8 bf af4 bf8) c8( ef4 c8 << {c2} { s4. \hideNotes ef,8) \unHideNotes } >> ef'8->( bf4 c8 bf af4 bf8) \break
+  c8 af4 bf8 c2 f8\mf\<(-> ef4 bf'8 f8\! ef4.) f8\p(-> ef4 bf'8\arpeggio f?8 << { ef4.} { s8 \hideNotes g,4) \unHideNotes}>> ef'8( df4 c8 bf af4 cf8) \break
+  ef,8 f4 c'!8 bf af4. \tempo "un peu plus vite" r8\mf <af cf>4\<-.^\p( <af cf>4\!-._\> <af cf>4-. <af cf>8-.\!) df8\p\>( ef bf af\!) bf2 \break
   r8\mf <gf cf>4-.\<( <gf cf>4-.\!\> <f cf'>4-. <ef bf'>8-.\!) gf8_\prit( af) f4 <ef bf gf>2 gf8(^\< af bf gf)\! ef' f af,4 \pageBreak
   gf8\<( af bf ef\!) af,4. bf8 \tempo "un peu plus lent" gf'8^\markup{ \italic "espressivo dolce"}[ f g e af] gf f4 ef8\p f c df ef2 \break
   ef8_\pprit ff cf df ef2 \tempo "a Tempo" c8^\markup{ \italic dolce}( ef4 c8 bf af4 bf8) c8( ef4 c8 c2) ef8( bf4 c8 bf af4 bf8) \break
   c8 af4 bf8 c2 f8\mf\<(-> ef4 bf'8 f\! ef4.) f8\p( ef4 bf'8 f ef4.) ef8( df4 c8 bf af4 cf8) \break
   ef,8_\pdim( f4 c'8\> bf af4.) c,8^\markup{\italic "calme et expressif"}\!\<( df4 c8 ef\!\> df4 c8) c8\!( af4 bf8 c2) f''8^\markup{\italic "m.g."}\p\<(-> <<{g4 f8)}{s8 s8\!\> s16 s16\!}>>  c2 \break
-  ef8^\markup{\italic "m.g."}(-> f4 ef8) bf2 f8(-> g4 f8) af, bf4 af8 c8( af_"rit.         e   morendo" bf c) bf8( ef, f bf) c2 af'2\pp R1 \bar "|."
+  ef8^\markup{\italic "m.g."}(-> f4 ef8) bf2 f8(-> g4 f8) af, bf4 af8 c8( af_"rit.         e     morendo" bf c) bf8( ef, f bf) c2 af'2\pp R1 \bar "|."
 }
 
 rightTwo = \relative c' {
@@ -48,7 +48,7 @@ rightTwo = \relative c' {
   f2 e8( f g4) g2 af a4 bf fs2 f?4 g eff2
   d4 df c2 s1 s1 <af' c f af>2\arpeggio <g c ef>2\arpeggio
   <gf bf ef gf>2\arpeggio <f bf df f>2\arpeggio <af, c f af>2\arpeggio
-  \override Arpeggio.Y-extent = 1
+  \offset positions #'(0 . 2) Arpeggio
   <af bf d>2\arpeggio <f af df f>2\arpeggio <g bf df ef>2\arpeggio <ef af c f>2\arpeggio <c' ef f af c>2\arpeggio R1
 }
 
@@ -69,7 +69,7 @@ leftOne = \relative f {
 leftTwo = \relative f, {
   \global \set Score.connectArpeggios = ##t
   % En avant la musique !
-  af4\sustainOn( bf << { c2\sustainOn) } { s4 \hideNotes f,4_\markup{\italic "simili"} \unHideNotes } >> f'4 ef <ef af,>2\arpeggio bf2 c df c ef ef ef a4 \slurUp bf8( c) bf,4\arpeggio e f ff
+  af4\sustainOn( bf << { c2\sustainOn) } { s4 \hideNotes f,4_\markup{\italic "simili"} \unHideNotes } >> f'4 ef <ef af,>2\arpeggio bf2 c df! c ef ef ef a4 \slurUp bf8( c) bf,4\arpeggio e f ff
   f2 af, af'8_\markup { \small \italic "en dehors" }( cf df ef) g( f) ef4 ef,2 bf
   af'8_\markup { \small \italic "en dehors" }( cf df ef) bf( af gf4) s1 af,1
   af1 %{\clef treble %} ef''2 d2 %{ \clef bass %} \slurDown ef,2( ef2)
@@ -82,6 +82,16 @@ leftTwo = \relative f, {
   <ef, bf' ef>2\arpeggio\sustainOn <ef bf' df ef>2\arpeggio\sustainOn <af, ef' c'>2\arpeggio\sustainOn <af' ef' af>2\arpeggio af,2
 }
 
+\markup {
+  \override #'(font-family . sans)
+  \fill-line {
+    \rounded-box \bold \center-column {
+      \concat { "Cette petite pièce peut se jouer aussi sur l'orgue ou sur l'harmonium." }
+      \concat { "L'exécution des 6 dernières mesures est laissée à l'initiative personnelle"}
+      \concat { "de l'organiste qui avec l'usage de la pédale arrivera à les interpréter." }
+    }
+  }
+}
 \score {
   \new PianoStaff \with {
     instrumentName = "Piano"
@@ -99,4 +109,5 @@ leftTwo = \relative f, {
       \override VerticalAxisGroup.remove-first = ##t
     }
   }
+  \midi {}
 }
