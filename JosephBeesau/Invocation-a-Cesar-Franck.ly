@@ -103,11 +103,5 @@ leftTwo = \relative f, {
       midiInstrument = "acoustic grand"
     } { \clef bass << \leftOne \\ \leftTwo >> }
   >>
-  \layout {
-    \context {
-      \Staff \RemoveEmptyStaves
-      \override VerticalAxisGroup.remove-first = ##t
-    }
-  }
-  \midi {}
+  \layout {}
 }
