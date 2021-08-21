@@ -66,4 +66,11 @@ cancelTagLine = \header {
     \bookpartPaper
   }
 
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-10_Et_s_il_revenait_un_jour.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
+
 }
