@@ -86,10 +86,14 @@ bookpartPaper = \paper {
 %%%%%
 %%%%%
 bookpartPaper = \paper {
-  top-margin = 2 \cm
-  bottom-margin = 2 \cm
-  left-margin = 2 \cm
-  right-margin = 2 \cm
+  top-margin = 1 \cm
+  bottom-margin = 1 \cm
+  left-margin = 1 \cm
+  right-margin = 1 \cm
+  two-sided = ##f
+  inner-margin = 0\cm
+  binding-offset = 0\cm
+  outer-margin = 0\cm
 
   #(include-special-characters)
 }

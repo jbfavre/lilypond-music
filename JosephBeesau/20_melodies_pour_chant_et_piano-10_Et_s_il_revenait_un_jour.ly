@@ -2,10 +2,10 @@
 \language "english"
 \include "../libs/smallcaps.ily"
 \paper {
-  top-margin = 2 \cm
-  bottom-margin = 2 \cm
-  left-margin = 2 \cm
-  right-margin = 2 \cm
+  top-margin = 1 \cm
+  bottom-margin = 1 \cm
+  left-margin = 1 \cm
+  right-margin = 1 \cm
 
   #(include-special-characters)
 }
