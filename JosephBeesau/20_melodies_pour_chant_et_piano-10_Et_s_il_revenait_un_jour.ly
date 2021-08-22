@@ -4,12 +4,8 @@
 \paper {
   top-margin = 2 \cm
   bottom-margin = 2 \cm
-  %left-margin = 2 \cm
-  %right-margin = 2 \cm
-  two-sided = ##t
-  inner-margin = 2\cm
-  binding-offset = 0.5\cm
-  outer-margin = 1.5\cm
+  left-margin = 2 \cm
+  right-margin = 2 \cm
 
   #(include-special-characters)
 }
