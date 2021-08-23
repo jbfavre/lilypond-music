@@ -97,6 +97,12 @@
               \ottava #1 <c' fs>8[ \tuplet 3/2 { <b f'>16 <bf e> <bf f'> }] \tuplet 3/2 { <c fs>8 <cs g'> <d gs> } <ef a>4 \ottava #0
               <fs,, a cs fs>4.^\markup{\italic loco} <e e'>8 <cs cs'> <a a'>
               % Page 3
+              <cs fs a cs>4.\( <b b'>8 <fs fs'> <a a'>\) <ds gs b ds>4.\( <cs cs'>8 <gs gs'> <b b'>\)
+              <fs' a cs fs>4.\( <ds' ds'>8 <cs cs'> <a a'>\) <e' a e'>8._\markup{\italic cresc.} <ds a' ds>16_\< <cs fs cs'>4 <b fs' b> \ottava #1 <gs' b ds gs>4.\!\f\( <fs fs'>8 <cs cs'> <ds ds'>\)
+              <fs a cs fs>4 \ottava #0 r4 r8^\markup{\italic loco} <e a e'>8~ <e a e'>8 <ds ds'>\( <cs cs'> <a a'> <cs cs'>4\) r4 r4 <cs, fs cs'>4\p \tempo "Ier mouvement" <b gs' b>4.^\markup{\italic expressif}\( <as as'>8 <es es'> <fs fs'> <fss cs' fss>4 <gs b gs'>\) r8 b'8\(
+              <<{\voiceOne gs4 a\) r8 cs\( gs4 a\) r8  <ds ds'>8\(^\<} \new Voice {\voiceTwo <<{\voiceThree \shiftOn \phrasingSlurDown e,2\( ds4\) d4 ds2}\\ {\voiceFour cs2. b} >>\oneVoice}>>\oneVoice
+              <cs' cs'>8 <b b'>\! \ottava #1 <gs' gs'>4. <fs fs'>8 <cs cs'> <ds ds'> <fs fs'>2\) \ottava #0
+              r4^\markup{\italic loco}_\markup{\italic rit.} <cs fs a cs>2 r4\pp <gs' ds' gs>2 <e b' e>2 r4
             }
           }
         >>
@@ -133,6 +139,18 @@
               \ottava #1 a8[ \tuplet 3/2 { gs16 g gs }] \tuplet 3/2 { a8 as b } c4 \ottava #0 \change Staff="left"
               \tuplet 5/4 { b,,,,16 fs' b ds a' } cs8 r8 r4
               % Page 3
+              \tuplet 5/4 { b,,16 fs' b ds fs } a8 r8 r4 \tuplet 5/4 { b,,16 e b' e gs } b8 r8 r4
+              \tuplet 5/4 { b,,16 fs' b ds a' } cs8 \clef treble fs8[ a fs] <cs fs cs'>8. <b fs' b>16 <a ds fs>4 < gs ds' fs> \clef bass
+              \tuplet 6/4 { e,16 b' e gs b cs } \clef treble <gs' b>4 <a b> <b,fs' ds'>4\arpeggio \oneVoice r4
+              r8 \voiceOne <fs' cs'>8~ <fs cs'>4 <<{\voiceOne <a, fs'>2} \new Voice{\voiceTwo ds4 e}>>\oneVoice
+              r4 r4 \clef bass <b, ds a'>4 r8
+              \set Score.connectArpeggios = ##t
+              <<{\voiceOne b8 cs4 d ds4. e8 es4 fs4. fs8 f4 \tuplet 3/2{es8 b es} fs4 fss gs2\arpeggio}
+                \new Voice {\voiceTwo e,8~ <e b'>2~ <e b'>2.~ <e b'>2.~  <e b'>2.~  <e b'>2\arpeggio}>>\oneVoice
+              \clef treble \phrasingSlurUp <e''( a cs>4\( <e) a b>\) r8 \clef bass cs8-.\( b-. as-.\) cs2-.-- b4
+              <<{\voiceOne cs4\arpeggio\( b4. gs8\) <b, gs'>2\arpeggio r4}
+                \new Voice{\voiceTwo <e, b'>2.\arpeggio e2\arpeggio e,4}>>\oneVoice
+              \set Score.connectArpeggios = ##f
             }
           }
         >>
@@ -141,8 +159,8 @@
   >>
   \layout {
     \context {
-      %\Staff \RemoveEmptyStaves
-      %\override VerticalAxisGroup.remove-first = ##t
+      \Staff \RemoveEmptyStaves
+      \override VerticalAxisGroup.remove-first = ##t
     }
     \context {
       \PianoStaff
