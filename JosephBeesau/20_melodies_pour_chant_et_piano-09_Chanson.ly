@@ -10,7 +10,7 @@
   #(include-special-characters)
 }
 \header {
-  dedication = \markup{ \small \italic \concat {"À Mademoiselle " \bold { "Marthe" "S" \smallCaps "urcouf" } }}
+  dedication = \markup{ \small \italic \concat {"À Mademoiselle " \bold { "Marthe" " S" \smallCaps "urcouf" } }}
   title = "Chanson"
   subtitle = "N°9"
   composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
@@ -33,7 +33,7 @@
           d2 r2 R1 \tempo "Plus lent" r4 fs8. fs16 g8.^> g16 fs8. fs16 g8. g16 \tuplet 3/2 {bf8 gf bf} af2\break
           \tuplet 3/2 {r8 e e} e8. e16 f8.^> f16 e4~ \time 2/4 e8. c16 \tuplet 3/2 {b8 b b} \time 4/4 \tempo "a Tempo" a2 r2 r2 r4 e'8.^\p e16 \break
           a8. a16 c8. c16 a8. f16 \tuplet 3/2 {a8 f a} g2 r4 r8 g8 \tuplet 3/2 {bf8 bf bf} df8. df16 c8. c16 \tuplet 3/2 {bf8 f g} \break
-          a2 r2 R1 R1 R1
+          a2 r2 R1 R1 R1 \bar "|."
         }
       }
     }
@@ -97,7 +97,7 @@
     >>
   >>
   \layout {
-    #(layout-set-staff-size 17)
+    #(layout-set-staff-size 19)
     \context {
       \PianoStaff
       \consists #Span_stem_engraver
