@@ -80,12 +80,12 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
-  \bookpart {
-    \cancelBookHeader
-    \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
-    \cancelTagLine
-    \bookpartPaper
-  }
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
 
   \bookpart {
     \cancelBookHeader
@@ -154,6 +154,20 @@ bookpartPaper = \paper {
     \cancelTagLine
     \bookpartPaper
   }
+
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-08_Spleen.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
 
   \bookpart {
     \cancelBookHeader
