@@ -63,7 +63,6 @@ bookpartPaper = \paper {
   #(include-special-characters)
 }
 \book {
-  \bookOutputSuffix "Print"
   \bookPaper
   \bookHeader
   \pageBreak
@@ -81,12 +80,12 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   \bookpart {
     \cancelBookHeader
@@ -113,9 +112,9 @@ bookpartPaper = \paper {
   #(include-special-characters)
 }
 \book {
-  \bookOutputSuffix "eReader"
   \bookPaper
   \bookHeader
+  \bookOutputSuffix "eReader"
   \pageBreak
   \bookpart {
     \cancelBookHeader
@@ -131,12 +130,12 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   \bookpart {
     \cancelBookHeader
