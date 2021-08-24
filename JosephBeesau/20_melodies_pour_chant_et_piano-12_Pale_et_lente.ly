@@ -31,9 +31,9 @@
       \clef treble
       \new Voice = "chant" {
         \relative c'' {
-          \key c \minor
-          \time 9/8
-          r2. r8
+          \key c \major
+          \time 4/4
+          r1
         }
       }
     }
@@ -47,9 +47,9 @@
       } {
         \clef treble
         \relative c'' { \voiceOne
-          \key c \minor
-          \time 9/8
-          r2. r8
+          \key c \major
+          \time 4/4
+          r1
         }
       }
       \new Staff = "left" \with {
@@ -57,9 +57,9 @@
       } {
         \clef bass \set Score.connectArpeggios = ##f
         \relative f {
-          \key c \minor
-          \time 9/8
-          r2. r8
+          \key c \major
+          \time 4/4
+          r1
         }
       }
     >>
