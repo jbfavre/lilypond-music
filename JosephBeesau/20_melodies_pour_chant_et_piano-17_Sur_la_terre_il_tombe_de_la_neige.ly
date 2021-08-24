@@ -16,7 +16,7 @@
   #(include-special-characters)
 }
 \header {
-  dedication = \markup{ \small \italic \concat {"À " \bold { "Madame Du P" \smallCaps laix } }}
+  dedication = \markup{ \small \italic \concat {"À Madame du " \bold { P \smallCaps laix } }}
   title = "Sur la terre il tombe de la neige"
   subtitle = "N°17"
   composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
