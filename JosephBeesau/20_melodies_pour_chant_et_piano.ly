@@ -79,12 +79,47 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-02_Pres_de_la_mer.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-03_Echange_de_fleurs.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_ports.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
   \bookpart {
     \cancelBookHeader
     \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
   }
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-07_Chanson_du_vent.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
 
   \bookpart {
     \cancelBookHeader
@@ -106,6 +141,77 @@ bookpartPaper = \paper {
     \cancelTagLine
     \bookpartPaper
   }
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-11_Duo.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-12_Pale_et_lente.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-13_Le_soir_sur_l_eau.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-14_Il_pleut_des_pétales_de_fleurs.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-15_Je_suis_ebauche_ce_soir.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-16_Désir_d_hiver.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-18_En_mai.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-19_Le_temps_des_Saintes.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-20_Chanson_de_bord.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
 }
 %%%%%
 %%%%%
@@ -142,12 +248,47 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-02_Pres_de_la_mer.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-03_Echange_de_fleurs.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_ports.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
   \bookpart {
     \cancelBookHeader
     \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
   }
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-07_Chanson_du_vent.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
 
   \bookpart {
     \cancelBookHeader
@@ -169,4 +310,75 @@ bookpartPaper = \paper {
     \cancelTagLine
     \bookpartPaper
   }
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-11_Duo.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-12_Pale_et_lente.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-13_Le_soir_sur_l_eau.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-14_Il_pleut_des_pétales_de_fleurs.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-15_Je_suis_ebauche_ce_soir.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-16_Désir_d_hiver.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-18_En_mai.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-19_Le_temps_des_Saintes.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
+  %\bookpart {
+  %  \cancelBookHeader
+  %  \include "20_melodies_pour_chant_et_piano-20_Chanson_de_bord.ly"
+  %  \cancelTagLine
+  %  \bookpartPaper
+  %}
+
 }
