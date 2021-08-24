@@ -21,7 +21,7 @@
   subtitle = "N°5"
   composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
   poet = \markup { \column { "Poésie d'" \bold \concat { É \smallCaps mile "  V" \smallCaps erhaeren }}}
-  tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant de piano" " de J. B" \smallCaps "éesau"}}
+  tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant et piano" " de J. B" \smallCaps "éesau"}}
 }
 \score {
   <<
