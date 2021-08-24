@@ -12,10 +12,10 @@ cancelTagLine = \header {
   tagline = ##f
 }
 bookPaper = \paper {
-    top-margin = 2 \cm
-    bottom-margin = 2 \cm
-    left-margin = 2 \cm
-    right-margin = 2 \cm
+    top-margin = 2\cm
+    bottom-margin = 2\cm
+    left-margin = 2\cm
+    right-margin = 2\cm
     bookTitleMarkup = \markup \column {
       \fill-line { \fontsize #5 \fromproperty #'header:composer }
       \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
@@ -51,10 +51,10 @@ bookHeader = \header {
 %%%%%
 %%%%%
 bookpartPaper = \paper {
-  top-margin = 1 \cm
-  bottom-margin = 1 \cm
-  %left-margin = 2 \cm
-  %right-margin = 2 \cm
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  %left-margin = 2\cm
+  %right-margin = 2\cm
   two-sided = ##t
   inner-margin = 1\cm
   binding-offset = 0.5\cm
@@ -69,6 +69,13 @@ bookpartPaper = \paper {
   \bookpart {
     \cancelBookHeader
     \include "20_melodies_pour_chant_et_piano-01_Nocturne.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
+
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
   }
@@ -100,10 +107,10 @@ bookpartPaper = \paper {
 %%%%%
 %%%%%
 bookpartPaper = \paper {
-  top-margin = 1 \cm
-  bottom-margin = 1 \cm
-  left-margin = 1 \cm
-  right-margin = 1 \cm
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
   two-sided = ##f
   inner-margin = 0\cm
   binding-offset = 0\cm
@@ -119,6 +126,13 @@ bookpartPaper = \paper {
   \bookpart {
     \cancelBookHeader
     \include "20_melodies_pour_chant_et_piano-01_Nocturne.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
+
+  \bookpart {
+    \cancelBookHeader
+    \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
   }
