@@ -7,6 +7,12 @@
   left-margin = 1 \cm
   right-margin = 1 \cm
 
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
+
   #(include-special-characters)
 }
 \header {

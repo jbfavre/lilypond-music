@@ -57,8 +57,14 @@ bookpartPaper = \paper {
   %right-margin = 2\cm
   two-sided = ##t
   inner-margin = 1\cm
-  binding-offset = 0.5\cm
   outer-margin = 1\cm
+  binding-offset = 0\cm
+
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
 
   #(include-special-characters)
 }
@@ -115,6 +121,12 @@ bookpartPaper = \paper {
   inner-margin = 0\cm
   binding-offset = 0\cm
   outer-margin = 0\cm
+
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
 
   #(include-special-characters)
 }

@@ -7,6 +7,12 @@
   left-margin = 1 \cm
   right-margin = 1 \cm
 
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
+
   #(include-special-characters)
 }
 \header {
@@ -14,7 +20,7 @@
   title = "Chanson"
   subtitle = "N°9"
   composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
-  poet = \markup { \column { "Poésie de" \bold \concat { "M.  M" \smallCaps æterlinck }}}
+  poet = \markup { \column { "Poésie de" \bold \concat { "M" \smallCaps aurice "  M" \smallCaps aeterlinck }}}
   tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant de piano" " de J. B" \smallCaps "éesau"}}
 }
 \score {

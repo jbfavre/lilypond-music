@@ -7,6 +7,12 @@
   left-margin = 1 \cm
   right-margin = 1 \cm
 
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
+
   #(include-special-characters)
 }
 \header {
@@ -14,7 +20,7 @@
   title = "Nocturne"
   subtitle = "N°1"
   composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
-  poet = \markup { \column { "Poésie de" \bold \concat { "J.  L" \smallCaps ahor }}}
+  poet = \markup { \column { "Poésie de" \bold \concat { "Jean  L" \smallCaps ahor }}}
   tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant de piano" " de J. B" \smallCaps "éesau"}}
 }
 \score {
@@ -33,27 +39,27 @@
           \override TupletBracket.tuplet-slur = ##t
           \override TupletBracket.bracket-visibility = ##t
           % Page 1
-          r4 r8 af8^\p bf c ef4 df af8. bf16 gf4 r4 \tuplet 3/2 { bf8 df gf }
-          f2 \tuplet 3/2 { ef8 df bf } c2 df8.-- bf16 bf4 bf8 \breathe bf8^\< c df\!
-          f4 af, r8 f'8^\p gf^\>( ef) d4\! r4 r8 ef4 af,8 cf^\markup { \italic Cédez} f, \bar "||" \time 9/8
+          r4 r8 af8^\p bf c ef4 df af8. bf16 gf4 r4 \tuplet 3/2 { bf8 df gf } \break
+          f2 \tuplet 3/2 { ef8 df bf } c2 df8.-- bf16 bf4 bf8 \breathe bf8^\< c df\! \break
+          f4 af, r8 f'8^\p gf^\>( ef) d4\! r4 r8 ef4 af,8 cf^\markup { \italic Cédez} f, \bar "||" \time 9/8 \pageBreak
           % Page 2
-          g'2. r4 r8 r4 r8 r8 a,8^\markup{\italic Dolce.} b cs b a
-          c4.\( c8\) r8 r r r c8^\< gf'4.\( gf4\)\! r8 r f gf
-          af4.^\>\( af,8\)\! r8 r r4 r8 r4 r8 c8^\markup{\italic "Toujours calme"} c c ef4 f8
-          c4.\( c\) r8 r a8 c4.( c8) r8 c8 bf4 a8
+          g'2. r4 r8 r4 r8 r8 a,8^\markup{\italic Dolce.} b cs b a \break
+          c4.\( c8\) r8 r r r c8^\< gf'4.\( gf4\)\! r8 r f gf \break
+          af4.^\>\( af,8\)\! r8 r r4 r8 r4 r8 c8^\markup{\italic "Toujours calme"} c c ef4 f8 \break
+          c4.\( c\) r8 r a8 c4.( c8) r8 c8 bf4 a8 \pageBreak
           % Page 3
-          c!4.\( c8\) r8 r r b8 c gf' ef df cf!4. r8 df ef \time 12/8
-          ff8^\> df af cf4.( cf8)\! r8 r r4 r8 \time 9/8
-          s8 r1 \tuplet 4/6 { r16 bf bf bf } \tuplet 4/6 { bf bf bf bf } df4.(
-          \tuplet 4/6 { df16) ef df cf } gf'4.( gf8) r8 r s8 r1
+          c!4.\( c8\) r8 r r b8 c gf' ef df cf!4. r8 df ef \time 12/8 \break
+          ff8^\> df af cf4.( cf8)\! r8 r r4 r8 \time 9/8 \break
+          s8 r1 \tuplet 4/6 { r16 bf bf bf } \tuplet 4/6 { bf bf bf bf } df4.( \break
+          \tuplet 4/6 { df16) ef df cf } gf'4.( gf8) r8 r s8 r1 \pageBreak
           % Page 4
-          r4 r8 r a,8 b cs b a c4. \(c8\) r8 r r r c8
-          g'4.^\mf\( g8\) r8 r r f^\< g a4.\!\( c,8\) r8 r r4 r8 \time 6/8
-          r8 c8 d f c ef \time 12/8 bf4. r4 r8 r \tempo "Rit. molto" bf8 c ef f, cf'! \time 3/4
+          r4 r8 r a,8 b cs b a c4. \(c8\) r8 r r r c8 \break
+          g'4.^\mf\( g8\) r8 r r f^\< g a4.\!\( c,8\) r8 r r4 r8 \time 6/8 \break
+          r8 c8 d f c ef \time 12/8 bf4. r4 r8 r \tempo "Rit. molto" bf8 c ef f, cf'! \time 3/4 \pageBreak
           % Page 5
-          bf4^\pp\( bf8\) r8 r4 R2. R2.
-          R2. R2. r4 r8 bf8^\markup { \dynamic p \italic "Très calme" } cf df d8.[\( a16]\) a4 r
-          r4 ef'4 df cf2 r4 r8 bf8 bf ef df4
+          bf4^\pp\( bf8\) r8 r4 R2. R2. \break
+          R2. R2. r4 r8 bf8^\markup { \dynamic p \italic "Très calme" } cf df d8.[\( a16]\) a4 r \break
+          r4 ef'4 df cf2 r4 r8 bf8 bf ef df4 \break
           r8 bf bf af gf4( gf2)^\markup{\italic "Dim."}^\> r4\! R2. R2. R2. \bar "|."
         }
       }
@@ -196,6 +202,6 @@
     >>
   >>
   \layout {
-    #(layout-set-staff-size 17)
+    #(layout-set-staff-size 19)
   }
 }
