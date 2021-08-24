@@ -16,17 +16,17 @@
   #(include-special-characters)
 }
 \header {
-  dedication = \markup{ \small \italic \concat {"À Mademoiselle " \bold { "J" \smallCaps "eanne B" \smallCaps "ézier" } }}
-  title = "Le Ciel en nuit s'est déplié"
-  subtitle = "N°5"
-  composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
-  poet = \markup { \column { "Poésie d'" \bold \concat { É \smallCaps mile "  V" \smallCaps erhaeren }}}
-  tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant et piano" " de J. B" \smallCaps "éesau"}}
+  dedication = \markup{ \sans \small \italic \concat {"À Mademoiselle " \bold { "J" \smallCaps "eanne B" \smallCaps "ézier" } }}
+  title = \markup{ \sans "Le Ciel en nuit s'est déplié"}
+  subtitle = \markup{ \sans "N°5"}
+  composer = \markup { \sans \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
+  poet = \markup { \sans \column { "Poésie d'" \bold \concat { É \smallCaps mile "  V" \smallCaps erhaeren }}}
+  tagline = \markup { \sans \concat { "Extrait de " \italic "20 mélodies pour chant et piano" " de J" \smallCaps oseph " B" \smallCaps éesau " - É" \smallCaps ditions " M" \smallCaps aurice " S" \smallCaps énart ", 1920"}}
 }
 \score {
   <<
     \new Staff \with {
-      instrumentName = "Chant"
+      instrumentName = \markup{ \sans "Chant"}
     } {
       \clef treble
       \new Voice = "chant" {
@@ -67,7 +67,7 @@
       Qui dort en nous com -- me un en -- fant re -- po -- se.
     }
     \new PianoStaff \with {
-      instrumentName = "Piano"
+      instrumentName = \markup{ \sans "Piano" }
     } <<
       \new Staff = "right" \with {
         midiInstrument = "acoustic grand"

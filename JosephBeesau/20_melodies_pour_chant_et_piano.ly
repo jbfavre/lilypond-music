@@ -17,14 +17,13 @@ bookPaper = \paper {
     left-margin = 2\cm
     right-margin = 2\cm
     bookTitleMarkup = \markup \column {
-      \fill-line { \fontsize #5 \fromproperty #'header:composer }
-      \when-property #'header:date \fill-line { \combine \vspace #1.2 \fontsize #1 \sans \fromproperty #'header:date }
+      \fill-line { \sans \fontsize #5 \fromproperty #'header:composer }
       \combine \null \vspace #14
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
       \combine \null \vspace #4
-      \fill-line { \fontsize #10 \fromproperty #'header:title }
+      \fill-line { \sans \fontsize #10 \fromproperty #'header:title }
       \combine \null \vspace #1
-      \fill-line { \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
+      \fill-line { \sans \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
       \combine \null \vspace #3
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
       \combine \null \vspace #1
@@ -34,6 +33,11 @@ bookPaper = \paper {
         }
       }
     }
+    tocTitleMarkup = \markup \huge \column {
+      \fill-line { \null \sans "Table des matières" \null }
+      \hspace #1
+    }
+    tocItemMarkup = \markup {\sans \tocItemWithDotsMarkup }
   }
 bookHeader = \header {
     title = "20 mélodies"
@@ -72,8 +76,12 @@ bookpartPaper = \paper {
   \bookPaper
   \bookHeader
   \pageBreak
+  \markuplist \table-of-contents
+  \pageBreak
+
   \bookpart {
     \cancelBookHeader
+    \tocItem \markup "Nocturne"
     \include "20_melodies_pour_chant_et_piano-01_Nocturne.ly"
     \cancelTagLine
     \bookpartPaper
@@ -81,6 +89,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Près de la Mer"
   %  \include "20_melodies_pour_chant_et_piano-02_Pres_de_la_mer.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -88,6 +97,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Échange de fleurs"
   %  \include "20_melodies_pour_chant_et_piano-03_Echange_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -95,13 +105,15 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_ports.ly"
+  %  \tocItem \markup "Le jour des morts"
+  %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_morts.ly"
   %  \cancelTagLine
   %  \bookpartPaper
   %}
 
   \bookpart {
     \cancelBookHeader
+    \tocItem \markup "Le Ciel en nuit s'est déplié"
     \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
@@ -109,6 +121,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Les plaintes d'Ariane"
   %  \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -116,6 +129,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Chanson du vent"
   %  \include "20_melodies_pour_chant_et_piano-07_Chanson_du_vent.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -123,6 +137,7 @@ bookpartPaper = \paper {
 
   \bookpart {
     \cancelBookHeader
+    \tocItem \markup "Spleen"
     \include "20_melodies_pour_chant_et_piano-08_Spleen.ly"
     \cancelTagLine
     \bookpartPaper
@@ -130,6 +145,7 @@ bookpartPaper = \paper {
 
   \bookpart {
     \cancelBookHeader
+    \tocItem \markup "Chanson"
     \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
     \cancelTagLine
     \bookpartPaper
@@ -137,6 +153,7 @@ bookpartPaper = \paper {
 
   \bookpart {
     \cancelBookHeader
+    \tocItem \markup "Et s'il revenait un jour"
     \include "20_melodies_pour_chant_et_piano-10_Et_s_il_revenait_un_jour.ly"
     \cancelTagLine
     \bookpartPaper
@@ -144,6 +161,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Duo"
   %  \include "20_melodies_pour_chant_et_piano-11_Duo.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -151,6 +169,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Pâle et lente"
   %  \include "20_melodies_pour_chant_et_piano-12_Pale_et_lente.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -158,6 +177,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Le soir sur l'eau"
   %  \include "20_melodies_pour_chant_et_piano-13_Le_soir_sur_l_eau.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -165,6 +185,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Il pleut des pétales de fleurs"
   %  \include "20_melodies_pour_chant_et_piano-14_Il_pleut_des_pétales_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -172,6 +193,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Je suis ébauché ce soir"
   %  \include "20_melodies_pour_chant_et_piano-15_Je_suis_ebauche_ce_soir.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -179,6 +201,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Désir d'hiver"
   %  \include "20_melodies_pour_chant_et_piano-16_Désir_d_hiver.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -186,6 +209,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Sur la terre il tombe de la neige"
   %  \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -193,6 +217,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "En mai"
   %  \include "20_melodies_pour_chant_et_piano-18_En_mai.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -200,6 +225,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Le temps des saintes"
   %  \include "20_melodies_pour_chant_et_piano-19_Le_temps_des_Saintes.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -207,6 +233,7 @@ bookpartPaper = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
+  %  \tocItem \markup "Chanson de bord"
   %  \include "20_melodies_pour_chant_et_piano-20_Chanson_de_bord.ly"
   %  \cancelTagLine
   %  \bookpartPaper

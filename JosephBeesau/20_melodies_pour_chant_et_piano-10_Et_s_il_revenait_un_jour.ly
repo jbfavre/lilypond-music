@@ -16,17 +16,17 @@
   #(include-special-characters)
 }
 \header {
-  dedication = \markup{\concat {"À Madame " \bold { "de L" \smallCaps "annurien" }}}
-  title = "Et s'il revenait un jour…"
-  subtitle = "N°10"
-  composer = \markup { \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
-  poet = \markup { \column { "Poésie de" \bold \concat { M \smallCaps aurice " M" \smallCaps aeterlinck }}}
-  tagline = \markup { \concat { "Extrait de " \italic "20 mélodies pour chant et piano" " de J. B" \smallCaps "éesau"}}
+  dedication = \markup{ \sans \concat {"À Madame " \bold { "de L" \smallCaps "annurien" }}}
+  title = \markup{ \sans "Et s'il revenait un jour…"}
+  subtitle = \markup{ \sans "N°10"}
+  composer = \markup{ \sans \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
+  poet = \markup{ \sans \column { "Poésie de" \bold \concat { M \smallCaps aurice " M" \smallCaps aeterlinck }}}
+  tagline = \markup { \sans \concat { "Extrait de " \italic "20 mélodies pour chant et piano" " de J" \smallCaps oseph " B" \smallCaps éesau " - É" \smallCaps ditions " M" \smallCaps aurice " S" \smallCaps énart ", 1920"}}
 }
 \score {
   <<
     \new Staff \with {
-      instrumentName = "Chant"
+      instrumentName = \markup{ \sans "Chant"}
     } {
       \clef treble
       \new Voice = "chant" {
@@ -74,7 +74,7 @@
       de peur qu'il ne pleu -- re.
     }
     \new PianoStaff \with {
-      instrumentName = "Piano"
+      instrumentName = \markup{ \sans "Piano"}
     } <<
       \new Staff = "right" \with {
         midiInstrument = "acoustic grand"
