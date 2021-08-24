@@ -16,7 +16,7 @@
   #(include-special-characters)
 }
 \header {
-  dedication = \markup{ \sans \concat {"À Madame " \bold { "de L" \smallCaps "annurien" }}}
+  dedication = \markup{ \sans \concat {"À Madame de " \bold { L \smallCaps "annurien" }}}
   title = \markup{ \sans "Et s'il revenait un jour…"}
   subtitle = \markup{ \sans "N°10"}
   composer = \markup{ \sans \right-column { "Musique de" \bold \concat { "J. B" \smallCaps éesau }}}
