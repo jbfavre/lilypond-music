@@ -48,7 +48,7 @@
           R2. R2. d8 d d d g8. d16 \break
           ef4 ef8 ef ef a! d,4 d8 r8 r4 \time 4/4 \tempo "Plus lent" r4 ef'8 ef d4 \tuplet 3/2 { d8 d a } \break
           c4. c8 bf4 bf8 fs \time 3/4 d'4-- d8 r8 r4 R2. \break
-          R2. R2. R2. R2. R2.
+          R2. R2. R2. R2. R2. \bar "|."
         }
       }
     }
