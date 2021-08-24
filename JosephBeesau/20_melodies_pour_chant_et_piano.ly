@@ -24,7 +24,7 @@ bookPaper = \paper {
     right-margin = 2\cm
     bookTitleMarkup = \markup \column {
       \fill-line { \sans \fontsize #5 \fromproperty #'header:composer }
-      \combine \null \vspace #14
+      \combine \null \vspace #7
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
       \combine \null \vspace #4
       \fill-line { \sans \fontsize #10 \fromproperty #'header:title }
@@ -32,7 +32,7 @@ bookPaper = \paper {
       \fill-line { \sans \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
       \combine \null \vspace #3
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
-      \combine \null \vspace #1
+      \combine \null \vspace #8
       \fill-line{
         \general-align #Y #0 {
           \epsfile #Y #55 #"JosephBeesau.eps"

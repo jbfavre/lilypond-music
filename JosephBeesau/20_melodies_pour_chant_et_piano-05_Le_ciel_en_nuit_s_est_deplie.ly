@@ -120,6 +120,6 @@
     >>
   >>
   \layout {
-    #(layout-set-staff-size 17)
+    #(layout-set-staff-size 19)
   }
 }

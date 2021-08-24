@@ -164,6 +164,7 @@
     >>
   >>
   \layout {
+    #(layout-set-staff-size 19)
     \context {
       \Staff \RemoveEmptyStaves
       \override VerticalAxisGroup.remove-first = ##t
