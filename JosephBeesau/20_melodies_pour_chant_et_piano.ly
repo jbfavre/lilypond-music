@@ -32,7 +32,7 @@ bookPaper = \paper {
       \fill-line { \sans \when-property #'header:subtitle \fontsize #3 \sans \fromproperty #'header:subtitle }
       \combine \null \vspace #3
       \fill-line { \postscript #"-40 0 moveto 80 0 rlineto stroke" }
-      \combine \null \vspace #8
+      \combine \null \vspace #7
       \fill-line{
         \general-align #Y #0 {
           \epsfile #Y #55 #"JosephBeesau.eps"
