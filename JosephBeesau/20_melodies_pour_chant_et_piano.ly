@@ -80,12 +80,6 @@ bookpartPaper = \paper {
   outer-margin = 1\cm
   binding-offset = 0\cm
 
-  markup-system-spacing =
-    #'((padding . 20)
-       (basic-distance . 15)
-       (minimum-distance . 20)
-       (stretchability . 12))
-
   #(include-special-characters)
 }
 \book {
@@ -220,13 +214,13 @@ bookpartPaper = \paper {
   %  \bookpartPaper
   %}
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \tocItem \markup "Sur la terre il tombe de la neige"
-  %  \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \tocItem \markup "Sur la terre il tombe de la neige"
+    \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   %\bookpart {
   %  \cancelBookHeader
@@ -267,12 +261,6 @@ bookpartPaper = \paper {
   inner-margin = 0\cm
   binding-offset = 0\cm
   outer-margin = 0\cm
-
-  markup-system-spacing =
-    #'((padding . 20)
-       (basic-distance . 15)
-       (minimum-distance . 20)
-       (stretchability . 12))
 
   #(include-special-characters)
 }
@@ -410,13 +398,13 @@ bookpartPaper = \paper {
   %  \bookpartPaper
   %}
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \tocItem \markup "Sur la terre il tombe de la neige"
-  %  \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \tocItem \markup "Sur la terre il tombe de la neige"
+    \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   %\bookpart {
   %  \cancelBookHeader
