@@ -54,7 +54,8 @@ bookPaper = \paper {
       \fill-line { \null \sans "Table des matières" \null }
       \hspace #1
     }
-    tocItemMarkup = \markup {\sans \tocItemWithDotsMarkup }
+    %tocItemMarkup = \markup {\sans \tocItemWithDotsMarkup }
+    tocItemMarkup = \markup \fill-line { \fromproperty #'toc:text \fromproperty #'toc:page }
   }
 bookHeader = \header {
     title = "20 mélodies"
@@ -105,9 +106,10 @@ bookpartPaperStretch = \paper {
   \bookPaper
   \bookHeader
   \pageBreak \markuplist \table-of-contents \pageBreak
+
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Nocturne"
+    \tocItem \markup {\typewriter "&nbsp;1.&nbsp;" \sans "Nocturne"}
     \include "20_melodies_pour_chant_et_piano-01_Nocturne.ly"
     \cancelTagLine
     \bookpartPaper
@@ -115,7 +117,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Près de la Mer"
+  %  \tocItem \markup {\typewriter "&nbsp;2.&nbsp;" \sans "Près de la Mer"}
   %  \include "20_melodies_pour_chant_et_piano-02_Pres_de_la_mer.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -123,7 +125,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Échange de fleurs"
+  %  \tocItem \markup {\typewriter "&nbsp;3.&nbsp;" \sans "Échange de fleurs"}
   %  \include "20_melodies_pour_chant_et_piano-03_Echange_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -131,7 +133,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le jour des morts"
+  %  \tocItem \markup {\typewriter "&nbsp;4.&nbsp;" \sans "Le jour des morts"}
   %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_morts.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -139,7 +141,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Le Ciel en nuit s'est déplié"
+    \tocItem \markup {\typewriter "&nbsp;5.&nbsp;" \sans "Le Ciel en nuit s'est déplié"}
     \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
@@ -147,7 +149,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Les plaintes d'Ariane"
+    \tocItem \markup {\typewriter "&nbsp;6.&nbsp;" \sans "Les plaintes d'Ariane"}
     \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
     \cancelTagLine
     \bookpartPaper
@@ -155,7 +157,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Chanson du vent"
+  %  \tocItem \markup {\typewriter "&nbsp;7.&nbsp;" \sans "Chanson du vent"}
   %  \include "20_melodies_pour_chant_et_piano-07_Chanson_du_vent.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -163,7 +165,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Spleen"
+    \tocItem \markup {\typewriter "&nbsp;8.&nbsp;" \sans "Spleen"}
     \include "20_melodies_pour_chant_et_piano-08_Spleen.ly"
     \cancelTagLine
     \bookpartPaper
@@ -171,7 +173,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Chanson"
+    \tocItem \markup {\typewriter "&nbsp;9.&nbsp;" \sans "Chanson"}
     \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
     \cancelTagLine
     \bookpartPaper
@@ -179,7 +181,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Et s'il revenait un jour"
+    \tocItem \markup {\typewriter "10.&nbsp;" \sans "Et s'il revenait un jour"}
     \include "20_melodies_pour_chant_et_piano-10_Et_s_il_revenait_un_jour.ly"
     \cancelTagLine
     \bookpartPaper
@@ -187,7 +189,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Duo"
+  %  \tocItem \markup {\typewriter "11.&nbsp;" \sans "Duo"}
   %  \include "20_melodies_pour_chant_et_piano-11_Duo.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -195,7 +197,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Pâle et lente"
+  %  \tocItem \markup {\typewriter "12.&nbsp;" \sans "Pâle et lente"}
   %  \include "20_melodies_pour_chant_et_piano-12_Pale_et_lente.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -203,7 +205,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le soir sur l'eau"
+  %  \tocItem \markup {\typewriter "13.&nbsp;" \sans "Le soir sur l'eau"}
   %  \include "20_melodies_pour_chant_et_piano-13_Le_soir_sur_l_eau.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -211,7 +213,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Il pleut des pétales de fleurs"
+  %  \tocItem \markup {\typewriter "14.&nbsp;" \sans "Il pleut des pétales de fleurs"}
   %  \include "20_melodies_pour_chant_et_piano-14_Il_pleut_des_pétales_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -219,7 +221,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Je suis ébauché ce soir"
+  %  \tocItem \markup {\typewriter "15.&nbsp;" \sans "Je suis ébauché ce soir"}
   %  \include "20_melodies_pour_chant_et_piano-15_Je_suis_ebauche_ce_soir.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -227,7 +229,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Désir d'hiver"
+  %  \tocItem \markup {\typewriter "16.&nbsp;" \sans "Désir d'hiver"}
   %  \include "20_melodies_pour_chant_et_piano-16_Désir_d_hiver.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -235,7 +237,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Sur la terre il tombe de la neige"
+    \tocItem \markup {\typewriter "17.&nbsp;" \sans "Sur la terre il tombe de la neige"}
     \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
     \cancelTagLine
     \bookpartPaperStretch
@@ -243,7 +245,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "En mai"
+  %  \tocItem \markup {\typewriter "18.&nbsp;" \sans "En mai"}
   %  \include "20_melodies_pour_chant_et_piano-18_En_mai.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -251,7 +253,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le temps des saintes"
+  %  \tocItem \markup {\typewriter "19.&nbsp;" \sans "Le temps des saintes"}
   %  \include "20_melodies_pour_chant_et_piano-19_Le_temps_des_Saintes.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -259,7 +261,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Chanson de bord"
+  %  \tocItem \markup {\typewriter "20.&nbsp;" \sans "Chanson de bord"}
   %  \include "20_melodies_pour_chant_et_piano-20_Chanson_de_bord.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -309,7 +311,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Nocturne"
+    \tocItem \markup {\typewriter "&nbsp;1.&nbsp;" \sans "Nocturne"}
     \include "20_melodies_pour_chant_et_piano-01_Nocturne.ly"
     \cancelTagLine
     \bookpartPaper
@@ -317,7 +319,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Près de la Mer"
+  %  \tocItem \markup {\typewriter "&nbsp;2.&nbsp;" \sans "Près de la Mer"}
   %  \include "20_melodies_pour_chant_et_piano-02_Pres_de_la_mer.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -325,7 +327,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Échange de fleurs"
+  %  \tocItem \markup {\typewriter "&nbsp;3.&nbsp;" \sans "Échange de fleurs"}
   %  \include "20_melodies_pour_chant_et_piano-03_Echange_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -333,7 +335,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le jour des morts"
+  %  \tocItem \markup {\typewriter "&nbsp;4.&nbsp;" \sans "Le jour des morts"}
   %  \include "20_melodies_pour_chant_et_piano-04_Le_jour_des_morts.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -341,7 +343,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Le Ciel en nuit s'est déplié"
+    \tocItem \markup {\typewriter "&nbsp;5.&nbsp;" \sans "Le Ciel en nuit s'est déplié"}
     \include "20_melodies_pour_chant_et_piano-05_Le_ciel_en_nuit_s_est_deplie.ly"
     \cancelTagLine
     \bookpartPaper
@@ -349,7 +351,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Les plaintes d'Ariane"
+    \tocItem \markup {\typewriter "&nbsp;6.&nbsp;" \sans "Les plaintes d'Ariane"}
     \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
     \cancelTagLine
     \bookpartPaper
@@ -357,7 +359,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Chanson du vent"
+  %  \tocItem \markup {\typewriter "&nbsp;7.&nbsp;" \sans "Chanson du vent"}
   %  \include "20_melodies_pour_chant_et_piano-07_Chanson_du_vent.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -365,7 +367,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Spleen"
+    \tocItem \markup {\typewriter "&nbsp;8.&nbsp;" \sans "Spleen"}
     \include "20_melodies_pour_chant_et_piano-08_Spleen.ly"
     \cancelTagLine
     \bookpartPaper
@@ -373,7 +375,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Chanson"
+    \tocItem \markup {\typewriter "&nbsp;9.&nbsp;" \sans "Chanson"}
     \include "20_melodies_pour_chant_et_piano-09_Chanson.ly"
     \cancelTagLine
     \bookpartPaper
@@ -381,7 +383,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Et s'il revenait un jour"
+    \tocItem \markup {\typewriter "10.&nbsp;" \sans "Et s'il revenait un jour"}
     \include "20_melodies_pour_chant_et_piano-10_Et_s_il_revenait_un_jour.ly"
     \cancelTagLine
     \bookpartPaper
@@ -389,7 +391,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Duo"
+  %  \tocItem \markup {\typewriter "11.&nbsp;" \sans "Duo"}
   %  \include "20_melodies_pour_chant_et_piano-11_Duo.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -397,7 +399,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Pâle et lente"
+  %  \tocItem \markup {\typewriter "12.&nbsp;" \sans "Pâle et lente"}
   %  \include "20_melodies_pour_chant_et_piano-12_Pale_et_lente.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -405,7 +407,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le soir sur l'eau"
+  %  \tocItem \markup {\typewriter "13.&nbsp;" \sans "Le soir sur l'eau"}
   %  \include "20_melodies_pour_chant_et_piano-13_Le_soir_sur_l_eau.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -413,7 +415,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Il pleut des pétales de fleurs"
+  %  \tocItem \markup {\typewriter "14.&nbsp;" \sans "Il pleut des pétales de fleurs"}
   %  \include "20_melodies_pour_chant_et_piano-14_Il_pleut_des_pétales_de_fleurs.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -421,7 +423,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Je suis ébauché ce soir"
+  %  \tocItem \markup {\typewriter "15.&nbsp;" \sans "Je suis ébauché ce soir"}
   %  \include "20_melodies_pour_chant_et_piano-15_Je_suis_ebauche_ce_soir.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -429,7 +431,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Désir d'hiver"
+  %  \tocItem \markup {\typewriter "16.&nbsp;" \sans "Désir d'hiver"}
   %  \include "20_melodies_pour_chant_et_piano-16_Désir_d_hiver.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -437,7 +439,7 @@ bookpartPaperStretch = \paper {
 
   \bookpart {
     \cancelBookHeader
-    \tocItem \markup "Sur la terre il tombe de la neige"
+    \tocItem \markup {\typewriter "17.&nbsp;" \sans "Sur la terre il tombe de la neige"}
     \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
     \cancelTagLine
     \bookpartPaperStretch
@@ -445,7 +447,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "En mai"
+  %  \tocItem \markup {\typewriter "18.&nbsp;" \sans "En mai"}
   %  \include "20_melodies_pour_chant_et_piano-18_En_mai.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -453,7 +455,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Le temps des saintes"
+  %  \tocItem \markup {\typewriter "19.&nbsp;" \sans "Le temps des saintes"}
   %  \include "20_melodies_pour_chant_et_piano-19_Le_temps_des_Saintes.ly"
   %  \cancelTagLine
   %  \bookpartPaper
@@ -461,7 +463,7 @@ bookpartPaperStretch = \paper {
 
   %\bookpart {
   %  \cancelBookHeader
-  %  \tocItem \markup "Chanson de bord"
+  %  \tocItem \markup {\typewriter "20.&nbsp;" \sans "Chanson de bord"}
   %  \include "20_melodies_pour_chant_et_piano-20_Chanson_de_bord.ly"
   %  \cancelTagLine
   %  \bookpartPaper
