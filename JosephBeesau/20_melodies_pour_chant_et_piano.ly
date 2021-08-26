@@ -22,6 +22,7 @@ bookPaper = \paper {
     bottom-margin = 2\cm
     left-margin = 2\cm
     right-margin = 2\cm
+
     bookTitleMarkup = \markup \column {
       \fill-line { \sans \fontsize #5 \fromproperty #'header:composer }
       \combine \null \vspace #7
@@ -80,6 +81,24 @@ bookpartPaper = \paper {
   outer-margin = 1\cm
   binding-offset = 0\cm
 
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
+
+  #(include-special-characters)
+}
+bookpartPaperStretch = \paper {
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  %left-margin = 2\cm
+  %right-margin = 2\cm
+  two-sided = ##t
+  inner-margin = 1\cm
+  outer-margin = 1\cm
+  binding-offset = 0\cm
+
   #(include-special-characters)
 }
 \book {
@@ -126,13 +145,13 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \tocItem \markup "Les plaintes d'Ariane"
-  %  \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \tocItem \markup "Les plaintes d'Ariane"
+    \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   %\bookpart {
   %  \cancelBookHeader
@@ -219,7 +238,7 @@ bookpartPaper = \paper {
     \tocItem \markup "Sur la terre il tombe de la neige"
     \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
     \cancelTagLine
-    \bookpartPaper
+    \bookpartPaperStretch
   }
 
   %\bookpart {
@@ -253,6 +272,24 @@ bookpartPaper = \paper {
 %%%%%
 %%%%%
 bookpartPaper = \paper {
+  top-margin = 1\cm
+  bottom-margin = 1\cm
+  left-margin = 1\cm
+  right-margin = 1\cm
+  two-sided = ##f
+  inner-margin = 0\cm
+  binding-offset = 0\cm
+  outer-margin = 0\cm
+
+  markup-system-spacing =
+    #'((padding . 20)
+       (basic-distance . 15)
+       (minimum-distance . 20)
+       (stretchability . 12))
+
+  #(include-special-characters)
+}
+bookpartPaperStretch = \paper {
   top-margin = 1\cm
   bottom-margin = 1\cm
   left-margin = 1\cm
@@ -310,13 +347,13 @@ bookpartPaper = \paper {
     \bookpartPaper
   }
 
-  %\bookpart {
-  %  \cancelBookHeader
-  %  \tocItem \markup "Les plaintes d'Ariane"
-  %  \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
-  %  \cancelTagLine
-  %  \bookpartPaper
-  %}
+  \bookpart {
+    \cancelBookHeader
+    \tocItem \markup "Les plaintes d'Ariane"
+    \include "20_melodies_pour_chant_et_piano-06_Les_plaintes_d_Ariane.ly"
+    \cancelTagLine
+    \bookpartPaper
+  }
 
   %\bookpart {
   %  \cancelBookHeader
@@ -403,7 +440,7 @@ bookpartPaper = \paper {
     \tocItem \markup "Sur la terre il tombe de la neige"
     \include "20_melodies_pour_chant_et_piano-17_Sur_la_terre_il_tombe_de_la_neige.ly"
     \cancelTagLine
-    \bookpartPaper
+    \bookpartPaperStretch
   }
 
   %\bookpart {
