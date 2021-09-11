@@ -55,7 +55,7 @@ reponsSopranosMusic = \relative c'' {
   \partial 4 c,4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
   r4 f4 g a bf2 a g2. \breathe
   a4\( d2 d4 d c2 c4 bf a2 a a2.\) \breathe
-  a4\( <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize e'>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
+  a4\( <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize c>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
 
   d,4\( e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2.\) \breathe
@@ -83,12 +83,12 @@ reponsAltosMusic = \relative c' {
   e4 f1 g1 f1 e2. \breathe
   e4 f1 g1 f1 e2. \breathe r4
 
-  d4 bf2. d4 e1 d2 e f1 \breathe % J'ai vu les anges
+  \partial 4 d4 bf2. d4 e1 d2 e f1 \breathe % J'ai vu les anges
   g1 f2 g4 f e2 d cs2. \breathe
   e4 e1 d2 e2 e1 f2. \breathe
   e4 e1 d2 e4 d d2. cs4 a1
 
-  s1 f'2. f4 e2 e d d e d d cs2 % Nous le savons
+  s4 d4 d d f2. f4 e2 e d d e d d cs2 % Nous le savons
   e2 e4 e d2. d4 bf2 a a1
   }
 reponsTenorsMusic =  \relative c' {
@@ -105,9 +105,9 @@ reponsTenorsMusic =  \relative c' {
   \partial 4 s4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
   bf4 a1 a d2 df c2. \breathe
   a4 a1 c c2 b4 d cs2. \breathe
-  a4 a1 c c2 b4 d cs2. d,4 \breathe r4
+  a4 a1 c c2 b4 d cs2. \breathe r4
 
-  g1 bf a2 c c1 \breathe % J'ai vu les anges
+  \partial 4 d,4 g1 bf a2 c c1 \breathe % J'ai vu les anges
   d2 a a c4 b a2 gs a2. \breathe
   cs4 d2 a2 a2 d2 d2 c2 c2. \breathe
   cs4  d2 a a d4 c bf2 a4 g f1
@@ -133,13 +133,13 @@ reponsBassesMusic =  \relative c {
   cs4 d1 e f2 g a2. \breathe
   cs,4 d1 e f2 g a2. \breathe r4
 
-  d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
+  \partial 4 d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
   f'2 e d c4 d e2 e e2. \breathe
   a,4 b2 cs d4 c bf a g2 c f4 f, g \breathe
   a4 b2 cs d4 c bf a g2 a d1 \fermata
 
   r4 d4 d d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
-  a2 b4 cs d4 c bf g g2 a d1 \fermata
+  a2 b4 cs d4 c bf g a2 a d1 \fermata
   }
 reponsLyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge.
