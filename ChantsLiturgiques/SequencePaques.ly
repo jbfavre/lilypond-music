@@ -9,7 +9,7 @@ headers = \header {
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   subsubtitle = "Clichy la Garenne, août 2021"
-  dedication = "Au père Thomas B. avec toute mon amitié"
+  dedication = "Au père Thomas Binot, curé de Clichy, avec toute mon amitié"
   }
 
 cantusSolistMusic = {
@@ -35,7 +35,7 @@ reponsRhythms = {
   \markCustom "D"
   \partial 4 s4 s1*14 \bar "||" \break % Dis-nous Marie Madeleine…
   \markCustom "E"
-                s1*16 \bar "||" \break % J'ai vu les anges
+  \partial 4 s4 s1*16 \bar "||" \break % J'ai vu les anges
   \markCustom "F"
                 s1*10 \bar "|." \break % Nous le savons
   }
@@ -54,7 +54,7 @@ reponsSopranosMusic = \relative c'' {
   \partial 4 c,4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
   r4 f4 g a bf2 a g2. \breathe
   a4 d2 d4 d c2 c4 bf a2 a a2. \breathe
-  a4 <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize e'>2 <a \parenthesize d> <a \parenthesize cs>2. \breathe
+  a4 <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize e'>2 <a \parenthesize d> <a \parenthesize cs>2. \breathe r4
 
   d,4 e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2. \breathe
@@ -76,10 +76,10 @@ reponsAltosMusic = \relative c' {
   e4 e1 d1 cs1
   e2  e4 g a2 a2 a1
 
-  \partial 4 c,4 f1 g2. e4 d1 \breathe % Dis-nous Marie Madeleine…
+  \partial 4 s4 f1 g2. e4 d1 \breathe % Dis-nous Marie Madeleine…
   d1 f1 e2. \breathe
   e4 f1 g1 f1 e2. \breathe
-  e4 f1 g1 f2 e e2. \breathe
+  e4 f1 g1 f2 e e2. \breathe r4
 
   d4 bf2. d4 e1 d2 e f1 \breathe % J'ai vu les anges
   g1 f2 g4 f e2 d cs2. \breathe
@@ -87,10 +87,10 @@ reponsAltosMusic = \relative c' {
   f4 e1 d2 e4 d d2. cs4 a1
 
   d2 d4 d f2. f4 e2 e d d e d d cs2 % Nous le savons
-  e2 e4 e d2. d4 a2 a a1
+  e2 e4 e d2. d4 bf2 a a1
   }
 reponsTenorsMusic =  \relative c' {
-  \partial 4 d4 e2 d2 a2. a4 c2. g4 c2 b a2. \fermata r4 % Chrétiens offrez…
+  \partial 4 d4 e2 d2 a2 a2 c2. c4 c2 b a2. \fermata r4 % Chrétiens offrez…
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
   a4 a2 c2 c2 a4 b c4 b a2 \breathe
@@ -100,10 +100,10 @@ reponsTenorsMusic =  \relative c' {
   a2 c c4 b a gs a2 r4 cs d2 a (a2) bf a1
   cs2 d4 e f2 e f1
 
-  \partial 4 c4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
+  \partial 4 s4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
   bf4 a1 a d2 df c2. \breathe
   a4 a1 c c2. d4 cs2. \breathe
-  a4 a1 c c2. d4 cs2. d,4 \breathe
+  a4 a1 c c2. d4 cs2. d,4 \breathe r4
 
   g1 bf a2 c c1 \breathe % J'ai vu les anges
   d2 a a c4 b a2 gs a2. \breathe
@@ -111,7 +111,7 @@ reponsTenorsMusic =  \relative c' {
   c4  bf2 a a d bf2 a4 g f1
 
   d'2 d4 d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
-  cs2 d4 a a2 g4 bf g2 g8 f e4 f1
+  cs2 d4 a a2 g4 bf a g g8 f e4 f1
   }
 reponsBassesMusic =  \relative c {
   \partial 4 d4 cs a b cs d2. c4 f,2. g4 a2 b cs2. \fermata r4 % Chrétiens offrez…
@@ -124,12 +124,12 @@ reponsBassesMusic =  \relative c {
   d2 c f,4 g a b cs2 r4
   a4 b2 cs d2 g, a1
   %a2 b4 cs d2 g,4 a d1 \fermata
-  a'2 gs4 g f g a g d1 \fermata
+  a2 gs4 g f g a2 d,1 \fermata
 
-  \partial 4 c'4 f,1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
+  \partial 4 \oneVoice r4 \voiceTwo f'1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
   c bf1 c2. \breathe
   cs4 d1 e f2 g a2. \breathe
-  cs,4 d1 e f2 g a2. \breathe
+  cs,4 d1 e f2 g a2. \breathe r4
 
   d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
   f'2 e d c4 d e2 e e2. \breathe
@@ -181,23 +181,18 @@ OtherPageHeaders = \header {
   }
 
 FirstScorePaper = \paper {
-    top-margin = 1\cm
-    bottom-margin = 1\cm
-    left-margin = 1\cm
-    right-margin = 1\cm
-    indent = 1\cm
-    % Plan for recto-verso printing with inner margin
-    two-sided = ##t
-    inner-margin =  2\cm
-    outer-margin = 1.5\cm
+    left-margin = 2\cm
+    right-margin = 2\cm
+    bottom-margin = 0.5\cm
+    two-sided = ##f
 
     oddFooterMarkup = {}
     #(include-special-characters)
 
-    %markup-system-spacing = #'((basic-distance . 30)
-    %   (minimum-distance . 30)
-    %   (padding . 5)
-    %   (stretchability . 5))
+    markup-system-spacing = #'((basic-distance . 30)
+      (minimum-distance . 30)
+       (padding . 4)
+       (stretchability . 5))
     %top-markup-spacing = #'((basic-distance . 3)
     %   (minimum-distance . 3)
     %   (padding . 3)
@@ -206,29 +201,32 @@ FirstScorePaper = \paper {
     %   (minimum-distance . 6)
     %   (padding . 6)
     %   (stretchability . 5))
-    %system-system-spacing = #'((basic-distance . 1)
+    %system-system-spacing = #'((basic-distance . 10)
     %   (minimum-distance . 1)
     %   (padding . 1)
     %   (stretchability . 3))
     scoreTitleMarkup = \markup {
-      \columns {
+      \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \fill-line {
-          \column {
-            \line {
-              \left-column {
-                \fontsize #8 \sans \fromproperty #'header:title
-                \fontsize #1 \typewriter \fromproperty #'header:subtitle
+        \vspace #1
+        \columns {
+          \fill-line {
+            \column {
+              \line {
+                \left-column {
+                  \fontsize #8 \sans \fromproperty #'header:title
+                  \fontsize #1 \typewriter \fromproperty #'header:subtitle
+                }
               }
             }
-          }
-          \column {
-            \line {
-              \fontsize #-1
-              \left-column {
-                \line { \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet \bold " " } }
-                \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
-                \typewriter \italic \fromproperty #'header:subsubtitle
+            \column {
+              \line {
+                \fontsize #-1
+                \left-column {
+                  \line { \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet \bold " " } }
+                  \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
+                  \typewriter \italic \fromproperty #'header:subsubtitle
+                }
               }
             }
           }
@@ -282,11 +280,25 @@ AllScoreLayout = \layout {
         \new ChoirStaff = "solistStaff" \with {
           instrumentName = "Soliste"
           shortInstrumentName = "S."
+          \override VerticalAxisGroup.staff-staff-spacing.basic-distance =
+            #'(('basic-distance  . 5)
+               (minimum-distance . 3)
+               (padding . 1)
+               (stretchability . 0))
         } {
-          \new Voice = "solistVoice" { \voiceOne \reponsSopranosMusic }
+          \key f \major \time 2/2
+          \new Voice = "solistVoice" { \oneVoice \reponsSopranosMusic }
         }
         \new Lyrics \lyricsto "solistVoice" { \reponsLyrics }
-        \new PianoStaff = "PianoStaff" \with { shortInstrumentName = "O." }
+        \new PianoStaff = "PianoStaff" \with {
+          \override VerticalAxisGroup.staff-staff-spacing.basic-distance =
+            #'(('basic-distance  . 5)
+               (minimum-distance . 3)
+               (padding . 1)
+               (stretchability . 0))
+          instrumentName = "Orgue"
+          shortInstrumentName = "O."
+        }
         <<
           \new Staff = "reponsHighStaff"
           <<
