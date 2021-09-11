@@ -9,22 +9,23 @@ headers = \header {
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   subsubtitle = "Clichy la Garenne, août 2021"
-  dedication = "Au père Thomas Binot, curé de Clichy, avec toute mon amitié"
+  dedication = "Au père Thomas Binot, curé de Clichy, avec mon indéfectible amitié"
   }
 
 cantusSolistMusic = {
   \clef "vaticana-do3"
   %\noBreak
   d c d f g f e d \finalis
-}
+  }
 amenSolistMusic = {
   \clef "vaticana-do3"
   \[ d\melisma e d\melismaEnd \] \[ \augmentum c\melisma \pes \augmentum d\melismaEnd \] \divisioMinima c f \[ e\melisma \flexa \deminutum d\melismaEnd \] d \finalis
-}
+  }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%     Répons     %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-reponsRhythms = {
+solisteDynamics = {
   \key f \major \time 2/2
   \markCustom "A"
   \partial 4 s4\mf s1*5  \bar "||" \break % Chrétiens offrez…
@@ -38,35 +39,37 @@ reponsRhythms = {
   \markCustom "E"
   \partial 4 s4\mf\< s1*4 s4\!\f\< s2. s1*2 s4\!\> s2\! s4\mf s1*8 \bar "||" \break % J'ai vu les anges
   \markCustom "F"
-                s1*7 s2 s2^\markup{\italic rall.} s1*2 \bar "|." \break % Nous le savons
+                s1*7 s2 s2-\markup{\italic rall.}\> s1 s2. s4\! \bar "|." \break % Nous le savons
   }
-reponsSopranosMusic = \relative c'' {
+
+sopranosMusic = \relative c'' {
   \partial 4 a4 a2 a4 (g) f4 e f g a b c b a2 (gs) a2.\fermata r4 % Chrétiens offrez…
 
   \partial 4 a4 g g a a f2 e4 e d2 r4 % L'Agneau…
   d4 f2 g4 g a2 c4 b a4 gs a2 \breathe
-  g2 a4 a f f e e d2\fermata d4 r4
+  g2 %{ apaisé %} a4 a f f e e d2\fermata d4 r4
 
   \partial 4 d d2 a'4 a a4 a a4 g f2 e2 \breathe % La mort et la vie…
   f2 g4 g a2 c4-> b a2 r4
   a4 g g a a f2 f e1
-  r4 a4 b cs d2 (cs) d1\fermata
+  r4 %{ éclatant %} a4 b cs d2 (cs) d1\fermata
 
-  \partial 4 c,4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
+  \partial 4 %{ un peu plus allant %} c,4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
   r4 f4 g a bf2 a g2. \breathe
-  a4\( d2 d4 d c2 c4 bf a2 a a2.\) \breathe
-  a4\( <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize c>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
+  %{ Si possible, voix de femme %} a4\( d2 d4 d c2 c4 bf a2 a a2.\) \breathe
+  a4\( %{ Si possible, on prendra les notes supérieures entre parenthèse %} <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize c>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
 
   d,4\( e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2.\) \breathe
-  a4\( g g a4 g f2 g4 a bf2 bf a2.\) \breathe
+  %{ intérieur et tendre %} a4\( g g a4 g f2 g4 a bf2 bf a2.\) \breathe
   a4\( g g a g f2 g4 (f) e2 e d1\)\fermata
 
-  r4 d d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
+  %{ sûr et confiant %} r4 d d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
   a2 g4 a f2
-  e4 e d2 d4 c! d1\fermata
+  %{ implorant %} e4 e d2 d4 c! d1\fermata
   }
-reponsAltosMusic = \relative c' {
+
+altosMusic = \relative c' {
   \partial 4 f4 e1 d2. e4 f2. f4 e1 e2. r4 % Chrétiens offrez…
 
   \partial 4 e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
@@ -91,7 +94,8 @@ reponsAltosMusic = \relative c' {
   s4 d4 d d f2. f4 e2 e d d e d d cs2 % Nous le savons
   e2 e4 e d2. d4 bf2 a a1
   }
-reponsTenorsMusic =  \relative c' {
+
+tenorsMusic =  \relative c' {
   \partial 4 d4 e2 d2 a2 a2 c2. c4 c2 b a2. \fermata r4 % Chrétiens offrez…
 
   \partial 4 cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
@@ -115,7 +119,8 @@ reponsTenorsMusic =  \relative c' {
   s1 d'2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
   cs2 d4 a a2 g4 bf a g g8 f e4 f1
   }
-reponsBassesMusic =  \relative c {
+
+bassesMusic =  \relative c {
   \partial 4 d4 cs a b cs d2. c4 f,2. g4 a2 b cs2. \fermata r4 % Chrétiens offrez…
 
   \partial 4 a4 b2 cs2 d4 c g a d2 r4 % L'Agneau…
@@ -126,9 +131,9 @@ reponsBassesMusic =  \relative c {
   d2 c f,4 g a b cs2 r4
   a4 b2 cs d2 g, a1
   %a2 b4 cs d2 g,4 a d1 \fermata
-  a2 gs4 g f g a2 d,1 \fermata
+  a'2 gs4 g f g a2 d,1 \fermata
 
-  \partial 4 \oneVoice r4 \voiceTwo f'1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
+  \partial 4 \oneVoice r4 \voiceTwo f1 e2. c4 d1 \breathe % Dis-nous Marie Madeleine…
   c bf1 c2. \breathe
   cs4 d1 e f2 g a2. \breathe
   cs,4 d1 e f2 g a2. \breathe r4
@@ -141,7 +146,7 @@ reponsBassesMusic =  \relative c {
   r4 d4 d d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
   a2 b4 cs d4 c bf g a2 a d1 \fermata
   }
-reponsLyrics = \lyricmode {
+Lyrics = \lyricmode {
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge.
 
   L'A -- gneau a ra -- che -- té les bre -- bis&nbsp;;
@@ -167,27 +172,17 @@ reponsLyrics = \lyricmode {
 
   Roi vic -- to -- rieux
   Prends- -- nous tous en pi -- tié&nbsp;!
-
   }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%          DRAW PARTITION          %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FirstPageHeaders = \headers
-OtherPageHeaders = \header {
-  composer = ##f
-  dedication = ##f
-  poet = ##f
-  subsubtitle = ##f
-  subtitle = ##f
-  title = ##f
-  }
-
-FirstScorePaper = \paper {
+scoreHeaders = \headers
+scorePaper = \paper {
     left-margin = 2\cm
     right-margin = 2\cm
     bottom-margin = 0.5\cm
     two-sided = ##f
-
     oddFooterMarkup = {}
     #(include-special-characters)
 
@@ -195,14 +190,6 @@ FirstScorePaper = \paper {
       (minimum-distance . 30)
        (padding . 4)
        (stretchability . 5))
-    %top-markup-spacing = #'((basic-distance . 3)
-    %   (minimum-distance . 3)
-    %   (padding . 3)
-    %   (stretchability . 3))
-    %top-system-spacing = #'((basic-distance . 6)
-    %   (minimum-distance . 6)
-    %   (padding . 6)
-    %   (stretchability . 5))
     system-system-spacing = #'((basic-distance . 12)
        (minimum-distance . 5)
        (padding . 1)
@@ -235,10 +222,11 @@ FirstScorePaper = \paper {
         }
       }
     }
-    oddFooterMarkup = {}
   }
 AllScoreLayout = \layout {
       ragged-last = ##t
+      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override Score.RehearsalMark.font-family = #'typewriter
       \context {
           \Staff
           \RemoveEmptyStaves
@@ -254,15 +242,13 @@ AllScoreLayout = \layout {
           \RemoveEmptyStaves
           \override InstrumentName #'font-name = #"Monospace Regular"
       }
-      \override LyricText #'font-name = #"Latin Modern Sans"
-      \override Score.RehearsalMark.font-family = #'typewriter
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bookpart { % Stance
-  \FirstScorePaper
+  \scorePaper
   \score {
     { % Partition Stance
       <<
@@ -284,10 +270,11 @@ AllScoreLayout = \layout {
                (minimum-distance . 3)
                (padding . 1)
                (stretchability . 0))
-        } <<
-          \new Dynamics = "solistDynamics" { \reponsRhythms }
-          \new Voice = "solistVoice" { \key f \major \time 2/2 \oneVoice \reponsSopranosMusic }
-          \new Lyrics \lyricsto "solistVoice" { \reponsLyrics }
+        }
+        <<
+          \new Dynamics = "solistDynamics" { \solisteDynamics }
+          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice \sopranosMusic }
+          \new Lyrics \lyricsto "soliste" { \Lyrics }
         >>
         \new PianoStaff = "PianoStaff" \with {
           \override VerticalAxisGroup.staff-staff-spacing.basic-distance =
@@ -299,17 +286,17 @@ AllScoreLayout = \layout {
           shortInstrumentName = "O."
         }
         <<
-          \new Staff = "reponsHighStaff"
+          \new Staff = "highStaff"
           <<
             \clef "treble"
-            \new Voice = "reponsSoprano" { \key f \major \time 2/2 \voiceOne \reponsSopranosMusic }
-            \new Voice = "reponsAlto" { \key f \major \time 2/2 \voiceTwo \reponsAltosMusic }
+            \new Voice = "soprano" { \key f \major \time 2/2 \voiceOne \sopranosMusic }
+            \new Voice = "alto" { \key f \major \time 2/2 \voiceTwo \altosMusic }
           >>
-          \new Staff  = "reponsLowStaff"
+          \new Staff  = "lowStaff"
           <<
             \clef "bass"
-            \new Voice = "reponsTenor" { \key f \major \time 2/2 \voiceOne \reponsTenorsMusic }
-            \new Voice = "reponsBass" { \key f \major \time 2/2 \voiceTwo \reponsBassesMusic }
+            \new Voice = "tenor" { \key f \major \time 2/2 \voiceOne \tenorsMusic }
+            \new Voice = "bass" { \key f \major \time 2/2 \voiceTwo \bassesMusic }
           >>
         >>
       >>
@@ -317,7 +304,6 @@ AllScoreLayout = \layout {
         \new VaticanaVoice = "cantus" {
           \magnifyStaff #(magstep 3.5)
           \amenSolistMusic
-          \break
         }
         \new Lyrics \lyricsto "cantus" {
           A- men, Al- le- lu- ia.
@@ -325,6 +311,6 @@ AllScoreLayout = \layout {
       >>
     }
     \AllScoreLayout
-    \FirstPageHeaders
+    \scoreHeaders
   }
 }
