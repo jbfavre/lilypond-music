@@ -201,10 +201,10 @@ FirstScorePaper = \paper {
     %   (minimum-distance . 6)
     %   (padding . 6)
     %   (stretchability . 5))
-    %system-system-spacing = #'((basic-distance . 10)
-    %   (minimum-distance . 1)
-    %   (padding . 1)
-    %   (stretchability . 3))
+    system-system-spacing = #'((basic-distance . 12)
+       (minimum-distance . 5)
+       (padding . 1)
+       (stretchability . 10))
     scoreTitleMarkup = \markup {
       \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
