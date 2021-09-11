@@ -9,7 +9,7 @@ headers = \header {
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   subsubtitle = "Clichy la Garenne, août 2021"
-  dedication = "Au père Thomas Binot, curé de Clichy, avec mon indéfectible amitié"
+  dedication = "Au père Thomas Binot, curé de Clichy la Garenne, avec mon indéfectible amitié"
   }
 
 cantusSolistMusic = {
@@ -57,7 +57,7 @@ sopranosMusic = \relative c'' {
   \partial 4 %{ un peu plus allant %} c,4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
   r4 f4 g a bf2 a g2. \breathe
   %{ Si possible, voix de femme %} a4\( d2 d4 d c2 c4 bf a2 a a2.\) \breathe
-  a4\( %{ Si possible, on prendra les notes supérieures entre parenthèse %} <d \parenthesize f>2. <d \parenthesize f>4 <c \parenthesize e> <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize c>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
+  a4\( %{ Si possible, on prendra les notes supérieures entre parenthèse %} <d \parenthesize f>2 <d \parenthesize f> <c \parenthesize e>4 <d \parenthesize e> <c \parenthesize e> <bf \parenthesize d> <a \parenthesize c>2 <a \parenthesize d> <a \parenthesize cs>2.\) \breathe r4
 
   d,4\( e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2.\) \breathe
