@@ -59,7 +59,7 @@ reponsSopranosMusic = \relative c'' {
   d,4 e2. f4 g2 f4 (e) f2 g a1 \breathe % J'ai vu les Anges
   b2 cs d e4 d c!2 b a2. \breathe
   a4 g g a4 g f2 g4 a bf2 bf a2. \breathe
-  a4 g bf a g f2 g4 (f) e2 e d1 \fermata
+  a4 g g a g f2 g4 (f) e2 e d1 \fermata
 
   d2 d4 d a'2. a4 a2 a4 g4 f f e f g2 f e1 % Nous le savons
   a2 g4 a f2 e4 e d2 d4 c! d1 \fermata
@@ -84,7 +84,7 @@ reponsAltosMusic = \relative c' {
   d4 bf2. d4 e1 d2 e f1 \breathe % J'ai vu les anges
   g1 f2 g4 f e2 d cs2. \breathe
   e4 e1 d2 e2 e1 f2. \breathe
-  f4 e1 d2 e4 d d2. cs4 a1
+  e4 e1 d2 e4 d d2. cs4 a1
 
   d2 d4 d f2. f4 e2 e d d e d d cs2 % Nous le savons
   e2 e4 e d2. d4 bf2 a a1
@@ -108,7 +108,7 @@ reponsTenorsMusic =  \relative c' {
   g1 bf a2 c c1 \breathe % J'ai vu les anges
   d2 a a c4 b a2 gs a2. \breathe
   cs4 d2 a2 a2 d2 d2 c2 c2. \breathe
-  c4  bf2 a a d bf2 a4 g f1
+  cs4  d2 a a d4 c bf2 a4 g f1
 
   d'2 d4 d d2. d4 a2 d4 a a2 g4 a bf2 b b a2 % Nous le savons
   cs2 d4 a a2 g4 bf a g g8 f e4 f1
@@ -133,8 +133,8 @@ reponsBassesMusic =  \relative c {
 
   d,4 c2 bf g bf4 c d2 c f,1 \breathe % J'ai vu les anges
   f'2 e d c4 d e2 e e2. \breathe
-  a,4 b2 cs d4 c bf a g2 c f2. \breathe
-  f,4 g2 a d4 c bf a g2 a d1 \fermata
+  a,4 b2 cs d4 c bf a g2 c f4 f, g \breathe
+  a4 b2 cs d4 c bf a g2 a d1 \fermata
 
   d2 d4 d d2. d4 cs a b cs d c bf a g2 gs a1 % Nous le savons
   a2 b4 cs d4 c bf g g2 a d1 \fermata
