@@ -360,9 +360,7 @@ AllScoreLayout = \layout {
   \FirstScorePaper
   \score {
     { % Partition Stance
-      \new ChoirStaff = "ChoirStaff"
-      {
-        <<
+      <<
         \new VaticanaVoice = "cantus" {
           \magnifyStaff #(magstep 3.5)
           \cantusSolistMusic
@@ -371,17 +369,25 @@ AllScoreLayout = \layout {
         \new Lyrics \lyricsto "cantus" {
           Vic- ti- mæ Pás- ca- li lau- des
         }
-        >>
+      >>
+      <<
+        \new ChoirStaff = "solistStaff" \with {
+          instrumentName = "Chantre"
+          shortInstrumentName = "Ch."
+        } {
+          \new Voice = "solistVoice" { \voiceOne \reponsSopranosMusic }
+        }
+        \new Lyrics \lyricsto "solistVoice" { \reponsLyrics }
+        \new PianoStaff = "PianoStaff" \with { shortInstrumentName = "O." }
         <<
-          \new Staff = "reponsHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
+          \new Staff = "reponsHighStaff"
           <<
             \clef "treble"
             \new Voice = "reponsRhythms" { \reponsRhythms \bar "||" }
             \new Voice = "reponsSoprano" { \voiceOne \reponsSopranosMusic }
             \new Voice = "reponsAlto" { \voiceTwo \reponsAltosMusic }
           >>
-          \new Lyrics \lyricsto "reponsSoprano" { \reponsLyrics }
-          \new Staff  = "reponsLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
+          \new Staff  = "reponsLowStaff"
           <<
             \clef "bass"
             \new Voice = "reponsRhythms" { \reponsRhythms }
@@ -389,7 +395,8 @@ AllScoreLayout = \layout {
             \new Voice = "reponsBass" { \voiceTwo \reponsBassesMusic }
           >>
         >>
-        <<
+      >>
+      <<
         \new VaticanaVoice = "cantus" {
           \magnifyStaff #(magstep 3.5)
           \amenSolistMusic
@@ -398,8 +405,7 @@ AllScoreLayout = \layout {
         \new Lyrics \lyricsto "cantus" {
           A- men, Al- le- lu- ia.
         }
-        >>
-      }
+      >>
     }
     \AllScoreLayout
     \FirstPageHeaders
