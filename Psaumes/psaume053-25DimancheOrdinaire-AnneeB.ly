@@ -76,7 +76,7 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c' {
   \markCustom "Psalmodie par verset" \cadenzaOn
   \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "||"
-  \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 \bar "|." e4^\markup{\roman &dagger;} \bar "|."
+  \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 \bar "|." e4^\markup{\huge \roman &dagger;} \bar "|."
   }
 
 altoVerseMusic = \relative c' {
@@ -87,7 +87,7 @@ altoVerseMusic = \relative c' {
 
 tenorVerseMusic = \relative c' {
   a\breve d1 cs4
-  d\breve d1 cs4
+  d\breve d1 cs!4
   a4
   }
 
@@ -109,7 +109,7 @@ verseLyrics = \markuplist {
     }
     \hspace #1
     \left-column{
-      \concat { \typewriter "2. " "Des étrangers se sont lev" \underline é "s contre moi," \roman \super &dagger;}
+      \concat { \typewriter "2. " "Des étrangers se sont lev" \underline é "s contre moi," \roman \super \huge &dagger;}
       \concat { \typewriter "   " "des puissants ch" \underline e "rchent ma perte&nbsp;:"}
       \concat { \typewriter "   " "ils n’ont pas souc" \underline i " de Dieu."}
     }
