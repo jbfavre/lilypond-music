@@ -1,5 +1,13 @@
 \version "2.18.2"
 \language "english"
+tempoVerseRallentando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=60
+}
+tempoVerseAcelerando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=120
+}
 %{
   Default settings are needed at the beginning
   because they are used in antiphon & verse music definition
@@ -17,12 +25,12 @@ dedicace = "Clichy la Garenne, juin 2021"
 global = {
   \key g \major
   \time 2/4
+  \tempo 2=70
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
   \override BreathingSign.text = \markup {
@@ -69,51 +77,48 @@ bassAntiphonLyrics = \antiphonLyrics
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoVerseMusic = \relative c'' {
-  \silence \sopranoAntiphonMusic
+sopranoVerseStropheMusic = \relative c'' {
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  g\breve fs1 g4 \bar "||"
-  a\breve a1 g4 \bar "||"
-  b\breve as1 b4 \bar "||"
-  g\breve a?1 a4 \bar "|." \break
-  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-  \key e \minor
+  \tempoVerseAcelerando g\breve fs1 \tempoVerseRallentando g4 \bar "||"
+  \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando g4 \bar "||"
+  \tempoVerseAcelerando b\breve as1 \tempoVerseRallentando b4 \bar "||"
+  \tempoVerseAcelerando g\breve a?1 \tempoVerseRallentando a4 \bar "|." \break
+}
+sopranoVerseMusic = \relative c'' {
   \markCustom "Psalmodie par verset" \cadenzaOn
-  g\breve fs1 g4 \bar "||"
-  g\breve a1 a4 \bar "|."
+  \tempoVerseAcelerando g\breve fs1 \tempoVerseRallentando g4 \bar "||"
+  \tempoVerseAcelerando g\breve a1 \tempoVerseRallentando a4 \bar "|."
   }
 sopranoVerseRepons = \lyricmode {}
-altoVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
+altoVerseStropheMusic = \relative c' {
   e\breve e1 e4
   e\breve ef1 d4
   g\breve g1 g4
   e?\breve g1 fs4
-
+}
+altoVerseMusic = \relative c' {
   e\breve e1 e4
   e\breve g1 fs4
   }
 
-tenorVerseMusic = \relative c' {
-  \silence \sopranoAntiphonMusic
+tenorVerseStropheMusic = \relative c' {
   b\breve c1 b4
   a\breve g1 b4
   d\breve ef1 d4
   b\breve c1 c4
-
+}
+tenorVerseMusic = \relative c' {
   b\breve c1 b4
   b\breve c1 c4
   }
 
-bassVerseMusic = \relative c {
-  \silence \sopranoAntiphonMusic
+bassVerseStropheMusic = \relative c {
   e\breve a,1 e'4
   c\breve c1 g'4
   g\breve c,1 g'4
   e?\breve ef1 d4
-
-  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-  \key e \minor
+}
+bassVerseMusic = \relative c {
   e\breve a,1 e'4
   e\breve ef1 d4
   }
@@ -158,15 +163,227 @@ staffCustomSize = 16
 partition = {
   <<
     % Antienne à 4 voix mixtes
-    \include "../libs/layouts/commonAntiphonFourVoices.ily"
-    \include "../libs/layouts/commonPiano.ily"
+    %\include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \new ChoirStaff = "Antophon4Voices" <<
+      \new Staff = "AntiphonSopranoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Soprano"
+        \clef "treble"
+        \new Voice = "antiphonSoprano" { \global \sopranoAntiphonMusic}
+        \new Lyrics \lyricsto "antiphonSoprano" { \sopranoAntiphonLyrics }
+      >>
+      \new Staff = "AntiphonAltoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Alto"
+        \clef "treble"
+        \new Voice = "antiphonAlto" { \global \altoAntiphonMusic }
+        \new Lyrics \lyricsto "antiphonAlto" { \altoAntiphonLyrics }
+      >>
+      \new Staff = "AntiphonTenorStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Ténor"
+        \clef "treble_8"
+        \new Voice = "antiphonTenor" { \global \tenorAntiphonMusic }
+        \new Lyrics \lyricsto "antiphonTenor" { \tenorAntiphonLyrics }
+      >>
+      \new Staff  = "AntiphonBassStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Basse"
+        \clef "bass"
+        \new Voice = "AntiphonBass" { \global \bassAntiphonMusic }
+        \new Lyrics \lyricsto "AntiphonBass" { \bassAntiphonLyrics }
+      >>
+    >>
+    %\include "../libs/layouts/commonPiano.ily"
+    \new PianoStaff \with { \pianoProperties } <<
+      \set PianoStaff.instrumentName = #"Orgue"
+      \new Staff <<
+        \set Staff.printPartCombineTexts = ##f
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global \clef treble
+        \new Voice = "soprani" { \voiceOne \pianoSopranoMusic }
+        \new Voice = "alti" { \voiceTwo \pianoAltoMusic }s
+      >>
+      \new Staff <<
+        \set Staff.printPartCombineTexts = ##f
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global \clef bass
+        \new Voice = "tenors" { \voiceThree \pianoTenorMusic }
+        \new Voice = "bass" { \voiceFour \pianoBassMusic }
+      >>
+    >>
     % Psalmodie à 4 voix mixtes
-    \include "../libs/layouts/commonVerseFourVoices.ily"
-    %\new FiguredBass { \figuredBass \verseFiguredBass }
-    %\new FiguredBass { \harmony \verseHarmony }
+    %\include "../libs/layouts/commonVerseFourVoices.ily"
+    \new ChoirStaff = "versePsalmody" <<
+      \new Staff = "verseSopranoAlto" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef treble
+        %\partcombine
+        \new Voice = "verseSoprano" << \voiceOne {\silence \sopranoAntiphonMusic \sopranoVerseStropheMusic \sopranoVerseMusic } >>
+        \new Voice = "verseAlto" << \voiceTwo {\silence \sopranoAntiphonMusic \altoVerseStropheMusic \altoVerseMusic } >>
+      >>
+      \new Staff = "verseTenorBass" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        \new Voice = "verseTenor" << \voiceOne {\silence \sopranoAntiphonMusic \tenorVerseStropheMusic \tenorVerseMusic } >>
+        \new Voice = "verseBass" << \voiceTwo {\silence \sopranoAntiphonMusic \bassVerseStropheMusic \bassVerseMusic } >>
+      >>
+    >>
   >>
 }
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
+partition = {
+  <<
+    % Antienne à 4 voix mixtes
+    %\include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \new ChoirStaff = "Antophon4Voices" <<
+      \new Staff = "AntiphonSopranoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Soprano"
+        \clef "treble"
+        \new Voice = "antiphonSoprano" { \global \sopranoAntiphonMusic}
+      >>
+      \new Staff = "AntiphonAltoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Alto"
+        \clef "treble"
+        \new Voice = "antiphonAlto" { \global \altoAntiphonMusic }
+      >>
+      \new Staff = "AntiphonTenorStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Ténor"
+        \clef "treble_8"
+        \new Voice = "antiphonTenor" { \global \tenorAntiphonMusic }
+      >>
+      \new Staff  = "AntiphonBassStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Basse"
+        \clef "bass"
+        \new Voice = "AntiphonBass" { \global \bassAntiphonMusic }
+      >>
+    >>
+    % Psalmodie à 4 voix mixtes
+    %\include "../libs/layouts/commonVerseFourVoices.ily"
+    \new ChoirStaff = "versePsalmody" <<
+      \new Staff = "verseSopranoAlto" \with { printPartCombineTexts = ##f } <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef treble
+        \new Voice = "verseSoprano" << \voiceOne { \sopranoVerseMusic } >>
+        \new Voice = "verseAlto" << \voiceTwo { \altoVerseMusic } >>
+        \new Lyrics \lyricsto "verseSoprano" { \reponsSopAltLyrics }
+      >>
+      \new Staff = "verseTenorBass" \with { printPartCombineTexts = ##f } <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        \new Voice = "verseTenor" << \voiceOne { \tenorVerseMusic } >>
+        \new Voice = "verseBass" << \voiceTwo { \bassVerseMusic } >>
+        \new Lyrics { \reponsTenBassLyrics }
+      >>
+    >>
+  >>
+}
+partitionStrophe = {
+  <<
+    % Antienne à 4 voix mixtes
+    %\include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \new ChoirStaff = "Antophon4Voices" <<
+      \new Staff = "AntiphonSopranoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Soprano"
+        \clef "treble"
+        \new Voice = "antiphonSoprano" { \global \sopranoAntiphonMusic}
+      >>
+      \new Staff = "AntiphonAltoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Alto"
+        \clef "treble"
+        \new Voice = "antiphonAlto" { \global \altoAntiphonMusic }
+      >>
+      \new Staff = "AntiphonTenorStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Ténor"
+        \clef "treble_8"
+        \new Voice = "antiphonTenor" { \global \tenorAntiphonMusic }
+      >>
+      \new Staff  = "AntiphonBassStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Basse"
+        \clef "bass"
+        \new Voice = "AntiphonBass" { \global \bassAntiphonMusic }
+      >>
+    >>
+    % Psalmodie à 4 voix mixtes
+    %\include "../libs/layouts/commonVerseFourVoices.ily"
+    \new ChoirStaff = "versePsalmody" <<
+      \new Staff = "verseSopranoAlto" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef treble
+        \new Voice = "verseSoprano" << \voiceOne { \sopranoVerseStropheMusic } >>
+        \new Voice = "verseAlto" << \voiceTwo { \altoVerseStropheMusic } >>
+      >>
+      \new Staff = "verseTenorBass" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        \new Voice = "verseTenor" << \voiceOne { \tenorVerseStropheMusic } >>
+        \new Voice = "verseBass" << \voiceTwo { \bassVerseStropheMusic } >>
+      >>
+    >>
+  >>
+}
+\book {
+\bookOutputSuffix "Verset"
+\score {
+  <<
+    \keepWithTag #'audio \unfoldRepeats \partition
+    \context Staff = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+    \context Voice = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+  >>
+  \midi { \set midiMergeUnisons = ##t }
+}
+}
+\book {
+\bookOutputSuffix "Strophe"
+\score {
+  <<
+    \keepWithTag #'audio \unfoldRepeats \partitionStrophe
+    \context Staff = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+    \context Voice = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+  >>
+  \midi { \set midiMergeUnisons = ##t }
+}
+}
