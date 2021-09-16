@@ -14,7 +14,7 @@ cancelTagLine = \header {
 sourceFooter = \markup {
       \smaller \column {
         \center-align \sans \concat { "Transcription depuis l'édition 1920 parue aux É" \smallCaps ditions " M" \smallCaps aurice " S" \smallCaps énart}
-        \center-align \sans \concat { "disponible sur Gallica à l'adresse https://gallica.bnf.fr/ark:/12148/bpt6k382832b"}
+        \center-align \sans \concat { "disponible sur Gallica à l'adresse " \with-url #"https://gallica.bnf.fr/ark:/12148/bpt6k382832b" {\underline{https://gallica.bnf.fr/ark:/12148/bpt6k382832b}}}
       }
     }
 bookPaper = \paper {
