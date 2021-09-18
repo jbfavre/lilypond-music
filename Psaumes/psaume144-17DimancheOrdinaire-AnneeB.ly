@@ -2,6 +2,15 @@
 \language "english"
 \include "../libs/commonFunctions.ily"
 
+tempoVerseRallentando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=60
+}
+tempoVerseAcelerando = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=120
+}
+
 scoreHeader = \header {
   title = "Psaume 144"
   subtitle = \markup { \column { "17ème Dimanche du Temps Ordinaire" "Année B" }}
@@ -14,8 +23,10 @@ scoreHeader = \header {
 %%%%%%%%%%  Global  %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-keyTime = {
-  \time 2/4 \key f \major
+global = {
+  \set Score.tempoHideNote = ##t
+  \tempo 4=70
+  \key f \major
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,61 +73,63 @@ antiphonLyricsBass =  \antiphonLyrics
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-verseRythm = \relative c' {
-  \antiphonRythm \accidentalStyle forget
+verseStropheRythm = \relative c' {
+  \accidentalStyle forget
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe"
   \cadenzaOn
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||" \break
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||" \break
+}
+verseRythm = \relative c' {
   \markCustom "Psalmodie par verset"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 s \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s \bar "||"
   }
+verseStropheMusicSoprano = \relative c' {
+  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4
+  \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando b4 a
+  \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 f
+  \tempoVerseAcelerando g\breve f1 \tempoVerseRallentando e4
+}
 verseMusicSoprano = \relative c' {
-  \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-
-  f\breve g1 a4
-  f\breve e1 e4 e
+  \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4
+  \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando e4 e
   }
 
+verseStropheMusicAlto = \relative c' {
+  \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando f4
+  \tempoVerseAcelerando c\breve e1 \tempoVerseRallentando d4 e
+  \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando e4 d
+  \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando cs4
+}
 verseMusicAlto = \relative c' {
-  \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-
-  d\breve e1 f4
-  d\breve d1 d4 cs
+  \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando f4
+  \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando d4 cs
   }
 
+verseStropheMusicTenor = \relative c' {
+  \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando c4
+  \tempoVerseAcelerando c\breve a1 \tempoVerseRallentando gs4 cs
+  \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando cs4 a
+  \tempoVerseAcelerando bf\breve b!1 \tempoVerseRallentando a4
+}
 verseMusicTenor = \relative c {
-  \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-
-  a'\breve c1 c4
-  bf\breve bf1 a4 a
+  \tempoVerseAcelerando a'\breve c1 \tempoVerseRallentando c4
+  \tempoVerseAcelerando bf\breve bf1 \tempoVerseRallentando a4 a
   }
 
+verseStropheMusicBass = \relative f {
+  \tempoVerseAcelerando d\breve c1 \tempoVerseRallentando f,4
+  \tempoVerseAcelerando f\breve a1 \tempoVerseRallentando e'4 a
+  \tempoVerseAcelerando d,\breve bf1 \tempoVerseRallentando a4 d
+  \tempoVerseAcelerando g,\breve gs1 \tempoVerseRallentando a4
+}
 verseMusicBass = \relative f {
-  \antiphonRythm
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-  d\breve d1 d4
-
-  d\breve c1 f,4
-  g\breve g1 a4 a
+  \tempoVerseAcelerando d\breve c1 \tempoVerseRallentando f,4
+  \tempoVerseAcelerando g\breve g1 \tempoVerseRallentando a4 a
   }
 
 verseLyrics = \markup {
@@ -154,8 +167,13 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-partition = <<
-    % Antienne à 4 voix mixtes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+partition = {
+  % Antienne à 4 voix mixtes
+  <<
     \new ChoirStaff = "antiphonChoirStaff"
     <<
       %\new Staff = "antiphonCounterpointStaff" \with {
@@ -172,7 +190,7 @@ partition = <<
       \new Staff = "antiphonSopranoStaff" \with { instrumentName = "S." shortInstrumentName = "S" }
       <<
         \clef "treble"
-        \keyTime
+        \global
         \new Dynamics \antiphonRythm
         \new Voice = "antiphonSoprano" { \antiphonMusicSoprano }
         \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
@@ -180,7 +198,7 @@ partition = <<
       \new Staff = "antiphonAltoStaff" \with { instrumentName = "A." shortInstrumentName = "A" }
       <<
         \clef "treble"
-        \keyTime
+        \global
         \new Dynamics \antiphonRythm
         \new Voice = "antiphonAlto" { \antiphonMusicAlto }
         \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
@@ -188,7 +206,7 @@ partition = <<
       \new Staff = "antiphonTenorStaff" \with { instrumentName = "T." shortInstrumentName = "T" }
       <<
         \clef "treble_8"
-        \keyTime
+        \global
         \new Dynamics \antiphonRythm
         \new Voice = "antiphonTenor" { \antiphonMusicTenor }
         \new Lyrics \lyricsto "antiphonTenor" { \antiphonLyricsTenor \lyricmode { Al -- le -- lu -- ia&nbsp;! } }
@@ -196,13 +214,13 @@ partition = <<
       \new Staff  = "antiphonBassStaff" \with { instrumentName = "B." shortInstrumentName = "B" }
       <<
         \clef "bass"
-        \keyTime
+        \global
         \new Dynamics \antiphonRythm
         \new Voice = "antiphonBass" { \antiphonMusicBass }
         \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
       >>
     >>
-%{    % Accompagnement Piano / Orgue
+    % Accompagnement Piano / Orgue
     \new PianoStaff = "antiphonPianoStaff" \with {
       instrumentName = #"O."
       shortInstrumentName = #"O"
@@ -212,19 +230,18 @@ partition = <<
       \new Staff = "antiphonPianoStaffSA"
       <<
         \clef treble
-        \keyTime
         \new Voice = "antiphonMusicSoprano" { \voiceOne \antiphonMusicSoprano }
         \new Voice = "antiphonMusicAlto" { \voiceTwo \antiphonMusicAlto }
       >>
       \new Staff = "antiphonPianoStaffTB"
       <<
         \clef bass
-        \keyTime
         \new Voice = "antiphonMusicTenor" { \voiceThree \antiphonMusicTenor }
         \new Voice = "antiphonMusicBass" { \voiceFour \antiphonMusicBass }
       >>
     >>
-%}    % Psalmodie à 4 voix mixtes
+  >>
+    % Psalmodie à 4 voix mixtes
     \new ChoirStaff = "verseChoirStaff" \with { printPartCombineTexts = ##f }
     <<
       \new Staff = "verseChoirStaffSA"
@@ -232,23 +249,21 @@ partition = <<
       <<
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef treble
-        \keyTime
-        \new Voice \verseRythm
-        \new Voice = "verseSoprano" { \voiceOne \verseMusicSoprano }
-        \new Voice { \voiceTwo \verseMusicAlto }
+        \new Voice { \verseStropheRythm \verseRythm }
+        \new Voice = "verseSoprano" {\voiceOne {\key d \minor \verseStropheMusicSoprano \cadenzaOn \verseMusicSoprano }}
+        \new Voice = "verseAlto" {\voiceTwo {\key d \minor \verseStropheMusicAlto \cadenzaOn \verseMusicAlto }}
       >>
       \new Staff = "verseChoirStaffTB"
       \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
       <<
         \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef bass
-        \keyTime
-        \new Voice \verseRythm
-        \new Voice { \voiceOne \verseMusicTenor }
-        \new Voice { \voiceTwo \verseMusicBass }
+        \new Voice { \verseStropheRythm \verseRythm }
+        \new Voice = "verseTenor" {\voiceOne {\key d \minor \verseStropheMusicTenor \cadenzaOn \verseMusicTenor }}
+        \new Voice = "verseBass" {\voiceTwo {\key d \minor \verseStropheMusicBass \cadenzaOn \verseMusicBass }}
       >>
     >>
-  >>
+}
 
 % PDF output
 \paper {
@@ -298,6 +313,7 @@ partition = <<
   }
 }
 
+#(set-global-staff-size 18)
 \score {
   \partition
   \layout {
@@ -325,51 +341,128 @@ partition = <<
   }
   \scoreHeader
 }
-
+\verseLyrics
 % Midi output
+partitionStrophe = {
+      \new PianoStaff = "antiphonMusic"
+      <<
+        \new Staff <<
+          \global \clef treble
+          \new Dynamics \antiphonRythm
+          \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
+          \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
+        >>
+        \new Staff <<
+          \global \clef bass
+          \new Dynamics \antiphonRythm
+          \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
+          \new Voice = "antiphonMusicBass" \antiphonMusicBass
+        >>
+      >>
+      \new ChoirStaff = "verseMusic"
+      <<
+        \new Staff = "verseMusicSA" \with {
+          shortInstrumentName = \markup { \right-column { "S" "A" } }
+        }
+        <<
+          \global
+          \clef treble
+          \new Dynamics \antiphonRythm
+          \new Voice = "verseMusicSoprano" \verseStropheMusicSoprano
+          \new Voice = "verseMusicAlto" \verseStropheMusicAlto
+        >>
+        \new Staff = "verseMusicTB" \with {
+          shortInstrumentName = \markup { \right-column { "T" "B" } }
+        }
+        <<
+          \global
+          \clef bass
+          \new Dynamics \antiphonRythm
+          \new Voice = "verseMusicTenor" \verseStropheMusicTenor
+          \new Voice = "verseMusicBass" \verseStropheMusicBass
+        >>
+      >>
+    }
+partitionVerset = {
+      \new PianoStaff = "antiphonMusic"
+      <<
+        \new Staff <<
+          \global \clef treble
+          \new Dynamics \antiphonRythm
+          \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
+          \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
+        >>
+        \new Staff <<
+          \global \clef bass
+          \new Dynamics \antiphonRythm
+          \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
+          \new Voice = "antiphonMusicBass" \antiphonMusicBass
+        >>
+      >>
+      \new ChoirStaff = "verseMusic"
+      <<
+        \new Staff = "verseMusicSA" \with {
+          shortInstrumentName = \markup { \right-column { "S" "A" } }
+        }
+        <<
+          \global
+          \clef treble
+          \new Dynamics \antiphonRythm
+          \new Voice = "verseMusicSoprano" \verseMusicSoprano
+          \new Voice = "verseMusicAlto" \verseMusicAlto
+        >>
+        \new Staff = "verseMusicTB" \with {
+          shortInstrumentName = \markup { \right-column { "T" "B" } }
+        }
+        <<
+          \global
+          \clef bass
+          \new Dynamics \antiphonRythm
+          \new Voice = "verseMusicTenor" \verseMusicTenor
+          \new Voice = "verseMusicBass" \verseMusicBass
+        >>
+      >>
+    }
+
+\book {
+\bookOutputSuffix "Verset"
 \score {
   <<
-    \unfoldRepeats {
-    \new PianoStaff = "antiphonMusic"
-    <<
-      \new Staff <<
-        \keyTime \tempo 4. = 60 \clef treble
-        \new Dynamics \antiphonRythm
-        \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
-        \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
-      >>
-      \new Staff <<
-        \keyTime \clef bass
-        \new Dynamics \antiphonRythm
-        \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
-        \new Voice = "antiphonMusicBass" \antiphonMusicBass
-      >>
-    >>
-    \new ChoirStaff = "verseMusic"
-    <<
-      \new Staff = "verseMusicSA" \with {
-        shortInstrumentName = \markup { \right-column { "S" "A" } }
-      }
-      <<
-        \keyTime
-        \clef treble
-        \new Dynamics \antiphonRythm
-        \new Voice = "verseMusicSoprano" \verseMusicSoprano
-        \new Voice = "verseMusicAlto" \verseMusicAlto
-      >>
-      \new Staff = "verseMusicTB" \with {
-        shortInstrumentName = \markup { \right-column { "T" "B" } }
-      }
-      <<
-        \keyTime
-        \clef bass
-        \new Dynamics \antiphonRythm
-        \new Voice = "verseMusicTenor" \verseMusicTenor
-        \new Voice = "verseMusicBass" \verseMusicBass
-      >>
-    >>
+    \keepWithTag #'audio \unfoldRepeats \partitionVerset
+    \context Staff = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+    \context Voice = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
     }
   >>
-  \midi {}
+  \midi { \set midiMergeUnisons = ##t }
 }
-\verseLyrics
+}
+\book {
+\bookOutputSuffix "Strophe"
+\score {
+  <<
+    \keepWithTag #'audio \unfoldRepeats \partitionStrophe
+    \context Staff = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+    \context Voice = "Soprano" {
+      \set Score.midiMinimumVolume = #0.5
+      \set Score.midiMaximumVolume = #0.7
+      \set Staff.midiMinimumVolume = #0.8
+      \set Staff.midiMaximumVolume = #1
+    }
+  >>
+  \midi { \set midiMergeUnisons = ##t }
+}
+}
