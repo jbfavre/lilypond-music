@@ -25,7 +25,8 @@ dedicace = "Clichy la Garenne, septembre 2021"
 global = {
   \key f \major
   \time 3/4
-  \tempo 2=70
+  \set Score.tempoHideNote = ##t
+  \tempo 4=60
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,25 +77,26 @@ bassAntiphonLyrics = \antiphonLyrics
 sopranoVerseMusic = \relative c' {
   \markCustom "Psalmodie par verset" \cadenzaOn
   \tempoVerseAcelerando f\breve g1 \tempoVerseRallentando a4 \bar "||"
-  \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 \bar "|." e4^\markup{\huge \roman &dagger;} \bar "|."
+  \tempoVerseAcelerando a\breve g1 \tempoVerseRallentando a4 \bar "|."
+  \tag #'notmidi e4^\markup{\huge \roman &dagger;} \bar "|."
   }
 
 altoVerseMusic = \relative c' {
-  d\breve e1 e4
-  f\breve e1 e4
-  cs4
+  \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando e4
+  \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando e4
+  \tag #'notmidi cs4
   }
 
 tenorVerseMusic = \relative c' {
-  a\breve d1 cs4
-  d\breve d1 cs!4
-  a4
+  \tempoVerseAcelerando a\breve d1 \tempoVerseRallentando cs4
+  \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando cs!4
+  \tag #'notmidi a4
   }
 
 bassVerseMusic = \relative c {
-  d\breve bf1 a4
-  d\breve bf1 a4
-  a4
+  \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando a4
+  \tempoVerseAcelerando d\breve bf1 \tempoVerseRallentando a4
+  \tag #'notmidi a4
   }
 
 verseLyrics = \markuplist {
@@ -109,8 +111,8 @@ verseLyrics = \markuplist {
     }
     \hspace #1
     \left-column{
-      \concat { \typewriter "2. " "Des étrangers se sont lev" \underline é "s contre moi," \roman \super \huge &dagger;}
-      \concat { \typewriter "   " "des puissants ch" \underline e "rchent ma perte&nbsp;:"}
+      \concat { \typewriter "2. " "Des étrangers se sont lev" \underline é "s contre moi," \roman \super \huge &nbsp;&dagger;}
+      \concat { \typewriter "   " "des puissants ch" \underline e "rchent ma perte&nbsp;:" \roman &nbsp;*}
       \concat { \typewriter "   " "ils n’ont pas souc" \underline i " de Dieu."}
     }
   }
@@ -214,7 +216,7 @@ partition = {
 \include "../libs/layouts/outputPDF.ily"
 \verseLyrics
 partition = {
-  <<
+  {
     % Antienne à 4 voix mixtes
     %\include "../libs/layouts/commonAntiphonFourVoices.ily"
     \new ChoirStaff = "Antophon4Voices" <<
@@ -265,13 +267,13 @@ partition = {
         \new Lyrics { \reponsTenBassLyrics }
       >>
     >>
-  >>
+  }
 }
 \book {
 \bookOutputSuffix "Verset"
 \score {
   <<
-    \keepWithTag #'audio \unfoldRepeats \partition
+    \keepWithTag #'audio \removeWithTag #'notmidi \unfoldRepeats \partition
     \context Staff = "Soprano" {
       \set Score.midiMinimumVolume = #0.5
       \set Score.midiMaximumVolume = #0.7
