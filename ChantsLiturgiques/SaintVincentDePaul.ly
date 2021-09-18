@@ -34,15 +34,32 @@ reponsBassesMusic =  \relative c' {
 reponsLyrics = \lyricmode {
   Pri -- ez pour nous, Saint Vin -- cent de Paul&nbsp;!
   A -- pô -- tre~et té --moin de la cha -- ri -- té du Christ,
-  de la cha -- ri -- té en -- vres les pau -- vres
+  de la cha -- ri -- té au -- près des pau -- vres
 
-Donne-nous d'aimer Dieu aux dépens de nos bras et à la sueur de nos visages.
-Aide-nous à nous abandonner à sa Providence, fidèles à découvrir son action dans tous les événements de notre vie.
-Soutiens-nous dans notre désir de discerner et d'accomplir la Volonté de Dieu.
-Obtiens-nous un cœur tendre et compatissant aux misères et aux souffrances des autres spécialement des plus démunis de ce monde.
-Accompagne-nous dans notre service des hommes et intercède auprès du Fils de Dieu, pour que nous devenions dans notre travail,
-    notre famille, notre quartier, notre paroisse, nos communautés, des passionnés de son Évangile d'Amour.
-Amen.
+donne-nous d’aimer Dieu aux dépens de nos bras
+et à la sueur de nos visages.
+
+Aide-nous à nous abandonner à sa Providence
+fidèles à découvrir son action
+dans tous les évènements de notre vie.
+
+Soutiens-nous
+dans notre désir de discerner
+et d’accomplir la volonté de Dieu.
+
+Obtiens-nous
+un cœur tendre et compatissant
+aux misères et aux souffrances des autres
+spécialement des plus démunis de ce monde.
+
+Accompagne-nous dans notre service des hommes
+et intercède auprès du Fils de Dieu
+pour que nous devenions dans notre travail,
+notre famille, notre quartier,
+notre paroisse, nos communautés,
+des passionnés de son Évangile d’Amour.
+
+Amen
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
