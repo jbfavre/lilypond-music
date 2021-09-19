@@ -5,21 +5,73 @@
 
 headers = \header {
   title = "Stabat Mater"
-  subtitle = "Stabat Mater dolorosa"
+  subtitle = "Dolorosa"
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   dedication = "Clichy la Garenne, septembre 2021"
   }
 
+global = {
+  \key d \minor \time 2/4
+}
+preludeOrgueSoprano = \relative c'{
+  d4. d8 f4 a a4. a8 g4. gs8
+  a4. bf8 g4. a8 f4. g8 e4. f8 \break
+  d8 d'4 d8 d8 cs8 cs4
+  c,8 c'4 c8 c b b4
+  bf,!8 bf'4 bf8 bf a a4
+  a8 bf g a f g e f
+}
+preludeOrgueAlto = \relative c'{
+  a4. a8 cs4 cs ef4. ef8 d4 d
+  d4. d8 f4 e e e f e
+  r8 f4. g2 r8 a4. d,2 r8 e4 d8 d4. f8 s2*2
+}
+preludeOrgueTenor = \relative c{
+  f4. f8 a4 f a4. a8 g4 g
+  g4. g8 d'4 d cs b! c cs
+  r8 a8[ f a] r8 a8[ g a] r8 a8[ gs a] r8 b8[ c b] r8 d8[ bf? gs] r8 a8[ f d] s2*2
+}
+preludeOrgueBass = \relative f{
+  d2 cs c b4 bf a2 b c cs
+  d,2 e fs g gs4. e8 f2
+  a4 bf b cs
+}
+intonationRythms = {s2*8}
+intonationTheme =   \relative c {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a) \break
+    a8\( (bf!) f (g) g (a) a (gs) gs (a) a (g?) g (f)\) e8 r8 \break
+  }
+
+intonationSoprane =   \relative c' {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
+    a8\( (bf!) f (g) a4 gs a4 a a\) a
+  }
+
+intonationAlto =   \relative c' {
+    a4.\( a8 cs4 cs ef4. ef8 d4\) d
+    d4.\( d8 f4 e e e f\) e
+  }
+
+intonationTenor =   \relative c {
+    f4.\( f8 a4 f a4. a8 g4\) g
+    g4.\( g8 d'4 d cs b! c\) cs
+  }
+
+intonationBass =   \relative c {
+    d4.\( d8 cs4 cs c!4. c8 b4\) b
+    bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
+  }
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%     Répons     %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 reponsRhythms = {
-  \key f \major \time 2/4
-  s2*4 \break
+  s2*4 \break % Thème 1 Tutti
   s2*4 \break
   s2*4 \pageBreak
-  \markCustom "B"
+%{  \markCustom "B"
   s2*4 \break
   s2*4 \break
   s2*4 \pageBreak
@@ -31,7 +83,7 @@ reponsRhythms = {
   s2*4 \break
   s2*4 \break
   s2*4 \pageBreak
-%{  \markCustom "E"
+  \markCustom "E"
   s2*4 \break
   s2*4 \break
   s2*4 \pageBreak
@@ -56,7 +108,7 @@ reponsSopranosMusic = {
     a4.\( a8 g4. g8 a4.\) a8 a2\fermata
   }
 
-  \relative c''{
+%{  \relative c''{
     d4.\( d8 d cs cs cs c!8\) c c c c b b b
     bf8 bf bf bf bf (a) a4 a2 a4 a
     a4. a8 gs4 g f f8 (e) e2\fermata
@@ -74,7 +126,7 @@ reponsSopranosMusic = {
     a4. a8 a4 gs a4. a8 a2\fermata
   }
 
-%{  \relative c' {
+  \relative c' {
     d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
     a8\( (bf!) f (g) a4 gs a4 a a\) a
     a4.\( a8 g4. g8 a4.\) a8 a2\fermata
@@ -103,9 +155,9 @@ reponsAltosMusic = {
   \relative c' {
     a4.\( a8 cs4 cs ef4. ef8 d4\) d
     d4.\( d8 f4 e e e f\) e
-    f4.\( f8 d4 d d\) e e2\fermata
+    f4.\( d8 d4 d8 (cs) d4\) e e2\fermata
   }
-  \relative c'{
+%{  \relative c'{
     f4.\( f8 e8\) e e4 ef4. ef8 d4 d4
     df4. df8 c4 c4 e2 f4 f8 (e)
     d4. d8 d4 d d d cs2\fermata
@@ -120,7 +172,7 @@ reponsAltosMusic = {
     e4 e f4. f8 f4 f e e4
     f4 f e e f f f2\fermata
   }
-%{  \relative c'{
+  \relative c'{
     a4.\( a8 cs4 cs ef4. ef8 d4\) d
     d4.\( d8 f4 e e e f\) e
     f4.\( f8 d4 d d\) e e2\fermata
@@ -146,9 +198,9 @@ reponsTenorsMusic =  {
   \relative c {
     f4.\( f8 a4 f a4. a8 g4\) g
     g4.\( g8 d'4 d cs b! c\) cs
-    d4.\( d8 bf4 bf d4\) d cs2\fermata
+    d4.\( f8 bf,4. bf8 d8 (c)\) bf4 cs2\fermata
   }
-  \relative c' {
+%{  \relative c' {
     a4. a8 a8 a a4 g4. g8 g4 g4
     f4. f8 f4 f4 cs'4 (d) c8 (b) a8 (g)
     f4. f8 bf?4 bf a bf a2\fermata
@@ -163,7 +215,7 @@ reponsTenorsMusic =  {
     d4 d d4. d8 d4 d cs cs4
     d4 d d d a4. e'8 d2\fermata
   }
-%{  \relative c {
+  \relative c {
     f4.\( f8 a4 f a4. a8 g4\) g
     g4.\( g8 d'4 d cs b! c\) cs
     d4.\( d8 bf4 bf d4\) d cs2\fermata
@@ -189,9 +241,9 @@ reponsBassesMusic =  {
   \relative c {
     d4.\( d8 cs4 cs c!4. c8 b4\) b
     bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
-    d4.\( d8 e4 e f\) g a2\fermata
+    d4.\( d8 e4. e8 f4\) g a2\fermata
   }
-  \relative c {
+%{  \relative c {
     d2 cs4 a8 (b) c4 c4 b4 g8 (a)
     bf8 bf bf bf a4 f8 (g) a4 (b) c cs
     d4. d8 e4 e f g a2\fermata
@@ -206,7 +258,7 @@ reponsBassesMusic =  {
     g4 gs a4. a8 a8 (g) f (d) a4 a4
     a4 a bf b c cs d2\fermata
   }
-%{  \relative c {
+  \relative c {
     d4.\( d8 cs4 cs c!4. c8 b4\) b
     bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
     d4.\( d8 e4 e f\) g a2\fermata
@@ -384,6 +436,9 @@ reponsTenorLyrics = \lyricmode {
 reponsBassLyrics = \lyricmode {
   Sta -- bat Ma -- ter do -- lo -- ró -- sa
   iu -- xta cru -- cem la -- cri -- mó -- sa,
+
+  Sta -- bat Ma -- ter do -- lo -- ró -- sa
+  iu -- xta cru -- cem la -- cri -- mó -- sa,
   dum pen -- dé -- bat Fí -- li -- us.
 
   Cu -- ius, ge -- mén -- tem,
@@ -496,47 +551,11 @@ FirstScorePaper = \paper {
     }
     oddFooterMarkup = {}
   }
-OtherScoresPaper = \paper {
-    markup-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 5))
-    top-markup-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-     4 (stretchability . 5))
-    top-system-spacing = #'((basic-distance . 9)
-       (minimum-distance . 9)
-       (padding . 7)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-      (stretchability . 5))
-  }
-LastScorePaper = \paper {
-    top-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 3)
-       (padding . 1)
-       (stretchability . 10))
-    system-system-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 1)
-       (stretchability . 10))
-   score-markup-spacing = #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . 1)
-       (stretchability . 10))
-    markup-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 3)
-       (padding . 1)
-       (stretchability . 10))
-}
 AllScoreLayout = \layout {
       ragged-last = ##f
       \context {
           \Staff
-          %\RemoveEmptyStaves
+          \RemoveEmptyStaves
           \override NoteHead #'style = #'altdefault
           \override InstrumentName #'font-name = #"Monospace Regular"
       }
@@ -562,41 +581,58 @@ AllScoreLayout = \layout {
 \bookpart { % Stance
   \FirstScorePaper
   \score {
-    { % Partition Stance
-      \new ChoirStaff = "ChoirStaff"
-      {
+    << % Partition Orgue + Choeur
+      \new ChoirStaff
+      <<
+        \new Staff \with { instrumentName = \markup{ "S."} shortInstrumentName = \markup{"S."} }
         <<
-          \new Staff = "reponsHighStaff" \with { instrumentName = \markup{ "S."} shortInstrumentName = \markup{"S."} }
-          <<
-            \clef "treble"
-            \new Voice = "reponsRhythms" { \reponsRhythms \bar "||" }
-            \new Voice = "reponsSoprano" { \oneVoice \reponsSopranosMusic }
-            \new Lyrics \lyricsto "reponsSoprano" { \reponsLyrics }
-          >>
-          \new Staff = "reponsHighStaff" \with { instrumentName = \markup{ "A."} shortInstrumentName = \markup{"A."} }
-          <<
-            \clef "treble"
-            \new Voice = "reponsRhythms" { \reponsRhythms \bar "||" }
-            \new Voice = "reponsAlto" { \oneVoice \reponsAltosMusic }
-            \new Lyrics \lyricsto "reponsAlto" { \reponsAltoLyrics }
-          >>
-          \new Staff  = "reponsLowStaff" \with { instrumentName = \markup{ "T."} shortInstrumentName = \markup{"T."} }
-          <<
-            \clef "treble_8"
-            \new Voice = "reponsRhythms" { \reponsRhythms }
-            \new Voice = "reponsTenor" { \oneVoice \reponsTenorsMusic }
-            \new Lyrics \lyricsto "reponsTenor" { \reponsTenorLyrics }
-          >>
-          \new Staff  = "reponsLowStaff" \with { instrumentName = \markup{ "B."} shortInstrumentName = \markup{"B."} }
-          <<
-            \clef "bass"
-            \new Voice = "reponsRhythms" { \reponsRhythms }
-            \new Voice = "reponsBass" { \oneVoice \reponsBassesMusic }
-            \new Lyrics \lyricsto "reponsBass" { \reponsBassLyrics }
-          >>
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \clef "treble"
+          \new Dynamics {\global \silence \preludeOrgueSoprano \silence \intonationRythms \reponsRhythms \bar "||" }
+          \new Voice = "reponsSoprano" {\global \silence \preludeOrgueSoprano \oneVoice R2*8 \reponsSopranosMusic }
+          \new Lyrics \lyricsto "reponsSoprano" { \reponsLyrics }
         >>
-      }
-    }
+        \new Staff \with { instrumentName = \markup{ "A."} shortInstrumentName = \markup{"A."} }
+        <<
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \clef "treble"
+          \new Dynamics {\global \silence \preludeOrgueSoprano \silence \intonationRythms \reponsRhythms \bar "||" }
+          \new Voice = "reponsAlto" {\global \silence \preludeOrgueSoprano \oneVoice R2*8 \reponsAltosMusic }
+          \new Lyrics \lyricsto "reponsAlto" { \reponsAltoLyrics }
+        >>
+        \new Staff \with { instrumentName = \markup{ "T."} shortInstrumentName = \markup{"T."} }
+        <<
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \clef "treble_8"
+          \new Dynamics {\global \silence \preludeOrgueSoprano \silence \intonationRythms \reponsRhythms }
+          \new Voice = "reponsTenor" {\global \silence \preludeOrgueSoprano \oneVoice R2*8 \reponsTenorsMusic }
+          \new Lyrics \lyricsto "reponsTenor" { \reponsTenorLyrics }
+        >>
+        \new Staff \with { instrumentName = \markup{ "B."} shortInstrumentName = \markup{"B."} }
+        <<
+          \override Staff.VerticalAxisGroup.remove-first = ##t
+          \clef "bass"
+          \new Dynamics {\global \silence \preludeOrgueSoprano \silence \intonationRythms \reponsRhythms }
+          \new Voice = "reponsBass" {\global \silence \preludeOrgueSoprano \oneVoice \intonationTheme \reponsBassesMusic }
+          \new Lyrics \lyricsto "reponsBass" { \reponsBassLyrics }
+        >>
+      >>
+      \new PianoStaff \with { instrumentName = \markup{ "O."} shortInstrumentName = \markup{"O."} }
+      <<
+        \new Staff
+        <<
+          \clef treble
+          \new Voice {\voiceOne \global \preludeOrgueSoprano \break \intonationSoprane \reponsSopranosMusic}
+          \new Voice {\voiceTwo \global \preludeOrgueAlto \intonationAlto \reponsAltosMusic}
+        >>
+        \new Staff
+        <<
+          \clef bass
+          \new Voice{ \voiceOne \global \preludeOrgueTenor \intonationTenor \reponsTenorsMusic}
+          \new Voice{ \voiceTwo \global \preludeOrgueBass \intonationBass \reponsBassesMusic}
+        >>
+      >>
+    >>
     \AllScoreLayout
     \FirstPageHeaders
   }
