@@ -136,8 +136,7 @@ verseLyrics = \markuplist {
 \include "../libs/defaultPianoSettings.ily"
 \include "../libs/layouts/commonSettings.ily"
 staffCustomSize = 18
-partition = {
-  <<
+partition = <<
     % Antienne à 4 voix mixtes
     %\include "../libs/layouts/commonAntiphonFourVoices.ily"
     \new ChoirStaff = "Antophon4Voices" <<
@@ -176,27 +175,27 @@ partition = {
       \new Staff <<
         \set Staff.printPartCombineTexts = ##f
         \once \override Staff.VerticalAxisGroup.remove-first = ##t
-        \global \clef treble
-        \new Voice = "soprani" { \voiceOne \pianoSopranoMusic }
-        \new Voice = "alti" { \voiceTwo \pianoAltoMusic }s
+        \clef treble
+        \new Voice = "soprani" {\global \voiceOne \pianoSopranoMusic }
+        \new Voice = "alti" {\global \voiceTwo \pianoAltoMusic }s
       >>
       \new Staff <<
         \set Staff.printPartCombineTexts = ##f
         \once \override Staff.VerticalAxisGroup.remove-first = ##t
-        \global \clef bass
-        \new Voice = "tenors" { \voiceThree \pianoTenorMusic }
-        \new Voice = "bass" { \voiceFour \pianoBassMusic }
+        \clef bass
+        \new Voice = "tenors" {\global \voiceThree \pianoTenorMusic }
+        \new Voice = "bass" {\global \voiceFour \pianoBassMusic }
       >>
     >>
     % Psalmodie à 4 voix mixtes
     %\include "../libs/layouts/commonVerseFourVoices.ily"
-    \new ChoirStaff = "versePsalmody" <<
+    \new ChoirStaff = "versePsalmody"
+    <<
       \new Staff = "verseSopranoAlto" <<
         \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
         \once \override Staff.VerticalAxisGroup.remove-first = ##t
         \global
         \clef treble
-        %\partcombine
         \new Voice = "verseSoprano" << \voiceOne {\silence \sopranoAntiphonMusic \sopranoVerseMusic } >>
         \new Voice = "verseAlto" << \voiceTwo {\silence \sopranoAntiphonMusic \altoVerseMusic } >>
       >>
@@ -210,7 +209,6 @@ partition = {
       >>
     >>
   >>
-}
 
 % Load PDF output
 \include "../libs/layouts/outputPDF.ily"

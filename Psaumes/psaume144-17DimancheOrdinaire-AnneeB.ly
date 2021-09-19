@@ -36,12 +36,13 @@ antiphonRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne"
   \time 2/4
-  s2*7 \bar "|." \break
+  s2*7 \bar "|."
+  \break
   }
 
 antiphonMusicSoprano = \relative c' {
   f8 g a bf a4 g f2
-  r8 g8 a bf a2 g f2 \fermata
+  r8 g8 a bf a2 g f2
   }
 
 antiphonMusicAlto = \relative c' {
@@ -56,7 +57,7 @@ antiphonMusicTenor =  \relative c' {
 
 antiphonMusicBass =  \relative f {
   f8 e d bf c4 c8 (cs) d4 (c)
-  bf a8 g c2 c f \fermata
+  bf a8 g c2 c f
   }
 
 antiphonLyrics = \lyricmode {
@@ -101,7 +102,7 @@ verseMusicSoprano = \relative c' {
 
 verseStropheMusicAlto = \relative c' {
   \tempoVerseAcelerando d\breve e1 \tempoVerseRallentando f4
-  \tempoVerseAcelerando c\breve e1 \tempoVerseRallentando d4 e
+  \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando d4 e
   \tempoVerseAcelerando f\breve e1 \tempoVerseRallentando e4 d
   \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando cs4
 }
@@ -111,7 +112,7 @@ verseMusicAlto = \relative c' {
   }
 
 verseStropheMusicTenor = \relative c' {
-  \tempoVerseAcelerando a\breve a1 \tempoVerseRallentando c4
+  \tempoVerseAcelerando a\breve c1 \tempoVerseRallentando c4
   \tempoVerseAcelerando c\breve a1 \tempoVerseRallentando gs4 cs
   \tempoVerseAcelerando d\breve d1 \tempoVerseRallentando cs4 a
   \tempoVerseAcelerando bf\breve b!1 \tempoVerseRallentando a4
@@ -166,114 +167,100 @@ verseLyrics = \markup {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%          Draw score          %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Load Piano settings & layout
 partition = {
-  % Antienne à 4 voix mixtes
   <<
-    \new ChoirStaff = "antiphonChoirStaff"
-    <<
-      %\new Staff = "antiphonCounterpointStaff" \with {
-      %  instrumentName = "Ctre-chant"
-      %  shortInstrumentName = "C"
-      %}
-      %<<
-      %  \clef "treble"
-      %  \keyTime
-      %  \antiphonRythm
-      %  \new Voice = "antiphonCounterpoint" { \antiphonMusicCounterpoint \fermata }
-      %  \new Lyrics \lyricsto "antiphonCounterpoint" \antiphonLyricsCounterpoint
-      %>>
-      \new Staff = "antiphonSopranoStaff" \with { instrumentName = "S." shortInstrumentName = "S" }
-      <<
+    % Antienne à 4 voix mixtes
+    %\include "../libs/layouts/commonAntiphonFourVoices.ily"
+    \new ChoirStaff = "Antophon4Voices" <<
+      \new Staff = "AntiphonSopranoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Soprano"
         \clef "treble"
-        \global
         \new Dynamics \antiphonRythm
-        \new Voice = "antiphonSoprano" { \antiphonMusicSoprano }
-        \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
+        \new Voice = "antiphonSoprano" { \global \antiphonMusicSoprano\fermata}
+        \new Lyrics \lyricsto "antiphonSoprano" { \antiphonLyricsSoprano }
       >>
-      \new Staff = "antiphonAltoStaff" \with { instrumentName = "A." shortInstrumentName = "A" }
-      <<
+      \new Staff = "AntiphonAltoStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Alto"
         \clef "treble"
-        \global
         \new Dynamics \antiphonRythm
-        \new Voice = "antiphonAlto" { \antiphonMusicAlto }
-        \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
+        \new Voice = "antiphonAlto" { \global \antiphonMusicAlto\fermata }
+        \new Lyrics \lyricsto "antiphonAlto" { \antiphonLyricsAlto }
       >>
-      \new Staff = "antiphonTenorStaff" \with { instrumentName = "T." shortInstrumentName = "T" }
-      <<
+      \new Staff = "AntiphonTenorStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Ténor"
         \clef "treble_8"
-        \global
         \new Dynamics \antiphonRythm
-        \new Voice = "antiphonTenor" { \antiphonMusicTenor }
-        \new Lyrics \lyricsto "antiphonTenor" { \antiphonLyricsTenor \lyricmode { Al -- le -- lu -- ia&nbsp;! } }
+        \new Voice = "antiphonTenor" { \global \antiphonMusicTenor\fermata }
+        \new Lyrics \lyricsto "antiphonTenor" { \antiphonLyricsTenor }
       >>
-      \new Staff  = "antiphonBassStaff" \with { instrumentName = "B." shortInstrumentName = "B" }
-      <<
+      \new Staff  = "AntiphonBassStaff" <<
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \set Staff.instrumentName = "Basse"
         \clef "bass"
-        \global
         \new Dynamics \antiphonRythm
-        \new Voice = "antiphonBass" { \antiphonMusicBass }
-        \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
+        \new Voice = "AntiphonBass" { \global \antiphonMusicBass\fermata }
+        \new Lyrics \lyricsto "AntiphonBass" { \antiphonLyricsBass }
       >>
     >>
-    % Accompagnement Piano / Orgue
-    \new PianoStaff = "antiphonPianoStaff" \with {
-      instrumentName = #"O."
-      shortInstrumentName = #"O"
-      printPartCombineTexts = ##f
-    }
+    %\include "../libs/layouts/commonPiano.ily"
+    \new PianoStaff
     <<
-      \new Staff = "antiphonPianoStaffSA"
-      <<
+      \set PianoStaff.instrumentName = #"Orgue"
+      \new Staff <<
+        \set Staff.printPartCombineTexts = ##f
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef treble
-        \new Voice = "antiphonMusicSoprano" { \voiceOne \antiphonMusicSoprano }
-        \new Voice = "antiphonMusicAlto" { \voiceTwo \antiphonMusicAlto }
+        \new Voice = "soprani" {\global \voiceOne \antiphonMusicSoprano\fermata }
+        \new Voice = "alti" {\global \voiceTwo \antiphonMusicAlto\fermata }
       >>
-      \new Staff = "antiphonPianoStaffTB"
-      <<
+      \new Staff <<
+        \set Staff.printPartCombineTexts = ##f
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
         \clef bass
-        \new Voice = "antiphonMusicTenor" { \voiceThree \antiphonMusicTenor }
-        \new Voice = "antiphonMusicBass" { \voiceFour \antiphonMusicBass }
+        \new Voice = "tenors" {\global \voiceThree \antiphonMusicTenor\fermata }
+        \new Voice = "bass" {\global \voiceFour \antiphonMusicBass\fermata }
+      >>
+    >>
+    % Psalmodie à 4 voix mixtes
+    %\include "../libs/layouts/commonVerseFourVoices.ily"
+    \new ChoirStaff = "versePsalmody"
+    <<
+      \new Staff = "verseSopranoAlto" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "S" "A" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef treble
+        \new Dynamics {\silence \antiphonMusicSoprano \verseStropheRythm \verseRythm}
+        \new Voice = "verseSoprano" << \voiceOne {\silence \antiphonMusicSoprano \cadenzaOn \verseStropheMusicSoprano \verseMusicSoprano } >>
+        \new Voice = "verseAlto" << \voiceTwo {\silence \antiphonMusicSoprano \cadenzaOn \verseStropheMusicAlto \verseMusicAlto } >>
+      >>
+      \new Staff = "verseTenorBass" <<
+        \set Staff.shortInstrumentName = \markup { \right-column { "T" "B" } }
+        \once \override Staff.VerticalAxisGroup.remove-first = ##t
+        \global
+        \clef bass
+        \new Dynamics {\silence \antiphonMusicSoprano \verseStropheRythm \verseRythm}
+        \new Voice = "verseTenor" << \voiceOne {\silence \antiphonMusicSoprano \cadenzaOn \verseStropheMusicTenor \verseMusicTenor } >>
+        \new Voice = "verseBass" << \voiceTwo {\silence \antiphonMusicSoprano \cadenzaOn \verseStropheMusicBass \verseMusicBass } >>
       >>
     >>
   >>
-    % Psalmodie à 4 voix mixtes
-    \new ChoirStaff = "verseChoirStaff" \with { printPartCombineTexts = ##f }
-    <<
-      \new Staff = "verseChoirStaffSA"
-      \with { shortInstrumentName = \markup { \right-column { "S" "A" } } }
-      <<
-        \override Staff.VerticalAxisGroup.remove-first = ##t
-        \clef treble
-        \new Voice { \verseStropheRythm \verseRythm }
-        \new Voice = "verseSoprano" {\voiceOne {\key d \minor \verseStropheMusicSoprano \cadenzaOn \verseMusicSoprano }}
-        \new Voice = "verseAlto" {\voiceTwo {\key d \minor \verseStropheMusicAlto \cadenzaOn \verseMusicAlto }}
-      >>
-      \new Staff = "verseChoirStaffTB"
-      \with { shortInstrumentName = \markup { \right-column { "T" "B" } } }
-      <<
-        \override Staff.VerticalAxisGroup.remove-first = ##t
-        \clef bass
-        \new Voice { \verseStropheRythm \verseRythm }
-        \new Voice = "verseTenor" {\voiceOne {\key d \minor \verseStropheMusicTenor \cadenzaOn \verseMusicTenor }}
-        \new Voice = "verseBass" {\voiceTwo {\key d \minor \verseStropheMusicBass \cadenzaOn \verseMusicBass }}
-      >>
-    >>
 }
 
+%%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
 % PDF output
 \paper {
-  top-margin = 2\cm
-  bottom-margin = 2\cm
+  top-margin = 1.5\cm
+  bottom-margin = 1.5\cm
   left-margin = 1.5\cm
   right-margin = 1.5\cm
-  markup-system-spacing = #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 1)
+  markup-system-spacing = #'((basic-distance . 10)
+     (minimum-distance . 10)
+     (padding . 5)
      (stretchability . 5))
  system-system-spacing = #'((basic-distance . 5)
      (minimum-distance . 5)
@@ -342,6 +329,7 @@ partition = {
   \scoreHeader
 }
 \verseLyrics
+
 % Midi output
 partitionStrophe = {
       \new PianoStaff = "antiphonMusic"
@@ -361,23 +349,17 @@ partitionStrophe = {
       >>
       \new ChoirStaff = "verseMusic"
       <<
-        \new Staff = "verseMusicSA" \with {
-          shortInstrumentName = \markup { \right-column { "S" "A" } }
-        }
+        \new Staff = "verseMusicSA"
         <<
           \global
           \clef treble
-          \new Dynamics \antiphonRythm
           \new Voice = "verseMusicSoprano" \verseStropheMusicSoprano
           \new Voice = "verseMusicAlto" \verseStropheMusicAlto
         >>
-        \new Staff = "verseMusicTB" \with {
-          shortInstrumentName = \markup { \right-column { "T" "B" } }
-        }
+        \new Staff = "verseMusicTB"
         <<
           \global
           \clef bass
-          \new Dynamics \antiphonRythm
           \new Voice = "verseMusicTenor" \verseStropheMusicTenor
           \new Voice = "verseMusicBass" \verseStropheMusicBass
         >>
@@ -401,23 +383,17 @@ partitionVerset = {
       >>
       \new ChoirStaff = "verseMusic"
       <<
-        \new Staff = "verseMusicSA" \with {
-          shortInstrumentName = \markup { \right-column { "S" "A" } }
-        }
+        \new Staff = "verseMusicSA"
         <<
           \global
           \clef treble
-          \new Dynamics \antiphonRythm
           \new Voice = "verseMusicSoprano" \verseMusicSoprano
           \new Voice = "verseMusicAlto" \verseMusicAlto
         >>
-        \new Staff = "verseMusicTB" \with {
-          shortInstrumentName = \markup { \right-column { "T" "B" } }
-        }
+        \new Staff = "verseMusicTB"
         <<
           \global
           \clef bass
-          \new Dynamics \antiphonRythm
           \new Voice = "verseMusicTenor" \verseMusicTenor
           \new Voice = "verseMusicBass" \verseMusicBass
         >>
