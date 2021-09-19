@@ -27,60 +27,207 @@ reponsRhythms = {
   s2*4 \break
   s2*4 \break
   s2*4 \pageBreak
-  \bar "|." \break
+  \markCustom "D"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \pageBreak
+%{  \markCustom "E"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \pageBreak
+  \markCustom "F"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \pageBreak
+  \markCustom "G"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \pageBreak
+  \markCustom "H"
+  s2*4 \break
+  s2*4 \break
+  s2*4 \pageBreak
+%}  \bar "|." \break
   }
-reponsSopranosMusic = \relative c' {
-  d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
-  a8\( (bf!) g (a) a4 gs a4 a a\) a
-  a4.\( a8 g4 g a\) a a2\fermata
-
-  d4.\( d8 d cs cs cs c!8\) c c c c b b b
-  bf8 bf bf bf bf (a) a4 a2 a4 a
-  a4. a8 gs4 g f f8 (e) e2\fermata
-
-  d'4. d8 d8 (cs) cs4 c?4. c8 c8 (b) b4
-  bf!4. bf8 bf8 (a) a4 a4. a8 a4 a4
-  a4. a8 a4 gs a4. a8 a2\fermata
+reponsSopranosMusic = {
+  \relative c' {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
+    a8\( (bf!) f (g) a4 gs a4 a a\) a
+    a4.\( a8 g4. g8 a4.\) a8 a2\fermata
   }
-reponsAltosMusic = \relative c' {
-  a4.\( a8 cs4 cs ef4. ef8 d4\) d
-  d4.\( d8 f4 e e e f\) e
-  f4.\( f8 d4 d d\) e e2\fermata
 
-  f4.\( f8 e8\) e e4 ef4. ef8 d4 d4
-  df4. df8 c4 c4 e2 f4 f8 (e)
-  d4. d8 d4 d d d cs2\fermata
-
-  f4 f g4 g8 a a2 a8 (g4) e8
-  e4 e f4. f8 f4 f e e4
-  f4 f e e f f f2\fermata
+  \relative c''{
+    d4.\( d8 d cs cs cs c!8\) c c c c b b b
+    bf8 bf bf bf bf (a) a4 a2 a4 a
+    a4. a8 gs4 g f f8 (e) e2\fermata
   }
-reponsTenorsMusic =  \relative c {
-  f4.\( f8 a4 f a4. a8 g4\) g
-  g4.\( g8 d'4 d cs b! c\) cs
-  d4.\( d8 bf4 bf d4\) d cs2\fermata
 
-  a4. a8 a8 a a4 g4. g8 g4 g4
-  f4. f8 f4 f4 cs'4 (d) c8 (b) a8 (g)
-  f4. f8 bf?4 bf a bf a2\fermata
-
-  a4 a a4 bf8 a d2 d4. d8
-  d4 d d4. d8 d4 d cs cs4
-  d4 d d d a4. e'8 d2\fermata
+  \relative c' {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
+    a8\( (bf!) f (g) a4 gs a4 a a\) a
+    a4.\( a8 g4. g8 a4.\) a8 a2\fermata
   }
-reponsBassesMusic =  \relative c {
-  d4.\( d8 cs4 cs c!4. c8 b4\) b
-  bf!4.\( bf8 a8 (a') b4 a g f\) e
-  d4.\( d8 e4 e f\) g a2\fermata
 
-  d,2 cs4 a8 (b) c4 c4 b4 g8 (a)
-  bf8 bf bf bf a4 f8 (g) a4 (b) c cs
-  d4. d8 e4 e f g a2\fermata
-
-  d,4 d e4 e8 e fs2 g4. g8
-  g4 gs a4. a8 a8 (g) f (d) a4 a4
-  a4 a bf b c cs d2\fermata
+  \relative c''{
+    d4. d8 d8 (cs) cs4 c?4. c8 c8 (b) b4
+    bf!4. bf8 bf8 (a) a4 a4. a8 a4 a4
+    a4. a8 a4 gs a4. a8 a2\fermata
   }
+
+%{  \relative c' {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
+    a8\( (bf!) f (g) a4 gs a4 a a\) a
+    a4.\( a8 g4. g8 a4.\) a8 a2\fermata
+  }
+
+  \relative c''{
+    d4.\( d8 d cs cs cs c!8\) c c c c b b b
+    bf8 bf bf bf bf (a) a4 a2 a4 a
+    a4. a8 gs4 g f f8 (e) e2\fermata
+  }
+
+  \relative c' {
+    d4.\( d8 f4 a a4. a8 a8\) (b) g (a)
+    a8\( (bf!) f (g) a4 gs a4 a a\) a
+    a4.\( a8 g4. g8 a4.\) a8 a2\fermata
+  }
+
+  \relative c''{
+    d4. d8 d8 (cs) cs4 c?4. c8 c8 (b) b4
+    bf!4. bf8 bf8 (a) a4 a4. a8 a4 a4
+    a4. a8 a4 gs a4. a8 a2\fermata
+  }
+%}
+}
+reponsAltosMusic = {
+  \relative c' {
+    a4.\( a8 cs4 cs ef4. ef8 d4\) d
+    d4.\( d8 f4 e e e f\) e
+    f4.\( f8 d4 d d\) e e2\fermata
+  }
+  \relative c'{
+    f4.\( f8 e8\) e e4 ef4. ef8 d4 d4
+    df4. df8 c4 c4 e2 f4 f8 (e)
+    d4. d8 d4 d d d cs2\fermata
+  }
+  \relative c'{
+    a4.\( a8 cs4 cs ef4. ef8 d4\) d
+    d4.\( d8 f4 e e e f\) e
+    f4.\( f8 d4 d d\) e e2\fermata
+  }
+  \relative c'{
+    f4 f g4 g8 a a2 a8 (g4) e8
+    e4 e f4. f8 f4 f e e4
+    f4 f e e f f f2\fermata
+  }
+%{  \relative c'{
+    a4.\( a8 cs4 cs ef4. ef8 d4\) d
+    d4.\( d8 f4 e e e f\) e
+    f4.\( f8 d4 d d\) e e2\fermata
+  }
+  \relative c'{
+    f4.\( f8 e8\) e e4 ef4. ef8 d4 d4
+    df4. df8 c4 c4 e2 f4 f8 (e)
+    d4. d8 d4 d d d cs2\fermata
+  }
+  \relative c'{
+    a4.\( a8 cs4 cs ef4. ef8 d4\) d
+    d4.\( d8 f4 e e e f\) e
+    f4.\( f8 d4 d d\) e e2\fermata
+  }
+  \relative c'{
+    f4 f g4 g8 a a2 a8 (g4) e8
+    e4 e f4. f8 f4 f e e4
+    f4 f e e f f f2\fermata
+  }
+%}
+}
+reponsTenorsMusic =  {
+  \relative c {
+    f4.\( f8 a4 f a4. a8 g4\) g
+    g4.\( g8 d'4 d cs b! c\) cs
+    d4.\( d8 bf4 bf d4\) d cs2\fermata
+  }
+  \relative c' {
+    a4. a8 a8 a a4 g4. g8 g4 g4
+    f4. f8 f4 f4 cs'4 (d) c8 (b) a8 (g)
+    f4. f8 bf?4 bf a bf a2\fermata
+  }
+  \relative c {
+    f4.\( f8 a4 f a4. a8 g4\) g
+    g4.\( g8 d'4 d cs b! c\) cs
+    d4.\( d8 bf4 bf d4\) d cs2\fermata
+  }
+  \relative c' {
+    a4 a a4 bf8 a d2 d4. d8
+    d4 d d4. d8 d4 d cs cs4
+    d4 d d d a4. e'8 d2\fermata
+  }
+%{  \relative c {
+    f4.\( f8 a4 f a4. a8 g4\) g
+    g4.\( g8 d'4 d cs b! c\) cs
+    d4.\( d8 bf4 bf d4\) d cs2\fermata
+  }
+  \relative c' {
+    a4. a8 a8 a a4 g4. g8 g4 g4
+    f4. f8 f4 f4 cs'4 (d) c8 (b) a8 (g)
+    f4. f8 bf?4 bf a bf a2\fermata
+  }
+  \relative c {
+    f4.\( f8 a4 f a4. a8 g4\) g
+    g4.\( g8 d'4 d cs b! c\) cs
+    d4.\( d8 bf4 bf d4\) d cs2\fermata
+  }
+  \relative c' {
+    a4 a a4 bf8 a d2 d4. d8
+    d4 d d4. d8 d4 d cs cs4
+    d4 d d d a4. e'8 d2\fermata
+  }
+%}
+}
+reponsBassesMusic =  {
+  \relative c {
+    d4.\( d8 cs4 cs c!4. c8 b4\) b
+    bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
+    d4.\( d8 e4 e f\) g a2\fermata
+  }
+  \relative c {
+    d2 cs4 a8 (b) c4 c4 b4 g8 (a)
+    bf8 bf bf bf a4 f8 (g) a4 (b) c cs
+    d4. d8 e4 e f g a2\fermata
+  }
+  \relative c {
+    d4.\( d8 cs4 cs c!4. c8 b4\) b
+    bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
+    d4.\( d8 e4 e f\) g a2\fermata
+  }
+  \relative c {
+    d4 d e4 e8 e fs2 g4. g8
+    g4 gs a4. a8 a8 (g) f (d) a4 a4
+    a4 a bf b c cs d2\fermata
+  }
+%{  \relative c {
+    d4.\( d8 cs4 cs c!4. c8 b4\) b
+    bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
+    d4.\( d8 e4 e f\) g a2\fermata
+  }
+  \relative c {
+    d2 cs4 a8 (b) c4 c4 b4 g8 (a)
+    bf8 bf bf bf a4 f8 (g) a4 (b) c cs
+    d4. d8 e4 e f g a2\fermata
+  }
+  \relative c {
+    d4.\( d8 cs4 cs c!4. c8 b4\) b
+    bf!4.\( bf8 a8 (a') b4 a g f\) f8 (e)
+    d4.\( d8 e4 e f\) g a2\fermata
+  }
+  \relative c {
+    d4 d e4 e8 e fs2 g4. g8
+    g4 gs a4. a8 a8 (g) f (d) a4 a4
+    a4 a bf b c cs d2\fermata
+  }
+%}
+}
 reponsLyrics = \lyricmode {
   Sta -- bat Ma -- ter do -- lo -- ró -- sa
   iu -- xta cru -- cem la -- cri -- mó -- sa,
@@ -95,25 +242,26 @@ reponsLyrics = \lyricmode {
   fu -- it il -- la be -- ne -- dí -- cta
   Ma -- ter U -- ni -- gé -- ni -- ti.
 
-Quæ mæ -- ré -- bat, et do -- léb -- at,
-Pi -- a Ma -- ter dum vi -- dé -- bat
-na -- ti pœ -- nas ín -- cly -- ti.
+  Quæ mæ -- ré -- bat, et do -- léb -- at,
+  Pi -- a Ma -- ter dum vi -- dé -- bat
+  na -- ti pœ -- nas ín -- cly -- ti.
 
-Quis est ho -- mo, qui non fle -- ret,
-Ma -- trem Chri -- sti si vi -- dé -- ret
-in tan -- to sup -- plí -- ci -- o ?
+  Quis est ho -- mo, qui non fle -- ret,
+  Ma -- trem Chri -- sti si vi -- dé -- ret
+  in tan -- to sup -- plí -- ci -- o&nbsp;?
 
-Quis non pos -- set con -- tri -- stá -- ri,
-Pi -- am Ma -- trem con -- tem -- pla -- ri
-do -- len -- tem cum Fi -- li -- o ?
+  Quis non pos -- set con -- tri -- stá -- ri,
+  Pi -- am Ma -- trem con -- tem -- pla -- ri
+  do -- len -- tem cum Fi -- li -- o&nbsp;?
+  do -- len -- tem cum Fi -- li -- o&nbsp;?
 
-Pro pec -- cá -- tis su -- æ gen -- tis
-vi -- dit Ie -- sum in tor -- mén -- tis
-et fla -- gél -- lis súb -- di -- tum.
+  Pro pec -- cá -- tis su -- æ gen -- tis
+  vi -- dit Ie -- sum in tor -- mén -- tis
+  et fla -- gél -- lis súb -- di -- tum.
 
-Vidit suum dulcem natum
-Moriéntem desolátum,
-Dum emísit spíritum.
+  Vi -- dit su -- um dul -- cem na -- tum
+  Mo -- ri -- én -- tem de -- so -- lá -- tum,
+  Dum e -- mí -- sit spí -- ri -- tum.
 
 Eia Mater, fons amóris,
 Me sentíre vim dolóris
@@ -177,6 +325,26 @@ reponsAltoLyrics = \lyricmode {
   fu -- it il -- la be -- ne -- dí -- cta
   Ma -- ter U -- ni -- gé -- ni -- ti.
 
+  Quæ mæ -- ré -- bat, et do -- léb -- at,
+  Pi -- a Ma -- ter dum vi -- dé -- bat
+  na -- ti pœ -- nas ín -- cly -- ti.
+
+  Quis est ho -- mo, qui non fle -- ret,
+  Ma -- trem Chri -- sti si vi -- dé -- ret
+  in tan -- to sup -- plí -- ci -- o&nbsp;?
+
+  Quis non pos -- set con -- tri -- stá -- ri,
+  Pi -- am Ma -- trem con -- tem -- pla -- ri
+  do -- len -- tem cum Fi -- li -- o&nbsp;?
+
+  Pro pec -- cá -- tis su -- æ gen -- tis
+  vi -- dit Ie -- sum in tor -- mén -- tis
+  et fla -- gél -- lis súb -- di -- tum.
+
+  Vi -- dit su -- um dul -- cem na -- tum
+  Mo -- ri -- én -- tem de -- so -- lá -- tum,
+  Dum e -- mí -- sit spí -- ri -- tum.
+
 }
 reponsTenorLyrics = \lyricmode {
   Sta -- bat Ma -- ter do -- lo -- ró -- sa
@@ -192,6 +360,26 @@ reponsTenorLyrics = \lyricmode {
   fu -- it, il -- la be -- ne -- dí -- cta
   Ma -- ter U -- ni -- gé -- ni -- ti.
 
+  Quæ mæ -- ré -- bat, et do -- léb -- at,
+  Pi -- a Ma -- ter dum vi -- dé -- bat
+  na -- ti pœ -- nas ín -- cly -- ti.
+
+  Quis est ho -- mo, qui non fle -- ret,
+  Ma -- trem Chri -- sti si vi -- dé -- ret
+  in tan -- to sup -- plí -- ci -- o&nbsp;?
+
+  Quis non pos -- set con -- tri -- stá -- ri,
+  Pi -- am Ma -- trem con -- tem -- pla -- ri
+  do -- len -- tem cum Fi -- li -- o&nbsp;?
+
+  Pro pec -- cá -- tis su -- æ gen -- tis
+  vi -- dit Ie -- sum in tor -- mén -- tis
+  et fla -- gél -- lis súb -- di -- tum.
+
+  Vi -- dit su -- um dul -- cem na -- tum
+  Mo -- ri -- én -- tem de -- so -- lá -- tum,
+  Dum e -- mí -- sit spí -- ri -- tum.
+
 }
 reponsBassLyrics = \lyricmode {
   Sta -- bat Ma -- ter do -- lo -- ró -- sa
@@ -206,6 +394,26 @@ reponsBassLyrics = \lyricmode {
   O quam tris -- tis et af -- flí -- cta
   fu -- it, il -- la be -- ne -- dí -- cta
   Ma -- ter U -- ni -- gé -- ni -- ti.
+
+  Quæ mæ -- ré -- bat, et do -- léb -- at,
+  Pi -- a Ma -- ter dum vi -- dé -- bat
+  na -- ti pœ -- nas ín -- cly -- ti.
+
+  Quis est ho -- mo, qui non fle -- ret,
+  Ma -- trem Chri -- sti si vi -- dé -- ret
+  in tan -- to sup -- plí -- ci -- o&nbsp;?
+
+  Quis non pos -- set con -- tri -- stá -- ri,
+  Pi -- am Ma -- trem con -- tem -- pla -- ri
+  do -- len -- tem cum Fi -- li -- o&nbsp;?
+
+  Pro pec -- cá -- tis su -- æ gen -- tis
+  vi -- dit Ie -- sum in tor -- mén -- tis
+  et fla -- gél -- lis súb -- di -- tum.
+
+  Vi -- dit su -- um dul -- cem na -- tum
+  Mo -- ri -- én -- tem de -- so -- lá -- tum,
+  Dum e -- mí -- sit spí -- ri -- tum.
 
 }
 
@@ -224,13 +432,16 @@ OtherPageHeaders = \header {
 \paper {
   top-margin = 1\cm
   bottom-margin = 1\cm
-  left-margin = 1\cm
+  left-margin = 2\cm
   right-margin = 1\cm
-  indent = 1\cm
+  %indent = 2\cm
   % Plan for recto-verso printing with inner margin
-  two-sided = ##t
-  inner-margin =  2\cm
-  outer-margin = 1.5\cm
+  %two-sided = ##t
+  %inner-margin =  2\cm
+  %outer-margin = 1.5\cm
+  %two-sided = ##f
+  %inner-margin =  0\cm
+  %outer-margin = 0\cm
 
   oddFooterMarkup = {}
   #(include-special-characters)
