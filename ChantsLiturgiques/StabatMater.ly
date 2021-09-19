@@ -15,7 +15,7 @@ global = {
   \key d \minor \time 2/4
 }
 preludeOrgueSoprano = \relative c'{
-  d4. d8 f4 a a4. a8 g4. gs8
+  d4. d8 f4 a a4. a8 g4 gs4
   a4. bf8 g4. a8 f4. g8 e4. f8 \break
   d8 d'4 d8 d8 cs8 cs4
   c,8 c'4 c8 c b b4
@@ -23,17 +23,17 @@ preludeOrgueSoprano = \relative c'{
   a8 bf g a f g e f
 }
 preludeOrgueAlto = \relative c'{
-  a4. a8 cs4 cs ef4. ef8 d4 d
-  d4. d8 f4 e e e f e
+  a4. a8 cs4 cs ef4. ef8 d4 d4
+  f4. f8 f4. e8 d4. d8 d4. e8
   r8 f4. g2 r8 a4. d,2 r8 e4 d8 d4. f8 s2*2
 }
-preludeOrgueTenor = \relative c{
-  f4. f8 a4 f a4. a8 g4 g
-  g4. g8 d'4 d cs b! c cs
+preludeOrgueTenor = \relative c'{
+  r8 a8 f d r8 a' f cs8 r8 a'8 ef c8 r8 g'8 r8 g
+  r8 d' c d8 r8 d8 bf8 d8 r8 b8 gs b8 r8 a8 g a
   r8 a8[ f a] r8 a8[ g a] r8 a8[ gs a] r8 b8[ c b] r8 d8[ bf? gs] r8 a8[ f d] s2*2
 }
 preludeOrgueBass = \relative f{
-  d2 cs c b4 bf a2 b c cs
+  d2 cs c b4 bf a2 bf b cs
   d,2 e fs g gs4. e8 f2
   a4 bf b cs
 }
