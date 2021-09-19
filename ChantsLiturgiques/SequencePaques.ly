@@ -14,7 +14,6 @@ headers = \header {
 
 cantusSolistMusic = {
   \clef "vaticana-do3"
-  %\noBreak
   d c d f g f e d \finalis
   }
 amenSolistMusic = {
@@ -78,8 +77,8 @@ altosMusic = \relative c' {
 
   \partial 4 a4 a2. d4 e1 d2 cs2 \breathe % La mort et la vie…
   d2 e f e2 (e) r4
-  e4 e1 d1 cs1
-  e2  e4 g a2 a2 a1
+  e4 e1~e2 d cs1
+  <cs e>2  e4 g a2 a2 a1
 
   \partial 4 s4 f1 g2. e4 d1 \breathe % Dis-nous Marie Madeleine…
   d1 f1 e2. \breathe
@@ -103,8 +102,8 @@ tenorsMusic =  \relative c' {
   b2 a a2 bf4 a8 g f2. r4
 
   \partial 4 f4 f1 a4 cs d a a4 (bf) a2 \breathe % La mort et la vie…
-  a2 c c4 b a gs a2 r4 cs d2 a (a2) bf a1
-  cs2 d4 e f2 e f1
+  a2 c c4 b a gs a2 r4 cs d2 a (a2) b~b1
+  a2 d4 e f2 e f1
 
   \partial 4 s4 c1 c2. \breathe  % Dis-nous Marie Madeleine…
   bf4 a1 a d2 df c2. \breathe
@@ -129,7 +128,7 @@ bassesMusic =  \relative c {
 
   \partial 4 d4 d1 cs4 a b cs d4 (g,) a2 \breathe % La mort et la vie…
   d2 c f,4 g a b cs2 r4
-  a4 b2 cs d2 g, a1
+  a4 b2 cs d2 gs, a1
   %a2 b4 cs d2 g,4 a d1 \fermata
   a'2 gs4 g f g a2 d,1 \fermata
 
