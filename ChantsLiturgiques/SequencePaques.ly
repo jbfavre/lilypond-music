@@ -236,18 +236,12 @@ scorePaper = \paper {
     oddFooterMarkup = {}
     #(include-special-characters)
 
-    markup-system-spacing = #'((basic-distance . 50)
-      (minimum-distance . 10)
-       (padding . 5)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 5)
-       (minimum-distance . 5)
-       (padding . 1)
-       (stretchability . 0))
+    markup-system-spacing = #'((basic-distance . 30)
+       (stretchability . 500))
     scoreTitleMarkup = \markup {
       \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \vspace #3
+        \vspace #2
         \columns {
           \fill-line {
             \column {
