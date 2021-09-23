@@ -9,20 +9,34 @@ headers = \header {
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   subsubtitle = "Clichy la Garenne, août 2021"
-  dedication = "Au père Thomas Binot, curé de Clichy la Garenne, avec mon indéfectible amitié"
+  dedication = "Au père Thomas Binot, curé de Clichy la Garenne"
   }
 
 cantusSolistMusic = {
   \set Score.tempoHideNote = ##t
-  \tempo 2=65
+  \tempo 2=55
   \clef "vaticana-do3"
   d c d f g f e d \finalis
   }
+cantusMidiMusic = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=55
+  \clef treble
+  \key f \major \time 2/2
+  \relative c'{r4 d c d f g f e }
+  }
 amenSolistMusic = {
   \set Score.tempoHideNote = ##t
-  \tempo 2=65
+  \tempo 2=55
   \clef "vaticana-do3"
   \[ d\melisma e d\melismaEnd \] \[ \augmentum c\melisma \pes \augmentum d\melismaEnd \] \divisioMinima c f \[ e\melisma \flexa \deminutum d\melismaEnd \] d \finalis
+  }
+amenMidiMusic = {
+  \set Score.tempoHideNote = ##t
+  \tempo 2=55
+  \clef treble
+  \key f \major \time 2/2
+  \relative c'{r4 d4 e d c2 d c4 f e d d1\fermata}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -30,8 +44,9 @@ amenSolistMusic = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 solisteDynamics = {
   \set Score.tempoHideNote = ##t
-  \tempo 2=65
+  \tempo 2=55
   \key f \major \time 2/2
+  s1*2 \break
   \markCustom "A"
   s2. s4\mf s1*5  \bar "||" \break % Chrétiens offrez…
   \markCustom "B"
@@ -50,7 +65,7 @@ solisteDynamics = {
   }
 
 sopranosMusicA = \relative c'' {
-  r2. a4 a2 a4 (g) f4 e f g a b c b a2 (gs) a2\fermata r4 % Chrétiens offrez…
+  R1 R1 \parenthesize d,2 r4 a'4 a2 a4 (g) f4 e f g a b c b a2 (gs) a2\fermata r4 % Chrétiens offrez…
 }
 sopranosMusicB = \relative c'' {
   a4 g g a a f2 e4 e d2 r4 % L'Agneau…
@@ -85,7 +100,7 @@ sopranosMusicG = \relative c' {
   }
 
 altosMusicA = \relative c' {
-  r2. f4 e1 d2. e4 f2. f4 e1 e2 r4 % Chrétiens offrez…
+  R1 R1 r2 a4 f'4 e1 d2. e4 f2. f4 e1 e2 r4 % Chrétiens offrez…
 }
 altosMusicB = \relative c' {
   e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
@@ -119,7 +134,7 @@ altosMusicG = \relative c' {
   }
 
 tenorsMusicA =  \relative c' {
-  r2. d4 e2 d2 a2 a2 c2. c4 c2 b a2 \fermata r4 % Chrétiens offrez…
+  R1 R1 r2 a4 d4 e2 d2 a2 a2 c2. c4 c2 b a2 \fermata r4 % Chrétiens offrez…
 }
 tenorsMusicB =  \relative c' {
   cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
@@ -152,7 +167,7 @@ tenorsMusicG =  \relative c' {
   }
 
 bassesMusicA =  \relative c {
-  r2. d4 cs a b cs d2. c4 f,2. g4 a2 b cs2 \fermata r4 % Chrétiens offrez…
+  R1 R1 r2 d4 d4 cs a b cs d2. c4 f,2. g4 a2 b cs2 \fermata r4 % Chrétiens offrez…
 }
 bassesMusicB =  \relative c {
   a4 b2 cs2 d4 c g a d2 r4 % L'Agneau…
@@ -186,6 +201,7 @@ bassesMusicG =  \relative c {
   a2 b4 cs d4 c bf g a2 a d1 \fermata
   }
 Lyrics = \lyricmode {
+  "(lau- des)"
   Chré -- tiens of -- frez le sa -- cri -- fi -- ce de lou -- an -- ge.
 
   L'A -- gneau a ra -- che -- té les bre -- bis&nbsp;;
@@ -270,7 +286,7 @@ AllScoreLayout = \layout {
       \override Score.RehearsalMark.font-family = #'typewriter
       \context {
           \Staff
-          %\RemoveEmptyStaves
+          \RemoveEmptyStaves
           \override InstrumentName #'font-name = #"Monospace Regular"
       }
       \context {
@@ -288,10 +304,10 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %#(set-global-staff-size 18)
-\bookpart {
   \scorePaper
+% PDF output
   \score {
-    { % Partition
+    {
       <<
         \new VaticanaVoice = "cantus"{
           \magnifyStaff #(magstep 3.5)
@@ -306,9 +322,6 @@ AllScoreLayout = \layout {
         \new ChoirStaff = "solistStaff" \with {
           instrumentName = "Soliste"
           shortInstrumentName = "S."
-          %midiInstrument = "piccolo" % Pipe Organ
-          midiInstrument = "flute"   % Grand plein jeu
-          %midiInstrument = "recorder"   % Principaux 8 4
           %{\override VerticalAxisGroup.staff-staff-spacing.basic-distance =
             #'(('basic-distance  . 5)
                (minimum-distance . 3)
@@ -331,6 +344,60 @@ AllScoreLayout = \layout {
           instrumentName = "Orgue"
           shortInstrumentName = "O."
         }
+        <<
+          \new Staff = "highStaff"
+          <<
+            \clef "treble"
+            \new Voice = "soprano" { \key f \major \time 2/2 \voiceOne \sopranosMusicA \sopranosMusicB \sopranosMusicC \sopranosMusicD \sopranosMusicE \sopranosMusicF \sopranosMusicG}
+            \new Voice = "alto" { \key f \major \time 2/2 \voiceTwo \altosMusicA \altosMusicB \altosMusicC \altosMusicD \altosMusicE \altosMusicF \altosMusicG}
+          >>
+          \new Staff  = "lowStaff"
+          <<
+            \clef "bass"
+            \new Voice = "tenor" { \key f \major \time 2/2 \voiceThree \tenorsMusicA \tenorsMusicB \tenorsMusicC \tenorsMusicD \tenorsMusicE \tenorsMusicF \tenorsMusicG}
+            \new Voice = "bass" { \key f \major \time 2/2 \voiceFour \bassesMusicA  \bassesMusicB \bassesMusicC \bassesMusicD \bassesMusicE \bassesMusicF \bassesMusicG}
+          >>
+        >>
+      >>
+      <<
+        \new VaticanaVoice = "cantus" {
+          \magnifyStaff #(magstep 3.5)
+          \amenSolistMusic
+        }
+        \new Lyrics \lyricsto "cantus" {
+          A- men, Al- le- lu- ia.
+        }
+      >>
+    }
+    \AllScoreLayout
+    \scoreHeaders
+  }
+
+% MIDI output
+  \score {
+    {
+      <<
+        \new Staff  \with {
+           %midiInstrument = "piccolo" % Pipe Organ
+           %midiInstrument = "flute"   % Grand plein jeu
+           midiInstrument = "recorder"   % Principaux 8 4
+         }
+         <<
+          \new Voice = "cantus"{
+            \cantusMidiMusic
+            \break
+          }
+        >>
+        \new ChoirStaff = "solistStaff" \with {
+          %midiInstrument = "piccolo" % Pipe Organ
+          midiInstrument = "flute"   % Grand plein jeu
+          %midiInstrument = "recorder"   % Principaux 8 4
+        }
+        <<
+          \new Dynamics = "solistDynamics" { \solisteDynamics }
+          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice \sopranosMusicA \sopranosMusicB \sopranosMusicC \relative c''{d1\fermata R1*6 r2.} \sopranosMusicE \sopranosMusicF \sopranosMusicG}
+        >>
+        \new PianoStaff = "PianoStaff"
         <<
           \new Staff = "highStaff" \with {
             %midiInstrument = "piccolo" % Pipe Organ
@@ -355,17 +422,17 @@ AllScoreLayout = \layout {
           >>
         >>
       >>
-      <<
-        \new VaticanaVoice = "cantus" {
-          \magnifyStaff #(magstep 3.5)
-          \amenSolistMusic
-        }
-        \new Lyrics \lyricsto "cantus" {
-          A- men, Al- le- lu- ia.
+      \new Staff  \with {
+         %midiInstrument = "piccolo" % Pipe Organ
+         %midiInstrument = "flute"   % Grand plein jeu
+         midiInstrument = "recorder"   % Principaux 8 4
+       }
+       <<
+        \new Voice = "cantus"{
+          \amenMidiMusic
         }
       >>
     }
-    \AllScoreLayout
     \midi{
       \context {
         \Score
@@ -374,4 +441,3 @@ AllScoreLayout = \layout {
     }
     \scoreHeaders
   }
-}
