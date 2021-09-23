@@ -370,7 +370,6 @@ AllScoreLayout = \layout {
 }
 
 % MIDI output
-\include "../libs/midi/soundFontsMapping-KOR-sf2.ily"
 \score {
   {
     <<
