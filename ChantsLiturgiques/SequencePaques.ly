@@ -13,21 +13,15 @@ headers = \header {
   }
 
 cantusSolistMusic = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=55
   \clef "vaticana-do3"
   d c d f g f e d \finalis
   }
 cantusMidiMusic = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=55
   \clef treble
   \key f \major \time 2/2
   \relative c'{r4 d c d f g f e }
   }
 amenSolistMusic = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=55
   \clef "vaticana-do3"
   \[ d\melisma e d\melismaEnd \] \[ \augmentum c\melisma \pes \augmentum d\melismaEnd \] \divisioMinima c f \[ e\melisma \flexa \deminutum d\melismaEnd \] d \finalis
   }
@@ -65,7 +59,7 @@ solisteDynamics = {
   }
 
 sopranosMusicA = \relative c'' {
-  R1 R1 \parenthesize d,2 r4 a'4 a2 a4 (g) f4 e f g a b c b a2 (gs) a2\fermata r4 % Chrétiens offrez…
+  \parenthesize d,2 r4 a'4 a2 a4 (g) f4 e f g a b c b a2 (gs) a2\fermata r4 % Chrétiens offrez…
 }
 sopranosMusicB = \relative c'' {
   a4 g g a a f2 e4 e d2 r4 % L'Agneau…
@@ -242,19 +236,18 @@ scorePaper = \paper {
     oddFooterMarkup = {}
     #(include-special-characters)
 
-    markup-system-spacing = #'((basic-distance . 40)
-      (minimum-distance . 40)
-       (padding . 8)
+    markup-system-spacing = #'((basic-distance . 50)
+      (minimum-distance . 10)
+       (padding . 5)
        (stretchability . 5))
-    %{system-system-spacing = #'((basic-distance . 12)
+    system-system-spacing = #'((basic-distance . 5)
        (minimum-distance . 5)
        (padding . 1)
-       (stretchability . 5))
-    %}
+       (stretchability . 0))
     scoreTitleMarkup = \markup {
       \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \vspace #1
+        \vspace #3
         \columns {
           \fill-line {
             \column {
@@ -303,141 +296,140 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%#(set-global-staff-size 18)
-  \scorePaper
+\scorePaper
 % PDF output
-  \score {
-    {
-      <<
-        \new VaticanaVoice = "cantus"{
-          \magnifyStaff #(magstep 3.5)
-          \cantusSolistMusic
-          \break
-        }
-        \new Lyrics \lyricsto "cantus" {
-          Vic- ti- mæ Pás- ca- li lau- des
-        }
-      >>
-      <<
-        \new ChoirStaff = "solistStaff" \with {
-          instrumentName = "Soliste"
-          shortInstrumentName = "S."
-          %{\override VerticalAxisGroup.staff-staff-spacing.basic-distance =
-            #'(('basic-distance  . 5)
-               (minimum-distance . 3)
-               (padding . 1)
-               (stretchability . 0))
-          %}
-        }
+\score {
+  {
+    <<
+      \new VaticanaVoice = "cantus"{
+        \magnifyStaff #(magstep 3.5)
+        \cantusSolistMusic
+        \break
+      }
+      \new Lyrics \lyricsto "cantus" {
+        Vic- ti- mæ Pás- ca- li lau- des
+      }
+    >>
+    <<
+      \new ChoirStaff \with {
+        instrumentName = "Soliste"
+        shortInstrumentName = "S."
+      }
+      {
         <<
-          \new Dynamics = "solistDynamics" { \solisteDynamics }
-          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice \sopranosMusicA \sopranosMusicB \sopranosMusicC \relative c''{d1\fermata R1*6 r2.} \sopranosMusicE \sopranosMusicF \sopranosMusicG}
+          \new Dynamics { \solisteDynamics }
+          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice
+                                   R1 R1
+                                   \sopranosMusicA \sopranosMusicB \sopranosMusicC
+                                   \relative c''{d1\fermata R1*6 r2.} % organ only for letter D
+                                   \sopranosMusicE \sopranosMusicF \sopranosMusicG
+          }
           \new Lyrics \lyricsto "soliste" { \Lyrics }
         >>
-        \new PianoStaff = "PianoStaff" \with {
-          %{\override VerticalAxisGroup.staff-staff-spacing.basic-distance =
-            #'(('basic-distance  . 5)
-               (minimum-distance . 3)
-               (padding . 1)
-               (stretchability . 0))
-          %}
-          instrumentName = "Orgue"
-          shortInstrumentName = "O."
-        }
+      }
+      \new PianoStaff \with {
+        instrumentName = "Orgue"
+        shortInstrumentName = "O."
+      }
+      <<
+        \new Staff
         <<
-          \new Staff = "highStaff"
-          <<
-            \clef "treble"
-            \new Voice = "soprano" { \key f \major \time 2/2 \voiceOne \sopranosMusicA \sopranosMusicB \sopranosMusicC \sopranosMusicD \sopranosMusicE \sopranosMusicF \sopranosMusicG}
-            \new Voice = "alto" { \key f \major \time 2/2 \voiceTwo \altosMusicA \altosMusicB \altosMusicC \altosMusicD \altosMusicE \altosMusicF \altosMusicG}
-          >>
-          \new Staff  = "lowStaff"
-          <<
-            \clef "bass"
-            \new Voice = "tenor" { \key f \major \time 2/2 \voiceThree \tenorsMusicA \tenorsMusicB \tenorsMusicC \tenorsMusicD \tenorsMusicE \tenorsMusicF \tenorsMusicG}
-            \new Voice = "bass" { \key f \major \time 2/2 \voiceFour \bassesMusicA  \bassesMusicB \bassesMusicC \bassesMusicD \bassesMusicE \bassesMusicF \bassesMusicG}
-          >>
+          \clef "treble"
+          \new Voice { \key f \major \time 2/2 \voiceOne
+                       R1 R1
+                       \sopranosMusicA \sopranosMusicB \sopranosMusicC \sopranosMusicD \sopranosMusicE \sopranosMusicF \sopranosMusicG
+          }
+          \new Voice { \key f \major \time 2/2 \voiceTwo
+                       \altosMusicA \altosMusicB \altosMusicC \altosMusicD \altosMusicE \altosMusicF \altosMusicG
+          }
+        >>
+        \new Staff
+        <<
+          \clef "bass"
+          \new Voice { \key f \major \time 2/2 \voiceThree
+                       \tenorsMusicA \tenorsMusicB \tenorsMusicC \tenorsMusicD \tenorsMusicE \tenorsMusicF \tenorsMusicG
+          }
+          \new Voice { \key f \major \time 2/2 \voiceFour
+                       \bassesMusicA  \bassesMusicB \bassesMusicC \bassesMusicD \bassesMusicE \bassesMusicF \bassesMusicG
+          }
         >>
       >>
-      <<
-        \new VaticanaVoice = "cantus" {
-          \magnifyStaff #(magstep 3.5)
-          \amenSolistMusic
-        }
-        \new Lyrics \lyricsto "cantus" {
-          A- men, Al- le- lu- ia.
-        }
-      >>
-    }
-    \AllScoreLayout
-    \scoreHeaders
+    >>
+    <<
+      \new VaticanaVoice = "cantus2" {
+        \magnifyStaff #(magstep 3.5)
+        \amenSolistMusic
+      }
+      \new Lyrics \lyricsto "cantus2" {
+        A- men, Al- le- lu- ia.
+      }
+    >>
   }
+  \AllScoreLayout
+  \scoreHeaders
+}
 
 % MIDI output
-  \score {
-    {
-      <<
-        \new Staff  \with {
-           %midiInstrument = "piccolo" % Pipe Organ
-           %midiInstrument = "flute"   % Grand plein jeu
-           midiInstrument = "recorder"   % Principaux 8 4
-         }
-         <<
-          \new Voice = "cantus"{
-            \cantusMidiMusic
-            \break
-          }
-        >>
-        \new ChoirStaff = "solistStaff" \with {
-          %midiInstrument = "piccolo" % Pipe Organ
-          midiInstrument = "flute"   % Grand plein jeu
-          %midiInstrument = "recorder"   % Principaux 8 4
-        }
-        <<
-          \new Dynamics = "solistDynamics" { \solisteDynamics }
-          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice \sopranosMusicA \sopranosMusicB \sopranosMusicC \relative c''{d1\fermata R1*6 r2.} \sopranosMusicE \sopranosMusicF \sopranosMusicG}
-        >>
-        \new PianoStaff = "PianoStaff"
-        <<
-          \new Staff = "highStaff" \with {
-            %midiInstrument = "piccolo" % Pipe Organ
-            %midiInstrument = "flute"   % Grand plein jeu
-            midiInstrument = "recorder"   % Principaux 8 4
-          }
-          <<
-            \clef "treble"
-            \new Voice = "soprano" { \key f \major \time 2/2 \voiceOne \sopranosMusicA \sopranosMusicB \sopranosMusicC \sopranosMusicD \sopranosMusicE \sopranosMusicF \sopranosMusicG}
-            \new Voice = "alto" { \key f \major \time 2/2 \voiceTwo \altosMusicA \altosMusicB \altosMusicC \altosMusicD \altosMusicE \altosMusicF \altosMusicG}
-          >>
-          \new Staff  = "lowStaff" \with {
-            %midiInstrument = "piccolo" % Pipe Organ
-            %midiInstrument = "flute"   % Grand plein jeu
-            midiInstrument = "recorder"   % Principaux 8 4
-          }
-
-          <<
-            \clef "bass"
-            \new Voice = "tenor" { \key f \major \time 2/2 \voiceThree \tenorsMusicA \tenorsMusicB \tenorsMusicC \tenorsMusicD \tenorsMusicE \tenorsMusicF \tenorsMusicG}
-            \new Voice = "bass" { \key f \major \time 2/2 \voiceFour \bassesMusicA  \bassesMusicB \bassesMusicC \bassesMusicD \bassesMusicE \bassesMusicF \bassesMusicG}
-          >>
-        >>
-      >>
-      \new Staff  \with {
-         %midiInstrument = "piccolo" % Pipe Organ
-         %midiInstrument = "flute"   % Grand plein jeu
-         midiInstrument = "recorder"   % Principaux 8 4
-       }
-       <<
-        \new Voice = "cantus"{
-          \amenMidiMusic
-        }
-      >>
-    }
-    \midi{
-      \context {
-        \Score
-        midiChannelMapping = #'staff
+\include "../libs/midi/soundFontsMapping-KOR-sf2.ily"
+\score {
+  {
+    <<
+      \new Staff \with {
+        %midiInstrument = "piccolo"  % Pipe Organ
+        %midiInstrument = "flute"    % Grand plein jeu
+        midiInstrument = "recorder" % Principaux 8 4
       }
-    }
-    \scoreHeaders
+      <<
+        \new Voice { \key f \major \time 2/2
+                     \set midiInstrument = "recorder" % Principaux 8 4
+                     \cantusMidiMusic
+                     \set midiInstrument = "flute"    % Grand plein jeu
+                     \sopranosMusicA \sopranosMusicB \sopranosMusicC \relative c''{d1\fermata R1*6 r2.} \sopranosMusicE \sopranosMusicF \sopranosMusicG
+                     \set midiInstrument = "recorder" % Principaux 8 4
+                     \amenMidiMusic
+        }
+      >>
+      \new PianoStaff \with {
+        %midiInstrument = "piccolo"  % Pipe Organ
+        %midiInstrument = "flute"    % Grand plein jeu
+        midiInstrument = "recorder" % Principaux 8 4
+      }
+      <<
+        \new Staff
+        <<
+          \clef "treble"
+          \new Voice { \key f \major \time 2/2
+                       r1 r1
+                       \sopranosMusicA \sopranosMusicB \sopranosMusicC \sopranosMusicD \sopranosMusicE \sopranosMusicF \sopranosMusicG
+          }
+          \new Voice { \key f \major \time 2/2
+                       \altosMusicA \altosMusicB \altosMusicC \altosMusicD \altosMusicE \altosMusicF \altosMusicG
+          }
+        >>
+        \new Staff
+        <<
+          \clef "bass"
+          \new Voice { \key f \major \time 2/2
+                       \tenorsMusicA \tenorsMusicB \tenorsMusicC \tenorsMusicD \tenorsMusicE \tenorsMusicF \tenorsMusicG
+          }
+          \new Voice { \key f \major \time 2/2
+                       \bassesMusicA  \bassesMusicB \bassesMusicC \bassesMusicD \bassesMusicE \bassesMusicF \bassesMusicG
+          }
+        >>
+      >>
+    >>
   }
+  \midi{
+    % per voice midi output, using Staff level midiInstrument
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+    \tempo 2 = 55
+  }
+  \scoreHeaders
+}
