@@ -346,7 +346,7 @@ AllScoreLayout = \layout {
     \AllScoreLayout
     \scoreHeaders
   }
-  %\pageBreak
+  \pageBreak
   \score {
     {
       <<
