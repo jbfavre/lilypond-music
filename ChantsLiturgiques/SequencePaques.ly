@@ -3,13 +3,38 @@
 \include "gregorian.ly"
 \include "../libs/commonFunctions.ily"
 
-headers = \header {
+\header {
   title = "À la victime Pascale"
   subtitle = "Séquence du dimanche de Pâques"
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   subsubtitle = "Clichy la Garenne, août 2021"
   dedication = "Au père Thomas Binot, curé de Clichy la Garenne"
+  }
+introSopranosMusic = \relative c'{
+  R1 r4 d4 c d f g f e d e f g \break
+     r4 a4 g a c d c b a b cs a \break
+     \time 3/2 d c bf a bf d c bf a g a c bf a g f g bf \break
+               a g f e f a
+     \time 2/2 d, f g bf a g f e e1 d1\fermata \break
+  }
+introAltosMusic = \relative c'{
+  a1~ a2 a4 a d2 d4 d8 c a4 cs d d
+   e4 e4 e4 e a a a a8 g e4 gs a e
+      a2 a g g g f f f e e e d
+      a2 d d cs d1 a1
+  }
+introTenorsMusic =\relative c{
+  f1~ f2    e4 f bf bf a a8 g f4 a a g
+     c4 c4 b c f  f  e e8 d c4 e e a,
+     f'2 d d e c c d bf bf cs a a
+     f2 g f a a g f1
+  }
+introBassesMusic =\relative c{
+  d1~ d2 a4 d bf g a a d a d bf
+   a4 a' e4 a f  d e e a e a, cs
+      d2 fs g4 g, c2 e f4 f, bf2 d e4 e,
+      a2 cs d2 d4 c bf4 g a2 a d,1~d1\fermata \break
   }
 
 cantusSolistMusic = {
@@ -26,34 +51,25 @@ amenSolistMusic = {
   \[ d\melisma e d\melismaEnd \] \[ \augmentum c\melisma \pes \augmentum d\melismaEnd \] \divisioMinima c f \[ e\melisma \flexa \deminutum d\melismaEnd \] d \finalis
   }
 amenMidiMusic = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=55
   \clef treble
   \key f \major \time 2/2
-  \relative c'{r4 d4 e d c2 d c4 f e d d1\fermata}
+  \relative c'{d2 e4 d c2 d c4 f e d d1\fermata}
   }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%     Répons     %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 solisteDynamics = {
-  \set Score.tempoHideNote = ##t
-  \tempo 2=55
   \key f \major \time 2/2
-  s1*2 \break
   \markCustom "A"
   s2. s4\mf s1*5  \bar "||" \break % Chrétiens offrez…
   \markCustom "B"
-  s1*6
-  s4 s2. s1*2  \bar "||" \break % L'Agneau…
+  s1*9  \bar "||" \pageBreak % L'Agneau…
   \markCustom "C"
   s1*5 s2. s4\mf s1 s4-\markup{\italic rall.}\> s2. s2\!\p s2 s4 s4\sf s2 s1*3 \bar "||" \break % La mort et la vie…
   \markCustom "D"
-             s1*3 \break s1*4 \break
+  s1*4 \break s1*3 \pageBreak
   \markCustom "E"
   s1*5 s2. s4\mf s1*3 s2. s4\f s1*4 \bar "||" \break % Dis-nous Marie Madeleine…
   \markCustom "F"
-  s4\mf\< s2. s1*3 s4\!\f\< s2. s1*2 s4\!\> s2\! s4\mf \break s1*8 \bar "||" \break % J'ai vu les anges
+  s4\mf\< s2. s1*3 s4\!\f\< s2. s1*2 s4\!\> s2\! s4\mf s1*8 \bar "||" \pageBreak % J'ai vu les anges
   \markCustom "G"
   s1*5 s2-\markup{\italic rall.} s2 s2-\markup{\italic Implorant} s2 s2 s2\> s1 s2. s4\! \bar "|." \break % Nous le savons
   }
@@ -94,7 +110,7 @@ sopranosMusicG = \relative c' {
   }
 
 altosMusicA = \relative c' {
-  R1 R1 r2 a4 f'4 e1 d2. e4 f2. f4 e1 e2 r4 % Chrétiens offrez…
+  r2 a4 f'4 e1 d2. e4 f2. f4 e1 e2 r4 % Chrétiens offrez…
   }
 altosMusicB = \relative c' {
   e4 e1 d2 (d4.) cs8 a2 r4 % L'Agneau…
@@ -111,7 +127,7 @@ altosMusicD = \relative c'{
   a'2. r4 fs2 d4 f f2 ef f f d e d d d4 d a2 a1
   }
 altosMusicE = \relative c' {
-  f1 g2. e4 d1 \breathe % Dis-nous Marie Madeleine…
+  f1 e2. e4 d1 \breathe % Dis-nous Marie Madeleine…
   d1 f1 e2. \breathe
   a4 f1 g1 f1 e2. \breathe
   a4 f1 g1 f1 e2. \breathe
@@ -128,7 +144,7 @@ altosMusicG = \relative c' {
   }
 
 tenorsMusicA =  \relative c' {
-  R1 R1 r2 a4 d4 e2 d2 a2. a4 c2. c4 c2 b a2 \fermata r4 % Chrétiens offrez…
+  r2 a4 d4 e2 d2 a2. a4 c2. c4 c2 b a2 \fermata r4 % Chrétiens offrez…
   }
 tenorsMusicB =  \relative c' {
   cs4 d2 a2 (a2) bf4 a8 g f2 r4 % L'Agneau…
@@ -144,8 +160,8 @@ tenorsMusicD = \relative c'{
   fs2. r4 a,2 bf4 c d2 g, c d bf cs a a4 bf bf b e,2 f1
   }
 tenorsMusicE =  \relative c {
-  c'1 e4 d c % Dis-nous Marie Madeleine…
-  bf4 a1 a d2 df c2. \breathe
+  c'1 bf2. bf4 % Dis-nous Marie Madeleine…
+  a1 a d2 df c2. \breathe
   a4 a1 c c2 b4 d cs2. \breathe
   a4 a1 c c2 b4 d cs2. \breathe
   }
@@ -161,7 +177,7 @@ tenorsMusicG =  \relative c' {
   }
 
 bassesMusicA =  \relative c {
-  R1 R1 r2 d4 d4 cs a b cs d2. c4 f,2. g4 a2 b cs2\fermata r4 % Chrétiens offrez…
+  r2 d4 d4 cs a b cs d2. c4 f,2. g4 a2 b cs2\fermata r4 % Chrétiens offrez…
   }
 bassesMusicB =  \relative c {
   a4 b2 cs2 d4 c g a d2 r4 % L'Agneau…
@@ -226,7 +242,14 @@ Lyrics = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%          DRAW PARTITION          %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-scoreHeaders = \headers
+scoreHeaders = \header {
+  title = ##f
+  subtitle = ##f
+  composer = ##f
+  poet = ##f
+  subsubtitle = ##f
+  dedication = ##f
+}
 scorePaper = \paper {
     left-margin = 1.5\cm
     right-margin = 1.5\cm
@@ -238,10 +261,13 @@ scorePaper = \paper {
 
     markup-system-spacing = #'((basic-distance . 30)
        (stretchability . 500))
-    scoreTitleMarkup = \markup {
+    %top-system-spacing = #'((basic-distance . 30)
+    %                        (padding . 10)
+    %                        (stretchability . 1000))
+    bookTitleMarkup = \markup {
       \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \vspace #2
+        \vspace #3
         \columns {
           \fill-line {
             \column {
@@ -268,7 +294,10 @@ scorePaper = \paper {
     }
   }
 AllScoreLayout = \layout {
-      ragged-last = ##t
+      ragged-last = ##f
+      ragged-last-bottom = ##t
+      short-indent = 0.5\cm
+      indent = 1\cm
       \override LyricText #'font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
       \context {
@@ -290,37 +319,11 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\scorePaper
 % PDF output
-\score {
-  {
-    <<
-      \new VaticanaVoice = "cantus"{
-        \magnifyStaff #(magstep 3.5)
-        \cantusSolistMusic
-        \break
-      }
-      \new Lyrics \lyricsto "cantus" {
-        Vic- ti- mæ Pás- ca- li lau- des
-      }
-    >>
-    <<
-      \new ChoirStaff \with {
-        instrumentName = "Soliste"
-        shortInstrumentName = "S."
-      }
-      {
-        <<
-          \new Dynamics { \solisteDynamics }
-          \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice
-                                   R1 R1
-                                   \sopranosMusicA \sopranosMusicB \sopranosMusicC
-                                   \relative c''{d1\fermata R1*6 r2.} % organ transition letter D
-                                   \sopranosMusicE \sopranosMusicF \sopranosMusicG
-          }
-          \new Lyrics \lyricsto "soliste" { \Lyrics }
-        >>
-      }
+\book {
+  \scorePaper
+  \score {
+    {
       \new PianoStaff \with {
         instrumentName = "Orgue"
         shortInstrumentName = "O."
@@ -329,48 +332,104 @@ AllScoreLayout = \layout {
         \new Staff
         <<
           \clef "treble"
-          \new Voice { \key f \major \time 2/2 \voiceOne
-                       R1 R1
-                       \sopranosMusicA \sopranosMusicB \sopranosMusicC
-                       \sopranosMusicD % organ transition letter D
-                       \sopranosMusicE \sopranosMusicF \sopranosMusicG
-          }
-          \new Voice { \key f \major \time 2/2 \voiceTwo
-                       \altosMusicA \altosMusicB \altosMusicC
-                       \altosMusicD % organ transition letter D
-                       \altosMusicE \altosMusicF \altosMusicG
-          }
+          \new Voice { \key f \major \time 2/2 \voiceOne \introSopranosMusic}
+          \new Voice { \key f \major \time 2/2 \voiceTwo \introAltosMusic}
         >>
         \new Staff
         <<
           \clef "bass"
-          \new Voice { \key f \major \time 2/2 \voiceThree
-                       \tenorsMusicA \tenorsMusicB \tenorsMusicC
-                       \tenorsMusicD % organ transition letter D
-                       \tenorsMusicE \tenorsMusicF \tenorsMusicG
-          }
-          \new Voice { \key f \major \time 2/2 \voiceFour
-                       \bassesMusicA  \bassesMusicB \bassesMusicC
-                       \bassesMusicD % organ transition letter D
-                       \bassesMusicE \bassesMusicF \bassesMusicG
-          }
+          \new Voice { \key f \major \time 2/2 \voiceThree \introTenorsMusic}
+          \new Voice { \key f \major \time 2/2 \voiceFour \introBassesMusic}
         >>
       >>
-    >>
-    <<
-      \new VaticanaVoice = "cantus2" {
-        \magnifyStaff #(magstep 3.5)
-        \amenSolistMusic
-      }
-      \new Lyrics \lyricsto "cantus2" {
-        A- men, Al- le- lu- ia.
-      }
-    >>
+    }
+    \AllScoreLayout
+    \scoreHeaders
   }
-  \AllScoreLayout
-  \scoreHeaders
+  %\pageBreak
+  \score {
+    {
+      <<
+        \new VaticanaVoice = "cantus"{
+          \magnifyStaff #(magstep 5)
+          \cantusSolistMusic
+          \break
+        }
+        \new Lyrics \lyricsto "cantus" {
+            Vic- ti- mæ Pás- ca- li lau- des
+        }
+      >>
+    }
+    \AllScoreLayout
+    \scoreHeaders
+  }
+  \score {
+    {
+      <<
+        \new ChoirStaff \with {
+          instrumentName = "Soliste"
+          shortInstrumentName = "S."
+        }
+        {
+          <<
+            \new Dynamics { \solisteDynamics }
+            \new Voice = "soliste" { \key f \major \time 2/2 \oneVoice
+                                     \sopranosMusicA \sopranosMusicB \sopranosMusicC
+                                     \relative c''{d1\fermata R1*6 r2.} % organ transition letter D
+                                     \sopranosMusicE \sopranosMusicF \sopranosMusicG
+            }
+            \new Lyrics \lyricsto "soliste" { \Lyrics }
+          >>
+        }
+        \new PianoStaff \with {
+          instrumentName = "Orgue"
+          shortInstrumentName = "O."
+        }
+        <<
+          \new Staff
+          <<
+            \clef "treble"
+            \new Voice { \key f \major \time 2/2 \voiceOne
+                         \sopranosMusicA \sopranosMusicB \sopranosMusicC
+                         \sopranosMusicD % organ transition letter D
+                         \sopranosMusicE \sopranosMusicF \sopranosMusicG
+            }
+            \new Voice { \key f \major \time 2/2 \voiceTwo
+                         \altosMusicA \altosMusicB \altosMusicC
+                         \altosMusicD % organ transition letter D
+                         \altosMusicE \altosMusicF \altosMusicG
+            }
+          >>
+          \new Staff
+          <<
+            \clef "bass"
+            \new Voice { \key f \major \time 2/2 \voiceThree
+                         \tenorsMusicA \tenorsMusicB \tenorsMusicC
+                         \tenorsMusicD % organ transition letter D
+                         \tenorsMusicE \tenorsMusicF \tenorsMusicG
+            }
+            \new Voice { \key f \major \time 2/2 \voiceFour
+                         \bassesMusicA  \bassesMusicB \bassesMusicC
+                         \bassesMusicD % organ transition letter D
+                         \bassesMusicE \bassesMusicF \bassesMusicG
+            }
+          >>
+        >>
+      >>
+      <<
+        \new VaticanaVoice = "cantus2" {
+          \magnifyStaff #(magstep 5)
+          \amenSolistMusic
+        }
+        \new Lyrics \lyricsto "cantus2" {
+          A- men, Al- le- lu- ia.
+        }
+      >>
+    }
+    \AllScoreLayout
+    \scoreHeaders
+  }
 }
-
 % MIDI output
 \score {
   {
@@ -382,6 +441,8 @@ AllScoreLayout = \layout {
       }
       <<
         \new Voice { \key f \major \time 2/2
+                     \set midiInstrument = "flute"    % Grand plein jeu
+                     \introSopranosMusic
                      \set midiInstrument = "recorder" % Principaux 8 4
                      \cantusMidiMusic
                      \set midiInstrument = "flute"    % Grand plein jeu
@@ -402,12 +463,15 @@ AllScoreLayout = \layout {
         <<
           \clef "treble"
           \new Voice { \key f \major \time 2/2
+                       \introSopranosMusic
                        r1 r1
                        \sopranosMusicA \sopranosMusicB \sopranosMusicC
                        \sopranosMusicD % organ transition letter D
                        \sopranosMusicE \sopranosMusicF \sopranosMusicG
           }
           \new Voice { \key f \major \time 2/2
+                       \introAltosMusic
+                       r1 r1
                        \altosMusicA \altosMusicB \altosMusicC
                        \altosMusicD % organ transition letter D
                        \altosMusicE \altosMusicF \altosMusicG
@@ -417,11 +481,15 @@ AllScoreLayout = \layout {
         <<
           \clef "bass"
           \new Voice { \key f \major \time 2/2
+                       \introTenorsMusic
+                       r1 r1
                        \tenorsMusicA \tenorsMusicB \tenorsMusicC
                        \tenorsMusicD % organ transition letter D
                        \tenorsMusicE \tenorsMusicF \tenorsMusicG
           }
           \new Voice { \key f \major \time 2/2
+                       \introBassesMusic
+                       r1 r1
                        \bassesMusicA  \bassesMusicB \bassesMusicC
                        \bassesMusicD % organ transition letter D
                        \bassesMusicE \bassesMusicF \bassesMusicG
@@ -442,5 +510,4 @@ AllScoreLayout = \layout {
     }
     \tempo 2 = 55
   }
-  \scoreHeaders
 }
