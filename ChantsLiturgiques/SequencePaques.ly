@@ -16,25 +16,25 @@ introSopranosMusic = \relative c'{
      r4 a4 g a c d c b a b cs a \break
      \time 3/2 d c bf a bf d c bf a g a c bf a g f g bf \break
                a g f e f a
-     \time 2/2 g f e d d2 b cs1 d1\fermata \break
+     \time 2/2 g f e d d2 cs2 d1\fermata \break
   }
 introAltosMusic = \relative c'{
   a1~ a2 a4 a d2 d4 d8 c a4 cs d d
    e4 e4 e4 e a a a a8 g e4 gs a e
       a2 a g g g f f f e e e d
-      d2 d a1 a a
+      d2 d a4 b a2 a1
   }
 introTenorsMusic =\relative c{
   f1~ f2    e4 f bf bf a a8 g f4 a a g
      c4 c4 b c f  f  e e8 d c4 e e a,
      f'2 d d e c c d bf bf cs a a
-     bf2 b2 e,1 e2 g fs1
+     bf2 b2 e,2 e4 fs8 g fs1
   }
 introBassesMusic =\relative c{
   d1~ d2 a4 d bf g a a d a d bf
    a4 a' e4 a f  d e e a e a, cs
       d2 fs g4 g, c2 e f4 f, bf2 d e4 e,
-      a2 cs d4 d, g2 gs a1 a1 d1\fermata \break
+      a2 cs d4 d, g2 gs a a d1\fermata \break
   }
 
 cantusSolistMusic = {
@@ -63,15 +63,15 @@ solisteDynamics = {
   \markCustom "B"
   s1*9  \bar "||" \pageBreak % L'Agneau…
   \markCustom "C"
-  s1*5 s2. s4\mf s1 s4-\markup{\italic rall.}\> s2. s2\!\p s2 s4 s4\sf s2 s1*3 \bar "||" \break % La mort et la vie…
+  s1*6 s2. s4\mf s1 s4-\markup{\italic rall.}\> s2. s2\!\p s2 s4 s4\sf s2 s1*2 \bar "||" \break % La mort et la vie…
   \markCustom "D"
   s1*4 \break s1*3 \pageBreak
   \markCustom "E"
   s1*5 s2. s4\mf s1*3 s2. s4\f s1*4 \bar "||" \break % Dis-nous Marie Madeleine…
   \markCustom "F"
-  s4\mf\< s2. s1*3 s4\!\f\< s2. s1*2 s4\!\> s2\! s4\mf s1*8 \bar "||" \pageBreak % J'ai vu les anges
+  s4\mf\< s2. s1*3 s4\!\f\< s2. s1 s4\!\> s4 s2 s4 s2\! s4\mf s1*8 \bar "||" \pageBreak % J'ai vu les anges
   \markCustom "G"
-  s1*5 s2-\markup{\italic rall.} s2 s2-\markup{\italic Implorant} s2 s2 s2\> s1 s2. s4\! \bar "|." \break % Nous le savons
+  s1*5 s4-\markup{\italic "rall."} s2. s4-\markup{\italic Implorant} s2. s2 s2\mf \> s1 s2. s4\!\p \bar "|." \break % Nous le savons
   }
 
 sopranosMusicA = \relative c'' {
@@ -84,12 +84,12 @@ sopranosMusicB = \relative c'' {
   }
 sopranosMusicC = \relative c' {
   r2. d4 d2 a'4 a a4 a a4 g f2 e2 \breathe % La mort et la vie…
-  f2 f4 g a2 c4-> b a2 r4
+  f2 g4 g a2 c4-> b a2 r4
   a4 g g a a f2 f e1
   r4 %{ éclatant %} a4 b cs d2 (cs) %d1\fermata
   }
 sopranosMusicD = \relative c'{
-  d'2.\fermata d,4 a'2 g4 a bf d c bf a f bf a g e a g f cs d f f e d cs d2.\fermata
+  d'2.\fermata d,4 a' fs g a bf d c bf a f bf a g e a g f cs d f f e d cs d2.\fermata
   }
 sopranosMusicE = \relative c' {
   %{ un peu plus allant %} c4 a'2. a4 c bf a g g2 f2 \breathe % Dis-nous Marie Madeleine…
@@ -124,7 +124,7 @@ altosMusicC = \relative c' {
   <cs e>2  e4 g a2 a2 %a1
   }
 altosMusicD = \relative c'{
-  a'2. r4 fs2 d4 f f2 ef f f d e d d d4 d a2 a1
+  a'2. r4 fs4 d d4 f f2 ef f f d e d d d4 d a2 a1
   }
 altosMusicE = \relative c' {
   f1 e2. e4 d1 \breathe % Dis-nous Marie Madeleine…
@@ -153,7 +153,7 @@ tenorsMusicB =  \relative c' {
   }
 tenorsMusicC =  \relative c {
   f1 f1 a4 cs d a a4 (bf) a2 \breathe % La mort et la vie…
-  a2 c c4 b a gs a2 r4 cs d2 a (a2) b~b1
+  a2 a4 c c b a gs a2 r4 cs d2 a (a2) b~b1
   a2 d4 e f2 e %f1
   }
 tenorsMusicD = \relative c'{
@@ -192,7 +192,7 @@ bassesMusicC =  \relative c {
   a2 gs4 g f g a2 %d,1 \fermata
   }
 bassesMusicD = \relative c{
-  d,2.\fermata r4 d'2 g4 f! bf,2 c f bf, e a, d4 e f4 bf, g gs a2 d1\fermata
+  d,2.\fermata r4 d'2 g4 f! bf,2 c f bf, e a, d4 e f4 bf, g gs a2 d,1\fermata
   }
 bassesMusicE =  \relative c {
   f1 c2. c4 d1 \breathe % Dis-nous Marie Madeleine…
