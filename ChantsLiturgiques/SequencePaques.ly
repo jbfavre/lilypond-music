@@ -16,25 +16,25 @@ introSopranosMusic = \relative c'{
      r4 a4 g a c d c b a b cs a \break
      \time 3/2 d c bf a bf d c bf a g a c bf a g f g bf \break
                a g f e f a
-     \time 2/2 d, f g bf a g f e e1 d1\fermata \break
+     \time 2/2 g f e d d2 b cs1 d1\fermata \break
   }
 introAltosMusic = \relative c'{
   a1~ a2 a4 a d2 d4 d8 c a4 cs d d
    e4 e4 e4 e a a a a8 g e4 gs a e
       a2 a g g g f f f e e e d
-      a2 d d cs d1 a1
+      d2 d a1 a a
   }
 introTenorsMusic =\relative c{
   f1~ f2    e4 f bf bf a a8 g f4 a a g
      c4 c4 b c f  f  e e8 d c4 e e a,
      f'2 d d e c c d bf bf cs a a
-     f2 g f a a g f1
+     bf2 b2 e,1 e2 g fs1
   }
 introBassesMusic =\relative c{
   d1~ d2 a4 d bf g a a d a d bf
    a4 a' e4 a f  d e e a e a, cs
       d2 fs g4 g, c2 e f4 f, bf2 d e4 e,
-      a2 cs d2 d4 c bf4 g a2 a d,1~d1\fermata \break
+      a2 cs d4 d, g2 gs a1 a1 d1\fermata \break
   }
 
 cantusSolistMusic = {
