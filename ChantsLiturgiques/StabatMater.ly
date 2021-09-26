@@ -28,7 +28,7 @@ preludeOrgueAlto = \relative c'{
   r8 f4. g2 r8 a4. d,2 r8 e4 d8 d4. f8 s2*2
 }
 preludeOrgueTenor = \relative c'{
-  r8 a8 f d r8 a' f cs8 r8 a'8 ef c8 r8 g'8 r8 g
+  r8 a8 f d r8 a' f cs8 r8 a'8 ef c8 r8 g'8 r8 gs
   r8 d' c d8 r8 d8 bf8 d8 r8 b8 gs b8 r8 a8 g a
   r8 a8[ f a] r8 a8[ g a] r8 a8[ gs a] r8 b8[ c b] r8 d8[ bf? gs] r8 a8[ f d] s2*2
 }
@@ -582,7 +582,7 @@ AllScoreLayout = \layout {
   \FirstScorePaper
   \score {
     << % Partition Orgue + Choeur
-      \new ChoirStaff
+%{      \new ChoirStaff
       <<
         \new Staff \with { instrumentName = \markup{ "S."} shortInstrumentName = \markup{"S."} }
         <<
@@ -617,7 +617,11 @@ AllScoreLayout = \layout {
           \new Lyrics \lyricsto "reponsBass" { \reponsBassLyrics }
         >>
       >>
-      \new PianoStaff \with { instrumentName = \markup{ "O."} shortInstrumentName = \markup{"O."} }
+%}      \new PianoStaff \with { instrumentName = \markup{ "O."} shortInstrumentName = \markup{"O."}
+        %midiInstrument = "piccolo"  % Pipe Organ
+        %midiInstrument = "flute"    % Grand plein jeu
+        midiInstrument = "recorder" % Principaux 8 4
+      }
       <<
         \new Staff
         <<
@@ -635,5 +639,17 @@ AllScoreLayout = \layout {
     >>
     \AllScoreLayout
     \FirstPageHeaders
+    \midi{
+      % per voice midi output, using Staff level midiInstrument
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+      \tempo 4 = 70
+    }
   }
 }
