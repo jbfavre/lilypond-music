@@ -578,7 +578,7 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bookpart { % Stance
+\bookpart {
   \FirstScorePaper
   \score {
     << % Partition Orgue + Choeur
