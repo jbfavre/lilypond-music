@@ -12,17 +12,12 @@ tempoVerseAcelerando = {
 }
 
 scoreHeader = \header {
-  title = "Psaume 144"
-  subtitle = \markup { \column { "17ème Dimanche du Temps Ordinaire" "Année B" }}
+  title = "Psaume 32"
+  subtitle = \markup { \column { "29ème Dimanche du Temps Ordinaire" "Année B" }}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  date = "Clichy la Garenne, juillet 2021"
+  date = "Clichy la Garenne, octobre 2021"
 }
-
-title = "Psaume 32"
-subtitle = "29ème Dimanche du Temps Ordinaire"
-composer = "Jean Baptiste Favre"
-dedicace = "Clichyla Garenne, octobre 2021"
 
 global = {
   \key f \major
