@@ -438,4 +438,3 @@ partitionVerset = {
   \midi { \set midiMergeUnisons = ##t \tempo 4. = 55}
 }
 }
-\verseLyrics
