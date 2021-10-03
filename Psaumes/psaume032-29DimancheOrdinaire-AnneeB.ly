@@ -38,7 +38,7 @@ antiphonRythm = {
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  c8 d e f4 f8 g a bf \time 4/8 \tempo \markup {
+  c8 d e f4 f8 g a bf a4 r8 \time 4/8 \tempo \markup {
     \concat {
       (
       \smaller \general-align #Y #DOWN \note {8} #1
@@ -46,19 +46,19 @@ antiphonMusicSoprano = \relative c' {
       \smaller \general-align #Y #DOWN \note {8} #1
       )
     }
-  } a4 r4 a8 a a g f4 g8 e f2
+  } a8 a a g f4 g8 e f2
   }
 
 antiphonMusicAlto = \relative c' {
-  a8 bf cs d4 d8 d d d cs4 r4 cs8 cs d e d4 d8 c c2
+  a8 bf cs d4 d8 d d d cs4 r8 cs8 cs d e d4 d8 c c2
   }
 
 antiphonMusicTenor =  \relative c' {
-  a8 a a a4 a8 g8 f e e4 r4 e8 e e a a4 g8 g a2
+  a8 a a a4 a8 g8 f e e4 r8 e8 e e a a4 g8 g a2
   }
 
 antiphonMusicBass =  \relative c {
-  f8 f e d4 c8 bf bf g a4 r4 a8 a b cs d4 bf8 c f,2
+  f8 f e d4 c8 bf bf g a4 r8 a8 a b cs d4 bf8 c f,2
   }
 
 antiphonLyrics = \lyricmode {
@@ -419,7 +419,7 @@ partitionVerset = {
       \set Staff.midiMaximumVolume = #1
     }
   >>
-  \midi { \set midiMergeUnisons = ##t }
+  \midi { \set midiMergeUnisons = ##t  \tempo 4. = 55}
 }
 }
 \book {
@@ -440,7 +440,7 @@ partitionVerset = {
       \set Staff.midiMaximumVolume = #1
     }
   >>
-  \midi { \set midiMergeUnisons = ##t }
+  \midi { \set midiMergeUnisons = ##t \tempo 4. = 55}
 }
 }
 \verseLyrics
