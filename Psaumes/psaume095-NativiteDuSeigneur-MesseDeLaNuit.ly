@@ -127,26 +127,31 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Oui, elle est droite, la par" \underline o "le du Seigneur&nbsp;;"}
-        \concat { \typewriter "   " "il est fid" \underline è "le en tout ce qu’il fait."}
-        \concat { \typewriter "   " "Il aime le bon dro" \underline i "t et la justice&nbsp;;"}
-        \concat { \typewriter "   " "la terre est rempl" \underline i "e de son amour."}
+        \concat { \typewriter "1. " "Chantez au Seigneur un chant nouveau,"}
+        \concat { \typewriter "   " "chantez au Seigneur, terre entière,"}
+        \concat { \typewriter "   " "chantez au Seigneur et bénissez son nom !"}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "2. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
-        \concat { \typewriter "   " "qui mettent leur esp" \underline o "ir en son amour,"}
-        \concat { \typewriter "   " "pour les délivr" \underline e "r de la mort,"}
-        \concat { \typewriter "   " "les garder en vie aux j" \underline o "urs de famine."}
+        \concat { \typewriter "2. " "De jour en jour, proclamez son salut,"}
+        \concat { \typewriter "   " "racontez à tous les peuples sa gloire,"}
+        \concat { \typewriter "   " "à toutes les nations ses merveilles !"}
       }
     }
     \vspace #1
     \fill-line {
-      \column {
-        \concat { \typewriter "3. " "Nous attendons notre v" \underline i "e du Seigneur&nbsp;:"}
-        \concat { \typewriter "   " "il est pour nous un appu" \underline i ", un bouclier."}
-        \concat { \typewriter "   " "Que ton amour, Seign" \underline e "ur, soit sur nous"}
-        \concat { \typewriter "   " "comme notre esp" \underline o "ir est en toi&nbsp;!"}
+      \left-column {
+        \concat { \typewriter "3. " "Joie au ciel ! Exulte la terre !"}
+        \concat { \typewriter "   " "Les masses de la mer mugissent,"}
+        \concat { \typewriter "   " "la campagne tout entière est en fête."}
+      }
+      \hspace #1
+      \left-column{
+        \concat { \typewriter "4. " "Les arbres des forêts dansent de joie"}
+        \concat { \typewriter "   " "devant la face du Seigneur, car il vient,"}
+        \concat { \typewriter "   " "car il vient pour juger la terre."}
+        \concat { \typewriter "   " "Il jugera le monde avec justice"}
+        \concat { \typewriter "   " "et les peuples selon sa vérité !"}
       }
     }
   }
