@@ -29,7 +29,7 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 antiphonRythm = {
- s4.*3 s2*4 \bar "|." \break
+ s4.*4 s2*3 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
