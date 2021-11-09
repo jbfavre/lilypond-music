@@ -125,26 +125,33 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Oui, elle est droite, la par" \underline o "le du Seigneur&nbsp;;"}
-        \concat { \typewriter "   " "il est fid" \underline è "le en tout ce qu’il fait."}
-        \concat { \typewriter "   " "Il aime le bon dro" \underline i "t et la justice&nbsp;;"}
-        \concat { \typewriter "   " "la terre est rempl" \underline i "e de son amour."}
+        \concat { \typewriter "1. " "Chantez au Seigneur un chant nouveau,"}
+        \concat { \typewriter "   " "car il a fait des merveilles&nbsp;;"}
+        \concat { \typewriter "   " "par son bras très saint, par sa main puissante,"}
+        \concat { \typewriter "   " "il s’est assuré la victoire."}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "2. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
-        \concat { \typewriter "   " "qui mettent leur esp" \underline o "ir en son amour,"}
-        \concat { \typewriter "   " "pour les délivr" \underline e "r de la mort,"}
-        \concat { \typewriter "   " "les garder en vie aux j" \underline o "urs de famine."}
+        \concat { \typewriter "2. " "Le Seigneur a fait connaître sa victoire"}
+        \concat { \typewriter "   " "et révélé sa justice aux nations&nbsp;;"}
+        \concat { \typewriter "   " "il s’est rappelé sa fidélité, son amour,"}
+        \concat { \typewriter "   " "en faveur de la maison d’Israël."}
       }
     }
     \vspace #1
     \fill-line {
       \column {
-        \concat { \typewriter "3. " "Nous attendons notre v" \underline i "e du Seigneur&nbsp;:"}
-        \concat { \typewriter "   " "il est pour nous un appu" \underline i ", un bouclier."}
-        \concat { \typewriter "   " "Que ton amour, Seign" \underline e "ur, soit sur nous"}
-        \concat { \typewriter "   " "comme notre esp" \underline o "ir est en toi&nbsp;!"}
+        \concat { \typewriter "3. " "La terre tout entière a vu"}
+        \concat { \typewriter "   " "la victoire de notre Dieu."}
+        \concat { \typewriter "   " "Acclamez le Seigneur, terre entière,"}
+        \concat { \typewriter "   " "sonnez, chantez, jouez&nbsp;!"}
+      }
+      \hspace #1
+      \left-column{
+        \concat { \typewriter "4. " "Jouez pour le Seigneur sur la cithare,"}
+        \concat { \typewriter "   " "sur la cithare et tous les instruments ;"}
+        \concat { \typewriter "   " "au son de la trompette et du cor,"}
+        \concat { \typewriter "   " "acclamez votre roi, le Seigneur&nbsp;!"}
       }
     }
   }
