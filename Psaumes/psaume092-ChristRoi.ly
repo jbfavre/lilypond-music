@@ -29,23 +29,23 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 antiphonRythm = {
- s2.*4 \bar "|." \break
+ \partial 4 s4 s2.*5 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  d8 d g4 a b4 \oneVoice r8 \voiceOne b8 b a g4 g8 a g fs g4 g2
+  \partial 4 d8 d g2 a4 b r8 b8 b a g4 g8 a g fs g2. g
   }
 
 antiphonMusicAlto = \relative c' {
-  d8 d d4 fs fs4 fs4 fs8 fs e8 e e4 d8 d d4 d2
+  \partial 4 d8 d d2 fs4 fs fs fs8 fs e8 e e4 d8 d d2. d
   }
 
 antiphonMusicTenor =  \relative c' {
-  d8 d b4 c b4 ds4 ds8 b b4 c c c8 b16 a b2
+  \partial 4 d8 d b2 c4 b ds4 ds8 b b4 (c) c c4 b a b2 b4
   }
 
 antiphonMusicBass =  \relative c {
-  d8[ d] g (fs) e4 ds4 b4 b8 ds e d c4 d8 d g,4 g2
+  \partial 4 d8[ d] g4 (fs) e4 ds4 b4 b8 ds e d c4 d8 d g,2. g
   }
 
 antiphonLyrics = \lyricmode {
