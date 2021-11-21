@@ -33,19 +33,19 @@ antiphonRythm = {
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  \partial 4 d8 d g2 a4 b r8 b8 b a g4 g8 a g fs g2. g
+  \partial 4 d8 d g2 a4 b r8 fs8 b a g4 e8 a g fs g2. g
   }
 
 antiphonMusicAlto = \relative c' {
-  \partial 4 d8 d d2 fs4 fs fs fs8 fs e8 e e4 d8 d d2. d
+  \partial 4 d8 d d2 fs4 fs s8 fs8 fs fs e8 e e4 e8 e e2. d
   }
 
 antiphonMusicTenor =  \relative c' {
-  \partial 4 d8 d b2 c4 b ds4 ds8 b b4 (c) c c4 b a b2 b4
+  \partial 4 d8 d b2 c4 b r8 d8 d b b4 (c) d d4 c a b2 b4
   }
 
 antiphonMusicBass =  \relative c {
-  \partial 4 d8[ d] g4 (fs) e4 ds4 b4 b8 ds e d c4 d8 d g,2. g
+  \partial 4 d8[ d] g4 (fs) e4 d4 b4 c8 d e d c4 d8 d c2. g
   }
 
 antiphonLyrics = \lyricmode {
@@ -65,30 +65,30 @@ verseStropheRythm = {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe" \cadenzaOn
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
 }
 verseStropheMusicSoprano = \relative c'' {
-  b\breve g1 a4
-  b\breve b1 a4 g
-  a\breve a1 g4
+  b\breve a1 g4
+  g\breve a1 a4
+  g\breve a1 b4
   }
 verseStropheMusicAlto = \relative c'' {
-  g\breve d1 e4
-  ds\breve ds1 e4 e
-  g\breve fs1 d4
+  g\breve g1 fs4
+  e\breve e1 fs4
+  fs\breve g1 g4
   }
 
 verseStropheMusicTenor = \relative c' {
-  d\breve b1 c4
-  b\breve b1 b4 b
-  e\breve c1 b4
+  d\breve e1 b4
+  b\breve d1 e4
+  b\breve e1 d4
   }
 
-verseStropheMusicBass = \relative c' {
-  g\breve g1 fs4
-  fs\breve fs1 e4 e4
-  c\breve d1 g4
+verseStropheMusicBass = \relative c {
+  g\breve c1 e4
+  e\breve c1 d4
+  e\breve c1 g'4
   }
 
 verseLyrics = \markuplist {
