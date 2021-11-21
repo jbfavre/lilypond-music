@@ -31,23 +31,23 @@ antiphonRythm = {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne"
   \partial 8 s8
-  s2*6 \bar "|." \break
+  s2*3 \time 3/4 s2. \time 2/4 s2*3 \bar "|." \break
   }
 
 antiphonMusicSoprano = \relative c'' {
-  \partial 8 g8 bf4 r8 g8 c4 r8 a8 c bf bf a a g g f g4 g g2
+  \partial 8 g8 bf4 r8 g8 c4 r8 a8 c bf bf a a g g4. f8 g4 g g2
 }
 
 antiphonMusicAlto = \relative g' {
-  \partial 8 r8 r8 g8 g g g4 r8 g8 a bf g a f g ef f d4 ef d2
+  \partial 8 r8 r8 g8 g g g4 r8 g8 a bf a a g g d4.  f8 ef4 ef d2
   }
 
 antiphonMusicTenor =  \relative c' {
-  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d c a8 c c4 c8 (a) b2
+  \partial 8 r8 r8 d8 d d d4 c8 ef8 d4 d c bf4 a8 d d4 c b2
   }
 
 antiphonMusicBass =  \relative f {
-  \partial 8 r8 r8 g8 f f ef4 r8 c8 g'4 f ef d g g g2
+  \partial 8 r8 r8 g8 f f ef4 r8 c8 g'4 f ef d2 c4 c g2
   }
 
 antiphonLyricsSoprano = \lyricmode {
