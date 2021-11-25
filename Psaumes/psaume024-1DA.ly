@@ -77,7 +77,7 @@ verseStropheMusicSoprano = \relative c'' {
   }
 verseStropheMusicAlto = \relative c'' {
   a\breve g1 g4
-  g\breve fs1 g4
+  g\breve f1 g4
   ef\breve ef1 d4
   d\breve d1 d4
   }
