@@ -13,7 +13,7 @@ tempoVerseAcelerando = {
 
 scoreHeader = \header {
   title = "Psaume 125"
-  subtitle = "2ème dimanche de l'Avent"
+  subtitle = \markup { \column{"2ème dimanche de l'Avent" "Année C"}}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   date = "Clichy la Garenne, novembre 2021"
