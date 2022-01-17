@@ -68,9 +68,8 @@ verseStropheRythm = {
   \accidentalStyle forget
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
+  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "|." \break
 }
 verseRythm = {
@@ -79,46 +78,35 @@ verseRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "|."
 }
 verseStropheMusicSoprano = \relative c'' {
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
+  g\breve a4
+  a\breve a1 b4
+  b\breve c1 a4 g
   }
 verseMusicSoprano = \relative c'' {
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
   }
+
 verseStropheMusicAlto = \relative c' {
-  ef\breve f1 f4 ef
-  ef\breve f1 f4 d
-  ef\breve f1 f4 ef
-  f\breve f1 f4 ef
+  e\breve f4
+  f\breve f1 g4
+  gs\breve a1 f4 d4
   }
 verseMusicAlto = \relative c' {
-  ef\breve f1 f4 ef
-  f\breve f1 f4 ef
   }
 
 verseStropheMusicTenor = \relative c' {
-  bf\breve d1 d4 c
-  c\breve d1 c4 b
-  c\breve d1 d4 bf
-  c\breve c1 d4 bf
+  c\breve c4
+  c\breve d1 d4
+  b\breve e1 d4 b4
   }
 verseMusicTenor = \relative c' {
-  bf\breve d1 d4 c
-  c\breve c1 d4 bf
   }
 
 verseStropheMusicBass = \relative c {
-  ef\breve bf1 b4 c4
-  af\breve f1 f4 g
-  c\breve bf1 bf4 ef
-  af,\breve bf1 bf4 ef
+  c\breve f,4
+  f'\breve d1 g,4
+  e'\breve a,1 d4 g
   }
 verseMusicBass = \relative c {
-  ef\breve bf1 b4 c4
-  af\breve bf1 bf4 ef
   }
 
 verseLyrics = \markuplist {
@@ -127,31 +115,31 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Chantez au Seigneur un chant nouveau,"}
-        \concat { \typewriter "   " "chantez au Seigneur, terre entière,"}
-        \concat { \typewriter "   " "chantez au Seigneur et bénissez son nom !"}
+        \concat { \typewriter "1. " "Chantez au Seigne" \underline u "r un chant nouveau,"}
+        \concat { \typewriter "   " "chantez au Seigne" \underline u "r, terre entière,"}
+        \concat { \typewriter "   " "chantez au Seigneur et béniss" \underline e "z son nom !"}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "2. " "De jour en jour, proclamez son salut,"}
-        \concat { \typewriter "   " "racontez à tous les peuples sa gloire,"}
-        \concat { \typewriter "   " "à toutes les nations ses merveilles !"}
+        \concat { \typewriter "2. " "De jour en jour, proclam" \underline e "z son salut,"}
+        \concat { \typewriter "   " "racontez à tous les pe" \underline u "ples sa gloire,"}
+        \concat { \typewriter "   " "à toutes les nati" \underline o "ns ses merveilles !"}
       }
     }
     \vspace #1
     \fill-line {
       \left-column {
-        \concat { \typewriter "3. " "Joie au ciel ! Exulte la terre !"}
-        \concat { \typewriter "   " "Les masses de la mer mugissent,"}
-        \concat { \typewriter "   " "la campagne tout entière est en fête."}
+        \concat { \typewriter "3. " "Joie au ciel ! Ex" \underline u "lte la terre !"}
+        \concat { \typewriter "   " "Les masses de la m" \underline e "r mugissent,"}
+        \concat { \typewriter "   " "la campagne tout enti" \underline è "re est en fête."}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "4. " "Les arbres des forêts dansent de joie"}
-        \concat { \typewriter "   " "devant la face du Seigneur, car il vient,"}
-        \concat { \typewriter "   " "car il vient pour juger la terre."}
-        \concat { \typewriter "   " "Il jugera le monde avec justice"}
-        \concat { \typewriter "   " "et les peuples selon sa vérité !"}
+        \concat { \typewriter "4. " "Les arbres des forêts d" \underline a "nsent de joie"}
+        \concat { \typewriter "   " "devant la face du Seigne" \underline u "r, car il vient,&nbsp;" \super "&dagger;"}
+        \concat { \typewriter "   " "car il vient pour jug" \underline e "r la terre.&nbsp;*"}
+        \concat { \typewriter "   " "Il jugera le m" \underline o "nde avec justice"}
+        \concat { \typewriter "   " "et les peuples sel" \underline o "n sa vérité !"}
       }
     }
   }

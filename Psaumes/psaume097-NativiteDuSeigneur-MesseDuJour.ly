@@ -63,60 +63,34 @@ antiphonLyricsBass = \antiphonLyricsTenor
 %%%%%%%%%%          Verses          %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verseStropheRythm = {
-  \accidentalStyle forget
-  \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
-  \markCustom "Psalmodie par strophe" \cadenzaOn
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "|." \break
 }
 verseRythm = {
+  \accidentalStyle forget
   \markCustom "Psalmodie par verset" \cadenzaOn
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "|."
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s \bar "|."
 }
-verseStropheMusicSoprano = \relative c'' {
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
-  }
+verseStropheMusicSoprano = \relative c'' {}
 verseMusicSoprano = \relative c'' {
-  g\breve bf1 af4 g
-  af\breve af1 af4 g
+  a\breve a1 g4
+  f\breve a1 g4 a
   }
-verseStropheMusicAlto = \relative c' {
-  ef\breve f1 f4 ef
-  ef\breve f1 f4 d
-  ef\breve f1 f4 ef
-  f\breve f1 f4 ef
-  }
+verseStropheMusicAlto = \relative c' {}
 verseMusicAlto = \relative c' {
-  ef\breve f1 f4 ef
-  f\breve f1 f4 ef
+  e\breve f1 e4
+  c\breve f1 e4 e
   }
 
-verseStropheMusicTenor = \relative c' {
-  bf\breve d1 d4 c
-  c\breve d1 c4 b
-  c\breve d1 d4 bf
-  c\breve c1 d4 bf
-  }
+verseStropheMusicTenor = \relative c' {}
 verseMusicTenor = \relative c' {
-  bf\breve d1 d4 c
-  c\breve c1 d4 bf
+  c\breve c1 b4
+  a\breve d1 b4 c
   }
 
-verseStropheMusicBass = \relative c {
-  ef\breve bf1 b4 c4
-  af\breve f1 f4 g
-  c\breve bf1 bf4 ef
-  af,\breve bf1 bf4 ef
-  }
+verseStropheMusicBass = \relative c {}
 verseMusicBass = \relative c {
-  ef\breve bf1 b4 c4
-  af\breve bf1 bf4 ef
+  a\breve d1 e4
+  f\breve d1 e4 a,
   }
 
 verseLyrics = \markuplist {
@@ -125,33 +99,33 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Chantez au Seigneur un chant nouveau,"}
-        \concat { \typewriter "   " "car il a fait des merveilles&nbsp;;"}
-        \concat { \typewriter "   " "par son bras très saint, par sa main puissante,"}
-        \concat { \typewriter "   " "il s’est assuré la victoire."}
+        \concat { \typewriter "1. " "Chantez au Seigne" \underline u "r un chant nouveau,"}
+        \concat { \typewriter "   " "car il a f" \underline a "it des merveilles&nbsp;;"}
+        \concat { \typewriter "   " "par son bras très saint, par sa m" \underline a "in puissante,"}
+        \concat { \typewriter "   " "il s’est assur" \underline é " la victoire."}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "2. " "Le Seigneur a fait connaître sa victoire"}
-        \concat { \typewriter "   " "et révélé sa justice aux nations&nbsp;;"}
-        \concat { \typewriter "   " "il s’est rappelé sa fidélité, son amour,"}
-        \concat { \typewriter "   " "en faveur de la maison d’Israël."}
+        \concat { \typewriter "2. " "Le Seigneur a fait conn" \underline a "ître sa victoire"}
+        \concat { \typewriter "   " "et révélé sa just" \underline i "ce aux nations&nbsp;;"}
+        \concat { \typewriter "   " "il s’est rappelé sa fidélit" \underline é ", son amour,"}
+        \concat { \typewriter "   " "en faveur de la mais" \underline o "n d’Israël."}
       }
     }
     \vspace #1
     \fill-line {
       \column {
-        \concat { \typewriter "3. " "La terre tout entière a vu"}
-        \concat { \typewriter "   " "la victoire de notre Dieu."}
-        \concat { \typewriter "   " "Acclamez le Seigneur, terre entière,"}
-        \concat { \typewriter "   " "sonnez, chantez, jouez&nbsp;!"}
+        \concat { \typewriter "3. " "La terre tout enti" \underline è "re a vu"}
+        \concat { \typewriter "   " "la vict" \underline o "ire de notre Dieu."}
+        \concat { \typewriter "   " "Acclamez le Seigne" \underline u "r, terre entière,"}
+        \concat { \typewriter "   " "sonnez, chant" \underline e "z, jouez&nbsp;!"}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "4. " "Jouez pour le Seigneur sur la cithare,"}
-        \concat { \typewriter "   " "sur la cithare et tous les instruments ;"}
-        \concat { \typewriter "   " "au son de la trompette et du cor,"}
-        \concat { \typewriter "   " "acclamez votre roi, le Seigneur&nbsp;!"}
+        \concat { \typewriter "4. " "Jouez pour le Seigne" \underline u "r sur la cithare,"}
+        \concat { \typewriter "   " "sur la cithare et t" \underline o "us les instruments ;"}
+        \concat { \typewriter "   " "au son de la tromp" \underline e "tte et du cor,"}
+        \concat { \typewriter "   " "acclamez votre r" \underline o "i, le Seigneur&nbsp;!"}
       }
     }
   }
