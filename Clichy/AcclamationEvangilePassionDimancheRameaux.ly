@@ -24,7 +24,7 @@ sopranoMusic =   \relative c'' {
 }
 sopranoLyrics = \lyricmode {
   Gloire et lou -- ange à toi, Sei -- gneur Jé -- sus&nbsp;!
-  Pour nous, le Christ est dev -- ve -- nu o -- bé -- is -- sant jus -- qu'à la mort,
+  Pour nous, le Christ est de -- ve -- nu o -- bé -- is -- sant jus -- qu'à la mort,
   et la mort de la croix.
   C'est pour -- quoi Dieu l'a e -- xal -- té&nbsp;: il l'a do -- té du nom qui est au des -- sus de tout nom.
 }
