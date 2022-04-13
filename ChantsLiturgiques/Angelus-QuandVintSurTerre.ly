@@ -143,19 +143,6 @@ AllScoreLayout = \layout {
   \score {
     {
       <<
-        % \new ChoirStaff \with {
-        %   instrumentName = "Soliste"
-        %   shortInstrumentName = "S."
-        % }
-        % {
-        %   <<
-        %     \new Dynamics { \solisteDynamics }
-        %     \new Voice = "soliste" { \key g \major \time 3/4 \oneVoice
-        %                              \sopranosMusicA \sopranosMusicB
-        %     }
-        %     \new Lyrics \lyricsto "soliste" { \Lyrics }
-        %   >>
-        % }
         \new PianoStaff \with {
           instrumentName = "Orgue"
           shortInstrumentName = "O."
@@ -192,16 +179,16 @@ AllScoreLayout = \layout {
 \score {
   {
     <<
-      \new Staff \with {
-        %midiInstrument = "piccolo"  % Pipe Organ
-        midiInstrument = "flute"    % Grand plein jeu
-        %midiInstrument = "recorder" % Principaux 8 4
-      }
-      <<
-        \new Voice { \key g \major \time 3/4
-                     \sopranosMusicA \sopranosMusicB
-        }
-      >>
+      % \new Staff \with {
+      %   %midiInstrument = "piccolo"  % Pipe Organ
+      %   midiInstrument = "flute"    % Grand plein jeu
+      %   %midiInstrument = "recorder" % Principaux 8 4
+      % }
+      % <<
+      %   \new Voice { \key g \major \time 3/4
+      %                \sopranosMusicA \sopranosMusicB
+      %   }
+      % >>
       \new PianoStaff \with {
         %midiInstrument = "piccolo"  % Pipe Organ
         midiInstrument = "flute"    % Grand plein jeu
