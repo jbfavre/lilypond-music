@@ -5,7 +5,7 @@
 
 \header {
   title = "O Salutaris Hostia"
-  subtitle = "Adoration du Saint Sacrement"
+  subtitle = "Pour chœur à 4 voix mixtes et orgue"
   composer = "Jean Baptiste Favre"
   poet = "Saint Thomas d'Aquin"
   subsubtitle = "Clichy la Garenne, avril 2022"
@@ -78,8 +78,8 @@ tenorsMusic =  \relative c {
   f2 a4 g cs2 d c c c1
   cs2 b4 a a2 bf bf b cs1
   \repeat volta 2 {
-    a2 a c c4 c bf bf e d d2 cs4 cs4
-    b2 a a bf a a
+    a2 a4 d c2 c4 c bf2. d4~ d2 cs4 cs4
+    d2 a a bf a a
     }
   \alternative {
     {a1}
@@ -105,7 +105,7 @@ tenorsMusicEndOrgue = \tenorsMusicEnd
 
 bassesMusic =  \relative c {
   d2 c4 bf a2 d e1 f
-  a,2 b4 cs d (c) bf (a) g2 gs a1
+  a,2 b4 cs d2 bf g gs a1
   \repeat volta 2 {
     d2 d4 f e2 e4 f g2 e a2 a,
     b2 cs d g, a a
@@ -217,6 +217,8 @@ scorePaper = \paper {
 
     markup-system-spacing = #'((basic-distance . 30)
        (stretchability . 500))
+    system-system-spacing = #'((basic-distance . 10)
+       (stretchability . 0))
     %top-system-spacing = #'((basic-distance . 30)
     %                        (padding . 10)
     %                        (stretchability . 1000))
@@ -253,7 +255,7 @@ AllScoreLayout = \layout {
       ragged-last = ##f
       ragged-last-bottom = ##t
       short-indent = 0.5\cm
-      indent = 1\cm
+      indent = 2.2\cm
       \override LyricText #'font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
       \context {
@@ -278,22 +280,41 @@ AllScoreLayout = \layout {
 % PDF output
 \book {
   \scorePaper
+  \markup {
+    \vspace #4
+    \fill-line
+     {
+      \sans \center-column {
+        "Auparavant chanté au moment de l'élévation, on peut, aujourd'hui,"
+        "l'exécuter durant la purification après la communion,"
+        "ou encore lors de l'exposition du Saint-Sacrement"
+      }
+    }
+  }
   \score {
     {
       <<
-        \new ChoirStaff \with {
-        }
+      >>
+    }
+    \AllScoreLayout
+    \scoreHeaders
+  }
+  \score {
+    {
+      <<
+        \new ChoirStaff
         <<
           \new Staff \with {
-            instrumentName = \markup { \column { "Soprano" "Alto"} }
-            shortInstrumentName = \markup { \column { "S." "A."} }
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = \markup { \right-column { "Soprano" "Alto"} }
+            shortInstrumentName = \markup { \right-column { "S." "A."} }
           }
           <<
             \clef "treble"
             \new Voice = "soprano" { \global \voiceOne
-                         \sopranosMusic \sopranosMusicEnd
+                                     \sopranosMusic \sopranosMusicEnd
             }
-            \new Voice = "alto" { \global \voiceTwo
+            \new Voice { \global \voiceTwo
                          \altosMusic \altosMusicEnd
             }
           >>
@@ -301,8 +322,9 @@ AllScoreLayout = \layout {
           \new Lyrics \lyricsto "soprano" { \LyricsOne }
           \new Lyrics \lyricsto "soprano" { \LyricsTwo \LyricsEnd }
           \new Staff \with {
-            instrumentName = \markup { \column { "Ténor" "Basse"} }
-            shortInstrumentName = \markup { \column { "T." "B."} }
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = \markup { \right-column { "Ténor" "Basse"} }
+            shortInstrumentName = \markup { \right-column { "T." "B."} }
           }
           <<
             \clef "bass"
@@ -344,47 +366,51 @@ AllScoreLayout = \layout {
     }
     \AllScoreLayout
     \scoreHeaders
+    \header {
+      print-all-headers=##t
+      title = "Chœur SATB"
+    }
   }
 }
 % MIDI output
 \score {
   {
     <<
-      \new PianoStaff \with {
-        midiInstrument = "piccolo"  % Pipe Organ
-        %midiInstrument = "flute"    % Grand plein jeu
-        %midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.5
-        midiMaximumVolume = #0.7
-      }
-      <<
-        \new Staff
-        <<
-          \clef "treble"
-          \new Voice { \global
-                       \unfoldRepeats \sopranosMusic \sopranosMusicEnd
-          }
-          \new Voice { \global
-                       \unfoldRepeats \altosMusic \altosMusicEnd
-          }
-        >>
-        \new Staff
-        <<
-          \clef "bass"
-          \new Voice { \global
-                       \unfoldRepeats \tenorsMusic \tenorsMusicEnd
-          }
-          \new Voice { \global
-                       \unfoldRepeats \bassesMusic \bassesMusicEnd
-          }
-        >>
-      >>
+      % \new PianoStaff \with {
+      %   midiInstrument = "piccolo"  % Pipe Organ
+      %   %midiInstrument = "flute"    % Grand plein jeu
+      %   %midiInstrument = "recorder" % Principaux 8 4
+      %   midiMinimumVolume = #0.5
+      %   midiMaximumVolume = #0.9
+      % }
+      % <<
+      %   \new Staff
+      %   <<
+      %     \clef "treble"
+      %     \new Voice { \global
+      %                  \unfoldRepeats \sopranosMusic \sopranosMusicEnd
+      %     }
+      %     \new Voice { \global
+      %                  \unfoldRepeats \altosMusic \altosMusicEnd
+      %     }
+      %   >>
+      %   \new Staff
+      %   <<
+      %     \clef "bass"
+      %     \new Voice { \global
+      %                  \unfoldRepeats \tenorsMusic \tenorsMusicEnd
+      %     }
+      %     \new Voice { \global
+      %                  \unfoldRepeats \bassesMusic \bassesMusicEnd
+      %     }
+      %   >>
+      % >>
       \new PianoStaff \with {
         %midiInstrument = "piccolo"  % Pipe Organ
         %midiInstrument = "flute"    % Grand plein jeu
         midiInstrument = "recorder" % Principaux 8 4
         midiMinimumVolume = #0.5
-        midiMaximumVolume = #0.7
+        midiMaximumVolume = #0.9
       }
       <<
         \new Staff
@@ -420,6 +446,6 @@ AllScoreLayout = \layout {
       \Voice
       \consists "Staff_performer"
     }
-    \tempo 4 = 100
+    \tempo 4 = 80
   }
 }
