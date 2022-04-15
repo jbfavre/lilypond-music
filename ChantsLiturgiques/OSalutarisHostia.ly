@@ -15,24 +15,24 @@
 global = {\key d \minor \time 4/4}
 
 sopranosMusic = \relative c' {
-  d2 f4 g a2 a c2. (bf4) bf2 a2 \break
-  a2 g4 a f2 f g f e1 \break
-  \repeat volta 2 {
-      { d'2 (d4) a c2 (bf4) a g2 bf a2. a4(  \break
-        a2) a4 (g) g (f) f (e) e (f) f (e) }
+  \repeat volta 3 {
+    d2 f4 g a2 a c2. (bf4) bf2 a2 \break
+    a2 g4 a f2 f bf bf a1 \break
+    d2 (d4) a c2 (bf4) a g2 bf a2. a4(
+    a2) a4 (g) \break g (f) f (e) e (f) f (e)
     }
   \alternative {
     {f1}
     {d1 \fermata}
     }
-  \bar "||" \break
+  \bar "||"
   }
 sopranosMusicOrgue = \relative c' {
-  d2 f4 g a2 a c2. (bf4) bf2 a2 \break
-  a2 g4 a f2 f g f e1 \break
-  \repeat volta 2 {
-      { d'2 (d4) a c2 (bf4) a g2 bf a2. a4(  \break
-        a2) a4 (g) g (f) f (e) e (f) f (e) }
+  \repeat volta 3 {
+    d2 f4 g a2 a c2. (bf4) bf2 a2 \break
+    a2 g4 a f2 f bf1 a \break
+    d2. a4 c2 bf4 a g2 bf a2. a4(  \break
+    a2) a4 g (g) f2 e4 (e) f2 e4
     }
   \alternative {
     {f4 d f a}
@@ -43,14 +43,16 @@ sopranosMusicOrgue = \relative c' {
 sopranosMusicEnd = \relative c'' {
   g4 (bf a g g2 e2) fs1 \fermata \bar "|."
 }
-sopranosMusicEndOrgue = \sopranosMusicEnd
+sopranosMusicEndOrgue = \relative c'' {
+  g4 bf a g g2 e2 fs1 \fermata \bar "|."
+}
 
 altosMusic = \relative c' {
-  a2 d4 d e2 f g g f1
-  e2 d4 e d2 d d d e1
-  \repeat volta 2 {
-    f2 f8 e d4 g2 g4 f d2 g e2. e4
-    d2 e d d d (cs4.) d8
+  \repeat volta 3 {
+    a2 d4 d e2 f g g f1
+    e2 d4 e d2 d d e e1
+    f2 (e4) d4 g2 (g4) f d2 g e2. e4
+    d2 e d d4 (d) d2 (cs4.) d8
     }
   \alternative {
     {d1}
@@ -58,11 +60,11 @@ altosMusic = \relative c' {
     }
   }
 altosMusicOrgue = \relative c' {
-  a2 d2 e2 f g1 f
-  e2 d4 e d1 d1 e1
-  \repeat volta 2 {
+  \repeat volta 3 {
+    a2 d2 e2 f g1 f
+    e2 d4 e d1 d2 e e2 d4 e
     f2 f8 e d4 g2. f4 d2 g e1
-    d2 e d1 d2 (cs4.) d8
+    d2 e d1 d2 cs4. d8
     }
   \alternative {
     {d1}
@@ -70,16 +72,18 @@ altosMusicOrgue = \relative c' {
     }
   }
 altosMusicEnd = \relative c' {
-  d1 (e2 d4 cs) d1
+  d1 (e4 d2 cs4) d1
 }
-altosMusicEndOrgue = \altosMusicEnd
+altosMusicEndOrgue = \relative c' {
+  d1 e4 d2 cs4 d1
+}
 
 tenorsMusic =  \relative c {
-  f2 a4 g cs2 d c c c1
-  cs2 b4 a a2 bf bf b cs1
-  \repeat volta 2 {
-    a2 a4 d c2 c4 c bf2. d4~ d2 cs4 cs4
-    d2 a a bf a a
+  \repeat volta 3 {
+    f2 a4 g cs2 d c c c1
+    cs2 d4 a a2 bf d d cs1
+    a2 (a4) d c2 (c4) c bf2. d4~ d2 cs4 cs4
+    d2 a a bf4 (bf) a2 a
     }
   \alternative {
     {a1}
@@ -87,10 +91,10 @@ tenorsMusic =  \relative c {
     }
   }
 tenorsMusicOrgue =  \relative c {
-  f2 a4 d cs2 d c1 c
-  cs2 b4 a a2 bf bf b cs1
-  \repeat volta 2 {
-    a1 c1 bf2 e4 d d2 cs2
+  \repeat volta 3 {
+    f2 a4 d cs2 d c1 c
+    cs2 d4 a a2 bf d1 cs1
+    a1 c1 bf4 e2 d4 d2 cs2
     b2 a a bf a1
     }
   \alternative {
@@ -101,14 +105,16 @@ tenorsMusicOrgue =  \relative c {
 tenorsMusicEnd = \relative c' {
   bf1 (a1) a1
 }
-tenorsMusicEndOrgue = \tenorsMusicEnd
+tenorsMusicEndOrgue = \relative c' {
+  bf1 a1 a1
+}
 
 bassesMusic =  \relative c {
-  d2 c4 bf a2 d e1 f
-  a,2 b4 cs d2 bf g gs a1
-  \repeat volta 2 {
-    d2 d4 f e2 e4 f g2 e a2 a,
-    b2 cs d g, a a
+  \repeat volta 3 {
+    d2 c4 bf a2 d e e f1
+    a,2 b4 cs d2 bf g g a1
+    d2 (d4) f e2 (e4) f g2 e a2. a,4
+    b2 cs d g,4 (g) a2 a
     }
   \alternative {
     {d1}
@@ -116,10 +122,10 @@ bassesMusic =  \relative c {
     }
   }
 bassesMusicOrgue =  \relative c {
-  d2 c4 bf a2 d e2 c f,4 g a2
-  a2 b4 cs d (c) bf (a) g2 gs a4 g' f e
-  \repeat volta 2 {
-    d2 d4 f e2 e4 f g2 e a2 a,4 a
+  \repeat volta 3 {
+    d2 c4 bf a2 d e2 c f,2 f4 g
+    a2 b4 cs d c bf a g1 a4 g' f e
+    d2. f4 e2. f4 g2 e a2 a,2
     b2 cs d g, a a
     }
   \alternative {
@@ -130,7 +136,9 @@ bassesMusicOrgue =  \relative c {
 bassesMusicEnd = \relative c' {
   g2 (g, d'1) d1  \fermata
 }
-bassesMusicEndOrgue = \bassesMusicEnd
+bassesMusicEndOrgue = \relative c' {
+  g2 g, d'1 d1  \fermata
+}
 
 Lyrics = \lyricmode {
   \set stanza = "1. "
@@ -189,7 +197,7 @@ LyricsTwo = \lyricmode {
   \set ignoreMelismata = ##t
   net in
   \set ignoreMelismata = ##f
-  pa -- tri -- a. a.
+  pa -- tri -- _ a.
   }
 LyricsEnd = \lyricmode {
   A -- men.
@@ -217,15 +225,15 @@ scorePaper = \paper {
 
     markup-system-spacing = #'((basic-distance . 30)
        (stretchability . 500))
-    system-system-spacing = #'((basic-distance . 10)
-       (stretchability . 0))
-    %top-system-spacing = #'((basic-distance . 30)
-    %                        (padding . 10)
-    %                        (stretchability . 1000))
+    system-system-spacing = #'((basic-distance . 20)
+       (stretchability . 500))
+    top-system-spacing = #'((basic-distance . 10)
+                            (padding . 10)
+                            (stretchability . 1000))
     bookTitleMarkup = \markup {
       \column {
         \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \vspace #3
+        \vspace #2
         \columns {
           \fill-line {
             \column {
@@ -259,19 +267,24 @@ AllScoreLayout = \layout {
       \override LyricText #'font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
       \context {
-          \Staff
-          \RemoveEmptyStaves
-          \override InstrumentName #'font-name = #"Monospace Regular"
+        \Score
+        \override StaffGrouper.staff-staff-spacing.padding = #0
+        \override StaffGrouper.staff-staff-spacing.basic-distance = #1
       }
       \context {
-          \PianoStaff
-          \RemoveEmptyStaves
-          \override InstrumentName #'font-name = #"Monospace Regular"
+        \Staff
+        \RemoveEmptyStaves
+        \override InstrumentName #'font-name = #"Monospace Regular"
       }
       \context {
-          \ChoirStaff
-          \RemoveEmptyStaves
-          \override InstrumentName #'font-name = #"Monospace Regular"
+        \PianoStaff
+        \RemoveEmptyStaves
+        \override InstrumentName #'font-name = #"Monospace Regular"
+      }
+      \context {
+        \ChoirStaff
+        \RemoveEmptyStaves
+        \override InstrumentName #'font-name = #"Monospace Regular"
       }
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -281,9 +294,9 @@ AllScoreLayout = \layout {
 \book {
   \scorePaper
   \markup {
-    \vspace #4
+    \vspace #2
     \fill-line
-     {
+    {
       \sans \center-column {
         "Auparavant chanté au moment de l'élévation, on peut, aujourd'hui,"
         "l'exécuter durant la purification après la communion,"
@@ -294,48 +307,6 @@ AllScoreLayout = \layout {
   \score {
     {
       <<
-      >>
-    }
-    \AllScoreLayout
-    \scoreHeaders
-  }
-  \score {
-    {
-      <<
-        \new ChoirStaff
-        <<
-          \new Staff \with {
-            \override InstrumentName.self-alignment-X = #RIGHT
-            instrumentName = \markup { \right-column { "Soprano" "Alto"} }
-            shortInstrumentName = \markup { \right-column { "S." "A."} }
-          }
-          <<
-            \clef "treble"
-            \new Voice = "soprano" { \global \voiceOne
-                                     \sopranosMusic \sopranosMusicEnd
-            }
-            \new Voice { \global \voiceTwo
-                         \altosMusic \altosMusicEnd
-            }
-          >>
-          \new Lyrics \lyricsto "soprano" { \Lyrics }
-          \new Lyrics \lyricsto "soprano" { \LyricsOne }
-          \new Lyrics \lyricsto "soprano" { \LyricsTwo \LyricsEnd }
-          \new Staff \with {
-            \override InstrumentName.self-alignment-X = #RIGHT
-            instrumentName = \markup { \right-column { "Ténor" "Basse"} }
-            shortInstrumentName = \markup { \right-column { "T." "B."} }
-          }
-          <<
-            \clef "bass"
-            \new Voice { \global \voiceThree
-                         \tenorsMusic \tenorsMusicEnd
-            }
-            \new Voice { \global \voiceFour
-                         \bassesMusic \bassesMusicEnd
-            }
-          >>
-        >>
         \new PianoStaff \with {
           instrumentName = "Orgue"
           shortInstrumentName = "O."
@@ -366,10 +337,73 @@ AllScoreLayout = \layout {
     }
     \AllScoreLayout
     \scoreHeaders
-    \header {
-      print-all-headers=##t
-      title = "Chœur SATB"
+  }
+  \pageBreak
+  \score {
+    {
+      <<
+        \new ChoirStaff
+        <<
+          \new Staff \with {
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = "Soprano"
+            shortInstrumentName = "S."
+          }
+          <<
+            \clef "treble"
+            \new Voice = "soprano" { \global \voiceOne
+                                     \sopranosMusic \sopranosMusicEnd
+            }
+          >>
+          \new Lyrics \lyricsto "soprano" { \Lyrics }
+          \new Lyrics \lyricsto "soprano" { \LyricsOne }
+          \new Lyrics \lyricsto "soprano" { \LyricsTwo \LyricsEnd }
+          \new Staff \with {
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = "Alto"
+            shortInstrumentName = "A."
+          }
+          <<
+            \new Voice = "alto" { \global \voiceTwo
+                         \altosMusic \altosMusicEnd
+            }
+          >>
+          \new Lyrics \lyricsto "alto" { \Lyrics }
+          \new Lyrics \lyricsto "alto" { \LyricsOne }
+          \new Lyrics \lyricsto "alto" { \LyricsTwo \LyricsEnd }
+          \new Staff \with {
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = "Ténor"
+            shortInstrumentName = "T."
+          }
+          <<
+            \clef "treble_8"
+            \new Voice = "tenor" { \global \voiceThree
+                         \tenorsMusic \tenorsMusicEnd
+            }
+          >>
+          \new Lyrics \lyricsto "tenor" { \Lyrics }
+          \new Lyrics \lyricsto "tenor" { \LyricsOne }
+          \new Lyrics \lyricsto "tenor" { \LyricsTwo \LyricsEnd }
+          \new Staff \with {
+            \override InstrumentName.self-alignment-X = #RIGHT
+            instrumentName = "Basse"
+            shortInstrumentName = "B."
+          }
+          <<
+            \clef "bass"
+            \new Voice = "basse" { \global \voiceFour
+                         \bassesMusic \bassesMusicEnd
+            }
+          >>
+          \new Lyrics \lyricsto "basse" { \Lyrics }
+          \new Lyrics \lyricsto "basse" { \LyricsOne }
+          \new Lyrics \lyricsto "basse" { \LyricsTwo \LyricsEnd }
+        >>
+      >>
     }
+    \AllScoreLayout
+    \scoreHeaders
   }
 }
 % MIDI output
