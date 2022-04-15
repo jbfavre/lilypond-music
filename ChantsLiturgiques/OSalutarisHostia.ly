@@ -419,8 +419,37 @@ AllScoreLayout = \layout {
         midiInstrument = "piccolo"  % Pipe Organ
         %midiInstrument = "flute"    % Grand plein jeu
         %midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.7
-        midiMaximumVolume = #0.9
+        midiMinimumVolume = #0.6
+        midiMaximumVolume = #0.8
+      }
+      <<
+        \new Staff
+        <<
+          \clef "treble"
+          \new Voice { \global
+                       \sopranosIntroOrgue d'2. r4
+          }
+          \new Voice { \global
+                       \altosIntroOrgue a2. r4
+          }
+        >>
+        \new Staff
+        <<
+          \clef "bass"
+          \new Voice { \global
+                       \tenorsIntroOrgue f2. r4
+          }
+          \new Voice { \global
+                       \bassesIntroOrgue d2. r4
+          }
+        >>
+      >>
+      \new PianoStaff \with {
+        %midiInstrument = "piccolo"  % Pipe Organ
+        midiInstrument = "flute"    % Grand plein jeu
+        %midiInstrument = "recorder" % Principaux 8 4
+        midiMinimumVolume = #0.5
+        midiMaximumVolume = #0.7
       }
       <<
         \new Staff
@@ -448,8 +477,8 @@ AllScoreLayout = \layout {
         %midiInstrument = "piccolo"  % Pipe Organ
         %midiInstrument = "flute"    % Grand plein jeu
         midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.5
-        midiMaximumVolume = #0.7
+        midiMinimumVolume = #0.4
+        midiMaximumVolume = #0.6
       }
       <<
         \new Staff
