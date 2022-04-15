@@ -22,29 +22,32 @@ sopranosMusic = \relative c' {
     a2) a4 (g) \break g (f) f (e) e (f) f (e)
     }
   \alternative {
-    {f1}
+    {f2. r4}
     {d1 \fermata}
     }
-  \bar "||"
+  \bar ".|"
   }
-sopranosMusicOrgue = \relative c' {
+sopranosIntroOrgue = \relative c' {
+  d2 f4 g a2 a c2. (bf4) bf2 a2 \break
+  a2 g4 a f2 f bf1 a \break
+  d2. a4 c2 bf4 a g2 bf a2. a4(  \break
+  a2) a4 g (g) f2 e4 (e) f2 e4
+  }
+sopranosMusicOrgue = {
   \repeat volta 3 {
-    d2 f4 g a2 a c2. (bf4) bf2 a2 \break
-    a2 g4 a f2 f bf1 a \break
-    d2. a4 c2 bf4 a g2 bf a2. a4(  \break
-    a2) a4 g (g) f2 e4 (e) f2 e4
+    \sopranosIntroOrgue
     }
   \alternative {
-    {f4 d f a}
-    {d,1 \fermata}
+    {f'2. r4}
+    {d'1 \fermata}
     }
-  \bar "||" \break
+  \break
   }
 sopranosMusicEnd = \relative c'' {
   g4 (bf a g g2 e2) fs1 \fermata \bar "|."
 }
 sopranosMusicEndOrgue = \relative c'' {
-  g4 bf a g g2 e2 fs1 \fermata \bar "|."
+  g4 bf a g g2 e2 fs1 \fermata
 }
 
 altosMusic = \relative c' {
@@ -55,19 +58,20 @@ altosMusic = \relative c' {
     d2 e d d4 (d) d2 (cs4.) d8
     }
   \alternative {
-    {d1}
+    {d2. r4}
     {a1}
     }
   }
-altosMusicOrgue = \relative c' {
-  \repeat volta 3 {
-    a2 d2 e2 f g1 f
-    e2 d4 e d1 d2 e e2 d4 e
-    f2 f8 e d4 g2. f4 d2 g e1
-    d2 e d1 d2 cs4. d8
-    }
+altosIntroOrgue = \relative c' {
+  a2 d2 e2 f g1 f
+  e2 d4 e d1 d2 e e2 d4 e
+  f2 f8 e d4 g2. f4 d2 g e1
+  d2 e d1 d2 cs4. d8
+  }
+altosMusicOrgue = {
+  \repeat volta 3 { \altosIntroOrgue }
   \alternative {
-    {d1}
+    {d'2. r4}
     {a1}
     }
   }
@@ -86,19 +90,20 @@ tenorsMusic =  \relative c {
     d2 a a bf4 (bf) a2 a
     }
   \alternative {
-    {a1}
+    {a2. r4}
     {f1}
     }
   }
-tenorsMusicOrgue =  \relative c {
-  \repeat volta 3 {
-    f2 a4 d cs2 d c1 c
-    cs2 d4 a a2 bf d1 cs1
-    a1 c1 bf4 e2 d4 d2 cs2
-    b2 a a bf a1
-    }
+tenorsIntroOrgue =  \relative c {
+  f2 a4 d cs2 d c2 e c1
+  cs2 d4 a a2 bf d1 cs1
+  a1 c1 bf4 e2 d4 d2 cs2
+  b2 a a bf a1
+  }
+tenorsMusicOrgue = {
+  \repeat volta 3 { \tenorsIntroOrgue }
   \alternative {
-    {a1}
+    {a2. r4}
     {f1}
     }
   }
@@ -117,19 +122,20 @@ bassesMusic =  \relative c {
     b2 cs d g,4 (g) a2 a
     }
   \alternative {
-    {d1}
+    {d2. r4}
     {d1 \fermata}
     }
   }
-bassesMusicOrgue =  \relative c {
-  \repeat volta 3 {
-    d2 c4 bf a2 d e2 c f,2 f4 g
-    a2 b4 cs d c bf a g1 a4 g' f e
-    d2. f4 e2. f4 g2 e a2 a,2
-    b2 cs d g, a a
-    }
+bassesIntroOrgue =  \relative c {
+  d2 c4 bf a2 d e2 c f2 f,4 g
+  a2 b4 cs d c bf a g1 a4 g' f e
+  d2. f4 e2. f4 g2 e a2 a,2
+  b2 cs d g, a a
+  }
+bassesMusicOrgue = {
+  \repeat volta 3 { \bassesIntroOrgue }
   \alternative {
-    {d4 d' a f}
+    {d2. r4}
     {d1 \fermata}
     }
   }
@@ -152,11 +158,10 @@ Lyrics = \lyricmode {
   \set ignoreMelismata = ##f
   hos -- ti -- li -- a&nbsp;;
   \set ignoreMelismata = ##t
-  Da
-  \set stanza = "1. "
-  ro -- 
+  Da ro -- 
   \set ignoreMelismata = ##f
   bur,
+  \set stanza = "1. "
   fer au -- xi -- li -- um um
   }
 LyricsOne = \lyricmode {
@@ -170,11 +175,11 @@ LyricsOne = \lyricmode {
   \set ignoreMelismata = ##f
   fi -- dit Fran -- ci -- a,
   \set ignoreMelismata = ##t
-  Da
-  \set stanza = "2. "
-  pa --
+  Da pa --
   \set ignoreMelismata = ##f
-  cem, ser -- va
+  cem,
+  \set stanza = "2. "
+  ser -- va
   \set ignoreMelismata = ##f
   pa -- tri -- am. am.
   }
@@ -191,8 +196,8 @@ LyricsTwo = \lyricmode {
   \set ignoreMelismata = ##t
   No --
   \set ignoreMelismata = ##f
-  \set stanza = "3. "
   _ bis
+  \set stanza = "3. "
   do --
   \set ignoreMelismata = ##t
   net in
@@ -410,40 +415,11 @@ AllScoreLayout = \layout {
 \score {
   {
     <<
-      % \new PianoStaff \with {
-      %   midiInstrument = "piccolo"  % Pipe Organ
-      %   %midiInstrument = "flute"    % Grand plein jeu
-      %   %midiInstrument = "recorder" % Principaux 8 4
-      %   midiMinimumVolume = #0.5
-      %   midiMaximumVolume = #0.9
-      % }
-      % <<
-      %   \new Staff
-      %   <<
-      %     \clef "treble"
-      %     \new Voice { \global
-      %                  \unfoldRepeats \sopranosMusic \sopranosMusicEnd
-      %     }
-      %     \new Voice { \global
-      %                  \unfoldRepeats \altosMusic \altosMusicEnd
-      %     }
-      %   >>
-      %   \new Staff
-      %   <<
-      %     \clef "bass"
-      %     \new Voice { \global
-      %                  \unfoldRepeats \tenorsMusic \tenorsMusicEnd
-      %     }
-      %     \new Voice { \global
-      %                  \unfoldRepeats \bassesMusic \bassesMusicEnd
-      %     }
-      %   >>
-      % >>
       \new PianoStaff \with {
-        %midiInstrument = "piccolo"  % Pipe Organ
+        midiInstrument = "piccolo"  % Pipe Organ
         %midiInstrument = "flute"    % Grand plein jeu
-        midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.5
+        %midiInstrument = "recorder" % Principaux 8 4
+        midiMinimumVolume = #0.7
         midiMaximumVolume = #0.9
       }
       <<
@@ -451,9 +427,40 @@ AllScoreLayout = \layout {
         <<
           \clef "treble"
           \new Voice { \global
+                       \sopranosIntroOrgue d'2. r4
+          }
+          \new Voice { \global
+                       \altosIntroOrgue a2. r4
+          }
+        >>
+        \new Staff
+        <<
+          \clef "bass"
+          \new Voice { \global
+                       \tenorsIntroOrgue f2. r4
+          }
+          \new Voice { \global
+                       \bassesIntroOrgue d2. r4
+          }
+        >>
+      >>
+      \new PianoStaff \with {
+        %midiInstrument = "piccolo"  % Pipe Organ
+        %midiInstrument = "flute"    % Grand plein jeu
+        midiInstrument = "recorder" % Principaux 8 4
+        midiMinimumVolume = #0.5
+        midiMaximumVolume = #0.7
+      }
+      <<
+        \new Staff
+        <<
+          \clef "treble"
+          \new Voice { \global
+                       \sopranosIntroOrgue d'1
                        \unfoldRepeats \sopranosMusicOrgue \sopranosMusicEndOrgue
           }
           \new Voice { \global
+                       \altosIntroOrgue a1
                        \unfoldRepeats \altosMusicOrgue \altosMusicEndOrgue
           }
         >>
@@ -461,9 +468,11 @@ AllScoreLayout = \layout {
         <<
           \clef "bass"
           \new Voice { \global
+                       \tenorsIntroOrgue f1
                        \unfoldRepeats \tenorsMusicOrgue \tenorsMusicEndOrgue
           }
           \new Voice { \global
+                       \bassesIntroOrgue d1
                        \unfoldRepeats \bassesMusicOrgue \bassesMusicEndOrgue
           }
         >>
