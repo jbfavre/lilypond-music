@@ -116,10 +116,10 @@ tenorsMusicEndOrgue = \relative c' {
 
 bassesMusic =  \relative c {
   \repeat volta 3 {
-    d2 c4 bf a2 d e e f1
+    d2 d4 bf a2 d e e f1
     a,2 b4 cs d2 bf g g a1
     d2 (d4) f e2 (e4) f g2 e a2. a,4
-    b2 cs d g,4 (g) a2 a
+    (b2) cs d g,4 (g) a2 a
     }
   \alternative {
     {d2. r4}
