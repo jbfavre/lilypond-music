@@ -53,8 +53,8 @@ tenorsMusicTwo = \relative c' {
   bf4 bf bf bf f g f f
   }
 tenorsMusicThree = \relative c' {
-  %g4 af f ef c' bf4 c d g,
-  g4 af f ef af8 c bf4 bf bf g
+  g4 af f ef c' bf4 c d g,
+  %g4 af f ef af8 c bf4 bf bf g
   g4 bf bf c bf4. af8 g4
   }
 tenorsMusicEnd = \relative c' {
@@ -71,7 +71,8 @@ bassesMusicTwo = \relative c {
     ef4 ef bf ef d c c bf
   }
 bassesMusicThree = \relative c {
-    ef4 af, bf ef8 d c4 d ef bf
+    ef4 af, bf c af g af bf
+    %ef4 af, bf ef8 d c4 d ef bf
     b4c bf? ef af, bf bf ef
   }
 bassesMusicEnd = \relative c {
