@@ -53,8 +53,8 @@ tenorsMusicTwo = \relative c' {
   bf4 bf bf bf f g f f
   }
 tenorsMusicThree = \relative c' {
-  g4 af f ef c' bf4 c d g,
-  %g4 af f ef af8 c bf4 bf bf g
+  %g4 af f ef c' bf4 c d g,
+  g4 af f ef af8 c bf4 bf bf g
   g4 bf bf c bf4. af8 g4
   }
 tenorsMusicEnd = \relative c' {
@@ -71,8 +71,8 @@ bassesMusicTwo = \relative c {
     ef4 ef bf ef d c c bf
   }
 bassesMusicThree = \relative c {
-    ef4 af, bf c af g af bf
-    %ef4 af, bf ef8 d c4 d ef bf
+    %ef4 af, bf c af g af bf
+    ef4 af, bf ef8 d c4 d ef bf
     b4c bf? ef af, bf bf ef
   }
 bassesMusicEnd = \relative c {
@@ -228,14 +228,16 @@ AllScoreLayout = \layout {
                          \sopranosMusicOne
                          \sopranosMusicTwo \fermata \bar "" \break
                          \sopranosMusicThree \fermata s4 \bar "||"
-                         \sopranosMusicEndTwo \bar "|."
+                         \sopranosMusicEnd \bar "|."
+                         %\sopranosMusicEndTwo \bar "|."
             }
             \new Voice { \global \voiceTwo
                          \altosMusicOne
                          \altosMusicOne
                          \altosMusicTwo
                          \altosMusicThree s4
-                         \altosMusicEndTwo
+                         \altosMusicEnd
+                         %\altosMusicEndTwo
             }
           >>
           \new Lyrics \lyricsto "melody" {   _ _ _ _ _ _ _ _ \Lyrics }
@@ -249,14 +251,16 @@ AllScoreLayout = \layout {
                          \tenorsMusicOne
                          \tenorsMusicTwo
                          \tenorsMusicThree s4
-                         \tenorsMusicEndTwo
+                         \tenorsMusicEnd
+                         %\tenorsMusicEndTwo
             }
             \new Voice { \global \voiceFour
                          \bassesMusicOne \fermata
                          \bassesMusicOne
                          \bassesMusicTwo \fermata
                          \bassesMusicThree \fermata s4
-                         \bassesMusicEndTwo
+                         \bassesMusicEnd
+                         %\bassesMusicEndTwo
             }
           >>
         >>
@@ -352,16 +356,16 @@ AllScoreLayout = \layout {
                       \sopranosMusicOne
                       \sopranosMusicTwo ~4 r4
                       \sopranosMusicThree ~4 r2
-                      %\sopranosMusicEnd
-                      \sopranosMusicEndTwo
+                      \sopranosMusicEnd
+                      %\sopranosMusicEndTwo
           }
           \new Voice { \global \voiceTwo
                       \altosMusicOne ~4 r4
                       \altosMusicOne
                       \altosMusicTwo ~4 r4
                       \altosMusicThree ~4 r2
-                      %\altosMusicEnd
-                      \altosMusicEndTwo
+                      \altosMusicEnd
+                      %\altosMusicEndTwo
           }
         >>
         \new Staff
@@ -372,16 +376,16 @@ AllScoreLayout = \layout {
                       \tenorsMusicOne
                       \tenorsMusicTwo ~4 r4
                       \tenorsMusicThree ~4 r2
-                      %\tenorsMusicEnd
-                      \tenorsMusicEndTwo
+                      \tenorsMusicEnd
+                      %\tenorsMusicEndTwo
           }
           \new Voice { \global \voiceFour
                        \bassesMusicOne ~4 r4
                        \bassesMusicOne
                        \bassesMusicTwo ~4 r4
                        \bassesMusicThree ~4 r2
-                       %\bassesMusicEnd
-                       \bassesMusicEndTwo
+                       \bassesMusicEnd
+                       %\bassesMusicEndTwo
           }
         >>
       >>
