@@ -40,7 +40,8 @@ altosMusicTwo = \relative c' {
     ef4 ef d ef f ef ef d
   }
 altosMusicThree = \relative c' {
-    ef4 ef d ef ef f ef d
+    ef4 ef d c ef f ef d
+    %ef4 ef d ef ef f ef d
   }
 altosMusicFour = \relative c' {
     d c d ef ef ef d bf
@@ -71,8 +72,8 @@ tenorsMusicTwo = \relative c' {
     bf4 bf bf bf f g f f
   }
 tenorsMusicThree = \relative c' {
-    %g4 af f ef c' bf4 c d g,
-    g4 af f ef af8 c bf4 bf bf g
+    g4 af f ef c' bf bf bf g
+   %g4 af f ef af8 c bf4 bf bf g
   }
 tenorsMusicFour = \relative c' {
     g4 bf bf c bf4. af8 g4
@@ -103,8 +104,8 @@ bassesMusicTwo = \relative c {
     ef4 ef bf ef d c c bf
   }
 bassesMusicThree = \relative c {
-    %ef4 af, bf c af g af bf
-    ef4 af, bf ef8 d c4 d ef bf
+    ef4 af, bf c     c  d ef bf
+   %ef4 af, bf ef8 d c4 d ef bf
   }
 bassesMusicFour = \relative c {
     b4c bf? ef af, bf bf ef
@@ -249,7 +250,7 @@ AllScoreLayout = \layout {
     \fill-line
     {
       \sans \center-column {
-        "Auparavant chanté au moment de l'élévation, on peut, aujourd'hui,"
+        "Autrefois chanté au moment de l'élévation, on peut, aujourd'hui,"
         "l'exécuter durant la purification après la communion,"
         "ou encore lors de l'exposition du Saint-Sacrement"
       }
@@ -432,6 +433,10 @@ AllScoreLayout = \layout {
                        \sopranosMusicOne
                        \sopranosMusicTwo ~4 r4
                        \sopranosMusicThree
+                       \sopranosMusicFour ~4 r4
+                       \sopranosMusicOne
+                       \sopranosMusicTwo ~4 r4
+                       \sopranosMusicThree
                        \sopranosMusicFour ~4 r2
                        %\sopranosMusicEnd
                        \sopranosMusicEndTwo
@@ -445,7 +450,11 @@ AllScoreLayout = \layout {
                        \altosAltMusicOne
                        \altosAltMusicTwo ~4 r4
                        \altosAltMusicThree
-                       \altosAltMusicFour ~4 r2
+                       \altosAltMusicFour ~4 r4
+                       \altosMusicOne
+                       \altosMusicTwo ~4 r4
+                       \altosMusicThree
+                       \altosMusicFour ~4 r2
                        %\altosMusicEnd
                        %\altosMusicEndTwo
           }
@@ -462,7 +471,11 @@ AllScoreLayout = \layout {
                        \tenorsAltMusicOne
                        \tenorsAltMusicTwo ~4 r4
                        \tenorsAltMusicThree
-                       \tenorsAltMusicFour ~4 r2
+                       \tenorsAltMusicFour ~4 r4
+                       \tenorsMusicOne
+                       \tenorsMusicTwo ~4 r4
+                       \tenorsMusicThree
+                       \tenorsMusicFour ~4 r2
                        %\tenorsMusicEnd
                        \tenorsMusicEndTwo
           }
@@ -475,7 +488,11 @@ AllScoreLayout = \layout {
                        \bassesAltMusicOne
                        \bassesAltMusicTwo ~4 r4
                        \bassesAltMusicThree
-                       \bassesAltMusicFour ~4 r2
+                       \bassesAltMusicFour ~4 r4
+                       \bassesMusicOne
+                       \bassesMusicTwo ~4 r4
+                       \bassesMusicThree
+                       \bassesMusicFour ~4 r2
                        %\bassesMusicEnd
                        \bassesMusicEndTwo
           }
