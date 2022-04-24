@@ -10,27 +10,31 @@
   poet = "Saint Thomas d'Aquin (c 1225 - 1274)"
   }
 
-global = {\key ef \major \time 4/4}
+global = {
+  \key ef \major \time 4/4
+  }
 
 sopranosMusicOne = \relative c' {
-  ef4 g f g af g f ef
+    ef4 g f g af g f ef
   }
 sopranosMusicTwo = \relative c'' {
-  g4 g f g bf bf a bf
-}
+    g4 g f g bf bf a bf
+  }
 sopranosMusicThree = \relative c'' {
-  bf c bf g af bf af8 g f4
-  g4 ef f g af g f ef
-}
+    bf c bf g af bf af8 g f4
+  }
+sopranosMusicFour = \relative c'' {
+    g4 ef f g af g f ef
+  }
 sopranosMusicEnd = \relative c' {
-  ef2 ef
+    ef2 ef
   }
 sopranosMusicEndTwo = \relative c' {
-  ef4( f ef d) ef1
+    ef4( f ef d) ef1
   }
 
 altosMusicOne = \relative c' {
-  bf4 ef d ef ef ef d bf
+    bf4 ef d ef ef ef d bf
   }
 altosMusicTwo = \relative c' {
     ef4 ef d ef f ef ef d
@@ -39,6 +43,18 @@ altosMusicThree = \relative c' {
     ef4 ef d ef ef f ef d
     d c d ef ef ef d bf
   }
+altosAltMusicOne = \relative c' {
+  ef ef ef ef ef8 f f4 ef8 d c4
+}
+altosAltMusicTwo = \relative c' {
+  d ef ef ef g g fs g
+}
+altosAltMusicThree = \relative c'' {
+  g f f ef f g f8 f f4
+}
+altosAltMusicFour = \relative c' {
+  f c ef d ef ef ef8 d bf4
+}
 altosMusicEnd = \relative c' {
     c2 bf
   }
@@ -47,25 +63,37 @@ altosMusicEndTwo = \relative c' {
   }
 
 tenorsMusicOne =  \relative c' {
-  g4 bf bf bf c bf4. af8 g4
+    g4 bf bf bf c bf4. af8 g4
   }
 tenorsMusicTwo = \relative c' {
-  bf4 bf bf bf f g f f
+    bf4 bf bf bf f g f f
   }
 tenorsMusicThree = \relative c' {
-  %g4 af f ef c' bf4 c d g,
-  g4 af f ef af8 c bf4 bf bf g
-  g4 bf bf c bf4. af8 g4
+    %g4 af f ef c' bf4 c d g,
+    g4 af f ef af8 c bf4 bf bf g
+    g4 bf bf c bf4. af8 g4
   }
+tenorsAltMusicOne = \relative c' {
+  bf4 bf bf bf c d8 c b4 g
+}
+tenorsAltMusicTwo = \relative c' {
+  b4 c c bf? ef ef ef8 d d4
+}
+tenorsAltMusicThree = \relative c' {
+  d4 ef d c ef ef ef d4
+}
+tenorsAltMusicFour = \relative c' {
+  d4 g, c b c c c8 bf g4
+}
 tenorsMusicEnd = \relative c' {
-  af2 g
+    af2 g
   }
 tenorsMusicEndTwo = \relative c' {
-  g4 af g f g1
+    g4 af g f g1
   }
 
 bassesMusicOne =  \relative c {
-  ef4 ef bf ef af, bf bf ef
+    ef4 ef bf ef af, bf bf ef
   }
 bassesMusicTwo = \relative c {
     ef4 ef bf ef d c c bf
@@ -75,6 +103,18 @@ bassesMusicThree = \relative c {
     ef4 af, bf ef8 d c4 d ef bf
     b4c bf? ef af, bf bf ef
   }
+bassesAltMusicOne = \relative c {
+  ef4 ef d df c b g c
+}
+bassesAltMusicTwo = \relative c {
+  g c8 bf af4 ef' ef8 d c4 d g,
+}
+bassesAltMusicThree = \relative c {
+  g' af bf8 bf, c4 af8 af' ef4 f8 g bf8 bf,
+}
+bassesAltMusicFour = \relative c {
+  b4 c8 bf af4 g f8 g af4 bf ef4
+}
 bassesMusicEnd = \relative c {
     af2 ef'
   }
@@ -194,9 +234,7 @@ AllScoreLayout = \layout {
         \override InstrumentName #'font-name = #"Monospace Regular"
       }
   }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % PDF output
 \book {
   \scorePaper
@@ -210,59 +248,74 @@ AllScoreLayout = \layout {
         "ou encore lors de l'exposition du Saint-Sacrement"
       }
     }
-  }
+    }
   \score {
     {
-      <<
-        \new GroupStaff \with {
-          instrumentName = "Orgue"
-          shortInstrumentName = "O."
-        }
+      \new GroupStaff <<
+        \new Staff
         <<
-          \new Staff
-          <<
-            \clef "treble"
-            \new Voice = "melody" { \global \voiceOne
-                         \partial 4
-                         \sopranosMusicOne \fermata \bar "" \break
-                         \sopranosMusicOne
-                         \sopranosMusicTwo \fermata \bar "" \break
-                         \sopranosMusicThree \fermata s4 \bar "||"
-                         \sopranosMusicEnd \bar "|."
-                         %\sopranosMusicEndTwo \bar "|."
-            }
-            \new Voice { \global \voiceTwo
-                         \altosMusicOne
-                         \altosMusicOne
-                         \altosMusicTwo
-                         \altosMusicThree s4
-                         \altosMusicEnd
-                         %\altosMusicEndTwo
-            }
-          >>
-          \new Lyrics \lyricsto "melody" {   _ _ _ _ _ _ _ _ \Lyrics }
-          \new Lyrics \lyricsto "melody" {   _ _ _ _ _ _ _ _ \LyricsOne }
-          \new Lyrics \lyricsto "melody" {   _ _ _ _ _ _ _ _ \LyricsTwo \LyricsEnd }
-          \new Staff
-          <<
-            \clef "bass"
-            \new Voice { \global \voiceThree
-                         \tenorsMusicOne
-                         \tenorsMusicOne
-                         \tenorsMusicTwo
-                         \tenorsMusicThree s4
-                         \tenorsMusicEnd
-                         %\tenorsMusicEndTwo
-            }
-            \new Voice { \global \voiceFour
-                         \bassesMusicOne \fermata
-                         \bassesMusicOne
-                         \bassesMusicTwo \fermata
-                         \bassesMusicThree \fermata s4
-                         \bassesMusicEnd
-                         %\bassesMusicEndTwo
-            }
-          >>
+          \clef "treble"
+          \new Voice = "soprano"
+          {
+            \global \voiceOne
+            \partial 4
+            \sopranosMusicOne \fermata \bar "" \break
+            \sopranosMusicOne
+            \sopranosMusicTwo \fermata \bar "" \break
+            \sopranosMusicThree
+            \sopranosMusicFour \fermata
+            %\sopranosMusicEnd
+            %\sopranosMusicEndTwo
+          }
+          \new Voice = "alto"
+          {
+            \global \voiceTwo
+            \altosMusicOne
+            %\altosMusicOne
+            %\altosMusicTwo
+            %\altosMusicThree
+            \altosAltMusicOne
+            \altosAltMusicTwo
+            \altosAltMusicThree
+            \altosAltMusicFour
+            %\altosMusicEnd
+            %\altosMusicEndTwo
+          }
+        >>
+        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \Lyrics }
+        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \LyricsOne }
+        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \LyricsTwo \LyricsEnd }
+        \new Staff
+        <<
+          \clef "bass"
+          \new Voice = "tenor"
+          {
+            \global \voiceThree
+            \tenorsMusicOne
+            %\tenorsMusicOne
+            %\tenorsMusicTwo
+            %\tenorsMusicThree
+            \tenorsAltMusicOne
+            \tenorsAltMusicTwo
+            \tenorsAltMusicThree
+            \tenorsAltMusicFour
+            %\tenorsMusicEnd
+            %\tenorsMusicEndTwo
+          }
+          \new Voice = "basse"
+          {
+            \global \voiceFour
+            \bassesMusicOne \fermata
+            %\bassesMusicOne
+            %\bassesMusicTwo
+            %\bassesMusicThree
+            \bassesAltMusicOne
+            \bassesAltMusicTwo \fermata
+            \bassesAltMusicThree
+            \bassesAltMusicFour \fermata
+            %\bassesMusicEnd
+            %\bassesMusicEndTwo
+          }
         >>
       >>
     }
@@ -274,71 +327,71 @@ AllScoreLayout = \layout {
 \score {
   {
     <<
-      \new PianoStaff \with {
-        midiInstrument = "piccolo"  % Pipe Organ
-        %midiInstrument = "flute"    % Grand plein jeu
-        %midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.7
-        midiMaximumVolume = #0.9
-      }
-      <<
-        \new Staff
-        <<
-          \clef "treble"
-          \new Voice { \global \voiceOne
-                      \partial 4
-                      \sopranosMusicOne ~4
-          }
-          \new Voice { \global \voiceTwo
-                      \altosMusicOne ~4
-          }
-        >>
-        \new Staff
-        <<
-          \clef "bass"
-          \new Voice { \global \voiceThree
-                      \tenorsMusicOne ~4
-          }
-          \new Voice { \global \voiceFour
-                       \bassesMusicOne ~4
-          }
-        >>
-      >>
-      \new PianoStaff \with {
-        %midiInstrument = "piccolo"  % Pipe Organ
-        midiInstrument = "flute"    % Grand plein jeu
-        %midiInstrument = "recorder" % Principaux 8 4
-        midiMinimumVolume = #0.6
-        midiMaximumVolume = #0.8
-      }
-      <<
-        \new Staff
-        <<
-          \clef "treble"
-          \new Voice { \global \voiceOne
-                      \partial 4
-                      \sopranosMusicOne ~4
-          }
-          \new Voice { \global \voiceTwo
-                      \altosMusicOne ~4
-          }
-        >>
-        \new Staff
-        <<
-          \clef "bass"
-          \new Voice { \global \voiceThree
-                      \tenorsMusicOne ~4
-          }
-          \new Voice { \global \voiceFour
-                       \bassesMusicOne ~4 r4
-                       \bassesMusicOne
-                       \bassesMusicTwo ~4 r4
-                       \bassesMusicThree ~4 r2
-                       %\bassesMusicEnd
-                       \bassesMusicEndTwo
-          }
-        >>
-      >>
+      % \new PianoStaff \with {
+      %   midiInstrument = "piccolo"  % Pipe Organ
+      %   %midiInstrument = "flute"    % Grand plein jeu
+      %   %midiInstrument = "recorder" % Principaux 8 4
+      %   midiMinimumVolume = #0.7
+      %   midiMaximumVolume = #0.9
+      % }
+      % <<
+      %   \new Staff
+      %   <<
+      %     \clef "treble"
+      %     \new Voice { \global \voiceOne
+      %                 \partial 4
+      %                 \sopranosMusicOne ~4
+      %     }
+      %     \new Voice { \global \voiceTwo
+      %                 \altosMusicOne ~4
+      %     }
+      %   >>
+      %   \new Staff
+      %   <<
+      %     \clef "bass"
+      %     \new Voice { \global \voiceThree
+      %                 \tenorsMusicOne ~4
+      %     }
+      %     \new Voice { \global \voiceFour
+      %                  \bassesMusicOne ~4
+      %     }
+      %   >>
+      % >>
+      % \new PianoStaff \with {
+      %   %midiInstrument = "piccolo"  % Pipe Organ
+      %   midiInstrument = "flute"    % Grand plein jeu
+      %   %midiInstrument = "recorder" % Principaux 8 4
+      %   midiMinimumVolume = #0.6
+      %   midiMaximumVolume = #0.8
+      % }
+      % <<
+      %   \new Staff
+      %   <<
+      %     \clef "treble"
+      %     \new Voice { \global \voiceOne
+      %                 \partial 4
+      %                 \sopranosMusicOne ~4
+      %     }
+      %     \new Voice { \global \voiceTwo
+      %                 \altosMusicOne ~4
+      %     }
+      %   >>
+      %   \new Staff
+      %   <<
+      %     \clef "bass"
+      %     \new Voice { \global \voiceThree
+      %                 \tenorsMusicOne ~4
+      %     }
+      %     \new Voice { \global \voiceFour
+      %                  \bassesMusicOne ~4 r4
+      %                  \bassesMusicOne
+      %                  \bassesMusicTwo ~4 r4
+      %                  \bassesMusicThree ~4 r2
+      %                  %\bassesMusicEnd
+      %                  \bassesMusicEndTwo
+      %     }
+      %   >>
+      % >>
       \new PianoStaff \with {
         %midiInstrument = "piccolo"  % Pipe Organ
         %midiInstrument = "flute"    % Grand plein jeu
@@ -351,40 +404,53 @@ AllScoreLayout = \layout {
         <<
           \clef "treble"
           \new Voice { \global \voiceOne
-                      \partial 4
-                      \sopranosMusicOne ~4 r4
-                      \sopranosMusicOne
-                      \sopranosMusicTwo ~4 r4
-                      \sopranosMusicThree ~4 r2
-                      \sopranosMusicEnd
-                      %\sopranosMusicEndTwo
+                       \partial 4
+                       \sopranosMusicOne ~4 r4
+                       \sopranosMusicOne
+                       \sopranosMusicTwo ~4 r4
+                       \sopranosMusicThree
+                       \sopranosMusicFour ~4 r2
+                       %\sopranosMusicEnd
+                       %\sopranosMusicEndTwo
           }
           \new Voice { \global \voiceTwo
-                      \altosMusicOne ~4 r4
-                      \altosMusicOne
-                      \altosMusicTwo ~4 r4
-                      \altosMusicThree ~4 r2
-                      \altosMusicEnd
-                      %\altosMusicEndTwo
+                       \altosMusicOne ~4 r4
+                       %\altosMusicOne
+                       %\altosMusicTwo ~4 r4
+                       %\altosMusicThree ~4 r2
+                       \altosAltMusicOne
+                       \altosAltMusicTwo ~4 r4
+                       \altosAltMusicThree
+                       \altosAltMusicFour ~4 r2
+                       %\altosMusicEnd
+                       %\altosMusicEndTwo
           }
         >>
         \new Staff
         <<
           \clef "bass"
           \new Voice { \global \voiceThree
-                      \tenorsMusicOne ~4 r4
-                      \tenorsMusicOne
-                      \tenorsMusicTwo ~4 r4
-                      \tenorsMusicThree ~4 r2
-                      \tenorsMusicEnd
-                      %\tenorsMusicEndTwo
+                       \tenorsMusicOne ~4 r4
+                       %\tenorsMusicOne
+                       %\tenorsMusicTwo ~4 r4
+                       %\tenorsMusicThree ~4 r2
+                       \tenorsAltMusicOne
+                       \tenorsAltMusicTwo ~4 r4
+                       \tenorsAltMusicThree
+                       \tenorsAltMusicFour ~4 r2
+                       %\tenorsMusicEnd
+                       %\tenorsMusicEndTwo
           }
           \new Voice { \global \voiceFour
                        \bassesMusicOne ~4 r4
-                       \bassesMusicOne
-                       \bassesMusicTwo ~4 r4
-                       \bassesMusicThree ~4 r2
-                       \bassesMusicEnd
+                       %\bassesMusicOne
+                       %\bassesMusicTwo ~4 r4
+                       %\bassesMusicThree ~4 r2
+                       \bassesAltMusicOne
+                       \bassesAltMusicTwo ~4 r4
+                       \bassesAltMusicThree
+                       \bassesAltMusicFour ~4 r2
+                       %\bassesMusicEnd
                        %\bassesMusicEndTwo
           }
         >>
