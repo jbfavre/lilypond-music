@@ -126,30 +126,30 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \column {
-        \concat { \typewriter "1. " "Oui, que le d" \underline i "se Israël :"}
-        \concat { \typewriter "   " "Étern" \underline e "l est son amour !"}
-        \concat { \typewriter "   " "Oui, que le dise la mais" \underline o "n d’Aaron :"}
-        \concat { \typewriter "   " "Étern" \underline e "l est son amour !"}
-        \concat { \typewriter "   " "Qu’ils le disent, ceux qui cr" \underline a "ignent le Seigneur :"}
-        \concat { \typewriter "   " "Étern" \underline e "l est son amour !"}
+        \concat { \typewriter "1. " "Oui, que le d" \underline i "se Israël&nbsp;:"}
+        \concat { \typewriter "   " "Étern" \underline e "l est son amour&nbsp;!"}
+        \concat { \typewriter "   " "Oui, que le dise la mais" \underline o "n d’Aaron&nbsp;:"}
+        \concat { \typewriter "   " "Étern" \underline e "l est son amour&nbsp;!"}
+        \concat { \typewriter "   " "Qu’ils le disent, ceux qui cr" \underline a "ignent le Seigneur&nbsp;:"}
+        \concat { \typewriter "   " "Étern" \underline e "l est son amour&nbsp;!"}
       }
       \vspace #1
       \column {
         \concat { \typewriter "2. " "La pierre qu’ont rejet" \underline é "e les bâtisseurs"}
-        \concat { \typewriter "   " "est deven" \underline u "e la pierre d’angle :"}
+        \concat { \typewriter "   " "est deven" \underline u "e la pierre d’angle&nbsp;:"}
         \concat { \typewriter "   " "c’est là l’" \underline œ "uvre du Seigneur,"}
         \concat { \typewriter "   " "la merv" \underline e "ille devant nos yeux."}
         \concat { \typewriter "   " "Voici le jour que f" \underline i "t le Seigneur,"}
-        \concat { \typewriter "   " "qu’il soit pour nous jour de f" \underline ê "te et de joie !"}
+        \concat { \typewriter "   " "qu’il soit pour nous jour de f" \underline ê "te et de joie&nbsp;!"}
       }
     }
     \vspace #2
     \fill-line {
       \column {
-        \concat { \typewriter "3. " "Donne, Seigneur, d" \underline o "nne le salut !"}
-        \concat { \typewriter "   " "Donne, Seigneur, d" \underline o "nne la victoire !"}
-        \concat { \typewriter "   " "Béni soit au nom du Seign" \underline e "ur celui qui vient !"}
-        \concat { \typewriter "   " "De la maison du Seign" \underline e "ur, nous vous bénissons !"}
+        \concat { \typewriter "3. " "Donne, Seigneur, d" \underline o "nne le salut&nbsp;!"}
+        \concat { \typewriter "   " "Donne, Seigneur, d" \underline o "nne la victoire&nbsp;!"}
+        \concat { \typewriter "   " "Béni soit au nom du Seign" \underline e "ur celui qui vient&nbsp;!"}
+        \concat { \typewriter "   " "De la maison du Seign" \underline e "ur, nous vous bénissons&nbsp;!"}
         \concat { \typewriter "   " "Dieu, le Seign" \underline e "ur, nous illumine."}
       }
     }
