@@ -108,7 +108,7 @@ bassesMusicThree = \relative c {
    %ef4 af, bf ef8 d c4 d ef bf
   }
 bassesMusicFour = \relative c {
-    b4c bf? ef af, bf bf ef
+    b4 c bf? ef af, bf bf ef
   }
 bassesAltMusicOne = \relative c {
   ef4 ef d df c b g c
@@ -117,7 +117,7 @@ bassesAltMusicTwo = \relative c {
   g c8 bf af4 ef' ef8 d c4 d g
 }
 bassesAltMusicThree = \relative c {
-  g' af bf8 bf, c4 af8 af' ef4 f8 g bf8 bf,
+  g af bf c4 af ef' f8 g bf4
 }
 bassesAltMusicFour = \relative c {
   b4 c8 bf af4 g f8 g af4 bf ef
