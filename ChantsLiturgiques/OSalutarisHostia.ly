@@ -45,10 +45,10 @@ sopranosMusicOrgue = {
   }
 sopranosMusicEnd = \relative c'' {
   g4 (bf a g g2 e2) fs1 \fermata \bar "|."
-}
+  }
 sopranosMusicEndOrgue = \relative c'' {
   g4 bf a g g2 e2 fs1 \fermata
-}
+  }
 
 altosMusic = \relative c' {
   \repeat volta 3 {
@@ -77,10 +77,10 @@ altosMusicOrgue = {
   }
 altosMusicEnd = \relative c' {
   d1 (e4 d2 cs4) d1
-}
+  }
 altosMusicEndOrgue = \relative c' {
   d1 e4 d2 cs4 d1
-}
+  }
 
 tenorsMusic =  \relative c {
   \repeat volta 3 {
@@ -109,10 +109,10 @@ tenorsMusicOrgue = {
   }
 tenorsMusicEnd = \relative c' {
   bf1 (a1) a1
-}
+  }
 tenorsMusicEndOrgue = \relative c' {
   bf1 a1 a1
-}
+  }
 
 bassesMusic =  \relative c {
   \repeat volta 3 {
@@ -141,10 +141,10 @@ bassesMusicOrgue = {
   }
 bassesMusicEnd = \relative c' {
   g2 (g, d'1) d1  \fermata
-}
+  }
 bassesMusicEndOrgue = \relative c' {
   g2 g, d'1 d1  \fermata
-}
+  }
 
 Lyrics = \lyricmode {
   \set stanza = "1. "
