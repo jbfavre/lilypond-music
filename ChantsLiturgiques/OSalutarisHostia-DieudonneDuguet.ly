@@ -41,16 +41,18 @@ altosMusicTwo = \relative c' {
   }
 altosMusicThree = \relative c' {
     ef4 ef d ef ef f ef d
+  }
+altosMusicFour = \relative c' {
     d c d ef ef ef d bf
   }
 altosAltMusicOne = \relative c' {
   ef ef ef ef ef8 f f4 ef8 d c4
 }
 altosAltMusicTwo = \relative c' {
-  d ef ef ef g g fs g
+  d ef ef ef g g g8 fs g4
 }
 altosAltMusicThree = \relative c'' {
-  g f f ef f g f8 f f4
+  g f f ef ef g f8 f f4
 }
 altosAltMusicFour = \relative c' {
   f c ef d ef ef ef8 d bf4
@@ -71,19 +73,21 @@ tenorsMusicTwo = \relative c' {
 tenorsMusicThree = \relative c' {
     %g4 af f ef c' bf4 c d g,
     g4 af f ef af8 c bf4 bf bf g
+  }
+tenorsMusicFour = \relative c' {
     g4 bf bf c bf4. af8 g4
   }
 tenorsAltMusicOne = \relative c' {
   bf4 bf bf bf c d8 c b4 g
 }
 tenorsAltMusicTwo = \relative c' {
-  b4 c c bf? ef ef ef8 d d4
+  b!4 c c bf? ef ef ef8 d d4
 }
 tenorsAltMusicThree = \relative c' {
-  d4 ef d c ef ef ef d4
+  d4 ef d c c ef ef d4
 }
 tenorsAltMusicFour = \relative c' {
-  d4 g, c b c c c8 bf g4
+  d4 g, c b c bf bf8 af g4
 }
 tenorsMusicEnd = \relative c' {
     af2 g
@@ -101,19 +105,21 @@ bassesMusicTwo = \relative c {
 bassesMusicThree = \relative c {
     %ef4 af, bf c af g af bf
     ef4 af, bf ef8 d c4 d ef bf
+  }
+bassesMusicFour = \relative c {
     b4c bf? ef af, bf bf ef
   }
 bassesAltMusicOne = \relative c {
   ef4 ef d df c b g c
 }
 bassesAltMusicTwo = \relative c {
-  g c8 bf af4 ef' ef8 d c4 d g,
+  g c8 bf af4 ef' ef8 d c4 d g
 }
 bassesAltMusicThree = \relative c {
   g' af bf8 bf, c4 af8 af' ef4 f8 g bf8 bf,
 }
 bassesAltMusicFour = \relative c {
-  b4 c8 bf af4 g f8 g af4 bf ef4
+  b4 c8 bf af4 g f8 g16 af bf4 bf ef
 }
 bassesMusicEnd = \relative c {
     af2 ef'
@@ -250,75 +256,88 @@ AllScoreLayout = \layout {
     }
     }
   \score {
-    {
-      \new GroupStaff <<
-        \new Staff
-        <<
-          \clef "treble"
-          \new Voice = "soprano"
-          {
-            \global \voiceOne
-            \partial 4
-            \sopranosMusicOne \fermata \bar "" \break
-            \sopranosMusicOne
-            \sopranosMusicTwo \fermata \bar "" \break
-            \sopranosMusicThree
-            \sopranosMusicFour \fermata
-            %\sopranosMusicEnd
-            %\sopranosMusicEndTwo
-          }
-          \new Voice = "alto"
-          {
-            \global \voiceTwo
-            \altosMusicOne
-            %\altosMusicOne
-            %\altosMusicTwo
-            %\altosMusicThree
-            \altosAltMusicOne
-            \altosAltMusicTwo
-            \altosAltMusicThree
-            \altosAltMusicFour
-            %\altosMusicEnd
-            %\altosMusicEndTwo
-          }
-        >>
-        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \Lyrics }
-        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \LyricsOne }
-        \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \LyricsTwo \LyricsEnd }
-        \new Staff
-        <<
-          \clef "bass"
-          \new Voice = "tenor"
-          {
-            \global \voiceThree
-            \tenorsMusicOne
-            %\tenorsMusicOne
-            %\tenorsMusicTwo
-            %\tenorsMusicThree
-            \tenorsAltMusicOne
-            \tenorsAltMusicTwo
-            \tenorsAltMusicThree
-            \tenorsAltMusicFour
-            %\tenorsMusicEnd
-            %\tenorsMusicEndTwo
-          }
-          \new Voice = "basse"
-          {
-            \global \voiceFour
-            \bassesMusicOne \fermata
-            %\bassesMusicOne
-            %\bassesMusicTwo
-            %\bassesMusicThree
-            \bassesAltMusicOne
-            \bassesAltMusicTwo \fermata
-            \bassesAltMusicThree
-            \bassesAltMusicFour \fermata
-            %\bassesMusicEnd
-            %\bassesMusicEndTwo
-          }
-        >>
+    <<
+      \new Dynamics {
+        \partial 4 s4
+        s1 s2 s4 \bar "" \break s4\segno
+        s1*3 s2 s4 \bar "" \break s4
+        s1*3 s2 s4\coda \bar "" \break s4
+        s1*3 s2 s4 \bar "" \break s4
+        s1*3 s2 s4\segno s4 \break
+        s4\coda s2. s1
+      }
+      \new Staff
+      <<
+        \clef "treble"
+        \new Voice = "soprano"
+        {
+          \global \voiceOne
+          \partial 4
+          \sopranosMusicOne\fermata
+          \sopranosMusicOne
+          \sopranosMusicTwo\fermata
+          \sopranosMusicThree
+          \sopranosMusicFour\fermata
+          \sopranosMusicOne
+          \sopranosMusicTwo\fermata
+          \sopranosMusicThree
+          \sopranosMusicFour\fermata s4
+          %\sopranosMusicEnd
+          \sopranosMusicEndTwo
+        }
+        \new Voice = "alto"
+        {
+          \global \voiceTwo
+          \altosMusicOne
+          \altosMusicOne
+          \altosMusicTwo
+          \altosMusicThree
+          \altosMusicFour
+          \altosAltMusicOne
+          \altosAltMusicTwo
+          \altosAltMusicThree
+          \altosAltMusicFour s4
+          %\altosMusicEnd
+          \altosMusicEndTwo
+        }
       >>
-    }
+      \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \Lyrics \LyricsOne \LyricsEnd }
+      \new Lyrics \lyricsto "soprano" {   _ _ _ _ _ _ _ _ \LyricsTwo }
+      \new Staff
+      <<
+        \clef "bass"
+        \new Voice = "tenor"
+        {
+          \global \voiceThree
+          \tenorsMusicOne
+          \tenorsMusicOne
+          \tenorsMusicTwo
+          \tenorsMusicThree
+          \tenorsMusicFour
+          \tenorsAltMusicOne
+          \tenorsAltMusicTwo
+          \tenorsAltMusicThree
+          \tenorsAltMusicFour s4
+          %\tenorsMusicEnd
+          \tenorsMusicEndTwo
+        }
+        \new Voice = "basse"
+        {
+          \global \voiceFour
+          \bassesMusicOne \fermata
+          \bassesMusicOne
+          \bassesMusicTwo\fermata
+          \bassesMusicThree
+          \bassesMusicFour\fermata
+          \bassesAltMusicOne
+          \bassesAltMusicTwo \fermata
+          \bassesAltMusicThree
+          \bassesAltMusicFour \fermata s4
+          %\bassesMusicEnd
+          \bassesMusicEndTwo
+        }
+      >>
+    >>
     \AllScoreLayout
     \scoreHeaders
   }
@@ -409,15 +428,20 @@ AllScoreLayout = \layout {
                        \sopranosMusicOne
                        \sopranosMusicTwo ~4 r4
                        \sopranosMusicThree
+                       \sopranosMusicFour ~4 r4
+                       \sopranosMusicOne
+                       \sopranosMusicTwo ~4 r4
+                       \sopranosMusicThree
                        \sopranosMusicFour ~4 r2
                        %\sopranosMusicEnd
-                       %\sopranosMusicEndTwo
+                       \sopranosMusicEndTwo
           }
           \new Voice { \global \voiceTwo
                        \altosMusicOne ~4 r4
-                       %\altosMusicOne
-                       %\altosMusicTwo ~4 r4
-                       %\altosMusicThree ~4 r2
+                       \altosMusicOne
+                       \altosMusicTwo ~4 r4
+                       \altosMusicThree
+                       \altosMusicFour ~4 r4
                        \altosAltMusicOne
                        \altosAltMusicTwo ~4 r4
                        \altosAltMusicThree
@@ -431,27 +455,29 @@ AllScoreLayout = \layout {
           \clef "bass"
           \new Voice { \global \voiceThree
                        \tenorsMusicOne ~4 r4
-                       %\tenorsMusicOne
-                       %\tenorsMusicTwo ~4 r4
-                       %\tenorsMusicThree ~4 r2
+                       \tenorsMusicOne
+                       \tenorsMusicTwo ~4 r4
+                       \tenorsMusicThree
+                       \tenorsMusicFour ~4 r4
                        \tenorsAltMusicOne
                        \tenorsAltMusicTwo ~4 r4
                        \tenorsAltMusicThree
                        \tenorsAltMusicFour ~4 r2
                        %\tenorsMusicEnd
-                       %\tenorsMusicEndTwo
+                       \tenorsMusicEndTwo
           }
           \new Voice { \global \voiceFour
                        \bassesMusicOne ~4 r4
-                       %\bassesMusicOne
-                       %\bassesMusicTwo ~4 r4
-                       %\bassesMusicThree ~4 r2
+                       \bassesMusicOne
+                       \bassesMusicTwo ~4 r4
+                       \bassesMusicThree
+                       \bassesMusicFour ~4 r4
                        \bassesAltMusicOne
                        \bassesAltMusicTwo ~4 r4
                        \bassesAltMusicThree
                        \bassesAltMusicFour ~4 r2
                        %\bassesMusicEnd
-                       %\bassesMusicEndTwo
+                       \bassesMusicEndTwo
           }
         >>
       >>
