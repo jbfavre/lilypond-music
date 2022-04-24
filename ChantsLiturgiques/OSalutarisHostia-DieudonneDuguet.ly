@@ -48,16 +48,16 @@ altosMusicFour = \relative c' {
   }
 altosAltMusicOne = \relative c' {
   ef ef ef ef ef8 f f4 ef8 d c4
-}
+  }
 altosAltMusicTwo = \relative c' {
   d ef ef ef g g g8 fs g4
-}
+  }
 altosAltMusicThree = \relative c'' {
   g f f ef ef g f8 f f4
-}
+  }
 altosAltMusicFour = \relative c' {
   f c ef d ef ef ef8 d bf4
-}
+  }
 altosMusicEnd = \relative c' {
     c2 bf
   }
@@ -80,16 +80,16 @@ tenorsMusicFour = \relative c' {
   }
 tenorsAltMusicOne = \relative c' {
   bf4 bf bf bf c d8 c b4 g
-}
+  }
 tenorsAltMusicTwo = \relative c' {
   b!4 c c bf? ef ef ef8 d d4
-}
+  }
 tenorsAltMusicThree = \relative c' {
   d4 ef d c c ef ef d4
-}
+  }
 tenorsAltMusicFour = \relative c' {
   d4 g, c b c c c8 bf16 af g4
-}
+ }
 tenorsMusicEnd = \relative c' {
     af2 g
   }
@@ -112,16 +112,16 @@ bassesMusicFour = \relative c {
   }
 bassesAltMusicOne = \relative c {
   ef4 ef d df c b g c
-}
+  }
 bassesAltMusicTwo = \relative c {
   g c8 bf af4 ef' ef8 d c4 d g
-}
+  }
 bassesAltMusicThree = \relative c {
   g af bf c4 af ef' f8 g bf4
-}
+  }
 bassesAltMusicFour = \relative c {
   b4 c8 bf af4 g f8 g af4 bf ef
-}
+  }
 bassesMusicEnd = \relative c {
     af2 ef'
   }
