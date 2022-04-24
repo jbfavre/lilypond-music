@@ -88,7 +88,7 @@ tenorsAltMusicThree = \relative c' {
   d4 ef d c c ef ef d4
 }
 tenorsAltMusicFour = \relative c' {
-  d4 g, c b c bf bf8 af g4
+  d4 g, c b c c c8 bf16 af g4
 }
 tenorsMusicEnd = \relative c' {
     af2 g
@@ -120,7 +120,7 @@ bassesAltMusicThree = \relative c {
   g' af bf8 bf, c4 af8 af' ef4 f8 g bf8 bf,
 }
 bassesAltMusicFour = \relative c {
-  b4 c8 bf af4 g f8 g16 af bf4 bf ef
+  b4 c8 bf af4 g f8 g af4 bf ef
 }
 bassesMusicEnd = \relative c {
     af2 ef'
