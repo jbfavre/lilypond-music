@@ -10,7 +10,7 @@
 \include "../libs/settings.ily"
 
 title = "Psaume 32"
-subtitle = "Saint Trinité"
+subtitle = "Sainte Trinité"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichyla Garenne, avril 2021"
 
