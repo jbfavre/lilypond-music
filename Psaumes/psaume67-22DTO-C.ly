@@ -21,7 +21,7 @@ scoreHeader = \header {
 
 global = {
   \key g \major
-  \time 2/4
+  \time 3/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -30,33 +30,26 @@ global = {
 
 antiphonRythm = {
   \autoBeamOff
- \partial 4 s4 s2*4 \bar "|." \break
- \time 3/4 \partial 4 s4 s2.*5 \bar "|." \break
+ \partial 4 s4 s2.*5 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  d8 d e4 fs8 b b4 c8 b a4 g8 fs g4 g
-  \markCustom "Alternative"
   d8 d8 e4 fs b b2 c8 b a4 g fs g2. g
   }
 
 antiphonMusicAlto = \relative c' {
-  a4 c ds8 fs g4 a8 g e4 d d d
-  a4 c ds fs g2 a8 g e4 d2 d2. d
+  b4 c ds2 e g8 g e4 d2 d2. d
   }
 
-antiphonMusicTenor = \relative c {
-  fs4 g b8 ds e4 e4 c b8 a b4 b
-  fs4 g b ds e2 e4 c b a b2. b
+antiphonMusicTenor = \relative c' {
+  g4 g a8 c b a g2 e'8 d c2. c4 b a b2.
   }
 
 antiphonMusicBass = \relative c {
-  d4 c b e a,8 b c4 d g, g
-  d'4 c b2 e2 a,8 b c4 d2 g,2. g
+  g4 c b2 e2 a,8 b c4 d2 g,2. g
   }
 
 antiphonLyrics = \lyricmode {
-  Bé -- nit soit le Sei -- gneur&nbsp;: il é -- lè -- ve les hum -- bles.
   Bé -- nit soit le Sei -- gneur&nbsp;: il é -- lè -- ve les hum -- bles.
   }
 
