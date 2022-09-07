@@ -6,48 +6,47 @@
 \header {
   title = "Quand vint sur terre"
   subtitle = "Angelus dit \"d'Hoëdic\""
-  composer = "Jean Baptiste Favre"
+  composer = "Sacha Dhénin"
   poet = "Trad."
   subsubtitle = "Clichy la Garenne, avril 2022"
-  dedication = "À mes parents"
   }
 solisteDynamics = {
-  \key g \major \time 3/4
+  \key f \major \time 3/4
   }
 
 sopranosMusicA = \relative c' {
-  \partial 4 d4 g2 b4 g2 a4 b2 c4 \break d4 \fermata
-  r4 b4 d2 c4 b a g c2 b4 \break a4 \fermata
+  \partial 4 c4 f2 a4 f f g a2 bf4 \break c4
+  r4 a4 c2 bf4 a g f bf2 a4 \break g4 \fermata
   }
 sopranosMusicB = \relative c'' {
-  r4 b4 d2 e4 d2 c8 (b) c2 e4 \break d4 \fermata
-  r4 g,4 b2 c4 b2 a8 (g) a2 b4 g2. \fermata
+  r4 a4 c2 d4 c2 bf8 (a) bf4 bf d4 \break c4 \fermata
+  r4 f,4 a2 bf4 a2 g8 (f) g4 g a4 f2. \fermata
   }
 altosMusicA = \relative c' {
-  \partial 4 d4 d2. d g2. fs4
-  r4 fs4 f2 a4 g f2 g g4 fs4
+  \partial 4 s4 s2.*3
+  s2 f4 g2 g4 f e f g2 f4 e4
   }
 altosMusicB = \relative c' {
-  r4 b'4 g2. b2 g4 g2. fs4
-  r4 e4 g2 g4 fs ds e e ef fs8 e d2.
+  r4 f4 f2. f2 g8 f d2 f4 e4 \fermata
+  r4 c4 f2 g4 f2 e8 f (f4) e2 c2. \fermata
   }
 
 tenorsMusicA =  \relative c' {
-  \partial 4 d4 b2. b d2 c4 a4
-  r4 a4 b2 d4 d2. e2. c4
+  \partial 4 s4 s2.*3
+  s2 c4 e4 d c c bf c d2 g,4 c4
   }
 tenorsMusicB =  \relative c' {
-  r4 b4 b2 e4 f2 e4 e e8 d cs b a4
-  r4 d4 d2 c4 b2 a4 c2. b2.
+  r4 c4 a2 bf4 f2 e8 f f2 g4 g4 \fermata
+  r4 a4 c2 g4 a2 bf8 c d4 c c a2. \fermata
   }
 
 bassesMusicA =  \relative c' {
-  \partial 4 r4 g2. f2. e2 ef4 d4
-  r4 d4 d e fs g g, b a b cs d4
+  \partial 4 s4 s2.*3
+  s2 f,4 c4 d e f g a g,a b c4
   }
 bassesMusicB =  \relative c {
-  r4 r4 g4 a8 b c4 g' g, c a2. d4
-  r4 e8 fs g4 fs e ds b c8 cs d2. g2.
+  r4 f4 f2 bf,4 a2 bf8 c bf2 b4 c4 \fermata
+  r4 f4 f2 e4 f2 g8 a bf4 c c, f2. \fermata
   }
 
 Lyrics = \lyricmode {
@@ -84,8 +83,6 @@ scorePaper = \paper {
     %                        (stretchability . 1000))
     bookTitleMarkup = \markup {
       \column {
-        \fill-line { \italic \sans \fromproperty #'header:dedication }
-        \vspace #3
         \columns {
           \fill-line {
             \column {
@@ -151,20 +148,35 @@ AllScoreLayout = \layout {
           \new Staff
           <<
             \clef "treble"
-            \new Voice { \key g \major \time 3/4 \voiceOne
+            \new Voice = "soprane" { \key f \major \time 3/4 \voiceOne
                          \sopranosMusicA \sopranosMusicB
             }
-            \new Voice { \key g \major \time 3/4 \voiceTwo
+            \addlyrics { \set stanza = "1. "
+                         Quand vint sur ter -- re l'an -- ge des \set stanza = "1. " cieux
+                         À no -- tre mè -- re il dit joy -- \set stanza = "1. " eux&nbsp;:}
+            \addlyrics { \set stanza = "2. "
+                         A -- vec l'arch -- an -- ge re -- di -- sons \set stanza = "2. " tous,
+                         À sa lou -- an -- ge ce chant si \set stanza = "2. " doux&nbsp;:}
+            \addlyrics { _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                         A -- ve&nbsp;! A -- ve&nbsp;! A -- ve Ma -- ri -- a&nbsp;!
+                         A -- ve&nbsp;! A -- ve&nbsp;! A -- ve Ma -- ri -- a&nbsp;!}
+            \addlyrics { \set stanza = "3. "
+                         Ô blanche é -- toi -- le qui brille tou -- \set stanza = "3. " jours,
+                         Gui -- de ma voi -- le gar -- de mes \set stanza = "3. " jours.}
+            \addlyrics { \set stanza = "4. "
+                         Quand vien -- dra l'heu -- re as -- sis -- te- \set stanza = "4. " moi,
+                         Fais que je meure _ ai -- mé de \set stanza = "4. " toi}
+            \new Voice { \key f \major \time 3/4 \voiceTwo
                          \altosMusicA \altosMusicB
             }
           >>
           \new Staff
           <<
             \clef "bass"
-            \new Voice { \key g \major \time 3/4 \voiceThree
+            \new Voice { \key f \major \time 3/4 \voiceThree
                          \tenorsMusicA \tenorsMusicB
             }
-            \new Voice { \key g \major \time 3/4 \voiceFour
+            \new Voice { \key f \major \time 3/4 \voiceFour
                          \bassesMusicA  \bassesMusicB
             }
           >>
@@ -174,6 +186,89 @@ AllScoreLayout = \layout {
     \AllScoreLayout
     \scoreHeaders
   }
+\markup {
+  \column {
+    \fill-line {
+      \column {
+        \concat { \typewriter "1. " "Quand vint sur terre l'ange des cieux"}
+        \concat { \typewriter "   " "À notre mère il dit joyeux&nbsp;:"}
+        \concat { \typewriter "℟. " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+        \concat { \typewriter "   " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \columns {
+        \left-column {
+          \typewriter "Prètre&nbsp;: "
+          "Je vous salue Marie, pleine de grâces"
+          "le Seigneur est avec vous,"
+          "vous êtes bénie entre toutes les femmes,"
+          "et Jésus le fruit de vos entrailles est béni"
+        }
+        \left-column {
+          \typewriter "Ass.&nbsp;: "
+          \bold "Sainte Marie, Mère de Dieu,"
+          \bold "priez pour nous pauvres pécheurs,"
+          \bold "maintenant et à l'heure de notre mort,"
+          \bold "Amen&nbsp;!"
+        }
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \concat { \typewriter "2. " "Avec l'archange redisons tous,"}
+        \concat { \typewriter "   " "À sa louange ce chant si doux&nbsp;:"}
+        \concat { \typewriter "℟. " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+        \concat { \typewriter "   " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \concat {\typewriter "Prètre&nbsp;: " "Je vous salue Marie, pleine de grâces… le fruit de vos entrailles est béni"}
+        \concat {\typewriter "Ass.  &nbsp;: " \bold "Sainte Marie, Mère de Dieu,… l'heure de ntore mort, Amen&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \concat { \typewriter "3. " "Ô blanche étoile qui brille toujours,"}
+        \concat { \typewriter "   " "Guide ma voile garde mes jours."}
+        \concat { \typewriter "℟. " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+        \concat { \typewriter "   " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \concat {\typewriter "Prètre&nbsp;: " "Je vous salue Marie, pleine de grâces… le fruit de vos entrailles est béni"}
+        \concat {\typewriter "Ass.  &nbsp;: " \bold "Sainte Marie, Mère de Dieu,… l'heure de ntore mort, Amen&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \concat { \typewriter "4. " "Quand viendra l'heure assiste-moi,"}
+        \concat { \typewriter "   " "Fais que je meure aimé de toi"}
+        \concat { \typewriter "℟. " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+        \concat { \typewriter "   " \bold "Ave&nbsp;! Ave&nbsp;! Ave Maria&nbsp;!"}
+      }
+    }
+    \vspace#2
+    \fill-line {
+      \column {
+        \typewriter "Prètre&nbsp;:"
+        "Que ta grâce, Seigneur notre Père, se répande en nos cœurs&nbsp;;"
+        "par le message de l’Ange, tu nous as fait connaître l’incarnation de ton Fils bien aimé&nbsp;;"
+        "Conduis-nous, par sa passion et par sa croix, avec le secours de la Vierge Marie,"
+        "jusqu’à la Gloire de la Résurrection, par le Christ notre Seigneur"
+        \bold "Amen&nbsp;!"
+      }
+    }
+  }
+}
 }
 % MIDI output
 \score {
