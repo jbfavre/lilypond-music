@@ -15,38 +15,39 @@ solisteDynamics = {
   }
 
 sopranosMusicA = \relative c' {
-  \partial 4 c4 f2 a4 f f g a2 bf4 \break c4
-  r4 a4 c2 bf4 a g f bf2 a4 \break g4 \fermata
+  \partial 4 c4 f2 a4 f f g a2 bf4 \break
+  c2 \fermata a4 c2 bf4 a g f bf2 a4 \break
+  g2 \fermata
   }
 sopranosMusicB = \relative c'' {
-  r4 a4 c2 d4 c2 bf8 (a) bf4 bf d4 \break c4 \fermata
-  r4 f,4 a2 bf4 a2 g8 (f) g4 g a4 f2. \fermata
+  a4 c2 d4 c2 bf8 (a) bf4 bf d4 \break
+  c2 \fermata f,4 a2 bf4 a2 g8 (f) g4 g a4 f2. \fermata
   }
 altosMusicA = \relative c' {
-  \partial 4 s4 s2.*3
-  s2 f4 g2 g4 f e f g2 f4 e4
+  \partial 4 c8 bf c2~ c8 bf a4 d8[ f]~ f[ e] f2 f4
+  g2 f4 a8 g fs[ a]~ a g~ g[ f]~ f e f4 g2 f4 e2
   }
 altosMusicB = \relative c' {
-  r4 f4 f2. f2 g8 f d2 f4 e4 \fermata
-  r4 c4 f2 g4 f2 e8 f (f4) e2 c2. \fermata
+  f4 f2 f4 f2 g8 f f4 f f e2 \fermata
+  c4 f2 g4 f2 e8 f (f4) e e c2. \fermata
   }
 
 tenorsMusicA =  \relative c' {
-  \partial 4 s4 s2.*3
-  s2 c4 e4 d c c bf c d2 g,4 c4
+  \partial 4 s4 c8[ bf] a g f4 d'4 d8 c bf4 c2 d4
+  c2 c4 d2 d4 d bf c d2 c4 c2
   }
 tenorsMusicB =  \relative c' {
-  r4 c4 a2 bf4 f2 e8 f f2 g4 g4 \fermata
-  r4 a4 c2 g4 a2 bf8 c d4 c c a2. \fermata
+  c4 a2 bf4 f2 e8 f f2 g4 g2 \fermata
+  a4 c2 g4 a2 bf8 c d4 c c a2. \fermata
   }
 
 bassesMusicA =  \relative c' {
-  \partial 4 s4 s2.*3
-  s2 f,4 c4 d e f g a g,a b c4
+  \partial 4 r4 a8[ g] f e d4 d'8[ c] bf a g4 f8[g] f e d4
+  e2 f4 fs8[ e] d fs g[ g,] a4 bf a g2 c4 c2
   }
 bassesMusicB =  \relative c {
-  r4 f4 f2 bf,4 a2 bf8 c bf2 b4 c4 \fermata
-  r4 f4 f2 e4 f2 g8 a bf4 c c, f2. \fermata
+  f4 f2 bf,4 a2 bf8 c d2 b4 c2 \fermata
+  f4 f2 e4 f2 g8 a bf4 c c, f2. \fermata
   }
 
 Lyrics = \lyricmode {
@@ -98,7 +99,8 @@ scorePaper = \paper {
                 \fontsize #-1
                 \left-column {
                   \line { \concat { \typewriter "Paroles&nbsp;:&nbsp;" \sans \fromproperty #'header:poet \bold " " } }
-                  \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
+                  \line { \concat { \typewriter "Musique&nbsp;:&nbsp;" \sans "Trad. " } }
+                  \line { \concat { \typewriter "Harmonisation&nbsp;:&nbsp;" \sans \fromproperty #'header:composer \bold " " } }
                   \typewriter \italic \fromproperty #'header:subsubtitle
                 }
               }
