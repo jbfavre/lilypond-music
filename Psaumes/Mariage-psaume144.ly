@@ -89,7 +89,7 @@ verseMusicAlto = \relative f' {
   g\breve f1 e4 ef
   fs\breve fs1 ef4 d
   ef\breve ef1 ef4 g
-  fs\breve fs1 d4 d
+  fs!\breve fs!1 d4 d
   }
 
 verseMusicTenor = \relative c' {
