@@ -21,7 +21,7 @@ scoreHeader = \header {
 
 global = {
   \key d \minor
-  \time 3/4
+  \time 2/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -30,23 +30,23 @@ global = {
 
 antiphonRythm = {
   \autoBeamOff
- \partial 4 s4 s2.*4 \bar "|." \break
+ \partial 8 s8 s2*4 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  d4 a'2 bf8 a gs4. gs8 a g f4 e e d2.
+  d8 a'4 bf8 a gs8 r16 gs16 a8 g f4 e8 e d2
   }
 
 antiphonMusicAlto = \relative c' {
-  d4 f2 f8 f e4. e8 e e d4 d d8 cs a2
+  d8 f4 f8 f e r16 e16 e8 e d4 d8 d16 cs a2
   }
 
 antiphonMusicTenor = \relative c' {
-  d4 d2 d8 c b4. b8 cs a bf?4 bf4 a8 g f2
+  d8 d4 d8 c b r16 b16 cs8 a bf?4 bf8 a16 g f2
   }
 
 antiphonMusicBass = \relative c {
-  d4 d2 d8 d e4. e8 a,8 cs d c g4 a d2.
+  d8 d4 d8 d e8 r16 e16 a,8 cs d c g8 a d2
   }
 
 antiphonLyrics = \lyricmode {
