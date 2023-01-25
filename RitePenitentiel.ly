@@ -1,7 +1,7 @@
 \version "2.22.2"
 \language "english"
 \include "gregorian.ly"
-\include "../libs/commonFunctions.ily"
+\include "libs/commonFunctions.ily"
 
 tempoVerseRallentando = {
   \set Score.tempoHideNote = ##t
