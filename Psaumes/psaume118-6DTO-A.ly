@@ -30,23 +30,23 @@ global = {
 
 antiphonRythm = {
   \autoBeamOff
- \partial 8 s8 s2*4 \bar "|." \break
+ \partial 4 s4 s2*7 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  d8 a'4 bf8 a gs8 r16 gs16 a8 g f4 e8 e d2
+  d4 a'2 bf4 a gs4. gs8 a4 g f2 e4 e d2
   }
 
 antiphonMusicAlto = \relative c' {
-  d8 f4 f8 f e r16 e16 e8 e d4 d8 d16 cs a2
+  d4 f2 f4 f e4. e8 e4 e d2 d4 d8 cs a2
   }
 
 antiphonMusicTenor = \relative c' {
-  d8 d4 d8 c b r16 b16 cs8 a bf?4 bf8 a16 g f2
+  d4 d2 d4 c b4. b8 cs4 a bf?2 bf4 a8 g f2
   }
 
 antiphonMusicBass = \relative c {
-  d8 d4 d8 d e8 r16 e16 a,8 cs d c g8 a d2
+  d4 d2 d4 d e4. e8 a,8 cs d c g2 a2 d2
   }
 
 antiphonLyrics = \lyricmode {
