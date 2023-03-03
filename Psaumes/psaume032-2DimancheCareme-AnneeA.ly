@@ -131,14 +131,16 @@ verseLyrics = \markuplist {
   \override #'(font-size . 2)
   \column {
     \fill-line {
-      \left-column{
+      \column{
         \concat { \typewriter "1. " "Oui, elle est droite, la par" \underline o "le du Seigneur&nbsp;;"}
         \concat { \typewriter "   " "il est fid" \underline è "le en tout ce qu’il fait."}
         \concat { \typewriter "   " "Il aime le bon dro" \underline i "t et la justice&nbsp;;"}
         \concat { \typewriter "   " "la terre est rempl" \underline i "e de son amour."}
       }
-      \hspace #1
-      \left-column{
+    }
+    \vspace #1
+    \fill-line {
+      \column {
         \concat { \typewriter "2. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
         \concat { \typewriter "   " "qui mettent leur esp" \underline o "ir en son amour,"}
         \concat { \typewriter "   " "pour les délivr" \underline e "r de la mort,"}
@@ -173,32 +175,7 @@ partition = {
         \new Voice = "antiphonSoprano" { \global \antiphonMusicSoprano\fermata}
         \new Lyrics \lyricsto "antiphonSoprano" { \antiphonLyricsSoprano }
       >>
-      \new Staff = "AntiphonAltoStaff" <<
-        \once \override Staff.VerticalAxisGroup.remove-first = ##t
-        \set Staff.instrumentName = "Alto"
-        \clef "treble"
-        \new Dynamics \antiphonRythm
-        \new Voice = "antiphonAlto" { \global \antiphonMusicAlto\fermata }
-        \new Lyrics \lyricsto "antiphonAlto" { \antiphonLyricsAlto }
-      >>
-      \new Staff = "AntiphonTenorStaff" <<
-        \once \override Staff.VerticalAxisGroup.remove-first = ##t
-        \set Staff.instrumentName = "Ténor"
-        \clef "treble_8"
-        \new Dynamics \antiphonRythm
-        \new Voice = "antiphonTenor" { \global \antiphonMusicTenor\fermata }
-        \new Lyrics \lyricsto "antiphonTenor" { \antiphonLyricsTenor }
-      >>
-      \new Staff  = "AntiphonBassStaff" <<
-        \once \override Staff.VerticalAxisGroup.remove-first = ##t
-        \set Staff.instrumentName = "Basse"
-        \clef "bass"
-        \new Dynamics \antiphonRythm
-        \new Voice = "AntiphonBass" { \global \antiphonMusicBass\fermata }
-        \new Lyrics \lyricsto "AntiphonBass" { \antiphonLyricsBass }
-      >>
     >>
-    %\include "../libs/layouts/commonPiano.ily"
     \new PianoStaff
     <<
       \set PianoStaff.instrumentName = #"Orgue"
@@ -217,8 +194,6 @@ partition = {
         \new Voice = "bass" {\global \voiceFour \antiphonMusicBass\fermata }
       >>
     >>
-    % Psalmodie à 4 voix mixtes
-    %\include "../libs/layouts/commonVerseFourVoices.ily"
     \new ChoirStaff = "versePsalmody"
     <<
       \new Staff = "verseSopranoAlto" <<
@@ -253,17 +228,13 @@ partition = {
      (minimum-distance . 10)
      (padding . 5)
      (stretchability . 5))
- system-system-spacing = #'((basic-distance . 5)
-     (minimum-distance . 5)
-     (padding . 1)
-     (stretchability . 5))
   #(define fonts
     (set-global-fonts
      #:music "emmentaler"
      #:brace "emmentaler"
      #:roman "Latin Modern Roman"
      #:sans "Cantarell"
-    ))
+  ))
   #(include-special-characters)
   tagline = ##f
   copyright = ##f
@@ -291,7 +262,6 @@ partition = {
   }
 }
 
-#(set-global-staff-size 18)
 \score {
   \partition
   \layout {
@@ -299,141 +269,24 @@ partition = {
       \context {
           \Staff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \PianoStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \ChoirStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
-      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override LyricText.font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
   }
   \scoreHeader
 }
 \verseLyrics
-
-% Midi output
-partitionStrophe = {
-      \new PianoStaff = "antiphonMusic"
-      <<
-        \new Staff <<
-          \global \clef treble
-          \new Dynamics \antiphonRythm
-          \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
-          \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
-        >>
-        \new Staff <<
-          \global \clef bass
-          \new Dynamics \antiphonRythm
-          \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
-          \new Voice = "antiphonMusicBass" \antiphonMusicBass
-        >>
-      >>
-      \new ChoirStaff = "verseMusic"
-      <<
-        \new Staff = "verseMusicSA"
-        <<
-          \global
-          \clef treble
-          \new Dynamics {\verseStropheRythm}
-          \new Voice = "verseMusicSoprano" \verseStropheMusicSoprano
-          \new Voice = "verseMusicAlto" \verseStropheMusicAlto
-        >>
-        \new Staff = "verseMusicTB"
-        <<
-          \global
-          \clef bass
-          \new Dynamics {\verseStropheRythm}
-          \new Voice = "verseMusicTenor" \verseStropheMusicTenor
-          \new Voice = "verseMusicBass" \verseStropheMusicBass
-        >>
-      >>
-    }
-partitionVerset = {
-      \new PianoStaff = "antiphonMusic"
-      <<
-        \new Staff <<
-          \global \clef treble
-          \new Dynamics \antiphonRythm
-          \new Voice = "antiphonMusicSoprano" \antiphonMusicSoprano
-          \new Voice = "antiphonMusicAlto" \antiphonMusicAlto
-        >>
-        \new Staff <<
-          \global \clef bass
-          \new Dynamics \antiphonRythm
-          \new Voice = "antiphonMusicTenor" \antiphonMusicTenor
-          \new Voice = "antiphonMusicBass" \antiphonMusicBass
-        >>
-      >>
-      \new ChoirStaff = "verseMusic"
-      <<
-        \new Staff = "verseMusicSA"
-        <<
-          \global
-          \clef treble
-          \new Dynamics {\verseRythm}
-          \new Voice = "verseMusicSoprano" \verseMusicSoprano
-          \new Voice = "verseMusicAlto" \verseMusicAlto
-        >>
-        \new Staff = "verseMusicTB"
-        <<
-          \global
-          \clef bass
-          \new Dynamics {\verseRythm}
-          \new Voice = "verseMusicTenor" \verseMusicTenor
-          \new Voice = "verseMusicBass" \verseMusicBass
-        >>
-      >>
-    }
-
-\book {
-\bookOutputSuffix "Verset"
-\score {
-  <<
-    \keepWithTag #'audio \unfoldRepeats \partitionVerset
-    \context Staff = "Soprano" {
-      \set Score.midiMinimumVolume = #0.5
-      \set Score.midiMaximumVolume = #0.7
-      \set Staff.midiMinimumVolume = #0.8
-      \set Staff.midiMaximumVolume = #1
-    }
-    \context Voice = "Soprano" {
-      \set Score.midiMinimumVolume = #0.5
-      \set Score.midiMaximumVolume = #0.7
-      \set Staff.midiMinimumVolume = #0.8
-      \set Staff.midiMaximumVolume = #1
-    }
-  >>
-  \midi { \set midiMergeUnisons = ##t  \tempo 4. = 55}
-}
-}
-\book {
-\bookOutputSuffix "Strophe"
-\score {
-  <<
-    \keepWithTag #'audio \unfoldRepeats \partitionStrophe
-    \context Staff = "Soprano" {
-      \set Score.midiMinimumVolume = #0.5
-      \set Score.midiMaximumVolume = #0.7
-      \set Staff.midiMinimumVolume = #0.8
-      \set Staff.midiMaximumVolume = #1
-    }
-    \context Voice = "Soprano" {
-      \set Score.midiMinimumVolume = #0.5
-      \set Score.midiMaximumVolume = #0.7
-      \set Staff.midiMinimumVolume = #0.8
-      \set Staff.midiMaximumVolume = #1
-    }
-  >>
-  \midi { \set midiMergeUnisons = ##t \tempo 4. = 55}
-}
-}
