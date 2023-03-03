@@ -9,7 +9,7 @@
 \include "../libs/translations/fr.ily"
 \include "../libs/settings.ily"
 
-title = "Psaume 22-11"
+title = "Psaume 22"
 subtitle = "4e dimanche de Carême (Lætare) - Année A"
 composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, 22 octobre 2019"
