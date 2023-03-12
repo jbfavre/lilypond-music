@@ -6,7 +6,7 @@ headers = \header {
   title = "Dans le désert"
   subtitle = \markup { "Hymne pour le temps de Carême" }
   composer = "Jean Baptiste Favre"
-  poet = "Sœur Jocelyne"
+  poet = "Sœur Jocelyne Carpentier"
   dedication = "Clichy-la-Garenne, mars 2023"
   }
 
@@ -14,20 +14,20 @@ headers = \header {
 %%%%%%%%%%  Stance  %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Rhythms = {
-  \tempo 4 = 60-70
+  \tempo 4 = 80
   \key f \major \time 2/4
   s2*16 \bar "|."
   }
 SopranoMusic = \relative c'' {
   a4 bf8 c c4 a8 g f4 g8 a a2 \break
   d,4 e8 f f4 g8 a a4 g8 f f4 e \break
-  bf'4 a8 g a4 g8 f \slurDotted e8 (e) a8 g g4 f \break
+  bf'4 a8 g a4 g8 f \slurDotted g8 (g) f8 e e4 f \break
   d4 \slurDotted e8 (e) f4 g8 (a) a g f e f2
   }
 AltoMusic = \relative c' {
   f2 g4 e4 d2 e
   d2 c2 d c
-  g'4 g8 g f4 f8 f cs4 e e d
+  g'4 g8 g f4 f8 f cs4. e8 e4 d
   d2 d4 f e c c2
   }
 TenorMusic = \relative c' {
