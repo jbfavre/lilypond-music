@@ -9,6 +9,7 @@ headers = \header {
   poet = "Sœur Jocelyne Carpentier"
   dedication = "Clichy-la-Garenne, mars 2023"
   }
+#(set-global-staff-size 17)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%  Stance  %%%%%%%%%%
@@ -177,13 +178,12 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \bookpart { % Stance
   \FirstScorePaper
   \score {
     { % Partition Stance
       <<
-        \new Staff = "stanceSolistStaff" \with { instrumentName = "Chant" shortInstrumentName = "Ch." }
+%{\new Staff = "ChantStaff" \with { instrumentName = "Chant" shortInstrumentName = "Ch." }
         <<
           \clef "treble"
           \new Voice = "Rhythms" {
@@ -195,40 +195,41 @@ AllScoreLayout = \layout {
             }
           \new Voice = "SopranoMusic" {  \SopranoMusic }
         >>
-        \new Lyrics \lyricsto "SopranoMusic" { \CoupletUn }
-        \new Lyrics \lyricsto "SopranoMusic" { \CoupletDeux }
-        %\new Lyrics \lyricsto "SopranoMusic" { \CoupletTrois }
-        %\new Lyrics \lyricsto "SopranoMusic" { \CoupletQuatre }
-        %\new Lyrics \lyricsto "SopranoMusic" { \CoupletCinq }
-        %\new Lyrics \lyricsto "SopranoMusic" { \CoupletSix }
-        %\new Lyrics \lyricsto "SopranoMusic" { \CoupletSept }
-        \new PianoStaff = "Piano" \with { instrumentName = "Orgue" shortInstrumentName = "O." }
+%}
+        \new ChoirStaff
         <<
-          \new Staff = "PianoHighStaff"
+          \new Staff = "ChantHighStaff" \with { instrumentName = \markup {\column{"S." "A."}} shortInstrumentName = \markup {\column{"S." "A."}} }
           <<
             \clef "treble"
-            \new Voice = "Rhythms" {
+            \new Voice = "ChantRhythms" {
               \Rhythms
               \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
               \once \override Staff.KeyCancellation.break-visibility = #all-invisible
               \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
               \break
               }
-            \new Voice = "PianoSoprano" { \voiceOne \SopranoMusic }
-            \new Voice = "PianoAlto" { \voiceTwo \AltoMusic }
+            \new Voice = "ChantSoprano" { \voiceOne \SopranoMusic }
+            \new Voice = "ChantAlto" { \voiceTwo \AltoMusic }
           >>
-          \new Staff  = "stancePianoLowStaff"
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletUn }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletDeux }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletTrois }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletQuatre }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletCinq }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletSix }
+        \new Lyrics \lyricsto "ChantSoprano" { \CoupletSept }
+          \new Staff  = "ChantLowStaff" \with { instrumentName = \markup {\column{"T." "B."}} shortInstrumentName = \markup {\column{"T." "B."}} }
           <<
             \clef "bass"
-            \new Voice = "stanceRhythms" {
+            \new Voice = "ChantRhythms" {
               \Rhythms
               \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
               \once \override Staff.KeyCancellation.break-visibility = #all-invisible
               \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
               \break
               }
-            \new Voice = "PianoTenor" { \voiceOne \TenorMusic }
-            \new Voice = "PianoBass" { \voiceTwo \BassMusic }
+            \new Voice = "ChantTenor" { \voiceOne \TenorMusic }
+            \new Voice = "ChantBass" { \voiceTwo \BassMusic }
           >>
         >>
       >>
