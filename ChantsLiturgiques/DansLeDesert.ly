@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 \language "english"
 \include "../libs/commonFunctions.ily"
 
@@ -11,11 +11,8 @@ headers = \header {
   }
 #(set-global-staff-size 17)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%  Stance  %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Rhythms = {
-  \tempo 4 = 80
+  \tempo 4 = 75
   \key f \major \time 2/4
   s2*16 \bar "|."
   }
@@ -29,7 +26,7 @@ AltoMusic = \relative c' {
   f2 g4 e4 d2 e
   d2 c2 d c
   g'4 g8 g f4 f8 f cs4. e8 e4 d
-  d2 d4 f e c c2
+  d2 d4 f e e c2
   }
 TenorMusic = \relative c' {
   c2 c4. bf8 a2 a
@@ -40,61 +37,84 @@ TenorMusic = \relative c' {
 BassMusic = \relative c {
   f2 e4 c8 cs d2 c2
   bf2 a g c
-  e4 c f f,8 g a4 cs d4. c8 bf8 a g4 d'8 c b4 c4 c4 f,2
+  e4 c f f,8 g a4 cs cs d8 c8
+  bf8 a g4 d'8 c b4 c4 c4 f,2
   }
 CoupletUn = \lyricmode {
+  \set stanza = "1. "
   Dans le dé -- sert de nos vies tour -- men -- tées
+  \set stanza = "1. "
   sur les ter -- rains les plus durs et a -- ri -- des
+  \set stanza = "1. "
   Quand de -- vant toi je me tiens les main vi -- des,
+  \set stanza = "1. "
   Tu dé -- po -- \set ignoreMelismata = ##t ses les fleurs de ta bon -- té.
   }
 CoupletDeux = \lyricmode {
+  \set stanza = "2. "
   Dans le dé -- sert de nos vies é -- prou -- vées
+  \set stanza = "2. "
   par l'a -- ban -- don, la souf -- fran -- ce, la mort, __ _
+  \set stanza = "2. "
   tu _ nous of -- fres les \set ignoreMelismata = ##t fleurs du \unset ignoreMelismata ré -- con -- fort __ _
+  \set stanza = "2. "
   Dans \set ignoreMelismata = ##t un sou -- rire, un vi -- sa -- ge a -- pai -- sé.
   }
 CoupletTrois = \lyricmode {
+  \set stanza = "3. "
   Dans le dé -- sert de nos jours de fai -- blesse,
+  \set stanza = "3. "
   Quand je t'ap -- pelle, im -- plo -- rant ton par -- don, __ _
+  \set stanza = "3. "
   Tu me ré -- ponds et tu me fais le don __ _
+  \set stanza = "3. "
   De \set ignoreMelismata = ##t re -- cueil -- lir \unset ignoreMelismata les fleurs de ta ten -- dresse.
   }
 CoupletQuatre = \lyricmode {
+  \set stanza = "4. "
   Dans le dé --  sert que pro -- duit la mi -- sère,
+  \set stanza = "4. "
   au -- tour de nous et dans trop de pa -- ys, __ _
+  \set stanza = "4. "
   tu crées les fleurs qui en -- gen -- drent la vi -- e,
+  \set stanza = "4. "
   dans \set ignoreMelismata = ##t l'a -- mi -- tié, les _ ges -- tes so -- li -- daires.
   }
 CoupletCinq = \lyricmode {
+  \set stanza = "5. "
   Dans le dé -- sert de tous les en -- chaî -- nés,
+  \set stanza = "5. "
   par le mé -- pris, _ la haine, la vio -- len -- ce,
+  \set stanza = "5. "
   tu veux se -- mer a -- vec per -- sé -- vé -- ran -- ce,
+  \set stanza = "5. "
   des \set ignoreMelismata = ##t fleurs de \unset ignoreMelismata paix et de fra -- ter -- ni -- té.
   }
 CoupletSix = \lyricmode {
-  Dans le dé -- sert tu m'in -- vite à pri -- er,
+  \set stanza = "6. "
+  Dans le dé -- sert tu m'in -- vites à pri -- er,
+  \set stanza = "6. "
   À con -- tem -- pler _ dans cette so -- li -- tu -- de,
+  \set stanza = "6. "
   tou -- tes ces fleurs de vie en plé -- ni -- tu -- de,
+  \set stanza = "6. "
   que \set ignoreMelismata = ##t ton -- a -- \unset ignoreMelismata mour me donne à par -- ta -- ger.
   }
 CoupletSept = \lyricmode {
+  \set stanza = "7. "
   Dans le dé -- sert je sais que tu m'en -- voies
+  \set stanza = "7. "
   Tu me _ dis au plus se -- cret du cœur, __ _
+  \set stanza = "7. "
   Tu me con -- fies ce beau bou -- quet de fleurs, __ _
+  \set stanza = "7. "
   Ent -- \set ignoreMelismata = ##t re mes mains qu'il soit di  _ -- gne de Toi.
   }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%          DRAW PARTITION          %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FirstPageHeaders = \headers
-OtherPageHeaders = \header {
-  title = ##f
-  subtitle = ##f
-  composer = ##f
-  poet = ##f
-  dedication = ##f
-  }
 
 \paper {
   top-margin = 1\cm
@@ -109,24 +129,6 @@ OtherPageHeaders = \header {
   oddFooterMarkup = {}
   #(include-special-characters)
 }
-%{
-    markup-system-spacing = #'((basic-distance . 30)
-       (minimum-distance . 30)
-       (padding . 5)
-       (stretchability . 5))
-    top-markup-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
-    top-system-spacing = #'((basic-distance . 6)
-       (minimum-distance . 6)
-       (padding . 6)
-       (stretchability . 5))
-    system-system-spacing = #'((basic-distance . 3)
-       (minimum-distance . 3)
-       (padding . 3)
-       (stretchability . 3))
-%}
 FirstScorePaper = \paper {
     scoreTitleMarkup = \markup \columns {
       \fill-line {
@@ -178,63 +180,67 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bookpart { % Stance
-  \FirstScorePaper
-  \score {
-    { % Partition Stance
+\FirstScorePaper
+\score {
+  {
+    \new ChoirStaff
+    <<
+      \new Staff = "ChantHighStaff" \with {
+        instrumentName = \markup {\column{"S." "A."}}
+        shortInstrumentName = \markup {\column{"S." "A."}}
+      }
       <<
-%{\new Staff = "ChantStaff" \with { instrumentName = "Chant" shortInstrumentName = "Ch." }
-        <<
-          \clef "treble"
-          \new Voice = "Rhythms" {
-            \Rhythms
-            \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-            \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-            \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
-            \break
-            }
-          \new Voice = "SopranoMusic" {  \SopranoMusic }
-        >>
-%}
-        \new ChoirStaff
-        <<
-          \new Staff = "ChantHighStaff" \with { instrumentName = \markup {\column{"S." "A."}} shortInstrumentName = \markup {\column{"S." "A."}} }
-          <<
-            \clef "treble"
-            \new Voice = "ChantRhythms" {
-              \Rhythms
-              \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-              \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-              \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
-              \break
-              }
-            \new Voice = "ChantSoprano" { \voiceOne \SopranoMusic }
-            \new Voice = "ChantAlto" { \voiceTwo \AltoMusic }
-          >>
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletUn }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletDeux }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletTrois }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletQuatre }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletCinq }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletSix }
-        \new Lyrics \lyricsto "ChantSoprano" { \CoupletSept }
-          \new Staff  = "ChantLowStaff" \with { instrumentName = \markup {\column{"T." "B."}} shortInstrumentName = \markup {\column{"T." "B."}} }
-          <<
-            \clef "bass"
-            \new Voice = "ChantRhythms" {
-              \Rhythms
-              \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-              \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-              \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
-              \break
-              }
-            \new Voice = "ChantTenor" { \voiceOne \TenorMusic }
-            \new Voice = "ChantBass" { \voiceTwo \BassMusic }
-          >>
-        >>
+        \clef "treble" \key f \major
+        \new Dynamics = "ChantRhythms" { \Rhythms }
+        \new Voice = "ChantSoprano" \with {
+          midiInstrument = "flute" % Grand plein-jeu
+          midiInstrument = "recorder" % Principaux 8/4
+        }
+        { << {s2*4} \\ { \new DrumStaff \with { midiInstrument = "drums" } \drummode { ss4 ss4 ss4 ss4 ss4 r4 ss4 r4 } } >>
+          \voiceOne \SopranoMusic \relative c' { d4 \slurDotted e8 (e) f4 g8 (a) a g f e f2 } \bar "|." }
+        \new Voice = "ChantAlto" \with {
+          midiInstrument = "flute" % Grand plein-jeu
+          midiInstrument = "recorder" % Principaux 8/4
+        }
+        { s2*4 \voiceTwo \AltoMusic \relative c' { d2 d4 f e e c2 } }
       >>
-    }
-    \AllScoreLayout
-    \FirstPageHeaders
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletUn }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletDeux }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletTrois }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletQuatre }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletCinq }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletSix }
+      \new Lyrics \lyricsto "ChantSoprano" { \CoupletSept }
+      \new Staff  = "ChantLowStaff" \with {
+        instrumentName = \markup {\column{"T." "B."}}
+        shortInstrumentName = \markup {\column{"T." "B."}}
+      }
+      <<
+        \clef "bass" \key f \major
+        \new Dynamics = "ChantRhythms" { \Rhythms }
+        \new Voice = "ChantTenor" \with {
+          midiInstrument = "flute" % Grand plein-jeu
+          midiInstrument = "recorder" % Principaux 8/4
+        }
+        { s2*4 \voiceOne \TenorMusic \relative c' { bf a4 d c g a2 } }
+        \new Voice = "ChantBass" \with {
+          midiInstrument = "flute" % Grand plein-jeu
+          midiInstrument = "recorder" % Principaux 8/4
+        }
+        { s2*4 \voiceTwo \BassMusic \relative c {bf8 a g4 d'8 c b4 c4 c4 f,2 } }
+      >>
+    >>
   }
+  \AllScoreLayout
+  \midi{
+    \context {
+      \Staff
+      \remove "Staff_performer"
+    }
+    \context {
+      \Voice
+      \consists "Staff_performer"
+    }
+  }
+  \FirstPageHeaders
 }
