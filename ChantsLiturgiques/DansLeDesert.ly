@@ -9,8 +9,7 @@ headers = \header {
   poet = "Sœur Jocelyne Carpentier"
   dedication = "Clichy-la-Garenne, mars 2023"
   }
-%#(set-global-staff-size 15)
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 Rhythms = {
   \tempo 4 = 75
@@ -28,7 +27,7 @@ AltoMusic = \relative c' {
   %f2 e4 d d c c r4
   f2 g4 e4 d2 e
   d2 c2 d c
-  g'4 g8 g f4 f8 f cs4. e8 e4 d
+  g'4 g8 g f4 f8 f cs4 e8 e d2
   d2 d4 f e e c2
   }
 TenorMusic = \relative c' {
@@ -40,9 +39,9 @@ TenorMusic = \relative c' {
   }
 BassMusic = \relative c {
   %f,2 c'4 d bf c f,4 r4
-  f'2 e4 c8 cs d2 c2
+  f2 e4 c8 cs d2 c2
   bf2 a g c
-  e4 c f f,8 g a4 cs cs d8 c8
+  e4 c f f,8 g a4 cs d4. c!8
   bf8 a g4 d'8 c b4 c4 c4 f,2
   }
 CoupletUn = \lyricmode {
