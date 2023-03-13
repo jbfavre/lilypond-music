@@ -9,7 +9,8 @@ headers = \header {
   poet = "Sœur Jocelyne Carpentier"
   dedication = "Clichy-la-Garenne, mars 2023"
   }
-#(set-global-staff-size 17)
+%#(set-global-staff-size 15)
+#(set-global-staff-size 18)
 
 Rhythms = {
   \tempo 4 = 75
@@ -17,30 +18,35 @@ Rhythms = {
   s2*16 \bar "|."
   }
 SopranoMusic = \relative c'' {
+  %a4 bf8 a g4. f8 f4 e f4 r4 \break
   a4 bf8 c c4 a8 g f4 g8 a a2 \break
   d,4 e8 f f4 g8 a a4 g8 f f4 e \break
   bf'4 a8 g a4 g8 f \slurDotted g8 (g) f8 e e4 f \break
-  d4 \slurDotted e8 (e) f4 g8 (a) a g f e f2
+  d4 \slurDotted e8 (e) f4 g8 (a) a g f e f2 \break
   }
 AltoMusic = \relative c' {
+  %f2 e4 d d c c r4
   f2 g4 e4 d2 e
   d2 c2 d c
   g'4 g8 g f4 f8 f cs4. e8 e4 d
   d2 d4 f e e c2
   }
 TenorMusic = \relative c' {
+  %c2 c4 a bf bf a r4
   c2 c4. bf8 a2 a
   bf4 g f2 b g
   c2 c a a
   bf a4 d c g a2
   }
 BassMusic = \relative c {
-  f2 e4 c8 cs d2 c2
+  %f,2 c'4 d bf c f,4 r4
+  f'2 e4 c8 cs d2 c2
   bf2 a g c
   e4 c f f,8 g a4 cs cs d8 c8
   bf8 a g4 d'8 c b4 c4 c4 f,2
   }
 CoupletUn = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "1. "
   Dans le dé -- sert de nos vies tour -- men -- tées
   \set stanza = "1. "
@@ -51,6 +57,7 @@ CoupletUn = \lyricmode {
   Tu dé -- po -- \set ignoreMelismata = ##t ses les fleurs de ta bon -- té.
   }
 CoupletDeux = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "2. "
   Dans le dé -- sert de nos vies é -- prou -- vées
   \set stanza = "2. "
@@ -61,6 +68,7 @@ CoupletDeux = \lyricmode {
   Dans \set ignoreMelismata = ##t un sou -- rire, un vi -- sa -- ge a -- pai -- sé.
   }
 CoupletTrois = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "3. "
   Dans le dé -- sert de nos jours de fai -- blesse,
   \set stanza = "3. "
@@ -71,6 +79,7 @@ CoupletTrois = \lyricmode {
   De \set ignoreMelismata = ##t re -- cueil -- lir \unset ignoreMelismata les fleurs de ta ten -- dresse.
   }
 CoupletQuatre = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "4. "
   Dans le dé --  sert que pro -- duit la mi -- sère,
   \set stanza = "4. "
@@ -81,6 +90,7 @@ CoupletQuatre = \lyricmode {
   dans \set ignoreMelismata = ##t l'a -- mi -- tié, les _ ges -- tes so -- li -- daires.
   }
 CoupletCinq = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "5. "
   Dans le dé -- sert de tous les en -- chaî -- nés,
   \set stanza = "5. "
@@ -91,6 +101,7 @@ CoupletCinq = \lyricmode {
   des \set ignoreMelismata = ##t fleurs de \unset ignoreMelismata paix et de fra -- ter -- ni -- té.
   }
 CoupletSix = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "6. "
   Dans le dé -- sert tu m'in -- vites à pri -- er,
   \set stanza = "6. "
@@ -101,6 +112,7 @@ CoupletSix = \lyricmode {
   que \set ignoreMelismata = ##t ton -- a -- \unset ignoreMelismata mour me donne à par -- ta -- ger.
   }
 CoupletSept = \lyricmode {
+  %_ _ _ _ _ _ _ _
   \set stanza = "7. "
   Dans le dé -- sert je sais que tu m'en -- voies
   \set stanza = "7. "
@@ -196,13 +208,12 @@ AllScoreLayout = \layout {
           midiInstrument = "flute" % Grand plein-jeu
           midiInstrument = "recorder" % Principaux 8/4
         }
-        { << {s2*4} \\ { \new DrumStaff \with { midiInstrument = "drums" } \drummode { ss4 ss4 ss4 ss4 ss4 r4 ss4 r4 } } >>
-          \voiceOne \SopranoMusic \relative c' { d4 \slurDotted e8 (e) f4 g8 (a) a g f e f2 } \bar "|." }
+        { \voiceOne \SopranoMusic }
         \new Voice = "ChantAlto" \with {
           midiInstrument = "flute" % Grand plein-jeu
           midiInstrument = "recorder" % Principaux 8/4
         }
-        { s2*4 \voiceTwo \AltoMusic \relative c' { d2 d4 f e e c2 } }
+        { \voiceTwo \AltoMusic }
       >>
       \new Lyrics \lyricsto "ChantSoprano" { \CoupletUn }
       \new Lyrics \lyricsto "ChantSoprano" { \CoupletDeux }
@@ -222,25 +233,21 @@ AllScoreLayout = \layout {
           midiInstrument = "flute" % Grand plein-jeu
           midiInstrument = "recorder" % Principaux 8/4
         }
-        { s2*4 \voiceOne \TenorMusic \relative c' { bf a4 d c g a2 } }
+        { \voiceOne \TenorMusic }
         \new Voice = "ChantBass" \with {
           midiInstrument = "flute" % Grand plein-jeu
           midiInstrument = "recorder" % Principaux 8/4
         }
-        { s2*4 \voiceTwo \BassMusic \relative c {bf8 a g4 d'8 c b4 c4 c4 f,2 } }
+        { \voiceTwo \BassMusic }
       >>
     >>
   }
   \AllScoreLayout
   \midi{
-    \context {
-      \Staff
-      \remove "Staff_performer"
-    }
-    \context {
-      \Voice
-      \consists "Staff_performer"
-    }
+    % Move MIDI performer from Staff level to Voice
+    % Get a MIDI channel per Voice instead of per Staff
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
   }
   \FirstPageHeaders
 }
