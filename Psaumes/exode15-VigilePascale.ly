@@ -33,24 +33,24 @@ antiphonRythm = {
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  d8 g4. g8 fs g a4. r8 g a b4 a8 g fs4 g2.
+  d8 g4. g8 fs g a4. r8 g a b4. a4 a8 g2.
   }
 
 antiphonMusicAlto = \relative c' {
-  d8 d4. e fs2. fs4 g8 e d4 d2.
+  d8 d4. e fs2. fs4. e4 fs8 d2.
   }
 
 antiphonMusicTenor =  \relative c' {
-  d8 b2. d2. ds4 e a, bf2.
+  d8 b2. d2. ds4. e8 c4 bf2.
   }
 
 antiphonMusicBass =  \relative c {
-  d8 g4. e d4. r8 d8 c b4 c d g,2.
+  d8 g4. e d4. r8 d8 c b4. c4 d8 g2.
   }
 
 antiphonLyrics = \lyricmode {
   Chan -- tons pour le Sei -- gneur&nbsp;!
-  É -- cla -- tan -- te~est sa gloi -- re&nbsp;!
+  É -- cla -- tan -- te~est sa gloire&nbsp;!
   }
 
 antiphonLyricsSoprano = \antiphonLyrics
