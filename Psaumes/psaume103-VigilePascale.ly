@@ -15,7 +15,7 @@ composer = "Jean Baptiste Favre"
 dedicace = "Clichy la Garenne, janvier 2018"
 
 global = {
-  \key gs \minor
+  \key g \minor
   \time 2/4
 }
 
@@ -23,23 +23,27 @@ global = {
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-sopranoAntiphonMusic = \relative c' {
+sopranoAntiphonMusic =  \transpose gs g {
+  \relative c' {
   \markCustom "Antienne"
   \partial 4 e8[ ds] gs4 gs8[ (as)] b4 cs8[ b] as2 (as8) fss gs[ as] b4 as8[ b] gs[ gs] as[ gs] gs4 (fss!) gs2 \bar "|." \break
-  }
+}}
 
-altoAntiphonMusic = \relative c' {
+altoAntiphonMusic =  \transpose gs g {
+  \relative c' {
   \partial 4 cs8 [as] ds4 ds4 e gs8 [gs] fs2 fss4 gs8 [gs] fs4 cs8 [ds] e [e] e [cs] ds4. (e8) ds2
-  }
+}}
 
-tenorAntiphonMusic = \relative c' {
+tenorAntiphonMusic =  \transpose gs g {
+  \relative c' {
   \partial 4 gs8[ fss] gs4 b8[ (as)] b4 cs8[ cs] cs2 ds4 e8[ e] ds4 gs,8[ gs] b[ cs] cs[ as] as2 b2
-  }
+}}
 
-bassAntiphonMusic = \relative c {
+bassAntiphonMusic =  \transpose gs g {
+  \relative c {
   \partial 4 cs8[ cs] b4 gs'8[ (fs)] e4 cs8[ e] fs4 (e)
   ds cs8[ cs] ds4 e8[ ds] cs[ as] cs[ e] ds4. (cs8) gs2
-  }
+}}
 sopranoAntiphonMusic = \sopranoAntiphonMusic
 altoAntiphonMusic = \altoAntiphonMusic
 tenorAntiphonMusic = \tenorAntiphonMusic
@@ -64,6 +68,7 @@ reponsLyrics = \lyricmode {
   \markup {\concat { \bold ℟ &nbsp;:&nbsp;En }} -- voie ton Es -- prit&nbsp;!
 }
 sopranoVerseMusic = <<
+   \transpose gs g {
   \relative c'' {
     \silence \sopranoAntiphonMusic
     \markCustom "Psalmodie par strophe" \cadenzaOn \shiftOff
@@ -76,11 +81,12 @@ sopranoVerseMusic = <<
     gs\breve fss!1 gs4 \bar "||"
     \cadenzaOff
     gs8^\markup{ \sans "Assemblée"}[ as] b4 as gs \bar "|." % Répons de l'assemblée
-    }
+   }}
     \addlyrics { \reponsLyrics \reponsLyrics }
 >>
 
-altoVerseMusic = \relative c' {
+altoVerseMusic =  \transpose gs g {
+  \relative c' {
   \silence \sopranoAntiphonMusic
   ds\breve e1 e4
   e\breve ds1 e4
@@ -89,9 +95,10 @@ altoVerseMusic = \relative c' {
   b\breve as1 ds4
   e\breve ds1 ds4
   \cadenzaOff ds8 e fs!4 fs8 e ds4 % Répons de l'assemblée
-  }
+}}
 
-tenorVerseMusic = \relative c' {
+tenorVerseMusic =  \transpose gs g {
+  \relative c' {
   \silence \sopranoAntiphonMusic
   b\breve b1 cs4
   cs\breve cs1 b4
@@ -100,9 +107,10 @@ tenorVerseMusic = \relative c' {
   gs\breve gs1 b4
   b\breve as1 b4
   \cadenzaOff b8 cs ds4 ds8 cs b4 % Répons de l'assemblée
-  }
+}}
 
-bassVerseMusic = \relative c' {
+bassVerseMusic =  \transpose gs g {
+  \relative c' {
   \silence \sopranoAntiphonMusic
   gs\breve e1 gs4
   fs\breve fss1 gs4
@@ -111,7 +119,7 @@ bassVerseMusic = \relative c' {
   e\breve cs1 gs4
   cs\breve ds1 gs,4
   \cadenzaOff gs'8[ fs] b,[ cs] ds4 gs, % Répons de l'assemblée
-  }
+}}
 
 verseLyrics = \markuplist {
   \override #'(font-family . sans)
