@@ -41,11 +41,11 @@ antiphonMusicAlto = \relative c' {
   }
 
 antiphonMusicTenor =  \relative c' {
-  c4 d2 c2 a4 a4 bf4 bf a2.
+  c4 d2 c2 a4 a4 bf4 bf bf4. a
   }
 
 antiphonMusicBass =  \relative c {
-  f4 bf,2 c2 cs4 d8 c bf4 c f,2.
+  f4 f4 f,8 a c2 cs4 d8 c bf4 c f,2.
   }
 
 antiphonLyrics = \lyricmode {
@@ -65,45 +65,58 @@ verseStropheRythm = {
   \accidentalStyle forget
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Psalmodie par strophe" \cadenzaOn
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "|." \break
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
 }
 verseRythm = {
   \markCustom "Psalmodie par verset" \cadenzaOn
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "|."
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|."
 }
-verseStropheMusicSoprano = \relative c' {
-  f\breve e4
-  g\breve f4
-  a\breve g4
-  f\breve g4
+verseStropheMusicSoprano = \relative c'' {
+  a\breve g1 g4
+  f\breve e1 e4
+  d\breve c1 c4
+  d\breve e1 e4
   }
 verseMusicSoprano = \relative c'' {
-  a\breve g4
-  f\breve g4
+  a\breve g1 g4
+  f\breve g1 g4
   }
-verseStropheMusicAlto = \relative c'' {
+
+verseStropheMusicAlto = \relative c' {
+  f\breve f1 e4
+  d\breve d1 c4
+  bf\breve bf1 a4
+  bf\breve bf1 bf4
   }
-verseMusicAlto = \relative c'' {
+verseMusicAlto = \relative c' {
+  f\breve f1 e4
+  d\breve d1 e4
   }
 
 verseStropheMusicTenor = \relative c' {
+  c\breve c1 c4
+  a\breve a1 a4
+  f\breve f1 f4
+  f\breve e1 g4
   }
 verseMusicTenor = \relative c' {
+  c\breve c1 c4
+  bf\breve bf1 bf4
   }
 
 verseStropheMusicBass = \relative c {
-  d\breve a'4
-  e\breve bf'4
-  f,\breve c'4
-  d\breve c4
+  f\breve g1 c,4
+  d\breve e1 a,4
+  bf\breve c1 f,4
+  bf\breve g1 c4
   }
 verseMusicBass = \relative c {
-  f,\breve c'4
-  d\breve c4
+  f\breve g1 c,4
+  bf\breve g1 c4
   }
 
 verseLyrics = \markuplist {
@@ -114,12 +127,10 @@ verseLyrics = \markuplist {
       \left-column{
         \concat { \typewriter "1. " "Seigneur, mon part" \underline a "ge et ma coupe&nbsp;:"}
         \concat { \typewriter "   " "de t" \underline o "i dépend mon sort."}
-        \concat { \typewriter "   " "Je garde le Seigneur devant m" \underline o "i sans relâche&nbsp;;"}
+        \concat { \typewriter "   " "Je garde le Seigneur devant m" \underline o "i"}
+        \concat { \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sans relâche&nbsp;;"}
         \concat { \typewriter "   " "il est à ma dr" \underline o "ite&nbsp;: je suis inébranlable."}
       }
-    }
-    \vspace #0.8
-    \fill-line {
       \left-column {
         \concat { \typewriter "2. " "Mon cœur exulte, mon " \underline â "me est en fête,"}
         \concat { \typewriter "   " "ma chair elle-même rep" \underline o "se en confiance&nbsp;:"}
@@ -127,7 +138,7 @@ verseLyrics = \markuplist {
         \concat { \typewriter "   " "ni laisser ton ami v" \underline o "ir la corruption."}
       }
     }
-    \vspace #0.8
+    \vspace #1
     \fill-line {
       \left-column {
         \concat { \typewriter "3. " "Tu m’apprends le chem" \underline i "n de la vie&nbsp;:"}
