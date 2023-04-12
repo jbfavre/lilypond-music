@@ -99,7 +99,7 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \column{
-        \concat { \typewriter "1. " "Acclamez le Seigne" \underline u "ur, terre entière,"}
+        \concat { \typewriter "1. " "Acclamez le Seigne" \underline u "r, terre entière,"}
         \concat { \typewriter "   " "servez le Seigne" \underline u "r dans l’allégresse,"}
         \concat { \typewriter "   " "venez à lui avec des ch" \underline a "nts de joie&nbsp;!"}
       }
@@ -114,7 +114,7 @@ verseLyrics = \markuplist {
       \left-column {
         \concat { \typewriter "3. " "Oui, le Seigne" \underline u "r est bon,"}
         \concat { \typewriter "   " "étern" \underline e "l est son amour,"}
-        \concat { \typewriter "   " "sa fidélité deme" \underline u "re d’âge en âge."}
+        \concat { \typewriter "   " "sa fidélité demeure d’" \underline â "ge en âge."}
       }
     }
   }
