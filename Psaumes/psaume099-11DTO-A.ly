@@ -13,7 +13,7 @@ tempoVerseAcelerando = {
 
 scoreHeader = \header {
   title = "Psaume 99"
-  subtitle = \markup { \column { "11 Dimanche du Temps Ordinaire" "Année A" }}
+  subtitle = \markup { \column { "11ème Dimanche du Temps Ordinaire" "Année A" }}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   date = "Clichy la Garenne, avril 2023"
@@ -49,7 +49,7 @@ antiphonMusicBass =  \relative c' {
   }
 
 antiphonLyrics = \lyricmode {
-  Il nous a fait, et nous som -- mes à lui,
+  Il nous a faits, et nous som -- mes à lui,
   nous, son peu -- ple, son trou -- peau.
   }
 
@@ -99,22 +99,22 @@ verseLyrics = \markuplist {
   \column {
     \fill-line {
       \column{
-        \concat { \typewriter "1. " "Acclamez le Seigneur, terre entière,"}
-        \concat { \typewriter "   " "servez le Seigneur dans l’allégresse,"}
-        \concat { \typewriter "   " "venez à lui avec des chants de joie&nbsp;!"}
+        \concat { \typewriter "1. " "Acclamez le Seigne" \underline u "ur, terre entière,"}
+        \concat { \typewriter "   " "servez le Seigne" \underline u "r dans l’allégresse,"}
+        \concat { \typewriter "   " "venez à lui avec des ch" \underline a "nts de joie&nbsp;!"}
       }
       \column {
-        \concat { \typewriter "2. " "Reconnaissez que le Seigneur est Dieu&nbsp;:"}
-        \concat { \typewriter "   " "il nous a faits, et nous sommes à lui,"}
-        \concat { \typewriter "   " "nous, son peuple, son troupeau."}
+        \concat { \typewriter "2. " "Reconnaissez que le Seigne" \underline u "r est Dieu&nbsp;:"}
+        \concat { \typewriter "   " "il nous a faits, et nous s" \underline o "mmes à lui,"}
+        \concat { \typewriter "   " "nous, son pe" \underline u "ple, son troupeau."}
       }
     }
     \vspace #1
     \fill-line {
       \left-column {
-        \concat { \typewriter "3. " "Oui, le Seigneur est bon,"}
-        \concat { \typewriter "   " "éternel est son amour,"}
-        \concat { \typewriter "   " "sa fidélité demeure d’âge en âge."}
+        \concat { \typewriter "3. " "Oui, le Seigne" \underline u "r est bon,"}
+        \concat { \typewriter "   " "étern" \underline e "l est son amour,"}
+        \concat { \typewriter "   " "sa fidélité deme" \underline u "re d’âge en âge."}
       }
     }
   }
