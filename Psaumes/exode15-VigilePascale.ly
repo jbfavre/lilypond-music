@@ -12,8 +12,8 @@ tempoVerseAcelerando = {
 }
 
 scoreHeader = \header {
-  title = "Cantique d'Isaïe"
-  subtitle = \markup { \column { "Vigile Pascale" "Cinquième lecture" }}
+  title = "Cantique de Moïse"
+  subtitle = \markup { \column { "Vigile Pascale" "Troisième lecture" }}
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   date = "Clichy la Garenne, avril 2023"
@@ -21,7 +21,7 @@ scoreHeader = \header {
 
 global = {
   \key g \major
-  \time 3/8
+  \time 6/8
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,28 +29,28 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 antiphonRythm = {
- s4.*8 \bar "|." \break
+ \partial 8 s8 s4.*4 s4.*4 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  r8 d8 d8 e4 fs8 g8 fs g a g a b4 b8 c4 b8 a a4 g4.
+  d8 g4. g8 fs g a4. r8 g a b4. a4 a8 g2.
   }
 
 antiphonMusicAlto = \relative c' {
-  a4 a8 s4. s4. fs'4 fs8 fs4 g8 e4 d8 e fs4 d4.
+  d8 d4. e fs2. fs4. e4 fs8 d2.
   }
 
-antiphonMusicTenor =  \relative c {
-  fs4 fs8 s4. s4. d'4 d8 ds4 e8 a,4 g8 a a4 b4.
+antiphonMusicTenor =  \relative c' {
+  d8 b2. d2. ds4. e8 c4 bf2.
   }
 
 antiphonMusicBass =  \relative c {
-  d4 d8 c4 c8 b4 b8 d4 c8 b4 e8 a,4 b8 c8 d4 g4.
+  d8 g4. e d4. r8 d8 c b4. c4 d8 g2.
   }
 
 antiphonLyrics = \lyricmode {
-  E -- xul -- tant de joie vous pui -- se -- rez  les eaux
-  aux sour -- ces du sa -- lut&nbsp;!
+  Chan -- tons pour le Sei -- gneur&nbsp;!
+  É -- cla -- tan -- te~est sa gloire&nbsp;!
   }
 
 antiphonLyricsSoprano = \antiphonLyrics
@@ -76,46 +76,46 @@ verseRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|."
 }
 verseStropheMusicSoprano = \relative c'' {
-  s\breve s4
-  s\breve s4
-  s\breve s1 s4
-  s\breve s1 s4
+  b\breve a4
+  g\breve fs4
+  e\breve fs1 g4
+  g\breve a1 a4
   }
 verseMusicSoprano = \relative c'' {
-  s\breve s4
-  s\breve s1 s4
+  b\breve a4
+  g\breve a1 a4
   }
 verseStropheMusicAlto = \relative c'' {
-  s\breve s4
-  s\breve s4
-  s\breve s1 s4
-  s\breve s1 s4
+  g\breve fs4
+  e\breve d4
+  c\breve b1 e4
+  e\breve e1 fs4
   }
 verseMusicAlto = \relative c'' {
-  s\breve s4
-  s\breve s1 s4
+  g\breve fs4
+  e\breve e1 fs4
   }
 
 verseStropheMusicTenor = \relative c' {
-  s\breve s4
-  s\breve s4
-  s\breve s1 s4
-  s\breve s1 s4
+  d\breve d4
+  b\breve b4
+  g\breve b1 b4
+  c\breve c1 c4
   }
 verseMusicTenor = \relative c' {
-  s\breve s4
-  s\breve s1 s4
+  d\breve d4
+  c\breve c1 c4
   }
 
 verseStropheMusicBass = \relative c {
-  s\breve s4
-  s\breve s4
-  s\breve s1 s4
-  s\breve s1 s4
+  g\breve d'4
+  e\breve b'4
+  c,\breve d1 f4
+  c\breve a1 d4
   }
 verseMusicBass = \relative c {
-  s\breve s4
-  s\breve s1 s4
+  g\breve d'4
+  c\breve a1 d4
   }
 
 verseLyrics = \markuplist {
@@ -124,25 +124,43 @@ verseLyrics = \markuplist {
   \left-column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Voici le Di" \underline e "u qui me sauve&nbsp;:"}
-        \concat { \typewriter "   " "j’ai confiance, je n’ai pl" \underline u "s de crainte."}
-        \concat { \typewriter "   " "Ma force et mon ch" \underline a "nt, c’est le Seigneur&nbsp;;"}
-        \concat { \typewriter "   " "il est pour m" \underline o "i le salut."}
+        \concat { \typewriter "1. " "Je chanter" \underline a "i pour le Seigneur&nbsp;!"}
+        \concat { \typewriter "   " "Éclat" \underline a "nte est sa gloire&nbsp;:"}
+        \concat { \typewriter "   " "il a jet" \underline é " dans la mer"}
+        \concat { \typewriter "   " "chev" \underline a "l et cavalier."}
       }
       \left-column {
-        \concat { \typewriter "2. " "Rendez gr" \underline â "ce au Seigneur,"}
-        \concat { \typewriter "   " "proclam" \underline e "z son nom,"}
-        \concat { \typewriter "   " "annoncez parmi les p" \underline e "uples ses hauts faits&nbsp;!"}
-        \concat { \typewriter "   " "Redites-le&nbsp;: «&nbsp;Subl" \underline i "me est son nom&nbsp;!&nbsp;»"}
+        \concat { \typewriter "2. " "Ma force et mon ch" \underline a "nt, c’est le Seigneur&nbsp;:"}
+        \concat { \typewriter "   " "il est pour m" \underline o "i le salut."}
+        \concat { \typewriter "   " "Il est mon Di" \underline e "u, je le célèbre&nbsp;;"}
+        \concat { \typewriter "   " "j’exalte le Di" \underline e "u de mon père."}
+      }
+    }
+    \vspace #0.8
+    \fill-line {
+      \left-column {
+        \concat { \typewriter "3. " "Le Seigneur est le guerri" \underline e "r des combats&nbsp;;"}
+        \concat { \typewriter "   " "son n" \underline o "m est «&nbsp;Le Seigneur&nbsp;»."}
+        \concat { \typewriter "   " "Les chars du Pharaon et ses armées,"}
+        \concat { \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;il les l" \underline a "nce dans la mer."}
+        \concat { \typewriter "   " "L’élite de leurs chefs a sombr" \underline é}
+        \concat { \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dans la mer Rouge."}
+      }
+      \column {
+        \concat { \typewriter "4. " "L’ab" \underline î "me les recouvre&nbsp;:"}
+        \concat { \typewriter "   " "ils descendent, comme la pi" \underline e "rre,"}
+        \concat { \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;au fond des eaux."}
+        \concat { \typewriter "   " "Ta droite, Seigneur, magnif" \underline i "que en sa force,"}
+        \concat { \typewriter "   " "ta droite, Seigneur, écr" \underline a "se l’ennemi."}
       }
     }
     \vspace #0.8
     \fill-line {
       \column {
-        \concat { \typewriter "3. " "Jouez pour le Seigneur, il m" \underline o "ntre sa magnificence,"}
-        \concat { \typewriter "   " "et toute la t" \underline e "rre le sait."}
-        \concat { \typewriter "   " "Jubilez, criez de joie, habit" \underline a "nts de Sion,"}
-        \concat { \typewriter "   " "car il est grand au milieu de toi, le S" \underline a "int d’Israël&nbsp;!"}
+        \concat { \typewriter "5. " "Tu les amènes, tu les plantes sur la mont" \underline a "gne, ton héritage,"}
+        \concat { \typewriter "   " "le lieu que tu as fait, Seign" \underline e "ur, pour l’habiter,"}
+        \concat { \typewriter "   " "le sanctuaire, Seigneur, fond" \underline é " par tes mains."}
+        \concat { \typewriter "   " "Le Seigneur régnera pour les si" \underline è "cles des siècles."}
       }
     }
   }
