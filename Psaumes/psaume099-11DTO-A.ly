@@ -33,7 +33,7 @@ antiphonRythm = {
 }
 antiphonMusicSoprano = \relative c' {
   \markCustom "Antienne"
-  r8 d8 b' a b4. b8 c b b a g4 e8 e a4. a8 g4 fs g2
+  r8 d8 b' a b4. b8 c c b a g4 e8 e a4. a8 g4 fs g2
   }
 
 antiphonMusicAlto = \relative c' {
