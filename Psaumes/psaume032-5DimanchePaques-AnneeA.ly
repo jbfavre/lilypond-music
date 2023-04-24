@@ -126,34 +126,37 @@ verseMusicBass = \relative c {
   bf\breve f1 c'4
   }
 
+
+
+
 verseLyrics = \markuplist {
   \override #'(font-family . sans)
   \override #'(font-size . 2)
   \column {
     \fill-line {
       \column{
-        \concat { \typewriter "1. " "Oui, elle est droite, la par" \underline o "le du Seigneur&nbsp;;"}
+        \concat { \typewriter "1. " "Criez de joie pour le Seigne" \underline u "r, hommes justes&nbsp;!"}
+        \concat { \typewriter "   " "Hommes droits, à vo" \underline u "s la louange&nbsp;!"}
+        \concat { \typewriter "   " "Rendez grâce au Seigne" \underline u "r sur la cithare,"}
+        \concat { \typewriter "   " "jouez pour l" \underline u "i sur la harpe à dix cordes."}
+      }
+    }
+    \vspace #1
+    \fill-line {
+      \column {
+        \concat { \typewriter "2. " "Oui, elle est dr" \underline o "ite, la parole du Seigneur&nbsp;;"}
         \concat { \typewriter "   " "il est fid" \underline è "le en tout ce qu’il fait."}
-        \concat { \typewriter "   " "Il aime le bon dro" \underline i "t et la justice&nbsp;;"}
+        \concat { \typewriter "   " "Il aime le bon dr" \underline o "it et la justice&nbsp;;"}
         \concat { \typewriter "   " "la terre est rempl" \underline i "e de son amour."}
       }
     }
     \vspace #1
     \fill-line {
       \column {
-        \concat { \typewriter "2. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
+        \concat { \typewriter "3. " "Dieu veille sur ce" \underline u "x qui le craignent,"}
         \concat { \typewriter "   " "qui mettent leur esp" \underline o "ir en son amour,"}
         \concat { \typewriter "   " "pour les délivr" \underline e "r de la mort,"}
-        \concat { \typewriter "   " "les garder en vie aux j" \underline o "urs de famine."}
-      }
-    }
-    \vspace #1
-    \fill-line {
-      \column {
-        \concat { \typewriter "3. " "Nous attendons notre v" \underline i "e du Seigneur&nbsp;:"}
-        \concat { \typewriter "   " "il est pour nous un appu" \underline i ", un bouclier."}
-        \concat { \typewriter "   " "Que ton amour, Seign" \underline e "ur, soit sur nous"}
-        \concat { \typewriter "   " "comme notre esp" \underline o "ir est en toi&nbsp;!"}
+        \concat { \typewriter "   " "les garder en v" \underline i "e aux jours de famine."}
       }
     }
   }
