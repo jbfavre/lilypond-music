@@ -76,8 +76,8 @@ verseStropheRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
   \markCustom "Psalmodie par verset"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
+  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
 }
 
 verseStropheMusicSoprano = \relative c' {
@@ -86,8 +86,8 @@ verseStropheMusicSoprano = \relative c' {
   a\breve c1 d4
   c\breve b1 a4 g4 a4
 
-  g\breve a1 f4
-  f\breve e1 g4 a4
+  f\breve e4
+  f\breve g1 a4
   }
 
 verseStropheMusicAlto = \relative c' {
@@ -96,8 +96,8 @@ verseStropheMusicAlto = \relative c' {
   f\breve a1 f4
   f\breve g1 e4 e4 e4
 
-  s\breve s1 s4
-  s\breve s1 s4 s4
+  d\breve cs4
+  d\breve d1 cs4
   }
 
 verseStropheMusicTenor = \relative c' {
@@ -106,8 +106,8 @@ verseStropheMusicTenor = \relative c' {
   a\breve a1 bf4
   a\breve d1 d4 b4 cs4
 
-  s\breve s1 s4
-  s\breve s1 s4 s4
+  a\breve a4
+  a\breve g1 g4
   }
 
 verseStropheMusicBass = \relative c {
@@ -116,8 +116,8 @@ verseStropheMusicBass = \relative c {
   d\breve e1 f4
   f\breve g1 e4 e4 a,4
 
-  bf\breve a1 d4
-  bf\breve c1 e4 f4
+  d\breve a'4
+  d,\breve bf1 a4
   }
 
 verseLyrics = \markuplist {
