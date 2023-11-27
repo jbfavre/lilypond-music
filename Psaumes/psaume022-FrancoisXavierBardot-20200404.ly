@@ -27,30 +27,29 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 antiphonMusicSoprano = \relative c' {
-  \markCustom "Antienne"
-   d8 e f4 (f8) f8 e g a2 c4 d8 c b4 a8 g a2
+   d8 e f4 (f8) f8 g g a2 c4 d8 c b4 a8 g a2
   }
 
 antiphonMusicAlto = \relative c' {
-   d8 cs d4 (d8) d c c f2 a4 a8 a g4 e8 e e2
+   d8 cs d4 (d8) d e e c2 e4 a8 a g4 e8 e e2
   }
 
 antiphonMusicTenor =  \relative c {
-   f8 a a4 (a8)[ bf] g c c2 e4 d8 d d4 d8 b cs2
+   f8 a a4 (a8)[ bf] bf bf a2 e'4 d8 d d4 d8 b cs2
   }
 
 antiphonMusicBass =  \relative c {
-   bf8 a d8 c (bf8) d c e f2 a4 f8 f g4 e8 e a,2
+   d8 a d8 c (bf8) d c e f2 a4 f8 f g4 e8 e a,2
+  }
+
+antiphonRythm = {
+    \markCustom "Antienne"
+    s2*6  \bar "|." \break
   }
 
 antiphonLyrics = \lyricmode {
     Le Sei -- gneur est mon ber -- ger_: rien ne sau -- rait me man -- quer.
-  }
-antiphonRythm = {
-    \markCustom "Antienne"
-    s2*6  \bar "|." \break
   }
 antiphonLyricsSoprano = \antiphonLyrics
 antiphonLyricsAlto = \antiphonLyrics
@@ -75,10 +74,8 @@ verseStropheRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
   \markCustom "Psalmodie par verset"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
+  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
 }
 
 verseStropheMusicSoprano = \relative c' {
@@ -87,10 +84,8 @@ verseStropheMusicSoprano = \relative c' {
   a\breve c1 d4
   c\breve b1 a4 g4 a4
 
-  g\breve a1 f4
-  f\breve e1 g4 a4
-  a\breve c1 d4
-  c\breve b1 a4 g4 a4
+  f\breve e4
+  f\breve g1 a4
   }
 
 verseStropheMusicAlto = \relative c' {
@@ -99,10 +94,8 @@ verseStropheMusicAlto = \relative c' {
   f\breve a1 f4
   f\breve g1 e4 e4 e4
 
-  s\breve s1 s4
-  s\breve s1 s4 s4
-  s\breve s1 s4
-  s\breve s1 s4 s4 s4
+  d\breve cs4
+  d\breve d1 cs4
   }
 
 verseStropheMusicTenor = \relative c' {
@@ -111,10 +104,8 @@ verseStropheMusicTenor = \relative c' {
   a\breve a1 bf4
   a\breve d1 d4 b4 cs4
 
-  s\breve s1 s4
-  s\breve s1 s4 s4
-  s\breve s1 s4
-  s\breve s1 s4 s4 s4
+  a\breve a4
+  a\breve g1 g4
   }
 
 verseStropheMusicBass = \relative c {
@@ -123,10 +114,8 @@ verseStropheMusicBass = \relative c {
   d\breve e1 f4
   f\breve g1 e4 e4 a,4
 
-  bf\breve a1 d4
-  bf\breve c1 e4 f4
-  d\breve a1 bf4
-  a\breve d1 d4 b4 cs4
+  d\breve a'4
+  d,\breve bf1 a4
   }
 
 verseLyrics = \markuplist {

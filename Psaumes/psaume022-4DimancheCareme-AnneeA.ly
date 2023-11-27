@@ -13,7 +13,7 @@ tempoVerseAcelerando = {
 
 scoreHeader = \header {
   title = "Psaume 22"
-  subtitle = \markup { \column { "4e dimanche de Carême (Lætare) - Année A" } }
+  subtitle = \markup { \column { "4e dimanche de Carême (Lætare)" "Année A" } }
   composer = "Jean Baptiste Favre"
   poet = "AELF"
   date = "Clichy la Garenne, 22 octobre 2019"
@@ -27,26 +27,25 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-antiphonRythm = {
-    \markCustom "Antienne"
-    s2*6  \bar "|." \break
-  }
-
 antiphonMusicSoprano = \relative c' {
-  \markCustom "Antienne"
-  d8 e f4 (f8) f8 g g a2 c4 d8 c b4 a8 g a2
+   d8 e f4 (f8) f8 g g a2 c4 d8 c b4 a8 g a2
   }
 
 antiphonMusicAlto = \relative c' {
-  d8 cs d4 (d8) d e e f2 a4 a8 a g4 e8 e e2
+   d8 cs d4 (d8) d e e c2 e4 a8 a g4 e8 e e2
   }
 
 antiphonMusicTenor =  \relative c {
-  f8 a a4 (bf8)[ bf] c c c2 e4 d8 d d4 d8 b cs2
+   f8 a a4 (a8)[ bf] bf bf a2 e'4 d8 d d4 d8 b cs2
   }
 
 antiphonMusicBass =  \relative c {
-  bf8 a d8 c (bf8) d c e f2 a4 f8 f g4 e8 e a,2
+   d8 a d8 c (bf8) d c e f2 a4 f8 f g4 e8 e a,2
+  }
+
+antiphonRythm = {
+    \markCustom "Antienne"
+    s2*6  \bar "|." \break
   }
 
 antiphonLyrics = \lyricmode {
@@ -75,16 +74,18 @@ verseStropheRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
   \markCustom "Psalmodie par verset"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 s4 s4 \bar "|." \break
+  \tempoVerseAcelerando s\breve \tempoVerseRallentando s4 \bar "||"
+  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
 }
+
 verseStropheMusicSoprano = \relative c' {
-  g'\breve a1 f4 \bar "||"
-  f\breve e1 g4 a4 \bar "||"
-  a\breve c1 d4 \bar "||"
-  c\breve b1 a4 g4 a4 \bar "|."
+  g'\breve a1 f4
+  f\breve e1 g4 a4
+  a\breve c1 d4
+  c\breve b1 a4 g4 a4
+
+  f\breve e4
+  f\breve g1 a4
   }
 
 verseStropheMusicAlto = \relative c' {
@@ -92,6 +93,9 @@ verseStropheMusicAlto = \relative c' {
   d\breve c1 c4 f4
   f\breve a1 f4
   f\breve g1 e4 e4 e4
+
+  d\breve cs4
+  d\breve d1 cs4
   }
 
 verseStropheMusicTenor = \relative c' {
@@ -99,6 +103,9 @@ verseStropheMusicTenor = \relative c' {
   bf\breve g1 c4 c4
   a\breve a1 bf4
   a\breve d1 d4 b4 cs4
+
+  a\breve a4
+  a\breve g1 g4
   }
 
 verseStropheMusicBass = \relative c {
@@ -106,6 +113,9 @@ verseStropheMusicBass = \relative c {
   bf\breve c1 e4 f4
   d\breve e1 f4
   f\breve g1 e4 e4 a,4
+
+  d\breve a'4
+  d,\breve bf1 a4
   }
 
 verseLyrics = \markuplist {
