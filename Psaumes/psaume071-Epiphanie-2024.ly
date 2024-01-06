@@ -16,7 +16,7 @@ scoreHeader = \header {
   subtitle = \markup { "Épiphanie du Seigneur" }
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  date = "Clichy la Garenne, janvier 2023"
+  date = "Clichy la Garenne, janvier 2024"
 }
 
 global = {
