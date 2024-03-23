@@ -145,7 +145,7 @@ verseLyrics = \markuplist {
   \fill-line {
     \left-column {
       \left-column {
-        \concat { \typewriter "3. " "Comment chanterions-no" \underline u "s un chant"}
+        \concat { \typewriter "3. " "Comment chanterions-nous un ch" \underline a "nt"}
         \concat { \typewriter "        " "du Seigneur"}
         \concat { \typewriter "   " "sur une t" \underline e "rre étrangère ?"}
         \concat { \typewriter "   " "Si je t’oubl" \underline i "e, Jérusalem,"}
