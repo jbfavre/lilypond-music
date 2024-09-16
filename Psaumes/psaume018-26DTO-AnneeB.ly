@@ -29,22 +29,22 @@ global = {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 antiphonMusicSoprano = \relative c'' {
    bf4 a g g a bf c2 bf a1
-   r4 g4 a bf g2 g4 fs g1
+   r4 a4 a bf a2 g4 fs g1
   }
 
 antiphonMusicAlto = \relative c'' {
   g4 f ef ef ef g g2 g fs1
-  g2 ef4 ef  d2 d4 d d1
+  fs2 fs4 fs  g2 d4 d d1
   }
 
 antiphonMusicTenor =  \relative c' {
-  d4 d bf bf c4 d ef2 d c1
-  bf2 c4 c bf2 a4 a bf1
+  d4 d bf bf c4 d ef2 d d1
+  d2 d4 d ef2 c4 c bf1
   }
 
 antiphonMusicBass =  \relative c {
   g4 d' ef d c bf a2 bf4 (c) d1
-  ef2 c4 c d2 d4 d g,1
+  d2 c4 c c2 d4 d g,1
   }
 
 antiphonRythm = {
@@ -108,7 +108,7 @@ verseStropheMusicTenor = \relative c' {
   d\breve d1 bf4
   c\breve d1 c4
   d\breve d1 bf4
-  a\breve a1 bf4
+  c\breve c1 bf4
 
   d\breve d1 bf4
   c\breve c1 c4
