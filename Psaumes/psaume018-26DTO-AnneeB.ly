@@ -111,7 +111,7 @@ verseStropheMusicTenor = \relative c' {
   c\breve c1 bf4
 
   d\breve d1 bf4
-  c\breve c1 c4
+  c\breve d1 c4
   }
 
 verseStropheMusicBass = \relative c {
