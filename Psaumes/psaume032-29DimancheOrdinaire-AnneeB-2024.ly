@@ -33,7 +33,7 @@ antiphonRythm = {
 antiphonMusicSoprano = \relative c'' {
   \markCustom "Antienne"
   bf8 a g a4 a8 g f ef f4.
-  ef4 ef8 d4 d8 g g f g4.
+  ef4 ef8 d4 d8 g g f! g4.
   }
 
 antiphonMusicAlto = \relative c'' {
@@ -41,7 +41,7 @@ antiphonMusicAlto = \relative c'' {
   }
 
 antiphonMusicTenor =  \relative c' {
-  d4. d bf bf g f bf4 a8 bf4.
+  d4. d bf bf g f! bf4 a8 bf4.
   }
 
 antiphonMusicBass =  \relative c' {
@@ -81,7 +81,7 @@ verseStropheMusicSoprano = \relative c'' {
   g\breve a1 a4
 
   bf\breve g1 a4
-  g\breve a1 a4
+  g\breve ef1 f4
   }
 verseStropheMusicAlto = \relative c'' {
   g\breve g1 f4
@@ -90,7 +90,7 @@ verseStropheMusicAlto = \relative c'' {
   ef\breve ef1 fs4
 
   g\breve g1 f4
-  ef\breve ef1 fs4
+  ef\breve ef1 d4
   }
 
 verseStropheMusicTenor = \relative c' {
@@ -100,7 +100,7 @@ verseStropheMusicTenor = \relative c' {
   c\breve c1 c4
 
   d\breve d1 d4
-  c\breve c1 c4
+  bf\breve bf1 bf4
   }
 
 verseStropheMusicBass = \relative c' {
@@ -110,7 +110,7 @@ verseStropheMusicBass = \relative c' {
   c\breve a1 d4
 
   g\breve g1 d4
-  c\breve a1 d4
+  ef\breve ef1 bf4
   }
 
 verseLyrics = \markuplist {
