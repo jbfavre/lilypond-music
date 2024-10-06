@@ -28,24 +28,24 @@ global = {
 %%%%%%%%%% Antiphon %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 antiphonRythm = {
- s4.*7 \bar "|." \break
+ s4.*8 \bar "|." \break
 }
 antiphonMusicSoprano = \relative c'' {
   \markCustom "Antienne"
   bf8 a g a4 a8 g f ef f4.
-  ef16 ef f8 g g a fs g4.
+  ef4 ef8 d4 d8 g g f g4.
   }
 
 antiphonMusicAlto = \relative c'' {
-  g4. f ef d c4 ef8 ef ef d d4.
+  g4. f ef d c a d d4.
   }
 
 antiphonMusicTenor =  \relative c' {
-  d4. d bf bf g8 c4 c8 c c bf4.
+  d4. d bf bf g f bf4 a8 bf4.
   }
 
 antiphonMusicBass =  \relative c' {
-  g4. d ef bf c c8 a d g,4.
+  g4. d ef bf c d d g,4.
   }
 
 antiphonLyrics = \lyricmode {
@@ -69,8 +69,7 @@ verseStropheRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|." \break
-}
-verseRythm = {
+
   \markCustom "Psalmodie par verset" \cadenzaOn
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|."
@@ -80,8 +79,7 @@ verseStropheMusicSoprano = \relative c'' {
   g\breve ef1 f4
   ef\breve f1 g4
   g\breve a1 a4
-  }
-verseMusicSoprano = \relative c'' {
+
   bf\breve g1 a4
   g\breve a1 a4
   }
@@ -90,8 +88,9 @@ verseStropheMusicAlto = \relative c'' {
   ef\breve ef1 d4
   c\breve d1 ef4
   ef\breve ef1 fs4
-  }
-verseMusicAlto = \relative c' {
+
+  g\breve g1 f4
+  ef\breve ef1 fs4
   }
 
 verseStropheMusicTenor = \relative c' {
@@ -99,8 +98,9 @@ verseStropheMusicTenor = \relative c' {
   bf\breve bf1 bf4
   g\breve bf1 bf4
   c\breve c1 c4
-  }
-verseMusicTenor = \relative c' {
+
+  d\breve d1 d4
+  c\breve c1 c4
   }
 
 verseStropheMusicBass = \relative c' {
@@ -108,10 +108,9 @@ verseStropheMusicBass = \relative c' {
   ef\breve ef1 bf4
   c\breve bf1 ef4
   c\breve a1 d4
-  }
-verseMusicBass = \relative c {
-  f,\breve c'1 d4
-  bf\breve f1 c'4
+
+  g\breve g1 d4
+  c\breve a1 d4
   }
 
 verseLyrics = \markuplist {
