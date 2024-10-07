@@ -37,11 +37,11 @@ antiphonMusicSoprano = \relative c'' {
   }
 
 antiphonMusicAlto = \relative c'' {
-  g4. f ef d c a d d4.
+  g4. f ef d c bf d d4.
   }
 
 antiphonMusicTenor =  \relative c' {
-  d4. d bf bf g f! bf4 a8 bf4.
+  d4. d bf bf g g bf4 c8 bf4.
   }
 
 antiphonMusicBass =  \relative c' {
