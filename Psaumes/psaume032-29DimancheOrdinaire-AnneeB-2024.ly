@@ -37,7 +37,7 @@ antiphonMusicSoprano = \relative c'' {
   }
 
 antiphonMusicAlto = \relative c'' {
-  g4. f ef d c bf d d4.
+  g4. f ef d c bf d8 ef d d4.
   }
 
 antiphonMusicTenor =  \relative c' {
@@ -45,7 +45,7 @@ antiphonMusicTenor =  \relative c' {
   }
 
 antiphonMusicBass =  \relative c' {
-  g4. d ef bf c d d g,4.
+  g4. d ef bf c d4 c8 bf8 c d g,4.
   }
 
 antiphonLyrics = \lyricmode {
