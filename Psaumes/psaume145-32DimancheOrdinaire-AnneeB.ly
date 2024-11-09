@@ -54,7 +54,7 @@ antiphonMusicAlto = \relative c' {
     f4. e d d
     \alternative {
       \volta 1 { f f e2. }
-      \volta 2 { d4 c c c2. }
+      \volta 2 { d4 e c c2. }
     }
   }
 }
@@ -105,15 +105,42 @@ verseStropheRythm = {
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|."
 }
 verseStropheMusicSoprano = \relative c'' {
+  a\breve c1 f,4
+  g\breve a1 g4
+  a\breve c1 f,4
+  g\breve g1 f4
 
+  a\breve c1 f,4
+  g\breve a1 g4
   }
 verseStropheMusicAlto = \relative c' {
+  f\breve e1 d4
+  d\breve d1 e4
+  f\breve e1 d4
+  d\breve e1 c4
+
+  f\breve e1 d4
+  d\breve d1 e4
   }
 
 verseStropheMusicTenor = \relative c' {
+  c\breve a1  a4
+  g\breve bf1 bf4
+  c\breve a1  a4
+  bf\breve bf1 a4
+
+  c\breve a1  a4
+  g\breve bf1 bf4
   }
 
 verseStropheMusicBass = \relative c {
+  f\breve c1 d4
+  bf\breve g1 c4
+  f\breve c1 d4
+  g,\breve c1 f4
+
+  f\breve c1 d4
+  bf\breve g1 c4
   }
 
 verseLyrics = \markuplist {
