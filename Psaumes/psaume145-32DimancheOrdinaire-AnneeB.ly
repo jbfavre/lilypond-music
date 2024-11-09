@@ -12,7 +12,7 @@ tempoVerseAcelerando = {
 }
 
 scoreHeader = \header {
-  title = "Psaume 143"
+  title = "Psaume 145"
   subtitle = \markup { \column { "32e dimanche du Temps Ordinaire" "Année B" } }
   composer = "Jean Baptiste Favre"
   poet = "AELF"
