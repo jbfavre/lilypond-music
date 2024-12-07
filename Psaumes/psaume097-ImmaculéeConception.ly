@@ -114,32 +114,36 @@ verseStropheMusicBass = \relative c' {
   d\breve d1 g,4
   }
 
+
+
+
+
 verseLyrics = \markuplist {
   \override #'(font-family . sans)
   \override #'(font-size . 1.5)
   \column {
     \fill-line {
       \left-column{
-        \concat { \typewriter "1. " "Le Seigneur garde à jam" \underline a "is sa fidélité,"}
-        \concat { \typewriter "   " "il fait just" \underline i "ce aux opprimés ;"}
-        \concat { \typewriter "   " "aux affamés, il d" \underline o "nne le pain ;"}
-        \concat { \typewriter "   " "le Seigneur dél" \underline i "e les enchaînés."}
+        \concat { \typewriter "1. " "Chantez au Seigne" \underline u "r un chant nouveau,"}
+        \concat { \typewriter "   " "car il a f" \underline a "it des merveilles&nbsp;;"}
+        \concat { \typewriter "   " "par son bras très saint, par sa m" \underline a "in puissante,"}
+        \concat { \typewriter "   " "il s'est assur" \underline é " la victoire."}
       }
       \hspace #1
       \left-column{
-        \concat { \typewriter "3. " "Le Seigneur ouvre les y" \underline e "ux des aveugles,"}
-        \concat { \typewriter "   " "le Seigneur redr" \underline e "sse les accablés,"}
-        \concat { \typewriter "   " "le Seigneur " \underline a "ime les justes,"}
-        \concat { \typewriter "   " "le Seigneur prot" \underline è "ge l’étranger."}
+        \concat { \typewriter "2. " "Le Seigneur a fait conna" \underline î "tre sa victoire"}
+        \concat { \typewriter "   " "et révélé sa just" \underline i "ce aux nations&nbsp;;"}
+        \concat { \typewriter "   " "il s'est rappelé sa fidélit" \underline é ", son amour,"}
+        \concat { \typewriter "   " "en faveur de la mais" \underline o "n d'Israël."}
       }
     }
     \vspace #1
     \fill-line {
       \column {
-        \concat { \typewriter "3. " "Il soutient la v" \underline e "uve et l’orphelin,"}
-        \concat { \typewriter "   " "il égare les p" \underline a "s du méchant."}
-        \concat { \typewriter "   " "D’âge en âge, le Seign" \underline e "ur régnera :"}
-        \concat { \typewriter "   " "ton Dieu, ô Si" \underline o "n, pour toujours !"}
+        \concat { \typewriter "3. " "La terre tout enti" \underline è "re a vu"}
+        \concat { \typewriter "   " "la victo" \underline i "re de notre Dieu."}
+        \concat { \typewriter "   " "Acclamez le Seigne" \underline u "r, terre entière,"}
+        \concat { \typewriter "   " "sonnez, chant" \underline e "z, jouez&nbsp;!"}
       }
     }
   }
