@@ -41,14 +41,14 @@ antiphonMusicSoprano = \relative c' {
   \override BreathingSign.text = \markup {
     \musicglyph #"scripts.caesura.straight"
   }
-  e8 g fs e4 b'8 a4. a8 g fs e4. e4.
+  e8 g fs e4 g8 a4. a8 g fs e4. e4.
   }
 
 antiphonMusicAlto = \relative c' {
   \override BreathingSign.text = \markup {
     \musicglyph #"scripts.caesura.straight"
   }
-  b4. c4 g'8 e4. ds4. e4. e4.
+  b4. c4 e8 e4. ds4. e4. e4.
   }
 
 antiphonMusicTenor =  \relative c' {
@@ -62,7 +62,7 @@ antiphonMusicBass =  \relative c {
   \override BreathingSign.text = \markup {
     \musicglyph #"scripts.caesura.straight"
   }
-  e4 d8 c4 g8 a4. b8 cs ds e4. e4.
+  e4 d8 c4 b8 a4. b8 cs ds e4. e4.
   }
 
 antiphonLyrics = \lyricmode {
@@ -89,44 +89,51 @@ verseStropheRythm = {
 
   \markCustom "Psalmodie par verset" \cadenzaOn
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
-  \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "||"
   \tempoVerseAcelerando s\breve s1 \tempoVerseRallentando s4 \bar "|."
 }
 
-verseStropheMusicSoprano = \relative c' {
-  fs\breve a1 fs4
-  fs\breve e1 fs4
-  fs\breve e1 d4
-  e\breve e1 d4
+verseStropheMusicSoprano = \relative c'' {
+  \accidentalStyle forget
+  g\breve a1 e4
+  e\breve d1 e4
+  g\breve a1 b4
+  a\breve g1 fs4
 
-  g\breve fs1 e4
-  fs\breve d1 e4
+  g\breve a1 e4
+  e\breve d1 e4
   }
 
 verseStropheMusicAlto = \relative c' {
-  d\breve e1 d4
-  d\breve cs1 d4
-  cs\breve cs1 b4
-  d\breve cs1 a4
+  \accidentalStyle forget
+  e\breve e1 c4
+  c\breve b1 b4
+  e\breve fs1 g4
+  e\breve e1 ds4
 
+  e\breve e1 c4
+  c\breve b1 b4
   }
 
 verseStropheMusicTenor = \relative c' {
-  a\breve cs1 b4
-  b\breve b1 a4
-  fs\breve fs1 fs4
-  b\breve a1 a4
+  \accidentalStyle forget
+  b\breve c1 g4
+  g\breve fs1 g4
+  b\breve d1 d4
+  c\breve cs1 b4
 
+  b\breve c1 g4
+  g\breve fs1 g4
   }
 
 verseStropheMusicBass = \relative c {
-  d\breve a1 b4
-  g\breve a1 d4
-  as\breve as1 b4
-  g\breve a1 d4
+  \accidentalStyle forget
+  e\breve a,1 c4
+  g\breve b1 e4
+  e\breve d1 g,4
+  a\breve as1 b4
 
-  e\breve b1 c4
-  a\breve b1 e4
+  e\breve a,1 c4
+  g\breve b1 e4
   }
 
 verseLyrics = \markuplist {
