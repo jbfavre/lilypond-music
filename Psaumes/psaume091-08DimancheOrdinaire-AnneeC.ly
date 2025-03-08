@@ -235,13 +235,13 @@ partition = {
      (minimum-distance . 10)
      (padding . 5)
      (stretchability . 5))
-  #(define fonts
-    (set-global-fonts
-     #:music "emmentaler"
-     #:brace "emmentaler"
-     #:roman "Latin Modern Roman"
-     #:sans "Cantarell"
-  ))
+%  #(define fonts
+%    (set-global-fonts
+%     #:music "emmentaler"
+%     #:brace "emmentaler"
+%     #:roman "Latin Modern Roman"
+%     #:sans "Cantarell"
+%  ))
   #(include-special-characters)
   tagline = ##f
   copyright = ##f

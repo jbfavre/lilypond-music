@@ -301,22 +301,22 @@ partition = {
       \context {
           \Staff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \PianoStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \ChoirStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
-      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override LyricText.font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
   }
   \scoreHeader
