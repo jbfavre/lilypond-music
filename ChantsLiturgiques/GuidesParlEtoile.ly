@@ -1,6 +1,10 @@
-\version "2.22.0"
+\version "2.24.4"
 \language "english"
 \include "../libs/commonFunctions.ily"
+
+\include "oll-core/package.ily"
+\loadPackage lilypond-export
+opts.exporter = #exportMusicXML
 
 headers = \header {
   title = "Guidés par l'étoile"
@@ -444,6 +448,7 @@ AllScoreLayout = \layout {
       }
       \override LyricText.font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
+      %\FileExport #opts
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
@@ -517,6 +522,7 @@ AllScoreLayout = \layout {
       >>
     }
     \AllScoreLayout
+    \midi { }
     \FirstPageHeaders
   }
 }
@@ -546,6 +552,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
+    \midi { }
     \OtherPageHeaders
   }
   \versetLyrics
@@ -575,6 +582,7 @@ AllScoreLayout = \layout {
       }
     >>
     \AllScoreLayout
+    \midi { }
     \OtherPageHeaders
   }
   \doxologieLyrics
@@ -601,6 +609,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
+    \midi { }
     \OtherPageHeaders
   }
   \markup {
@@ -635,6 +644,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
+    \midi { }
     \OtherPageHeaders
   }
   \markup {
