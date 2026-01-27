@@ -1,10 +1,8 @@
-\version "2.24.4"
+\version "2.22.0"
 \language "english"
 \include "../libs/commonFunctions.ily"
 
 \include "oll-core/package.ily"
-\loadPackage lilypond-export
-opts.exporter = #exportMusicXML
 
 headers = \header {
   title = "Guidés par l'étoile"
@@ -18,15 +16,15 @@ headers = \header {
 %%%%%%%%%%  Stance  %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 stanceRhythms = {
+  \markCustom "Stance"
   \tempo 4 = 80
   \key g \minor \time 3/4
-  \markCustom "Stance"
   \partial 4. s4. s2. \time 2/4  s2 s2 \time 3/4 s2. \break
   \key g \major s2. s2. \time 2/4 s2*4 \bar "|."
   }
 stanceMusic = \relative c' {
   d8 g a bf4 c8 bf a g a4 a4 r8 a8 bf c d4 c8 bf a g
-  fs!?4 r8 d e
+  fs?4 r8 d e
   fs g4 fs8 g \tuplet 3/2 { a8 g a } b2 d4. b8 g4 a8 b a2 \fermata
   }
 stanceAltoMusic = \relative c' {
@@ -51,6 +49,8 @@ stanceLyrics = \lyricmode {
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 reponsRhythms = {
   \markCustom "Répons"
+  \override Score.MetronomeMark.stencil = ##f
+  \tempo 4 = 80
   \key g \major \time 2/4
   s2*2 s4 s8 \breathe s8 s2 \break s2*4
   \bar "|." \break
@@ -83,19 +83,19 @@ versetRhythms = {
   \cadenzaOn \omit Staff.TimeSignature
   \key g \major
   \markCustom "Psalmodie A"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|." \break
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "|." \break
   \markCustom "Psalmodie B"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s4 \bar "|."
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "|."
   s4^\markup { &dagger; } \bar "|." \break
   \markCustom "Psalmodie C"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s4 \bar "||"
-  s\breve s1 s4 \bar "|."
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "|."
 }
 versetSopranosMusic = \relative c'' {
   g\breve a1 fs4
@@ -206,9 +206,9 @@ doxologieRhythms = {
   \omit Staff.TimeSignature
   \key g \major
   \markCustom "Doxologie"
-  s\breve s1 s4 s4 \bar "||"
-  s\breve s1 s1 s4 \bar "||"
-  s\breve s1 s1 s4 s4 s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 s1 \tRall s4 \bar "||"
+  \tAcceBreve s\breve \tAcceRonde s1 s1 \tRall s4 s4 s4 \bar "||"
   \cadenzaOff
   s2 s2 \bar "|."
   }
@@ -257,6 +257,8 @@ doxologieLyrics =  \markup {
 %%%%%     Introït     %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 introitRhythms = {
+  \override Score.MetronomeMark.stencil = ##f
+  \tempo 4 = 80
   \time 3/8
   \key g \major
   \markCustom "Antienne d'ouverture"
@@ -285,6 +287,8 @@ introitLyrics =  \lyricmode {
 %%%%%     Communion     %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 communionRhythms = {
+  \override Score.MetronomeMark.stencil = ##f
+  \tempo 4 = 80
   \time 3/8
   \key g \major
   \markCustom "Antienne de communion"
@@ -327,11 +331,11 @@ OtherPageHeaders = \header {
   }
 
 \paper {
-  top-margin = 1\cm
-  bottom-margin = 1\cm
-  left-margin = 1\cm
-  right-margin = 1\cm
-  indent = 1\cm
+  top-margin = 0.5\cm
+  bottom-margin = 0.5\cm
+  left-margin = 0.5\cm
+  right-margin = 0.5\cm
+  indent = 0.5\cm
   % Plan for recto-verso printing with inner margin
   two-sided = ##t
   inner-margin =  2\cm
