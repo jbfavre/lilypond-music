@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.4"
 \language "english"
 tRall = {
   \set Score.tempoHideNote = ##t
@@ -326,22 +326,22 @@ AllScoreLayout = \layout {
       \context {
           \Staff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \PianoStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \ChoirStaff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
-      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override LyricText.font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
   }
 
@@ -362,7 +362,7 @@ AllScoreLayout = \layout {
         <<
           \clef "treble"
           \new Voice = "stanceRhythms" { \markCustom "Stance" \global \stanceRhythms }
-          \new Voice = "stanceMelody" { \relative c'' { ^"(éploré)" \stanceMelody } }
+          \new Voice = "stanceMelody" { \relative c'' { \textMark "(éploré)" \stanceMelody } }
         >>
         \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
         \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" midiInstrument = \midiInstrumentName }
