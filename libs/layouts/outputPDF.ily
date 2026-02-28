@@ -80,13 +80,13 @@ oddFooterMarkupSetting = \markup {
       short-indent = 0.8\cm
       \context {
           \FiguredBass
-          \override BassFigure #'font-size = #-1
+          \override BassFigure.font-size = #-1
       }
       \context {
           \Staff
           \RemoveEmptyStaves
-          \override NoteHead #'style = #'altdefault
-          \override InstrumentName #'font-name = #"Monospace Regular"
+          \override NoteHead.style = #'altdefault
+          \override InstrumentName.font-name = #"Monospace Regular"
       }
       \context {
           \Score
@@ -96,7 +96,7 @@ oddFooterMarkupSetting = \markup {
           \Voice
           \consists "Horizontal_bracket_engraver"
       }
-      \override LyricText #'font-name = #"Latin Modern Sans"
+      \override LyricText.font-name = #"Latin Modern Sans"
       \override Score.RehearsalMark.font-family = #'typewriter
   }
   \header {

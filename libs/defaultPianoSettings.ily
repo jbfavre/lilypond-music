@@ -6,9 +6,9 @@ pianoProperties = {
   \omit DynamicText
   \omit TextScript
   %\set fontSize = #-1
-  \override StaffSymbol #'staff-space = #(magstep -1)
-  \override Hairpin #'style = #'none
-  \override InstrumentName #'font-name = #"Monospace Regular"
+  \override StaffSymbol.staff-space = #(magstep -1)
+  \override Hairpin.style = #'none
+  \override InstrumentName.font-name = #"Monospace Regular"
   \autoBeamOn
 }
 pianoCounterpointMusic = \counterpointAntiphonMusic
