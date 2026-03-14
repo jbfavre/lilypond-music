@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.4"
 \language "english"
 \include "../libs/commonFunctions.ily"
 
@@ -222,22 +222,7 @@ partition = {
 %%%%%%%%%%%%% PARTITION VISUELLE %%%%%%%%%%%%%
 % PDF output
 \paper {
-  top-margin = 1.5\cm
-  bottom-margin = 1.5\cm
-  left-margin = 1.5\cm
-  right-margin = 1.5\cm
-  markup-system-spacing = #'((basic-distance . 10)
-     (minimum-distance . 10)
-     (padding . 5)
-     (stretchability . 5))
-  #(define fonts
-    (set-global-fonts
-     #:music "emmentaler"
-     #:brace "emmentaler"
-     #:roman "Latin Modern Roman"
-     #:sans "Cantarell"
-  ))
-  #(include-special-characters)
+#(include-special-characters)
   tagline = ##f
   copyright = ##f
   scoreTitleMarkup = \markup \columns {
