@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.4"
 \language "english"
 %{
   Default settings are needed at the beginning
@@ -30,23 +30,23 @@ global = {
 sopranoAntiphonMusic = \relative c' {
   \markCustom "Antienne"
   %\partial 4 r8 a8 (a8. b16) gs4 r8 c8 (c8. d16) b4. r8 \repeat unfold 3 { s2. }
-  \partial 4 f4 c'2 af4 bf2. c4 df bf c (af) g f2. \break
+  \partial 4 f4 c'2 af4 bf2. df!4 c bf bf (af) g f2. \break
   }
 
 
 altoAntiphonMusic = \relative c' {
   %\partial 4 r8 e8 (e4) e4 r8 a8 (a4) f4. r8 \repeat unfold 3 { s2. }
-  \partial 4 f4 af2 f4 f2. f4 f f e4 c2 c2.
+  \partial 4 f4 af2 f4 s2. s4 s s s4 s2 s2.
   }
 
 tenorAntiphonMusic = \relative c' {
   %\partial 4 r8 c (c b) b4 r8 c8 (e d) d4. r8 \repeat unfold 3 { s2. }
-  \partial 4 r4 f4 f ef d2. bf4 df! df c4 c2 af2.
+  \partial 4 r4 f4 f f s2. s4 s s s4 s2 s2.
   }
 
 bassAntiphonMusic = \relative f {
   %\partial 4 a4 e'2 c4 d2 r4 e4 f d c (d) e a,2. \fermata \bar "|." \break
-  \partial 4 r4 f4 f c d2. df!4 bf bf c4 e2 f2.
+  \partial 4 r4 f4 f ef d2. bf4 c df! c4 (d) e f2.
   }
 
 antiphonLyrics = \lyricmode {
