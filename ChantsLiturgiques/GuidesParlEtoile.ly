@@ -2,7 +2,7 @@
 \language "english"
 \include "../libs/commonFunctions.ily"
 
-\include "oll-core/package.ily"
+%\include "oll-core/package.ily"
 
 headers = \header {
   title = "Guidés par l'étoile"
@@ -10,6 +10,7 @@ headers = \header {
   composer = "Jean Baptiste Favre"
   poet = "Jean Baptiste Favre, AELF"
   dedication = "Saint Pierre Quiberon, novembre 2019"
+  dedication = "Canticum Fidei, 2026"
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -270,13 +271,13 @@ introitSopranosMusic = \relative c'' {
   d4. c8 b a g b b a g fs g4. g4 r8
   }
 introitAltosMusic = \relative c' {
-  g'8 g4 fs8 g g fs e d d e4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8
+  g'8 g4 fs8 g g fs e d d d4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8
   }
 introitTenorsMusic = \relative c' {
   g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e c a c c8 b a b4 r8
   }
 introitBassesMusic = \relative f {
-  g8 e4  d8 g8 e b c d d e4 \breathe e8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8
+  g8 e4  d8 g8 e b c d d g,4 \breathe e'8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8
   }
 introitLyrics =  \lyricmode {
   Voi -- ci ve -- nir le Sei -- gneur sou -- ve -- rain&nbsp;;
@@ -476,35 +477,35 @@ AllScoreLayout = \layout {
           \new Voice = "stanceMelody" {  \stanceMusic }
         >>
         \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
-        \new PianoStaff = "stancePiano" \with { instrumentName = "Orgue" shortInstrumentName = "O." }
-        <<
-          \new Staff = "stancePianoHighStaff"
-          <<
-            \clef "treble"
-            \new Voice = "stanceRhythms" {
-              \markCustom "Stance" \stanceRhythms
-              \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-              \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-              \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
-              \break
-              }
-            \new Voice = "stancePianoSoprano" { \voiceOne \stanceMusic }
-            \new Voice = "stancePianoAlto" { \voiceTwo \stanceAltoMusic }
-          >>
-          \new Staff  = "stancePianoLowStaff"
-          <<
-            \clef "bass"
-            \new Voice = "stanceRhythms" {
-              \markCustom "Stance" \stanceRhythms
-              \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-              \once \override Staff.KeyCancellation.break-visibility = #all-invisible
-              \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
-              \break
-              }
-            \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
-            \new Voice = "stancePianoBass" { \voiceTwo \stanceBassMusic }
-          >>
-        >>
+        % \new PianoStaff = "stancePiano" \with { instrumentName = "Orgue" shortInstrumentName = "O." }
+%         <<
+%           \new Staff = "stancePianoHighStaff"
+%           <<
+%             \clef "treble"
+%             \new Voice = "stanceRhythms" {
+%               \markCustom "Stance" \stanceRhythms
+%               \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+%               \once \override Staff.KeyCancellation.break-visibility = #all-invisible
+%               \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+%               \break
+%               }
+%             \new Voice = "stancePianoSoprano" { \voiceOne \stanceMusic }
+%             \new Voice = "stancePianoAlto" { \voiceTwo \stanceAltoMusic }
+%           >>
+%           \new Staff  = "stancePianoLowStaff"
+%           <<
+%             \clef "bass"
+%             \new Voice = "stanceRhythms" {
+%               \markCustom "Stance" \stanceRhythms
+%               \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+%               \once \override Staff.KeyCancellation.break-visibility = #all-invisible
+%               \once \override Staff.TimeSignature.break-visibility = #end-of-line-invisible
+%               \break
+%               }
+%             \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
+%             \new Voice = "stancePianoBass" { \voiceTwo \stanceBassMusic }
+%           >>
+%         >>
       >>
       \new ChoirStaff = "reponsChoirStaff"
       <<
@@ -526,7 +527,7 @@ AllScoreLayout = \layout {
       >>
     }
     \AllScoreLayout
-    \midi { }
+    %\midi { }
     \FirstPageHeaders
   }
 }
@@ -556,7 +557,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    \midi { }
+    %\midi { }
     \OtherPageHeaders
   }
   \versetLyrics
@@ -586,7 +587,7 @@ AllScoreLayout = \layout {
       }
     >>
     \AllScoreLayout
-    \midi { }
+    %\midi { }
     \OtherPageHeaders
   }
   \doxologieLyrics
@@ -613,7 +614,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    \midi { }
+    %\midi { }
     \OtherPageHeaders
   }
   \markup {
@@ -648,7 +649,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    \midi { }
+    %\midi { }
     \OtherPageHeaders
   }
   \markup {

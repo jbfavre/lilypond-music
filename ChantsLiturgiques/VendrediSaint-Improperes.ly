@@ -26,7 +26,8 @@ title = "Impropères"
 subtitle = \markup { \column { "Vendredi saint" "(Chant des reproches)" } }
 composer = "Jean Baptiste Favre"
 poet = "AELF"
-dedication = "Clichy-la-Garenne, avril 2021"
+%dedication = "Clichy-la-Garenne, avril 2021"
+dedication = "Canticum Fidei, 2026"
 
 midiInstrumentName = "acoustic grand"
 
@@ -44,7 +45,7 @@ global = {
 %%%%%
 %%%%%
 stanceRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 60 \time 3/4 \partial 2 s2\p s2. \time 2/4 s2 s4\mf\< s4\f\>s2  s2\p\! }
-stanceMelody = { a4. a8 gs4 gs8 gs a b gs2 a8 b c b a4 a gs!2 }
+stanceMelody = { \time 3/4 \partial 2 a4. a8 gs4 gs8 gs a b \time 2/4 gs2 a8 b c b a4 a gs!2 }
 stanceSopranoMusic = \relative c'' { \stanceMelody }
 stanceAltoMusic = \relative c' { e4. e8 e4 e8 e e f  e2 e8 g g f e4 f e2 }
 stanceTenorMusic = \relative c' { c4. c8 d4 c8 b c b b2 c8 d e d d (c) c (b) b2 }
@@ -87,6 +88,13 @@ antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c 
 antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
 antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
 
+antienneGrecRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2\p^"(implorant)" s2 s2\mf s2 \break s2\< s2\f s2\mf\> s2\p\! }
+antienneGrecSopranoMusic = \relative c'' { \tuplet 3/2 { a8 a a } a8 a gs2 \tuplet 3/2 { a8 a a } b8 a gs2 a8 a b b c8 c c8 b \tuplet 3/2 {a a a} a (gs) a2 }
+antienneGrecAltoMusic = \relative c' { \tuplet 3/2 { e8 e e } f f e2 \tuplet 3/2 { e8 e e } f f e2 e8 e f f a a f f \tuplet 3/2 { e8 e e } e4 e2 }
+antienneGrecTenorMusic = \relative c' { \tuplet 3/2 { c8 c c } c c b2 \tuplet 3/2 { c8 c c } b b b2 c8 c d d e e d8 d \tuplet 3/2 { d8 c c } c (b) c2 }
+antienneGrecBassMusic = \relative c { \tuplet 3/2 { a8 a a } d d e2 \tuplet 3/2 { c8 c c } d d e2 c8 c b b a a d d \tuplet 3/2 { e8 e e } e4 a,2 }
+antienneGrecLyrics = \lyricmode { Á -- gi -- os o The -- ós, á -- gi -- os I -- schy -- rós, á -- gi -- os A -- thá -- na -- tos, e -- lé -- ï -- son i -- más }
+
 %%%%%
 %%%%%
 %%%%%
@@ -95,7 +103,7 @@ antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu i
 %%%%% Choral & Psaume I pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralOnePartOneRhythms = { \global \markCustom "Choral I" s4\mf\< s s2 s2 s2 s2\!\> s2 s2\mf }
+choralOnePartOneRhythms = { s4\mf\< s s2 s2 s2 s2\!\> s2 s2\mf }
 choralOnePartOneSopranoMusic = \relative c'' { a4 gs!8 a b4 c b a gs a b4. a8 g!4 fs e2 }
 choralOnePartOneAltoMusic =  \relative c' { e4 e8 e g4 g g e e e g4. e8 e4 ds e2 }
 choralOnePartOneTenorMusic = \relative c' { c4 d8 c d4 e d c b c d4. c8 b4 b8 (a) gs2 }
@@ -107,9 +115,9 @@ choralOnePartOneLyrics = \lyricmode {
 
 choralOneReponRhythms = { s2\mf\< s2 s4\!\> s s2 s2\!\mf }
 choralOneReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+choralOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
 choralOneReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+choralOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
 choralOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
 
 choralOnePartTwoRhythms = { s2\mf\< s2 s2 s2\!\> s2 s2 s2\!\mf }
@@ -130,7 +138,7 @@ choralOnePartTwoLyrics = \lyricmode {
 %%%%% Choral & Psaume II pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralTwoPartOneRhythms = { \global \markCustom "Choral II" s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
+choralTwoPartOneRhythms = { s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
 choralTwoPartOneSopranoMusic = \relative c' { e4 a8 b c2 b4 a gs a b4 c8 b a4 a8 a gs2 }
 choralTwoPartOneAltoMusic =  \relative c' { c4 e8 e e2 f4 e e e g g8 f e4 f8 f  e2 }
 choralTwoPartOneTenorMusic = \relative c' { a4 c8 b c2 d4 c b c d e8 b c4 c8 c b2 }
@@ -165,7 +173,7 @@ choralTwoPartTwoLyrics = \lyricmode {
 %%%%% Choral III pour chœur à 4 voix mixtes
 %%%%%
 %%%%%
-choralThreePartOneRhythms = { \global \markCustom "Choral III" s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
+choralThreePartOneRhythms = { s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
 choralThreePartOneSopranoMusic = \relative c'' { a4 b8 c b2 a4 gs a b c4. b8 a4 a8 a gs2 }
 choralThreePartOneAltoMusic =  \relative c' { e4 e8 e f2 e4 e e f a4. f8 e4 f8 f e2 }
 choralThreePartOneTenorMusic = \relative c' { c4 d8 c d2 c4 b a d e4. d8 c4 c8 b b2 }
@@ -357,33 +365,27 @@ AllScoreLayout = \layout {
   \FirstScorePaper
   \score {
     {
+      \new ChoirStaff = "stanceSolistStaff"\with { instrumentName = "Ch." }
       <<
-        \new Staff = "stanceSolistStaff" \with { instrumentName = "Soliste" midiInstrument = \midiInstrumentName }
+        \new Staff = "stanceSolistHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "treble"
-          \new Voice = "stanceRhythms" { \markCustom "Stance" \global \stanceRhythms }
-          \new Voice = "stanceMelody" { \relative c'' { \textMark "(éploré)" \stanceMelody } }
+          \new Voice = "stanceSolistRhythms" { \markCustom "Antienne" \time 2/4 \antienneGrecRhythms \bar "||" \pageBreak \once \omit Staff.TimeSignature}
+          \new Voice = "stanceSolistSoprano" { \voiceOne \antienneGrecSopranoMusic }
+          \new Voice = "stanceSolistAlto" { \voiceTwo \antienneGrecAltoMusic }
         >>
-        \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
-        \new PianoStaff = "stancePiano" \with { instrumentName = "Clavier" midiInstrument = \midiInstrumentName }
+        \new Lyrics \lyricsto "stanceSolistSoprano" { \antienneGrecLyrics }
+        \new Staff  = "stanceSolistLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
         <<
-          \new Staff = "stancePianoHighStaff"
-          <<
-            \clef "treble"
-            \new Voice = "stancePianoRhythms" { \stanceRhythms \break }
-            \new Voice = "stancePianoSoprano" { \voiceOne \stanceSopranoMusic }
-            \new Voice = "stancePianoAlto" { \voiceTwo \stanceAltoMusic }
-          >>
-          \new Staff  = "stancePianoLowStaff"
-          <<
-            \clef "bass"
-            %\new Voice = "stancePianoRhythms" { \stanceRhythms }
-            \new Voice = "stancePianoTenor" { \voiceOne \stanceTenorMusic }
-            \new Voice = "stancePianoBass" { \voiceTwo \stanceBassMusic }
-          >>
+          \clef "bass"
+          \new Voice = "stanceSolistTenor" { \voiceOne \antienneGrecTenorMusic}
+          \new Voice = "stanceSolistBass" { \voiceTwo \antienneGrecBassMusic  \once \omit Staff.TimeSignature}
         >>
       >>
-      \new ChoirStaff = "stanceChoirStaff"
+      <<
+        \new Voice = "stanceMelody" { \clef "treble" \markCustom "Stance" \global \time 3/4 \relative c'' { \textMark "(éploré)" \partial 2 \stanceMelody \break} }
+        \new Lyrics \lyricsto "stanceMelody" { \stanceLyrics }
+      >>
       <<
         \new Staff = "stanceHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } midiInstrument = \midiInstrumentName }
         <<
@@ -396,14 +398,13 @@ AllScoreLayout = \layout {
         \new Staff  = "stanceLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "bass"
-          %\new Voice = "stanceRhythms" { \reponRhythms \antienneRhythms }
           \new Voice = "stanceTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic}
           \new Voice = "stanceBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
         >>
       >>
     }
     \AllScoreLayout
-    \MidiOutput
+    %\MidiOutput
     \FirstScoreHeader
   }
   \markuplist {
@@ -460,24 +461,23 @@ AllScoreLayout = \layout {
   }
   \score {
     {
-      \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
+      \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Ch." } <<
         \new Staff = "choralChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
           \clef "treble"
-          \new Voice = "choralRhythms" { \choralOnePartOneRhythms \break \choralOneReponRhythms \break \choralOnePartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
+          \new Voice = "choralRhythms" { \global \markCustom "Choral I" \choralOnePartOneRhythms \break \choralOneReponRhythms \break \choralOnePartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
           \new Voice = "choralSoprano" { \voiceOne \choralOnePartOneSopranoMusic \choralOneReponSopranoMusic \choralOnePartTwoSopranoMusic \antienneSopranoMusic }
           \new Voice = "choralAlto" { \voiceTwo \choralOnePartOneAltoMusic \choralOneReponAltoMusic \choralOnePartTwoAltoMusic \antienneAltoMusic }
         >>
         \new Lyrics \lyricsto "choralSoprano" { \choralOnePartOneLyrics \choralOneReponLyrics \choralOnePartTwoLyrics \antienneLyrics }
         \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
           \clef "bass"
-          %\new Voice = "choralRhythms" { \choralOnePartOneRhythms \choralOneReponRhythms \choralOnePartTwoRhythms \antienneRhythms }
           \new Voice = "choralTenor" { \voiceOne \choralOnePartOneTenorMusic \choralOneReponTenorMusic \choralOnePartTwoTenorMusic \antienneTenorMusic }
           \new Voice = "choralBass" { \voiceTwo \choralOnePartOneBassMusic \choralOneReponBassMusic \choralOnePartTwoBassMusic \antienneBassMusic }
         >>
       >>
     }
     \AllScoreLayout
-    \MidiOutput
+    %\MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -516,19 +516,18 @@ AllScoreLayout = \layout {
   \OtherScoresPaper
   \score {
     {
-      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
+      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Ps." }
       {
         <<
           \new Staff = "psalmodyHighStaff"
           <<
             \clef "treble"
-            \new Voice = "psalmodyRhythms" { \global \markCustom "Psalmodie" \choralPsalmRhythms \bar "||" \break }
+            \new Voice = "psalmodyRhythms" { \set Score.currentBarNumber = 28 \global \markCustom "Psalmodie" \choralPsalmRhythms \bar "||" \break }
             \new Voice = "psalmodySoprano" { \voiceOne \choralPsalmSoprano }
             \new Voice = "psalmodyAlto" { \voiceTwo \choralPsalmAlto }
           >>
           \new Staff  = "psalmodyLowStaff" <<
             \clef "bass"
-            %\new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
             \new Voice = "psalmodyTenor" { \voiceOne \choralPsalmTenor }
             \new Voice = "psalmodyBass" { \voiceTwo \choralPsalmBass }
           >>
@@ -537,7 +536,7 @@ AllScoreLayout = \layout {
           \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
           <<
             \clef "treble"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
+            \new Voice = "psalmodyReponRhythms" { \set Score.currentBarNumber = 32 \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
             \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
             \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
           >>
@@ -545,7 +544,6 @@ AllScoreLayout = \layout {
           \new Staff  = "psalmodyReponLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } }
           <<
             \clef "bass"
-            %\new Voice = "psalmodyReponRhythms" { \reponRhythms \antienneRhythms }
             \new Voice = "psalmodyReponTenor" { \voiceOne \reponTenorMusic \antienneTenorMusic }
             \new Voice = "psalmodyReponBass" { \voiceTwo \reponBassMusic \antienneBassMusic }
           >>
@@ -553,7 +551,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    \MidiOutput
+    %\MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -614,24 +612,23 @@ AllScoreLayout = \layout {
   \OtherScoresPaper
   \score {
     {
-      \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
+      \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Ch." } <<
         \new Staff = "choralChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
           \clef "treble"
-          \new Voice = "choralRhythms" { \choralTwoPartOneRhythms \break \choralTwoReponRhythms \break \choralTwoPartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
+          \new Voice = "choralRhythms" { \global \markCustom "Choral II" \choralTwoPartOneRhythms \break \choralTwoReponRhythms \break \choralTwoPartTwoRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
           \new Voice = "choralSoprano" { \voiceOne \choralTwoPartOneSopranoMusic \choralTwoReponSopranoMusic \choralTwoPartTwoSopranoMusic \antienneSopranoMusic }
           \new Voice = "choralAlto" { \voiceTwo \choralTwoPartOneAltoMusic \choralTwoReponAltoMusic \choralTwoPartTwoAltoMusic \antienneAltoMusic }
         >>
         \new Lyrics \lyricsto "choralSoprano" { \choralTwoPartOneLyrics \choralTwoReponLyrics \choralTwoPartTwoLyrics \antienneLyrics }
         \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
           \clef "bass"
-          %\new Voice = "choralRhythms" { \choralTwoPartOneRhythms \choralTwoReponRhythms \choralTwoPartTwoRhythms \antienneRhythms }
           \new Voice = "choralTenor" { \voiceOne \choralTwoPartOneTenorMusic \choralTwoReponTenorMusic \choralTwoPartTwoTenorMusic \antienneTenorMusic }
           \new Voice = "choralBass" { \voiceTwo \choralTwoPartOneBassMusic \choralTwoReponBassMusic \choralTwoPartTwoBassMusic \antienneBassMusic }
         >>
       >>
     }
     \AllScoreLayout
-    \MidiOutput
+    %\MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -689,19 +686,18 @@ AllScoreLayout = \layout {
   }
   \score {
     {
-      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Psalmistes" }
+      \new ChoirStaff = "psalmodyChoirStaff" \with { instrumentName = "Ps." }
       {
         <<
           \new Staff = "psalmodyHighStaff"
           <<
             \clef "treble"
-            \new Voice = "psalmodyRhythms" { \global \markCustom "Psalmodie" \choralPsalmRhythms \bar "||" \break }
+            \new Voice = "psalmodyRhythms" { \set Score.currentBarNumber = 28 \global \markCustom "Psalmodie" \choralPsalmRhythms \bar "||" \break }
             \new Voice = "psalmodySoprano" { \voiceOne \choralPsalmSoprano }
             \new Voice = "psalmodyAlto" { \voiceTwo \choralPsalmAlto }
           >>
           \new Staff  = "psalmodyLowStaff" <<
             \clef "bass"
-            %\new Voice = "psalmodyRhythms" { \global \choralPsalmRhythms }
             \new Voice = "psalmodyTenor" { \voiceOne \choralPsalmTenor }
             \new Voice = "psalmodyBass" { \voiceTwo \choralPsalmBass }
           >>
@@ -710,7 +706,7 @@ AllScoreLayout = \layout {
           \new Staff = "psalmodyReponHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } }
           <<
             \clef "treble"
-            \new Voice = "psalmodyReponRhythms" { \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
+            \new Voice = "psalmodyReponRhythms" { \set Score.currentBarNumber = 32 \reponRhythms \bar "||" \break \markCustom "Repons" \antienneRhythms }
             \new Voice = "psalmodyReponSoprano" { \voiceOne \reponSopranoMusic \antienneSopranoMusic }
             \new Voice = "psalmodyReponAlto" { \voiceTwo \reponAltoMusic \antienneAltoMusic }
           >>
@@ -726,7 +722,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    \MidiOutput
+    %\MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
@@ -778,17 +774,16 @@ AllScoreLayout = \layout {
   \score {
     {
       <<
-        \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Chœur" } <<
+        \new ChoirStaff = "choralChoirStaff" \with { instrumentName = "Ch." } <<
           \new Staff = "choralChoirHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } } <<
             \clef "treble"
-            \new Voice = "choralRhythms" { \choralThreePartOneRhythms \break \choralThreeReponRhythms \break \choralThreePartTwoRhythms \bar "|."}
+            \new Voice = "choralRhythms" { \global \markCustom "Choral III" \choralThreePartOneRhythms \break \choralThreeReponRhythms \break \choralThreePartTwoRhythms \bar "|."}
             \new Voice = "choralSoprano" { \voiceOne \choralThreePartOneSopranoMusic \choralThreeReponSopranoMusic \choralThreePartTwoSopranoMusic }
             \new Voice = "choralAlto" { \voiceTwo \choralThreePartOneAltoMusic \choralThreeReponAltoMusic \choralThreePartTwoAltoMusic }
           >>
           \new Lyrics \lyricsto "choralSoprano" { \choralThreePartOneLyrics \choralThreeReponLyrics \choralThreePartTwoLyrics }
           \new Staff  = "choralChoirLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } } <<
             \clef "bass"
-            %\new Voice = "choralRhythms" { \choralThreePartOneRhythms \choralThreeReponRhythms \choralThreePartTwoRhythms }
             \new Voice = "choralTenor" { \voiceOne \choralThreePartOneTenorMusic \choralThreeReponTenorMusic \choralThreePartTwoTenorMusic }
             \new Voice = "choralBass" { \voiceTwo \choralThreePartOneBassMusic \choralThreeReponBassMusic \choralThreePartTwoBassMusic }
           >>
@@ -796,7 +791,7 @@ AllScoreLayout = \layout {
       >>
     }
     \AllScoreLayout
-    \MidiOutput
+    %%\MidiOutput
     \OtherScoresHeader
   }
   \markuplist {
