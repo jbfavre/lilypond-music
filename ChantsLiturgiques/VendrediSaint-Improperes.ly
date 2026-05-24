@@ -89,8 +89,8 @@ antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
 antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
 
 trisagionRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75
-                        s2\p s2\fermata \bar "||" s2 s2\fermata \bar "||"\break
-                        s2\mf s2\fermata \bar "||"  s2 s2\fermata \bar "||"\break
+                        s2\f s2\fermata \bar "||" s2\p s2\fermata \bar "||"\break
+                        s2\f s2\fermata \bar "||"  s2\mf s2\fermata \bar "||"\break
                         s2\< s2\f s2\mf\> s2\p\! \fermata \bar "||" \break
                         s2\< s2\f s2\mf\> s2\p\! \fermata
 }
@@ -182,9 +182,9 @@ choralTwoPartOneLyrics = \lyricmode {
 
 choralTwoReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralTwoReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+choralTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
 choralTwoReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+choralTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
 choralTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
 
 choralTwoPartTwoRhythms = { s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
@@ -217,9 +217,9 @@ choralThreePartOneLyrics = \lyricmode {
 
 choralThreeReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralThreeReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs gs2 }
+choralThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
 choralThreeReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
+choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
 choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
 
 choralThreePartTwoRhythms = { s2\mf s2 s2\< s2 s2\!\f\< s2\!\ff s2\ff s2\ff s2\ff }
