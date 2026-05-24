@@ -88,12 +88,44 @@ antienneTenorMusic = \relative c' { c4 c4 b2 c4 b b4 b8 b c4 d4 e4 d8 d d (c) c 
 antienneBassMusic = \relative c { a4 d e2 c4 d e4 e8 d c4 b4 a d8 d e4 e a,2 }
 antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu im -- mor -- tel, prends pi -- tié de nous. }
 
-antienneGrecRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75 s2\p^"(implorant)" s2 s2\mf s2 \break s2\< s2\f s2\mf\> s2\p\! }
-antienneGrecSopranoMusic = \relative c'' { \tuplet 3/2 { a8 a a } a8 a gs2 \tuplet 3/2 { a8 a a } b8 a gs2 a8 a b b c8 c c8 b \tuplet 3/2 {a a a} a (gs) a2 }
-antienneGrecAltoMusic = \relative c' { \tuplet 3/2 { e8 e e } f f e2 \tuplet 3/2 { e8 e e } f f e2 e8 e f f a a f f \tuplet 3/2 { e8 e e } e4 e2 }
-antienneGrecTenorMusic = \relative c' { \tuplet 3/2 { c8 c c } c c b2 \tuplet 3/2 { c8 c c } b b b2 c8 c d d e e d8 d \tuplet 3/2 { d8 c c } c (b) c2 }
-antienneGrecBassMusic = \relative c { \tuplet 3/2 { a8 a a } d d e2 \tuplet 3/2 { c8 c c } d d e2 c8 c b b a a d d \tuplet 3/2 { e8 e e } e4 a,2 }
-antienneGrecLyrics = \lyricmode { Á -- gi -- os o The -- ós, á -- gi -- os I -- schy -- rós, á -- gi -- os A -- thá -- na -- tos, e -- lé -- ï -- son i -- más }
+trisagionRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75
+                        s2\p s2\fermata \bar "||" s2 s2\fermata \bar "||"\break
+                        s2\mf s2\fermata \bar "||"  s2 s2\fermata \bar "||"\break
+                        s2\< s2\f s2\mf\> s2\p\! \fermata \bar "||" \break
+                        s2\< s2\f s2\mf\> s2\p\! \fermata
+}
+trisagionSopranoMusic = \relative c'' {
+  \tuplet 3/2 { a8 a a } a8 a gs2 a8 a a4 gs2
+  \tuplet 3/2 { a8 a a } b8 a gs2 a8[ a] b (a) gs2
+  a8 a b b c8 c c8 b \tuplet 3/2 {a a a} a (gs) a2
+  a8 a b b c8 c c8 b a a a (gs) a2
+}
+trisagionAltoMusic = \relative c' {
+  \tuplet 3/2 { e8 e e } f f e2 e8 e f4 e2
+  \tuplet 3/2 { e8 e e } f f e2 e8 e f4 e2
+  e8 e f f a a f f \tuplet 3/2 { e8 e e } e4 e2
+  e8 e f f a a f f e8 e e4 e2
+}
+trisagionTenorMusic = \relative c' {
+  \tuplet 3/2 { c8 c c } c c b2 c8 c c4 b2
+  \tuplet 3/2 { c8 c c } b b b2 c8 c b4 b2
+  c8 c d d e e d8 d \tuplet 3/2 { d8 d c } c (b) c2
+  c8 c d d e e d8 d d8 c c (b) c2
+}
+trisagionBassMusic = \relative c {
+  \tuplet 3/2 { a8 a a } d d e2 a,8 a d4 e2
+  \tuplet 3/2 { c8 c c } d d e2 c8 c d4 e2
+  c8 c b b a a d d \tuplet 3/2 { e8 e e } e4 a,2
+  c8 c b b a a d d e8 e e4 a,2
+}
+trisagionLyrics = \lyricmode {
+  Há -- gi -- os o The -- ós&nbsp;;
+  Sanc -- tus De -- us&nbsp;;
+  Há -- gi -- os I -- schy -- rós&nbsp;;
+  Sanc -- tus for -- tis&nbsp;;
+  Há -- gi -- os A -- thá -- na -- tos, e -- lé -- ï -- son hi -- más.
+  Sanc -- tus im -- mor -- ta -- lis, mi -- se -- re -- re no -- bis.
+}
 
 %%%%%
 %%%%%
@@ -365,21 +397,21 @@ AllScoreLayout = \layout {
   \FirstScorePaper
   \score {
     {
-      \new ChoirStaff = "stanceSolistStaff"\with { instrumentName = "Ch." }
+      \new ChoirStaff = "trisagionStaff"
       <<
-        \new Staff = "stanceSolistHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } midiInstrument = \midiInstrumentName }
+        \new Staff = "trisagionHighStaff" \with { shortInstrumentName = \markup { \column { "S." "A." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "treble"
-          \new Voice = "stanceSolistRhythms" { \markCustom "Antienne" \time 2/4 \antienneGrecRhythms \bar "||" \pageBreak \once \omit Staff.TimeSignature}
-          \new Voice = "stanceSolistSoprano" { \voiceOne \antienneGrecSopranoMusic }
-          \new Voice = "stanceSolistAlto" { \voiceTwo \antienneGrecAltoMusic }
+          \new Voice = "trisagionRhythms" { \markCustom "Trisagion" \time 2/4 \trisagionRhythms \bar "||" \pageBreak \once \omit Staff.TimeSignature}
+          \new Voice = "trisagionSoprano" { \voiceOne \trisagionSopranoMusic }
+          \new Voice = "trisagionAlto" { \voiceTwo \trisagionAltoMusic }
         >>
-        \new Lyrics \lyricsto "stanceSolistSoprano" { \antienneGrecLyrics }
-        \new Staff  = "stanceSolistLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
+        \new Lyrics \lyricsto "trisagionSoprano" { \trisagionLyrics }
+        \new Staff  = "trisagionLowStaff" \with { shortInstrumentName = \markup { \column { "T." "B." } } midiInstrument = \midiInstrumentName }
         <<
           \clef "bass"
-          \new Voice = "stanceSolistTenor" { \voiceOne \antienneGrecTenorMusic}
-          \new Voice = "stanceSolistBass" { \voiceTwo \antienneGrecBassMusic  \once \omit Staff.TimeSignature}
+          \new Voice = "trisagionTenor" { \voiceOne \trisagionTenorMusic}
+          \new Voice = "trisagionBass" { \voiceTwo \trisagionBassMusic  \once \omit Staff.TimeSignature}
         >>
       >>
       <<
