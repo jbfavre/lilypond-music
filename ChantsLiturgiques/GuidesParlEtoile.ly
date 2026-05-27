@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.4"
 \language "english"
 \include "../libs/commonFunctions.ily"
 
