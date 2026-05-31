@@ -274,7 +274,7 @@ introitAltosMusic = \relative c' {
   g'8 g4 fs8 g g fs e d d d4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8
   }
 introitTenorsMusic = \relative c' {
-  g8 b4 d8 d c d c c c b4 b8 b4 g8 b4. e8 d d b d d c c c c8 b a b4 r8
+  g8 b4 d8 d c d c c c b4 b8 b4 g8 b4. e8 d d b d d c a c c8 b a b4 r8
   }
 introitBassesMusic = \relative f {
   g8 e4  d8 g8 e b c d d g,4 \breathe e'8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8
@@ -307,7 +307,7 @@ communionAltosMusic = \relative c' {
   }
 communionTenorsMusic = \relative c' {
   g8 b d8 d c d c c c b b \breathe b8 b b g8
-  d'4 d8 e8 d d b d d c c c c8 b a (b4.)
+  d'4 d8 e8 d d b d d c a c c8 b a (b4.)
   }
 communionBassesMusic = \relative f {
   g8 e d8 g8 e b c d d g, g \breathe e'8 d d c8
