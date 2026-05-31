@@ -147,9 +147,9 @@ choralOnePartOneLyrics = \lyricmode {
 
 choralOneReponRhythms = { s2\mf\< s2 s4\!\> s s2 s2\!\mf }
 choralOneReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
+choralOneReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs e2 }
 choralOneReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
+choralOneReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralOneReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Le Maî -- tre t'a li -- bé -- ré }
 
 choralOnePartTwoRhythms = { s2\mf\< s2 s2 s2\!\> s2 s2 s2\!\mf }
@@ -182,9 +182,9 @@ choralTwoPartOneLyrics = \lyricmode {
 
 choralTwoReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralTwoReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
+choralTwoReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs e2 }
 choralTwoReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
+choralTwoReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralTwoReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! La Grap -- pe fut ven -- dan -- gée&nbsp;; }
 
 choralTwoPartTwoRhythms = { s2\mf\< s2 s2 s2 s2\!\> s2 s2\!\mf }
@@ -217,9 +217,9 @@ choralThreePartOneLyrics = \lyricmode {
 
 choralThreeReponRhythms = { s2\mf\< s2 s2\!\> s2 s2\!\mf }
 choralThreeReponSopranoMusic = \relative c'' { a4 a a r8 a8 a4 a8 a a4 a gs2 }
-choralThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 f e2 }
+choralThreeReponAltoMusic = \relative c' { e4 e e4 r8 e8 e4 e8 e f4 fs e2 }
 choralThreeReponTenorMusic = \relative c' { c4 c d4 r8 d8 c4 c8 c c4 b b2 }
-choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 d e2 }
+choralThreeReponBassMusic = \relative c { a4 a b4 r8 b8 c4 c8 c d4 ds e2 }
 choralThreeReponLyrics = \lyricmode { sou -- viens- -- toi&nbsp;! Ton frè -- re t'as re -- le -- vé&nbsp;; }
 
 choralThreePartTwoRhythms = { s2\mf s2 s2\< s2 s2\!\f\< s2\!\ff s2\ff s2\ff s2\ff }

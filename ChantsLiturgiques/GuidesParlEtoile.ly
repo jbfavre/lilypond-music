@@ -274,7 +274,7 @@ introitAltosMusic = \relative c' {
   g'8 g4 fs8 g g fs e d d d4 e8 fs4 e8 fs4. a8 fs fs e fs g e d d d4. d4 r8
   }
 introitTenorsMusic = \relative c' {
-  g8 b4 d8 d c d c a c b4 b8 b4 g8 b4. e8 d d b d e c a c c8 b a b4 r8
+  g8 b4 d8 d c d c c c b4 b8 b4 g8 b4. e8 d d b d d c c c c8 b a b4 r8
   }
 introitBassesMusic = \relative f {
   g8 e4  d8 g8 e b c d d g,4 \breathe e'8 d4 c8 b4. c8 d d e b e c d d g,4. g4 r8
@@ -302,15 +302,15 @@ communionSopranosMusic = \relative c'' {
   d4 d8 c8 b a g b b a g fs g4. (g4.)
   }
 communionAltosMusic = \relative c' {
-  g'8 g fs8 g g fs e d d e e \breathe e8 fs fs e8
+  g'8 g fs8 g g fs e d d d d \breathe e8 fs fs e8
   fs4 fs8 a8 fs fs e fs g e d d d4. (d4.)
   }
 communionTenorsMusic = \relative c' {
-  g8 b d8 d c d c a c b b \breathe b8 b b g8
-  d'4 d8 e8 d d b d e c a c c8 b a (b4.)
+  g8 b d8 d c d c c c b b \breathe b8 b b g8
+  d'4 d8 e8 d d b d d c c c c8 b a (b4.)
   }
 communionBassesMusic = \relative f {
-  g8 e d8 g8 e b c d d e e \breathe e8 d d c8
+  g8 e d8 g8 e b c d d g, g \breathe e'8 d d c8
   b4 b8 c8 d d e b e c d d g,4. (g4.)
   }
 communionLyrics = \lyricmode {
