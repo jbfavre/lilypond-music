@@ -7,7 +7,7 @@ scoreHeader = \header {
   subtitle = "Saint Sacrement du Corps et du Sang du Christ"
   composer = "Jean Baptiste Favre"
   poet = "AELF"
-  date = "Clichy la Garenne, juin 2020"
+  date = "Clichy la Garenne, juin 2026"
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -15,7 +15,7 @@ scoreHeader = \header {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 keyTime = {
-  \time 6/8 \key d \major
+  \time 3/8 \key g \major
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,27 +24,26 @@ keyTime = {
 antiphonRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne"
-  \time 6/8
-  s2. s2. s2. \bar "|." \break
+  s4.*5 \bar "|." \break
   }
 
 antiphonMusicCounterpoint = {}
 
 antiphonMusicSoprano = \relative c' {
-  r8 d8 fs a g b a4.
-  b8 d cs d2.
+  r8 d8 e g e g a4.
+  g8 g fs g4.
   }
 
 antiphonMusicAlto = \relative c' {
-  a4 d8 fs8 d8 e8 e4. g8 b8 e,8 fs2.
+  d4. e fs e8 e d d4.
   }
 
 antiphonMusicTenor =  \relative f {
-  fs4 b8 cs8 b8 g8 cs4. d8 g,8 a8 a2.
+  b4. d c b8 c c b4.
   }
 
 antiphonMusicBass =  \relative f {
-  d4 b8 fs'8 g8 e a4. g8 e a d,2.
+  g4. e d e8 c d g4.
   }
 
 antiphonLyrics = \lyricmode {
@@ -68,51 +67,35 @@ verseRythm = {
   \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
   \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
   \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "|." \break
-  \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
-  \markCustom "Psalmodie par verset"
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "||"
-  \tAcceBreve s\breve \tAcceRonde s1 \tRall s4 \bar "|." \break
   \cadenzaOff
   }
 
 verseMusicSoprano = \relative c'' {
-  a\breve b1 a4
-  b\breve d1 cs4
-  cs\breve b1 a4
-  g\breve b1 a4
-
-  a\breve b1 a4
-  g\breve b1 a4
+  b\breve b1 a4
+  g\breve g1 fs4
+  e\breve fs1 g4
+  g\breve a1 a4
   }
 
 verseMusicAlto = \relative f' {
-  fs\breve fs1 fs4
-  g\breve g1 a4
-  a\breve g1 fs4
-  d\breve g1 e4
-
-  fs\breve fs1 fs4
-  d\breve g1 e4
+  g\breve g1 fs4
+  e\breve e1 ds4
+  e\breve ds!1 e4
+  e\breve e1 fs4
   }
 
 verseMusicTenor = \relative c' {
-  d\breve d1 cs4
-  d\breve e1 e4
-  e\breve d1 d4
-  b\breve d1 cs4
-
-  d\breve d1 cs4
-  b\breve d1 cs4
+  d\breve d1 d4
+  b\breve b1 b4
+  g\breve b1 b4
+  c\breve c1 c4
   }
 
 verseMusicBass = \relative f {
-  d\breve b1 fs'4
-  g\breve e1 a4
-  fs\breve g1 d4
-  g\breve e1 a4
-
-  d,\breve b1 fs'4
-  g\breve e1 a4
+  g,\breve g1 d'4
+  e\breve e1 b4
+  c\breve b1 e4
+  c\breve a1 d4
   }
 
 verseLyrics = \markup {
@@ -167,39 +150,39 @@ partition = <<
         \new Voice = "antiphonSoprano" { \antiphonMusicSoprano \fermata }
         \new Lyrics \lyricsto "antiphonSoprano" \antiphonLyricsSoprano
       >>
-      \new Staff = "antiphonAltoStaff" \with {
-        instrumentName = "Alto"
-        shortInstrumentName = "A"
-      }
-      <<
-        \clef "treble"
-        \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonAlto" { \antiphonMusicAlto \fermata }
-        \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
-      >>
-      \new Staff = "antiphonTenorStaff" \with {
-        instrumentName = "Ténor"
-        shortInstrumentName = "T"
-      }
-      <<
-        \clef "treble_8"
-        \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonTenor" { \antiphonMusicTenor \fermata }
-        \new Lyrics \lyricsto "antiphonTenor" \antiphonLyricsTenor
-      >>
-      \new Staff  = "antiphonBassStaff" \with {
-        instrumentName = "Basse"
-        shortInstrumentName = "B"
-      }
-      <<
-        \clef "bass"
-        \keyTime
-        \antiphonRythm
-        \new Voice = "antiphonBass" { \antiphonMusicBass \fermata }
-        \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
-      >>
+%       \new Staff = "antiphonAltoStaff" \with {
+%         instrumentName = "Alto"
+%         shortInstrumentName = "A"
+%       }
+%       <<
+%         \clef "treble"
+%         \keyTime
+%         \antiphonRythm
+%         \new Voice = "antiphonAlto" { \antiphonMusicAlto \fermata }
+%         \new Lyrics \lyricsto "antiphonAlto" \antiphonLyricsAlto
+%       >>
+%       \new Staff = "antiphonTenorStaff" \with {
+%         instrumentName = "Ténor"
+%         shortInstrumentName = "T"
+%       }
+%       <<
+%         \clef "treble_8"
+%         \keyTime
+%         \antiphonRythm
+%         \new Voice = "antiphonTenor" { \antiphonMusicTenor \fermata }
+%         \new Lyrics \lyricsto "antiphonTenor" \antiphonLyricsTenor
+%       >>
+%       \new Staff  = "antiphonBassStaff" \with {
+%         instrumentName = "Basse"
+%         shortInstrumentName = "B"
+%       }
+%       <<
+%         \clef "bass"
+%         \keyTime
+%         \antiphonRythm
+%         \new Voice = "antiphonBass" { \antiphonMusicBass \fermata }
+%         \new Lyrics \lyricsto "antiphonBass" \antiphonLyricsBass
+%       >>
     >>
     % Accompagnement Piano / Orgue
     \new PianoStaff = "antiphonPianoStaff" \with {
