@@ -235,8 +235,8 @@ choralThreePartTwoLyrics = \lyricmode {
 choralPsalmRhythms = { \cadenzaOn \cesure \tAcce s\breve \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 \cesure \bar "|" \tAcce s\breve s1 \tRall s4 s \cesure \cadenzaOff }
 choralPsalmSoprano = \relative c'' { \cesure a\breve gs4 \cesure b\breve gs!1 a4  \cesure c\breve c1  b4 \cesure b\breve   a1 a4 gs! \cesure }
 choralPsalmAlto =    \relative c'  { \cesure e\breve e4  \cesure f\breve e1   e4  \cesure e\breve f1  f4 \cesure e\breve   e1 e4 e \cesure }
-choralPsalmTenor =   \relative c'  { \cesure c\breve b4  \cesure d\breve d1   c4  \cesure c\breve d1  d4 \cesure b\breve   c1 c4 d \cesure }
-choralPsalmBass =    \relative c   { \cesure a\breve e'4 \cesure b\breve e1   a,4 \cesure a\breve a'1 a4 \cesure gs!\breve a1 a,4 bf \cesure }
+choralPsalmTenor =   \relative c'  { \cesure c\breve b4  \cesure d\breve d1   c4  \cesure c\breve d1  d4 \cesure b\breve   c1 c4 b \cesure }
+choralPsalmBass =    \relative c   { \cesure a\breve e'4 \cesure b\breve e1   a,4 \cesure a\breve a'1 a4 \cesure gs!\breve a1 a,4 e' \cesure }
 
 %%%%%
 %%%%%
