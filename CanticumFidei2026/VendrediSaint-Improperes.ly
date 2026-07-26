@@ -91,7 +91,7 @@ antienneLyrics = \lyricmode { (Ass.)&nbsp;Ô Dieu saint, Ô Dieu fort, Ô Dieu i
 trisagionRhythms = { \set Score.tempoHideNote = ##t \tempo 4 = 75
                         s2\f s2\fermata \bar "||" s2\p s2\fermata \bar "||"\break
                         s2\f s2\fermata \bar "||"  s2\mf s2\fermata \bar "||"\break
-                        s2\< s2\f s2\mf\> s2\p\! \fermata \bar "||" \break
+                        s2\f s2 s2 s2 \fermata \bar "||" \break
                         s2\< s2\f s2\mf\> s2\p\! \fermata
 }
 trisagionSopranoMusic = \relative c'' {
@@ -226,7 +226,7 @@ choralThreePartTwoRhythms = { s2\mf s2 s2\< s2 s2\!\f\< s2\!\ff s2\ff s2\ff s2\f
 choralThreePartTwoSopranoMusic = \relative c' { e4 g a4. b8 c b a b gs4 a4 d8 d c a b2-> d-> d-> cs2-> }
 choralThreePartTwoAltoMusic =  \relative c' { e4 e f4. f8 a f e f e4 e4 e8 e e f f2-> f-> e-> e2-> }
 choralThreePartTwoTenorMusic = \relative c' { c4 b c4. d8 e d c b b4 c b8 b c c b2-> b-> b-> a2-> }
-choralThreePartTwoBassMusic = \relative c' { a4 g f d8 (b) a8 b c d e4 a,8 a' gs8 gs a f d2-> d-> gs,-> a2-> }
+choralThreePartTwoBassMusic = \relative c' { a4 g f d8 (b) a8 b c d e4 <a, \parenthesize a'>4 gs'8 gs a f d2-> d-> gs,-> a2-> }
 choralThreePartTwoLyrics = \lyricmode {
   Jé -- sus- -- Christ, le Ver -- be~et la Ré -- pon -- se,
   Jé -- sus- -- Christ, l'A -- mour ré -- vé -- lé.
@@ -236,7 +236,7 @@ choralPsalmRhythms = { \cadenzaOn \cesure \tAcce s\breve \tRall s4 \cesure \bar 
 choralPsalmSoprano = \relative c'' { \cesure a\breve gs4 \cesure b\breve gs!1 a4  \cesure c\breve c1  b4 \cesure b\breve   a1 a4 gs! \cesure }
 choralPsalmAlto =    \relative c'  { \cesure e\breve e4  \cesure f\breve e1   e4  \cesure e\breve f1  f4 \cesure e\breve   e1 e4 e \cesure }
 choralPsalmTenor =   \relative c'  { \cesure c\breve b4  \cesure d\breve d1   c4  \cesure c\breve d1  d4 \cesure b\breve   c1 c4 b \cesure }
-choralPsalmBass =    \relative c   { \cesure a\breve e'4 \cesure b\breve e1   a,4 \cesure a\breve a'1 a4 \cesure gs!\breve a1 a,4 e' \cesure }
+choralPsalmBass =    \relative c   { \cesure a\breve e'4 \cesure b\breve e1   a,4 \cesure a\breve a'1 a4 \cesure gs!\breve a1 a,4 b \cesure }
 
 %%%%%
 %%%%%

@@ -75,7 +75,9 @@ reponsBassesMusic =  \relative c {
 reponsLyrics = \lyricmode {
   Nous a -- vons vu son é -- toi -- le, et nous som -- mes ve -- nus nous pro -- ster -- ner de -- vant Lui.
   }
-
+reponsLyricsTenor = \lyricmode {
+  _ _ _ _ _ _ _ _ _ _ _ _ _ nus nous pro -- ster -- ner de -- vant Lui.
+  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%          Versets          %%%%%
@@ -174,7 +176,7 @@ versetLyrics =  \markup {
         \concat {                    \typewriter "   "   "rendez-lui votre homm" \underline a "ge en tremblant." \typewriter "(Ps.2,11)" \with-color #red { \typewriter "   ℟." } }
         \vspace #0.5
         \concat { \with-color #red { \typewriter "℣. " } "Qui est ce roi de gloire ? " \roman \super {"&dagger;"} }
-        \concat {                    \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c'est le Seign" \underline e "ur, le f" \underline o "rt, le vaillant," }
+        \concat {                    \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c'est le Seigneur, le f" \underline o "rt, le vaillant," }
         \concat {                    \typewriter "   "   "le Seign" \underline e "ur, le vaillant des combats." \typewriter "(Ps.23,8)" }
         \concat {                    \typewriter "   "   "Tu lui dest" \underline i "nes bénédicti" \underline o "ns et bienfaits," }
         \concat {                    \typewriter "   "   "tu mets sur sa t" \underline ê "te une couronne d'or." \typewriter "(Ps.20,4)" \with-color #red { \typewriter "   ℟." } }
@@ -182,7 +184,7 @@ versetLyrics =  \markup {
         \concat { \with-color #red { \typewriter "℣. " } "Heureux le peuple dont le Seigne" \underline u "r est le Dieu,"}
         \concat {                    \typewriter "   "   "heureuse la nation qu'il s'est chois" \underline i "e pour domaine !" \typewriter "(Ps.32,12)" }
         \concat {                    \typewriter "   "   "Fêtez le Seigneur, v" \underline o "us, ses fidèles," }
-        \concat {                    \typewriter "   "   "rendez gr" \underline â "ce en rappelant son nom très saint." \typewriter "(Ps.29,5)" \with-color #red { \typewriter "   ℟." } }
+        \concat {                    \typewriter "   "   "rendez grâce en rappel" \underline a "nt son nom très saint." \typewriter "(Ps.29,5)" \with-color #red { \typewriter "   ℟." } }
         \vspace #0.5
         \concat { \with-color #red { \typewriter "℣. " } "Ton trône est div" \underline i "n, un trône éternel ;" }
         \concat {                    \typewriter "   "   "ton sceptre roy" \underline a "l est sceptre de droiture :" \typewriter "(Ps.44,7)" }
@@ -192,7 +194,7 @@ versetLyrics =  \markup {
         \concat { \with-color #red { \typewriter "℣. " } "Les rois de Tarsis et des Iles " \roman \super {"&dagger;"} }
         \concat {                    \typewriter "   " "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;apporter" \underline o "nt des présents." }
         \concat {                    \typewriter "   "   "Les rois de Saba et de Seba fer" \underline o "nt leur offrande." \typewriter "(Ps.71,10)" }
-        \concat {                    \typewriter "   "   "Tous les r" \underline o "is se prosterner" \underline o "nt devant lui," }
+        \concat {                    \typewriter "   "   "Tous les rois se prosterner" \underline o "nt devant lui," }
         \concat {                    \typewriter "   "   "tous les pa" \underline y "s le serviront." \typewriter "(Ps.71,11)" \with-color #red { \typewriter "   ℟." } }
       }
     }
@@ -524,6 +526,9 @@ AllScoreLayout = \layout {
           \new Voice = "reponsTenor" { \voiceOne \reponsTenorsMusic }
           \new Voice = "reponsBass" { \voiceTwo \reponsBassesMusic }
         >>
+        \new Lyrics  \with {
+          alignAboveContext = "reponsLowStaff"
+        } \lyricsto "reponsTenor" { \reponsLyricsTenor }
       >>
     }
     \AllScoreLayout
