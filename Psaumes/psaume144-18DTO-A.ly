@@ -24,28 +24,28 @@ keyTime = {
 antiphonRythm = \relative c' {
   \once \override Score.RehearsalMark.break-align-symbols = #'(clef)
   \markCustom "Antienne"
-  \partial 8 s2*6 \bar "|." \break
+  \partial 8 s8 s2 s2 \time 3/4 s2. \time 2/4 s2*2 \bar "|." \break
   }
 
 antiphonMusicCounterpoint = {}
 
 antiphonMusicSoprano = \relative c' {
-  d8 fs4 g8 a b4 b4 a2
-  r8 a8 g fs e4 e4 d2
+  d8 fs4 g8 a b4 b4
+  a4 r8 a8 g fs e4 e4 d2
   }
 
 antiphonMusicAlto = \relative c' {
-  r8 d4 d d d cs2
+  r8 d4 d d d cs4
   d4 d d d8 cs a2
   }
 
 antiphonMusicTenor =  \relative c' {
-  r8 a4 g4 g g a2
+  r8 a4 g4 g g a4
   b4 b b a8 g fs2
   }
 
 antiphonMusicBass =  \relative f {
-  r8 d4 b8 a g4 e' fs2
+  r8 d4 b8 a g4 e' fs4
   b,4 e8 fs g4 a8 a, d2
   }
 
