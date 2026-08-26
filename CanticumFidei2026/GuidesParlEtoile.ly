@@ -460,7 +460,7 @@ AllScoreLayout = \layout {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%          Antienne          %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\book {
 \bookpart { % Stance
   \FirstScorePaper
   \score {
@@ -532,11 +532,10 @@ AllScoreLayout = \layout {
       >>
     }
     \AllScoreLayout
-    %\midi { }
+    \midi { }
     \FirstPageHeaders
   }
 }
-
 
 \bookpart {
   \OtherScoresPaper
@@ -562,7 +561,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    %\midi { }
+    \midi { }
     \OtherPageHeaders
   }
   \versetLyrics
@@ -592,7 +591,7 @@ AllScoreLayout = \layout {
       }
     >>
     \AllScoreLayout
-    %\midi { }
+    \midi { }
     \OtherPageHeaders
   }
   \doxologieLyrics
@@ -619,7 +618,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    %\midi { }
+    \midi { }
     \OtherPageHeaders
   }
   \markup {
@@ -654,7 +653,7 @@ AllScoreLayout = \layout {
       }
     }
     \AllScoreLayout
-    %\midi { }
+    \midi { }
     \OtherPageHeaders
   }
   \markup {
@@ -665,4 +664,5 @@ AllScoreLayout = \layout {
       }
     }
   }
+}
 }

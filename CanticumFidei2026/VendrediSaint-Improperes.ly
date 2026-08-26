@@ -393,6 +393,7 @@ AllScoreLayout = \layout {
 %%%%% Stance pour soliste et orgue
 %%%%%
 %%%%%
+\book {
 \bookpart {
   \FirstScorePaper
   \score {
@@ -840,4 +841,5 @@ AllScoreLayout = \layout {
       }
     }
   }
+}
 }
