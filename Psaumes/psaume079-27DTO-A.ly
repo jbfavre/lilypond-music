@@ -81,7 +81,7 @@ verseMusicSoprano = \relative c' {
   e\breve e1 d4
 
   f\breve g4
-  f\breve e1 d4
+  e\breve e1 d4
   }
 
 verseMusicAlto = \relative f' {
